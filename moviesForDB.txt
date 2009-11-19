@@ -49,7 +49,7 @@ Ali(2001)**<USA
 Ali: Fear Eats the Soul(1974)**½<Germany
 Alice in Wonderland(1951)****<USA
 Alien(1979)****<USA
-Alien: The Director’s Cut(1979, 2003)***½<USA
+Alien: The Director’s Cut(2003)***½<USA
 Alien Resurrection(1998)*½<USA
 Alien Vs. Predator(2004)*½<USA
 Aliens(1986)**½<USA
@@ -97,7 +97,7 @@ Aparajito(1957)***<India
 The Apartment(1960)***½<USA
 Apartment Zero(1988)***<DEFAULT
 Apocalypse Now(1979)****<USA
-Apocalypse Now Redux(1979, 2001)***<USA
+Apocalypse Now Redux(2001)***<USA
 Apollo 13(1995)***½<USA
 The Apostle(1997)****<USA
 Appaloosa(2008)***<USA
@@ -572,7 +572,7 @@ Get on the Bus(1996)***½<USA
 Get Shorty(1995)****<USA
 Ghost(1990)**<USA
 Ghost Day: Way of the Samurai(2000)***<USA
-Ghost Ship(2002) **<USA
+Ghost Ship(2002)**<USA
 Ghost World(2001)***<USA
 Giant(1956)***½<USA
 The Gift(2002)**½<USA
@@ -1030,7 +1030,7 @@ My Brilliant Career(1980)**½<Australia
 My Cousin Vinny(1992)***<USA
 My Dinner With Andre(1981)***½<USA
 My Fair Lady(1964)**½<USA
-My Family, Mi Familia(1995) ***½<USA
+My Family, Mi Familia(1995)***½<USA
 My Father’s Glory(1991)***½<France
 My Girl(1991)***<USA
 My Left Foot(1989)****<Ireland
@@ -1415,7 +1415,7 @@ Streetwise(1984)***½<USA
 Stroszek(1978)***½<Germany
 Stuck on You(2003)***<USA
 Suburbia(1997)**½<USA
-Sunday Bloody Sunday(171)*½<England
+Sunday Bloody Sunday(1971)*½<England
 Sunnyside [Chaplin short](1919)***<USA
 Sunrise(1927)****<USA
 Sunset Boulevard(1950)****<USA
@@ -1562,7 +1562,7 @@ Wallace & Gromit in the Curse of the Were-Rabbit(2005)***<England
 Waltz With Bashir(2008)**½<Israel
 Wanted(2008)**<USA
 The War(1994)***½<USA
-The War of the Roses(1989) **<USA
+The War of the Roses(1989)**<USA
 The War of the Worlds(2005)**½<USA
 The War Zone(2000)***<England
 Wargames(1983)***½<USA
