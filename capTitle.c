@@ -24,7 +24,7 @@ int main (int argc, char ** argv)
 	//open the source file
 	FILE * source =
         //fopen("/home/tylerhayes/workspace/cs386/temp", "r");
-		fopen("/home/tylerhayes/workspace/cs386/moviesForDatabase.txt", "r");
+		fopen("/home/tylerhayes/workspace/cs386/moviesForDB.txt", "r");
 	if (!source)
 	{
 		printf("\nError in opening file.\n");
@@ -184,6 +184,26 @@ int main (int argc, char ** argv)
                 buffer[i+1] = toupper(buffer[i+1]);
                 ++i;
             }
+        }
+
+        for (i=i; buffer[i] != '<'; ++i)
+            ;
+
+        if (buffer[i+1] == 'u'
+            && buffer[i+2] == 's'
+            && buffer[i+3] == 'a')
+        {
+            buffer[i+1] = 'U';
+            buffer[i+2] = 'S';
+            buffer[i+3] = 'A';
+        }
+        else
+            buffer[i+1] = toupper(buffer[i+1]);
+
+        for (i=i+1; buffer[i] != '\0'; ++i)
+        {
+            if (buffer[i] == ' ')
+                buffer[i+1] = toupper(buffer[i+1]);
         }
 
         printf("%s", buffer);
