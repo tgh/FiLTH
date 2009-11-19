@@ -59,13 +59,13 @@ int main (int argc, char ** argv)
         
         if (cnt == 0)
         {
-            for (i=i; i >= 0: --i)
+            for (i=i; i >= 0; --i)
                 buffer[i+1] = buffer[i];
             
             buffer[0] = '`';
-            
-            printf("%s", buffer);
         }
+
+        printf("%s", buffer);
 	}
 	
 	fclose(source);
