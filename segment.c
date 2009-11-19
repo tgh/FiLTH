@@ -47,14 +47,21 @@ int main (int argc, char ** argv)
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        for(i=0; buffer[i+1] != '(' && buffer[i+1] != '\0'; ++i)
-            ;
-
-        if (buffer[i+1] != '\0')
+        for(i=0; buffer[i] != '\0'; ++i)
         {
-            for(i=i; buffer[i] != '\0'; ++i)
-                buffer[i] = buffer[i+1];
+            if (buffer[i] == '('
+                && (buffer[i+1] >= 48 && buffer[i+1] <= 57)
+                && (buffer[i+2] >= 48 && buffer[i+2] <= 57)
+                && (buffer[i+3] >= 48 && buffer[i+3] <= 57)
+                && (buffer[i+4] >= 48 && buffer[i+4] <= 57)
+                && buffer[i+5] == ')')
+            {
+                buffer[i+6] = '\n';
+                buffer[i+7] = '\0';
+                break;
+            }
         }
+
         printf("%s", buffer);
 	}
 	
