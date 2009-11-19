@@ -50,7 +50,7 @@ int main (int argc, char ** argv)
 
         for (i=1; buffer[i] != '('; ++i)
         {
-            //:
+            //: the
             if (buffer[i] == ':'
                 && buffer[i+1] == ' '
                 && buffer[i+2] == 't'
@@ -62,6 +62,25 @@ int main (int argc, char ** argv)
                 ++i;
                 continue;
             }
+            //: a
+            if (buffer[i] == ':'
+                && buffer[i+1] == ' '
+                && buffer[i+2] == 'a'
+                && buffer[i+3] == ' ')
+            {
+                buffer[i+2] = 'A';
+                ++i;
+                continue;
+            }
+            //- or .
+            if ((buffer[i] == '-' || buffer[i] == '.')
+                && 97 <= buffer[i+1]
+                && buffer[i+1] <= 122)
+            {
+                buffer[i+1] = toupper(buffer[i+1]);
+                ++i;
+                continue;
+            } 
             //the
             if (buffer[i] == ' '
                 && buffer[i+1] == 't'
