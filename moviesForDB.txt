@@ -132,7 +132,7 @@ The Bad and the Beautiful(1952)***<USA
 Bad Education(2004)*½<Spain
 Bad Lieutenant(1993)**<USA
 Badlands(1974)***<USA
-Balloonatic, the [keaton Short](1923)***<USA
+Balloonatic, the [Keaton short](1923)***<USA
 Bamboozled(2000)***<USA
 Bananas(1971)***<USA
 Band of Outsiders(1964)**½<France
@@ -204,7 +204,7 @@ Blowup(1966)****<England
 Blue(1994)**½<Poland
 The Blue Kite(1994)**½<China
 Blue Velvet(1986)*½<USA
-Boat, the [keaton Short](1921)**½<USA
+Boat, the [Keaton short](1921)**½<USA
 Bobby(2006)***<USA
 Body Heat(1981)***<USA
 Body of Lies(2008)***½<USA
@@ -278,13 +278,13 @@ Champion(1949)***<USA
 Changeling(2008)***½<USA
 Changing Lanes(2002)***½<USA
 Chaplin(1993)**<USA
-Making a Living [chaplin Short](1914)**<USA
-The Tramp [chaplin Short](1915)***<USA
-His Favorite Pastime [chaplin Short](1914)**<USA
-The Rink [chaplin Short](1916)***½<USA
-A Dog’s Life [chaplin Short](1918)***<USA
-Shoulder Arms [chaplin Short](1918)***½<USA
-The Pilgrim [chaplin Short](1923)**½<USA
+Making a Living [Chaplin short](1914)**<USA
+The Tramp [Chaplin short](1915)***<USA
+His Favorite Pastime [Chaplin short](1914)**<USA
+The Rink [Chaplin short](1916)***½<USA
+A Dog’s Life [Chaplin short](1918)***<USA
+Shoulder Arms [Chaplin short](1918)***½<USA
+The Pilgrim [Chaplin short](1923)**½<USA
 Character(1998)****<The Netherlands
 Chariots of Fire(1981)***<England
 Charlie and the Chocolate Factory(2005)*<USA
@@ -373,7 +373,7 @@ David & Lisa(1962)***½<USA
 The Day After Tomorrow(2004)*½<USA
 Day For Night(1974)***½<France
 Days of Heaven(1978)****<USA
-Day’s Pleasure, a [chaplin Short](1919)**½<USA
+Day’s Pleasure, a [Chaplin short](1919)**½<USA
 Days of Wine and Roses(1962)****<USA
 Dazed and Confused(1993)**½<USA
 Dead Man(1995)***½<USA
@@ -716,7 +716,7 @@ I, Robot(2004)***<USA
 Ice Age(2002)***<USA
 The Ice Storm(1997)**½<USA
 Identity(2003)***<USA
-The Idle Class[chaplin Short](1921)***½<USA
+The Idle Class[Chaplin short](1921)***½<USA
 If...(1968)***<England
 Igby Goes Down(2002)***½<USA
 Il Postino(1995)***½<Italy
@@ -893,7 +893,7 @@ Lost in Translation(2003)***<USA
 The Lost World: Jurassic Park(1997)*½<USA
 Love and Death(1975)***<USA
 Love Liza(2003)**½<USA
-The Love Nest [keaton Short](1923)**½<USA
+The Love Nest [Keaton short](1923)**½<USA
 Love Story(1970)**½<USA
 Lovely and Amazing(2002)**½<USA
 Lucas(1985)***<USA
@@ -1054,14 +1054,14 @@ National Treasure(2004)***<USA
 National Treasure: Book of Secrets(2007)***<USA
 Natural Born Killers(1994)½*<USA
 The Navigator(1924)****<USA
-Neighbors [keaton Short](1920)****<USA
+Neighbors [Keaton short](1920)****<USA
 The Net(1995)**<USA
 Network(1976)****<USA
 The Neverending Story(1984)***<USA
 The New World(2005)***½<USA
-New York Stories: Life Lessons [martin Scorsese Short](1989)**½<USA
-New York Stories: Life Without Zoe [francis Coppola Short](1989)*<USA
-New York Stories: Oedipus Wrecks [woody Allen Short](1989)***<USA
+New York Stories: Life Lessons [Martin Scorsese short](1989)**½<USA
+New York Stories: Life Without Zoe [Francis Coppola short](1989)*<USA
+New York Stories: Oedipus Wrecks [Woody Allen short](1989)***<USA
 Night and Fog [short](1955)**½<France
 Night at the Opera(1935)***½<USA
 The Night of the Hunter(1955)***<USA
@@ -1416,7 +1416,7 @@ Stroszek(1978)***½<Germany
 Stuck on You(2003)***<USA
 Suburbia(1997)**½<USA
 Sunday Bloody Sunday(171)*½<England
-Sunnyside [chaplin Short](1919)***<USA
+Sunnyside [Chaplin short](1919)***<USA
 Sunrise(1927)****<USA
 Sunset Boulevard(1950)****<USA
 Sunshine(2007)***<England
