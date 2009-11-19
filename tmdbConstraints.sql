@@ -79,7 +79,7 @@ CHECK (year >= 1900);
 
 -- movie star rating
 ALTER TABLE movie ADD CONSTRAINT star_constraint
-CHECK (mystarrating = 'no stars' OR
+CHECK (mystarrating = 'NO STARS' OR
        mystarrating = '½*' OR
        mystarrating = '*' OR
        mystarrating = '*½' OR
@@ -88,7 +88,7 @@ CHECK (mystarrating = 'no stars' OR
        mystarrating = '***' OR
        mystarrating = '***½' OR
        mystarrating = '****' OR
-       mystarrating = 'n/a');
+       mystarrating = 'N/A');
 
 -- movie view status
 ALTER TABLE movie ADD CONSTRAINT view_constraint

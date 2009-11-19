@@ -448,7 +448,7 @@ A Dry White Season(1989)***<USA
 Duck Soup(1933)***½<USA
 Dumb and Dumber(1994)****<USA
 Dumbo(1941)****<USA
-E.T. the Extra-Terrestrial(1982)****<USA
+E.T.: The Extra-Terrestrial(1982)****<USA
 Eagle Eye(2008)***<USA
 East of Eden(1955)****<USA
 Easy Rider(1969)****<USA
@@ -778,7 +778,7 @@ Jesus(1979)***<USA
 Jesus(1999)**<USA
 Jesus of Nazareth(1977)***½<DEFAULT
 Jesus’ Son(2000)***<Canada
-Jfk(1991)*½<USA
+JFK(1991)*½<USA
 Joe Gould’s Secret(2000)**<USA
 Jonah: A Veggie Tales Movie(2002)***<USA
 Joshua(2007)**½<USA
@@ -1640,6 +1640,4 @@ Zero Day(2003)****<USA
 Zero Effect(1998)***<USA
 Zero For Conduct [short](1933)***<France
 Zodiac(2007)***½<USA
-Zoolander(2001)**½<USA
-Zoolander(2001)**½<USA
 Zoolander(2001)**½<USA
