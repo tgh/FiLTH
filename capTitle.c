@@ -50,6 +50,18 @@ int main (int argc, char ** argv)
 
         for (i=1; buffer[i] != '('; ++i)
         {
+            //:
+            if (buffer[i] == ':'
+                && buffer[i+1] == ' '
+                && buffer[i+2] == 't'
+                && buffer[i+3] == 'h'
+                && buffer[i+4] == 'e'
+                && buffer[i+5] == ' ')
+            {
+                buffer[i+2] = 'T';
+                ++i;
+                continue;
+            }
             //the
             if (buffer[i] == ' '
                 && buffer[i+1] == 't'
@@ -59,10 +71,59 @@ int main (int argc, char ** argv)
             {
                 continue;
             }
+            //and
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'a'
+                && buffer[i+2] == 'n'
+                && buffer[i+3] == 'd'
+                && buffer[i+4] == ' ')
+            {
+                continue;
+            }
             //of
             if (buffer[i] == ' '
                 && buffer[i+1] == 'o'
                 && buffer[i+2] == 'f'
+                && buffer[i+3] == ' ')
+            {
+                continue;
+            }
+            //at
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'a'
+                && buffer[i+2] == 't'
+                && buffer[i+3] == ' ')
+            {
+                continue;
+            }
+            //in
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'i'
+                && buffer[i+2] == 'n'
+                && buffer[i+3] == ' ')
+            {
+                continue;
+            }
+            //as
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'a'
+                && buffer[i+2] == 's'
+                && buffer[i+3] == ' ')
+            {
+                continue;
+            }
+            //it
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'i'
+                && buffer[i+2] == 't'
+                && buffer[i+3] == ' ')
+            {
+                continue;
+            }
+            //by
+            if (buffer[i] == ' '
+                && buffer[i+1] == 'b'
+                && buffer[i+2] == 'y'
                 && buffer[i+3] == ' ')
             {
                 continue;
