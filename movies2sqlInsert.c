@@ -23,11 +23,16 @@ int main (int argc, char ** argv)
     char year[9];
     char star[9];
     char country[21];
-    
+
+    //check for file from command line
+    if (argc != 2)
+    {
+        printf("Error: need a file argument.\n");
+        exit(0);
+    }
+
 	//open the source file
-	FILE * source =
-        //fopen("/home/tylerhayes/workspace/cs386/temp", "r");
-		fopen("/home/tylerhayes/workspace/cs386/moviesForDB.txt", "r");
+	FILE * source = fopen(argv[1], "r");
 	if (!source)
 	{
 		printf("\nError in opening file.\n");
