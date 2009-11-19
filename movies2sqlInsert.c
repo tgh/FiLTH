@@ -27,7 +27,7 @@ int main (int argc, char ** argv)
 	//open the source file
 	FILE * source =
         //fopen("/home/tylerhayes/workspace/cs386/temp", "r");
-		fopen("/home/tylerhayes/workspace/cs386/moviesForDatabase.txt", "r");
+		fopen("/home/tylerhayes/workspace/cs386/moviesForDB.txt", "r");
 	if (!source)
 	{
 		printf("\nError in opening file.\n");

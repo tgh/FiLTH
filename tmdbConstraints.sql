@@ -26,7 +26,7 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- directed table
 ALTER TABLE directed ADD CONSTRAINT dir_movie_fkey
-FOREIGN KEY (title, year) REFERENCES movie(title, year)
+FOREIGN KEY (oscarmovie, oscaryear) REFERENCES movie(title, year)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 ALTER TABLE directed ADD CONSTRAINT dir_dir_fkey
