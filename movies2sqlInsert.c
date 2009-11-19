@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define LINE_LENGTH 82
+#define LINE_LENGTH 100
 
 void CheckFileReadError (FILE * source);
 
@@ -83,7 +83,7 @@ int main (int argc, char ** argv)
         if (strcmp(country, "DEFAULT")!=0)
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(\"%s\", \"%s\", \"%s\", \"%s\", \"seen\");\n",
+            printf("(\'%s\', %s, \'%s\', \'%s\', \'seen\');\n",
                 title, year, star, country);
         }
         else

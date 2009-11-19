@@ -181,7 +181,7 @@ Big Fish(2003)***<usa
 The Big Kahuna(2000)***<usa
 The Big Lebowski(1998)****<usa
 Big Night(1996)***<usa
-The Big Red One(1980, 2004 re-issue)***<usa
+The Big Red One(1980)***<usa
 The Big Sleep(1946)***½<usa
 Bigger Than the Sky(2005)**½<usa
 Bill & Ted’s Bogus Journey(1991)**½<usa
@@ -396,7 +396,7 @@ Decalogue, The: Chapter 10 [short](1987)***<poland
 Deconstructing Harry(1997)***<usa
 Deep Blue Sea(1999)**½<usa
 The Deep End(2001)**<usa
-Deep Impact(1998)**½v
+Deep Impact(1998)**½<usa
 The Deer Hunter(1978)****<usa
 Defiance(2009)***<usa
 Deliverance(1972)***<usa
@@ -1030,7 +1030,7 @@ My Brilliant Career(1980)**½<australia
 My Cousin Vinny(1992)***<usa
 My Dinner With Andre(1981)***½<usa
 My Fair Lady(1964)**½<usa
-My Family(Mi Familia)(1995) ***½<usa
+My Family, Mi Familia(1995) ***½<usa
 My Father’s Glory(1991)***½<france
 My Girl(1991)***<usa
 My Left Foot(1989)****<ireland
