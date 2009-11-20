@@ -549,7 +549,7 @@ INSERT INTO movie VALUES ('Fresh', 1994, '***½', 'USA', 'seen');
 INSERT INTO movie VALUES ('The Freshman', 1990, '***½', 'USA', 'seen');
 INSERT INTO movie VALUES ('Friday Night Lights', 2003, '**½', 'USA', 'seen');
 INSERT INTO movie VALUES ('From Here to Eternity', 1953, '***', 'USA', 'seen');
-INSERT INTO movie VALUES ('Frost/nixon', 2008, '****', 'USA', 'seen');
+INSERT INTO movie VALUES ('Frost/Nixon', 2008, '****', 'USA', 'seen');
 INSERT INTO movie VALUES ('The Fugitive', 1993, '***½', 'USA', 'seen');
 INSERT INTO movie VALUES ('Full Metal Jacket', 1987, '***½', 'England', 'seen');
 INSERT INTO movie VALUES ('The Full Monty', 1997, '***', 'England', 'seen');
