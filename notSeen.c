@@ -22,6 +22,7 @@ int main (int argc, char ** argv)
     char title[75];
     char year[9];
     char country[21];
+    int coFlag = 0;
 
     //check for file from command line
     if (argc != 2)
@@ -46,6 +47,7 @@ int main (int argc, char ** argv)
 	{
         int i = 0;
         int j = 0;
+        coFlag = 0;
 
 		//read the next line in the file
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
@@ -69,26 +71,30 @@ int main (int argc, char ** argv)
         year[j] = '\0';
 
         //country
-        j = 0;
-        for (i=i+1; buffer[i] != '\n'; ++i)
+        if (buffer[i+1] == '<')
         {
-            country[j] = buffer[i];
-            ++j;
+            j = 0;
+            for (i=i+1; buffer[i] != '\n'; ++i)
+            {
+                country[j] = buffer[i];
+                ++j;
+            }
+            country[j] = '\0';
+            coFlag = 1;
         }
-        country[j] = '\0';
 
         //output the sql statement
-        if (strcmp(country, "DEFAULT")!=0)
+        if (coFlag)
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(\'%s\', %s, \'%s\', \'%s\', \'seen\');\n",
-                title, year, star, country);
+            printf("(\'%s\', %s, DEFAULT, \'%s\', \'not seen\');\n",
+                title, year, country);
         }
         else
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(\'%s\', %s, \'%s\', DEFAULT, \'seen\');\n",
-                title, year, star);
+            printf("(\'%s\', %s, DEFAULT, DEFAULT, \'not seen\');\n",
+                title, year);
         }
 	}
 	
