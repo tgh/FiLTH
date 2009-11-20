@@ -1928,7 +1928,6 @@ Even Cowgirls Get the Blues(1993)<USA
 ~Last Days(2005)
 ~Paris, Je T'aime (2006)
 Paranoid Park(2007)<USA
-8(2008)<USA
 Milk(2008)<USA
 `Jean Vigo
 ~Zero For Conduct(1933)
@@ -1972,7 +1971,7 @@ The Deep(1970)<USA
 The Other Side of the Wind(1972)<USA
 F For Fake(1975)<USA
 `Wim Wenders
-Summer in the City(1970)XXX
+Summer in the City(1970)
 The Goalie's Anxiety at the Penalty Kick(1971)
 The Scarlet Letter(1972)
 Alice in the Cities(1974)
@@ -2002,34 +2001,33 @@ Land of Plenty(2004)
 Don't Come Knocking(2005)
 Invisibles(2007)
 Palermo Shooting(2008)
-8(2008)
 `Billy Wilder
-Bad Seed(aka bad blood)(1934)
-The Major and the Minor(1942)
-Five Graves to Cairo(1943)
+Bad Seed(1934)<USA
+The Major and the Minor(1942)<USA
+Five Graves to Cairo(1943)<USA
 ~Double Indemnity(1944)
-The Lost Weekend(1945)
-The Emperor Waltz(1948)
-A Foreign Affair(1948)
+The Lost Weekend(1945)<USA
+The Emperor Waltz(1948)<USA
+A Foreign Affair(1948)<USA
 ~Sunset Boulevard(1950)
-Ace in the Hole(1951)
-Stalag 17(1953)
-Sabrina(1954)
-The Seven Year Itch(1955)
-The Spirit of St. Louis(1957)
-Love in the Afternoon(1957)
-Witness For the Prosecution(1957)
+Ace in the Hole(1951)<USA
+Stalag 17(1953)<USA
+Sabrina(1954)<USA
+The Seven Year Itch(1955)<USA
+The Spirit of St. Louis(1957)<USA
+Love in the Afternoon(1957)<USA
+Witness For the Prosecution(1957)<USA
 ~Some Like it Hot(1959)
 ~The Apartment(1960)
-One, Two, Three(1961)
-Irma La Douce(1963)
-Kiss Me, Stupid(1964)
-The Fortune Cookie(1966)
-The Private Life of Sherlock Holmes(1970)
-Avanti!(1972)
-The Front Page(1974)
-Fedora(1978)
-Buddy Buddy(1981)
+One, Two, Three(1961)<USA
+Irma La Douce(1963)<USA
+Kiss Me, Stupid(1964)<USA
+The Fortune Cookie(1966)<USA
+The Private Life of Sherlock Holmes(1970)<USA
+Avanti!(1972)<USA
+The Front Page(1974)<USA
+Fedora(1978)<USA
+Buddy Buddy(1981)<USA
 `Michael Winterbottom
 Butterfly Kiss(1995)
 Go Now(1995)
@@ -2039,7 +2037,7 @@ I Want You(1998)
 Wonderland(1999)
 With Or Without You(1999)
 ~The Claim(2000)
-~24 hour party people(2002)
+~24-Hour Party People(2002)
 In This World(2002)
 Code 46(2003)
 9 Songs(2004)
@@ -2049,20 +2047,18 @@ The Road to Guatanamo(2006)
 Genova(2008)
 The Shock Doctrine(2009)
 `Robert Zemeckis
-I Wanna Hold Your Hand(1978)
-Used Cars(1980)
-Romancing the Stone(1984)
+I Wanna Hold Your Hand(1978)<USA
+Used Cars(1980)<USA
+Romancing the Stone(1984)<USA
 ~Back to the Future(1985)
 ~Who Framed Roger Rabbit?(1988)
 ~Back to the Future Part II(1989)
 ~Back to the Future Part III(1990)
-Death Becomes Her(1992)
+Death Becomes Her(1992)<USA
 ~Forrest Gump(1994)
 ~Contact(1997)
 ~What Lies Beneath(2000)
 ~Cast Away(2000)
 ~The Polar Express(2004)
 ~Beowulf(2007)
-~Beowulf(2007)
-~Beowulf(2007)
-~Beowulf(2007)
+A Christmas Carol(2009)<USA
