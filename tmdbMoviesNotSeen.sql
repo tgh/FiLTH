@@ -630,7 +630,6 @@ INSERT INTO movie VALUES ('The Scar', 1976, DEFAULT, '<Poland', 'not seen');
 INSERT INTO movie VALUES ('Camera Buff', 1979, DEFAULT, '<Poland', 'not seen');
 INSERT INTO movie VALUES ('Blind Chance', 1982, DEFAULT, '<Poland', 'not seen');
 INSERT INTO movie VALUES ('No End', 1985, DEFAULT, '<Poland', 'not seen');
-INSERT INTO movie VALUES ('American Dream', 1991, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Beyond JFK: The Question of Conspiracy', 1992, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Woodstock ''94', 1998, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('A Conversation With Gregory Peck', 1999, DEFAULT, '<USA', 'not seen');
@@ -1120,7 +1119,6 @@ INSERT INTO movie VALUES ('Notebook on Cities and Clothes', 1989, DEFAULT, DEFAU
 INSERT INTO movie VALUES ('Until the End of the World', 1991, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Faraway, So Close!', 1993, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Lisbon Story', 1994, DEFAULT, DEFAULT, 'not seen');
-INSERT INTO movie VALUES ('Beyond the Clouds', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Brothers Skladanowsky', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Buena Vista Social Club', 1999, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Million Dollar Hotel', 2000, DEFAULT, DEFAULT, 'not seen');

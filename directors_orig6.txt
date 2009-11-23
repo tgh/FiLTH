@@ -1086,7 +1086,7 @@ No End(1985)<Poland
 ~Red(1994)
 `Barbara Kopple
 ~Harlan County, Usa(1976)
-American Dream(1991)<USA
+~American Dream(1991)<USA
 Beyond JFK: The Question of Conspiracy(1992)<USA
 ~Wild Man Blues(1997)
 Woodstock ''94(1998)<USA
