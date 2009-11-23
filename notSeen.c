@@ -74,7 +74,7 @@ int main (int argc, char ** argv)
         if (buffer[i+1] == '<')
         {
             j = 0;
-            for (i=i+1; buffer[i] != '\n'; ++i)
+            for (i=i+2; buffer[i] != '\n'; ++i)
             {
                 country[j] = buffer[i];
                 ++j;
