@@ -238,7 +238,7 @@ INSERT INTO movie VALUES ('The Blood of a Poet', 1930, DEFAULT, '<France', 'not 
 INSERT INTO movie VALUES ('The Eagle Has Two Heads', 1947, DEFAULT, '<France', 'not seen');
 INSERT INTO movie VALUES ('The Storm Within', 1948, DEFAULT, '<France', 'not seen');
 INSERT INTO movie VALUES ('The Testament of Orpheus', 1960, DEFAULT, '<France', 'not seen');
-INSERT INTO movie VALUES ('A Simple Man', 2009, DEFAULT, '<USA', 'not seen');
+INSERT INTO movie VALUES ('A Serious Man', 2009, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Heartbreak Hotel', 1988, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Only the Lonely', 1991, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Nine Months', 1995, DEFAULT, '<USA', 'not seen');
@@ -719,7 +719,6 @@ INSERT INTO movie VALUES ('Mo'' Better Blues', 1990, DEFAULT, '<USA', 'not seen'
 INSERT INTO movie VALUES ('Jungle Fever', 1991, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Crooklyn', 1994, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Clockers', 1995, DEFAULT, '<USA', 'not seen');
-INSERT INTO movie VALUES ('Lumiere and Company', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Girl 6', 1996, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('He Got Game', 1998, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Summer of Sam', 1999, DEFAULT, '<USA', 'not seen');
@@ -901,7 +900,6 @@ INSERT INTO movie VALUES ('Four Friends', 1981, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Target', 1985, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Dead of Winter', 1987, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('Penn & Teller Get Killer', 1989, DEFAULT, '<USA', 'not seen');
-INSERT INTO movie VALUES ('Lumiere and Company', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Indian Runner', 1991, DEFAULT, '<USA', 'not seen');
 INSERT INTO movie VALUES ('One Or the Other', 1973, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Consequence', 1977, DEFAULT, DEFAULT, 'not seen');
@@ -1123,7 +1121,6 @@ INSERT INTO movie VALUES ('Until the End of the World', 1991, DEFAULT, DEFAULT, 
 INSERT INTO movie VALUES ('Faraway, So Close!', 1993, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Lisbon Story', 1994, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Beyond the Clouds', 1995, DEFAULT, DEFAULT, 'not seen');
-INSERT INTO movie VALUES ('Lumiere and Company', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Brothers Skladanowsky', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Buena Vista Social Club', 1999, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Million Dollar Hotel', 2000, DEFAULT, DEFAULT, 'not seen');
