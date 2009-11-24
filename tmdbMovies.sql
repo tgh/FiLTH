@@ -1,4 +1,4 @@
-INSERT INTO movie VALUES ('Pi', 1998 , '***', 'USA', 'seen');
+INSERT INTO movie VALUES ('Pi', 1998, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('3 Women', 1977, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('3:10 to Yuma', 2007, '****', 'USA', 'seen');
 INSERT INTO movie VALUES ('4 Little Girls', 1997, '***', 'USA', 'seen');
@@ -1650,3 +1650,18 @@ INSERT INTO movie VALUES ('Letters From Iwo Jima', 2006, '****', 'USA', 'seen');
 INSERT INTO movie VALUES ('Seven Up [short]', 1963, '****', 'England', 'seen');
 INSERT INTO movie VALUES ('Seven Plus Seven', 1970, '****', 'England', 'seen');
 INSERT INTO movie VALUES ('21 Up', 1977, '****', 'England', 'seen');
+
+--seen but not rated--
+INSERT INTO movie VALUES ('Little Giants', 1994, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky II', 1979, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky III', 1982, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky IV', 1985, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Sniper', 1993, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Cop and ½', 1993, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Three Fugitives', 1989, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Babe', 1992, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Hand That Rocks the Cradle', 1992, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Courage Under Fire', 1996, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Money Pit', 1986, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Devil''s Own', 1997, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('White Water Summer', 1987, DEFAULT, 'USA', 'seen');

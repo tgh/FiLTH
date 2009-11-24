@@ -50,7 +50,7 @@ int main (int argc, char ** argv)
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        //title
+        //name
         for (i = 0; buffer[i] != '\n'; ++i)
             name[i] = buffer[i];
         name[i] = '\0';
