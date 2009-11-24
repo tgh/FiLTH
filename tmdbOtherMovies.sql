@@ -1,0 +1,13 @@
+INSERT INTO movie VALUES ('Little Giants', 1994, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky II', 1979, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky III', 1982, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Rocky IV', 1985, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Sniper', 1993, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Cop and ½', 1993, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Three Fugitives', 1989, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Babe', 1992, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Hand That Rocks the Cradle', 1992, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('Courage Under Fire', 1996, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Money Pit', 1986, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('The Devil''s Own', 1997, DEFAULT, 'USA', 'seen');
+INSERT INTO movie VALUES ('White Water Summer', 1987, DEFAULT, 'USA', 'seen');

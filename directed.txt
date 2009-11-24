@@ -63,7 +63,7 @@ Streamers(1983)<USA
 ~Secret Honor(1984)
 O.C. & Stiggs(1985)<USA
 Fool For Love(1985)<USA
-~Aria(segment)(1987)
+~Aria(1987)
 ~Beyond Therapy(1987)
 Vincent and Theo(1990)<USA
 ~The Player(1992)
@@ -564,7 +564,7 @@ I Girasoli(1970)<Italy
 We Call Him Andrew(1972)<Italy
 A Brief Vacation(1973)<Italy
 The Voyage(1974)<Italy
-`Guillermo Del Toro
+`Guillermo del Toro
 Cronos(1993)
 Mimic(1997)<USA
 The Devil''s Backbone(2001)
@@ -584,7 +584,7 @@ Stop Making Sense(1984)<USA
 Something Wild(1986)<USA
 Swimming to Cambodia(1987)<USA
 Married to the Mob(1988)<USA
-~Silence of the Lambs(1991)
+~The Silence of the Lambs(1991)
 ~Philadelphia(1993)
 Beloved(1998)<USA
 The Truth About Charlie(2002)<USA
@@ -650,7 +650,7 @@ The Swindle(1955)<Italy
 ~8½(1963)
 ~Juliet of the Spirits(1965)
 Spirits of the Dead(1969)<Italy
-~Satyricon(1969)
+~Fellini Satyricon(1969)
 ~Roma(1972)
 ~Amarcord(1974)
 Casanova(1976)<Italy
@@ -685,7 +685,7 @@ Cold Creek Manor(2003)<USA
 Competition(1963)<Czech Republic
 Black Peter(1963)<Czech Republic
 The Loves of a Blonde(1965)<Czech Republic
-~The Fireman''s Ball(1967)
+~The Firemen''s Ball(1967)
 Taking Off(1971)
 I Miss Sonia Henie(1971)
 ~One Flew Over the Cuckoo''s Nest(1975)
@@ -711,7 +711,7 @@ Mary Reilly(1996)
 The Van(1996)
 The Hi-Lo Country(1998)
 ~High Fidelity(2000)
-~Liam(2000)
+~Liam(2001)
 ~Dirty Pretty Things(2003)
 Mrs. Henderson Presents(2005)
 ~The Queen(2006)
@@ -1863,7 +1863,7 @@ World Trade Center(2006)<USA
 `Quentin Tarantino
 ~Reservoir Dogs(1992)
 ~Pulp Fiction(1994)
-~Four Rooms(“the man from hollywood” segment)(1995)
+~Four Rooms(1995)
 ~Jackie Brown(1997)
 ~Kill Bill Vol. 1(2003)
 ~Kill Bill Vol. 2(2004)

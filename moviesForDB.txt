@@ -1,4 +1,4 @@
-π(1998 )***<USA
+Pi(1998 )***<USA
 3 Women(1977)***<USA
 3:10 to Yuma(2007)****<USA
 4 Little Girls(1997)***<USA
@@ -50,6 +50,7 @@ Ali(2001)**<USA
 Ali: Fear Eats the Soul(1974)**½<Germany
 Alice in Wonderland(1951)****<USA
 Alien(1979)****<USA
+Alien 3(1992)**<USA
 Alien: The Director''s Cut(2003)***½<USA
 Alien Resurrection(1998)*½<USA
 Alien Vs. Predator(2004)*½<USA
@@ -107,7 +108,7 @@ Arlington Road(1999)***<USA
 Army of Darkness(1993)**<USA
 Around the Bend(2004)**½<USA
 As Good as it Gets(1997)***½<USA
-Assassination of Jesse James by the Cowardly Robert Ford(2007)***<USA
+The Assassination of Jesse James by the Cowardly Robert Ford(2007)***<USA
 The Assassination of Richard Nixon(2004)***½<USA
 At Close Range(1986)**<USA
 Atlantic City(1981)**<USA
@@ -509,9 +510,9 @@ Fatal Attraction(1987)***<USA
 Father of the Bride(1991)***<USA
 Fear and Desire(1954)**½<USA
 Fear and Loathing in Las Vegas(1998)*½<USA
-Fellini''s Intervista(1987)**½<Italy
-Fellini''s Roma(1972)*½<Italy
-Fellini''s Satyricon(1969)½*<Italy
+Intervista(1987)**½<Italy
+Roma(1972)*½<Italy
+Fellini Satyricon(1969)½*<Italy
 Ferris Bueller''s Day Off(1986)****<USA
 A Few Good Men(1992)****<USA
 Field of Dreams(1989)***<USA
@@ -619,7 +620,7 @@ The Graduate(1967)***<USA
 Gran Torino(2008)***½<USA
 Grand Canyon(1992)***½<USA
 Grand Illusion(1937)***<France
-Grapes of Wrath(1940)***<USA
+The Grapes of Wrath(1940)***<USA
 Grave of the Fireflies(1988)****<Japan
 The Great Buck Howard(2009)***<USA
 The Great Debaters(2007)***<USA
@@ -633,7 +634,7 @@ The Green Mile(1999)****<USA
 The Grey Fox(1983)***<Canada
 The Grey Zone(2002)***½<USA
 Gridiron Gang(2006)**½<USA
-The Grifters(1991)**½<USA
+The Grifters(1990)**½<USA
 Grizzly Man(2005)***<Germany
 Grosse Point Blank(1997)***<USA
 Groundhog Day(1993)****<USA
@@ -695,7 +696,7 @@ The Hours(2002)**½<USA
 The House of Flying Daggers(2004)***½<China
 House of Games(1987)***<USA
 The House of Mirth(2000)***<England
-The House of Sand and Fog(2003)***<USA
+House of Sand and Fog(2003)***<USA
 Houseguest(1995)***<USA
 Housekeeping(1988)***½<USA
 How the Grinch Stole Christmas(2000)**½<USA
@@ -966,7 +967,7 @@ The Messenger: The Story of Joan of Arc(1999)***<DEFAULT
 Metroland(1999)**½<England
 Metropolis(1926)****<Germany
 Metropolis(2002)**½<Japan
-Michael Clayton(2007)***½<USA
+Michael Clayton(2007)****<USA
 Microcosmos(1997)****<France
 Midnight Cowboy(1969)***½<USA
 Midnight Express(1978)***<USA
@@ -1000,6 +1001,7 @@ Monster(2003)***<USA
 Monsters Ball(2001)***<USA
 Monster House(2006)***½<USA
 Monsters Inc.(2001)****<USA
+Monty Python and the Holy Grail(1975)***<England
 Moon(2009)****<USA
 Moonlight Mile(2002)***<USA
 Moonstruck(1987)**½<USA
@@ -1194,7 +1196,7 @@ Psycho(1960)****<USA
 Psycho(1998)***<USA
 Public Enemies(2009)***<USA
 Pulp Fiction(1994)****<USA
-Punch Drunk Love(2002)****<USA
+Punch-Drunk Love(2002)****<USA
 Purple Rose of Cairo(1985)****<USA
 The Pursuit of Happyness(2006)***<USA
 The Queen(2006)***½<England
@@ -1293,7 +1295,7 @@ School Ties(1992)***<USA
 The Score(2001)***<USA
 Seabiscuit(2003)***<USA
 The Searchers(1956)***<USA
-Serching For Bobby Fischer(1993)****<USA
+Searching For Bobby Fischer(1993)****<USA
 Searching For Debra Winger(2002)***<USA
 Secondhand Lions(2003)**½<USA
 The Secret Garden(1993)***<DEFAULT
@@ -1466,7 +1468,7 @@ Tess(1980)*½<USA
 That Thing You Do!(1996)***<USA
 Thelma & Louise(1991)**<USA
 There Will Be Blood(2007)****<USA
-There''s Something About Mary(1999)***½<USA
+There''s Something About Mary(1998)***½<USA
 The Thin Blue Line(1988)***½<USA
 The Thin Red Line(1998)****<USA
 The Third Man(1949)***<England
@@ -1551,7 +1553,7 @@ Vertical Limit(2000)**<USA
 A Very Long Engagement(2004)***<France
 Vice Versa(1988)***½<USA
 The Village(2004)***½<USA
-The Virgin Spring(1959)****<Sweden
+The Virgin Spring(1960)****<Sweden
 The Virgin Suicides(2000)***½<USA
 The Visual Bible: Matthew(1997)***½<USA
 Viva Zapata!(1952)***<USA
@@ -1583,7 +1585,7 @@ What About Bob?(1991)***½<USA
 What Dreams May Come(1998)**<USA
 What Ever Happened to Baby Jane?(1962)***½<USA
 What Lies Beneath(2000)**<USA
-What''s Eating Gilbert Grape?(1994)***½<USA
+What''s Eating Gilbert Grape(1993)***½<USA
 What''s Love Got to Do With It?(1993)***<USA
 What''s New Pussycat?(1965)**<USA
 What''s Up Tiger Lily?(1966)***<USA

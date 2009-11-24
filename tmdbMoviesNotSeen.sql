@@ -1170,3 +1170,5 @@ INSERT INTO movie VALUES ('Used Cars', 1980, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('Romancing the Stone', 1984, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('Death Becomes Her', 1992, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('A Christmas Carol', 2009, DEFAULT, 'USA', 'not seen');
+INSERT INTO movie VALUES ('Legends of the Fall', 1994, DEFAULT, 'USA', 'not seen');
+INSERT INTO movie VALUES ('Goin'' South', 1978, DEFAULT, 'USA', 'not seen');
