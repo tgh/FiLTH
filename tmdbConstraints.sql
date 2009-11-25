@@ -111,3 +111,8 @@ CHECK (category = 'best picture' OR
        category = 'best cinematography' OR
        category = 'best adapted screenplay' OR
        category = 'best original screenplay');
+
+-- oscar status
+ALTER TABLE oscar ADD CONSTRAINT status_constraint
+CHECK (status = 'won' OR
+       status = 'nominated');

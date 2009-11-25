@@ -24,8 +24,9 @@ cinname varchar(25) NOT NULL);
 CREATE TABLE oscar (
 oscarmovie varchar(70) NOT NULL,
 oscaryear integer NOT NULL,
+category varchar(25) NOT NULL,
 recipientName varchar(25) DEFAULT NULL,
-category varchar(25) NOT NULL);
+status varchar(10) DEFAULT NULL);
 
 CREATE TABLE list (
 listtitle varchar(50) NOT NULL,

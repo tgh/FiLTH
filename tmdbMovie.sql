@@ -107,7 +107,7 @@ INSERT INTO movie VALUES ('Arlington Road', 1999, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('Army of Darkness', 1993, '**', 'USA', 'seen');
 INSERT INTO movie VALUES ('Around the Bend', 2004, '**½', 'USA', 'seen');
 INSERT INTO movie VALUES ('As Good as it Gets', 1997, '***½', 'USA', 'seen');
-INSERT INTO movie VALUES ('The Assassination of Jesse James by the Cowardly Robert Ford', 2007, '***', 'USA', 'seen');
+INSERT INTO movie VALUES ('The Assassination of Jesse James by the Cowardly Robert Ford', 2007, '***½', 'USA', 'seen');
 INSERT INTO movie VALUES ('The Assassination of Richard Nixon', 2004, '***½', 'USA', 'seen');
 INSERT INTO movie VALUES ('At Close Range', 1986, '**', 'USA', 'seen');
 INSERT INTO movie VALUES ('Atlantic City', 1981, '**', 'USA', 'seen');

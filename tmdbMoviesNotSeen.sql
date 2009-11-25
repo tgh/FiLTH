@@ -34,7 +34,7 @@ INSERT INTO movie VALUES ('Chung Kuo Cina', 1972, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Oberwald Mystery', 1980, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Identification of a Woman', 1982, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Beyond the Clouds', 1995, DEFAULT, DEFAULT, 'not seen');
-INSERT INTO movie VALUES ('Eros', 2004, DEFAULT, 'DEFAULT', 'not seen');
+INSERT INTO movie VALUES ('Eros', 2004, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Triple Echo', 1973, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Stardust', 1974, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Squeeze', 1977, DEFAULT, DEFAULT, 'not seen');

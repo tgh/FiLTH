@@ -1,4 +1,4 @@
-INSERT INTO shot VALUES ('Schindler's List', 1993, 'Janusz Kaminski');
+INSERT INTO shot VALUES ('Schindler''s List', 1993, 'Janusz Kaminski');
 INSERT INTO shot VALUES ('Little Giants', 1994, 'Janusz Kaminski');
 INSERT INTO shot VALUES ('Jerry Maguire', 1996, 'Janusz Kaminski');
 INSERT INTO shot VALUES ('The Lost World: Jurassic Park', 1997, 'Janusz Kaminski');
@@ -175,5 +175,4 @@ INSERT INTO shot VALUES ('Undertow', 2004, 'Tim Orr');
 INSERT INTO shot VALUES ('All the Real Girls', 2003, 'Tim Orr');
 INSERT INTO shot VALUES ('Citizen Kane', 1941, 'Gregg Toland');
 INSERT INTO shot VALUES ('The Grapes of Wrath', 1940, 'Gregg Toland');
-INSERT INTO shot VALUES ('The Best Years of Our Lives', 1946, 'Gregg Toland');
 INSERT INTO shot VALUES ('The Best Years of Our Lives', 1946, 'Gregg Toland');
