@@ -1,4 +1,4 @@
-Pi(1998 )***<USA
+Pi(1998)***<USA
 3 Women(1977)***<USA
 3:10 to Yuma(2007)****<USA
 4 Little Girls(1997)***<USA
@@ -305,7 +305,7 @@ Chop Shop(2008)****<USA
 A Christmas Story(1983)****<USA
 The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe(2005)**½<DEFAULT
 The Chronicles of Narnia: Prince Caspian(2008)***<DEFAULT
-Chuck and Buck(2000)***<USA
+Chuck & Buck(2000)***<USA
 The Cider House Rules(1999)**½<USA
 Cigarettes and Coffee(2004)***½<USA
 The Circle(2001)**½<Iran
@@ -604,7 +604,7 @@ Goldfinger(1964)***<USA
 Gone Baby Gone(2007)***½<USA
 Gone With the Wind(1939)***<USA
 The Good Girl(2002)***<USA
-Good Night and Good Luck(2005)****<USA
+Good Night, and Good Luck(2005)****<USA
 The Good, the Bad, and the Ugly(1966)****<USA
 The Good Thief(2003)**½<USA
 Good Will Hunting(1997)****<USA
@@ -675,6 +675,7 @@ Henry Fool(1998)***<USA
 Hero(1992)**½<USA
 Hero(2004)***<China
 The Hidden Fortress(1958)***<Japan
+Hide and Seek(2005)**½<USA
 High Fidelity(2000)***<USA
 High Hopes(1989)**½<England
 High Noon(1952)***<USA
@@ -711,7 +712,7 @@ The Hurt Locker(2009)****<USA
 Husbands and Wives(1992)***½<USA
 The Hustler(1961)****<USA
 Hype!(1997)***<USA
-I ♥ Huckabees(2004)***½<USA
+I Heart Huckabees(2004)***½<USA
 I Am Legend(2007)**<USA
 I Am Sam(2002)***<USA
 I Am Trying to Break Your Heart(2002)****<USA
@@ -889,7 +890,7 @@ Lone Star(1996)**½<USA
 The Long Goodbye(1973)***½<USA
 The Longest Day(1962)***½<USA
 Looking For Richard(1996)***½<USA
-The Lord of the Rings: Fellowship of the Ring(2001)***½<New Zealand
+The Lord of the Rings: The Fellowship of the Ring(2001)***½<New Zealand
 The Lord of the Rings: The Two Towers(2002)****<New Zealand
 Lord of the Rings: The Return of the King(2003)****<New Zealand
 Lost Highway(1997)NO STARS<USA
@@ -941,7 +942,7 @@ Maryam(2002)**½<USA
 M*a*s*h(1970)***½<USA
 Mask(1985)***½<USA
 The Mask(1994)*½<USA
-Master & Commander: The Far Side of the World(2003)***½<Australia
+Master and Commander: The Far Side of the World(2003)***½<Australia
 Matchstick Men(2003)***<USA
 Matewan(1987)***<USA
 Matilda(1996)**<USA
@@ -986,7 +987,7 @@ The Miracle Worker(1962)****<USA
 Misery(1990)***<USA
 Missing(1982)**<USA
 The Mission(1986)**½<England
-Mission Impossible(1996)***<USA
+Mission: Impossible(1996)***<USA
 Mission to Mars(2000)**<USA
 Mississippi Burning(1988)***<USA
 The Missouri Breaks(1976)***½<USA
@@ -1007,7 +1008,7 @@ Moonlight Mile(2002)***<USA
 Moonstruck(1987)**½<USA
 Mother(1997)***½<USA
 The Mothman Prophecies(2002)***<USA
-Moulin Rouge(2001)***<Australia
+Moulin Rouge!(2001)***<Australia
 Mousehunt(1997)***<USA
 Mr. and Mrs. Smith(2005)**½<USA
 Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.(1999)***<USA
@@ -1064,6 +1065,7 @@ Neighbors [Keaton short](1920)****<USA
 The Net(1995)**<USA
 Network(1976)****<USA
 The Neverending Story(1984)***<USA
+New Moon(2009)***<USA
 The New World(2005)***½<USA
 New York Stories: Life Lessons [Martin Scorsese short](1989)**½<USA
 New York Stories: Life Without Zoe [Francis Coppola short](1989)*<USA
@@ -1252,6 +1254,7 @@ The Ringer(2005)**<USA
 The River Wild(1994)**½<USA
 Road to Perdition(2002)***<USA
 Road Trip(2000)*<USA
+Robots(2005)**½<USA
 The Rock(1996)***<USA
 Rocky(1976)***½<USA
 Roger and Me(1989)****<USA
@@ -1290,7 +1293,7 @@ Scarface(1983)**<USA
 Scenes From a Marriage(1974)***<Sweden
 Scent of a Woman(1992)***½<USA
 Schindler''s List(1993)****<USA
-School of Rock(2003)****<USA
+The School of Rock(2003)****<USA
 School Ties(1992)***<USA
 The Score(2001)***<USA
 Seabiscuit(2003)***<USA

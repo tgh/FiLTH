@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define LINE_LENGTH 100
+#define LINE_LENGTH 120
 
 void CheckFileReadError (FILE * source);
 
@@ -19,6 +19,9 @@ int main (int argc, char ** argv)
 {	
 	//used for reading the file by line
 	char buffer[LINE_LENGTH];
+    char actname[25];
+    char title[80];
+    char year[9];
 
     //check for file from command line
     if (argc != 2)
@@ -39,26 +42,50 @@ int main (int argc, char ** argv)
     // compiler warnings since CheckFileReadError does the error check)
     char * fgets_catcher = NULL;
 
-
-    int i = 0;
-    int cnt = 0;
-
 	while (!feof(source))
 	{
+        int i = 0;
+        int j = 0;
+
 		//read the next line in the file
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        cnt = 0;
-
-        for(i=0; buffer[i] != '\0'; ++i)
+        //actor
+        if (buffer[0] == '`')
         {
-            if (buffer[i] == '(')
-                ++cnt;
+            for (i=1; buffer[i] != '\n'; ++i)
+            {
+                actname[j] = buffer[i];
+                ++j;
+            }
+            actname[j] = '\0';
+            continue;
         }
         
-        if (cnt == 0)
-            printf("%s", buffer);
+        //title
+        if (buffer[0] == '*')
+            i = 1;
+        j = 0;
+        for (i; buffer[i] != '('; ++i)
+        {
+            title[j] = buffer[i];
+            ++j;
+        }
+        title[j] = '\0';
+
+        //year
+        j = 0;
+        for (i=i+1; buffer[i] != ')'; ++i)
+        {
+            year[j] = buffer[i];
+            ++j;
+        }
+        year[j] = '\0';
+
+        //output the sql statement
+        printf("INSERT INTO actedin VALUES ");
+        printf("(\'%s\', %s, \'%s\');\n", title, year, actname);
 	}
 	
 	fclose(source);

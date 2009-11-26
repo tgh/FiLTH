@@ -19,6 +19,7 @@ int main (int argc, char ** argv)
 {	
 	//used for reading the file by line
 	char buffer[LINE_LENGTH];
+    char name[28];
 
     //check for file from command line
     if (argc != 2)
@@ -39,26 +40,22 @@ int main (int argc, char ** argv)
     // compiler warnings since CheckFileReadError does the error check)
     char * fgets_catcher = NULL;
 
-
     int i = 0;
-    int cnt = 0;
+    int j = 0;
 
 	while (!feof(source))
 	{
+
 		//read the next line in the file
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        cnt = 0;
+        //name
+        for (i = 0; buffer[i] != '\n'; ++i)
+            name[i] = buffer[i];
+        name[i] = '\0';
 
-        for(i=0; buffer[i] != '\0'; ++i)
-        {
-            if (buffer[i] == '(')
-                ++cnt;
-        }
-        
-        if (cnt == 0)
-            printf("%s", buffer);
+        printf("INSERT INTO actor VALUES (\'%s\');\n", name);
 	}
 	
 	fclose(source);

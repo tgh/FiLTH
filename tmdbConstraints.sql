@@ -7,7 +7,7 @@ ALTER TABLE director ADD CONSTRAINT director_pkey PRIMARY KEY(dirname);
 ALTER TABLE actor ADD CONSTRAINT actor_pkey PRIMARY KEY(actname);
 ALTER TABLE screenwriter ADD CONSTRAINT screenwriter_pkey PRIMARY KEY(scrname);
 ALTER TABLE cinematographer ADD CONSTRAINT cinematographer_pkey PRIMARY KEY(cinname);
-ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(category);
+ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(title, year, category);
 ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(listtitle);
 ALTER TABLE directed ADD CONSTRAINT directed_pkey PRIMARY KEY(title, year, dirname);
 ALTER TABLE actedin ADD CONSTRAINT actedin_pkey PRIMARY KEY(title, year, actname);
@@ -26,7 +26,7 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- directed table
 ALTER TABLE directed ADD CONSTRAINT dir_movie_fkey
-FOREIGN KEY (oscarmovie, oscaryear) REFERENCES movie(title, year)
+FOREIGN KEY (title, year) REFERENCES movie(title, year)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 ALTER TABLE directed ADD CONSTRAINT dir_dir_fkey
@@ -75,18 +75,18 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- movie year
 ALTER TABLE movie ADD CONSTRAINT year_constraint
-CHECK (year >= 1900);
+CHECK (year >= 1900 AND year <= 2012);
 
 -- movie star rating
 ALTER TABLE movie ADD CONSTRAINT star_constraint
 CHECK (mystarrating = 'NO STARS' OR
-       mystarrating = '½*' OR
+       mystarrating = '&frac12*' OR
        mystarrating = '*' OR
-       mystarrating = '*½' OR
+       mystarrating = '*&frac12' OR
        mystarrating = '**' OR
-       mystarrating = '**½' OR
+       mystarrating = '**&frac12' OR
        mystarrating = '***' OR
-       mystarrating = '***½' OR
+       mystarrating = '***&frac12' OR
        mystarrating = '****' OR
        mystarrating = 'N/A');
 
@@ -102,15 +102,16 @@ CHECK (rankinlist > 0);
 
 -- oscar category
 ALTER TABLE oscar ADD CONSTRAINT category_constraint
-CHECK (category = 'best picture' OR
-       category = 'best actor' OR
-       category = 'best actress' OR
-       category = 'best supporting actor' OR
-       category = 'best supporting actress' OR
-       category = 'best director' OR
-       category = 'best cinematography' OR
-       category = 'best adapted screenplay' OR
-       category = 'best original screenplay');
+CHECK (category = 'Best Picture' OR
+       category = 'Best Actor' OR
+       category = 'Best Actress' OR
+       category = 'Best Supporting Actor' OR
+       category = 'Best Supporting Actress' OR
+       category = 'Best Director' OR
+       category = 'Best Cinematography' OR
+       category = 'Best Adapted Screenplay' OR
+       category = 'Best Original Screenplay' OR
+       category = 'Best Foreign Language Film');
 
 -- oscar status
 ALTER TABLE oscar ADD CONSTRAINT status_constraint

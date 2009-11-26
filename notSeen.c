@@ -53,13 +53,17 @@ int main (int argc, char ** argv)
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        if (buffer[0] == '`' || buffer[0] == '~')
+        if (buffer[0] != '*')
             continue;
 
         //title
-        for (i = 0; buffer[i] != '('; ++i)
-            title[i] = buffer[i];
-        title[i] = '\0';
+        j = 0;
+        for (i=1; buffer[i] != '('; ++i)
+        {
+            title[j] = buffer[i];
+            ++j;
+        }
+        title[j] = '\0';
 
         //year
         j = 0;

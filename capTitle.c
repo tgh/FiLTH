@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define LINE_LENGTH 82
+#define LINE_LENGTH 100
 
 void CheckFileReadError (FILE * source);
 
@@ -50,10 +50,27 @@ int main (int argc, char ** argv)
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        //capatalize first letter
-        buffer[0] = toupper(buffer[0]);
+        //check for name first
+        if (buffer[0] == '`')
+        {
+            //COMMENT OUT UNTIL continue; for Linux
+            //remove \r from Windows
+            for(i; buffer[i] != '\r'; ++i)
+                ;
+            buffer[i] = '\n';
+            buffer[i+1] = '\0';
+            printf("%s", buffer);
+            continue;
+        }
 
-        for (i=1; buffer[i] != '('; ++i)
+        //check for '~' or '*'
+        if (buffer[0] == '~' || buffer[0] == '*')
+            i = 1;
+
+        //capatalize first letter
+        buffer[i] = toupper(buffer[i]);
+
+        for (i= i+1; buffer[i] != '('; ++i)
         {
             //: the
             if (buffer[i] == ':'
@@ -191,6 +208,8 @@ int main (int argc, char ** argv)
             }
         }
 
+        //country
+/*
         for (i=i; buffer[i] != '<'; ++i)
             ;
 
@@ -211,6 +230,14 @@ int main (int argc, char ** argv)
                 buffer[i+1] = toupper(buffer[i+1]);
         }
 
+
+        for (i; buffer[i] != ')'; ++i)
+            ;
+
+        buffer[i+1] = '<';
+        buffer[i+2] = '\n';
+        buffer[i+3] = '\0';
+*/
         printf("%s", buffer);
 	}
 	

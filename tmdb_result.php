@@ -27,7 +27,7 @@
 <h1>Tyler's Movie Database</h1>
 </div>
 <p style="font-size: 12px; font-style: italic;"> 
-<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Get me out of here!</a>
+<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
 <p style="font-size: 12px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_home.php">Search again.</a>

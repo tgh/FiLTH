@@ -89,6 +89,7 @@ A Prairie Home Companion(2006)<USA
 ~The Royal Tenenbaums(2001)
 ~The Life Aquatic With Steve Zissou(2004)
 ~The Darjeeling Limited(2007)
+Fantastic Mr. Fox(2009)
 `Michelangelo Antonioni
 Story of a Love Affair(1950)<Italy
 The Vanquished(1952)<Italy
@@ -529,7 +530,7 @@ Casualties of War(1989)<USA
 The Bonfire of the Vanities(1990)<USA
 Raising Cain(1992)<USA
 Carlito''s Way(1993)<USA
-~Mission Impossible(1996)
+~Mission: Impossible(1996)
 ~Snake Eyes(1998)
 ~Mission to Mars(2000)
 Femme Fatale(2002)<USA
@@ -919,6 +920,7 @@ The Missing(2003)<USA
 Cinderella Man(2005)<USA
 The Da Vinci Code(2006)<USA
 ~Frost/Nixon(2008)
+Angels & Demons(2009)
 `John Huston
 ~The Maltese Falcon(1941)
 In This Our Life(1942)<USA
@@ -1273,7 +1275,7 @@ It''s Impossible to Learn How to Plow by Reading Books(1988)<USA
 The Newton Boys(1998)<USA
 ~Waking Life(2001)
 ~Tape(2001)
-~School of Rock(2003)
+~The School of Rock(2003)
 ~Before Sunset(2004)
 Bad News Bears(2005)<USA
 Fast Food Nation(2006)<USA
@@ -1506,7 +1508,7 @@ Evita(1996)
 The Sterile Cuckoo(1969)<USA
 Klute(1971)<USA
 Love and Pain and the Whole Damn Thing(1973)<USA
-The Parallex View(1974)<USA
+The Parallax View(1974)<USA
 ~All the President''s Men(1976)
 Comes a Horseman(1978)<USA
 Starting Over(1979)<USA
@@ -1683,7 +1685,7 @@ Rocknrolla(2008)<England
 Spanking the Monkkey(1994)<USA
 Flirting With Disaster(1996)<USA
 ~Three Kings(1999)
-~I ♥ Huckabees(2004)
+~I Heart Huckabees(2004)
 Nailed(2009)<USA
 `John Sayles
 Return of the Secaucus 7(1980)<USA
@@ -1914,6 +1916,7 @@ Winter Sleepers(1997)<Germany
 ~Run Lola Run(1998)
 ~The Princess and the Warrior(2000)
 ~Heaven(2002)
+Perfume: The Story of a Murderer(2006)
 `Gus Van Sant
 Mala Noche(1985)<USA
 ~Drugstore Cowboy(1989)

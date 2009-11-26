@@ -19,6 +19,10 @@ int main (int argc, char ** argv)
 {	
 	//used for reading the file by line
 	char buffer[LINE_LENGTH];
+    char title[75];
+    char year[9];
+    char country[21];
+    int coFlag = 0;
 
     //check for file from command line
     if (argc != 2)
@@ -39,26 +43,24 @@ int main (int argc, char ** argv)
     // compiler warnings since CheckFileReadError does the error check)
     char * fgets_catcher = NULL;
 
-
-    int i = 0;
-    int cnt = 0;
-
 	while (!feof(source))
 	{
+        int i = 0;
+
 		//read the next line in the file
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
 		CheckFileReadError(source);
 
-        cnt = 0;
+        for(i=0; buffer[i] != '\r' && buffer[i] != '\n'; ++i)
+            ;
 
-        for(i=0; buffer[i] != '\0'; ++i)
+        if (buffer[i] == '\r')
         {
-            if (buffer[i] == '(')
-                ++cnt;
+            buffer[i] = '\n';
+            buffer[i+1] = '\0';
         }
-        
-        if (cnt == 0)
-            printf("%s", buffer);
+
+        printf("%s", buffer);
 	}
 	
 	fclose(source);
