@@ -9,8 +9,6 @@
 
     include '../security.php';
     $host='db.cecs.pdx.edu';
-    
-
 ?>
 
 <html>
@@ -25,11 +23,21 @@
 <p style="font-size: 12px; font-style: italic;"> 
 <a href="tmdb_logout.php">Logout.</a>
 </p>
+
+<?
+//TODO: change 'do something else' link to button
+//TODO: add an undo button
+?>
+
 <p style="font-size: 12px; font-style: italic;"> 
 <a href="tmdb_dba.php">Do something else.</a>
 </p>
 
 <?php
+    if ($_POST['action'] == "addMovie")
+    {
+
+    }
     $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
     if (!$connection)
     {
