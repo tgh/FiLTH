@@ -24,12 +24,9 @@
 <a href="tmdb_logout.php">Logout.</a>
 </p>
 
-<?
-//TODO: change 'do something else' link to button
-//TODO: add an undo button
-?>
-
 <?php
+
+//TODO: add an undo button
 
 /*---------------------------- Add a movie -----------------------------------*/
 
@@ -182,21 +179,83 @@
 
 /*----------------------- Change a movie's rating ----------------------------*/
 
-    else if ($_POST['changeRatingTitle'])
+    else if ($_POST['changeRatingYear'])
     {
-        $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
-        if (!$connection)
+        //make sure a title is given
+        if (!$_POST['changeRatingTitle'])
         {
-	        die('Could not connect');
+            echo "Title cannot be empty.";
+            ?>
+            <p style="font-size: 12px; font-style: italic;"> 
+            <a href="tmdb_dba.php">Try again.</a>
+            </p>
+            <?
         }
+        else
+        {
+            $title = strtolower($_POST['changeRatingTitle']);
+            $year = $_POST['changeRatingYear'];
+            $newRating = $_POST['changeRatingStarRating'];
 
-        ?>
-        <p style="font-size: 12px; font-style: italic;"> 
-        <a href="tmdb_dba.php">Do something else.</a>
-        </p>
-        <?
+            //connect to DB
+            $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
+            if (!$connection)
+	            die("Could not connect to database.");
 
-        pg_close($connection);
+            //check that the given movie is in the database
+            $movCheckQuery = "SELECT * FROM movie WHERE lower(title) = '";
+            $movCheckQuery = $movCheckQuery . $title;
+            $movCheckQuery = $movCheckQuery . "' AND year = ";
+            $movCheckQuery = $movCheckQuery . $year;
+
+            $result1 = pg_query($connection, $movCheckQuery);
+            if (!$result1)
+                die("Error in movie existence query:\n $movCheckQuery." . pg_last_error($connection));
+            $rows = pg_num_rows($result1);
+
+            //report error if the movie does not exist in the database
+            if ($rows == 0)
+            {
+                echo "The movie you're refering to doesn't exist in the database.\n";
+                echo "Either the title is missing or wrong, the year is wrong, or both are wrong.";
+                ?>
+                <p style="font-size: 12px; font-style: italic;"> 
+                <a href="tmdb_dba.php">Try again.</a>
+                </p>
+                <?
+                die();
+            }
+
+            //change the movie's star rating
+            if ($newRating == "DEFAULT")
+                $chRatingQuery = "UPDATE movie SET mystarrating = DEFAULT ";
+            else
+            {
+                $chRatingQuery = "UPDATE movie SET mystarrating = '";
+                $chRatingQuery = $chRatingQuery . $newRating . "' ";
+            }
+            $chRatingQuery = $chRatingQuery . "WHERE lower(title) = '";
+            $chRatingQuery = $chRatingQuery . $title;
+            $chRatingQuery = $chRatingQuery . "' AND year = ";
+            $chRatingQuery = $chRatingQuery . $year;
+
+            $result2 = pg_query($connection, $chRatingQuery);
+            if (!$result2)
+            {
+                echo "Error in changing the star rating in the database.\n";
+                die("Error in query: $chRatingQuery." . pg_last_error($connection));
+            }
+
+            echo "Star rating changed.";
+
+            ?>
+            <p style="font-size: 12px; font-style: italic;"> 
+            <a href="tmdb_dba.php">Do something else.</a>
+            </p>
+            <?
+
+            pg_close($connection);
+        }
     }
 
 /*-------------------------- Remove an actor ---------------------------------*/
