@@ -1408,3 +1408,5 @@ INSERT INTO movie VALUES ('The Great Waldo Pepper', 1975, DEFAULT, 'USA', 'not s
 INSERT INTO movie VALUES ('A Bridge Too Far', 1977, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('The Ghost and the Darkness', 1996, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('The Chamber', 1996, DEFAULT, 'USA', 'not seen');
+INSERT INTO movie VALUES ('An Unmarried Woman', 1978, DEFAULT, 'USA', 'not seen');
+INSERT INTO movie VALUES ('Bound For Glory', 1976, DEFAULT, 'USA', 'not seen');

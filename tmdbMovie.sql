@@ -708,7 +708,7 @@ INSERT INTO movie VALUES ('The Hurt Locker', 2009, '****', 'USA', 'seen');
 INSERT INTO movie VALUES ('Husbands and Wives', 1992, '***&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('The Hustler', 1961, '****', 'USA', 'seen');
 INSERT INTO movie VALUES ('Hype!', 1997, '***', 'USA', 'seen');
-INSERT INTO movie VALUES ('I ♥ Huckabees', 2004, '***&frac12', 'USA', 'seen');
+INSERT INTO movie VALUES ('I Heart Huckabees', 2004, '***&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('I Am Legend', 2007, '**', 'USA', 'seen');
 INSERT INTO movie VALUES ('I Am Sam', 2002, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('I Am Trying to Break Your Heart', 2002, '****', 'USA', 'seen');

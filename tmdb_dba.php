@@ -50,10 +50,10 @@
         case "addMovie":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Title: <input type="text" size="50" maxlength="100" name="title">
+            Title: <input type="text" size="50" maxlength="100" name="addMovieTitle">
             <br>
             Year:
-            <select name="year">
+            <select name="addMovieYear">
                 <?
                 for ($i=1900; $i != 2013; ++$i)
                     echo "<option value=\"$i\">$i</option>";
@@ -61,31 +61,31 @@
             </select>
             <br>
             Star rating:
-            <select name="starRating">
-                <option value="default"></option>
-                <option value="n/a">N/A</option>
-                <option value="noStars">NO STARS</option>
-                <option value="1/2*">&frac12*</option>
+            <select name="addMovieStarRating">
+                <option value="DEFAULT"></option>
+                <option value="N/A">N/A</option>
+                <option value="NO STARS">NO STARS</option>
+                <option value="&frac12*">&frac12*</option>
                 <option value="*">*</option>
-                <option value="*1/2">*&frac12</option>
+                <option value="*&frac12">*&frac12</option>
                 <option value="**">**</option>
-                <option value="**1/2">**&frac12</option>
+                <option value="**&frac12">**&frac12</option>
                 <option value="***">***</option>
-                <option value="***1/2">***&frac12</option>
+                <option value="***&frac12">***&frac12</option>
                 <option value="****">****</option>
             </select>
             <br>
-            Country: <input type="text" size="15" maxlength="20" name="country">
+            Country: <input type="text" size="15" maxlength="20" name="addMovieCountry">
 		    <br>
             View status:
-            <select name="view">
+            <select name="addMovieView">
                 <option value="seen">seen</option>
                 <option value="not seen">not seen</option>
                 <option value="want to see">want to see</option>
             </select>
             <br>
             Director:
-            <select name="director">
+            <select name="addMovieDirector">
                 <option value="blank"></option>
                 <?php
                 $query="SELECT dirname FROM director ORDER BY dirname";
@@ -95,7 +95,6 @@
                 $result = pg_query($connection, $query) or
                     die("Error in query: $query." . pg_last_error($connection));
                 $rows = pg_num_rows($result);
-                echo $rows;
                 if ($rows > 0)
                 {
                     for($i=0; $i < $rows; ++$i)
@@ -120,7 +119,7 @@
         case "addDirector":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Name: <input type="text" size="25" maxlength="25" name="dirname">
+            Name: <input type="text" size="25" maxlength="25" name="addDirectorDirname">
             <br>
             <input type="submit" name="submit" value="Submit">
             </form>
@@ -132,7 +131,7 @@
         case "addActor":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Name: <input type="text" size="25" maxlength="25" name="actname">
+            Name: <input type="text" size="25" maxlength="25" name="addActorActname">
             <br>
             <input type="submit" name="submit" value="Submit">
             </form>
@@ -144,10 +143,10 @@
         case "addOscar":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Title: <input type="text" size="50" maxlength="100" name="title">
+            Title: <input type="text" size="50" maxlength="100" name="addOscarTitle">
             <br>
             Year:
-            <select name="year">
+            <select name="addOscarYear">
                 <?
                 for ($i=1925; $i != 2013; ++$i)
                     echo "<option value=\"$i\">$i</option>";
@@ -155,7 +154,7 @@
             </select>
             <br>
             Category:
-            <select name="category">
+            <select name="addOscarCategory">
                 <option value="picture">Best Picture</option>
                 <option value="actor">Best Actor</option>
                 <option value="actress">Best Actress</option>
@@ -168,10 +167,10 @@
                 <option value="foreign">Best Foreign Language Film</option>
             </select>
             <br>
-            Recipient name: <input type="text" size="25" maxlength="25" name="name">
+            Recipient name: <input type="text" size="25" maxlength="25" name="addOscarName">
             <br>
             Status:
-            <select name="status">
+            <select name="addOscarStatus">
                 <option value="won">won</option>
                 <option value="nominated">nominated</option>
             </select>
@@ -186,8 +185,8 @@
             <form action="tmdb_dba_result.php" method="post">
             Title and year of movie:
             <br>
-            <input type="text" size="50" maxlength="100" name="title">
-            <select name="year">
+            <input type="text" size="50" maxlength="100" name="changeRatingTitle">
+            <select name="changeRatingYear">
                 <?
                 for ($i=1900; $i != 2013; ++$i)
                     echo "<option value=\"$i\">$i</option>";
@@ -195,7 +194,7 @@
             </select>
             <br>
             New rating:
-            <select name="starRating">
+            <select name="changeRatingStarRating">
                 <option value="default"></option>
                 <option value="n/a">N/A</option>
                 <option value="noStars">NO STARS</option>
@@ -218,7 +217,7 @@
             ?>
             <form action="tmdb_dba_result.php" method="post">
             Actor:
-            <select name="actname">
+            <select name="removeActorActname">
                 <?php
                 $query="SELECT actname FROM actor ORDER BY actname";
                 $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
