@@ -3,6 +3,7 @@
 -----------------------------
 
 ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(title, year);
+ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(genname);
 ALTER TABLE director ADD CONSTRAINT director_pkey PRIMARY KEY(dirname);
 ALTER TABLE actor ADD CONSTRAINT actor_pkey PRIMARY KEY(actname);
 ALTER TABLE screenwriter ADD CONSTRAINT screenwriter_pkey PRIMARY KEY(scrname);
@@ -14,10 +15,17 @@ ALTER TABLE actedin ADD CONSTRAINT actedin_pkey PRIMARY KEY(title, year, actname
 ALTER TABLE wrote ADD CONSTRAINT wrote_pkey PRIMARY KEY(title, year, scrname);
 ALTER TABLE shot ADD CONSTRAINT shot_pkey PRIMARY KEY(title, year, cinname);
 ALTER TABLE listcontains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(title, year, listtitle);
+ALTER TABLE genrecontains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(title, year, genname);
+ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(countryname);
 
 -----------------------------
 -- Foreign Key constraints --
 -----------------------------
+
+-- movie table
+ALTER TABLE movie ADD CONSTRAINT movie_country_fkey
+FOREIGN KEY (country) REFERENCES country(countryname)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- oscar table
 ALTER TABLE oscar ADD CONSTRAINT oscar_movie_fkey
@@ -60,13 +68,18 @@ ALTER TABLE shot ADD CONSTRAINT shot_act_fkey
 FOREIGN KEY (cinname) REFERENCES cinematographer(cinname)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
--- listcontains
+-- listcontains table
 ALTER TABLE listcontains ADD CONSTRAINT list_movie_fkey
 FOREIGN KEY (title, year) REFERENCES movie(title, year)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 ALTER TABLE listcontains ADD CONSTRAINT list_act_fkey
 FOREIGN KEY (listtitle) REFERENCES list(listtitle)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- genrecontains table
+ALTER TABLE genrecontains ADD CONSTRAINT genre_movie_fkey
+FOREIGN KEY (title, year) REFERENCES movie(title, year)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 ---------------------------
@@ -88,13 +101,8 @@ CHECK (mystarrating = 'NO STARS' OR
        mystarrating = '***' OR
        mystarrating = '***&frac12' OR
        mystarrating = '****' OR
-       mystarrating = 'N/A');
-
--- movie view status
-ALTER TABLE movie ADD CONSTRAINT view_constraint
-CHECK (viewstatus = 'seen' OR
-       viewstatus = 'not seen' OR
-       viewstatus = 'want to see');
+       mystarrating = 'N/A' OR
+       mystarrating = 'not seen');
 
 -- listcontains rank
 ALTER TABLE listcontains ADD CONSTRAINT rank_constraint
@@ -117,3 +125,9 @@ CHECK (category = 'Best Picture' OR
 ALTER TABLE oscar ADD CONSTRAINT status_constraint
 CHECK (status = 'won' OR
        status = 'nominated');
+
+-- directed director
+--ALTER TABLE directed ADD CONSTRAINT director_constraint
+--CHECK ((SELECT COUNT (*)
+--       FROM crewperson, directed
+--       WHERE fname = dirfname AND lname = dirlname) > 0);

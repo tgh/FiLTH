@@ -1,0 +1,12 @@
+Drama
+Comedy
+Thriller
+Independent
+Fantasy
+Science-Fiction
+Animated
+Mystery
+Horror
+Action
+Adventure
+Documentary

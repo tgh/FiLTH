@@ -437,7 +437,7 @@ INSERT INTO movie VALUES ('Down and Out in Beverly Hills', 1986, '**&frac12', 'U
 INSERT INTO movie VALUES ('Down With Love', 2003, '**&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('Dr. Dolittle 2', 2001, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('Dr. No', 1962, '**&frac12', 'England', 'seen');
-INSERT INTO movie VALUES ('Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb', 1964, '****', 'EngLand', 'seen');
+INSERT INTO movie VALUES ('Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb', 1964, '****', 'England', 'seen');
 INSERT INTO movie VALUES ('Dr. T & the Women', 2000, '**', 'USA', 'seen');
 INSERT INTO movie VALUES ('Dracula', 1931, '**&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('Dreamcatcher', 2003, '*', 'USA', 'seen');

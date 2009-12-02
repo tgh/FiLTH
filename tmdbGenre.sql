@@ -1,0 +1,12 @@
+INSERT INTO genre VALUES ('Drama');
+INSERT INTO genre VALUES ('Comedy');
+INSERT INTO genre VALUES ('Thriller');
+INSERT INTO genre VALUES ('Independent');
+INSERT INTO genre VALUES ('Fantasy');
+INSERT INTO genre VALUES ('Science-Fiction');
+INSERT INTO genre VALUES ('Animated');
+INSERT INTO genre VALUES ('Mystery');
+INSERT INTO genre VALUES ('Horror');
+INSERT INTO genre VALUES ('Action');
+INSERT INTO genre VALUES ('Adventure');
+INSERT INTO genre VALUES ('Documentary');

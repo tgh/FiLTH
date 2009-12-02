@@ -30,6 +30,7 @@
 ?>
 
 <form action="<?php echo $PHP_SELF?>" method="post">
+    What do you want to do?
     <select name="action">
         <option value="addMovie">Add a movie</option>
         <?php
@@ -46,9 +47,9 @@
         else
             echo "<option value=\"addOscar\">Add an oscar</option>";
         if ($_POST['action'] == "changeRating")
-            echo "<option value=\"changeRating\" selected=\"selected\">Change movie rating</options>";
+            echo "<option value=\"changeRating\" selected=\"selected\">Change a movie's star rating</options>";
         else
-            echo "<option value=\"changeRating\">Change movie rating</options>";
+            echo "<option value=\"changeRating\">Change a movie's star rating</options>";
         if ($_POST['action'] == "removeActor")
             echo "<option value=\"removeActor\" selected=\"selected\">Remove an actor</option>";
         else
@@ -129,7 +130,8 @@
                 ?>
             </select>
             <br>
-            <input type="submit" name="submit" value="Submit">
+            <br>
+            <input type="submit" name="submit" value="Add movie">
             </form>
             <?php
             break;
@@ -140,8 +142,7 @@
             ?>
             <form action="tmdb_dba_result.php" method="post">
             Name: <input type="text" size="25" maxlength="25" name="addDirectorDirname">
-            <br>
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Add director">
             </form>
             <?php
             break;
@@ -152,8 +153,7 @@
             ?>
             <form action="tmdb_dba_result.php" method="post">
             Name: <input type="text" size="25" maxlength="25" name="addActorActname">
-            <br>
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Add actor">
             </form>
             <?php
             break;
@@ -198,6 +198,10 @@
                 <option value="nominated">nominated</option>
             </select>
             <br>
+            <br>
+            <input type="submit" name="submit" value="Add Oscar">
+            </form>
+            <br>
             <?php
             break;
 
@@ -234,7 +238,8 @@
                 <option value="****">****</option>
             </select>
             <br>
-            <input type="submit" name="submit" value="Submit">
+            <br>
+            <input type="submit" name="submit" value="Change star rating">
             </form>
             <?php
             break;
@@ -268,8 +273,7 @@
                 pg_close($connection);
                 ?>
             </select>
-            <br>
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Remove actor">
             </form>
             <?php
             break;

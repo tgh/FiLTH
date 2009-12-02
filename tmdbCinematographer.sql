@@ -11,5 +11,5 @@ INSERT INTO cinematographer VALUES ('Conrad Hall');
 INSERT INTO cinematographer VALUES ('John Toll');
 INSERT INTO cinematographer VALUES ('Nestor Almendros');
 INSERT INTO cinematographer VALUES ('John Alcott');
-INSERT INTO cinematographer VALUES ('Tom Orr');
+INSERT INTO cinematographer VALUES ('Tim Orr');
 INSERT INTO cinematographer VALUES ('Gregg Toland');

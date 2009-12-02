@@ -10,10 +10,8 @@
     include '../security.php';
     $host='db.cecs.pdx.edu';
 
-    function createSql($year) {
-        $sqlStmt = "SELECT * FROM movie WHERE year = " . $year;
-        $sqlStmt = $sqlStmt . " ORDER BY title;";
-        return $sqlStmt;
+    function createSql(/* */) {
+        /*  */
     }
 ?>
 
@@ -34,6 +32,11 @@
 </p>
 
 <?php
+    if ($_POST['generalSearch'])
+    {
+        /* TODO */
+    }
+
     $query = createSql($_POST['year']);
 
     $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
@@ -75,12 +78,12 @@ pg_close($connection);
 ?>
 
 <p style="font-size: 12px; font-style: italic;"> 
-<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Get me out of here!</a>
+<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
 <p style="font-size: 12px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_home.php">Search again.</a>
 </p>
-<p style="font-style: italic; font-size: 12px;">
+<p style="font-style: italic; font-size: 10px;">
 &copy;2009 Tyler Hayes</p>
 
 </body>

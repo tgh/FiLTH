@@ -1192,7 +1192,7 @@ INSERT INTO movie VALUES ('Captain Correlli''s Mandolin', 2001, DEFAULT, 'USA', 
 INSERT INTO movie VALUES ('Harsh Times', 2005, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('Terminator Salvation', 2009, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('The Men', 1950, DEFAULT, 'USA', 'not seen');
-INSERT INTO movie VALUES ('Julius Caesar', 1953, DEFAULT, 'USA<USA', 'not seen');
+INSERT INTO movie VALUES ('Julius Caesar', 1953, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('Desiree', 1954, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('Guys and Dolls', 1955, DEFAULT, 'USA', 'not seen');
 INSERT INTO movie VALUES ('The Young Lions', 1958, DEFAULT, 'USA', 'not seen');
