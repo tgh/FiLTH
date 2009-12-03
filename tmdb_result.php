@@ -17,15 +17,15 @@
     $displayBitmap = 0;
 
     //bitmasks for the bitmap
-    define ('TTL_MASK', 0x100);
-    define ('YER_MASK', 0x80);
-    define ('STR_MASK', 0x40);
-    define ('COU_MASK', 0x20);
-    define ('DIR_MASK', 0x10);
-    define ('ACT_MASK', 0x8);
-    define ('SCR_MASK', 0x4);
-    define ('CIN_MASK', 0x2);
-    define ('OSC_MASK', 0x1);
+    define ("TTL_MASK", 0x100);
+    define ("YER_MASK", 0x80);
+    define ("STR_MASK", 0x40);
+    define ("COU_MASK", 0x20);
+    define ("DIR_MASK", 0x10);
+    define ("ACT_MASK", 0x8);
+    define ("SCR_MASK", 0x4);
+    define ("CIN_MASK", 0x2);
+    define ("OSC_MASK", 0x1);
 
     //globals for displaying attributes
     $title = -1;
@@ -84,11 +84,12 @@
         //check for user not specifying any display checkboxes
         if (!$titleQuery)
         {
-            //TODO
+            echo "<i>You didn't specify any attributes to display.  Search aborted.</i>\n";
+            die();
         }
 //echo $titleQuery . "\n";
         //connect to db
-        $connection = pg_connect("host={$host} dbname=tgh user=tgh password={$db_pw}");
+        $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
         if (!$connection)
 	        die('Could not connect');
         //run sql query on db
@@ -107,38 +108,7 @@
 	            $row = pg_fetch_row($result, $i);
                 $itemCount = count($row);
                 for ($j=0; $j < $itemCount; ++$j)
-                {
-                    switch ($j)
-                    {
-                        case $title:
-                            break;
-                        case $year:
-                            break;
-                        case $star:
-                            break;
-                        case $country:
-                            break;
-                        case $director:
-                            break;
-                        case $actor:
-                            break;
-                        case $screen:
-                            break;
-                        case $cine:
-                            break;
-                        case $oscar:
-                            break;
-                    }
-
-                    if (!$row[$j])
-                        echo "<font size=\"-1\"<i>NULL</i>\n";
-                    else if ($j % 2 == 0)
-	                    echo "<font size=\"-1\"><b>" . $row[$j] . "</b>\n";
-                    else
-                        echo "<font size=\"-1\">" . $row[$j] . "\n";
-                    echo " / ";
-                    echo "</font>\n";
-                }
+                    displayAttribute($j, $row);
                 echo "<br>\n";
 	        }
         }
@@ -176,15 +146,6 @@
 function createSql($whereString)
 {
     global $displayBitmap;
-    global $TTL_MASK;
-    global $YER_MASK;
-    global $STR_MASK;
-    global $COU_MASK;
-    global $DIR_MASK;
-    global $ACT_MASK;
-    global $SCR_MASK;
-    global $CIN_MASK;
-    global $OSC_MASK;
     $postCount = count($_POST)-1;
     $selectString = "SELECT ";
     $fromString = " FROM movie";
@@ -213,7 +174,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $displayBitmap |= $TTL_MASK;
+                $displayBitmap |= TTL_MASK;
                 break;
 
             case "movie.year":
@@ -222,7 +183,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $displayBitmap |= $YER_MASK;
+                $displayBitmap |= YER_MASK;
                 break;
 
             case "mystarrating":
@@ -231,7 +192,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $displayBitmap |= $STR_MASK;
+                $displayBitmap |= STR_MASK;
                 break;
 
             case "country":
@@ -240,7 +201,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $displayBitmap |= $COU_MASK;
+                $displayBitmap |= COU_MASK;
                 break;
 
             case "dirname":
@@ -250,7 +211,7 @@ function createSql($whereString)
                     $selectString = $selectString . ", ";
                 prev($_POST);
                 $fromString = $fromString . " JOIN directed USING (title, year)";
-                $displayBitmap |= $DIR_MASK;
+                $displayBitmap |= DIR_MASK;
                 break;
 
             case "actname":
@@ -260,7 +221,7 @@ function createSql($whereString)
                     $selectString = $selectString . ", ";
                 prev($_POST);
                 $fromString = $fromString . " JOIN actedin USING (title, year)";
-                $displayBitmap |= $ACT_MASK;
+                $displayBitmap |= ACT_MASK;
                 break;
 
             case "scrname":
@@ -270,7 +231,7 @@ function createSql($whereString)
                     $selectString = $selectString . ", ";
                 prev($_POST);
                 $fromString = $fromString . " JOIN wrote USING (title, year)";
-                $displayBitmap |= $SCR_MASK;
+                $displayBitmap |= SCR_MASK;
                 break;
 
             case "cinname":
@@ -280,13 +241,13 @@ function createSql($whereString)
                     $selectString = $selectString . ", ";
                 prev($_POST);
                 $fromString = $fromString . " JOIN shot USING (title, year)";
-                $displayBitmap |= $CIN_MASK;
+                $displayBitmap |= CIN_MASK;
                 break;
 
             case "OSCAR":
                 $fromString = $fromString . " JOIN oscar USING (title, year)";
                 $selectString = $selectString . "category, recipientName, status";
-                $displayBitmap |= $OSC_MASK;
+                $displayBitmap |= OSC_MASK;
                 continue 2;
 
             default:
@@ -328,70 +289,164 @@ function cleanString($string)
 function setDisplayVars()
 {
     global $displayBitmap;
-    global $TTL_MASK;
-    global $YER_MASK;
-    global $STR_MASK;
-    global $COU_MASK;
-    global $DIR_MASK;
-    global $ACT_MASK;
-    global $SCR_MASK;
-    global $CIN_MASK;
-    global $OSC_MASK;
+    global $title;
+    global $year;
+    global $star;
+    global $country;
+    global $director;
+    global $actor;
+    global $screen;
+    global $cine;
+    global $oscar;
     $index = 0;
 
     //title
-    if ($displayBitmap & $TTL_MASK == 1)
+    if (($displayBitmap & TTL_MASK) == TTL_MASK)
     {
         $title = $index;
         ++$index;
     }
     //year
-    if ($displayBitmap & $YER_MASK == 1)
+    if (($displayBitmap & YER_MASK) == YER_MASK)
     {
         $year = $index;
         ++$index;
     }
     //star rating
-    if ($displayBitmap & $STR_MASK == 1)
+    if (($displayBitmap & STR_MASK) == STR_MASK)
     {
         $star = $index;
         ++$index;
     }
     //country
-    if ($displayBitmap & $COU_MASK == 1)
+    if (($displayBitmap & COU_MASK) == COU_MASK)
     {
         $country = $index;
         ++$index;
     }
     //director
-    if ($displayBitmap & $DIR_MASK == 1)
+    if (($displayBitmap & DIR_MASK) == DIR_MASK)
     {
         $director = $index;
         ++$index;
     }
     //actor
-    if ($displayBitmap & $ACT_MASK == 1)
+    if (($displayBitmap & ACT_MASK) == ACT_MASK)
     {
         $actor = $index;
         ++$index;
     }
     //screenwriter
-    if ($displayBitmap & $SCR_MASK == 1)
+    if (($displayBitmap & SCR_MASK) == SCR_MASK)
     {
         $screen = $index;
         ++$index;
     }
     //cinematographer
-    if ($displayBitmap & $CIN_MASK == 1)
+    if (($displayBitmap & CIN_MASK) == CIN_MASK)
     {
         $cine = $index;
         ++$index;
     }
     //oscar
-    if ($displayBitmap & $OSC_MASK == 1)
+    if (($displayBitmap & OSC_MASK) == OSC_MASK)
     {
         $oscar = $index;
         ++$index;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+
+/*
+ * Outputs the given attribute from the search query result.
+ */
+function displayAttribute($i, $row)
+{
+    global $title;
+    global $year;
+    global $star;
+    global $country;
+    global $director;
+    global $actor;
+    global $screen;
+    global $cine;
+    global $oscar;
+    $seperator = true;
+
+    switch ($i)
+    {
+        //title
+        case $title:
+            echo "<font size=\"2\" face=\"palatino\"><b>" . $row[$i] . "</b>\n";
+            break;
+
+        //year
+        case $year:
+            echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
+            break;
+
+        //star rating
+        case $star:
+            if (!$row[$i])
+                echo "<font size=\"2\" face=\"palatino\"><i>not seen</i>\n";
+            else
+                echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
+            break;
+
+        //country
+        case $country:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
+            break;
+
+        //director
+        case $director:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\" face=\"palatino\"><b>" . $row[$i] . "</b>\n";
+            break;
+
+        //actor
+        case $actor:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
+            break;
+
+        //screenwriter
+        case $screen:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+            break;
+
+        //cinematographer
+        case $cine:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+            break;
+
+        //oscar
+        case $oscar:
+            if (!$row[$i])
+                $seperator = false;
+            else
+                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+            break;
+    }
+
+    if ($seperator)
+    {
+        echo " / ";
+        echo "</font>\n";
     }
 }
 
