@@ -1260,7 +1260,7 @@ INSERT INTO movie VALUES ('The Rookie', 2002, '**&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('A Room With a View', 1986, '***', 'England', 'seen');
 INSERT INTO movie VALUES ('Rope', 1948, '***', 'USA', 'seen');
 INSERT INTO movie VALUES ('Rosemary''s Baby', 1968, '**', 'USA', 'seen');
-INSERT INTO movie VALUES ('‘Round Midnight', 1986, '***&frac12', 'USA', 'seen');
+INSERT INTO movie VALUES ('''Round Midnight', 1986, '***&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('Rounders', 1998, '***&frac12', 'USA', 'seen');
 INSERT INTO movie VALUES ('Royal Deceit', 1994, '***', DEFAULT, 'seen');
 INSERT INTO movie VALUES ('The Royal Tenenbaums', 2001, '***', 'USA', 'seen');

@@ -12,8 +12,7 @@ mpaa varchar(7) DEFAULT NULL);
 CREATE TABLE crewperson (
 fname varchar(15) NOT NULL,
 lname varchar(20) NOT NULL,
-position varchar(20) DEFAULT NULL,
-gender varchar(7) DEFAULT NULL);
+position varchar(20) NOT NULL);
 
 CREATE TABLE genre (
 genname varchar(25) NOT NULL);

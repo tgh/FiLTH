@@ -87,10 +87,9 @@
         ?>
         <form action="tmdb_result.php" method="post">
         Title: <input type="text" size="50" maxlength="100" name="title">
-        <input type="submit" name="submit" value="Search">
         <br>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitTitle");
         break;
 
 /*-------------------------- Search by Year ----------------------------------*/
@@ -121,7 +120,7 @@
         </select>
         <br>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitYear");
         break;
 
 /*----------------------- Search by Star rating ------------------------------*/
@@ -159,7 +158,7 @@
         </select>
         <br>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitStar");
         break;
 
 /*------------------------- Search by Country --------------------------------*/
@@ -199,7 +198,7 @@
         </select>
         <br>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitCountry");
         break;
 
 /*------------------------ Search by Director --------------------------------*/
@@ -232,7 +231,7 @@
         </select>
         <br>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitDirector");
         break;
 
 /*-------------------------- Search by Actor ---------------------------------*/
@@ -264,7 +263,7 @@
             ?>
         </select>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitActor");
         break;
 
 /*---------------------- Search by Screenwriter ------------------------------*/
@@ -296,7 +295,7 @@
             ?>
         </select>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitScreen");
         break;
 
 /*--------------------- Search by Cinematographer ----------------------------*/
@@ -328,7 +327,7 @@
             ?>
         </select>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitCine");
         break;
 
 /*-------------------------- Search by Oscar ---------------------------------*/
@@ -350,12 +349,12 @@
                 <option value="Best Foreign Language Film">Best Foreign Language Film</option>
             </select>
         <?php
-        printDisplayAndSort();
+        printDisplayAndSort("submitOscar");
         break;
 
     }
 
-/*----------------------------------------------------------------------------*/
+/*----------------------------- PAGE FOOTER ----------------------------------*/
 
 ?>
 
@@ -367,48 +366,48 @@
 
 <?php
 
-/*----------------------------------------------------------------------------*/
-/*------------------------------ FUNCTIONS -----------------------------------*/
-/*----------------------------------------------------------------------------*/
+/******************************************************************************/
+/*                              PHP FUNCTIONS                                 */
+/******************************************************************************/
 
-function printDisplayAndSort() {
+function printDisplayAndSort($buttonName) {
     echo "<br>\n";
     echo "<br>\n";
     echo "Displayed in result:\n";
     echo "<br>\n";
-        echo "Title <input type=\"checkbox\" name=\"display\" value=\"dispTitle\" checked=\"checked\">\n";
+        echo "Title <input type=\"checkbox\" name=\"dispTitle\" value=\"movie.title\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Year <input type=\"checkbox\" name=\"display\" value=\"dispYear\" checked=\"checked\">\n";
+        echo "Year <input type=\"checkbox\" name=\"dispYear\" value=\"movie.year\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Star rating <input type=\"checkbox\" name=\"display\" value=\"dispStar\" checked=\"checked\">\n";
+        echo "Star rating <input type=\"checkbox\" name=\"dispStar\" value=\"mystarrating\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Country <input type=\"checkbox\" name=\"display\" value=\"dispCountry\" checked=\"checked\">\n";
+        echo "Country <input type=\"checkbox\" name=\"dispCountry\" value=\"country\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Director <input type=\"checkbox\" name=\"display\" value=\"dispDirector\" checked=\"checked\">\n";
+        echo "Director <input type=\"checkbox\" name=\"dispDirector\" value=\"dirname\" checked=\"checked\">\n";
         echo "<br>\n";
-        echo "Actor <input type=\"checkbox\" name=\"display\" value=\"dispActor\" checked=\"checked\">\n";
+        echo "Actor <input type=\"checkbox\" name=\"dispActor\" value=\"actname\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Screenwriter <input type=\"checkbox\" name=\"display\" value=\"dispScreen\" checked=\"checked\">\n";
+        echo "Screenwriter <input type=\"checkbox\" name=\"dispScreen\" value=\"scrname\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Cinematographer <input type=\"checkbox\" name=\"display\" value=\"dispCine\" checked=\"checked\">\n";
+        echo "Cinematographer <input type=\"checkbox\" name=\"dispCine\" value=\"cinname\" checked=\"checked\">\n";
         echo "&nbsp&nbsp\n";
-        echo "Oscar <input type=\"checkbox\" name=\"display\" value=\"dispOscar\" checked=\"checked\">\n";
+        echo "Oscar <input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\" checked=\"checked\">\n";
     echo "<br>\n";
     echo "<br>\n";
     echo "Sort by:\n";
-    echo "<select name=\"Sort\">\n";
-        echo "<option value=\"sortTitle\">Title</option>\n";
-        echo "<option value=\"sortYear\">Year</option>\n";
-        echo "<option value=\"sortStar\">Star Rating</option>\n";
-        echo "<option value=\"sortCountry\">Country</option>\n";
-        echo "<option value=\"sortDirector\">Director</option>\n";
-        echo "<option value=\"sortActor\">Actor</option>\n";
-        echo "<option value=\"sortScreen\">Screenwriter</option>\n";
-        echo "<option value=\"sortCine\">Cinematographer</option>\n";
+    echo "<select name=\"sort\">\n";
+        echo "<option value=\"movie.title\">Title</option>\n";
+        echo "<option value=\"movie.year\">Year</option>\n";
+        echo "<option value=\"mystarrating\">Star Rating</option>\n";
+        echo "<option value=\"country\">Country</option>\n";
+        echo "<option value=\"dirname\">Director</option>\n";
+        echo "<option value=\"actname\">Actor</option>\n";
+        echo "<option value=\"scrname\">Screenwriter</option>\n";
+        echo "<option value=\"cinname\">Cinematographer</option>\n";
     echo "</select>\n";
     echo "<br>\n";
     echo "<br>\n";
-    echo "<input type=\"submit\" name=\"submit\" value=\"Search\">\n";
+    echo "<input type=\"submit\" name=\"" . $buttonName . "\" value=\"Search\">\n";
     echo "</form>\n";
 }
 ?>
