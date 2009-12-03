@@ -16,14 +16,14 @@
 
 <html>
 <head>
-<title>Tyler's Movie Database</title>
+<title>TMDB: Tyler's Movie Database</title>
 </head>
 
-<body>
+<body style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">
 <div align="center">
-<h1>Tyler's Movie Database</h1>
+<font color="maroon"><h1 style="font-variant: small-caps">Tyler's Movie Database</h1></font>
 </div>
-<p style="font-size: 12px; font-style: italic;"> 
+<p style="font-size: 14px; font-style: italic;"> 
 <a href="tmdb_logout.php">Logout</a>
 </p>
 <br>
@@ -33,7 +33,7 @@
 ?>
 
 <form action="<?php echo $PHP_SELF?>" method="post">
-    Search movies by:
+    <b><i>Search movies by:</i></b>
     <select name="searchBy">
         <?php
         if ($_POST['searchBy'] == "byTitle")
@@ -76,8 +76,8 @@
         <input type="submit" name="submit" value="Go">
     </select>
 </form>
+<hr width=33% align=left>
 <br>
-
 <?php
     switch($_POST['searchBy']) {
 
@@ -86,7 +86,8 @@
     case "byTitle":
         ?>
         <form action="tmdb_result.php" method="post">
-        Title: <input type="text" size="50" maxlength="100" name="title">
+        <font color="maroon"><b><i>Title (or title keyword):</b></i></font>
+        <input type="text" size="30" maxlength="80" name="title">
         <br>
         <?php
         printDisplayAndSort("submitTitle");
@@ -97,7 +98,8 @@
     case "byYear":
         ?>
         <form action="tmdb_result.php" method="post">
-        Year: from:
+        <font color="maroon"><b><i>Year:</i></b></font>&nbsp&nbsp&nbsp
+        <font size=-1 style="font-variant: small-caps">from:
         <select name="yearStart">
             <?
             for ($i=2012; $i != 2009; --$i)
@@ -107,7 +109,7 @@
                 echo "<option value=\"$i\">$i</option>";
             ?>
         </select>
-        to:
+        &nbsp&nbsp to:</font>
         <select name="yearEnd">
             <option value="blank"></option>
             <?
@@ -128,7 +130,8 @@
     case "byStar":
         ?>
         <form action="tmdb_result.php" method="post">
-        Star rating: from:
+        <font color="maroon"><b><i>Star rating:</i></b></font>&nbsp&nbsp&nbsp
+        <font size=-1 style="font-variant: small-caps">from:
         <select name=starStart">
             <option value="not seen">Haven't seen</option>
             <option value="N/A">N/A</option>
@@ -142,7 +145,7 @@
             <option value="***&frac12">***&frac12</option>
             <option value="****">****</option>
         </select>
-        to:
+        &nbsp&nbsp to: </font>
         <select name="starEnd">
             <option value="not seen">Haven't seen</option>
             <option value="N/A">N/A</option>
@@ -166,7 +169,7 @@
     case "byCountry":
         ?>
         <form action="tmdb_result.php" method="post">
-        Country:
+        <font color="maroon"><b><i>Country:</i></b></font>
         <select name="country">
             <?php
             $countryQuery="SELECT country FROM movie GROUP BY country ORDER BY country";
@@ -206,7 +209,7 @@
     case "byDirector":
         ?>
         <form action="tmdb_result.php" method="post">
-        Director:
+        <font color="maroon"><b><i>Director:</i></b></font>
         <select name="director">
             <?php
             $dirQuery="SELECT dirname FROM director ORDER BY dirname";
@@ -239,7 +242,7 @@
     case "byActor":
         ?>
         <form action="tmdb_result.php" method="post">
-        Actor:
+        <font color="maroon"><b><i>Actor:</i></b></font>
         <select name="actor">
             <?php
             $actQuery="SELECT actname FROM actor ORDER BY actname";
@@ -262,6 +265,7 @@
             pg_close($connection);
             ?>
         </select>
+        <br>
         <?php
         printDisplayAndSort("submitActor");
         break;
@@ -271,7 +275,7 @@
     case "byScreen":
         ?>
         <form action="tmdb_result.php" method="post">
-        Screenwriter:
+        <font color="maroon"><b><i>Screenwriter:</i></b></font>
         <select name="screen">
             <?php
             $scrQuery="SELECT scrname FROM screenwriter ORDER BY scrname";
@@ -294,6 +298,7 @@
             pg_close($connection);
             ?>
         </select>
+        <br>
         <?php
         printDisplayAndSort("submitScreen");
         break;
@@ -303,7 +308,7 @@
     case "byCine":
         ?>
         <form action="tmdb_result.php" method="post">
-        Cinematographer:
+        <font color="maroon"><b><i>Cinematographer:</i></b></font>
         <select name="cine">
             <?php
             $cinQuery="SELECT cinname FROM cinematographer ORDER BY cinname";
@@ -326,6 +331,7 @@
             pg_close($connection);
             ?>
         </select>
+        <br>
         <?php
         printDisplayAndSort("submitCine");
         break;
@@ -335,7 +341,7 @@
     case "byOscar":
         ?>
         <form action="tmdb_result.php" method="post">
-            Category:
+            <font color="maroon"><b><i>Category:</i></b></font>
             <select name="oscar">
                 <option value="Best Picture">Best Picture</option>
                 <option value="Best Actor">Best Actor</option>
@@ -348,6 +354,7 @@
                 <option value="Best Original Screenplay">Best Original Screenplay</option>
                 <option value="Best Foreign Language Film">Best Foreign Language Film</option>
             </select>
+        <br>
         <?php
         printDisplayAndSort("submitOscar");
         break;
@@ -370,31 +377,63 @@
 /*                              PHP FUNCTIONS                                 */
 /******************************************************************************/
 
+/*
+ * Displays the options for what attributes to display fo rthe user's search
+ * results, and the menu for how the results are to be sorted.
+ */
 function printDisplayAndSort($buttonName) {
     echo "<br>\n";
+    echo "<b><i>What would you like displayed in the result?</i></b>\n";
     echo "<br>\n";
-    echo "Displayed in result:\n";
+    echo "<font face=\"courier\"><i>";
+        //title
+        printSpaces(3);
+        echo "Title";
+        printSpaces(11);
+        echo "<input type=\"checkbox\" name=\"dispTitle\" value=\"movie.title\" checked=\"checked\"><br>\n";
+        //year
+        printSpaces(3);
+        echo "Year";
+        printSpaces(12);
+        echo "<input type=\"checkbox\" name=\"dispYear\" value=\"movie.year\" checked=\"checked\"><br>";
+        //star rating
+        printSpaces(3);
+        echo "Star rating";
+        printSpaces(5);
+        echo "<input type=\"checkbox\" name=\"dispStar\" value=\"mystarrating\" checked=\"checked\"><br>";
+        //country
+        printSpaces(3);
+        echo "Country";
+        printSpaces(9);
+        echo "<input type=\"checkbox\" name=\"dispCountry\" value=\"country\" checked=\"checked\"><br>";
+        //director
+        printSpaces(3);
+        echo "Director";
+        printSpaces(8);
+        echo "<input type=\"checkbox\" name=\"dispDirector\" value=\"dirname\"><br>";
+        //actor
+        printSpaces(3);
+        echo "Actor";
+        printSpaces(11);
+        echo "<input type=\"checkbox\" name=\"dispActor\" value=\"actname\"><br>";
+        //screenwriter
+        printSpaces(3);
+        echo "Screenwriter";
+        printSpaces(4);
+        echo "<input type=\"checkbox\" name=\"dispScreen\" value=\"scrname\"><br>";
+        //cinematographer
+        printSpaces(3);
+        echo "Cinematographer";
+        printSpaces(1);
+        echo "<input type=\"checkbox\" name=\"dispCine\" value=\"cinname\"><br>";
+        //oscar
+        printSpaces(3);
+        echo "Oscar";
+        printSpaces(11);
+        echo "<input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\"><br>";
     echo "<br>\n";
-        echo "Title <input type=\"checkbox\" name=\"dispTitle\" value=\"movie.title\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Year <input type=\"checkbox\" name=\"dispYear\" value=\"movie.year\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Star rating <input type=\"checkbox\" name=\"dispStar\" value=\"mystarrating\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Country <input type=\"checkbox\" name=\"dispCountry\" value=\"country\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Director <input type=\"checkbox\" name=\"dispDirector\" value=\"dirname\" checked=\"checked\">\n";
-        echo "<br>\n";
-        echo "Actor <input type=\"checkbox\" name=\"dispActor\" value=\"actname\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Screenwriter <input type=\"checkbox\" name=\"dispScreen\" value=\"scrname\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Cinematographer <input type=\"checkbox\" name=\"dispCine\" value=\"cinname\" checked=\"checked\">\n";
-        echo "&nbsp&nbsp\n";
-        echo "Oscar <input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\" checked=\"checked\">\n";
-    echo "<br>\n";
-    echo "<br>\n";
-    echo "Sort by:\n";
+    echo "</i></font>";
+    echo "<b><i>Sort results by:</i></b>\n\n";
     echo "<select name=\"sort\">\n";
         echo "<option value=\"movie.title\">Title</option>\n";
         echo "<option value=\"movie.year\">Year</option>\n";
@@ -405,9 +444,21 @@ function printDisplayAndSort($buttonName) {
         echo "<option value=\"scrname\">Screenwriter</option>\n";
         echo "<option value=\"cinname\">Cinematographer</option>\n";
     echo "</select>\n";
-    echo "<br>\n";
-    echo "<br>\n";
+    echo "<br><br>\n";
     echo "<input type=\"submit\" name=\"" . $buttonName . "\" value=\"Search\">\n";
     echo "</form>\n";
 }
+
+/*----------------------------------------------------------------------------*/
+
+/*
+ * Print the specified number of html spaces.
+ */
+function printSpaces($n)
+{
+    for ($i=0; $i < $n; ++$i)
+        echo "&nbsp";
+    echo " ";
+}
+
 ?>

@@ -9,18 +9,22 @@
 
     include '../security.php';
     $host='db.cecs.pdx.edu';
+
+/*------------------------ PAGE TITLE AND HEADER -----------------------------*/
+
 ?>
 
 <html>
 <head>
-<title>Administrator for Tyler's Movie Database</title>
+<title>TMDB Administrator</title>
 </head>
 
-<body>
+<body style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">
 <div align="center">
-<h2>Administration for Tyler's Movie Database</h2>
+<font color="maroon"><h1 style="font-variant: small-caps">TMDB Administration</h1></font>
+<br>
 </div>
-<p style="font-size: 12px; font-style: italic;">
+<p style="font-size: 14px; font-style: italic;">
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout</a>
 </p>
 <br>
@@ -30,7 +34,7 @@
 ?>
 
 <form action="<?php echo $PHP_SELF?>" method="post">
-    What do you want to do?
+    <font color="maroon"><b><i>What do you want to do?</i></b></font>
     <select name="action">
         <option value="addMovie">Add a movie</option>
         <?php
@@ -58,6 +62,7 @@
         <input type="submit" name="submit" value="Go">
     </select>
 </form>
+<hr width=33% align=left>
 <br>
 
 <?php
@@ -68,7 +73,7 @@
         case "addMovie":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Title: <input type="text" size="50" maxlength="100" name="addMovieTitle">
+            <i>Title: <input type="text" size="50" maxlength="100" name="addMovieTitle">
             <br>
             Year:
             <select name="addMovieYear">
@@ -129,6 +134,7 @@
                 pg_close($connection);
                 ?>
             </select>
+            </i>
             <br>
             <br>
             <input type="submit" name="submit" value="Add movie">
@@ -141,7 +147,7 @@
         case "addDirector":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Name: <input type="text" size="25" maxlength="25" name="addDirectorDirname">
+            <i>Name:</i><input type="text" size="25" maxlength="25" name="addDirectorDirname">
             <input type="submit" name="submit" value="Add director">
             </form>
             <?php
@@ -152,7 +158,7 @@
         case "addActor":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Name: <input type="text" size="25" maxlength="25" name="addActorActname">
+            <i>Name:</i><input type="text" size="25" maxlength="25" name="addActorActname">
             <input type="submit" name="submit" value="Add actor">
             </form>
             <?php
@@ -163,7 +169,7 @@
         case "addOscar":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Title: <input type="text" size="50" maxlength="100" name="addOscarTitle">
+            <i>Title: <input type="text" size="50" maxlength="100" name="addOscarTitle">
             <br>
             Year:
             <select name="addOscarYear">
@@ -199,9 +205,10 @@
             </select>
             <br>
             <br>
+            <br>
             <input type="submit" name="submit" value="Add Oscar">
             </form>
-            <br>
+            </i>
             <?php
             break;
 
@@ -210,9 +217,8 @@
         case "changeRating":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Title and year of movie:
-            <br>
-            <input type="text" size="50" maxlength="100" name="changeRatingTitle">
+            <i>Title: <input type="text" size="50" maxlength="100" name="changeRatingTitle">
+            &nbsp&nbsp Year:
             <select name="changeRatingYear">
                 <?
                 for ($i=1900; $i != 2009; ++$i)
@@ -222,6 +228,7 @@
                     echo "<option value=\"$i\">$i</option>";
                 ?>
             </select>
+            <br>
             <br>
             New rating:
             <select name="changeRatingStarRating">
@@ -239,6 +246,7 @@
             </select>
             <br>
             <br>
+            </i>
             <input type="submit" name="submit" value="Change star rating">
             </form>
             <?php
@@ -249,7 +257,7 @@
         case "removeActor":
             ?>
             <form action="tmdb_dba_result.php" method="post">
-            Actor:
+            <i>Actor:</i>
             <select name="removeActorActname">
                 <?php
                 $query="SELECT actname FROM actor ORDER BY actname";
@@ -283,7 +291,7 @@
     }
 ?>
 
-<p style="font-style: italic; font-size: 12px;">
+<p style="font-style: italic; font-size: 10px;">
 &copy;2009 Tyler Hayes</p>
 
 </body>

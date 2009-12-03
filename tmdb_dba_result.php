@@ -9,20 +9,25 @@
 
     include '../security.php';
     $host='db.cecs.pdx.edu';
+
+/*------------------------ PAGE TITLE AND HEADER -----------------------------*/
+
 ?>
 
 <html>
 <head>
-<title>Administrator for Tyler's Movie Database</title>
+<title>TMDB Administrator</title>
 </head>
 
-<body>
+<body style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">
 <div align="center">
-<h2>Administration for Tyler's Movie Database</h2>
+<font color="maroon"><h1 style="font-variant: small-caps">TMDB Administration</h1></font>
+<br>
 </div>
-<p style="font-size: 12px; font-style: italic;"> 
-<a href="tmdb_logout.php">Logout.</a>
+<p style="font-size: 14px; font-style: italic;">
+<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout</a>
 </p>
+<br>
 
 <?php
 
@@ -35,9 +40,9 @@
         //make sure there is a title given
         if (!$_POST['addMovieTitle'])
         {
-            echo "You must give a title for the movie.";
+            echo "<font color=\"maroon\"><i>You must give a title for the movie.</i></font>\n";
             ?>
-            <p style="font-size: 12px; font-style: italic;"> 
+            <p style="font-size: 14px; font-style: italic;"> 
             <a href="tmdb_dba.php">Try again.</a>
             </p>
             <?
@@ -48,7 +53,7 @@
             $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
             if (!$connection)
             {
-                echo "Could not connect to database.";
+                echo "<font color=\"maroon\"><i>Could not connect to database.</i></font>\n";
 	            die('Could not connect');
             }
 
@@ -68,7 +73,7 @@
             $result1 = pg_query($connection, $movieQuery);
             if (!$result1) 
             {
-                echo "Error in inserting movie into database.";
+                echo "<font color=\"maroon\"><i>Error in inserting movie into database.</i></font>\n";
                 die("Error in query: $movieQuery." . pg_last_error($connection));
             }
 
@@ -79,7 +84,7 @@
                 $result2 = pg_query($connection, $dirCheckQuery);
                 if (!$result2)
                 {
-                    echo "Error in director query.";
+                    echo "<font color=\"maroon\"><i>Error in director query.</i></font>\n";
                     die("Error in query: $dirCheckQuery." . pg_last_error($connection));
                 }
                 $rows = pg_num_rows($result2);
@@ -103,15 +108,15 @@
                 $result4 = pg_query($connection, $directedQuery);
                 if (!$result4)
                 {
-                    echo "Error in inserting director/movie relationship.";
+                    echo "<font color=\"maroon\"><i>Error in inserting director/movie relationship.</i></font>\n";
                     die("Error in query: $directedQuery." . pg_last_error($connection));
                 }
             }
 
-            echo "Movie added.";
+            echo "<font color=\"maroon\"><i>Movie added.</i></font>\n";
 
             ?>
-            <p style="font-size: 12px; font-style: italic;"> 
+            <p style="font-size: 14px; font-style: italic;"> 
             <a href="tmdb_dba.php">Do something else.</a>
             </p>
             <?
@@ -131,7 +136,7 @@
         }
 
         ?>
-        <p style="font-size: 12px; font-style: italic;"> 
+        <p style="font-size: 14px; font-style: italic;"> 
         <a href="tmdb_dba.php">Do something else.</a>
         </p>
         <?
@@ -150,7 +155,7 @@
         }
 
         ?>
-        <p style="font-size: 12px; font-style: italic;"> 
+        <p style="font-size: 14px; font-style: italic;"> 
         <a href="tmdb_dba.php">Do something else.</a>
         </p>
         <?
@@ -169,7 +174,7 @@
         }
 
         ?>
-        <p style="font-size: 12px; font-style: italic;"> 
+        <p style="font-size: 14px; font-style: italic;"> 
         <a href="tmdb_dba.php">Do something else.</a>
         </p>
         <?
@@ -184,9 +189,9 @@
         //make sure a title is given
         if (!$_POST['changeRatingTitle'])
         {
-            echo "Title cannot be empty.";
+            echo "<font color=\"maroon\"><i>Title cannot be empty.</i></font>";
             ?>
-            <p style="font-size: 12px; font-style: italic;"> 
+            <p style="font-size: 14px; font-style: italic;"> 
             <a href="tmdb_dba.php">Try again.</a>
             </p>
             <?
@@ -215,14 +220,14 @@
 
             //report error if the movie does not exist in the database
             if ($rows == 0)
-            {
-                echo "The movie you're refering to doesn't exist in the database.\n";
-                echo "Either the title is missing or wrong, the year is wrong, or both are wrong.";
-                ?>
-                <p style="font-size: 12px; font-style: italic;"> 
-                <a href="tmdb_dba.php">Try again.</a>
-                </p>
-                <?
+            {?>
+                <font color="maroon"><i>The movie you're refering to doesn't exist in the database.</i>
+                <br>
+                <br></font>
+                <p style="font-size: 14px; font-style: italic;">
+                <a href="tmdb_dba.php">Try again.</a></p>
+                </i>
+             <?
                 die();
             }
 
@@ -242,14 +247,14 @@
             $result2 = pg_query($connection, $chRatingQuery);
             if (!$result2)
             {
-                echo "Error in changing the star rating in the database.\n";
+                echo "<font color=\"maroon\"><i>Error in changing the star rating in the database.</i></font>\n";
                 die("Error in query: $chRatingQuery." . pg_last_error($connection));
             }
 
-            echo "Star rating changed.";
+            echo "<font color=\"maroon\"><i>Star rating changed.</i></font>";
 
             ?>
-            <p style="font-size: 12px; font-style: italic;"> 
+            <p style="font-size: 14px; font-style: italic;"> 
             <a href="tmdb_dba.php">Do something else.</a>
             </p>
             <?
@@ -269,7 +274,7 @@
         }
 
         ?>
-        <p style="font-size: 12px; font-style: italic;"> 
+        <p style="font-size: 14px; font-style: italic;"> 
         <a href="tmdb_dba.php">Do something else.</a>
         </p>
         <?
@@ -281,7 +286,7 @@
 
 ?>
 
-<p style="font-style: italic; font-size: 12px;">
+<p style="font-style: italic; font-size: 10px;">
 &copy;2009 Tyler Hayes
 </p>
 

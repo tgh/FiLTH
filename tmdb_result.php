@@ -87,7 +87,7 @@
             echo "<i>You didn't specify any attributes to display.  Search aborted.</i>\n";
             die();
         }
-//echo $titleQuery . "\n";
+
         //connect to db
         $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
         if (!$connection)
@@ -97,7 +97,13 @@
         die("Error in query: $titleQuery." . pg_last_error($connection));
         //get the number of rows returned
         $rows = pg_num_rows($result);
-
+        //display the number of matches
+        echo "<br>\n";
+        echo "<font face=\"palatino\"><i>Number of matches: </i><b>" . $rows . "</b></font>\n";
+        echo "<br>\n";
+        echo "<br>\n";
+        echo "<hr width=50% align=left>\n";
+        echo "<br>\n";
         //display the results
         if($rows > 0)
         {
@@ -113,7 +119,7 @@
 	        }
         }
         else
-	        echo "<font size=\"-1\">No matching movies found.</font>";
+	        echo "<font size=\"-1\"><i>No matching movies found.</i></font>";
 
         pg_close($connection);
     }
@@ -121,7 +127,8 @@
 /*----------------------------- PAGE FOOTER ----------------------------------*/
 
 ?>
-
+<br>
+<hr width=50% align=left>
 <p style="font-size: 12px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
