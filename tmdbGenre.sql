@@ -10,3 +10,4 @@ INSERT INTO genre VALUES ('Horror');
 INSERT INTO genre VALUES ('Action');
 INSERT INTO genre VALUES ('Adventure');
 INSERT INTO genre VALUES ('Documentary');
+INSERT INTO genre VALUES ('Christmas');

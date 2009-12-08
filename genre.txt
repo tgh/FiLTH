@@ -10,3 +10,4 @@ Horror
 Action
 Adventure
 Documentary
+Christmas

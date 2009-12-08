@@ -408,7 +408,6 @@ function printDisplayAndSort($buttonName) {
         echo "Country";
         printSpaces(9);
         echo "<input type=\"checkbox\" name=\"dispCountry\" value=\"country\" checked=\"checked\"><br>";
-/*
         //director
         printSpaces(3);
         echo "Director";

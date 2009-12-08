@@ -25,7 +25,7 @@
 <br>
 </div>
 <p style="font-size: 14px; font-style: italic;">
-<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout</a>
+<a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
 <br>
 
@@ -166,6 +166,31 @@
                 $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
                 if (!$connection)
 	                die('Could not connect');
+                $result = pg_query($connection, $query) or
+                    die("Error in query: $query." . pg_last_error($connection));
+                $rows = pg_num_rows($result);
+                if ($rows > 0)
+                {
+                    for($i=0; $i < $rows; ++$i)
+                    {
+                        $row = pg_fetch_row($result, $i);
+                        ?>
+                        <option value="<?php echo $row[0];?>"><?php echo $row[0];?></option>
+                        <?php
+                    }
+                }
+                pg_close($connection);
+                ?>
+            </select>
+            <br>
+            Actor:
+            <select name="addMovieActor">
+                <option value="blank"></option>
+                <?php
+                $query="SELECT actname FROM actor ORDER BY actname";
+                $connection = pg_connect("host=$host dbname=tgh user=tgh password=$db_pw");
+                if (!$connection)
+                    die('Could not connect');
                 $result = pg_query($connection, $query) or
                     die("Error in query: $query." . pg_last_error($connection));
                 $rows = pg_num_rows($result);

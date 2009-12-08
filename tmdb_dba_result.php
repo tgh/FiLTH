@@ -43,11 +43,7 @@
         <a href="tmdb_dba.php">Back to main menu.</a>
         </p>
         <?
-/*
-        //DEBUG output
-        foreach ($_POST as $key => $value)
-            echo "key is: " . $key . " - value is: " . $value . "<br />";
-*/
+
         //determine WHERE sql string
         if (!$_POST['title'])
             $whereString = "";
@@ -91,10 +87,14 @@
 
 	        for($i=0; $i<$rows; ++$i)
 	        {
+                if ($i % 2 == 0)
+                    echo "<font style=\"background-color: LightGrey\">";
 	            $row = pg_fetch_row($result, $i);
                 $itemCount = count($row);
                 for ($j=0; $j < $itemCount; ++$j)
                     displayAttribute($j, $row);
+                if ($i % 2 == 0)
+                    echo "</font>\n";
                 echo "<br>\n";
 	        }
         }
@@ -485,7 +485,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $fromString = $fromString . " JOIN directed USING (title, year)";
+                $fromString = $fromString . " LEFT JOIN directed USING (title, year)";
                 $displayBitmap |= DIR_MASK;
                 break;
 
@@ -495,7 +495,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $fromString = $fromString . " JOIN actedin USING (title, year)";
+                $fromString = $fromString . " LEFT JOIN actedin USING (title, year)";
                 $displayBitmap |= ACT_MASK;
                 break;
 
@@ -505,7 +505,7 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $fromString = $fromString . " JOIN wrote USING (title, year)";
+                $fromString = $fromString . " LEFT JOIN wrote USING (title, year)";
                 $displayBitmap |= SCR_MASK;
                 break;
 
@@ -515,12 +515,12 @@ function createSql($whereString)
                 if (key($_POST) != "sort")
                     $selectString = $selectString . ", ";
                 prev($_POST);
-                $fromString = $fromString . " JOIN shot USING (title, year)";
+                $fromString = $fromString . " LEFT JOIN shot USING (title, year)";
                 $displayBitmap |= CIN_MASK;
                 break;
 
             case "OSCAR":
-                $fromString = $fromString . " JOIN oscar USING (title, year)";
+                $fromString = $fromString . " LEFT JOIN oscar USING (title, year)";
                 $selectString = $selectString . "category, recipientName, status";
                 $displayBitmap |= OSC_MASK;
                 continue 2;
@@ -703,7 +703,10 @@ function displayAttribute($i, $row)
             if (!$row[$i])
                 $separator = false;
             else
-                echo "<font size=\"2\" face=\"palatino\"><b>" . $row[$i] . "</b>\n";
+            {
+                echo "<font color=\"maroon\" size=\"2\"><i>Directed by: </i></font>";
+                echo "<font color=\"black\" size=\"2\"><b>" . $row[$i] . "</b>\n";
+            }
             break;
 
         //actor
@@ -711,7 +714,10 @@ function displayAttribute($i, $row)
             if (!$row[$i])
                 $separator = false;
             else
-                echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
+            {
+                echo "<font color=\"maroon\" size=\"2\"><i>Starring: </i></font>";
+                echo "<font color=\"black\" size=\"2\"><b>" . $row[$i] . "</b>\n";
+            }
             break;
 
         //screenwriter

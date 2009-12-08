@@ -43,7 +43,7 @@ INSERT INTO movie VALUES ('Continental Divide', 1981, DEFAULT, DEFAULT, 'not see
 INSERT INTO movie VALUES ('Gorky Park', 1983, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Bring on the Night', 1985, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Critical Condition', 1987, DEFAULT, DEFAULT, 'not seen');
-INSERT INTO movie VALUES ('Gorlllias in the Mist', 1988, DEFAULT, DEFAULT, 'not seen');
+INSERT INTO movie VALUES ('Gorillas in the Mist', 1988, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Class Action', 1991, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Thunderheart', 1992, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Incident at Oglala', 1992, DEFAULT, DEFAULT, 'not seen');
