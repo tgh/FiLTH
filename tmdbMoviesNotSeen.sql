@@ -1123,7 +1123,7 @@ INSERT INTO movie VALUES ('Lisbon Story', 1994, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Brothers Skladanowsky', 1995, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Buena Vista Social Club', 1999, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Million Dollar Hotel', 2000, DEFAULT, DEFAULT, 'not seen');
-INSERT INTO movie VALUES ('Ode to Cologne: A Rock ‘n'' Roll Film', 2002, DEFAULT, DEFAULT, 'not seen');
+INSERT INTO movie VALUES ('Ode to Cologne: A Rock ''n'' Roll Film', 2002, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Ten Minutes Older: The Trumpet', 2002, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('The Soul of a Man', 2003, DEFAULT, DEFAULT, 'not seen');
 INSERT INTO movie VALUES ('Land of Plenty', 2004, DEFAULT, DEFAULT, 'not seen');

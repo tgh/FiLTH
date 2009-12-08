@@ -47,14 +47,14 @@
 <title>Tyler's Movie Database</title>
 </head>
 
-<body>
+<body style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">
 <div align="center">
-<h1>Tyler's Movie Database</h1>
+<font color="maroon"><h1 style="font-variant: small-caps">Tyler's Movie Database</h1></font>
 </div>
-<p style="font-size: 12px; font-style: italic;"> 
+<p style="font-size: 14px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
-<p style="font-size: 12px; font-style: italic;"> 
+<p style="font-size: 14px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_home.php">Search again.</a>
 </p>
 
@@ -129,10 +129,10 @@
 ?>
 <br>
 <hr width=50% align=left>
-<p style="font-size: 12px; font-style: italic;"> 
+<p style="font-size: 14px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_logout.php">Logout.</a>
 </p>
-<p style="font-size: 12px; font-style: italic;"> 
+<p style="font-size: 14px; font-style: italic;"> 
 <a href="http://www.cs.pdx.edu/~tgh/tmdb_home.php">Search again.</a>
 </p>
 <p style="font-style: italic; font-size: 10px;">
@@ -379,7 +379,7 @@ function displayAttribute($i, $row)
     global $screen;
     global $cine;
     global $oscar;
-    $seperator = true;
+    $separator = true;
 
     switch ($i)
     {
@@ -404,7 +404,7 @@ function displayAttribute($i, $row)
         //country
         case $country:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
             break;
@@ -412,7 +412,7 @@ function displayAttribute($i, $row)
         //director
         case $director:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\" face=\"palatino\"><b>" . $row[$i] . "</b>\n";
             break;
@@ -420,7 +420,7 @@ function displayAttribute($i, $row)
         //actor
         case $actor:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\" face=\"palatino\">" . $row[$i] . "\n";
             break;
@@ -428,7 +428,7 @@ function displayAttribute($i, $row)
         //screenwriter
         case $screen:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
             break;
@@ -436,7 +436,7 @@ function displayAttribute($i, $row)
         //cinematographer
         case $cine:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
             break;
@@ -444,13 +444,13 @@ function displayAttribute($i, $row)
         //oscar
         case $oscar:
             if (!$row[$i])
-                $seperator = false;
+                $separator = false;
             else
                 echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
             break;
     }
 
-    if ($seperator)
+    if ($separator)
     {
         echo " / ";
         echo "</font>\n";

@@ -40,6 +40,7 @@
             echo "<option value=\"byTitle\" selected=\"selected\">Title</option>";
         else
             echo "<option value=\"byTitle\">Title</option>";
+/*
         if ($_POST['searchBy'] == "byYear")
             echo "<option value=\"byYear\" selected=\"selected\">Year</option>";
         else
@@ -72,6 +73,7 @@
             echo "<option value=\"byOscar\" selected=\"selected\">Oscar category</option>";
         else
             echo "<option value=\"byOscar\">Oscar category</option>";
+*/
         ?>
         <input type="submit" name="submit" value="Go">
     </select>
@@ -406,6 +408,7 @@ function printDisplayAndSort($buttonName) {
         echo "Country";
         printSpaces(9);
         echo "<input type=\"checkbox\" name=\"dispCountry\" value=\"country\" checked=\"checked\"><br>";
+/*
         //director
         printSpaces(3);
         echo "Director";
@@ -431,18 +434,21 @@ function printDisplayAndSort($buttonName) {
         echo "Oscar";
         printSpaces(11);
         echo "<input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\"><br>";
+*/
     echo "<br>\n";
     echo "</i></font>";
     echo "<b><i>Sort results by:</i></b>\n\n";
     echo "<select name=\"sort\">\n";
         echo "<option value=\"movie.title\">Title</option>\n";
         echo "<option value=\"movie.year\">Year</option>\n";
-        echo "<option value=\"mystarrating\">Star Rating</option>\n";
+//        echo "<option value=\"mystarrating\">Star Rating</option>\n";
         echo "<option value=\"country\">Country</option>\n";
+/*
         echo "<option value=\"dirname\">Director</option>\n";
         echo "<option value=\"actname\">Actor</option>\n";
         echo "<option value=\"scrname\">Screenwriter</option>\n";
         echo "<option value=\"cinname\">Cinematographer</option>\n";
+*/
     echo "</select>\n";
     echo "<br><br>\n";
     echo "<input type=\"submit\" name=\"" . $buttonName . "\" value=\"Search\">\n";

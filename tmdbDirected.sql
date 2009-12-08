@@ -1866,7 +1866,7 @@ INSERT INTO directed VALUES ('Brothers Skladanowsky', 1995, 'Wim Wenders');
 INSERT INTO directed VALUES ('The End of Violence', 1997, 'Wim Wenders');
 INSERT INTO directed VALUES ('The Buena Vista Social Club', 1999, 'Wim Wenders');
 INSERT INTO directed VALUES ('The Million Dollar Hotel', 2000, 'Wim Wenders');
-INSERT INTO directed VALUES ('Ode to Cologne: A Rock ‘n'' Roll Film', 2002, 'Wim Wenders');
+INSERT INTO directed VALUES ('Ode to Cologne: A Rock ''n'' Roll Film', 2002, 'Wim Wenders');
 INSERT INTO directed VALUES ('Ten Minutes Older: The Trumpet', 2002, 'Wim Wenders');
 INSERT INTO directed VALUES ('The Soul of a Man', 2003, 'Wim Wenders');
 INSERT INTO directed VALUES ('Land of Plenty', 2004, 'Wim Wenders');
