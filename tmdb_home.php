@@ -433,7 +433,7 @@ function printDisplayAndSort($buttonName) {
         echo "Oscar";
         printSpaces(11);
         echo "<input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\"><br>";
-*/
+
     echo "<br>\n";
     echo "</i></font>";
     echo "<b><i>Sort results by:</i></b>\n\n";

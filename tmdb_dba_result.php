@@ -716,7 +716,7 @@ function displayAttribute($i, $row)
             else
             {
                 echo "<font color=\"maroon\" size=\"2\"><i>Starring: </i></font>";
-                echo "<font color=\"black\" size=\"2\"><b>" . $row[$i] . "</b>\n";
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . "\n";
             }
             break;
 
@@ -725,7 +725,10 @@ function displayAttribute($i, $row)
             if (!$row[$i])
                 $separator = false;
             else
-                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+            {
+                echo "<font color=\"maroon\" size=\"2\"><i>Written by: </i></font>";
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . "\n";
+            }
             break;
 
         //cinematographer
@@ -733,15 +736,35 @@ function displayAttribute($i, $row)
             if (!$row[$i])
                 $separator = false;
             else
-                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+            {
+                echo "<font color=\"maroon\" size=\"2\"><i>Cinematographer: </i></font>";
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . "\n";
+            }
             break;
 
-        //oscar
+        //oscar category
         case $oscar:
+            $separator = false;
+            if ($row[$i])
+            {
+                echo "<font color=\"maroon\" size=\"2\"><i>Oscar category: </i></font>";
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . " (</font>";
+            }
+            break;
+
+        //oscar recipient
+        case $oscar+1:
+            $separator = false;
+            if ($row[$i])
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . ", </font>";
+            break;
+
+        //oscar status
+        case $oscar+2:
             if (!$row[$i])
                 $separator = false;
             else
-                echo "<font size=\"2\"> face=\"palatino\"" . $row[$i] . "\n";
+                echo "<font color=\"black\" size=\"2\">" . $row[$i] . ")\n";
             break;
     }
 

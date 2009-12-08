@@ -545,7 +545,6 @@ function printDisplayAndSort($buttonName) {
         echo "Actor";
         printSpaces(11);
         echo "<input type=\"checkbox\" name=\"dispActor\" value=\"actname\"><br>";
-/*
         //screenwriter
         printSpaces(3);
         echo "Screenwriter";
@@ -561,7 +560,7 @@ function printDisplayAndSort($buttonName) {
         echo "Oscar";
         printSpaces(11);
         echo "<input type=\"checkbox\" name=\"dispOscar\" value=\"OSCAR\"><br>";
-*/
+
     echo "<br>\n";
     echo "</i></font>";
     echo "<b><i>Sort results by:</i></b>\n\n";
