@@ -1,0 +1,10 @@
+Best Picture
+Best Actor
+Best Actress
+Best Supporting Actor
+Best Supporting Actress
+Best Director
+Best Cinematography
+Best Adapted Screenplay
+Best Original Screenplay
+Best Foreign Language Film
