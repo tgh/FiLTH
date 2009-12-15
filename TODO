@@ -1,0 +1,18 @@
+- script for taking Movie Ratings.doc and making SQL insert statements:
+    - convert MS doc into text:
+        antiword /host/Documents\ and\ Settings/Tyler\ Hayes/Desktop/Text/Movies/Movie_Ratings.doc > file
+    - convert text file into desired format: (DEFAULT~title~year~star~mpaa~country)
+        sed -i "s/½/\&frac12/g" file
+        sed -i "s/’/''/g" file
+        sed -i "s/Chaplin short/short/g" file
+        sed -i "s/Keaton short/short/g" file
+        sed -i "s/‘/''/g" file
+        sed -i "s/…/.../g" file
+        sed -i "s/♥/Heart/g" file
+        remove alphabetical headers
+        remove totals at the end
+        run titleFix on file
+        add delimiters
+        fix Wall-E -> WALL-E
+        fix Existenz -> eXistenZ
+        fix Jfk -> JFK

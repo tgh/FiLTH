@@ -81,7 +81,7 @@ int main (int argc, char ** argv)
                 && buffer[i+5] == ' ')
             {
                 buffer[i+2] = 'T';
-                ++i;
+                i += 5;
                 continue;
             }
             //: a
@@ -91,7 +91,7 @@ int main (int argc, char ** argv)
                 && buffer[i+3] == ' ')
             {
                 buffer[i+2] = 'A';
-                ++i;
+                i += 3;
                 continue;
             }
             //- or .
@@ -103,101 +103,125 @@ int main (int argc, char ** argv)
                 ++i;
                 continue;
             } 
-            //the
+            // The
             if (buffer[i] == ' '
-                && buffer[i+1] == 't'
+                && buffer[i+1] == 'T'
                 && buffer[i+2] == 'h'
                 && buffer[i+3] == 'e'
                 && buffer[i+4] == ' ')
             {
+                buffer[i+1] = 't';
+                i += 4;
                 continue;
             }
-            //and
+            // And
             if (buffer[i] == ' '
-                && buffer[i+1] == 'a'
+                && buffer[i+1] == 'A'
                 && buffer[i+2] == 'n'
                 && buffer[i+3] == 'd'
                 && buffer[i+4] == ' ')
             {
+                buffer[i+1] = 'a';
+                i += 4;
                 continue;
             }
-            //of
+            // Of
             if (buffer[i] == ' '
-                && buffer[i+1] == 'o'
+                && buffer[i+1] == 'O'
                 && buffer[i+2] == 'f'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'o';
+                i += 3;
                 continue;
             }
-            //at
+            // At
             if (buffer[i] == ' '
-                && buffer[i+1] == 'a'
+                && buffer[i+1] == 'A'
                 && buffer[i+2] == 't'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'a';
+                i += 3;
                 continue;
             }
-            //in
+            // In
             if (buffer[i] == ' '
-                && buffer[i+1] == 'i'
+                && buffer[i+1] == 'I'
                 && buffer[i+2] == 'n'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'i';
+                i += 3;
                 continue;
             }
-            //as
+            // As
             if (buffer[i] == ' '
-                && buffer[i+1] == 'a'
+                && buffer[i+1] == 'A'
                 && buffer[i+2] == 's'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'a';
+                i += 3;
                 continue;
             }
-            //it
+            // It
             if (buffer[i] == ' '
-                && buffer[i+1] == 'i'
+                && buffer[i+1] == 'I'
                 && buffer[i+2] == 't'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'i';
+                i += 3;
                 continue;
             }
-            //by
+            // By
             if (buffer[i] == ' '
-                && buffer[i+1] == 'b'
+                && buffer[i+1] == 'B'
                 && buffer[i+2] == 'y'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'b';
+                i += 3;
                 continue;
             }
-            //on
+            // On
             if (buffer[i] == ' '
-                && buffer[i+1] == 'o'
+                && buffer[i+1] == 'O'
                 && buffer[i+2] == 'n'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'o';
+                i += 3;
                 continue;
             }
-            //an
+            // An
             if (buffer[i] == ' '
-                && buffer[i+1] == 'a'
+                && buffer[i+1] == 'A'
                 && buffer[i+2] == 'n'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 'a';
+                i += 3;
                 continue;
             }
-            //to
+            // To
             if (buffer[i] == ' '
-                && buffer[i+1] == 't'
+                && buffer[i+1] == 'T'
                 && buffer[i+2] == 'o'
                 && buffer[i+3] == ' ')
             {
+                buffer[i+1] = 't';
+                i += 3;
                 continue;
             }
-            //a
+            // A
             if (buffer[i] == ' '
-                && buffer[i+1] == 'a'
+                && buffer[i+1] == 'A'
                 && buffer[i+2] == ' ')
             {
+                buffer[i+1] = 'a';
+                i += 2;
                 continue;
             }
 

@@ -11,9 +11,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-#define LINE_LENGTH 82
+#define LINE_LENGTH 101
 
-void CheckFileReadError (FILE * source);
 
 int main (int argc, char ** argv)
 {	
@@ -48,17 +47,23 @@ int main (int argc, char ** argv)
 
 		//read the next line in the file
 		fgets_catcher = fgets(buffer, LINE_LENGTH, source);
-		CheckFileReadError(source);
+	    if (fgets_catcher < 0)
+	    {
+		    printf("\nError in reading file.\n");
+		    fclose(source);
+		    exit(-1);
+	    }
 
         for (i=0; buffer[i] != '('; ++i)
         {
             // the
             if (buffer[i] == ','
                 && buffer[i+1] == ' '
-                && buffer[i+2] == 't'
+                && buffer[i+2] == 'T'
                 && buffer[i+3] == 'h'
                 && buffer[i+4] == 'e'
-                && buffer[i+5] == '(')
+                && buffer[i+5] == ' '
+                && buffer[i+6] == '(')
             {
                 strcpy(clone, buffer);
 
@@ -133,18 +138,4 @@ int main (int argc, char ** argv)
 	
 	fclose(source);
 	exit(0);
-}
-
-
-/* 
- * checks that any read from file did not result in an error
- */
-void CheckFileReadError(FILE * source)
-{
-	if (ferror(source))
-	{
-		printf("\nError in reading movieRatings.txt.\n");
-		fclose(source);
-		exit(-1);
-	}
 }
