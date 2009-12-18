@@ -9,6 +9,8 @@
         sed -i "s/‘/''/g" file
         sed -i "s/…/.../g" file
         sed -i "s/♥/Heart/g" file
-        remove alphabetical headers
-        remove totals at the end
+        sed '/^[A-Z]$/d' file > file
+        sed '/X, Y, Z/d' file > file
+        sed '/Total:/d' file > file
+        sed '/shorts$/d' file > file
         run movie2sql on file

@@ -1,0 +1,15 @@
+#!/bin/bash
+antiword ~/Documents/Movie_Ratings.doc > temp
+sed -i "s/½/\&frac12/g" temp
+sed -i "s/’/''/g" temp
+sed -i "s/Chaplin short/short/g" temp
+sed -i "s/Keaton short/short/g" temp
+sed -i "s/‘/''/g" temp
+sed -i "s/…/.../g" temp
+sed -i "s/♥/Heart/g" temp
+sed "/^[A-Z]$/d" temp > temp2
+sed "/^$/d" temp2 > temp
+sed "/X, Y, Z/d" temp > temp2
+sed "/Total:/d" temp2 > temp
+sed "/shorts$/d" temp > temp2
+./movie2sql ./temp2 > movie.sql
