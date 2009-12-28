@@ -1,5 +1,5 @@
 #!/bin/bash
-antiword ~/Documents/Movie_Ratings.doc > temp
+antiword ~/Documents/Movies/Movie_Ratings.doc > temp
 sed -i "s/½/\&frac12/g" temp
 sed -i "s/’/''/g" temp
 sed -i "s/Chaplin short/short/g" temp
