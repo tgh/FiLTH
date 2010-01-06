@@ -1,16 +1,1 @@
-- script for taking Movie Ratings.doc and making SQL insert statements:
-    - convert MS doc into text:
-        antiword ~/Documents/Movie_Ratings.doc > file
-    - convert text file entries into sql insert statements
-        sed -i "s/½/\&frac12/g" file
-        sed -i "s/’/''/g" file
-        sed -i "s/Chaplin short/short/g" file
-        sed -i "s/Keaton short/short/g" file
-        sed -i "s/‘/''/g" file
-        sed -i "s/…/.../g" file
-        sed -i "s/♥/Heart/g" file
-        sed '/^[A-Z]$/d' file > file
-        sed '/X, Y, Z/d' file > file
-        sed '/Total:/d' file > file
-        sed '/shorts$/d' file > file
-        run movie2sql on file
+- fix bug resulting from antiword with long movie titles like Dr. Strangelove
