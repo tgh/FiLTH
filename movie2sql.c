@@ -200,8 +200,9 @@ void formatTitle(char * buffer)
         // a
         if (buffer[i] == ','
             && buffer[i+1] == ' '
-            && buffer[i+2] == 'a'
-            && buffer[i+3] == '(')
+            && buffer[i+2] == 'A'
+            && buffer[i+3] == ' '
+            && buffer[i+4] == '(')
         {
             strcpy(clone, buffer);
 
@@ -211,7 +212,7 @@ void formatTitle(char * buffer)
                 buffer[k] = clone[j];
                 ++k;
             }
-            buffer[0] = 'a';
+            buffer[0] = 'A';
             buffer[1] = ' ';
 
             for (i=k; buffer[i] != '\0'; ++i)
@@ -223,9 +224,10 @@ void formatTitle(char * buffer)
         // an
         if (buffer[i] == ','
             && buffer[i+1] == ' '
-            && buffer[i+2] == 'a'
+            && buffer[i+2] == 'A'
             && buffer[i+3] == 'n'
-            && buffer[i+4] == '(')
+            && buffer[i+4] == ' '
+            && buffer[i+5] == '(')
         {
             strcpy(clone, buffer);
 
@@ -235,7 +237,7 @@ void formatTitle(char * buffer)
                 buffer[k] = clone[j];
                 ++k;
             }
-            buffer[0] = 'a';
+            buffer[0] = 'A';
             buffer[1] = 'n';
             buffer[2] = ' ';
 
