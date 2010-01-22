@@ -1,1 +1,3 @@
 - fix bug resulting from antiword with long movie titles like Dr. Strangelove
+- fix bug in movie2sql.c for 'no stars' movie rating
+- fix bug when parsing titles with [short]

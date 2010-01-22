@@ -8,7 +8,7 @@ sed -i "s/’/''/g" $filth_path/temp
 sed -i "s/Chaplin short/short/g" $filth_path/temp
 sed -i "s/Keaton short/short/g" $filth_path/temp
 sed -i "s/‘/''/g" $filth_path/temp
-sed -i "s/…/$filth_path./g" $filth_path/temp
+sed -i "s/…/.../g" $filth_path/temp
 sed -i "s/♥/Heart/g" $filth_path/temp
 sed "/^[A-Z]$/d" $filth_path/temp > $filth_path/temp2
 sed "/^$/d" $filth_path/temp2 > $filth_path/temp

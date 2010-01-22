@@ -228,7 +228,7 @@ INSERT INTO movie VALUES (DEFAULT, 'The Brandon Teena Story', 1999, '**', 'NR', 
 INSERT INTO movie VALUES (DEFAULT, 'Braveheart', 1995, '***', 'R', 'USA');
 INSERT INTO movie VALUES (DEFAULT, 'Brazil', 1985, '***', 'R', 'England');
 INSERT INTO movie VALUES (DEFAULT, 'Breakfast at Tiffany''s', 1961, '**&frac12', 'NR', 'USA');
-INSERT INTO movie VALUES (DEFAULT, 'The Breakfast Club', 1985, '[R]', DEFAULT, '***');
+INSERT INTO movie VALUES (DEFAULT, 'The Breakfast Club', 1985, '***', 'R', 'USA');
 INSERT INTO movie VALUES (DEFAULT, 'Breaking Away', 1979, '****', 'PG', 'USA');
 INSERT INTO movie VALUES (DEFAULT, 'Breaking the Waves', 1996, '**&frac12', 'R', 'Denmark');
 INSERT INTO movie VALUES (DEFAULT, 'Breathless', 1961, '**', 'NR', 'France');
@@ -725,7 +725,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Ice Age', 2002, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Ice Storm', 1997, '**&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Identity', 2003, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Idle Class, the [short]', 1921, '***&frac12', DEFAULT, DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'If…', 1968, '***', DEFAULT, DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'If...', 1968, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Igby Goes Down', 2002, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Il Postino', 1995, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'I''ll Sleep When I''m Dead', 2004, '***', DEFAULT, DEFAULT);
@@ -1302,7 +1302,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Salaam Bombay!', 1988, '***', DEFAULT, DEFAU
 INSERT INTO movie VALUES (DEFAULT, 'The Sandlot', 1993, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Santa Sangre', 1990, '&frac12*', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Saturday Night Fever', 1977, '**', DEFAULT, DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Say Anything…', 1989, '***', DEFAULT, DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Say Anything...', 1989, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Sayonara', 1957, '**&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Saving Private Ryan', 1998, '****', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Sawdust and Tinsel', 1953, '**', DEFAULT, DEFAULT);
@@ -1461,7 +1461,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Sweeney Todd: the Demon Barber of Fleet Stre
 INSERT INTO movie VALUES (DEFAULT, 'The Sweet Hereafter', 1997, '**&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Sweet and Lowdown', 1999, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Sweet Smell of Success', 1957, '****', DEFAULT, DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Swept Away… by an Unusual Destiny in the Blue Sea of August', 1974, '**&frac12', DEFAULT, DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Swept Away... by an Unusual Destiny in the Blue Sea of August', 1974, '**&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Swimming Pool', 2003, '**&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Sword in the Stone', 1963, '****', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Swordfish', 2001, '**', DEFAULT, DEFAULT);
@@ -1613,7 +1613,7 @@ INSERT INTO movie VALUES (DEFAULT, 'What''s Eating Gilbert Grape?', 1994, '***&f
 INSERT INTO movie VALUES (DEFAULT, 'What''s Love Got to do With It?', 1993, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'What''s New Pussycat?', 1965, '**', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'What''s Up Tiger Lily?', 1966, '***', DEFAULT, DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'When Harry Met Sally…', 1989, '***', DEFAULT, DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'When Harry Met Sally...', 1989, '***', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'When We Were Kings', 1997, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Where the Buffalo Roam', 1980, '***&frac12', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Where the Green Ants Dream', 1984, '***', DEFAULT, DEFAULT);
