@@ -1,15 +1,18 @@
 #!/bin/bash
-antiword ~/Documents/Movies/Movie_Ratings.doc > temp
-sed -i "s/½/\&frac12/g" temp
-sed -i "s/’/''/g" temp
-sed -i "s/Chaplin short/short/g" temp
-sed -i "s/Keaton short/short/g" temp
-sed -i "s/‘/''/g" temp
-sed -i "s/…/.../g" temp
-sed -i "s/♥/Heart/g" temp
-sed "/^[A-Z]$/d" temp > temp2
-sed "/^$/d" temp2 > temp
-sed "/X, Y, Z/d" temp > temp2
-sed "/Total:/d" temp2 > temp
-sed "/shorts$/d" temp > temp2
-./movie2sql ./temp2 > movie.sql
+
+filth_path=~/Projects/TMDB
+
+antiword ~/Documents/Movies/Movie_Ratings.doc > $filth_path/temp
+sed -i "s/½/\&frac12/g" $filth_path/temp
+sed -i "s/’/''/g" $filth_path/temp
+sed -i "s/Chaplin short/short/g" $filth_path/temp
+sed -i "s/Keaton short/short/g" $filth_path/temp
+sed -i "s/‘/''/g" $filth_path/temp
+sed -i "s/…/$filth_path./g" $filth_path/temp
+sed -i "s/♥/Heart/g" $filth_path/temp
+sed "/^[A-Z]$/d" $filth_path/temp > $filth_path/temp2
+sed "/^$/d" $filth_path/temp2 > $filth_path/temp
+sed "/X, Y, Z/d" $filth_path/temp > $filth_path/temp2
+sed "/Total:/d" $filth_path/temp2 > $filth_path/temp
+sed "/shorts$/d" $filth_path/temp > $filth_path/temp2
+$filth_path/bin/movie2sql $filth_path/temp2 > $filth_path/sql/movie.sql
