@@ -13,6 +13,7 @@ mpaa varchar(7) DEFAULT NULL);
 CREATE TABLE crewperson (
 crewid serial NOT NULL,
 fname varchar(15) NOT NULL,
+mname varchar(15) DEFAULT NULL,
 lname varchar(20) NOT NULL);
 
 CREATE TABLE workedon (

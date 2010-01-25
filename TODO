@@ -1,7 +1,7 @@
 BUGS
 ------
 - fix bug resulting from antiword with long movie titles like Dr. Strangelove
-- fix bug in movie2sql.c for 'no stars' movie rating
+- fix bug in movie2sql.c for 'no stars' movie rating (after all ratings & countries have been entered into Movie_Ratings.doc)
 - fix bug when parsing titles with [short]
 
 TASKS
@@ -9,6 +9,8 @@ TASKS
 - gather data
   - mpaa ratings
   - oscar nominees
+  - crew members (actors, directors, cinematographers, screenwriters)
   - lists
+- write program to turn crewmember data into sql 
 - make lists into html to be linked to from home page
 - finish php pages
