@@ -1,6 +1,6 @@
 Christian Bale
 Marlon Brando
-Robert De Niro
+Robert DeNiro
 Tom Hanks
 Dustin Hoffman
 Phillip Seymour Hoffman
@@ -212,7 +212,7 @@ Frank Capra
 John Cassavetes
 Charlie Chaplin
 Jean Cocteau
-The Coen Brothers
+Joel and Ethan Coen
 Chris Columbus
 Francis Ford Coppola
 Sofia Coppola
@@ -225,7 +225,7 @@ Guillermo del Toro
 Jonathan Demme
 Clint Eastwood
 Sergei Eisenstein
-The Farelly Brothers
+Bobby and Peter Farelley
 Frederico Fellini
 Mike Figgis
 David Fincher
@@ -287,7 +287,7 @@ Sam Peckinpah
 Arthur Penn
 Wolfgang Petersen
 Roman Polanski
-The Polish brothers
+Michael and Mark Polish
 Satyajit Ray
 Robert Redford
 Rob Reiner
