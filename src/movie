@@ -2,7 +2,7 @@
 
 filth_path=~/Projects/TMDB
 
-antiword ~/Documents/Movies/Movie_Ratings.doc > $filth_path/temp
+antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > $filth_path/temp
 sed -i "s/½/\&frac12/g" $filth_path/temp
 sed -i "s/’/''/g" $filth_path/temp
 sed -i "s/Chaplin short/short/g" $filth_path/temp
