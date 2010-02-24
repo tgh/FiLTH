@@ -47,7 +47,6 @@ int main (int argc, char ** argv)
 	{
         int i = 0;
         int j = 0;
-        int skipMpaa = 0;
         int skipCountry = 0;
 
 		//read the next line in the file
@@ -80,42 +79,23 @@ int main (int argc, char ** argv)
         j = 0;
         for (i=i+2; buffer[i+1] != '['; ++i)
         {
-            //check for no mpaa and no country
-            if (buffer[i] == '\n')
-            {
-                skipMpaa = 1;
-                skipCountry = 1;
-                break;
-            }
-            //check for just no mpaa
-            if (buffer[i] == ' ')
-            {
-                --i;
-                skipMpaa = 1;
-                break;
-            }
-
             star[j] = buffer[i];
             ++j;
         }
         star[j] = '\0';
 
         //copy mpaa rating
-        if (!skipMpaa)
+        j = 0;
+        for (i=i+2; buffer[i] != ']'; ++i)
         {
-            j = 0;
-            for (i=i+2; buffer[i] != ']'; ++i)
-            {
-                if (buffer[i] == '\n')
-                {
-                    skipCountry = 1;
-                    break;
-                }
-                mpaa[j] = buffer[i];
-                ++j;
-            }
-            mpaa[j] = '\0';
+            mpaa[j] = buffer[i];
+            ++j;
         }
+        mpaa[j] = '\0';
+
+        //check for no country
+        if (buffer[i+1] == '\n')
+            skipCountry = 1;
 
         //copy country
         if (!skipCountry)
@@ -129,19 +109,7 @@ int main (int argc, char ** argv)
             country[j] = '\0';
         }
 
-        if (skipMpaa && skipCountry)
-        {
-            printf("INSERT INTO movie VALUES ");
-            printf("(DEFAULT, \'%s\', %s, \'%s\', DEFAULT, DEFAULT);\n",
-                title, year, star);
-        }
-        else if (skipMpaa)
-        {
-            printf("INSERT INTO movie VALUES ");
-            printf("(DEFAULT, \'%s\', %s, \'%s\', DEFAULT, \'%s\');\n",
-                title, year, star, country);
-        }
-        else if (skipCountry)
+        if (skipCountry)
         {
             printf("INSERT INTO movie VALUES ");
             printf("(DEFAULT, \'%s\', %s, \'%s\', \'%s\', DEFAULT);\n",
