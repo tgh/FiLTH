@@ -1,7 +1,6 @@
 BUGS
 ------
-- fix bug resulting from antiword with long movie titles like Dr. Strangelove
-- fix bug in movie2sql.c for 'no stars' movie rating (after all ratings & countries have been entered into Movie_Ratings.doc)
+- fix bug not capitalizing 'the' after ':' (Austin Powers)
 - fix bug when parsing titles with [short]
 
 TASKS
