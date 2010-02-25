@@ -144,7 +144,7 @@ void formatTitle(char * buffer)
             && buffer[i+3] == 'h'
             && buffer[i+4] == 'e'
             && buffer[i+5] == ' '
-            && buffer[i+6] == '(')
+            && (buffer[i+6] == '(' || buffer[i+6] == '['))
         {
             strcpy(clone, buffer);
 
@@ -216,13 +216,13 @@ void formatTitle(char * buffer)
         }
     }
 
-    //uncapatalize certain small words in title
+    //capatalize certain words in title
     for (i=0; buffer[i] != '('; ++i)
     {
         //: the
         if (buffer[i] == ':'
             && buffer[i+1] == ' '
-            && buffer[i+2] == 't'
+            && (buffer[i+2] == 't' || buffer[i+2] == 'T')
             && buffer[i+3] == 'h'
             && buffer[i+4] == 'e'
             && buffer[i+5] == ' ')
@@ -234,7 +234,7 @@ void formatTitle(char * buffer)
         //: a
         if (buffer[i] == ':'
             && buffer[i+1] == ' '
-            && buffer[i+2] == 'a'
+            && (buffer[i+2] == 'a' || buffer[i+2] == 'A')
             && buffer[i+3] == ' ')
         {
             buffer[i+2] = 'A';
@@ -268,7 +268,7 @@ void formatTitle(char * buffer)
             && buffer[i+3] == 'd'
             && buffer[i+4] == ' ')
         {
-            buffer[i+1] = 'a';void formatTitle(char * buffer);
+            buffer[i+1] = 'a';
             i += 4;
             continue;
         }

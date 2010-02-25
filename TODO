@@ -1,7 +1,5 @@
 BUGS
 ------
-- fix bug not capitalizing 'the' after ':' (Austin Powers)
-- fix bug when parsing titles with [short]
 
 TASKS
 ------
