@@ -1673,4 +1673,3 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero Effect', 1998, '***', 'R', 'USA');
 INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct [short]', 1933, '***', 'NR', 'France');
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, '***&frac12', 'R', 'USA');
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, '**&frac12', 'PG-13', 'USA');
-INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, '**&frac12', 'PG-13', 'USA');
