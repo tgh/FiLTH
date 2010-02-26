@@ -7,8 +7,8 @@ movieid serial NOT NULL,
 title varchar(100) NOT NULL,
 year integer NOT NULL,
 mystarrating varchar(11) DEFAULT NULL,
-country varchar(30) DEFAULT NULL,
-mpaa varchar(7) DEFAULT NULL);
+mpaa varchar(7) DEFAULT NULL,
+country varchar(30) DEFAULT NULL);
 
 CREATE TABLE crewperson (
 crewid serial NOT NULL,
