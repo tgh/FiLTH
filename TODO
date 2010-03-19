@@ -3,11 +3,9 @@ BUGS
 
 TASKS
 ------
-- redo crewperson.txt with last name, first name format
 - gather data
   - mpaa ratings
   - oscar nominees
-  - crew persons (actors, directors, cinematographers, screenwriters)
   - lists
 - write program to turn crewmember data into sql 
 - make lists into html to be linked to from home page
