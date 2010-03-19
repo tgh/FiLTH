@@ -38,12 +38,20 @@ main = do
 reName:: [String] -> String
 -- four word pattern: i.e. ["Joel","and","Ethan","Coen"] -> "Coen, Joel and Ethan\n"
 reName (v:w:x:y:zs) = y ++ ", " ++ (unwords [v,w,(x ++ "\n")])
+-- three name pattern with "De" in the last name: i.e. ["Robert","De","Niro"] -> "De Niro, Robert"
+reName (w:"De":x:zs) = "De " ++ x ++ ", " ++ w ++ "\n"
+-- three name pattern with "Del" in the last name: i.e. ["Benicio Del Toro"] -> "Del Toro, Benicio"
+reName (w:"Del":x:zs) = "Del " ++ x ++ ", " ++ w ++ "\n"
 -- three word pattern with "Jr.": i.e. ["Robert","Downy","Jr."] -> "Downy Jr., Robert\n"
-reName (w:x:"Jr.":zs) = x ++ " Jr., " ++ (w ++ "\n")
+reName (w:x:"Jr.":zs) = x ++ " Jr., " ++ w ++ "\n"
+-- three word pattern with "Van" in last name: i.e. ["Gus","Van","Sant"] -> "Van Sant, Gus"
+reName (w:"Van":x:zs) = "Van " ++ x ++ ", " ++ w ++ "\n"
+-- three word pattern with "Von" in last name: i.e. ["Lars","Von","Trier"] -> "Von Trier, Lars"
+reName (w:"Von":x:zs) = "Von " ++ x ++ ", " ++ w ++ "\n"
 -- three name pattern: i.e. ["Phillip","Seymour","Hoffman"] -> "Hoffman, Phillip Seymour\n"
-reName (w:x:y:zs) = y ++ ", " ++ (unwords [w,(x ++ "\n")])
+reName (w:x:y:zs) = y ++ ", " ++ w ++ ", " ++ x ++ "\n"
 -- two name pattern: i.e. ["Christian","Bale"] -> "Bale, Christian\n"
-reName (x:y:zs) = y ++ ", " ++ (x ++ "\n")
+reName (x:y:zs) = y ++ ", " ++ x ++ "\n"
 -- one name pattern: i.e. ["Madonna"] -> "Madonna\n"
 reName (x:xs) = x ++ "\n"
 -- newline space

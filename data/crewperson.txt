@@ -1,6 +1,6 @@
 Christian Bale
 Marlon Brando
-Robert DeNiro
+Robert De Niro
 Tom Hanks
 Dustin Hoffman
 Phillip Seymour Hoffman
@@ -36,6 +36,7 @@ Denzel Washington
 Brian Cox
 Mark Wahlberg
 Martin Sheen
+Charlie Sheen
 Michael Sheen
 Paul Newman
 Steve McQueen
@@ -77,7 +78,7 @@ Robert Redford
 Peter Lorre
 Kirk Douglas
 Michael Douglas
-Danny DeVito
+Danny De Vito
 Christopher Lloyd
 Michael J. Fox
 Joel David Moore
@@ -153,7 +154,7 @@ John Turturro
 Catherine Keener
 Shia LaBeouf
 Cameron Diaz
-Robin Wright Penn
+Robin Wright-Penn
 Cary Elwes
 Michael McKean
 Harry Shearer
@@ -221,7 +222,7 @@ Cameron Crowe
 Frank Darabont
 Brian De Palma
 Vittorio De Sica
-Guillermo del Toro
+Guillermo Del Toro
 Jonathan Demme
 Clint Eastwood
 Sergei Eisenstein
