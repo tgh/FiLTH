@@ -1,5 +1,6 @@
 BUGS
 ------
+- special case with Peter O'Toole in crew2sql (the apostrophe needs to be '')
 
 TASKS
 ------

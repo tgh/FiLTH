@@ -1,4 +1,4 @@
-module Crew2Sql where
+module Main where
 import System.IO
 import System.Environment (getArgs)
 import CSV
