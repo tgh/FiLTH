@@ -16,12 +16,30 @@ main = do
   contents <- parseCSVFromFile file
   -- contents is now a list of lists of strings (a list of records)
   -- i.e. [["Bale","Christian"],["De Niro","Robert"],...]
-  let insertions = toSql contents
+  let contents' = apostrophize contents
+      insertions = toSql contents'
   mapM putStr insertions
 
 
-toSql :: (Either ParseError CSV) -> [String]
-toSql (Right records) = map sqlConversion records
+apostrophize :: (Either ParseError CSV) -> [[String]]
+apostrophize (Right names) = map apostrophize' names
+
+apostrophize' :: [String] -> [String]
+apostrophize' name = map apostrophize'' name
+
+apostrophize'' :: String -> String
+apostrophize'' name | elem '\'' name = fix name
+apostrophize'' other = other
+
+fix :: String -> String
+fix (x:xs) = if x == '\''
+               then x:'\'':(fix xs)
+               else x:(fix xs)
+fix [] = []
+
+
+toSql :: [[String]] -> [String]
+toSql records = map sqlConversion records
 
 
 sqlConversion :: [String] -> String
