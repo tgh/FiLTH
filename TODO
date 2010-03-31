@@ -8,7 +8,6 @@ TASKS
   - oscar nominees
   - lists
 - mini programs for (table):
-  - turn country.txt into sql (country)
   - extract movies from filmographies into movie table sql insertions (movie)
   - (workedon)
   - turn genre.txt into sql (genre)
