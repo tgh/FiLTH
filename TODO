@@ -8,6 +8,15 @@ TASKS
   - mpaa ratings
   - oscar nominees
   - lists
-- write program to turn crewmember data into sql 
+- mini programs for (table):
+  - turn country.txt into sql (country)
+  - extract movies from filmographies into movie table sql insertions (movie)
+  - (workedon)
+  - turn genre.txt into sql (genre)
+  - (genrecontains)
+  - turn oscar.txt into sql (oscar)
+  - (oscargivento)
+  - (list)
+  - (listcontains)
 - make lists into html to be linked to from home page
 - finish php pages
