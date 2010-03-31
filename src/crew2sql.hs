@@ -1,8 +1,8 @@
 module Main where
 import System.IO
 import System.Environment (getArgs)
-import CSV
-import Text.ParserCombinators.Parsec
+import CSV (CSV, parseCSVFromFile)
+import Text.ParserCombinators.Parsec (ParseError)
 
 {- want result to be:
   ["INSERT INTO crewperson VALUES (DEFAULT, 'Bale', 'Christian', DEFAULT);\n",
@@ -16,13 +16,24 @@ main = do
   contents <- parseCSVFromFile file
   -- contents is now a list of lists of strings (a list of records)
   -- i.e. [["Bale","Christian"],["De Niro","Robert"],...]
-  let contents' = apostrophize contents
-      insertions = toSql contents'
+  let contents' = removeLast contents
+      contents'' = apostrophize contents'
+      insertions = toSql contents''
   mapM putStr insertions
 
 
-apostrophize :: (Either ParseError CSV) -> [[String]]
-apostrophize (Right names) = map apostrophize' names
+removeLast :: (Either ParseError CSV) -> [[String]]
+removeLast (Right records) = (reverse . drop 1 . reverse) records
+
+--------------------------------------------------------------------------------
+
+{- Since sql uses apostrophes when inserting strings, a name with an apostrophe
+   (such as O'Toole) would cause a problem.  These apostrophize functions finds
+   an apostrophe in a name, and inserts an additional apostrophe (this escapes
+   the real apostrophe in sql)--i.e. "O'Toole" -> "O''Toole".
+-}
+apostrophize :: [[String]] -> [[String]]
+apostrophize names = map apostrophize' names
 
 apostrophize' :: [String] -> [String]
 apostrophize' name = map apostrophize'' name
@@ -36,6 +47,8 @@ fix (x:xs) = if x == '\''
                then x:'\'':(fix xs)
                else x:(fix xs)
 fix [] = []
+
+-------------------------------------------------------------------------------
 
 
 toSql :: [[String]] -> [String]

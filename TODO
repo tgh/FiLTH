@@ -1,6 +1,5 @@
 BUGS
 ------
-- fix crew2sql so that it doesn't output a sql insertion with an empty name at the end
 
 TASKS
 ------
