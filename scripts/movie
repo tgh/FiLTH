@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filth_path=~/Projects/TMDB
+filth_path=~/Projects/FiLTH
 
 antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > $filth_path/temp
 sed -i "s/½/\&frac12/g" $filth_path/temp
