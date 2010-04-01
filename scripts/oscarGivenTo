@@ -44,5 +44,6 @@ sed -i "s/CINEMATOGRAPHY (Color)/Best Cinematography (color)/g" $filth_path/data
 sed -i "s/CINEMATOGRAPHY,/Best Cinematography,/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best screenplay categories...
 sed -i -r "s/WRITING (Original Screenplay)|WRITING (Screenplay Written Directly for the Screen.*)|WRITING (Story and Screenplay.*)/Best Original Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+
 # rewrite best foreign langauge film...
 sed -i "s/FOREIGN LANGUAGE FILM/Best Foreign Language Film/g" $filth_path/data/oscarsOfCategory.csv
