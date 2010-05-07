@@ -18,3 +18,5 @@ TASKS
   - (listcontains)
 - make lists into html to be linked to from home page
 - finish php pages
+  - add <!DOCTYPE at top of pages
+  - use style sheets rather than html style attributes
