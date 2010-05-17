@@ -3,6 +3,8 @@ BUGS
 
 TASKS
 ------
+- do not store &frac12 for example int the database--have the scripts (php or
+  javascript) deal with those characters when displaying with HTML
 - create FiLTH logo and film graphic background image
 - gather data
   - mpaa ratings
