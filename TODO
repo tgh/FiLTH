@@ -23,3 +23,7 @@ TASKS
 - finish php pages
   - add <!DOCTYPE at top of pages
   - use style sheets rather than html style attributes
+- the titles returned from a query can be displayed as links to imdb.com, like
+  so:
+
+  http://www.imdb.com/find?s=titles&q=the+shawshank+redemption
