@@ -1,28 +1,29 @@
 #!/bin/bash
 
 filth_path=~/Projects/FiLTH
+filth_temp_path=~/Projects/FiLTH/temp
 
 
 # convert Word document to text file
-antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > $filth_path/temp
+antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > $filth_temp_path/temp
 
 # replace special characters with ASCII
-sed -i "s/½/\&frac12/g" $filth_path/temp
-sed -i "s/’/''/g" $filth_path/temp        # (double apostrophes for SQL)
-sed -i "s/Chaplin short/short/g" $filth_path/temp
-sed -i "s/Keaton short/short/g" $filth_path/temp
-sed -i "s/‘/''/g" $filth_path/temp
-sed -i "s/…/.../g" $filth_path/temp
-sed -i "s/♥/Heart/g" $filth_path/temp
+sed -i "s/½/\&frac12/g" $filth_temp_path/temp
+sed -i "s/’/''/g" $filth_temp_path/temp        # (double apostrophes for SQL)
+sed -i "s/Chaplin short/short/g" $filth_temp_path/temp
+sed -i "s/Keaton short/short/g" $filth_temp_path/temp
+sed -i "s/‘/''/g" $filth_temp_path/temp
+sed -i "s/…/.../g" $filth_temp_path/temp
+sed -i "s/♥/Heart/g" $filth_temp_path/temp
 
 # remove the alphabetical headers
-sed "/^[A-Z]$/d" $filth_path/temp > $filth_path/temp2
+sed "/^[A-Z]$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # remove the blank lines
-sed "/^$/d" $filth_path/temp2 > $filth_path/temp
-sed "/X, Y, Z/d" $filth_path/temp > $filth_path/temp2
+sed "/^$/d" $filth_temp_path/temp2 > $filth_temp_path/temp
+sed "/X, Y, Z/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # remove the totals at the bottom
-sed "/Total:/d" $filth_path/temp2 > $filth_path/temp
-sed "/shorts$/d" $filth_path/temp > $filth_path/temp2
+sed "/Total:/d" $filth_temp_path/temp2 > $filth_temp_path/temp
+sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 
 # run the movie2sql program on the resulting text
-$filth_path/bin/movie2sql $filth_path/temp2 > $filth_path/sql/movie.sql
+$filth_path/bin/movie2sql $filth_temp_path/temp2 > $filth_path/sql/movie.sql
