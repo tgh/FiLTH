@@ -1,0 +1,25 @@
+                              F i L T H
+                     (Film Library of Tyler Hayes)
+
+-------------------------------------------------------------------------------
+
+History
+--------
+This project began as a school assignment in the Fall of '09.
+
+
+Overall Description
+--------------------
+The goal of this project is to create a program that manages my movies--movies
+I have seen, movies I want to see, filmographies, oscar winners/nominees, best-
+of lists, etc--all in one place, rather than multiple documents.
+
+In the end I hope it to be a GUI application with menus, buttons, forms, etc.
+and/or a web app that will let others search the database for my ratings.
+
+
+Source
+-------
+Code consists of C, Haskell, and bash scripts.
+Database is Postgresql.
+Web pages in php.
