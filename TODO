@@ -1,5 +1,7 @@
 BUGS
 ------
+- movie.sql always results in the last movie appearing twice (although, Postgres
+  will take care of this, I think, by rejecting the second one)
 
 TASKS
 ------
