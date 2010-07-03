@@ -4,3 +4,5 @@
 
 - crewperson lname and mname can be NULL, so names such as Cher and Madonna
   would be last names.
+
+- for the web app, the lists will be pdf files linked from the home page (?)
