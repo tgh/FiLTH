@@ -9,6 +9,7 @@ antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > $filth_temp_path/temp
 
 # replace special characters with ASCII
 sed -i "s/½/\&frac12/g" $filth_temp_path/temp
+sed -i "s/'/''/g" $filth_temp_path/temp
 sed -i "s/’/''/g" $filth_temp_path/temp        # (double apostrophes for SQL)
 sed -i "s/Chaplin short/short/g" $filth_temp_path/temp
 sed -i "s/Keaton short/short/g" $filth_temp_path/temp
