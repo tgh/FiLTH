@@ -1,7 +1,11 @@
-- a mystarrating of NULL could mean 'not seen' and the program could interpret
-  that as 'not seen' and display/act accordingly rather than actually storing
-  a 'not seen' string.
+WHERE LEFT OFF
+--------------
+- updated movie script and movie2sql.c for new schema, however, gcc compiler is
+not compiling the c file and giving a lot of weird errors AND DELETING THE FILE!
 
+
+THOUGHTS
+---------
 - crewperson lname and mname can be NULL, so names such as Cher and Madonna
   would be last names.
 
