@@ -17,4 +17,4 @@ toSql :: [String] -> [String]
 toSql countries = map sqlConversion countries
 
 sqlConversion :: String -> String
-sqlConversion country = "INSERT INTO country VALUES ('" ++ country ++ "');\n"
+sqlConversion country = "INSERT INTO country VALUES (DEFAULT, '" ++ country ++ "');\n"
