@@ -17,4 +17,4 @@ toSql :: [String] -> [String]
 toSql categories = map sqlConversion categories
 
 sqlConversion :: String -> String
-sqlConversion category = "INSERT INTO oscar VALUES ('" ++ category ++ "');\n"
+sqlConversion category = "INSERT INTO oscar VALUES (DEFAULT, '" ++ category ++ "');\n"
