@@ -112,13 +112,13 @@ int main (int argc, char ** argv)
         if (skipCountry)
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(DEFAULT, \'%s\', %s, \'%s\', \'%s\', DEFAULT);\n",
+            printf("(DEFAULT, \'%s\', %s, %s, \'%s\', DEFAULT);\n",
                 title, year, star, mpaa);
         }
         else
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(DEFAULT, \'%s\', %s, \'%s\', \'%s\', \'%s\');\n",
+            printf("(DEFAULT, \'%s\', %s, \'%s\', \'%s\', %s);\n",
                 title, year, star, mpaa, country);
         }
 	}
