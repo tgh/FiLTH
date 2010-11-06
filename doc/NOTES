@@ -18,3 +18,8 @@ IDEAS/THOUGHTS
   would be last names.
 
 - for the web app, the lists will be pdf files linked from the home page (?)
+
+
+HELPFUL HINTS/REMINDERS
+------------------------
+- compile haskell just like common gcc: ghc -o [binary] [source]
