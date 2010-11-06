@@ -1,10 +1,19 @@
 WHERE LEFT OFF
---------------
+---------------
 - working on oscars...
+  - oscarsOfCategory.csv
+    - looks like only 1929 lists studio before title
+    - titles with a ',' are double-quoted
 
 
-THOUGHTS
----------
+NEEDS
+------
+- country table needs to be populated in the db first, followed by movie, all
+  other entities, then relationships
+
+
+IDEAS/THOUGHTS
+---------------
 - crewperson lname and mname can be NULL, so names such as Cher and Madonna
   would be last names.
 
