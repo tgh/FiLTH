@@ -1,7 +1,6 @@
 WHERE LEFT OFF
 --------------
-- updated movie script and movie2sql.c for new schema, however, gcc compiler is
-not compiling the c file and giving a lot of weird errors AND DELETING THE FILE!
+- working on oscars...
 
 
 THOUGHTS

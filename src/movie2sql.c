@@ -118,7 +118,7 @@ int main (int argc, char ** argv)
         else
         {
             printf("INSERT INTO movie VALUES ");
-            printf("(DEFAULT, \'%s\', %s, \'%s\', \'%s\', %s);\n",
+            printf("(DEFAULT, \'%s\', %s, %s, \'%s\', %s);\n",
                 title, year, star, mpaa, country);
         }
 	}
