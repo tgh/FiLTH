@@ -9,8 +9,8 @@ best motion picture
 outstanding picture
 outstanding motion picture' $filth_path/data/oscars.csv > $filth_path/data/oscarsOfCategory.csv
 # extract actor nominees (and remove unwanted lines with "factory")
-grep -i actor $filth_path/data/oscars.csv > $filth_path/temp
-grep -i -v factory $filth_path/temp >> $filth_path/data/oscarsOfCategory.csv
+grep -i actor $filth_path/data/oscars.csv > $filth_path/temp/temp
+grep -i -v factory $filth_path/temp/temp >> $filth_path/data/oscarsOfCategory.csv
 # extract actress nominees
 grep -i actress $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
 # extract director nominees
@@ -19,6 +19,8 @@ grep -i directing $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCatego
 grep -i cinematography $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
 # extract screenplay nominees
 fgrep -i 'writing (original screenplay
+writing (original story
+writing (adaptation
 writing (story and screenplay
 writing (screenplay
 writing (adapted' $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
@@ -35,7 +37,7 @@ sed -i "s/ACTOR.*ROLE/Best Supporting Actor/g" $filth_path/data/oscarsOfCategory
 # rewrite best actress categories as "Best Actress"
 sed -i -r "s/ACTRESS,|ACTRESS IN A LEADING ROLE,/Best Actress,/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best supporting actress as "Best Supporting Actress"
-sed -i "s/ACTORESS.*ROLE/Best Supporting Actress/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/ACTRESS.*ROLE/Best Supporting Actress/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best director category as "Best Director"
 sed -i "s/DIRECTING/Best Director/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best cinematography category as "Best Cinematography..."
@@ -43,7 +45,7 @@ sed -i "s/CINEMATOGRAPHY.*White)/Best Cinematography (black and white)/g" $filth
 sed -i "s/CINEMATOGRAPHY (Color)/Best Cinematography (color)/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/CINEMATOGRAPHY,/Best Cinematography,/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best screenplay categories...
-sed -i -r "s/WRITING (Original Screenplay)|WRITING (Screenplay Written Directly for the Screen.*)|WRITING (Story and Screenplay.*)/Best Original Screenplay/g" $filth_path/data/oscarsOfCategory.csv
-
+sed -i -r "s/WRITING \(Original S.*\)|WRITING \(Screenplay Written Directly for the Screen.*\)|WRITING \(Story and Screenplay.*\)|WRITING \(Screenplay--Original\)/Best Original Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/WRITING \(.*Adapt.*\)|WRITING \(Screenplay.*[bB]ased on.*\)|WRITING \(Screenplay\)/Best Adapted Screenplay/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best foreign langauge film...
 sed -i "s/FOREIGN LANGUAGE FILM/Best Foreign Language Film/g" $filth_path/data/oscarsOfCategory.csv
