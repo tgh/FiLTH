@@ -4,6 +4,11 @@ WHERE LEFT OFF
   - oscarsOfCategory.csv
     - looks like only 1929 lists studio before title
     - titles with a ',' are double-quoted
+    - 1968 best actress has a tie which needs a value of 2, not 1
+    - need to decode ampersand escape sequences
+    - need to remove studios
+    - need to remove character names
+    - need to remove producers
 
 
 NEEDS
@@ -23,3 +28,15 @@ IDEAS/THOUGHTS
 HELPFUL HINTS/REMINDERS
 ------------------------
 - compile haskell just like common gcc: ghc -o [binary] [source]
+
+
+REFERENCES
+-----------
+- csv file of oscar history found here:
+  http://www.aggdata.com/awards/oscar
+  from here:
+  http://www.bloggersblog.com/blog/224081
+
+
+SCRATCH
+--------
