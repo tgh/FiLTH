@@ -82,11 +82,10 @@ echo rewriting status as 0 or 1...
 sed -i "s/YES$/1/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/NO$/0/g" $filth_path/data/oscarsOfCategory.csv
 
-# remove producers
 
-# remove studios
-
-# remove character names
+#-------------------------------------------------------------------------------
+# PHASE 3: DECODING ESCAPE SEQUENCES                                          --
+#-------------------------------------------------------------------------------
 
 # decode ampersands
 echo "decoding ampersand escape sequence to \"&\"..."

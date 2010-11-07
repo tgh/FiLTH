@@ -5,10 +5,10 @@ WHERE LEFT OFF
     - looks like only 1929 lists studio before title
     - titles with a ',' are double-quoted
     - 1968 best actress has a tie which needs a value of 2, not 1
-    - need to decode ampersand escape sequences
     - need to remove studios
     - need to remove character names
     - need to remove producers
+    - mulitple recipients need their own lines (with 3 as status, where 3 = shared?)
 
 
 NEEDS
