@@ -33,8 +33,8 @@ m_name varchar(15) DEFAULT NULL);
 
 -- crewperson <--> movie relationship
 CREATE TABLE worked_on (
-mid integer NOT NULL,
-cid integer NOT NULL,
+mid smallint NOT NULL,
+cid smallint NOT NULL,
 position varhcar(20) NOT NULL);
 
 
@@ -46,8 +46,8 @@ gen_name varchar(25) NOT NULL);
 
 -- genre <--> movie relationship
 CREATE TABLE genre_contains (
-mid integer NOT NULL,
-gid integer NOT NULL);
+mid smallint NOT NULL,
+gid smallint NOT NULL);
 
 
 -- an oscar entity
@@ -58,9 +58,9 @@ category varchar(25) NOT NULL);
 
 -- oscar <--> movie relationship
 CREATE TABLE oscar_given_to (
-mid integer NOT NULL,
-oid integer NOT NULL,
-cid integer NOT NULL,
+mid smallint NOT NULL,
+oid smallint NOT NULL,
+cid smallint NOT NULL,
 --status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
 status smallint DEFAULT NULL);
 
@@ -74,9 +74,9 @@ list_author varchar(25) DEFAULT NULL);
 
 -- list <--> movie relationship
 CREATE TABLE list_contains (
-mid integer NOT NULL,
-lid integer NOT NULL,
-rank integer DEFAULT NULL);
+mid smallint NOT NULL,
+lid smallint NOT NULL,
+rank smallint DEFAULT NULL);
 
 
 -- a country entity
