@@ -92,14 +92,26 @@ echo "decoding ampersand escape sequence to \"&\"..."
 sed -i "s/\&amp;/\&/g" $filth_path/data/oscarsOfCategory.csv
 # decode accented characters
 echo "decoding escape sequences for accented characters..."
-sed -i "s/&Atilde;&copy;/é/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&laquo;/ë/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&frac14;/ü/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&para;/ö/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&sup3;/ó/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&uml;/è/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&plusmn;/ñ/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&curren;/ä/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&iexcl;/á/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/&Atilde;&hellip;/Å/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&copy;/é/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&laquo;/ë/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&frac14;/ü/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&para;/ö/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&sup3;/ó/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&uml;/è/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&plusmn;/ñ/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&curren;/ä/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&iexcl;/á/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&Atilde;&hellip;/Å/g" $filth_path/data/oscarsOfCategory.csv
+#sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
+
+sed -i "s/&Atilde;&copy;/e/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&laquo;/e/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&frac14;/u/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&para;/o/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&sup3;/o/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&uml;/e/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&plusmn;/n/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&curren;/a/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&iexcl;/a/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/&Atilde;&hellip;/A/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
