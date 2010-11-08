@@ -6,7 +6,8 @@
 CREATE TABLE movie (
 mid serial NOT NULL,
 title varchar(100) NOT NULL,
-year integer NOT NULL,
+-- smallint is 2 bytes in Postgres, plenty of bits for a year
+year smallint NOT NULL,
 -- my star rating for the movie (or "haven't see it").  Only 11 possible values.
 -- smallint to save space--front-end can translate the number to a star rating.
 star_rating smallint DEFAULT NULL,
