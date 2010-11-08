@@ -8,7 +8,7 @@ mid serial NOT NULL,
 title varchar(100) NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 year smallint NOT NULL,
--- my star rating for the movie (or "haven't see it").  Only 11 possible values.
+-- my star rating for the movie (or "haven't seen it"). Only 11 possible values.
 -- smallint to save space--front-end can translate the number to a star rating.
 star_rating smallint DEFAULT NULL,
 -- mpaa rating (PG, R, etc).  This is varchar rather than smallint in case the
@@ -194,7 +194,7 @@ ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
 CHECK (rank > 0);
 
 -- oscargivento status
-ALTER TABLE oscar_given_to ADD CONSTRAINT osc_stat_constraint
+ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_status_constraint
 CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
