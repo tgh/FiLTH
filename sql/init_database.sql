@@ -187,13 +187,7 @@ CHECK (star_rating >= 0 AND star_rating <= 10);
 
 -- movie mpaa rating
 ALTER TABLE movie ADD CONSTRAINT mpaa_constraint
-CHECK (mpaa = 'NR' OR
-       mpaa = 'G' OR
-       mpaa = 'PG' OR
-       mpaa = 'PG-13' OR
-       mpaa = 'R' OR
-       mpaa = 'X' OR
-       mpaa = 'NC-17');
+CHECK (mpaa IN ('NR', 'G', 'PG', 'PG-13', 'R', 'X', 'NC-17'));
 
 -- listcontains rank
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
