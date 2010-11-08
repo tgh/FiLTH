@@ -27,6 +27,9 @@ IDEAS/THOUGHTS
   varchar(30) column and not a fkey into a country table (with a big check
   constraint, mind you, for all countries).  This will eliminate a table join
   but at the expense of using more space.
+- shouldn't contain accented special characters for names, movie titles, etc.
+  because typing in a search query in the front-end won't find them if not
+  given (just using non-accented characters).  Unless search by pull-down menu?
 
 
 HELPFUL HINTS/REMINDERS
