@@ -1,0 +1,28 @@
+- close button
+- able to open/create/save views
+- insert/update/delete a movie
+- insert/update/delete a crew person (for each position)
+- insert/update/delete a worked_on relationship
+- insert/update/delete an oscar category
+- insert/update/delete an oscar
+- insert/update/delete a list
+- insert/update/delete a list entry
+- insert/update/delete a country
+- insert/update/delete a genre
+- insert/update/delete a movie genre instance
+- search using:
+  - movie title
+  - movie year
+  - movie star rating
+  - movie mpaa rating
+  - movie country
+  - movie genre
+  - actor first name and/or last name
+  - actress last name and/or last name
+  - director first name and/or last name
+  - cinematographer first name and/or last name
+  - oscar category
+  - oscar winners
+  - list rank
+  - list title
+- export results to excel, csv, html, xml, json, docx, odt and/or pdf
