@@ -84,7 +84,7 @@ rank smallint DEFAULT NULL);
 -- this has no relationship at this time.  It is possible that a country <-->
 -- movie relationship could be added in the future so that a movie could have
 -- multiple countries associated with it (I don't care), but as of now this only
--- exists so that there doesn't have to be a big OR'd integrity contraint for a
+-- exists so that there doesn't have to be a big integrity contraint for a
 -- movie's country (like the star_contraint for the movie table).
 CREATE TABLE country (
 coid serial NOT NULL,
