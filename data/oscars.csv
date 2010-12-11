@@ -18,9 +18,9 @@ Year,Category,Nominee,Additional Info,Won?
 1927/28,ENGINEERING EFFECTS,Roy Pomeroy,Wings,YES
 1927/28,ENGINEERING EFFECTS,Nugent Slaughter,,NO
 1927/28,ENGINEERING EFFECTS,Ralph Hammeras,,NO
-1927/28,OUTSTANDING PICTURE,The Caddo Company,The Racket,NO
-1927/28,OUTSTANDING PICTURE,Paramount Famous Lasky,Wings,YES
-1927/28,OUTSTANDING PICTURE,Fox,7th Heaven,NO
+1927/28,OUTSTANDING PICTURE,The Racket,The Caddo Company,NO
+1927/28,OUTSTANDING PICTURE,Wings,Paramount Famous Lasky,YES
+1927/28,OUTSTANDING PICTURE,7th Heaven,Fox,NO
 1927/28,UNIQUE AND ARTISTIC PICTURE,Paramount Famous Lasky,Chang,NO
 1927/28,UNIQUE AND ARTISTIC PICTURE,Metro-Goldwyn-Mayer,The Crowd,NO
 1927/28,UNIQUE AND ARTISTIC PICTURE,Fox,Sunrise,YES
@@ -59,11 +59,11 @@ Year,Category,Nominee,Additional Info,Won?
 1928/29,DIRECTING,Harry Beaumont,The Broadway Melody,NO
 1928/29,DIRECTING,Ernst Lubitsch,The Patriot,NO
 1928/29,DIRECTING,Lionel Barrymore,Madame X,NO
-1928/29,OUTSTANDING PICTURE,Feature Productions,Alibi,NO
-1928/29,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,The Broadway Melody,YES
-1928/29,OUTSTANDING PICTURE,Fox,In Old Arizona,NO
-1928/29,OUTSTANDING PICTURE,Metro-Goldwyn-Mayer,Hollywood Revue,NO
-1928/29,OUTSTANDING PICTURE,Paramount Famous Lasky,The Patriot,NO
+1928/29,OUTSTANDING PICTURE,Alibi,Feature Productions,NO
+1928/29,OUTSTANDING PICTURE,The Broadway Melody,Metro-Goldwyn-Mayer,YES
+1928/29,OUTSTANDING PICTURE,In Old Arizona,Fox,NO
+1928/29,OUTSTANDING PICTURE,Hollywood Revue,Metro-Goldwyn-Mayer,NO
+1928/29,OUTSTANDING PICTURE,The Patriot,Paramount Famous Lasky,NO
 1928/29,WRITING,Bess Meredyth,A Woman of Affairs; and Wonder of Women,NO
 1928/29,WRITING,Tom Barry,In Old Arizona; and The Valiant,NO
 1928/29,WRITING,Elliott Clawson,The Cop; The Leatherneck; Sal of Singapore; and Skyscraper,NO
