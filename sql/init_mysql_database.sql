@@ -186,7 +186,9 @@ CHECK (year >= 1900 AND year <= 2012);
 
 -- movie star rating
 ALTER TABLE filth.movie ADD CONSTRAINT star_constraint
-CHECK (star_rating >= 0 AND star_rating <= 10);
+CHECK (star_rating >= -2 AND star_rating <= 8);
+-- -2 = not seen
+-- -1 = N/A (so far I've only had to use this once: for "Jackass: The Movie")
 --  0 = no stars
 --  1 = ½*
 --  2 = *
@@ -196,8 +198,6 @@ CHECK (star_rating >= 0 AND star_rating <= 10);
 --  6 = ***
 --  7 = ***½
 --  8 = ****
---  9 = N/A (so far I've only had to use this once: for "Jackass: The Movie")
--- 10 = not seen
 
 -- movie mpaa rating
 ALTER TABLE filth.movie ADD CONSTRAINT mpaa_constraint

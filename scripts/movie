@@ -26,7 +26,7 @@ sed -i "s/\*\*/4/g" $filth_temp_path/temp
 sed -i "s/\*½/3/g" $filth_temp_path/temp
 sed -i "s/½\*/1/g" $filth_temp_path/temp
 sed -i "s/\*/2/g" $filth_temp_path/temp
-sed -i "s/N\/A/9/g" $filth_temp_path/temp
+sed -i "s/N\/A/-1/g" $filth_temp_path/temp
 
 
 # replace country of origin with corresponding integer

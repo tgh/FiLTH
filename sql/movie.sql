@@ -800,7 +800,7 @@ INSERT INTO movie VALUES (DEFAULT, 'It Happened One Night', 1934, 8, 'NR', 1);
 INSERT INTO movie VALUES (DEFAULT, 'The Italian Job', 2003, 6, 'PG-13', 1);
 INSERT INTO movie VALUES (DEFAULT, 'It''s a Wonderful Life', 1946, 8, 'NR', 1);
 INSERT INTO movie VALUES (DEFAULT, 'It''s Complicated', 2009, 6, 'PG-13', 1);
-INSERT INTO movie VALUES (DEFAULT, 'Jackass: The Movie', 2002, 9, 'R', 1);
+INSERT INTO movie VALUES (DEFAULT, 'Jackass: The Movie', 2002, -1, 'R', 1);
 INSERT INTO movie VALUES (DEFAULT, 'The Jackel', 1997, 5, 'R', 1);
 INSERT INTO movie VALUES (DEFAULT, 'Jackie Brown', 1997, 6, 'R', 1);
 INSERT INTO movie VALUES (DEFAULT, 'Jacob''s Ladder', 1990, 5, 'R', 1);
