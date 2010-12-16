@@ -56,6 +56,6 @@ toSql records = map sqlConversion records
 
 
 sqlConversion :: [String] -> String
-sqlConversion (w:x:y:zs) = "INSERT INTO crewperson VALUES (DEFAULT, '" ++ w ++ "', '" ++ x ++ "', '" ++ y ++ "');\n"
-sqlConversion (x:y:zs) = "INSERT INTO crewperson VALUES (DEFAULT, '" ++ x ++ "', '" ++ y ++ "', DEFAULT);\n"
-sqlConversion (y:zs) = "INSERT INTO crewperson VALUES (DEFAULT, '" ++ y ++ "', DEFAULT, DEFAULT);\n"
+sqlConversion (w:x:y:zs) = "INSERT INTO crew_person VALUES (DEFAULT, '" ++ w ++ "', '" ++ x ++ "', '" ++ y ++ "');\n"
+sqlConversion (x:y:zs) = "INSERT INTO crew_person VALUES (DEFAULT, '" ++ x ++ "', '" ++ y ++ "', DEFAULT);\n"
+sqlConversion (y:zs) = "INSERT INTO crew_person VALUES (DEFAULT, '" ++ y ++ "', DEFAULT, DEFAULT);\n"
