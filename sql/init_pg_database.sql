@@ -75,7 +75,7 @@ gid smallint NOT NULL);
 -- an oscar entity
 CREATE TABLE oscar (
 oid serial NOT NULL,
-category varchar(25) NOT NULL);
+category varchar(40) NOT NULL);
 
 
 -- oscar <--> movie relationship
