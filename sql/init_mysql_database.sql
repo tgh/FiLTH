@@ -26,15 +26,14 @@ year smallint NOT NULL,
 -- my star rating for the movie (or "haven't seen it"). Only 11 possible values.
 -- tinyint to save space--front-end can translate the number to a star rating.
 star_rating tinyint DEFAULT NULL,
--- mpaa rating (PG, R, etc).  This is varchar rather than smallint in case the
+-- mpaa rating (PG, R, etc).  This is varchar rather than tinyint in case the
 -- MPAA adds to / changes the rating system.
 mpaa varchar(7) DEFAULT NULL,
 -- country of origin. This is a foreign key to country table, and it's a
--- smallint because there's not that many countries. Even one byte would suffice
--- but Postgres does not have a tinyint type. I only care about a movie being
--- associated with one country, so there is no country <--> movie relationship,
--- but in case I wanted to have multiple countries per movie, this is a foreign
--- key into a separate country table.
+-- tinyint because there's not that many countries. I only care about a movie
+-- being associated with one country, so there is no country <--> movie
+-- relationship, but in case I wanted to have multiple countries per movie, this
+-- is a foreign key into a separate country table.
 country tinyint DEFAULT NULL);
 
 
