@@ -33,3 +33,5 @@ INSERT INTO country VALUES (DEFAULT, 'Brazil');
 INSERT INTO country VALUES (DEFAULT, 'Iceland');
 INSERT INTO country VALUES (DEFAULT, 'Vietnam');
 INSERT INTO country VALUES (DEFAULT, 'Denmark');
+INSERT INTO country VALUES (DEFAULT, 'Belgium');
+INSERT INTO country VALUES (DEFAULT, 'Switzerland');

@@ -33,3 +33,5 @@ Brazil
 Iceland
 Vietnam
 Denmark
+Belgium
+Switzerland
