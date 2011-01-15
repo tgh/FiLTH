@@ -37,12 +37,13 @@ HELPFUL HINTS/REMINDERS
 - compile haskell just like common gcc: ghc -o [binary] [source]
 
 
-REFERENCES
+REFERENCEShttp://www.imdb.com/interfaces/
 -----------
 - csv file of oscar history found here:
   http://www.aggdata.com/awards/oscar
   from here:
   http://www.bloggersblog.com/blog/224081
+- data from IMDB can be retrieved directly! : http://www.imdb.com/interfaces/
 
 
 SCRATCH
