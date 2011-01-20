@@ -1,0 +1,157 @@
+% Test document
+
+\documentclass{article}
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage[usenames]{color}
+\usepackage{/usr/share/texmf-texlive/tex/latex/mdwlist/mdwlist}
+
+% change margins to 1" on all sides
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\begin{document}
+
+% Top Ten
+%---------
+\title{The Best Films of 2010}
+\date{} % do not display date (current date is displayed by default)
+\maketitle
+
+\begin{multicols}{2}
+
+\section*{\color{Mahogany} Top Ten}
+\begin{enumerate}
+  \item Shutter Island
+  \item The King's Speech
+  \item Exit Through the Gift Shop
+  \item Inception
+  \item Restrepo
+  \item The Social Network
+  \item The Tillman Story
+  \item The Ghost Writer
+  \item Last Train Home
+  \item The Fighter
+  \scriptsize
+  \item Waiting For Superman
+  %reduce line spacing in a list
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt}
+  %
+  \item 127 Hours
+  \item The Town
+  \item True Grit
+  \item Hereafter
+\end{enumerate}
+
+% Awards
+%--------
+
+\footnotesize
+\section*{\color{Mahogany} Awards}
+\subsection*{Best Actor}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] Leonardo DiCaprio in \emph{``Shutter Island''}
+    \item[] Jesse Eisenberg in \emph{``The Social Network''}
+    \item \textbf{Colin Firth in \emph{``The King's Speech''}}
+    \item[] James Franco in \emph{``127 Hours''}
+    \item[] Mark Wahlberg in \emph{``The Fighter''}
+  \end{itemize}
+
+\subsection*{Best Actress}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \scriptsize
+    \item[] \textbf{\emph{Note: not enough candidates this year.}}
+    \footnotesize
+    \item[] Jennifer Lawrence in \emph{``Winter's Bone''}
+    \item[] Hailee Steinfeld in \emph{``True Grit''}
+  \end{itemize}
+
+\subsection*{Best Supporting Actor}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item \textbf{Christian Bale in \emph{``The Fighter''}}
+    \item[] Johnny Depp in \emph{``Alice in Wonderland''}
+    \item[] Andrew Garfield in \emph{``The Social Network''}
+    \item[] Jeremy Renner in \emph{``The Town''}
+    \item[] Geoffrey Rush in \emph{``The King's Speech''}
+  \end{itemize}
+
+\subsection*{Best Supporting Actress}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] Amy Adams in \emph{``The Fighter''}
+    \item[] Helena Bonham Carter in \emph{``The King's Speech''}
+    \item[] Melissa Leo in \emph{``The Fighter''}
+    \item \textbf{Blake Lively in \emph{``The Town''}}
+  \end{itemize}
+
+\subsection*{Best Director}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] Lixin Fan for \emph{``The Last Train Home''}
+    \item[] Tim Hetherington and Sebastian Junger for \emph{``Restrepo''}
+    \item[] Tom Hooper for \emph{``The King's Speech''}
+    \item[] Christopher Nolan for \emph{``Inception''}
+    \item \textbf{Martin Scorsese for \emph{``Shutter Island''}}
+  \end{itemize}
+
+\subsection*{Best Cinematography}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] The Ghost Writer
+    \item[] Harry Potter and the Deathly Hollows Part 1
+    \item[] Inception
+    \item[] The King's Speech
+    \item \textbf{Shutter Island}
+    \item[] True Grit
+  \end{itemize}
+
+\subsection*{Best Original Screenplay}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] The Ghost Writer
+    \item[] The Fighter
+    \item \textbf{Inception}
+    \item[] The King's Speech
+    \item[] Toy Story 3
+  \end{itemize}
+
+\subsection*{Best Adapted Screenplay}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] Green Zone
+    \item \textbf{Shutter Island} \emph{(tie)}
+    \item \textbf{The Social Network} \emph{(tie)}
+    \item[] True Grit
+  \end{itemize}
+
+\subsection*{Best Scene}
+  \begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt}
+    \item[] ``The Death of Dobby'' in \emph{Harry Potter and the Deathly Hollows Part 1}
+    \item[] ``The Speech'' in \emph{The King's Speech}
+    \item[] ``Teacher Meets Student'' in \emph{The King's Speech}
+    \item[] ``Disrespecting the Father'' in \emph{Last Train Home}
+    \item \textbf{``Questioning the Inmates'' in \emph{Shutter Island}}
+    \item[] ``The Ambush'' in \emph{The Social Network}
+    \item[] ``Opening Conversation'' in \emph{The Social Network}
+    \item[] ``Bargaining'' in \emph{True Grit}
+  \end{itemize}
+
+\end{multicols}
+\end{document}
