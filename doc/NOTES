@@ -37,7 +37,7 @@ HELPFUL HINTS/REMINDERS
 - compile haskell just like common gcc: ghc -o [binary] [source]
 
 
-REFERENCEShttp://www.imdb.com/interfaces/
+REFERENCES
 -----------
 - csv file of oscar history found here:
   http://www.aggdata.com/awards/oscar
@@ -45,6 +45,38 @@ REFERENCEShttp://www.imdb.com/interfaces/
   http://www.bloggersblog.com/blog/224081
 - data from IMDB can be retrieved directly! : http://www.imdb.com/interfaces/
 
+TOOLS USED/TRIED OUT
+---------------------
+* denotes possible requirements for end user
+- Dia (diagram tool--used for E-R diagram for database schema)
+- Git (for version control)
+- Postgres* (database)
+- pgAdmin III (front-end application for Postgres)
+- MySQL (database)
+- MySQL Workbench (front-end application for MySQL)
+- wxPython (GUI builder for Python)
+- NetBeans GUI builder (GUI builder for Java)
+- antiword (movie shell script)
+- sed (shell scripts)
+- fgrep (oscarGivenTo shell script)
+- ghc (Haskell compiler)
+- gcc (C compiler)
+- python* (interpreter for Python)
+- LaTeX* (typesetting tool--for dynamically creating pdf files)
+- dvipdf* (used with LaTex for converting dvi files to pdf files)
+- Photoshop (used to create FiLTH logo)
+
+LANGUAGES USED
+---------------
+- bash shell scripting
+- Python
+- Java
+- C
+- Haskell
+- PHP
+- SQL
+- HTML
+- LaTeX
 
 SCRATCH
 --------
