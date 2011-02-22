@@ -4,20 +4,13 @@
  * data types.  MySQL offers a tinyint--a numeric type of only one byte in size,
  * which is great for a lot of these attributes.  However, Postgres only offers
  * smallint, which is two bytes.
- *
- * The CREATE DATABASE command is commented out because I can't seem to be able
- * to use PSQL Console in pgAdminIII unless the database is already created.
- * I could use it from the command line as postgres user is psql, but then the
- * database doesn't show up in pgAdminIII--which I think might be due to having
- * two versions of Postgres at the same time?  (psql is using 8.4, while pgAdmin
- * is using 9.0...)
  */
 
 -- ----------------------
 -- Create the database --
 -- ----------------------
 
--- CREATE DATABASE filth;
+CREATE DATABASE filth;
 
 
 -- --------------------
