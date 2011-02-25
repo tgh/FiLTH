@@ -6,18 +6,12 @@
  * smallint, which is two bytes.
  */
 
--- ----------------------
--- Create the database --
--- ----------------------
-
-CREATE DATABASE filth;
-
-
 -- --------------------
 -- Create the tables --
 -- --------------------
 
 -- a movie entity
+DROP TABLE IF EXISTS movie CASCADE;
 CREATE TABLE movie (
 mid serial NOT NULL,
 title varchar(100) NOT NULL,
@@ -39,6 +33,7 @@ country smallint DEFAULT NULL);
 
 
 -- a crewperson entity
+DROP TABLE IF EXISTS crew_person CASCADE;
 CREATE TABLE crew_person (
 cid serial NOT NULL,
 l_name varchar(20) NOT NULL,
@@ -47,6 +42,7 @@ m_name varchar(15) DEFAULT NULL);
 
 
 -- crewperson <--> movie relationship
+DROP TABLE IF EXISTS worked_on CASCADE;
 CREATE TABLE worked_on (
 mid smallint NOT NULL,
 cid smallint NOT NULL,
@@ -54,24 +50,28 @@ position varchar(20) NOT NULL);
 
 
 -- a genre entity
+DROP TABLE IF EXISTS genre CASCADE;
 CREATE TABLE genre (
 gid serial NOT NULL,
 gen_name varchar(25) NOT NULL);
 
 
 -- genre <--> movie relationship
+DROP TABLE IF EXISTS genre_contains CASCADE;
 CREATE TABLE genre_contains (
 mid smallint NOT NULL,
 gid smallint NOT NULL);
 
 
 -- an oscar entity
+DROP TABLE IF EXISTS oscar CASCADE;
 CREATE TABLE oscar (
 oid serial NOT NULL,
 category varchar(40) NOT NULL);
 
 
 -- oscar <--> movie relationship
+DROP TABLE IF EXISTS oscar_given_to CASCADE;
 CREATE TABLE oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
@@ -81,6 +81,7 @@ status smallint DEFAULT NULL);
 
 
 -- a list entity
+DROP TABLE IF EXISTS list CASCADE;
 CREATE TABLE list (
 lid serial NOT NULL,
 list_title varchar(50) NOT NULL,
@@ -88,6 +89,7 @@ list_author varchar(25) DEFAULT NULL);
 
 
 -- list <--> movie relationship
+DROP TABLE IF EXISTS list_contains CASCADE;
 CREATE TABLE list_contains (
 mid smallint NOT NULL,
 lid smallint NOT NULL,
@@ -101,6 +103,7 @@ rank smallint DEFAULT NULL);
 -- multiple countries associated with it (I don't care), but as of now this only
 -- exists so that there doesn't have to be a big integrity contraint for a
 -- movie's country (like the star_contraint for the movie table).
+DROP TABLE IF EXISTS country CASCADE;
 CREATE TABLE country (
 coid serial NOT NULL,
 country_name varchar(30) NOT NULL);
@@ -111,7 +114,7 @@ country_name varchar(30) NOT NULL);
 -- --------------------------
 
 ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
-ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
+ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRfree movies onlineIMARY KEY(cid);
 ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
 ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
 ALTER TABLE genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
