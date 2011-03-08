@@ -1,6 +1,6 @@
 #!/bin/bash
 
-antiword -w 120 ~/Documents/Movies/Movie_Ratings.doc > ./movie_ratings.txt
+antiword -w 120 ~/Projects/FiLTH/doc/Movie_Ratings.doc > ./movie_ratings.txt
 
 sed -i "s/’/'/g" ./movie_ratings.txt
 sed -i "s/‘/'/g" ./movie_ratings.txt
