@@ -13,3 +13,5 @@ INSERT INTO genre VALUES (DEFAULT, 'Documentary');
 INSERT INTO genre VALUES (DEFAULT, 'Christmas');
 INSERT INTO genre VALUES (DEFAULT, 'Short');
 INSERT INTO genre VALUES (DEFAULT, 'Unconventional');
+INSERT INTO genre VALUES (DEFAULT, 'Western');
+INSERT INTO genre VALUES (DEFAULT, 'War');
