@@ -25,4 +25,8 @@
   - oscar winners
   - list rank
   - list title
+  - comment substring
+  - any text search
 - export results to excel, csv, html, xml, json, docx, odt and/or pdf
+- must check lengths of textual inserts to make sure not to insert some
+  erroneously huge string into the database
