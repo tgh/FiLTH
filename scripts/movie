@@ -6,7 +6,7 @@ filth_temp_path=~/Projects/FiLTH/temp
 
 # convert Word document to text file
 # (the '-w 120' option tells antiword to use line width of 120 chars)
-antiword -w 120 $filth_path/doc/Movie_Ratings.doc > $filth_temp_path/temp
+antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/temp
 
 # replace special characters with ASCII
 sed -i "s/'/''/g" $filth_temp_path/temp
