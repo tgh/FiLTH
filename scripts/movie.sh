@@ -1,7 +1,7 @@
 #!/bin/bash
 
-filth_path=~/workspace/filth_workspace
-filth_temp_path=~/workspace/filth_workspace/temp
+filth_path=~/Projects/FiLTH
+filth_temp_path=~/Projects/FiLTH/temp
 first_run=0
 
 #create the file previous_movie_ratings.txt if not already created
