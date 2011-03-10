@@ -18,6 +18,7 @@ CREATE DATABASE filth;
 -- --------------------
 
 -- a movie entity
+DROP TABLE IF EXISTS filth.movie CASCADE;
 CREATE TABLE filth.movie (
 mid serial NOT NULL,
 title varchar(100) NOT NULL,
@@ -38,6 +39,7 @@ country tinyint DEFAULT NULL);
 
 
 -- a crewperson entity
+DROP TABLE IF EXISTS filth.crew_person CASCADE;
 CREATE TABLE filth.crew_person (
 cid serial NOT NULL,
 l_name varchar(20) NOT NULL,
@@ -46,6 +48,7 @@ m_name varchar(15) DEFAULT NULL);
 
 
 -- crewperson <--> movie relationship
+DROP TABLE IF EXISTS filth.worked_on CASCADE;
 CREATE TABLE filth.worked_on (
 mid smallint NOT NULL,
 cid smallint NOT NULL,
@@ -53,24 +56,28 @@ position varchar(20) NOT NULL);
 
 
 -- a genre entity
+DROP TABLE IF EXISTS filth.genre CASCADE;
 CREATE TABLE filth.genre (
 gid serial NOT NULL,
 gen_name varchar(25) NOT NULL);
 
 
 -- genre <--> movie relationship
+DROP TABLE IF EXISTS filth.genre_contains CASCADE;
 CREATE TABLE filth.genre_contains (
 mid smallint NOT NULL,
 gid tinyint NOT NULL);
 
 
 -- an oscar entity
+DROP TABLE IF EXISTS filth.oscar CASCADE;
 CREATE TABLE filth.oscar (
 oid serial NOT NULL,
 category varchar(40) NOT NULL);
 
 
 -- oscar <--> movie relationship
+DROP TABLE IF EXISTS filth.oscar_given_to CASCADE;
 CREATE TABLE filth.oscar_given_to (
 mid smallint NOT NULL,
 oid tinyint NOT NULL,
@@ -80,6 +87,7 @@ status tinyint DEFAULT NULL);
 
 
 -- a list entity
+DROP TABLE IF EXISTS filth.list CASCADE;
 CREATE TABLE filth.list (
 lid serial NOT NULL,
 list_title varchar(50) NOT NULL,
@@ -87,6 +95,7 @@ list_author varchar(25) DEFAULT NULL);
 
 
 -- list <--> movie relationship
+DROP TABLE IF EXISTS filth.list_contains CASCADE;
 CREATE TABLE filth.list_contains (
 mid smallint NOT NULL,
 lid tinyint NOT NULL,
@@ -100,6 +109,7 @@ rank smallint DEFAULT NULL);
 -- multiple countries associated with it (I don't care), but as of now this only
 -- exists so that there doesn't have to be a big integrity contraint for a
 -- movie's country (like the star_contraint for the movie table).
+DROP TABLE IF EXISTS filth.country CASCADE;
 CREATE TABLE filth.country (
 coid serial NOT NULL,
 country_name varchar(30) NOT NULL);
