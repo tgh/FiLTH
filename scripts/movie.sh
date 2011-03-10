@@ -1,12 +1,26 @@
 #!/bin/bash
 
-filth_path=~/Projects/FiLTH
-filth_temp_path=~/Projects/FiLTH/temp
+filth_path=~/workspace/filth_workspace
+filth_temp_path=~/workspace/filth_workspace/temp
+first_run=0
 
+#create the file previous_movie_ratings.txt if not already created
+if [ ! -f $filth_temp_path/previous_movie_ratings.txt ]
+then
+  first_run=1
+  touch $filth_temp_path/previous_movie_ratings.txt
+fi
 
 # convert Word document to text file
 # (the '-w 120' option tells antiword to use line width of 120 chars)
-antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/temp
+antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/temp2
+
+# extract the additions to the Movie_Ratings document from the previous version
+diff $filth_temp_path/previous_movie_ratings.txt $filth_temp_path/temp2 | $filth_path/scripts/diff.py > $filth_temp_path/temp
+
+# make a copy of the new text version of Movie_Ratings.doc to be used in a diff
+#  the next time around
+cp $filth_temp_path/temp2 $filth_temp_path/previous_movie_ratings.txt
 
 # replace special characters with ASCII
 sed -i "s/'/''/g" $filth_temp_path/temp
@@ -79,4 +93,17 @@ sed "/Total:/d" $filth_temp_path/temp2 > $filth_temp_path/temp
 sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 
 # run the movie2sql program on the resulting text
-$filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
+# if this is the first run, just create movie.sql
+if [ $first_run -eq 1 ]
+then
+  python $filth_path/src/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
+# if this is nor the first run...
+else
+  # create/overwrite movie_additions.sql which is a file of sql inserts for just
+  # the new movies being added
+  python $filth_path/src/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie_additions.sql
+  # append the new insertions to the main movie,sql file
+  cat $filth_path/sql/movie_additions.sql >> $filth_path/sql/movie.sql
+  # insert the additions into the Postgres database
+  psql -U postgres -d filth -f $filth_path/sql/movie_additions.sql
+fi
