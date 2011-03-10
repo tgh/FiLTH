@@ -19,6 +19,6 @@ import sys
 # with '>' (it is assumed the newer version of the files being compared is the
 # one passed as the second argument to diff)
 for line in sys.stdin:
-  if line[0] == '>' and line[2:8] != 'Total:':
+  if line[0] == '>':
     #drop the "> "
     print line[2:-1]
