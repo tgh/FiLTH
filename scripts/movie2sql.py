@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import string
 
@@ -43,41 +45,41 @@ def FormatTitle(title):
 #------------
 #--- MAIN ---
 #------------
-
-#check for file from command line
-if len(sys.argv) != 2:
-  print "**ERROR: need a file argument."
-  sys.exit()
-#open the file
-try:
-  f = open(sys.argv[1], 'r')
-except IOError:
-  print "**ERROR: opening file."
-#grab all of the lines in the file
-lines = f.readlines()
-#close the file
-f.close()
-#iterate over the lines retrieved from the file
-for line in lines:
-  #strip ending newline character
-  line = line.rstrip('\n')
-  #no country is specified for this movie
-  if line[-1] == ']':
-    title, year, stars, mpaa = line.rsplit(None, 3)
-    country = "DEFAULT"
-  #this movie does have a country associated with it
-  else:
-    title, year, stars, mpaa, country = line.rsplit(None, 4)
-  #format the title
-  title = FormatTitle(title)
-  #remove the parens around the year
-  year = year[1:-1]
-  #remove the brackets around the mpaa rating
-  mpaa = mpaa[1:-1]
-  #output the sql
-  print "INSERT INTO movie VALUES (DEFAULT, '"\
-                                  + title + "', "\
-                                  + year + ", "\
-                                  + stars + ", '"\
-                                  + mpaa + "', "\
-                                  + country + ");"
+if __name__ == '__main__':
+  #check for file from command line
+  if len(sys.argv) != 2:
+    print "**ERROR: need a file argument."
+    sys.exit()
+  #open the file
+  try:
+    f = open(sys.argv[1], 'r')
+  except IOError:
+    print "**ERROR: opening file."
+  #grab all of the lines in the file
+  lines = f.readlines()
+  #close the file
+  f.close()
+  #iterate over the lines retrieved from the file
+  for line in lines:
+    #strip ending newline character
+    line = line.rstrip('\n')
+    #no country is specified for this movie
+    if line[-1] == ']':
+      title, year, stars, mpaa = line.rsplit(None, 3)
+      country = "DEFAULT"
+    #this movie does have a country associated with it
+    else:
+      title, year, stars, mpaa, country = line.rsplit(None, 4)
+    #format the title
+    title = FormatTitle(title)
+    #remove the parens around the year
+    year = year[1:-1]
+    #remove the brackets around the mpaa rating
+    mpaa = mpaa[1:-1]
+    #output the sql
+    print "INSERT INTO movie VALUES (DEFAULT, '"\
+                                    + title + "', "\
+                                    + year + ", "\
+                                    + stars + ", '"\
+                                    + mpaa + "', "\
+                                    + country + ");"

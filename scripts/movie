@@ -79,4 +79,4 @@ sed "/Total:/d" $filth_temp_path/temp2 > $filth_temp_path/temp
 sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 
 # run the movie2sql program on the resulting text
-python $filth_path/src/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
+$filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
