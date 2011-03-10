@@ -69,7 +69,7 @@ gid smallint NOT NULL);
 DROP TABLE IF EXISTS oscar CASCADE;
 CREATE TABLE oscar (
 oid serial NOT NULL,
-category text NOT NULL);
+ocategory text NOT NULL);
 
 
 -- oscar <--> movie relationship
@@ -79,7 +79,7 @@ mid smallint NOT NULL,
 oid smallint NOT NULL,
 cid smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
-status smallint DEFAULT NULL);
+ostatus smallint DEFAULT NULL);
 
 
 -- a list entity
@@ -98,6 +98,26 @@ lid smallint NOT NULL,
 rank smallint DEFAULT NULL);
 
 
+-- a tyler entity (like oscar, but for my annual awards)
+DROP TABLE IF EXISTS tyler CASCADE;
+CREATE TABLE tyler (
+tid serial NOT NULL,
+tcategory text NOT NULL);
+
+
+-- tyler <--> movie relationship
+DROP TABLE IF EXISTS tyler_given_to CASCADE;
+CREATE TABLE tyler_given_to (
+mid smallint NOT NULL,
+tid smallint NOT NULL,
+cid smallint DEFAULT NULL,
+-- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
+tstatus smallint DEFAULT NULL,
+-- this attribute is only used for the Best Scene category for the title of the
+-- scene--a waste, I know, but what else should I do?
+scene_title text DEFAULT NULL);
+
+
 -- --------------------------
 -- Primary Key constraints --
 -- --------------------------
@@ -111,6 +131,8 @@ ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY (oid);
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscargiven_pkey PRIMARY KEY(mid, oid);
 ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid);
+ALTER TABLE tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY (tid);
+ALTER TABLE tyler_given_to ADD CONSTRAINT tylergiven_pkey PRIMARY KEY(mid, tid);
 
 
 -- --------------------------
@@ -147,7 +169,7 @@ ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_cid_fkey
 FOREIGN KEY (cid) REFERENCES crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
--- oscar_given_to table category FK
+-- oscar_given_to table oid FK
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_oid_fkey
 FOREIGN KEY (oid) REFERENCES oscar(oid)
 ON UPDATE CASCADE ON DELETE CASCADE;
@@ -160,6 +182,21 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 -- list_contains table list FK
 ALTER TABLE list_contains ADD CONSTRAINT list_contains_lid_fkey
 FOREIGN KEY (lid) REFERENCES list(lid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- tyler_given_to table movie FK
+ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_mid_fkey
+FOREIGN KEY (mid) REFERENCES movie(mid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- tyler_given_to table crew FK
+ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_cid_fkey
+FOREIGN KEY (cid) REFERENCES crew_person(cid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- tyler_given_to table tid FK
+ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_tid_fkey
+FOREIGN KEY (tid) REFERENCES tyler(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 
@@ -241,3 +278,10 @@ CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie (I believe this has only happened once in oscar history)
+
+-- tylergivento status
+ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_status_constraint
+CHECK (status >= 0 AND status <= 2);
+-- 0 = nominated
+-- 1 = won
+-- 2 = tie
