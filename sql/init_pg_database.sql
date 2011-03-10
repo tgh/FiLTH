@@ -14,15 +14,15 @@
 DROP TABLE IF EXISTS movie CASCADE;
 CREATE TABLE movie (
 mid serial NOT NULL,
-title varchar(100) NOT NULL,
+title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 year smallint NOT NULL,
 -- my star rating for the movie (or "haven't seen it"). Only 11 possible values.
 -- smallint to save space--front-end can translate the number to a star rating.
 star_rating smallint DEFAULT NULL,
--- mpaa rating (PG, R, etc).  This is varchar rather than smallint in case the
+-- mpaa rating (PG, R, etc).  This is text rather than smallint in case the
 -- MPAA adds to / changes the rating system.
-mpaa varchar(7) DEFAULT NULL,
+mpaa text DEFAULT NULL,
 -- country of origin. This is a foreign key to country table, and it's a
 -- smallint because there's not that many countries. Even one byte would suffice
 -- but Postgres does not have a tinyint type. I only care about a movie being
@@ -36,9 +36,9 @@ country smallint DEFAULT NULL);
 DROP TABLE IF EXISTS crew_person CASCADE;
 CREATE TABLE crew_person (
 cid serial NOT NULL,
-l_name varchar(20) NOT NULL,
-f_name varchar(20) DEFAULT NULL,
-m_name varchar(15) DEFAULT NULL);
+l_name text NOT NULL,
+f_name text DEFAULT NULL,
+m_name text DEFAULT NULL);
 
 
 -- crewperson <--> movie relationship
@@ -46,14 +46,14 @@ DROP TABLE IF EXISTS worked_on CASCADE;
 CREATE TABLE worked_on (
 mid smallint NOT NULL,
 cid smallint NOT NULL,
-position varchar(20) NOT NULL);
+position text NOT NULL);
 
 
 -- a genre entity
 DROP TABLE IF EXISTS genre CASCADE;
 CREATE TABLE genre (
 gid serial NOT NULL,
-gen_name varchar(25) NOT NULL);
+gen_name text NOT NULL);
 
 
 -- genre <--> movie relationship
@@ -67,7 +67,7 @@ gid smallint NOT NULL);
 DROP TABLE IF EXISTS oscar CASCADE;
 CREATE TABLE oscar (
 oid serial NOT NULL,
-category varchar(40) NOT NULL);
+category text NOT NULL);
 
 
 -- oscar <--> movie relationship
@@ -84,8 +84,8 @@ status smallint DEFAULT NULL);
 DROP TABLE IF EXISTS list CASCADE;
 CREATE TABLE list (
 lid serial NOT NULL,
-list_title varchar(50) NOT NULL,
-list_author varchar(25) DEFAULT NULL);
+list_title text NOT NULL,
+list_author text DEFAULT NULL);
 
 
 -- list <--> movie relationship
@@ -106,7 +106,7 @@ rank smallint DEFAULT NULL);
 DROP TABLE IF EXISTS country CASCADE;
 CREATE TABLE country (
 coid serial NOT NULL,
-country_name varchar(30) NOT NULL);
+country_name text NOT NULL);
 
 
 -- --------------------------
