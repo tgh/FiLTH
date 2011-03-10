@@ -116,7 +116,7 @@ country_name text NOT NULL);
 -- --------------------------
 
 ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
-ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRfree movies onlineIMARY KEY(cid);
+ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
 ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
 ALTER TABLE genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
