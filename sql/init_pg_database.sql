@@ -29,7 +29,9 @@ mpaa text DEFAULT NULL,
 -- associated with one country, so there is no country <--> movie relationship,
 -- but in case I wanted to have multiple countries per movie, this is a foreign
 -- key into a separate country table.
-country smallint DEFAULT NULL);
+country smallint DEFAULT NULL,
+-- text field for comments/notes regarding the movie
+comments text DEFAULT NULL);
 
 
 -- a crewperson entity

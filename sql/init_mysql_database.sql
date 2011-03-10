@@ -35,7 +35,10 @@ mpaa varchar(7) DEFAULT NULL,
 -- being associated with one country, so there is no country <--> movie
 -- relationship, but in case I wanted to have multiple countries per movie, this
 -- is a foreign key into a separate country table.
-country tinyint DEFAULT NULL);
+country tinyint DEFAULT NULL,
+-- text field for comments/notes regarding the movie (MySQL does not allow a
+-- default value for TEXT type
+comments text);
 
 
 -- a crewperson entity
