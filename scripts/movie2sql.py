@@ -82,4 +82,4 @@ if __name__ == '__main__':
                                     + year + ", "\
                                     + stars + ", '"\
                                     + mpaa + "', "\
-                                    + country + ");"
+                                    + country + ", NULL);"
