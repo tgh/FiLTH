@@ -30,3 +30,7 @@
 - export results to excel, csv, html, xml, json, docx, odt and/or pdf
 - must check lengths of textual inserts to make sure not to insert some
   erroneously huge string into the database
+- must translate star_rating values, country values, and oscar_give_to values
+  (value -> meaning is listed in the init_...sql files)
+- when adding/removing a new star_rating, country, or oscar_given_to value, the
+  integrity constraint on that attribute must be updated as well through sql

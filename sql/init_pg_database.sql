@@ -98,19 +98,6 @@ lid smallint NOT NULL,
 rank smallint DEFAULT NULL);
 
 
--- a country entity
---
--- this has no relationship at this time.  It is possible that a country <-->
--- movie relationship could be added in the future so that a movie could have
--- multiple countries associated with it (I don't care), but as of now this only
--- exists so that there doesn't have to be a big integrity contraint for a
--- movie's country (like the star_contraint for the movie table).
-DROP TABLE IF EXISTS country CASCADE;
-CREATE TABLE country (
-coid serial NOT NULL,
-country_name text NOT NULL);
-
-
 -- --------------------------
 -- Primary Key constraints --
 -- --------------------------
@@ -124,17 +111,11 @@ ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY (oid);
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscargiven_pkey PRIMARY KEY(mid, oid);
 ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid);
-ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(coid);
 
 
 -- --------------------------
 -- Foreign Key constraints --
 -- --------------------------
-
--- movie table country FK
-ALTER TABLE movie ADD CONSTRAINT movie_country_fkey
-FOREIGN KEY (country) REFERENCES country(coid)
-ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- worked_on table movie FK
 ALTER TABLE worked_on ADD CONSTRAINT worked_mid_fkey
@@ -208,6 +189,47 @@ CHECK (star_rating >= -2 AND star_rating <= 8);
 -- movie mpaa rating
 ALTER TABLE movie ADD CONSTRAINT mpaa_constraint
 CHECK (mpaa IN ('NR', 'G', 'PG', 'PG-13', 'R', 'X', 'NC-17'));
+
+-- movie country
+ALTER TABLE movie ADD CONSTRAINT country_constraint
+CHECK (country >= 1 AND country <= 37);
+--  1 = USA
+--  2 = France
+--  3 = England
+--  4 = Canada
+--  5 = China
+--  6 = Russia
+--  7 = Germany
+--  8 = Argentina
+--  9 = Portugal
+-- 10 = Spain
+-- 11 = Mexico
+-- 12 = Italy
+-- 13 = Ireland
+-- 14 = Scotland
+-- 15 = Czech Republic
+-- 16 = Iran
+-- 17 = The Netherlands
+-- 18 = Sweden
+-- 19 = Finland
+-- 20 = Norway
+-- 21 = Poland
+-- 22 = Bosnia
+-- 23 = Japan
+-- 24 = Taiwan
+-- 25 = India
+-- 26 = Greece
+-- 27 = Israel
+-- 28 = Lebanon
+-- 29 = South Africa
+-- 30 = Australia
+-- 31 = New Zealand
+-- 32 = Brazil
+-- 33 = Iceland
+-- 34 = Vietnam
+-- 35 = Denmark
+-- 36 = Belgium
+-- 37 = Switzerland
 
 -- listcontains rank
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
