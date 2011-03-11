@@ -24,12 +24,14 @@ mid serial NOT NULL,
 title varchar(100) NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 year smallint NOT NULL,
--- my star rating for the movie (or "haven't seen it"). Only 11 possible values.
--- tinyint to save space--front-end can translate the number to a star rating.
+-- my star rating for the movie (or "haven't seen it"). Only 11 possible values
+-- (listed in the integrity constraint section at the end of this file.
+-- smallint to save space--front-end can translate the number to a star rating.
 star_rating tinyint DEFAULT NULL,
--- mpaa rating (PG, R, etc).  This is varchar rather than tinyint in case the
--- MPAA adds to / changes the rating system.
-mpaa varchar(7) DEFAULT NULL,
+-- mpaa rating (PG, R, etc).  Only 7 possible values (listed in the integrity
+-- constraints section at the end of this file).  smallint to save space--front-
+-- end can translate the number to the MPAA rating as a string.
+mpaa tinyint DEFAULT NULL,
 -- country of origin. This is a foreign key to country table, and it's a
 -- tinyint because there's not that many countries. I only care about a movie
 -- being associated with one country, so there is no country <--> movie
@@ -232,7 +234,14 @@ CHECK (star_rating >= -2 AND star_rating <= 8);
 
 -- movie mpaa rating
 ALTER TABLE filth.movie ADD CONSTRAINT mpaa_constraint
-CHECK (mpaa IN ('NR', 'G', 'PG', 'PG-13', 'R', 'X', 'NC-17'));
+CHECK (mpaa >= 0 AND mpaa <= 6);
+-- 0 = NR (Not Rated)
+-- 1 = G (General audiences)
+-- 2 = PG (Parental Guidance suggested)
+-- 3 = PG-13 (Parental Guidance strongly suggested for those under 13)
+-- 4 = R (Restricted)
+-- 5 = X (no one under 17 admitted [prior to 1990])
+-- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
 
 -- movie country
 ALTER TABLE movie ADD CONSTRAINT country_constraint

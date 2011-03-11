@@ -43,6 +43,14 @@ sed -i "s/½\*/1/g" $filth_temp_path/temp
 sed -i "s/\*/2/g" $filth_temp_path/temp
 sed -i "s/N\/A/-1/g" $filth_temp_path/temp
 
+# replace mpaa ratings with corresponding integer
+sed -i "s/\[NR\]/\[0\]/g" $filth_temp_path/temp
+sed -i "s/\[G\]/\[1\]/g" $filth_temp_path/temp
+sed -i "s/\[PG\]/\[2\]/g" $filth_temp_path/temp
+sed -i "s/\[PG-13\]/\[3\]/g" $filth_temp_path/temp
+sed -i "s/\[R\]/\[4\]/g" $filth_temp_path/temp
+sed -i "s/\[X\]/\[5\]/g" $filth_temp_path/temp
+sed -i "s/\[NC\-17\]/\[6\]/g" $filth_temp_path/temp
 
 # replace country of origin with corresponding integer
 sed -i "s/USA$/1/g" $filth_temp_path/temp

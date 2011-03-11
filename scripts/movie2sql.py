@@ -80,6 +80,6 @@ if __name__ == '__main__':
     print "INSERT INTO movie VALUES (DEFAULT, '"\
                                     + title + "', "\
                                     + year + ", "\
-                                    + stars + ", '"\
-                                    + mpaa + "', "\
+                                    + stars + ", "\
+                                    + mpaa + ", "\
                                     + country + ", NULL);"
