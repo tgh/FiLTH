@@ -281,16 +281,16 @@ CHECK (country >= 1 AND country <= 37);
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
 CHECK (rank > 0);
 
--- oscargivento status
+-- oscargivento ostatus
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_status_constraint
-CHECK (status >= 0 AND status <= 2);
+CHECK (ostatus >= 0 AND ostatus <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie (I believe this has only happened once in oscar history)
 
--- tylergivento status
+-- tylergivento tstatus
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_status_constraint
-CHECK (status >= 0 AND status <= 2);
+CHECK (tstatus >= 0 AND tstatus <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie
