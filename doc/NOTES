@@ -9,15 +9,11 @@ WHERE LEFT OFF
     - need to remove character names
     - need to remove producers
     - mulitple recipients need their own lines (with 3 as status, where 3 = shared?)
-- postgres:
-  $ createdb -U postgres -O postgres [name]
-  $ psql -U postgres -d [db name] -f [sql file to run]
 
 
 NEEDS
 ------
-- country table needs to be populated in the db first, followed by movie, all
-  other entities, then relationships
+- all entity tables need to be inserted before any relationship tables
 
 
 IDEAS/THOUGHTS
@@ -25,14 +21,21 @@ IDEAS/THOUGHTS
 - crewperson lname and mname can be NULL, so names such as Cher and Madonna
   would be last names.
 - for the web app, the lists will be pdf files linked from the home page (?)
-- if you don't care about having multiple countries per movie (which I don't at
-  this point), you could change the movie table back to having the country a
-  varchar(30) column and not a fkey into a country table (with a big check
-  constraint, mind you, for all countries).  This will eliminate a table join
-  but at the expense of using more space.
 - shouldn't contain accented special characters for names, movie titles, etc.
   because typing in a search query in the front-end won't find them if not
   given (just using non-accented characters).  Unless search by pull-down menu?
+  EDIT: there are search mechanisms (at least in Postgres) that WILL catch these
+  accented characters I think...
+- can have the Front-End take care of certain constraints when inserting/
+  updating new data (movie year is between 1900 and 3+ years from current year,
+  for example).  When adding a country, or star rating, or something like that,
+  the check constraint must be updated (e.g. the range of values accepted).
+  If sqlite is used, however, this is not possible.  So, one way is to remove
+  the check constraints in the database, and use the front-end to check input
+  before insert/update.  For a value range upper limit that might change (e.g.
+  when adding a new country), the FiLTH application could to a sql query upon
+  load for the highest value of movie.country and store that in a variable, or
+  have some sort of config or rc file that it reads/updates for such variables.
 
 
 HELPFUL HINTS/REMINDERS
