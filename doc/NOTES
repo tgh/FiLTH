@@ -2,7 +2,6 @@ WHERE LEFT OFF
 ---------------
 - working on oscars...
   - oscarsOfCategory.csv
-    - looks like only 1929 lists studio before title
     - titles with a ',' are double-quoted
     - 1968 best actress has a tie which needs a value of 2, not 1
     - need to remove studios
