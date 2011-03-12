@@ -38,6 +38,9 @@ writing (adapted' $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCatego
 # extract foreign language film nominees
 echo extracting foreign language film nominees...
 grep -i "foreign language film" $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
+# removing "1953,COSTUME DESIGN...The Actress..." line
+echo removing unwanted lines...
+sed -i "/COSTUME DESIGN/d" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
