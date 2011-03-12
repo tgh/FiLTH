@@ -84,7 +84,10 @@ sed -i "s/FOREIGN LANGUAGE FILM/Best Foreign Language Film/g" $filth_path/data/o
 echo rewriting status as 0 or 1...
 sed -i "s/YES$/1/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/NO$/0/g" $filth_path/data/oscarsOfCategory.csv
-
+# remove "(Comedy Picture)" and "(Dramatic Picture) strings from 1928 Best Director category
+echo removing unwanted substrings...
+sed -i "s/ (Comedy Picture)//g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
