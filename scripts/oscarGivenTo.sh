@@ -121,3 +121,11 @@ sed -i "s/&Atilde;&curren;/a/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&Atilde;&iexcl;/a/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&Atilde;&hellip;/A/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
+
+#-------------------------------------------------------------------------------
+# PHASE 4: PARSING THE CSV FILE                                               --
+#-------------------------------------------------------------------------------
+
+# run the OscarParser java program
+#echo "running OscarParser..."
+#java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar $filth_path/bin/OscarParser > $filth_path/sql/oscar_given_to.sql
