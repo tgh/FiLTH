@@ -86,7 +86,7 @@ DROP TABLE IF EXISTS filth.oscar_given_to CASCADE;
 CREATE TABLE filth.oscar_given_to (
 mid smallint NOT NULL,
 oid tinyint NOT NULL,
-cid smallint NOT NULL,
+cid smallint DEFAULT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
 ostatus tinyint DEFAULT NULL);
 
