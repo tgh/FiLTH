@@ -12,18 +12,31 @@ import com.csvreader.*;
  * statements for inserted the proper data into the oscar_given_to table.
  * The shell script should redirect this output to a sql/ file.
  */
-public class OscarParser {
+public class OscarParser implements GracefulShutdown {
 
-  private static String filthPath = "/home/tgh/Projects/FiLTH";
+  //absolute path to FiLTH project
+  private String filthPath = "/home/tgh/Projects/FiLTH";
+  //setup a file to log certain actions and events
+  private Log log = new Log(filthPath + "/temp/oscarsParser.log");
+  //for a connection to the database
+  private Connection dbConn = null;
+  //Csv file reader for the csv file
+  private CsvReader oscars = null;
 
   public static void main (String[] args) {
-    //setup a file to log certain actions and events
-    Log log = new Log(filthPath + "/temp/oscarsParser.log");
-    //for a connection to the database
-    Connection dbConn = null;
-    //Csv file reader for the csv file
-    CsvReader oscars = null;
-    
+    //setup shutdown hook mechanism in order to close objects properly in case
+    // of premature termination (by the OS or the user, for example).  This is
+    // pretty much just used in order to write out everything in the Buffered-
+    // Writer object in the Log object to the log file before ending the
+    // process completely.
+    GracefulShutdown op = new OscarParser();
+    TerminationInterceptor ti = new TerminationInterceptor(op);
+    Runtime.getRuntime().addShutdownHook(ti);
+    //start program
+    op.start();
+  }
+
+  public void start () {
     //open the oscarsGivenTo.csv file
     try {
       oscars = new CsvReader(filthPath + "/data/oscarsOfCategory.csv");
@@ -152,7 +165,19 @@ public class OscarParser {
       System.exit(1);
     }
     */
+  }
 
-    //PostgresSQLConsole pgc = new PostgresSQLConsole(dbConn);
+
+  /**
+   * What occurs when the program gets terminated prematurely.
+   */
+  public void shutDown() {
+    System.out.println("Program terminated. Closing necessary resources...");
+    log.logKill(0, false);
+    log.logFooter("END");
+    try { dbConn.close(); }
+    catch (SQLException sqle) { sqle.printStackTrace(); }
+    log.close();
+    oscars.close();
   }
 }
