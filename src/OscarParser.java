@@ -38,7 +38,7 @@ public class OscarParser implements GracefulShutdown {
 
   public void start () {
     //open a log file
-    log = new Log(filthPath + "/temp/oscarsParser.log");
+    log = new Log(filthPath + "/temp/oscarParser.log");
 
     //open the oscarsGivenTo.csv file
     try {
