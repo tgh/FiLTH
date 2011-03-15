@@ -77,52 +77,55 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         String category = oscars.get(1);
 
-        /*---- BEST PICTURE ----*/
+        //log the current record
+        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2),0,false);
+
+        /*---- BEST PICTURE (oid = 1) ----*/
         if (category.equals("Best Picture")) {
-          System.out.println("Best Picture");
+
         }
 
-        /*---- BEST ACTOR ----*/
+        /*---- BEST ACTOR (oid = 2) ----*/
         if (category.equals("Best Actor")) {
         }
 
-        /*---- BEST ACTRESS ----*/
+        /*---- BEST ACTRESS (oid = 3) ----*/
         if (category.equals("Best Actress")) {
         }
 
-        /*---- BEST SUPPORTING ACTOR ----*/
+        /*---- BEST SUPPORTING ACTOR (oid = 4) ----*/
         if (category.equals("Best Supporting Actor")) {
         }
 
-        /*---- BEST SUPPORTING ACTRESS ----*/
+        /*---- BEST SUPPORTING ACTRESS (oid = 5) ----*/
         if (category.equals("Best Supporting Actress")) {
         }
 
-        /*---- BEST DIRECTOR ----*/
+        /*---- BEST DIRECTOR (oid = 6) ----*/
         if (category.equals("Best Director")) {
         }
 
-        /*---- BEST CINEMATOGRAPHY ----*/
+        /*---- BEST CINEMATOGRAPHY (oid = 7) ----*/
         if (category.equals("Best Cinematography")) {
         }
 
-        /*---- BEST CINEMATOGRAPHY (b & w) ----*/
+        /*---- BEST CINEMATOGRAPHY (b & w) (oid =81) ----*/
         if (category.equals("Best Cinematography (black and white)")) {
         }
 
-        /*---- BEST CINEMATOGRAPHY (color) ----*/
+        /*---- BEST CINEMATOGRAPHY (color) (oid = 9) ----*/
         if (category.equals("Best Cinematography (color)")) {
         }
 
-        /*---- BEST ORIGINAL SCREENPLAY ----*/
+        /*---- BEST ORIGINAL SCREENPLAY (oid = 10) ----*/
         if (category.equals("Best Original Screenplay")) {
         }
 
-        /*---- BEST ADAPTED SCREENPLAY ----*/
+        /*---- BEST ADAPTED SCREENPLAY (oid = 11) ----*/
         if (category.equals("Best Adapted Screenplay")) {
         }
 
-        /*---- BEST FOREIGN LANGUAGE FILM ----*/
+        /*---- BEST FOREIGN LANGUAGE FILM (oid = 12) ----*/
         if (category.equals("Best Foreign Language Film")) {
         }
       }
