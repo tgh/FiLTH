@@ -75,14 +75,38 @@ public class OscarParser implements GracefulShutdown {
     //parse the csv file
     try {
       while (oscars.readRecord()) {
+        int year = Integer.parseInt(oscars.get(0));
         String category = oscars.get(1);
+        String title = oscars.get(2).toLowerCase().replace("'","''");
+        int mid = 0;
+        int cid = 0;
+        int status = 0;
 
         //log the current record
-        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2),0,false);
+        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2), 0, false);
 
         /*---- BEST PICTURE (oid = 1) ----*/
         if (category.equals("Best Picture")) {
-
+          try {
+            ResultSet qResult = db.select("SELECT mid FROM movie WHERE year = " + year 
+                                          + " and lower(title) = '" + title + "';");
+            //movie found in db
+            if (qResult.next()) {
+              mid = qResult.getInt(1);
+              status = Integer.parseInt(oscars.get(4));
+              log.logData("mid = " + mid, 1, false);
+              System.out.println("INSERT INTO oscar_given_to VALUES("
+                                  + mid + ", 1, DEFAULT, " + status + ");");
+            }
+            //movie not found in db
+            else {
+              log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+              continue;
+            }
+          }
+          catch (SQLException sqle) {
+            handleSQLException("SQLException caught while processing Best Picture record.",sqle);
+          }
         }
 
         /*---- BEST ACTOR (oid = 2) ----*/
@@ -162,6 +186,7 @@ public class OscarParser implements GracefulShutdown {
    * meat code with a lot of exception handling code.
    */
   private void handleSQLException(String message, SQLException sqle) {
+    System.out.println(message);
     log.logFatalError(message,0,false);
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
   }
