@@ -23,6 +23,13 @@ public class OscarParser implements GracefulShutdown {
   //Csv file reader for the csv file
   private CsvReader oscars = null;
 
+  //--------------------------------------------------------------------------
+
+  /**
+   * Main.
+   *
+   * Sets up the graceful shutdown mechanism, then calls start().
+   */
   public static void main (String[] args) {
     //setup shutdown hook mechanism in order to close objects properly in case
     // of premature termination (by the OS or the user, for example).  This is
@@ -36,6 +43,13 @@ public class OscarParser implements GracefulShutdown {
     op.start();
   }
 
+  //--------------------------------------------------------------------------
+
+  /**
+   * start().
+   *
+   * The meat of the program.
+   */
   public void start () {
     //open a log file
     log = new Log(filthPath + "/temp/oscarParser.log");
@@ -125,6 +139,7 @@ public class OscarParser implements GracefulShutdown {
     }
   }
 
+  //--------------------------------------------------------------------------
 
   /**
    * What occurs when the program gets terminated.
@@ -139,6 +154,8 @@ public class OscarParser implements GracefulShutdown {
     if (oscars != null)
       oscars.close();
   }
+  
+  //--------------------------------------------------------------------------
 
   /**
    * Since there's going to be a lot of SQLExceptions that need to be caught,
