@@ -149,22 +149,6 @@ public class OscarParser implements GracefulShutdown {
       }
       ioe.printStackTrace();
     }
-    /*
-    catch (SQLException sqle) {
-      log.logFatalError("SQL error of some kind",0,false);
-      log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
-      log.logFooter("END");
-      log.close();
-      oscars.close();
-      try {
-        dbConn.close();
-      }
-      catch (SQLException sqle2) {
-        System.out.println("ERROR closing db connection while handling SQLException.");
-      }
-      System.exit(1);
-    }
-    */
   }
 
 
@@ -179,5 +163,26 @@ public class OscarParser implements GracefulShutdown {
     catch (SQLException sqle) { sqle.printStackTrace(); }
     log.close();
     oscars.close();
+  }
+
+  /**
+   * Since there's going to be a lot of SQLExceptions that need to be caught,
+   * and it's good to know just where it was caught for debugging purposes,
+   * this method will take care of all of them in order to not clutter up the
+   * meat code with a lot of exception handling code.
+   */
+  private void handleSQLException(String message, SQLException sqle) {
+    log.logFatalError(message,0,false);
+    log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
+    log.logFooter("END");
+    log.close();
+    oscars.close();
+    try {
+      dbConn.close();
+    }
+    catch (SQLException sqle2) {
+      System.out.println("ERROR closing db connection while handling SQLException.");
+    }
+    System.exit(1);
   }
 }
