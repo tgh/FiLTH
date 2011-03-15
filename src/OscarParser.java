@@ -51,9 +51,6 @@ public class OscarParser implements GracefulShutdown {
    * The meat of the program.
    */
   public void start () {
-    //open a log file
-    log = new Log(filthPath + "/temp/oscarParser.log");
-
     //open the oscarsGivenTo.csv file
     try {
       oscars = new CsvReader(filthPath + "/data/oscarsOfCategory.csv");
@@ -63,19 +60,17 @@ public class OscarParser implements GracefulShutdown {
       fnfe.printStackTrace();
     }
 
+    //open a log file
+    log = new Log(filthPath + "/temp/oscarParser.log");
+
     //connect to the database
-    try {
-      Class.forName("org.postgresql.Driver");
-      dbConn = DriverManager.getConnection("jdbc:postgresql://localhost/filth","postgres","0o9i8u7y");
-    }
-    catch (SQLException sqle) {
-      log.logFatalError("Failure to connect to database",0,false);
-      sqle.printStackTrace();
-    }
-    catch (ClassNotFoundException cnfe) {
-      log.logFatalError("org.postgresql.Driver not found",0,false);
-      cnfe.printStackTrace();
-    }
+    dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/filth",
+                                                 "postgres",
+                                                 "0o9i8u7y");
+    //setup virtual SQL console with the db
+    PostgresSQLConsole db = new PostgresSQLConsole(dbConn);
+
+    log.logHeader("START");
 
     //parse the csv file
     try {
