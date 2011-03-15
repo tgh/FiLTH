@@ -16,8 +16,8 @@ public class OscarParser implements GracefulShutdown {
 
   //absolute path to FiLTH project
   private String filthPath = "/home/tgh/Projects/FiLTH";
-  //setup a file to log certain actions and events
-  private Log log = new Log(filthPath + "/temp/oscarsParser.log");
+  //for a file to log certain actions and events
+  private Log log = null;
   //for a connection to the database
   private Connection dbConn = null;
   //Csv file reader for the csv file
@@ -37,6 +37,9 @@ public class OscarParser implements GracefulShutdown {
   }
 
   public void start () {
+    //open a log file
+    log = new Log(filthPath + "/temp/oscarsParser.log");
+
     //open the oscarsGivenTo.csv file
     try {
       oscars = new CsvReader(filthPath + "/data/oscarsOfCategory.csv");
