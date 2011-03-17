@@ -35,3 +35,6 @@
 - when adding/removing a new star_rating, country, or oscar_given_to value, the
   integrity constraint on that attribute must be updated as well through sql
 - need password mechanism for db admin actions
+- must make sure when adding a movie that the (title&year) of movie is not
+  already in the db (since you can't have a unique constraint for a combo of
+  columns)
