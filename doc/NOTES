@@ -5,22 +5,12 @@ WHERE LEFT OFF
     - titles with a ',' are double-quoted
     - 1968 best actress has a tie which needs a value of 2, not 1
     Processing Best Picture
-      - Wings not found (different year)
-      - Captain's Courageous needs to be Captains Courageous in M_R.doc
-      - Grand Illusion (different year)
-      - The Grapes of Wrath not found (need to add 'The' to Grapes of Wrath in
-        Movie_Ratings.doc)
-      - Good Night and Good Luck not found (need to add a ',' to title in
-        Movie_Ratings.doc)
-      - Lord of the Rings movies not found (need to add 'The'...)
-      - Gosford Park year needs to be 2001 in M_R.doc
-      - Traffic year needs to be 2000 in M_R.doc
-      - Erin Brokovich needs to be 'Erin Brockovich' with a 'c' in M_R.doc
-      - Secrets and Lies needs to be Secrets & Lies
       - Il Postino not found (csv has "The Postman (Il Postino)")
-      - Howard's End needs to be Howards End without the '
       - Goodfellas not found (csv has Good Fellas)
-      - Godfather Part II not found (csv has The Godfather, Part III with ',')
+      - Godfather Part III not found (csv has The Godfather, Part III with ',')
+      - Star Wars not found
+      - The Music Man not found (csv has "Meredith Willson's The Music Man")
+      - Sunset Boulevard not found (csv had "Sunset Blvd.")
       * use Postgres text search?
       * use the year in csv as well as the year before in query (and possibly
         year after)
