@@ -51,6 +51,9 @@ public class OscarParser implements GracefulShutdown {
    * The meat of the program.
    */
   public void start () {
+    //open a log file
+    log = new Log(filthPath + "/temp/oscarParser.log");
+
     //open the oscarsGivenTo.csv file
     try {
       oscars = new CsvReader(filthPath + "/data/oscarsOfCategory.csv");
@@ -59,9 +62,6 @@ public class OscarParser implements GracefulShutdown {
       log.logFatalError("CSV file not found",0,false);
       fnfe.printStackTrace();
     }
-
-    //open a log file
-    log = new Log(filthPath + "/temp/oscarParser.log");
 
     //connect to the database
     dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/filth",
