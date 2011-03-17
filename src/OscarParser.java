@@ -169,7 +169,6 @@ public class OscarParser implements GracefulShutdown {
    * What occurs when the program gets terminated.
    */
   public void shutDown() {
-    System.out.println("Program terminated. Closing necessary resources...");
     log.logKill(0, false);
     log.logFooter("END");
     try { if (dbConn != null) dbConn.close(); }
