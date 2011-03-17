@@ -40,7 +40,14 @@ sed -i "s/\*\*½/5/g" $filth_temp_path/temp
 sed -i "s/\*\*/4/g" $filth_temp_path/temp
 sed -i "s/\*½/3/g" $filth_temp_path/temp
 sed -i "s/½\*/1/g" $filth_temp_path/temp
-sed -i "s/\*/2/g" $filth_temp_path/temp
+sed -i "s/ \* / 2 /g" $filth_temp_path/temp  # there needs to be a space before
+                                             # and after the '*' here, otherwise
+                                             # 'M*A*S*H' becomes 'M2A2S2H'.  Now
+                                             # I may change Woody Allen's
+                                             # 'Everything You Always...' to
+                                             # have ' * ' as its official title
+                                             # actually does, which means this
+                                             # regex needs changed again...
 sed -i "s/N\/A/-1/g" $filth_temp_path/temp
 
 # replace mpaa ratings with corresponding integer
