@@ -628,7 +628,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Goldfinger', 1964, 6, 0, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gone Baby Gone', 2007, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gone with the Wind', 1939, 6, 0, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Good Girl', 2002, 6, 4, 1, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Good Night, and Good Luck', 2005, 8, 2, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Good Night, and Good Luck.', 2005, 8, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Good, the Bad, and the Ugly', 1966, 8, 0, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Good Thief', 2003, 5, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Good Will Hunting', 1997, 8, 4, 1, NULL);
