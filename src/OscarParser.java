@@ -88,8 +88,10 @@ public class OscarParser implements GracefulShutdown {
         /*---- BEST PICTURE (oid = 1) ----*/
         if (category.equals("Best Picture")) {
           try {
-            ResultSet qResult = db.select("SELECT mid FROM movie WHERE year = " + year 
-                                          + " and lower(title) = '" + title + "';");
+            //query for the movie
+            ResultSet qResult = db.select("SELECT mid FROM movie WHERE (year = " + year 
+                                          + " or year = " + (year-1) + ") and lower(title) = '"
+                                          + title + "';");
             //movie found in db
             if (qResult.next()) {
               mid = qResult.getInt(1);
