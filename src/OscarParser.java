@@ -68,7 +68,7 @@ public class OscarParser implements GracefulShutdown {
                                                  "postgres",
                                                  "0o9i8u7y");
     //setup virtual SQL console with the db
-    PostgresSQLConsole db = new PostgresSQLConsole(dbConn);
+    PostgreSQLConsole db = new PostgreSQLConsole(dbConn);
 
     log.logHeader("START");
 
