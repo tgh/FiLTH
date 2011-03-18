@@ -128,4 +128,4 @@ sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
 
 # run the OscarParser java program
 #echo "running OscarParser..."
-#java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar $filth_path/bin/OscarParser > $filth_path/sql/oscar_given_to.sql
+#java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar $filth_path/bin/OscarParser
