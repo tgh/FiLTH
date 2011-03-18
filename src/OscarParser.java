@@ -26,6 +26,10 @@ public class OscarParser implements GracefulShutdown {
   private BufferedWriter bw = null;
   //for reading from stdin
   private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  //password for db
+  private static String dbpw;
+  //flag for no command-line arg
+  private static boolean noarg;
 
   //--------------------------------------------------------------------------
 
@@ -35,6 +39,13 @@ public class OscarParser implements GracefulShutdown {
    * Sets up the graceful shutDown mechanism, then calls start().
    */
   public static void main (String[] args) {
+    //no arg given for the db password
+    if (args.length == 0) {
+      System.out.println("\n - usage: OscarParser {database password}\n");
+      noarg = true;
+      System.exit(1);
+    }
+    noarg = false;
     //setup shutDown hook mechanism in order to close objects properly in case
     // of premature termination (by the OS or the user, for example).  This is
     // pretty much just used in order to write out everything in the Buffered-
@@ -43,6 +54,8 @@ public class OscarParser implements GracefulShutdown {
     GracefulShutdown op = new OscarParser();
     TerminationInterceptor ti = new TerminationInterceptor(op);
     Runtime.getRuntime().addShutdownHook(ti);
+    //grab the password for the database
+    dbpw = args[0];
     //start program
     op.start();
   }
@@ -87,7 +100,7 @@ public class OscarParser implements GracefulShutdown {
     //connect to the database
     dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/filth",
                                                  "postgres",
-                                                 "0o9i8u7y");
+                                                 dbpw);
     //setup virtual SQL console with the db
     PostgreSQLConsole db = new PostgreSQLConsole(dbConn);
 
@@ -240,19 +253,21 @@ public class OscarParser implements GracefulShutdown {
    * What occurs when the program gets terminated.
    */
   public void shutDown() {
-    log.logFooter("END");
-    try { if (dbConn != null) dbConn.close(); }
-    catch (SQLException sqle) { sqle.printStackTrace(); }
-    log.close();
-    if (oscars != null)
-      oscars.close();
-    try {
-      bw.close();
-      br.close();
-    }
-    catch (IOException ioe) {
-      System.out.println("Error in closing bw or br.");
-      ioe.printStackTrace();
+    if (noarg == false) {
+      log.logFooter("END");
+      try { if (dbConn != null) dbConn.close(); }
+      catch (SQLException sqle) { sqle.printStackTrace(); }
+      log.close();
+      if (oscars != null)
+        oscars.close();
+      try {
+        bw.close();
+        br.close();
+      }
+      catch (IOException ioe) {
+        System.out.println("Error in closing bw or br.");
+        ioe.printStackTrace();
+      }
     }
   }
   
