@@ -14,8 +14,8 @@ WHERE LEFT OFF
       * use Postgres text search?
       * use the year in csv as well as the year before in query (and possibly
         year after)
-    - need to add output file i/o for sql rather than redirect output since the
-      log file outputs to stdout as well
+    - some nominees from 1928-1930 were nominated for more than one movie in the
+      same nomination
 
 
 NEEDS
