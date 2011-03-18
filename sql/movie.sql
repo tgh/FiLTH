@@ -635,7 +635,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Good Will Hunting', 1997, 8, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Goodbye Girl', 1977, 7, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Goodbye, Lenin!', 2004, 6, 4, 7, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Goodbye Solo', 2009, 7, 4, 1, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Goodfellas', 1990, 8, 4, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'GoodFellas', 1990, 8, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Goonies', 1985, 8, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gosford Park', 2001, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Gospel According to St. Matthew', 1964, 4, 0, 12, NULL);
