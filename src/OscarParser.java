@@ -22,16 +22,20 @@ public class OscarParser implements GracefulShutdown {
   private Connection dbConn = null;
   //Csv file reader for the csv file
   private CsvReader oscars = null;
+  //for file output to oscar_given_to.sql
+  private BufferedWriter bw = null;
+  //for reading from stdin
+  private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
   //--------------------------------------------------------------------------
 
   /**
    * Main.
    *
-   * Sets up the graceful shutdown mechanism, then calls start().
+   * Sets up the graceful shutDown mechanism, then calls start().
    */
   public static void main (String[] args) {
-    //setup shutdown hook mechanism in order to close objects properly in case
+    //setup shutDown hook mechanism in order to close objects properly in case
     // of premature termination (by the OS or the user, for example).  This is
     // pretty much just used in order to write out everything in the Buffered-
     // Writer object in the Log object to the log file before ending the
@@ -61,7 +65,21 @@ public class OscarParser implements GracefulShutdown {
     catch (FileNotFoundException fnfe) {
       log.logFatalError("CSV file not found",0,false);
       fnfe.printStackTrace();
+      shutDown();
     }
+
+    //open the sql file we are going to write to
+    try {
+      bw = new BufferedWriter(new FileWriter("/home/tgh/Projects/FiLTH/sql/oscars_given_to.sql"));
+    }
+    catch (IOException ioe) {
+      log.logFatalError("Unable to create/open oscar_given_to.sql",0,false);
+      ioe.printStackTrace();
+      shutDown();
+    }
+
+    //create a BufferedReader to read from stdin
+    br = new BufferedReader(new InputStreamReader(System.in));
 
     //connect to the database
     dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/filth",
@@ -77,7 +95,7 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         int year = Integer.parseInt(oscars.get(0));
         String category = oscars.get(1);
-        String title = oscars.get(2).toLowerCase().replace("'","''");
+        String title = oscars.get(2).toLowerCase().replace("'","''").replace(" ","&");
         int mid = 0;
         int cid = 0;
         int status = 0;
@@ -89,16 +107,38 @@ public class OscarParser implements GracefulShutdown {
         if (category.equals("Best Picture")) {
           try {
             //query for the movie
-            ResultSet qResult = db.select("SELECT mid FROM movie WHERE (year = " + year 
+            ResultSet qResult = db.select("SELECT mid, title FROM movie WHERE (year = " + year 
                                           + " or year = " + (year-1) + ") and lower(title) = '"
                                           + title + "';");
-            //movie found in db
+            //movie(s) found in db
             if (qResult.next()) {
-              mid = qResult.getInt(1);
-              status = Integer.parseInt(oscars.get(4));
-              log.logData("mid = " + mid, 1, false);
-              System.out.println("INSERT INTO oscar_given_to VALUES("
-                                  + mid + ", 1, DEFAULT, " + status + ");");
+              //single movie found
+              if (!qResult.next()) {
+                qResult.previous();
+                mid = qResult.getInt(1);
+                status = Integer.parseInt(oscars.get(4));
+                log.logData("mid = " + mid, 1, false);
+                try {
+                  bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
+                }
+                catch (IOException ioe) {
+                  log.logFatalError("Writing insert statement for best picture.",0,false);
+                  ioe.printStackTrace();
+                  shutDown();
+                }
+              }
+              //multiple movies matched title
+              else {
+                qResult.previous();
+                while (true) {
+                  System.out.print(qResult.getString(2) + " ? ");
+
+                  //XXX: need iostream here to get input from stdin
+
+                  if (!qResult.next())
+                    break;
+                }
+              }
             }
             //movie not found in db
             else {
@@ -160,6 +200,7 @@ public class OscarParser implements GracefulShutdown {
       log.logFatalError("I/O Error of some kind",0,false);
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
       ioe.printStackTrace();
+      shutDown();
     }
   }
 
@@ -169,13 +210,20 @@ public class OscarParser implements GracefulShutdown {
    * What occurs when the program gets terminated.
    */
   public void shutDown() {
-    log.logKill(0, false);
     log.logFooter("END");
     try { if (dbConn != null) dbConn.close(); }
     catch (SQLException sqle) { sqle.printStackTrace(); }
     log.close();
     if (oscars != null)
       oscars.close();
+    try {
+      bw.close();
+      br.close();
+    }
+    catch (IOException ioe) {
+      System.out.println("Error in closing bw or br.");
+      ioe.printStackTrace();
+    }
   }
   
   //--------------------------------------------------------------------------
@@ -190,5 +238,6 @@ public class OscarParser implements GracefulShutdown {
     System.out.println(message);
     log.logFatalError(message,0,false);
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
+    shutDown();
   }
 }
