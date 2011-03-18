@@ -4,11 +4,6 @@ WHERE LEFT OFF
   - oscarsOfCategory.csv
     - titles with a ',' are double-quoted
     - 1968 best actress has a tie which needs a value of 2, not 1
-    Processing Best Picture
-      - Il Postino not found (csv has "The Postman (Il Postino)")
-      - Goodfellas not found (csv has Good Fellas)
-      - The Music Man not found (csv has "Meredith Willson's The Music Man")
-      - Sunset Boulevard not found (csv had "Sunset Blvd.")
     - some nominees from 1928-1930 were nominated for more than one movie in the
       same nomination
 

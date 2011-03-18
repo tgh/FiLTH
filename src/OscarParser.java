@@ -98,7 +98,8 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         int year = Integer.parseInt(oscars.get(0));
         String category = oscars.get(1);
-        String title = oscars.get(2).toLowerCase().replace("'","''");
+        String title = checkForSpecialCases(oscars.get(2));
+        title = title.toLowerCase().replace("'","''");
         title = title.replace(" & "," ").replace(" ","&").replace("!","");
         int mid = 0;
         int cid = 0;
@@ -268,5 +269,28 @@ public class OscarParser implements GracefulShutdown {
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
     sqle.printStackTrace();
     System.exit(1);
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * There are going to be quite a few special cases probably, where some
+   * movies just aren't going to be found in the database even though I've
+   * seen them.  This method checks for those special (hard-coded) cases.
+   */
+  private String checkForSpecialCases(String title) {
+    if (title.equals("Good Fellas")) {
+      return "GoodFellas";
+    }
+    if (title.contains("Meredith Willson")) {
+      return "The Music Man";
+    }
+    if (title.contains("Il Postino")) {
+      return "Il Postino";
+    }
+    if (title.equals("Sunset Blvd.")) {
+      return "Sunset Boulevard";
+    }
+    return title;
   }
 }
