@@ -55,6 +55,9 @@ public class OscarParser implements GracefulShutdown {
    * The meat of the program.
    */
   public void start () {
+    //for storing input from stdin
+    String response = null;
+
     //open a log file
     log = new Log(filthPath + "/temp/oscarParser.log");
 
@@ -65,17 +68,17 @@ public class OscarParser implements GracefulShutdown {
     catch (FileNotFoundException fnfe) {
       log.logFatalError("CSV file not found",0,false);
       fnfe.printStackTrace();
-      shutDown();
+      System.exit(1); 
     }
 
     //open the sql file we are going to write to
     try {
-      bw = new BufferedWriter(new FileWriter("/home/tgh/Projects/FiLTH/sql/oscars_given_to.sql"));
+      bw = new BufferedWriter(new FileWriter("/home/tgh/Projects/FiLTH/sql/oscar_given_to.sql"));
     }
     catch (IOException ioe) {
       log.logFatalError("Unable to create/open oscar_given_to.sql",0,false);
       ioe.printStackTrace();
-      shutDown();
+      System.exit(1); 
     }
 
     //create a BufferedReader to read from stdin
@@ -95,7 +98,8 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         int year = Integer.parseInt(oscars.get(0));
         String category = oscars.get(1);
-        String title = oscars.get(2).toLowerCase().replace("'","''").replace(" ","&");
+        String title = oscars.get(2).toLowerCase().replace("'","''");
+        title = title.replace(" & "," ").replace(" ","&").replace("!","");
         int mid = 0;
         int cid = 0;
         int status = 0;
@@ -107,9 +111,9 @@ public class OscarParser implements GracefulShutdown {
         if (category.equals("Best Picture")) {
           try {
             //query for the movie
-            ResultSet qResult = db.select("SELECT mid, title FROM movie WHERE (year = " + year 
-                                          + " or year = " + (year-1) + ") and lower(title) = '"
-                                          + title + "';");
+            ResultSet qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
+                                                    + title + "') " + "@@ to_tsvector(lower(title)) and "
+                                                    + "(year = " + year + " or year = " + (year-1) + ");");
             //movie(s) found in db
             if (qResult.next()) {
               //single movie found
@@ -120,29 +124,54 @@ public class OscarParser implements GracefulShutdown {
                 log.logData("mid = " + mid, 1, false);
                 try {
                   bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
+                  bw.newLine();
                 }
                 catch (IOException ioe) {
                   log.logFatalError("Writing insert statement for best picture.",0,false);
                   ioe.printStackTrace();
-                  shutDown();
+                  System.exit(1); 
                 }
               }
               //multiple movies matched title
               else {
+                //show the title of the movie of the current csv row
+                System.out.println("This movie has multiple matches: " + oscars.get(2));
+                //go back to the beginning of the query results
                 qResult.previous();
+                //loop through the query results
                 while (true) {
-                  System.out.print(qResult.getString(2) + " ? ");
-
-                  //XXX: need iostream here to get input from stdin
-
-                  if (!qResult.next())
+                  //ask user if this is the right movie
+                  System.out.print("  - " + qResult.getString(2) + " ? ");
+                  //get user's response
+                  response = br.readLine();
+                  //this one matches the movie in the csv file
+                  if (response.toLowerCase().equals("y")) {
+                    mid = qResult.getInt(1);
+                    status = Integer.parseInt(oscars.get(4));
+                    log.logData("mid = " + mid, 1, false);
+                    try {
+                      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
+                      bw.newLine();
+                    }
+                    catch (IOException ioe) {
+                      log.logFatalError("Writing insert statement for best picture (in multiple matches).",0,false);
+                      ioe.printStackTrace();
+                      System.exit(1); 
+                    }
                     break;
+                  }
+                  //no more matches
+                  else if (!qResult.next()) {
+                    log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+                    break;
+                  }
                 }
               }
             }
-            //movie not found in db
+            //no matches found at all
             else {
               log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+              //read the next row of the csv file
               continue;
             }
           }
@@ -200,7 +229,7 @@ public class OscarParser implements GracefulShutdown {
       log.logFatalError("I/O Error of some kind",0,false);
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
       ioe.printStackTrace();
-      shutDown();
+      System.exit(1);
     }
   }
 
@@ -235,9 +264,9 @@ public class OscarParser implements GracefulShutdown {
    * meat code with a lot of exception handling code.
    */
   private void handleSQLException(String message, SQLException sqle) {
-    System.out.println(message);
     log.logFatalError(message,0,false);
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
-    shutDown();
+    sqle.printStackTrace();
+    System.exit(1);
   }
 }

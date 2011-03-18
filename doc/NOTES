@@ -7,13 +7,8 @@ WHERE LEFT OFF
     Processing Best Picture
       - Il Postino not found (csv has "The Postman (Il Postino)")
       - Goodfellas not found (csv has Good Fellas)
-      - Godfather Part III not found (csv has The Godfather, Part III with ',')
-      - Star Wars not found
       - The Music Man not found (csv has "Meredith Willson's The Music Man")
       - Sunset Boulevard not found (csv had "Sunset Blvd.")
-      * use Postgres text search?
-      * use the year in csv as well as the year before in query (and possibly
-        year after)
     - some nominees from 1928-1930 were nominated for more than one movie in the
       same nomination
 
