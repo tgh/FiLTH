@@ -30,6 +30,8 @@ public class OscarParser implements GracefulShutdown {
   private static String dbpw;
   //flag for no command-line arg
   private static boolean noarg;
+  //for querying the database
+  private PostgreSQLConsole db = null;
 
   //--------------------------------------------------------------------------
 
@@ -102,7 +104,7 @@ public class OscarParser implements GracefulShutdown {
                                                  "postgres",
                                                  dbpw);
     //setup virtual SQL console with the db
-    PostgreSQLConsole db = new PostgreSQLConsole(dbConn);
+    db = new PostgreSQLConsole(dbConn);
 
     log.logHeader("START");
 
@@ -124,74 +126,19 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST PICTURE (oid = 1) ---------------------------------*/
 
         if (category.equals("Best Picture")) {
-          try {
-            //query for the movie
-            ResultSet qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
-                                                    + title + "') " + "@@ to_tsvector(lower(title)) and "
-                                                    + "(year = " + year + " or year = " + (year-1) + ");");
-            //movie(s) found in db
-            if (qResult.next()) {
-              //single movie found
-              if (!qResult.next()) {
-                qResult.previous();
-                mid = qResult.getInt(1);
-                status = Integer.parseInt(oscars.get(4));
-                log.logData("mid = " + mid, 1, false);
-                try {
-                  bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
-                  bw.newLine();
-                }
-                catch (IOException ioe) {
-                  log.logFatalError("Writing insert statement for best picture.",0,false);
-                  ioe.printStackTrace();
-                  System.exit(1); 
-                }
-              }
-              //multiple movies matched title
-              else {
-                //show the title of the movie of the current csv row
-                System.out.println("This movie has multiple matches: " + oscars.get(2));
-                //go back to the beginning of the query results
-                qResult.previous();
-                //loop through the query results
-                while (true) {
-                  //ask user if this is the right movie
-                  System.out.print("  - " + qResult.getString(2) + " ? ");
-                  //get user's response
-                  response = br.readLine();
-                  //this one matches the movie in the csv file
-                  if (response.toLowerCase().equals("y")) {
-                    mid = qResult.getInt(1);
-                    status = Integer.parseInt(oscars.get(4));
-                    log.logData("mid = " + mid, 1, false);
-                    try {
-                      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
-                      bw.newLine();
-                    }
-                    catch (IOException ioe) {
-                      log.logFatalError("Writing insert statement for best picture (in multiple matches).",0,false);
-                      ioe.printStackTrace();
-                      System.exit(1); 
-                    }
-                    break;
-                  }
-                  //no more matches
-                  else if (!qResult.next()) {
-                    log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
-                    break;
-                  }
-                }
-              }
+          mid = queryForMovie(title, year);
+          status = Integer.parseInt(oscars.get(4));
+          if (mid != -1) {
+            log.logData("mid = " + mid, 1, false);
+            try {
+              bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
+              bw.newLine();
             }
-            //no matches found at all
-            else {
-              log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
-              //read the next row of the csv file
-              continue;
+            catch (IOException ioe) {
+              log.logFatalError("Writing insert statement for best picture.",0,false);
+              ioe.printStackTrace();
+              System.exit(1); 
             }
-          }
-          catch (SQLException sqle) {
-            handleSQLException("SQLException caught while processing Best Picture record.",sqle);
           }
         }
 
@@ -319,5 +266,69 @@ public class OscarParser implements GracefulShutdown {
       return "Sunset Boulevard";
     }
     return title;
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   *
+   */
+  private int queryForMovie(String title, int year) {
+    int mid = 0;
+    int status = 0;
+    String response = null;
+
+    try {
+      //query for the movie
+      ResultSet qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
+                                              + title + "') " + "@@ to_tsvector(lower(title)) and "
+                                              + "(year = " + year + " or year = " + (year-1) + ");");
+      //movie(s) found in db
+      if (qResult.next()) {
+
+        /* single movie found */
+        if (!qResult.next()) {
+          qResult.previous();
+          return qResult.getInt(1);
+        }
+
+        /* multiple movies matched title */
+        //show the title of the movie of the current csv row
+        System.out.println("This movie has multiple matches: " + oscars.get(2));
+        //go back to the beginning of the query results
+        qResult.previous();
+        //loop through the query results
+        while (true) {
+          //ask user if this is the right movie
+          System.out.print("  - " + qResult.getString(2) + " ? ");
+          //get user's response
+          response = br.readLine();
+          //this one matches the movie in the csv file
+          if (response.toLowerCase().equals("y")) {
+            return qResult.getInt(1);
+          }
+          //no more matches
+          if (!qResult.next()) {
+            log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+            break;
+          }
+        }
+      }
+      //no matches found at all
+      else {
+        log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+      }
+    }
+    catch (SQLException sqle) {
+      handleSQLException("SQLException caught in queryForMovie().",sqle);
+    }
+    catch (IOException ioe) {
+      System.out.println("IOException caught in queryForMovie().");
+      ioe.printStackTrace();
+      System.exit(1);
+    }
+
+    //no match for the movie
+    return -1;
   }
 }
