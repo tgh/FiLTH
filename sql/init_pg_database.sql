@@ -294,3 +294,13 @@ CHECK (tstatus >= 0 AND tstatus <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie
+
+
+-- ------------
+-- Functions --
+-- ------------
+
+-- function to convert strings with accented characters to strings with regular
+-- characters
+CREATE FUNCTION to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
+LANGUAGE internal; 

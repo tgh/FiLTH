@@ -48,6 +48,12 @@ HELPFUL HINTS/REMINDERS
   --  | = or
   --  ! = not
 
+- example of search for name with accented character using the created function
+  to_ascii():
+
+  select * from crew_person where f_name =
+  to_ascii(convert_to('Penélope', 'latin1'), 'latin1');
+
 
 REFERENCES
 -----------
