@@ -113,22 +113,24 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         int year = Integer.parseInt(oscars.get(0));
         String category = oscars.get(1);
-        String title = checkForSpecialCases(oscars.get(2));
-        title = title.toLowerCase().replace("'","''");
-        title = title.replace(" & "," ").replace(" ","&").replace("!","");
+        String title = null;
         int mid = 0;
         int cid = 0;
         int status = 0;
 
         //log the current record
-        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2), 0, false);
+        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2)
+                    + ", " + oscars.get(3) + ", " + oscars.get(4), 0, false);
 
         /*---------- BEST PICTURE (oid = 1) ---------------------------------*/
 
         if (category.equals("Best Picture")) {
-          mid = queryForMovie(title, year);
-          status = Integer.parseInt(oscars.get(4));
+          title = checkForSpecialCases(oscars.get(2));
+          title = title.toLowerCase().replace("'","''");
+          title = title.replace(" & "," ").replace(" ","&").replace("!","");
+          mid = queryForMovie(title, oscars.get(2), year);
           if (mid != -1) {
+            status = Integer.parseInt(oscars.get(4));
             log.logData("mid = " + mid, 1, false);
             try {
               bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
@@ -145,6 +147,30 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
+          title = oscars.get(3);
+          //remove the character name from the title
+          String realTitle = title.substring(0, title.indexOf(" {"));
+          title = checkForSpecialCases(realTitle);
+          title = title.toLowerCase().replace("'","''");
+          title = title.replace(" & "," ").replace(" ","&").replace("!","");
+          mid = queryForMovie(title, realTitle, year);
+          if (mid != -1) {
+            cid = queryForCrewperson(oscars.get(2).split(" "));
+            if (cid != -1) {
+              status = Integer.parseInt(oscars.get(4));
+              log.logData("mid = " + mid, 1, false);
+              log.logData("cid = " + cid, 1, false);
+              try {
+                bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 2, " + cid + ", " + status + ");");
+                bw.newLine();
+              }
+              catch (IOException ioe) {
+                log.logFatalError("Writing insert statement for best picture.",0,false);
+                ioe.printStackTrace();
+                System.exit(1); 
+              }
+            }
+          }
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
@@ -265,6 +291,9 @@ public class OscarParser implements GracefulShutdown {
     if (title.equals("Sunset Blvd.")) {
       return "Sunset Boulevard";
     }
+    if (title.equals("Give 'em Hell, Harry!")) {
+      return "Give em Hell, Harry!";
+    }
     return title;
   }
 
@@ -273,7 +302,7 @@ public class OscarParser implements GracefulShutdown {
   /**
    *
    */
-  private int queryForMovie(String title, int year) {
+  private int queryForMovie(String formattedTitle, String realTitle, int year) {
     int mid = 0;
     int status = 0;
     String response = null;
@@ -281,7 +310,7 @@ public class OscarParser implements GracefulShutdown {
     try {
       //query for the movie
       ResultSet qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
-                                              + title + "') " + "@@ to_tsvector(lower(title)) and "
+                                              + formattedTitle + "') " + "@@ to_tsvector(lower(title)) and "
                                               + "(year = " + year + " or year = " + (year-1) + ");");
       //movie(s) found in db
       if (qResult.next()) {
@@ -294,7 +323,7 @@ public class OscarParser implements GracefulShutdown {
 
         /* multiple movies matched title */
         //show the title of the movie of the current csv row
-        System.out.println("This movie has multiple matches: " + oscars.get(2));
+        System.out.println("This movie has multiple matches: " + realTitle);
         //go back to the beginning of the query results
         qResult.previous();
         //loop through the query results
@@ -331,4 +360,56 @@ public class OscarParser implements GracefulShutdown {
     //no match for the movie
     return -1;
   }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   *
+   */
+  private int queryForCrewperson(String[] names) {
+    String lname = null;
+    String fname = null;
+    String mname = null;
+    ResultSet qResult = null;
+
+    try {
+      switch(names.length) {
+        //e.g. Cher
+        case 1: lname = names[0];
+                qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname + "' AND f_name is NULL;");
+                if (qResult.next()) {
+                  return qResult.getInt(1);
+                }
+                break;
+        case 2: lname = names[1].replace("'","''");
+                fname = names[0];
+                qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
+                                    + "' AND f_name = '" + fname + "';");
+                if (qResult.next()) {
+                  return qResult.getInt(1);
+                }
+                break;
+        case 3: lname = names[2].replace("'","''");
+                fname = names[0];
+                mname = names[1];
+                qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
+                                    + "' AND f_name = '" + fname + "' AND m_name = '" + mname + "';");
+                if (qResult.next()) {
+                  return qResult.getInt(1);
+                }
+                break;
+        default: log.logWarning("Recipient name is not 1, 2, or 3 names in length.", 1, false);
+                 break;
+      }
+    }
+    catch (SQLException sqle) {
+      handleSQLException("SQLException caught in queryForCrewperson().", sqle);
+    }
+
+    //recipient name was not found or was empty or more than 3 names long
+    log.logGeneralMessageWithoutIndicator("-- Crewperson not found.", 1, false);
+    return -1;
+  }
+
+  //--------------------------------------------------------------------------
 }
