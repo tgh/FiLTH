@@ -38,6 +38,15 @@ IDEAS/THOUGHTS
 HELPFUL HINTS/REMINDERS
 ------------------------
 - compile haskell just like common gcc: ghc -o [binary] [source]
+- example of full text search in postgres:
+
+  SELECT mid, title FROM movie WHERE to_tsquery('Dr.&Strangelove&Bomb')
+  @@ to_tsvector(title);
+  -- the '@@' operator means 'matches'
+  -- to_tsquery has special characters:
+  --  & = and
+  --  | = or
+  --  ! = not
 
 
 REFERENCES
