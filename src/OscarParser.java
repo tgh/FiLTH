@@ -152,33 +152,21 @@ public class OscarParser implements GracefulShutdown {
 
         if (category.equals("Best Actor")) {
           title = oscars.get(3);
+          //this actor is nominated for two movies within the same nomination
+          int idx = title.indexOf("; and ");
+          if (idx != -1) {
+            String realTitle = title.substring(idx+6, title.indexOf(" {", idx));
+            String secondTitle = checkForSpecialCases(realTitle);
+            secondTitle = secondTitle.toLowerCase().replace("'","''");
+            secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
+            bestActor(secondTitle, realTitle, year);
+          }
           //remove the character name from the title
           String realTitle = title.substring(0, title.indexOf(" {"));
           title = checkForSpecialCases(realTitle);
           title = title.toLowerCase().replace("'","''");
           title = title.replace(" & "," ").replace(" ","&").replace("!","");
-          mid = queryForMovie(title, realTitle, year);
-          if (mid != -1) {
-            String[] name = oscars.get(2).split(" ");
-            if (name.length == 3) {
-              name = checkForNameSpecialCases(name);
-            }
-            cid = queryForCrewperson(name);
-            if (cid != -1) {
-              status = Integer.parseInt(oscars.get(4));
-              log.logData("mid = " + mid, 1, false);
-              log.logData("cid = " + cid, 1, false);
-              try {
-                bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 2, " + cid + ", " + status + ");");
-                bw.newLine();
-              }
-              catch (IOException ioe) {
-                log.logFatalError("Writing insert statement for best picture.",0,false);
-                ioe.printStackTrace();
-                System.exit(1); 
-              }
-            }
-          }
+          bestActor(title, realTitle, year);
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
@@ -374,14 +362,14 @@ public class OscarParser implements GracefulShutdown {
           }
           //no more matches
           if (!qResult.next()) {
-            log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+            log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
             break;
           }
         }
       }
       //no matches found at all
       else {
-        log.logGeneralMessageWithoutIndicator("-- Movie not found.",1,false);
+        log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
       }
     }
     catch (SQLException sqle) {
@@ -448,4 +436,40 @@ public class OscarParser implements GracefulShutdown {
   }
 
   //--------------------------------------------------------------------------
+
+  /**
+   *
+   */
+  private void bestActor(String title, String realTitle, int year) {
+    int mid = queryForMovie(title, realTitle, year);
+    try {
+      if (mid != -1) {
+        String[] name = oscars.get(2).split(" ");
+        if (name.length == 3) {
+          name = checkForNameSpecialCases(name);
+        }
+        int cid = queryForCrewperson(name);
+        if (cid != -1) {
+          int status = Integer.parseInt(oscars.get(4));
+          log.logData("mid = " + mid, 1, false);
+          log.logData("cid = " + cid, 1, false);
+          try {
+            bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 2, " + cid + ", " + status + ");");
+            bw.newLine();
+          }
+          catch (IOException ioe) {
+            log.logFatalError("Writing insert statement for best picture.",0,false);
+            ioe.printStackTrace();
+            System.exit(1); 
+          }
+        }
+      }
+    }
+    catch (IOException ioe) {
+      log.logFatalError("I/O Error in bestActor().",0,false);
+      log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
+      ioe.printStackTrace();
+      System.exit(1);
+    }
+  }
 }
