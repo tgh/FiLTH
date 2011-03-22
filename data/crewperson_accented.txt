@@ -29,7 +29,7 @@ Tommy Lee Jones
 Viggo Mortenson
 Javier Bardem
 Ryan Gosling
-Robert Downy Jr.
+Robert Downey Jr.
 Tom Cruise
 Sidney Poitier
 Denzel Washington
@@ -221,6 +221,13 @@ David Strathairn
 Forest Whitaker
 Richard Jenkins
 Frank Langella
+Charlton Heston
+Red Buttons
+John Travolta
+John Hurt
+Tom Courtenay
+Dexter Gordon
+Ed Harris
 
 Janusz Kaminski
 Bill Butler
@@ -338,7 +345,6 @@ Wolfgang Petersen
 Roman Polanski
 Michael and Mark Polish
 Satyajit Ray
-Robert Redford
 Rob Reiner
 Jean Renoir
 Guy Ritchie
