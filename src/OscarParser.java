@@ -159,7 +159,11 @@ public class OscarParser implements GracefulShutdown {
           title = title.replace(" & "," ").replace(" ","&").replace("!","");
           mid = queryForMovie(title, realTitle, year);
           if (mid != -1) {
-            cid = queryForCrewperson(oscars.get(2).split(" "));
+            String[] name = oscars.get(2).split(" ");
+            if (name.length == 3) {
+              name = checkForNameSpecialCases(name);
+            }
+            cid = queryForCrewperson(name);
             if (cid != -1) {
               status = Integer.parseInt(oscars.get(4));
               log.logData("mid = " + mid, 1, false);
@@ -302,6 +306,23 @@ public class OscarParser implements GracefulShutdown {
   }
 
   //--------------------------------------------------------------------------
+  
+  /**
+   *
+   */
+  private String[] checkForNameSpecialCases(String[] name) {
+    if (name[1].equals("De")) {
+      String[] n = {name[0],"De " + name[2]};
+      return n;
+    }
+    if (name[2].equals("Jr.")) {
+      String[] n = {name[0],name[1] + " Jr."};
+      return n;
+    }
+    return name;
+  }
+
+  //--------------------------------------------------------------------------
 
   /**
    *
@@ -310,12 +331,23 @@ public class OscarParser implements GracefulShutdown {
     int mid = 0;
     int status = 0;
     String response = null;
+    ResultSet qResult = null;
 
     try {
+      //special case: Being There
+      //  Postgres's full text search includes both 'being' and 'there' as
+      //  words, so they are ignored when searching.  Since this title only
+      //  contains stop words, nothing is searched for, and thus is not
+      //  found.
+      if (realTitle.equals("Being There")) {
+        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = 'Being There';");
+      }
       //query for the movie
-      ResultSet qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
-                                              + formattedTitle + "') " + "@@ to_tsvector(lower(title)) and "
-                                              + "(year = " + year + " or year = " + (year-1) + ");");
+      else {
+        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
+                                      + formattedTitle + "') " + "@@ to_tsvector(lower(title)) and "
+                                      + "(year = " + year + " or year = " + (year-1) + ");");
+      }
       //movie(s) found in db
       if (qResult.next()) {
 

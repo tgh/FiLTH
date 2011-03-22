@@ -105,7 +105,7 @@
 1940,Best Picture,Rebecca,Selznick International Pictures,1
 1940,Best Picture,The Letter,Warner Bros.,0
 1940,Best Picture,The Philadelphia Story,Metro-Goldwyn-Mayer,0
-1940,Best Picture,The Great Dictator,Charles Chaplin Productions,0
+1940,Best Picture,The Great Dictator,Charlie Chaplin Productions,0
 1940,Best Picture,Our Town,Sol Lesser (production company),0
 1940,Best Picture,The Grapes of Wrath,20th Century-Fox,0
 1941,Best Picture,One Foot in Heaven,Warner Bros.,0
@@ -204,7 +204,7 @@
 1956,Best Picture,Giant,"George Stevens and Henry Ginsberg, Producers",0
 1956,Best Picture,Friendly Persuasion,"William Wyler, Producer",0
 1957,Best Picture,The Bridge on the River Kwai,"Sam Spiegel, Producer",1
-1957,Best Picture,Witness for the Prosecution,"Arthur Hornblow, Jr., Producer",0
+1957,Best Picture,Witness for the Prosecution,"Arthur Hornblow Jr., Producer",0
 1957,Best Picture,Sayonara,"William Goetz, Producer",0
 1957,Best Picture,12 Angry Men,"Henry Fonda and Reginald Rose, Producers",0
 1957,Best Picture,Peyton Place,"Jerry Wald, Producer",0
@@ -394,7 +394,7 @@
 1994,Best Picture,Four Weddings and a Funeral,"Duncan Kenworthy, Producer",0
 1994,Best Picture,Forrest Gump,"Wendy Finerman, Steve Tisch and Steve Starkey, Producers",1
 1995,Best Picture,Sense and Sensibility,"Lindsay Doran, Producer",0
-1995,Best Picture,Braveheart,"Mel Gibson, Alan Ladd, Jr. and Bruce Davey, Producers",1
+1995,Best Picture,Braveheart,"Mel Gibson, Alan Ladd Jr. and Bruce Davey, Producers",1
 1995,Best Picture,Apollo 13,"Brian Grazer, Producer",0
 1995,Best Picture,Babe,"George Miller, Doug Mitchell and Bill Miller, Producers",0
 1995,Best Picture,The Postman (Il Postino),"Mario Cecchi Gori, Vittorio Cecchi Gori and Gaetano Daniele, Producers",0
@@ -434,7 +434,7 @@
 2002,Best Picture,The Hours,"Scott Rudin and Robert Fox, Producers",0
 2002,Best Picture,The Lord of the Rings: The Two Towers,"Barrie M. Osborne, Fran Walsh and Peter Jackson, Producers",0
 2003,Best Picture,Seabiscuit,"Kathleen Kennedy, Frank Marshall and Gary Ross, Producers",0
-2003,Best Picture,Master and Commander: The Far Side of the World,"Samuel Goldwyn, Jr., Peter Weir and Duncan Henderson, Producers",0
+2003,Best Picture,Master and Commander: The Far Side of the World,"Samuel Goldwyn Jr., Peter Weir and Duncan Henderson, Producers",0
 2003,Best Picture,The Lord of the Rings: The Return of the King,"Barrie M. Osborne, Peter Jackson and Fran Walsh, Producers",1
 2003,Best Picture,Mystic River,"Robert Lorenz, Judie G. Hoyt and Clint Eastwood, Producers",0
 2003,Best Picture,Lost in Translation,"Ross Katz and Sofia Coppola, Producers",0
@@ -526,7 +526,7 @@
 1938,Best Supporting Actor,Walter Brennan,"Kentucky {Peter Goodwin""}""",1
 1938,Best Supporting Actor,Robert Morley,"Marie Antoinette {King Louis XVI""}""",0
 1939,Best Actor,Clark Gable,"Gone with the Wind {Rhett Butler""}""",0
-1939,Best Actor,James Stewart,"Mr. Smith Goes to Washington {Jefferson Smith""}""",0
+1939,Best Actor,Jimmy Stewart,"Mr. Smith Goes to Washington {Jefferson Smith""}""",0
 1939,Best Actor,Laurence Olivier,"Wuthering Heights {Heathcliff""}""",0
 1939,Best Actor,Robert Donat,"Goodbye, Mr. Chips {Arthur Chipping""}""",1
 1939,Best Actor,Mickey Rooney,"Babes in Arms {Mickey Moran""}""",0
@@ -537,8 +537,8 @@
 1939,Best Supporting Actor,Harry Carey,"Mr. Smith Goes to Washington {President of the Senate""}""",0
 1940,Best Actor,Laurence Olivier,"Rebecca {Maxim de Winter""}""",0
 1940,Best Actor,Raymond Massey,"Abe Lincoln in Illinois {Abraham Lincoln""}""",0
-1940,Best Actor,Charles Chaplin,"The Great Dictator {Hynkel, Dictator of Tomania""}""",0
-1940,Best Actor,James Stewart,"The Philadelphia Story {Mike Connor""}""",1
+1940,Best Actor,Charlie Chaplin,"The Great Dictator {Hynkel, Dictator of Tomania""}""",0
+1940,Best Actor,Jimmy Stewart,"The Philadelphia Story {Mike Connor""}""",1
 1940,Best Actor,Henry Fonda,"The Grapes of Wrath {Tom Joad""}""",0
 1940,Best Supporting Actor,Jack Oakie,"The Great Dictator {Napaloni, Dictator of Bacteria""}""",0
 1940,Best Supporting Actor,James Stephenson,"The Letter {Howard Joyce""}""",0
@@ -597,7 +597,7 @@
 1945,Best Supporting Actor,J. Carrol Naish,"A Medal for Benny {Charlie Martini""}""",0
 1946,Best Actor,Gregory Peck,"The Yearling {Pa Baxter""}""",0
 1946,Best Actor,Laurence Olivier,"Henry V {Henry V""}""",0
-1946,Best Actor,James Stewart,"It's a Wonderful Life {George Bailey""}""",0
+1946,Best Actor,Jimmy Stewart,"It's a Wonderful Life {George Bailey""}""",0
 1946,Best Actor,Larry Parks,"The Jolson Story {Al Jolson""}""",0
 1946,Best Actor,Fredric March,"The Best Years of Our Lives {Al Stephenson""}""",1
 1946,Best Supporting Actor,Harold Russell,"The Best Years of Our Lives {Homer Parrish""}""",1
@@ -637,7 +637,7 @@
 1949,Best Supporting Actor,Dean Jagger,"Twelve O'Clock High {Major Stovall""}""",1
 1950,Best Actor,Jose Ferrer,"Cyrano de Bergerac {Cyrano de Bergerac""}""",1
 1950,Best Actor,Spencer Tracy,"Father of the Bride {Stanley T. Banks""}""",0
-1950,Best Actor,James Stewart,"Harvey {Elwood P. Dowd""}""",0
+1950,Best Actor,Jimmy Stewart,"Harvey {Elwood P. Dowd""}""",0
 1950,Best Actor,Louis Calhern,"The Magnificent Yankee {Oliver Wendell Holmes""}""",0
 1950,Best Actor,William Holden,"Sunset Blvd. {Joe Gillis""}""",0
 1950,Best Supporting Actor,Jeff Chandler,"Broken Arrow {Cochise""}""",0
@@ -699,7 +699,7 @@
 1956,Best Actor,Yul Brynner,"The King and I {The King""}""",1
 1956,Best Actor,Rock Hudson,"Giant {Bick Benedict""}""",0
 1956,Best Actor,James Dean,"Giant {Jett Rink""}""",0
-1956,Best Actor,Sir Laurence Olivier,"Richard III {Richard III""}""",0
+1956,Best Actor,Laurence Olivier,"Richard III {Richard III""}""",0
 1956,Best Supporting Actor,Don Murray,"Bus Stop {Bo""}""",0
 1956,Best Supporting Actor,Robert Stack,"Written on the Wind {Kyle Hadley""}""",0
 1956,Best Supporting Actor,Anthony Quinn,"Lust for Life {Paul Gauguin""}""",1
@@ -726,7 +726,7 @@
 1958,Best Supporting Actor,Lee J. Cobb,"The Brothers Karamazov {Fyodor Karamazov""}""",0
 1958,Best Supporting Actor,Burl Ives,"The Big Country {Rufus Hannassey""}""",1
 1959,Best Actor,Paul Muni,"The Last Angry Man {Dr. Sam Abelman""}""",0
-1959,Best Actor,James Stewart,"Anatomy of a Murder {Paul Biegler""}""",0
+1959,Best Actor,Jimmy Stewart,"Anatomy of a Murder {Paul Biegler""}""",0
 1959,Best Actor,Jack Lemmon,"Some Like It Hot {Jerry/Daphne""}""",0
 1959,Best Actor,Laurence Harvey,"Room at the Top {Joe Lampton""}""",0
 1959,Best Actor,Charlton Heston,"Ben-Hur {Judah Ben-Hur""}""",1
@@ -839,7 +839,7 @@
 1970,Best Actor,James Earl Jones,"The Great White Hope {Jack Jefferson""}""",0
 1970,Best Actor,Jack Nicholson,"Five Easy Pieces {Robert Eroica Dupea""}""",0
 1970,Best Actor,Melvyn Douglas,"I Never Sang for My Father {Tom Garrison""}""",0
-1970,Best Actor,George C. Scott,"Patton {General George S. Patton, Jr.""}""",1
+1970,Best Actor,George C. Scott,"Patton {General George S. Patton Jr.""}""",1
 1970,Best Supporting Actor,Richard Castellano,"Lovers and Other Strangers {Frank Vecchio""}""",0
 1970,Best Supporting Actor,John Mills,"Ryan's Daughter {Michael""}""",1
 1970,Best Supporting Actor,John Marley,"Love Story {Phil Cavilleri""}""",0
@@ -949,11 +949,11 @@
 1981,Best Actor,Warren Beatty,"Reds {John 'Jack' Reed""}""",0
 1981,Best Actor,Burt Lancaster,"Atlantic City {Lou""}""",0
 1981,Best Actor,Dudley Moore,"Arthur {Arthur Bach""}""",0
-1981,Best Actor,Henry Fonda,"On Golden Pond {Norman Thayer, Jr.""}""",1
+1981,Best Actor,Henry Fonda,"On Golden Pond {Norman Thayer Jr.""}""",1
 1981,Best Supporting Actor,Ian Holm,"Chariots of Fire {Sam Mussabini""}""",0
 1981,Best Supporting Actor,James Coco,"Only When I Laugh {Jimmy Perry""}""",0
 1981,Best Supporting Actor,Jack Nicholson,"Reds {Eugene O'Neill""}""",0
-1981,Best Supporting Actor,"Howard E. Rollins, Jr.","Ragtime {Coalhouse Walker, Jr.""}""",0
+1981,Best Supporting Actor,"Howard E. Rollins Jr.","Ragtime {Coalhouse Walker Jr.""}""",0
 1981,Best Supporting Actor,John Gielgud,"Arthur {Hobson""}""",1
 1982,Best Actor,Peter O'Toole,"My Favorite Year {Alan Swann""}""",0
 1982,Best Actor,Jack Lemmon,"Missing {Edmund Horman""}""",0
@@ -964,7 +964,7 @@
 1982,Best Supporting Actor,Robert Preston,"Victor/Victoria {Toddy""}""",0
 1982,Best Supporting Actor,John Lithgow,"The World According to Garp {Roberta Muldoon""}""",0
 1982,Best Supporting Actor,Charles Durning,"The Best Little Whorehouse in Texas {The Governor""}""",0
-1982,Best Supporting Actor,"Louis Gossett, Jr.","An Officer and a Gentleman {Sgt. Emil Foley""}""",1
+1982,Best Supporting Actor,"Louis Gossett Jr.","An Officer and a Gentleman {Sgt. Emil Foley""}""",1
 1983,Best Actor,Albert Finney,"The Dresser {Sir""}""",0
 1983,Best Actor,Michael Caine,"Educating Rita {Dr. Frank Bryant""}""",0
 1983,Best Actor,Tom Conti,"Reuben, Reuben {Gowan McGland""}""",0
@@ -1055,7 +1055,7 @@
 1991,Best Supporting Actor,Michael Lerner,"Barton Fink {Jack Lipnick""}""",0
 1991,Best Supporting Actor,Jack Palance,"City Slickers {Curly""}""",1
 1991,Best Supporting Actor,Tommy Lee Jones,"JFK {Clay Shaw""}""",0
-1992,Best Actor,"Robert Downey, Jr.","Chaplin {Charles Chaplin""}""",0
+1992,Best Actor,"Robert Downey Jr.","Chaplin {Charlie Chaplin""}""",0
 1992,Best Actor,Denzel Washington,"Malcolm X {Malcolm X""}""",0
 1992,Best Actor,Stephen Rea,"The Crying Game {Fergus""}""",0
 1992,Best Actor,Al Pacino,"Scent of a Woman {Lt. Col. Frank Slade""}""",1
@@ -1102,7 +1102,7 @@
 1996,Best Actor,Ralph Fiennes,"The English Patient {Almasy""}""",0
 1996,Best Supporting Actor,Armin Mueller-Stahl,"Shine {Peter Helfgott""}""",0
 1996,Best Supporting Actor,James Woods,"Ghosts of Mississippi {Byron De La Beckwith""}""",0
-1996,Best Supporting Actor,"Cuba Gooding, Jr.","Jerry Maguire {Rod Tidwell""}""",1
+1996,Best Supporting Actor,"Cuba Gooding Jr.","Jerry Maguire {Rod Tidwell""}""",1
 1996,Best Supporting Actor,Edward Norton,"Primal Fear {Aaron Stampler""}""",0
 1996,Best Supporting Actor,William H. Macy,"Fargo {Jerry Lundegaard""}""",0
 1997,Best Actor,Peter Fonda,"Ulee's Gold {Ulee Jackson""}""",0
@@ -2411,7 +2411,7 @@
 1932,Best Cinematography,Arrowsmith,Ray June,0
 1932,Best Cinematography,Dr. Jekyll and Mr. Hyde,Karl Struss,0
 1932,Best Cinematography,Shanghai Express,Lee Garmes,1
-1933,Best Cinematography,A Farewell to Arms,"Charles Bryant Lang, Jr.",1
+1933,Best Cinematography,A Farewell to Arms,"Charles Bryant Lang Jr.",1
 1933,Best Cinematography,Reunion in Vienna,George J. Folsey [came in 2nd],0
 1933,Best Cinematography,The Sign of the Cross,Karl Struss [came in 3rd],0
 1934,Best Cinematography,Operator 13,George Folsey [came in 2nd],0
@@ -2458,7 +2458,7 @@
 1940,Best Cinematography (black and white),"All This, and Heaven Too",Ernest Haller,0
 1940,Best Cinematography (black and white),Foreign Correspondent,Rudolph Mate,0
 1940,Best Cinematography (black and white),Abe Lincoln in Illinois,James Wong Howe,0
-1940,Best Cinematography (black and white),"Arise, My Love","Charles B. Lang, Jr.",0
+1940,Best Cinematography (black and white),"Arise, My Love","Charles B. Lang Jr.",0
 1940,Best Cinematography (black and white),Waterloo Bridge,Joseph Ruttenberg,0
 1940,Best Cinematography (black and white),The Letter,Gaetano (Tony) Gaudio,0
 1940,Best Cinematography (black and white),Boom Town,Harold Rosson,0
@@ -2549,7 +2549,7 @@
 1946,Best Cinematography (black and white),Anna and the King of Siam,Arthur Miller,1
 1946,Best Cinematography (color),The Jolson Story,Joseph Walker,0
 1946,Best Cinematography (color),The Yearling,"Charles Rosher, Leonard Smith, Arthur Arling",1
-1947,Best Cinematography (black and white),The Ghost and Mrs. Muir,"Charles Lang, Jr.",0
+1947,Best Cinematography (black and white),The Ghost and Mrs. Muir,"Charles Lang Jr.",0
 1947,Best Cinematography (black and white),Great Expectations,Guy Green,1
 1947,Best Cinematography (black and white),Green Dolphin Street,George Folsey,0
 1947,Best Cinematography (color),Black Narcissus,Jack Cardiff,1
@@ -2557,7 +2557,7 @@
 1947,Best Cinematography (color),Life with Father,"Peverell Marley, William V. Skall",0
 1948,Best Cinematography (black and white),Portrait of Jennie,Joseph August,0
 1948,Best Cinematography (black and white),The Naked City,William Daniels,1
-1948,Best Cinematography (black and white),A Foreign Affair,"Charles B. Lang, Jr.",0
+1948,Best Cinematography (black and white),A Foreign Affair,"Charles B. Lang Jr.",0
 1948,Best Cinematography (black and white),I Remember Mama,Nicholas Musuraca,0
 1948,Best Cinematography (black and white),Johnny Belinda,Ted McCord,0
 1948,Best Cinematography (color),Joan of Arc,"Joseph Valentine, William V. Skall, Winton Hoch",1
@@ -2596,7 +2596,7 @@
 1951,Best Cinematography (color),When Worlds Collide,"John F. Seitz, W. Howard Greene",0
 1952,Best Cinematography (black and white),My Cousin Rachel,Joseph LaShelle,0
 1952,Best Cinematography (black and white),The Bad and the Beautiful,Robert Surtees,1
-1952,Best Cinematography (black and white),Sudden Fear,"Charles B. Lang, Jr.",0
+1952,Best Cinematography (black and white),Sudden Fear,"Charles B. Lang Jr.",0
 1952,Best Cinematography (black and white),The Big Sky,Russell Harlan,0
 1952,Best Cinematography (black and white),Navajo,Virgil E. Miller,0
 1952,Best Cinematography (color),Hans Christian Andersen,Harry Stradling,0
@@ -2614,7 +2614,7 @@
 1953,Best Cinematography (color),All the Brothers Were Valiant,George Folsey,0
 1953,Best Cinematography (color),Beneath the 12-Mile Reef,Edward Cronjager,0
 1953,Best Cinematography (color),The Robe,Leon Shamroy,0
-1954,Best Cinematography (black and white),Sabrina,"Charles Lang, Jr.",0
+1954,Best Cinematography (black and white),Sabrina,"Charles Lang Jr.",0
 1954,Best Cinematography (black and white),The Country Girl,John F. Warren,0
 1954,Best Cinematography (black and white),Executive Suite,George Folsey,0
 1954,Best Cinematography (black and white),Rogue Cop,John Seitz,0
@@ -2653,7 +2653,7 @@
 1958,Best Cinematography (black and white),The Defiant Ones,Sam Leavitt,1
 1958,Best Cinematography (black and white),I Want To Live!,Lionel Lindon,0
 1958,Best Cinematography (black and white),The Young Lions,Joe MacDonald,0
-1958,Best Cinematography (black and white),Separate Tables,"Charles Lang, Jr.",0
+1958,Best Cinematography (black and white),Separate Tables,"Charles Lang Jr.",0
 1958,Best Cinematography (color),The Old Man and the Sea,James Wong Howe,0
 1958,Best Cinematography (color),Gigi,Joseph Ruttenberg,1
 1958,Best Cinematography (color),Auntie Mame,"Harry Stradling, Sr.",0
@@ -2662,7 +2662,7 @@
 1959,Best Cinematography (black and white),The Diary of Anne Frank,William C. Mellor,1
 1959,Best Cinematography (black and white),Career,Joseph LaShelle,0
 1959,Best Cinematography (black and white),Anatomy of a Murder,Sam Leavitt,0
-1959,Best Cinematography (black and white),Some Like It Hot,"Charles Lang, Jr.",0
+1959,Best Cinematography (black and white),Some Like It Hot,"Charles Lang Jr.",0
 1959,Best Cinematography (black and white),The Young Philadelphians,"Harry Stradling, Sr.",0
 1959,Best Cinematography (color),The Five Pennies,Daniel L. Fapp,0
 1959,Best Cinematography (color),Porgy and Bess,Leon Shamroy,0
@@ -2673,7 +2673,7 @@
 1960,Best Cinematography (black and white),The Apartment,Joseph LaShelle,0
 1960,Best Cinematography (black and white),Sons and Lovers,Freddie Francis,1
 1960,Best Cinematography (black and white),Inherit the Wind,Ernest Laszlo,0
-1960,Best Cinematography (black and white),The Facts of Life,"Charles B. Lang, Jr.",0
+1960,Best Cinematography (black and white),The Facts of Life,"Charles B. Lang Jr.",0
 1960,Best Cinematography (color),Pepe,Joe MacDonald,0
 1960,Best Cinematography (color),Spartacus,Russell Metty,1
 1960,Best Cinematography (color),The Alamo,William H. Clothier,0
@@ -2684,7 +2684,7 @@
 1961,Best Cinematography (black and white),The Absent Minded Professor,Edward Colman,0
 1961,Best Cinematography (black and white),The Children's Hour,Franz F. Planer,0
 1961,Best Cinematography (black and white),"One, Two, Three",Daniel L. Fapp,0
-1961,Best Cinematography (color),One-Eyed Jacks,"Charles Lang, Jr.",0
+1961,Best Cinematography (color),One-Eyed Jacks,"Charles Lang Jr.",0
 1961,Best Cinematography (color),Flower Drum Song,Russell Metty,0
 1961,Best Cinematography (color),Fanny,Jack Cardiff,0
 1961,Best Cinematography (color),A Majority of One,"Harry Stradling, Sr.",0
@@ -2704,7 +2704,7 @@
 1963,Best Cinematography (black and white),Lilies of the Field,Ernest Haller,0
 1963,Best Cinematography (black and white),Hud,James Wong Howe,1
 1963,Best Cinematography (black and white),The Caretakers,Lucien Ballard,0
-1963,Best Cinematography (color),How the West Was Won,"William H. Daniels, Milton Krasner, Charles Lang, Jr., Joseph LaShelle",0
+1963,Best Cinematography (color),How the West Was Won,"William H. Daniels, Milton Krasner, Charles Lang Jr., Joseph LaShelle",0
 1963,Best Cinematography (color),Cleopatra,Leon Shamroy,1
 1963,Best Cinematography (color),The Cardinal,Leon Shamroy,0
 1963,Best Cinematography (color),Irma La Douce,Joseph LaShelle,0
@@ -2767,11 +2767,11 @@
 1972,Best Cinematography,The Poseidon Adventure,Harold E. Stine,0
 1972,Best Cinematography,Butterflies Are Free,Charles B. Lang,0
 1972,Best Cinematography,Travels with My Aunt,Douglas Slocombe,0
-1972,Best Cinematography,1776,"Harry Stradling, Jr.",0
+1972,Best Cinematography,1776,"Harry Stradling Jr.",0
 1972,Best Cinematography,Cabaret,Geoffrey Unsworth,1
 1973,Best Cinematography,Cries and Whispers,Sven Nykvist,1
 1973,Best Cinematography,Jonathan Livingston Seagull,Jack Couffer,0
-1973,Best Cinematography,The Way We Were,"Harry Stradling, Jr.",0
+1973,Best Cinematography,The Way We Were,"Harry Stradling Jr.",0
 1973,Best Cinematography,The Sting,Robert Surtees,0
 1973,Best Cinematography,The Exorcist,Owen Roizman,0
 1974,Best Cinematography,The Towering Inferno,"Fred Koenekamp, Joseph Biroc",1
@@ -2957,7 +2957,7 @@
 1931,Best Adapted Screenplay,Cimarron,Howard Estabrook,1
 1931,Best Adapted Screenplay,Holiday,Horace Jackson,0
 1931,Best Adapted Screenplay,Little Caesar,"Francis Faragoh, Robert N. Lee",0
-1931,Best Adapted Screenplay,The Criminal Code,"Seton I. Miller, Fred Niblo, Jr.",0
+1931,Best Adapted Screenplay,The Criminal Code,"Seton I. Miller, Fred Niblo Jr.",0
 1931,Best Adapted Screenplay,Skippy,"Joseph L. Mankiewicz, Sam Mintz",0
 1931,Best Original Screenplay,The Public Enemy,"John Bright, Kubec Glasmon",0
 1931,Best Original Screenplay,The Doorway to Hell,Rowland Brown,0
@@ -3032,7 +3032,7 @@
 1939,Best Adapted Screenplay,Mr. Smith Goes to Washington,Sidney Buchman,0
 1939,Best Adapted Screenplay,Ninotchka,"Charles Brackett, Billy Wilder, Walter Reisch",0
 1939,Best Adapted Screenplay,Gone with the Wind,Sidney Howard,1
-1940,Best Original Screenplay,The Great Dictator,Charles Chaplin,0
+1940,Best Original Screenplay,The Great Dictator,Charlie Chaplin,0
 1940,Best Original Screenplay,Foreign Correspondent,"Charles Bennett, Joan Harrison",0
 1940,Best Original Screenplay,Dr. Ehrlich's Magic Bullet,"John Huston, Heinz Herald, Norman Burnside",0
 1940,Best Original Screenplay,Angels over Broadway,Ben Hecht,0
@@ -3065,7 +3065,7 @@
 1942,Best Original Screenplay,The War against Mrs. Hadley,George Oppenheimer,0
 1942,Best Original Screenplay,Wake Island,"W. R. Burnett, Frank Butler",0
 1942,Best Original Screenplay,Road to Morocco,"Frank Butler, Don Hartman",0
-1942,Best Original Screenplay,Woman of the Year,"Ring Lardner, Jr., Michael Kanin",1
+1942,Best Original Screenplay,Woman of the Year,"Ring Lardner Jr., Michael Kanin",1
 1942,Best Original Screenplay,One of Our Aircraft Is Missing,"Michael Powell, Emeric Pressburger",0
 1942,Best Adapted Screenplay,Random Harvest,"Claudine West, George Froeschel, Arthur Wimperis",0
 1942,Best Adapted Screenplay,The Pride of the Yankees,"Jo Swerling, Herman J. Mankiewicz",0
@@ -3113,7 +3113,7 @@
 1946,Best Adapted Screenplay,Open City,"Sergio Amidei, F. Fellini",0
 1946,Best Adapted Screenplay,The Killers,Anthony Veiller,0
 1947,Best Original Screenplay,Body and Soul,Abraham Polonsky,0
-1947,Best Original Screenplay,Monsieur Verdoux,Charles Chaplin,0
+1947,Best Original Screenplay,Monsieur Verdoux,Charlie Chaplin,0
 1947,Best Original Screenplay,A Double Life,"Ruth Gordon, Garson Kanin",0
 1947,Best Original Screenplay,The Bachelor and the Bobby-Soxer,Sidney Sheldon,1
 1947,Best Original Screenplay,Shoe-Shine,"Sergio Amidei, Adolfo Franci, C. G. Viola, Cesare Zavattini",0
@@ -3142,7 +3142,7 @@
 1950,Best Adapted Screenplay,The Asphalt Jungle,"Ben Maddow, John Huston",0
 1950,Best Adapted Screenplay,Broken Arrow,Albert Maltz,0
 1950,Best Adapted Screenplay,All about Eve,Joseph L. Mankiewicz,1
-1950,Best Original Screenplay,Sunset Blvd.,"Charles Brackett, Billy Wilder, D. M. Marshman, Jr.",1
+1950,Best Original Screenplay,Sunset Blvd.,"Charles Brackett, Billy Wilder, D. M. Marshman Jr.",1
 1950,Best Original Screenplay,Adam's Rib,"Ruth Gordon, Garson Kanin",0
 1950,Best Original Screenplay,Caged,"Virginia Kellogg, Bernard C. Schoenfeld",0
 1950,Best Original Screenplay,The Men,Carl Foreman,0
@@ -3169,7 +3169,7 @@
 1952,Best Original Screenplay,Breaking the Sound Barrier,Terence Rattigan,0
 1953,Best Adapted Screenplay,Roman Holiday,"Ian McLellan Hunter, John Dighton",0
 1953,Best Adapted Screenplay,Lili,Helen Deutsch,0
-1953,Best Adapted Screenplay,Shane,"A. B. Guthrie, Jr.",0
+1953,Best Adapted Screenplay,Shane,"A. B. Guthrie Jr.",0
 1953,Best Adapted Screenplay,The Cruel Sea,Eric Ambler,0
 1953,Best Adapted Screenplay,From Here to Eternity,Daniel Taradash,1
 1953,Best Original Screenplay,Take the High Ground,Millard Kaufman,0
@@ -3269,7 +3269,7 @@
 1962,Best Original Screenplay,Through a Glass Darkly,Ingmar Bergman,0
 1963,Best Adapted Screenplay,Tom Jones,John Osborne,1
 1963,Best Adapted Screenplay,Lilies of the Field,James Poe,0
-1963,Best Adapted Screenplay,Hud,"Irving Ravetch, Harriet Frank, Jr.",0
+1963,Best Adapted Screenplay,Hud,"Irving Ravetch, Harriet Frank Jr.",0
 1963,Best Adapted Screenplay,"Captain Newman, M.D.","Richard L. Breen, Phoebe Ephron, Henry Ephron",0
 1963,Best Adapted Screenplay,Sundays and Cybele,"Serge Bourguignon, Antoine Tudal",0
 1963,Best Original Screenplay,Federico Fellini's 8-1/2,"Federico Fellini, Ennio Flaiano, Tullio Pinelli, Brunello Rondi",0
@@ -3340,7 +3340,7 @@
 1970,Best Adapted Screenplay,Airport,George Seaton,0
 1970,Best Adapted Screenplay,I Never Sang for My Father,Robert Anderson,0
 1970,Best Adapted Screenplay,Lovers and Other Strangers,"Renee Taylor, Joseph Bologna, David Zelag Goodman",0
-1970,Best Adapted Screenplay,M*A*S*H,"Ring Lardner, Jr.",1
+1970,Best Adapted Screenplay,M*A*S*H,"Ring Lardner Jr.",1
 1970,Best Adapted Screenplay,Women in Love,Larry Kramer,0
 1970,Best Original Screenplay,Patton,"Francis Ford Coppola, Edmund H. North",1
 1970,Best Original Screenplay,Joe,Norman Wexler,0
@@ -3428,7 +3428,7 @@
 1978,Best Original Screenplay,Coming Home,"Story by Nancy Dowd; Screenplay by Waldo Salt, Robert C. Jones",1
 1978,Best Original Screenplay,Autumn Sonata,Ingmar Bergman,0
 1979,Best Adapted Screenplay,Kramer vs. Kramer,Robert Benton,1
-1979,Best Adapted Screenplay,Norma Rae,"Irving Ravetch, Harriet Frank, Jr.",0
+1979,Best Adapted Screenplay,Norma Rae,"Irving Ravetch, Harriet Frank Jr.",0
 1979,Best Adapted Screenplay,Apocalypse Now,"John Milius, Francis Coppola",0
 1979,Best Adapted Screenplay,A Little Romance,Allan Burns,0
 1979,Best Adapted Screenplay,La Cage aux Folles,"Francis Veber, Edouard Molinaro, Marcello Danon, Jean Poiret",0
@@ -3486,7 +3486,7 @@
 1984,Best Original Screenplay,Splash,"Screenplay by Lowell Ganz, Babaloo Mandel, Bruce Jay Friedman; Screen Story by Bruce Jay Friedman; Based on a story by Brian Grazer",0
 1984,Best Original Screenplay,El Norte,"Gregory Nava, Anna Thomas",0
 1984,Best Original Screenplay,Places in the Heart,Robert Benton,1
-1984,Best Original Screenplay,Beverly Hills Cop,"Screenplay by Daniel Petrie, Jr.; Story by Danilo Bach, Daniel Petrie, Jr.",0
+1984,Best Original Screenplay,Beverly Hills Cop,"Screenplay by Daniel Petrie Jr.; Story by Danilo Bach, Daniel Petrie Jr.",0
 1985,Best Adapted Screenplay,Out of Africa,Kurt Luedtke,1
 1985,Best Adapted Screenplay,Prizzi's Honor,"Richard Condon, Janet Roach",0
 1985,Best Adapted Screenplay,Kiss of the Spider Woman,Leonard Schrader,0
@@ -3590,7 +3590,7 @@
 1995,Best Adapted Screenplay,"Anna Pavignano, Michael Radford, Furio Scarpelli, Giacomo Scarpelli, Massimo Troisi",0
 1995,Best Adapted Screenplay,Babe,"George Miller, Chris Noonan",0
 1995,Best Adapted Screenplay,Leaving Las Vegas,Mike Figgis,0
-1995,Best Adapted Screenplay,Apollo 13,"William Broyles, Jr., Al Reinert",0
+1995,Best Adapted Screenplay,Apollo 13,"William Broyles Jr., Al Reinert",0
 1995,Best Adapted Screenplay,Sense and Sensibility,Emma Thompson,1
 1995,Best Original Screenplay,The Usual Suspects,Christopher McQuarrie,1
 1995,Best Original Screenplay,Braveheart,Randall Wallace,0

@@ -5,12 +5,6 @@ WHERE LEFT OFF
     - 1968 best actress has a tie which needs a value of 2, not 1
     - some nominees from 1928-1930 were nominated for more than one movie in the
       same nomination
-    Best Actor
-      - csv has James Stewart (sed replace maybe...)
-      - csv has Charles Chaplin (sed replace maybe...)
-      - some nominations (but not all) of Laurence Olivier are listed as 'Sir
-        Laurence Olivier' (probably a special case)
-      - Robert De Niro not found (probably need to special case this one)
     * might want to check my movie lists to make sure these are in the right
       year:
       - Pollock
