@@ -97,6 +97,8 @@ sed -i "s/James Stewart/Jimmy Stewart/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Charles Chaplin/Charlie Chaplin/g" $filth_path/data/oscarsOfCategory.csv
 # change Sir Laurence Olivier to just Laurence Olivier
 sed -i "s/Sir Laurence Olivier/Laurence Olivier/g" $filth_path/data/oscarsOfCategory.csv
+# change ", Jr." to just " Jr." (e.g. Robert Downey, Jr. -> Robert Downey Jr.)
+sed -i "s/, Jr./ Jr./g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
