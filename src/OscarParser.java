@@ -26,6 +26,8 @@ public class OscarParser implements GracefulShutdown {
   private BufferedWriter bw = null;
   //for reading from stdin
   private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  //name of the db
+  private static String dbname;
   //password for db
   private static String dbpw;
   //flag for no command-line arg
@@ -42,8 +44,8 @@ public class OscarParser implements GracefulShutdown {
    */
   public static void main (String[] args) {
     //no arg given for the db password
-    if (args.length == 0) {
-      System.out.println("\n - usage: OscarParser {database password}\n");
+    if (args.length != 2) {
+      System.out.println("\n - usage: OscarParser {database name} {database password}\n");
       noarg = true;
       System.exit(1);
     }
@@ -56,8 +58,10 @@ public class OscarParser implements GracefulShutdown {
     GracefulShutdown op = new OscarParser();
     TerminationInterceptor ti = new TerminationInterceptor(op);
     Runtime.getRuntime().addShutdownHook(ti);
+    //grab the name of the database
+    dbname = args[0];
     //grab the password for the database
-    dbpw = args[0];
+    dbpw = args[1];
     //start program
     op.start();
   }
@@ -100,7 +104,7 @@ public class OscarParser implements GracefulShutdown {
     br = new BufferedReader(new InputStreamReader(System.in));
 
     //connect to the database
-    dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/filth",
+    dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/" + dbname,
                                                  "postgres",
                                                  dbpw);
     //setup virtual SQL console with the db
