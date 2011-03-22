@@ -89,6 +89,16 @@ echo removing unwanted substrings...
 sed -i "s/ (Comedy Picture)//g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 
+#-- REWRITING SPECIAL CASES --
+echo rewriting special cases...
+# change James Stewart to Jimmy Stewart
+sed -i "s/James Stewart/Jimmy Stewart/g" $filth_path/data/oscarsOfCategory.csv
+# change Charles Chaplin to Charlie Chaplin
+sed -i "s/Charles Chaplin/Charlie Chaplin/g" $filth_path/data/oscarsOfCategory.csv
+# change Sir Laurence Olivier to just Laurence Olivier
+sed -i "s/Sir Laurence Olivier/Laurence Olivier/g" $filth_path/data/oscarsOfCategory.csv
+
+
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
 #-------------------------------------------------------------------------------
