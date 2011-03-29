@@ -1749,3 +1749,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero Effect', 1998, 6, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct', 1933, 6, 0, 2, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'You Will Meet a Tall Dark Stranger', 2010, 4, 4, 1, NULL);
