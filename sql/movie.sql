@@ -1753,3 +1753,6 @@ INSERT INTO movie VALUES (DEFAULT, 'You Will Meet a Tall Dark Stranger', 2010, 4
 INSERT INTO movie VALUES (DEFAULT, 'The Kids Are All Right', 2010, 6, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Rango', 2011, 7, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Waking Sleeping Beauty', 2010, 5, 2, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Alamo', 2004, 6, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Hannah', 2011, 5, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Leaves of Grass', 2010, 6, 4, 1, NULL);
