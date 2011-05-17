@@ -20,6 +20,51 @@ and/or a web app that will let others search the database for my ratings.
 
 Source
 -------
-Code consists of C, Haskell, and bash scripts.
+Code consists of C, Python, Haskell, and bash scripts.
 Database is Postgresql.
 Web pages in php.
+
+
+Files
+------
+/bin (binary files)
+
+  /tylerhayes/tools/
+    
+    Contains compiled java code from tylerhayes.tools.jar from my JavaTools
+    project.  Used for logging in java programs such as /bin/OscarParser, as
+    well as its database "virtual console".
+
+  genre2sql
+
+    Parses the file given as its only argument and produces sql insert
+    statements for the database's genre table.  To be used with /data/genre.txt
+    as its argument.  Use shell redirection to store the sql statements into
+    /sql/genre.sql.  Compiled from /src/genre2sql.hs Haskell source file.
+
+  nameFormatter
+
+    Takes a text file containing a list of names (such as /data/crewperson.txt)
+    and outputs those names in a (lastname, firstname) format.  Takes the name
+    of the file to parse (/data/crewperson.txt) as its only argument.  Used in
+    /scripts/crewperson.sh which redirects the output to a temp file (in /temp),
+    which is then used as an argument to /scripts/crew2sql.py.  Compiled from
+    /src/nameFormatter.hs Haskell source file.
+
+  oscar2sql
+
+    Parses the file given as its only argument and produces sql insert
+    statements for the database's oscar table.  To be used with /data/oscar.txt
+    as its argument.  Use shell redirection to store the sql statements into
+    /sql/oscar.sql.  Compiled from /src/oscar2sql.hs Haskell source file.
+
+  OscarParser.class
+
+    Parses the /data/oscarsOfCategory.csv file (that is produced by
+    /scripts/oscarGivenTo.sh), and produces the /sql/oscar_given_to.sql file.
+    Takes two arguments: name of Postgres database, and password of database.
+    Used in the /scripts/oscarGivenTo.sh shell script.  The purpose of this
+    program is to produce sql insert statements to populate the oscar_given_to
+    table in the database as much as possible based on the oscar data in the
+    /data/oscarsOfCategory.csv file.  These statements are written to the
+    /sql/oscar_given_to.sql file.
