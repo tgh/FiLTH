@@ -1758,3 +1758,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Pee Wee''s Big Adventure', 1985, 6, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Perfect World', 1993, 5, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Secretariat', 2010, 5, 2, 1, NULL);
