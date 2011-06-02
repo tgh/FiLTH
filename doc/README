@@ -20,16 +20,16 @@ and/or a web app that will let others search the database for my ratings.
 
 Source
 -------
-Code consists of C, Python, Haskell, and bash scripts.
+Code consists of Python, Java, Haskell, bash scripts, and of course SQL.
 Database is Postgresql.
-Web pages in php.
+Web pages in php (for now).
 
 
 Files
 ------
 /bin (binary files)
 
-  /tylerhayes/tools/
+  tylerhayes/tools/
     
     Contains compiled java code from tylerhayes.tools.jar from my JavaTools
     project.  Used for logging in java programs such as /bin/OscarParser, as
@@ -68,3 +68,109 @@ Files
     table in the database as much as possible based on the oscar data in the
     /data/oscarsOfCategory.csv file.  These statements are written to the
     /sql/oscar_given_to.sql file.
+
+/data (data files in various formats used to populate the database)
+
+  actedin.txt
+
+    Basically filmographies of a small handfull of actors--formatted in such a
+    way to make parsing easier for scripts and programs.  This file will be used
+    (as of now, 6/1/11, it has not been used) to help populate the worked_on
+    table of the database.
+
+  crewperson.txt
+
+    A list of as many actors, directors, cinematographers, and writers as I
+    could think of that I care about or think I would need in some way.  This
+    file is to be used with the scripts/crew2sql.py Python script as a
+    command-line argument--the result of which is sql insert statements to
+    populate the crew_person table of the database.  The sql output of the
+    Python script has been redirected to produce the /sql/crew_person.sql file.
+
+  crewperson_accented.txt
+
+    The same as the file above but with special characters for accented letters
+    such as would be in Penélope Cruz.  It is still undecided as to whether the
+    database will contain accented characters or not (ticket #47).
+
+  directed.txt
+
+    Filmographies of directors formatted like a list in the same way as
+    /data/actedin.txt to make parsing easier for scripts and programs.  This
+    file will be used (as of now, 6/1/11, it has not been used) to help populate
+    the worked_on table of the database... or maybe not.  Filmographies.doc
+    may be used instead (see /data/Filmographies.doc).
+
+  Filmographies.doc
+
+    An old Word document I still maintain for director filmographies.  Both
+    /data/actedin.txt and /data/directed.txt came from this document.  This will
+    most likely be used (with the help of antiword to convert it from a Word
+    document to a text file) to help populate the worked_on table of the
+    database.  Either that or converted to directed.txt, which will then be
+    used.
+
+  genre.txt
+
+    A simple list of genres I am intereseted in for the database.  This file is
+    to be used with the /bin/genre2sql program as a command-line argument, whose
+    output is sql insert statements to populate the genre table in the database.
+    This output has been redirected to produce the /sql/genre.sql file.
+
+  Movie_Ratings.doc
+
+    Here is the document that got it all started.  This document (a Word
+    document) lists all of the movies I have rated, along with their year,
+    country, and MPAA ratings.  I thought not only would it be nice if there was
+    a way to have new movie ratings be inserted appropriately automatically, but
+    also if this data I was maintaining and perusing by hand could be queryable.
+    Thus, FiLTH.  Of course, it has grown to include much more than the data
+    that this document provides.  antiword is used to convert this document to
+    plain text in the /scripts/movie.sh shell script, and then taken from there.
+    (see /scripts/movie.sh)
+
+  oscar.txt
+
+    A list of the Oscar categories that I care about.  This file is used with
+    /bin/oscar2sql program as a command-line argument, whose output is sql
+    insert statements that populate the oscar table in the database.  This
+    output has been redirected to produce the /sql/oscar.sql file.
+
+  oscars.csv
+
+    Raw data (in CSV format) of Oscars history from 1928-2008.  This file was
+    found at this site: http://www.aggdata.com/awards/oscar, which was linked to
+    from this site: http://www.bloggersblog.com/blog/224081.  The file contains
+    all cateogories (even the specific name changes to the same categories),
+    production companies, producers, character names, etc--in other words, a lot
+    of stuff I don't want/need.  This file is used in the
+    /scripts/oscarGivenTo.sh shell script where fgrep, grep, and sed are used to
+    extract and massage what I want out of the data.  The resulting cleaned data
+    is stored in /data/oscarsOfCategory.csv.  (see /scripts/oscarGivenTo.sh)
+
+  oscarsOfCategory.csv
+
+    This is a cleaned version of the data found in /data/oscars.csv, and used in
+    the /scripts/oscarsGivenTo.sh shell script.  This data will be used to
+    populate the oscar_given_to table in the database by being given to the
+    /bin/OscarParser Java program as a command-line argument, which will then
+    output sql insert statements to be redirected to produce
+    /sql/oscar_given_to.sql.
+
+  otherMovies.txt
+
+    An ad hoc list of movies I have seen a long time ago, but have not been
+    reviewed (and, thus, not in the Movie_Ratings.doc document).  As of now
+    (6/1/11) this file is not in use for FiLTH.
+
+  shot.txt
+
+    Filmographies of cinematographers listed in the same format as actedin.txt
+    and directed.txt.  This file will be used (as of now, 6/1/11, it has not
+    been used) to help populate the worked_on table of the database.
+
+  wrote.txt
+
+    Filmographies of screenwriters listed in the same format as actedin.txt,
+    directed.txt, and shot.txt.  This file will be used (as of now, 6/1/11, it
+    has not been used) to help populate the worked_on table of the database.
