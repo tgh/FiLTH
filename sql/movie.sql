@@ -1761,3 +1761,4 @@ INSERT INTO movie VALUES (DEFAULT, 'A Perfect World', 1993, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Secretariat', 2010, 5, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Son, My Son, What Have Ye Done', 2009, 5, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Cache', 2005, 8, 4, 2, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Midnight in Paris', 2011, 7, 3, 1, NULL);
