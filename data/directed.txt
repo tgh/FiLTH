@@ -2,14 +2,14 @@
 ~What''s Up, Tiger Lily?(1966)
 ~Take the Money and Run(1969)
 ~Bananas(1971)
-Everything You Always Wanted to Know About Sex But Were Afraid to Ask(1972)<USA
+~Everything You Always Wanted to Know About Sex But Were Afraid to Ask(1972)
 ~Sleeper(1973)
 ~Love and Death(1975)
 ~Annie Hall(1977)
 ~Interiors(1978)
 ~Manhattan(1979)
 ~Stardust Memories(1980)
-A Midsummer Night''s Sex Comedy(1982)<USA
+~A Midsummer Night''s Sex Comedy(1982)
 ~Zelig(1983)
 ~Broadway Danny Rose(1984)
 ~The Purple Rose of Cairo(1985)
@@ -19,7 +19,7 @@ A Midsummer Night''s Sex Comedy(1982)<USA
 ~Another Woman(1988)
 ~New York Stories: Oedipus Wrecks(1989)
 ~Crimes and Misdemeanors(1989)
-Alice(1990)<USA
+~Alice(1990)
 ~Shadows and Fog(1992)
 ~Husbands and Wives(1992)
 ~Manhattan Murder Mystery(1993)
@@ -33,50 +33,50 @@ Alice(1990)<USA
 ~The Curse of the Jade Scorpion(2001)
 ~Hollywood Ending(2002)
 ~Anything Else(2003)
-Melinda and Melinda(2004)<USA
-Match Point(2005)<USA
-Scoop(2006)<USA
-Cassandra''s Dream(2007)<USA
-Vicky Cristina Barcelona(2008)<USA
+~Melinda and Melinda(2004)
+Match Point(2005)
+~Scoop(2006)
+~Cassandra''s Dream(2007)
+Vicky Cristina Barcelona(2008)
 `Robert Altman
-The Delinquents(1957)<USA
+The Delinquents(1957)
 ~The James Dean Story(1957)
-Countdown(1968)<USA
-That Cold Day in the Park(1969)<USA
+Countdown(1968)
+That Cold Day in the Park(1969)
 ~M*a*s*h(1970)
-Brewster Mccloud(1970)<USA
+Brewster Mccloud(1970)
 ~Mccabe & Mrs. Miller(1971)
 ~Images(1972)
 ~The Long Goodbye(1973)
-Thieves Like Us(1974)<USA
+Thieves Like Us(1974)
 ~California Split(1974)
 ~Nashville(1975)
 ~Buffalo Bill and the Indians Or Sitting Bull''s History Lesson(1976)
 ~3 Women(1977)
-A Wedding(1978)<USA
-Quintet(1979)<USA
-A Perfect Couple(1979)<USA
-H.E.A.L.T.H.(1979)<USA
+A Wedding(1978)
+Quintet(1979)
+A Perfect Couple(1979)
+H.E.A.L.T.H.(1979)
 ~Popeye(1980)
-Come Back to the Five and Dime, Jimmy Dean, Jimmy Dean(1982)<USA
-Streamers(1983)<USA
+Come Back to the Five and Dime, Jimmy Dean, Jimmy Dean(1982)
+Streamers(1983)
 ~Secret Honor(1984)
-O.C. & Stiggs(1985)<USA
-Fool For Love(1985)<USA
+O.C. & Stiggs(1985)
+Fool For Love(1985)
 ~Aria(1987)
 ~Beyond Therapy(1987)
-Vincent and Theo(1990)<USA
+Vincent and Theo(1990)
 ~The Player(1992)
 ~Short Cuts(1993)
 ~Ready to Wear(1994)
 ~Kansas City(1996)
-Jazz ''34(1996)<USA
+Jazz ''34(1996)
 ~The Gingerbread Man(1998)
 ~Cookie''s Fortune(1999)
 ~Dr. T & the Women(2000)
 ~Gosford Park(2001)
 ~The Company(2003)
-A Prairie Home Companion(2006)<USA
+A Prairie Home Companion(2006)
 `Paul Thomas Anderson
 ~Hard Eight(1996)
 ~Boogie Nights(1997)
@@ -159,7 +159,7 @@ Death Defying Acts(2007)
 ~π(1998)
 ~Requiem For a Dream(2000)
 ~The Fountain(2006)
-The Wrestler(2008)<USA
+The Wrestler(2008)
 `Ingmar Bergman
 Crisis(1946)<Sweden
 It Rains on Our Love(1946)<Sweden
@@ -232,24 +232,24 @@ La Femme Nikita(1990)
 Angel-A(2005)
 Arthur and the Invisibles(2006)
 `Peter Bogdanovich
-Targets(1968)<USA
-Voyage to the Planet of Prehistoric Women(1968)<USA
-Directed by John Ford(1971)<USA
+Targets(1968)
+Voyage to the Planet of Prehistoric Women(1968)
+Directed by John Ford(1971)
 ~The Last Picture Show(1971)
-What''s Up, Doc?(1972)<USA
+What''s Up, Doc?(1972)
 ~Paper Moon(1973)
-Daisy Miller(1974)<USA
-At Long Last Love(1975)<USA
-Nickelodeon(1976)<USA
-Saint Jack(1979)<USA
-They All Laughed(1981)<USA
+Daisy Miller(1974)
+At Long Last Love(1975)
+Nickelodeon(1976)
+Saint Jack(1979)
+They All Laughed(1981)
 ~Mask(1985)
-Illegally Yours(1988)<USA
-Texasville(1990)<USA
-Noises Off...(1992)<USA
-A Thing Called Love(1993)<USA
+Illegally Yours(1988)
+Texasville(1990)
+Noises Off...(1992)
+A Thing Called Love(1993)
 ~The Cat''s Meow(2001)
-Tom Petty and the Heartbreakers: Runnin'' Down a Dream(2007)<USA
+Tom Petty and the Heartbreakers: Runnin'' Down a Dream(2007)
 `John Boorman
 Having a Wild Weekend(1965)
 Point Blank(1967)
@@ -330,22 +330,22 @@ That Obscure Object of Desire(1977)
 ~Edward Scissorhands(1990)
 ~Batman Returns(1992)
 ~Ed Wood(1994)
-Mars Attacks!(1996)<USA
+Mars Attacks!(1996)
 ~Sleepy Hollow(1999)
 ~Planet of the Apes(2001)
 ~Big Fish(2003)
 ~Willie Wonka and the Chocolate Factory(2005)
 ~Sweeney Todd: The Demon Barber of Fleet Street(2007)
-Alice in Wonderland(2010)<USA
+Alice in Wonderland(2010)
 `James Cameron
-Piranha II: The Spawning(1981)<USA
+Piranha II: The Spawning(1981)
 ~The Terminator(1984)
 ~Aliens(1986)
 ~The Abyss(1989)
 ~Terminator 2: judgement day(1991)
 ~True Lies(1994)
 ~Titanic(1997)
-Aliens of the Deep(2005)<USA
+Aliens of the Deep(2005)
 `Jane Campion
 Sweetie(1989)
 ~An Angel at My Table(1990)
@@ -355,56 +355,56 @@ Holy Smoke(1999)
 In the Cut(2003)
 To Each His Cinema(2007)
 `Frank Capra
-The Strong Man(1926)<USA
-Long Pants(1927)<USA
-For the Love of Mike(1927)<USA
-That Certain Thing(1928)<USA
-So This Is Love?(1928)<USA
-The Manitee Idol(1928)<USA
-The Way of the Strong(1928)<USA
-Say it With Sables(1928)<USA
-Submarine(1928)<USA
-The Power of the Press(1928)<USA
-The Younger Generation(1929)<USA
-The Donovan Affair(1929)<USA
-Flight(1929)<USA
-Ladies of Leisure(1930)<USA
-Rain Or Shine(1930)<USA
-Dirigible(1931)<USA
-The Miracle Woman(1931)<USA
-Platinum Blonde(1931)<USA
-Forbidden(1932)<USA
-American Madness(1932)<USA
-The Bitter Tea of General Yen(1933)<USA
-Lady For a Day(1933)<USA
+The Strong Man(1926)
+Long Pants(1927)
+For the Love of Mike(1927)
+That Certain Thing(1928)
+So This Is Love?(1928)
+The Manitee Idol(1928)
+The Way of the Strong(1928)
+Say it With Sables(1928)
+Submarine(1928)
+The Power of the Press(1928)
+The Younger Generation(1929)
+The Donovan Affair(1929)
+Flight(1929)
+Ladies of Leisure(1930)
+Rain Or Shine(1930)
+Dirigible(1931)
+The Miracle Woman(1931)
+Platinum Blonde(1931)
+Forbidden(1932)
+American Madness(1932)
+The Bitter Tea of General Yen(1933)
+Lady For a Day(1933)
 ~It Happened One Night(1934)
-Broadway Bill(1934)<USA
-Mr. Deeds Goes to Town(1936)<USA
-Lost Horizon(1937)<USA
-You Can''t Take it With You(1938)<USA
+Broadway Bill(1934)
+Mr. Deeds Goes to Town(1936)
+Lost Horizon(1937)
+You Can''t Take it With You(1938)
 ~Mr. Smith Goes to Washington(1939)
-Meet John Doe(1941)<USA
-Arsenic and Old Lace(1944)<USA
+Meet John Doe(1941)
+Arsenic and Old Lace(1944)
 ~It''s a Wonderful Life(1946)
-State of the Union(1948)<USA
-Riding High(1950)<USA
-Here Comes the Groom(1951)<USA
-A Hole in the Head(1959)<USA
-Pocketful of Miracles(1961)<USA
+State of the Union(1948)
+Riding High(1950)
+Here Comes the Groom(1951)
+A Hole in the Head(1959)
+Pocketful of Miracles(1961)
 `John Cassavetes
-Shadows(1959)<USA
-Too Late Blues(1961)<USA
-A Pair of Boots(1962)<USA
-A Child Is Waiting(1963)<USA
+Shadows(1959)
+Too Late Blues(1961)
+A Pair of Boots(1962)
+A Child Is Waiting(1963)
 ~Faces(1968)
-Husbands(1970)<USA
-Minnie and Moskowitz(1971)<USA
+Husbands(1970)
+Minnie and Moskowitz(1971)
 ~A Woman Under the Influence(1974)
-The Killing of a Chinese Bookie(1976)<USA
-Opening Night(1977)<USA
-Gloria(1980)<USA
-Love Streams(1984)<USA
-Big Trouble(1985)<USA
+The Killing of a Chinese Bookie(1976)
+Opening Night(1977)
+Gloria(1980)
+Love Streams(1984)
+Big Trouble(1985)
 `Charlie Chaplin
 ~The Kid(1921)
 ~A Woman of Paris(1923)
@@ -415,8 +415,8 @@ Big Trouble(1985)<USA
 ~The Great Dictator(1940)
 ~Monsieur Verdoux(1947)
 ~Limelight(1952)
-A King in New York(1957)<USA
-A Countess From Hong Kong(1967)<USA
+A King in New York(1957)
+A Countess From Hong Kong(1967)
 `Jean Cocteau
 The Blood of a Poet(1930)<France
 ~Beauty and the Beast(1946)
@@ -439,46 +439,46 @@ The Testament of Orpheus(1960)<France
 ~Paris, Je T''aime(2006)
 ~No Country For Old Men(2007)
 ~Burn After Reading(2008)
-A Serious Man(2009)<USA
+A Serious Man(2009)
 `Chris Columbus
 ~Adventures in Babysitting(1987)
-Heartbreak Hotel(1988)<USA
+Heartbreak Hotel(1988)
 ~Home Alone(1990)
-Only the Lonely(1991)<USA
+Only the Lonely(1991)
 ~Home Alone 2: Lost in New York(1992)
 ~Mrs. Doubtfire(1993)
-Nine Months(1995)<USA
-Stepmom(1998)<USA
-Bicentennial Man(1999)<USA
+Nine Months(1995)
+Stepmom(1998)
+Bicentennial Man(1999)
 ~Harry Potter and the Sorcerer''s Stone(2001)
 ~Harry Potter and the Chamber of Secrets(2002)
-Rent(2005)<USA
+Rent(2005)
 `Francis Ford Coppola
-The Terror(1963)<USA
-Dementia 13(1963)<USA
-You''re a Big Boy Now(1966)<USA
-Finian''s Rainbow(1968)<USA
-The Rain People(1969)<USA
+The Terror(1963)
+Dementia 13(1963)
+You''re a Big Boy Now(1966)
+Finian''s Rainbow(1968)
+The Rain People(1969)
 ~The Godfather(1972)
 ~The Conversation(1974)
 ~The Godfather Part II(1974)
 ~Apocalypse Now(1979)
-One From the Heart(1982)<USA
+One From the Heart(1982)
 ~The Outsiders(1983)
-Rumble Fish(1983)<USA
+Rumble Fish(1983)
 ~The Cotton Club(1984)
 ~Peggy Sue Got Married(1986)
-Tucker: The Man and His Dream(1988)<USA
+Tucker: The Man and His Dream(1988)
 ~New York Stories: Life With Zoe(1989)
 ~The Godfather Part III(1990)
-Bram Stoker''s Dracula(1992)<USA
-Jack(1996)<USA
+Bram Stoker''s Dracula(1992)
+Jack(1996)
 ~The Rainmaker(1997)
-Youth Without Youth(2007)<USA
+Youth Without Youth(2007)
 `Sofia Coppola
 ~The Virgin Suicides(2000)
 ~Lost in Translation(2003)
-Marie Antoinette(2006)<USA
+Marie Antoinette(2006)
 `David Cronenberg
 Shivers(1975)
 Rabid(1977)
@@ -502,40 +502,40 @@ Eastern Promises(2007)
 ~Jerry Maguire(1996)
 ~Almost Famous(2000)
 ~Vanilla Sky(2001)
-Elizabethtown(2005)<USA
+Elizabethtown(2005)
 `Frank Darabont
 ~The Shawshank Redemption(1994)
 ~The Green Mile(1999)
 ~The Majestic(2001)
 ~The Mist(2007)
 `Brian De Palma
-Murder a La Mod(1968)<USA
-Greetings(1968)<USA
-The Wedding Party(1969)<USA
-Hi Mom!(1970)<USA
-Get to Know Your Rabbit(1972)<USA
-Sisters(1973)<USA
-Phantom of the Paradise(1974)<USA
-Obsession(1976)<USA
-Carrie(1976)<USA
-The Fury(1978)<USA
-Home Movies(1979)<USA
-Dressed to Kill(1980)<USA
+Murder a La Mod(1968)
+Greetings(1968)
+The Wedding Party(1969)
+Hi Mom!(1970)
+Get to Know Your Rabbit(1972)
+Sisters(1973)
+Phantom of the Paradise(1974)
+Obsession(1976)
+Carrie(1976)
+The Fury(1978)
+Home Movies(1979)
+Dressed to Kill(1980)
 ~Blow Out(1981)
 ~Scarface(1983)
-Body Double(1984)<USA
-Wise Guys(1986)<USA
+Body Double(1984)
+Wise Guys(1986)
 ~The Untouchables(1987)
-Casualties of War(1989)<USA
-The Bonfire of the Vanities(1990)<USA
-Raising Cain(1992)<USA
-Carlito''s Way(1993)<USA
+Casualties of War(1989)
+The Bonfire of the Vanities(1990)
+Raising Cain(1992)
+Carlito''s Way(1993)
 ~Mission: Impossible(1996)
 ~Snake Eyes(1998)
 ~Mission to Mars(2000)
-Femme Fatale(2002)<USA
-The Black Dahlia(2006)<USA
-Redacted(2007)<USA
+Femme Fatale(2002)
+The Black Dahlia(2006)
+Redacted(2007)
 `Vittorio De Sica
 Maddelena, Zero For Conduct(1940)<Italy
 Teresa Friday(1941)<Italy
@@ -567,56 +567,56 @@ A Brief Vacation(1973)<Italy
 The Voyage(1974)<Italy
 `Guillermo del Toro
 Cronos(1993)
-Mimic(1997)<USA
+Mimic(1997)
 The Devil''s Backbone(2001)
-Blade II(2002)<USA
+Blade II(2002)
 ~Hellboy(2004)
 ~Pan''s Labyrinth(2006)
-Hellboy II: The Golden Army(2008)<USA
+Hellboy II: The Golden Army(2008)
 `Jonathan Demme
-Caged Heat(1974)<USA
-Crazy Mama(1975)<USA
-Fighting Mad(1976)<USA
-Citizen''s Band(1977)<USA
-Last Embrace(1979)<USA
-Melvin and Howard(1980)<USA
-Swing Shift(1984)<USA
-Stop Making Sense(1984)<USA
-Something Wild(1986)<USA
-Swimming to Cambodia(1987)<USA
-Married to the Mob(1988)<USA
+Caged Heat(1974)
+Crazy Mama(1975)
+Fighting Mad(1976)
+Citizen''s Band(1977)
+Last Embrace(1979)
+Melvin and Howard(1980)
+Swing Shift(1984)
+Stop Making Sense(1984)
+Something Wild(1986)
+Swimming to Cambodia(1987)
+Married to the Mob(1988)
 ~The Silence of the Lambs(1991)
 ~Philadelphia(1993)
-Beloved(1998)<USA
-The Truth About Charlie(2002)<USA
+Beloved(1998)
+The Truth About Charlie(2002)
 ~The Manchurian Candidate(2004)
-Neil Young: Heart of Gold(2006)<USA
-Jimmy Carter Man From Plains(2007)<USA
+Neil Young: Heart of Gold(2006)
+Jimmy Carter Man From Plains(2007)
 ~Rachel Getting Married(2008)
 `Clint Eastwood
-Play Misty For Me(1971)<USA
-High Plains Drifter(1973)<USA
-Breezy(1973)<USA
-The Eiger Sanction(1975)<USA
-The Outlaw Josey Wales(1976)<USA
-The Gauntlet(1977)<USA
-Bronco Billy(1980)<USA
-Firefox(1982)<USA
-Honkytonk Man(1982)<USA
-Sudden Impact(1983)<USA
-Pale Rider(1985)<USA
-Heartbreak Ridge(1986)<USA
-Bird(1988)<USA
-White Hunter Black Heart(1990)<USA
-The Rookie(1990)<USA
+Play Misty For Me(1971)
+High Plains Drifter(1973)
+Breezy(1973)
+The Eiger Sanction(1975)
+The Outlaw Josey Wales(1976)
+The Gauntlet(1977)
+Bronco Billy(1980)
+Firefox(1982)
+Honkytonk Man(1982)
+Sudden Impact(1983)
+Pale Rider(1985)
+Heartbreak Ridge(1986)
+Bird(1988)
+White Hunter Black Heart(1990)
+The Rookie(1990)
 ~Unforgiven(1992)
-A Perfect World(1993)<USA
-The Bridges of Madison County(1995)<USA
-Absolute Power(1997)<USA
-Midnight in the Garden of Good and Evil(1997)<USA
-True Crime(1999)<USA
+A Perfect World(1993)
+The Bridges of Madison County(1995)
+Absolute Power(1997)
+Midnight in the Garden of Good and Evil(1997)
+True Crime(1999)
 ~Space Cowboys(2000)
-Blood Work(2002)<USA
+Blood Work(2002)
 ~Mystic River(2003)
 ~Million Dollar Baby(2004)
 ~Flags of Our Fathers(2006)
@@ -638,8 +638,8 @@ Ivan the Terrible Part II(1958)<Russia
 ~Me, Myself, & Irene(2000)
 ~Shallow Hal(2001)
 ~Stuck on You(2003)
-Fever Pitch(2005)<USA
-The Heartbreak Kid(2007)<USA
+Fever Pitch(2005)
+The Heartbreak Kid(2007)
 `Frederico Fellini
 Variety Lights(1950)<Italy
 The White Sheik(1952)<Italy
@@ -662,18 +662,18 @@ And the Ship Sails On(1983)<Italy
 ~Intervista(1987)
 The Voice of the Moon(1989)<Italy
 `Mike Figgis
-Stormy Monday(1988)<USA
-Internal Affairs(1990)<USA
-Liebestraum(1991)<USA
-Mr. Jones(1993)<USA
-The Browning Version(1994)<USA
+Stormy Monday(1988)
+Internal Affairs(1990)
+Liebestraum(1991)
+Mr. Jones(1993)
+The Browning Version(1994)
 ~Leaving Las Vegas(1995)
-One Night Stand(1997)<USA
-The Loss of Sexual Innocence(1999)<USA
-Miss Julie(1999)<USA
+One Night Stand(1997)
+The Loss of Sexual Innocence(1999)
+Miss Julie(1999)
 ~Time Code(2000)
-Hotel(2001)<USA
-Cold Creek Manor(2003)<USA
+Hotel(2001)
+Cold Creek Manor(2003)
 `David Fincher
 ~Alien 3(1992)
 ~Seven(1995)
@@ -690,13 +690,13 @@ The Loves of a Blonde(1965)<Czech Republic
 Taking Off(1971)
 I Miss Sonia Henie(1971)
 ~One Flew Over the Cuckoo''s Nest(1975)
-Hair(1979)<USA
-Ragtime(1981)<USA
+Hair(1979)
+Ragtime(1981)
 ~Amadeus(1984)
-Valmont(1989)<USA
+Valmont(1989)
 ~The People Vs. Larry Flynt(1996)
 ~Man on the Moon(1999)
-Goya''s Ghost(2006)<USA
+Goya''s Ghost(2006)
 `Stephen Frears
 Gumshoe(1971)
 Bloody Kids(1979)
@@ -718,24 +718,24 @@ Mrs. Henderson Presents(2005)
 ~The Queen(2006)
 Cheri(2009)
 `William Friedkin
-Good Times(1967)<USA
-The Night They Raided Minsky''s(1968)<USA
-The Birthday Party(1968)<USA
-The Boys in the Band(1970)<USA
+Good Times(1967)
+The Night They Raided Minsky''s(1968)
+The Birthday Party(1968)
+The Boys in the Band(1970)
 ~The French Connection(1971)
-The Exorcist(1973)<USA
-Sorcerer(1977)<USA
-The Brink''s Job(1978)<USA
-Cruising(1980)<USA
-Deal of the Century(1983)<USA
-To Live and Die in L.A.(1985)<USA
-Rampage(1988)<USA
-The Guardian(1990)<USA
-Blue Chips(1994)<USA
-Jade(1995)<USA
-Rules of Engagement(2000)<USA
+The Exorcist(1973)
+Sorcerer(1977)
+The Brink''s Job(1978)
+Cruising(1980)
+Deal of the Century(1983)
+To Live and Die in L.A.(1985)
+Rampage(1988)
+The Guardian(1990)
+Blue Chips(1994)
+Jade(1995)
+Rules of Engagement(2000)
 ~The Hunted(2003)
-Bug(2006)<USA
+Bug(2006)
 `Samuel Fuller
 I Shot Jesse James(1949)
 The Baron of Arizona(1950)
@@ -760,10 +760,10 @@ White Dog(1982)
 Thieves After Dark(1984)
 Street of No Return(1989)
 `Mel Gibson
-The Man Without a Face(1993)<USA
+The Man Without a Face(1993)
 ~Braveheart(1995)
 ~The Passion of the Christ(2004)
-Apocalypto(2006)<USA
+Apocalypto(2006)
 `Terry Gilliam
 And Now For Something Completely Different(1971)<England
 ~Monty Python and the Holy Grail(1975)
@@ -776,7 +776,7 @@ The Crimson Permanent Assurance(1983)
 ~The Fisher King(1991)
 ~12 monkeys(1995)
 ~Fear and Loathing in Las Vegas(1998)
-The Brothers Grimm(2005)<USA
+The Brothers Grimm(2005)
 Tideland(2006)
 `Jean-Luc Godard
 ~Breathless(1961)
@@ -821,21 +821,21 @@ The Science of Sleep(2006)
 ~George Washington(2000)
 ~All the Real Girls(2003)
 ~Undertow(2004)
-Snow Angels(2007)<USA
+Snow Angels(2007)
 Pineapple Express(2008)
 `Christopher Guest
-The Big Picture(1989)<USA
+The Big Picture(1989)
 ~Waiting For Guffman(1996)
 ~Almost Heroes(1998)
 ~Best in Show(2000)
 ~A Mighty Wind(2003)
-For Your Consideration(2006)<USA
+For Your Consideration(2006)
 `Todd Haynes
-Poison(1991)<USA
+Poison(1991)
 ~Safe(1995)
 ~Velvet Goldmine(1998)
 ~Far From Heaven(2002)
-I''m Not There(2007)<USA
+I''m Not There(2007)
 `Werner Herzog
 Signs of Life(1968)<Germany
 Even Dwarfs Started Small(1971)<Germany
@@ -863,7 +863,7 @@ The Wild Blue Yonder(2005)<Germany
 ~Rescue Dawn(2007)
 ~Ecounters at the End of the World(2008)
 `Alfred Hitchcock
-The Man Who Knew Too Much(1934)<USA
+The Man Who Knew Too Much(1934)
 The 39 Steps(1935)
 Secret Agent(1936)
 Sabotage(1936)
@@ -871,95 +871,95 @@ Young and Innocent(1937)
 The Lady Vanishes(1938)
 Jamaica Inn(1939)
 ~Rebecca(1940)
-Foreign Correspondent(1940)<USA
-Mr. & Mrs. Smith(1941)<USA
-Suspicion(1941)<USA
-Saboteur(1942)<USA
-Shadow of a Doubt(1943)<USA
+Foreign Correspondent(1940)
+Mr. & Mrs. Smith(1941)
+Suspicion(1941)
+Saboteur(1942)
+Shadow of a Doubt(1943)
 ~Lifeboat(1944)
 ~Spellbound(1945)
 ~Notorious(1946)
-The Paradise Case(1947)<USA
+The Paradise Case(1947)
 ~Rope(1948)
-Under Capricorn(1949)<USA
-Stage Fright(1950)<USA
+Under Capricorn(1949)
+Stage Fright(1950)
 ~Strangers on a Train(1951)
-I Confess(1953)<USA
+I Confess(1953)
 ~Dial M For Murder(1954)
 ~Rear Window(1954)
-To Catch a Thief(1955)<USA
-The Trouble With Harry(1955)<USA
-The Wrong Man(1956)<USA
-The Man Who Knew Too Much(1956)<USA
+To Catch a Thief(1955)
+The Trouble With Harry(1955)
+The Wrong Man(1956)
+The Man Who Knew Too Much(1956)
 ~Vertigo(1958)
 ~North by Northwest(1959)
 ~Psycho(1960)
 ~The Birds(1963)
-Marnie(1964)<USA
+Marnie(1964)
 ~Torn Curtain(1966)
-Topaz(1969)<USA
+Topaz(1969)
 ~Frenzy(1972)
-Family Plot(1976)<USA
+Family Plot(1976)
 `Ron Howard
-Grand Theft Auto(1977)<USA
-Night Shift(1982)<USA
+Grand Theft Auto(1977)
+Night Shift(1982)
 ~Splash(1984)
 ~Cocoon(1985)
-Gung Ho(1986)<USA
+Gung Ho(1986)
 ~Willow(1988)
-Parenthood(1989)<USA
+Parenthood(1989)
 ~Backdraft(1991)
-Far and Away(1992)<USA
+Far and Away(1992)
 ~The Paper(1994)
 ~Apollo 13(1995)
 ~Ransom(1996)
-EdTV(1999)<USA
+EdTV(1999)
 ~Dr. Suess'' How the Grinch Stole Christmas(2000)
 ~A Beautiful Mind(2001)
-The Missing(2003)<USA
-Cinderella Man(2005)<USA
-The Da Vinci Code(2006)<USA
+The Missing(2003)
+Cinderella Man(2005)
+The Da Vinci Code(2006)
 ~Frost/Nixon(2008)
 Angels & Demons(2009)
 `John Huston
 ~The Maltese Falcon(1941)
-In This Our Life(1942)<USA
-Across the Pacific(1942)<USA
-Let There Be Light(1946)<USA
+In This Our Life(1942)
+Across the Pacific(1942)
+Let There Be Light(1946)
 ~The Treasure of the Sierra Madre(1948)
-Key Largo(1948)<USA
-We Were Strangers(1949)<USA
-The Asphalt Jungle(1950)<USA
-The Red Badge of Courage(1951)<USA
+Key Largo(1948)
+We Were Strangers(1949)
+The Asphalt Jungle(1950)
+The Red Badge of Courage(1951)
 ~The African Queen(1951)
-Moulin Rouge(1952)<USA
-Beat the Devil(1953)<USA
-Moby Dick(1956)<USA
-Heaven Knows, Mr. Allison(1957)<USA
-The Barbarian and the Geisha(1958)<USA
-The Roots of Heaven(1958)<USA
-The Unforgiven(1960)<USA
-The Misfits(1961)<USA
-Freud(1962)<USA
-The List of Adrian Messenger(1963)<USA
-The Night of the Iguana(1964)<USA
-The Bible(1966)<USA
-Casino Royale(1967)<USA
-Reflections in a Golden Eye(1967)<USA
-Sinful Davey(1969)<USA
-A Walk With Love and Death(1969)<USA
-The Kremiln Letter(1970)<USA
-Fat City(1972)<USA
-The Life and Times of Judge Roy Bean(1972)<USA
-The Mackintosh Man(1973)<USA
-The Man Who Would Be King(1975)<USA
-Wise Blood(1979)<USA
-Phobia(1980)<USA
-Victory(1981)<USA
-Annie(1982)<USA
-Under the Valcano(1984)<USA
+Moulin Rouge(1952)
+Beat the Devil(1953)
+Moby Dick(1956)
+Heaven Knows, Mr. Allison(1957)
+The Barbarian and the Geisha(1958)
+The Roots of Heaven(1958)
+The Unforgiven(1960)
+The Misfits(1961)
+Freud(1962)
+The List of Adrian Messenger(1963)
+The Night of the Iguana(1964)
+The Bible(1966)
+Casino Royale(1967)
+Reflections in a Golden Eye(1967)
+Sinful Davey(1969)
+A Walk With Love and Death(1969)
+The Kremiln Letter(1970)
+Fat City(1972)
+The Life and Times of Judge Roy Bean(1972)
+The Mackintosh Man(1973)
+The Man Who Would Be King(1975)
+Wise Blood(1979)
+Phobia(1980)
+Victory(1981)
+Annie(1982)
+Under the Valcano(1984)
 ~Prizzi''s Honor(1985)
-The Dead(1987)<USA
+The Dead(1987)
 `Peter Jackson
 Bad Taste(1987)
 Meet the Feebles(1989)
@@ -971,16 +971,16 @@ The Freighteners(1996)
 ~The Lord of the Rings: The Return of the King(2003)
 ~King Kong(2005)
 `Jim Jarmusch
-Permanent Vacation(1982)<USA
+Permanent Vacation(1982)
 ~Stranger Than Paradise(1984)
-Down by Law(1986)<USA
+Down by Law(1986)
 Mystery Train(1989)
 ~Night on Earth(1991)
 ~Dead Man(1995)
 ~Year of the Horse(1997)
 ~Ghost Dog: The Way of the Samurai(1999)
 ~Coffee and Cigarettes(2004)
-Broken Flowers(2005)<USA
+Broken Flowers(2005)
 `Jean-Pierre Jeunet
 Delicatessen(1991)<France
 The City of Lost Children(1995)<France
@@ -988,30 +988,30 @@ The City of Lost Children(1995)<France
 ~Amelie(2001)
 ~A Very Long Engagement(2004)
 `Norman Jewison
-40 Pounds of Trouble(1963)<USA
-The Thrill of it All(1963)<USA
-Send Me No Flowers(1964)<USA
-The Art of Love(1965)<USA
-The Cincinnati Kid(1965)<USA
-The Russians Are Coming, the Russians Are Coming(1966)<USA
+40 Pounds of Trouble(1963)
+The Thrill of it All(1963)
+Send Me No Flowers(1964)
+The Art of Love(1965)
+The Cincinnati Kid(1965)
+The Russians Are Coming, the Russians Are Coming(1966)
 ~In the Heat of the Night(1967)
-The Thomas Crown Affair(1968)<USA
-Gally, Gally(1969)<USA
-Fiddler on the Roof(1971)<USA
-Jesus Christ Superstar(1973)<USA
-Rollerball(1975)<USA
-F.I.S.T.(1978)<USA
-...And Justice For All(1979)<USA
-Best Friends(1982)<USA
+The Thomas Crown Affair(1968)
+Gally, Gally(1969)
+Fiddler on the Roof(1971)
+Jesus Christ Superstar(1973)
+Rollerball(1975)
+F.I.S.T.(1978)
+...And Justice For All(1979)
+Best Friends(1982)
 ~A Soldier''s Story(1984)
-Agnes of God(1985)<USA
+Agnes of God(1985)
 ~Moonstruck(1987)
 ~In Country(1989)
-Other People''s Money(1991)<USA
-Only You(1994)<USA
-Bogus(1996)<USA
+Other People''s Money(1991)
+Only You(1994)
+Bogus(1996)
 ~The Hurricane(1999)
-The Statement(2003)<USA
+The Statement(2003)
 `Spike Jonze
 ~Being John Malkovich(1999)
 ~Adaptation(2002)
@@ -1037,45 +1037,45 @@ The Brave One(2007)
 ~The Big Chill(1983)
 ~Silverado(1985)
 ~The Accidental Tourist(1988)
-I Love You to Death(1990)<USA
+I Love You to Death(1990)
 ~Grand Canyon(1991)
 ~Wyatt Earp(1994)
-French Kiss(1995)<USA
+French Kiss(1995)
 ~Mumford(1999)
 ~Dreamcatcher(2003)
 `Elia Kazan
-A Tree Grows in Brooklyn(1945)<USA
-The Sea of Grass(1947)<USA
-Gentleman''s Agreement(1947)<USA
-Boomerang!(1947)<USA
-Pinky(1949)<USA
-Panic in the Streets(1950)<USA
+A Tree Grows in Brooklyn(1945)
+The Sea of Grass(1947)
+Gentleman''s Agreement(1947)
+Boomerang!(1947)
+Pinky(1949)
+Panic in the Streets(1950)
 ~A Streetcar Named Desire(1951)
 ~Viva Zapata!(1952)
-Man on a Tightrope(1953)<USA
+Man on a Tightrope(1953)
 ~On the Waterfront(1954)
 ~East of Eden(1955)
-Baby Doll(1956)<USA
-A Face in the Crowd(1957)<USA
-Wild River(1960)<USA
-Splendor in the Grass(1961)<USA
-America, America(1963)<USA
-The Arrangement(1969)<USA
-The Visitors(1972)<USA
+Baby Doll(1956)
+A Face in the Crowd(1957)
+Wild River(1960)
+Splendor in the Grass(1961)
+America, America(1963)
+The Arrangement(1969)
+The Visitors(1972)
 ~The Last Tycoon(1976)
 `Buster Keaton
-The Three Ages(1923)<USA
+The Three Ages(1923)
 ~Our Hospitality(1923)
 ~Sherlock, Jr.(1924)
 ~The Navigator(1924)
 ~Seven Chances(1925)
-Go West(1925)<USA
-Battling Butler(1926)<USA
+Go West(1925)
+Battling Butler(1926)
 ~The General(1927)
-College(1927)<USA
+College(1927)
 ~Steamboat Bill, Jr.(1928)
-The Cameraman(1928)<USA
-Spite Marriage(1929)<USA
+The Cameraman(1928)
+Spite Marriage(1929)
 `Krzysztof Kieslowski
 The Scar(1976)<Poland
 Camera Buff(1979)<Poland
@@ -1088,14 +1088,14 @@ No End(1985)<Poland
 ~Red(1994)
 `Barbara Kopple
 ~Harlan County, Usa(1976)
-~American Dream(1991)<USA
-Beyond JFK: The Question of Conspiracy(1992)<USA
+~American Dream(1991)
+Beyond JFK: The Question of Conspiracy(1992)
 ~Wild Man Blues(1997)
-Woodstock ''94(1998)<USA
-A Conversation With Gregory Peck(1999)<USA
-My Generation(2000)<USA
-Havoc(2004)<USA
-Shut Up & Sing(2006)<USA
+Woodstock ''94(1998)
+A Conversation With Gregory Peck(1999)
+My Generation(2000)
+Havoc(2004)
+Shut Up & Sing(2006)
 `Stanley Kubrick
 ~Fear and Desire(1953)
 ~Killer''s Kiss(1955)
@@ -1207,25 +1207,25 @@ Ryan''s Daughter(1970)<England
 A Passage to India(1984)<England
 `Spike Lee
 ~She''s Gotta Have It(1986)
-School Daze(1988)<USA
+School Daze(1988)
 ~Do the Right Thing(1989)
-Mo'' Better Blues(1990)<USA
-Jungle Fever(1991)<USA
+Mo'' Better Blues(1990)
+Jungle Fever(1991)
 ~Malcolm X(1992)
-Crooklyn(1994)<USA
-Clockers(1995)<USA
+Crooklyn(1994)
+Clockers(1995)
 Lumiere and Company(1995)
-Girl 6(1996)<USA
+Girl 6(1996)
 ~Get on the Bus(1996)
 ~4 Little Girls(1997)
-He Got Game(1998)<USA
-Summer of Sam(1999)<USA
-The Original Kings of Comedy(2000)<USA
+He Got Game(1998)
+Summer of Sam(1999)
+The Original Kings of Comedy(2000)
 ~Bamboozled(2000)
 ~25th hour(2002)
-She Hate Me(2004)<USA
+She Hate Me(2004)
 ~Inside Man(2006)
-Miracle at St. Anna(2008)<USA
+Miracle at St. Anna(2008)
 `Mike Leigh
 Bleak Moments(1971)<England
 ~High Hopes(1988)
@@ -1247,40 +1247,40 @@ A Fistful of Dynamite(1971)
 Once Upon a Time in America(1984)
 `Barry Levinson
 ~Diner(1982)
-The Natural(1984)<USA
-Young Sherlock Holmes(1985)<USA
-Tin Men(1987)<USA
-Good Morning, Vietnam(1987)<USA
+The Natural(1984)
+Young Sherlock Holmes(1985)
+Tin Men(1987)
+Good Morning, Vietnam(1987)
 ~Rain Man(1988)
 ~Avalon(1990)
 ~Bugsy(1991)
 ~Toys(1992)
-Jimmy Hollywood(1994)<USA
-Disclosure(1994)<USA
+Jimmy Hollywood(1994)
+Disclosure(1994)
 ~Sleepers(1996)
 ~Wag the Dog(1997)
-Sphere(1998)<USA
-Liberty Heights(1999)<USA
-An Everlasting Piece(2000)<USA
+Sphere(1998)
+Liberty Heights(1999)
+An Everlasting Piece(2000)
 ~Bandits(2001)
-Envy(2004)<USA
-Man of the Year(2006)<USA
-What Just Happened?(2008)<USA
+Envy(2004)
+Man of the Year(2006)
+What Just Happened?(2008)
 `Richard Linklater
-It''s Impossible to Learn How to Plow by Reading Books(1988)<USA
+It''s Impossible to Learn How to Plow by Reading Books(1988)
 ~Slacker(1991)
 ~Dazed and Confused(1993)
 ~Before Sunrise(1995)
 ~Suburbia(1996)
-The Newton Boys(1998)<USA
+The Newton Boys(1998)
 ~Waking Life(2001)
 ~Tape(2001)
 ~The School of Rock(2003)
 ~Before Sunset(2004)
-Bad News Bears(2005)<USA
-Fast Food Nation(2006)<USA
-A Scanner Darkly(2006)<USA
-Me and Orson Welles(2008)<USA
+Bad News Bears(2005)
+Fast Food Nation(2006)
+A Scanner Darkly(2006)
+Me and Orson Welles(2008)
 `George Lucas
 ~Thx-1138(1970)
 ~American Graffiti(1973)
@@ -1290,58 +1290,58 @@ Me and Orson Welles(2008)<USA
 ~Star Wars, Episode III: Revenge of the Sith(2005)
 `Sidney Lumet
 ~12 angry men(1957)
-Stage Struck(1958)<USA
-That Kind of Woman(1959)<USA
-The Fugitive Kind(1959)<USA
-A View From the Bridge(1961)<USA
-Long Day''s Journey Into Night(1962)<USA
+Stage Struck(1958)
+That Kind of Woman(1959)
+The Fugitive Kind(1959)
+A View From the Bridge(1961)
+Long Day''s Journey Into Night(1962)
 ~The Pawnbroker(1964)
-Fail-Safe(1964)<USA
-The Hill(1965)<USA
-The Group(1966)<USA
-The Deadly Affair(1966)<USA
-Bye Bye Braverman(1968)<USA
-The Sea Gull(1968)<USA
-The Appointment(1969)<USA
-Last of the Mobile Hot Shots(1970)<USA
-The Anderson Tapes(1971)<USA
-Child''s Play(1972)<USA
-The Offence(1973)<USA
-Serpico(1973)<USA
-Lovin'' Molly(1974)<USA
-Murder on the Orient Express(1974)<USA
+Fail-Safe(1964)
+The Hill(1965)
+The Group(1966)
+The Deadly Affair(1966)
+Bye Bye Braverman(1968)
+The Sea Gull(1968)
+The Appointment(1969)
+Last of the Mobile Hot Shots(1970)
+The Anderson Tapes(1971)
+Child''s Play(1972)
+The Offence(1973)
+Serpico(1973)
+Lovin'' Molly(1974)
+Murder on the Orient Express(1974)
 ~Dog Day Afternoon(1975)
 ~Network(1976)
-Equus(1977)<USA
-The Wiz(1978)<USA
-Just Tell Me What You Want(1980)<USA
-Prince of the City(1981)<USA
-Deathtrap(1982)<USA
+Equus(1977)
+The Wiz(1978)
+Just Tell Me What You Want(1980)
+Prince of the City(1981)
+Deathtrap(1982)
 ~The Vertict(1982)
-Daniel(1983)<USA
-Garbo Talks(1984)<USA
-Power(1986)<USA
-The Moring After(1986)<USA
+Daniel(1983)
+Garbo Talks(1984)
+Power(1986)
+The Moring After(1986)
 ~Running on Empty(1988)
-Family Business(1989)<USA
-Q & A(1990)<USA
-A Stranger Among Us(1992)<USA
-Guilty as Sin(1993)<USA
-Night Falls on Manhattan(1997)<USA
-Critical Care(1997)<USA
-Gloria(1999)<USA
-Find Me Guilty(2006)<USA
-Before the Devil Knows You''re Dead(2007)<USA
+Family Business(1989)
+Q & A(1990)
+A Stranger Among Us(1992)
+Guilty as Sin(1993)
+Night Falls on Manhattan(1997)
+Critical Care(1997)
+Gloria(1999)
+Find Me Guilty(2006)
+Before the Devil Knows You''re Dead(2007)
 `David Lynch
 ~Eraserhead(1977)
 ~The Elephant Man(1980)
 Dune(1984)v
 ~Blue Velvet(1986)
-Wild at Heart(1990)<USA
+Wild at Heart(1990)
 ~Lost Highway(1997)
 ~The Straight Story(1999)
 ~Mulholland Drive(2001)
-Inland Empire(2006)<USA
+Inland Empire(2006)
 `Majid Majidi
 Gid Shall Come(1995)<Iran
 The Father(1996)<Iran
@@ -1380,17 +1380,17 @@ May Fools(1990)
 ~Vanya on 42nd street(1994)
 `David Mamet
 ~House of Games(1987)
-Things Change(1988)<USA
-Homicide(1991)<USA
-Oleanna(1994)<USA
+Things Change(1988)
+Homicide(1991)
+Oleanna(1994)
 ~The Spanish Prisoner(1997)
-The Winslow Boy(1999)<USA
+The Winslow Boy(1999)
 ~State and Main(2000)
 ~Heist(2001)
 ~Spartan(2004)
-Redbelt(2008)<USA
+Redbelt(2008)
 `James Mangold
-Heavy(1995)<USA
+Heavy(1995)
 ~Copland(1997)
 ~Girl, Interrupted(1999)
 ~Kate & Leopold(2001)
@@ -1398,29 +1398,29 @@ Heavy(1995)<USA
 ~Walk the Line(2005)
 ~3:10 to yuma(2007)
 `Michael Mann
-Thief(1981)<USA
-The Keep(1983)<USA
+Thief(1981)
+The Keep(1983)
 ~Manhunter(1986)
 ~The Last of the Mohicans(1992)
 ~Heat(1995)
 ~The Insider(1999)
 ~Ali(2000)
 ~Collateral(2004)
-Miami Vice(2006)<USA
+Miami Vice(2006)
 ~Public Enemies(2009)
 `Sam Mendes
 ~American Beauty(1999)
 ~Road to Perdition(2002)
-Jarhead(2005)<USA
-Revolutionary Road(2008)<USA
+Jarhead(2005)
+Revolutionary Road(2008)
 `Penny Marshall
-Jumpin'' Jack Flash(1986)<USA
+Jumpin'' Jack Flash(1986)
 ~Big(1988)
 ~Awakenings(1990)
 ~A League of Their Own(1992)
-Renaissance Man(1994)<USA
-The Preacher''s Wife(1996)<USA
-Riding in Cars With Boys(2001)<USA
+Renaissance Man(1994)
+The Preacher''s Wife(1996)
+Riding in Cars With Boys(2001)
 `Hayao Miyazaki
 ~The Castle of Cagliostro(1979)
 Warriors of the Wind(1984)<Japan
@@ -1434,22 +1434,22 @@ Porco Rosso(1992)<Japan
 ~Ponyo(2009)
 `Michael Moore
 ~Roger & Me(1989)
-Canadian Bacon(1995)<USA
-The Big One(1997)<USA
+Canadian Bacon(1995)
+The Big One(1997)
 ~Bowling For Columbine(2002)
 ~Fahrenheit 9/11(2004)
-Sicko(2007)<USA
-Capitalism: A Love Story(2009)<USA
+Sicko(2007)
+Capitalism: A Love Story(2009)
 `Errol Morris
 ~Gates of Heaven(1978)
-Vernon, Florida(1981)<USA
+Vernon, Florida(1981)
 ~The Thin Blue Line(1988)
-The Dark Wind(1991)<USA
+The Dark Wind(1991)
 ~A Brief History of Time(1992)
 ~Fast, Cheap, & Out of Control(1997)
 ~Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.(1999)
 ~The Fog of War(2003)
-Standard Operating Procedure(2008)<USA
+Standard Operating Procedure(2008)
 `F. W. Murneau
 Burning Soil(1922)<Germany
 ~Nosferatu(1922)
@@ -1464,24 +1464,24 @@ Tabu(1931)<Germany
 `Mike Nichols
 ~Who''s Afraid of Virginia Woolf?(1966)
 ~The Graduate(1967)
-Catch-22(1970)<USA
-Carnal Knowledge(1971)<USA
-The Day of the Dolphin(1973)<USA
+Catch-22(1970)
+Carnal Knowledge(1971)
+The Day of the Dolphin(1973)
 ~The Fortune(1975)
-Gilda Live(1980)<USA
-Silkwood(1983)<USA
-Heartburn(1986)<USA
-Biloxi Blues(1988)<USA
+Gilda Live(1980)
+Silkwood(1983)
+Heartburn(1986)
+Biloxi Blues(1988)
 ~Working Girl(1988)
 ~Postcards From the Edge(1990)
 ~Regarding Henry(1991)
-Wolf(1994)<USA
-The Birdcage(1996)<USA
+Wolf(1994)
+The Birdcage(1996)
 ~Primary Colors(1998)
-What Planet Are You From?(2000)<USA
+What Planet Are You From?(2000)
 ~Wit(2001)
-Closer(2004)<USA
-Charlie Wilson''s War(2007)<USA
+Closer(2004)
+Charlie Wilson''s War(2007)
 `Christopher Nolan
 ~Following(1998)
 ~Memento(2001)
@@ -1505,60 +1505,60 @@ Evita(1996)
 ~Angela''s Ashes(1999)
 ~The Life of David Gale(2002)
 `Alan J. Pakula
-The Sterile Cuckoo(1969)<USA
-Klute(1971)<USA
-Love and Pain and the Whole Damn Thing(1973)<USA
-The Parallax View(1974)<USA
+The Sterile Cuckoo(1969)
+Klute(1971)
+Love and Pain and the Whole Damn Thing(1973)
+The Parallax View(1974)
 ~All the President''s Men(1976)
-Comes a Horseman(1978)<USA
-Starting Over(1979)<USA
-Roll Over(1981)<USA
+Comes a Horseman(1978)
+Starting Over(1979)
+Roll Over(1981)
 ~Sophie''s Choice(1982)
-Dream Lover(1986)<USA
-Orphans(1987)<USA
-See You in the Morning(1989)<USA
-Presumed Innocent(1989)<USA
-Consenting Adults(1992)<USA
+Dream Lover(1986)
+Orphans(1987)
+See You in the Morning(1989)
+Presumed Innocent(1989)
+Consenting Adults(1992)
 ~The Pelican Brief(1992)
 ~The Devil''s Own(1997)
 `Alexander Payne
-Citizen Ruth(1996)<USA
+Citizen Ruth(1996)
 ~Election(1999)
 ~About Schmidt(2002)
 ~Sideways(2004)
 ~Paris, Je T''aime(2006)
 `Sam Peckinpah
-The Deadly Companions(1961)<USA
-Ride the High Country(1962)<USA
-Major Dundee(1965)<USA
+The Deadly Companions(1961)
+Ride the High Country(1962)
+Major Dundee(1965)
 ~The Wild Bunch(1969)
-The Ballad of Cable Hogue(1970)<USA
+The Ballad of Cable Hogue(1970)
 ~Straw Dogs(1971)
-Junior Bonner(1972)<USA
-The Getaway(1972)<USA
-Pat Garrett and Billy the Kid(1973)<USA
+Junior Bonner(1972)
+The Getaway(1972)
+Pat Garrett and Billy the Kid(1973)
 ~Bring Me the Head of Alfredo Garcia(1974)
-The Killer Elite(1975)<USA
-Cross of Iron(1977)<USA
-Convoy(1978)<USA
-The Osterman(1983)<USA
+The Killer Elite(1975)
+Cross of Iron(1977)
+Convoy(1978)
+The Osterman(1983)
 `Arthur Penn
-The Laft Handed Gun(1958)<USA
+The Laft Handed Gun(1958)
 ~The Miracle Worker(1962)
-Mickey One(1965)<USA
-The Chase(1966)<USA
+Mickey One(1965)
+The Chase(1966)
 ~Bonnie and Clyde(1967)
-Alice''s Restaurant(1969)<USA
+Alice''s Restaurant(1969)
 ~Little Big Man(1970)
-Night Moves(1975)<USA
+Night Moves(1975)
 ~The Missouri Breaks(1976)
-Four Friends(1981)<USA
-Target(1985)<USA
-Dead of Winter(1987)<USA
-Penn & Teller Get Killer(1989)<USA
+Four Friends(1981)
+Target(1985)
+Dead of Winter(1987)
+Penn & Teller Get Killer(1989)
 Lumiere and Company(1995)
 `Sean Penn
-The Indian Runner(1991)<USA
+The Indian Runner(1991)
 ~The Crossing Guard(1995)
 ~The Pledge(2001)
 ~Into the Wild(2007)
@@ -1571,10 +1571,10 @@ The Consequence(1977)
 Shattered(1991)
 ~In the Line of Fire(1993)
 ~Outbreak(1995)
-Air Force One(1997)<USA
-The Perfect Storm(2000)<USA
+Air Force One(1997)
+The Perfect Storm(2000)
 ~Troy(2004)
-Poseidon(2006)<USA
+Poseidon(2006)
 `Roman Polanski
 ~Knife in the Water(1962)
 ~Repulsion(1965)
@@ -1595,10 +1595,10 @@ The Ninth Gate(1999)
 Oliver Twist(2005)
 `The Polish Brothers
 ~Twin Falls Idaho(1999)
-Jackpot(2001)<USA
+Jackpot(2001)
 ~Northfolk(2003)
-The Astronaut Farmer(2006)<USA
-Manure(2009)<USA
+The Astronaut Farmer(2006)
+Manure(2009)
 `Satyajit Ray
 ~Pather Panchali(1955)
 ~Aparajito(1957)
@@ -1629,15 +1629,15 @@ The Branches of the Tree(1990)<India
 The Stranger(1991)<India
 `Robert Redford
 ~Ordinary People(1980)
-The Milagro Beanfield War(1988)<USA
+The Milagro Beanfield War(1988)
 ~A River Runs Through It(1992)
 ~Quiz Show(1994)
-The Horse Whisperer(1998)<USA
-The Legend of Bagger Vance(2000)<USA
+The Horse Whisperer(1998)
+The Legend of Bagger Vance(2000)
 ~Lions For Lambs(2007)
 `Rob Reiner
 ~This Is Spinal Tap!(1984)
-The Sure Thing(1985)<USA
+The Sure Thing(1985)
 ~Stand by Me(1986)
 ~The Princess Bride(1987)
 ~When Harry Met Sally...(1989)
@@ -1645,11 +1645,11 @@ The Sure Thing(1985)<USA
 ~A Few Good Men(1992)
 ~North(1994)
 ~The American President(1995)
-Ghosts of Mississippi(1996)<USA
-The Story of Us(1999)<USA
-Alex & Emma(2003)<USA
-Rumor Has It...(2005)<USA
-The Bucket List(2007)<USA
+Ghosts of Mississippi(1996)
+The Story of Us(1999)
+Alex & Emma(2003)
+Rumor Has It...(2005)
+The Bucket List(2007)
 `Jean Renoir
 La Chienne(1931)<France
 Night at the Crossroads(1932)<France
@@ -1682,28 +1682,28 @@ Swept Away(2002)<England
 Revolver(2005)<England
 Rocknrolla(2008)<England
 `David O. Russell
-Spanking the Monkkey(1994)<USA
-Flirting With Disaster(1996)<USA
+Spanking the Monkkey(1994)
+Flirting With Disaster(1996)
 ~Three Kings(1999)
 ~I Heart Huckabees(2004)
-Nailed(2009)<USA
+Nailed(2009)
 `John Sayles
-Return of the Secaucus 7(1980)<USA
-Lianna(1983)<USA
-Baby, It''s You(1983)<USA
-Brother From Another Planet(1984)<USA
+Return of the Secaucus 7(1980)
+Lianna(1983)
+Baby, It''s You(1983)
+Brother From Another Planet(1984)
 ~Matewan(1987)
 ~Eight Men Out(1988)
-City of Hope(1991)<USA
-Passion Fish(1992)<USA
+City of Hope(1991)
+Passion Fish(1992)
 ~The Secret of Roan Inish(1994)
 ~Lone Star(1996)
-Men With Guns(1997)<USA
+Men With Guns(1997)
 ~Limbo(1999)
 ~Sunshine State(2001)
-Casa De Los Babys(2003)<USA
+Casa De Los Babys(2003)
 ~Silver City(2004)
-Honeydripper(2007)<USA
+Honeydripper(2007)
 `John Schlesinger
 A Kind of Loving(1962)
 Billy Liar(1963)
@@ -1724,54 +1724,54 @@ The Innocent(1993)
 Eye For an Eye(1996)
 The Next Best Thing(2000)
 `Martin Scorsese
-Who''s That Knocking on My Door?(1967)<USA
+Who''s That Knocking on My Door?(1967)
 ~Boxcar Bertha(1972)
-Badge 373(1972)<USA
+Badge 373(1972)
 ~Mean Streets(1973)
-Italianamerican(1974)<USA
+Italianamerican(1974)
 ~Alice Doesn''t Live Here Anymore(1974)
 ~Taxi Driver(1976)
-New York, New York(1977)<USA
-The Last Waltz(1978)<USA
-American Boy: A Profile of Steven Prince(1978)<USA
+New York, New York(1977)
+The Last Waltz(1978)
+American Boy: A Profile of Steven Prince(1978)
 ~Raging Bull(1980)
-The King of Comedy(1983)<USA
+The King of Comedy(1983)
 ~After Hours(1985)
 ~The Color of Money(1986)
 ~The Last Temptation of Christ(1988)
 ~New York Stories: Life Lessons(1989)
 ~Goodfellas(1990)
-Made in Milan(1990)<USA
+Made in Milan(1990)
 ~Cape Fear(1991)
 ~The Age of Innocence(1993)
 ~Casino(1995)
-Kundun(1997)<USA
-My Voyage to Italy(1999)<USA
+Kundun(1997)
+My Voyage to Italy(1999)
 ~Bringing Out the Dead(1999)
 ~Gangs of New York(2002)
 ~The Aviator(2004)
-No Direction Home: Bob Dylan(2005)<USA
+No Direction Home: Bob Dylan(2005)
 ~The Departed(2006)
 ~Shine a Light(2008)
-Shutter Island(2009)<USA
+Shutter Island(2009)
 `Ridley Scott
-The Dualists(1977)<USA
+The Dualists(1977)
 ~Alien(1979)
 ~Blade Runner(1982)
-Legend(1985)<USA
-Someone to Watch Over Me(1987)<USA
-Black Rain(1989)<USA
+Legend(1985)
+Someone to Watch Over Me(1987)
+Black Rain(1989)
 ~Thelma & Louise(1991)
 1492: Conquest of Paradise(1992)
 ~White Squall(1996)
-G.I. Jane(1997)<USA
+G.I. Jane(1997)
 ~Gladiator(2000)
 ~Hannibal(2001)
 ~Black Hawk Down(2001)
 ~Matchstick Men(2003)
-Kingdom of Heaven(2005)<USA
-A Good Year(2006)<USA
-American Gangster(2007)<USA
+Kingdom of Heaven(2005)
+A Good Year(2006)
+American Gangster(2007)
 ~Body of Lies(2008)
 `Jim Sheridan
 ~My Left Foot(1989)
@@ -1781,8 +1781,8 @@ The Boxer(1997)
 ~In America(2003)
 Get Rich Or Die Tryin''(2005)
 `M. Night Shyamalan
-Praying With Anger(1992)<USA
-Wide Awake(1998)<USA
+Praying With Anger(1992)
+Wide Awake(1998)
 ~The Sixth Sense(1999)
 ~Unbreakable(2000)
 ~Signs(2002)
@@ -1790,35 +1790,35 @@ Wide Awake(1998)<USA
 ~Lady in the Water(2006)
 ~The Happening(2008)
 `Bryan Singer
-Public Access(1993)<USA
+Public Access(1993)
 ~The Usual Suspects(1995)
-Apt Pupil(1998)<USA
+Apt Pupil(1998)
 ~X-Men(2000)
 ~X2: X-Men United(2003)
 ~Superman Returns(2006)
 ~Valkyrie(2008)
 `Steven Soderbergh
-Sex, Lies, and Videotape(1989)<USA
-Kafka(1991)<USA
+Sex, Lies, and Videotape(1989)
+Kafka(1991)
 ~King of the Hill(1993)
-Underneath(1995)<USA
-Gray''s Anatomy(1996)<USA
-Schizopolis(1996)<USA
+Underneath(1995)
+Gray''s Anatomy(1996)
+Schizopolis(1996)
 ~Out of Sight(1998)
 ~The Limey(1999)
 ~Erin Brokovich(2000)
 ~Traffic(2000)
 ~Ocean''s Eleven(2001)
-Full Frontal(2002)<USA
+Full Frontal(2002)
 ~Solaris(2002)
 ~Ocean''s Twelve(2004)
 ~Bubble(2006)
-The Good German(2006)<USA
+The Good German(2006)
 ~Ocean''s Thirteen(2007)
-Che(2008)<USA
-The Girlfriend Experience(2009)<USA
+Che(2008)
+The Girlfriend Experience(2009)
 `Steven Spielberg
-The Sugarland Express(1974)<USA
+The Sugarland Express(1974)
 ~Jaws(1975)
 ~Close Encounters of the Third Kind(1977)
 ~1941(1979)
@@ -1828,7 +1828,7 @@ The Sugarland Express(1974)<USA
 ~The Color Purple(1985)
 ~Empire of the Sun(1987)
 ~Indiana Jones and the Last Crusade(1989)
-Always(1989)<USA
+Always(1989)
 ~Hook(1991)
 ~Jurassic Park(1993)
 ~Schindler''s List(1993)
@@ -1843,24 +1843,24 @@ Always(1989)<USA
 ~Munich(2005)
 ~Indiana Jones and the Kingdom of the Crystal Skull(2008)
 `Oliver Stone
-Seizure(1974)<USA
-Mad Man of Martinique(1979)<USA
-The Hand(1981)<USA
-Salvador(1986)<USA
+Seizure(1974)
+Mad Man of Martinique(1979)
+The Hand(1981)
+Salvador(1986)
 ~Platoon(1986)
 ~Wall Street(1987)
-Talk Radio(1988)<USA
+Talk Radio(1988)
 ~Born on the Fourth of July(1989)
 ~The Doors(1991)
 ~Jkf(1991)
-Heaven & Earth(1993)<USA
+Heaven & Earth(1993)
 ~Natural Born Killers(1994)
 ~Nixon(1995)
-U Turn(1997)<USA
-Any Given Sunday(1999)<USA
-Comandante(2003)<USA
-Alexander(2004)<USA
-World Trade Center(2006)<USA
+U Turn(1997)
+Any Given Sunday(1999)
+Comandante(2003)
+Alexander(2004)
+World Trade Center(2006)
 ~W.(2008)
 `Quentin Tarantino
 ~Reservoir Dogs(1992)
@@ -1869,9 +1869,9 @@ World Trade Center(2006)<USA
 ~Jackie Brown(1997)
 ~Kill Bill Vol. 1(2003)
 ~Kill Bill Vol. 2(2004)
-Grindhouse(2007)<USA
-Death-Proof(2007)<USA
-Inglorious Basterds(2009)<USA
+Grindhouse(2007)
+Death-Proof(2007)
+Inglorious Basterds(2009)
 `Andrei Tarkovsky
 My Name Is Ivan(1962)<Russia
 Andrei Rublev(1969)<Russia
@@ -1918,10 +1918,10 @@ Winter Sleepers(1997)<Germany
 ~Heaven(2002)
 Perfume: The Story of a Murderer(2006)
 `Gus Van Sant
-Mala Noche(1985)<USA
+Mala Noche(1985)
 ~Drugstore Cowboy(1989)
 ~My Own Private Idaho(1991)
-Even Cowgirls Get the Blues(1993)<USA
+Even Cowgirls Get the Blues(1993)
 ~To Die For(1995)
 ~Good Will Hunting(1997)
 ~Psycho(1998)
@@ -1930,8 +1930,8 @@ Even Cowgirls Get the Blues(1993)<USA
 ~Elephant(2003)
 ~Last Days(2005)
 ~Paris, Je T''aime (2006)
-Paranoid Park(2007)<USA
-Milk(2008)<USA
+Paranoid Park(2007)
+Milk(2008)
 `Jean Vigo
 ~Zero For Conduct(1933)
 ~L''atalante(1934)
@@ -1961,18 +1961,18 @@ Fearless(1993)
 `Orson Welles
 ~Citizen Kane(1941)
 ~The Magnificent Ambersons(1942)
-The Stranger(1946)<USA
-The Lady From Shanghai(1948)<USA
-Macbeth(1948)<USA
-The Tragedy of Othello: The Moor of Venice(1952)<USA
-Mr. Arkadin(1955)<USA
+The Stranger(1946)
+The Lady From Shanghai(1948)
+Macbeth(1948)
+The Tragedy of Othello: The Moor of Venice(1952)
+Mr. Arkadin(1955)
 ~Touch of Evil(1958)
 ~The Trial(1963)
-Chimes at Midnight(1965)<USA
-The Immortal Story(1968)<USA
-The Deep(1970)<USA
-The Other Side of the Wind(1972)<USA
-F For Fake(1975)<USA
+Chimes at Midnight(1965)
+The Immortal Story(1968)
+The Deep(1970)
+The Other Side of the Wind(1972)
+F For Fake(1975)
 `Wim Wenders
 Summer in the City(1970)
 The Goalie''s Anxiety at the Penalty Kick(1971)
@@ -2005,32 +2005,32 @@ Don''t Come Knocking(2005)
 Invisibles(2007)
 Palermo Shooting(2008)
 `Billy Wilder
-Bad Seed(1934)<USA
-The Major and the Minor(1942)<USA
-Five Graves to Cairo(1943)<USA
+Bad Seed(1934)
+The Major and the Minor(1942)
+Five Graves to Cairo(1943)
 ~Double Indemnity(1944)
-The Lost Weekend(1945)<USA
-The Emperor Waltz(1948)<USA
-A Foreign Affair(1948)<USA
+The Lost Weekend(1945)
+The Emperor Waltz(1948)
+A Foreign Affair(1948)
 ~Sunset Boulevard(1950)
-Ace in the Hole(1951)<USA
-Stalag 17(1953)<USA
-Sabrina(1954)<USA
-The Seven Year Itch(1955)<USA
-The Spirit of St. Louis(1957)<USA
-Love in the Afternoon(1957)<USA
-Witness For the Prosecution(1957)<USA
+Ace in the Hole(1951)
+Stalag 17(1953)
+Sabrina(1954)
+The Seven Year Itch(1955)
+The Spirit of St. Louis(1957)
+Love in the Afternoon(1957)
+Witness For the Prosecution(1957)
 ~Some Like it Hot(1959)
 ~The Apartment(1960)
-One, Two, Three(1961)<USA
-Irma La Douce(1963)<USA
-Kiss Me, Stupid(1964)<USA
-The Fortune Cookie(1966)<USA
-The Private Life of Sherlock Holmes(1970)<USA
-Avanti!(1972)<USA
-The Front Page(1974)<USA
-Fedora(1978)<USA
-Buddy Buddy(1981)<USA
+One, Two, Three(1961)
+Irma La Douce(1963)
+Kiss Me, Stupid(1964)
+The Fortune Cookie(1966)
+The Private Life of Sherlock Holmes(1970)
+Avanti!(1972)
+The Front Page(1974)
+Fedora(1978)
+Buddy Buddy(1981)
 `Michael Winterbottom
 Butterfly Kiss(1995)
 Go Now(1995)
@@ -2050,18 +2050,18 @@ The Road to Guatanamo(2006)
 Genova(2008)
 The Shock Doctrine(2009)
 `Robert Zemeckis
-I Wanna Hold Your Hand(1978)<USA
-Used Cars(1980)<USA
-Romancing the Stone(1984)<USA
+I Wanna Hold Your Hand(1978)
+Used Cars(1980)
+Romancing the Stone(1984)
 ~Back to the Future(1985)
 ~Who Framed Roger Rabbit?(1988)
 ~Back to the Future Part II(1989)
 ~Back to the Future Part III(1990)
-Death Becomes Her(1992)<USA
+Death Becomes Her(1992)
 ~Forrest Gump(1994)
 ~Contact(1997)
 ~What Lies Beneath(2000)
 ~Cast Away(2000)
 ~The Polar Express(2004)
 ~Beowulf(2007)
-A Christmas Carol(2009)<USA
+A Christmas Carol(2009)

@@ -174,3 +174,87 @@ Files
     Filmographies of screenwriters listed in the same format as actedin.txt,
     directed.txt, and shot.txt.  This file will be used (as of now, 6/1/11, it
     has not been used) to help populate the worked_on table of the database.
+
+/doc (documentation)
+
+  ER_diagram.dia
+
+    This file graphically illustrates the Entity-Relationship diagram of FiLTH's
+    database schema.  The file can only be opened with the open source program,
+    Dia.
+
+  front_end_requirements.txt
+
+    Notes on what capabilites/functionalities are desired for FiLTH's user
+    interface.
+
+  NOTES
+
+    Text file that acts as a kind of scratch pad for various notes regarding the
+    FiLTH project.
+
+  README
+
+    This file.
+
+  tickets.ods
+
+    An OpenOffice spreadsheet containing the status of all open (and closed)
+    tickets for the FiLTH project.
+
+/gui (files pertaining to the user interface of FiLTH)
+
+  [currently empty]
+
+/images (image files)
+
+  filth_logo.png
+
+    The logo for FiLTH created in Photoshop.  The background is transparent.
+
+/jar (any necessary .jar (JavaARchive) files go here)
+
+  javacsv.jar
+
+    Small Java library for reading/writing CSV files.  This API is used in
+    /src/OscarParser.java and is required to compile and run /bin/OscarParser.
+    (see /scripts/cop.sh and /scripts/runop.sh for compiling and running
+    /bin/OscarParser)
+
+  postgresql-8.4-701.jdbc4.jar
+
+    API for connecting to a PostgreSQL database in Java.  This is used in
+    /src/OscarParser.java and is required to compile and run /bin/OscarParser.
+
+  tylerhayes.tools.jar
+
+    A small collection of Java code that I have written and maintain.  It is
+    mostly used for the Log API for logging events/data during the execution of
+    a program (useful for debugging, for example).  The code is kept under
+    another Git repository on gitHub.com (tgh/JavaTools).  Whenever code has
+    been added/removed/changed in JavaTools, scripts/update_jar.sh is run to
+    update this file.  When cop.sh is run, this code is also (unintentionally)
+    compiled into /bin/tylerhayes/tools.
+
+/scripts (as in programming scripts, not movie scripts)
+
+  cop.sh
+
+    Shell script that compiles /src/OscarParser.java into /bin/OscarParser.class
+
+  crew2sql.py
+
+    Python script that produces sql insert statements to populate the
+    crew_person table of the database given a specifically formatted text file
+    of names in the film industry.  This script is not used directly--it is used
+    in the /scripts/crewperson.sh shell script (see below).
+
+  crewperson.sh
+
+    Shell script to populate the crew_person table of the database.  It first
+    executes /bin/nameFormatter to format the names in /data/crewperson.txt and
+    then feeds the output of nameFormatter to the /scripts/crew2sql.py Python
+    script to produce the sql insert statements.  That output is then redirected
+    to /sql/crew_person.sql.
+
+  diff.py
