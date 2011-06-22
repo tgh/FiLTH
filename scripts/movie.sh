@@ -112,7 +112,7 @@ sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 if [ $first_run -eq 1 ]
 then
   $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
-# if this is nor the first run...
+# if this is not the first run...
 else
   # create/overwrite movie_additions.sql which is a file of sql inserts for just
   # the new movies being added
