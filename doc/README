@@ -258,3 +258,191 @@ Files
     to /sql/crew_person.sql.
 
   diff.py
+
+    This script is used within the scripts/movie.sh shell script.  It's purpose
+    is to read in the output resulting from
+
+    $ diff temp/previous_movie_ratings.txt temp/temp2
+
+    where temp2 is the text translation of data/Movie_Ratings.doc produced by
+    antiword.  It parses the diff output for the new lines in temp2 that are not
+    in /temp/previous_movie_ratings.txt, essentially grabbing the movies that
+    were added since the previous run of the movie.sh script.  It prints these
+    to stdout to be redirected within the movie.sh script.
+
+  drop_and_create_filth_db.sh
+
+    This shell script wipes out the filth postgres database and re-creates it
+    with the current .sql in /sql.  It uses psql commands, but redirects stdout
+    to /dev/null so the boring stuff doesn't get displayed.  Any stderr output,
+    however, gets redirected to /temp/drop_filth_db_error.txt to see if
+    anything went wrong.  This script drops (deletes) the entire filth database,
+    re-creates it (the schema) with /sql/init_pg_database.sql, then populates
+    the data tables with the other respective sql files in /sql (movie.sql,
+    oscar.sql, etc).
+
+  drop_and_create_test_db.sh
+
+    Same as the above script (drop_and_create_filth_db.sh), but for the 'test'
+    postgres database.  The test database is probably unnecessary, but it makes
+    me feel better if I am about to make big changes or something--I first try
+    it out with the test database before applying the changes to the 'real'
+    database (filth).
+
+  movie.sh
+
+    This script creates the /sql/movie.sql file, which is all of the necessary
+    sql insert statements to populate the movie table in the database.  What it
+    does specifically is translates the /data/Movie_Ratings.doc (which documents
+    all of the movies I have seen and rated) into a text file, does some
+    cleaning and transformations using sed, and feeds that to the
+    scripts/movie2sql.py Python script to create the sql insert statements
+    (which are output to stdout and redirected to /sql/movie.sql).
+
+    Upon the first run of the script, the temporary file,
+    /temp/previous_movie_ratings.txt, is created; it is a copy of the text
+    translation of /data/Movie_Ratings.doc that is created by antiword.
+    Subsequent runnings of this script runs a diff on that temporary file and
+    a new text file translation of the Movie_Ratings.doc to see what has been
+    added*.  The results of the diff are piped to the /scripts/diff.py Python
+    script (see /scripts/diff.py).  So, subsequent runnings of this script
+    create sql insert statements only for those movies that were added to the
+    Movie_Ratings.doc document since the last time, which are then redirected to
+    the temporary file, /temp/movie_additions.sql, as well as appended to
+    /sql/movie.sql
+
+    *WARNING: this script does not account for changes or deletions of movies in
+    the Movie_Ratings.doc document.  If a movie needs to be deleted or changed,
+    it must be done manually: you MUST DELETE /temp/previous_movie_ratings.txt,
+    rerun this script, and apply the changes manually in the database (or drop
+    and re-populate the movie table in the database).
+
+  movie2sql.py
+
+    This Python script is only used in the /scripts/movie.sh shell script.  It
+    takes the text produced by the movie.sh script after its cleaning and
+    transformations and produces the necessary sql insert statements (to stdout,
+    which are redirected to /sql/movie.sql and/or /temp/movie_additions.sql).
+    (see /scripts/movie.sh)
+
+  oscarGivenTo.sh
+
+    The purpose of this shell script is to create sql insert statments to be
+    used to populate the oscar_given_to table in the database.  It has four
+    phases: extraction, rewriting, decoding escape sequences, and parsing.  In
+    the extraction phase the desired Oscar category nominations are (f)grep'd
+    from /data/oscars.csv (Oscar history csv file through 2009) and redirected/
+    appended to /data/oscarsOfCategory.csv.  The rewriting phase cleans and
+    transforms the category names, win status, and special cases such as
+    changing 'James Stewart' to 'Jimmy Stewart'.  The decoding escape sequences
+    phase changes escape sequences found in the csv file to actual characters
+    (e.g. '&amp;' -> '&').  The final parsing phase simply runs the
+    /bin/OscarParser Java program.
+
+    This script takes two arguments: the name of the database and the password
+    for the database.  (These args are necessary because the OscarParser program
+    requires them.)
+
+  runop.sh
+
+    This is a temporary shell script that simply runs /bin/OscarParser (with the
+    given db name and db password arguments passed in to this script).  It
+    would be a pain to have to type that huge command everytime, so that's what
+    this is basically.  Once the OscarParser program is deemed complete, this
+    script will probably be deleted, because the /scripts/oscarGivenTo.sh shell
+    script runs OscarParser (but that line is  ommented out at the moment, so
+    while OscarParser is being written, I have been runing cop.sh,
+    oscarGivenTo.sh, then runop.sh.
+
+  update_jar.sh
+
+    This shell script simply copies the current version of tylerhayes.tools.jar
+    found in its project directory and overwrites /jar/tylerhayes.tools.jar.
+
+/sql (.sql files)
+
+  crew_person.sql
+
+    SQL insert statements for populating the crew_person table.
+
+  genre.sql
+
+    SQL insert statements for populating the genre table.
+
+  init_mysql_database.sql
+
+    SQL DDL (data definition language) for creating the filth database
+    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
+    MySQL.  This file isn't updated as much as the next file...
+
+  init_pg_database.sql
+
+    SQL DDL (data definition language) for creating the filth database
+    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
+    PostgreSQL.
+
+  movie.sql
+
+    SQL insert statements for populating the movie table.
+
+  oscar.sql
+
+    SQL insert statements for populating the oscar table.
+
+  oscar_given_to.sql
+
+    SQL insert statements for populating the oscar_given_to table.
+
+  tyler.sql
+
+    SQL insert statements for populating the tyler table.
+
+/src (source code files)
+
+  genre2sql.hs
+
+    Haskell source code for /bin/genre2sql. (see /bin/genre2sql)
+
+  nameFormatter.hs
+
+    Haskell source code for /bin/nameFormatter. (see /bin/nameFormatter)
+
+  oscar2sql.hs
+
+    Haskell source code for /bin/oscar2sql. (see /bin/oscar2sql)
+
+  OscarParser.java
+
+    Java source code for /bin/OscarParser.class. (see /bin/OscarParser.class)
+
+/temp (temporary files)
+
+  drop_filth_db_error.txt and drop_test_db_error.txt
+
+    These text files are created by the /scripts/drop_and_create... shell
+    scripts if and when there are errors that occur (output sent to stderr)
+    during the running of those scripts.  The stderr output is redirected to
+    temporary files so that I can easily go bask and look at the output later or
+    if the output is so large to overflow the terminal display buffer (or
+    whatever it's called).
+
+  movie_additions.sql
+   
+    This file is created by /scripts/movie.sh.  The contents are sql insert
+    statements for movies added to /data/Movie_Ratings.doc since the last time
+    /scripts/movie.sh was run.  This file is then used with psql to actually
+    insert those new movies into the database--they are also appended to
+    /sql/movie.sql.
+
+  
+
+/trash (unused-but-still-around-just-in-case files)
+
+  CSV.hs
+
+    A Haskell module written by someone at CalTech I think.  This module
+    provides functions that operate on CSV files.  This was used in the now
+    trashed crew2sql.hs code, which was replaced by the /scripts/crew2sql.py
+    Python script.  After getting a new laptop and updating the Haskell Platform
+    the crew2sql.hs (or anything else importing the CSV module) failed to
+    compile.
