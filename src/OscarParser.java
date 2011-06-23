@@ -115,27 +115,35 @@ public class OscarParser implements GracefulShutdown {
     //parse the csv file
     try {
       while (oscars.readRecord()) {
+        //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
+        //get the category of the nomination
         String category = oscars.get(1);
-        String title = null;
-        int mid = 0;
-        int cid = 0;
-        int status = 0;
+        String title = null; //the movie titles aren't always in the same field slot (depends on the category)
+        int mid      = 0;    //movie id to be retrieved from the database
+        int cid      = 0;    //crew person id to be retrieved from the database
+        int status   = 0;    //just nominated = 0, win = 1, tie = 2
 
         //log the current record
-        log.logData("RECORD: " + oscars.get(0) + ", " + category + ", " + oscars.get(2)
+        log.logData("RECORD: " + year + ", " + category + ", " + oscars.get(2)
                     + ", " + oscars.get(3) + ", " + oscars.get(4), 0, false);
 
         /*---------- BEST PICTURE (oid = 1) ---------------------------------*/
 
         if (category.equals("Best Picture")) {
+          //clean up the title
           title = checkForSpecialCases(oscars.get(2));
           title = title.toLowerCase().replace("'","''");
           title = title.replace(" & "," ").replace(" ","&").replace("!","");
+          //get the corresponding movie id from the database (if there)
           mid = queryForMovie(title, oscars.get(2), year);
+          //movie was found in database
           if (mid != -1) {
+            //get the status of the nomination
             status = Integer.parseInt(oscars.get(4));
+            //log the find
             log.logData("mid = " + mid, 1, false);
+            //write the appropriate SQL insert statement for this nomination
             try {
               bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
               bw.newLine();
@@ -151,22 +159,30 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
+          //get the title as defined in the record
           title = oscars.get(3);
           //this actor is nominated for two movies within the same nomination
           int idx = title.indexOf("; and ");
           if (idx != -1) {
-            String realTitle = title.substring(idx+6, title.indexOf(" {", idx));
-            String secondTitle = checkForSpecialCases(realTitle);
+            //extract the second movie title
+            String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
+            //clean the second movie title
+            String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
             secondTitle = secondTitle.toLowerCase().replace("'","''");
             secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
-            bestActor(secondTitle, realTitle, year);
+            //create and write the appropriate 'Best Actor' sql insert statement
+            // for this nomination
+            bestActor(secondTitle, uncleanedSecondTitle, year);
           }
-          //remove the character name from the title
-          String realTitle = title.substring(0, title.indexOf(" {"));
-          title = checkForSpecialCases(realTitle);
+          //extract the title (first title if there were two)
+          String uncleanedTitle = title.substring(0, title.indexOf(" {"));
+          //clean the title
+          title = checkForSpecialCases(uncleanedTitle);
           title = title.toLowerCase().replace("'","''");
           title = title.replace(" & "," ").replace(" ","&").replace("!","");
-          bestActor(title, realTitle, year);
+          //create and write the appropriate 'Best Actor' sql insert statement
+          // for this nomination
+          bestActor(title, uncleanedTitle, year);
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
@@ -234,13 +250,19 @@ public class OscarParser implements GracefulShutdown {
    * What occurs when the program gets terminated.
    */
   public void shutDown() {
+    //only do this cleanup if the appropriate arguments were given, because
+    // that situation is already dealt with
     if (noarg == false) {
       log.logFooter("END");
+      //close database connection
       try { if (dbConn != null) dbConn.close(); }
       catch (SQLException sqle) { sqle.printStackTrace(); }
+      //close the Log object
       log.close();
+      //close the csv file
       if (oscars != null)
         oscars.close();
+      //close buffered objects
       try {
         bw.close();
         br.close();
@@ -296,13 +318,17 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
   
   /**
-   *
+   * Like movie title, there are going to be some special cases for people's
+   * names; this method takes care of those cases by matching them to how the
+   * database schema is designed.
    */
   private String[] checkForNameSpecialCases(String[] name) {
+    //names with 'De' (like Robert De Niro) combine De and [name] into one.
     if (name[1].equals("De")) {
       String[] n = {name[0],"De " + name[2]};
       return n;
     }
+    //names with 'Jr.' (like Robert Downey, Jr.) include Jr. with last name.
     if (name[2].equals("Jr.")) {
       String[] n = {name[0],name[1] + " Jr."};
       return n;
@@ -313,7 +339,14 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
+   * Query the database for the movie id of the given movie.
    *
+   * @param formattedTitle This String is the cleaned movie title used to
+   * query the database.
+   * @param realTitle This String is really only used to output to stdout when
+   * communicating to the user (it's the title as seen in the csv file record).
+   * @param year An integer for the year of the movie in order to nail down the
+   * specific movie.
    */
   private int queryForMovie(String formattedTitle, String realTitle, int year) {
     int mid = 0;
@@ -323,7 +356,7 @@ public class OscarParser implements GracefulShutdown {
 
     try {
       //special case: Being There
-      //  Postgres's full text search includes both 'being' and 'there' as
+      //  Postgres's full text search includes both 'being' and 'there' as stop
       //  words, so they are ignored when searching.  Since this title only
       //  contains stop words, nothing is searched for, and thus is not
       //  found.
@@ -388,7 +421,7 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   *
+   * Query the database for the crew person id of the given person name.
    */
   private int queryForCrewperson(String[] names) {
     String lname = null;
@@ -398,13 +431,14 @@ public class OscarParser implements GracefulShutdown {
 
     try {
       switch(names.length) {
-        //e.g. Cher
+        //e.g. Cher, Madonna, etc.
         case 1: lname = names[0];
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname + "' AND f_name is NULL;");
                 if (qResult.next()) {
                   return qResult.getInt(1);
                 }
                 break;
+        //standard first name, last name
         case 2: lname = names[1].replace("'","''");
                 fname = names[0];
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
@@ -413,6 +447,7 @@ public class OscarParser implements GracefulShutdown {
                   return qResult.getInt(1);
                 }
                 break;
+        //e.g. Phillip Seymour Hoffman, Samuel L. Jackson, etc.
         case 3: lname = names[2].replace("'","''");
                 fname = names[0];
                 mname = names[1];
@@ -438,21 +473,39 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
+   * Create and write the appropriate SQL insert statement for the current
+   * nomination--it is assumed to be a Best Actor nomination.
    *
+   * @param title This is the cleaned movie title--needed for a call to
+   * queryForMovie().
+   * @param realTitle This is the title as seen in the csv record--needed
+   * for a call to queryForMovie().
+   * @param year An integer for the year of the movie--also needed for the
+   * call to queryForMovie().
    */
   private void bestActor(String title, String realTitle, int year) {
+    //get the movie id for the given movie title
     int mid = queryForMovie(title, realTitle, year);
+
     try {
+      //movie was found in database
       if (mid != -1) {
+        //get the name of the actor
         String[] name = oscars.get(2).split(" ");
+        //clean any special cases
         if (name.length == 3) {
           name = checkForNameSpecialCases(name);
         }
+        //get the crew person id for this actor from the database
         int cid = queryForCrewperson(name);
+        //actor was found in the database
         if (cid != -1) {
+          //get the status of the nomination
           int status = Integer.parseInt(oscars.get(4));
+          //log what was found
           log.logData("mid = " + mid, 1, false);
           log.logData("cid = " + cid, 1, false);
+          //write the sql insert statement for this best actor nomination
           try {
             bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 2, " + cid + ", " + status + ");");
             bw.newLine();
