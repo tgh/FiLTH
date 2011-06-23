@@ -1,7 +1,18 @@
 #!/bin/bash
 
 filth_path=~/Projects/FiLTH
+db=$1
+pw=$2
 
+if [ $# -ne 2 ]
+then
+  echo ""
+  echo "Missing argument(s)"
+  echo ""
+  echo "    usage: oscarGivenTo.sh DATABASE_NAME DATABASE_PASSWORD"
+  echo ""
+  exit
+fi
 
 #-------------------------------------------------------------------------------
 # PHASE 1: EXTRACTION                                                         --
@@ -140,4 +151,4 @@ sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
 
 # run the OscarParser java program
 #echo "running OscarParser..."
-#java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar $filth_path/bin/OscarParser
+#java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar $filth_path/bin/OscarParser $db $pw
