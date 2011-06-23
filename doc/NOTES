@@ -43,6 +43,8 @@ IDEAS/THOUGHTS
 
 HELPFUL HINTS/REMINDERS
 ------------------------
+- password for filth database: 0o9..
+
 - to connect to the database with psql:
 
   $ psql -U postgres -d filth
