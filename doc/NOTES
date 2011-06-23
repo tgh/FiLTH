@@ -43,6 +43,10 @@ IDEAS/THOUGHTS
 
 HELPFUL HINTS/REMINDERS
 ------------------------
+- to connect to the database with psql:
+
+  $ psql -U postgres -d filth
+
 - compile haskell just like common gcc: ghc -o [binary] [source]
 - example of full text search in postgres:
 
@@ -69,6 +73,7 @@ REFERENCES
   http://www.bloggersblog.com/blog/224081
 - data from IMDB can be retrieved directly! : http://www.imdb.com/interfaces/
 
+
 TOOLS USED/TRIED OUT
 ---------------------
 * denotes possible requirements for end user
@@ -91,6 +96,7 @@ TOOLS USED/TRIED OUT
 - dvipdf* (used with LaTex for converting dvi files to pdf files)
 - Photoshop (used to create FiLTH logo)
 
+
 LANGUAGES USED
 ---------------
 - bash shell scripting
@@ -102,6 +108,7 @@ LANGUAGES USED
 - SQL
 - HTML
 - LaTeX
+
 
 SCRATCH
 --------
