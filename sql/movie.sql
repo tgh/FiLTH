@@ -1766,3 +1766,8 @@ INSERT INTO movie VALUES (DEFAULT, 'King of Comedy', 1983, 6, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Tyson', 2009, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Adjustment Bureau', 2011, 6, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Bill Cunningham New York', 2011, 7, 0, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cars 2', 2011, 6, 1, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'From Hell', 2001, 6, 4, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Peter Pan', 1953, 7, 0, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Super 8', 2011, 6, 3, 1, NULL);
