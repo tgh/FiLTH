@@ -1773,3 +1773,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Peter Pan', 1953, 7, 0, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Super 8', 2011, 6, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Animal Kingdom', 2010, 6, 4, 30, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Black Swan', 2010, 6, 4, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Pride & Predudice', 2005, 7, 2, 3, NULL);
