@@ -1777,3 +1777,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Pride & Predudice', 2005, 7, 2, 3, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Tree of Life', 2011, 7, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gunner Palace', 2005, 6, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Catfish', 2010, 8, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Harry Potter and the Deathly Hollows Part 2', 2011, 7, 3, 3, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Inside Job', 2010, 7, 3, 1, NULL);
