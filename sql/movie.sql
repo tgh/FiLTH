@@ -1780,3 +1780,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Catfish', 2010, 8, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Harry Potter and the Deathly Hollows Part 2', 2011, 7, 3, 3, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Inside Job', 2010, 7, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Way Back', 2010, 5, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Match Point', 2005, 7, 4, 1, NULL);
