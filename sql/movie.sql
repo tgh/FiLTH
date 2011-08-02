@@ -1781,3 +1781,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Harry Potter and the Deathly Hollows Part 2'
 INSERT INTO movie VALUES (DEFAULT, 'Inside Job', 2010, 7, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Way Back', 2010, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Match Point', 2005, 7, 4, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cowboys & Aliens', 2011, 5, 3, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Iron Man 2', 2010, 5, 3, 1, NULL);
