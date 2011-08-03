@@ -9,7 +9,7 @@ import com.csvreader.*;
  * The scripts/oscarGivenTo.sh shell script massages the original
  * data/oscars.csv file into the data/oscarsOfCategory.csv file.  This
  * program then parses that csv file and outputs appropriate sql insert
- * statements for inserted the proper data into the oscar_given_to table.
+ * statements for inserting the proper data into the oscar_given_to table.
  * The shell script should redirect this output to a sql/ file.
  */
 public class OscarParser implements GracefulShutdown {
