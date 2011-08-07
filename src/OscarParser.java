@@ -234,6 +234,11 @@ public class OscarParser implements GracefulShutdown {
 
         if (category.equals("Best Foreign Language Film")) {
         }
+
+        /*---------- BEST DOCUMENTARY (oid = 13) ----------------------------*/
+
+        if (category.equals("Best Documentary")) {
+        }
       }
     }
     catch (IOException ioe) {
