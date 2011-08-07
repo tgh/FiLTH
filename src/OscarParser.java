@@ -210,7 +210,7 @@ public class OscarParser implements GracefulShutdown {
         if (category.equals("Best Cinematography")) {
         }
 
-        /*---------- BEST CINEMATOGRAPHY (b & w) (oid =81) ------------------*/
+        /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 8) ------------------*/
 
         if (category.equals("Best Cinematography (black and white)")) {
         }
