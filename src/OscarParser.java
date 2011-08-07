@@ -188,6 +188,7 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
 
         if (category.equals("Best Actress")) {
+
         }
 
         /*---------- BEST SUPPORTING ACTOR (oid = 4) ------------------------*/
@@ -210,7 +211,7 @@ public class OscarParser implements GracefulShutdown {
         if (category.equals("Best Cinematography")) {
         }
 
-        /*---------- BEST CINEMATOGRAPHY (b & w) (oid =81) ------------------*/
+        /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 8) ------------------*/
 
         if (category.equals("Best Cinematography (black and white)")) {
         }
@@ -516,7 +517,7 @@ public class OscarParser implements GracefulShutdown {
             bw.newLine();
           }
           catch (IOException ioe) {
-            log.logFatalError("Writing insert statement for best picture.",0,false);
+            log.logFatalError("Writing insert statement for best actor.",0,false);
             ioe.printStackTrace();
             System.exit(1); 
           }
@@ -528,6 +529,91 @@ public class OscarParser implements GracefulShutdown {
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
       ioe.printStackTrace();
       System.exit(1);
+    }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   *
+   */
+  private void writeSQLStatment(int oid, String category) {
+    String title = null; //the movie titles aren't always in the same field slot (depends on the category)
+    int mid      = 0;    //movie id to be retrieved from the database
+    int cid      = 0;    //crew person id to be retrieved from the database
+    int status   = 0;    //just nominated = 0, win = 1, tie = 2
+
+    switch (oid) {
+
+      /* best picture, best foreign film, best documentary */
+      case 1: 12: 13:
+
+        //clean up the title
+        title = checkForSpecialCases(oscars.get(2));
+        title = title.toLowerCase().replace("'","''");
+        title = title.replace(" & "," ").replace(" ","&").replace("!","");
+        //get the corresponding movie id from the database (if there)
+        mid = queryForMovie(title, oscars.get(2), year);
+        //movie was found in database
+        if (mid != -1) {
+          //get the status of the nomination
+          status = Integer.parseInt(oscars.get(4));
+
+          /*TODO: take out the following code (through the catch block) and put
+           * it at the end of this method--will need a boolean flag so that the
+           * insert statement is only written when the movie (and crewperson)
+           * is(were) found in the db...
+           */
+
+          //log the find
+          log.logData("mid = " + mid, 1, false);
+          //write the appropriate SQL insert statement for this nomination
+          try {
+            bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+            bw.newLine();
+          }
+          catch (IOException ioe) {
+            log.logFatalError("Writing insert statement for " + category + ".",0,false);
+            ioe.printStackTrace();
+            System.exit(1); 
+          }
+        }
+
+        break;
+
+      /* acting categories */
+      case 2: 3: 4: 5:
+
+        //get the title as defined in the record
+        title = oscars.get(3);
+        //this actor is nominated for two movies within the same nomination
+        int idx = title.indexOf("; and ");
+        if (idx != -1) {
+          //extract the second movie title
+          String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
+          //clean the second movie title
+          String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
+          secondTitle = secondTitle.toLowerCase().replace("'","''");
+          secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
+          //create and write the appropriate 'Best Actor' sql insert statement
+          // for this nomination
+          bestActor(secondTitle, uncleanedSecondTitle, year);
+        }
+        //extract the title (first title if there were two)
+        String uncleanedTitle = title.substring(0, title.indexOf(" {"));
+        //clean the title
+        title = checkForSpecialCases(uncleanedTitle);
+        title = title.toLowerCase().replace("'","''");
+        title = title.replace(" & "," ").replace(" ","&").replace("!","");
+        //create and write the appropriate 'Best Actor' sql insert statement
+        // for this nomination
+        bestActor(title, uncleanedTitle, year);
+        break;
+
+      /* all other categories with crew recipients */
+      case 6: 7: 8: 9: 10: 11:
+
+        break;
     }
   }
 }
