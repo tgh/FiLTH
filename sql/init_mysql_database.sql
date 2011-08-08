@@ -245,7 +245,7 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 
 -- movie country
 ALTER TABLE movie ADD CONSTRAINT country_constraint
-CHECK (country >= 1 AND country <= 37);
+CHECK (country >= 1 AND country <= 38);
 --  1 = USA
 --  2 = France
 --  3 = England
@@ -283,6 +283,7 @@ CHECK (country >= 1 AND country <= 37);
 -- 35 = Denmark
 -- 36 = Belgium
 -- 37 = Switzerland
+-- 38 = Austria
 
 -- listcontains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint

@@ -97,6 +97,7 @@ sed -i "s/Vietnam$/34/g" $filth_temp_path/temp
 sed -i "s/Denmark$/35/g" $filth_temp_path/temp
 sed -i "s/Belgium$/36/g" $filth_temp_path/temp
 sed -i "s/Switzerland/37/g" $filth_temp_path/temp
+sed -i "s/Austria/38/g" $filth_temp_path/temp
 
 # remove the alphabetical headers
 sed "/^[A-Z]$/d" $filth_temp_path/temp > $filth_temp_path/temp2
