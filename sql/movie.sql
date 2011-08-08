@@ -1784,3 +1784,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Match Point', 2005, 7, 4, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Cowboys & Aliens', 2011, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Iron Man 2', 2010, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Summertime', 1955, 5, 0, 3, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Darwin''s Nightmare', 2005, 5, 0, Austria, NULL);
