@@ -159,45 +159,29 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
-          //get the title as defined in the record
-          title = oscars.get(3);
-          //this actor is nominated for two movies within the same nomination
-          int idx = title.indexOf("; and ");
-          if (idx != -1) {
-            //extract the second movie title
-            String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
-            //clean the second movie title
-            String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
-            secondTitle = secondTitle.toLowerCase().replace("'","''");
-            secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
-            //create and write the appropriate 'Best Actor' sql insert statement
-            // for this nomination
-            bestActor(secondTitle, uncleanedSecondTitle, year);
-          }
-          //extract the title (first title if there were two)
-          String uncleanedTitle = title.substring(0, title.indexOf(" {"));
-          //clean the title
-          title = checkForSpecialCases(uncleanedTitle);
-          title = title.toLowerCase().replace("'","''");
-          title = title.replace(" & "," ").replace(" ","&").replace("!","");
-          //create and write the appropriate 'Best Actor' sql insert statement
-          // for this nomination
-          bestActor(title, uncleanedTitle, year);
+          //write the appropriate sql insert statement for this nomination
+          acting(year, 2, "Best Actor");
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
 
         if (category.equals("Best Actress")) {
+          //write the appropriate sql insert statement for this nomination
+          acting(year, 3, "Best Actress");
         }
 
         /*---------- BEST SUPPORTING ACTOR (oid = 4) ------------------------*/
 
         if (category.equals("Best Supporting Actor")) {
+          //write the appropriate sql insert statement for this nomination
+          acting(year, 4, "Best Supporting Actor");
         }
 
         /*---------- BEST SUPPORTING ACTRESS (oid = 5) ----------------------*/
 
         if (category.equals("Best Supporting Actress")) {
+          //write the appropriate sql insert statement for this nomination
+          acting(year, 5, "Best Supporting Actress");
         }
 
         /*---------- BEST DIRECTOR (oid = 6) --------------------------------*/
@@ -338,6 +322,11 @@ public class OscarParser implements GracefulShutdown {
       String[] n = {name[0],name[1] + " Jr."};
       return n;
     }
+    //Noriyuki 'Pat' Morita
+    if (name[1].equals("'Pat'")) {
+      String[] n = {"Pat","Morita"};
+      return n;
+    }
     return name;
   }
 
@@ -360,13 +349,14 @@ public class OscarParser implements GracefulShutdown {
     ResultSet qResult = null;
 
     try {
-      //special case: Being There
+      //special case: title containing only stop words
+      //  For example, "Being There":
       //  Postgres's full text search includes both 'being' and 'there' as stop
       //  words, so they are ignored when searching.  Since this title only
       //  contains stop words, nothing is searched for, and thus is not
       //  found.
-      if (realTitle.equals("Being There")) {
-        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = 'Being There';");
+      if (realTitle.equals("Being There") || realTitle.equals("In & Out")) {
+        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //query for the movie
       else {
@@ -478,8 +468,43 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
+   * Handle nominations for the acting categories.
+   *
+   * @param year An integer for the year of the nomination.
+   * @param oid An integer for the oscar category unique id.
+   * @param category A string for the specific acting category.
+   * @throws IOException
+   */
+  private void acting(int year, int oid, String category) throws IOException {
+    //get the title as defined in the record
+    String title = oscars.get(3);
+    //this actor is nominated for two movies within the same nomination
+    int idx = title.indexOf("; and ");
+    if (idx != -1) {
+      //extract the second movie title
+      String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
+      //clean the second movie title
+      String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
+      secondTitle = secondTitle.toLowerCase().replace("'","''");
+      secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //create and write the appropriate sql insert statement for this nomination
+      actingHelper(secondTitle, uncleanedSecondTitle, year, oid, category);
+    }
+    //extract the title (first title if there were two)
+    String uncleanedTitle = title.substring(0, title.indexOf(" {"));
+    //clean the title
+    title = checkForSpecialCases(uncleanedTitle);
+    title = title.toLowerCase().replace("'","''");
+    title = title.replace(" & "," ").replace(" ","&").replace("!","");
+    //create and write the appropriate sql insert statement for this nomination
+    actingHelper(title, uncleanedTitle, year, oid, category);
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
    * Create and write the appropriate SQL insert statement for the current
-   * nomination--it is assumed to be a Best Actor nomination.
+   * nomination--it is assumed to be a nomination in an acting category.
    *
    * @param title This is the cleaned movie title--needed for a call to
    * queryForMovie().
@@ -487,8 +512,11 @@ public class OscarParser implements GracefulShutdown {
    * for a call to queryForMovie().
    * @param year An integer for the year of the movie--also needed for the
    * call to queryForMovie().
+   * @param oid An integer for the unique id of the oscar category.
+   * @param category The specific acting category for the nomination--only
+   * used for error output.
    */
-  private void bestActor(String title, String realTitle, int year) {
+  private void actingHelper(String title, String realTitle, int year, int oid,  String category) {
     //get the movie id for the given movie title
     int mid = queryForMovie(title, realTitle, year);
 
@@ -510,13 +538,13 @@ public class OscarParser implements GracefulShutdown {
           //log what was found
           log.logData("mid = " + mid, 1, false);
           log.logData("cid = " + cid, 1, false);
-          //write the sql insert statement for this best actor nomination
+          //write the sql insert statement for this nomination
           try {
-            bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 2, " + cid + ", " + status + ");");
+            bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
             bw.newLine();
           }
           catch (IOException ioe) {
-            log.logFatalError("Writing insert statement for best picture.",0,false);
+            log.logFatalError("Writing insert statement for " + category + ".",0,false);
             ioe.printStackTrace();
             System.exit(1); 
           }
@@ -524,7 +552,7 @@ public class OscarParser implements GracefulShutdown {
       }
     }
     catch (IOException ioe) {
-      log.logFatalError("I/O Error in bestActor().",0,false);
+      log.logFatalError("I/O Error in acting().",0,false);
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
       ioe.printStackTrace();
       System.exit(1);
