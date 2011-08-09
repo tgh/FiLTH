@@ -1,22 +1,17 @@
 WHERE LEFT OFF
 ---------------
 - working on oscars...
-  - need to check and see if any actors were not found that should have been...
 
   - 1928-1930 nominations need reording of attributes:
     - best director: 1928-1930 swap recipient and movie title
     - cinematography: 1928-1929 swap recipient and movie title
     - screenplay: 1928-1929 swap recipient and movie title
 
-  - best picture, best documentary, and best foreign film can be done the same
-    way
-  - all acting categories can be done the same way
-  - all others can be done the same
-
   - oscarsOfCategory.csv
     - 1968 best actress has a tie which needs a value of 2, not 1
     - 1929 and 1930 screenplays are missing--need to add a line in
-      oscarGivenTo.sh to catch those nominations
+      oscarGivenTo.sh to catch those nominations.  However, those nominees do
+      not differentiate between original and adapted screenplays...
     
 
 

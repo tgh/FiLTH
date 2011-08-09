@@ -289,7 +289,7 @@ public class OscarParser implements GracefulShutdown {
     title = title.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
     //check for the movie in the cache (the hash map)
-    Integer Mid = movieMap.get(title);
+    Integer Mid = movieMap.get(title + " " + year);
     //movie was in cache
     if (Mid != null) {
       mid = Mid.intValue();
@@ -302,9 +302,10 @@ public class OscarParser implements GracefulShutdown {
 
     //movie was found
     if (mid != -1) {
-      //movie was not in cache, but found in database, so store this movie in cache (the hash map)
+      //movie was not in cache, but found in database, so store this movie 
+      // (title + year) in cache (the hash map)
       if (!inCache) {
-        movieMap.put(title, new Integer(mid));
+        movieMap.put(title + " " + year, new Integer(mid));
       }
       //get the status of the nomination
       status = Integer.parseInt(oscars.get(4));
@@ -346,6 +347,18 @@ public class OscarParser implements GracefulShutdown {
     if (title.equals("Give 'em Hell, Harry!")) {
       return "Give em Hell, Harry!";
     }
+    if (title.equals("Adalen '31")) {
+      return "Adalen 31";
+    }
+    if (title.contains("Les Choristes")) {
+      return "The Chorus";
+    }
+    if (title.contains("Goodbye, Children")) {
+      return "Au Revoir, Les Enfants";
+    }
+    if (title.contains("8-1/2")) {
+      return "8\u00BD";
+    } 
     return title;
   }
 
@@ -386,6 +399,7 @@ public class OscarParser implements GracefulShutdown {
    * communicating to the user (it's the title as seen in the csv file record).
    * @param year An integer for the year of the movie in order to nail down the
    * specific movie.
+   * @return The database's unique id of the movie if found, -1 otherwise.
    */
   private int queryForMovie(String formattedTitle, String realTitle, int year) {
     int mid = 0;
@@ -401,6 +415,13 @@ public class OscarParser implements GracefulShutdown {
       //  contains stop words, nothing is searched for, and thus is not
       //  found.
       if (realTitle.equals("Being There") || realTitle.equals("In & Out")) {
+        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
+      }
+      //special cases: full text search matches to wrong movie
+      // The odds of this happening is very low, but it has happened 3 times:
+      // the title matches to only one movie that just happens to be in the
+      // same year as the one being searched for.
+      else if (realTitle.equals("Water") || realTitle.equals("Evil") || realTitle.equals("On Any Sunday")) {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //query for the movie
@@ -565,7 +586,7 @@ public class OscarParser implements GracefulShutdown {
     int mid = -1;
 
     //first check the cache (hash map) for this movie
-    Integer Mid = movieMap.get(title);
+    Integer Mid = movieMap.get(title + " " + year);
     //the movie is in cache
     if (Mid != null) {
       mid = Mid.intValue();
