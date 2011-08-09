@@ -2,6 +2,26 @@ WHERE LEFT OFF
 ---------------
 - working on oscars...
 
+  - will need user interaction when movie/crew not in db:
+    Example:
+
+      "A Passage to India" not found. Title OK? y
+
+      Shirley MacLaine not found.  Name OK? y
+
+      "The Betrayal (Nerakhoon)" not found. Title OK? n
+        Enter new title: The Betrayal
+
+      Noriyuki 'Pat' Morita not found. Name OK? n
+        Enter new name: Pat Morita
+
+      "Mongol" from Kazakhstan not found. Title OK? y
+        Country OK? y
+
+      "Solomon and Gaenor" from United Kingdom not found. Title OK? y
+        Country OK? n
+        Enter country name: England
+
   - 1928-1930 nominations need reording of attributes:
     - best director: 1928-1930 swap recipient and movie title
     - cinematography: 1928-1929 swap recipient and movie title
