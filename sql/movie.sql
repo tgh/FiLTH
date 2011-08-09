@@ -539,7 +539,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Fantastic Mr. Fox', 2009, 8, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Far From Heaven', 2002, 5, 3, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Farewell, My Concubine', 1993, 4, 4, 5, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Fargo', 1996, 8, 4, 1, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Farm: Angola, USA', 1998, 4, 0, 1, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Farm: Angola, U.S.A.', 1998, 4, 0, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Fast, Cheap, and Out of Control', 1997, 6, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Fat Albert', 2004, 4, 2, 1, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Fatal Attraction', 1987, 6, 4, 1, NULL);
