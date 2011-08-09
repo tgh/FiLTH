@@ -2,6 +2,7 @@
 
 filth_sql_path=~/Projects/FiLTH/sql
 filth_temp_path=~/Projects/FiLTH/temp
+filth_path=~/Projects/FiLTH
 
 echo "Dropping filth database..."
 sleep 0.5
@@ -34,3 +35,7 @@ psql -U postgres -d filth -f $filth_sql_path/crew_person.sql > /dev/null 2>>$fil
 echo "Populating movie table..."
 sleep 0.5
 psql -U postgres -d filth -f $filth_sql_path/movie.sql > /dev/null 2>>$filth_temp_path/drop_filth_db_error.txt
+
+echo "Creating temp/previous_movie_ratings.txt..."
+sleep 0.5
+antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/previous_movie_ratings.txt
