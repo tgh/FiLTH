@@ -332,6 +332,28 @@ public class OscarParser implements GracefulShutdown {
    * seen them.  This method checks for those special (hard-coded) cases.
    */
   private String checkForSpecialCases(String title) {
+    //For some reason, when a title has a token that starts with an apostrophe,
+    // but does not end with one (e.g. "Give 'em Hell Harry!" and "Adalen '31",
+    // but not "Pete 'n' Tillie"), Postgres's full text search fails, or rather
+    // a SQL syntax error is given.  Adding another apostrophe to the end of
+    // the token fixes this (e.g. "Adalen '31" becomes "Adalen '31'").  Shrug.
+    if (title.contains(" '") && !title.contains("' ")) {
+      int i = title.indexOf(" '");
+      int len = title.length();
+      char[] chars = title.toCharArray();
+      //where does this token end?
+      for (i += 2; i < len && chars[i] != ' '; ++i) {
+        ;
+      }
+      //the token was the end of the title
+      if (i == len) {
+        return title + "'";
+      }
+      //token was not at the end of the title
+      String sub1 = title.substring(0,i);
+      String sub2 = "'" + title.substring(i, len);
+      return sub1 + sub2;
+    }
     if (title.equals("Good Fellas")) {
       return "GoodFellas";
     }
@@ -343,12 +365,6 @@ public class OscarParser implements GracefulShutdown {
     }
     if (title.equals("Sunset Blvd.")) {
       return "Sunset Boulevard";
-    }
-    if (title.equals("Give 'em Hell, Harry!")) {
-      return "Give em Hell, Harry!";
-    }
-    if (title.equals("Adalen '31")) {
-      return "Adalen 31";
     }
     if (title.contains("Les Choristes")) {
       return "The Chorus";
