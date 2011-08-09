@@ -3,8 +3,6 @@ WHERE LEFT OFF
 - working on oscars...
   - need to check and see if any actors were not found that should have been...
 
-  - should I add HashMaps for movies -> mids, crewpersons -> cids ?
-
   - 1928-1930 nominations need reording of attributes:
     - best director: 1928-1930 swap recipient and movie title
     - cinematography: 1928-1929 swap recipient and movie title

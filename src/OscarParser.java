@@ -2,6 +2,7 @@ import java.io.*;
 import tylerhayes.tools.*;
 import java.sql.*;
 import com.csvreader.*;
+import java.util.*;
 
 /**
  * This program is used in the scripts/oscarGivenTo.sh shell script to help
@@ -34,6 +35,11 @@ public class OscarParser implements GracefulShutdown {
   private static boolean noarg;
   //for querying the database
   private PostgreSQLConsole db = null;
+  //these maps are used as cache storage for mid's and cid's from the database
+  // The title used as keys in the move map are the cleaned titles used to
+  // query the db.
+  private HashMap<String, Integer> movieMap = null;
+  private HashMap<String, Integer> crewMap  = null;
 
   //--------------------------------------------------------------------------
 
@@ -110,6 +116,10 @@ public class OscarParser implements GracefulShutdown {
     //setup virtual SQL console with the db
     db = new PostgreSQLConsole(dbConn);
 
+    //init the hash maps
+    movieMap = new HashMap<String, Integer>();
+    crewMap  = new HashMap<String, Integer>();
+
     log.logHeader("START");
 
     //parse the csv file
@@ -139,6 +149,8 @@ public class OscarParser implements GracefulShutdown {
           mid = queryForMovie(title, oscars.get(2), year);
           //movie was found in database
           if (mid != -1) {
+            //store this mid into the movie hash map
+            movieMap.put(title, new Integer(mid));
             //get the status of the nomination
             status = Integer.parseInt(oscars.get(4));
             //log the find
@@ -517,8 +529,18 @@ public class OscarParser implements GracefulShutdown {
    * used for error output.
    */
   private void actingHelper(String title, String realTitle, int year, int oid,  String category) {
-    //get the movie id for the given movie title
-    int mid = queryForMovie(title, realTitle, year);
+    int mid = -1;
+
+    //first check the cache (hash map) for this movie
+    Integer Mid = movieMap.get(title);
+    //the movie is in cache
+    if (Mid != null) {
+      mid = Mid.intValue();
+    }
+    //movie is NOT in cache, so query for the movie id from the database
+    else {
+      mid = queryForMovie(title, realTitle, year);
+    }
 
     try {
       //movie was found in database
