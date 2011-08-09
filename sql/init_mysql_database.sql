@@ -32,15 +32,21 @@ star_rating tinyint DEFAULT NULL,
 -- constraints section at the end of this file).  smallint to save space--front-
 -- end can translate the number to the MPAA rating as a string.
 mpaa tinyint DEFAULT NULL,
--- country of origin. This is a foreign key to country table, and it's a
--- tinyint because there's not that many countries. I only care about a movie
--- being associated with one country, so there is no country <--> movie
--- relationship, but in case I wanted to have multiple countries per movie, this
--- is a foreign key into a separate country table.
-country tinyint DEFAULT NULL,
+-- country of origin. I only care about a movie being associated with one
+-- country, so there is no country <--> movie relationship.  In order to prevent
+-- inserting spelling errors and bogus countries (e.g. france instead of France,
+-- or Sweden instead of Sewden), there will be a foreign key constraint on this
+-- column referencing the country table.
+country varchar(35) DEFAULT NULL,
 -- text field for comments/notes regarding the movie (MySQL does not allow a
 -- default value for TEXT type
 comments text);
+
+
+-- a country entity (only used as an integrity constraint for movie.country)
+DROP TABLE IF EXISTS filth.country CASCADE;
+CREATE TABLE filth.country (
+country_name varchar(35) NOT NULL);
 
 
 -- a crewperson entity
@@ -132,6 +138,7 @@ scene_title text);
 -- --------------------------
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
+ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
 ALTER TABLE filth.genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
@@ -147,6 +154,11 @@ ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tylergiven_pkey PRIMARY KEY(mid,
 -- --------------------------
 -- Foreign Key constraints --
 -- --------------------------
+
+-- movie table country FK
+ALTER TABLE filth.movie ADD CONSTRAINT movie_country_fkey
+FOREIGN KEY (country) REFERENCES filth.country(country_name)
+ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- worked_on table movie FK
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_mid_fkey
@@ -242,48 +254,6 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
-
--- movie country
-ALTER TABLE movie ADD CONSTRAINT country_constraint
-CHECK (country >= 1 AND country <= 38);
---  1 = USA
---  2 = France
---  3 = England
---  4 = Canada
---  5 = China
---  6 = Russia
---  7 = Germany
---  8 = Argentina
---  9 = Portugal
--- 10 = Spain
--- 11 = Mexico
--- 12 = Italy
--- 13 = Ireland
--- 14 = Scotland
--- 15 = Czech Republic
--- 16 = Iran
--- 17 = The Netherlands
--- 18 = Sweden
--- 19 = Finland
--- 20 = Norway
--- 21 = Poland
--- 22 = Bosnia
--- 23 = Japan
--- 24 = Taiwan
--- 25 = India
--- 26 = Greece
--- 27 = Israel
--- 28 = Lebanon
--- 29 = South Africa
--- 30 = Australia
--- 31 = New Zealand
--- 32 = Brazil
--- 33 = Iceland
--- 34 = Vietnam
--- 35 = Denmark
--- 36 = Belgium
--- 37 = Switzerland
--- 38 = Austria
 
 -- listcontains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint

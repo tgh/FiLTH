@@ -25,15 +25,20 @@ star_rating smallint DEFAULT NULL,
 -- constraints section at the end of this file).  smallint to save space--front-
 -- end can translate the number to the MPAA rating as a string.
 mpaa smallint DEFAULT NULL,
--- country of origin. This is a foreign key to country table, and it's a
--- smallint because there's not that many countries. Even one byte would suffice
--- but Postgres does not have a tinyint type. I only care about a movie being
--- associated with one country, so there is no country <--> movie relationship,
--- but in case I wanted to have multiple countries per movie, this is a foreign
--- key into a separate country table.
-country smallint DEFAULT NULL,
+-- country of origin. I only care about a movie being associated with one
+-- country, so there is no country <--> movie relationship.  In order to prevent
+-- inserting spelling errors and bogus countries (e.g. france instead of France,
+-- or Sweden instead of Sewden), there will be a foreign key constraint on this
+-- column referencing the country table.
+country text DEFAULT NULL,
 -- text field for comments/notes regarding the movie
 comments text DEFAULT NULL);
+
+
+-- a country entity (only used as an integrity constraint for movie.country)
+DROP TABLE IF EXISTS country CASCADE;
+CREATE TABLE country (
+country_name text NOT NULL);
 
 
 -- a crewperson entity
@@ -125,6 +130,7 @@ scene_title text DEFAULT NULL);
 -- --------------------------
 
 ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
+ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
 ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
@@ -140,6 +146,11 @@ ALTER TABLE tyler_given_to ADD CONSTRAINT tylergiven_pkey PRIMARY KEY(mid, tid);
 -- --------------------------
 -- Foreign Key constraints --
 -- --------------------------
+
+-- movie table country FK
+ALTER TABLE movie ADD CONSTRAINT movie_country_fkey
+FOREIGN KEY (country) REFERENCES country(country_name)
+ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- worked_on table movie FK
 ALTER TABLE worked_on ADD CONSTRAINT worked_mid_fkey
@@ -208,7 +219,7 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- movie year
 ALTER TABLE movie ADD CONSTRAINT year_constraint
-CHECK (year >= 1900 AND year <= 2012);
+CHECK (year >= 1900 AND year <= 2014);
 
 -- movie star rating
 ALTER TABLE movie ADD CONSTRAINT star_constraint
@@ -235,48 +246,6 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
-
--- movie country
-ALTER TABLE movie ADD CONSTRAINT country_constraint
-CHECK (country >= 1 AND country <= 38);
---  1 = USA
---  2 = France
---  3 = England
---  4 = Canada
---  5 = China
---  6 = Russia
---  7 = Germany
---  8 = Argentina
---  9 = Portugal
--- 10 = Spain
--- 11 = Mexico
--- 12 = Italy
--- 13 = Ireland
--- 14 = Scotland
--- 15 = Czech Republic
--- 16 = Iran
--- 17 = The Netherlands
--- 18 = Sweden
--- 19 = Finland
--- 20 = Norway
--- 21 = Poland
--- 22 = Bosnia
--- 23 = Japan
--- 24 = Taiwan
--- 25 = India
--- 26 = Greece
--- 27 = Israel
--- 28 = Lebanon
--- 29 = South Africa
--- 30 = Australia
--- 31 = New Zealand
--- 32 = Brazil
--- 33 = Iceland
--- 34 = Vietnam
--- 35 = Denmark
--- 36 = Belgium
--- 37 = Switzerland
--- 38 = Austria
 
 -- listcontains rank
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
