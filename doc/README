@@ -372,7 +372,7 @@ Files
     would be a pain to have to type that huge command everytime, so that's what
     this is basically.  Once the OscarParser program is deemed complete, this
     script will probably be deleted, because the /scripts/oscarGivenTo.sh shell
-    script runs OscarParser (but that line is  ommented out at the moment, so
+    script runs OscarParser (but that line is commented out at the moment, so
     while OscarParser is being written, I have been runing cop.sh,
     oscarGivenTo.sh, then runop.sh.
 
@@ -380,6 +380,15 @@ Files
 
     This shell script simply copies the current version of tylerhayes.tools.jar
     found in its project directory and overwrites /jar/tylerhayes.tools.jar.
+
+  update_movie_table.sh
+
+    This shell script recreates the entire /sql/movie.sql file (unlike
+    /scripts/movie.sh, which attempts to only append movie additions to
+    /data/Movie_Ratings.doc), and updates the movie table in the databse as
+    well by removing every tuple in the table, reseting the mid primary key
+    sequence to 0, and executing all of the sql insert statements in
+    /sql/movie.sql. 
 
 /sql (.sql files)
 
