@@ -29,7 +29,7 @@ psql -U postgres -d test -f $filth_sql_path/tyler.sql > /dev/null 2>>$filth_temp
 
 echo "Populating crewperson table..."
 sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/crewperson.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+psql -U postgres -d test -f $filth_sql_path/crew_person.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
 
 echo "Populating movie table..."
 sleep 0.5

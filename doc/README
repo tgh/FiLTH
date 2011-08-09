@@ -44,12 +44,12 @@ Files
 
   nameFormatter
 
-    Takes a text file containing a list of names (such as /data/crewperson.txt)
+    Takes a text file containing a list of names (such as /data/crew_person.txt)
     and outputs those names in a (lastname, firstname) format.  Takes the name
-    of the file to parse (/data/crewperson.txt) as its only argument.  Used in
-    /scripts/crewperson.sh which redirects the output to a temp file (in /temp),
-    which is then used as an argument to /scripts/crew2sql.py.  Compiled from
-    /src/nameFormatter.hs Haskell source file.
+    of the file to parse (/data/crew_person.txt) as its only argument.  Used in
+    /scripts/crew_person.sh which redirects the output to a temp file (in
+    /temp), which is then used as an argument to /scripts/crew2sql.py.  Compiled
+    from /src/nameFormatter.hs Haskell source file.
 
   oscar2sql
 
@@ -78,7 +78,7 @@ Files
     (as of now, 6/1/11, it has not been used) to help populate the worked_on
     table of the database.
 
-  crewperson.txt
+  crew_person.txt
 
     A list of as many actors, directors, cinematographers, and writers as I
     could think of that I care about or think I would need in some way.  This
@@ -255,12 +255,12 @@ Files
     Python script that produces sql insert statements to populate the
     crew_person table of the database given a specifically formatted text file
     of names in the film industry.  This script is not used directly--it is used
-    in the /scripts/crewperson.sh shell script (see below).
+    in the /scripts/crew_person.sh shell script (see below).
 
-  crewperson.sh
+  crew_person.sh
 
     Shell script to populate the crew_person table of the database.  It first
-    executes /bin/nameFormatter to format the names in /data/crewperson.txt and
+    executes /bin/nameFormatter to format the names in /data/crew_person.txt and
     then feeds the output of nameFormatter to the /scripts/crew2sql.py Python
     script to produce the sql insert statements.  That output is then redirected
     to /sql/crew_person.sql.
