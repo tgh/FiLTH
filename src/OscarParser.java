@@ -138,62 +138,36 @@ public class OscarParser implements GracefulShutdown {
         log.logData("RECORD: " + year + ", " + category + ", " + oscars.get(2)
                     + ", " + oscars.get(3) + ", " + oscars.get(4), 0, false);
 
+        //write the appropriate sql insert statement for this nomination based on the category:
+
         /*---------- BEST PICTURE (oid = 1) ---------------------------------*/
 
         if (category.equals("Best Picture")) {
-          //clean up the title
-          title = checkForSpecialCases(oscars.get(2));
-          title = title.toLowerCase().replace("'","''");
-          title = title.replace(" & "," ").replace(" ","&").replace("!","");
-          //get the corresponding movie id from the database (if there)
-          mid = queryForMovie(title, oscars.get(2), year);
-          //movie was found in database
-          if (mid != -1) {
-            //store this mid into the movie hash map
-            movieMap.put(title, new Integer(mid));
-            //get the status of the nomination
-            status = Integer.parseInt(oscars.get(4));
-            //log the find
-            log.logData("mid = " + mid, 1, false);
-            //write the appropriate SQL insert statement for this nomination
-            try {
-              bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", 1, DEFAULT, " + status + ");");
-              bw.newLine();
-            }
-            catch (IOException ioe) {
-              log.logFatalError("Writing insert statement for best picture.",0,false);
-              ioe.printStackTrace();
-              System.exit(1); 
-            }
-          }
+          nonCrewCategory(year, 1, category);
         }
 
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
-          //write the appropriate sql insert statement for this nomination
-          acting(year, 2, "Best Actor");
+          acting(year, 2, category);
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
 
         if (category.equals("Best Actress")) {
-          //write the appropriate sql insert statement for this nomination
-          acting(year, 3, "Best Actress");
+          acting(year, 3, category);
         }
 
         /*---------- BEST SUPPORTING ACTOR (oid = 4) ------------------------*/
 
         if (category.equals("Best Supporting Actor")) {
-          //write the appropriate sql insert statement for this nomination
-          acting(year, 4, "Best Supporting Actor");
+          acting(year, 4, category);
         }
 
         /*---------- BEST SUPPORTING ACTRESS (oid = 5) ----------------------*/
 
         if (category.equals("Best Supporting Actress")) {
-          //write the appropriate sql insert statement for this nomination
-          acting(year, 5, "Best Supporting Actress");
+          acting(year, 5, category);
         }
 
         /*---------- BEST DIRECTOR (oid = 6) --------------------------------*/
@@ -229,11 +203,13 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST FOREIGN LANGUAGE FILM (oid = 12) ------------------*/
 
         if (category.equals("Best Foreign Language Film")) {
+          nonCrewCategory(year, 12, category);
         }
 
         /*---------- BEST DOCUMENTARY (oid = 13) ----------------------------*/
 
         if (category.equals("Best Documentary")) {
+          nonCrewCategory(year, 13, category);
         }
       }
     }
@@ -288,6 +264,63 @@ public class OscarParser implements GracefulShutdown {
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
     sqle.printStackTrace();
     System.exit(1);
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Handles creating and writing the appropriate SQL insert statments for
+   * Oscar categories that do not have a crew person recipient. (e.g. Best
+   * Picture, Best Foreign Language Film, Best Documentary).
+   *
+   * @param year An integer for the year of the nomination.
+   * @param oid The oscar id of the category.
+   * @param category The string of the category.
+   * @throws IOException
+   */
+  private void nonCrewCategory(int year, int oid, String category) throws IOException {
+    String title    = null;
+    int mid         = -1;
+    int status      = -1;
+    boolean inCache = false;
+
+    //clean up the title
+    title = checkForSpecialCases(oscars.get(2));
+    title = title.toLowerCase().replace("'","''");
+    title = title.replace(" & "," ").replace(" ","&").replace("!","");
+    //check for the movie in the cache (the hash map)
+    Integer Mid = movieMap.get(title);
+    //movie was in cache
+    if (Mid != null) {
+      mid = Mid.intValue();
+      inCache = true;
+    }
+    //movie not in cache, so query for it in the database
+    else {
+      mid = queryForMovie(title, oscars.get(2), year);
+    }
+
+    //movie was found
+    if (mid != -1) {
+      //movie was not in cache, but found in database, so store this movie in cache (the hash map)
+      if (!inCache) {
+        movieMap.put(title, new Integer(mid));
+      }
+      //get the status of the nomination
+      status = Integer.parseInt(oscars.get(4));
+      //log the find
+      log.logData("mid = " + mid, 1, false);
+      //write the appropriate SQL insert statement for this nomination
+      try {
+        bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+        bw.newLine();
+      }
+      catch (IOException ioe) {
+        log.logFatalError("Writing insert statement for " + category + ".",0,false);
+        ioe.printStackTrace();
+        System.exit(1); 
+      }
+    }
   }
 
   //--------------------------------------------------------------------------
