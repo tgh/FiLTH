@@ -15,6 +15,10 @@ echo "Creating database schema..."
 sleep 0.5
 psql -U postgres -d test -f $filth_sql_path/init_pg_database.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
 
+echo "Populating country table..."
+sleep 0.5
+psql -U postgres -d test -f $filth_sql_path/country.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+
 echo "Populating genre table..."
 sleep 0.5
 psql -U postgres -d test -f $filth_sql_path/genre.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt

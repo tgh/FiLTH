@@ -46,18 +46,24 @@ def LaTeXFormat(line):
     return
 
   #chop off the country of origin of the movie:
-  # country is two words
-  if string.find(lineText, 'The Netherlands') != -1 or\
-     string.find(lineText, 'Czech R') != -1 or\
-     string.find(lineText, 'South Africa') != -1 or\
-     string.find(lineText, 'New Zealand') != -1:
-    words = string.split(lineText)[:-3]
-  # no country
-  elif lineText[-1] == ']':
-    words = string.split(lineText)[:-1]
-  # country of one word (e.g. "USA", or "France")
-  else:
+
+  #get the index of the ']' of the mpaa rating
+  idx = line.rfind(']')
+  #find out the length of the country in words (e.g. The Netherlands = 2)
+  countryWordCount = line.count(' ', idx, -1)
+  # country is one word (e.g. "USA", "France", etc.)
+  if countryWordCount == 1:
     words = string.split(lineText)[:-2]
+  # no country
+  elif countryWordCount == 0:
+    words = string.split(lineText)[:-1]
+  # country is two words
+  elif countryWordCount == 2:
+    words = string.split(lineText)[:-3]
+  # country is 3 words (e.g. "The Palestinian Territories")
+  elif countryWordCount == 3:
+    words = string.split(lineText)[:-4]
+
 
   #combine the words back into a big string
   lineText = string.join(words)

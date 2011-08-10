@@ -59,46 +59,6 @@ sed -i "s/\[R\]/\[4\]/g" $filth_temp_path/temp
 sed -i "s/\[X\]/\[5\]/g" $filth_temp_path/temp
 sed -i "s/\[NC\-17\]/\[6\]/g" $filth_temp_path/temp
 
-# replace country of origin with corresponding integer
-sed -i "s/USA$/1/g" $filth_temp_path/temp
-sed -i "s/France$/2/g" $filth_temp_path/temp
-sed -i "s/England$/3/g" $filth_temp_path/temp
-sed -i "s/Canada$/4/g" $filth_temp_path/temp
-sed -i "s/China$/5/g" $filth_temp_path/temp
-sed -i "s/Russia$/6/g" $filth_temp_path/temp
-sed -i "s/Germany$/7/g" $filth_temp_path/temp
-sed -i "s/Argentina$/8/g" $filth_temp_path/temp
-sed -i "s/Portugal$/9/g" $filth_temp_path/temp
-sed -i "s/Spain$/10/g" $filth_temp_path/temp
-sed -i "s/Mexico$/11/g" $filth_temp_path/temp
-sed -i "s/Italy$/12/g" $filth_temp_path/temp
-sed -i "s/Ireland$/13/g" $filth_temp_path/temp
-sed -i "s/Scotland$/14/g" $filth_temp_path/temp
-sed -i "s/Czech Republic$/15/g" $filth_temp_path/temp
-sed -i "s/Iran$/16/g" $filth_temp_path/temp
-sed -i "s/The Netherlands$/17/g" $filth_temp_path/temp
-sed -i "s/Sweden$/18/g" $filth_temp_path/temp
-sed -i "s/Finland$/19/g" $filth_temp_path/temp
-sed -i "s/Norway$/20/g" $filth_temp_path/temp
-sed -i "s/Poland$/21/g" $filth_temp_path/temp
-sed -i "s/Bosnia$/22/g" $filth_temp_path/temp
-sed -i "s/Japan$/23/g" $filth_temp_path/temp
-sed -i "s/Taiwan$/24/g" $filth_temp_path/temp
-sed -i "s/India$/25/g" $filth_temp_path/temp
-sed -i "s/Greece$/26/g" $filth_temp_path/temp
-sed -i "s/Israel$/27/g" $filth_temp_path/temp
-sed -i "s/Lebanon$/28/g" $filth_temp_path/temp
-sed -i "s/South Africa$/29/g" $filth_temp_path/temp
-sed -i "s/Australia$/30/g" $filth_temp_path/temp
-sed -i "s/New Zealand$/31/g" $filth_temp_path/temp
-sed -i "s/Brazil$/32/g" $filth_temp_path/temp
-sed -i "s/Iceland$/33/g" $filth_temp_path/temp
-sed -i "s/Vietnam$/34/g" $filth_temp_path/temp
-sed -i "s/Denmark$/35/g" $filth_temp_path/temp
-sed -i "s/Belgium$/36/g" $filth_temp_path/temp
-sed -i "s/Switzerland/37/g" $filth_temp_path/temp
-sed -i "s/Austria/38/g" $filth_temp_path/temp
-
 # remove the alphabetical headers
 sed "/^[A-Z]$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # remove the blank lines

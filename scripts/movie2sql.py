@@ -69,7 +69,18 @@ if __name__ == '__main__':
       country = "DEFAULT"
     #this movie does have a country associated with it
     else:
-      title, year, stars, mpaa, country = line.rsplit(None, 4)
+      #get the index of the ']' of the mpaa rating
+      idx = line.rfind(']')
+      #find out the length of the country in words (e.g. The Netherlands = 2)
+      countryWordCount = line.count(' ', idx, -1)
+      #create a list of strings where the tail represents the country
+      countryTemp = line.rsplit(None, countryWordCount)
+      #join the tail into its own string--this is the country
+      country = string.join(countryTemp[-countryWordCount:]
+      #strip off the country from the original line now that we have the country
+      temp = string.join(countryTemp[:-countryWordCount])
+      #split the rest
+      title, year, stars, mpaa = temp.rsplit(None, 3)
     #format the title
     title = FormatTitle(title)
     #remove the parens around the year
