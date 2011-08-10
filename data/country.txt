@@ -12,9 +12,9 @@ Mexico
 Italy
 Ireland
 Scotland
-CzechRepublic
+Czech Republic
 Iran
-TheNetherlands
+The Netherlands
 Sweden
 Finland
 Norway
@@ -26,9 +26,9 @@ India
 Greece
 Israel
 Lebanon
-SouthAfrica
+South Africa
 Australia
-NewZealand
+New Zealand
 Brazil
 Iceland
 Vietnam
