@@ -282,31 +282,16 @@ public class OscarParser implements GracefulShutdown {
     String title    = null;
     int mid         = -1;
     int status      = -1;
-    boolean inCache = false;
 
     //clean up the title
     title = checkForSpecialCases(oscars.get(2));
     title = title.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
-    //check for the movie in the cache (the hash map)
-    Integer Mid = movieMap.get(title + " " + year);
-    //movie was in cache
-    if (Mid != null) {
-      mid = Mid.intValue();
-      inCache = true;
-    }
-    //movie not in cache, so query for it in the database
-    else {
-      mid = queryForMovie(title, oscars.get(2), year);
-    }
+    //query for movie id
+    mid = queryForMovie(title, oscars.get(2), year);
 
     //movie was found
     if (mid != -1) {
-      //movie was not in cache, but found in database, so store this movie 
-      // (title + year) in cache (the hash map)
-      if (!inCache) {
-        movieMap.put(title + " " + year, new Integer(mid));
-      }
       //get the status of the nomination
       status = Integer.parseInt(oscars.get(4));
       //log the find
@@ -418,11 +403,16 @@ public class OscarParser implements GracefulShutdown {
    * @return The database's unique id of the movie if found, -1 otherwise.
    */
   private int queryForMovie(String formattedTitle, String realTitle, int year) {
-    int mid = 0;
-    int status = 0;
-    String response = null;
-    ResultSet qResult = null;
+    //first, see if the movie is in cache (hash map)
+    Integer Mid = movieMap.get(formattedTitle + " " + year);
+    //movie was in cache, no need to query database
+    if (Mid != null) {
+      return Mid.intValue();
+    }
 
+    //movie was not in cache, need to query database
+    ResultSet qResult = null;
+    int mid = -1;
     try {
       //special case: title containing only stop words
       //  For example, "Being There":
@@ -452,28 +442,32 @@ public class OscarParser implements GracefulShutdown {
         /* single movie found */
         if (!qResult.next()) {
           qResult.previous();
-          return qResult.getInt(1);
+          mid = qResult.getInt(1);
         }
-
         /* multiple movies matched title */
-        //show the title of the movie of the current csv row
-        System.out.println("This movie has multiple matches: " + realTitle);
-        //go back to the beginning of the query results
-        qResult.previous();
-        //loop through the query results
-        while (true) {
-          //ask user if this is the right movie
-          System.out.print("  - " + qResult.getString(2) + " ? ");
-          //get user's response
-          response = br.readLine();
-          //this one matches the movie in the csv file
-          if (response.toLowerCase().equals("y")) {
-            return qResult.getInt(1);
-          }
-          //no more matches
-          if (!qResult.next()) {
-            log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
-            break;
+        else {
+          String response = null; //for user's input
+
+          //show the title of the movie of the current csv row
+          System.out.println("This movie has multiple matches: " + realTitle);
+          //go back to the beginning of the query results
+          qResult.previous();
+          //loop through the query results
+          while (true) {
+            //ask user if this is the right movie
+            System.out.print("  - " + qResult.getString(2) + " ? ");
+            //get user's response
+            response = br.readLine();
+            //this one matches the movie in the csv file
+            if (response.toLowerCase().equals("y")) {
+              mid = qResult.getInt(1);
+              break;
+            }
+            //no more matches
+            if (!qResult.next()) {
+              log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+              break;
+            }
           }
         }
       }
@@ -481,6 +475,13 @@ public class OscarParser implements GracefulShutdown {
       else {
         log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
       }
+
+      //movie found, and to cache (hash map)
+      if (mid != -1) {
+        movieMap.put(formattedTitle + " " + year, new Integer(mid));
+      }
+
+      return mid;
     }
     catch (SQLException sqle) {
       handleSQLException("SQLException caught in queryForMovie().",sqle);
@@ -491,7 +492,7 @@ public class OscarParser implements GracefulShutdown {
       System.exit(1);
     }
 
-    //no match for the movie
+    //unreachable code--shut up compiler
     return -1;
   }
 
@@ -499,20 +500,35 @@ public class OscarParser implements GracefulShutdown {
 
   /**
    * Query the database for the crew person id of the given person name.
+   *
+   * @param names The moninee's name but split into an array of Strings.
+   * @param name The nominee's name as a single String with spaces.  This one
+   * is used to check (and insert into) the crewMap HashMap.
+   * @return The cid of the nominee (the crew_person unique id), or -1 if not
+   * found.
    */
-  private int queryForCrewperson(String[] names) {
+  private int queryForCrewperson(String[] names, String name) {
     String lname = null;
     String fname = null;
     String mname = null;
     ResultSet qResult = null;
 
+    //first see if the name is in cache (the hash map)
+    Integer Cid = crewMap.get(name);
+    //this nominee is in cache, no need to query database
+    if (Cid != null) {
+      return Cid.intValue();
+    }
+
+    //nominee crew id was not in cache, must query database
+    int cid = -1;
     try {
       switch(names.length) {
         //e.g. Cher, Madonna, etc.
         case 1: lname = names[0];
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname + "' AND f_name is NULL;");
                 if (qResult.next()) {
-                  return qResult.getInt(1);
+                  cid = qResult.getInt(1);
                 }
                 break;
         //standard first name, last name
@@ -521,7 +537,7 @@ public class OscarParser implements GracefulShutdown {
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
                                     + "' AND f_name = '" + fname + "';");
                 if (qResult.next()) {
-                  return qResult.getInt(1);
+                  cid = qResult.getInt(1);
                 }
                 break;
         //e.g. Phillip Seymour Hoffman, Samuel L. Jackson, etc.
@@ -531,7 +547,7 @@ public class OscarParser implements GracefulShutdown {
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
                                     + "' AND f_name = '" + fname + "' AND m_name = '" + mname + "';");
                 if (qResult.next()) {
-                  return qResult.getInt(1);
+                  cid = qResult.getInt(1);
                 }
                 break;
         default: log.logWarning("Recipient name is not 1, 2, or 3 names in length.", 1, false);
@@ -542,9 +558,17 @@ public class OscarParser implements GracefulShutdown {
       handleSQLException("SQLException caught in queryForCrewperson().", sqle);
     }
 
+    //nominee was found
+    if (cid != -1) {
+      //add this nominee to the cache (hash map)
+      crewMap.put(name, new Integer(cid));
+    }
     //recipient name was not found or was empty or more than 3 names long
-    log.logGeneralMessageWithoutIndicator("-- Crewperson not found.", 1, false);
-    return -1;
+    else {
+      log.logGeneralMessageWithoutIndicator("-- Crewperson not found.", 1, false);
+    }
+
+    return cid;
   }
 
   //--------------------------------------------------------------------------
@@ -599,18 +623,8 @@ public class OscarParser implements GracefulShutdown {
    * used for error output.
    */
   private void actingHelper(String title, String realTitle, int year, int oid,  String category) {
-    int mid = -1;
-
-    //first check the cache (hash map) for this movie
-    Integer Mid = movieMap.get(title + " " + year);
-    //the movie is in cache
-    if (Mid != null) {
-      mid = Mid.intValue();
-    }
-    //movie is NOT in cache, so query for the movie id from the database
-    else {
-      mid = queryForMovie(title, realTitle, year);
-    }
+    //query for movie id
+    int mid = queryForMovie(title, realTitle, year);
 
     try {
       //movie was found in database
@@ -622,7 +636,7 @@ public class OscarParser implements GracefulShutdown {
           name = checkForNameSpecialCases(name);
         }
         //get the crew person id for this actor from the database
-        int cid = queryForCrewperson(name);
+        int cid = queryForCrewperson(name, oscars.get(2));
         //actor was found in the database
         if (cid != -1) {
           //get the status of the nomination
