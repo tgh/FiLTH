@@ -407,6 +407,7 @@ public class OscarParser implements GracefulShutdown {
     Integer Mid = movieMap.get(formattedTitle + " " + year);
     //movie was in cache, no need to query database
     if (Mid != null) {
+      log.logGeneralMessage("mid cache hit", 1, false);
       return Mid.intValue();
     }
 
@@ -517,6 +518,7 @@ public class OscarParser implements GracefulShutdown {
     Integer Cid = crewMap.get(name);
     //this nominee is in cache, no need to query database
     if (Cid != null) {
+      log.logGeneralMessage("cid cache hit", 1, false);
       return Cid.intValue();
     }
 
