@@ -11,3 +11,4 @@ INSERT INTO oscar VALUES (DEFAULT, 'Best Adapted Screenplay');
 INSERT INTO oscar VALUES (DEFAULT, 'Best Original Screenplay');
 INSERT INTO oscar VALUES (DEFAULT, 'Best Foreign Language Film');
 INSERT INTO oscar VALUES (DEFAULT, 'Best Documentary');
+INSERT INTO oscar VALUES (DEFAULT, 'Best Screenplay');
