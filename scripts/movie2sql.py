@@ -76,11 +76,20 @@ if __name__ == '__main__':
       #create a list of strings where the tail represents the country
       countryTemp = line.rsplit(None, countryWordCount)
       #join the tail into its own string--this is the country
-      country = string.join(countryTemp[-countryWordCount:]
+      country = string.join(countryTemp[-countryWordCount:])
+      #add single quotes to the beginning and end of the country
+      country = string.join(["'",country,"'"], "")
       #strip off the country from the original line now that we have the country
       temp = string.join(countryTemp[:-countryWordCount])
       #split the rest
-      title, year, stars, mpaa = temp.rsplit(None, 3)
+      try:
+        title, year, stars, mpaa = temp.rsplit(None, 3)
+      #oops, there's probably an extra space somewhere in Movie_Raings.doc
+      except ValueError:
+        sys.stderr.write('Error with "')
+        sys.stderr.write(line)
+        sys.stderr.write('"\n')
+        sys.exit()
     #format the title
     title = FormatTitle(title)
     #remove the parens around the year
