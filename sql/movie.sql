@@ -206,7 +206,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Bill Cunningham New York', 2011, 7, 0, 'USA'
 INSERT INTO movie VALUES (DEFAULT, 'Billy Madison', 1995, 4, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Birds', 1963, 8, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Birth of a Nation', 1915, 4, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Black Hawk Down', 2002, 5, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Black Hawk Down', 2001, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Black Swan', 2010, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blade Runner', 1982, 4, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blades of Glory', 2007, 5, 3, 'USA', NULL);
@@ -220,7 +220,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Bloody Sunday', 2002, 7, 4, 'England', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'Blow', 2001, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blow Out', 1981, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blown Away', 1994, 6, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Blowup', 1966, 8, 0, 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Blow-Up', 1966, 8, 0, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blue', 1994, 5, 4, 'Poland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Blue Kite', 1994, 5, 0, 'China', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blue Velvet', 1986, 3, 4, 'USA', NULL);
@@ -1118,7 +1118,7 @@ INSERT INTO movie VALUES (DEFAULT, 'My Father''s Glory', 1991, 7, 1, 'France', N
 INSERT INTO movie VALUES (DEFAULT, 'My Girl', 1991, 6, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Left Foot', 1989, 8, 4, 'Ireland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life', 1993, 6, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1985, 8, 0, 'Sweden', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, 8, 0, 'Sweden', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life So Far', 1999, 7, 3, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Mother''s Castle', 1991, 7, 2, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Name is Joe', 1999, 6, 4, 'England', NULL);
