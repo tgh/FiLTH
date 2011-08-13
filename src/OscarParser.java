@@ -173,6 +173,7 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST DIRECTOR (oid = 6) --------------------------------*/
 
         if (category.equals("Best Director")) {
+          director(year, 6);
         }
 
         /*---------- BEST CINEMATOGRAPHY (oid = 7) --------------------------*/
@@ -210,6 +211,13 @@ public class OscarParser implements GracefulShutdown {
 
         if (category.equals("Best Documentary")) {
           nonCrewCategory(year, 13, category);
+        }
+
+        /*---------- BEST SCREENPLAY (oid = 14) -----------------------------*/
+
+        //1929 and 1930 had "WRITING" as a category--did not distinguish
+        // between original or adapted screenplays
+        if (category.equals("Best Screenplay")) {
         }
       }
     }
@@ -360,6 +368,9 @@ public class OscarParser implements GracefulShutdown {
     if (title.contains("8-1/2")) {
       return "8\u00BD";
     } 
+    if (title.contains("Mulholland D")) {
+      return "Mulholland Dr.";
+    }
     return title;
   }
 
@@ -381,10 +392,27 @@ public class OscarParser implements GracefulShutdown {
       String[] n = {name[0],name[1] + " Jr."};
       return n;
     }
+    //Gus Van Sant
+    if (name[1].equals("Van")) {
+      String[] n = {"Gus","Van Sant"};
+      return n;
+    }
     //Noriyuki 'Pat' Morita
     if (name[1].equals("'Pat'")) {
       String[] n = {"Pat","Morita"};
       return n;
+    }
+    //the Coen brothers
+    for (String nm : name) {
+      //the only other Coen besides the Coen bothers in the relevant oscar
+      // nominations is Franklin Coen
+      if (nm.equals("Franklin")) {
+        break;
+      }
+      if (nm.equals("Coen")) {
+        String[] n = {"Joel and Ethan","Coen"};
+        return n;
+      }
     }
     return name;
   }
@@ -407,7 +435,6 @@ public class OscarParser implements GracefulShutdown {
     Integer Mid = movieMap.get(formattedTitle + " " + year);
     //movie was in cache, no need to query database
     if (Mid != null) {
-      log.logGeneralMessage("mid cache hit", 1, false);
       return Mid.intValue();
     }
 
@@ -518,7 +545,6 @@ public class OscarParser implements GracefulShutdown {
     Integer Cid = crewMap.get(name);
     //this nominee is in cache, no need to query database
     if (Cid != null) {
-      log.logGeneralMessage("cid cache hit", 1, false);
       return Cid.intValue();
     }
 
@@ -567,7 +593,7 @@ public class OscarParser implements GracefulShutdown {
     }
     //recipient name was not found or was empty or more than 3 names long
     else {
-      log.logGeneralMessageWithoutIndicator("-- Crewperson not found.", 1, false);
+      log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
     }
 
     return cid;
@@ -660,10 +686,165 @@ public class OscarParser implements GracefulShutdown {
       }
     }
     catch (IOException ioe) {
-      log.logFatalError("I/O Error in acting().",0,false);
+      log.logFatalError("I/O Error in actingHelper().",0,false);
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
       ioe.printStackTrace();
       System.exit(1);
     }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Handles Best Director category nominations.
+   *
+   * @param year The year of the movie.
+   * @param oid The unique oscar category id.
+   * @throws IOException
+   */
+  private void director(int year, int oid) throws IOException {
+    int titleIndex = -1;
+    int dirIndex   = -1;
+    
+    if (year < 1931) {
+      titleIndex = 3;
+      dirIndex   = 2;
+    }
+    else {
+      titleIndex = 2;
+      dirIndex   = 3;
+    }
+    //get the title as defined in the record
+    String title = oscars.get(titleIndex);
+    //this director is nominated for two movies within the same nomination
+    int idx = title.indexOf("; and ");
+    int endIdx = title.length();
+    if (idx != -1) {
+      endIdx = title.indexOf(";");
+      //extract the second movie title
+      String uncleanedSecondTitle = title.substring(idx+6, title.length());
+      //clean the second movie title
+      String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
+      secondTitle = secondTitle.toLowerCase().replace("'","''");
+      secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //create and write the appropriate sql insert statement for this nomination
+      directorHelper(secondTitle, uncleanedSecondTitle, year, oid, dirIndex);
+    }
+    //extract the title (first title if there were two)
+    String uncleanedTitle = title.substring(0, endIdx);
+    //clean the title
+    title = checkForSpecialCases(uncleanedTitle);
+    title = title.toLowerCase().replace("'","''");
+    title = title.replace(" & "," ").replace(" ","&").replace("!","");
+    //create and write the appropriate sql insert statement for this nomination
+    directorHelper(title, uncleanedTitle, year, oid, dirIndex);
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * A helper method for the director() method.  Handles what happens when
+   * there are two directors named as the recipients for the nomination.
+   *
+   * @param title Cleaned String version of the movie title.
+   * @param realTitle The title of the movie as written in the CSV file.
+   * @param year The year of the movie.
+   * @param oid The oscar category unique id for the database.
+   * @param dirIdx The index into the CSV file record for the director name.
+   * @throws IOException
+   */
+  private void directorHelper(String title, String realTitle, int year, int oid, int dirIdx) throws IOException {
+    //query for movie id
+    int mid = queryForMovie(title, realTitle, year);
+
+    //movie was found in database
+    if (mid != -1) {
+      //get the name of the director
+      String[] name = oscars.get(dirIdx).split(" ");
+      //nomination has two directors for the movie (no directing nomination has more than 2 recipients)
+      if (oscars.get(dirIdx).contains(",")) {
+        boolean first = true;         //still on first recipient?
+        String firstRecipient = "";   //name of the first recipient
+        String secondRecipient = "";  //name of the second recipient
+
+        int len = name.length;
+        for (int i = 0; i < len; ++i) {
+          //still constructing the name of the first recipient
+          if (first) {
+            //this name token doesn't contain the ',' separator
+            if (!name[i].contains(",")) {
+              firstRecipient = firstRecipient + name[i] + " ";
+            }
+            //this name token is the last one in the first recipient, so add it without the ','
+            else {
+              firstRecipient = firstRecipient + name[i].substring(0, name[i].indexOf(","));
+              first = false;
+            }
+          }
+          //now constructing the second recipient name
+          else {
+            //this is not the last name token, so add a space character
+            if (!(i == len - 1)) {
+              secondRecipient = secondRecipient + name[i] + " ";
+            }
+            //this is the last name token
+            else {
+              secondRecipient = secondRecipient + name[i];
+            }
+          }
+        }
+        directorSecondHelper(firstRecipient.split(" "), mid, oid, firstRecipient);
+        directorSecondHelper(secondRecipient.split(" "), mid, oid, secondRecipient);
+      }
+      //only one recipient for this nomination
+      else {
+        directorSecondHelper(name, mid, oid, oscars.get(dirIdx));
+      }
+    }
+  }
+
+  //--------------------------------------------------------------------------
+  
+  /**
+   * Create and write the appropriate SQL insert statement for this Best
+   * Director nomination.
+   *
+   * @param name An array of Strings for the recipient of the nomination.
+   * @param mid The unique movie id from the database.
+   * @param oid The appropriate oid for this oscar category.
+   * @param nameString The name of the recipient as one String. 
+   * @throws IOException
+   */
+  private void directorSecondHelper(String[] name, int mid, int oid, String nameString) throws IOException {
+    //clean any special cases
+    if (name.length >= 3) {
+      name = checkForNameSpecialCases(name);
+    }
+    //a special special case: "Joel Coen" -> "Joel and Ethan Coen"
+    else if (name.length == 2 && name[1].equals("Coen")) {
+      String[] temp = {"Joel and Ethan", "Coen"};
+      name = temp;
+    }
+    //get the crew person id for this director from the database
+    int cid = queryForCrewperson(name, nameString);
+    //director was found in the database
+    if (cid != -1) {
+      //get the status of the nomination
+      int status = Integer.parseInt(oscars.get(4));
+      //log what was found
+      log.logData("mid = " + mid, 1, false);
+      log.logData("cid = " + cid, 1, false);
+      //write the sql insert statement for this nomination
+      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
+      bw.newLine();
+    }
+  }
+
+  //--------------------------------------------------------------------------
+  
+  /**
+   *
+   */
+  private void otherCrewCategory(int year, int oid, String category) {
   }
 }
