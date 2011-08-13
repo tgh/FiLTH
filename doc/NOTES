@@ -42,6 +42,18 @@ WHERE LEFT OFF
 
 NEEDS
 ------
+********************************************************************************
+- IMPORTANT: most (all except some requesting oscar data?) queries need
+  "...WHERE star_rating NOT NULL..." due to the "The Battle of Algiers" problem.
+  The Battle of Algiers was nomiated for oscars in both 1966 and 1968.  Since
+  years are attached to movies and not oscars, The Battle of Algiers has a year
+  of 1966, and thus cannot have a 1968 oscar nomination.  Thus, a dummy record
+  has been made: (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL,
+  NULL).  Since this is the only record with a NULL star_rating value, queries
+  should have '...star_rating NOT NULL...' if that dummy record is to be
+  ignored.
+********************************************************************************
+
 - all entity tables need to be inserted before any relationship tables
 
 

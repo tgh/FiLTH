@@ -103,3 +103,8 @@ if __name__ == '__main__':
                                     + stars + ", "\
                                     + mpaa + ", "\
                                     + country + ", NULL);"
+  
+  #print a special case: "The Battle of Algiers".  Since for some stupid reason
+  # the Academy Awards decided to nominate this movie in both 1966 (the real
+  # year of the movie) and 1968, there needs to be a dummy record for 1968.
+  print "INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);"
