@@ -2,8 +2,6 @@ WHERE LEFT OFF
 ---------------
 - working on oscars...
 
-  - finished Best Director
-
   - will need user interaction when movie/crew not in db:
     Example:
 
@@ -24,12 +22,7 @@ WHERE LEFT OFF
         Country OK? n
         Enter country name: England
 
-  - 1956 Foreign language nominations contain producers, but it looks like it's
-    working anyway...?
-
   - 1928-1930 nominations need reording of attributes:
-    - best director: 1928-1930 swap recipient and movie title
-    - cinematography: 1928-1929 swap recipient and movie title
     - screenplay: 1928-1929 swap recipient and movie title
 
   - oscarsOfCategory.csv

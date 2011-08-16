@@ -185,11 +185,13 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 8) ------------------*/
 
         if (category.equals("Best Cinematography (black and white)")) {
+          cinematography(year, 8);
         }
 
         /*---------- BEST CINEMATOGRAPHY (color) (oid = 9) ------------------*/
 
         if (category.equals("Best Cinematography (color)")) {
+          cinematography(year, 9);
         }
 
         /*---------- BEST ORIGINAL SCREENPLAY (oid = 10) --------------------*/
@@ -835,9 +837,9 @@ public class OscarParser implements GracefulShutdown {
     int titleIndex = -1;  //index into the CSV record for the title
     int recIndex = -1;    //index into the CSV record for the recipient
     
-    //the CSV data switches the order of the attributes at 1930 for some stupid
-    // reason
-    if (year < 1930) {
+    //the CSV data switches the order of the attributes for Best Cinematography
+    // in 1930 for some stupid reason (Best Cinematography oid = 7)
+    if (year < 1930 && oid == 7) {
       titleIndex = 3;
       recIndex   = 2;
     }
@@ -906,9 +908,25 @@ public class OscarParser implements GracefulShutdown {
     if (mid != -1) {
       //get the value of the recipient attribute in the CSV file
       String recipientString = oscars.get(recIdx);
-      //for some reason, 1930 records have most of the recipients inside parentheses
-      if (year == 1930) {
+      //for some reason, 1930 records for Best Cinematography have most of the
+      // recipients inside parentheses (as well as a 1962 nomination for (black
+      // & white) cinematography)
+      if (year == 1930 && oid == 7 || year == 1962 && oid == 8) {
         recipientString = recipientString.replace("(","").replace(")","");
+      }
+      //special case: Harry Stradling Sr. the CSV file adds a comma for Harry
+      // Stradling, Sr. for some stupid reason (all of the other names with Jr.
+      // and Sr. do not have a comma).  Also, there are nominations for Harry
+      // Stradling Sr. that are listed as just Harry Stradling.  There is a
+      // Harry Stradling Jr. that receives nominations as well.
+      else if (recipientString.equals("Harry Stradling, Sr.") || recipientString.equals("Harry Stradling")) {
+        recipientString = "Harry Stradling Sr.";
+      }
+      //another special case: 1951 (color) nomination for An American in Paris
+      // has a recipient string of "Alfred Gilks; Ballet Photography by John
+      // Alton"
+      else if (recipientString.contains("Ballet Photography")) {
+        recipientString = "Alfred Gilks";
       }
       //get the number of recipients for this nomination
       int numRecipients = recipientString.split(",").length;
