@@ -143,31 +143,31 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST PICTURE (oid = 1) ---------------------------------*/
 
         if (category.equals("Best Picture")) {
-          nonCrewCategory(year, 1, category);
+          nonCrewCategory(year, 1);
         }
 
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
-          acting(year, 2, category);
+          acting(year, 2);
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
 
         if (category.equals("Best Actress")) {
-          acting(year, 3, category);
+          acting(year, 3);
         }
 
         /*---------- BEST SUPPORTING ACTOR (oid = 4) ------------------------*/
 
         if (category.equals("Best Supporting Actor")) {
-          acting(year, 4, category);
+          acting(year, 4);
         }
 
         /*---------- BEST SUPPORTING ACTRESS (oid = 5) ----------------------*/
 
         if (category.equals("Best Supporting Actress")) {
-          acting(year, 5, category);
+          acting(year, 5);
         }
 
         /*---------- BEST DIRECTOR (oid = 6) --------------------------------*/
@@ -205,13 +205,13 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST FOREIGN LANGUAGE FILM (oid = 12) ------------------*/
 
         if (category.equals("Best Foreign Language Film")) {
-          nonCrewCategory(year, 12, category);
+          nonCrewCategory(year, 12);
         }
 
         /*---------- BEST DOCUMENTARY (oid = 13) ----------------------------*/
 
         if (category.equals("Best Documentary")) {
-          nonCrewCategory(year, 13, category);
+          nonCrewCategory(year, 13);
         }
 
         /*---------- BEST SCREENPLAY (oid = 14) -----------------------------*/
@@ -284,10 +284,9 @@ public class OscarParser implements GracefulShutdown {
    *
    * @param year An integer for the year of the nomination.
    * @param oid The oscar id of the category.
-   * @param category The string of the category.
    * @throws IOException
    */
-  private void nonCrewCategory(int year, int oid, String category) throws IOException {
+  private void nonCrewCategory(int year, int oid) throws IOException {
     String title    = null;
     int mid         = -1;
     int status      = -1;
@@ -306,15 +305,8 @@ public class OscarParser implements GracefulShutdown {
       //log the find
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
-      try {
-        bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
-        bw.newLine();
-      }
-      catch (IOException ioe) {
-        log.logFatalError("Writing insert statement for " + category + ".",0,false);
-        ioe.printStackTrace();
-        System.exit(1); 
-      }
+      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+      bw.newLine();
     }
   }
 
@@ -615,7 +607,7 @@ public class OscarParser implements GracefulShutdown {
    * @param category A string for the specific acting category.
    * @throws IOException
    */
-  private void acting(int year, int oid, String category) throws IOException {
+  private void acting(int year, int oid) throws IOException {
     //get the title as defined in the record
     String title = oscars.get(3);
     //this actor is nominated for two movies within the same nomination
@@ -628,7 +620,7 @@ public class OscarParser implements GracefulShutdown {
       secondTitle = secondTitle.toLowerCase().replace("'","''");
       secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
-      actingHelper(secondTitle, uncleanedSecondTitle, year, oid, category);
+      actingHelper(secondTitle, uncleanedSecondTitle, year, oid);
     }
     //extract the title (first title if there were two)
     String uncleanedTitle = title.substring(0, title.indexOf(" {"));
@@ -637,7 +629,7 @@ public class OscarParser implements GracefulShutdown {
     title = title.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
     //create and write the appropriate sql insert statement for this nomination
-    actingHelper(title, uncleanedTitle, year, oid, category);
+    actingHelper(title, uncleanedTitle, year, oid);
   }
 
   //--------------------------------------------------------------------------
@@ -653,49 +645,33 @@ public class OscarParser implements GracefulShutdown {
    * @param year An integer for the year of the movie--also needed for the
    * call to queryForMovie().
    * @param oid An integer for the unique id of the oscar category.
-   * @param category The specific acting category for the nomination--only
-   * used for error output.
+   * @throws IOException
    */
-  private void actingHelper(String title, String realTitle, int year, int oid,  String category) {
+  private void actingHelper(String title, String realTitle, int year, int oid) throws IOException {
     //query for movie id
     int mid = queryForMovie(title, realTitle, year);
 
-    try {
-      //movie was found in database
-      if (mid != -1) {
-        //get the name of the actor
-        String[] name = oscars.get(2).split(" ");
-        //clean any special cases
-        if (name.length == 3) {
-          name = checkForNameSpecialCases(name);
-        }
-        //get the crew person id for this actor from the database
-        int cid = queryForCrewperson(name, oscars.get(2));
-        //actor was found in the database
-        if (cid != -1) {
-          //get the status of the nomination
-          int status = Integer.parseInt(oscars.get(4));
-          //log what was found
-          log.logData("mid = " + mid, 1, false);
-          log.logData("cid = " + cid, 1, false);
-          //write the sql insert statement for this nomination
-          try {
-            bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
-            bw.newLine();
-          }
-          catch (IOException ioe) {
-            log.logFatalError("Writing insert statement for " + category + ".",0,false);
-            ioe.printStackTrace();
-            System.exit(1); 
-          }
-        }
+    //movie was found in database
+    if (mid != -1) {
+      //get the name of the actor
+      String[] name = oscars.get(2).split(" ");
+      //clean any special cases
+      if (name.length == 3) {
+        name = checkForNameSpecialCases(name);
       }
-    }
-    catch (IOException ioe) {
-      log.logFatalError("I/O Error in actingHelper().",0,false);
-      log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
-      ioe.printStackTrace();
-      System.exit(1);
+      //get the crew person id for this actor from the database
+      int cid = queryForCrewperson(name, oscars.get(2));
+      //actor was found in the database
+      if (cid != -1) {
+        //get the status of the nomination
+        int status = Integer.parseInt(oscars.get(4));
+        //log what was found
+        log.logData("mid = " + mid, 1, false);
+        log.logData("cid = " + cid, 1, false);
+        //write the sql insert statement for this nomination
+        bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
+        bw.newLine();
+      }
     }
   }
 
