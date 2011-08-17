@@ -361,7 +361,7 @@ Oliver Stone
 Quentin Tarantino
 Andrei Tarkovsky
 Jacques Tati
-Francios Truffaut
+Francois Truffaut
 Tom Tykwer
 Gus Van Sant
 Jean Vigo
@@ -372,7 +372,7 @@ Billy Wilder
 Michael Winterbottom
 Robert Zemeckis
 
-Charlie Kauffman
+Charlie Kaufman
 Mike White
 Paul Schrader
 Paul Haggis
