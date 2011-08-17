@@ -658,7 +658,7 @@ INSERT INTO movie VALUES (DEFAULT, 'The Gospel of John', 2004, 7, 3, 'USA', NULL
 INSERT INTO movie VALUES (DEFAULT, 'The Governess', 1998, 5, 4, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Graduate', 1967, 6, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gran Torino', 2008, 7, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Grand Canyon', 1992, 7, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Grand Canyon', 1991, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Grand Illusion', 1937, 6, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Grapes of Wrath', 1940, 6, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Grave of the Fireflies', 1988, 8, 2, 'Japan', NULL);
@@ -794,6 +794,7 @@ INSERT INTO movie VALUES (DEFAULT, 'In the Name of the Father', 1993, 8, 4, 'Ire
 INSERT INTO movie VALUES (DEFAULT, 'Inception', 2010, 8, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Incident at Loch Ness', 2004, 6, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Incredible Hulk', 2008, 4, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Incredibles', 2004, 7, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Independence Day', 1996, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Indiana Jones and the Last Crusade', 1989, 6, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Indiana Jones and the Temple of Doom', 1984, 4, 3, 'USA', NULL);
@@ -1042,6 +1043,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Metroland', 1999, 5, 4, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Metropolis', 1926, 8, 0, 'Germany', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Metropolis', 2002, 5, 3, 'Japan', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Michael Clayton', 2007, 8, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Michael Collins', 1996, 6, 4, 'Ireland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Microcosmos', 1997, 8, 1, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Midnight Cowboy', 1969, 7, 5, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Midnight Express', 1978, 6, 4, 'USA', NULL);
@@ -1791,6 +1793,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct', 1933, 6, 0, 'France', NUL
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Michael Collins', 1996, 6, 4, 'Ireland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);
