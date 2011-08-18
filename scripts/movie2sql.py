@@ -47,14 +47,26 @@ def FormatTitle(title):
 #------------
 if __name__ == '__main__':
   #check for file from command line
-  if len(sys.argv) != 2:
-    print "**ERROR: need a file argument."
+  if len(sys.argv) != 3:
+    sys.stderr.write("**ERROR: arguments\n\n")
+    sys.stderr.write("  usage: movie2sql.py <input file> <print dummies?>\n\n")
+    sys.stderr.write("  where <print dummies?> is either a 0 (no) or 1 (yes)")
     sys.exit()
   #open the file
   try:
     f = open(sys.argv[1], 'r')
   except IOError:
-    print "**ERROR: opening file."
+    sys.stderr.write("**ERROR: opening file.\n")
+  #check the second arg
+  printDummies = 0
+  try:
+    printDummies = int(sys.argv[2])
+    if printDummies != 0 and printDummies != 1:
+      raise ValueError
+  except ValueError:
+    sys.stderr.write("**ERROR: second argument must be a 0 or 1\n")
+    f.close()
+    sys.exit()
   #grab all of the lines in the file
   lines = f.readlines()
   #close the file
@@ -104,13 +116,14 @@ if __name__ == '__main__':
                                     + mpaa + ", "\
                                     + country + ", NULL);"
   
-  #print a special case: "The Battle of Algiers".  Since for some stupid reason
-  # the Academy Awards decided to nominate this movie in both 1966 (the real
-  # year of the movie) and 1968, there needs to be a dummy record for 1968.
-  print "INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);"
-  #these are also here for the same reason, except that they weren't nominated
-  # in two different years--it's just that they were nominated 2 years after
-  # they were made (which is the year in the database)
-  print "INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);"
-  print "INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);"
-  print "INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);"
+  if printDummies == 1:
+    #print a special case: "The Battle of Algiers".  Since for some stupid reason
+    # the Academy Awards decided to nominate this movie in both 1966 (the real
+    # year of the movie) and 1968, there needs to be a dummy record for 1968.
+    print "INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);"
+    #these are also here for the same reason, except that they weren't nominated
+    # in two different years--it's just that they were nominated 2 years after
+    # they were made (which is the year in the database)
+    print "INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);"
+    print "INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);"
+    print "INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);"

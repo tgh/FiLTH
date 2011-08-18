@@ -72,12 +72,12 @@ sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # if this is the first run, just create movie.sql
 if [ $first_run -eq 1 ]
 then
-  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
+  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 1 > $filth_path/sql/movie.sql
 # if this is not the first run...
 else
   # create/overwrite movie_additions.sql which is a file of sql inserts for just
   # the new movies being added
-  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_temp_path/movie_additions.sql
+  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 0 > $filth_temp_path/movie_additions.sql
   # append the new insertions to the main movie,sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
   # insert the additions into the Postgres database
