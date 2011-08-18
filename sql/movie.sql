@@ -1121,7 +1121,7 @@ INSERT INTO movie VALUES (DEFAULT, 'My Father''s Glory', 1991, 7, 1, 'France', N
 INSERT INTO movie VALUES (DEFAULT, 'My Girl', 1991, 6, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Left Foot', 1989, 8, 4, 'Ireland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life', 1993, 6, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, 8, 0, 'Sweden', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1985, 8, 0, 'Sweden', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life So Far', 1999, 7, 3, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Mother''s Castle', 1991, 7, 2, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Name is Joe', 1999, 6, 4, 'England', NULL);
@@ -1794,3 +1794,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);

@@ -1,6 +1,17 @@
 WHERE LEFT OFF
 ---------------
 - working on oscars...
+  - should there be another attribute in oscar_given_to indicating that the
+    nomination is shared?  Maybe be an integer representing how many others it
+    is shared with
+
+  - have added dummy records for:
+    - The Battle of Algiers
+    - My Life as a Dog (1987)
+    - Mr. Hulot's Holiday (1955)
+    - Wild Strawberries (1959)
+
+  - add a non-found hashMap
 
   - will need user interaction when movie/crew not in db:
     Example:
@@ -13,7 +24,14 @@ WHERE LEFT OFF
         Enter new title: The Betrayal
 
       Noriyuki 'Pat' Morita not found. Name OK? n
-        Enter new name: Pat Morita
+        Ignore this person? n
+        Enter first name (or 'i' to ignore): Pat
+        Enter middle name (or 'i' to ignore): i
+        Enter last name: Morita
+
+      Donald Kaufman not found. Name OK? n
+        Ignore this person? y
+        Donald Kaufman ignored.
 
       "Mongol" from Kazakhstan not found. Title OK? y
         Country OK? y
@@ -22,14 +40,8 @@ WHERE LEFT OFF
         Country OK? n
         Enter country name: England
 
-  - 1928-1930 nominations need reording of attributes:
-    - screenplay: 1928-1929 swap recipient and movie title
-
   - oscarsOfCategory.csv
     - 1968 best actress has a tie which needs a value of 2, not 1
-    - 1929 and 1930 screenplays are missing--need to add a line in
-      oscarGivenTo.sh to catch those nominations.  However, those nominees do
-      not differentiate between original and adapted screenplays...
     
 
 

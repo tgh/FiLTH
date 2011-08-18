@@ -108,3 +108,9 @@ if __name__ == '__main__':
   # the Academy Awards decided to nominate this movie in both 1966 (the real
   # year of the movie) and 1968, there needs to be a dummy record for 1968.
   print "INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);"
+  #these are also here for the same reason, except that they weren't nominated
+  # in two different years--it's just that they were nominated 2 years after
+  # they were made (which is the year in the database)
+  print "INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);"
+  print "INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);"
+  print "INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);"
