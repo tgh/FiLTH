@@ -1014,4 +1014,26 @@ public class OscarParser implements GracefulShutdown {
       bw.newLine();
     }
   }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Formats a movie title for Postgres's full text search.
+   *
+   * @param title The title to be formated.
+   * @return String - the title correctly formatted for Postgres's full text
+   * search.
+   */
+  private String formatTitle(String title) {
+    title = title.toLowerCase();
+    //replace "'" with "''" for SQL
+    title = title.replace("'","''");
+    //replace " & " with just a space (for titles like "Harry & Tonto")
+    title = nextTitle.replace(" & "," ");
+    //replace spaces with "&" for full text search syntax
+    title = title.replace(" ","&");
+    //remove "!" for full text search
+    title = title.replace("!","");
+    return title;
+  }
 }
