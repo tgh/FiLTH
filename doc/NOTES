@@ -5,12 +5,6 @@ WHERE LEFT OFF
     nomination is shared?  Maybe be an integer representing how many others it
     is shared with
 
-  - have added dummy records for:
-    - The Battle of Algiers
-    - My Life as a Dog (1987)
-    - Mr. Hulot's Holiday (1955)
-    - Wild Strawberries (1959)
-
   - add a non-found hashMap
 
   - will need user interaction when movie/crew not in db:
@@ -54,12 +48,15 @@ NEEDS
   years are attached to movies and not oscars, The Battle of Algiers has a year
   of 1966, and thus cannot have a 1968 oscar nomination.  Thus, a dummy record
   has been made: (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL,
-  NULL).  Since this is the only record with a NULL star_rating value, queries
-  should have '...star_rating NOT NULL...' if that dummy record is to be
+  NULL).  Other movies have also been cloned with a dummy varible for the same
+  reason.  Since these are the only records with a NULL star_rating value,
+  queries should have '...star_rating NOT NULL...' if dummy records are to be
   ignored.
 ********************************************************************************
 
 - all entity tables need to be inserted before any relationship tables
+
+- should probably add notes about the release year of the dummy record movies
 
 
 IDEAS/THOUGHTS
