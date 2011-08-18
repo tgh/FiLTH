@@ -25,12 +25,12 @@
 1932,Best Picture,Five Star Final,First National,0
 1932,Best Picture,The Champ,Metro-Goldwyn-Mayer,0
 1933,Best Picture,42nd Street,Warner Bros.,0
-1933,Best Picture,Little Women,RKO Radio [came in 3rd],0
+1933,Best Picture,Little Women,RKO Radio,0
 1933,Best Picture,I Am a Fugitive from a Chain Gang,Warner Bros.,0
 1933,Best Picture,State Fair,Fox,0
 1933,Best Picture,Smilin' Through,Metro-Goldwyn-Mayer,0
 1933,Best Picture,The Private Life of Henry VIII,London Films,0
-1933,Best Picture,A Farewell to Arms,Paramount [came in 2nd],0
+1933,Best Picture,A Farewell to Arms,Paramount,0
 1933,Best Picture,She Done Him Wrong,Paramount,0
 1933,Best Picture,Lady for a Day,Columbia,0
 1933,Best Picture,Cavalcade,Fox,1
@@ -38,26 +38,26 @@
 1934,Best Picture,The Gay Divorcee,RKO Radio,0
 1934,Best Picture,One Night of Love,Columbia,0
 1934,Best Picture,The Thin Man,Metro-Goldwyn-Mayer,0
-1934,Best Picture,The Barretts of Wimpole Street,Metro-Goldwyn-Mayer [came in 2nd],0
+1934,Best Picture,The Barretts of Wimpole Street,Metro-Goldwyn-Mayer,0
 1934,Best Picture,It Happened One Night,Columbia,1
 1934,Best Picture,Flirtation Walk,First National,0
 1934,Best Picture,Cleopatra,Paramount,0
 1934,Best Picture,Here Comes the Navy,Warner Bros.,0
 1934,Best Picture,Imitation of Life,Universal,0
 1934,Best Picture,The White Parade,Jesse L. Lasky (production company),0
-1934,Best Picture,The House of Rothschild,20th Century [came in 3rd],0
+1934,Best Picture,The House of Rothschild,20th Century,0
 1935,Best Picture,Naughty Marietta,Metro-Goldwyn-Mayer,0
 1935,Best Picture,David Copperfield,Metro-Goldwyn-Mayer,0
 1935,Best Picture,Alice Adams,RKO Radio,0
 1935,Best Picture,A Midsummer Night's Dream,Warner Bros.,0
 1935,Best Picture,The Lives of a Bengal Lancer,Paramount,0
 1935,Best Picture,Top Hat,RKO Radio,0
-1935,Best Picture,Captain Blood,Cosmopolitan [came in 3rd],0
+1935,Best Picture,Captain Blood,Cosmopolitan,0
 1935,Best Picture,Les Miserables,20th Century,0
 1935,Best Picture,Ruggles of Red Gap,Paramount,0
 1935,Best Picture,Broadway Melody of 1936,Metro-Goldwyn-Mayer,0
 1935,Best Picture,Mutiny on the Bounty,Metro-Goldwyn-Mayer,1
-1935,Best Picture,The Informer,RKO Radio [came in 2nd],0
+1935,Best Picture,The Informer,RKO Radio,0
 1936,Best Picture,Three Smart Girls,Universal,0
 1936,Best Picture,Mr. Deeds Goes to Town,Columbia,0
 1936,Best Picture,A Tale of Two Cities,Metro-Goldwyn-Mayer,0
@@ -397,7 +397,7 @@
 1995,Best Picture,Braveheart,"Mel Gibson, Alan Ladd Jr. and Bruce Davey, Producers",1
 1995,Best Picture,Apollo 13,"Brian Grazer, Producer",0
 1995,Best Picture,Babe,"George Miller, Doug Mitchell and Bill Miller, Producers",0
-1995,Best Picture,The Postman (Il Postino),"Mario Cecchi Gori, Vittorio Cecchi Gori and Gaetano Daniele, Producers",0
+1995,Best Picture,Il Postino,"Mario Cecchi Gori, Vittorio Cecchi Gori and Gaetano Daniele, Producers",0
 1996,Best Picture,Secrets & Lies,"Simon Channing-Williams, Producer",0
 1996,Best Picture,The English Patient,"Saul Zaentz, Producer",1
 1996,Best Picture,Fargo,"Ethan Coen, Producer",0
@@ -456,7 +456,7 @@
 2007,Best Picture,Atonement,"Tim Bevan, Eric Fellner and Paul Webster, Producers",0
 2007,Best Picture,Juno,"Lianne Halfon, Mason Novick and Russell Smith, Producers",0
 2007,Best Picture,Michael Clayton,"Sydney Pollack, Jennifer Fox and Kerry Orent, Producers",0
-2007,Best Picture,No Country for Old Men,"Scott Rudin, Ethan Coen and Joel Coen, Producers",1
+2007,Best Picture,No Country for Old Men,"Scott Rudin, Joel and Ethan Coen, Producers",1
 2007,Best Picture,There Will Be Blood,"JoAnne Sellar, Paul Thomas Anderson and Daniel Lupi, Producers",0
 2008,Best Picture,The Curious Case of Benjamin Button,"Kathleen Kennedy, Frank Marshall and CeᮠChaffin, Producers",0
 2008,Best Picture,Frost/Nixon,"Brian Grazer, Ron Howard and Eric Fellner, Producers",0
@@ -485,15 +485,15 @@
 1932,Best Actor,Wallace Beery,"The Champ {Champ""}""",1
 1932,Best Actor,Alfred Lunt,"The Guardsman {The Actor""}""",0
 1933,Best Actor,Charles Laughton,"The Private Life of Henry VIII {Henry VIII""}""",1
-1933,Best Actor,Paul Muni,"I Am a Fugitive from a Chain Gang {James Allen""} [came in 2nd]""",0
-1933,Best Actor,Leslie Howard,"Berkeley Square {Peter Standish""} [came in 3rd]""",0
-1934,Best Actor,Frank Morgan,"The Affairs of Cellini {Allesandro, Duke of Florence""} [came in 2nd]""",0
+1933,Best Actor,Paul Muni,"I Am a Fugitive from a Chain Gang {James Allen""}""",0
+1933,Best Actor,Leslie Howard,"Berkeley Square {Peter Standish""}""",0
+1934,Best Actor,Frank Morgan,"The Affairs of Cellini {Allesandro, Duke of Florence""}""",0
 1934,Best Actor,Clark Gable,"It Happened One Night {Peter Warne""}""",1
-1934,Best Actor,William Powell,"The Thin Man {Nick Charles""} [came in 3rd]""",0
+1934,Best Actor,William Powell,"The Thin Man {Nick Charles""}""",0
 1935,Best Actor,Victor McLaglen,"The Informer {Gypo Nolan""}""",1
 1935,Best Actor,Franchot Tone,"Mutiny on the Bounty {Roger Byam""}""",0
-1935,Best Actor,Paul Muni,"Black Fury {Joe Radek""} [came in 2nd]""",0
-1935,Best Actor,Charles Laughton,"Mutiny on the Bounty {Captain Bligh""} [came in 3rd]""",0
+1935,Best Actor,Paul Muni,"Black Fury {Joe Radek""}""",0
+1935,Best Actor,Charles Laughton,"Mutiny on the Bounty {Captain Bligh""}""",0
 1935,Best Actor,Clark Gable,"Mutiny on the Bounty {Fletcher Christian""}""",0
 1936,Best Actor,Gary Cooper,"Mr. Deeds Goes to Town {Longfellow Deeds""}""",0
 1936,Best Actor,Walter Huston,"Dodsworth {Sam Dodsworth""}""",0
@@ -1086,7 +1086,7 @@
 1994,Best Supporting Actor,Chazz Palminteri,"Bullets over Broadway {Cheech""}""",0
 1994,Best Supporting Actor,Paul Scofield,"Quiz Show {Mark Van Doren""}""",0
 1995,Best Actor,Richard Dreyfuss,"Mr. Holland's Opus {Glenn Holland""}""",0
-1995,Best Actor,Massimo Troisi,"The Postman (Il Postino) {Mario""}""",0
+1995,Best Actor,Massimo Troisi,"Il Postino {Mario""}""",0
 1995,Best Actor,Sean Penn,"Dead Man Walking {Matthew Poncelet""}""",0
 1995,Best Actor,Nicolas Cage,"Leaving Las Vegas {Ben Sanderson""}""",1
 1995,Best Actor,Anthony Hopkins,"Nixon {Richard Nixon""}""",0
@@ -1248,17 +1248,17 @@
 1932,Best Actress,Lynn Fontanne,"The Guardsman {The Actress""}""",0
 1932,Best Actress,Helen Hayes,"The Sin of Madelon Claudet {Madelon""}""",1
 1932,Best Actress,Marie Dressler,"Emma {Emma""}""",0
-1933,Best Actress,Diana Wynyard,"Cavalcade {Jane Marryot""} [came in 3rd]""",0
+1933,Best Actress,Diana Wynyard,"Cavalcade {Jane Marryot""}""",0
 1933,Best Actress,Katharine Hepburn,"Morning Glory {Eva Lovelace""}""",1
-1933,Best Actress,May Robson,"Lady for a Day {Apple Annie""} [came in 2nd]""",0
-1934,Best Actress,Bette Davis,"Of Human Bondage {Mildred""} [came in 3rd]""",0
-1934,Best Actress,Norma Shearer,"The Barretts of Wimpole Street {Elizabeth Barrett""} [came in 2nd]""",0
+1933,Best Actress,May Robson,"Lady for a Day {Apple Annie""}""",0
+1934,Best Actress,Bette Davis,"Of Human Bondage {Mildred""}""",0
+1934,Best Actress,Norma Shearer,"The Barretts of Wimpole Street {Elizabeth Barrett""}""",0
 1934,Best Actress,Grace Moore,"One Night of Love {Mary""}""",0
 1934,Best Actress,Claudette Colbert,"It Happened One Night {Ellie Andrews""}""",1
-1935,Best Actress,Elisabeth Bergner,"Escape Me Never {Gemma Jones""} [came in 3rd]""",0
+1935,Best Actress,Elisabeth Bergner,"Escape Me Never {Gemma Jones""}""",0
 1935,Best Actress,Miriam Hopkins,"Becky Sharp {Becky Sharp""}""",0
 1935,Best Actress,Merle Oberon,"The Dark Angel {Kitty Vane""}""",0
-1935,Best Actress,Katharine Hepburn,"Alice Adams {Alice Adams""} [came in 2nd]""",0
+1935,Best Actress,Katharine Hepburn,"Alice Adams {Alice Adams""}""",0
 1935,Best Actress,Bette Davis,"Dangerous {Joyce Heath""}""",1
 1935,Best Actress,Claudette Colbert,"Private Worlds {Jane Everest""}""",0
 1936,Best Actress,Carole Lombard,"My Man Godfrey {Irene Bullock""}""",0
@@ -2015,15 +2015,15 @@
 1932,Best Director,Bad Girl,Frank Borzage,1
 1932,Best Director,The Champ,King Vidor,0
 1932,Best Director,Shanghai Express,Josef Von Sternberg,0
-1933,Best Director,Little Women,George Cukor [came in 3rd],0
+1933,Best Director,Little Women,George Cukor,0
 1933,Best Director,Cavalcade,Frank Lloyd,1
-1933,Best Director,Lady for a Day,Frank Capra [came in 2nd],0
-1934,Best Director,The Thin Man,W. S. Van Dyke [came in 2nd],0
-1934,Best Director,One Night of Love,Victor Schertzinger [came in 3rd],0
+1933,Best Director,Lady for a Day,Frank Capra,0
+1934,Best Director,The Thin Man,W. S. Van Dyke,0
+1934,Best Director,One Night of Love,Victor Schertzinger,0
 1934,Best Director,It Happened One Night,Frank Capra,1
-1935,Best Director,Captain Blood,Michael Curtiz [came in 2nd],0
+1935,Best Director,Captain Blood,Michael Curtiz,0
 1935,Best Director,The Informer,John Ford,1
-1935,Best Director,The Lives of a Bengal Lancer,Henry Hathaway [came in 3rd],0
+1935,Best Director,The Lives of a Bengal Lancer,Henry Hathaway,0
 1935,Best Director,Mutiny on the Bounty,Frank Lloyd,0
 1936,Best Director,My Man Godfrey,Gregory La Cava,0
 1936,Best Director,Dodsworth,William Wyler,0
@@ -2323,12 +2323,12 @@
 1995,Best Director,Leaving Las Vegas,Mike Figgis,0
 1995,Best Director,Babe,Chris Noonan,0
 1995,Best Director,Dead Man Walking,Tim Robbins,0
-1995,Best Director,The Postman (Il Postino),Michael Radford,0
+1995,Best Director,Il Postino,Michael Radford,0
 1995,Best Director,Braveheart,Mel Gibson,1
 1996,Best Director,The English Patient,Anthony Minghella,1
 1996,Best Director,The People vs. Larry Flynt,Milos Forman,0
 1996,Best Director,Shine,Scott Hicks,0
-1996,Best Director,Fargo,Joel Coen,0
+1996,Best Director,Fargo,Joel and Ethan Coen,0
 1996,Best Director,Secrets & Lies,Mike Leigh,0
 1997,Best Director,Titanic,James Cameron,1
 1997,Best Director,The Full Monty,Peter Cattaneo,0
@@ -2383,7 +2383,7 @@
 2007,Best Director,The Diving Bell and the Butterfly,Julian Schnabel,0
 2007,Best Director,Juno,Jason Reitman,0
 2007,Best Director,Michael Clayton,Tony Gilroy,0
-2007,Best Director,No Country for Old Men,Joel Coen and Ethan Coen,1
+2007,Best Director,No Country for Old Men,Joel and Ethan Coen,1
 2007,Best Director,There Will Be Blood,Paul Thomas Anderson,0
 2008,Best Director,The Curious Case of Benjamin Button,David Fincher,0
 2008,Best Director,Frost/Nixon,Ron Howard,0
@@ -2412,15 +2412,15 @@
 1932,Best Cinematography,Dr. Jekyll and Mr. Hyde,Karl Struss,0
 1932,Best Cinematography,Shanghai Express,Lee Garmes,1
 1933,Best Cinematography,A Farewell to Arms,"Charles Bryant Lang Jr.",1
-1933,Best Cinematography,Reunion in Vienna,George J. Folsey [came in 2nd],0
-1933,Best Cinematography,The Sign of the Cross,Karl Struss [came in 3rd],0
-1934,Best Cinematography,Operator 13,George Folsey [came in 2nd],0
+1933,Best Cinematography,Reunion in Vienna,George J. Folsey,0
+1933,Best Cinematography,The Sign of the Cross,Karl Struss,0
+1934,Best Cinematography,Operator 13,George Folsey,0
 1934,Best Cinematography,Cleopatra,Victor Milner,1
-1934,Best Cinematography,The Affairs of Cellini,Charles Rosher [came in 3rd],0
+1934,Best Cinematography,The Affairs of Cellini,Charles Rosher,0
 1935,Best Cinematography,Barbary Coast,Ray June,0
 1935,Best Cinematography,A Midsummer Night's Dream,Hal Mohr,1
-1935,Best Cinematography,Les Miserables,Gregg Toland [came in 2nd],0
-1935,Best Cinematography,The Crusades,Victor Milner [came in 3rd],0
+1935,Best Cinematography,Les Miserables,Gregg Toland,0
+1935,Best Cinematography,The Crusades,Victor Milner,0
 1936,Best Cinematography,The General Died at Dawn,Victor Milner,0
 1936,Best Cinematography,Anthony Adverse,Gaetano Gaudio,1
 1936,Best Cinematography,The Gorgeous Hussy,George Folsey,0
@@ -2656,14 +2656,14 @@
 1958,Best Cinematography (black and white),Separate Tables,"Charles Lang Jr.",0
 1958,Best Cinematography (color),The Old Man and the Sea,James Wong Howe,0
 1958,Best Cinematography (color),Gigi,Joseph Ruttenberg,1
-1958,Best Cinematography (color),Auntie Mame,"Harry Stradling, Sr.",0
+1958,Best Cinematography (color),Auntie Mame,"Harry Stradling Sr.",0
 1958,Best Cinematography (color),South Pacific,Leon Shamroy,0
 1958,Best Cinematography (color),Cat on a Hot Tin Roof,William Daniels,0
 1959,Best Cinematography (black and white),The Diary of Anne Frank,William C. Mellor,1
 1959,Best Cinematography (black and white),Career,Joseph LaShelle,0
 1959,Best Cinematography (black and white),Anatomy of a Murder,Sam Leavitt,0
 1959,Best Cinematography (black and white),Some Like It Hot,"Charles Lang Jr.",0
-1959,Best Cinematography (black and white),The Young Philadelphians,"Harry Stradling, Sr.",0
+1959,Best Cinematography (black and white),The Young Philadelphians,"Harry Stradling Sr.",0
 1959,Best Cinematography (color),The Five Pennies,Daniel L. Fapp,0
 1959,Best Cinematography (color),Porgy and Bess,Leon Shamroy,0
 1959,Best Cinematography (color),The Nun's Story,Franz Planer,0
@@ -2687,7 +2687,7 @@
 1961,Best Cinematography (color),One-Eyed Jacks,"Charles Lang Jr.",0
 1961,Best Cinematography (color),Flower Drum Song,Russell Metty,0
 1961,Best Cinematography (color),Fanny,Jack Cardiff,0
-1961,Best Cinematography (color),A Majority of One,"Harry Stradling, Sr.",0
+1961,Best Cinematography (color),A Majority of One,"Harry Stradling Sr.",0
 1961,Best Cinematography (color),West Side Story,Daniel L. Fapp,1
 1962,Best Cinematography (black and white),To Kill a Mockingbird,Russell Harlan,0
 1962,Best Cinematography (black and white),What Ever Happened to Baby Jane?,Ernest Haller,0
@@ -2697,7 +2697,7 @@
 1962,Best Cinematography (color),Lawrence of Arabia,Fred A. Young,1
 1962,Best Cinematography (color),The Wonderful World of the Brothers Grimm,Paul C. Vogel,0
 1962,Best Cinematography (color),Mutiny on the Bounty,Robert L. Surtees,0
-1962,Best Cinematography (color),Gypsy,"Harry Stradling, Sr.",0
+1962,Best Cinematography (color),Gypsy,"Harry Stradling Sr.",0
 1962,Best Cinematography (color),Hatari!,Russell Harlan,0
 1963,Best Cinematography (black and white),The Balcony,George Folsey,0
 1963,Best Cinematography (black and white),Love with the Proper Stranger,Milton Krasner,0
@@ -2982,77 +2982,47 @@
 1932,Best Original Screenplay,Lady and Gent,"Grover Jones, William Slavens McNutt",0
 1932,Best Original Screenplay,The Champ,Frances Marion,1
 1932,Best Original Screenplay,The Star Witness,Lucien Hubbard,0
-1933,Best Adapted Screenplay,State Fair,"Paul Green, Sonya Levien [came in 3rd]",0
+1933,Best Adapted Screenplay,State Fair,"Paul Green, Sonya Levien",0
 1933,Best Adapted Screenplay,Little Women,"Victor Heerman, Sarah Y. Mason",1
-1933,Best Adapted Screenplay,Lady for a Day,Robert Riskin [came in 2nd],0
-1933,Best Original Screenplay,The Prizefighter and the Lady,Frances Marion [came in 2nd],0
+1933,Best Adapted Screenplay,Lady for a Day,Robert Riskin,0
+1933,Best Original Screenplay,The Prizefighter and the Lady,Frances Marion,0
 1933,Best Original Screenplay,One Way Passage,Robert Lord,1
-1933,Best Original Screenplay,Rasputin and the Empress,Charles MacArthur [came in 3rd],0
-1934,Best Adapted Screenplay,The Thin Man,"Frances Goodrich, Albert Hackett [came in 2nd]",0
-1934,Best Adapted Screenplay,Viva Villa!,Ben Hecht [came in 3rd],0
+1933,Best Original Screenplay,Rasputin and the Empress,Charles MacArthur,0
+1934,Best Adapted Screenplay,The Thin Man,"Frances Goodrich, Albert Hackett",0
+1934,Best Adapted Screenplay,Viva Villa!,Ben Hecht,0
 1934,Best Adapted Screenplay,It Happened One Night,Robert Riskin,1
-1934,Best Original Screenplay,Hide-Out,Mauri Grashin [came in 3rd],0
-1934,Best Original Screenplay,The Richest Girl in the World,Norman Krasna [came in 2nd],0
+1934,Best Original Screenplay,Hide-Out,Mauri Grashin,0
+1934,Best Original Screenplay,The Richest Girl in the World,Norman Krasna,0
 1934,Best Original Screenplay,Manhattan Melodrama,Arthur Caesar,1
-1935,Best Original Screenplay,The Gay Deception,"Don Hartman, Stephen Avery",0
-1935,Best Original Screenplay,G-Men,Gregory Rogers [came in 2nd],0
-1935,Best Original Screenplay,The Scoundrel,"Ben Hecht, Charles MacArthur",1
-1935,Best Original Screenplay,Broadway Melody of 1936,Moss Hart [came in 3rd],0
-1935,Best Adapted Screenplay,The Lives of a Bengal Lancer,"Screenplay by Waldemar Young, John L. Balderston, Achmed Abdullah; Adaptation by Grover Jones, William Slavens McNutt",0
-1935,Best Adapted Screenplay,Mutiny on the Bounty,"Talbot Jennings, Jules Furthman, Carey Wilson [came in 2nd]",0
-1935,Best Adapted Screenplay,The Informer,Dudley Nichols,1
-1935,Best Adapted Screenplay,Captain Blood,Casey Robinson [came in 3rd],0
-1936,Best Original Screenplay,Fury,Norman Krasna,0
-1936,Best Original Screenplay,The Great Ziegfeld,William Anthony McGuire,0
-1936,Best Original Screenplay,San Francisco,Robert Hopkins,0
-1936,Best Original Screenplay,The Story of Louis Pasteur,"Pierre Collings, Sheridan Gibney",1
-1936,Best Original Screenplay,Three Smart Girls,Adele Comandini,0
-1936,Best Adapted Screenplay,My Man Godfrey,"Eric Hatch, Morris Ryskind",0
-1936,Best Adapted Screenplay,Mr. Deeds Goes to Town,Robert Riskin,0
-1936,Best Adapted Screenplay,The Story of Louis Pasteur,"Pierre Collings, Sheridan Gibney",1
-1936,Best Adapted Screenplay,After the Thin Man,"Frances Goodrich, Albert Hackett",0
-1936,Best Adapted Screenplay,Dodsworth,Sidney Howard,0
-1937,Best Original Screenplay,One Hundred Men and a Girl,Hans Kraly,0
-1937,Best Original Screenplay,In Old Chicago,Niven Busch,0
-1937,Best Original Screenplay,A Star Is Born,"William A. Wellman, Robert Carson",1
-1937,Best Original Screenplay,The Life of Emile Zola,"Heinz Herald, Geza Herczeg",0
-1937,Best Original Screenplay,Black Legion,Robert Lord,0
-1937,Best Adapted Screenplay,The Life of Emile Zola,"Norman Reilly Raine, Heinz Herald, Geza Herczeg",1
-1937,Best Adapted Screenplay,A Star Is Born,"Dorothy Parker, Alan Campbell, Robert Carson",0
-1937,Best Adapted Screenplay,The Awful Truth,Vina Delmar,0
-1937,Best Adapted Screenplay,Stage Door,"Morris Ryskind, Anthony Veiller",0
-1937,Best Adapted Screenplay,Captains Courageous,"John Lee Mahin, Marc Connelly, Dale Van Every",0
-1938,Best Original Screenplay,Mad about Music,"Marcella Burke, Frederick Kohner",0
-1938,Best Original Screenplay,Blockade,John Howard Lawson,0
-1938,Best Original Screenplay,Boys Town,"Dore Schary, Eleanore Griffin",1
-1938,Best Original Screenplay,Angels with Dirty Faces,Rowland Brown,0
-1938,Best Original Screenplay,Test Pilot,Frank Wead,0
-1938,Best Original Screenplay,Alexander's Ragtime Band,Irving Berlin,0
-1938,Best Adapted Screenplay,Four Daughters,"Julius J. Epstein, Lenore Coffee",0
-1938,Best Adapted Screenplay,The Citadel,"Ian Dalrymple, Frank Wead, Elizabeth Hill",0
-1938,Best Adapted Screenplay,You Can't Take It with You,Robert Riskin,0
-1938,Best Adapted Screenplay,Boys Town,"John Meehan, Dore Schary",0
-1938,Best Adapted Screenplay,Pygmalion,"Screenplay and Dialogue by George Bernard Shaw; Adaptation by W. P. Lipscomb, Cecil Lewis, Ian Dalrymple",1
-1939,Best Original Screenplay,Young Mr. Lincoln,Lamar Trotti,0
-1939,Best Original Screenplay,Bachelor Mother,Felix Jackson,0
-1939,Best Original Screenplay,Mr. Smith Goes to Washington,Lewis R. Foster,1
-1939,Best Original Screenplay,Ninotchka,Melchior Lengyel,0
-1939,Best Original Screenplay,Love Affair,"Mildred Cram, Leo McCarey",0
-1939,Best Adapted Screenplay,Wuthering Heights,"Charles MacArthur, Ben Hecht",0
-1939,Best Adapted Screenplay,"Goodbye, Mr. Chips","R. C. Sherriff, Claudine West, Eric Maschwitz",0
-1939,Best Adapted Screenplay,Mr. Smith Goes to Washington,Sidney Buchman,0
-1939,Best Adapted Screenplay,Ninotchka,"Charles Brackett, Billy Wilder, Walter Reisch",0
-1939,Best Adapted Screenplay,Gone with the Wind,Sidney Howard,1
+1935,Best Screenplay,The Lives of a Bengal Lancer,"Waldemar Young, John L. Balderston, Achmed Abdullah",0
+1935,Best Screenplay,Mutiny on the Bounty,"Talbot Jennings, Jules Furthman, Carey Wilson",0
+1935,Best Screenplay,The Informer,Dudley Nichols,1
+1935,Best Screenplay,Captain Blood,Casey Robinson,0
+1936,Best Screenplay,My Man Godfrey,"Eric Hatch, Morris Ryskind",0
+1936,Best Screenplay,Mr. Deeds Goes to Town,Robert Riskin,0
+1936,Best Screenplay,The Story of Louis Pasteur,"Pierre Collings, Sheridan Gibney",1
+1936,Best Screenplay,After the Thin Man,"Frances Goodrich, Albert Hackett",0
+1936,Best Screenplay,Dodsworth,Sidney Howard,0
+1937,Best Screenplay,The Life of Emile Zola,"Norman Reilly Raine, Heinz Herald, Geza Herczeg",1
+1937,Best Screenplay,A Star Is Born,"Dorothy Parker, Alan Campbell, Robert Carson",0
+1937,Best Screenplay,The Awful Truth,Vina Delmar,0
+1937,Best Screenplay,Stage Door,"Morris Ryskind, Anthony Veiller",0
+1937,Best Screenplay,Captains Courageous,"John Lee Mahin, Marc Connelly, Dale Van Every",0
+1938,Best Screenplay,Four Daughters,"Julius J. Epstein, Lenore Coffee",0
+1938,Best Screenplay,The Citadel,"Ian Dalrymple, Frank Wead, Elizabeth Hill",0
+1938,Best Screenplay,You Can't Take It with You,Robert Riskin,0
+1938,Best Screenplay,Boys Town,"John Meehan, Dore Schary",0
+1938,Best Screenplay,Pygmalion,"Screenplay and Dialogue by George Bernard Shaw",1
+1939,Best Screenplay,Wuthering Heights,"Charles MacArthur, Ben Hecht",0
+1939,Best Screenplay,"Goodbye, Mr. Chips","R. C. Sherriff, Claudine West, Eric Maschwitz",0
+1939,Best Screenplay,Mr. Smith Goes to Washington,Sidney Buchman,0
+1939,Best Screenplay,Ninotchka,"Charles Brackett, Billy Wilder, Walter Reisch",0
+1939,Best Screenplay,Gone with the Wind,Sidney Howard,1
 1940,Best Original Screenplay,The Great Dictator,Charlie Chaplin,0
 1940,Best Original Screenplay,Foreign Correspondent,"Charles Bennett, Joan Harrison",0
 1940,Best Original Screenplay,Dr. Ehrlich's Magic Bullet,"John Huston, Heinz Herald, Norman Burnside",0
 1940,Best Original Screenplay,Angels over Broadway,Ben Hecht,0
 1940,Best Original Screenplay,The Great McGinty,Preston Sturges,1
-1940,Best Original Screenplay,Comrade X,Walter Reisch,0
-1940,Best Original Screenplay,"Arise, My Love","Benjamin Glazer, John S. Toldy",1
-1940,Best Original Screenplay,My Favorite Wife,"Bella Spewack, Samuel Spewack, Leo McCarey",0
-1940,Best Original Screenplay,The Westerner,Stuart N. Lake,0
-1940,Best Original Screenplay,"Edison, the Man","Dore Schary, Hugo Butler",0
 1940,Best Adapted Screenplay,Kitty Foyle,Dalton Trumbo,0
 1940,Best Adapted Screenplay,Rebecca,"Robert E. Sherwood, Joan Harrison",0
 1940,Best Adapted Screenplay,The Philadelphia Story,Donald Ogden Stewart,1
@@ -3063,11 +3033,6 @@
 1941,Best Original Screenplay,Sergeant York,"Abem Finkel, Harry Chandlee, Howard Koch, John Huston",0
 1941,Best Original Screenplay,"Tall, Dark and Handsome","Karl Tunberg, Darrell Ware",0
 1941,Best Original Screenplay,The Devil and Miss Jones,Norman Krasna,0
-1941,Best Original Screenplay,Meet John Doe,"Richard Connell, Robert Presnell",0
-1941,Best Original Screenplay,Night Train,Gordon Wellesley,0
-1941,Best Original Screenplay,The Lady Eve,Monckton Hoffe,0
-1941,Best Original Screenplay,Here Comes Mr. Jordan,Harry Segall,1
-1941,Best Original Screenplay,Ball of Fire,"Billy Wilder, Thomas Monroe",0
 1941,Best Adapted Screenplay,Here Comes Mr. Jordan,"Sidney Buchman, Seton I. Miller",1
 1941,Best Adapted Screenplay,Hold Back the Dawn,"Charles Brackett, Billy Wilder",0
 1941,Best Adapted Screenplay,How Green Was My Valley,Philip Dunne,0
@@ -3110,7 +3075,7 @@
 1945,Best Original Screenplay,Dillinger,Philip Yordan,0
 1945,Best Adapted Screenplay,The Lost Weekend,"Charles Brackett, Billy Wilder",1
 1945,Best Adapted Screenplay,Pride of the Marines,Albert Maltz,0
-1945,Best Adapted Screenplay,G. I. Joe,"Leopold Atlas, Guy Endore, Philip Stevenson",0
+1945,Best Adapted Screenplay,The Story of G. I. Joe,"Leopold Atlas, Guy Endore, Philip Stevenson",0
 1945,Best Adapted Screenplay,Mildred Pierce,Ranald MacDougall,0
 1945,Best Adapted Screenplay,A Tree Grows in Brooklyn,"Tess Slesinger, Frank Davis",0
 1946,Best Original Screenplay,Road to Utopia,"Norman Panama, Melvin Frank",0
@@ -3121,7 +3086,7 @@
 1946,Best Adapted Screenplay,Anna and the King of Siam,"Talbot Jennings, Sally Benson",0
 1946,Best Adapted Screenplay,The Best Years of Our Lives,Robert E. Sherwood,1
 1946,Best Adapted Screenplay,Brief Encounter,"David Lean, Anthony Havelock-Allan, Ronald Neame",0
-1946,Best Adapted Screenplay,Open City,"Sergio Amidei, F. Fellini",0
+1946,Best Adapted Screenplay,Open City,"Sergio Amidei, Federico Fellini",0
 1946,Best Adapted Screenplay,The Killers,Anthony Veiller,0
 1947,Best Original Screenplay,Body and Soul,Abraham Polonsky,0
 1947,Best Original Screenplay,Monsieur Verdoux,Charlie Chaplin,0
@@ -3133,11 +3098,11 @@
 1947,Best Adapted Screenplay,Great Expectations,"David Lean, Anthony Havelock-Allan, Ronald Neame",0
 1947,Best Adapted Screenplay,Boomerang!,Richard Murphy,0
 1947,Best Adapted Screenplay,Gentleman's Agreement,Moss Hart,0
-1948,Best Adapted Screenplay,The Search,"Richard Schweizer, David Wechsler",0
-1948,Best Adapted Screenplay,Johnny Belinda,"Irmgard Von Cube, Allen Vincent",0
-1948,Best Adapted Screenplay,The Snake Pit,"Frank Partos, Millen Brand",0
-1948,Best Adapted Screenplay,A Foreign Affair,"Charles Brackett, Billy Wilder, Richard L. Breen",0
-1948,Best Adapted Screenplay,The Treasure of the Sierra Madre,John Huston,1
+1948,Best Screenplay,The Search,"Richard Schweizer, David Wechsler",0
+1948,Best Screenplay,Johnny Belinda,"Irmgard Von Cube, Allen Vincent",0
+1948,Best Screenplay,The Snake Pit,"Frank Partos, Millen Brand",0
+1948,Best Screenplay,A Foreign Affair,"Charles Brackett, Billy Wilder, Richard L. Breen",0
+1948,Best Screenplay,The Treasure of the Sierra Madre,John Huston,1
 1949,Best Adapted Screenplay,All the King's Men,Robert Rossen,0
 1949,Best Adapted Screenplay,A Letter to Three Wives,Joseph L. Mankiewicz,1
 1949,Best Adapted Screenplay,The Bicycle Thief,Cesare Zavattini,0
@@ -3223,10 +3188,10 @@
 1957,Best Adapted Screenplay,Peyton Place,John Michael Hayes,0
 1957,Best Adapted Screenplay,Sayonara,Paul Osborn,0
 1957,Best Adapted Screenplay,The Bridge on the River Kwai,"Michael Wilson, Carl Foreman, Pierre Boulle",1
-1957,Best Original Screenplay,Man of a Thousand Faces,"Story by Ralph Wheelwright; Screenplay by R. Wright Campbell, Ivan Goff, Ben Roberts",0
-1957,Best Original Screenplay,Vitelloni,"Story by Federico Fellini, Ennio Flaiano, Tullio Pinelli; Screenplay by Federico Fellini, Ennio Flaiano",0
+1957,Best Original Screenplay,Man of a Thousand Faces,"R. Wright Campbell, Ivan Goff, Ben Roberts",0
+1957,Best Original Screenplay,Vitelloni,"Federico Fellini, Ennio Flaiano",0
 1957,Best Original Screenplay,Designing Woman,George Wells,1
-1957,Best Original Screenplay,The Tin Star,"Story by Barney Slater, Joel Kane; Screenplay by Dudley Nichols",0
+1957,Best Original Screenplay,The Tin Star,"Dudley Nichols",0
 1957,Best Original Screenplay,Funny Face,Leonard Gershe,0
 1958,Best Adapted Screenplay,Separate Tables,"Terence Rattigan, John Gay",0
 1958,Best Adapted Screenplay,I Want To Live!,"Nelson Gidding, Don Mankiewicz",0
@@ -3236,17 +3201,17 @@
 1958,Best Original Screenplay,Teacher's Pet,"Fay Kanin, Michael Kanin",0
 1958,Best Original Screenplay,Houseboat,"Melville Shavelson, Jack Rose",0
 1958,Best Original Screenplay,The Defiant Ones,"Nedrick Young, Harold Jacob Smith",1
-1958,Best Original Screenplay,The Sheepman,"Story by James Edward Grant; Screenplay by William Bowers, James Edward Grant",0
+1958,Best Original Screenplay,The Sheepman,"William Bowers, James Edward Grant",0
 1958,Best Original Screenplay,The Goddess,Paddy Chayefsky,0
 1959,Best Adapted Screenplay,Anatomy of a Murder,Wendell Mayes,0
 1959,Best Adapted Screenplay,Room at the Top,Neil Paterson,1
 1959,Best Adapted Screenplay,The Nun's Story,Robert Anderson,0
 1959,Best Adapted Screenplay,Ben-Hur,Karl Tunberg,0
-1959,Best Adapted Screenplay,Some Like It Hot,"Billy Wilder, I. A. L. Diamond",0
+1959,Best Adapted Screenplay,Some Like It Hot,"Billy Wilder, I.A.L. Diamond",0
 1959,Best Original Screenplay,The 400 Blows,"Francois Truffaut, Marcel Moussy",0
 1959,Best Original Screenplay,Wild Strawberries,Ingmar Bergman,0
-1959,Best Original Screenplay,Operation Petticoat,"Story by Paul King, Joseph Stone; Screenplay by Stanley Shapiro, Maurice Richlin",0
-1959,Best Original Screenplay,Pillow Talk,"Story by Russell Rouse, Clarence Greene; Screenplay by Stanley Shapiro, Maurice Richlin",1
+1959,Best Original Screenplay,Operation Petticoat,"Stanley Shapiro, Maurice Richlin",0
+1959,Best Original Screenplay,Pillow Talk,"Stanley Shapiro, Maurice Richlin",1
 1959,Best Original Screenplay,North by Northwest,Ernest Lehman,0
 1960,Best Adapted Screenplay,Tunes of Glory,James Kennaway,0
 1960,Best Adapted Screenplay,Inherit the Wind,"Nedrick Young, Harold Jacob Smith",0
@@ -3254,9 +3219,9 @@
 1960,Best Adapted Screenplay,Sons and Lovers,"Gavin Lambert, T. E. B. Clarke",0
 1960,Best Adapted Screenplay,Elmer Gantry,Richard Brooks,1
 1960,Best Original Screenplay,Never on Sunday,Jules Dassin,0
-1960,Best Original Screenplay,The Apartment,"Billy Wilder, I. A. L. Diamond",1
+1960,Best Original Screenplay,The Apartment,"Billy Wilder, I.A.L. Diamond",1
 1960,Best Original Screenplay,The Facts of Life,"Norman Panama, Melvin Frank",0
-1960,Best Original Screenplay,The Angry Silence,"Story by Richard Gregson, Michael Craig; Screenplay by Bryan Forbes",0
+1960,Best Original Screenplay,The Angry Silence,"Bryan Forbes",0
 1960,Best Original Screenplay,"Hiroshima, Mon Amour",Marguerite Duras,0
 1961,Best Adapted Screenplay,West Side Story,Ernest Lehman,0
 1961,Best Adapted Screenplay,The Hustler,"Sidney Carroll, Robert Rossen",0
@@ -3275,7 +3240,7 @@
 1962,Best Adapted Screenplay,David and Lisa,Eleanor Perry,0
 1962,Best Original Screenplay,Divorce--Italian Style,"Ennio de Concini, Alfredo Giannetti, Pietro Germi",1
 1962,Best Original Screenplay,That Touch of Mink,"Stanley Shapiro, Nate Monaster",0
-1962,Best Original Screenplay,Freud,"Story by Charles Kaufman; Screenplay by Charles Kaufman, Wolfgang Reinhardt",0
+1962,Best Original Screenplay,Freud,"Charles Kaufman, Wolfgang Reinhardt",0
 1962,Best Original Screenplay,Last Year at Marienbad,Alain Robbe-Grillet,0
 1962,Best Original Screenplay,Through a Glass Darkly,Ingmar Bergman,0
 1963,Best Adapted Screenplay,Tom Jones,John Osborne,1
@@ -3284,7 +3249,7 @@
 1963,Best Adapted Screenplay,"Captain Newman, M.D.","Richard L. Breen, Phoebe Ephron, Henry Ephron",0
 1963,Best Adapted Screenplay,Sundays and Cybele,"Serge Bourguignon, Antoine Tudal",0
 1963,Best Original Screenplay,Federico Fellini's 8-1/2,"Federico Fellini, Ennio Flaiano, Tullio Pinelli, Brunello Rondi",0
-1963,Best Original Screenplay,The Four Days of Naples,"Story by Pasquale Festa Campanile, Massimo Franciosa, Nanni Loy, Vasco Pratolini; Screenplay by Carlo Bernari, Pasquale Festa Campanile, Massimo Franciosa, Nanni Loy",0
+1963,Best Original Screenplay,The Four Days of Naples,"Carlo Bernari, Pasquale Festa Campanile, Massimo Franciosa, Nanni Loy",0
 1963,Best Original Screenplay,Love with the Proper Stranger,Arnold Schulman,0
 1963,Best Original Screenplay,How the West Was Won,James R. Webb,1
 1963,Best Original Screenplay,America America,Elia Kazan,0
@@ -3293,10 +3258,10 @@
 1964,Best Adapted Screenplay,Becket,Edward Anhalt,1
 1964,Best Adapted Screenplay,Mary Poppins,"Bill Walsh, Don DaGradi",0
 1964,Best Adapted Screenplay,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,"Stanley Kubrick, Peter George, Terry Southern",0
-1964,Best Original Screenplay,Father Goose,"Story by S. H. Barnett; Screenplay by Peter Stone, Frank Tarloff",1
+1964,Best Original Screenplay,Father Goose,"Peter Stone, Frank Tarloff",1
 1964,Best Original Screenplay,The Organizer,"Age, Scarpelli, Mario Monicelli",0
 1964,Best Original Screenplay,That Man from Rio,"Jean-Paul Rappeneau, Ariane Mnouchkine, Daniel Boulanger, Philippe De Broca",0
-1964,Best Original Screenplay,"One Potato, Two Potato","Story by Orville H. Hampton; Screenplay by Raphael Hayes, Orville H. Hampton",0
+1964,Best Original Screenplay,"One Potato, Two Potato","Raphael Hayes, Orville H. Hampton",0
 1964,Best Original Screenplay,A Hard Day's Night,Alun Owen,0
 1965,Best Adapted Screenplay,A Thousand Clowns,Herb Gardner,0
 1965,Best Adapted Screenplay,Cat Ballou,"Walter Newman, Frank R. Pierson",0
@@ -3313,10 +3278,10 @@
 1966,Best Adapted Screenplay,A Man for All Seasons,Robert Bolt,1
 1966,Best Adapted Screenplay,Who's Afraid of Virginia Woolf?,Ernest Lehman,0
 1966,Best Adapted Screenplay,Alfie,Bill Naughton,0
-1966,Best Original Screenplay,The Fortune Cookie,"Billy Wilder, I. A. L. Diamond",0
-1966,Best Original Screenplay,Blow-Up,"Story by Michelangelo Antonioni; Screenplay by Michelangelo Antonioni, Tonino Guerra, Edward Bond",0
+1966,Best Original Screenplay,The Fortune Cookie,"Billy Wilder, I.A.L. Diamond",0
+1966,Best Original Screenplay,Blow-Up,"Michelangelo Antonioni, Tonino Guerra, Edward Bond",0
 1966,Best Original Screenplay,Khartoum,Robert Ardrey,0
-1966,Best Original Screenplay,A Man and a Woman,"Story by Claude Lelouch; Screenplay by Claude Lelouch, Pierre Uytterhoeven",1
+1966,Best Original Screenplay,A Man and a Woman,"Claude Lelouch, Pierre Uytterhoeven",1
 1966,Best Original Screenplay,The Naked Prey,"Clint Johnston, Don Peters",0
 1967,Best Adapted Screenplay,Ulysses,"Joseph Strick, Fred Haines",0
 1967,Best Adapted Screenplay,In the Heat of the Night,Stirling Silliphant,1
@@ -3325,7 +3290,7 @@
 1967,Best Adapted Screenplay,The Graduate,"Calder Willingham, Buck Henry",0
 1967,Best Original Screenplay,Two for the Road,Frederic Raphael,0
 1967,Best Original Screenplay,Bonnie and Clyde,"David Newman, Robert Benton",0
-1967,Best Original Screenplay,Divorce American Style,Story by Robert Kaufman; Screenplay by Norman Lear,0
+1967,Best Original Screenplay,Divorce American Style,Norman Lear,0
 1967,Best Original Screenplay,Guess Who's Coming to Dinner,William Rose,1
 1967,Best Original Screenplay,La Guerre Est Finie,Jorge Semprun,0
 1968,Best Adapted Screenplay,"Rachel, Rachel",Stewart Stern,0
@@ -3342,11 +3307,11 @@
 1969,Best Adapted Screenplay,"Goodbye, Columbus",Arnold Schulman,0
 1969,Best Adapted Screenplay,Midnight Cowboy,Waldo Salt,1
 1969,Best Adapted Screenplay,Z,"Jorge Semprun, Costa-Gavras",0
-1969,Best Adapted Screenplay,Anne of the Thousand Days,"Screenplay by John Hale, Bridget Boland; Adaptation by Richard Sokolove",0
-1969,Best Original Screenplay,The Damned,"Story by Nicola Badalucco; Screenplay by Nicola Badalucco, Enrico Medioli, Luchino Visconti",0
+1969,Best Adapted Screenplay,Anne of the Thousand Days,"John Hale, Bridget Boland",0
+1969,Best Original Screenplay,The Damned,"Nicola Badalucco, Enrico Medioli, Luchino Visconti",0
 1969,Best Original Screenplay,Easy Rider,"Peter Fonda, Dennis Hopper, Terry Southern",0
 1969,Best Original Screenplay,Bob & Carol & Ted & Alice,"Paul Mazursky, Larry Tucker",0
-1969,Best Original Screenplay,The Wild Bunch,"Story by Walon Green, Roy N. Sickner; Screenplay by Walon Green, Sam Peckinpah",0
+1969,Best Original Screenplay,The Wild Bunch,"Walon Green, Sam Peckinpah",0
 1969,Best Original Screenplay,Butch Cassidy and the Sundance Kid,William Goldman,1
 1970,Best Adapted Screenplay,Airport,George Seaton,0
 1970,Best Adapted Screenplay,I Never Sang for My Father,Robert Anderson,0
@@ -3356,7 +3321,7 @@
 1970,Best Original Screenplay,Patton,"Francis Ford Coppola, Edmund H. North",1
 1970,Best Original Screenplay,Joe,Norman Wexler,0
 1970,Best Original Screenplay,My Night at Maud's,Eric Rohmer,0
-1970,Best Original Screenplay,Five Easy Pieces,"Story by Bob Rafelson, Adrien Joyce; Screenplay by Adrien Joyce",0
+1970,Best Original Screenplay,Five Easy Pieces,"Adrien Joyce",0
 1970,Best Original Screenplay,Love Story,Erich Segal,0
 1971,Best Adapted Screenplay,The Last Picture Show,"Larry McMurtry, Peter Bogdanovich",0
 1971,Best Adapted Screenplay,A Clockwork Orange,Stanley Kubrick,0
@@ -3377,7 +3342,7 @@
 1972,Best Original Screenplay,Young Winston,Carl Foreman,0
 1972,Best Original Screenplay,Murmur of the Heart,Louis Malle,0
 1972,Best Original Screenplay,The Candidate,Jeremy Larner,1
-1972,Best Original Screenplay,The Discreet Charm of the Bourgeoisie,Story and Screenplay by Luis Bunuel; in collaboration with Jean-Claude Carriere,0
+1972,Best Original Screenplay,The Discreet Charm of the Bourgeoisie,Luis Bunuel; in collaboration with Jean-Claude Carriere,0
 1973,Best Adapted Screenplay,Serpico,"Waldo Salt, Norman Wexler",0
 1973,Best Adapted Screenplay,Paper Moon,Alvin Sargent,0
 1973,Best Adapted Screenplay,The Paper Chase,James Bridges,0
@@ -3397,7 +3362,7 @@
 1974,Best Adapted Screenplay,Young Frankenstein,"Gene Wilder, Mel Brooks",0
 1974,Best Adapted Screenplay,Murder on the Orient Express,Paul Dehn,0
 1974,Best Adapted Screenplay,The Godfather Part II,"Francis Ford Coppola, Mario Puzo",1
-1974,Best Adapted Screenplay,The Apprenticeship of Duddy Kravitz,Screenplay by Mordecai Richler; Adaptation by Lionel Chetwynd,0
+1974,Best Adapted Screenplay,The Apprenticeship of Duddy Kravitz,Mordecai Richler,0
 1975,Best Original Screenplay,Dog Day Afternoon,Frank Pierson,1
 1975,Best Original Screenplay,Amarcord,"Federico Fellini, Tonino Guerra",0
 1975,Best Original Screenplay,And Now My Love,"Claude Lelouch, Pierre Uytterhoeven",0
@@ -3410,7 +3375,7 @@
 1975,Best Adapted Screenplay,The Man Who Would Be King,"John Huston, Gladys Hill",0
 1976,Best Original Screenplay,Rocky,Sylvester Stallone,0
 1976,Best Original Screenplay,Seven Beauties,Lina Wertmuller,0
-1976,Best Original Screenplay,"Cousin, Cousine",Story and Screenplay by Jean-Charles Tacchella; Adaptation by Daniele Thompson,0
+1976,Best Original Screenplay,"Cousin, Cousine",Jean-Charles Tacchella,0
 1976,Best Original Screenplay,Network,Paddy Chayefsky,1
 1976,Best Original Screenplay,The Front,Walter Bernstein,0
 1976,Best Adapted Screenplay,Bound for Glory,Robert Getchell,0
@@ -3434,9 +3399,9 @@
 1978,Best Adapted Screenplay,Heaven Can Wait,"Elaine May, Warren Beatty",0
 1978,Best Adapted Screenplay,California Suite,Neil Simon,0
 1978,Best Original Screenplay,Interiors,Woody Allen,0
-1978,Best Original Screenplay,The Deer Hunter,"Story by Michael Cimino, Deric Washburn, Louis Garfinkle, Quinn K. Redeker; Screenplay by Deric Washburn",0
+1978,Best Original Screenplay,The Deer Hunter,"Deric Washburn",0
 1978,Best Original Screenplay,An Unmarried Woman,Paul Mazursky,0
-1978,Best Original Screenplay,Coming Home,"Story by Nancy Dowd; Screenplay by Waldo Salt, Robert C. Jones",1
+1978,Best Original Screenplay,Coming Home,"Waldo Salt, Robert C. Jones",1
 1978,Best Original Screenplay,Autumn Sonata,Ingmar Bergman,0
 1979,Best Adapted Screenplay,Kramer vs. Kramer,Robert Benton,1
 1979,Best Adapted Screenplay,Norma Rae,"Irving Ravetch, Harriet Frank Jr.",0
@@ -3449,14 +3414,14 @@
 1979,Best Original Screenplay,All That Jazz,"Robert Alan Aurthur, Bob Fosse",0
 1979,Best Original Screenplay,Breaking Away,Steve Tesich,1
 1980,Best Adapted Screenplay,Breaker Morant,"Jonathan Hardy, David Stevens, Bruce Beresford",0
-1980,Best Adapted Screenplay,The Stunt Man,Screenplay by Lawrence B. Marcus; Adaptation by Richard Rush,0
+1980,Best Adapted Screenplay,The Stunt Man,Lawrence B. Marcus,0
 1980,Best Adapted Screenplay,The Elephant Man,"Christopher DeVore, Eric Bergren, David Lynch",0
 1980,Best Adapted Screenplay,Coal Miner's Daughter,Tom Rickman,0
 1980,Best Adapted Screenplay,Ordinary People,Alvin Sargent,1
 1980,Best Original Screenplay,Melvin and Howard,Bo Goldman,1
 1980,Best Original Screenplay,Mon Oncle D'Amerique,Jean Gruault,0
 1980,Best Original Screenplay,Fame,Christopher Gore,0
-1980,Best Original Screenplay,Brubaker,"Screenplay by W. D. Richter; Story by W. D. Richter, Arthur Ross",0
+1980,Best Original Screenplay,Brubaker,"W. D. Richter",0
 1980,Best Original Screenplay,Private Benjamin,"Nancy Meyers, Charles Shyer, Harvey Miller",0
 1981,Best Adapted Screenplay,On Golden Pond,Ernest Thompson,1
 1981,Best Adapted Screenplay,Prince of the City,"Jay Presson Allen, Sidney Lumet",0
@@ -3473,7 +3438,7 @@
 1982,Best Adapted Screenplay,Sophie's Choice,Alan J. Pakula,0
 1982,Best Adapted Screenplay,Victor/Victoria,Blake Edwards,0
 1982,Best Adapted Screenplay,Das Boot,Wolfgang Petersen,0
-1982,Best Original Screenplay,Tootsie,"Screenplay by Larry Gelbart, Murray Schisgal; Story by Don McGuire, Larry Gelbart",0
+1982,Best Original Screenplay,Tootsie,"Larry Gelbart, Murray Schisgal",0
 1982,Best Original Screenplay,Diner,Barry Levinson,0
 1982,Best Original Screenplay,An Officer and a Gentleman,Douglas Day Stewart,0
 1982,Best Original Screenplay,E.T. The Extra-Terrestrial,Melissa Mathison,0
@@ -3494,17 +3459,17 @@
 1984,Best Adapted Screenplay,A Soldier's Story,Charles Fuller,0
 1984,Best Adapted Screenplay,Amadeus,Peter Shaffer,1
 1984,Best Original Screenplay,Broadway Danny Rose,Woody Allen,0
-1984,Best Original Screenplay,Splash,"Screenplay by Lowell Ganz, Babaloo Mandel, Bruce Jay Friedman; Screen Story by Bruce Jay Friedman; Based on a story by Brian Grazer",0
+1984,Best Original Screenplay,Splash,"Lowell Ganz, Babaloo Mandel, Bruce Jay Friedman",0
 1984,Best Original Screenplay,El Norte,"Gregory Nava, Anna Thomas",0
 1984,Best Original Screenplay,Places in the Heart,Robert Benton,1
-1984,Best Original Screenplay,Beverly Hills Cop,"Screenplay by Daniel Petrie Jr.; Story by Danilo Bach, Daniel Petrie Jr.",0
+1984,Best Original Screenplay,Beverly Hills Cop,"Daniel Petrie Jr.",0
 1985,Best Adapted Screenplay,Out of Africa,Kurt Luedtke,1
 1985,Best Adapted Screenplay,Prizzi's Honor,"Richard Condon, Janet Roach",0
 1985,Best Adapted Screenplay,Kiss of the Spider Woman,Leonard Schrader,0
 1985,Best Adapted Screenplay,The Color Purple,Menno Meyjes,0
 1985,Best Adapted Screenplay,The Trip to Bountiful,Horton Foote,0
 1985,Best Original Screenplay,The Official Story,"Luis Puenzo, Aida Bortnik",0
-1985,Best Original Screenplay,Witness,"Screenplay by Earl W. Wallace, William Kelley; Story by William Kelley, Pamela Wallace, Earl W. Wallace",1
+1985,Best Original Screenplay,Witness,"Earl W. Wallace, William Kelley",1
 1985,Best Original Screenplay,The Purple Rose of Cairo,Woody Allen,0
 1985,Best Original Screenplay,Back to the Future,"Robert Zemeckis, Bob Gale",0
 1985,Best Original Screenplay,Brazil,"Terry Gilliam, Tom Stoppard, Charles McKeown",0
@@ -3515,7 +3480,7 @@
 1986,Best Adapted Screenplay,The Color of Money,Richard Price,0
 1986,Best Original Screenplay,My Beautiful Laundrette,Hanif Kureishi,0
 1986,Best Original Screenplay,Salvador,"Oliver Stone, Richard Boyle",0
-1986,Best Original Screenplay,Crocodile' Dundee,"Screenplay by Paul Hogan, Ken Shadie, John Cornell; Story by Paul Hogan",0
+1986,Best Original Screenplay,Crocodile' Dundee,"Paul Hogan, Ken Shadie, John Cornell",0
 1986,Best Original Screenplay,Hannah and Her Sisters,Woody Allen,1
 1986,Best Original Screenplay,Platoon,Oliver Stone,0
 1987,Best Adapted Screenplay,The Last Emperor,"Mark Peploe, Bernardo Bertolucci",1
@@ -3530,14 +3495,14 @@
 1987,Best Original Screenplay,Broadcast News,James L. Brooks,0
 1988,Best Adapted Screenplay,The Accidental Tourist,"Frank Galati, Lawrence Kasdan",0
 1988,Best Adapted Screenplay,Little Dorrit,Christine Edzard,0
-1988,Best Adapted Screenplay,Gorillas in the Mist,"Screenplay by Anna Hamilton Phelan; Story by Anna Hamilton Phelan, Tab Murphy",0
+1988,Best Adapted Screenplay,Gorillas in the Mist,"Anna Hamilton Phelan",0
 1988,Best Adapted Screenplay,The Unbearable Lightness of Being,"Jean-Claude Carriere, Philip Kaufman",0
 1988,Best Adapted Screenplay,Dangerous Liaisons,Christopher Hampton,1
-1988,Best Original Screenplay,Rain Man,"Screenplay by Ronald Bass, Barry Morrow; Story by Barry Morrow",1
+1988,Best Original Screenplay,Rain Man,"Ronald Bass, Barry Morrow",1
 1988,Best Original Screenplay,Running on Empty,Naomi Foner,0
 1988,Best Original Screenplay,Big,"Gary Ross, Anne Spielberg",0
 1988,Best Original Screenplay,Bull Durham,Ron Shelton,0
-1988,Best Original Screenplay,A Fish Called Wanda,"Screenplay by John Cleese; Story by John Cleese, Charles Crichton",0
+1988,Best Original Screenplay,A Fish Called Wanda,"John Cleese",0
 1989,Best Adapted Screenplay,Born on the Fourth of July,"Oliver Stone, Ron Kovic",0
 1989,Best Adapted Screenplay,Field of Dreams,Phil Alden Robinson,0
 1989,Best Adapted Screenplay,"Enemies, A Love Story","Roger L. Simon, Paul Mazursky",0
@@ -3584,7 +3549,7 @@
 1993,Best Adapted Screenplay,In the Name of the Father,"Terry George, Jim Sheridan",0
 1993,Best Adapted Screenplay,Schindler's List,Steven Zaillian,1
 1993,Best Original Screenplay,The Piano,Jane Campion,1
-1993,Best Original Screenplay,Sleepless in Seattle,"Screenplay by Nora Ephron, David S. Ward, Jeff Arch; Story by Jeff Arch",0
+1993,Best Original Screenplay,Sleepless in Seattle,"Nora Ephron, David S. Ward, Jeff Arch",0
 1993,Best Original Screenplay,In the Line of Fire,Jeff Maguire,0
 1993,Best Original Screenplay,Dave,Gary Ross,0
 1993,Best Original Screenplay,Philadelphia,Ron Nyswaner,0
@@ -3597,8 +3562,8 @@
 1994,Best Original Screenplay,Red,"Krzysztof Piesiewicz, Krzysztof Kieslowski",0
 1994,Best Original Screenplay,Heavenly Creatures,"Frances Walsh, Peter Jackson",0
 1994,Best Original Screenplay,Four Weddings and a Funeral,Richard Curtis,0
-1994,Best Original Screenplay,Pulp Fiction,Screenplay by Quentin Tarantino; Stories by Quentin Tarantino & Roger Avary,1
-1995,Best Adapted Screenplay,"Anna Pavignano, Michael Radford, Furio Scarpelli, Giacomo Scarpelli, Massimo Troisi",0
+1994,Best Original Screenplay,Pulp Fiction,Quentin Tarantino,1
+1995,Best Adapted Screenplay,Il Postino,"Anna Pavignano, Michael Radford, Furio Scarpelli, Giacomo Scarpelli, Massimo Troisi",0
 1995,Best Adapted Screenplay,Babe,"George Miller, Chris Noonan",0
 1995,Best Adapted Screenplay,Leaving Las Vegas,Mike Figgis,0
 1995,Best Adapted Screenplay,Apollo 13,"William Broyles Jr., Al Reinert",0
@@ -3607,17 +3572,17 @@
 1995,Best Original Screenplay,Braveheart,Randall Wallace,0
 1995,Best Original Screenplay,Mighty Aphrodite,Woody Allen,0
 1995,Best Original Screenplay,Nixon,"Stephen J. Rivele, Christopher Wilkinson, Oliver Stone",0
-1995,Best Original Screenplay,Toy Story,"Screenplay by Joss Whedon, Andrew Stanton, Joel Cohen, Alec Sokolow; Story by John Lasseter, Peter Docter, Andrew Stanton, Joe Ranft",0
+1995,Best Original Screenplay,Toy Story,"Joss Whedon, Andrew Stanton, Joel Cohen, Alec Sokolow",0
 1996,Best Adapted Screenplay,Sling Blade,Billy Bob Thornton,1
 1996,Best Adapted Screenplay,The Crucible,Arthur Miller,0
 1996,Best Adapted Screenplay,Hamlet,Kenneth Branagh,0
 1996,Best Adapted Screenplay,The English Patient,Anthony Minghella,0
 1996,Best Adapted Screenplay,Trainspotting,John Hodge,0
-1996,Best Original Screenplay,Shine,Screenplay by Jan Sardi; Story by Scott Hicks,0
+1996,Best Original Screenplay,Shine,Jan Sardi,0
 1996,Best Original Screenplay,Secrets & Lies,Mike Leigh,0
 1996,Best Original Screenplay,Lone Star,John Sayles,0
 1996,Best Original Screenplay,Jerry Maguire,Cameron Crowe,0
-1996,Best Original Screenplay,Fargo,"Ethan Coen, Joel Coen",1
+1996,Best Original Screenplay,Fargo,"Joel and Ethan Coen",1
 1997,Best Adapted Screenplay,L.A. Confidential,"Brian Helgeland, Curtis Hanson",1
 1997,Best Adapted Screenplay,Wag the Dog,"Hilary Henkin, David Mamet",0
 1997,Best Adapted Screenplay,The Wings of the Dove,Hossein Amini,0
@@ -3625,7 +3590,7 @@
 1997,Best Adapted Screenplay,The Sweet Hereafter,Atom Egoyan,0
 1997,Best Original Screenplay,The Full Monty,Simon Beaufoy,0
 1997,Best Original Screenplay,Deconstructing Harry,Woody Allen,0
-1997,Best Original Screenplay,As Good As It Gets,"Screenplay by Mark Andrus, James L. Brooks; Story by Mark Andrus",0
+1997,Best Original Screenplay,As Good As It Gets,"Mark Andrus, James L. Brooks",0
 1997,Best Original Screenplay,Boogie Nights,Paul Thomas Anderson,0
 1997,Best Original Screenplay,Good Will Hunting,"Ben Affleck, Matt Damon",1
 1998,Best Adapted Screenplay,The Thin Red Line,Terrence Malick,0
@@ -3633,7 +3598,7 @@
 1998,Best Adapted Screenplay,Primary Colors,Elaine May,0
 1998,Best Adapted Screenplay,Gods and Monsters,Bill Condon,1
 1998,Best Adapted Screenplay,A Simple Plan,Scott B. Smith,0
-1998,Best Original Screenplay,Bulworth,"Screenplay by Warren Beatty, Jeremy Pikser; Story by Warren Beatty",0
+1998,Best Original Screenplay,Bulworth,"Warren Beatty, Jeremy Pikser",0
 1998,Best Original Screenplay,The Truman Show,Andrew Niccol,0
 1998,Best Original Screenplay,Saving Private Ryan,Robert Rodat,0
 1998,Best Original Screenplay,Shakespeare in Love,"Marc Norman, Tom Stoppard",1
@@ -3648,96 +3613,96 @@
 1999,Best Original Screenplay,Topsy-Turvy,Mike Leigh,0
 1999,Best Original Screenplay,American Beauty,Alan Ball,1
 1999,Best Original Screenplay,The Sixth Sense,M. Night Shyamalan,0
-2000,Best Adapted Screenplay,"Crouching Tiger, Hidden Dragon",Written by Wang Hui Ling and James Schamus and Tsai Kuo Jung,0
-2000,Best Adapted Screenplay,"O Brother, Where Art Thou?",Written by Ethan Coen & Joel Coen,0
-2000,Best Adapted Screenplay,Wonder Boys,Screenplay by Steve Kloves,0
-2000,Best Adapted Screenplay,Chocolat,Screenplay by Robert Nelson Jacobs,0
-2000,Best Adapted Screenplay,Traffic,Screenplay by Stephen Gaghan,1
-2000,Best Original Screenplay,You Can Count on Me,Written by Kenneth Lonergan,0
-2000,Best Original Screenplay,Billy Elliot,Written by Lee Hall,0
-2000,Best Original Screenplay,Gladiator,Screenplay by David Franzoni and John Logan and William Nicholson; Story by David Franzoni,0
-2000,Best Original Screenplay,Almost Famous,Written by Cameron Crowe,1
-2000,Best Original Screenplay,Erin Brockovich,Written by Susannah Grant,0
-2001,Best Adapted Screenplay,Ghost World,Written by Daniel Clowes & Terry Zwigoff,0
-2001,Best Adapted Screenplay,In the Bedroom,Screenplay by Rob Festinger and Todd Field,0
-2001,Best Adapted Screenplay,A Beautiful Mind,Written by Akiva Goldsman,1
-2001,Best Adapted Screenplay,Shrek,Written by Ted Elliott & Terry Rossio and Joe Stillman and Roger S.H. Schulman,0
-2001,Best Adapted Screenplay,The Lord of the Rings: The Fellowship of the Ring,"Screenplay by Fran Walsh, Philippa Boyens, Peter Jackson",0
-2001,Best Original Screenplay,Amelie,Screenplay by Guillaume Laurant and Jean-Pierre Jeunet; Dialogue by Guillaume Laurant,0
-2001,Best Original Screenplay,Monster's Ball,Written by Milo Addica & Will Rokos,0
-2001,Best Original Screenplay,The Royal Tenenbaums,Written by Wes Anderson & Owen Wilson,0
-2001,Best Original Screenplay,Gosford Park,Written by Julian Fellowes,1
-2001,Best Original Screenplay,Memento,Screenplay by Christopher Nolan; Story by Jonathan Nolan,0
-2002,Best Adapted Screenplay,The Pianist,Screenplay by Ronald Harwood,1
-2002,Best Adapted Screenplay,About a Boy,Screenplay by Peter Hedges and Chris Weitz & Paul Weitz,0
-2002,Best Adapted Screenplay,Chicago,Screenplay by Bill Condon,0
-2002,Best Adapted Screenplay,Adaptation,Screenplay by Charlie Kaufman and Donald Kaufman,0
-2002,Best Adapted Screenplay,The Hours,Screenplay by David Hare,0
-2002,Best Original Screenplay,My Big Fat Greek Wedding,Written by Nia Vardalos,0
-2002,Best Original Screenplay,Talk to Her,Written by Pedro Almodovar,1
-2002,Best Original Screenplay,Far from Heaven,Written by Todd Haynes,0
-2002,Best Original Screenplay,Gangs of New York,Screenplay by Jay Cocks and Steve Zaillian and Kenneth Lonergan; Story by Jay Cocks,0
-2002,Best Original Screenplay,Y Tu Mama Tambien,Written by Carlos Cuaron and Alfonso Cuaron,0
-2003,Best Adapted Screenplay,The Lord of the Rings: The Return of the King,"Screenplay by Fran Walsh, Philippa Boyens & Peter Jackson",1
-2003,Best Adapted Screenplay,Mystic River,Screenplay by Brian Helgeland,0
-2003,Best Adapted Screenplay,City of God,Screenplay by Braulio Mantovani,0
-2003,Best Adapted Screenplay,Seabiscuit,Written for the Screen by Gary Ross,0
-2003,Best Adapted Screenplay,American Splendor,Written by Robert Pulcini & Shari Springer Berman,0
-2003,Best Original Screenplay,Lost in Translation,Written by Sofia Coppola,1
-2003,Best Original Screenplay,Dirty Pretty Things,Written by Steven Knight,0
-2003,Best Original Screenplay,Finding Nemo,"Screenplay by Andrew Stanton, Bob Peterson and David Reynolds; Original Story by Andrew Stanton",0
-2003,Best Original Screenplay,In America,Written by Jim Sheridan & Naomi Sheridan & Kirsten Sheridan,0
-2003,Best Original Screenplay,The Barbarian Invasions,Written by Denys Arcand,0
-2004,Best Adapted Screenplay,Finding Neverland,Screenplay by David Magee,0
-2004,Best Adapted Screenplay,Sideways,Screenplay by Alexander Payne & Jim Taylor,1
-2004,Best Adapted Screenplay,Million Dollar Baby,Screenplay by Paul Haggis,0
-2004,Best Adapted Screenplay,Before Sunset,Screenplay by Richard Linklater & Julie Delpy & Ethan Hawke; Story by Richard Linklater & Kim Krizan,0
-2004,Best Adapted Screenplay,The Motorcycle Diaries,Screenplay by Jose Rivera,0
-2004,Best Original Screenplay,Eternal Sunshine of the Spotless Mind,Screenplay by Charlie Kaufman; Story by Charlie Kaufman & Michel Gondry & Pierre Bismuth,1
-2004,Best Original Screenplay,The Incredibles,Written by Brad Bird,0
-2004,Best Original Screenplay,Hotel Rwanda,Written by Keir Pearson & Terry George,0
-2004,Best Original Screenplay,The Aviator,Written by John Logan,0
-2004,Best Original Screenplay,Vera Drake,Written by Mike Leigh,0
-2005,Best Adapted Screenplay,A History of Violence,Screenplay by Josh Olson,0
-2005,Best Adapted Screenplay,Munich,Screenplay by Tony Kushner and Eric Roth,0
-2005,Best Adapted Screenplay,Capote,Screenplay by Dan Futterman,0
-2005,Best Adapted Screenplay,Brokeback Mountain,Screenplay by Larry McMurtry & Diana Ossana,1
-2005,Best Adapted Screenplay,The Constant Gardener,Screenplay by Jeffrey Caine,0
-2005,Best Original Screenplay,Syriana,Written by Stephen Gaghan,0
-2005,Best Original Screenplay,"Good Night, and Good Luck.",Screenplay by George Clooney & Grant Heslov,0
-2005,Best Original Screenplay,Crash,Screenplay by Paul Haggis & Bobby Moresco; Story by Paul Haggis,1
-2005,Best Original Screenplay,Match Point,Written by Woody Allen,0
-2005,Best Original Screenplay,The Squid and the Whale,Written by Noah Baumbach,0
-2006,Best Adapted Screenplay,Little Children,Screenplay by Todd Field & Tom Perrotta,0
-2006,Best Adapted Screenplay,Notes on a Scandal,Screenplay by Patrick Marber,0
-2006,Best Adapted Screenplay,Borat Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,Screenplay by Sacha Baron Cohen & Anthony Hines & Peter Baynham & Dan Mazer; Story by Sacha Baron Cohen & Peter Baynham & Anthony Hines & Todd Phillips,0
-2006,Best Adapted Screenplay,The Departed,Screenplay by William Monahan,1
-2006,Best Adapted Screenplay,Children of Men,Screenplay by Alfonso Cuaron & Timothy J. Sexton and David Arata and Mark Fergus & Hawk Ostby,0
-2006,Best Original Screenplay,Little Miss Sunshine,Written by Michael Arndt,1
-2006,Best Original Screenplay,The Queen,Written by Peter Morgan,0
-2006,Best Original Screenplay,Babel,Written by Guillermo Arriaga,0
-2006,Best Original Screenplay,Pan's Labyrinth,Written by Guillermo del Toro,0
-2006,Best Original Screenplay,Letters from Iwo Jima,Screenplay by Iris Yamashita; Story by Iris Yamashita & Paul Haggis,0
-2007,Best Adapted Screenplay,Atonement,Screenplay by Christopher Hampton,0
-2007,Best Adapted Screenplay,Away from Her,Written by Sarah Polley,0
-2007,Best Adapted Screenplay,The Diving Bell and the Butterfly,Screenplay by Ronald Harwood,0
-2007,Best Adapted Screenplay,No Country for Old Men,Written for the screen by Joel Coen & Ethan Coen,1
-2007,Best Adapted Screenplay,There Will Be Blood,Written for the Screen by Paul Thomas Anderson,0
-2007,Best Original Screenplay,Juno,Written by Diablo Cody,1
-2007,Best Original Screenplay,Lars and the Real Girl,Written by Nancy Oliver,0
-2007,Best Original Screenplay,Michael Clayton,Written by Tony Gilroy,0
-2007,Best Original Screenplay,Ratatouille,"Screenplay by Brad Bird; Story by Jan Pinkava, Jim Capobianco, Brad Bird",0
-2007,Best Original Screenplay,The Savages,Written by Tamara Jenkins,0
-2008,Best Adapted Screenplay,The Curious Case of Benjamin Button,Screenplay by Eric Roth; Screen story by Eric Roth and Robin Swicord,0
-2008,Best Adapted Screenplay,Doubt,Written by John Patrick Shanley,0
-2008,Best Adapted Screenplay,Frost/Nixon,Screenplay by Peter Morgan,0
-2008,Best Adapted Screenplay,The Reader,Screenplay by David Hare,0
-2008,Best Adapted Screenplay,Slumdog Millionaire,Screenplay by Simon Beaufoy,1
-2008,Best Original Screenplay,Frozen River,Written by Courtney Hunt,0
-2008,Best Original Screenplay,Happy-Go-Lucky,Written by Mike Leigh,0
-2008,Best Original Screenplay,In Bruges,Written by Martin McDonagh,0
-2008,Best Original Screenplay,Milk,Written by Dustin Lance Black,1
-2008,Best Original Screenplay,WALL-E,"Screenplay by Andrew Stanton, Jim Reardon; Original story by Andrew Stanton, Pete Docter",0
+2000,Best Adapted Screenplay,"Crouching Tiger, Hidden Dragon",Wang Hui Ling and James Schamus and Tsai Kuo Jung,0
+2000,Best Adapted Screenplay,"O Brother, Where Art Thou?",Joel and Ethan Coen,0
+2000,Best Adapted Screenplay,Wonder Boys,Steve Kloves,0
+2000,Best Adapted Screenplay,Chocolat,Robert Nelson Jacobs,0
+2000,Best Adapted Screenplay,Traffic,Stephen Gaghan,1
+2000,Best Original Screenplay,You Can Count on Me,Kenneth Lonergan,0
+2000,Best Original Screenplay,Billy Elliot,Lee Hall,0
+2000,Best Original Screenplay,Gladiator,David Franzoni and John Logan and William Nicholson,0
+2000,Best Original Screenplay,Almost Famous,Cameron Crowe,1
+2000,Best Original Screenplay,Erin Brockovich,Susannah Grant,0
+2001,Best Adapted Screenplay,Ghost World,Daniel Clowes & Terry Zwigoff,0
+2001,Best Adapted Screenplay,In the Bedroom,Rob Festinger and Todd Field,0
+2001,Best Adapted Screenplay,A Beautiful Mind,Akiva Goldsman,1
+2001,Best Adapted Screenplay,Shrek,Ted Elliott & Terry Rossio and Joe Stillman and Roger S.H. Schulman,0
+2001,Best Adapted Screenplay,The Lord of the Rings: The Fellowship of the Ring,"Fran Walsh, Philippa Boyens, Peter Jackson",0
+2001,Best Original Screenplay,Amelie,Guillaume Laurant and Jean-Pierre Jeunet,0
+2001,Best Original Screenplay,Monster's Ball,Milo Addica & Will Rokos,0
+2001,Best Original Screenplay,The Royal Tenenbaums,Wes Anderson & Owen Wilson,0
+2001,Best Original Screenplay,Gosford Park,Julian Fellowes,1
+2001,Best Original Screenplay,Memento,Christopher Nolan,0
+2002,Best Adapted Screenplay,The Pianist,Ronald Harwood,1
+2002,Best Adapted Screenplay,About a Boy,Peter Hedges and Chris Weitz & Paul Weitz,0
+2002,Best Adapted Screenplay,Chicago,Bill Condon,0
+2002,Best Adapted Screenplay,Adaptation,Charlie Kaufman and Donald Kaufman,0
+2002,Best Adapted Screenplay,The Hours,David Hare,0
+2002,Best Original Screenplay,My Big Fat Greek Wedding,Nia Vardalos,0
+2002,Best Original Screenplay,Talk to Her,Pedro Almodovar,1
+2002,Best Original Screenplay,Far from Heaven,Todd Haynes,0
+2002,Best Original Screenplay,Gangs of New York,Jay Cocks and Steve Zaillian and Kenneth Lonergan,0
+2002,Best Original Screenplay,Y Tu Mama Tambien,Carlos Cuaron and Alfonso Cuaron,0
+2003,Best Adapted Screenplay,The Lord of the Rings: The Return of the King,"Fran Walsh, Philippa Boyens & Peter Jackson",1
+2003,Best Adapted Screenplay,Mystic River,Brian Helgeland,0
+2003,Best Adapted Screenplay,City of God,Braulio Mantovani,0
+2003,Best Adapted Screenplay,Seabiscuit,Gary Ross,0
+2003,Best Adapted Screenplay,American Splendor,Robert Pulcini & Shari Springer Berman,0
+2003,Best Original Screenplay,Lost in Translation,Sofia Coppola,1
+2003,Best Original Screenplay,Dirty Pretty Things,Steven Knight,0
+2003,Best Original Screenplay,Finding Nemo,"Andrew Stanton, Bob Peterson and David Reynolds",0
+2003,Best Original Screenplay,In America,Jim Sheridan & Naomi Sheridan & Kirsten Sheridan,0
+2003,Best Original Screenplay,The Barbarian Invasions,Denys Arcand,0
+2004,Best Adapted Screenplay,Finding Neverland,David Magee,0
+2004,Best Adapted Screenplay,Sideways,Alexander Payne & Jim Taylor,1
+2004,Best Adapted Screenplay,Million Dollar Baby,Paul Haggis,0
+2004,Best Adapted Screenplay,Before Sunset,Richard Linklater & Julie Delpy & Ethan Hawke,0
+2004,Best Adapted Screenplay,The Motorcycle Diaries,Jose Rivera,0
+2004,Best Original Screenplay,Eternal Sunshine of the Spotless Mind,Charlie Kaufman,1
+2004,Best Original Screenplay,The Incredibles,Brad Bird,0
+2004,Best Original Screenplay,Hotel Rwanda,Keir Pearson & Terry George,0
+2004,Best Original Screenplay,The Aviator,John Logan,0
+2004,Best Original Screenplay,Vera Drake,Mike Leigh,0
+2005,Best Adapted Screenplay,A History of Violence,Josh Olson,0
+2005,Best Adapted Screenplay,Munich,Tony Kushner and Eric Roth,0
+2005,Best Adapted Screenplay,Capote,Dan Futterman,0
+2005,Best Adapted Screenplay,Brokeback Mountain,Larry McMurtry & Diana Ossana,1
+2005,Best Adapted Screenplay,The Constant Gardener,Jeffrey Caine,0
+2005,Best Original Screenplay,Syriana,Stephen Gaghan,0
+2005,Best Original Screenplay,"Good Night, and Good Luck.",George Clooney & Grant Heslov,0
+2005,Best Original Screenplay,Crash,Paul Haggis & Bobby Moresco,1
+2005,Best Original Screenplay,Match Point,Woody Allen,0
+2005,Best Original Screenplay,The Squid and the Whale,Noah Baumbach,0
+2006,Best Adapted Screenplay,Little Children,Todd Field & Tom Perrotta,0
+2006,Best Adapted Screenplay,Notes on a Scandal,Patrick Marber,0
+2006,Best Adapted Screenplay,Borat Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,Sacha Baron Cohen & Anthony Hines & Peter Baynham & Dan Mazer,0
+2006,Best Adapted Screenplay,The Departed,William Monahan,1
+2006,Best Adapted Screenplay,Children of Men,Alfonso Cuaron & Timothy J. Sexton and David Arata and Mark Fergus & Hawk Ostby,0
+2006,Best Original Screenplay,Little Miss Sunshine,Michael Arndt,1
+2006,Best Original Screenplay,The Queen,Peter Morgan,0
+2006,Best Original Screenplay,Babel,Guillermo Arriaga,0
+2006,Best Original Screenplay,Pan's Labyrinth,Guillermo del Toro,0
+2006,Best Original Screenplay,Letters from Iwo Jima,Iris Yamashita,0
+2007,Best Adapted Screenplay,Atonement,Christopher Hampton,0
+2007,Best Adapted Screenplay,Away from Her,Sarah Polley,0
+2007,Best Adapted Screenplay,The Diving Bell and the Butterfly,Ronald Harwood,0
+2007,Best Adapted Screenplay,No Country for Old Men,Joel and Ethan Coen,1
+2007,Best Adapted Screenplay,There Will Be Blood,Paul Thomas Anderson,0
+2007,Best Original Screenplay,Juno,Diablo Cody,1
+2007,Best Original Screenplay,Lars and the Real Girl,Nancy Oliver,0
+2007,Best Original Screenplay,Michael Clayton,Tony Gilroy,0
+2007,Best Original Screenplay,Ratatouille,"Brad Bird",0
+2007,Best Original Screenplay,The Savages,Tamara Jenkins,0
+2008,Best Adapted Screenplay,The Curious Case of Benjamin Button,Eric Roth,0
+2008,Best Adapted Screenplay,Doubt,John Patrick Shanley,0
+2008,Best Adapted Screenplay,Frost/Nixon,Peter Morgan,0
+2008,Best Adapted Screenplay,The Reader,David Hare,0
+2008,Best Adapted Screenplay,Slumdog Millionaire,Simon Beaufoy,1
+2008,Best Original Screenplay,Frozen River,Courtney Hunt,0
+2008,Best Original Screenplay,Happy-Go-Lucky,Mike Leigh,0
+2008,Best Original Screenplay,In Bruges,Martin McDonagh,0
+2008,Best Original Screenplay,Milk,Dustin Lance Black,1
+2008,Best Original Screenplay,WALL-E,"Andrew Stanton, Jim Reardon",0
 1956,Best Foreign Language Film,La Strada,"Italy; Dino De Laurentiis and Carlo Ponti, Producers",1
 1956,Best Foreign Language Film,Qivitoq,"Denmark; O. Dalsgaard-Olsen, Producer",0
 1956,Best Foreign Language Film,The Captain of Kopenick,"Federal Republic of Germany - West; Gyula Trebitsch and Walter Koppel, Producers",0

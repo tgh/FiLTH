@@ -41,7 +41,11 @@ grep -i cinematography $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfC
 # extract screenplay nominees
 echo extracting screenplay nominees...
 fgrep -i 'writing (original screenplay
-writing (original story
+1927/28,writing (original story
+1930/31,writing (original story
+1931/32,writing (original story
+1932/33,writing (original story
+1934,writing (original story
 writing (adaptation
 writing (story and screenplay
 writing (screenplay
@@ -92,8 +96,16 @@ sed -i "s/CINEMATOGRAPHY,/Best Cinematography,/g" $filth_path/data/oscarsOfCateg
 # rewrite best screenplay categories...
 echo rewriting best screenplay categories...
 sed -i -r "s/WRITING \(Original S.*\)|WRITING \(Screenplay Written Directly for the Screen.*\)|WRITING \(Story and Screenplay.*\)|WRITING \(Screenplay--Original\)/Best Original Screenplay/g" $filth_path/data/oscarsOfCategory.csv
-sed -i -r "s/WRITING \(.*Adapt.*\)|WRITING \(Screenplay.*[bB]ased on.*\)|WRITING \(Screenplay\)/Best Adapted Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/WRITING \(.*Adapt.*\)|WRITING \(Screenplay.*[bB]ased on.*([Mm]edium|Published)\)|WRITING \(Screenplay\)/Best Adapted Screenplay/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/WRITING/Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+# screenplay special cases: since these years have a 'story' category and a 'WRITING (Screenplay)'
+#  category only, the screenplay category should be Best Screenplay instead of Best Adapted Screenplay
+sed -i -r "s/1935,Best Adapted Screenplay/1935,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/1936,Best Adapted Screenplay/1936,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/1937,Best Adapted Screenplay/1937,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/1938,Best Adapted Screenplay/1938,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/1939,Best Adapted Screenplay/1939,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/1948,Best Adapted Screenplay/1948,Best Screenplay/g" $filth_path/data/oscarsOfCategory.csv
 # rewrite best foreign langauge film...
 echo rewriting best foreign film category as \"Best Foreign Language Film\"...
 sed -i "s/FOREIGN LANGUAGE FILM/Best Foreign Language Film/g" $filth_path/data/oscarsOfCategory.csv
@@ -120,6 +132,31 @@ sed -i "s/Charles Chaplin/Charlie Chaplin/g" $filth_path/data/oscarsOfCategory.c
 sed -i "s/Sir Laurence Olivier/Laurence Olivier/g" $filth_path/data/oscarsOfCategory.csv
 # change ", Jr." to just " Jr." (e.g. Robert Downey, Jr. -> Robert Downey Jr.)
 sed -i "s/, Jr./ Jr./g" $filth_path/data/oscarsOfCategory.csv
+# change ", Sr." to just " Sr."
+sed -i "s/, Sr./ Sr./g" $filth_path/data/oscarsOfCategory.csv
+# remove "[came in 2nd]", "[came in 3rd]", etc.
+sed -i "s/ \[came in.*\]//g" $filth_path/data/oscarsOfCategory.csv
+# change F. Fellini to Federico Fellini
+sed -i "s/F. Fellini/Federico Fellini/g" $filth_path/data/oscarsOfCategory.csv
+# change Coen brothers records
+sed -i "s/,Joel Coen,/,Joel and Ethan Coen,/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/Ethan Coen, Joel Coen|Ethan Coen &amp; Joel Coen|Joel Coen and Ethan Coen|Ethan Coen and Joel Coen|Joel Coen &amp; Ethan Coen/Joel and Ethan Coen/g" $filth_path/data/oscarsOfCategory.csv
+# change "The Postman (Il Postino)"
+sed -i "s/The Postman (Il Postino)/Il Postino/g" $filth_path/data/oscarsOfCategory.csv
+# clean up screenplay recipient attribute values (they're so inconsistent it's rediculous)
+sed -i "s/\"Story by.*; /\"/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/,Story by.*; /,/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Story and Screenplay by //g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/;in collaboration with.*,/,/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/Screenplay by //g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/; Adaptation by.*\"|; Story by.*\"|; Screen [Ss]tory by.*\"|; Original [Ss]tory by.*\"/\"/g" $filth_path/data/oscarsOfCategory.csv
+sed -i -r "s/; Adaptation by.*,|; Story by.*,|; Screen [Ss]tory by.*,|; Stories by.*,|; Dialogue by.*,/,/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Written by //g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Written for the [Ss]creen by //g" $filth_path/data/oscarsOfCategory.csv
+# change I. A. L. Diamond
+sed -i "s/I\. A\. L\. Diamond/I\.A\.L\. Diamond/g" $filth_path/data/oscarsOfCategory.csv
+# change "G. I. Joe" (Should be "The Story of G. I. Joe"
+sed -i "s/,G. I. Joe/,The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------

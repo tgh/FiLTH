@@ -122,6 +122,8 @@ public class OscarParser implements GracefulShutdown {
 
     log.logHeader("START");
 
+    int prevYear = 2008;
+
     //parse the csv file
     try {
       while (oscars.readRecord()) {
@@ -129,6 +131,12 @@ public class OscarParser implements GracefulShutdown {
         int year = Integer.parseInt(oscars.get(0));
         //get the category of the nomination
         String category = oscars.get(1);
+
+        if (prevYear == 2008 && year != 2008) {
+          log.logHeader(category);
+        }
+        prevYear = year;
+
         String title = null; //the movie titles aren't always in the same field slot (depends on the category)
         int mid      = 0;    //movie id to be retrieved from the database
         int cid      = 0;    //crew person id to be retrieved from the database
@@ -197,11 +205,13 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ORIGINAL SCREENPLAY (oid = 10) --------------------*/
 
         if (category.equals("Best Original Screenplay")) {
+          writing(year, 10);
         }
 
         /*---------- BEST ADAPTED SCREENPLAY (oid = 11) ---------------------*/
 
         if (category.equals("Best Adapted Screenplay")) {
+            writing(year, 11);
         }
 
         /*---------- BEST FOREIGN LANGUAGE FILM (oid = 12) ------------------*/
@@ -218,13 +228,14 @@ public class OscarParser implements GracefulShutdown {
 
         /*---------- BEST SCREENPLAY (oid = 14) -----------------------------*/
 
-        //1929 and 1930 had "WRITING" as a category--did not distinguish
-        // between original or adapted screenplays
+        //there are some years where simply "Best Screenplay" is appropriate
+        // since the categories don't really distingiush between original or
+        // adapted screenplays for those years
         if (category.equals("Best Screenplay")) {
           writing(year, 14);
         }
-      }
-    }
+      } //end while loop
+    } //end try
     catch (IOException ioe) {
       log.logFatalError("I/O Error of some kind",0,false);
       log.logGeneralMessageWithoutIndicator(ioe.toString(),0,false);
@@ -384,12 +395,20 @@ public class OscarParser implements GracefulShutdown {
       return n;
     }
     //names with 'Jr.' (like Robert Downey, Jr.) include Jr. with last name.
-    if (name[2].equals("Jr.")) {
-      String[] n = {name[0],name[1] + " Jr."};
-      return n;
+    // there is also the case where there is a "Jr." that makes the name 4
+    // tokens long (e.g. D. M. Marshman Jr.).
+    if (name[2].equals("Jr.") || (name.length == 4 && name[3].equals("Jr."))) {
+      if (name.length == 4) {
+        String[] n = {name[0],name[1],name[2] + " Jr."};
+        return n;
+      }
+      else {
+        String[] n = {name[0],name[1] + " Jr."};
+        return n;
+      }
     }
     //Gus Van Sant
-    if (name[1].equals("Van")) {
+    if (name[1].equals("Van") && name[2].equals("Sant")) {
       String[] n = {"Gus","Van Sant"};
       return n;
     }
@@ -622,8 +641,12 @@ public class OscarParser implements GracefulShutdown {
       String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
       secondTitle = secondTitle.toLowerCase().replace("'","''");
       secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
-      //create and write the appropriate sql insert statement for this nomination
-      actingHelper(secondTitle, uncleanedSecondTitle, year, oid);
+      //query for the movie unique id
+      int mid = queryForMovie(secondTitle, uncleanedSecondTitle, year);
+      //movie was found
+      if (mid != -1) {
+        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+      }
     }
     //extract the title (first title if there were two)
     String uncleanedTitle = title.substring(0, title.indexOf(" {"));
@@ -631,50 +654,11 @@ public class OscarParser implements GracefulShutdown {
     title = checkForSpecialCases(uncleanedTitle);
     title = title.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
-    //create and write the appropriate sql insert statement for this nomination
-    actingHelper(title, uncleanedTitle, year, oid);
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * Create and write the appropriate SQL insert statement for the current
-   * nomination--it is assumed to be a nomination in an acting category.
-   *
-   * @param title This is the cleaned movie title--needed for a call to
-   * queryForMovie().
-   * @param realTitle This is the title as seen in the csv record--needed
-   * for a call to queryForMovie().
-   * @param year An integer for the year of the movie--also needed for the
-   * call to queryForMovie().
-   * @param oid An integer for the unique id of the oscar category.
-   * @throws IOException
-   */
-  private void actingHelper(String title, String realTitle, int year, int oid) throws IOException {
-    //query for movie id
-    int mid = queryForMovie(title, realTitle, year);
-
-    //movie was found in database
+    //query for the movie unique id
+    int mid = queryForMovie(title, uncleanedTitle, year);
+    //movie was found
     if (mid != -1) {
-      //get the name of the actor
-      String[] name = oscars.get(2).split(" ");
-      //clean any special cases
-      if (name.length == 3) {
-        name = checkForNameSpecialCases(name);
-      }
-      //get the crew person id for this actor from the database
-      int cid = queryForCrewperson(name, oscars.get(2));
-      //actor was found in the database
-      if (cid != -1) {
-        //get the status of the nomination
-        int status = Integer.parseInt(oscars.get(4));
-        //log what was found
-        log.logData("mid = " + mid, 1, false);
-        log.logData("cid = " + cid, 1, false);
-        //write the sql insert statement for this nomination
-        bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
-        bw.newLine();
-      }
+      writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
     }
   }
 
@@ -778,50 +762,13 @@ public class OscarParser implements GracefulShutdown {
             }
           }
         }
-        directorSecondHelper(firstRecipient.split(" "), mid, oid, firstRecipient);
-        directorSecondHelper(secondRecipient.split(" "), mid, oid, secondRecipient);
+        writeSQL(firstRecipient.split(" "), mid, oid, firstRecipient);
+        writeSQL(secondRecipient.split(" "), mid, oid, secondRecipient);
       }
       //only one recipient for this nomination
       else {
-        directorSecondHelper(name, mid, oid, oscars.get(dirIdx));
+        writeSQL(name, mid, oid, oscars.get(dirIdx));
       }
-    }
-  }
-
-  //--------------------------------------------------------------------------
-  
-  /**
-   * Create and write the appropriate SQL insert statement for this Best
-   * Director nomination.
-   *
-   * @param name An array of Strings for the recipient of the nomination.
-   * @param mid The unique movie id from the database.
-   * @param oid The appropriate oid for this oscar category.
-   * @param nameString The name of the recipient as one String. 
-   * @throws IOException
-   */
-  private void directorSecondHelper(String[] name, int mid, int oid, String nameString) throws IOException {
-    //clean any special cases
-    if (name.length >= 3) {
-      name = checkForNameSpecialCases(name);
-    }
-    //a special special case: "Joel Coen" -> "Joel and Ethan Coen"
-    else if (name.length == 2 && name[1].equals("Coen")) {
-      String[] temp = {"Joel and Ethan", "Coen"};
-      name = temp;
-    }
-    //get the crew person id for this director from the database
-    int cid = queryForCrewperson(name, nameString);
-    //director was found in the database
-    if (cid != -1) {
-      //get the status of the nomination
-      int status = Integer.parseInt(oscars.get(4));
-      //log what was found
-      log.logData("mid = " + mid, 1, false);
-      log.logData("cid = " + cid, 1, false);
-      //write the sql insert statement for this nomination
-      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
-      bw.newLine();
     }
   }
 
@@ -946,51 +893,19 @@ public class OscarParser implements GracefulShutdown {
           //extract the recipient name
           recipient = recipientString.substring(startIdx, endIdx);
           //pass the name (as an array of Strings) to the second helper method
-          cineSecondHelper(recipient.split(" "), mid, oid, recipient);
+          writeSQL(recipient.split(" "), mid, oid, recipient);
           //reset the indeices for the next recipient
           startIdx = endIdx + 2;
           endIdx = recipientString.indexOf(",", startIdx);
         }
         //process the last recipient
         recipient = recipientString.substring(startIdx);
-        cineSecondHelper(recipient.split(" "), mid, oid, recipient);
+        writeSQL(recipient.split(" "), mid, oid, recipient);
       }
       //only one recipient for this nomination
       else {
-        cineSecondHelper(recipientString.split(" "), mid, oid, recipientString);
+        writeSQL(recipientString.split(" "), mid, oid, recipientString);
       }
-    }
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * Create and write the appropriate SQL insert statement for this Best
-   * Cinematography nomination.
-   *
-   * @param name An array of Strings for the recipient of the nomination.
-   * @param mid The unique movie id from the database.
-   * @param oid The appropriate oid for this oscar category.
-   * @param nameString The name of the recipient as one String. 
-   * @throws IOException
-   */
-  private void cineSecondHelper(String[] name, int mid, int oid, String nameString) throws IOException {
-    //clean any special cases
-    if (name.length >= 3) {
-      name = checkForNameSpecialCases(name);
-    }
-    //get the crew person id for this recipient from the database
-    int cid = queryForCrewperson(name, nameString);
-    //recipient was found in the database
-    if (cid != -1) {
-      //get the status of the nomination
-      int status = Integer.parseInt(oscars.get(4));
-      //log what was found
-      log.logData("mid = " + mid, 1, false);
-      log.logData("cid = " + cid, 1, false);
-      //write the sql insert statement for this nomination
-      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
-      bw.newLine();
     }
   }
 
@@ -1086,6 +1001,13 @@ public class OscarParser implements GracefulShutdown {
       if (year == 1930) {
         recipientString = recipientString.replace("(","").replace(")","");
       }
+      //in screenplay categories for years 2001 and on, some recipient values
+      // contain " & " and/or " and " rather than ", " to separate the
+      // different recipients
+      else if (year > 2000 && !recipientString.equals("Joel and Ethan Coen")) {
+        recipientString = recipientString.replace(" & ",", ");
+        recipientString = recipientString.replace(" and ",", ");
+      }
       //get the number of recipients for this nomination
       int numRecipients = recipientString.split(",").length;
 
@@ -1101,18 +1023,18 @@ public class OscarParser implements GracefulShutdown {
           //extract the recipient name
           recipient = recipientString.substring(startIdx, endIdx);
           //pass the name (as an array of Strings) to the second helper method
-          writingSecondHelper(recipient.split(" "), mid, oid, recipient);
+          writeSQL(recipient.split(" "), mid, oid, recipient);
           //reset the indeices for the next recipient
           startIdx = endIdx + 2;
           endIdx = recipientString.indexOf(",", startIdx);
         }
         //process the last recipient
         recipient = recipientString.substring(startIdx);
-        writingSecondHelper(recipient.split(" "), mid, oid, recipient);
+        writeSQL(recipient.split(" "), mid, oid, recipient);
       }
       //only one recipient for this nomination
       else {
-        writingSecondHelper(recipientString.split(" "), mid, oid, recipientString);
+        writeSQL(recipientString.split(" "), mid, oid, recipientString);
       }
     }
   }
@@ -1120,8 +1042,8 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   * Create and write the appropriate SQL insert statement for this Best
-   * Screenplay nomination.
+   * Creates and writes the appropriate SQL INSERT statement for this
+   * nomination.
    *
    * @param name An array of Strings for the recipient of the nomination.
    * @param mid The unique movie id from the database.
@@ -1129,10 +1051,15 @@ public class OscarParser implements GracefulShutdown {
    * @param nameString The name of the recipient as one String. 
    * @throws IOException
    */
-  private void writingSecondHelper(String[] name, int mid, int oid, String nameString) throws IOException {
+  private void writeSQL(String[] name, int mid, int oid, String nameString) throws IOException {
     //clean any special cases
     if (name.length >= 3) {
       name = checkForNameSpecialCases(name);
+    }
+    //a special special case: "Joel Coen" -> "Joel and Ethan Coen"
+    else if (oid == 6 && name.length == 2 && name[1].equals("Coen")) {
+      String[] temp = {"Joel and Ethan", "Coen"};
+      name = temp;
     }
     //get the crew person id for this recipient from the database
     int cid = queryForCrewperson(name, nameString);
