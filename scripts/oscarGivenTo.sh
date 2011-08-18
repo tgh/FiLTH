@@ -124,6 +124,28 @@ sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 
 #-- REWRITING SPECIAL CASES --
 echo rewriting special cases...
+# change Good Fellas to Goodfellas
+sed -i "s/Good Fellas/Goodfellas/g" $filth_path/data/oscarsOfCategory.csv
+# change Meredith Willson's The Music Man to The Music Man
+sed -i "s/Meredith Willson's //g" $filth_path/data/oscarsOfCategory.csv
+# change Sunset Blvd. to Sunset Boulevard
+sed -i "s/Sunset Blvd./Sunset Boulevard/g" $filth_path/data/oscarsOfCategory.csv
+# change The Chorus (Les Choristes) to just The Chorus
+sed -i "s/ (Les Choristes)//g" $filth_path/data/oscarsOfCategory.csv
+# change Au Revoir, Les Enfants (Goodbye, Children) to just Au Revoir, Les Enfants
+sed -i "s/ (Goodbye, Children)//g" $filth_path/data/oscarsOfCategory.csv
+# change Federico Fellini's 8-1/2 to 8\u00BD (which is the unicode escape sequence for one-half)
+sed -i "s/Federico Fellini's 8-1\/2/8\\\\u00BD/g" $filth_path/data/oscarsOfCategory.csv
+# change Mulholland Drive to Mulholland Dr.
+sed -i "s/Mulholland Drive/Mulholland Dr./g" $filth_path/data/oscarsOfCategory.csv
+# change The Postman (Il Postino) to just Il Postino
+sed -i "s/The Postman (Il Postino)/Il Postino/g" $filth_path/data/oscarsOfCategory.csv
+# change G. I. Joe to The Story of G. I. Joe
+sed -i "s/,G. I. Joe/,The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
+# change Conrad L. Hall to just Conrad Hall
+sed -i "s/Conrad L. Hall/Conrad Hall/g" $filth_path/data/oscarsOfCategory.csv
+# change Noriyuki 'Pat' Morita to just Pat Morita
+sed -i "s/Noriyuki 'Pat' Morita/Pat Morita/g" $filth_path/data/oscarsOfCategory.csv
 # change James Stewart to Jimmy Stewart
 sed -i "s/James Stewart/Jimmy Stewart/g" $filth_path/data/oscarsOfCategory.csv
 # change Charles Chaplin to Charlie Chaplin
@@ -141,8 +163,6 @@ sed -i "s/F. Fellini/Federico Fellini/g" $filth_path/data/oscarsOfCategory.csv
 # change Coen brothers records
 sed -i "s/,Joel Coen,/,Joel and Ethan Coen,/g" $filth_path/data/oscarsOfCategory.csv
 sed -i -r "s/Ethan Coen, Joel Coen|Ethan Coen &amp; Joel Coen|Joel Coen and Ethan Coen|Ethan Coen and Joel Coen|Joel Coen &amp; Ethan Coen/Joel and Ethan Coen/g" $filth_path/data/oscarsOfCategory.csv
-# change "The Postman (Il Postino)"
-sed -i "s/The Postman (Il Postino)/Il Postino/g" $filth_path/data/oscarsOfCategory.csv
 # clean up screenplay recipient attribute values (they're so inconsistent it's rediculous)
 sed -i "s/\"Story by.*; /\"/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/,Story by.*; /,/g" $filth_path/data/oscarsOfCategory.csv
@@ -155,8 +175,12 @@ sed -i "s/Written by //g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Written for the [Ss]creen by //g" $filth_path/data/oscarsOfCategory.csv
 # change I. A. L. Diamond
 sed -i "s/I\. A\. L\. Diamond/I\.A\.L\. Diamond/g" $filth_path/data/oscarsOfCategory.csv
-# change "G. I. Joe" (Should be "The Story of G. I. Joe"
-sed -i "s/,G. I. Joe/,The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
+# fix titles where a token starts with a "'" but doesn't end with one (e.g. "Give 'em Hell Harry!", "Adalen '31")
+#  this prevents a SQL syntax error when using Postgres full-text search in OscarParser.java
+sed -i "s/Give 'em Hell/Give 'em' Hell/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/dalen '31/dalen '31'/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Summer of '42/Summer of '42'/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Casanova '70/Casanova '70'/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------

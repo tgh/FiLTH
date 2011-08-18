@@ -1,6 +1,7 @@
 WHERE LEFT OFF
 ---------------
 - working on oscars...
+
   - should there be another attribute in oscar_given_to indicating that the
     nomination is shared?  Maybe be an integer representing how many others it
     is shared with

@@ -172,7 +172,7 @@
 1950,Best Picture,King Solomon's Mines,Metro-Goldwyn-Mayer,0
 1950,Best Picture,All about Eve,20th Century-Fox,1
 1950,Best Picture,Father of the Bride,Metro-Goldwyn-Mayer,0
-1950,Best Picture,Sunset Blvd.,Paramount,0
+1950,Best Picture,Sunset Boulevard,Paramount,0
 1951,Best Picture,A Place in the Sun,"George Stevens, Producer",0
 1951,Best Picture,Quo Vadis,"Sam Zimbalist, Producer",0
 1951,Best Picture,An American in Paris,"Arthur Freed, Producer",1
@@ -231,7 +231,7 @@
 1962,Best Picture,To Kill a Mockingbird,"Alan J. Pakula, Producer",0
 1962,Best Picture,The Longest Day,"Darryl F. Zanuck, Producer",0
 1962,Best Picture,Lawrence of Arabia,"Sam Spiegel, Producer",1
-1962,Best Picture,Meredith Willson's The Music Man,"Morton Da Costa, Producer",0
+1962,Best Picture,The Music Man,"Morton Da Costa, Producer",0
 1962,Best Picture,Mutiny on the Bounty,"Aaron Rosenberg, Producer",0
 1963,Best Picture,How the West Was Won,"Bernard Smith, Producer",0
 1963,Best Picture,America America,"Elia Kazan, Producer",0
@@ -368,7 +368,7 @@
 1989,Best Picture,Driving Miss Daisy,"Richard D. Zanuck and Lili Fini Zanuck, Producers",1
 1989,Best Picture,Dead Poets Society,"Steven Haft, Paul Junger Witt and Tony Thomas, Producers",0
 1989,Best Picture,Born on the Fourth of July,"A. Kitman Ho and Oliver Stone, Producers",0
-1990,Best Picture,Good Fellas,"Irwin Winkler, Producer",0
+1990,Best Picture,Goodfellas,"Irwin Winkler, Producer",0
 1990,Best Picture,Awakenings,"Walter F. Parkes and Lawrence Lasker, Producers",0
 1990,Best Picture,"The Godfather, Part III","Francis Ford Coppola, Producer",0
 1990,Best Picture,Dances With Wolves,"Jim Wilson and Kevin Costner, Producers",1
@@ -639,11 +639,11 @@
 1950,Best Actor,Spencer Tracy,"Father of the Bride {Stanley T. Banks""}""",0
 1950,Best Actor,Jimmy Stewart,"Harvey {Elwood P. Dowd""}""",0
 1950,Best Actor,Louis Calhern,"The Magnificent Yankee {Oliver Wendell Holmes""}""",0
-1950,Best Actor,William Holden,"Sunset Blvd. {Joe Gillis""}""",0
+1950,Best Actor,William Holden,"Sunset Boulevard {Joe Gillis""}""",0
 1950,Best Supporting Actor,Jeff Chandler,"Broken Arrow {Cochise""}""",0
 1950,Best Supporting Actor,Edmund Gwenn,"Mister 880 {Skipper Miller""}""",0
 1950,Best Supporting Actor,Sam Jaffe,"The Asphalt Jungle {Dr. Erwin Riedenschneider""}""",0
-1950,Best Supporting Actor,Erich von Stroheim,"Sunset Blvd. {Max Von Mayerling""}""",0
+1950,Best Supporting Actor,Erich von Stroheim,"Sunset Boulevard {Max Von Mayerling""}""",0
 1950,Best Supporting Actor,George Sanders,"All about Eve {Addison De Witt""}""",1
 1951,Best Actor,Montgomery Clift,"A Place in the Sun {George Eastman""}""",0
 1951,Best Actor,Arthur Kennedy,"Bright Victory {Larry Levins""}""",0
@@ -888,7 +888,7 @@
 1975,Best Actor,Walter Matthau,"The Sunshine Boys {Willy Clark""}""",0
 1975,Best Actor,Jack Nicholson,"One Flew over the Cuckoo's Nest {Randle Patrick McMurphy""}""",1
 1975,Best Actor,Al Pacino,"Dog Day Afternoon {Sonny""}""",0
-1975,Best Actor,James Whitmore,"Give 'em Hell, Harry! {Harry S Truman""}""",0
+1975,Best Actor,James Whitmore,"Give 'em' Hell, Harry! {Harry S Truman""}""",0
 1975,Best Actor,Maximilian Schell,"The Man in the Glass Booth {Arthur Goldman""}""",0
 1975,Best Supporting Actor,Chris Sarandon,"Dog Day Afternoon {Leon""}""",0
 1975,Best Supporting Actor,Burgess Meredith,"The Day of the Locust {Harry""}""",0
@@ -980,7 +980,7 @@
 1984,Best Actor,F. Murray Abraham,"Amadeus {Antonio Salieri""}""",1
 1984,Best Actor,Jeff Bridges,"Starman {Starman""}""",0
 1984,Best Actor,Sam Waterston,"The Killing Fields {Sydney Schanberg""}""",0
-1984,Best Supporting Actor,Noriyuki 'Pat' Morita,"The Karate Kid {Miyagi""}""",0
+1984,Best Supporting Actor,Pat Morita,"The Karate Kid {Miyagi""}""",0
 1984,Best Supporting Actor,Ralph Richardson,"Greystoke: The Legend of Tarzan, Lord of the Apes {The Sixth Earl of Greystoke""}""",0
 1984,Best Supporting Actor,Adolph Caesar,"A Soldier's Story {Sgt. Waters""}""",0
 1984,Best Supporting Actor,Haing S. Ngor,"The Killing Fields {Dith Pran""}""",1
@@ -1042,7 +1042,7 @@
 1990,Best Actor,Kevin Costner,"Dances With Wolves {Lieutenant Dunbar""}""",0
 1990,Best Supporting Actor,Graham Greene,"Dances With Wolves {Kicking Bird""}""",0
 1990,Best Supporting Actor,Al Pacino,"Dick Tracy {Big Boy Caprice""}""",0
-1990,Best Supporting Actor,Joe Pesci,"Good Fellas {Tommy DeVito""}""",1
+1990,Best Supporting Actor,Joe Pesci,"Goodfellas {Tommy DeVito""}""",1
 1990,Best Supporting Actor,Bruce Davison,"Longtime Companion {David""}""",0
 1990,Best Supporting Actor,Andy Garcia,"The Godfather, Part III {Vincent Mancini""}""",0
 1991,Best Actor,Anthony Hopkins,"The Silence of the Lambs {Dr. Hannibal Lecter""}""",1
@@ -1401,13 +1401,13 @@
 1949,Best Supporting Actress,Ethel Waters,"Pinky {Granny""}""",0
 1949,Best Supporting Actress,Celeste Holm,"Come to the Stable {Sister Scholastica""}""",0
 1949,Best Supporting Actress,Ethel Barrymore,"Pinky {Miss Em""}""",0
-1950,Best Actress,Gloria Swanson,"Sunset Blvd. {Norma Desmond""}""",0
+1950,Best Actress,Gloria Swanson,"Sunset Boulevard {Norma Desmond""}""",0
 1950,Best Actress,Judy Holliday,"Born Yesterday {Billie Dawn""}""",1
 1950,Best Actress,Eleanor Parker,"Caged {Marie Allen""}""",0
 1950,Best Actress,Bette Davis,"All about Eve {Margo Channing""}""",0
 1950,Best Actress,Anne Baxter,"All about Eve {Eve Harrington""}""",0
 1950,Best Supporting Actress,Celeste Holm,"All about Eve {Karen Richards""}""",0
-1950,Best Supporting Actress,Nancy Olson,"Sunset Blvd. {Betty Schaefer""}""",0
+1950,Best Supporting Actress,Nancy Olson,"Sunset Boulevard {Betty Schaefer""}""",0
 1950,Best Supporting Actress,Josephine Hull,"Harvey {Veta Louise Simmons""}""",1
 1950,Best Supporting Actress,Hope Emerson,"Caged {Evelyn Harper""}""",0
 1950,Best Supporting Actress,Thelma Ritter,"All about Eve {Birdie""}""",0
@@ -1810,7 +1810,7 @@
 1990,Best Supporting Actress,Whoopi Goldberg,"Ghost {Oda Mae Brown""}""",1
 1990,Best Supporting Actress,Mary McDonnell,"Dances With Wolves {Stands With A Fist""}""",0
 1990,Best Supporting Actress,Annette Bening,"The Grifters {Myra Langtry""}""",0
-1990,Best Supporting Actress,Lorraine Bracco,"Good Fellas {Karen Hill""}""",0
+1990,Best Supporting Actress,Lorraine Bracco,"Goodfellas {Karen Hill""}""",0
 1991,Best Actress,Susan Sarandon,"Thelma & Louise {Louise""}""",0
 1991,Best Actress,Laura Dern,"Rambling Rose {Rose""}""",0
 1991,Best Actress,Bette Midler,"For the Boys {Dixie Leonard""}""",0
@@ -2096,7 +2096,7 @@
 1949,Best Director,The Heiress,William Wyler,0
 1949,Best Director,Battleground,William A. Wellman,0
 1950,Best Director,The Asphalt Jungle,John Huston,0
-1950,Best Director,Sunset Blvd.,Billy Wilder,0
+1950,Best Director,Sunset Boulevard,Billy Wilder,0
 1950,Best Director,Born Yesterday,George Cukor,0
 1950,Best Director,The Third Man,Carol Reed,0
 1950,Best Director,All about Eve,Joseph L. Mankiewicz,1
@@ -2163,7 +2163,7 @@
 1963,Best Director,America America,Elia Kazan,0
 1963,Best Director,Tom Jones,Tony Richardson,1
 1963,Best Director,The Cardinal,Otto Preminger,0
-1963,Best Director,Federico Fellini's 8-1/2,Federico Fellini,0
+1963,Best Director,8\u00BD,Federico Fellini,0
 1963,Best Director,Hud,Martin Ritt,0
 1964,Best Director,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,Stanley Kubrick,0
 1964,Best Director,My Fair Lady,George Cukor,1
@@ -2296,7 +2296,7 @@
 1989,Best Director,Crimes and Misdemeanors,Woody Allen,0
 1989,Best Director,Henry V,Kenneth Branagh,0
 1990,Best Director,The Grifters,Stephen Frears,0
-1990,Best Director,Good Fellas,Martin Scorsese,0
+1990,Best Director,Goodfellas,Martin Scorsese,0
 1990,Best Director,"The Godfather, Part III",Francis Ford Coppola,0
 1990,Best Director,Reversal of Fortune,Barbet Schroeder,0
 1990,Best Director,Dances With Wolves,Kevin Costner,1
@@ -2351,7 +2351,7 @@
 2000,Best Director,Traffic,Steven Soderbergh,1
 2000,Best Director,Billy Elliot,Stephen Daldry,0
 2001,Best Director,The Lord of the Rings: The Fellowship of the Ring,Peter Jackson,0
-2001,Best Director,Mulholland Drive,David Lynch,0
+2001,Best Director,Mulholland Dr.,David Lynch,0
 2001,Best Director,A Beautiful Mind,Ron Howard,1
 2001,Best Director,Gosford Park,Robert Altman,0
 2001,Best Director,Black Hawk Down,Ridley Scott,0
@@ -2574,7 +2574,7 @@
 1949,Best Cinematography (color),She Wore a Yellow Ribbon,Winton Hoch,1
 1949,Best Cinematography (color),Little Women,"Robert Planck, Charles Schoenbaum",0
 1949,Best Cinematography (color),Sand,Charles G. Clarke,0
-1950,Best Cinematography (black and white),Sunset Blvd.,John F. Seitz,0
+1950,Best Cinematography (black and white),Sunset Boulevard,John F. Seitz,0
 1950,Best Cinematography (black and white),The Third Man,Robert Krasker,1
 1950,Best Cinematography (black and white),The Furies,Victor Milner,0
 1950,Best Cinematography (black and white),All about Eve,Milton Krasner,0
@@ -2763,7 +2763,7 @@
 1971,Best Cinematography,The French Connection,Owen Roizman,0
 1971,Best Cinematography,Nicholas and Alexandra,Freddie Young,0
 1971,Best Cinematography,The Last Picture Show,Robert Surtees,0
-1971,Best Cinematography,Summer of '42,Robert Surtees,0
+1971,Best Cinematography,Summer of '42',Robert Surtees,0
 1972,Best Cinematography,The Poseidon Adventure,Harold E. Stine,0
 1972,Best Cinematography,Butterflies Are Free,Charles B. Lang,0
 1972,Best Cinematography,Travels with My Aunt,Douglas Slocombe,0
@@ -2845,7 +2845,7 @@
 1987,Best Cinematography,Matewan,Haskell Wexler,0
 1987,Best Cinematography,Broadcast News,Michael Ballhaus,0
 1988,Best Cinematography,The Unbearable Lightness of Being,Sven Nykvist,0
-1988,Best Cinematography,Tequila Sunrise,Conrad L. Hall,0
+1988,Best Cinematography,Tequila Sunrise,Conrad Hall,0
 1988,Best Cinematography,Mississippi Burning,Peter Biziou,1
 1988,Best Cinematography,Rain Man,John Seale,0
 1988,Best Cinematography,Who Framed Roger Rabbit,Dean Cundey,0
@@ -2873,7 +2873,7 @@
 1993,Best Cinematography,Farewell My Concubine,Gu Changwei,0
 1993,Best Cinematography,The Fugitive,Michael Chapman,0
 1993,Best Cinematography,The Piano,Stuart Dryburgh,0
-1993,Best Cinematography,Searching for Bobby Fischer,Conrad L. Hall,0
+1993,Best Cinematography,Searching for Bobby Fischer,Conrad Hall,0
 1994,Best Cinematography,Wyatt Earp,Owen Roizman,0
 1994,Best Cinematography,Forrest Gump,Don Burgess,0
 1994,Best Cinematography,Legends of the Fall,John Toll,1
@@ -2897,9 +2897,9 @@
 1998,Best Cinematography,Saving Private Ryan,Janusz Kaminski,1
 1998,Best Cinematography,The Thin Red Line,John Toll,0
 1998,Best Cinematography,Shakespeare in Love,Richard Greatrex,0
-1998,Best Cinematography,A Civil Action,Conrad L. Hall,0
+1998,Best Cinematography,A Civil Action,Conrad Hall,0
 1998,Best Cinematography,Elizabeth,Remi Adefarasin,0
-1999,Best Cinematography,American Beauty,Conrad L. Hall,1
+1999,Best Cinematography,American Beauty,Conrad Hall,1
 1999,Best Cinematography,Sleepy Hollow,Emmanuel Lubezki,0
 1999,Best Cinematography,The End of the Affair,Roger Pratt,0
 1999,Best Cinematography,Snow Falling on Cedars,Robert Richardson,0
@@ -2918,7 +2918,7 @@
 2002,Best Cinematography,Gangs of New York,Michael Ballhaus,0
 2002,Best Cinematography,Far from Heaven,Edward Lachman,0
 2002,Best Cinematography,The Pianist,Pawel Edelman,0
-2002,Best Cinematography,Road to Perdition,Conrad L. Hall,1
+2002,Best Cinematography,Road to Perdition,Conrad Hall,1
 2003,Best Cinematography,Seabiscuit,John Schwartzman,0
 2003,Best Cinematography,Cold Mountain,John Seale,0
 2003,Best Cinematography,Girl with a Pearl Earring,Eduardo Serra,0
@@ -3118,7 +3118,7 @@
 1950,Best Adapted Screenplay,The Asphalt Jungle,"Ben Maddow, John Huston",0
 1950,Best Adapted Screenplay,Broken Arrow,Albert Maltz,0
 1950,Best Adapted Screenplay,All about Eve,Joseph L. Mankiewicz,1
-1950,Best Original Screenplay,Sunset Blvd.,"Charles Brackett, Billy Wilder, D. M. Marshman Jr.",1
+1950,Best Original Screenplay,Sunset Boulevard,"Charles Brackett, Billy Wilder, D. M. Marshman Jr.",1
 1950,Best Original Screenplay,Adam's Rib,"Ruth Gordon, Garson Kanin",0
 1950,Best Original Screenplay,Caged,"Virginia Kellogg, Bernard C. Schoenfeld",0
 1950,Best Original Screenplay,The Men,Carl Foreman,0
@@ -3248,7 +3248,7 @@
 1963,Best Adapted Screenplay,Hud,"Irving Ravetch, Harriet Frank Jr.",0
 1963,Best Adapted Screenplay,"Captain Newman, M.D.","Richard L. Breen, Phoebe Ephron, Henry Ephron",0
 1963,Best Adapted Screenplay,Sundays and Cybele,"Serge Bourguignon, Antoine Tudal",0
-1963,Best Original Screenplay,Federico Fellini's 8-1/2,"Federico Fellini, Ennio Flaiano, Tullio Pinelli, Brunello Rondi",0
+1963,Best Original Screenplay,8\u00BD,"Federico Fellini, Ennio Flaiano, Tullio Pinelli, Brunello Rondi",0
 1963,Best Original Screenplay,The Four Days of Naples,"Carlo Bernari, Pasquale Festa Campanile, Massimo Franciosa, Nanni Loy",0
 1963,Best Original Screenplay,Love with the Proper Stranger,Arnold Schulman,0
 1963,Best Original Screenplay,How the West Was Won,James R. Webb,1
@@ -3271,7 +3271,7 @@
 1965,Best Original Screenplay,Darling,Frederic Raphael,1
 1965,Best Original Screenplay,The Umbrellas of Cherbourg,Jacques Demy,0
 1965,Best Original Screenplay,The Train,"Franklin Coen, Frank Davis",0
-1965,Best Original Screenplay,Casanova '70,"Age, Scarpelli, Mario Monicelli, Tonino Guerra, Giorgio Salvioni, Suso Cecchi D'Amico",0
+1965,Best Original Screenplay,Casanova '70',"Age, Scarpelli, Mario Monicelli, Tonino Guerra, Giorgio Salvioni, Suso Cecchi D'Amico",0
 1965,Best Original Screenplay,Those Magnificent Men in Their Flying Machines,"Jack Davies, Ken Annakin",0
 1966,Best Adapted Screenplay,The Russians Are Coming The Russians Are Coming,William Rose,0
 1966,Best Adapted Screenplay,The Professionals,Richard Brooks,0
@@ -3331,7 +3331,7 @@
 1971,Best Original Screenplay,Sunday Bloody Sunday,Penelope Gilliatt,0
 1971,Best Original Screenplay,The Hospital,Paddy Chayefsky,1
 1971,Best Original Screenplay,Investigation of a Citizen Above Suspicion,"Elio Petri, Ugo Pirro",0
-1971,Best Original Screenplay,Summer of '42,Herman Raucher,0
+1971,Best Original Screenplay,Summer of '42',Herman Raucher,0
 1971,Best Original Screenplay,Klute,"Andy Lewis, Dave Lewis",0
 1972,Best Adapted Screenplay,Pete 'n' Tillie,Julius J. Epstein,0
 1972,Best Adapted Screenplay,Sounder,"Lonne Elder, III",0
@@ -3514,7 +3514,7 @@
 1989,Best Original Screenplay,Dead Poets Society,Tom Schulman,1
 1989,Best Original Screenplay,Crimes and Misdemeanors,Woody Allen,0
 1990,Best Adapted Screenplay,Dances With Wolves,Michael Blake,1
-1990,Best Adapted Screenplay,Good Fellas,"Nicholas Pileggi, Martin Scorsese",0
+1990,Best Adapted Screenplay,Goodfellas,"Nicholas Pileggi, Martin Scorsese",0
 1990,Best Adapted Screenplay,Awakenings,Steven Zaillian,0
 1990,Best Adapted Screenplay,Reversal of Fortune,Nicholas Kazan,0
 1990,Best Adapted Screenplay,The Grifters,Donald E. Westlake,0
@@ -3742,7 +3742,7 @@
 1963,Best Foreign Language Film,The Red Lanterns,Greece,0
 1963,Best Foreign Language Film,Knife in the Water,Poland,0
 1963,Best Foreign Language Film,Los Tarantos,Spain,0
-1963,Best Foreign Language Film,Federico Fellini's 8-1/2,Italy,1
+1963,Best Foreign Language Film,8\u00BD,Italy,1
 1964,Best Foreign Language Film,The Umbrellas of Cherbourg,France,0
 1964,Best Foreign Language Film,"Yesterday, Today and Tomorrow",Italy,1
 1964,Best Foreign Language Film,Sallah,Israel,0
@@ -3770,7 +3770,7 @@
 1968,Best Foreign Language Film,The Boys of Paul Street,Hungary,0
 1969,Best Foreign Language Film,My Night at Maud's,France,0
 1969,Best Foreign Language Film,The Battle of Neretva,Yugoslavia,0
-1969,Best Foreign Language Film,Adalen '31,Sweden,0
+1969,Best Foreign Language Film,Adalen '31',Sweden,0
 1969,Best Foreign Language Film,Z,Algeria,1
 1969,Best Foreign Language Film,The Brothers Karamazov,Union of Soviet Socialist Republics,0
 1970,Best Foreign Language Film,Hoa-Binh,France,0
@@ -3861,7 +3861,7 @@
 1987,Best Foreign Language Film,The Family,Italy,0
 1987,Best Foreign Language Film,Pathfinder,Norway,0
 1987,Best Foreign Language Film,Course Completed,Spain,0
-1987,Best Foreign Language Film,"Au Revoir Les Enfants (Goodbye, Children)",France,0
+1987,Best Foreign Language Film,"Au Revoir Les Enfants",France,0
 1987,Best Foreign Language Film,Babette's Feast,Denmark,1
 1988,Best Foreign Language Film,Hanussen,Hungary,0
 1988,Best Foreign Language Film,Women on the Verge of a Nervous Breakdown,Spain,0
@@ -3947,7 +3947,7 @@
 2004,Best Foreign Language Film,The Sea Inside,Spain,1
 2004,Best Foreign Language Film,As It Is in Heaven,Sweden,0
 2004,Best Foreign Language Film,Yesterday,South Africa,0
-2004,Best Foreign Language Film,The Chorus (Les Choristes),France,0
+2004,Best Foreign Language Film,The Chorus,France,0
 2005,Best Foreign Language Film,Don''t Tell,Italy,0
 2005,Best Foreign Language Film,Joyeux Noel,France,0
 2005,Best Foreign Language Film,Sophie Scholl - The Final Days,Germany,0

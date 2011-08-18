@@ -301,12 +301,11 @@ public class OscarParser implements GracefulShutdown {
    * @throws IOException
    */
   private void nonCrewCategory(int year, int oid) throws IOException {
-    String title    = null;
+    String title    = oscars.get(2);
     int mid         = -1;
     int status      = -1;
 
     //clean up the title
-    title = checkForSpecialCases(oscars.get(2));
     title = title.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
     //query for movie id
@@ -326,63 +325,6 @@ public class OscarParser implements GracefulShutdown {
 
   //--------------------------------------------------------------------------
 
-  /**
-   * There are going to be quite a few special cases probably, where some
-   * movies just aren't going to be found in the database even though I've
-   * seen them.  This method checks for those special (hard-coded) cases.
-   */
-  private String checkForSpecialCases(String title) {
-    //For some reason, when a title has a token that starts with an apostrophe,
-    // but does not end with one (e.g. "Give 'em Hell Harry!" and "Adalen '31",
-    // but not "Pete 'n' Tillie"), Postgres's full text search fails, or rather
-    // a SQL syntax error is given.  Adding another apostrophe to the end of
-    // the token fixes this (e.g. "Adalen '31" becomes "Adalen '31'").  Shrug.
-    if (title.contains(" '") && !title.contains("' ")) {
-      int i = title.indexOf(" '");
-      int len = title.length();
-      char[] chars = title.toCharArray();
-      //where does this token end?
-      for (i += 2; i < len && chars[i] != ' '; ++i) {
-        ;
-      }
-      //the token was the end of the title
-      if (i == len) {
-        return title + "'";
-      }
-      //token was not at the end of the title
-      String sub1 = title.substring(0,i);
-      String sub2 = "'" + title.substring(i, len);
-      return sub1 + sub2;
-    }
-    if (title.equals("Good Fellas")) {
-      return "GoodFellas";
-    }
-    if (title.contains("Meredith Willson")) {
-      return "The Music Man";
-    }
-    if (title.contains("Il Postino")) {
-      return "Il Postino";
-    }
-    if (title.equals("Sunset Blvd.")) {
-      return "Sunset Boulevard";
-    }
-    if (title.contains("Les Choristes")) {
-      return "The Chorus";
-    }
-    if (title.contains("Goodbye, Children")) {
-      return "Au Revoir, Les Enfants";
-    }
-    if (title.contains("8-1/2")) {
-      return "8\u00BD";
-    } 
-    if (title.contains("Mulholland D")) {
-      return "Mulholland Dr.";
-    }
-    return title;
-  }
-
-  //--------------------------------------------------------------------------
-  
   /**
    * Like movie title, there are going to be some special cases for people's
    * names; this method takes care of those cases by matching them to how the
@@ -410,16 +352,6 @@ public class OscarParser implements GracefulShutdown {
     //Gus Van Sant
     if (name[1].equals("Van") && name[2].equals("Sant")) {
       String[] n = {"Gus","Van Sant"};
-      return n;
-    }
-    //Conrad Hall
-    if (name[0].equals("Conrad") && name[1].equals("L.")) {
-      String[] n = {"Conrad","Hall"};
-      return n;
-    }
-    //Noriyuki 'Pat' Morita
-    if (name[1].equals("'Pat'")) {
-      String[] n = {"Pat","Morita"};
       return n;
     }
     //the Coen brothers
@@ -632,14 +564,69 @@ public class OscarParser implements GracefulShutdown {
   private void acting(int year, int oid) throws IOException {
     //get the title as defined in the record
     String title = oscars.get(3);
+
+    int startIdx = 0;
+    int endIdx   = title.indexOf(" {"); 
+    //this nominee is nominated for more than one movie in the same nomination
+    if (endIdx != -1) {
+      while (true) {
+        if (title.substring(startIdx).startsWith("and")) {
+          startIdx += 4;
+        }
+        //extract the next movie title
+        String uncleanedNextTitle = title.substring(startIdx, endIdx);
+        //clean the next movie title
+        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
+        nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
+        //query for the movie unique id
+        int mid = queryForMovie(nextTitle, uncleanedNextTitle, year);
+        //movie was found
+        if (mid != -1) {
+          writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+        }
+        //reset the indices for the next title
+        startIdx = title.indexOf(";", endIdx);
+        if (startIdx == -1) {
+          break;
+        }
+        startIdx += 2;
+        endIdx   = title.indexOf(" {", startIdx);
+      }
+      /*
+      String uncleanedLastTitle = title.substring(startIdx+4, title.length());
+      //clean the next movie title
+      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
+      lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //query for the movie unique id
+      int mid = queryForMovie(lastTitle, uncleanedLastTitle, year);
+      //movie was found
+      if (mid != -1) {
+        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+      }
+      */
+    }
+    //nomination is for only one movie (the usual case)
+    else {
+      //clean the title
+      String cleanedTitle = title.toLowerCase().replace("'","''");
+      cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //query for the movie unique id
+      int mid = queryForMovie(cleanedTitle, title, year);
+      //movie was found
+      if (mid != -1) {
+        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+      }
+    }
+    /*
+    //get the title as defined in the record
+    String title = oscars.get(3);
     //this actor is nominated for two movies within the same nomination
     int idx = title.indexOf("; and ");
     if (idx != -1) {
       //extract the second movie title
       String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
       //clean the second movie title
-      String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
-      secondTitle = secondTitle.toLowerCase().replace("'","''");
+      String secondTitle = uncleanedSecondTitle.toLowerCase().replace("'","''");
       secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //query for the movie unique id
       int mid = queryForMovie(secondTitle, uncleanedSecondTitle, year);
@@ -651,8 +638,7 @@ public class OscarParser implements GracefulShutdown {
     //extract the title (first title if there were two)
     String uncleanedTitle = title.substring(0, title.indexOf(" {"));
     //clean the title
-    title = checkForSpecialCases(uncleanedTitle);
-    title = title.toLowerCase().replace("'","''");
+    title = uncleanedTitle.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
     //query for the movie unique id
     int mid = queryForMovie(title, uncleanedTitle, year);
@@ -660,6 +646,7 @@ public class OscarParser implements GracefulShutdown {
     if (mid != -1) {
       writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
     }
+    */
   }
 
   //--------------------------------------------------------------------------
@@ -693,8 +680,7 @@ public class OscarParser implements GracefulShutdown {
       //extract the second movie title
       String uncleanedSecondTitle = title.substring(idx+6, title.length());
       //clean the second movie title
-      String secondTitle = checkForSpecialCases(uncleanedSecondTitle);
-      secondTitle = secondTitle.toLowerCase().replace("'","''");
+      String secondTitle = uncleanedSecondTitle.toLowerCase().replace("'","''");
       secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
       directorHelper(secondTitle, uncleanedSecondTitle, year, oid, dirIndex);
@@ -702,8 +688,7 @@ public class OscarParser implements GracefulShutdown {
     //extract the title (first title if there were two)
     String uncleanedTitle = title.substring(0, endIdx);
     //clean the title
-    title = checkForSpecialCases(uncleanedTitle);
-    title = title.toLowerCase().replace("'","''");
+    title = uncleanedTitle.toLowerCase().replace("'","''");
     title = title.replace(" & "," ").replace(" ","&").replace("!","");
     //create and write the appropriate sql insert statement for this nomination
     directorHelper(title, uncleanedTitle, year, oid, dirIndex);
@@ -806,8 +791,7 @@ public class OscarParser implements GracefulShutdown {
         //extract the next movie title
         String uncleanedNextTitle = title.substring(startIdx, endIdx);
         //clean the next movie title
-        String nextTitle = checkForSpecialCases(uncleanedNextTitle);
-        nextTitle = nextTitle.toLowerCase().replace("'","''");
+        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
         nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
         //create and write the appropriate sql insert statement for this nomination
         cineHelper(nextTitle, uncleanedNextTitle, year, oid, recIndex);
@@ -818,8 +802,7 @@ public class OscarParser implements GracefulShutdown {
 
       String uncleanedLastTitle = title.substring(startIdx+4, title.length());
       //clean the next movie title
-      String lastTitle = checkForSpecialCases(uncleanedLastTitle);
-      lastTitle = lastTitle.toLowerCase().replace("'","''");
+      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
       lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
       cineHelper(lastTitle, uncleanedLastTitle, year, oid, recIndex);
@@ -827,8 +810,7 @@ public class OscarParser implements GracefulShutdown {
     //nomination is for only one movie (the usual case)
     else {
       //clean the title
-      String cleanedTitle = checkForSpecialCases(title);
-      cleanedTitle = cleanedTitle.toLowerCase().replace("'","''");
+      String cleanedTitle = title.toLowerCase().replace("'","''");
       cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
       cineHelper(cleanedTitle, title, year, oid, recIndex);
@@ -944,8 +926,7 @@ public class OscarParser implements GracefulShutdown {
         //extract the next movie title
         String uncleanedNextTitle = title.substring(startIdx, endIdx);
         //clean the next movie title
-        String nextTitle = checkForSpecialCases(uncleanedNextTitle);
-        nextTitle = nextTitle.toLowerCase().replace("'","''");
+        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
         nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
         //create and write the appropriate sql insert statement for this nomination
         cineHelper(nextTitle, uncleanedNextTitle, year, oid, recIndex);
@@ -956,8 +937,7 @@ public class OscarParser implements GracefulShutdown {
 
       String uncleanedLastTitle = title.substring(startIdx+4, title.length());
       //clean the next movie title
-      String lastTitle = checkForSpecialCases(uncleanedLastTitle);
-      lastTitle = lastTitle.toLowerCase().replace("'","''");
+      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
       lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
       writingHelper(lastTitle, uncleanedLastTitle, year, oid, recIndex);
@@ -965,8 +945,7 @@ public class OscarParser implements GracefulShutdown {
     //nomination is for only one movie (the usual case)
     else {
       //clean the title
-      String cleanedTitle = checkForSpecialCases(title);
-      cleanedTitle = cleanedTitle.toLowerCase().replace("'","''");
+      String cleanedTitle = title.toLowerCase().replace("'","''");
       cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
       //create and write the appropriate sql insert statement for this nomination
       writingHelper(cleanedTitle, title, year, oid, recIndex);
