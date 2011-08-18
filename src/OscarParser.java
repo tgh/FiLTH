@@ -570,6 +570,7 @@ public class OscarParser implements GracefulShutdown {
     //this nominee is nominated for more than one movie in the same nomination
     if (endIdx != -1) {
       while (true) {
+        //the last title in the nomination
         if (title.substring(startIdx).startsWith("and")) {
           startIdx += 4;
         }
@@ -587,23 +588,12 @@ public class OscarParser implements GracefulShutdown {
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
         if (startIdx == -1) {
+          //no more titles for this nomination
           break;
         }
         startIdx += 2;
         endIdx   = title.indexOf(" {", startIdx);
       }
-      /*
-      String uncleanedLastTitle = title.substring(startIdx+4, title.length());
-      //clean the next movie title
-      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
-      lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
-      //query for the movie unique id
-      int mid = queryForMovie(lastTitle, uncleanedLastTitle, year);
-      //movie was found
-      if (mid != -1) {
-        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
-      }
-      */
     }
     //nomination is for only one movie (the usual case)
     else {
@@ -617,36 +607,6 @@ public class OscarParser implements GracefulShutdown {
         writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
       }
     }
-    /*
-    //get the title as defined in the record
-    String title = oscars.get(3);
-    //this actor is nominated for two movies within the same nomination
-    int idx = title.indexOf("; and ");
-    if (idx != -1) {
-      //extract the second movie title
-      String uncleanedSecondTitle = title.substring(idx+6, title.indexOf(" {", idx));
-      //clean the second movie title
-      String secondTitle = uncleanedSecondTitle.toLowerCase().replace("'","''");
-      secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
-      //query for the movie unique id
-      int mid = queryForMovie(secondTitle, uncleanedSecondTitle, year);
-      //movie was found
-      if (mid != -1) {
-        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
-      }
-    }
-    //extract the title (first title if there were two)
-    String uncleanedTitle = title.substring(0, title.indexOf(" {"));
-    //clean the title
-    title = uncleanedTitle.toLowerCase().replace("'","''");
-    title = title.replace(" & "," ").replace(" ","&").replace("!","");
-    //query for the movie unique id
-    int mid = queryForMovie(title, uncleanedTitle, year);
-    //movie was found
-    if (mid != -1) {
-      writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
-    }
-    */
   }
 
   //--------------------------------------------------------------------------
