@@ -575,12 +575,11 @@ public class OscarParser implements GracefulShutdown {
           startIdx += 4;
         }
         //extract the next movie title
-        String uncleanedNextTitle = title.substring(startIdx, endIdx);
-        //clean the next movie title
-        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
-        nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
+        String unformattedNextTitle = title.substring(startIdx, endIdx);
+        //format the next movie title
+        String nextTitle = formatTitle(unformattedNextTitle);
         //query for the movie unique id
-        int mid = queryForMovie(nextTitle, uncleanedNextTitle, year);
+        int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
         //movie was found
         if (mid != -1) {
           writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
@@ -597,11 +596,10 @@ public class OscarParser implements GracefulShutdown {
     }
     //nomination is for only one movie (the usual case)
     else {
-      //clean the title
-      String cleanedTitle = title.toLowerCase().replace("'","''");
-      cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //format the title
+      String formattedTitle = formatTitle(title);
       //query for the movie unique id
-      int mid = queryForMovie(cleanedTitle, title, year);
+      int mid = queryForMovie(formattedTitle, title, year);
       //movie was found
       if (mid != -1) {
         writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
@@ -749,31 +747,28 @@ public class OscarParser implements GracefulShutdown {
     if (endIdx != -1) {
       while (endIdx != -1) {
         //extract the next movie title
-        String uncleanedNextTitle = title.substring(startIdx, endIdx);
-        //clean the next movie title
-        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
-        nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
+        String unformattedNextTitle = title.substring(startIdx, endIdx);
+        //format the next movie title
+        String nextTitle = formatTitle(unformattedNextTitle);
         //create and write the appropriate sql insert statement for this nomination
-        cineHelper(nextTitle, uncleanedNextTitle, year, oid, recIndex);
+        cineHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
         //reset the indices for the next title
         startIdx = endIdx + 2;
         endIdx   = title.indexOf(";", endIdx + 1);
       }
 
-      String uncleanedLastTitle = title.substring(startIdx+4, title.length());
-      //clean the next movie title
-      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
-      lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      String unformattedLastTitle = title.substring(startIdx+4, title.length());
+      //format the next movie title
+      String lastTitle = formatTitle(unformattedLastTitle);
       //create and write the appropriate sql insert statement for this nomination
-      cineHelper(lastTitle, uncleanedLastTitle, year, oid, recIndex);
+      cineHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
     }
     //nomination is for only one movie (the usual case)
     else {
-      //clean the title
-      String cleanedTitle = title.toLowerCase().replace("'","''");
-      cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //format the title
+      String formattedTitle = formatTitle(title);
       //create and write the appropriate sql insert statement for this nomination
-      cineHelper(cleanedTitle, title, year, oid, recIndex);
+      cineHelper(formattedTitle, title, year, oid, recIndex);
     }
   }
 
