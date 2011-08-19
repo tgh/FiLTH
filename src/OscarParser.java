@@ -157,61 +157,61 @@ public class OscarParser implements GracefulShutdown {
         /*---------- BEST ACTOR (oid = 2) -----------------------------------*/
 
         if (category.equals("Best Actor")) {
-          acting(year, 2);
+          actingCategory(year, 2);
         }
 
         /*---------- BEST ACTRESS (oid = 3) ---------------------------------*/
 
         if (category.equals("Best Actress")) {
-          acting(year, 3);
+          actingCategory(year, 3);
         }
 
         /*---------- BEST SUPPORTING ACTOR (oid = 4) ------------------------*/
 
         if (category.equals("Best Supporting Actor")) {
-          acting(year, 4);
+          actingCategory(year, 4);
         }
 
         /*---------- BEST SUPPORTING ACTRESS (oid = 5) ----------------------*/
 
         if (category.equals("Best Supporting Actress")) {
-          acting(year, 5);
+          actingCategory(year, 5);
         }
 
         /*---------- BEST DIRECTOR (oid = 6) --------------------------------*/
 
         if (category.equals("Best Director")) {
-          director(year, 6);
+          nonActingCrewCategory(year, 6);
         }
 
         /*---------- BEST CINEMATOGRAPHY (oid = 7) --------------------------*/
 
         if (category.equals("Best Cinematography")) {
-          cinematography(year, 7);
+          nonActingCrewCategory(year, 7);
         }
 
         /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 8) ------------------*/
 
         if (category.equals("Best Cinematography (black and white)")) {
-          cinematography(year, 8);
+          nonActingCrewCategory(year, 8);
         }
 
         /*---------- BEST CINEMATOGRAPHY (color) (oid = 9) ------------------*/
 
         if (category.equals("Best Cinematography (color)")) {
-          cinematography(year, 9);
+          nonActingCrewCategory(year, 9);
         }
 
         /*---------- BEST ORIGINAL SCREENPLAY (oid = 10) --------------------*/
 
         if (category.equals("Best Original Screenplay")) {
-          writing(year, 10);
+          nonActingCrewCategory(year, 10);
         }
 
         /*---------- BEST ADAPTED SCREENPLAY (oid = 11) ---------------------*/
 
         if (category.equals("Best Adapted Screenplay")) {
-            writing(year, 11);
+          nonActingCrewCategory(year, 11);
         }
 
         /*---------- BEST FOREIGN LANGUAGE FILM (oid = 12) ------------------*/
@@ -232,7 +232,7 @@ public class OscarParser implements GracefulShutdown {
         // since the categories don't really distingiush between original or
         // adapted screenplays for those years
         if (category.equals("Best Screenplay")) {
-          writing(year, 14);
+          nonActingCrewCategory(year, 14);
         }
       } //end while loop
     } //end try
@@ -287,40 +287,6 @@ public class OscarParser implements GracefulShutdown {
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
     sqle.printStackTrace();
     System.exit(1);
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * Handles creating and writing the appropriate SQL insert statments for
-   * Oscar categories that do not have a crew person recipient. (e.g. Best
-   * Picture, Best Foreign Language Film, Best Documentary).
-   *
-   * @param year An integer for the year of the nomination.
-   * @param oid The oscar id of the category.
-   * @throws IOException
-   */
-  private void nonCrewCategory(int year, int oid) throws IOException {
-    String title    = oscars.get(2);
-    int mid         = -1;
-    int status      = -1;
-
-    //clean up the title
-    title = title.toLowerCase().replace("'","''");
-    title = title.replace(" & "," ").replace(" ","&").replace("!","");
-    //query for movie id
-    mid = queryForMovie(title, oscars.get(2), year);
-
-    //movie was found
-    if (mid != -1) {
-      //get the status of the nomination
-      status = Integer.parseInt(oscars.get(4));
-      //log the find
-      log.logData("mid = " + mid, 1, false);
-      //write the appropriate SQL insert statement for this nomination
-      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
-      bw.newLine();
-    }
   }
 
   //--------------------------------------------------------------------------
@@ -554,19 +520,53 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   * Handle nominations for the acting categories.
+   * Handles Oscar categories that do not have a crew person recipient. (e.g.
+   * Best Picture, Best Foreign Language Film, Best Documentary).
+   *
+   * @param year An integer for the year of the nomination.
+   * @param oid The oscar id of the category.
+   * @throws IOException
+   */
+  private void nonCrewCategory(int year, int oid) throws IOException {
+    String title    = oscars.get(2);
+    int mid         = -1;
+    int status      = -1;
+
+    //format the title for Postgres full text search
+    String formattedTitle = formatTitle(title);
+    //query for movie id
+    mid = queryForMovie(formattedTitle, title, year);
+
+    //movie was found
+    if (mid != -1) {
+      //get the status of the nomination
+      status = Integer.parseInt(oscars.get(4));
+      //log the find
+      log.logData("mid = " + mid, 1, false);
+      //write the appropriate SQL insert statement for this nomination
+      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+      bw.newLine();
+    }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Handles nominations for the acting categories.  The acting categories have
+   * their own method (separate from the nonActingCrewCategory() method)
+   * because the recipient attribute values for the acting categories have the
+   * character names as well, so they must be handled appropriately.
    *
    * @param year An integer for the year of the nomination.
    * @param oid An integer for the oscar category unique id.
-   * @param category A string for the specific acting category.
    * @throws IOException
    */
-  private void acting(int year, int oid) throws IOException {
+  private void actingCategory(int year, int oid) throws IOException {
     //get the title as defined in the record
     String title = oscars.get(3);
 
     int startIdx = 0;
-    int endIdx   = title.indexOf(" {"); 
+    int endIdx   = title.indexOf(" {"); //'{' is where the character name starts
     //this nominee is nominated for more than one movie in the same nomination
     if (endIdx != -1) {
       while (true) {
@@ -610,127 +610,21 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   * Handles Best Director category nominations.
+   * Handles categories that have a recipient, but are not acting categories.
    *
-   * @param year The year of the movie.
-   * @param oid The unique oscar category id.
+   * @param year The year of the nomination.
+   * @param oid The unique id of the category.
    * @throws IOException
    */
-  private void director(int year, int oid) throws IOException {
-    int titleIndex = -1;
-    int dirIndex   = -1;
-    
-    if (year < 1931) {
-      titleIndex = 3;
-      dirIndex   = 2;
-    }
-    else {
-      titleIndex = 2;
-      dirIndex   = 3;
-    }
-    //get the title as defined in the record
-    String title = oscars.get(titleIndex);
-    //this director is nominated for two movies within the same nomination
-    int idx = title.indexOf("; and ");
-    int endIdx = title.length();
-    if (idx != -1) {
-      endIdx = title.indexOf(";");
-      //extract the second movie title
-      String uncleanedSecondTitle = title.substring(idx+6, title.length());
-      //clean the second movie title
-      String secondTitle = uncleanedSecondTitle.toLowerCase().replace("'","''");
-      secondTitle = secondTitle.replace(" & "," ").replace(" ","&").replace("!","");
-      //create and write the appropriate sql insert statement for this nomination
-      directorHelper(secondTitle, uncleanedSecondTitle, year, oid, dirIndex);
-    }
-    //extract the title (first title if there were two)
-    String uncleanedTitle = title.substring(0, endIdx);
-    //clean the title
-    title = uncleanedTitle.toLowerCase().replace("'","''");
-    title = title.replace(" & "," ").replace(" ","&").replace("!","");
-    //create and write the appropriate sql insert statement for this nomination
-    directorHelper(title, uncleanedTitle, year, oid, dirIndex);
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * A helper method for the director() method.  Handles what happens when
-   * there are two directors named as the recipients for the nomination.
-   *
-   * @param title Cleaned String version of the movie title.
-   * @param realTitle The title of the movie as written in the CSV file.
-   * @param year The year of the movie.
-   * @param oid The oscar category unique id for the database.
-   * @param dirIdx The index into the CSV file record for the director name.
-   * @throws IOException
-   */
-  private void directorHelper(String title, String realTitle, int year, int oid, int dirIdx) throws IOException {
-    //query for movie id
-    int mid = queryForMovie(title, realTitle, year);
-
-    //movie was found in database
-    if (mid != -1) {
-      //get the name of the director
-      String[] name = oscars.get(dirIdx).split(" ");
-      //nomination has two directors for the movie (no directing nomination has more than 2 recipients)
-      if (oscars.get(dirIdx).contains(",")) {
-        boolean first = true;         //still on first recipient?
-        String firstRecipient = "";   //name of the first recipient
-        String secondRecipient = "";  //name of the second recipient
-
-        int len = name.length;
-        for (int i = 0; i < len; ++i) {
-          //still constructing the name of the first recipient
-          if (first) {
-            //this name token doesn't contain the ',' separator
-            if (!name[i].contains(",")) {
-              firstRecipient = firstRecipient + name[i] + " ";
-            }
-            //this name token is the last one in the first recipient, so add it without the ','
-            else {
-              firstRecipient = firstRecipient + name[i].substring(0, name[i].indexOf(","));
-              first = false;
-            }
-          }
-          //now constructing the second recipient name
-          else {
-            //this is not the last name token, so add a space character
-            if (!(i == len - 1)) {
-              secondRecipient = secondRecipient + name[i] + " ";
-            }
-            //this is the last name token
-            else {
-              secondRecipient = secondRecipient + name[i];
-            }
-          }
-        }
-        writeSQL(firstRecipient.split(" "), mid, oid, firstRecipient);
-        writeSQL(secondRecipient.split(" "), mid, oid, secondRecipient);
-      }
-      //only one recipient for this nomination
-      else {
-        writeSQL(name, mid, oid, oscars.get(dirIdx));
-      }
-    }
-  }
-
-  //--------------------------------------------------------------------------
-  
-  /**
-   * Handles nominations for "Best Cinematography".
-   *
-   * @param year The year of the movie.
-   * @param oid The unique oscar category id for the nomination.
-   * @throws IOException
-   */
-  private void cinematography(int year, int oid) throws IOException {
+  private void nonActingCrewCategory(int year, int oid) throws IOException {
     int titleIndex = -1;  //index into the CSV record for the title
-    int recIndex = -1;    //index into the CSV record for the recipient
+    int recIndex   = -1;  //index into the CSV record for the recipient
     
-    //the CSV data switches the order of the attributes for Best Cinematography
-    // in 1930 for some stupid reason (Best Cinematography oid = 7)
-    if (year < 1930 && oid == 7) {
+    //for some stupid reason, the CSV data switches the order of the attributes
+    // for Best Cinematography in 1930 (Best Cinematography oid = 7), Best
+    // Director in 1931 (oid == 6), and all of the writing categories in 1930
+    // (oid == 10, 11, or 14)
+    if (year < 1931 && oid == 6 || year < 1930 && (oid == 7 || isWritingCategory(oid))) {
       titleIndex = 3;
       recIndex   = 2;
     }
@@ -751,43 +645,42 @@ public class OscarParser implements GracefulShutdown {
         //format the next movie title
         String nextTitle = formatTitle(unformattedNextTitle);
         //create and write the appropriate sql insert statement for this nomination
-        cineHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
+        nonActingCrewCategoryHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
         //reset the indices for the next title
         startIdx = endIdx + 2;
         endIdx   = title.indexOf(";", endIdx + 1);
       }
 
-      String unformattedLastTitle = title.substring(startIdx+4, title.length());
+      String unformattedLastTitle = title.substring(startIdx+4);
       //format the next movie title
       String lastTitle = formatTitle(unformattedLastTitle);
       //create and write the appropriate sql insert statement for this nomination
-      cineHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
+      nonActingCrewCategoryHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
     }
     //nomination is for only one movie (the usual case)
     else {
       //format the title
       String formattedTitle = formatTitle(title);
       //create and write the appropriate sql insert statement for this nomination
-      cineHelper(formattedTitle, title, year, oid, recIndex);
+      nonActingCrewCategoryHelper(formattedTitle, title, year, oid, recIndex);
     }
   }
 
   //--------------------------------------------------------------------------
 
   /**
-   * A helper method for the cinematography() method.  Handles what happens when
-   * there are two or more cinematographers named as the recipients for the
-   * nomination.
+   * Helper method for the nonActingCrewCategory() method.  Processes the
+   * recipients accordingly.
    *
-   * @param title Cleaned String version of the movie title.
-   * @param realTitle The title of the movie as written in the CSV file.
+   * @param title The movie title properly formatted for Postgres full text
+   * search.
+   * @param realTitle The title of the movie as seen in the CSV record.
    * @param year The year of the movie.
-   * @param oid The oscar category unique id for the database.
-   * @param recIndex The index into the CSV file record for the
-   * cinematographer(s) name(s).
+   * @param oid The unique id of the category.
+   * @param recIdx The index into the CSV record for the recipient.
    * @throws IOException
    */
-  private void cineHelper(String title, String realTitle, int year, int oid, int recIdx) throws IOException {
+  private void nonActingCrewCategoryHelper(String title, String realTitle, int year, int oid, int recIdx) throws IOException {
     //query for movie id
     int mid = queryForMovie(title, realTitle, year);
 
@@ -795,136 +688,21 @@ public class OscarParser implements GracefulShutdown {
     if (mid != -1) {
       //get the value of the recipient attribute in the CSV file
       String recipientString = oscars.get(recIdx);
-      //for some reason, 1930 records for Best Cinematography have most of the
-      // recipients inside parentheses (as well as a 1962 nomination for (black
-      // & white) cinematography)
-      if (year == 1930 && oid == 7 || year == 1962 && oid == 8) {
-        recipientString = recipientString.replace("(","").replace(")","");
-      }
-      //get the number of recipients for this nomination
-      int numRecipients = recipientString.split(",").length;
-
-      //nomination has more than one recipient
-      if (numRecipients > 1) {
-        int startIdx = 0;   //an index into the original CSV string indicating
-                            // the beginning of the next recipient
-        int endIdx = recipientString.indexOf(",");  //ditto for the end
-        String recipient = null;
-
-        //endIdx will be -1 when there is only one more recipient left to process
-        while (endIdx != -1) {
-          //extract the recipient name
-          recipient = recipientString.substring(startIdx, endIdx);
-          //pass the name (as an array of Strings) to the second helper method
-          writeSQL(recipient.split(" "), mid, oid, recipient);
-          //reset the indeices for the next recipient
-          startIdx = endIdx + 2;
-          endIdx = recipientString.indexOf(",", startIdx);
-        }
-        //process the last recipient
-        recipient = recipientString.substring(startIdx);
-        writeSQL(recipient.split(" "), mid, oid, recipient);
-      }
-      //only one recipient for this nomination
-      else {
-        writeSQL(recipientString.split(" "), mid, oid, recipientString);
-      }
-    }
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * Handles nominations for "Best Screenplay".  The official category name for
-   * this was simply "Best Writing", which was only in 1929.
-   *
-   * @param year The year of the movie.
-   * @param oid The unique oscar category id for the nomination.
-   * @throws IOException
-   */
-  private void writing(int year, int oid) throws IOException {
-    int titleIndex = -1;  //index into the CSV record for the title
-    int recIndex = -1;    //index into the CSV record for the recipient
-    
-    //the CSV data switches the order of the attributes for WRITING 
-    // in 1930 for some stupid reason
-    if (year < 1930) {
-      titleIndex = 3;
-      recIndex   = 2;
-    }
-    else {
-      titleIndex = 2;
-      recIndex   = 3;
-    }
-    //get the title as defined in the record
-    String title = oscars.get(titleIndex);
-
-    int startIdx = 0;
-    int endIdx   = title.indexOf(";"); 
-    //this nominee is nominated for more than one movie in the same nomination
-    if (endIdx != -1) {
-      while (endIdx != -1) {
-        //extract the next movie title
-        String unformattedNextTitle = title.substring(startIdx, endIdx);
-        //format the next movie title for full text search
-        String nextTitle = formatTitle(unformattedNextTitle);
-        //create and write the appropriate sql insert statement for this nomination
-        cineHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
-        //reset the indices for the next title
-        startIdx = endIdx + 2;
-        endIdx   = title.indexOf(";", endIdx + 1);
-      }
-
-      String unformattedLastTitle = title.substring(startIdx+4, title.length());
-      //format the last movie title for full text search
-      String lastTitle = formatTitle(unformattedLastTitle);
-      //create and write the appropriate sql insert statement for this nomination
-      writingHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
-    }
-    //nomination is for only one movie (the usual case)
-    else {
-      //format the title
-      String formattedTitle = formatTitle(title);
-      //create and write the appropriate sql insert statement for this nomination
-      writingHelper(formattedTitle, title, year, oid, recIndex);
-    }
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
-   * A helper method for the writing() method.  Handles what happens when
-   * there are two or more writers named as the recipients for the
-   * nomination.
-   *
-   * @param title Cleaned String version of the movie title.
-   * @param realTitle The title of the movie as written in the CSV file.
-   * @param year The year of the movie.
-   * @param oid The oscar category unique id for the database.
-   * @param recIndex The index into the CSV file record for the
-   * recipient(s) name(s).
-   * @throws IOException
-   */
-  private void writingHelper(String title, String realTitle, int year, int oid, int recIdx) throws IOException {
-    //query for movie id
-    int mid = queryForMovie(title, realTitle, year);
-
-    //movie was found in database
-    if (mid != -1) {
-      //get the value of the recipient attribute in the CSV file
-      String recipientString = oscars.get(recIdx);
-      //for some reason, 1930 records for WRITING have most of the
-      // recipients inside parentheses
-      if (year == 1930) {
+      //for some reason, 1930 records for writing categories and Best
+      // Cinematography, as well as 1962 black & white cinematography have
+      // most of the recipients inside parentheses
+      if ((year == 1930 && (oid == 7 || isWritingCategory(oid)))
+           || (year == 1962 && oid == 8)) {
         recipientString = recipientString.replace("(","").replace(")","");
       }
       //in screenplay categories for years 2000 and on, some recipient values
       // contain " & " and/or " and " rather than ", " to separate the
       // different recipients
-      else if (year >= 2000 && !recipientString.equals("Joel and Ethan Coen")) {
+      else if (year >= 2000 && isWritingCategory(oid) && !recipientString.equals("Joel and Ethan Coen")) {
         recipientString = recipientString.replace(" & ",", ");
         recipientString = recipientString.replace(" and ",", ");
       }
+
       //get the number of recipients for this nomination
       int numRecipients = recipientString.split(",").length;
 
@@ -1013,5 +791,22 @@ public class OscarParser implements GracefulShutdown {
     //remove "!" (since it means negation in full text search)
     title = title.replace("!","");
     return title;
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Determines if the given oscar category id is for a writing category.
+   *
+   * @param oid The unique id of the category.
+   * @return boolean
+   */
+  private boolean isWritingCategory(int oid) {
+    switch (oid) {
+      case 10:
+      case 11:
+      case 14: return true;
+      default: return false;
+    }
   }
 }
