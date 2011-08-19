@@ -806,20 +806,6 @@ public class OscarParser implements GracefulShutdown {
       if (year == 1930 && oid == 7 || year == 1962 && oid == 8) {
         recipientString = recipientString.replace("(","").replace(")","");
       }
-      //special case: Harry Stradling Sr. the CSV file adds a comma for Harry
-      // Stradling, Sr. for some stupid reason (all of the other names with Jr.
-      // and Sr. do not have a comma).  Also, there are nominations for Harry
-      // Stradling Sr. that are listed as just Harry Stradling.  There is a
-      // Harry Stradling Jr. that receives nominations as well.
-      else if (recipientString.equals("Harry Stradling, Sr.") || recipientString.equals("Harry Stradling")) {
-        recipientString = "Harry Stradling Sr.";
-      }
-      //another special case: 1951 (color) nomination for An American in Paris
-      // has a recipient string of "Alfred Gilks; Ballet Photography by John
-      // Alton"
-      else if (recipientString.contains("Ballet Photography")) {
-        recipientString = "Alfred Gilks";
-      }
       //get the number of recipients for this nomination
       int numRecipients = recipientString.split(",").length;
 
@@ -884,31 +870,28 @@ public class OscarParser implements GracefulShutdown {
     if (endIdx != -1) {
       while (endIdx != -1) {
         //extract the next movie title
-        String uncleanedNextTitle = title.substring(startIdx, endIdx);
-        //clean the next movie title
-        String nextTitle = uncleanedNextTitle.toLowerCase().replace("'","''");
-        nextTitle = nextTitle.replace(" & "," ").replace(" ","&").replace("!","");
+        String unformattedNextTitle = title.substring(startIdx, endIdx);
+        //format the next movie title for full text search
+        String nextTitle = formatTitle(unformattedNextTitle);
         //create and write the appropriate sql insert statement for this nomination
-        cineHelper(nextTitle, uncleanedNextTitle, year, oid, recIndex);
+        cineHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
         //reset the indices for the next title
         startIdx = endIdx + 2;
         endIdx   = title.indexOf(";", endIdx + 1);
       }
 
-      String uncleanedLastTitle = title.substring(startIdx+4, title.length());
-      //clean the next movie title
-      String lastTitle = uncleanedLastTitle.toLowerCase().replace("'","''");
-      lastTitle = lastTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      String unformattedLastTitle = title.substring(startIdx+4, title.length());
+      //format the last movie title for full text search
+      String lastTitle = formatTitle(unformattedLastTitle);
       //create and write the appropriate sql insert statement for this nomination
-      writingHelper(lastTitle, uncleanedLastTitle, year, oid, recIndex);
+      writingHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
     }
     //nomination is for only one movie (the usual case)
     else {
-      //clean the title
-      String cleanedTitle = title.toLowerCase().replace("'","''");
-      cleanedTitle = cleanedTitle.replace(" & "," ").replace(" ","&").replace("!","");
+      //format the title
+      String formattedTitle = formatTitle(title);
       //create and write the appropriate sql insert statement for this nomination
-      writingHelper(cleanedTitle, title, year, oid, recIndex);
+      writingHelper(formattedTitle, title, year, oid, recIndex);
     }
   }
 
@@ -940,10 +923,10 @@ public class OscarParser implements GracefulShutdown {
       if (year == 1930) {
         recipientString = recipientString.replace("(","").replace(")","");
       }
-      //in screenplay categories for years 2001 and on, some recipient values
+      //in screenplay categories for years 2000 and on, some recipient values
       // contain " & " and/or " and " rather than ", " to separate the
       // different recipients
-      else if (year > 2000 && !recipientString.equals("Joel and Ethan Coen")) {
+      else if (year >= 2000 && !recipientString.equals("Joel and Ethan Coen")) {
         recipientString = recipientString.replace(" & ",", ");
         recipientString = recipientString.replace(" and ",", ");
       }
@@ -1029,10 +1012,10 @@ public class OscarParser implements GracefulShutdown {
     //replace "'" with "''" for SQL
     title = title.replace("'","''");
     //replace " & " with just a space (for titles like "Harry & Tonto")
-    title = nextTitle.replace(" & "," ");
-    //replace spaces with "&" for full text search syntax
+    title = title.replace(" & "," ");
+    //replace spaces with "&" (boolean 'and' in full text search)
     title = title.replace(" ","&");
-    //remove "!" for full text search
+    //remove "!" (since it means negation in full text search)
     title = title.replace("!","");
     return title;
   }

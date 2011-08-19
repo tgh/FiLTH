@@ -160,9 +160,13 @@ sed -i "s/, Sr./ Sr./g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ \[came in.*\]//g" $filth_path/data/oscarsOfCategory.csv
 # change F. Fellini to Federico Fellini
 sed -i "s/F. Fellini/Federico Fellini/g" $filth_path/data/oscarsOfCategory.csv
+# change Harry Stradling to Harry Stradling Sr.
+sed -i "s/Harry Stradling,/Harry Stradling Sr.,/g" $filth_path/data/oscarsOfCategory.csv
 # change Coen brothers records
 sed -i "s/,Joel Coen,/,Joel and Ethan Coen,/g" $filth_path/data/oscarsOfCategory.csv
 sed -i -r "s/Ethan Coen, Joel Coen|Ethan Coen &amp; Joel Coen|Joel Coen and Ethan Coen|Ethan Coen and Joel Coen|Joel Coen &amp; Ethan Coen/Joel and Ethan Coen/g" $filth_path/data/oscarsOfCategory.csv
+# remove "; Ballet Photography by..."
+sed -i "s/; Ballet Photo.*,/,/g" $filth_path/data/oscarsOfCategory.csv
 # clean up screenplay recipient attribute values (they're so inconsistent it's rediculous)
 sed -i "s/\"Story by.*; /\"/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/,Story by.*; /,/g" $filth_path/data/oscarsOfCategory.csv
