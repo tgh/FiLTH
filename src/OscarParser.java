@@ -140,6 +140,7 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
+        
         //get the category of the nomination
         String category = oscars.get(1);
 
@@ -443,9 +444,7 @@ public class OscarParser implements GracefulShutdown {
         //add movie to the hash map of movies not found
         movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
         //prompt user for movie attribute values and write the sql for the movie
-        if (year == 1962) {
-          writeMovieSql(realTitle, year);
-        }
+        //writeMovieSql(realTitle, year);
       }
 
       //movie found, add to cache (hash map)
@@ -545,10 +544,11 @@ public class OscarParser implements GracefulShutdown {
     }
     //recipient name was not found or was empty or more than 3 names long
     else {
+      log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
       //add movie to the hash map of crew persons not found
       crewNotFoundMap.put(name, new Integer(cid));
-      //TODO: prompt user for crew_person attribute values
-      log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
+      //prompt user for about the new person and write the sql statement for the person
+      writeCrewSql(name, fname, mname, lname);
     }
 
     return cid;
@@ -895,6 +895,7 @@ public class OscarParser implements GracefulShutdown {
       //write the appropriate sql for this movie
       movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", '" + country + "', NULL);");
       movieFileWriter.newLine();
+      log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to /sql/movie2.sql", 2, false);
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeMovieSql().",1,false);
@@ -904,9 +905,74 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
+   * Writes a sql insert statement for the given person.
    *
+   * @param name The name of the person as a String (as seen in the CSV file).
+   * @param first The person's first name.
+   * @param middle The person's middle name.
+   * @param last The person's last name. (This is assumed not to be null)
    */
-  private void writeCrewSql() {
+  private void writeCrewSql(String name, String first, String middle, String last) {
+    String response = null;
 
+    try {
+      System.out.println("Crew person not found:");
+      //show the first, middle, and last name to the user
+      if (first != null) {
+        System.out.print("  FIRST: " + first);
+      }
+      if (middle != null) {
+        System.out.print(" MIDDLE: " + middle);
+      }
+      System.out.print(" LAST: " + last + " -- Ok? ");
+      //are these names okay for the database?
+      response = stdinReader.readLine();
+      //the names are not ok
+      if (!response.toLowerCase().equals("y")) {
+        //prompt the user for each name
+        System.out.print("  Enter first name (or 'i' to ignore, or 'k' to keep the same): ");
+        response = stdinReader.readLine();
+        if (!response.equals("k")) {
+          if (response.equals("i")) {
+            first = null;
+          }
+          else {
+            first = response;
+          }
+        }
+        System.out.print("  Enter middle name (or 'i' to ignore, or 'k' to keep the same): ");
+        response = stdinReader.readLine();
+        if (!response.equals("k")) {
+          if (response.equals("i")) {
+            middle = null;
+          }
+          else {
+            middle = response;
+          }
+        }
+        System.out.print("  Enter last name (or 'k' to keep the same): ");
+        response = stdinReader.readLine();
+        if (!response.equals("k")) {
+          last = response;
+        }
+      }
+
+      //surround the names with apostrophes for sql
+      if (first != null) {
+        first = "'" + first + "'";
+      }
+      if (middle != null) {
+        middle = "'" + middle + "'";
+      }
+      last = "'" + last + "'";
+
+      //write the sql insert statement for this person tpo the appropriate file
+      crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
+      crewFileWriter.newLine();
+      log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to /sql/crew_person2.sql", 2, false);
+    }
+    catch (IOException ioe) {
+      log.logWarning("IOException caught in writeCrewSql().",1,false);
+    } 
   }
 }

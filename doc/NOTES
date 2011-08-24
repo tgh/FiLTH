@@ -2,41 +2,12 @@ WHERE LEFT OFF
 ---------------
 - working on oscars...
 
-  - should there be another attribute in oscar_given_to indicating that the
-    nomination is shared?  Maybe be an integer representing how many others it
-    is shared with
-
-  - will need user interaction when movie/crew not in db:
-    Example:
-
-      "A Passage to India" not found. Title OK? y
-
-      Shirley MacLaine not found.  Name OK? y
-
-      "The Betrayal (Nerakhoon)" not found. Title OK? n
-        Enter new title: The Betrayal
-
-      Noriyuki 'Pat' Morita not found. Name OK? n
-        Ignore this person? n
-        Enter first name (or 'i' to ignore): Pat
-        Enter middle name (or 'i' to ignore): i
-        Enter last name: Morita
-
-      Donald Kaufman not found. Name OK? n
-        Ignore this person? y
-        Donald Kaufman ignored.
-
-      "Mongol" from Kazakhstan not found. Title OK? y
-        Country OK? y
-
-      "Solomon and Gaenor" from United Kingdom not found. Title OK? y
-        Country OK? n
-        Enter country name: England
-
-  - oscarsOfCategory.csv
+  - add attribute to oscars_given_to for sharing of oscar
+  - ties:
     - 1968 best actress has a tie which needs a value of 2, not 1
+    - 1986 Documentary
+    - 1932 best actor
     
-
 
 NEEDS
 ------
@@ -60,7 +31,7 @@ NEEDS
 
 IDEAS/THOUGHTS
 ---------------
-- crewperson lname and mname can be NULL, so names such as Cher and Madonna
+- crewperson f_name and m_name can be NULL, so names such as Cher and Madonna
   would be last names.
 - for the web app, the lists will be pdf files linked from the home page (?)
 - shouldn't contain accented special characters for names, movie titles, etc.
