@@ -1800,3 +1800,4 @@ INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, N
 INSERT INTO movie VALUES (DEFAULT, 'Cinderella Man', 2005, 6, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Date Night', 2010, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gulliver''s Travels', 2010, 5, 2, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Count of Monte Cristo', 2002, 7, 3, 'USA', NULL);
