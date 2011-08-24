@@ -439,10 +439,13 @@ public class OscarParser implements GracefulShutdown {
       }
       //no matches found at all
       else {
+        log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
         //add movie to the hash map of movies not found
         movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
-        //TODO: prompt user for movie attribute values
-        log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+        //prompt user for movie attribute values and write the sql for the movie
+        if (year == 1962) {
+          writeMovieSql(realTitle, year);
+        }
       }
 
       //movie found, add to cache (hash map)
@@ -847,10 +850,55 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   * 
+   * Writes a sql insert statement for the given movie.  The user is prompted
+   * for the values of the other attributes for the db movie table.
+   *
+   * @param title The title of the movie as a String (as seen in the CSV file).
+   * @param year The year of the movie (as per the CSV file). 
    */
-  private void writeMovieSql() {
+  private void writeMovieSql(String title, int year) {
+    String response = null;
+    int mpaa = 0;
+    String country = null;
 
+    try {
+      //ask user if the title of the movie as it appears in the CSV file is ok
+      System.out.print("\"" + title + "\" (" + year + ") not found. Title ok? ");
+      response = stdinReader.readLine();
+      //title is not ok, prompt user for a new title
+      if (!response.toLowerCase().equals("y")) {
+        System.out.print("  Enter new title: ");
+        title = stdinReader.readLine();
+      }
+      title = title.replace("'","''");
+      //prompt user for the mpaa rating of the movie (if the movie is in the
+      // years of the MPAA rating system)
+      if (year >= 1968) {
+        while (true) {
+          System.out.print("  MPAA: ");
+          //make sure the user's entry is valid
+          try {
+            mpaa = Integer.parseInt(stdinReader.readLine());
+            if (mpaa < 0 || mpaa > 6) {
+              throw new NumberFormatException();
+            }
+            break;
+          }
+          catch (NumberFormatException nfe) {
+            System.out.println("**Oops--not a valid mpaa id.");
+          }
+        }
+      }
+      //prompt the user for the country of the movie
+      System.out.print("  Country: ");
+      country = stdinReader.readLine();
+      //write the appropriate sql for this movie
+      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", '" + country + "', NULL);");
+      movieFileWriter.newLine();
+    }
+    catch (IOException ioe) {
+      log.logWarning("IOException caught in writeMovieSql().",1,false);
+    }
   }
 
   //--------------------------------------------------------------------------
