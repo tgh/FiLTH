@@ -23,10 +23,15 @@ public class OscarParser implements GracefulShutdown {
   private Connection dbConn = null;
   //Csv file reader for the csv file
   private CsvReader oscars = null;
-  //for file output to oscar_given_to.sql
-  private BufferedWriter bw = null;
+  //for file output to oscar_given_to.sql (the sql commands to populate the
+  // oscar_given_to table in the db)
+  private BufferedWriter oscarFileWriter = null;
+  //for file output to movie2.sql (oscar movies I haven't seen)
+  private BufferedWriter movieFileWriter = null;
+  //for file output to crew_person2.sql (crew persons not in the db)
+  private BufferedWriter crewFileWriter = null;
   //for reading from stdin
-  private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  private BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in));
   //name of the db
   private static String dbname;
   //password for db
@@ -98,18 +103,20 @@ public class OscarParser implements GracefulShutdown {
       System.exit(1); 
     }
 
-    //open the sql file we are going to write to
+    //open the files we are going to write to
     try {
-      bw = new BufferedWriter(new FileWriter("/home/tgh/Projects/FiLTH/sql/oscar_given_to.sql"));
+      oscarFileWriter   = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
+      movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie2.sql"));
+      crewFileWriter  = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person2.sql"));
     }
     catch (IOException ioe) {
-      log.logFatalError("Unable to create/open oscar_given_to.sql",0,false);
+      log.logFatalError("Unable to create/open file.",0,false);
       ioe.printStackTrace();
       System.exit(1); 
     }
 
     //create a BufferedReader to read from stdin
-    br = new BufferedReader(new InputStreamReader(System.in));
+    stdinReader = new BufferedReader(new InputStreamReader(System.in));
 
     //connect to the database
     dbConn = DatabaseConnector.connectToPostgres("jdbc:postgresql://localhost/" + dbname,
@@ -268,11 +275,13 @@ public class OscarParser implements GracefulShutdown {
         oscars.close();
       //close buffered objects
       try {
-        bw.close();
-        br.close();
+        oscarFileWriter.close();
+        movieFileWriter.close();
+        crewFileWriter.close();
+        stdinReader.close();
       }
       catch (IOException ioe) {
-        System.out.println("Error in closing bw or br.");
+        System.out.println("Error in closing BufferedWriter or BufferedReader object.");
         ioe.printStackTrace();
       }
     }
@@ -414,7 +423,7 @@ public class OscarParser implements GracefulShutdown {
             //ask user if this is the right movie
             System.out.print("  - " + qResult.getString(2) + " ? ");
             //get user's response
-            response = br.readLine();
+            response = stdinReader.readLine();
             //this one matches the movie in the csv file
             if (response.toLowerCase().equals("y")) {
               mid = qResult.getInt(1);
@@ -432,6 +441,7 @@ public class OscarParser implements GracefulShutdown {
       else {
         //add movie to the hash map of movies not found
         movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
+        //TODO: prompt user for movie attribute values
         log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
       }
 
@@ -534,6 +544,7 @@ public class OscarParser implements GracefulShutdown {
     else {
       //add movie to the hash map of crew persons not found
       crewNotFoundMap.put(name, new Integer(cid));
+      //TODO: prompt user for crew_person attribute values
       log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
     }
 
@@ -567,8 +578,8 @@ public class OscarParser implements GracefulShutdown {
       //log the find
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
-      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
-      bw.newLine();
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+      oscarFileWriter.newLine();
     }
   }
 
@@ -605,7 +616,7 @@ public class OscarParser implements GracefulShutdown {
         int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
         //movie was found
         if (mid != -1) {
-          writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+          writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2));
         }
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
@@ -625,7 +636,7 @@ public class OscarParser implements GracefulShutdown {
       int mid = queryForMovie(formattedTitle, title, year);
       //movie was found
       if (mid != -1) {
-        writeSQL(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+        writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2));
       }
     }
   }
@@ -741,18 +752,18 @@ public class OscarParser implements GracefulShutdown {
           //extract the recipient name
           recipient = recipientString.substring(startIdx, endIdx);
           //pass the name (as an array of Strings) to the second helper method
-          writeSQL(recipient.split(" "), mid, oid, recipient);
+          writeOscarSql(recipient.split(" "), mid, oid, recipient);
           //reset the indeices for the next recipient
           startIdx = endIdx + 2;
           endIdx = recipientString.indexOf(",", startIdx);
         }
         //process the last recipient
         recipient = recipientString.substring(startIdx);
-        writeSQL(recipient.split(" "), mid, oid, recipient);
+        writeOscarSql(recipient.split(" "), mid, oid, recipient);
       }
       //only one recipient for this nomination
       else {
-        writeSQL(recipientString.split(" "), mid, oid, recipientString);
+        writeOscarSql(recipientString.split(" "), mid, oid, recipientString);
       }
     }
   }
@@ -769,7 +780,7 @@ public class OscarParser implements GracefulShutdown {
    * @param nameString The name of the recipient as one String. 
    * @throws IOException
    */
-  private void writeSQL(String[] name, int mid, int oid, String nameString) throws IOException {
+  private void writeOscarSql(String[] name, int mid, int oid, String nameString) throws IOException {
     //clean any special cases
     if (name.length >= 3) {
       name = checkForNameSpecialCases(name);
@@ -789,8 +800,8 @@ public class OscarParser implements GracefulShutdown {
       log.logData("mid = " + mid, 1, false);
       log.logData("cid = " + cid, 1, false);
       //write the sql insert statement for this nomination
-      bw.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
-      bw.newLine();
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
+      oscarFileWriter.newLine();
     }
   }
 
@@ -831,5 +842,23 @@ public class OscarParser implements GracefulShutdown {
       case 14: return true;
       default: return false;
     }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * 
+   */
+  private void writeMovieSql() {
+
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   *
+   */
+  private void writeCrewSql() {
+
   }
 }
