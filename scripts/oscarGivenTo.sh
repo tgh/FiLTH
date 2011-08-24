@@ -123,6 +123,7 @@ sed -i "s/ (Comedy Picture)//g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 
 #-- REWRITING SPECIAL CASES --
+
 echo rewriting special cases...
 # change Good Fellas to Goodfellas
 sed -i "s/Good Fellas/Goodfellas/g" $filth_path/data/oscarsOfCategory.csv
@@ -165,6 +166,10 @@ sed -i "s/Harry Stradling,/Harry Stradling Sr.,/g" $filth_path/data/oscarsOfCate
 # change Coen brothers records
 sed -i "s/,Joel Coen,/,Joel and Ethan Coen,/g" $filth_path/data/oscarsOfCategory.csv
 sed -i -r "s/Ethan Coen, Joel Coen|Ethan Coen &amp; Joel Coen|Joel Coen and Ethan Coen|Ethan Coen and Joel Coen|Joel Coen &amp; Ethan Coen/Joel and Ethan Coen/g" $filth_path/data/oscarsOfCategory.csv
+# remove Donald Kaufman since he doesn't exist
+sed -i "s/ and Donald Kaufman//g" $filth_path/data/oscarsOfCategory.csv
+# change cinematographer Joe MacDonald to Joseph MacDonald
+sed -i "s/Joe MacDonald/Joseph MacDonald/g" $filth_path/data/oscarsOfCategory.csv
 # remove "; Ballet Photography by..."
 sed -i "s/; Ballet Photo.*,/,/g" $filth_path/data/oscarsOfCategory.csv
 # clean up screenplay recipient attribute values (they're so inconsistent it's rediculous)
