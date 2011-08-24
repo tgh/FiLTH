@@ -36,10 +36,12 @@ public class OscarParser implements GracefulShutdown {
   //for querying the database
   private PostgreSQLConsole db = null;
   //these maps are used as cache storage for mid's and cid's from the database
-  // The title used as keys in the move map are the cleaned titles used to
-  // query the db.
+  // The title strings used in the movie maps are the formatted title plus the
+  // year of the movie.
   private HashMap<String, Integer> movieMap = null;
   private HashMap<String, Integer> crewMap  = null;
+  private HashMap<String, Integer> movieNotFoundMap = null;
+  private HashMap<String, Integer> crewNotFoundMap  = null;
 
   //--------------------------------------------------------------------------
 
@@ -119,6 +121,8 @@ public class OscarParser implements GracefulShutdown {
     //init the hash maps
     movieMap = new HashMap<String, Integer>();
     crewMap  = new HashMap<String, Integer>();
+    movieNotFoundMap = new HashMap<String, Integer>();
+    crewNotFoundMap  = new HashMap<String, Integer>();
 
     log.logHeader("START");
 
@@ -355,6 +359,13 @@ public class OscarParser implements GracefulShutdown {
     if (Mid != null) {
       return Mid.intValue();
     }
+    //otherwise, see if the movie is in the cache of movies NOT in the database
+    Mid = movieNotFoundMap.get(formattedTitle + " " + year);
+    //movie was in cache, no need to query database
+    if (Mid != null) {
+      log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+      return -1;
+    }
 
     //movie was not in cache, need to query database
     ResultSet qResult = null;
@@ -419,10 +430,12 @@ public class OscarParser implements GracefulShutdown {
       }
       //no matches found at all
       else {
+        //add movie to the hash map of movies not found
+        movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
         log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
       }
 
-      //movie found, and to cache (hash map)
+      //movie found, add to cache (hash map)
       if (mid != -1) {
         movieMap.put(formattedTitle + " " + year, new Integer(mid));
       }
@@ -464,6 +477,14 @@ public class OscarParser implements GracefulShutdown {
     //this nominee is in cache, no need to query database
     if (Cid != null) {
       return Cid.intValue();
+    }
+
+    //otherwise, see if the name is in the cache of names NOT in the database
+    Cid = crewNotFoundMap.get(name);
+    //this nominee is in cache, no need to query database
+    if (Cid != null) {
+      log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
+      return -1;
     }
 
     //nominee crew id was not in cache, must query database
@@ -511,6 +532,8 @@ public class OscarParser implements GracefulShutdown {
     }
     //recipient name was not found or was empty or more than 3 names long
     else {
+      //add movie to the hash map of crew persons not found
+      crewNotFoundMap.put(name, new Integer(cid));
       log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
     }
 

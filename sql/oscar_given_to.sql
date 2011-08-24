@@ -510,6 +510,7 @@ INSERT INTO oscar_given_to VALUES(646, 2, 219, 0);
 INSERT INTO oscar_given_to VALUES(284, 2, 6, 1);
 INSERT INTO oscar_given_to VALUES(376, 4, 147, 0);
 INSERT INTO oscar_given_to VALUES(733, 4, 202, 0);
+INSERT INTO oscar_given_to VALUES(1800, 4, 108, 0);
 INSERT INTO oscar_given_to VALUES(1564, 4, 16, 1);
 INSERT INTO oscar_given_to VALUES(687, 2, 31, 0);
 INSERT INTO oscar_given_to VALUES(1296, 2, 95, 0);

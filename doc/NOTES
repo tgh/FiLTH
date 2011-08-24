@@ -6,8 +6,6 @@ WHERE LEFT OFF
     nomination is shared?  Maybe be an integer representing how many others it
     is shared with
 
-  - add a non-found hashMap
-
   - will need user interaction when movie/crew not in db:
     Example:
 
