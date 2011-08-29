@@ -1803,3 +1803,5 @@ INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NU
 INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Duchess', 2008, 6, 3, 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Treasure Planet', 2002, 5, 2, 'USA', NULL);
