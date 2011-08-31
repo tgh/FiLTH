@@ -133,7 +133,7 @@ public class OscarParser implements GracefulShutdown {
 
     log.logHeader("START");
 
-    int prevYear = 2008;
+    int prevYear = 2008;  //for logging purposes...
 
     //parse the csv file
     try {
@@ -144,8 +144,12 @@ public class OscarParser implements GracefulShutdown {
         //get the category of the nomination
         String category = oscars.get(1);
 
+        //log a new section header for a new category in the log file
         if (prevYear == 2008 && year != 2008) {
           log.logHeader(category);
+          System.out.println("------------------------------");
+          System.out.println("-- " + category);
+          System.out.println("------------------------------");
         }
         prevYear = year;
 
@@ -581,7 +585,7 @@ public class OscarParser implements GracefulShutdown {
       //log the find
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
-      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ");");
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ", DEFAULT);");
       oscarFileWriter.newLine();
     }
   }
@@ -619,7 +623,7 @@ public class OscarParser implements GracefulShutdown {
         int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
         //movie was found
         if (mid != -1) {
-          writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+          writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
         }
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
@@ -639,7 +643,7 @@ public class OscarParser implements GracefulShutdown {
       int mid = queryForMovie(formattedTitle, title, year);
       //movie was found
       if (mid != -1) {
-        writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2));
+        writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
       }
     }
   }
@@ -755,18 +759,18 @@ public class OscarParser implements GracefulShutdown {
           //extract the recipient name
           recipient = recipientString.substring(startIdx, endIdx);
           //pass the name (as an array of Strings) to the second helper method
-          writeOscarSql(recipient.split(" "), mid, oid, recipient);
+          writeOscarSql(recipient.split(" "), mid, oid, recipient, numRecipients-1);
           //reset the indeices for the next recipient
           startIdx = endIdx + 2;
           endIdx = recipientString.indexOf(",", startIdx);
         }
         //process the last recipient
         recipient = recipientString.substring(startIdx);
-        writeOscarSql(recipient.split(" "), mid, oid, recipient);
+        writeOscarSql(recipient.split(" "), mid, oid, recipient, numRecipients-1);
       }
       //only one recipient for this nomination
       else {
-        writeOscarSql(recipientString.split(" "), mid, oid, recipientString);
+        writeOscarSql(recipientString.split(" "), mid, oid, recipientString, 0);
       }
     }
   }
@@ -781,9 +785,11 @@ public class OscarParser implements GracefulShutdown {
    * @param mid The unique movie id from the database.
    * @param oid The appropriate oid for this oscar category.
    * @param nameString The name of the recipient as one String. 
+   * @param share The number of other recipients this nominee is sharing the
+   * nomination with.
    * @throws IOException
    */
-  private void writeOscarSql(String[] name, int mid, int oid, String nameString) throws IOException {
+  private void writeOscarSql(String[] name, int mid, int oid, String nameString, int share) throws IOException {
     //clean any special cases
     if (name.length >= 3) {
       name = checkForNameSpecialCases(name);
@@ -803,7 +809,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("mid = " + mid, 1, false);
       log.logData("cid = " + cid, 1, false);
       //write the sql insert statement for this nomination
-      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ");");
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ", " + share + ");");
       oscarFileWriter.newLine();
     }
   }
