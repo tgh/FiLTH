@@ -105,7 +105,7 @@ public class OscarParser implements GracefulShutdown {
 
     //open the files we are going to write to
     try {
-      oscarFileWriter   = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
+      oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
       movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie2.sql"));
       crewFileWriter  = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person2.sql"));
     }
@@ -140,6 +140,10 @@ public class OscarParser implements GracefulShutdown {
       while (oscars.readRecord()) {
         //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
+        
+        if (year != 1992) {
+          continue;
+        }
         
         //get the category of the nomination
         String category = oscars.get(1);
@@ -448,7 +452,7 @@ public class OscarParser implements GracefulShutdown {
         //add movie to the hash map of movies not found
         movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
         //prompt user for movie attribute values and write the sql for the movie
-        //writeMovieSql(realTitle, year);
+        writeMovieSql(realTitle, year);
       }
 
       //movie found, add to cache (hash map)
@@ -586,7 +590,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
       oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ", DEFAULT);");
-      oscarFileWriter.write("  // " + getCategoryString(oid) + ": \"" + title + "\"");
+      oscarFileWriter.write("  -- " + year + " " + getCategoryString(oid) + ": \"" + title + "\"");
       oscarFileWriter.newLine();
     }
   }
@@ -812,7 +816,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("cid = " + cid, 1, false);
       //write the sql insert statement for this nomination
       oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ", " + share + ");");
-      oscarFileWriter.write("  // " + getCategoryString(oid) + ": " + nameString + " for \"" + title + "\"");
+      oscarFileWriter.write("  -- " + oscars.get(0) + " " + getCategoryString(oid) + ": " + nameString + " for \"" + title + "\"");
       oscarFileWriter.newLine();
     }
   }
@@ -872,7 +876,7 @@ public class OscarParser implements GracefulShutdown {
 
     try {
       //ask user if the title of the movie as it appears in the CSV file is ok
-      System.out.print("\"" + title + "\" (" + year + ") not found. Title ok? ");
+      System.out.print("\"" + title + "\" (" + year + ") not found for " + oscars.get(1) + ". Title ok? ");
       response = stdinReader.readLine();
       //title is not ok, prompt user for a new title
       if (!response.toLowerCase().equals("y")) {
@@ -904,7 +908,7 @@ public class OscarParser implements GracefulShutdown {
       //write the appropriate sql for this movie
       movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", '" + country + "', NULL);");
       movieFileWriter.newLine();
-      log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to /sql/movie2.sql", 2, false);
+      log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to /sql/movie2.sql", 1, false);
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeMovieSql().",1,false);
@@ -925,7 +929,7 @@ public class OscarParser implements GracefulShutdown {
     String response = null;
 
     try {
-      System.out.println("Crew person not found:");
+      System.out.println("Crew person not found for " + oscars.get(0) + " " + oscars.get(1) + ":");
       //show the first, middle, and last name to the user
       if (first != null) {
         System.out.print("  FIRST: " + first);
@@ -975,10 +979,10 @@ public class OscarParser implements GracefulShutdown {
       }
       last = "'" + last + "'";
 
-      //write the sql insert statement for this person tpo the appropriate file
+      //write the sql insert statement for this person to the appropriate file
       crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
       crewFileWriter.newLine();
-      log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to /sql/crew_person2.sql", 2, false);
+      log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to /sql/crew_person2.sql", 1, false);
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeCrewSql().",1,false);

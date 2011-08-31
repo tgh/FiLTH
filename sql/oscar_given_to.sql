@@ -1,22 +1,19 @@
-INSERT INTO oscar_given_to VALUES(1070, 1, DEFAULT, 0);
-INSERT INTO oscar_given_to VALUES(1766, 1, DEFAULT, 0);
-INSERT INTO oscar_given_to VALUES(394, 1, DEFAULT, 0);
-INSERT INTO oscar_given_to VALUES(32, 1, DEFAULT, 0);
-INSERT INTO oscar_given_to VALUES(1309, 1, DEFAULT, 1);
-INSERT INTO oscar_given_to VALUES(1070, 2, 115, 0);
-INSERT INTO oscar_given_to VALUES(1309, 2, 5, 1);
-INSERT INTO oscar_given_to VALUES(191, 2, 4, 0);
-INSERT INTO oscar_given_to VALUES(1374, 4, 162, 0);
-INSERT INTO oscar_given_to VALUES(561, 4, 172, 1);
-INSERT INTO oscar_given_to VALUES(387, 3, 12, 0);
-INSERT INTO oscar_given_to VALUES(33, 3, 99, 1);
-INSERT INTO oscar_given_to VALUES(1766, 5, 148, 0);
-INSERT INTO oscar_given_to VALUES(1070, 5, 47, 0);
-INSERT INTO oscar_given_to VALUES(1766, 6, 334, 0);
-INSERT INTO oscar_given_to VALUES(911, 6, 351, 0);
-INSERT INTO oscar_given_to VALUES(1309, 6, 317, 1);
-INSERT INTO oscar_given_to VALUES(1070, 6, 336, 0);
-INSERT INTO oscar_given_to VALUES(1662, 7, 238, 0);
-INSERT INTO oscar_given_to VALUES(32, 11, 304, 0);
-INSERT INTO oscar_given_to VALUES(1763, 12, DEFAULT, 0);
-INSERT INTO oscar_given_to VALUES(1381, 12, DEFAULT, 0);
+INSERT INTO oscar_given_to VALUES(754, 1, DEFAULT, 0, DEFAULT);  -- Best Picture: "Howards End"
+INSERT INTO oscar_given_to VALUES(388, 1, DEFAULT, 0, DEFAULT);  -- Best Picture: "The Crying Game"
+INSERT INTO oscar_given_to VALUES(1393, 1, DEFAULT, 0, DEFAULT);  -- Best Picture: "Scent of a Woman"
+INSERT INTO oscar_given_to VALUES(1666, 1, DEFAULT, 1, DEFAULT);  -- Best Picture: "Unforgiven"
+INSERT INTO oscar_given_to VALUES(551, 1, DEFAULT, 0, DEFAULT);  -- Best Picture: "A Few Good Men"
+INSERT INTO oscar_given_to VALUES(308, 2, 32, 0, 0);  -- Best Actor: Robert Downey Jr. for "Chaplin"
+INSERT INTO oscar_given_to VALUES(987, 2, 35, 0, 0);  -- Best Actor: Denzel Washington for "Malcolm X"
+INSERT INTO oscar_given_to VALUES(388, 2, 208, 0, 0);  -- Best Actor: Stephen Rea for "The Crying Game"
+INSERT INTO oscar_given_to VALUES(1393, 2, 56, 1, 0);  -- Best Actor: Al Pacino for "Scent of a Woman"
+INSERT INTO oscar_given_to VALUES(1666, 2, 279, 0, 0);  -- Best Actor: Clint Eastwood for "Unforgiven"
+INSERT INTO oscar_given_to VALUES(551, 4, 9, 0, 0);  -- Best Supporting Actor: Jack Nicholson for "A Few Good Men"
+INSERT INTO oscar_given_to VALUES(1666, 4, 115, 1, 0);  -- Best Supporting Actor: Gene Hackman for "Unforgiven"
+INSERT INTO oscar_given_to VALUES(629, 4, 56, 0, 0);  -- Best Supporting Actor: Al Pacino for "Glengarry Glen Ross"
+INSERT INTO oscar_given_to VALUES(754, 3, 94, 1, 0);  -- Best Actress: Emma Thompson for "Howards End"
+INSERT INTO oscar_given_to VALUES(388, 6, 303, 0, 0);  -- Best Director: Neil Jordan for "The Crying Game"
+INSERT INTO oscar_given_to VALUES(1259, 6, 246, 0, 0);  -- Best Director: Robert Altman for "The Player"
+INSERT INTO oscar_given_to VALUES(1666, 6, 279, 1, 0);  -- Best Director: Clint Eastwood for "Unforgiven"
+INSERT INTO oscar_given_to VALUES(388, 10, 303, 1, 0);  -- Best Original Screenplay: Neil Jordan for "The Crying Game"
+INSERT INTO oscar_given_to VALUES(762, 10, 245, 0, 0);  -- Best Original Screenplay: Woody Allen for "Husbands and Wives"
