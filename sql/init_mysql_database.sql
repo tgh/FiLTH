@@ -94,7 +94,10 @@ mid smallint NOT NULL,
 oid tinyint NOT NULL,
 cid smallint DEFAULT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
-ostatus tinyint DEFAULT NULL);
+ostatus tinyint DEFAULT NULL,
+-- indicates how many other recipients this nominee is sharing the nomination
+-- with
+sharing_with tinyint DEFAULT NULL);
 
 
 -- a list entity
@@ -255,18 +258,22 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
 
--- listcontains rank
+-- list_contains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
 CHECK (rank > 0);
 
--- oscargivento status
+-- oscar_given_to status
 ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_status_constraint
 CHECK (ostatus >= 0 AND ostatus <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie (I believe this has only happened once in oscar history)
 
--- tylergivento status
+-- oscar_given_to sharing_with
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_sharing_constraint
+CHECK (sharing_with >= 0);
+
+-- tyler_given_to status
 ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_status_constraint
 CHECK (tstatus >= 0 AND tstatus <= 2);
 -- 0 = nominated
