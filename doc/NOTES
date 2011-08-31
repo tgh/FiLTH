@@ -3,8 +3,6 @@ WHERE LEFT OFF
 - working on oscars...
 
   - add attribute to oscars_given_to for sharing of oscar
-  - add a comment atthe end of each sql insert statement for what category,
-    movie, recipient, etc
   - ties:
     - 1968 best actress has a tie which needs a value of 2, not 1
     - 1986 Documentary

@@ -586,6 +586,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
       oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ", DEFAULT);");
+      oscarFileWriter.write("  // " + getCategoryString(oid) + ": \"" + title + "\"");
       oscarFileWriter.newLine();
     }
   }
@@ -623,7 +624,7 @@ public class OscarParser implements GracefulShutdown {
         int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
         //movie was found
         if (mid != -1) {
-          writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
+          writeOscarSql(unformattedNextTitle, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
         }
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
@@ -643,7 +644,7 @@ public class OscarParser implements GracefulShutdown {
       int mid = queryForMovie(formattedTitle, title, year);
       //movie was found
       if (mid != -1) {
-        writeOscarSql(oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
+        writeOscarSql(title, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
       }
     }
   }
@@ -759,18 +760,18 @@ public class OscarParser implements GracefulShutdown {
           //extract the recipient name
           recipient = recipientString.substring(startIdx, endIdx);
           //pass the name (as an array of Strings) to the second helper method
-          writeOscarSql(recipient.split(" "), mid, oid, recipient, numRecipients-1);
+          writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
           //reset the indeices for the next recipient
           startIdx = endIdx + 2;
           endIdx = recipientString.indexOf(",", startIdx);
         }
         //process the last recipient
         recipient = recipientString.substring(startIdx);
-        writeOscarSql(recipient.split(" "), mid, oid, recipient, numRecipients-1);
+        writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
       }
       //only one recipient for this nomination
       else {
-        writeOscarSql(recipientString.split(" "), mid, oid, recipientString, 0);
+        writeOscarSql(realTitle, recipientString.split(" "), mid, oid, recipientString, 0);
       }
     }
   }
@@ -781,6 +782,7 @@ public class OscarParser implements GracefulShutdown {
    * Creates and writes the appropriate SQL INSERT statement for this
    * nomination.
    *
+   * @param title The movie title for this nomination.
    * @param name An array of Strings for the recipient of the nomination.
    * @param mid The unique movie id from the database.
    * @param oid The appropriate oid for this oscar category.
@@ -789,7 +791,7 @@ public class OscarParser implements GracefulShutdown {
    * nomination with.
    * @throws IOException
    */
-  private void writeOscarSql(String[] name, int mid, int oid, String nameString, int share) throws IOException {
+  private void writeOscarSql(String title, String[] name, int mid, int oid, String nameString, int share) throws IOException {
     //clean any special cases
     if (name.length >= 3) {
       name = checkForNameSpecialCases(name);
@@ -810,6 +812,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("cid = " + cid, 1, false);
       //write the sql insert statement for this nomination
       oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ", " + share + ");");
+      oscarFileWriter.write("  // " + getCategoryString(oid) + ": " + nameString + " for \"" + title + "\"");
       oscarFileWriter.newLine();
     }
   }
@@ -980,5 +983,33 @@ public class OscarParser implements GracefulShutdown {
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeCrewSql().",1,false);
     } 
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Returns the String representation of the oscar category given the oid.
+   *
+   * @param oid The oscar category's unique id.
+   * @return The category name as a String.
+   */
+  private String getCategoryString(int oid) {
+    switch(oid) {
+      case  1: return "Best Picture";
+      case  2: return "Best Actor";
+      case  3: return "Best Actress";
+      case  4: return "Best Supporting Actor";
+      case  5: return "Best Supporting Actress";
+      case  6: return "Best Director";
+      case  7: return "Best Cinematography";
+      case  8: return "Best Cinematography (black & white)";
+      case  9: return "Best Cinematography (color)";
+      case 10: return "Best Original Screenplay";
+      case 11: return "Best Adapted Screenplay";
+      case 12: return "Best Foreign Language Film";
+      case 13: return "Best Documentary";
+      case 14: return "Best Screenplay";
+      default: return "**Unknown category**";
+    }
   }
 }
