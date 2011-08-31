@@ -981,6 +981,7 @@ public class OscarParser implements GracefulShutdown {
 
       //write the sql insert statement for this person to the appropriate file
       crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
+      crewFileWriter.write("  -- " + getOccupation(oscars.get(1)));
       crewFileWriter.newLine();
       log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to /sql/crew_person2.sql", 1, false);
     }
@@ -1015,5 +1016,30 @@ public class OscarParser implements GracefulShutdown {
       case 14: return "Best Screenplay";
       default: return "**Unknown category**";
     }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Returns an occupation of the nominee based on the given category String.
+   *
+   * @param category The category of the nomination.
+   * @return A String for the occupation of the nominee ("Cinematographer",
+   * "Director", etc).
+   */
+  private String getOccupation(String category) {
+    if (category.contains("Screen")) {
+      return "Screenwriter";
+    }
+    if (category.startsWith("Best C")) {
+      return "Cinematographer";
+    }
+    if (category.startsWith("Best D")) {
+      return "Director";
+    }
+    if (category.contains("Act")) {
+      return "Actor";
+    }
+    return "**Unknown occupation**";
   }
 }
