@@ -1805,3 +1805,4 @@ INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NU
 INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Foo Fighters: Back and Forth', 2011, 7, 0, 'USA', NULL);
