@@ -1806,3 +1806,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NUL
 INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Foo Fighters: Back and Forth', 2011, 7, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Don''t Be Afraid of the Dark', 2011, 5, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Roman Holiday', 1953, 7, 0, 'USA', NULL);
