@@ -1808,3 +1808,4 @@ INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, N
 INSERT INTO movie VALUES (DEFAULT, 'Foo Fighters: Back and Forth', 2011, 7, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Don''t Be Afraid of the Dark', 2011, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Roman Holiday', 1953, 7, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Marie Antoinette', 2006, 6, 3, 'USA', NULL);
