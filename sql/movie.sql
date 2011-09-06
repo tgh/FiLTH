@@ -1809,3 +1809,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Foo Fighters: Back and Forth', 2011, 7, 0, '
 INSERT INTO movie VALUES (DEFAULT, 'Don''t Be Afraid of the Dark', 2011, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Roman Holiday', 1953, 7, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Marie Antoinette', 2006, 6, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Aliens of the Deep', 2005, 5, 1, 'USA', NULL);
