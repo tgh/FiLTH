@@ -349,21 +349,16 @@ Files
 
   oscarGivenTo.sh
 
-    The purpose of this shell script is to create sql insert statments to be
-    used to populate the oscar_given_to table in the database.  It has four
-    phases: extraction, rewriting, decoding escape sequences, and parsing.  In
-    the extraction phase the desired Oscar category nominations are (f)grep'd
-    from /data/oscars.csv (Oscar history csv file through 2009) and redirected/
-    appended to /data/oscarsOfCategory.csv.  The rewriting phase cleans and
-    transforms the category names, win status, and special cases such as
-    changing 'James Stewart' to 'Jimmy Stewart'.  The decoding escape sequences
-    phase changes escape sequences found in the csv file to actual characters
-    (e.g. '&amp;' -> '&').  The final parsing phase simply runs the
-    /bin/OscarParser Java program.
-
-    This script takes two arguments: the name of the database and the password
-    for the database.  (These args are necessary because the OscarParser program
-    requires them.)
+    The purpose of this shell script is to clean and transform the academy
+    awards data in data/oscars.csv.  It has three phases: extraction, rewriting,
+    and decoding escape sequences.  In the extraction phase the desired Oscar
+    category nominations are (f)grep'd from /data/oscars.csv (Oscar history csv
+    file through 2009) and redirected/appended to /data/oscarsOfCategory.csv.
+    The rewriting phase cleans and transforms the category names, win status,
+    and special cases such as changing 'James Stewart' to 'Jimmy Stewart'.  The
+    decoding escape sequences phase changes escape sequences found in the csv
+    file to actual characters (e.g. '&amp;' -> '&').  This script creates the
+    /data/oscarsOfCategory.csv file that /bin/OscarParser reads.
 
   runop.sh
 
