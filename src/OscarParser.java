@@ -178,11 +178,6 @@ public class OscarParser implements GracefulShutdown {
         }
         prevYear = year;
 
-        String title = null; //the movie titles aren't always in the same field slot (depends on the category)
-        int mid      = 0;    //movie id to be retrieved from the database
-        int cid      = 0;    //crew person id to be retrieved from the database
-        int status   = 0;    //just nominated = 0, win = 1, tie = 2
-
         //log the current record
         log.logData("RECORD: " + year + ", " + category + ", " + oscars.get(2)
                     + ", " + oscars.get(3) + ", " + oscars.get(4), 0, false);
