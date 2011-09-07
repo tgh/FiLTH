@@ -190,6 +190,16 @@ sed -i "s/Give 'em Hell/Give 'em' Hell/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/dalen '31/dalen '31'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Summer of '42/Summer of '42'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Casanova '70/Casanova '70'/g" $filth_path/data/oscarsOfCategory.csv
+# change the status of ties from 1 to 2
+#  1932 Best Actor
+sed -i "s/{Champ\"\"}\"\"\",1/{Champ\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Mr. Hyde\"\"}\"\"\",1/Mr. Hyde\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
+#  1968 Best Actress
+sed -i "s/Brice\"\"}\"\"\",1/Brice\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Aquitaine\"\"}\"\"\",1/Aquitaine\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
+#  1986 Best Documentary
+sed -i "s/Justice, Producers\",1/Justice, Producers\",2/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Berman, Producer\",1/Berman, Producer\",2/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
