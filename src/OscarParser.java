@@ -340,9 +340,10 @@ public class OscarParser implements GracefulShutdown {
    * database schema is designed.
    */
   private String[] checkForNameSpecialCases(String[] name) {
-    //names with 'De' (like Robert De Niro) combine De and [name] into one.
-    if (name[1].equals("De")) {
-      String[] n = {name[0],"De " + name[2]};
+    //names with 'De' or 'Del' (like Robert De Niro, Benicio Del Toro) combine
+    // 'De' and 'Niro' (for example) into one.
+    if (name[1].equals("De") || name[1].equals("Del")) {
+      String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
     //names with 'Jr.' (like Robert Downey, Jr.) include Jr. with last name.
