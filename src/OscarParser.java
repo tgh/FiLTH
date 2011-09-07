@@ -162,10 +162,6 @@ public class OscarParser implements GracefulShutdown {
         //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
         
-        if (year != 2000) {
-          continue;
-        }
-        
         //get the category of the nomination
         String category = oscars.get(1);
 
