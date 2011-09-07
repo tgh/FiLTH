@@ -162,7 +162,7 @@ public class OscarParser implements GracefulShutdown {
         //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
         
-        if (year != 1999) {
+        if (year != 2000) {
           continue;
         }
         
@@ -647,10 +647,8 @@ public class OscarParser implements GracefulShutdown {
         String nextTitle = formatTitle(unformattedNextTitle);
         //query for the movie unique id
         int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
-        //movie was found
-        if (mid != -1) {
-          writeOscarSql(unformattedNextTitle, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
-        }
+        //write the appropriate sql for this nomination
+        writeOscarSql(unformattedNextTitle, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
         if (startIdx == -1) {
@@ -667,10 +665,8 @@ public class OscarParser implements GracefulShutdown {
       String formattedTitle = formatTitle(title);
       //query for the movie unique id
       int mid = queryForMovie(formattedTitle, title, year);
-      //movie was found
-      if (mid != -1) {
-        writeOscarSql(title, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
-      }
+      //write the appropriate sql for this nomination
+      writeOscarSql(title, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
     }
   }
 
@@ -751,53 +747,50 @@ public class OscarParser implements GracefulShutdown {
     //query for movie id
     int mid = queryForMovie(title, realTitle, year);
 
-    //movie was found in database
-    if (mid != -1) {
-      //get the value of the recipient attribute in the CSV file
-      String recipientString = oscars.get(recIdx);
-      //for some reason, 1930 records for writing categories and Best
-      // Cinematography, as well as 1962 black & white cinematography have
-      // most of the recipients inside parentheses
-      if ((year == 1930 && (oid == 7 || isWritingCategory(oid)))
-           || (year == 1962 && oid == 8)) {
-        recipientString = recipientString.replace("(","").replace(")","");
-      }
-      //in screenplay categories for years 2000 and on, some recipient values
-      // contain " & " and/or " and " rather than ", " to separate the
-      // different recipients
-      else if (year >= 2000 && isWritingCategory(oid) && !recipientString.equals("Joel and Ethan Coen")) {
-        recipientString = recipientString.replace(" & ",", ");
-        recipientString = recipientString.replace(" and ",", ");
-      }
+    //get the value of the recipient attribute in the CSV file
+    String recipientString = oscars.get(recIdx);
+    //for some reason, 1930 records for writing categories and Best
+    // Cinematography, as well as 1962 black & white cinematography have
+    // most of the recipients inside parentheses
+    if ((year == 1930 && (oid == 7 || isWritingCategory(oid)))
+         || (year == 1962 && oid == 8)) {
+      recipientString = recipientString.replace("(","").replace(")","");
+    }
+    //in screenplay categories for years 2000 and on, some recipient values
+    // contain " & " and/or " and " rather than ", " to separate the
+    // different recipients
+    else if (year >= 2000 && isWritingCategory(oid) && !recipientString.equals("Joel and Ethan Coen")) {
+      recipientString = recipientString.replace(" & ",", ");
+      recipientString = recipientString.replace(" and ",", ");
+    }
 
-      //get the number of recipients for this nomination
-      int numRecipients = recipientString.split(",").length;
+    //get the number of recipients for this nomination
+    int numRecipients = recipientString.split(",").length;
 
-      //nomination has more than one recipient
-      if (numRecipients > 1) {
-        int startIdx = 0;   //an index into the original CSV string indicating
-                            // the beginning of the next recipient
-        int endIdx = recipientString.indexOf(",");  //ditto for the end
-        String recipient = null;
+    //nomination has more than one recipient
+    if (numRecipients > 1) {
+      int startIdx = 0;   //an index into the original CSV string indicating
+                          // the beginning of the next recipient
+      int endIdx = recipientString.indexOf(",");  //ditto for the end
+      String recipient = null;
 
-        //endIdx will be -1 when there is only one more recipient left to process
-        while (endIdx != -1) {
-          //extract the recipient name
-          recipient = recipientString.substring(startIdx, endIdx);
-          //pass the name (as an array of Strings) to the second helper method
-          writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
-          //reset the indeices for the next recipient
-          startIdx = endIdx + 2;
-          endIdx = recipientString.indexOf(",", startIdx);
-        }
-        //process the last recipient
-        recipient = recipientString.substring(startIdx);
+      //endIdx will be -1 when there is only one more recipient left to process
+      while (endIdx != -1) {
+        //extract the recipient name
+        recipient = recipientString.substring(startIdx, endIdx);
+        //pass the name (as an array of Strings) to the second helper method
         writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
+        //reset the indeices for the next recipient
+        startIdx = endIdx + 2;
+        endIdx = recipientString.indexOf(",", startIdx);
       }
-      //only one recipient for this nomination
-      else {
-        writeOscarSql(realTitle, recipientString.split(" "), mid, oid, recipientString, 0);
-      }
+      //process the last recipient
+      recipient = recipientString.substring(startIdx);
+      writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
+    }
+    //only one recipient for this nomination
+    else {
+      writeOscarSql(realTitle, recipientString.split(" "), mid, oid, recipientString, 0);
     }
   }
 
@@ -828,8 +821,8 @@ public class OscarParser implements GracefulShutdown {
     }
     //get the crew person id for this recipient from the database
     int cid = queryForCrewperson(name, nameString);
-    //recipient was found in the database
-    if (cid != -1) {
+    //recipient was found in the database, write the sql statement (if the movie was found too)
+    if (cid != -1 && mid != -1) {
       //get the status of the nomination
       int status = Integer.parseInt(oscars.get(4));
       //log what was found
