@@ -26,9 +26,9 @@ public class OscarParser implements GracefulShutdown {
   //for file output to oscar_given_to.sql (the sql commands to populate the
   // oscar_given_to table in the db)
   private BufferedWriter oscarFileWriter = null;
-  //for file output to movie2.sql (oscar movies I haven't seen)
+  //for file output to a new movie sql file (oscar movies I haven't seen)
   private BufferedWriter movieFileWriter = null;
-  //for file output to crew_person2.sql (crew persons not in the db)
+  //for file output to crew_person sql file (crew persons not in the db)
   private BufferedWriter crewFileWriter = null;
   //for reading from stdin
   private BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in));
@@ -106,8 +106,29 @@ public class OscarParser implements GracefulShutdown {
     //open the files we are going to write to
     try {
       oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
-      movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie2.sql"));
-      crewFileWriter  = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person2.sql"));
+
+      //find the next file to create for movies not seen.  Since going through
+      // all of the oscar nominations is going to take a LONG time, this
+      // program is most likely going to be halted somewhere during execution.
+      // If this was the first time, for example, sql/movie2.sql and
+      // sql/crew_person2.sql would be created.  In order to avoid having to
+      // redo all of those movies and recipients, those sql files need to be
+      // executed in the database.  But then those sql commands should also
+      // be preserved, so the next run of this program should create
+      // sql/movie3.sql and sql/crew_person3.sql.  This is where it is
+      // determined which numbered file the current run is on.
+      int fileCounter = 2;
+      while(new File(filthPath + "/sql/movie" + fileCounter + ".sql").exists()) {
+        ++fileCounter;
+      }
+      movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie" + fileCounter + ".sql"));
+
+      //find the next file to create for the recipients not in the database.
+      fileCounter = 2;
+      while(new File(filthPath + "/sql/crew_person" + fileCounter + ".sql").exists()) {
+        ++fileCounter;
+      }
+      crewFileWriter  = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person" + fileCounter + ".sql"));
     }
     catch (IOException ioe) {
       log.logFatalError("Unable to create/open file.",0,false);
@@ -141,7 +162,7 @@ public class OscarParser implements GracefulShutdown {
         //get the year of the oscar nomination
         int year = Integer.parseInt(oscars.get(0));
         
-        if (year != 1992) {
+        if (year != 1999) {
           continue;
         }
         
@@ -908,7 +929,7 @@ public class OscarParser implements GracefulShutdown {
       //write the appropriate sql for this movie
       movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", '" + country + "', NULL);");
       movieFileWriter.newLine();
-      log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to /sql/movie2.sql", 1, false);
+      log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to the new movie sql file.", 1, false);
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeMovieSql().",1,false);
@@ -983,7 +1004,7 @@ public class OscarParser implements GracefulShutdown {
       crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
       crewFileWriter.write("  -- " + getOccupation(oscars.get(1)));
       crewFileWriter.newLine();
-      log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to /sql/crew_person2.sql", 1, false);
+      log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to new crew sql file.", 1, false);
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeCrewSql().",1,false);
