@@ -5,13 +5,17 @@ import com.csvreader.*;
 import java.util.*;
 
 /**
- * This program is used in the scripts/oscarGivenTo.sh shell script to help
- * populate the oscar_given_to table in the database.
+ * This program is used to populate the oscar_given_to table in the database.
  * The scripts/oscarGivenTo.sh shell script massages the original
  * data/oscars.csv file into the data/oscarsOfCategory.csv file.  This
  * program then parses that csv file and outputs appropriate sql insert
  * statements for inserting the proper data into the oscar_given_to table.
- * The shell script should redirect this output to a sql/ file.
+ * User interaction is required, and various sql files are created based
+ * on what is already in the database and what isn't.  For example, if a
+ * movie that is nominated is not in the database, the user is prompted for
+ * imformation, and the movie is added to a separate sql file to be used
+ * later to add to the movie table in the database.  Same goes for an
+ * unknown crew person (e.g. actor, director, etc).
  */
 public class OscarParser implements GracefulShutdown {
 
