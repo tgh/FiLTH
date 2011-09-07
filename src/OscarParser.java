@@ -578,7 +578,8 @@ public class OscarParser implements GracefulShutdown {
       //add movie to the hash map of crew persons not found
       crewNotFoundMap.put(name, new Integer(cid));
       //prompt user for about the new person and write the sql statement for the person
-      writeCrewSql(name, fname, mname, lname);
+      // (or get the cid if the user happens to provide it)
+      cid = writeCrewSql(name, fname, mname, lname);
     }
 
     return cid;
@@ -939,8 +940,9 @@ public class OscarParser implements GracefulShutdown {
    * @param first The person's first name.
    * @param middle The person's middle name.
    * @param last The person's last name. (This is assumed not to be null)
+   * @return unique id of the recipient if the user provides it, -1 otherwise.
    */
-  private void writeCrewSql(String name, String first, String middle, String last) {
+  private int writeCrewSql(String name, String first, String middle, String last) {
     String response = null;
 
     try {
@@ -957,6 +959,31 @@ public class OscarParser implements GracefulShutdown {
       response = stdinReader.readLine();
       //the names are not ok
       if (!response.toLowerCase().equals("y")) {
+        //maybe the name is in the database, but it just didn't find it.  Can
+        // the user provide the crew id?
+        System.out.println("  Do you have the correct id for this recipient? ");
+        response = stdinReader.readLine();
+        //user does have the id
+        if (response.equals("y")) {
+          int cid = -1;
+          while (true) {
+            System.out.println("  ID: ");
+            //make sure user input is valid
+            try {
+              cid = Integer.parseInt(stdinReader.readLine());
+              if (cid < 1) {
+                throw new NumberFormatException();
+              }
+              /* it is assumed that the id is in fact in the database at this point */
+              break;
+            }
+            catch (NumberFormatException nfe) {
+              System.out.println("  **oops -- not a valid id number.");
+            }
+          }
+          return cid;
+        }
+
         //prompt the user for each name
         System.out.print("  Enter first name (or 'i' to ignore, or 'k' to keep the same): ");
         response = stdinReader.readLine();
@@ -1003,6 +1030,8 @@ public class OscarParser implements GracefulShutdown {
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeCrewSql().",1,false);
     } 
+
+    return -1;
   }
 
   //--------------------------------------------------------------------------
