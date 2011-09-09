@@ -109,7 +109,8 @@ public class OscarParser implements GracefulShutdown {
 
     //open the files we are going to write to
     try {
-      oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
+      //append to the oscar_given_to.sql file
+      oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql", true));
 
       //find the next file to create for movies not seen.  Since going through
       // all of the oscar nominations is going to take a LONG time, this
