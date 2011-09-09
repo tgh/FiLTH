@@ -1,11 +1,7 @@
 WHERE LEFT OFF
 ---------------
 - working on oscars...
-
-  - ties:
-    - 1968 best actress has a tie which needs a value of 2, not 1
-    - 1986 Documentary
-    - 1932 best actor
+  - ran movie2.sql
     
 
 NEEDS
