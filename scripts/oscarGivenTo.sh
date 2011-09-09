@@ -131,6 +131,7 @@ sed -i "s/Mulholland Drive/Mulholland Dr./g" $filth_path/data/oscarsOfCategory.c
 sed -i "s/The Postman (Il Postino)/Il Postino/g" $filth_path/data/oscarsOfCategory.csv
 # change G. I. Joe to The Story of G. I. Joe
 sed -i "s/,G. I. Joe/,The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/,\"G. I. Joe/,\"The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
 # change Conrad L. Hall to just Conrad Hall
 sed -i "s/Conrad L. Hall/Conrad Hall/g" $filth_path/data/oscarsOfCategory.csv
 # change Noriyuki 'Pat' Morita to just Pat Morita
@@ -190,6 +191,10 @@ sed -i "s/Justice, Producers\",1/Justice, Producers\",2/g" $filth_path/data/osca
 sed -i "s/Berman, Producer\",1/Berman, Producer\",2/g" $filth_path/data/oscarsOfCategory.csv
 # "The Invaders" (1942) should be "49th Parallel"
 sed -i "s/The Invaders/49th Parallel/g" $filth_path/data/oscarsOfCategory.csv
+# "All That Money Can Buy" should be "The Devil and Daniel Webster"
+sed -i "s/All That Money Can Buy/The Devil and Daniel Webster/g" $filth_path/data/oscarsOfCategory.csv
+# Albert Basserman should be Albert Bassermann (with 2 n's)
+sed -i "s/Basserman/Bassermann/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
