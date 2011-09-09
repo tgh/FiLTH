@@ -188,6 +188,8 @@ sed -i "s/Aquitaine\"\"}\"\"\",1/Aquitaine\"\"}\"\"\",2/g" $filth_path/data/osca
 #  1986 Best Documentary
 sed -i "s/Justice, Producers\",1/Justice, Producers\",2/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Berman, Producer\",1/Berman, Producer\",2/g" $filth_path/data/oscarsOfCategory.csv
+# "The Invaders" (1942) should be "49th Parallel"
+sed -i "s/The Invaders/49th Parallel/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
