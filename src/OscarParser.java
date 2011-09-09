@@ -915,10 +915,16 @@ public class OscarParser implements GracefulShutdown {
         }
       }
       //prompt the user for the country of the movie
-      System.out.print("  Country: ");
+      System.out.print("  Country (or 'u' for unknown): ");
       country = stdinReader.readLine();
+      if (country.equals("u")) {
+        country = "DEFAULT";
+      }
+      else {
+        country = "'" + country + "'";
+      }
       //write the appropriate sql for this movie
-      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", '" + country + "', NULL);");
+      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", " + country + ", NULL);");
       movieFileWriter.newLine();
       log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to the new movie sql file.", 1, false);
     }
