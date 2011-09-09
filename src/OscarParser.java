@@ -107,22 +107,33 @@ public class OscarParser implements GracefulShutdown {
       System.exit(1); 
     }
 
-    //open the files we are going to write to
+    //open the files we are going to write to. Since going through
+    // all of the oscar nominations is going to take a LONG time, this
+    // program is most likely going to be halted somewhere during execution.
+    // If this was the first time, for example, sql/movie2.sql and
+    // sql/crew_person2.sql would be created.  In order to avoid having to
+    // redo all of those movies and recipients, those sql files need to be
+    // executed in the database.  But then those sql commands should also
+    // be preserved, so the next run of this program should create
+    // sql/movie3.sql and sql/crew_person3.sql.  This is where it is
+    // determined which numbered file the current run is on.
     try {
-      //append to the oscar_given_to.sql file
-      oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql", true));
+      int fileCounter;
 
-      //find the next file to create for movies not seen.  Since going through
-      // all of the oscar nominations is going to take a LONG time, this
-      // program is most likely going to be halted somewhere during execution.
-      // If this was the first time, for example, sql/movie2.sql and
-      // sql/crew_person2.sql would be created.  In order to avoid having to
-      // redo all of those movies and recipients, those sql files need to be
-      // executed in the database.  But then those sql commands should also
-      // be preserved, so the next run of this program should create
-      // sql/movie3.sql and sql/crew_person3.sql.  This is where it is
-      // determined which numbered file the current run is on.
-      int fileCounter = 2;
+      //find the next file to create for the oscar_given_to tuples
+      if (new File(filthPath + "/sql/oscar_given_to.sql").exists()) {
+        fileCounter = 2;
+        while(new File(filthPath + "/sql/oscar_given_to" + fileCounter + ".sql").exists()) {
+          ++fileCounter;
+        }
+        oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to" + fileCounter + ".sql"));
+      }
+      else {
+        oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
+      }
+
+      //find the next file to create for the movies not in the database.
+      fileCounter = 2;
       while(new File(filthPath + "/sql/movie" + fileCounter + ".sql").exists()) {
         ++fileCounter;
       }
