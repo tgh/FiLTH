@@ -195,6 +195,8 @@ sed -i "s/The Invaders/49th Parallel/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/All That Money Can Buy/The Devil and Daniel Webster/g" $filth_path/data/oscarsOfCategory.csv
 # Albert Basserman should be Albert Bassermann (with 2 n's)
 sed -i "s/Basserman/Bassermann/g" $filth_path/data/oscarsOfCategory.csv
+# "Adventures of Robinson Crusoe" should be "Robinson Crusoe"
+sed -i "s/Adventures of Robinson Crusoe/Robinson Crusoe/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
