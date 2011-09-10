@@ -1,0 +1,16 @@
+INSERT INTO movie VALUES (DEFAULT, 'Cyrano de Bergerac', 1950, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Magnificent Yankee', 1950, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Broken Arrow', 1950, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mister 880', 1950, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Asphalt Jungle', 1950, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Bright Victory', 1951, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Death of a Salesman', 1951, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Come Fill the Cup', 1951, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Lavender Hill Mob', 1952, -2, 0, 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Big Sky', 1952, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sudden Fear', 1952, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Cousin Rachel', 1952, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Stalag 17', 1953, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Robinson Crusoe', 1954, -2, 0, 'Mexico', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'A Star Is Born', 1954, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Barefoot Contessa', 1954, -2, 0, 'USA', NULL);
