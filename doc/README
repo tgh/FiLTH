@@ -473,6 +473,14 @@ Files
     this file is manipulated in anyway other than running the movie.sh script...
     bad things will happen.  So don't mess with it.
 
+  recompile_OscarParser
+
+    This file is created when the /sctipts/update_jar.sh script is run.  The
+    /scripts/runop.sh script first checks for this file, and if it is present,
+    the script will not execute since the OscarParser program must be recompiled
+    with the updated jar file before being executed.  The /scripts/cop.sh script
+    removes this file (since that script compiles OscarParser).
+
   temp and temp2
 
     Also created by /scripts/movie.sh.  Although deleting these or changing them

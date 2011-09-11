@@ -5,4 +5,12 @@
 
 filth_path=~/Projects/FiLTH
 
+# remove the 'recompile_OscarParser' file from the temp directory if it
+#  exists.  This will then allow the runop.sh script to execute.
+if [ -e $filth_path/temp/recompile_OscarParser ]
+then
+  rm $filth_path/temp/recompile_OscarParser
+fi
+
+# compile OscarParser
 javac -cp $filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/javacsv.jar -d $filth_path/bin/ $filth_path/src/OscarParser.java
