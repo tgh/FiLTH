@@ -125,7 +125,6 @@ INSERT INTO crew_person VALUES (DEFAULT, 'Dietrich', 'Marlene', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Fontanne', 'Lynn', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Hayes', 'Helen', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Wynyard', 'Diana', null);  -- Actor
-INSERT INTO crew_person VALUES (DEFAULT, 'Hepburn', 'Katharine', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Robson', 'May', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Moore', 'Grace', null);  -- Actor
 INSERT INTO crew_person VALUES (DEFAULT, 'Colbert', 'Claudette', null);  -- Actor
