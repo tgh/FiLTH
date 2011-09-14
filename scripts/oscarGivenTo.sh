@@ -197,6 +197,14 @@ sed -i "s/All That Money Can Buy/The Devil and Daniel Webster/g" $filth_path/dat
 sed -i "s/Basserman/Bassermann/g" $filth_path/data/oscarsOfCategory.csv
 # "Adventures of Robinson Crusoe" should be "Robinson Crusoe"
 sed -i "s/Adventures of Robinson Crusoe/Robinson Crusoe/g" $filth_path/data/oscarsOfCategory.csv
+# change "Victor/Victoria" to "Victor Victoria"
+sed -i "s/Victor\/Victoria/Victor Victoria/g" $filth_path/data/oscarsOfCategory.csv
+# "Tucker The Man and His Dream" should be "Tucker: The Man and His Dream"
+sed -i "s/Tucker /Tucker: /g" $filth_path/data/oscarsOfCategory.csv
+# change Dame May Whitty to just May Whitty
+sed -i "s/Dame May/May/g" $filth_path/data/oscarsOfCategory.csv
+# "Smash-Up--The Story of a Woman" should be "Smash-Up: The Story of a Woman"
+sed -i "s/Smash-Up--/Smash-Up: /g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
