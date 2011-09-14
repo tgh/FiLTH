@@ -18,7 +18,7 @@ INSERT INTO crew_person VALUES(DEFAULT, 'Day-Lewis', 'Daniel', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'DiCaprio', 'Leonardo', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Welles', 'Orson', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Damon', 'Matt', DEFAULT);
-INSERT INTO crew_person VALUES(DEFAULT, 'Hepburn', 'Katherine', DEFAULT);
+INSERT INTO crew_person VALUES(DEFAULT, 'Hepburn', 'Katharine', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Bogart', 'Humphrey', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Stewart', 'Jimmy', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Grant', 'Cary', DEFAULT);
