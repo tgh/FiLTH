@@ -201,10 +201,16 @@ sed -i "s/Adventures of Robinson Crusoe/Robinson Crusoe/g" $filth_path/data/osca
 sed -i "s/Victor\/Victoria/Victor Victoria/g" $filth_path/data/oscarsOfCategory.csv
 # "Tucker The Man and His Dream" should be "Tucker: The Man and His Dream"
 sed -i "s/Tucker /Tucker: /g" $filth_path/data/oscarsOfCategory.csv
-# change Dame May Whitty to just May Whitty
-sed -i "s/Dame May/May/g" $filth_path/data/oscarsOfCategory.csv
+# remove Dame from actress names
+sed -i "s/,Dame /,/g" $filth_path/data/oscarsOfCategory.csv
 # "Smash-Up--The Story of a Woman" should be "Smash-Up: The Story of a Woman"
 sed -i "s/Smash-Up--/Smash-Up: /g" $filth_path/data/oscarsOfCategory.csv
+# there is a "鬯" encoding for some reason in Penelope Cruz's nomination for "Vicky Cristina Barcelona"
+sed -i "s/鬯/elo/g" $filth_path/data/oscarsOfCategory.csv
+# "Gaby - A True Story" should be "Gaby: A True Story"
+sed -i "s/Gaby -/Gaby:/g" $filth_path/data/oscarsOfCategory.csv
+# change "Jacqueline Susann's Once Is Not Enough" to just "Once Is Not Enough"
+sed -i "s/Jacqueline Susann's //g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
