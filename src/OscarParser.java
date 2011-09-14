@@ -898,7 +898,7 @@ public class OscarParser implements GracefulShutdown {
         if (response.equals("y")) {
           int mid = -1;
           while (true) {
-            System.out.println("  ID: ");
+            System.out.print("  ID: ");
             //make sure user input is valid
             try {
               mid = Integer.parseInt(stdinReader.readLine());
