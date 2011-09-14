@@ -8,6 +8,11 @@ WHERE LEFT OFF
   - ran crew_person3.sql
   - ran movie5.sql
   - ran crew_person4.sql
+  - ran movie6.sql
+  - ran crew_person5.sql
+
+  - change special case in OscarParser from "De " to "De " or "de " for last
+    name
     
 
 NEEDS
