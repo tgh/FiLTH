@@ -337,7 +337,7 @@ public class OscarParser implements GracefulShutdown {
   private String[] checkForNameSpecialCases(String[] name) {
     //names with 'De' or 'Del' (like Robert De Niro, Benicio Del Toro) combine
     // 'De' and 'Niro' (for example) into one.
-    if (name[1].equals("De") || name[1].equals("Del")) {
+    if (name[1].toLowerCase().equals("de") || name[1].equals("Del")) {
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
@@ -416,10 +416,11 @@ public class OscarParser implements GracefulShutdown {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //special cases: full text search matches to wrong movie
-      // The odds of this happening is very low, but it has happened 3 times:
-      // the title matches to only one movie that just happens to be in the
-      // same year as the one being searched for.
-      else if (realTitle.equals("Water") || realTitle.equals("Evil") || realTitle.equals("On Any Sunday")) {
+      // The odds of this happening is very low, but it has happened a few
+      // times: the title matches to only one movie that just happens to be
+      // in the same year as the one being searched for.
+      else if (realTitle.equals("Water") || realTitle.equals("Evil") ||
+               realTitle.equals("On Any Sunday") || realTitle.equals("The Field")) {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //query for the movie
