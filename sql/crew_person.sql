@@ -136,7 +136,7 @@ INSERT INTO crew_person VALUES(DEFAULT, 'Wood', 'Elijah', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Fraser', 'Brendon', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'McKellen', 'Ian', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Cotillard', 'Marion', DEFAULT);
-INSERT INTO crew_person VALUES(DEFAULT, 'Huston', 'Angelica', DEFAULT);
+INSERT INTO crew_person VALUES(DEFAULT, 'Huston', 'Anjelica', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Bening', 'Annette', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Beatty', 'Warren', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Neeson', 'Liam', DEFAULT);
