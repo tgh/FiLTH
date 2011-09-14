@@ -470,7 +470,7 @@ public class OscarParser implements GracefulShutdown {
         //add movie to the hash map of movies not found
         movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
         //prompt user for movie attribute values and write the sql for the movie
-        writeMovieSql(realTitle, year);
+        mid = writeMovieSql(realTitle, year);
       }
 
       //movie found, add to cache (hash map)
@@ -880,8 +880,9 @@ public class OscarParser implements GracefulShutdown {
    *
    * @param title The title of the movie as a String (as seen in the CSV file).
    * @param year The year of the movie (as per the CSV file). 
+   * @return unique id of the movie if the user provides it, -1 otherwise.
    */
-  private void writeMovieSql(String title, int year) {
+  private int writeMovieSql(String title, int year) {
     String response = null;
     int mpaa = 0;
     String country = null;
@@ -892,6 +893,27 @@ public class OscarParser implements GracefulShutdown {
       response = stdinReader.readLine();
       //title is not ok, prompt user for a new title
       if (!response.toLowerCase().equals("y")) {
+        System.out.print("  Do you have the correct id for this movie? ");
+        response = stdinReader.readLine();
+        if (response.equals("y")) {
+          int mid = -1;
+          while (true) {
+            System.out.println("  ID: ");
+            //make sure user input is valid
+            try {
+              mid = Integer.parseInt(stdinReader.readLine());
+              if (mid < 1) {
+                throw new NumberFormatException();
+              }
+              /* it is assumed that the id is in fact in the database at this point */
+              break;
+            }
+            catch (NumberFormatException nfe) {
+              System.out.println("  **oops -- not a valid id number.");
+            }
+          }
+          return mid;
+        }
         System.out.print("  Enter new title: ");
         title = stdinReader.readLine();
       }
@@ -931,6 +953,8 @@ public class OscarParser implements GracefulShutdown {
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeMovieSql().",1,false);
     }
+
+    return -1;
   }
 
   //--------------------------------------------------------------------------
@@ -963,7 +987,7 @@ public class OscarParser implements GracefulShutdown {
       if (!response.toLowerCase().equals("y")) {
         //maybe the name is in the database, but it just didn't find it.  Can
         // the user provide the crew id?
-        System.out.println("  Do you have the correct id for this recipient? ");
+        System.out.print("  Do you have the correct id for this recipient? ");
         response = stdinReader.readLine();
         //user does have the id
         if (response.equals("y")) {
