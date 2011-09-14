@@ -55,6 +55,11 @@ IDEAS/THOUGHTS
   when adding a new country), the FiLTH application could to a sql query upon
   load for the highest value of movie.country and store that in a variable, or
   have some sort of config or rc file that it reads/updates for such variables.
+- should 'position' attribute of worked_on be a part of the primary key (so
+  when a person has multiple positions in a movie--actor/director, for example
+  --each instance is a unique tuple) or not (so that a person that worked on a
+  movie only appears once in the table (e.g. position value "Director, Actor")?
+- Front-end must ensure spelling consistency when entering position values
 
 
 HELPFUL HINTS/REMINDERS
