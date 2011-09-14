@@ -337,7 +337,7 @@ public class OscarParser implements GracefulShutdown {
   private String[] checkForNameSpecialCases(String[] name) {
     //names with 'De' or 'Del' (like Robert De Niro, Benicio Del Toro) combine
     // 'De' and 'Niro' (for example) into one.
-    if (name[1].toLowerCase().equals("de") || name[1].equals("Del")) {
+    if (name[1].toLowerCase().equals("de") || name[1].equals("Del") || name[1].equals("Le")) {
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
@@ -993,7 +993,7 @@ public class OscarParser implements GracefulShutdown {
         if (response.equals("y")) {
           int cid = -1;
           while (true) {
-            System.out.println("  ID: ");
+            System.out.print("  ID: ");
             //make sure user input is valid
             try {
               cid = Integer.parseInt(stdinReader.readLine());
