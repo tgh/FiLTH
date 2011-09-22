@@ -1816,3 +1816,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, 
 INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'It Might Get Loud', 2009, 5, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Mona Lisa Smile', 2003, 6, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Boston Strangler', 1968, 8, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Chronicles of Narnia: The Voyage of the Dawn Treader', 2010, 6, 2, DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sex and the City 2', 2010, 3, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Stay', 2005, 7, 4, 'USA', NULL);
