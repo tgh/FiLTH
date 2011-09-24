@@ -412,7 +412,7 @@ public class OscarParser implements GracefulShutdown {
       //  words, so they are ignored when searching.  Since this title only
       //  contains stop words, nothing is searched for, and thus is not
       //  found.
-      if (realTitle.equals("Being There") || realTitle.equals("In & Out")) {
+      if (realTitle.equals("Being There") || realTitle.equals("In & Out") || realTitle.equals("To Be or Not to Be")) {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //special cases: full text search matches to wrong movie
