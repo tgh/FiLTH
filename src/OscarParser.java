@@ -557,6 +557,7 @@ public class OscarParser implements GracefulShutdown {
                 }
                 break;
         default: log.logWarning("Recipient name is not 1, 2, or 3 names in length.", 1, false);
+                 lname = name;
                  //special case: W. S. Van Dyke
                  if (name.equals("W. S. Van Dyke")) {
                    qResult = db.select("SELECT cid FROM crew_person WHERE l_name = 'Van Dyke'"
