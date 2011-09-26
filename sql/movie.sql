@@ -1820,3 +1820,6 @@ INSERT INTO movie VALUES (DEFAULT, 'The Boston Strangler', 1968, 8, 4, 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'The Chronicles of Narnia: The Voyage of the Dawn Treader', 2010, 6, 2, DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sex and the City 2', 2010, 3, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Stay', 2005, 7, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Pearl Jam Twenty', 2011, 5, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Ray', 2004, 6, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Robin Hood', 2010, 5, 3, 'USA', NULL);
