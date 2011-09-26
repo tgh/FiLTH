@@ -397,7 +397,7 @@
 1995,Best Picture,Braveheart,"Mel Gibson, Alan Ladd Jr. and Bruce Davey, Producers",1
 1995,Best Picture,Apollo 13,"Brian Grazer, Producer",0
 1995,Best Picture,Babe,"George Miller, Doug Mitchell and Bill Miller, Producers",0
-1995,Best Picture,Il Postino,"Mario Cecchi Gori, Vittorio Cecchi Gori and Gaetano Daniele, Producers",0
+1995,Best Picture,Il Postino,"Mario Cecchi Gori, Vittorio Cecchi Gori and Tony Daniele, Producers",0
 1996,Best Picture,Secrets & Lies,"Simon Channing-Williams, Producer",0
 1996,Best Picture,The English Patient,"Saul Zaentz, Producer",1
 1996,Best Picture,Fargo,"Ethan Coen, Producer",0
@@ -2394,18 +2394,18 @@
 1928,Best Cinematography,Karl Struss,Sunrise,1
 1928,Best Cinematography,George Barnes,The Devil Dancer; The Magic Flame; and Sadie Thompson,0
 1929,Best Cinematography,Arthur Edeson,In Old Arizona,0
-1929,Best Cinematography,Ernest Palmer,Four Devils; and Street Angel,0
+1929,Best Cinematography,Ernest Palmer,4 Devils; and Street Angel,0
 1929,Best Cinematography,George Barnes,Our Dancing Daughters,0
-1929,Best Cinematography,John Seitz,The Divine Lady,0
+1929,Best Cinematography,John F. Seitz,The Divine Lady,0
 1929,Best Cinematography,Clyde De Vinna,White Shadows in the South Seas,1
-1930,Best Cinematography,Anna Christie,(William Daniels),0
-1930,Best Cinematography,Hell's Angels,"(Gaetano Gaudio), (Harry Perry)",0
+1930,Best Cinematography,Anna Christie,(William H. Daniels),0
+1930,Best Cinematography,Hell's Angels,"(Tony Gaudio), (Harry Perry)",0
 1930,Best Cinematography,The Love Parade,(Victor Milner),0
 1930,Best Cinematography,With Byrd at the South Pole,"Joseph T. Rucker, Willard Van der Veer",1
 1930,Best Cinematography,All Quiet on the Western Front,(Arthur Edeson),0
-1931,Best Cinematography,Tabu,Floyd Crosby,1
+1931,Best Cinematography,Tabu: A Story of the South Seas,Floyd Crosby,1
 1931,Best Cinematography,The Right to Love,Charles Lang,0
-1931,Best Cinematography,Svengali,Barney 'Chick' McGill,0
+1931,Best Cinematography,Svengali,Barney McGill,0
 1931,Best Cinematography,Morocco,Lee Garmes,0
 1931,Best Cinematography,Cimarron,Edward Cronjager,0
 1932,Best Cinematography,Arrowsmith,Ray June,0
@@ -2422,7 +2422,7 @@
 1935,Best Cinematography,Les Miserables,Gregg Toland,0
 1935,Best Cinematography,The Crusades,Victor Milner,0
 1936,Best Cinematography,The General Died at Dawn,Victor Milner,0
-1936,Best Cinematography,Anthony Adverse,Gaetano Gaudio,1
+1936,Best Cinematography,Anthony Adverse,Tony Gaudio,1
 1936,Best Cinematography,The Gorgeous Hussy,George Folsey,0
 1937,Best Cinematography,Wings over Honolulu,Joseph Valentine,0
 1937,Best Cinematography,The Good Earth,Karl Freund,1
@@ -2460,7 +2460,7 @@
 1940,Best Cinematography (black and white),Abe Lincoln in Illinois,James Wong Howe,0
 1940,Best Cinematography (black and white),"Arise, My Love","Charles B. Lang Jr.",0
 1940,Best Cinematography (black and white),Waterloo Bridge,Joseph Ruttenberg,0
-1940,Best Cinematography (black and white),The Letter,Gaetano (Tony) Gaudio,0
+1940,Best Cinematography (black and white),The Letter,Tony Gaudio,0
 1940,Best Cinematography (black and white),Boom Town,Harold Rosson,0
 1940,Best Cinematography (black and white),Rebecca,George Barnes,1
 1940,Best Cinematography (black and white),The Long Voyage Home,Gregg Toland,0
@@ -2508,7 +2508,7 @@
 1943,Best Cinematography (black and white),The North Star,James Wong Howe,0
 1943,Best Cinematography (black and white),Air Force,"James Wong Howe, Elmer Dyer, Charles Marshall",0
 1943,Best Cinematography (black and white),So Proudly We Hail!,Charles Lang,0
-1943,Best Cinematography (black and white),Five Graves to Cairo,John Seitz,0
+1943,Best Cinematography (black and white),Five Graves to Cairo,John F. Seitz,0
 1943,Best Cinematography (black and white),Casablanca,Arthur Edeson,0
 1943,Best Cinematography (black and white),Madame Curie,Joseph Ruttenberg,0
 1943,Best Cinematography (black and white),The Song of Bernadette,Arthur Miller,1
@@ -2523,7 +2523,7 @@
 1944,Best Cinematography (black and white),The White Cliffs of Dover,George Folsey,0
 1944,Best Cinematography (black and white),Gaslight,Joseph Ruttenberg,0
 1944,Best Cinematography (black and white),Laura,Joseph LaShelle,1
-1944,Best Cinematography (black and white),Double Indemnity,John Seitz,0
+1944,Best Cinematography (black and white),Double Indemnity,John F. Seitz,0
 1944,Best Cinematography (black and white),Thirty Seconds over Tokyo,"Robert Surtees, Harold Rosson",0
 1944,Best Cinematography (black and white),Since You Went Away,"Stanley Cortez, Lee Garmes",0
 1944,Best Cinematography (black and white),Going My Way,Lionel Lindon,0
@@ -2556,7 +2556,7 @@
 1947,Best Cinematography (color),Mother Wore Tights,Harry Jackson,0
 1947,Best Cinematography (color),Life with Father,"Peverell Marley, William V. Skall",0
 1948,Best Cinematography (black and white),Portrait of Jennie,Joseph August,0
-1948,Best Cinematography (black and white),The Naked City,William Daniels,1
+1948,Best Cinematography (black and white),The Naked City,William H. Daniels,1
 1948,Best Cinematography (black and white),A Foreign Affair,"Charles B. Lang Jr.",0
 1948,Best Cinematography (black and white),I Remember Mama,Nicholas Musuraca,0
 1948,Best Cinematography (black and white),Johnny Belinda,Ted McCord,0
@@ -2617,7 +2617,7 @@
 1954,Best Cinematography (black and white),Sabrina,"Charles Lang Jr.",0
 1954,Best Cinematography (black and white),The Country Girl,John F. Warren,0
 1954,Best Cinematography (black and white),Executive Suite,George Folsey,0
-1954,Best Cinematography (black and white),Rogue Cop,John Seitz,0
+1954,Best Cinematography (black and white),Rogue Cop,John F. Seitz,0
 1954,Best Cinematography (black and white),On the Waterfront,Boris Kaufman,1
 1954,Best Cinematography (color),Rear Window,Robert Burks,0
 1954,Best Cinematography (color),Seven Brides for Seven Brothers,George Folsey,0
@@ -2658,7 +2658,7 @@
 1958,Best Cinematography (color),Gigi,Joseph Ruttenberg,1
 1958,Best Cinematography (color),Auntie Mame,"Harry Stradling Sr.",0
 1958,Best Cinematography (color),South Pacific,Leon Shamroy,0
-1958,Best Cinematography (color),Cat on a Hot Tin Roof,William Daniels,0
+1958,Best Cinematography (color),Cat on a Hot Tin Roof,William H. Daniels,0
 1959,Best Cinematography (black and white),The Diary of Anne Frank,William C. Mellor,1
 1959,Best Cinematography (black and white),Career,Joseph LaShelle,0
 1959,Best Cinematography (black and white),Anatomy of a Murder,Sam Leavitt,0

@@ -136,6 +136,8 @@ sed -i "s/,\"G. I. Joe/,\"The Story of G. I. Joe/g" $filth_path/data/oscarsOfCat
 sed -i "s/Conrad L. Hall/Conrad Hall/g" $filth_path/data/oscarsOfCategory.csv
 # change Noriyuki 'Pat' Morita to just Pat Morita
 sed -i "s/Noriyuki 'Pat' Morita/Pat Morita/g" $filth_path/data/oscarsOfCategory.csv
+# remove the nickname from Barney 'Chick' McGill
+sed -i "s/Barney 'Chick'/Barney/g" $filth_path/data/oscarsOfCategory.csv
 # change James Stewart to Jimmy Stewart
 sed -i "s/James Stewart/Jimmy Stewart/g" $filth_path/data/oscarsOfCategory.csv
 # change Charles Chaplin to Charlie Chaplin
@@ -221,6 +223,16 @@ sed -i "s/Robert Z\./Robert/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/William A\./William/g" $filth_path/data/oscarsOfCategory.csv
 # Willard Van Der Veer should be Willard Van der Veer
 sed -i "s/Van Der Veer/Van der Veer/g" $filth_path/data/oscarsOfCategory.csv
+# "Tabu" should be "Tabu: A Story of the South Seas"
+sed -i "s/Tabu/Tabu: A Story of the South Seas/g" $filth_path/data/oscarsOfCategory.csv
+# Gaetano Gaudio should be Tony Gaudio
+sed -i -r "s/Gaetano|Gaetano \(Tony\)/Tony/g" $filth_path/data/oscarsOfCategory.csv
+# William Daniels should be William H. Daniels
+sed -i "s/William Daniels/William H. Daniels/g" $filth_path/data/oscarsOfCategory.csv
+# John Seitz should be John F. Seitz
+sed -i "s/John Seitz/John F. Seitz/g" $filth_path/data/oscarsOfCategory.csv
+# "Four Devils" should be "4 Devils"
+sed -i "s/Four Devils/4 Devils/g" $filth_path/data/oscarsOfCategory.csv
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
