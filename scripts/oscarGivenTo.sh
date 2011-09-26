@@ -211,7 +211,16 @@ sed -i "s/鬯/elo/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Gaby -/Gaby:/g" $filth_path/data/oscarsOfCategory.csv
 # change "Jacqueline Susann's Once Is Not Enough" to just "Once Is Not Enough"
 sed -i "s/Jacqueline Susann's //g" $filth_path/data/oscarsOfCategory.csv
-
+# "Five Fingers" should be "5 Fingers"
+sed -i "s/Five Fingers/5 Fingers/g" $filth_path/data/oscarsOfCategory.csv
+# "Hallelujah" should be "Hallelujah!"
+sed -i "s/Hallelujah/Hallelujah!/g" $filth_path/data/oscarsOfCategory.csv
+# Robert Leonard should be Robert Z. Leonard
+sed -i "s/Robert Z\./Robert/g" $filth_path/data/oscarsOfCategory.csv
+# William Wellman should be William A. Wellman
+sed -i "s/William A\./William/g" $filth_path/data/oscarsOfCategory.csv
+# Willard Van Der Veer should be Willard Van der Veer
+sed -i "s/Van Der Veer/Van der Veer/g" $filth_path/data/oscarsOfCategory.csv
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
