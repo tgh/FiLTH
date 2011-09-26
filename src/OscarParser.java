@@ -337,7 +337,7 @@ public class OscarParser implements GracefulShutdown {
   private String[] checkForNameSpecialCases(String[] name) {
     //names with 'De' or 'Del' (like Robert De Niro, Benicio Del Toro) combine
     // 'De' and 'Niro' (for example) into one.
-    if (name[1].toLowerCase().equals("de") || name[1].equals("Del") || name[1].equals("Le")) {
+    if (name[1].toLowerCase().equals("de") || name[1].equals("Del") || name[1].equals("Le") || name[1].equals("La")) {
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
@@ -557,6 +557,22 @@ public class OscarParser implements GracefulShutdown {
                 }
                 break;
         default: log.logWarning("Recipient name is not 1, 2, or 3 names in length.", 1, false);
+                 //special case: W. S. Van Dyke
+                 if (name.equals("W. S. Van Dyke")) {
+                   qResult = db.select("SELECT cid FROM crew_person WHERE l_name = 'Van Dyke'"
+                                       + " AND f_name = 'W.' AND m_name = 'S.';");
+                   if (qResult.next()) {
+                     cid = qResult.getInt(1);
+                   }
+                 }
+                 //special case: Willard Van der Veer
+                 else if (name.equals("Willard Van der Veer")) {
+                   qResult = db.select("SELECT cid FROM crew_person WHERE l_name = 'Van der Veer'"
+                                       + " AND f_name = 'Willard';");
+                   if (qResult.next()) {
+                     cid = qResult.getInt(1);
+                   }
+                 }
                  break;
       }
     }
