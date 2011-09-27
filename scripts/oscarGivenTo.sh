@@ -270,7 +270,9 @@ sed -i "s/Philip Lathrop/Philip H. Lathrop/g" $filth_path/data/oscarsOfCategory.
 # Fred Koenekamp should be Fred J. Koenekamp (cinematographer)
 sed -i "s/Fred Koenekamp/Fred J. Koenekamp/g" $filth_path/data/oscarsOfCategory.csv
 # replace " and " with ", " in cinematography nomination for "The Reader" (2008)
-sed -i "s/Chris Menges and Roger Deakins/\"Chris Menges, Roger Deakins\"/g" $filth_path/data/oscarsOfCategory.csv 
+sed -i "s/Chris Menges and Roger Deakins/\"Chris Menges, Roger Deakins\"/g" $filth_path/data/oscarsOfCategory.csv
+# "This above All" should be "This Above All"
+sed -i "s/This above All/This Above All/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
