@@ -40,7 +40,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Billy the Kid', 1941, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blood and Sand', 1941, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Dive Bomber', 1941, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Louisiana Purchase', 1941, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'This above All', 1942, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'This Above All', 1942, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Moontide', 1942, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Take a Letter, Darling', 1942, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Ten Gentlemen from West Point', 1942, -2, 0, 'USA', NULL);
