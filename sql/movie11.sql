@@ -1,4 +1,3 @@
-INSERT INTO movie VALUES (DEFAULT, 'This above All', 1942, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Prince of Foxes', 1949, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Jolson Sings Again', 1949, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Barkleys of Broadway', 1949, -2, 0, 'USA', NULL);
