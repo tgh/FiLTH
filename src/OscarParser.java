@@ -406,14 +406,8 @@ public class OscarParser implements GracefulShutdown {
     ResultSet qResult = null;
     int mid = -1;
     try {
-      //special case: title containing only stop words
-      //  For example, "Being There":
-      //  Postgres's full text search includes both 'being' and 'there' as stop
-      //  words, so they are ignored when searching.  Since this title only
-      //  contains stop words, nothing is searched for, and thus is not
-      //  found.
-      if (realTitle.equals("Being There") || realTitle.equals("In & Out")
-          || realTitle.equals("To Be or Not to Be") || realTitle.equals("To Each His Own")) {
+      //does the title only contain stop words in Postgres's full text search?
+      if (containsOnlyStopWords(realTitle)) {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //special cases: full text search matches to wrong movie
@@ -1129,5 +1123,30 @@ public class OscarParser implements GracefulShutdown {
       return "Actor";
     }
     return "**Unknown occupation**";
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Tests whether the given title is a title known to only contain stop words
+   * for Postgres's full text search.
+   *
+   * For example, "Being There":
+   *   Postgres's full text search includes both 'being' and 'there' as stop
+   *   words, so they are ignored when searching.  Since this title only
+   *   contains stop words, nothing is searched for, and thus is not found.
+   *
+   * @param title A movie title.
+   * @return boolean
+   */
+  private boolean containsOnlyStopWords(String title) {
+    if (title.equals("Being There")
+        || title.equals("In & Out")
+        || title.equals("To Be or Not to Be")
+        || title.equals("To Each His Own")
+        || title.equals("This Above All")) {
+      return true;
+    }
+    return false;
   }
 }
