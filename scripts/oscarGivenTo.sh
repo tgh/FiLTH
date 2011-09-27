@@ -113,23 +113,23 @@ sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 #-- REWRITING SPECIAL CASES --
 
 echo rewriting special cases...
-# change Good Fellas to Goodfellas
+# change "Good Fellas" to "Goodfellas"
 sed -i "s/Good Fellas/Goodfellas/g" $filth_path/data/oscarsOfCategory.csv
-# change Meredith Willson's The Music Man to The Music Man
+# change "Meredith Willson's The Music Man" to "The Music Man"
 sed -i "s/Meredith Willson's //g" $filth_path/data/oscarsOfCategory.csv
-# change Sunset Blvd. to Sunset Boulevard
+# change "Sunset Blvd." to "Sunset Boulevard"
 sed -i "s/Sunset Blvd./Sunset Boulevard/g" $filth_path/data/oscarsOfCategory.csv
-# change The Chorus (Les Choristes) to just The Chorus
+# change "The Chorus (Les Choristes)" to just "The Chorus"
 sed -i "s/ (Les Choristes)//g" $filth_path/data/oscarsOfCategory.csv
-# change Au Revoir, Les Enfants (Goodbye, Children) to just Au Revoir, Les Enfants
+# change "Au Revoir, Les Enfants (Goodbye, Children)" to just "Au Revoir, Les Enfants"
 sed -i "s/ (Goodbye, Children)//g" $filth_path/data/oscarsOfCategory.csv
-# change Federico Fellini's 8-1/2 to 8\u00BD (which is the unicode escape sequence for one-half)
+# change "Federico Fellini's 8-1/2" to "8\u00BD" (which is the unicode escape sequence for one-half)
 sed -i "s/Federico Fellini's 8-1\/2/8\\\\u00BD/g" $filth_path/data/oscarsOfCategory.csv
-# change Mulholland Drive to Mulholland Dr.
+# change "Mulholland Drive" to "Mulholland Dr."
 sed -i "s/Mulholland Drive/Mulholland Dr./g" $filth_path/data/oscarsOfCategory.csv
-# change The Postman (Il Postino) to just Il Postino
+# change "The Postman (Il Postino)" to just "Il Postino"
 sed -i "s/The Postman (Il Postino)/Il Postino/g" $filth_path/data/oscarsOfCategory.csv
-# change G. I. Joe to The Story of G. I. Joe
+# change "G. I. Joe" to "The Story of G. I. Joe"
 sed -i "s/,G. I. Joe/,The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/,\"G. I. Joe/,\"The Story of G. I. Joe/g" $filth_path/data/oscarsOfCategory.csv
 # change Conrad L. Hall to just Conrad Hall
@@ -152,7 +152,7 @@ sed -i "s/, Sr./ Sr./g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ \[came in.*\]//g" $filth_path/data/oscarsOfCategory.csv
 # change F. Fellini to Federico Fellini
 sed -i "s/F. Fellini/Federico Fellini/g" $filth_path/data/oscarsOfCategory.csv
-# change Harry Stradling to Harry Stradling Sr.
+# change Harry Stradling to Harry Stradling Sr. (cinematographer
 sed -i "s/Harry Stradling,/Harry Stradling Sr.,/g" $filth_path/data/oscarsOfCategory.csv
 # change Coen brothers records
 sed -i "s/,Joel Coen,/,Joel and Ethan Coen,/g" $filth_path/data/oscarsOfCategory.csv
@@ -173,7 +173,7 @@ sed -i -r "s/; Adaptation by.*\"|; Story by.*\"|; Screen [Ss]tory by.*\"|; Origi
 sed -i -r "s/; Adaptation by.*,|; Story by.*,|; Screen [Ss]tory by.*,|; Stories by.*,|; Dialogue by.*,/,/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Written by //g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Written for the [Ss]creen by //g" $filth_path/data/oscarsOfCategory.csv
-# change I. A. L. Diamond
+# change I. A. L. Diamond (screenwriter)
 sed -i "s/I\. A\. L\. Diamond/I\.A\.L\. Diamond/g" $filth_path/data/oscarsOfCategory.csv
 # fix titles where a token starts with a "'" but doesn't end with one (e.g. "Give 'em Hell Harry!", "Adalen '31")
 #  this prevents a SQL syntax error when using Postgres full-text search in OscarParser.java
@@ -195,7 +195,7 @@ sed -i "s/Berman, Producer\",1/Berman, Producer\",2/g" $filth_path/data/oscarsOf
 sed -i "s/The Invaders/49th Parallel/g" $filth_path/data/oscarsOfCategory.csv
 # "All That Money Can Buy" should be "The Devil and Daniel Webster"
 sed -i "s/All That Money Can Buy/The Devil and Daniel Webster/g" $filth_path/data/oscarsOfCategory.csv
-# Albert Basserman should be Albert Bassermann (with 2 n's)
+# Albert Basserman should be Albert Bassermann (with 2 n's) (actor)
 sed -i "s/Basserman/Bassermann/g" $filth_path/data/oscarsOfCategory.csv
 # "Adventures of Robinson Crusoe" should be "Robinson Crusoe"
 sed -i "s/Adventures of Robinson Crusoe/Robinson Crusoe/g" $filth_path/data/oscarsOfCategory.csv
@@ -217,22 +217,39 @@ sed -i "s/Jacqueline Susann's //g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Five Fingers/5 Fingers/g" $filth_path/data/oscarsOfCategory.csv
 # "Hallelujah" should be "Hallelujah!"
 sed -i "s/Hallelujah/Hallelujah!/g" $filth_path/data/oscarsOfCategory.csv
-# Robert Leonard should be Robert Z. Leonard
+# Robert Leonard should be Robert Z. Leonard (director)
 sed -i "s/Robert Z\./Robert/g" $filth_path/data/oscarsOfCategory.csv
-# William Wellman should be William A. Wellman
+# William Wellman should be William A. Wellman (director)
 sed -i "s/William A\./William/g" $filth_path/data/oscarsOfCategory.csv
-# Willard Van Der Veer should be Willard Van der Veer
+# Willard Van Der Veer should be Willard Van der Veer (cinematographer)
 sed -i "s/Van Der Veer/Van der Veer/g" $filth_path/data/oscarsOfCategory.csv
 # "Tabu" should be "Tabu: A Story of the South Seas"
 sed -i "s/Tabu/Tabu: A Story of the South Seas/g" $filth_path/data/oscarsOfCategory.csv
-# Gaetano Gaudio should be Tony Gaudio
+# Gaetano Gaudio should be Tony Gaudio (cinematographer)
 sed -i -r "s/Gaetano|Gaetano \(Tony\)/Tony/g" $filth_path/data/oscarsOfCategory.csv
-# William Daniels should be William H. Daniels
+# William Daniels should be William H. Daniels (cinematographer)
 sed -i "s/William Daniels/William H. Daniels/g" $filth_path/data/oscarsOfCategory.csv
-# John Seitz should be John F. Seitz
+# John Seitz should be John F. Seitz (cinematographer)
 sed -i "s/John Seitz/John F. Seitz/g" $filth_path/data/oscarsOfCategory.csv
 # "Four Devils" should be "4 Devils"
 sed -i "s/Four Devils/4 Devils/g" $filth_path/data/oscarsOfCategory.csv
+# Charles Lang (cinematographer)
+sed -i -r "s/Charles Bryant Lang Jr.|Charles B. Lang Jr.|Charles Lang Jr.|Charles B. Lang/Charles Lang/g" $filth_path/data/oscarsOfCategory.csv
+# George Folsey should be George J. Folsey (cinematographer)
+sed -i "s/George Folsey/George J. Folsey/g" $filth_path/data/oscarsOfCategory.csv
+# Joseph August should be Joseph H. August (cinematographer)
+sed -i "s/Joseph August/Joseph H. August/g" $filth_path/data/oscarsOfCategory.csv
+# Hal Rossen should be Harold Rossen (cinematographer)
+sed -i "s/Hal Rosson/Harold Rosson/g" $filth_path/data/oscarsOfCategory.csv
+# remove Bernard Knowles from cinematographer nomination since he was just a cameraman
+sed -i "s/, Bernard Knowles//g" $filth_path/data/oscarsOfCategory.csv
+# Allen Davey should be Allen M. Davey (cinematographer)
+sed -i "s/Allen Davey/Allen M. Davey/g" $filth_path/data/oscarsOfCategory.csv
+# Charles Clarke should be Charles G. Clarke
+sed -i "s/Charles Clarke/Charles G. Clarke/g" $filth_path/data/oscarsOfCategory.csv
+# Arthur Arling should be Arthur E. Arling (cinematographer)
+sed -i "s/Arthur Arling/Arthur E. Arling/g" $filth_path/data/oscarsOfCategory.csv
+
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
