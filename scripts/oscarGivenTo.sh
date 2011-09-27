@@ -249,6 +249,28 @@ sed -i "s/Allen Davey/Allen M. Davey/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Charles Clarke/Charles G. Clarke/g" $filth_path/data/oscarsOfCategory.csv
 # Arthur Arling should be Arthur E. Arling (cinematographer)
 sed -i "s/Arthur Arling/Arthur E. Arling/g" $filth_path/data/oscarsOfCategory.csv
+# Franz Planer (cinematographer)
+sed -i -r "s/Frank Planer|Franz F. Planer/Franz Planer/g" $filth_path/data/oscarsOfCategory.csv
+# William Mellor should be William C. Mellor
+sed -i "s/William Mellor/William C. Mellor/g" $filth_path/data/oscarsOfCategory.csv
+# Winton Hoch should be Winton C. Hoch (cinematographer)
+sed -i "s/Winton Hoch/Winton C. Hoch/g" $filth_path/data/oscarsOfCategory.csv
+# Freddie Young (cinematographer)
+sed -i -r "s/F. A. Young|Fred A. Young/Freddie Young/g" $filth_path/data/oscarsOfCategory.csv
+# Daniel Fapp should be Daniel L. Fapp (cinematographer)
+sed -i "s/Daniel Fapp/Daniel L. Fapp/g" $filth_path/data/oscarsOfCategory.csv
+# Robert Surtees (cinematographer)
+sed -i -r "s/Bruce Surtees|Robert L. Surtees/Robert Surtees/g" $filth_path/data/oscarsOfCategory.csv
+# Eugen Shuftan should be Eugen Shufftan (cinematographer)
+sed -i "s/Eugen Shuftan/Eugen Shufftan/g" $filth_path/data/oscarsOfCategory.csv
+# remove Henri Persin from "The Longest Day" cinematographer nomination
+sed -i "s/, (Henri Persin)//g" $filth_path/data/oscarsOfCategory.csv
+# Philip Lathrop should be Philip H. Lathrop (cinematographer)
+sed -i "s/Philip Lathrop/Philip H. Lathrop/g" $filth_path/data/oscarsOfCategory.csv
+# Fred Koenekamp should be Fred J. Koenekamp (cinematographer)
+sed -i "s/Fred Koenekamp/Fred J. Koenekamp/g" $filth_path/data/oscarsOfCategory.csv
+# replace " and " with ", " in cinematography nomination for "The Reader" (2008)
+sed -i "s/Chris Menges and Roger Deakins/\"Chris Menges, Roger Deakins\"/g" $filth_path/data/oscarsOfCategory.csv 
 
 
 #-------------------------------------------------------------------------------
