@@ -341,16 +341,16 @@ public class OscarParser implements GracefulShutdown {
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
-    //names with 'Jr.' (like Robert Downey, Jr.) include Jr. with last name.
-    // there is also the case where there is a "Jr." that makes the name 4
-    // tokens long (e.g. D. M. Marshman Jr.).
-    if (name[2].equals("Jr.") || (name.length == 4 && name[3].equals("Jr."))) {
+    //names with 'Jr.' or 'Sr.' (like Robert Downey, Jr.) include Jr./Sr. with
+    // last name.  There is also the case where there is a "Jr." that makes
+    // the name 4 tokens long (e.g. D. M. Marshman Jr.).
+    if (name[2].equals("Jr.") || name[2].equals("Sr.") || (name.length == 4 && name[3].equals("Jr."))) {
       if (name.length == 4) {
         String[] n = {name[0],name[1],name[2] + " Jr."};
         return n;
       }
       else {
-        String[] n = {name[0],name[1] + " Jr."};
+        String[] n = {name[0],name[1] + " " + name[2]};
         return n;
       }
     }
