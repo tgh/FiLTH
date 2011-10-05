@@ -273,7 +273,51 @@ sed -i "s/Fred Koenekamp/Fred J. Koenekamp/g" $filth_path/data/oscarsOfCategory.
 sed -i "s/Chris Menges and Roger Deakins/\"Chris Menges, Roger Deakins\"/g" $filth_path/data/oscarsOfCategory.csv
 # "This above All" should be "This Above All"
 sed -i "s/This above All/This Above All/g" $filth_path/data/oscarsOfCategory.csv
-
+# remove "Screenplay and Dialogue by "
+sed -i "s/Screenplay and Dialogue by //g" $filth_path/data/oscarsOfCategory.csv
+# "Open City" should be "Rome, Open City"
+sed -i "s/Open City/Rome, Open City/g" $filth_path/data/oscarsOfCategory.csv
+# "Shoe-Shine" should be "Shoeshine"
+sed -i "s/Shoe-Shine/Shoeshine/g" $filth_path/data/oscarsOfCategory.csv
+# Richard Breen should be Richard L. Breen
+sed -i "s/Richard Breen/Richard L. Breen/g" $filth_path/data/oscarsOfCategory.csv
+# change T. E. B. Clarke to T.E.B. Clarke
+sed -i "s/T. E. B. Clarke/T.E.B. Clarke/g" $filth_path/data/oscarsOfCategory.csv
+# "The Big Carnival" should be "Ace in the Hole"
+sed -i "s/The Big Carnival/Ace in the Hole/g" $filth_path/data/oscarsOfCategory.csv
+# Ian McLellan Hunter, John Dighton should be Dalton Trumbo
+sed -i "s/Ian McLellan Hunter, John Dighton/Dalton Trumbo/g" $filth_path/data/oscarsOfCategory.csv
+# S.J. Perelman should be S. J. Perelman
+sed -i "s/S.J. Perelman/S. J. Perelman/g" $filth_path/data/oscarsOfCategory.csv
+# "Vitelloni" should be "I Vitelloni"
+sed -i "s/Vitelloni/I Vitelloni/g" $filth_path/data/oscarsOfCategory.csv
+# Scarpelli should be Furio Scarpelli
+sed -i "s/, Scarpelli/Furio Scarpelli/g" $filth_path/data/oscarsOfCategory.csv
+# Frank R. Pierson should be Frank Pierson
+sed -i "s/Frank R. Pierson/Frank Pierson/g" $filth_path/data/oscarsOfCategory.csv
+# "Those Magnificent Men in Their Flying Machines" should be
+# "Those Magnificent Men in Their Flying Machines or How I Flew from London to Paris in 25 Hours 11 Minutes"
+sed -i "s/Machines/Machines or How I Flew from London to Paris in 25 Hours 11 Minutes/g" $filth_path/data/oscarsOfCategory.csv
+# "La Guerre Est Finie" should be "The War is Over"
+sed -i "s/La Guerre Est Finie/The War is Over/g" $filth_path/data/oscarsOfCategory.csv
+# Lonne Elder, III should be just Lonne Elder
+sed -i "s/, III//g" $filth_path/data/oscarsOfCategory.csv
+# Jay Allen should be Jay Presson Allen
+sed -i "s/Jay ALlen/Jay Presson Allen/g" $filth_path/data/oscarsOfCategory.csv
+# remove "; in collaboration with"
+sed -i "s/; in collaboration with/,/g" $filth_path/data/oscarsOfCategory.csv
+# P.H. Vazak should be Robert Towne
+sed -i "s/P.H. Vazak/Robert Towne/g" $filth_path/data/oscarsOfCategory.csv
+# remove the apostrophe from Crocodile' Dundee
+sed -i "s/Crocodile'/Crocodile/g" $filth_path/data/oscarsOfCategory.csv
+# Frances Walsh should be Fran Walsh
+sed -i "s/Frances Walsh/Fran Walsh/g" $filth_path/data/oscarsOfCategory.csv
+# Steve Zaillian should be Steven Zaillian
+sed -i "s/e Zai/en Zai/g" $filth_path/data/oscarsOfCategory.csv
+# Borat should have a colon after it
+sed -i "s/Borat/Borat:/g" $filth_path/data/oscarsOfCategory.csv
+# change Guillermo del Toro to Guillermo Del Toro
+sed -i "s/del Toro/Del Toro/g" $filth_path/data/oscarsOfCategory.csv
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
