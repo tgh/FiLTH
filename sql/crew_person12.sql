@@ -60,7 +60,7 @@ INSERT INTO crew_person VALUES (DEFAULT, 'Maschwitz', 'Eric', null);  -- Screenw
 INSERT INTO crew_person VALUES (DEFAULT, 'Buchman', 'Sidney', null);  -- Screenwriter
 INSERT INTO crew_person VALUES (DEFAULT, 'Brackett', 'Charles', null);  -- Screenwriter
 INSERT INTO crew_person VALUES (DEFAULT, 'Reisch', 'Walter', null);  -- Screenwriter
-INSERT INTO crew_person VALUES (DEFAULT, 'Brackett', 'Charles', null);  -- Screenwriter
+INSERT INTO crew_person VALUES (DEFAULT, 'Bennett', 'Charles', null);  -- Screenwriter
 INSERT INTO crew_person VALUES (DEFAULT, 'Harrison', 'Joan', null);  -- Screenwriter
 INSERT INTO crew_person VALUES (DEFAULT, 'Burnside', 'Norman', null);  -- Screenwriter
 INSERT INTO crew_person VALUES (DEFAULT, 'Sturges', 'Preston', null);  -- Screenwriter
