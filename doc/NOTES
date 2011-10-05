@@ -25,6 +25,18 @@ WHERE LEFT OFF
   - ran movie13.sql
   - ran crew_person12.sql
 
+- The Captain of Kopenick should be The Captain from Kopenick
+- Harp of Burma should be The Burmese Harp
+- The Devil Came at Night should be The Devil Strikes at Night
+- My Uncle should be Mon Oncle
+- The Road a Year Long should be The Year Long Road
+- The Usual Unidentified Thieves should be Big Deal on Madonna Street
+- The Village on the River should be Village by the River
+- Keeper of Promises (The Given Word) should just be The Given Word
+
+- need a dummy record for Sundays and Cybele (1963) and change the one in the db
+  to 1962 and change the sql insert in movie13.sql to 1962
+
     
 
 NEEDS
