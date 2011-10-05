@@ -340,8 +340,7 @@ public class OscarParser implements GracefulShutdown {
     if (name[1].toLowerCase().equals("de")
         || name[1].toLowerCase().equals("del")
         || name[1].equals("Le")
-        || name[1].equals("La")
-        || name[2].equals("St.")) {  //special case: Andela Rogers St. Johns
+        || name[1].equals("La")) {
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
@@ -375,6 +374,12 @@ public class OscarParser implements GracefulShutdown {
         return n;
       }
     }
+    //special case: Adela Rogers St. Johns
+    if (name[2].equals("St.")) {
+      String[] n = {"Adela", "Rogers", "St. Johns"};
+      return n;
+    }
+
     return name;
   }
 
