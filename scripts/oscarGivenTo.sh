@@ -276,7 +276,7 @@ sed -i "s/This above All/This Above All/g" $filth_path/data/oscarsOfCategory.csv
 # remove "Screenplay and Dialogue by "
 sed -i "s/Screenplay and Dialogue by //g" $filth_path/data/oscarsOfCategory.csv
 # "Open City" should be "Rome, Open City"
-sed -i "s/Open City/Rome, Open City/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Open City/\"Rome, Open City\"/g" $filth_path/data/oscarsOfCategory.csv
 # "Shoe-Shine" should be "Shoeshine"
 sed -i "s/Shoe-Shine/Shoeshine/g" $filth_path/data/oscarsOfCategory.csv
 # Richard Breen should be Richard L. Breen
