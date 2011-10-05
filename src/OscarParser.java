@@ -337,7 +337,11 @@ public class OscarParser implements GracefulShutdown {
   private String[] checkForNameSpecialCases(String[] name) {
     //names with 'De' or 'Del' (like Robert De Niro, Benicio Del Toro) combine
     // 'De' and 'Niro' (for example) into one.
-    if (name[1].toLowerCase().equals("de") || name[1].equals("Del") || name[1].equals("Le") || name[1].equals("La")) {
+    if (name[1].toLowerCase().equals("de")
+        || name[1].toLowerCase().equals("del")
+        || name[1].equals("Le")
+        || name[1].equals("La")
+        || name[2].equals("St.")) {  //special case: Andela Rogers St. Johns
       String[] n = {name[0],name[1] + " " + name[2]};
       return n;
     }
@@ -454,6 +458,10 @@ public class OscarParser implements GracefulShutdown {
             //no more matches
             if (!qResult.next()) {
               log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+              //add movie to the hash map of movies not found
+              movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
+              //prompt user for movie attribute values and write the sql for the movie
+              mid = writeMovieSql(realTitle, year);
               break;
             }
           }
