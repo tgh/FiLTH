@@ -1,0 +1,15 @@
+INSERT INTO movie VALUES (DEFAULT, 'Glorious Betsy', 1928, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Underworld', 1928, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'A Woman of Affairs', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Wonder of Women', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Cop', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Leatherneck', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sal of Singapore', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Skyscraper', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Last of Mrs. Cheyney', 1929, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Street of Chance', 1930, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Little Caesar', 1931, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Criminal Code', 1931, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Public Enemy', 1931, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Doorway to Hell', 1931, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Laughter', 1931, -2, 0, 'USA', NULL);
