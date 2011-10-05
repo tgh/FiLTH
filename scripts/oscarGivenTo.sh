@@ -292,7 +292,7 @@ sed -i "s/S.J. Perelman/S. J. Perelman/g" $filth_path/data/oscarsOfCategory.csv
 # "Vitelloni" should be "I Vitelloni"
 sed -i "s/Vitelloni/I Vitelloni/g" $filth_path/data/oscarsOfCategory.csv
 # Scarpelli should be Furio Scarpelli
-sed -i "s/, Scarpelli/Furio Scarpelli/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/, Scarpelli/, Furio Scarpelli/g" $filth_path/data/oscarsOfCategory.csv
 # Frank R. Pierson should be Frank Pierson
 sed -i "s/Frank R. Pierson/Frank Pierson/g" $filth_path/data/oscarsOfCategory.csv
 # "Those Magnificent Men in Their Flying Machines" should be
