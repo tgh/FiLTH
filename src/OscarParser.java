@@ -543,7 +543,7 @@ public class OscarParser implements GracefulShutdown {
         //e.g. Phillip Seymour Hoffman, Samuel L. Jackson, etc.
         case 3: lname = names[2].replace("'","''");
                 fname = names[0];
-                mname = names[1];
+                mname = names[1].replace("'","''");
                 qResult = db.select("SELECT cid FROM crew_person WHERE l_name = '" + lname
                                     + "' AND f_name = '" + fname + "' AND m_name = '" + mname + "';");
                 if (qResult.next()) {
