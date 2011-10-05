@@ -304,8 +304,6 @@ sed -i "s/La Guerre Est Finie/The War is Over/g" $filth_path/data/oscarsOfCatego
 sed -i "s/, III//g" $filth_path/data/oscarsOfCategory.csv
 # Jay Allen should be Jay Presson Allen
 sed -i "s/Jay ALlen/Jay Presson Allen/g" $filth_path/data/oscarsOfCategory.csv
-# remove "; in collaboration with"
-sed -i "s/; in collaboration with/,/g" $filth_path/data/oscarsOfCategory.csv
 # P.H. Vazak should be Robert Towne
 sed -i "s/P.H. Vazak/Robert Towne/g" $filth_path/data/oscarsOfCategory.csv
 # remove the apostrophe from Crocodile' Dundee
@@ -351,3 +349,7 @@ sed -i "s/&Atilde;&curren;/a/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&Atilde;&iexcl;/a/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&Atilde;&hellip;/A/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/&acirc;&euro;&trade;/''/g" $filth_path/data/oscarsOfCategory.csv
+
+# one more special case (since this one contained encoded accented characters):
+# remove "; in collaboration with"
+sed -i "s/Luis Bunuel; in collaboration with Jean-Claude Carriere/\"Luis Bunuel, Jean-Claude Carriere\"/g" $filth_path/data/oscarsOfCategory.csv
