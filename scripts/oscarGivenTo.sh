@@ -316,6 +316,23 @@ sed -i "s/e Zai/en Zai/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Borat/Borat:/g" $filth_path/data/oscarsOfCategory.csv
 # change Guillermo del Toro to Guillermo Del Toro
 sed -i "s/del Toro/Del Toro/g" $filth_path/data/oscarsOfCategory.csv
+# "The Captain of Kopenick" should be "The Captain from Kopenick"
+sed -i "s/of Kopenick/from Kopenick/g" $filth_path/data/oscarsOfCategory.csv
+# "Harp of Burma" should be "The Burmese Harp"
+sed -i "s/Harp of Burma/The Burmese Harp/g" $filth_path/data/oscarsOfCategory.csv
+# "The Devil Came at Night" should be "The Devil Strikes at Night"
+sed -i "s/Devil Came/Devil Strikes/g" $filth_path/data/oscarsOfCategory.csv
+# "My Uncle" should be "Mon Oncle"
+sed -i "s/My Uncle/Mon Oncle/g" $filth_path/data/oscarsOfCategory.csv
+# "The Road a Year Long" should be "The Year Long Road"
+sed -i "s/Road a Year Long/Year Long Road/g" $filth_path/data/oscarsOfCategory.csv
+# "The Usual Unidentified Thieves" should be "Big Deal on Madonna Street"
+sed -i "s/The Usual Unidentified Thieves/Big Deal on Madonna Street/g" $filth_path/data/oscarsOfCategory.csv
+# "The Village on the River" should be "Village by the River"
+sed -i "s/The Village on/Village by/g" $filth_path/data/oscarsOfCategory.csv
+# "Keeper of Promises (The Given Word)" should just be "The Given Word"
+sed -i "s/Keeper of Promises (The Given Word)/The Given Word/g" $filth_path/data/oscarsOfCategory.csv
+
 
 #-------------------------------------------------------------------------------
 # PHASE 3: DECODING ESCAPE SEQUENCES                                          --
