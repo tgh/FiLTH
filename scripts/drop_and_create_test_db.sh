@@ -44,7 +44,7 @@ do
     break
   fi
   psql -U postgres -d test -f $filth_sql_path/crew_person$i.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-  i=i+1
+  let i=$i+1
 done
 
 echo "Populating movie table..."
@@ -60,7 +60,7 @@ do
     break
   fi
   psql -U postgres -d test -f $filth_sql_path/movie$i.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-  i=i+1
+  let i=$i+1
 done
 
 echo "Creating temp/previous_movie_ratings.txt..."
