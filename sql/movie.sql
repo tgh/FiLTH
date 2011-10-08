@@ -1824,3 +1824,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Pearl Jam Twenty', 2011, 5, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Ray', 2004, 6, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Robin Hood', 2010, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Serious Man', 2009, 6, 4, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Moneyball', 2011, 7, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'To Catch a Thief', 1955, 6, 0, 'USA', NULL);
