@@ -93,6 +93,7 @@ CREATE TABLE filth.oscar_given_to (
 mid smallint NOT NULL,
 oid tinyint NOT NULL,
 cid smallint DEFAULT NULL,
+year smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
 ostatus tinyint DEFAULT NULL,
 -- indicates how many other recipients this nominee is sharing the nomination

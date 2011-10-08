@@ -85,6 +85,7 @@ CREATE TABLE oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
 cid smallint DEFAULT NULL,
+year smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
 ostatus smallint DEFAULT NULL,
 -- indicates how many other recipients this nominee is sharing the nomination
