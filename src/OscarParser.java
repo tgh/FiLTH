@@ -633,7 +633,7 @@ public class OscarParser implements GracefulShutdown {
       //log the find
       log.logData("mid = " + mid, 1, false);
       //write the appropriate SQL insert statement for this nomination
-      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + status + ", DEFAULT);");
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", DEFAULT, " + year + ", " + status + ", DEFAULT);");
       oscarFileWriter.write("  -- " + year + " " + getCategoryString(oid) + ": \"" + title + "\"");
       oscarFileWriter.newLine();
     }
@@ -852,7 +852,7 @@ public class OscarParser implements GracefulShutdown {
       log.logData("mid = " + mid, 1, false);
       log.logData("cid = " + cid, 1, false);
       //write the sql insert statement for this nomination
-      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + status + ", " + share + ");");
+      oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + Integer.parseInt(oscars.get(0))  + ", " + status + ", " + share + ");");
       oscarFileWriter.write("  -- " + oscars.get(0) + " " + getCategoryString(oid) + ": " + nameString + " for \"" + title + "\"");
       oscarFileWriter.newLine();
     }
@@ -943,6 +943,29 @@ public class OscarParser implements GracefulShutdown {
         title = stdinReader.readLine();
       }
       title = title.replace("'","''");
+      //prompt user for year (most of the time this will be the same as the
+      // oscar year, but sometimes the year the movie was actually made/
+      // released is a year or two before the oscars--such as the case in
+      // some foreign films.
+      System.out.print("  Is the year ok? ");
+      response = stdinReader.readLine();
+      //year not ok, prompt for a new year
+      if (!response.toLowerCase().equals("y")) {
+        while (true) {
+          System.out.print("  Year: ");
+          //make sure input is valid
+          try {
+            year = Integer.parseInt(stdinReader.readLine());
+            if (year < 1900 || year > 2014) {
+              throw new NumberFormatException();
+            }
+            break;
+          }
+          catch (NumberFormatException nfe) {
+            System.out.println("  **Oops -- not a valid year.");
+          }
+        }
+      }
       //prompt user for the mpaa rating of the movie (if the movie is in the
       // years of the MPAA rating system)
       if (year >= 1968) {
