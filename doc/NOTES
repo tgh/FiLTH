@@ -1,5 +1,7 @@
 WHERE LEFT OFF
 ---------------
+- will need to check foreign language films for years differing than the oscars
+
 - working on oscars...
   - ran movie2.sql
   - ran movie3.sql
@@ -24,18 +26,18 @@ WHERE LEFT OFF
   - ran crew_person11.sql
   - ran movie13.sql
   - ran crew_person12.sql
+  - ran movie14.sql
+  - ran movie15.sql
 
-- The Captain of Kopenick should be The Captain from Kopenick
-- Harp of Burma should be The Burmese Harp
-- The Devil Came at Night should be The Devil Strikes at Night
-- My Uncle should be Mon Oncle
-- The Road a Year Long should be The Year Long Road
-- The Usual Unidentified Thieves should be Big Deal on Madonna Street
-- The Village on the River should be Village by the River
-- Keeper of Promises (The Given Word) should just be The Given Word
-
-- need a dummy record for Sundays and Cybele (1963) and change the one in the db
-  to 1962 and change the sql insert in movie13.sql to 1962
+- "The Girl with the Pistol" should be "The Girl with a Pistol"
+- remove My Night at Maude's from movie15.sql
+- "Cats' Play" should be "Cat's Play"
+- "Land of Promise" should be "The Promised Land"
+- "Sandakan No. 8" should be Sandakan 8"
+- "Mama Turns a Hundred" should be "Mama Turns 100"
+- "Kagemusha (The Shadow Warrior)" should be "Kagemusha"
+- "Coup de Torchon ('Clean Slate')" should be "Coup de Torchon"
+- "Volver a Empezar ('To Begin Again')" should be Volver a Empezar"
 
     
 
@@ -64,12 +66,15 @@ IDEAS/THOUGHTS
 ---------------
 - crewperson f_name and m_name can be NULL, so names such as Cher and Madonna
   would be last names.
+
 - for the web app, the lists will be pdf files linked from the home page (?)
+
 - shouldn't contain accented special characters for names, movie titles, etc.
   because typing in a search query in the front-end won't find them if not
   given (just using non-accented characters).  Unless search by pull-down menu?
   EDIT: there are search mechanisms (at least in Postgres) that WILL catch these
   accented characters I think...
+
 - can have the Front-End take care of certain constraints when inserting/
   updating new data (movie year is between 1900 and 3+ years from current year,
   for example).  When adding a country, or star rating, or something like that,
@@ -77,14 +82,28 @@ IDEAS/THOUGHTS
   If sqlite is used, however, this is not possible.  So, one way is to remove
   the check constraints in the database, and use the front-end to check input
   before insert/update.  For a value range upper limit that might change (e.g.
-  when adding a new country), the FiLTH application could to a sql query upon
+  when adding a new country), the FiLTH application could do a sql query upon
   load for the highest value of movie.country and store that in a variable, or
   have some sort of config or rc file that it reads/updates for such variables.
+
 - should 'position' attribute of worked_on be a part of the primary key (so
   when a person has multiple positions in a movie--actor/director, for example
   --each instance is a unique tuple) or not (so that a person that worked on a
   movie only appears once in the table (e.g. position value "Director, Actor")?
+
 - Front-end must ensure spelling consistency when entering position values
+
+- add category to oscar_given_to table and make it a foreign key to the
+  oscar table (like country is to movie) to eliminate anohter join.  This will
+  add significant storage, however.
+
+- add year attribute to oscar_given_to table.  This will eliminate the
+  need for dummy records.  OscarParser will have to ask user for year of movie
+  (maybe just for foreign and maybe documentary films?), and have to insert
+  year into the sql insert statements. Db schema would need updated as well.
+
+- change search for movie in OscarParser to only look at title and not year,
+  then when outputting the matches, output the year as well. ??
 
 
 HELPFUL HINTS/REMINDERS
