@@ -44,8 +44,7 @@ echo extracting foreign language film nominees...
 grep -i "foreign language film" $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
 # extract documentary features
 echo extracting documentary feature nominees...
-fgrep -i 'documentary,
-documentary (feature)' $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
+grep -i 'documentary (feature)' $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
 # removing "1953,COSTUME DESIGN...The Actress..." line
 echo removing unwanted lines...
 sed -i "/COSTUME DESIGN/d" $filth_path/data/oscarsOfCategory.csv
@@ -355,9 +354,9 @@ sed -i "s/: Il Castrato//g" $filth_path/data/oscarsOfCategory.csv
 # "Caravan" should "Himalaya"
 sed -i "s/Caravan,/Himalaya,/g" $filth_path/data/oscarsOfCategory.csv
 # "Lagaan" should be "Lagaan: Once Upon a Time in India"
-sed -i "s/Lagaan/Lagaan: Once Upon a Time in India" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/Lagaan/Lagaan: Once Upon a Time in India/g" $filth_path/data/oscarsOfCategory.csv
 # "El Crimen del Padre Amaro" should be "The Crime of Father Amaro"
-sed -i "s/El Crimen del Padre Amaro/The Crime of Father Amaro" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/El Crimen del Padre Amaro/The Crime of Father Amaro/g" $filth_path/data/oscarsOfCategory.csv
 # "Days of Glory (Indigenes)" should be "Days of Glory"
 sed -i "s/ (Indig&Atilde;&uml;nes)//g" $filth_path/data/oscarsOfCategory.csv
 # "Katy?" should be "Katyn" 
