@@ -41,7 +41,7 @@ INSERT INTO country VALUES ('Algeria');
 INSERT INTO country VALUES ('The Palestinian Territories');
 INSERT INTO country VALUES ('Nepal');
 INSERT INTO country VALUES ('Georgia');
-INSERT INTO country VALUES ('Republic of Macedonia');
+INSERT INTO country VALUES ('Macedonia');
 INSERT INTO country VALUES ('Cuba');
 INSERT INTO country VALUES ('Czechoslovakia');
 INSERT INTO country VALUES ('Puerto Rico');
