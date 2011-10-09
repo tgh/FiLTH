@@ -10,7 +10,7 @@ INSERT INTO movie VALUES (DEFAULT, 'The Fallen Idol', 1949, -2, 0, 'England', NU
 INSERT INTO movie VALUES (DEFAULT, '5 Fingers', 1952, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'War and Peace', 1956, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Inn of the Sixth Happiness', 1958, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Woman in the Dunes', 1965, -2, 0, 'Japan', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Woman in the Dunes', 1964, -2, 0, 'Japan', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Professionals', 1966, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Alice''s Restaurant', 1969, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'La Cage aux Folles', 1979, -2, 4, 'France', NULL);
