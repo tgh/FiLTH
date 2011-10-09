@@ -375,7 +375,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Copycat', 1995, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Corpse Bride', 2005, 6, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Cotton Club', 1984, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Count of Monte Cristo', 2002, 7, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Counterfeiters', 2007, 7, 4, 'Germany', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Counterfeiters', 2007, 7, 4, 'Austria', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Couples Retreat', 2009, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Cowboys & Aliens', 2011, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Crash', 1997, 0, 6, 'Canada', NULL);
@@ -1822,7 +1822,3 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct', 1933, 6, 0, 'France', NUL
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Mr. Hulot''s Holiday', 1955, NULL, NULL, NULL, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Wild Strawberries', 1959, NULL, NULL, NULL, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'My Life as a Dog', 1987, NULL, NULL, NULL, NULL);
