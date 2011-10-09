@@ -348,6 +348,20 @@ sed -i "s/ (The Shadow Warrior)//g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ ('Clean Slate')//g" $filth_path/data/oscarsOfCategory.csv
 # "Volver a Empezar ('To Begin Again')" should be Volver a Empezar"
 sed -i "s/ ('To Begin Again')//g" $filth_path/data/oscarsOfCategory.csv
+# "38'" should be "'38"
+sed -i "s/38'/'38/g" $filth_path/data/oscarsOfCategory.csv
+# "Farinelli: Il Castrato" should be "Farinelli"
+sed -i "s/: Il Castrato//g" $filth_path/data/oscarsOfCategory.csv
+# "Caravan" should "Himalaya"
+sed -i "s/Caravan,/Himalaya,/g" $filth_path/data/oscarsOfCategory.csv
+# "Lagaan" should be "Lagaan: Once Upon a Time in India"
+sed -i "s/Lagaan/Lagaan: Once Upon a Time in India" $filth_path/data/oscarsOfCategory.csv
+# "El Crimen del Padre Amaro" should be "The Crime of Father Amaro"
+sed -i "s/El Crimen del Padre Amaro/The Crime of Father Amaro" $filth_path/data/oscarsOfCategory.csv
+# "Days of Glory (Indigenes)" should be "Days of Glory"
+sed -i "s/ (Indig&Atilde;&uml;nes)//g" $filth_path/data/oscarsOfCategory.csv
+# "Katy?" should be "Katyn" 
+sed -i "s/Katy?/Katyn/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
