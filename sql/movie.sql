@@ -1714,7 +1714,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Vertical Limit', 2000, 4, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Very Long Engagement', 2004, 6, 4, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Vice Versa', 1988, 7, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Village', 2004, 7, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Virgin Spring', 1959, 8, 0, 'Sweden', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Virgin Spring', 1960, 8, 0, 'Sweden', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Virgin Suicides', 2000, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Visual Bible: Matthew', 1997, 7, 0, 'South Africa', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Vitus', 2007, 6, 2, 'Switzerland', NULL);

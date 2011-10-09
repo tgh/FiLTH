@@ -16,7 +16,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Black Orpheus', 1959, -2, 0, 'France', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'The Great War', 1959, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Bridge', 1959, -2, 0, 'Germany', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Paw', 1959, -2, 0, 'Denmark', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Village by the River', 1959, -2, 0, 'The Netherlands', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Village by the River', 1958, -2, 0, 'The Netherlands', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'La Verite', 1960, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Ninth Circle', 1960, -2, 0, 'Yugoslavia', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Macario', 1960, -2, 0, 'Mexico', NULL);
