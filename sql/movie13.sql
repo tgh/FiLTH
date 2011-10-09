@@ -81,7 +81,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Lover Come Back', 1961, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Ballad of a Soldier', 1961, -2, 0, 'USSR', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'That Touch of Mink', 1962, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Freud', 1962, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Sundays and Cybele', 1963, -2, 0, 'France', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sundays and Cybele', 1962, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Four Days of Naples', 1963, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Father Goose', 1964, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Organizer', 1964, -2, 0, 'Italy', NULL);
