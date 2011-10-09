@@ -87,7 +87,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Father Goose', 1964, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Organizer', 1964, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'That Man from Rio', 1964, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'One Potato, Two Potato', 1964, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Umbrellas of Cherbourg', 1965, -2, 0, 'France', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Umbrellas of Cherbourg', 1964, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Train', 1965, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Casanova ''70''', 1965, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Those Magnificent Men in Their Flying Machines or How I Flew from London to Paris in 25 Hours 11 Minutes', 1965, -2, 0, 'England', NULL);
