@@ -905,7 +905,7 @@ INSERT INTO movie VALUES (DEFAULT, 'L.A. Confidential', 1997, 8, 4, 'USA', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'La Belle Noiseuse', 1991, 6, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'L''age d''Or', 1930, 2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'La Dolce Vita', 1960, 6, 0, 'Italy', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'La Strada', 1956, 8, 0, 'Italy', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'La Strada', 1954, 8, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'La Vie En Rose', 2007, 6, 3, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Lady Eve', 1941, 5, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Lady in the Water', 2006, 6, 3, 'USA', NULL);
