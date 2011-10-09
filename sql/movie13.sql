@@ -103,7 +103,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Goodbye, Columbus', 1969, -2, 2, 'USA', NULL
 INSERT INTO movie VALUES (DEFAULT, 'The Damned', 1969, -2, 4, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Joe', 1970, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Night at Maud''s', 1970, -2, 2, 'France', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Investigation of a Citizen Above Suspicion', 1971, -2, 4, 'Italy', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Investigation of a Citizen Above Suspicion', 1970, -2, 4, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Young Winston', 1972, -2, 2, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Murmur of the Heart', 1972, -2, 4, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Candidate', 1972, -2, 2, 'USA', NULL);
