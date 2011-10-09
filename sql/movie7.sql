@@ -21,7 +21,7 @@ INSERT INTO movie VALUES (DEFAULT, 'The Night of the Iguana', 1964, -2, 0, 'USA'
 INSERT INTO movie VALUES (DEFAULT, 'A Patch of Blue', 1965, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Collector', 1965, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Inside Daisy Clover', 1965, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Shop on Main Street', 1966, -2, 0, 'Czechoslovakia', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Shop on Main Street', 1965, -2, 0, 'Czechoslovakia', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Morgan!', 1966, -2, 0, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Man and a Woman', 1966, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Hawaii', 1966, -2, 0, 'USA', NULL);
