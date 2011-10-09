@@ -332,6 +332,22 @@ sed -i "s/The Usual Unidentified Thieves/Big Deal on Madonna Street/g" $filth_pa
 sed -i "s/The Village on/Village by/g" $filth_path/data/oscarsOfCategory.csv
 # "Keeper of Promises (The Given Word)" should just be "The Given Word"
 sed -i "s/Keeper of Promises (The Given Word)/The Given Word/g" $filth_path/data/oscarsOfCategory.csv
+# "The Girl with the Pistol" should be "The Girl with a Pistol"
+sed -i "s/the Pistol/a Pistol/g" $filth_path/data/oscarsOfCategory.csv
+# "Cats' Play" should be "Cat's Play"
+sed -i "s/Cats'/Cat's/g" $filth_path/data/oscarsOfCategory.csv
+# "Land of Promise" should be "The Promised Land"
+sed -i "s/Land of Promise/The Promised Land/g" $filth_path/data/oscarsOfCategory.csv
+# "Sandakan No. 8" should be Sandakan 8"
+sed -i "s/No. 8/8/g" $filth_path/data/oscarsOfCategory.csv
+# "Mama Turns a Hundred" should be "Mama Turns 100"
+sed -i "s/a Hundred/100/g" $filth_path/data/oscarsOfCategory.csv
+# "Kagemusha (The Shadow Warrior)" should be "Kagemusha"
+sed -i "s/ (The Shadow Warrior)//g" $filth_path/data/oscarsOfCategory.csv
+# "Coup de Torchon ('Clean Slate')" should be "Coup de Torchon"
+sed -i "s/ ('Clean Slate')//g" $filth_path/data/oscarsOfCategory.csv
+# "Volver a Empezar ('To Begin Again')" should be Volver a Empezar"
+sed -i "s/ ('To Begin Again')//g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------

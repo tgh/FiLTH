@@ -29,15 +29,6 @@ WHERE LEFT OFF
   - ran movie14.sql
   - ran movie15.sql
 
-- "The Girl with the Pistol" should be "The Girl with a Pistol"
-- remove My Night at Maude's from movie15.sql
-- "Cats' Play" should be "Cat's Play"
-- "Land of Promise" should be "The Promised Land"
-- "Sandakan No. 8" should be Sandakan 8"
-- "Mama Turns a Hundred" should be "Mama Turns 100"
-- "Kagemusha (The Shadow Warrior)" should be "Kagemusha"
-- "Coup de Torchon ('Clean Slate')" should be "Coup de Torchon"
-- "Volver a Empezar ('To Begin Again')" should be Volver a Empezar"
 
     
 
@@ -58,14 +49,12 @@ NEEDS
 
 - all entity tables need to be inserted before any relationship tables
 
-- should probably add notes about the release year of the dummy record movies
-  (by notes I mean text in the notes attribute of the movie table)
 
 
 IDEAS/THOUGHTS
 ---------------
 - crewperson f_name and m_name can be NULL, so names such as Cher and Madonna
-  would be last names.
+  are last names.
 
 - for the web app, the lists will be pdf files linked from the home page (?)
 
@@ -104,6 +93,12 @@ IDEAS/THOUGHTS
 
 - change search for movie in OscarParser to only look at title and not year,
   then when outputting the matches, output the year as well. ??
+
+- change schema: crew_person should have an attribute for what they are (actor,
+  director, etc)--probably a small integer (like what is done for MPAA in the
+  movie table), which would mean having multiple records for certain persons
+  (such as Clint Eastwood, Matt Damon, Orson Welles, etc), and remove position
+  attribute from worked_on table
 
 
 HELPFUL HINTS/REMINDERS
