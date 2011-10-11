@@ -1757,7 +1757,7 @@ INSERT INTO movie VALUES (DEFAULT, 'What''s Love Got to do With It?', 1993, 6, 4
 INSERT INTO movie VALUES (DEFAULT, 'What''s New Pussycat?', 1965, 4, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'What''s Up Tiger Lily?', 1966, 6, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'When Harry Met Sally...', 1989, 6, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'When We Were Kings', 1997, 7, 2, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'When We Were Kings', 1996, 7, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Where the Buffalo Roam', 1980, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Where the Green Ants Dream', 1984, 6, 4, 'Germany', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Where the Wild Things Are', 2009, 7, 2, 'USA', NULL);
