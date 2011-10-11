@@ -237,3 +237,4 @@ INSERT INTO movie VALUES (DEFAULT, 'War Dance', 2007, -2, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Betrayal (Nerakhoon)', 2008, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Garden', 2008, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Trouble the Water', 2008, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Country, My Country', 2006, -2, 0, 'USA', NULL);
