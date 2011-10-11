@@ -1,54 +1,10 @@
 WHERE LEFT OFF
 ---------------
-- will need to check foreign language films for years differing than the oscars
-
-- working on oscars...
-  - ran movie2.sql
-  - ran movie3.sql
-  - ran crew_person2.sql
-  - ran movie4.sql
-  - ran crew_person3.sql
-  - ran movie5.sql
-  - ran crew_person4.sql
-  - ran movie6.sql
-  - ran crew_person5.sql
-  - ran movie7.sql
-  - ran crew_person6.sql
-  - ran movie8.sql
-  - ran crew_person7.sql
-  - ran movie9.sql
-  - ran crew_person8.sql
-  - ran movie10.sql
-  - ran crew_person9.sql
-  - ran movie11.sql
-  - ran crew_person10.sql
-  - ran movie12.sql
-  - ran crew_person11.sql
-  - ran movie13.sql
-  - ran crew_person12.sql
-  - ran movie14.sql
-  - ran movie15.sql
-
-
-    
+- finished oscars
 
 NEEDS
 ------
-********************************************************************************
-- IMPORTANT: most (all except some requesting oscar data?) queries need
-  "...WHERE star_rating NOT NULL..." due to the "The Battle of Algiers" problem.
-  The Battle of Algiers was nomiated for oscars in both 1966 and 1968.  Since
-  years are attached to movies and not oscars, The Battle of Algiers has a year
-  of 1966, and thus cannot have a 1968 oscar nomination.  Thus, a dummy record
-  has been made: (DEFAULT, 'The Battle of Algiers', 1968, NULL, NULL, NULL,
-  NULL).  Other movies have also been cloned with a dummy varible for the same
-  reason.  Since these are the only records with a NULL star_rating value,
-  queries should have '...star_rating NOT NULL...' if dummy records are to be
-  ignored.
-********************************************************************************
-
 - all entity tables need to be inserted before any relationship tables
-
 
 
 IDEAS/THOUGHTS
@@ -99,6 +55,10 @@ IDEAS/THOUGHTS
   movie table), which would mean having multiple records for certain persons
   (such as Clint Eastwood, Matt Damon, Orson Welles, etc), and remove position
   attribute from worked_on table
+
+- if you do use integers for data such as MPAA, country, position, star rating,
+  etc., maybe there should be a config or settings file for the front-end to be
+  read in at load time for translating the integers ??
 
 
 HELPFUL HINTS/REMINDERS
