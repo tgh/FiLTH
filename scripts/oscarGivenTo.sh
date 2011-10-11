@@ -183,6 +183,7 @@ sed -i "s/Give 'em Hell/Give 'em' Hell/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/dalen '31/dalen '31'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Summer of '42/Summer of '42'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Casanova '70/Casanova '70'/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/38'/'38'/g" $filth_path/data/oscarsOfCategory.csv
 # change the status of ties from 1 to 2
 #  1932 Best Actor
 sed -i "s/{Champ\"\"}\"\"\",1/{Champ\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
@@ -350,8 +351,6 @@ sed -i "s/ (The Shadow Warrior)//g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/ ('Clean Slate')//g" $filth_path/data/oscarsOfCategory.csv
 # "Volver a Empezar ('To Begin Again')" should be Volver a Empezar"
 sed -i "s/ ('To Begin Again')//g" $filth_path/data/oscarsOfCategory.csv
-# "38'" should be "'38"
-sed -i "s/38'/'38/g" $filth_path/data/oscarsOfCategory.csv
 # "Farinelli: Il Castrato" should be "Farinelli"
 sed -i "s/: Il Castrato//g" $filth_path/data/oscarsOfCategory.csv
 # "Caravan" should "Himalaya"
