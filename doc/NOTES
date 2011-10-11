@@ -1,6 +1,8 @@
 WHERE LEFT OFF
 ---------------
 - finished oscars
+- working on getting oscar_given_to data into table (cid apparently cannot be
+  NULL--due to foreign key not being able to be NULL?)
 
 NEEDS
 ------
@@ -59,6 +61,9 @@ IDEAS/THOUGHTS
 - if you do use integers for data such as MPAA, country, position, star rating,
   etc., maybe there should be a config or settings file for the front-end to be
   read in at load time for translating the integers ??
+
+- list_contains's primary key and/or schema may need to be changed: there should
+  be more flexibility so that a movie can be on a list more than once...
 
 
 HELPFUL HINTS/REMINDERS
