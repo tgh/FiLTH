@@ -173,7 +173,15 @@ public class OscarParser implements GracefulShutdown {
         if (prevYear == 2008 && year != 2008) {
           log.logHeader(category);
           System.out.println("------------------------------");
-          System.out.println("-- " + category);
+          if (category.equals("Best Actor")) {
+            System.out.println("-- Best Actor / Best Supporting Actor");
+          }
+          else if (category.equals("Best Actress")) {
+            System.out.println("-- Best Actress / Best Supporting Actress");
+          }
+          else {
+            System.out.println("-- " + category);
+          }
           System.out.println("------------------------------");
         }
         prevYear = year;
@@ -415,16 +423,9 @@ public class OscarParser implements GracefulShutdown {
     ResultSet qResult = null;
     int mid = -1;
     try {
-      //does the title only contain stop words in Postgres's full text search?
-      if (containsOnlyStopWords(realTitle)) {
-        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
-      }
-      //special cases: full text search matches to wrong movie
-      // The odds of this happening is very low, but it has happened a few
-      // times: the title matches to only one movie that just happens to be
-      // in the same year as the one being searched for.
-      else if (realTitle.equals("Water") || realTitle.equals("Evil") ||
-               realTitle.equals("On Any Sunday") || realTitle.equals("The Field")) {
+      //title only contains stop words in Postgres's full text search or it's
+      // a special case
+      if (containsOnlyStopWords(realTitle) || isSpecialCase(realTitle)) {
         qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
       }
       //query for the movie
@@ -1181,6 +1182,30 @@ public class OscarParser implements GracefulShutdown {
         || title.equals("To Be or Not to Be")
         || title.equals("To Each His Own")
         || title.equals("This Above All")) {
+      return true;
+    }
+    return false;
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Checks to see if this movie is a special case where full text search
+   * matches to the wrong movie.
+   *
+   * The odds of this happening is very low, but it has happened a few times:
+   * the title matches to only one movie that just happens to be in the same
+   * year as the one being searched for.
+   *
+   * @param title A movie title.
+   * @return boolean
+   */
+  private boolean isSpecialCase(String title) {
+    if (title.equals("Water")
+        || title.equals("Evil")
+        || title.equals("On Any Sunday")
+        || title.equals("The Field")
+        || title.equals("My Country, My Country")) {
       return true;
     }
     return false;
