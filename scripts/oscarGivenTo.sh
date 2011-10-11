@@ -45,6 +45,9 @@ grep -i "foreign language film" $filth_path/data/oscars.csv >> $filth_path/data/
 # extract documentary features
 echo extracting documentary feature nominees...
 grep -i 'documentary (feature)' $filth_path/data/oscars.csv >> $filth_path/data/oscarsOfCategory.csv
+# remove best documentaries from 1942-1947 (beacause some are still shorts and
+#  just about all of them are govt. military films)
+sed -i "/194[2-7],DOCUMENTARY/d" $filth_path/data/oscarsOfCategory.csv
 # removing "1953,COSTUME DESIGN...The Actress..." line
 echo removing unwanted lines...
 sed -i "/COSTUME DESIGN/d" $filth_path/data/oscarsOfCategory.csv
