@@ -363,6 +363,28 @@ sed -i "s/El Crimen del Padre Amaro/The Crime of Father Amaro/g" $filth_path/dat
 sed -i "s/ (Indig&Atilde;&uml;nes)//g" $filth_path/data/oscarsOfCategory.csv
 # "Katy?" should be "Katyn" 
 sed -i "s/Katy?/Katyn/g" $filth_path/data/oscarsOfCategory.csv
+# "Le Ciel et la Boue (Sky Above and Mud Beneath)" should be "Sky Above and Mud Beneath"
+sed -i "s/Le Ciel et la Boue (Sky Above and Mud Beneath)/Sky Above and Mud Beneath/g" $filth_path/data/oscarsOfCategory.csv
+# "La Grande Olimpiade (Olympic Games 1960)" should be "The Grand Olympics"
+sed -i "s/La Grande Olimpiade (Olympic Games 1960)/The Grand Olympics/g" $filth_path/data/oscarsOfCategory.csv
+# "Alvorada (Brazil's Changing Face)" should be "Alvorada"
+sed -i "s/ (Brazil's Changing Face)//g" $filth_path/data/oscarsOfCategory.csv
+# "Le Maillon et la Chaine (The Link and the Chain)" should be "The Link and the Chain"
+sed -i "s/Le Maillon et la Chaine (The Link and the Chain)/The Link and the Chain/g" $filth_path/data/oscarsOfCategory.csv
+# remove "Terminus" (documentary) since the nomination was officially withdrawn
+sed -i "/Terminus,/d" $filth_path/data/oscarsOfCategory.csv
+# "Jacques-Yves Cousteau's World without Sun" should be "World Without Sun"
+sed -i "s/Jacques-Yves Cousteau's World w/World W/g" $filth_path/data/oscarsOfCategory.csv
+# "Le Volcan Interdit (The Forbidden Volcano)" should be "The Forbidden Valcano"
+sed -i "s/Le Volcan Interdit (The Forbidden Volcano)/The Forbidden Valcano/g" $filth_path/data/oscarsOfCategory.csv
+# remove "Young Americans" (documentary) since the nomination was officially withdrawn
+sed -i "/Young Americans/d" $filth_path/data/oscarsOfCategory.csv
+# "The RA Expeditions" should be "The Ra Expeditions"
+sed -i "s/RA/Ra/g" $filth_path/data/oscarsOfCategory.csv
+# "Fiddlefest--Roberta Tzavaras and Her East Harlem Violin Program" should be "Small Wonders"
+sed -i "s/Fiddlefest--Roberta Tzavaras and Her East Harlem Violin Program/Small Wonders/g" $filth_path/data/oscarsOfCategory.csv
+# "War/Dance" should be "War Dance"
+sed -i "s/War\/Dance/War Dance/g" $filth_path/data/oscarsOfCategory.csv
 
 
 #-------------------------------------------------------------------------------
