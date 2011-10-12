@@ -230,16 +230,17 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 -- Integrity constraints --
 -- ------------------------
 
--- movie year
+-- movie year (calls function movie_year_ok in order to check that the year is
+-- less than the current year + 3)
 ALTER TABLE movie ADD CONSTRAINT year_constraint
-CHECK (year >= 1900 AND year <= 2014);
+CHECK (movie_year_ok(year));
 
 -- movie star rating
 ALTER TABLE movie ADD CONSTRAINT star_constraint
 CHECK (star_rating >= -2 AND star_rating <= 8);
 -- -2 = not seen
 -- -1 = N/A (so far I've only had to use this once: for "Jackass: The Movie")
---  0 = no stars
+--  0 = no starsinsertmovie
 --  1 = ½*
 --  2 = *
 --  3 = *½
@@ -287,7 +288,91 @@ CHECK (tstatus >= 0 AND tstatus <= 2);
 -- Functions --
 -- ------------
 
--- function to convert strings with accented characters to strings with regular
--- characters
+-------------------------------------------------------------------------------
+--
+-- Converts strings with accented characters to strings with regular characters.
+--
+-- "Internal" functions are functions written in C that have been statically
+-- linked into the PostgreSQL server. The "body" of the function definition
+-- specifies the C-language name of the function, which need not be the same as
+-- the name being declared for SQL use.
+-- http://developer.postgresql.org/pgdocs/postgres/xfunc-internal.html
+--
 CREATE FUNCTION to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
-LANGUAGE internal; 
+LANGUAGE internal;
+
+
+-------------------------------------------------------------------------------
+--
+-- Sanity checks the year of a movie.  A movie year must be between 1900 and
+-- 2 years into the future (current year + 2) inclusive.
+--
+CREATE FUNCTION movie_year_ok(year integer) RETURNS boolean AS $$
+BEGIN
+  IF year < 1900 OR year > (SELECT extract(year FROM current_date) + 2) THEN
+    RETURN false;
+  END IF;
+  RETURN true;
+END;
+$$ LANGUAGE plpgsql;
+
+
+-------------------------------------------------------------------------------
+--
+-- Returns the number of movies actually seen.
+--
+CREATE FUNCTION num_movies_seen() RETURNS integer AS $$
+DECLARE
+  total integer;
+BEGIN
+  SELECT COUNT(*) INTO total
+    FROM movie
+    WHERE star_rating <> -2;
+  RETURN total;
+END;
+$$ LANGUAGE plpgsql;
+
+
+-------------------------------------------------------------------------------
+--
+-- Inserts a movie into the database.  This is to ensure that the year of the
+-- movie is not more than 2 years after the current year.
+--
+CREATE FUNCTION insert_movie(title text, year integer, stars integer, mpaa integer, country text, comments text) RETURNS void AS $$
+BEGIN
+  -- check that the year makes sense (is not less than 1900 nor more than 2
+  -- years into the future)
+  IF NOT movie_year_ok(year) THEN
+    RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
+  END IF;
+  INSERT INTO movie VALUES (DEFAULT, title, year, stars, mpaa, country, note);
+END;
+$$ LANGUAGE plpgsql;
+
+
+-------------------------------------------------------------------------------
+--
+-- Updates the year of a movie given the movie's unique id.
+--
+CREATE FUNCTION update_movie_year(movie_id integer, new_year integer) RETURNS void AS $$
+BEGIN
+  IF NOT movie_year_ok(new_year) THEN
+    RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
+  END IF;
+  UPDATE movie SET year = new_year WHERE mid = movie_id;
+END;
+$$ LANGUAGE plpgsql;
+
+
+-------------------------------------------------------------------------------
+--
+-- Updates the year of a movie given the movie's title.
+--
+CREATE FUNCTION update_movie_year(movie_title text, new_year integer) RETURNS void AS $$
+BEGIN
+  IF NOT movie_year_ok(new_year) THEN
+    RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
+  END IF;
+  UPDATE movie SET year = new_year WHERE title = movie_title;
+END;
+$$ LANGUAGE plpgsql;
