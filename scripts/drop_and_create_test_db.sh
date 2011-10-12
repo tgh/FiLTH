@@ -2,6 +2,7 @@
 
 filth_sql_path=~/Projects/FiLTH/sql
 filth_temp_path=~/Projects/FiLTH/temp
+filth_path=~/Projects/FiLTH
 
 echo "Dropping test database..."
 sleep 0.5
