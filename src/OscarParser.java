@@ -107,35 +107,12 @@ public class OscarParser implements GracefulShutdown {
       System.exit(1); 
     }
 
-    //open the files we are going to write to
+    //open file to write the sql insert staments for the oscar_given_to table
     try {
       oscarFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/oscar_given_to.sql"));
-
-      //find the next file to create for movies not seen.  Since going through
-      // all of the oscar nominations is going to take a LONG time, this
-      // program is most likely going to be halted somewhere during execution.
-      // If this was the first time, for example, sql/movie2.sql and
-      // sql/crew_person2.sql would be created.  In order to avoid having to
-      // redo all of those movies and recipients, those sql files need to be
-      // executed in the database.  But then those sql commands should also
-      // be preserved, so the next run of this program should create
-      // sql/movie3.sql and sql/crew_person3.sql.  This is where it is
-      // determined which numbered file the current run is on.
-      int fileCounter = 2;
-      while(new File(filthPath + "/sql/movie" + fileCounter + ".sql").exists()) {
-        ++fileCounter;
-      }
-      movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie" + fileCounter + ".sql"));
-
-      //find the next file to create for the recipients not in the database.
-      fileCounter = 2;
-      while(new File(filthPath + "/sql/crew_person" + fileCounter + ".sql").exists()) {
-        ++fileCounter;
-      }
-      crewFileWriter  = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person" + fileCounter + ".sql"));
     }
     catch (IOException ioe) {
-      log.logFatalError("Unable to create/open file.",0,false);
+      log.logFatalError("Unable to create/open oscar_given_to.sql",0,false);
       ioe.printStackTrace();
       System.exit(1); 
     }
@@ -309,8 +286,12 @@ public class OscarParser implements GracefulShutdown {
       //close buffered objects
       try {
         oscarFileWriter.close();
-        movieFileWriter.close();
-        crewFileWriter.close();
+        if (movieFileWriter != null) {
+          movieFileWriter.close();
+        }
+        if (crewFileWriter != null) {
+          crewFileWriter.close();
+        }
         stdinReader.close();
       }
       catch (IOException ioe) {
@@ -333,6 +314,57 @@ public class OscarParser implements GracefulShutdown {
     log.logGeneralMessageWithoutIndicator(sqle.toString(),0,false);
     sqle.printStackTrace();
     System.exit(1);
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Find and open the next file to create for movies not seen.  Since going
+   * through all of the oscar nominations is going to take a LONG time, this
+   * program is most likely going to be halted somewhere during execution.
+   * If this was the first time, for example, sql/movie2.sql and
+   * sql/crew_person2.sql would be created.  In order to avoid having to
+   * redo all of those movies and recipients, those sql files need to be
+   * executed in the database.  But then those sql commands should also
+   * be preserved, so the next run of this program should create
+   * sql/movie3.sql and sql/crew_person3.sql.  This is where it is
+   * determined which numbered file the current run is on.
+   */
+  private void openMovieSqlFile() {
+    int fileCounter = 2;
+    try {
+      while(new File(filthPath + "/sql/movie" + fileCounter + ".sql").exists()) {
+        ++fileCounter;
+      }
+      movieFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/movie" + fileCounter + ".sql"));
+    }
+    catch (IOException ioe) {
+      log.logFatalError("Unable to create/open movie" + fileCounter + ".sql file.",0,false);
+      ioe.printStackTrace();
+      System.exit(1); 
+    }
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Find and open the next file to create for crew persons not in the db.
+   *
+   * See comments for openMovieSqlFile().
+   */
+  private void openCrewSqlFile() {
+    int fileCounter = 2;
+    try {
+      while(new File(filthPath + "/sql/crew_person" + fileCounter + ".sql").exists()) {
+        ++fileCounter;
+      }
+      crewFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/crew_person" + fileCounter + ".sql"));
+    }
+    catch (IOException ioe) {
+      log.logFatalError("Unable to create/open movie" + fileCounter + ".sql file.",0,false);
+      ioe.printStackTrace();
+      System.exit(1); 
+    }
   }
 
   //--------------------------------------------------------------------------
@@ -994,6 +1026,10 @@ public class OscarParser implements GracefulShutdown {
       else {
         country = "'" + country + "'";
       }
+      //open the movie sql if not already opened
+      if (movieFileWriter == null) {
+        openMovieSqlFile();
+      }
       //write the appropriate sql for this movie
       movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", " + country + ", NULL);");
       movieFileWriter.newLine();
@@ -1096,6 +1132,10 @@ public class OscarParser implements GracefulShutdown {
       }
       last = "'" + last + "'";
 
+      //open the crew_person sql file if not already opened
+      if (crewFileWriter == null) {
+        openCrewSqlFile();
+      }
       //write the sql insert statement for this person to the appropriate file
       crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
       crewFileWriter.write("  -- " + getOccupation(oscars.get(1)));
