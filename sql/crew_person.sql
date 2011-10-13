@@ -1,3 +1,4 @@
+INSERT INTO crew_person VALUES(DEFAULT, '', DEFAULT, DEFAULT) -- dummy record
 INSERT INTO crew_person VALUES(DEFAULT, 'Bale', 'Christian', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'Brando', 'Marlon', DEFAULT);
 INSERT INTO crew_person VALUES(DEFAULT, 'De Niro', 'Robert', DEFAULT);

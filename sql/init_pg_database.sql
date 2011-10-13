@@ -49,6 +49,16 @@ l_name text NOT NULL,
 f_name text DEFAULT NULL,
 m_name text DEFAULT NULL);
 
+-- At this point, Postgres creates an implicit sequence "crew_person_cid_seq"
+-- for cid (the primary key for crew_person).  Since the oscar_given_to and
+-- tyler_given_to tables can contain records where cid (foreign key to
+-- crew_person's cid) is not needed (e.g. Best Picture, Best Documentary, etc.
+-- where no recipient is desired), there needs to be a value indicating no
+-- recipient (the value of cid cannot be NULL since it is a foreign key to a
+-- primary key).  Thus, the sequence is altered here so that -1 is a valid cid
+-- value, indicating no recipient.
+ALTER SEQUENCE crew_person_cid_seq MINVALUE -1 RESTART WITH -1;
+
 
 -- crewperson <--> movie relationship
 DROP TABLE IF EXISTS worked_on CASCADE;
