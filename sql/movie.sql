@@ -126,7 +126,8 @@ INSERT INTO movie VALUES (DEFAULT, 'Atonement', 2007, 7, 4, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Au Hazard Balthazar', 1966, 6, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Au Revoir, Les Enfants', 1987, 8, 2, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Austin Powers: International Man of Mystery', 1997, 6, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Austin Powers 2: The Spy Who Shagged Me', 1999, 5, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Austin Powers: The Spy Who Shagged Me', 1999, 5, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Austin Powers in Goldmember', 2002, 4, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Autumn Sonata', 1978, 8, 2, 'Sweden', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Avalon', 1990, 6, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Avatar', 2009, 7, 3, 'USA', NULL);
@@ -1822,4 +1823,3 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct', 1933, 6, 0, 'France', NUL
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Austin Powers in Goldmember', 2002, 4, 3, 'USA', NULL);
