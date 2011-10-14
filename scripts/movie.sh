@@ -83,3 +83,6 @@ else
   # insert the additions into the Postgres database
   psql -U postgres -d filth -f $filth_temp_path/movie_additions.sql
 fi
+
+# create a PDF of the movie ratings document (creates $filth_path/pdf/movie_ratings.pdf
+$filth_path/scripts/movie_ratings_to_pdf.sh
