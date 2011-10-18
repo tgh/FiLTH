@@ -18,7 +18,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 #create connection to db, session, declarative Base, etc.
 engine = create_engine('postgresql://postgres:xxx@localhost/test', echo=True)
-Session = scoped_session(sessionmaker(bind=engine))
+Session = sessionmaker(bind=engine, autoflush=True)
 Base = declarative_base()
 Base.metadata.bind = engine
 Base.query = Session.query_property(Query)
