@@ -94,7 +94,7 @@ DROP TABLE IF EXISTS oscar_given_to CASCADE;
 CREATE TABLE oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
-cid smallint DEFAULT -1,  -- value of -1 indicated no recipient for the oscar
+cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
 year smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
 ostatus smallint DEFAULT NULL,
@@ -131,7 +131,7 @@ DROP TABLE IF EXISTS tyler_given_to CASCADE;
 CREATE TABLE tyler_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL,
-cid smallint DEFAULT NULL,
+cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
 -- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
 tstatus smallint DEFAULT NULL,
 -- this attribute is only used for the Best Scene category for the title of the
