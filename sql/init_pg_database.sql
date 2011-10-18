@@ -97,7 +97,7 @@ oid smallint NOT NULL,
 cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
 year smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
-ostatus smallint DEFAULT NULL,
+ostatus smallint NOT NULL,
 -- indicates how many other recipients this nominee is sharing the nomination
 -- with
 sharing_with smallint DEFAULT NULL);
@@ -133,7 +133,7 @@ mid smallint NOT NULL,
 tid smallint NOT NULL,
 cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
 -- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
-tstatus smallint DEFAULT NULL,
+tstatus smallint NOT NULL,
 -- this attribute is only used for the Best Scene category for the title of the
 -- scene--a waste, I know, but what else should I do?
 scene_title text DEFAULT NULL);
