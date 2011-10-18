@@ -17,6 +17,6 @@ sed -i "s/I Heart/I $\\\\heartsuit$/g" $filth_temp_path/movie_ratings.tex
 sed -i "s/1\/2/\\\\small\\\\begin{math}\\\\frac{1}{2}\\\\end{math}\\\\normalsize/g" $filth_temp_path/movie_ratings.tex
 sed -i "s/NO STARS/\\\\footnotesize NO STARS \\\\normalsize/g" $filth_temp_path/movie_ratings.tex
 
-latex $filth_temp_path/movie_ratings.tex
+latex --output-directory=$filth_temp_path/ $filth_temp_path/movie_ratings.tex
 dvipdf $filth_temp_path/movie_ratings.dvi $filth_path/pdf/movie_ratings.pdf
 rm $filth_temp_path/movie_ratings.aux $filth_temp_path/movie_ratings.log $filth_temp_path/movie_ratings.dvi $filth_temp_path/movie_ratings.txt $filth_temp_path/movie_ratings.tex
