@@ -3,7 +3,6 @@
 The database schema is defined in sql/init_pg_database.sql
 
 """
-
 from sqlalchemy import create_engine
 from sqlalchemy import Column
 from sqlalchemy import SmallInteger
@@ -18,7 +17,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 #create connection to db, session, declarative Base, etc.
-engine = create_engine('postgresql://postgres:0o9i8u7y@localhost/test', echo=True)
+engine = create_engine('postgresql://postgres:xxx@localhost/test', echo=True)
 Session = scoped_session(sessionmaker(bind=engine))
 Base = declarative_base()
 Base.metadata.bind = engine
@@ -232,17 +231,17 @@ class MovieMgr():
 
     if   0 == rating:
       return "NR"
-    elif  1 == rating:
+    elif 1 == rating:
       return "G"
-    elif  2 == rating:
+    elif 2 == rating:
       return "PG"
-    elif  3 == rating:
+    elif 3 == rating:
       return "PG-13"
-    elif  4 == rating:
+    elif 4 == rating:
       return "R"
-    elif  5 == rating:
+    elif 5 == rating:
       return "X"
-    elif  6 == rating:
+    elif 6 == rating:
       return "NC-17"
 
 
