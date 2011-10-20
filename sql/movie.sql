@@ -525,6 +525,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Eternal Sunshine of the Spotless Mind', 2004
 INSERT INTO movie VALUES (DEFAULT, 'Event Horizon', 1997, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Everyone Says I Love You', 1997, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Everything is Illuminated', 2005, 6, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Everything Must Go', 2011, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Everything You Always Wanted to Know About Sex But Were Afraid to Ask', 1972, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Eve''s Bayou', 1997, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Evil Alien Conquerors', 2003, 6, 3, 'USA', NULL);
@@ -1544,7 +1545,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Star Trek', 2009, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode I - the Phantom Menace', 1999, 7, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode II - Attack of the Clones', 2002, 6, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode III - Revenge of the Sith', 2005, 7, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode IV - a New Hope', 1977, 8, 2, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Star Wars', 1977, 8, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode V - the Empire Strikes Back', 1980, 8, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Star Wars: Episode VI - Return of the Jedi', 1983, 8, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Stardust Memories', 1980, 7, 2, 'USA', NULL);
@@ -1823,4 +1824,3 @@ INSERT INTO movie VALUES (DEFAULT, 'Zero for Conduct', 1933, 6, 0, 'France', NUL
 INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Everything Must Go', 2011, 6, 4, 'USA', NULL);
