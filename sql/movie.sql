@@ -1079,7 +1079,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Millions', 2005, 6, 2, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Minority Report', 2002, 7, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Minus Man', 1999, 5, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Miracle', 2004, 6, 2, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Miracle Worker, the', 1962, 8, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Miracle Worker', 1962, 8, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Misery', 1990, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Missing', 1982, 4, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Mission', 1986, 5, 2, 'England', NULL);
