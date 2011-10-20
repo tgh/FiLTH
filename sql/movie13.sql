@@ -39,7 +39,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Shoeshine', 1947, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Boomerang!', 1947, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Passport to Pimlico', 1949, -2, 0, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Paisan', 1949, -2, 0, 'Italy', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Quiet One', 1949, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'No Way Out', 1950, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'La Ronde', 1951, -2, 0, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Go For Broke!', 1951, -2, 0, 'USA', NULL);
@@ -82,7 +81,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Ballad of a Soldier', 1961, -2, 0, 'USSR', N
 INSERT INTO movie VALUES (DEFAULT, 'That Touch of Mink', 1962, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Freud', 1962, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sundays and Cybele', 1962, -2, 0, 'France', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Four Days of Naples', 1963, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Father Goose', 1964, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Organizer', 1964, -2, 0, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'That Man from Rio', 1964, -2, 0, 'France', NULL);
@@ -134,7 +132,6 @@ INSERT INTO movie VALUES (DEFAULT, 'My Beautiful Laundrette', 1986, -2, 4, 'Engl
 INSERT INTO movie VALUES (DEFAULT, 'Crocodile Dundee', 1986, -2, 3, 'Australia', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Dead', 1987, -2, 2, DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'sex, lies, and videotape', 1989, -2, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Green Card', 1990, -2, 3, DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Metropolitan', 1990, -2, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Europa Europa', 1991, -2, 4, 'Poland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Heavenly Creatures', 1994, -2, 4, 'New Zealand', NULL);
