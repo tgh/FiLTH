@@ -1754,7 +1754,7 @@ INSERT INTO movie VALUES (DEFAULT, 'What Dreams May Come', 1998, 4, 3, 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'What Ever Happened to Baby Jane?', 1962, 7, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'What Lies Beneath', 2000, 4, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Whatever Works', 2009, 6, 3, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'What''s Eating Gilbert Grape?', 1993, 6, 3, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'What''s Eating Gilbert Grape', 1993, 6, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'What''s Love Got to do With It', 1993, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'What''s New Pussycat?', 1965, 4, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'What''s Up Tiger Lily?', 1966, 6, 0, 'USA', NULL);
