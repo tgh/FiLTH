@@ -239,3 +239,5 @@ INSERT INTO movie VALUES (DEFAULT, 'The Garden', 2008, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Trouble the Water', 2008, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Country, My Country', 2006, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'These Three', 1936, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sand', 1949, -2, 0, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Men', 1950, -2, 0, 'USA', NULL);
