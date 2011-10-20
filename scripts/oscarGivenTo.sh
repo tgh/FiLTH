@@ -115,6 +115,18 @@ sed -i "s/ (Dramatic Picture)//g" $filth_path/data/oscarsOfCategory.csv
 #-- REWRITING SPECIAL CASES --
 
 echo rewriting special cases...
+# "Sophie Scholl - The Final Days" should be "Sophie Scholl: The Final Days"
+sed -i "s/Scholl -/Scholl:/g" $filth_path/data/oscarsOfCategory.csv
+# remove "The" from "The Nights of Carbiria"
+sed -i "s/The Nights/Nights/g" $filth_path/data/oscarsOfCategory.csv
+# add '-' to "The Garden of the Finzi Continis"
+sed -i "s/Finzi /Finzi-/g" $filth_path/data/oscarsOfCategory.csv
+# add ':' to Sweeney Todd
+sed -i "s/Todd The/Todd: The/g" $filth_path/data/oscarsOfCategory.csv
+# add a prefixing apostrophe to "Round Midnight"
+sed -i "s/Round Midnight/'Round Midnight/g" $filth_path/data/oscarsOfCategory.csv
+# remove the comma from "The Godfather, Part III"
+sed -i "s/Godfather, P/Godfather P/g" $filth_path/data/oscarsOfCategory.csv
 # change "Good Fellas" to "Goodfellas"
 sed -i "s/Good Fellas/Goodfellas/g" $filth_path/data/oscarsOfCategory.csv
 # change "Meredith Willson's The Music Man" to "The Music Man"
@@ -183,7 +195,7 @@ sed -i "s/Give 'em Hell/Give 'em' Hell/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/dalen '31/dalen '31'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Summer of '42/Summer of '42'/g" $filth_path/data/oscarsOfCategory.csv
 sed -i "s/Casanova '70/Casanova '70'/g" $filth_path/data/oscarsOfCategory.csv
-sed -i "s/38'/'38'/g" $filth_path/data/oscarsOfCategory.csv
+sed -i "s/38'/'38/g" $filth_path/data/oscarsOfCategory.csv
 # change the status of ties from 1 to 2
 #  1932 Best Actor
 sed -i "s/{Champ\"\"}\"\"\",1/{Champ\"\"}\"\"\",2/g" $filth_path/data/oscarsOfCategory.csv
