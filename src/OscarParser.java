@@ -470,7 +470,7 @@ public class OscarParser implements GracefulShutdown {
                                       */
         qResult = db.selectScrollable("SELECT mid FROM movie WHERE lower(title) = '" 
                                       + realTitle.toLowerCase().replace("'","''") 
-                                      + "' AND (year = " + year + " OR year = " + (year-2)
+                                      + "' AND (year = " + year + " OR year = " + (year-1)
                                       + " OR year = " + (year-2) + ");");
       }
       //movie(s) found in db
