@@ -10,7 +10,7 @@ import java.util.*;
  * data/oscars.csv file into the data/oscarsOfCategory.csv file.  This
  * program then parses that csv file and outputs appropriate sql insert
  * statements for inserting the proper data into the oscar_given_to table.
- * User interaction is required, and various sql files are created based
+ * User interaction is may occur, and various sql files are created based
  * on what is already in the database and what isn't.  For example, if a
  * movie that is nominated is not in the database, the user is prompted for
  * imformation, and the movie is added to a separate sql file to be used
@@ -45,8 +45,8 @@ public class OscarParser implements GracefulShutdown {
   //for querying the database
   private PostgreSQLConsole db = null;
   //these maps are used as cache storage for mid's and cid's from the database
-  // The title strings used in the movie maps are the formatted title plus the
-  // year of the movie.
+  // The strings used in the movie maps are the title plus the year of the
+  // movie.
   private HashMap<String, Integer> movieMap = null;
   private HashMap<String, Integer> crewMap  = null;
   private HashMap<String, Integer> movieNotFoundMap = null;
@@ -135,6 +135,8 @@ public class OscarParser implements GracefulShutdown {
 
     log.logHeader("START");
 
+    System.out.println("\nOscarParser\n");
+
     int prevYear = 2008;  //for logging purposes...
 
     //parse the csv file
@@ -149,17 +151,15 @@ public class OscarParser implements GracefulShutdown {
         //log a new section header for a new category in the log file
         if (prevYear == 2008 && year != 2008) {
           log.logHeader(category);
-          System.out.println("------------------------------");
           if (category.equals("Best Actor")) {
-            System.out.println("-- Best Actor / Best Supporting Actor");
+            System.out.println("\tBest Actor / Best Supporting Actor...");
           }
           else if (category.equals("Best Actress")) {
-            System.out.println("-- Best Actress / Best Supporting Actress");
+            System.out.println("\tBest Actress / Best Supporting Actress...");
           }
           else {
-            System.out.println("-- " + category);
+            System.out.println("\t" + category + "...");
           }
-          System.out.println("------------------------------");
         }
         prevYear = year;
 
@@ -205,33 +205,33 @@ public class OscarParser implements GracefulShutdown {
           nonActingCrewCategory(year, 6);
         }
 
-        /*---------- BEST CINEMATOGRAPHY (oid = 7) --------------------------*/
+        /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 7) ------------------*/
 
-        if (category.equals("Best Cinematography")) {
+        if (category.equals("Best Cinematography (black and white)")) {
           nonActingCrewCategory(year, 7);
         }
 
-        /*---------- BEST CINEMATOGRAPHY (b & w) (oid = 8) ------------------*/
+        /*---------- BEST CINEMATOGRAPHY (color) (oid = 8) ------------------*/
 
-        if (category.equals("Best Cinematography (black and white)")) {
+        if (category.equals("Best Cinematography (color)")) {
           nonActingCrewCategory(year, 8);
         }
 
-        /*---------- BEST CINEMATOGRAPHY (color) (oid = 9) ------------------*/
+        /*---------- BEST CINEMATOGRAPHY (oid = 9) --------------------------*/
 
-        if (category.equals("Best Cinematography (color)")) {
+        if (category.equals("Best Cinematography")) {
           nonActingCrewCategory(year, 9);
         }
 
-        /*---------- BEST ORIGINAL SCREENPLAY (oid = 10) --------------------*/
+        /*---------- BEST ADAPTED SCREENPLAY (oid = 10) ---------------------*/
 
-        if (category.equals("Best Original Screenplay")) {
+        if (category.equals("Best Adapted Screenplay")) {
           nonActingCrewCategory(year, 10);
         }
 
-        /*---------- BEST ADAPTED SCREENPLAY (oid = 11) ---------------------*/
+        /*---------- BEST ORIGINAL SCREENPLAY (oid = 11) --------------------*/
 
-        if (category.equals("Best Adapted Screenplay")) {
+        if (category.equals("Best Original Screenplay")) {
           nonActingCrewCategory(year, 11);
         }
 
@@ -428,15 +428,13 @@ public class OscarParser implements GracefulShutdown {
   /**
    * Query the database for the movie id of the given movie.
    *
-   * @param formattedTitle This String is the cleaned movie title used to
-   * query the database.
    * @param realTitle This String is really only used to output to stdout when
    * communicating to the user (it's the title as seen in the csv file record).
    * @param year An integer for the year of the movie in order to nail down the
    * specific movie.
    * @return The database's unique id of the movie if found, -1 otherwise.
    */
-  private int queryForMovie(String formattedTitle, String realTitle, int year) {
+  private int queryForMovie(String realTitle, int year) {
     //first, see if the movie is in cache (hash map)
     Integer Mid = movieMap.get(formattedTitle + " " + year);
     //movie was in cache, no need to query database
