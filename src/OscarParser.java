@@ -462,19 +462,29 @@ public class OscarParser implements GracefulShutdown {
       }
       //query for the movie
       else {
-        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
+        /* This commented out code uses Postgres full text seach rather than straight title comparison:
+
+           qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
                                       + formattedTitle + "') " + "@@ to_tsvector(lower(title)) and "
                                       + "(year = " + year + " or year = " + (year-1) + ");");
+                                      */
+        qResult = db.selectScrollable("SELECT mid FROM movie WHERE lower(title) = '" 
+                                      + realTitle.toLowerCase().replace("'","''") 
+                                      + "' AND (year = " + year + " OR year = " + (year-2)
+                                      + " OR year = " + (year-2) + ");");
       }
       //movie(s) found in db
       if (qResult.next()) {
+        mid = qResult.getInt(1);
 
-        /* single movie found */
+        /* This big commented out chunk of code is used when querying with full text search
+
+        // single movie found
         if (!qResult.next()) {
           qResult.previous();
           mid = qResult.getInt(1);
         }
-        /* multiple movies matched title */
+        // multiple movies matched title
         else {
           String response = null; //for user's input
 
@@ -504,6 +514,7 @@ public class OscarParser implements GracefulShutdown {
             }
           }
         }
+        */
       }
       //no matches found at all
       else {
@@ -524,11 +535,13 @@ public class OscarParser implements GracefulShutdown {
     catch (SQLException sqle) {
       handleSQLException("SQLException caught in queryForMovie().",sqle);
     }
+    /*
     catch (IOException ioe) {
       System.out.println("IOException caught in queryForMovie().");
       ioe.printStackTrace();
       System.exit(1);
     }
+    */
 
     //unreachable code--shut up compiler
     return -1;
