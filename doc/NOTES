@@ -1,8 +1,7 @@
 WHERE LEFT OFF
 ---------------
 - finished oscars
-- working on getting oscar_given_to data into table (cid apparently cannot be
-  NULL--due to foreign key not being able to be NULL?)
+
 
 NEEDS
 ------
@@ -11,6 +10,9 @@ NEEDS
 
 IDEAS/THOUGHTS
 ---------------
+- change list_contains pkey? (I'm sure there's going to be some lists that have
+  the same movie on it 2 or more times...)
+
 - crewperson f_name and m_name can be NULL, so names such as Cher and Madonna
   are last names.
 
