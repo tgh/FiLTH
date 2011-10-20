@@ -636,7 +636,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Gigli', 2003, 2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Ginger and Fred', 1986, 1, 3, 'Italy', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Gingerbread Man', 1997, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Girl, Interrupted', 1999, 5, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Girl with the Pearl Earring', 2003, 7, 3, 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Girl with a Pearl Earring', 2003, 7, 3, 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gladiator', 2000, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Glass House', 2001, 3, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Glengarry Glen Ross', 1992, 7, 4, 'USA', NULL);
