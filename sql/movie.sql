@@ -647,7 +647,7 @@ INSERT INTO movie VALUES (DEFAULT, 'God Said, Ha!', 1999, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Godfather', 1972, 8, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Godfather Part II', 1974, 8, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Godfather Part III', 1990, 6, 4, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Gods & Monsters', 1998, 5, 4, DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Gods and Monsters', 1998, 5, 4, DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Godzilla', 1998, 0, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Gold Rush', 1925, 7, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Golden Bowl', 2000, 5, 4, 'USA', NULL);
