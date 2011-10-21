@@ -1,6 +1,7 @@
 WHERE LEFT OFF
 ---------------
-- finished oscars
+- need to add inserting oscar_given_to.sql in drop_and_delete...
+
 
 
 NEEDS

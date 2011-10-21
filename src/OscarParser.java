@@ -428,24 +428,24 @@ public class OscarParser implements GracefulShutdown {
   /**
    * Query the database for the movie id of the given movie.
    *
-   * @param realTitle This String is really only used to output to stdout when
+   * @param title This String is really only used to output to stdout when
    * communicating to the user (it's the title as seen in the csv file record).
    * @param year An integer for the year of the movie in order to nail down the
    * specific movie.
    * @return The database's unique id of the movie if found, -1 otherwise.
    */
-  private int queryForMovie(String realTitle, int year) {
+  private int queryForMovie(String title, int year) {
     //first, see if the movie is in cache (hash map)
-    Integer Mid = movieMap.get(formattedTitle + " " + year);
+    Integer Mid = movieMap.get(title + " " + year);
     //movie was in cache, no need to query database
     if (Mid != null) {
       return Mid.intValue();
     }
     //otherwise, see if the movie is in the cache of movies NOT in the database
-    Mid = movieNotFoundMap.get(formattedTitle + " " + year);
+    Mid = movieNotFoundMap.get(title + " " + year);
     //movie was in cache, no need to query database
     if (Mid != null) {
-      log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+      log.logGeneralMessageWithoutIndicator("-- " + title + " not found.",1,false);
       return -1;
     }
 
@@ -455,77 +455,32 @@ public class OscarParser implements GracefulShutdown {
     try {
       //title only contains stop words in Postgres's full text search or it's
       // a special case
-      if (containsOnlyStopWords(realTitle) || isSpecialCase(realTitle)) {
-        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + realTitle + "';");
+      if (containsOnlyStopWords(title) || isSpecialCase(title)) {
+        qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE title = '" + title + "';");
       }
       //query for the movie
       else {
-        /* This commented out code uses Postgres full text seach rather than straight title comparison:
-
-           qResult = db.selectScrollable("SELECT mid, title FROM movie WHERE to_tsquery('"
-                                      + formattedTitle + "') " + "@@ to_tsvector(lower(title)) and "
-                                      + "(year = " + year + " or year = " + (year-1) + ");");
-                                      */
         qResult = db.selectScrollable("SELECT mid FROM movie WHERE lower(title) = '" 
-                                      + realTitle.toLowerCase().replace("'","''") 
+                                      + title.toLowerCase().replace("'","''") 
                                       + "' AND (year = " + year + " OR year = " + (year-1)
                                       + " OR year = " + (year-2) + ");");
       }
-      //movie(s) found in db
+      //movie found in db
       if (qResult.next()) {
         mid = qResult.getInt(1);
-
-        /* This big commented out chunk of code is used when querying with full text search
-
-        // single movie found
-        if (!qResult.next()) {
-          qResult.previous();
-          mid = qResult.getInt(1);
-        }
-        // multiple movies matched title
-        else {
-          String response = null; //for user's input
-
-          //show the title of the movie of the current csv row
-          System.out.println("This movie has multiple matches: " + realTitle);
-          //go back to the beginning of the query results
-          qResult.previous();
-          //loop through the query results
-          while (true) {
-            //ask user if this is the right movie
-            System.out.print("  - " + qResult.getString(2) + " ? ");
-            //get user's response
-            response = stdinReader.readLine();
-            //this one matches the movie in the csv file
-            if (response.toLowerCase().equals("y")) {
-              mid = qResult.getInt(1);
-              break;
-            }
-            //no more matches
-            if (!qResult.next()) {
-              log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
-              //add movie to the hash map of movies not found
-              movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
-              //prompt user for movie attribute values and write the sql for the movie
-              mid = writeMovieSql(realTitle, year);
-              break;
-            }
-          }
-        }
-        */
       }
-      //no matches found at all
+      //movie not found in db
       else {
-        log.logGeneralMessageWithoutIndicator("-- " + realTitle + " not found.",1,false);
+        log.logGeneralMessageWithoutIndicator("-- " + title + " not found.",1,false);
         //add movie to the hash map of movies not found
-        movieNotFoundMap.put(formattedTitle + " " + year, new Integer(mid));
+        movieNotFoundMap.put(title + " " + year, new Integer(mid));
         //prompt user for movie attribute values and write the sql for the movie
-        mid = writeMovieSql(realTitle, year);
+        mid = writeMovieSql(title, year);
       }
 
       //movie found, add to cache (hash map)
       if (mid != -1) {
-        movieMap.put(formattedTitle + " " + year, new Integer(mid));
+        movieMap.put(title + " " + year, new Integer(mid));
       }
 
       return mid;
@@ -533,13 +488,6 @@ public class OscarParser implements GracefulShutdown {
     catch (SQLException sqle) {
       handleSQLException("SQLException caught in queryForMovie().",sqle);
     }
-    /*
-    catch (IOException ioe) {
-      System.out.println("IOException caught in queryForMovie().");
-      ioe.printStackTrace();
-      System.exit(1);
-    }
-    */
 
     //unreachable code--shut up compiler
     return -1;
@@ -550,7 +498,7 @@ public class OscarParser implements GracefulShutdown {
   /**
    * Query the database for the crew person id of the given person name.
    *
-   * @param names The moninee's name but split into an array of Strings.
+   * @param names The noninee's name but split into an array of Strings.
    * @param name The nominee's name as a single String with spaces.  This one
    * is used to check (and insert into) the crewMap HashMap.
    * @return The cid of the nominee (the crew_person unique id), or -1 if not
@@ -665,10 +613,8 @@ public class OscarParser implements GracefulShutdown {
     int mid         = -1;
     int status      = -1;
 
-    //format the title for Postgres full text search
-    String formattedTitle = formatTitle(title);
     //query for movie id
-    mid = queryForMovie(formattedTitle, title, year);
+    mid = queryForMovie(title, year);
 
     //movie was found
     if (mid != -1) {
@@ -688,8 +634,9 @@ public class OscarParser implements GracefulShutdown {
   /**
    * Handles nominations for the acting categories.  The acting categories have
    * their own method (separate from the nonActingCrewCategory() method)
-   * because the recipient attribute values for the acting categories have the
-   * character names as well, so they must be handled appropriately.
+   * because the recipient attribute values for the acting categories in the
+   * CSV file have the character names as well, so they must be handled
+   * appropriately.
    *
    * @param year An integer for the year of the nomination.
    * @param oid An integer for the oscar category unique id.
@@ -701,6 +648,7 @@ public class OscarParser implements GracefulShutdown {
 
     int startIdx = 0;
     int endIdx   = title.indexOf(" {"); //'{' is where the character name starts
+
     //this nominee is nominated for more than one movie in the same nomination
     if (endIdx != -1) {
       while (true) {
@@ -709,13 +657,11 @@ public class OscarParser implements GracefulShutdown {
           startIdx += 4;
         }
         //extract the next movie title
-        String unformattedNextTitle = title.substring(startIdx, endIdx);
-        //format the next movie title
-        String nextTitle = formatTitle(unformattedNextTitle);
+        String nextTitle = title.substring(startIdx, endIdx);
         //query for the movie unique id
-        int mid = queryForMovie(nextTitle, unformattedNextTitle, year);
+        int mid = queryForMovie(nextTitle, year);
         //write the appropriate sql for this nomination
-        writeOscarSql(unformattedNextTitle, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
+        writeOscarSql(nextTitle, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
         //reset the indices for the next title
         startIdx = title.indexOf(";", endIdx);
         if (startIdx == -1) {
@@ -728,10 +674,8 @@ public class OscarParser implements GracefulShutdown {
     }
     //nomination is for only one movie (the usual case)
     else {
-      //format the title
-      String formattedTitle = formatTitle(title);
       //query for the movie unique id
-      int mid = queryForMovie(formattedTitle, title, year);
+      int mid = queryForMovie(title, year);
       //write the appropriate sql for this nomination
       writeOscarSql(title, oscars.get(2).split(" "), mid, oid, oscars.get(2), 0);
     }
@@ -751,10 +695,10 @@ public class OscarParser implements GracefulShutdown {
     int recIndex   = -1;  //index into the CSV record for the recipient
     
     //for some stupid reason, the CSV data switches the order of the attributes
-    // for Best Cinematography in 1930 (Best Cinematography oid = 7), Best
+    // for Best Cinematography in 1930 (Best Cinematography oid = 9), Best
     // Director in 1931 (oid == 6), and all of the writing categories in 1930
     // (oid == 10, 11, or 14)
-    if (year < 1931 && oid == 6 || year < 1930 && (oid == 7 || isWritingCategory(oid))) {
+    if (year < 1931 && oid == 6 || year < 1930 && (oid == 9 || isWritingCategory(oid))) {
       titleIndex = 3;
       recIndex   = 2;
     }
@@ -767,32 +711,27 @@ public class OscarParser implements GracefulShutdown {
 
     int startIdx = 0;
     int endIdx   = title.indexOf(";"); 
+
     //this nominee is nominated for more than one movie in the same nomination
     if (endIdx != -1) {
       while (endIdx != -1) {
         //extract the next movie title
-        String unformattedNextTitle = title.substring(startIdx, endIdx);
-        //format the next movie title
-        String nextTitle = formatTitle(unformattedNextTitle);
+        String nextTitle = title.substring(startIdx, endIdx);
         //create and write the appropriate sql insert statement for this nomination
-        nonActingCrewCategoryHelper(nextTitle, unformattedNextTitle, year, oid, recIndex);
+        nonActingCrewCategoryHelper(nextTitle, year, oid, recIndex);
         //reset the indices for the next title
         startIdx = endIdx + 2;
         endIdx   = title.indexOf(";", endIdx + 1);
       }
 
-      String unformattedLastTitle = title.substring(startIdx+4);
-      //format the next movie title
-      String lastTitle = formatTitle(unformattedLastTitle);
+      String lastTitle = title.substring(startIdx+4);
       //create and write the appropriate sql insert statement for this nomination
-      nonActingCrewCategoryHelper(lastTitle, unformattedLastTitle, year, oid, recIndex);
+      nonActingCrewCategoryHelper(lastTitle, year, oid, recIndex);
     }
     //nomination is for only one movie (the usual case)
     else {
-      //format the title
-      String formattedTitle = formatTitle(title);
       //create and write the appropriate sql insert statement for this nomination
-      nonActingCrewCategoryHelper(formattedTitle, title, year, oid, recIndex);
+      nonActingCrewCategoryHelper(title, year, oid, recIndex);
     }
   }
 
@@ -802,25 +741,23 @@ public class OscarParser implements GracefulShutdown {
    * Helper method for the nonActingCrewCategory() method.  Processes the
    * recipients accordingly.
    *
-   * @param title The movie title properly formatted for Postgres full text
-   * search.
-   * @param realTitle The title of the movie as seen in the CSV record.
+   * @param title The title of the movie.
    * @param year The year of the movie.
    * @param oid The unique id of the category.
    * @param recIdx The index into the CSV record for the recipient.
    * @throws IOException
    */
-  private void nonActingCrewCategoryHelper(String title, String realTitle, int year, int oid, int recIdx) throws IOException {
+  private void nonActingCrewCategoryHelper(String title, int year, int oid, int recIdx) throws IOException {
     //query for movie id
-    int mid = queryForMovie(title, realTitle, year);
+    int mid = queryForMovie(title, year);
 
     //get the value of the recipient attribute in the CSV file
     String recipientString = oscars.get(recIdx);
     //for some reason, 1930 records for writing categories and Best
-    // Cinematography, as well as 1962 black & white cinematography have
-    // most of the recipients inside parentheses
-    if ((year == 1930 && (oid == 7 || isWritingCategory(oid)))
-         || (year == 1962 && oid == 8)) {
+    // Cinematography (oid == 9), as well as 1962 black & white cinematography
+    // (oid == 7) have most of the recipients inside parentheses
+    if ((year == 1930 && (oid == 9 || isWritingCategory(oid)))
+         || (year == 1962 && oid == 7)) {
       recipientString = recipientString.replace("(","").replace(")","");
     }
     //in screenplay categories for years 2000 and on, some recipient values
@@ -846,18 +783,18 @@ public class OscarParser implements GracefulShutdown {
         //extract the recipient name
         recipient = recipientString.substring(startIdx, endIdx);
         //pass the name (as an array of Strings) to the second helper method
-        writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
-        //reset the indeices for the next recipient
+        writeOscarSql(title, recipient.split(" "), mid, oid, recipient, numRecipients-1);
+        //reset the indices for the next recipient
         startIdx = endIdx + 2;
         endIdx = recipientString.indexOf(",", startIdx);
       }
       //process the last recipient
       recipient = recipientString.substring(startIdx);
-      writeOscarSql(realTitle, recipient.split(" "), mid, oid, recipient, numRecipients-1);
+      writeOscarSql(title, recipient.split(" "), mid, oid, recipient, numRecipients-1);
     }
     //only one recipient for this nomination
     else {
-      writeOscarSql(realTitle, recipientString.split(" "), mid, oid, recipientString, 0);
+      writeOscarSql(title, recipientString.split(" "), mid, oid, recipientString, 0);
     }
   }
 
@@ -905,28 +842,6 @@ public class OscarParser implements GracefulShutdown {
   //--------------------------------------------------------------------------
 
   /**
-   * Formats a movie title for Postgres's full text search.
-   *
-   * @param title The title to be formated.
-   * @return String - the title correctly formatted for Postgres's full text
-   * search.
-   */
-  private String formatTitle(String title) {
-    title = title.toLowerCase();
-    //replace "'" with "''" for SQL
-    title = title.replace("'","''");
-    //replace " & " with just a space (for titles like "Harry & Tonto")
-    title = title.replace(" & "," ");
-    //replace spaces with "&" (boolean 'and' in full text search)
-    title = title.replace(" ","&");
-    //remove "!" (since it means negation in full text search)
-    title = title.replace("!","");
-    return title;
-  }
-
-  //--------------------------------------------------------------------------
-
-  /**
    * Determines if the given oscar category id is for a writing category.
    *
    * @param oid The unique id of the category.
@@ -947,7 +862,7 @@ public class OscarParser implements GracefulShutdown {
    * Writes a sql insert statement for the given movie.  The user is prompted
    * for the values of the other attributes for the db movie table.
    *
-   * @param title The title of the movie as a String (as seen in the CSV file).
+   * @param title The title of the movie as a String.
    * @param year The year of the movie (as per the CSV file). 
    * @return unique id of the movie if the user provides it, -1 otherwise.
    */
@@ -958,7 +873,8 @@ public class OscarParser implements GracefulShutdown {
 
     try {
       //ask user if the title of the movie as it appears in the CSV file is ok
-      System.out.print("\"" + title + "\" (" + year + ") not found for " + oscars.get(1) + ". Title ok? ");
+      System.out.print("\"" + title + "\" (" + year + ") not found for "
+                        + oscars.get(1) + ". Title ok? (also type 'n' if you already have the correct movie id) ");
       response = stdinReader.readLine();
       //title is not ok, prompt user for a new title
       if (!response.toLowerCase().equals("y")) {
@@ -1176,11 +1092,11 @@ public class OscarParser implements GracefulShutdown {
       case  4: return "Best Supporting Actor";
       case  5: return "Best Supporting Actress";
       case  6: return "Best Director";
-      case  7: return "Best Cinematography";
-      case  8: return "Best Cinematography (black & white)";
-      case  9: return "Best Cinematography (color)";
-      case 10: return "Best Original Screenplay";
-      case 11: return "Best Adapted Screenplay";
+      case  7: return "Best Cinematography (black & white)";
+      case  8: return "Best Cinematography (color)";
+      case  9: return "Best Cinematography";
+      case 10: return "Best Adapted Screenplay";
+      case 11: return "Best Original Screenplay";
       case 12: return "Best Foreign Language Film";
       case 13: return "Best Documentary";
       case 14: return "Best Screenplay";
