@@ -141,17 +141,6 @@ scene_title text);
 -- Primary Key constraints --
 -- --------------------------
 
---There is no primary key for oscar_given_to table out of necessity.  There
--- should be one on (mid, oid, cid), but it is necessary for cid to have the
--- possibility of being NULL due to the fact that some oscar categories (e.g.
--- Best Picture) do not have a crew person associated with it.  If cid were a
--- part of a primary key, it can not be NULL.  Also, cid cannot be, for example,
--- -1, because it is a foreign key to crew_person's primary key (cid), and that
--- foreign key is necessary.
--- For the same reason, there is no primary key for the tyler_given_to table, as
--- well.
--- However, these two tables will need an index to speed up queries.
-
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
@@ -159,9 +148,18 @@ ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, pos
 ALTER TABLE filth.genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
 ALTER TABLE filth.genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY (oid);
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
 ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE filth.list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY (tid);
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
+
+
+-- ---------------------
+-- Unique Constraints --
+-- ---------------------
+
+ALTER TABLE movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
 
 
 -- --------------------------

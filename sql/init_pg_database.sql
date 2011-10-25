@@ -156,6 +156,12 @@ ALTER TABLE list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid)
 ALTER TABLE tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
 
+-- ---------------------
+-- Unique Constraints --
+-- ---------------------
+
+ALTER TABLE movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
+
 
 -- --------------------------
 -- Foreign Key constraints --
