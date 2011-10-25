@@ -207,7 +207,6 @@ INSERT INTO movie VALUES (DEFAULT, 'The Exorcist', 1973, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Bound for Glory', 1976, -2, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'An Unmarried Woman', 1978, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Passage to India', 1984, -2, 2, 'England', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Ray', 2004, -2, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Brokeback Mountain', 2005, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Milk', 2008, -2, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Reader', 2008, -2, 4, 'USA', NULL);
