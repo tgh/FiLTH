@@ -26,7 +26,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Queen Bee', 1955, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blackboard Jungle', 1955, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Oklahoma!', 1955, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Guys and Dolls', 1955, -2, 0, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'To Catch a Thief', 1955, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Man Called Peter', 1955, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Somebody Up There Likes Me', 1956, -2, 0, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Harder They Fall', 1956, -2, 0, 'USA', NULL);
