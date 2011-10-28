@@ -17,8 +17,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 #create connection to db, session, declarative Base, etc.
-engine = create_engine('postgresql://postgres:xxx@localhost/test', echo=True)
-Session = sessionmaker(bind=engine, autoflush=True)
+engine = create_engine('postgresql://postgres:xxx@localhost/xxx', echo=True)
+Session = scoped_session(sessionmaker(bind=engine, autoflush=True))
 Base = declarative_base()
 Base.metadata.bind = engine
 Base.query = Session.query_property(Query)
@@ -283,10 +283,6 @@ class Movie(Base):
   oscars = relationship(Oscar, secondary=oscar_given_to)
   lists  = relationship(List, backref='movies', secondary=list_contains)
   tylers = relationship(Tyler, secondary=tyler_given_to)
-
-
-
-
 
 
 #------------------------------------------------------------------------------
