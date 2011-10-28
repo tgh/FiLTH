@@ -72,16 +72,19 @@ sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # if this is the first run, just create movie.sql
 if [ $first_run -eq 1 ]
 then
-  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_path/sql/movie.sql
+  # movie2sql.py without the -u option creates $filth_path/sql/movie.sql
+  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2
 # if this is not the first run...
 else
-  # create/overwrite movie_additions.sql which is a file of sql inserts for just
-  # the new movies being added
-  $filth_path/scripts/movie2sql.py $filth_temp_path/temp2 > $filth_temp_path/movie_additions.sql
+  # movie2sql.py with the -u option creates/overwrites movie_additions.sql,
+  # which is a file of sql inserts for just the new movies being added
+  # (the -u option also checks for, and applies, updates to movies already in
+  # the db)
+  $filth_path/scripts/movie2sql.py -u $filth_temp_path/temp2
   # append the new insertions to the main movie,sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
   # insert the additions into the Postgres database
-  psql -U postgres -d filth -f $filth_temp_path/movie_additions.sql
+  psql -U postgres -d test -f $filth_temp_path/movie_additions.sql
 fi
 
 # create a PDF of the movie ratings document (creates $filth_path/pdf/movie_ratings.pdf)

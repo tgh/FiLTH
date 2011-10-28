@@ -2,7 +2,38 @@
 
 import sys
 import string
+import imp
+from sqlalchemy.orm.exc import NoResultFound
+from os import system
 
+models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
+
+
+def checkArgs():
+  """Sanity checks the command-line arguments."""
+
+  fileIdx = 0
+  update = False
+
+  if len(sys.argv) != 2 and len(sys.argv) != 3:
+    sys.stderr.write("**ERROR: arguments\n\n")
+    sys.stderr.write("  usage: movie2sql.py [-u] <input file>\n\n")
+    sys.exit()
+  #no update option
+  if len(sys.argv) == 2:
+    fileIdx = 1
+  #possible "-u" option passed in through command-line
+  else:
+    if sys.argv[1] != '-u':
+      sys.stderr.write("**ERROR: unknown first argument: {0}\n\n".format(sys.argv[1]))
+      sys.stderr.write("  usage: movie2sql.py [-u] <input file>\n\n")
+      sys.exit()
+    update = True
+    fileIdx = 2
+
+  return fileIdx, update
+
+#------------------------------------------------------------------------------
 
 def FormatTitle(title):
   """Properly format the movie title. e.g. "Falcon And The Snowman, The" ->
@@ -40,26 +71,128 @@ def FormatTitle(title):
 
   return ' '.join(words)
 
+#------------------------------------------------------------------------------
 
+def checkForUpdate(title, year, stars, mpaa, country):
+  """Is this movie already in the database?  If so, update it."""
+
+  global models
+  movie = None
+
+  #query for the movie in the db using the title and year since there is a
+  # unique contraint on movies with those attributes
+  try:
+    movie = models.Movie.query.filter(models.Movie.title == title).filter(models.Movie.year == year).one()
+  #even though the movie was not found in the db, this still might be an update
+  # (for the title, or year, or both)
+  except NoResultFound:
+    #prompt user if this is in fact an update
+    response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n) "\
+                         .format(title,\
+                                 year,\
+                                 models.MovieMgr.starRatingToString(stars),\
+                                 models.MovieMgr.mpaaToString(mpaa),\
+                                 country))
+    if response.lower() == 'n':
+      return False
+    #prompt user for the id of the movie (until a valid id is given)
+    while True:
+      try:
+        response = int(raw_input("\nWhat is the id of the movie? "))
+        #get the movie from the db
+        movie = models.Movie.query.filter(models.Movie.mid == response).one()
+        break
+      except NoResultFound:
+        print "\t**ERROR: id does not exist."
+      except ValueError:
+        print "\t**ERROR: invalid id."
+    #update the title and/or year
+    if movie.title != title:
+      movie.title = title
+    if movie.year != year:
+      movie.year = year
+  #update what needs updating
+  if movie.mpaa != mpaa:
+    movie.mpaa = mpaa
+  if movie.country != country:
+    movie.country = country
+  if movie.star_rating != stars:
+    #this is a movie hadn't seen in the db, but has now been seen, so a SQL
+    # INSERT statement needs to be written to sql/movie.sql
+    if movie.star_rating == -2:
+      fout = open("/home/tgh/Projects/FiLTH/sql/movie.sql", "a")
+      fout.write("INSERT INTO movie VALUES (DEFAULT, '"\
+                                      + title.replace("'","''") + "', "\
+                                      + year + ", "\
+                                      + stars + ", "\
+                                      + mpaa + ", "\
+                                      + country + ", NULL);")
+      fout.close
+      #remove the original INSERT statement for this movie (where star_rating
+      # was set to -2)
+      removeMovieFromSqlFile(title, year)
+    movie.star_rating = stars
+
+  return True
+
+
+#------------------------------------------------------------------------------
+
+def removeMovieFromSqlFile(title, year):
+  """Finds and removes a movie from one of the movie sql files in sql/"""
+
+  found = False
+  i = 1
+  searchString = "'{0}', {1}".format(title.replace("'","''"), year)
+  filname = None
+  fout = None
+
+  while not found:
+    i += 1
+    filename = "/home/tgh/Projects/FiLTH/sql/movie{0}.sql".format(i)
+    try:
+      fout = open(filename, "r")
+    #no more movie sql files to look through
+    except IOError:
+      return
+    lines = fout.readlines()
+    for line in lines:
+      if -1 != line.find(searchString):
+        found = True
+    fout.close
+
+  #make a system call with sed to remove the line in the file
+  system("sed -i \"/{0}/d\" {1}".format(searchString, filename))
+
+
+#------------------------------------------------------------------------------
 
 #------------
 #--- MAIN ---
 #------------
 if __name__ == '__main__':
-  #check for file from command line
-  if len(sys.argv) != 2:
-    sys.stderr.write("**ERROR: arguments\n\n")
-    sys.stderr.write("  usage: movie2sql.py <input file>\n\n")
-    sys.exit()
+  fileIdx = 0       #index into argv for the filename
+  update  = False   #flag for checking for updates
+
+  #check the command-line arguments
+  fileIdx, update = checkArgs()
+
   #open the file
   try:
-    f = open(sys.argv[1], 'r')
+    f = open(sys.argv[fileIdx], 'r')
   except IOError:
     sys.stderr.write("**ERROR: opening file.\n")
+    sys.exit()
   #grab all of the lines in the file
   lines = f.readlines()
   #close the file
   f.close()
+
+  if update:
+    f = open('/home/tgh/Projects/FiLTH/temp/movie_additions.sql', 'w')
+  else:
+    f = open('/home/tgh/Projects/FiLTH/sql/movie.sql', 'w')
+
   #iterate over the lines retrieved from the file
   for line in lines:
     #strip ending newline character
@@ -97,10 +230,23 @@ if __name__ == '__main__':
     year = year[1:-1]
     #remove the brackets around the mpaa rating
     mpaa = mpaa[1:-1]
-    #output the sql
-    print "INSERT INTO movie VALUES (DEFAULT, '"\
-                                    + title + "', "\
-                                    + year + ", "\
-                                    + stars + ", "\
-                                    + mpaa + ", "\
-                                    + country + ", NULL);"
+    
+    insert = True   #flag for wheter or not this will be a sql INSERT statement
+
+    #check to see if this new line is an update of a movie already in the db
+    if update:
+      insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
+    #nope, this is a regular INSERT statement
+    if insert:
+      #output the sql
+      f.write("INSERT INTO movie VALUES (DEFAULT, '"\
+                                      + title.replace("'","''") + "', "\
+                                      + year + ", "\
+                                      + stars + ", "\
+                                      + mpaa + ", "\
+                                      + country + ", NULL);\n")
+
+  #commit the changes to the db (if any)
+  if update:
+    models.session.commit()
+  f.close()
