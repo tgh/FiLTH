@@ -1825,3 +1825,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Zodiac', 2007, 7, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zombieland', 2009, 6, 4, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zoolander', 2001, 5, 3, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Illusionist', 2010, 7, 2, 'France', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cabaret', 1972, 5, 2, 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Margin Call', 2011, 7, 4, 'USA', NULL);

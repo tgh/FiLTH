@@ -200,7 +200,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Z', 1969, -2, 2, 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Hello, Dolly!', 1969, -2, 1, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Nicholas and Alexandra', 1971, -2, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Fiddler on the Roof', 1971, -2, 1, 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cabaret', 1972, -2, 2, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sounder', 1972, -2, 1, 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Emigrants', 1971, -2, 2, 'Sweden', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Exorcist', 1973, -2, 4, 'USA', NULL);
