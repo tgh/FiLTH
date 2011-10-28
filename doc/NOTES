@@ -1,7 +1,13 @@
 WHERE LEFT OFF
 ---------------
 - need to add inserting oscar_given_to.sql in drop_and_delete...
-
+- add code to OscarParser to create worked_on.sql
+- working on movie.sh and movie2sql.py in order to automate what happens when
+  I add (or update) a movie that's already in the database in Movie_Ratings.doc
+  - need to change the appropriate line(s) in movie.sql when a movie already
+    seen is updated
+- I dropped and created test db and it has 1 less movie that filth??? need to
+  rerun OscarParser after filth is dropped and created?
 
 
 NEEDS
@@ -44,16 +50,8 @@ IDEAS/THOUGHTS
 - Front-end must ensure spelling consistency when entering position values
 
 - add category to oscar_given_to table and make it a foreign key to the
-  oscar table (like country is to movie) to eliminate anohter join.  This will
-  add significant storage, however.
-
-- add year attribute to oscar_given_to table.  This will eliminate the
-  need for dummy records.  OscarParser will have to ask user for year of movie
-  (maybe just for foreign and maybe documentary films?), and have to insert
-  year into the sql insert statements. Db schema would need updated as well.
-
-- change search for movie in OscarParser to only look at title and not year,
-  then when outputting the matches, output the year as well. ??
+  oscar table (like country is to movie) to eliminate another join.  This will
+  add significant storage, however. (ditto for tyler_given_to)
 
 - change schema: crew_person should have an attribute for what they are (actor,
   director, etc)--probably a small integer (like what is done for MPAA in the
@@ -125,6 +123,10 @@ TOOLS USED/TRIED OUT
 - LaTeX* (typesetting tool--for dynamically creating pdf files)
 - dvipdf* (used with LaTex for converting dvi files to pdf files)
 - Photoshop (used to create FiLTH logo)
+- Qt Creator
+- sqlite3
+- Django
+- SQLAlchemy
 
 
 LANGUAGES USED
