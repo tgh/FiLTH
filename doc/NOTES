@@ -1,13 +1,11 @@
 WHERE LEFT OFF
 ---------------
-- need to add inserting oscar_given_to.sql in drop_and_delete...
 - add code to OscarParser to create worked_on.sql
-- working on movie.sh and movie2sql.py in order to automate what happens when
-  I add (or update) a movie that's already in the database in Movie_Ratings.doc
-  - need to change the appropriate line(s) in movie.sql when a movie already
-    seen is updated
 - I dropped and created test db and it has 1 less movie that filth??? need to
   rerun OscarParser after filth is dropped and created?
+- ½ is in database (in" 8½") -- might cause problems in Python (w/unicode)
+- rather than run psql straight on oscar_given_to.sql, should drop_and_...sh
+  scripts run OscarParser first, then run oscar_given_to.sql
 
 
 NEEDS
