@@ -41,34 +41,10 @@ psql -U postgres -d test -f $filth_sql_path/tyler.sql > /dev/null 2>>$filth_temp
 
 echo "Populating crewperson table..."
 psql -U postgres -d test -f $filth_sql_path/crew_person.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-# use all of the crew_personN.sql files (i.e. crew_person2.sql, crew_person3.sql, etc)
-i=2
-while [ true ]
-do
-  # this crew_person sql file does not exist, we are done
-  if [ ! -e $filth_sql_path/crew_person$i.sql ]
-  then
-    break
-  fi
-  psql -U postgres -d test -f $filth_sql_path/crew_person$i.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-  let i=$i+1
-done
 
 
 echo "Populating movie table..."
 psql -U postgres -d test -f $filth_sql_path/movie.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-# use all of the movieN.sql files (i.e. movie2.sql, movie3.sql, etc)
-i=2
-while [ true ]
-do
-  # this movie sql file does not exist, we are done
-  if [ ! -e $filth_sql_path/movie$i.sql ]
-  then
-    break
-  fi
-  psql -U postgres -d test -f $filth_sql_path/movie$i.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-  let i=$i+1
-done
 
 
 echo "Populating oscar_given_to table..."
