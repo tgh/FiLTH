@@ -78,7 +78,15 @@ def checkForUpdate(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
   global models, movieSqlFile
-  movie       = None
+  movie = None  #to hold a Movie object
+
+  #convert the strings of integers to integers
+  year  = int(year)
+  stars = int(stars)
+  mpaa  = int(mpaa)
+
+  #these original variables will be used to search in the movie.sql file for the
+  # original INSERT sql statement for the movie in order to be updated
   origTitle   = title
   origYear    = year
   origStars   = stars
@@ -226,12 +234,8 @@ if __name__ == '__main__':
     #nope, this is a regular INSERT statement
     if insert:
       #output the sql
-      f.write("INSERT INTO movie VALUES (DEFAULT, '"\
-                                      + title.replace("'","''") + "', "\
-                                      + year + ", "\
-                                      + stars + ", "\
-                                      + mpaa + ", "\
-                                      + country + ", NULL);\n")
+      f.write("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, {2}, {3}, {4}, NULL);\n"\
+              .format(title.replace("'","''"), year, stars, mpaa, country))
 
   #commit the changes to the db (if any)
   if update:
