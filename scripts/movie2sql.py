@@ -7,6 +7,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from os import system
 
 models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
+movieSqlFile = "/home/tgh/Projects/FiLTH/sql/movie.sql"
 
 
 def checkArgs():
@@ -76,8 +77,13 @@ def FormatTitle(title):
 def checkForUpdate(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
-  global models
-  movie = None
+  global models, movieSqlFile
+  movie       = None
+  origTitle   = title
+  origYear    = year
+  origStars   = stars
+  origMpaa    = mpaa
+  origCountry = country
 
   #query for the movie in the db using the title and year since there is a
   # unique contraint on movies with those attributes
@@ -108,61 +114,42 @@ def checkForUpdate(title, year, stars, mpaa, country):
         print "\t**ERROR: invalid id."
     #update the title and/or year
     if movie.title != title:
+      origTitle = movie.title
       movie.title = title
     if movie.year != year:
+      origYear = movie.year
       movie.year = year
   #update what needs updating
+  if movie.star_rating != stars:
+    origStars = movie.star_rating
+    movie.star_rating = stars
   if movie.mpaa != mpaa:
+    origMpaa = movie.mpaa
     movie.mpaa = mpaa
   if movie.country != country:
+    origCountry = movie.country
     movie.country = country
-  if movie.star_rating != stars:
-    #this is a movie hadn't seen in the db, but has now been seen, so a SQL
-    # INSERT statement needs to be written to sql/movie.sql
-    if movie.star_rating == -2:
-      fout = open("/home/tgh/Projects/FiLTH/sql/movie.sql", "a")
-      fout.write("INSERT INTO movie VALUES (DEFAULT, '"\
-                                      + title.replace("'","''") + "', "\
-                                      + year + ", "\
-                                      + stars + ", "\
-                                      + mpaa + ", "\
-                                      + country + ", NULL);")
-      fout.close
-      #remove the original INSERT statement for this movie (where star_rating
-      # was set to -2)
-      removeMovieFromSqlFile(title, year)
-    movie.star_rating = stars
 
+  
+  #rewrite the INSERT statement in movie.sql
+  search  = "'{0}', {1}, {2}, {3}, '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars, origMpaa, origCountry)
+  replace = "'{0}', {1}, {2}, {3}, '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
+  system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, movieSqlFile))
+
+  #output message
+  print "UPDATE:\n   original: \"{0}\" ({1}) {2} [{3}] {4}"\
+         .format(title,\
+                 year,\
+                 models.MovieMgr.starRatingToString(stars),\
+                 models.MovieMgr.mpaaToString(mpaa),\
+                 country)
+  print "    updated: \"{0}\" ({1}) {2} [{3}] {4}\n"\
+         .format(origTitle,\
+                 origYear,\
+                 models.MovieMgr.starRatingToString(origStars),\
+                 models.MovieMgr.mpaaToString(origMpaa),\
+                 origCountry)
   return True
-
-
-#------------------------------------------------------------------------------
-
-def removeMovieFromSqlFile(title, year):
-  """Finds and removes a movie from one of the movie sql files in sql/"""
-
-  found = False
-  i = 1
-  searchString = "'{0}', {1}".format(title.replace("'","''"), year)
-  filname = None
-  fout = None
-
-  while not found:
-    i += 1
-    filename = "/home/tgh/Projects/FiLTH/sql/movie{0}.sql".format(i)
-    try:
-      fout = open(filename, "r")
-    #no more movie sql files to look through
-    except IOError:
-      return
-    lines = fout.readlines()
-    for line in lines:
-      if -1 != line.find(searchString):
-        found = True
-    fout.close
-
-  #make a system call with sed to remove the line in the file
-  system("sed -i \"/{0}/d\" {1}".format(searchString, filename))
 
 
 #------------------------------------------------------------------------------
