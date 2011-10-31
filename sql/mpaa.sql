@@ -1,0 +1,7 @@
+INSERT INTO position VALUES('NR');
+INSERT INTO position VALUES('G');
+INSERT INTO position VALUES('PG');
+INSERT INTO position VALUES('PG-13');
+INSERT INTO position VALUES('R');
+INSERT INTO position VALUES('X');
+INSERT INTO position VALUES('NC-17');

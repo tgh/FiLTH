@@ -1,0 +1,11 @@
+INSERT INTO position VALUES('not seen');
+INSERT INTO position VALUES('N/A');
+INSERT INTO position VALUES('NO STARS');
+INSERT INTO position VALUES('½*');
+INSERT INTO position VALUES('*');
+INSERT INTO position VALUES('*½');
+INSERT INTO position VALUES('**');
+INSERT INTO position VALUES('**½');
+INSERT INTO position VALUES('***');
+INSERT INTO position VALUES('***½');
+INSERT INTO position VALUES('****');

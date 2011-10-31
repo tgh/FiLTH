@@ -364,7 +364,7 @@ ALTER TABLE movie ADD CONSTRAINT star_constraint
 CHECK (star_rating >= -2 AND star_rating <= 8);
 -- -2 = not seen
 -- -1 = N/A (so far I've only had to use this once: for "Jackass: The Movie")
---  0 = no starsinsertmovie
+--  0 = no stars
 --  1 = ½*
 --  2 = *
 --  3 = *½
