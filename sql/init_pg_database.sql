@@ -47,7 +47,8 @@ CREATE TABLE crew_person (
 cid serial NOT NULL,
 l_name text NOT NULL,
 f_name text DEFAULT NULL,
-m_name text DEFAULT NULL);
+m_name text DEFAULT NULL,
+known_as text DEFAULT NULL);
 
 -- At this point, Postgres creates an implicit sequence "crew_person_cid_seq"
 -- for cid (the primary key for crew_person).  Since the oscar_given_to and
@@ -361,6 +362,14 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
+
+-- crew_person known_as
+ALTER TABLE crew_person ADD CONSTRAINT known_as_constraint
+CHECK (known_as IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
+
+-- worked_on position
+ALTER TABLE worked_on ADD CONSTRAINT position_constraint
+CHECK (position IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
 
 -- list_contains rank
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint

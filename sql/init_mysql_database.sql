@@ -55,7 +55,8 @@ CREATE TABLE filth.crew_person (
 cid serial NOT NULL,
 l_name varchar(20) NOT NULL,
 f_name varchar(20) DEFAULT NULL,
-m_name varchar(15) DEFAULT NULL);
+m_name varchar(15) DEFAULT NULL,
+known_as varchar(16) DEFAULT NULL);
 
 
 -- crewperson <--> movie relationship
@@ -265,6 +266,14 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
+
+-- crew_person known_as
+ALTER TABLE filth.crew_person ADD CONSTRAINT known_as_constraint
+CHECK (known_as IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
+
+-- worked_on position
+ALTER TABLE filth.worked_on ADD CONSTRAINT position_constraint
+CHECK (position IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
 
 -- list_contains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
