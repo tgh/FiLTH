@@ -15,6 +15,19 @@ NEEDS
 
 IDEAS/THOUGHTS
 ---------------
+- storing text values as ints (star rating, mpaa, etc) will cause a lot of
+  function calls in the front end to convert these values to corresponding text
+  (e.g. 8 -> "****" or 4 -> "R").  Also if any value is desired to be added to
+  the domain of any of these attributes, the check constraint must be updated
+  as well, which is sloppy ( would have to drop it, then add it again with the
+  new maximum value allowed).  Thus, should we eliminate this convention and
+  simply store '*', '***', '***½', 'R', 'PG', 'PG-13', etc into the database?
+  This greatly increases occupied space on the disk, but it's not horrible.  If
+  so, there would also have to be "integrity entities" as I call them that will
+  insure no spelling errors are inserted (this is currently in use for
+  attributes such as movie.country, crew_person.known_as, and
+  worked_on.position).
+
 - change list_contains pkey? (I'm sure there's going to be some lists that have
   the same movie on it 2 or more times...)
 
@@ -29,33 +42,15 @@ IDEAS/THOUGHTS
   EDIT: there are search mechanisms (at least in Postgres) that WILL catch these
   accented characters I think...
 
-- can have the Front-End take care of certain constraints when inserting/
-  updating new data (movie year is between 1900 and 3+ years from current year,
-  for example).  When adding a country, or star rating, or something like that,
-  the check constraint must be updated (e.g. the range of values accepted).
-  If sqlite is used, however, this is not possible.  So, one way is to remove
-  the check constraints in the database, and use the front-end to check input
-  before insert/update.  For a value range upper limit that might change (e.g.
-  when adding a new country), the FiLTH application could do a sql query upon
-  load for the highest value of movie.country and store that in a variable, or
-  have some sort of config or rc file that it reads/updates for such variables.
-
 - should 'position' attribute of worked_on be a part of the primary key (so
   when a person has multiple positions in a movie--actor/director, for example
-  --each instance is a unique tuple) or not (so that a person that worked on a
-  movie only appears once in the table (e.g. position value "Director, Actor")?
-
-- Front-end must ensure spelling consistency when entering position values
+  --each instance is a unique tuple)?  This is the way it is currently.
+  Or should this not be the case (so that a person that worked on a movie onlys
+  appears once in the table (e.g. position value "Director, Actor")?
 
 - add category to oscar_given_to table and make it a foreign key to the
   oscar table (like country is to movie) to eliminate another join.  This will
   add significant storage, however. (ditto for tyler_given_to)
-
-- change schema: crew_person should have an attribute for what they are (actor,
-  director, etc)--probably a small integer (like what is done for MPAA in the
-  movie table), which would mean having multiple records for certain persons
-  (such as Clint Eastwood, Matt Damon, Orson Welles, etc), and remove position
-  attribute from worked_on table
 
 - if you do use integers for data such as MPAA, country, position, star rating,
   etc., maybe there should be a config or settings file for the front-end to be

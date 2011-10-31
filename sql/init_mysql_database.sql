@@ -43,6 +43,42 @@ country varchar(35) DEFAULT NULL,
 comments text);
 
 
+-- a star rating entity (only used as an integrity constraint for
+-- movie.star_rating) (see comment above the position table creation statement)
+--
+-- current values:
+-- "not seen"
+-- "N/A" (so far I've only had to use this once: for "Jackass: The Movie")
+-- "NO STARS"
+-- "½*"
+-- "*"
+-- "*½"
+-- "**"
+-- "**½"
+-- "***"
+-- "***½"
+-- "****"
+DROP TABLE IF EXISTS filth.star_rating CASCADE;
+CREATE TABLE filth.star_rating (
+rating varchar(10) NOT NULL);
+
+
+-- an mpaa rating entity (only used as an integrity constraint for movie.mpaa)
+-- (see comment above the position table creation statement)
+--
+-- current values:
+-- "NR" (Not Rated)
+-- "G" (General audiences)
+-- "PG" (Parental Guidance suggested)
+-- "PG-13" (Parental Guidance strongly suggested for those under 13)
+-- "R" (Restricted)
+-- "X" (no one under 17 admitted [prior to 1990])
+-- "NC-17" (no one under 17 admitted [after 1990 when X renamed to NC-17])
+DROP TABLE IF EXISTS filth.mpaa CASCADE;
+CREATE TABLE filth.mpaa (
+rating varchar(6) NOT NULL);
+
+
 -- a country entity (only used as an integrity constraint for movie.country)
 DROP TABLE IF EXISTS filth.country CASCADE;
 CREATE TABLE filth.country (
@@ -153,6 +189,8 @@ scene_title text);
 -- --------------------------
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
+ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
+ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
@@ -181,6 +219,16 @@ ALTER TABLE movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year)
 -- movie table country FK
 ALTER TABLE filth.movie ADD CONSTRAINT movie_country_fkey
 FOREIGN KEY (country) REFERENCES filth.country(country_name)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie table star_rating FK
+ALTER TABLE filth.movie ADD CONSTRAINT movie_star_rating_fkey
+FOREIGN KEY (star_rating) REFERENCES filth.star_rating(rating)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie table mpaa FK
+ALTER TABLE filth.movie ADD CONSTRAINT movie_mpaa_fkey
+FOREIGN KEY (mpaa) REFERENCES filth.mpaa(rating)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- crew_person table known_as FK
@@ -261,32 +309,6 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 -- movie year
 ALTER TABLE filth.movie ADD CONSTRAINT year_constraint
 CHECK (year >= 1900 AND year <= 2012);
-
--- movie star rating
-ALTER TABLE filth.movie ADD CONSTRAINT star_constraint
-CHECK (star_rating >= -2 AND star_rating <= 8);
--- -2 = not seen
--- -1 = N/A (so far I've only had to use this once: for "Jackass: The Movie")
---  0 = no stars
---  1 = ½*
---  2 = *
---  3 = *½
---  4 = **
---  5 = **½
---  6 = ***
---  7 = ***½
---  8 = ****
-
--- movie mpaa rating
-ALTER TABLE filth.movie ADD CONSTRAINT mpaa_constraint
-CHECK (mpaa >= 0 AND mpaa <= 6);
--- 0 = NR (Not Rated)
--- 1 = G (General audiences)
--- 2 = PG (Parental Guidance suggested)
--- 3 = PG-13 (Parental Guidance strongly suggested for those under 13)
--- 4 = R (Restricted)
--- 5 = X (no one under 17 admitted [prior to 1990])
--- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
 
 -- list_contains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
