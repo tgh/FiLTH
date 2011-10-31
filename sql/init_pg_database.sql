@@ -69,6 +69,16 @@ cid smallint NOT NULL,
 position text NOT NULL);
 
 
+-- a position entity (only used as an integrity constraint for
+-- crew_person.known_as and worked_on.position).  Normally I would just use a
+-- CHECK constraint for this since there are only about 5 positions I care about
+-- right now, but if I ever wanted to add a position (such as costume designer)
+-- this would make it much easier.
+DROP TABLE IF EXISTS position CASCADE;
+CREATE TABLE position (
+position_title text NOT NULL);
+
+
 -- a genre entity
 DROP TABLE IF EXISTS genre CASCADE;
 CREATE TABLE genre (
@@ -148,6 +158,7 @@ ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
 ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
+ALTER TABLE position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
 ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
 ALTER TABLE genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
 ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
@@ -156,6 +167,7 @@ ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
+
 
 -- ---------------------
 -- Unique Constraints --
@@ -173,6 +185,11 @@ ALTER TABLE movie ADD CONSTRAINT movie_country_fkey
 FOREIGN KEY (country) REFERENCES country(country_name)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
+-- crew_person table known_as FK
+ALTER TABLE crew_person ADD CONSTRAINT crew_known_as_fkey
+FOREIGN KEY (known_as) REFERENCES position(position_title)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
 -- worked_on table movie FK
 ALTER TABLE worked_on ADD CONSTRAINT worked_mid_fkey
 FOREIGN KEY (mid) REFERENCES movie(mid)
@@ -182,6 +199,11 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE worked_on ADD CONSTRAINT worked_cid_fkey
 FOREIGN KEY (cid) REFERENCES crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- worked_on table position FK
+ALTER TABLE worked_on ADD CONSTRAINT worked_position_fkey
+FOREIGN KEY (position) REFERENCES position(position_title)
+ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- genre_contains table movie FK
 ALTER TABLE genre_contains ADD CONSTRAINT genre_mid_fkey
@@ -362,14 +384,6 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
-
--- crew_person known_as
-ALTER TABLE crew_person ADD CONSTRAINT known_as_constraint
-CHECK (known_as IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
-
--- worked_on position
-ALTER TABLE worked_on ADD CONSTRAINT position_constraint
-CHECK (position IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
 
 -- list_contains rank
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint

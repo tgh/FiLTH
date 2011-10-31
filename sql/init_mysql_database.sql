@@ -67,6 +67,16 @@ cid smallint NOT NULL,
 position varchar(20) NOT NULL);
 
 
+-- a position entity (only used as an integrity constraint for
+-- crew_person.known_as and worked_on.position).  Normally I would just use a
+-- CHECK constraint for this since there are only about 5 positions I care about
+-- right now, but if I ever wanted to add a position (such as costume designer)
+-- this would make it much easier.
+DROP TABLE IF EXISTS filth.position CASCADE;
+CREATE TABLE filth.position (
+position_title varchar(20) NOT NULL);
+
+
 -- a genre entity
 DROP TABLE IF EXISTS filth.genre CASCADE;
 CREATE TABLE filth.genre (
@@ -146,6 +156,7 @@ ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
+ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
 ALTER TABLE filth.genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
 ALTER TABLE filth.genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY (oid);
@@ -172,6 +183,11 @@ ALTER TABLE filth.movie ADD CONSTRAINT movie_country_fkey
 FOREIGN KEY (country) REFERENCES filth.country(country_name)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
+-- crew_person table known_as FK
+ALTER TABLE filth.crew_person ADD CONSTRAINT crew_known_as_fkey
+FOREIGN KEY (known_as) REFERENCES filth.position(position_title)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
 -- worked_on table movie FK
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_mid_fkey
 FOREIGN KEY (mid) REFERENCES filth.movie(mid)
@@ -181,6 +197,11 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_cid_fkey
 FOREIGN KEY (cid) REFERENCES filth.crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- worked_on table position FK
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_position_fkey
+FOREIGN KEY (position) REFERENCES filth.position(position_title)
+ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- genre_contains table movie FK
 ALTER TABLE filth.genre_contains ADD CONSTRAINT genre_mid_fkey
@@ -266,14 +287,6 @@ CHECK (mpaa >= 0 AND mpaa <= 6);
 -- 4 = R (Restricted)
 -- 5 = X (no one under 17 admitted [prior to 1990])
 -- 6 = NC-17 (no one under 17 admitted [after 1990 when X renamed to NC-17])
-
--- crew_person known_as
-ALTER TABLE filth.crew_person ADD CONSTRAINT known_as_constraint
-CHECK (known_as IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
-
--- worked_on position
-ALTER TABLE filth.worked_on ADD CONSTRAINT position_constraint
-CHECK (position IN ('Actor', 'Actress', 'Director', 'Cinematographer', 'Screenwriter'));
 
 -- list_contains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
