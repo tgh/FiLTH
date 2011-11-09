@@ -31,34 +31,6 @@ sed -i "s/‘/''/g" $filth_temp_path/temp
 sed -i "s/…/.../g" $filth_temp_path/temp
 sed -i "s/♥/Heart/g" $filth_temp_path/temp
 
-# replace the star ratings with corresponding integer
-sed -i "s/NO STARS/0/g" $filth_temp_path/temp
-sed -i "s/\*\*\*\*/8/g" $filth_temp_path/temp
-sed -i "s/\*\*\*½/7/g" $filth_temp_path/temp
-sed -i "s/\*\*\*/6/g" $filth_temp_path/temp
-sed -i "s/\*\*½/5/g" $filth_temp_path/temp
-sed -i "s/\*\*/4/g" $filth_temp_path/temp
-sed -i "s/\*½/3/g" $filth_temp_path/temp
-sed -i "s/½\*/1/g" $filth_temp_path/temp
-sed -i "s/ \* / 2 /g" $filth_temp_path/temp  # there needs to be a space before
-                                             # and after the '*' here, otherwise
-                                             # 'M*A*S*H' becomes 'M2A2S2H'.  Now
-                                             # I may change Woody Allen's
-                                             # 'Everything You Always...' to
-                                             # have ' * ' as its official title
-                                             # actually does, which means this
-                                             # regex needs changed again...
-sed -i "s/N\/A/-1/g" $filth_temp_path/temp
-
-# replace mpaa ratings with corresponding integer
-sed -i "s/\[NR\]/\[0\]/g" $filth_temp_path/temp
-sed -i "s/\[G\]/\[1\]/g" $filth_temp_path/temp
-sed -i "s/\[PG\]/\[2\]/g" $filth_temp_path/temp
-sed -i "s/\[PG-13\]/\[3\]/g" $filth_temp_path/temp
-sed -i "s/\[R\]/\[4\]/g" $filth_temp_path/temp
-sed -i "s/\[X\]/\[5\]/g" $filth_temp_path/temp
-sed -i "s/\[NC\-17\]/\[6\]/g" $filth_temp_path/temp
-
 # remove the alphabetical headers
 sed "/^[A-Z]$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # remove the blank lines
