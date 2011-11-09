@@ -81,9 +81,7 @@ def checkForUpdate(title, year, stars, mpaa, country):
   movie = None  #to hold a Movie object
 
   #convert the strings of integers to integers
-  year  = int(year)
-  stars = int(stars)
-  mpaa  = int(mpaa)
+  year = int(year)
 
   #these original variables will be used to search in the movie.sql file for the
   # original INSERT sql statement for the movie in order to be updated
@@ -140,8 +138,8 @@ def checkForUpdate(title, year, stars, mpaa, country):
 
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, {2}, {3}, '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars, origMpaa, origCountry)
-  replace = "'{0}', {1}, {2}, {3}, '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
+  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars, origMpaa, origCountry)
+  replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, movieSqlFile))
 
   #output message
@@ -234,7 +232,7 @@ if __name__ == '__main__':
     #nope, this is a regular INSERT statement
     if insert:
       #output the sql
-      f.write("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, {2}, {3}, {4}, NULL);\n"\
+      f.write("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n"\
               .format(title.replace("'","''"), year, stars, mpaa, country))
 
   #commit the changes to the db (if any)
