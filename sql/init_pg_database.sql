@@ -17,14 +17,10 @@ mid serial NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 year smallint NOT NULL,
--- my star rating for the movie (or "haven't seen it"). Only 11 possible values
--- (listed in the integrity constraint section at the end of this file.
--- smallint to save space--front-end can translate the number to a star rating.
-star_rating smallint DEFAULT NULL,
--- mpaa rating (PG, R, etc).  Only 7 possible values (listed in the integrity
--- constraints section at the end of this file).  smallint to save space--front-
--- end can translate the number to the MPAA rating as a string.
-mpaa smallint DEFAULT NULL,
+-- my star rating for the movie ("****", "NO STARS", "not seen", etc)
+star_rating text DEFAULT NULL,
+-- mpaa rating ("PG", "R", etc)
+mpaa text DEFAULT NULL,
 -- country of origin. I only care about a movie being associated with one
 -- country, so there is no country <--> movie relationship.  In order to prevent
 -- inserting spelling errors and bogus countries (e.g. france instead of France,
