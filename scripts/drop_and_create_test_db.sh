@@ -39,6 +39,21 @@ sleep 0.5
 psql -U postgres -d test -f $filth_sql_path/tyler.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
 
 
+echo "Populating mpaa table..."
+sleep 0.5
+psql -U postgres -d test -f $filth_sql_path/mpaa.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+
+
+echo "Populating star_rating table..."
+sleep 0.5
+psql -U postgres -d test -f $filth_sql_path/star_rating.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+
+
+echo "Populating position table..."
+sleep 0.5
+psql -U postgres -d test -f $filth_sql_path/position.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+
+
 echo "Populating crewperson table..."
 psql -U postgres -d test -f $filth_sql_path/crew_person.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
 
