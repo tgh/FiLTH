@@ -930,7 +930,7 @@ public class OscarParser implements GracefulShutdown {
       // years of the MPAA rating system)
       if (year >= 1968) {
         while (true) {
-          System.out.print("  MPAA: ");
+          System.out.print("  MPAA (0=NR, 1=G, 2=PG, 3=PG-13, 4=R, 5=X, 6=NC-17): ");
           //make sure the user's entry is valid
           try {
             mpaa = Integer.parseInt(stdinReader.readLine());
@@ -943,6 +943,16 @@ public class OscarParser implements GracefulShutdown {
             System.out.println("**Oops--not a valid mpaa id.");
           }
         }
+      }
+      //convert the mpaa integer to its respective string representation
+      String Mpaa = convertToMpaaString(mpaa);
+      //this should never happen
+      if (Mpaa == null) {
+        Mpaa = "DEFAULT";
+      }
+      //add apostophes around the mpaa rating
+      else {
+        Mpaa = "'" + Mpaa + "'";
       }
       //prompt the user for the country of the movie
       System.out.print("  Country (or 'u' for unknown): ");
@@ -958,7 +968,8 @@ public class OscarParser implements GracefulShutdown {
         openMovieSqlFile();
       }
       //write the appropriate sql for this movie
-      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", -2, " + mpaa + ", " + country + ", NULL);");
+      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", 'not seen', " + Mpaa + ", " + country + ", NULL);");
+      movieFileWriter.write("  -- nominated for Academy Award: " + oscars.get(1));
       movieFileWriter.newLine();
       log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to the new movie sql file.", 1, false);
     }
@@ -1054,18 +1065,31 @@ public class OscarParser implements GracefulShutdown {
       if (first != null) {
         first = "'" + first + "'";
       }
+      else {
+        first = "DEFAULT";
+      }
       if (middle != null) {
         middle = "'" + middle + "'";
       }
+      else {
+        middle = "DEFAULT";
+      }
       last = "'" + last + "'";
+      
+      //determine the position (director, actor, screenwriter, etc) of the crew person
+      String position = "'" + getOccupation(oscars.get(1)) + "'";
+      //this should never happen
+      if (position.equals("'**Unknown occupation**'")) {
+        position = "DEFAULT";
+      }
 
       //open the crew_person sql file if not already opened
       if (crewFileWriter == null) {
         openCrewSqlFile();
       }
       //write the sql insert statement for this person to the appropriate file
-      crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ");");
-      crewFileWriter.write("  -- " + getOccupation(oscars.get(1)));
+      crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ", " + position + ");");
+      crewFileWriter.write("  -- " + position);
       crewFileWriter.newLine();
       log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to new crew sql file.", 1, false);
     }
@@ -1123,8 +1147,11 @@ public class OscarParser implements GracefulShutdown {
     if (category.startsWith("Best D")) {
       return "Director";
     }
-    if (category.contains("Act")) {
+    if (category.contains("Actor")) {
       return "Actor";
+    }
+    if (category.contains("Actress")) {
+      return "Actress";
     }
     return "**Unknown occupation**";
   }
@@ -1176,5 +1203,26 @@ public class OscarParser implements GracefulShutdown {
       return true;
     }
     return false;
+  }
+
+  //--------------------------------------------------------------------------
+
+  /**
+   * Converts the given integer to its respective MPAA rating string.
+   *
+   * @param mpaa An integer representing an MPAA rating.
+   * @return String
+   */
+  private String convertToMpaaString(int mpaa) {
+    switch(mpaa) {
+      case 0: return "NR";
+      case 1: return "G";
+      case 2: return "PG";
+      case 3: return "PG-13";
+      case 4: return "R";
+      case 5: return "X";
+      case 6: return "NC-17";
+      default: return null;
+    }
   }
 }
