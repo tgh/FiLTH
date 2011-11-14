@@ -1731,7 +1731,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Waking Sleeping Beauty', 2010, '**½', 'PG',
 INSERT INTO movie VALUES (DEFAULT, 'Walk the Line', 2005, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Walkabout', 1971, '***½', 'R', 'Australia', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'WALL-E', 2008, '****', 'G', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Wall Street', 1987, '**½', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Wall Street', 1987, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Wallace & Gromit in the Curse of the Were Rabbit', 2005, '***', 'G', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Waltz with Bashir', 2008, '**½', 'R', 'Israel', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Wanted', 2008, '**', 'R', 'USA', DEFAULT);
@@ -2198,7 +2198,7 @@ INSERT INTO movie VALUES (DEFAULT, 'A Special Day', 1977, 'not seen', 'NR', 'Ita
 INSERT INTO movie VALUES (DEFAULT, 'The Buddy Holly Story', 1978, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Boys from Brazil', 1978, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Comes a Horseman', 1978, 'not seen', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, '...And Justice for All', 1979, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, '...And Justice for All', 1979, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Rose', 1979, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Black Stallion', 1979, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Stunt Man', 1980, 'not seen', 'R', 'USA', DEFAULT);
@@ -3329,3 +3329,4 @@ INSERT INTO movie VALUES (DEFAULT, 'These Three', 1936, 'not seen', 'NR', 'USA',
 INSERT INTO movie VALUES (DEFAULT, 'Sand', 1949, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Men', 1950, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Cove', 2009, '***½', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Take Shelter', 2011, '***½', 'R', 'USA', NULL);
