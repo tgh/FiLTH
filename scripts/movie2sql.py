@@ -102,8 +102,8 @@ def checkForUpdate(title, year, stars, mpaa, country):
     response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n) "\
                          .format(title,\
                                  year,\
-                                 models.MovieMgr.starRatingToString(stars),\
-                                 models.MovieMgr.mpaaToString(mpaa),\
+                                 stars,\
+                                 mpaa,\
                                  country))
     if response.lower() == 'n':
       return False
@@ -143,17 +143,17 @@ def checkForUpdate(title, year, stars, mpaa, country):
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, movieSqlFile))
 
   #output message
-  print "UPDATE:\n   original: \"{0}\" ({1}) {2} [{3}] {4}"\
+  print "\nUPDATE:\n   updated: \"{0}\" ({1}) {2} [{3}] {4}"\
          .format(title,\
                  year,\
-                 models.MovieMgr.starRatingToString(stars),\
-                 models.MovieMgr.mpaaToString(mpaa),\
+                 stars,\
+                 mpaa,\
                  country)
-  print "    updated: \"{0}\" ({1}) {2} [{3}] {4}\n"\
+  print "    original: \"{0}\" ({1}) {2} [{3}] {4}\n"\
          .format(origTitle,\
                  origYear,\
-                 models.MovieMgr.starRatingToString(origStars),\
-                 models.MovieMgr.mpaaToString(origMpaa),\
+                 origStars,\
+                 origMpaa,\
                  origCountry)
   return True
 
