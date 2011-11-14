@@ -86,9 +86,10 @@ DROP TABLE IF EXISTS filth.crew_person CASCADE;
 CREATE TABLE filth.crew_person (
 cid serial NOT NULL,
 l_name varchar(20) NOT NULL,
-f_name varchar(20) DEFAULT NULL,
-m_name varchar(15) DEFAULT NULL,
-known_as varchar(16) DEFAULT NULL);
+f_name varchar(20) DEFAULT NULL,      -- first and middle names can be NULL (in
+m_name varchar(15) DEFAULT NULL,      -- cases such as Madonna, Cher,
+known_as varchar(16) DEFAULT NULL);   -- Costa-Gavras, etc, their names will be
+                                      -- considered last names)
 
 
 -- crewperson <--> movie relationship

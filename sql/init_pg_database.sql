@@ -78,9 +78,9 @@ DROP TABLE IF EXISTS crew_person CASCADE;
 CREATE TABLE crew_person (
 cid serial NOT NULL,
 l_name text NOT NULL,
-f_name text DEFAULT NULL,
-m_name text DEFAULT NULL,
-known_as text DEFAULT NULL);
+f_name text DEFAULT NULL,     -- first and middle names can be NULL (in cases
+m_name text DEFAULT NULL,     -- such as Madonna, Cher, Costa-Gavras, etc, their
+known_as text DEFAULT NULL);  -- names will be considered last names)
 
 -- At this point, Postgres creates an implicit sequence "crew_person_cid_seq"
 -- for cid (the primary key for crew_person).  Since the oscar_given_to and
