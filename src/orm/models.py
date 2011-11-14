@@ -17,7 +17,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 #create connection to db, session, declarative Base, etc.
-engine = create_engine('postgresql://postgres:xxx@localhost/xxx', echo=True)
+engine = create_engine('postgresql://postgres:xxx@localhost/xxx', echo=False)
 Session = scoped_session(sessionmaker(bind=engine, autoflush=True))
 Base = declarative_base()
 Base.metadata.bind = engine
@@ -50,6 +50,7 @@ class CrewPerson(Base):
   l_name = Column(Text, nullable=False)
   f_name = Column(Text, default=None)
   m_name = Column(Text, default=None)
+  known_as = Column(Text, ForeignKey('position.position_title'), default=None)
 
   #movies property defined by relationship() in Movie
 
@@ -60,8 +61,31 @@ class CrewPerson(Base):
 worked_on = Table('worked_on', Base.metadata,
   Column('mid', SmallInteger, ForeignKey('movie.mid'), primary_key=True),
   Column('cid', SmallInteger, ForeignKey('crew_person.cid'), primary_key=True),
-  Column('position', Text, primary_key=True)
+  Column('position', Text, ForeignKey('position.position_title'), primary_key=True)
 )
+
+
+#------------------------------------------------------------------------------
+
+"""
+position
+
+  position_title text NOT NULL
+
+  PRIMARY KEY (position_title)
+"""
+class Position(Base):
+  __tablename__ = 'position'
+
+  def __repr__(self):
+    return "<POSITION: {0}>".format(self.position_title)
+
+
+  #attributes
+  position_title = Column(Text, primary_key=True)
+
+  #relationships
+  crew_persons = relationship(CrewPerson)
 
 
 #------------------------------------------------------------------------------
@@ -197,52 +221,10 @@ tyler_given_to = Table('tyler_given_to', Base.metadata,
 
 class MovieMgr():
   """Contains non-instance methods for Movie activity."""
+  pass
 
-  @staticmethod
-  def starRatingToString(rating):
-    """Converts the given integer to its corresponding string star rating."""
 
-    if   -2 == rating:
-      return "not seen"
-    elif -1 == rating:
-      return "N/A"
-    elif  0 == rating:
-      return "NO STARS"
-    elif  1 == rating:
-      return "1/2*"
-    elif  2 == rating:
-      return "*"
-    elif  3 == rating:
-      return "*1/2"
-    elif  4 == rating:
-      return "**"
-    elif  5 == rating:
-      return "**1/2"
-    elif  6 == rating:
-      return "***"
-    elif  7 == rating:
-      return "***1/2"
-    elif  8 == rating:
-      return "****"
-
-  @staticmethod
-  def mpaaToString(rating):
-    """Converts the given integer to its corresponding string MPAA rating."""
-
-    if   0 == rating:
-      return "NR"
-    elif 1 == rating:
-      return "G"
-    elif 2 == rating:
-      return "PG"
-    elif 3 == rating:
-      return "PG-13"
-    elif 4 == rating:
-      return "R"
-    elif 5 == rating:
-      return "X"
-    elif 6 == rating:
-      return "NC-17"
+#------------------------------------------------------------------------------
 
 
 """
@@ -272,8 +254,8 @@ class Movie(Base):
   mid = Column(SmallInteger, autoincrement=True, primary_key=True)
   title = Column(Text, nullable=False)
   year = Column(SmallInteger, nullable=False)
-  star_rating = Column(SmallInteger, default=None)
-  mpaa = Column(SmallInteger, default=None)
+  star_rating = Column(Text, ForeignKey('star_rating.rating'), default=None)
+  mpaa = Column(Text, ForeignKey('mpaa.rating'), default=None)
   country = Column(Text, ForeignKey('country.country_name'), default=None)
   comments = Column(Text, default=None)
 
@@ -303,6 +285,54 @@ class Country(Base):
 
   #attributes
   country_name = Column(Text, primary_key=True)
+
+  #relationships
+  movies = relationship(Movie)
+
+
+#------------------------------------------------------------------------------
+
+
+"""
+star_rating
+
+  rating text NOT NULL
+
+  PRIMARY KEY (rating)
+"""
+class StarRating(Base):
+  __tablename__ = 'star_rating'
+
+  def __repr__(self):
+    return "<STAR_RATING: {0}>".format(self.rating)
+
+
+  #attributes
+  rating = Column(Text, primary_key=True)
+
+  #relationships
+  movies = relationship(Movie)
+
+
+#------------------------------------------------------------------------------
+
+
+"""
+mpaa
+
+  rating text NOT NULL
+
+  PRIMARY KEY (rating)
+"""
+class Mpaa(Base):
+  __tablename__ = 'mpaa'
+
+  def __repr__(self):
+    return "<MPAA: {0}>".format(self.rating)
+
+
+  #attributes
+  rating = Column(Text, primary_key=True)
 
   #relationships
   movies = relationship(Movie)
