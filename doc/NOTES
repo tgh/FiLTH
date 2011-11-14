@@ -1,5 +1,9 @@
 WHERE LEFT OFF
 ---------------
+
+- fix unicode issues with movie2sql.py and models.py
+- add unique key to movie in models.py
+- need to update README "Files" section
 - add code to OscarParser to create worked_on.sql
 - I dropped and created test db and it has 1 less movie that filth??? need to
   rerun OscarParser after filth is dropped and created?
@@ -15,24 +19,8 @@ NEEDS
 
 IDEAS/THOUGHTS
 ---------------
-- storing text values as ints (star rating, mpaa, etc) will cause a lot of
-  function calls in the front end to convert these values to corresponding text
-  (e.g. 8 -> "****" or 4 -> "R").  Also if any value is desired to be added to
-  the domain of any of these attributes, the check constraint must be updated
-  as well, which is sloppy ( would have to drop it, then add it again with the
-  new maximum value allowed).  Thus, should we eliminate this convention and
-  simply store '*', '***', '***½', 'R', 'PG', 'PG-13', etc into the database?
-  This greatly increases occupied space on the disk, but it's not horrible.  If
-  so, there would also have to be "integrity entities" as I call them that will
-  insure no spelling errors are inserted (this is currently in use for
-  attributes such as movie.country, crew_person.known_as, and
-  worked_on.position).
-
 - change list_contains pkey? (I'm sure there's going to be some lists that have
   the same movie on it 2 or more times...)
-
-- crewperson f_name and m_name can be NULL, so names such as Cher and Madonna
-  are last names.
 
 - for the web app, the lists will be pdf files linked from the home page (?)
 
@@ -42,22 +30,9 @@ IDEAS/THOUGHTS
   EDIT: there are search mechanisms (at least in Postgres) that WILL catch these
   accented characters I think...
 
-- should 'position' attribute of worked_on be a part of the primary key (so
-  when a person has multiple positions in a movie--actor/director, for example
-  --each instance is a unique tuple)?  This is the way it is currently.
-  Or should this not be the case (so that a person that worked on a movie onlys
-  appears once in the table (e.g. position value "Director, Actor")?
-
 - add category to oscar_given_to table and make it a foreign key to the
   oscar table (like country is to movie) to eliminate another join.  This will
   add significant storage, however. (ditto for tyler_given_to)
-
-- if you do use integers for data such as MPAA, country, position, star rating,
-  etc., maybe there should be a config or settings file for the front-end to be
-  read in at load time for translating the integers ??
-
-- list_contains's primary key and/or schema may need to be changed: there should
-  be more flexibility so that a movie can be on a list more than once...
 
 
 HELPFUL HINTS/REMINDERS
@@ -84,6 +59,9 @@ HELPFUL HINTS/REMINDERS
 
   select * from crew_person where f_name =
   to_ascii(convert_to('Penélope', 'latin1'), 'latin1');
+
+- crew persons with one name (e.g. Cher, Costa-Gavras) have their names in the
+  db as last names
 
 
 REFERENCES
