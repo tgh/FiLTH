@@ -56,7 +56,7 @@ else
   # append the new insertions to the main movie,sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
   # insert the additions into the Postgres database
-  psql -U postgres -d test -f $filth_temp_path/movie_additions.sql
+  psql -U postgres -d filth -f $filth_temp_path/movie_additions.sql
 fi
 
 # create a PDF of the movie ratings document (creates $filth_path/pdf/movie_ratings.pdf)
