@@ -2025,7 +2025,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Funny Girl', 1968, 'not seen', 'G', 'USA', D
 INSERT INTO movie VALUES (DEFAULT, 'The Lion in Winter', 1968, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Rachel, Rachel', 1968, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Anne of the Thousand Days', 1969, 'not seen', 'PG', 'England', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Z', 1969, 'not seen', 'PG', 'France', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Z', 1969, '***½', 'PG', 'France', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Hello, Dolly!', 1969, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Nicholas and Alexandra', 1971, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Fiddler on the Roof', 1971, 'not seen', 'G', 'USA', DEFAULT);
@@ -3330,3 +3330,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Sand', 1949, 'not seen', 'NR', 'USA', DEFAUL
 INSERT INTO movie VALUES (DEFAULT, 'The Men', 1950, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Cove', 2009, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Take Shelter', 2011, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'J. Edgar', 2011, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Rise of the Planet of the Apes', 2011, '**½', 'PG-13', 'USA', NULL);
