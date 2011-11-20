@@ -94,7 +94,7 @@ def checkForUpdate(title, year, stars, mpaa, country):
   #query for the movie in the db using the title and year since there is a
   # unique contraint on movies with those attributes
   try:
-    movie = models.Movie.query.filter(models.Movie.title == title).filter(models.Movie.year == year).one()
+    movie = models.Movie.query.filter(models.Movie.title == unicode(title, 'utf_8')).filter(models.Movie.year == year).one()
   #even though the movie was not found in the db, this still might be an update
   # (for the title, or year, or both)
   except NoResultFound:
@@ -119,14 +119,14 @@ def checkForUpdate(title, year, stars, mpaa, country):
       except ValueError:
         print "\t**ERROR: invalid id."
     #update the title and/or year
-    if movie.title != title:
+    if movie.title != unicode(title, 'utf_8'):
       origTitle = movie.title
       movie.title = title
     if movie.year != year:
       origYear = movie.year
       movie.year = year
   #update what needs updating
-  if movie.star_rating != stars:
+  if movie.star_rating != unicode(stars, 'utf_8'):
     origStars = movie.star_rating
     movie.star_rating = stars
   if movie.mpaa != mpaa:
@@ -138,18 +138,18 @@ def checkForUpdate(title, year, stars, mpaa, country):
 
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars, origMpaa, origCountry)
+  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
   replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, movieSqlFile))
 
   #output message
-  print "\nUPDATE:\n   updated: \"{0}\" ({1}) {2} [{3}] {4}"\
+  print "\nUPDATE:\n    updated: \"{0}\" ({1}) {2} [{3}] {4}"\
          .format(title,\
                  year,\
                  stars,\
                  mpaa,\
                  country)
-  print "    original: \"{0}\" ({1}) {2} [{3}] {4}\n"\
+  print "   original: \"{0}\" ({1}) {2} [{3}] {4}\n"\
          .format(origTitle,\
                  origYear,\
                  origStars,\

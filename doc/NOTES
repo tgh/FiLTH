@@ -1,7 +1,8 @@
 WHERE LEFT OFF
 ---------------
 
-- fix unicode issues with movie2sql.py and models.py
+- fixing unicode issues with movie2sql.py and models.py...
+- change Text types in models.py to Unicode for some attributes
 - add unique key to movie in models.py
 - need to update README "Files" section
 - add code to OscarParser to create worked_on.sql
@@ -62,6 +63,11 @@ HELPFUL HINTS/REMINDERS
 
 - crew persons with one name (e.g. Cher, Costa-Gavras) have their names in the
   db as last names
+
+- in Postgres, the output of an insert is:
+  "INSERT <OID of the new row> <the number of rows inserted>"
+  e.g.
+  INSERT 0 1
 
 
 REFERENCES
