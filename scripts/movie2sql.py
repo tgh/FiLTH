@@ -135,10 +135,9 @@ def checkForUpdate(title, year, stars, mpaa, country):
   if movie.country != country:
     origCountry = movie.country
     movie.country = country
-
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
+  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
   replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, movieSqlFile))
 
@@ -150,9 +149,9 @@ def checkForUpdate(title, year, stars, mpaa, country):
                  mpaa,\
                  country)
   print "   original: \"{0}\" ({1}) {2} [{3}] {4}\n"\
-         .format(origTitle,\
+         .format(origTitle.encode('utf-8'),\
                  origYear,\
-                 origStars,\
+                 origStars.encode('utf-8'),\
                  origMpaa,\
                  origCountry)
   return True
