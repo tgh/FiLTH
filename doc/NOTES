@@ -2,15 +2,7 @@ WHERE LEFT OFF
 ---------------
 
 - fixing unicode issues with movie2sql.py and models.py...
-- change Text types in models.py to Unicode for some attributes
-- add unique key to movie in models.py
-- need to update README "Files" section
-- add code to OscarParser to create worked_on.sql
-- I dropped and created test db and it has 1 less movie that filth??? need to
-  rerun OscarParser after filth is dropped and created?
-- ½ is in database (in" 8½") -- might cause problems in Python (w/unicode)
-- rather than run psql straight on oscar_given_to.sql, should drop_and_...sh
-  scripts run OscarParser first, then run oscar_given_to.sql
+- need scripts to parse filmographies for worked_on table
 
 
 NEEDS
@@ -34,6 +26,9 @@ IDEAS/THOUGHTS
 - add category to oscar_given_to table and make it a foreign key to the
   oscar table (like country is to movie) to eliminate another join.  This will
   add significant storage, however. (ditto for tyler_given_to)
+
+- rather than run psql straight on oscar_given_to.sql, should drop_and_...sh
+  scripts run OscarParser first, then run oscar_given_to.sql?
 
 
 HELPFUL HINTS/REMINDERS
