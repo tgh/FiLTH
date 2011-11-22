@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column
 from sqlalchemy import SmallInteger
 from sqlalchemy import Text
+from sqlalchemy import Unicode
 from sqlalchemy import Table
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Query
@@ -14,10 +15,11 @@ from sqlalchemy.orm import relationship
 from sqlalchemy.orm import scoped_session
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.schema import UniqueConstraint
 
 
 #create connection to db, session, declarative Base, etc.
-engine = create_engine('postgresql://postgres:xxx@localhost/xxx', echo=False)
+engine = create_engine('postgresql://postgres:xxx@localhost/filth', echo=False)
 Session = scoped_session(sessionmaker(bind=engine, autoflush=True))
 Base = declarative_base()
 Base.metadata.bind = engine
@@ -265,6 +267,9 @@ class Movie(Base):
   oscars = relationship(Oscar, secondary=oscar_given_to)
   lists  = relationship(List, backref='movies', secondary=list_contains)
   tylers = relationship(Tyler, secondary=tyler_given_to)
+
+  #unique constraint
+  UniqueConstraint('title', 'year', name='movie_unique_constraint')
 
 
 #------------------------------------------------------------------------------
