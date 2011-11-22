@@ -35,6 +35,14 @@ Files
     project.  Used for logging in java programs such as /bin/OscarParser, as
     well as its database "virtual console".
 
+  country2sql
+
+    Parses the file given as its only argument and produces sql insert
+    statements for the database's country table.  To be used with
+    /data/country.txt as its argument.  Use shell redirection to store the sql
+    statements into /sql/country.sql.  Compiled from /src/country2sql.hs Haskell
+    source file.
+
   genre2sql
 
     Parses the file given as its only argument and produces sql insert
@@ -78,6 +86,23 @@ Files
     (as of now, 6/1/11, it has not been used) to help populate the worked_on
     table of the database.
 
+  best_film_scores.txt
+
+    A list of films notable for their excellent scores.  Will probably be used
+    to create a list in the database (there are tables called "list" and
+    "list_contains" that model a list pertaining to movies).
+
+  best_of_2000s.txt
+
+    "Best of" lists for the 2000's.  Will probably be used to create lists in
+    the database (there are tables called "list" and "list_contains" that model
+    a list pertaining to movies).
+
+  country.txt
+
+    Countries that the database will contain in its "country" table.  This is
+    used to create /sql/country.sql.
+
   crew_person.txt
 
     A list of as many actors, directors, cinematographers, and writers as I
@@ -97,9 +122,14 @@ Files
 
     Filmographies of directors formatted like a list in the same way as
     /data/actedin.txt to make parsing easier for scripts and programs.  This
-    file will be used (as of now, 6/1/11, it has not been used) to help populate
-    the worked_on table of the database... or maybe not.  Filmographies.doc
-    may be used instead (see /data/Filmographies.doc).
+    file will be used (as of now, 11/22/11, it has not been used) to help
+    populate the worked_on table of the database... or maybe not.
+    Filmographies.doc may be used instead (see /data/Filmographies.doc).
+
+  ebert_top_ten.txt
+
+    Roger Ebert's annual top ten movie lists.  These will be re-created in the
+    database with the "list" and "list_contains" tables. 
 
   Filmographies.doc
 
@@ -128,6 +158,18 @@ Files
     that this document provides.  antiword is used to convert this document to
     plain text in the /scripts/movie.sh shell script, and then taken from there.
     (see /scripts/movie.sh)
+
+  movies_seen.txt
+
+    An ongoing list of 2005-present movies seen, as well as data for the "Tyler"
+    awards (like oscars, but categories, nominees, and winners chosen by me).
+    This will be used to create best-of lists in the database as well as data
+    for the "tyler" and "tyler_given_to" tables.
+
+  movies_to_see.txt
+
+    Just a list of movies I would like to see.  There will most likely be a
+    continually changing list in the database for movies to see.
 
   oscar.txt
 
@@ -161,13 +203,31 @@ Files
 
     An ad hoc list of movies I have seen a long time ago, but have not been
     reviewed (and, thus, not in the Movie_Ratings.doc document).  As of now
-    (6/1/11) this file is not in use for FiLTH.
+    (11/22/11) this file is not in use for FiLTH.
+
+  scenes_shots.txt
+
+    Lists of notable scenes and shots in films.  This will probably be used to
+    create lists in the database (there are tables called "list" and
+    "list_contains" that model a list pertaining to movies).
 
   shot.txt
 
     Filmographies of cinematographers listed in the same format as actedin.txt
     and directed.txt.  This file will be used (as of now, 6/1/11, it has not
     been used) to help populate the worked_on table of the database.
+
+  siskel_and_roeper_top_tens.txt
+
+    Top ten movies of the year from Gene Siskel and Richard Roeper.  Will be
+    used to create lists in the database (there are tables called "list" and
+    "list_contains" that model a list pertaining to movies).
+
+  Tyler's 100 Greatest Movies List.doc
+
+    An old list representing what I think/thought are/were the greatest 100
+    movies of all time.  This will be re-created in the database using the
+    "list" and "list_contains" tables.
 
   wrote.txt
 
@@ -250,6 +310,11 @@ Files
 
     Shell script that compiles /src/OscarParser.java into /bin/OscarParser.class
 
+  country.sh
+
+    Shell script to create the /sql/country.sql file using /bin/country2sql and
+    /data/country.txt.
+
   crew2sql.py
 
     Python script that produces sql insert statements to populate the
@@ -274,9 +339,9 @@ Files
 
     where temp2 is the text translation of data/Movie_Ratings.doc produced by
     antiword.  It parses the diff output for the new lines in temp2 that are not
-    in /temp/previous_movie_ratings.txt, essentially grabbing the movies that
-    were added since the previous run of the movie.sh script.  It prints these
-    to stdout to be redirected within the movie.sh script.
+    in /temp/previous_movie_ratings.txt, as well as lines that have changed
+    (e.g. if I changed the star rating for a movie).  It prints these to stdout
+    to be redirected within the movie.sh script.
 
   drop_and_create_filth_db.sh
 
@@ -304,34 +369,60 @@ Files
     does specifically is translates the /data/Movie_Ratings.doc (which documents
     all of the movies I have seen and rated) into a text file, does some
     cleaning and transformations using sed, and feeds that to the
-    scripts/movie2sql.py Python script to create the sql insert statements
-    (which are output to stdout and redirected to /sql/movie.sql).
+    scripts/movie2sql.py Python script to write the sql insert statements to
+    /sql/movie.sql.
 
     Upon the first run of the script, the temporary file,
     /temp/previous_movie_ratings.txt, is created; it is a copy of the text
     translation of /data/Movie_Ratings.doc that is created by antiword.
     Subsequent runnings of this script runs a diff on that temporary file and
     a new text file translation of the Movie_Ratings.doc to see what has been
-    added*.  The results of the diff are piped to the /scripts/diff.py Python
-    script (see /scripts/diff.py).  So, subsequent runnings of this script
-    create sql insert statements only for those movies that were added to the
-    Movie_Ratings.doc document since the last time, which are then redirected to
-    the temporary file, /temp/movie_additions.sql, as well as appended to
-    /sql/movie.sql
+    added or changed*.  The results of the diff are piped to the
+    /scripts/diff.py Python script (see /scripts/diff.py).  So, subsequent
+    runnings of this script create sql insert statements only for those movies
+    that were added to the Movie_Ratings.doc document since the last time, which
+    are then redirected to the temporary file, /temp/movie_additions.sql, as
+    well as appended to /sql/movie.sql.  The /temp/movie_additions.sql file is
+    then used by psql to add the new movies directly to the database.
+    Movie updates, however, are dealt with differently.  Python's SQLAlchemy is
+    used in movie2sql.py (see /scripts/movie2sql.py) to see if the movie found
+    in the diff is already in the database, and if it is, the appropriate
+    updates are made directly in the database through the ORM of SQLAlchemy.
+    The movie2sql.py script also makes a system call to use sed to update the
+    sql insert statement inside movie.sql for that particular movie.
+    If a movie from the diff is not in the database, the user is asked if this
+    is an update or not (because, even though it is not found in the database,
+    it is possible that it is an update of the title or year of the movie).
 
-    *WARNING: this script does not account for changes or deletions of movies in
-    the Movie_Ratings.doc document.  If a movie needs to be deleted or changed,
-    it must be done manually: you MUST DELETE /temp/previous_movie_ratings.txt,
-    rerun this script, and apply the changes manually in the database (or drop
-    and re-populate the movie table in the database).
+    The end of this script then creates /pdf/movie_ratings.pdf--a PDF file for
+    the movies listed in /data/Movie_Ratings.doc.
+
+    *WARNING: this script does not account for deletions of movies in the
+    Movie_Ratings.doc document.  If a movie needs to be deleted, it must be done
+    manually: you MUST DELETE /temp/previous_movie_ratings.txt, rerun this
+    script, and apply the changes manually in the database (or drop and
+    re-populate the movie table in the database).
 
   movie2sql.py
 
     This Python script is only used in the /scripts/movie.sh shell script.  It
     takes the text produced by the movie.sh script after its cleaning and
-    transformations and produces the necessary sql insert statements (to stdout,
-    which are redirected to /sql/movie.sql and/or /temp/movie_additions.sql).
-    (see /scripts/movie.sh)
+    transformations as an argument as well as an optional "-u" switch, which
+    indicates that it should run in update mode, rather than just insertion mode
+    (where it just creates sql INSERT statements for the movies in the given
+    file).  When it's a first run (there is no /temp/previous_movie_ratings.txt
+    when /scripts/movie.sh is run), movie.sh runs movie2sql.py without the -u,
+    which then just creates the previous_movie_ratings, movie.sql, and
+    movie_ratings.pdf.  Any other runs, however, causes movie2sql.py to run with
+    the -u option, which causes the script to use SQLAlchemy (a Pyhton Object-
+    Relational Mapper) to check for (and apply) updates to the database.
+    Updates are also made to movie.sql via a system call of sed.
+
+  movie_ratings_to_LaTeX.py
+
+    This is used within the /scripts/movie_ratings_to_pdf.sh shell script.  It
+    is not to be used directly.  It takes the text file created within the
+    movie_ratings_to_pdf script and creates a .tex file from it.
 
   movie_ratings_to_pdf.sh
 
@@ -340,12 +431,6 @@ Files
     pdf generated by this script lies in /pdf as movie_ratings.pdf.  The result
     does not include MPAA ratings or countries of the movies as the Word doc
     does.
-
-  movie_ratings_to_LaTeX.py
-
-    This is used within the /scripts/movie_ratings_to_pdf.sh shell script.  It
-    is not to be used directly.  It takes the text file created within the
-    movie_ratings_to_pdf script and creates a .tex file from it.
 
   oscarGivenTo.sh
 
@@ -387,13 +472,20 @@ Files
 
 /sql (.sql files)
 
+  country.sql
+
+    SQL insert statements for populating the country table.
+
   crew_person.sql
 
-    SQL insert statements for populating the crew_person table.
+    SQL insert statements for populating the crew_person table.  Created using
+    /scripts/crew_person.sh using /data/crew_person.txt.  More statements were
+    appended with /bin/OscarParser (which is run by /scripts/runop.sh).
 
   genre.sql
 
-    SQL insert statements for populating the genre table.
+    SQL insert statements for populating the genre table.  Created by
+    /bin/genre2sql using /data/genre.txt.
 
   init_mysql_database.sql
 
@@ -409,21 +501,54 @@ Files
 
   movie.sql
 
-    SQL insert statements for populating the movie table.
+    SQL insert statements for populating the movie table.  Created by
+    /scripts/movie.sh.
+
+  mpaa.sql
+
+    SQL insert statements for populating the mpaa table.  Created by hand since
+    it's so small.
 
   oscar.sql
 
-    SQL insert statements for populating the oscar table.
+    SQL insert statements for populating the oscar table.  Created by
+    /bin/oscar2sql using data.oscar.txt.
 
   oscar_given_to.sql
 
-    SQL insert statements for populating the oscar_given_to table.
+    SQL insert statements for populating the oscar_given_to table.  Created by
+    /bin/OscarParser (which is run by /scripts/runop.sh).
+
+  position.sql
+
+    SQL insert statements for populating the position table.  Created by hand
+    since it's so small.
+
+  star_rating.sql
+
+    SQL insert statements for populating the star_rating table.  Created by hand
+    since it's so small.
 
   tyler.sql
 
     SQL insert statements for populating the tyler table.
 
+  worked_on.sql
+
+    SQL insert statements for populating the worked_on table.  Created by
+    /bin/OscarParser (which is run by /scripts/runop.sh).  More statements will
+    be appended once scripts are written to parse filmographies...
+
 /src (source code files)
+
+  /orm/models.py
+
+    Python source using SQLAlchemy to map the database to Python objects and to
+    connect directly to the database via the objects.
+
+  country2sql.hs
+
+    Haskell source code for /bin/country2sql. (see /bin/country2sql)
 
   genre2sql.hs
 
@@ -452,6 +577,10 @@ Files
     temporary files so that I can easily go bask and look at the output later or
     if the output is so large to overflow the terminal display buffer (or
     whatever it's called).
+
+  example_oscar_query.sql
+
+    Just an example query for getting oscar data.
 
   movie_additions.sql
    
@@ -508,12 +637,10 @@ Files
     This was replaced by /scripts/crew2sql.py Python script.
     (see /trash/CSV.hs)
 
-  movie2sql.hs
+  movie2sql.c
 
     This was replaced by /scripts/movie2sql.py Python script.
     (see /trash/CSV.hs)
-
-/web (web pages)
 
   *.php
 
@@ -522,6 +649,10 @@ Files
     and refer to the database as it was back then--in other words, a different
     schema.  These are here as a basis for future web pages if FiLTH becomes a
     web app as well.
+
+/web (web pages)
+
+  [currently empty]
 
 /workspace (directory to mess around, experiment, and test)
 
