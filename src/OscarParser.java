@@ -34,6 +34,8 @@ public class OscarParser implements GracefulShutdown {
   private BufferedWriter movieFileWriter = null;
   //for file output to crew_person sql file (crew persons not in the db)
   private BufferedWriter crewFileWriter = null;
+  //for file output to worked_on sql file (crew persons worked on a movie)
+  private BufferedWriter workedFileWriter = null;
   //for reading from stdin
   private BufferedReader stdinReader = new BufferedReader(new InputStreamReader(System.in));
   //name of the db
@@ -113,6 +115,15 @@ public class OscarParser implements GracefulShutdown {
     }
     catch (IOException ioe) {
       log.logFatalError("Unable to create/open oscar_given_to.sql",0,false);
+      ioe.printStackTrace();
+      System.exit(1); 
+    }
+    //open file to write the sql insert staments for the worked_on table
+    try {
+      workedFileWriter = new BufferedWriter(new FileWriter(filthPath + "/sql/worked_on.sql"));
+    }
+    catch (IOException ioe) {
+      log.logFatalError("Unable to create/open worked_on.sql",0,false);
       ioe.printStackTrace();
       System.exit(1); 
     }
@@ -286,6 +297,7 @@ public class OscarParser implements GracefulShutdown {
       //close buffered objects
       try {
         oscarFileWriter.close();
+        workedFileWriter.close();
         if (movieFileWriter != null) {
           movieFileWriter.close();
         }
@@ -836,6 +848,10 @@ public class OscarParser implements GracefulShutdown {
       oscarFileWriter.write("INSERT INTO oscar_given_to VALUES(" + mid + ", " + oid + ", " + cid + ", " + Integer.parseInt(oscars.get(0))  + ", " + status + ", " + share + ");");
       oscarFileWriter.write("  -- " + oscars.get(0) + " " + getCategoryString(oid) + ": " + nameString + " for \"" + title + "\"");
       oscarFileWriter.newLine();
+      //write the sql insert statement for this person working on this movie
+      workedFileWriter.write("INSERT INTO worked_on VALUES(" + mid + ", " + cid + ", '" + getOccupation(oscars.get(1)) + "');");
+      workedFileWriter.write("  -- " + nameString + " worked on " + title + " as " + getOccupation(oscars.get(1)));
+      workedFileWriter.newLine();
     }
   }
 
