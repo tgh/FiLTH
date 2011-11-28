@@ -3333,3 +3333,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Take Shelter', 2011, '***½', 'R', 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'J. Edgar', 2011, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Rise of the Planet of the Apes', 2011, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Arthur Christmas', 2011, '***', 'PG', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Trust', 2011, '***½', 'R', 'USA', NULL);
