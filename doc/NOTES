@@ -4,6 +4,15 @@ WHERE LEFT OFF
 - fixing unicode issues with movie2sql.py and models.py...
 - need scripts to parse filmographies for worked_on table
 
+- The Magdalene Sisters not in database?
+- Gerry should be 2002
+- Old School not in db?
+- The Station Agent should probably be ***1/2, not ****
+- sorting on star_rating has undesired results now that it is test rather than
+  integer.  use "C" locale???
+
+- change "Hannah" to "Hanna" 
+
 
 NEEDS
 ------
