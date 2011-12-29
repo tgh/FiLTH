@@ -3337,3 +3337,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Trust', 2011, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Wall Street: Money Never Sleeps', 2010, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Hugo', 2011, '***½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Crazy, Stupid, Love.', 2011, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Artist', 2011, '****', 'PG-13', 'France', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mission: Impossible - Ghost Protocol', 2011, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sherlock Holmes: A Game of Shadows', 2011, '***', 'PG-13', 'England', NULL);
