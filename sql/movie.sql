@@ -3340,3 +3340,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Crazy, Stupid, Love.', 2011, '***', 'PG-13',
 INSERT INTO movie VALUES (DEFAULT, 'The Artist', 2011, '****', 'PG-13', 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Mission: Impossible - Ghost Protocol', 2011, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sherlock Holmes: A Game of Shadows', 2011, '***', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Apollo 18', 2011, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Step Brothers', 2008, '**½', 'R', 'USA', NULL);
