@@ -2251,7 +2251,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Dreamgirls', 2006, 'not seen', 'PG-13', 'USA
 INSERT INTO movie VALUES (DEFAULT, 'In the Valley of Elah', 2007, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Eastern Promises', 2007, 'not seen', 'R', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Charlie Wilson''s War', 2007, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'The Visitor', 2008, 'not seen', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'The Visitor', 2008, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Wrestler', 2008, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Revolutionary Road', 2008, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'A Ship Comes In', 1928, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3344,3 +3344,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Apollo 18', 2011, '**½', 'PG-13', 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'Step Brothers', 2008, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Descendants', 2011, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Girl with the Dragon Tattoo', 2011, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'We Need to Talk About Kevin', 2011, '***½', 'R', 'USA', NULL);

@@ -38,6 +38,7 @@ The Artist **** (actor: Jean Dujardin, actress: Berenice Bejo, director:
 Apollo 18 **½
 The Descendants ***½
 The Girl with the Dragon Tattoo ***
+We Need to Talk About Kevin ***½
 
 Top Ten
 1. The Artist
@@ -45,17 +46,17 @@ Top Ten
 3. Moneyball
 4. Midnight in Paris
 5. Take Shelter
-6. Margin Call
-7. The Descendants
+6. The Descendants
+7. Margin Call
 8. Rango
 9. Hugo
 10. Bill Cunningham: New York
 
 11. Trust
 12. Harry Potter and the Deathy Hollows Part 2
-13. Foo Fighters: Back and Forth
-14. The Help
-15. Drive
+13. We Need to Talk About Kevin
+14. Foo Fighters: Back and Forth
+15. The Help
 
 Best Picture
 * The Artist
@@ -79,6 +80,7 @@ Best Actress
   Viola Davis in "The Help"
 * Liana Liberato in "Trust"
   Rooney Mara in "The Girl with the Dragon Tattoo"
+  Tilda Swinton in "We Need to Talk About Kevin"
 
 Best Supporting Actor
   Adrien Brody in "Midnight in Paris"
@@ -140,7 +142,9 @@ Best Scene
   "Beane Interrogates Pete" in Moneyball
   "Around the Campfire" in Rango
   "Escape Through the Forrest" in Sherlock Holmes: A Game of Shadows
-  "Midnight Shoot at the Train Station" in Super 8  
+  "Midnight Shoot at the Train Station" in Super 8
+  "Why?" in We Need to Talk About Kevin
+  
 
 2010
 Shutter Island ****
