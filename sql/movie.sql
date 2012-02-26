@@ -3345,3 +3345,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Step Brothers', 2008, '**½', 'R', 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'The Descendants', 2011, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Girl with the Dragon Tattoo', 2011, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'We Need to Talk About Kevin', 2011, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Iron Lady', 2011, '***', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Woman in Black', 2012, '***', 'PG-13', 'England', NULL);
