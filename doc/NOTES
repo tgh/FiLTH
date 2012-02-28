@@ -1,6 +1,22 @@
 WHERE LEFT OFF
 ---------------
+- was updating "Hannah" to "Hanna" and received this output:
 
+  (21:49)tgh:~/Projects/FiLTH/scripts[master]$ ./movie.sh 
+
+  Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
+  Is this an update? (y/n) y
+
+  What is the id of the movie? 704
+  Traceback (most recent call last):
+    File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 230, in <module>
+      insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
+    File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
+      search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
+  UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+
+- pass in db name and password through command-line when running movie.sh
+  so that models.py can use them and can be unignored in .gitignore
 - fixing unicode issues with movie2sql.py and models.py...
 - need scripts to parse filmographies for worked_on table
 
@@ -11,7 +27,9 @@ WHERE LEFT OFF
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
 
-- change "Hannah" to "Hanna" 
+- change "Hannah" to "Hanna"
+
+- replace DELETE FROM ... with TRUNCATE in drop_and_... scripts
 
 
 NEEDS
