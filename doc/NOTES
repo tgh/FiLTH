@@ -15,8 +15,6 @@ WHERE LEFT OFF
       search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
   UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
 
-- pass in db name and password through command-line when running movie.sh
-  so that models.py can use them and can be unignored in .gitignore
 - fixing unicode issues with movie2sql.py and models.py...
 - need scripts to parse filmographies for worked_on table
 
@@ -26,10 +24,6 @@ WHERE LEFT OFF
 - The Station Agent should probably be ***1/2, not ****
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
-
-- change "Hannah" to "Hanna"
-
-- replace DELETE FROM ... with TRUNCATE in drop_and_... scripts
 
 
 NEEDS
@@ -56,6 +50,21 @@ IDEAS/THOUGHTS
 
 - rather than run psql straight on oscar_given_to.sql, should drop_and_...sh
   scripts run OscarParser first, then run oscar_given_to.sql?
+
+- with regard to ticket #19 (links to imdb), you could use this format for the
+  URL: http://www.imdb.com/search/title?release_date=[year-1],[year+1]&title=[title with words separated by "%20"]
+
+  for example, The Shawshank Redemption:
+
+  http://www.imdb.com/search/title?release_date=1993,1995&title=The%20Shawshank%20Redemption
+
+  There are more attributes to narrow the search, such as genres, MPAA rating,
+  etc but this should be enough.  Besides, some of the MPAA ratings in filth is
+  a little different than in IMDB (e.g. those films that were made before MPAA
+  existed), and which genres in filth would be used?
+
+  However, this still does not take you directly to the movie page, but a search
+  results page, which is what I'm trying to avoid.
 
 
 HELPFUL HINTS/REMINDERS
