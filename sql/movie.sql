@@ -701,7 +701,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Gypsy', 1962, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Half Nelson', 2006, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Hamburger Hill', 1987, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Hannibal', 2001, '**', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Hannah', 2011, '**½', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Hanna', 2011, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Hannah and Her Sisters', 1986, '****', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Hannah Montana: The Movie', 2009, '**½', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Happening', 2008, '***', 'R', 'USA', DEFAULT);
