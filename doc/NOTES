@@ -1,22 +1,39 @@
 WHERE LEFT OFF
 ---------------
-- was updating "Hannah" to "Hanna" and received this output:
+- creating a more agile environment...
+  - create a new spreadsheet for stories based on tickets.ods
+    - add columns for level (1: high, 2: medium, 3:low, 4:nice-to-have low,
+      5:nice-to-have medium, 6:nice-to-have high), points estimated, tasks #
+      (e.g. if Story #21, then tesk 21.1, 21.2, 21.3, etc)
+  - description will be like wgen story format: "As ... I would like ... " etc
+    - S19 description: As an end user, I would like the movie results of a
+      search in filth to be a URL link to the movie's IMDB page.
+  - need to doc bug statuses, bug levels, story statuses, etc
+  - create a bug spreadsheet
+    - b1
+      - status: O
+      - level: 3
+      - description: For whatever reason, Python does not handle unicode well.
+        This kind of error happens frequently.  This was a simple update of a
+        title of a movie, and dealt only with ascii characters, but it still
+        barfed on unicode?
+      - example:
 
-  (21:49)tgh:~/Projects/FiLTH/scripts[master]$ ./movie.sh 
+        was updating "Hannah" to "Hanna" and received this output:
 
-  Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
-  Is this an update? (y/n) y
+        (21:49)tgh:~/Projects/FiLTH/scripts[master]$ ./movie.sh 
 
-  What is the id of the movie? 704
-  Traceback (most recent call last):
-    File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 230, in <module>
-      insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
-    File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
-      search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
-  UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+          Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
+          Is this an update? (y/n) y
 
-- fixing unicode issues with movie2sql.py and models.py...
-- need scripts to parse filmographies for worked_on table
+          What is the id of the movie? 704
+          Traceback (most recent call last):
+            File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 230, in <module>
+              insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
+            File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
+              search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
+          UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
+
 
 - The Magdalene Sisters not in database?
 - Gerry should be 2002
@@ -135,6 +152,7 @@ TOOLS USED/TRIED OUT
 - sqlite3
 - Django
 - SQLAlchemy
+- dbvis (creating db schema diagram)
 
 
 LANGUAGES USED
