@@ -42,6 +42,15 @@ WHERE LEFT OFF
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
 
+- movie ratings grammar:
+
+  G -> M (Y) S [R] C
+  M -> [title characters]
+  Y -> [year]
+  S -> [star rating]
+  R -> [mpaa rating]
+  C -> [country] | epsilon
+
 
 NEEDS
 ------
