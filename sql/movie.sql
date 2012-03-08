@@ -3348,3 +3348,7 @@ INSERT INTO movie VALUES (DEFAULT, 'We Need to Talk About Kevin', 2011, '***½',
 INSERT INTO movie VALUES (DEFAULT, 'The Iron Lady', 2011, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Woman in Black', 2012, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Coraline', 2009, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Coraline', 2009, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Bridesmaids', 2011, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Jane Eyre', 2011, '***', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Tinker Tailor Soldier Spy', 2011, '***', 'R', 'England', NULL);
