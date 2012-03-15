@@ -79,6 +79,14 @@ Files
 
 /data (data files in various formats used to populate the database)
 
+  2003.txt
+
+    Text file containing my top ten and awards for 2003.
+
+  2004.txt
+
+    Text file containing my top ten and awards for 2004.
+
   actedin.txt
 
     Basically filmographies of a small handfull of actors--formatted in such a
@@ -237,11 +245,9 @@ Files
 
 /doc (documentation)
 
-  ER_diagram.dia
+  filth_schema.png
 
-    This file graphically illustrates the Entity-Relationship diagram of FiLTH's
-    database schema.  The file can only be opened with the open source program,
-    Dia.
+    Schema diagram for the filth database.
 
   front_end_requirements.txt
 
@@ -487,12 +493,6 @@ Files
     SQL insert statements for populating the genre table.  Created by
     /bin/genre2sql using /data/genre.txt.
 
-  init_mysql_database.sql
-
-    SQL DDL (data definition language) for creating the filth database
-    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
-    MySQL.  This file isn't updated as much as the next file...
-
   init_pg_database.sql
 
     SQL DDL (data definition language) for creating the filth database
@@ -636,6 +636,13 @@ Files
 
     This was replaced by /scripts/crew2sql.py Python script.
     (see /trash/CSV.hs)
+
+  init_mysql_database.sql
+
+    SQL DDL (data definition language) for creating the filth database
+    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
+    MySQL.  I deprecated the option of using MySQL, and just stuck with
+    Postgres.  Maybe I'll bring it back, along with sqlite.
 
   movie2sql.c
 
