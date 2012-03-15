@@ -639,13 +639,6 @@ Files
     MySQL.  I deprecated the option of using MySQL, and just stuck with
     Postgres.  Maybe I'll bring it back, along with sqlite.
 
-  init_mysql_database.sql
-
-    SQL DDL (data definition language) for creating the filth database
-    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
-    MySQL.  I deprecated the option of using MySQL, and just stuck with
-    Postgres.  Maybe I'll bring it back, along with sqlite.
-
   movie2sql.c
 
     This was replaced by /scripts/movie2sql.py Python script.
