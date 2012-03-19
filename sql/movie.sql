@@ -3354,3 +3354,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Jane Eyre', 2011, '***', 'PG-13', 'England',
 INSERT INTO movie VALUES (DEFAULT, 'Tinker Tailor Soldier Spy', 2011, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Warrior', 2011, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'If a Tree Falls: A Story of the Earth Liberation Front', 2011, '**½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'A Better Life', 2011, '***', 'PG-13', 'USA', NULL);
