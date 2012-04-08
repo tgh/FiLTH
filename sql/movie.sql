@@ -3357,3 +3357,14 @@ INSERT INTO movie VALUES (DEFAULT, 'If a Tree Falls: A Story of the Earth Libera
 INSERT INTO movie VALUES (DEFAULT, 'A Better Life', 2011, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Anonymous', 2011, '**½', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Puss in Boots', 2011, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Adventures of Tintin', 2011, '****', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Adventures of Tintin', 2011, '****', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Hunger Games', 2012, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Kung-Fu Panda 2', 2011, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Meek''''s Cutoff', 2011, '***', 'PG', 'USA', NULL);
