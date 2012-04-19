@@ -136,9 +136,9 @@ def checkForUpdate(title, year, stars, mpaa, country):
     while True:
       try:
         response = int(raw_input("\nWhat is the id of the movie? "))
-        lg('checkForUpdate', 'user entered ' + response + ' as the movie id')
+        lg('checkForUpdate', 'user entered ' + str(response) + ' as the movie id')
         #get the movie from the db
-        lg('checkForUpdate', 'querying db for movie with id ' + response + '...')
+        lg('checkForUpdate', 'querying db for movie with id ' + str(response) + '...')
         movie = models.Movie.query.filter(models.Movie.mid == response).one()
         break
       except NoResultFound:

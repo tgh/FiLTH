@@ -3368,3 +3368,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G',
 INSERT INTO movie VALUES (DEFAULT, 'The Hunger Games', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Kung-Fu Panda 2', 2011, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Meek''''s Cutoff', 2011, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Ides of March', 2011, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mirror Mirror', 2012, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sleuth', 2007, '**½', 'R', 'England', NULL);
