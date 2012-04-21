@@ -3371,3 +3371,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Meek''''s Cutoff', 2011, '***', 'PG', 'USA',
 INSERT INTO movie VALUES (DEFAULT, 'The Ides of March', 2011, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Mirror Mirror', 2012, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sleuth', 2007, '**½', 'R', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'My Week with Marilyn', 2011, '***', 'R', 'England', NULL);
