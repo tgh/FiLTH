@@ -242,6 +242,7 @@ Best Actor
   Jesse Eisenberg in "The Social Network"
 * Colin Firth in "The King's Speech"
   James Franco in "127 Hours"
+  Ryan Gosling in "Blue Valentine"
   Ed Norton in "Leaves of Grass"
   Mark Wahlberg in "The Fighter"
 
@@ -251,6 +252,7 @@ Best Actress
   Julianne Moore in "The Kids Are All Right"
 * Natalie Portman in "Black Swan"
   Hailee Steinfeld in "True Grit"
+  Michelle Williams in "Blue Valentine"
 
 Best Supporting Actor
 * Christian Bale in "The Fighter"
@@ -279,6 +281,7 @@ Best Director
   
 Best Cinematography
   Black Swan
+  Blue Valentine
   The Ghost Writer
   Harry Potter and the Deathly Hollows Part 1
   The Illusionist
@@ -677,30 +680,32 @@ Spiral ***
 Atonement ***½
 Before the Devil Knows You're Dead ***
 Cassandra's Dream ***½
+Lars and the Real Girl ****
 
 Top Ten
 1. No Country For Old Men
 2. There Will Be Blood
 3. 3:10 to Yuma
-4. Michael Clayton
-5. Sweeney Todd: The Demon Barber of Fleet Street
-6. Gone Baby Gone
-7. Zodiac
-8. The Mist
-9. The Counterfeiters
-10. The Kite Runner
+4. Lars and the Real Girl
+5. Michael Clayton
+6. Sweeney Todd: The Demon Barber of Fleet Street
+7. Gone Baby Gone
+8. Zodiac
+9. The Mist
+10. The Counterfeiters
 
-11. Rescue Dawn
-12. Atonement
-13. Cassandra's Dream
-14. The Assassination of Jesse James by the Coward Robert Ford
-15. The Bourne Ultimatum
+11. The Kite Runner
+12. Rescue Dawn
+13. Atonement
+14. Cassandra's Dream
+15. The Assassination of Jesse James by the Coward Robert Ford
+
 
 Best Picture
   3:10 to Yuma
 * No country for Old Men
+  Lars and the Real Girl
   Michael Clayton
-  Sweeney Todd: The Demon Barber of Fleet Street
   There Will Be Blood
 
 Best Actor
@@ -708,9 +713,8 @@ Best Actor
   George Clooney in "Michael Clayton"
 * Daniel Day-Lewis in "There Will Be Blood"
   Johnny Depp in "Sweeney Todd: The Demon Barber of Fleet Street"
-  Thomas Jane in "The Mist"
+  Ryan Gosling in "Lars and the Real Girl"
   James McAvoy in "Atonement"
-  Joel David Moore in "Spiral"
   Phillip Seymour Hoffman in "Before the Devil Knows You're Dead"
 
 Best Actress
@@ -735,6 +739,7 @@ Best Supporting Actor
 
 Best Supporting Actress
   Marcia Gay Harden in "The Mist"
+  Emily Mortimer in "Lars and the Real Girl"
   Saoirse Ronan in "Atonement"
   Amy Ryan in "Gone Baby Gone"
   Imelda Staunton in "Harry Potter and the Order of the Phoenix"
@@ -761,10 +766,10 @@ Best Original Screenplay
   Cassandra's Dream
   Juno
   La Vie En Rose
-* Michael Clayton
+* Lars and the Real Girl
+  Michael Clayton
   Rescue Dawn
   Once
-  Spiral
 
 Best Adapted Screenplay
   The Assassination of Jesse James by the Coward Robert Ford
@@ -784,12 +789,13 @@ Best Animated Feature
 * Surf's Up
 
 Best Scene
-* "The Gas Station Clerk" in No Country For Old Men
+  "The Assassination of Jesse James" in The Assassination of Jesse James by the Coward Robert Ford
+  "The Duel of Dumbledore and Voldemort" in Harry Potter and the Order of the Phoenix
   "Looking for Sam" in I Am Legend
+  "We Do it For You" in Lars and the Real Girl
+* "The Gas Station Clerk" in No Country For Old Men
   "Accepting the Blood" in There Will Be Blood
   "Back to Perdition" in There Will Be Blood
-  "The Duel of Dumbledore and Voldemort" in Harry Potter and the Order of the Phoenix
-  "The Assassination of Jesse James" in The Assassination of Jesse James by the Coward Robert Ford
 
 Worst Picture
   Elizabeth: The Golden Age
@@ -797,6 +803,7 @@ Worst Picture
   Meet the Robinsons
 * Number 23
   Transformers
+
 
 2006
 The Prestige ***½
@@ -837,6 +844,7 @@ The Devil and Daniel Johnston ***½
 Sketches of Frank Gehry ***
 Scoop ***
 Marie Antionette ***
+OSS 117: Cairo, Nest of Spies ***
 
 Top Ten
 1. The Departed

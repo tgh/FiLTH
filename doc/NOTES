@@ -41,6 +41,9 @@ WHERE LEFT OFF
 - The Station Agent should probably be ***1/2, not ****
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
+- A Christmas Carol has an extra comma in the pdf?
+- change Ed Wood to ***
+- On Golden Pond should be ****
 
 - movie ratings grammar:
 

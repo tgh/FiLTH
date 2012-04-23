@@ -2872,7 +2872,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Hamlet', 1996, 'not seen', 'PG-13', 'England
 INSERT INTO movie VALUES (DEFAULT, 'Bulworth', 1998, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Squid and the Whale', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan', 2006, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Lars and the Real Girl', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Lars and the Real Girl', 2007, '****', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Happy-Go-Lucky', 2008, 'not seen', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'And Now My Love', 1975, 'not seen', 'PG', 'France', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Qivitoq', 1956, 'not seen', 'NR', 'Denmark', DEFAULT);
@@ -3372,3 +3372,5 @@ INSERT INTO movie VALUES (DEFAULT, 'The Ides of March', 2011, '***½', 'R', 'USA
 INSERT INTO movie VALUES (DEFAULT, 'Mirror Mirror', 2012, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sleuth', 2007, '**½', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'My Week with Marilyn', 2011, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Blue Valentine', 2010, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'OSS 117: Cairo, Nest of Spies', 2006, '***', 'NR', 'France', NULL);
