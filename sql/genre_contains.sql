@@ -1,0 +1,12 @@
+INSERT INTO genre_contains VALUES(1, 1);
+INSERT INTO genre_contains VALUES(2, 1);
+INSERT INTO genre_contains VALUES(2, 16);
+INSERT INTO genre_contains VALUES(3, 12);
+INSERT INTO genre_contains VALUES(4, 1);
+INSERT INTO genre_contains VALUES(5, 7);
+INSERT INTO genre_contains VALUES(5, 5);
+INSERT INTO genre_contains VALUES(6, 1);
+INSERT INTO genre_contains VALUES(7, 1);
+INSERT INTO genre_contains VALUES(7, 6);
+INSERT INTO genre_contains VALUES(8, 1);
+INSERT INTO genre_contains VALUES(9, 2);
