@@ -9,6 +9,7 @@
 
 import sys
 import imp
+import string
 
 models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
 sqlFilename = "/home/tgh/Projects/FiLTH/sql/genre_contains.sql"
@@ -46,7 +47,7 @@ def getGid(genre):
 
 def quit(mid):
   log('quit', 'quitting')
-  log.close()
+  logger.close()
   sqlFile.close()
   tempFile.close()
   tempFile = open(tempFilename, 'w')
@@ -55,34 +56,42 @@ def quit(mid):
   sys.exit(0)
 
 
+def extractGenreIds(userInput):
+  '''Throws ValueError'''
+
+  gids = userInput.split(',')
+  map(string.split, gids)
+  gids = map(int, gids)
+  for gid in gids:
+    if gid < 0 or gid > len(genres)-1:
+      raise ValueError
+
+
 def inquireMovie(movie):
-  log('inquireMovie', 'MOVIE: ' + movie.title + ' (' + str(movie.year) + ')')
-  print '\nMOVIE: [' + str(movie.mid) + '] ' + movie.title + ' (' + str(movie.year) + ')\n'
-  printGenres()
-  while(True):
-    try:
-      response = raw_input('? ').lower()
-      if response == 'q':
-        quit(movie.mid)
-      response = int(response)
-      if response < 0 or response > len(genres)-1:
-        raise ValueError
-    except ValueError:
-      print '\n**Only numeric values from 0 to ' + str(len(genres)-1)
-      continue
-    log('inquireMovie', 'user entered genre: ' + str(response) + ' (' + genres[response] + ')')
-    writeSql(movie.mid, getGid(genres[response]))
-    while (True):
-      response = raw_input('\n  Another genre? ').lower()
-      if response not in ['y','n','q']:
-        print '**Only \'y\' or \'n\'.\n'
+  try:
+    log('inquireMovie', 'MOVIE: ' + movie.title + ' (' + str(movie.year) + ')')
+    print '\nMOVIE: [' + str(movie.mid) + '] ' + movie.title + ' (' + str(movie.year) + ')\n'
+    printGenres()
+    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, or any number of genres as a comma-separated list (e.g. "0,3,5").'
+    while(True):
+      try:
+        response = raw_input('Enter genres: ').lower()
+        if response == 'q':
+          quit(movie.mid)
+        if response == 'skip':
+          return
+        gids = extractGenreIds(response)
+      except ValueError:
+        print '\n**Only numeric values from 0 to ' + str(len(genres)-1)
         continue
-      if response == 'n':
-        return
-      if response == 'q':
-        quit(movie.mid)
-      print '  What\'s the other genre',
+      log('inquireMovie', 'user entered genre(s): ' + str(gids))
+      for gid in gids:
+        writeSql(movie.mid, getGid(genres[gid]))
       break
+  except Expection as e:
+    print '\n**FATAL ERROR: ' + str(e) + '\n'
+    log('EXCEPTION', str(e))
+    quit(movie.mid)
 
 
 if __name__ == '__main__':
