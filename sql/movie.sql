@@ -3374,3 +3374,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Sleuth', 2007, '**½', 'R', 'England', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'My Week with Marilyn', 2011, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Blue Valentine', 2010, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'OSS 117: Cairo, Nest of Spies', 2006, '***', 'NR', 'France', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Beginners', 2011, '***', 'R', 'USA', NULL);
