@@ -10,6 +10,7 @@
 import sys
 import imp
 import string
+import traceback
 
 models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
 sqlFilename = "/home/tgh/Projects/FiLTH/sql/genre_contains.sql"
@@ -53,7 +54,7 @@ def quit(mid):
   sqlFile.close()
   tempFile.close()
   tempFile = open(tempFilename, 'w')
-  tempFile.write(movie.mid)
+  tempFile.write(mid)
   tempFile.close()
   sys.exit(0)
 
@@ -93,6 +94,7 @@ def inquireMovie(movie):
   except Exception as e:
     print '\n**FATAL ERROR: ' + str(e) + '\n'
     log('EXCEPTION', str(e))
+    traceback.print_exc(file=logger)
     quit(movie.mid)
 
 
