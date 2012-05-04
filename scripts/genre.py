@@ -54,7 +54,7 @@ def quit(mid):
   sqlFile.close()
   tempFile.close()
   tempFile = open(tempFilename, 'w')
-  tempFile.write(mid)
+  tempFile.write(str(mid))
   tempFile.close()
   sys.exit(0)
 
