@@ -46,6 +46,8 @@ def getGid(genre):
 
 
 def quit(mid):
+  global tempFile
+
   log('quit', 'quitting')
   logger.close()
   sqlFile.close()
