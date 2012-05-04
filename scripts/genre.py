@@ -63,11 +63,12 @@ def extractGenreIds(userInput):
   '''Throws ValueError'''
 
   gids = userInput.split(',')
-  map(string.split, gids)
+  map(string.strip, gids)
   gids = map(int, gids)
   for gid in gids:
     if gid < 0 or gid > len(genres)-1:
       raise ValueError
+  return gids
 
 
 def inquireMovie(movie):
