@@ -88,7 +88,7 @@ def inquireMovie(movie):
       for gid in gids:
         writeSql(movie.mid, getGid(genres[gid]))
       break
-  except Expection as e:
+  except Exception as e:
     print '\n**FATAL ERROR: ' + str(e) + '\n'
     log('EXCEPTION', str(e))
     quit(movie.mid)
