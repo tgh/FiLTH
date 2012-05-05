@@ -18,3 +18,5 @@ INSERT INTO genre VALUES (DEFAULT, 'War');
 INSERT INTO genre VALUES (DEFAULT, 'Romance');
 INSERT INTO genre VALUES (DEFAULT, 'Family');
 INSERT INTO genre VALUES (DEFAULT, 'Sports');
+INSERT INTO genre VALUES (DEFAULT, 'Period');
+INSERT INTO genre VALUES (DEFAULT, 'Biography');
