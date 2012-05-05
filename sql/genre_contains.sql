@@ -126,3 +126,4 @@ INSERT INTO genre_contains VALUES(67, 1);
 INSERT INTO genre_contains VALUES(68, 1);
 INSERT INTO genre_contains VALUES(69, 1);
 INSERT INTO genre_contains VALUES(69, 17);
+INSERT INTO genre_contains VALUES(70, 1);

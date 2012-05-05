@@ -21,3 +21,4 @@ INSERT INTO genre VALUES (DEFAULT, 'Sports');
 INSERT INTO genre VALUES (DEFAULT, 'Period');
 INSERT INTO genre VALUES (DEFAULT, 'Biography');
 INSERT INTO genre VALUES (DEFAULT, 'Musical');
+INSERT INTO genre VALUES (DEFAULT, 'Political');
