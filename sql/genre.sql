@@ -20,3 +20,4 @@ INSERT INTO genre VALUES (DEFAULT, 'Family');
 INSERT INTO genre VALUES (DEFAULT, 'Sports');
 INSERT INTO genre VALUES (DEFAULT, 'Period');
 INSERT INTO genre VALUES (DEFAULT, 'Biography');
+INSERT INTO genre VALUES (DEFAULT, 'Musical');
