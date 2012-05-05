@@ -15,3 +15,5 @@ INSERT INTO genre VALUES (DEFAULT, 'Short');
 INSERT INTO genre VALUES (DEFAULT, 'Unconventional');
 INSERT INTO genre VALUES (DEFAULT, 'Western');
 INSERT INTO genre VALUES (DEFAULT, 'War');
+INSERT INTO genre VALUES (DEFAULT, 'Romance');
+INSERT INTO genre VALUES (DEFAULT, 'Family');
