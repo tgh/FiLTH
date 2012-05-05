@@ -19,7 +19,7 @@ logFilename = '/home/tgh/Projects/FiLTH/temp/genre.log'
 logger = None
 tempFilename = '/home/tgh/Projects/FiLTH/temp/genreTemp.txt'
 tempFile = None
-genres = ['Drama', 'Comedy', 'Thriller', 'Independent', 'Fantasy', 'Science-Fiction', 'Animated', 'Mystery', 'Horror', 'Action', 'Adventure', 'Documentary', 'Christmas', 'Short', 'Unconventional', 'Western', 'War', 'Romance', 'Family']
+genres = ['Drama', 'Comedy', 'Thriller', 'Independent', 'Fantasy', 'Science-Fiction', 'Animated', 'Mystery', 'Horror', 'Action', 'Adventure', 'Documentary', 'Christmas', 'Short', 'Unconventional', 'Western', 'War', 'Romance', 'Family', 'Sports']
 
 
 def log(func, message):
@@ -81,7 +81,7 @@ def inquireMovie(movie):
       try:
         response = raw_input('Enter genres: ').lower()
         if response == 'q':
-          quit(movie.mid)
+          quit(movie.mid-1)
         if response == 'skip':
           return
         gids = extractGenreIds(response)
