@@ -19,7 +19,7 @@ logFilename = '/home/tgh/Projects/FiLTH/temp/genre.log'
 logger = None
 tempFilename = '/home/tgh/Projects/FiLTH/temp/genreTemp.txt'
 tempFile = None
-genres = ['Drama', 'Comedy', 'Thriller', 'Independent', 'Fantasy', 'Science-Fiction', 'Animated', 'Mystery', 'Horror', 'Action', 'Adventure', 'Documentary', 'Christmas', 'Short', 'Unconventional', 'Western', 'War', 'Romance', 'Family', 'Sports', 'Period', 'Biography', 'Musical', 'Political']
+genres = ['Drama', 'Comedy', 'Thriller', 'Independent', 'Fantasy', 'Science-Fiction', 'Animated', 'Mystery', 'Horror', 'Action', 'Adventure', 'Documentary', 'Christmas', 'Short', 'Unconventional', 'Western', 'War', 'Romance', 'Family', 'Sports', 'Period', 'Biography', 'Musical', 'Political', 'Crime']
 
 
 def log(func, message):
