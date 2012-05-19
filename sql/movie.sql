@@ -3379,3 +3379,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Hell and Back Again', 2011, '***½', 'NR', '
 INSERT INTO movie VALUES (DEFAULT, 'The Interrupters', 2011, '***½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'War Horse', 2011, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'We Bought a Zoo', 2011, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Magdalene Sisters', 2002, '***½', 'R', 'Scotland', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Old School', 2003, '*½', 'R', 'USA', NULL);

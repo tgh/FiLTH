@@ -35,9 +35,7 @@ WHERE LEFT OFF
           UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
 
 
-- The Magdalene Sisters not in database?
 - Gerry should be 2002
-- Old School not in db?
 - The Station Agent should probably be ***1/2, not ****
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
