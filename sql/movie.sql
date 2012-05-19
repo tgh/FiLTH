@@ -3376,3 +3376,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Blue Valentine', 2010, '***', 'R', 'USA', NU
 INSERT INTO movie VALUES (DEFAULT, 'OSS 117: Cairo, Nest of Spies', 2006, '***', 'NR', 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Beginners', 2011, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Hell and Back Again', 2011, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Interrupters', 2011, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'War Horse', 2011, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'We Bought a Zoo', 2011, '***', 'PG', 'USA', NULL);
