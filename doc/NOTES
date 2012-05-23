@@ -138,6 +138,17 @@ HELPFUL HINTS/REMINDERS
   e.g.
   INSERT 0 1
 
+- to create the db schema diagram
+  - open DbVis
+  - right click on Filth (in the left window panel) -> connect
+  - expand the "filth" db (by clicking the little lever icon left of "filth")
+  - expand "public"
+  - click "TABLE"
+  - in the main window frame, click "References" tab
+  - arrange diagram how you want
+  - zoom in to the level of resolution you want
+  - click the export button below and to the left of "References" tab
+
 
 REFERENCES
 -----------
