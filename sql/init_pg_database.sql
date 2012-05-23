@@ -111,18 +111,18 @@ CREATE TABLE position (
 position_title text NOT NULL);
 
 
--- a genre entity
-DROP TABLE IF EXISTS genre CASCADE;
-CREATE TABLE genre (
-gid serial NOT NULL,
-gen_name text NOT NULL);
+-- a tag entity
+DROP TABLE IF EXISTS tag CASCADE;
+CREATE TABLE tag (
+tid serial NOT NULL,
+tag_name text NOT NULL);
 
 
--- genre <--> movie relationship
-DROP TABLE IF EXISTS genre_contains CASCADE;
-CREATE TABLE genre_contains (
+-- tag <--> movie relationship
+DROP TABLE IF EXISTS tag_given_to CASCADE;
+CREATE TABLE tag_given_to (
 mid smallint NOT NULL,
-gid smallint NOT NULL);
+tid smallint NOT NULL);
 
 
 -- an oscar entity
@@ -193,8 +193,8 @@ ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
 ALTER TABLE position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
-ALTER TABLE genre ADD CONSTRAINT genre_pkey PRIMARY KEY(gid);
-ALTER TABLE genre_contains ADD CONSTRAINT genrecontains_pkey PRIMARY KEY(mid, gid);
+ALTER TABLE tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
+ALTER TABLE tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
 ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
 ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
@@ -208,6 +208,7 @@ ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, t
 -- ---------------------
 
 ALTER TABLE movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
+ALTER TABLE tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
 
 
 -- --------------------------
@@ -249,14 +250,14 @@ ALTER TABLE worked_on ADD CONSTRAINT worked_position_fkey
 FOREIGN KEY (position) REFERENCES position(position_title)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
--- genre_contains table movie FK
-ALTER TABLE genre_contains ADD CONSTRAINT genre_mid_fkey
+-- tag_given_to table movie FK
+ALTER TABLE tag_given_to ADD CONSTRAINT tag_mid_fkey
 FOREIGN KEY (mid) REFERENCES movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
--- genre_contains table genre FK
-ALTER TABLE genre_contains ADD CONSTRAINT genre_gid_fkey
-FOREIGN KEY (gid) REFERENCES genre(gid)
+-- tag_given_to table tag FK
+ALTER TABLE tag_given_to ADD CONSTRAINT tag_tid_fkey
+FOREIGN KEY (tid) REFERENCES tag(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- oscar_given_to table movie FK
