@@ -19,7 +19,7 @@ from sqlalchemy.schema import UniqueConstraint
 
 
 #create connection to db, session, declarative Base, etc.
-engine = create_engine('postgresql://postgres:xxx@localhost/filth', echo=False)
+engine = create_engine('postgresql://xxx:xxx@localhost/filth', echo=False)
 Session = scoped_session(sessionmaker(bind=engine, autoflush=True))
 Base = declarative_base()
 Base.metadata.bind = engine
@@ -93,33 +93,33 @@ class Position(Base):
 #------------------------------------------------------------------------------
 
 """
-genre
+tag
 
-  gid serial NOT NULL,
-  gen_name text NOT NULL
+  tid serial NOT NULL,
+  tag_name text NOT NULL
 
-  PRIMARY KEY (gid)
+  PRIMARY KEY (tid)
 """
-class Genre(Base):
-  __tablename__ = 'genre'
+class Tag(Base):
+  __tablename__ = 'tag'
 
   def __repr__(self):
-    return "<GENRE:\tgid:\t{0}\n\tgenre:\t{1}\n>".format(self.gid, self.gen_name)
+    return "<TAG:\ttid:\t{0}\n\tag:\t{1}\n>".format(self.tid, self.tag_name)
 
 
   #attributes
-  gid = Column(SmallInteger, autoincrement=True, primary_key=True)
-  gen_name = Column(Text, nullable=False)
+  tid = Column(SmallInteger, autoincrement=True, primary_key=True)
+  tag_name = Column(Text, nullable=False)
 
   #movies property defined by relationship() in Movie
 
 
 #------------------------------------------------------------------------------
 
-# genre <--> movie many-to-many relationship
-genre_contains = Table('genre_contains', Base.metadata,
+# tag <--> movie many-to-many relationship
+tag_given_to = Table('tag_given_to', Base.metadata,
   Column('mid', SmallInteger, ForeignKey('movie.mid'), primary_key=True),
-  Column('gid', SmallInteger, ForeignKey('genre.gid'), primary_key=True)
+  Column('tid', SmallInteger, ForeignKey('tag.tid'), primary_key=True)
 )
 
 
@@ -247,9 +247,7 @@ class Movie(Base):
 
   def __repr__(self):
     return "<MOVIE:\tmid:\t{0}\n\ttitle:\t{1}\n\tyear:\t{2}\n\tstars:\t{3}\n\tmpaa:\t{4}\n\torigin:\t{5}\n\tnotes:\t{6}\n>".format(
-            self.mid, self.title, self.year,
-            MovieMgr.starRatingToString(self.star_rating),
-            MovieMgr.mpaaToString(self.mpaa), self.country, self.comments)
+            self.mid, self.title, self.year, self.star_rating, self.mpaa, self.country, self.comments)
       
 
   #attributes
@@ -263,7 +261,7 @@ class Movie(Base):
 
   #relationships
   crew_persons = relationship(CrewPerson, backref='movies', secondary=worked_on)
-  genres = relationship(Genre, backref='movies', secondary=genre_contains)
+  tags = relationship(Tag, backref='movies', secondary=tag_given_to)
   oscars = relationship(Oscar, secondary=oscar_given_to)
   lists  = relationship(List, backref='movies', secondary=list_contains)
   tylers = relationship(Tyler, secondary=tyler_given_to)
