@@ -112,6 +112,10 @@ position_title text NOT NULL);
 
 
 -- a tag entity
+--
+-- Tags are used to, well, tag a movie.  Movies can be tagged with keywords or
+-- phrases (e.g. "New York", "Indie", "Unconventional").  This will probably be
+-- used mostly for marking a movie with one or more genres.
 DROP TABLE IF EXISTS tag CASCADE;
 CREATE TABLE tag (
 tid serial NOT NULL,
