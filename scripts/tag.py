@@ -2,8 +2,8 @@
 
 #------------------------------------------------------------------------------
 #
-# This script interacts with the user to create swl insert statements to
-# populate the genre_contains table in the filth database.
+# This script interacts with the user to create sql insert statements to
+# populate the tag and tag_given_to tables in the filth database.
 #
 #------------------------------------------------------------------------------
 
@@ -13,13 +13,16 @@ import string
 import traceback
 
 models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
-sqlFilename = "/home/tgh/Projects/FiLTH/sql/genre_contains.sql"
-sqlFile = None
-logFilename = '/home/tgh/Projects/FiLTH/temp/genre.log'
+tagGivenToFilename = "/home/tgh/Projects/FiLTH/sql/tag_given_to.sql"
+tagGivenToFile = None
+tagFilename = '/home/tgh/Projects/FiLTH/sql/tag.sql'
+tagFile = None
+logFilename = '/home/tgh/Projects/FiLTH/temp/tagging.log'
 logger = None
-tempFilename = '/home/tgh/Projects/FiLTH/temp/genreTemp.txt'
+tempFilename = '/home/tgh/Projects/FiLTH/temp/tagTemp.txt'
 tempFile = None
-genres = ['Drama', 'Comedy', 'Thriller', 'Independent', 'Fantasy', 'Science-Fiction', 'Animated', 'Mystery', 'Horror', 'Action', 'Adventure', 'Documentary', 'Christmas', 'Short', 'Unconventional', 'Western', 'War', 'Romance', 'Family', 'Sports', 'Period', 'Biography', 'Musical', 'Political', 'Crime', 'History']
+tags = []
+  
 
 
 def log(func, message):
@@ -30,20 +33,20 @@ def log(func, message):
     logger.write('[' + func + '] - MOVIE: 8 1/2 (1963)\n')
 
 
-def printGenres():
-  count = 0
-  for genre in genres:
-    print '  ' + str(count) + ' = ' + genre
-    count += 1
+def updateTags(tag='NO TAG GIVEN'):
+  global tags
+  tags = models.Tag.query.all()
+  log('updateTags', 'tags updated with \'' + tag + '\'')
 
 
-def writeSql(mid, gid):
-  log('writeSql', 'writing sql: INSERT INTO genre_contains VALUES(' + str(mid) + ', ' + str(gid) + ');')
-  sqlFile.write('INSERT INTO genre_contains VALUES(' + str(mid) + ', ' + str(gid) + ');\n')
+def printTags():
+  for tag in tags:
+    print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name)
 
 
-def getGid(genre):
-  return models.Genre.query.filter(models.Genre.gen_name == genre).one().gid
+def writeSql(mid, tid):
+  log('writeSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');')
+  tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');\n')
 
 
 def quit(mid):
@@ -51,7 +54,8 @@ def quit(mid):
 
   log('quit', 'quitting')
   logger.close()
-  sqlFile.close()
+  tagGivenToFile.close()
+  tagFile.close()
   tempFile.close()
   tempFile = open(tempFilename, 'w')
   tempFile.write(str(mid))
@@ -59,38 +63,68 @@ def quit(mid):
   sys.exit(0)
 
 
-def extractGenreIds(userInput):
+def extractTagIds(userInput):
   '''Throws ValueError'''
 
-  gids = userInput.split(',')
-  map(string.strip, gids)
-  gids = map(int, gids)
-  for gid in gids:
-    if gid < 0 or gid > len(genres)-1:
+  tids = userInput.split(',')
+  map(string.strip, tids)
+  tids = map(int, tids)
+  for tid in tids:
+    if tid < 0 or tid > len(tags)-1:
       raise ValueError
-  return gids
+  return tids
+
+
+def addTag(tag):
+  log('addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
+  tagFile.write('INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');\n')
+  log('addTag', 'adding tag, \'' + tag + '\', to the database...')
+  newTag = models.Tag(tag_name=tag)
+  models.session.add(newTag)
+  models.session.commit()
+  log('addTag', 'tag, \'' + tag + '\', added to database')
+
+
+def addTagUI():
+  while(True):
+    tag = raw_input('\nEnter new tag: ')
+    while(True):
+      confirm = raw_input('Is this what you wanted: ' + tag + ' (y/n)? ').lower()
+      if 'y' == confirm:
+        log('addTagUI', 'User wants to add tag \'' + tag + '\'')
+        addTag(tag)
+        return
+      elif 'n' == confirm:
+        break
+      else:
+        print '\n**Only \'y\' or \'n\' please.'
 
 
 def inquireMovie(movie):
   try:
     log('inquireMovie', 'MOVIE: ' + movie.title + ' (' + str(movie.year) + ')')
     print '\nMOVIE: [' + str(movie.mid) + '] ' + movie.title + ' (' + str(movie.year) + ')\n'
-    printGenres()
-    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, or any number of genres as a comma-separated list (e.g. "0,3,5").'
+    printTags()
+    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
     while(True):
       try:
-        response = raw_input('Enter genres: ').lower()
+        response = raw_input('Enter tags: ').lower()
         if response == 'q':
           quit(movie.mid-1)
         if response == 'skip':
           return
-        gids = extractGenreIds(response)
+        if response == 'add':
+          addTagUI()
+          updateTags()
+          printTags()
+          continue
+        tids = extractTagIds(response)
       except ValueError:
-        print '\n**Only numeric values from 0 to ' + str(len(genres)-1)
+        print '\n**Only numeric values from 0 to ' + str(len(tags)-1)
         continue
-      log('inquireMovie', 'user entered genre(s): ' + str(gids))
-      for gid in gids:
-        writeSql(movie.mid, getGid(genres[gid]))
+      log('inquireMovie', 'user entered tag(s): ' + str(tids))
+      for tid in tids:
+        writeSql(movie.mid, tid)
       break
   except Exception as e:
     print '\n**FATAL ERROR: ' + str(e) + '\n'
@@ -101,7 +135,8 @@ def inquireMovie(movie):
 
 if __name__ == '__main__':
   try:
-    sqlFile = open(sqlFilename, 'a')
+    tagGivenToFile = open(tagGivenToFilename, 'a')
+    tagFile = open(tagFilename, 'a')
     logger = open(logFilename, 'w')
     tempFile = open(tempFilename, 'r')
   except IOError as e:
@@ -111,5 +146,8 @@ if __name__ == '__main__':
   log('main', 'last mid processed (from file): ' + lastProcessed)
   lastProcessed = int(lastProcessed)
   log('main', 'last mid processed (cast): ' + str(lastProcessed))
+  #grab all tags currently in db
+  tags = models.Tag.query.all()
+  #grab all movies seen
   movies = models.Movie.query.filter(models.Movie.star_rating != 'not_seen').filter(models.Movie.mid > lastProcessed).order_by(models.Movie.mid).all()
   map(inquireMovie, movies)
