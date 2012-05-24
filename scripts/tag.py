@@ -70,14 +70,14 @@ def extractTagIds(userInput):
   map(string.strip, tids)
   tids = map(int, tids)
   for tid in tids:
-    if tid < 0 or tid > len(tags)-1:
+    if tid < 1 or tid > len(tags):
       raise ValueError
   return tids
 
 
 def addTag(tag):
   log('addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
-  tagFile.write('INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');\n')
+  tagFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
   log('addTag', 'adding tag, \'' + tag + '\', to the database...')
   newTag = models.Tag(tag_name=tag)
   models.session.add(newTag)
