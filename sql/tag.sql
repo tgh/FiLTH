@@ -24,3 +24,4 @@ INSERT INTO tag VALUES (DEFAULT, 'Musical');
 INSERT INTO tag VALUES (DEFAULT, 'Political');
 INSERT INTO tag VALUES (DEFAULT, 'Crime');
 INSERT INTO tag VALUES (DEFAULT, 'History');
+INSERT INTO tag VALUES (DEFAULT, 'Romantic-Comedy');
