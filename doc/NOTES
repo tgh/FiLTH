@@ -35,6 +35,8 @@ WHERE LEFT OFF
           UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
 
 
+- add "Black-and-White"(tid=32) tag to 8 1/2 (mid=4)
+- add "New York" tag to 13 Going on 30 (mid=9)
 - Gerry should be 2002
 - The Station Agent should probably be ***1/2, not ****
 - sorting on star_rating has undesired results now that it is test rather than
