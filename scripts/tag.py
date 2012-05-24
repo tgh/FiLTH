@@ -40,8 +40,20 @@ def updateTags(tag='NO TAG GIVEN'):
 
 
 def printTags():
+  count = 1
+  prevLength = 0
   for tag in tags:
-    print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name)
+    if count % 2 == 1:
+      print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name),
+      prevLength = len(tag.tag_name)
+    else:
+      if prevLength >= 8 and int(tag.tid) > 9:
+        print '\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+      else:
+        print '\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+    count += 1
+  if len(tags) % 2 == 1:
+    print '\n'
 
 
 def writeSql(mid, tid):
