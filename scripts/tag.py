@@ -48,9 +48,9 @@ def printTags():
       prevLength = len(tag.tag_name)
     else:
       if prevLength >= 8 and int(tag.tid) > 9:
-        print '\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
-      else:
         print '\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+      else:
+        print '\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
     count += 1
   if len(tags) % 2 == 1:
     print '\n'
@@ -115,6 +115,7 @@ def addTagUI():
 def inquireMovie(movie):
   try:
     log('inquireMovie', 'MOVIE: ' + movie.title + ' (' + str(movie.year) + ')')
+    print '\n--------------------------------------------------------------------'
     print '\nMOVIE: [' + str(movie.mid) + '] ' + movie.title + ' (' + str(movie.year) + ')\n'
     printTags()
     print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
