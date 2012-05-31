@@ -59,3 +59,5 @@ INSERT INTO tag VALUES (DEFAULT, 'Based-on-book');
 INSERT INTO tag VALUES (DEFAULT, 'Based-on-short-story');
 INSERT INTO tag VALUES (DEFAULT, 'Based-on-play');
 INSERT INTO tag VALUES (DEFAULT, 'Music');
+INSERT INTO tag VALUES (DEFAULT, 'Satire');
+INSERT INTO tag VALUES (DEFAULT, 'Graphic');

@@ -47,7 +47,9 @@ def printTags():
       print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name),
       prevLength = len(tag.tag_name)
     else:
-      if prevLength >= 8 and int(tag.tid) > 9:
+      if prevLength >= 18:
+        print '\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+      elif prevLength >= 8 and int(tag.tid) > 9:
         print '\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
       else:
         print '\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
