@@ -180,6 +180,18 @@ HELPFUL HINTS/REMINDERS
   - zoom in to the level of resolution you want
   - click the export button below and to the left of "References" tab
 
+- to start apache:
+
+  $ apachectl start
+  
+  - (apachectl is found in ~/Installed_Programs/apache_2.4/bin)
+  - everything is ok if no output
+  - ($ apachectl stop) to stop
+  - ~/Installed_Programs/apache_2.4/logs/httpd.pid contains the pid of httpd
+  - apache logs found in ~/Installed_Programs/apache_2.4/logs
+  - config file: ~/Installed_Programs/apache_2.4/conf/httpd.conf
+  - using port 2121
+
 
 REFERENCES
 -----------
