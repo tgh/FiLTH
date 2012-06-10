@@ -3382,3 +3382,7 @@ INSERT INTO movie VALUES (DEFAULT, 'We Bought a Zoo', 2011, '***', 'PG', 'USA', 
 INSERT INTO movie VALUES (DEFAULT, 'The Magdalene Sisters', 2002, '***½', 'R', 'Scotland', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Old School', 2003, '*½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Melancholia', 2011, '***', 'R', 'Denmark', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Big Year', 2011, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Men in Black III', 2012, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Prometheus', 2012, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Snow White and the Huntsman', 2012, '**½', 'PG-13', 'USA', NULL);
