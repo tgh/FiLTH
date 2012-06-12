@@ -22,6 +22,7 @@ logger = None
 tempFilename = '/home/tgh/Projects/FiLTH/temp/tagTemp.txt'
 tempFile = None
 tags = []
+tagMap = {}
   
 
 
@@ -33,9 +34,19 @@ def log(func, message):
     logger.write('[' + func + '] - MOVIE: 8 1/2 (1963)\n')
 
 
-def updateTags(tag='NO TAG GIVEN'):
-  global tags
+def initTags():
+  global tags, tagMap
   tags = models.Tag.query.all()
+  for tag in tags:
+    tagMap[int(tag.tid)] = str(tag.tag_name)
+  log('initTags', 'tags list and tagMap initialized')
+
+
+def updateTags(tid, tag='NO TAG GIVEN'):
+  global tags, tagMap
+  tags = models.Tag.query.all()
+  if tag != 'NOT TAG GIVEN':
+    tagMap[tid] = tag
   log('updateTags', 'tags updated with \'' + tag + '\'')
 
 
@@ -58,9 +69,9 @@ def printTags():
     print '\n'
 
 
-def writeSql(mid, tid):
-  log('writeSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');')
-  tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');\n')
+def writeSql(movie, tid):
+  log('writeSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');')
+  tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + tagMap[tid] + '\'\n')
 
 
 def quit(mid):
@@ -130,7 +141,7 @@ def inquireMovie(movie):
           return
         if response == 'add':
           addTagUI()
-          updateTags()
+          updateTags(int(tag.tid), str(tag.tag_name))
           printTags()
           continue
         tids = extractTagIds(response)
@@ -139,7 +150,7 @@ def inquireMovie(movie):
         continue
       log('inquireMovie', 'user entered tag(s): ' + str(tids))
       for tid in tids:
-        writeSql(movie.mid, tid)
+        writeSql(movie, tid)
       break
   except Exception as e:
     print '\n**FATAL ERROR: ' + str(e) + '\n'
@@ -162,7 +173,7 @@ if __name__ == '__main__':
   lastProcessed = int(lastProcessed)
   log('main', 'last mid processed (cast): ' + str(lastProcessed))
   #grab all tags currently in db
-  tags = models.Tag.query.all()
+  initTags()
   #grab all movies seen
   movies = models.Movie.query.filter(models.Movie.star_rating != 'not_seen').filter(models.Movie.mid > lastProcessed).order_by(models.Movie.mid).all()
   map(inquireMovie, movies)
