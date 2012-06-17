@@ -3386,3 +3386,6 @@ INSERT INTO movie VALUES (DEFAULT, 'The Big Year', 2011, '***', 'PG', 'USA', NUL
 INSERT INTO movie VALUES (DEFAULT, 'Men in Black III', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Prometheus', 2012, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Snow White and the Huntsman', 2012, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Becoming Jane', 2007, '***', 'PG', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'A Dangerous Method', 2011, '***', 'R', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'W.E.', 2011, '**', 'R', 'England', NULL);
