@@ -3389,3 +3389,8 @@ INSERT INTO movie VALUES (DEFAULT, 'Snow White and the Huntsman', 2012, '**½', 
 INSERT INTO movie VALUES (DEFAULT, 'Becoming Jane', 2007, '***', 'PG', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Dangerous Method', 2011, '***', 'R', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'W.E.', 2011, '**', 'R', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Extremely Loud & Incredibly Close', 2011, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Mill and the Cross', 2011, '***', 'NR', 'Poland', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Moonrise Kingdom', 2012, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'To Rome with Love', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Tower Heist', 2011, '***', 'PG-13', 'USA', NULL);
