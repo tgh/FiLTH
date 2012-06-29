@@ -36,7 +36,7 @@ def log(func, message):
 
 def initTags():
   global tags, tagMap
-  tags = models.Tag.query.all()
+  tags = models.Tag.query.order_by(models.Tag.tid).all()
   for tag in tags:
     tagMap[int(tag.tid)] = str(tag.tag_name)
   log('initTags', 'tags list and tagMap initialized')
@@ -44,7 +44,7 @@ def initTags():
 
 def updateTags(tid, tag='NO TAG GIVEN'):
   global tags, tagMap
-  tags = models.Tag.query.all()
+  tags = models.Tag.query.order_by(models.Tag.tid).all()
   if tag != 'NOT TAG GIVEN':
     tagMap[tid] = tag
   log('updateTags', 'tags updated with \'' + tag + '\'')
@@ -108,6 +108,7 @@ def addTag(tag):
   models.session.add(newTag)
   models.session.commit()
   log('addTag', 'tag, \'' + tag + '\', added to database')
+  return newTag
 
 
 def addTagUI():
@@ -117,8 +118,7 @@ def addTagUI():
       confirm = raw_input('Is this what you wanted: ' + tag + ' (y/n)? ').lower()
       if 'y' == confirm:
         log('addTagUI', 'User wants to add tag \'' + tag + '\'')
-        addTag(tag)
-        return
+        return addTag(tag)
       elif 'n' == confirm:
         break
       else:
@@ -140,7 +140,7 @@ def inquireMovie(movie):
         if response == 'skip':
           return
         if response == 'add':
-          addTagUI()
+          tag = addTagUI()
           updateTags(int(tag.tid), str(tag.tag_name))
           printTags()
           continue
@@ -156,6 +156,7 @@ def inquireMovie(movie):
     print '\n**FATAL ERROR: ' + str(e) + '\n'
     log('EXCEPTION', str(e))
     traceback.print_exc(file=logger)
+    traceback.print_exc(file=sys.stdout)
     quit(movie.mid)
 
 
