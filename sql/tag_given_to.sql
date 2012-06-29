@@ -320,7 +320,6 @@ INSERT INTO tag_given_to VALUES(122, 1);
 INSERT INTO tag_given_to VALUES(122, 25);
 INSERT INTO tag_given_to VALUES(124, 5);  -- Atlantis (2001) tagged with 'Fantasy'
 INSERT INTO tag_given_to VALUES(124, 6);  -- Atlantis (2001) tagged with 'Science-Fiction'
-INSERT INTO tag_given_to VALUES(124, 6);  -- Atlantis (2001) tagged with 'Science-Fiction'
 INSERT INTO tag_given_to VALUES(124, 11);  -- Atlantis (2001) tagged with 'Adventure'
 INSERT INTO tag_given_to VALUES(124, 19);  -- Atlantis (2001) tagged with 'Family'
 INSERT INTO tag_given_to VALUES(125, 1);  -- Atonement (2007) tagged with 'Drama'
@@ -331,7 +330,6 @@ INSERT INTO tag_given_to VALUES(125, 37);  -- Atonement (2007) tagged with 'Worl
 INSERT INTO tag_given_to VALUES(125, 58);  -- Atonement (2007) tagged with 'Based-on-book'
 INSERT INTO tag_given_to VALUES(126, 1);  -- Au Hazard Balthazar (1966) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(126, 32);  -- Au Hazard Balthazar (1966) tagged with 'Black-and-White'
-INSERT INTO tag_given_to VALUES(127, 1);  -- Au Revoir Les Enfants (1987) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(127, 67);  -- Au Revoir Les Enfants (1987) tagged with 'Holocaust'
 INSERT INTO tag_given_to VALUES(127, 37);  -- Au Revoir Les Enfants (1987) tagged with 'World War II'
 INSERT INTO tag_given_to VALUES(127, 31);  -- Au Revoir Les Enfants (1987) tagged with 'Sad'
