@@ -3394,3 +3394,7 @@ INSERT INTO movie VALUES (DEFAULT, 'The Mill and the Cross', 2011, '***', 'NR', 
 INSERT INTO movie VALUES (DEFAULT, 'Moonrise Kingdom', 2012, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'To Rome with Love', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Tower Heist', 2011, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Albert Nobbs', 2011, '***', 'R', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Brave', 2012, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Breaking Dawn Part 1', 2011, '**', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mamma Mia!', 2008, '*½', 'PG-13', 'USA', NULL);
