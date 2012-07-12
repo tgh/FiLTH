@@ -76,16 +76,6 @@ WHERE LEFT OFF
 - change Ed Wood to ***
 - On Golden Pond should be ****
 
-? q
-Traceback (most recent call last):
-  File "./scripts/genre.py", line 101, in <module>
-    map(inquireMovie, movies)
-  File "./scripts/genre.py", line 66, in inquireMovie
-    quit(movie.mid)
-  File "./scripts/genre.py", line 49, in quit
-    log.close()
-AttributeError: 'function' object has no attribute 'close'
-
 
 - movie ratings grammar:
 
