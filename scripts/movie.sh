@@ -40,6 +40,15 @@ sed "/X, Y, Z/d" $filth_temp_path/temp > $filth_temp_path/temp2
 sed "/Total:/d" $filth_temp_path/temp2 > $filth_temp_path/temp
 sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 
+# parse the movie ratings (make sure there are no syntax errors and such)
+echo -e "\n[exec] mrp.py -- Parsing Movie_Ratings...\n"
+$filth_path/scripts/mrp.py $filth_temp_path/temp2
+if [ $? -ne 0 ]
+then
+  exit
+fi
+echo -e "\n[exec] mrp.py -- Complete: Movie_Ratings ok.\n"
+
 # run the movie2sql program on the resulting text
 # if this is the first run, just create movie.sql
 if [ $first_run -eq 1 ]

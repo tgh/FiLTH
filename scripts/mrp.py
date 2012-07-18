@@ -170,8 +170,6 @@ if __name__ == '__main__':
   except Exception:
     usage()
     sys.exit(1)
-  print '\n[exec] mrp.py -- Parsing Movie_Ratings...'
   parser = MovieRatingsParser(sys.argv[1])
   parser.parse()
-  print '\n[exec] Movie_Ratings ok.\n'
   sys.exit(0)
