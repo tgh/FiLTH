@@ -21,29 +21,20 @@ class MovieRatingKeys():
 
 #------------------------------------------------------------------------------
 
-class MovieRatingsCompilerException():
-
-  def __init__(self, message):
-    self._message = message
-
-  def __str__(self):
-    return self._message()
+class MovieRatingsCompilerException(Exception):
+  pass
 
 
 #------------------------------------------------------------------------------
 
 class LexicalAnalzyerException(MovieRatingsCompilerException):
-  
-  def __init__(self):
-    super(LexicalAnalzyerException, self).__init__()
+  pass
 
 
 #------------------------------------------------------------------------------
 
 class ParserException(MovieRatingsCompilerException):
-
-  def __init__(self):
-    super(ParserException, self).__init__()
+  pass
 
 
 #------------------------------------------------------------------------------
@@ -66,34 +57,38 @@ class MovieRatingsLexicalAnalyzer():
       self._currLine = line
       tokens = line.split()
       self._analyzeTokens(tokens)
-      tokenSets.append(line.split())
+      tokenSets.append(tokens)
       self._currLineNum += 1
-
     return tokenSets
 
 
   def _analyzeTokens(self, tokens):
     for token in tokens:
       if token[0] == '(':
-        self._analyzeYear(token.lstrip('(').rstrip(')'))
+        self._analyzeYear(token.lstrip('('))
       elif token[0] == '[':
-        self._analyzeMpaa(token.lstrip('[').rstrip(']'))
+        self._analyzeMpaa(token.lstrip('['))
 
   
   def _analyzeYear(self, year):
-    match = re.search('[0-9][0-9][0-9][0-9]', year)
+    match = re.match('[0-9][0-9][0-9][0-9]', year)
     if match == None:
-      raise LexicalAnalzyerException(self._createBaseErrorMessage() + 'year does not match regular expression "\d{4}" (four digits): ' + year)
+      raise LexicalAnalzyerException(self._createBaseErrorMessage() + 'year does not match regular expression "\d{4})" (four digits): ' + str(year))
+    if not year.endswith(')'):
+      raise LexicalAnalzyerException(self._createBaseErrorMessage() + 'missing closing parens for year.')
 
 
   def _analyzeMpaa(self, mpaa):
-    match = re.match('[NRGP\-13C7X]*', mpaa)
+    match = re.match('[NRGP\-13C7X]+', mpaa)
     if match == None:
       raise LexicalAnalzyerException(self._createBaseErrorMessage() + 'MPAA rating contains unknown character: ' + mpaa)
+    if not mpaa.endswith(']'):
+      raise LexicalAnalzyerException(self._createBaseErrorMessage() + 'missing closing bracket for mpaa rating.')
+
 
 
   def _createBaseErrorMessage(self):
-    return '\n**FAILURE on line ' + self._currLineNum + '(' + self._currLine + '):\n\tCause: '
+    return '\n**FAILURE on line ' + str(self._currLineNum) + ' ("' + self._currLine + '"):\n\tCause: '
       
 
 
@@ -139,14 +134,15 @@ class MovieRatingsParser():
       if token[0] == '(':
         return string.join(self._currTokenSet[:self._tokenSetIndex])
       self._tokenSetIndex += 1
+    raise ParserException(self._createBaseErrorMessage() + 'missing year.')
 
 
   def _Year(self):
     year = int(self._currTokenSet[self._tokenSetIndex].lstrip('(').rstrip(')'))
     if year < self._yearMin:
-      raise ParserException(_createBaseErrorMessage() + 'year is less than 1900: ' + year)
+      raise ParserException(self._createBaseErrorMessage() + 'year is less than 1900: ' + str(year))
     if year > self._yearMax:
-      raise ParserException(_createBaseErrorMessage() + 'year is greater than 3 years in the future: ' + year)
+      raise ParserException(self._createBaseErrorMessage() + 'year is greater than 3 years in the future: ' + str(year))
     return year
 
 
@@ -154,7 +150,7 @@ class MovieRatingsParser():
     self._tokenSetIndex += 1
     if self._currTokenSet[self._tokenSetIndex] == 'NO':
       if self._currTokenSet[self._tokenSetIndex+1] != 'STARS':
-        raise ParserException('expected "NO STARS" but got "' + self._currTokenSet[self._tokenSetIndex] + ' ' + self._currTokenSet[self._tokenSetIndex+1] + '"')
+        raise ParserException(self._createBaseErrorMessage() + 'expected "NO STARS" but got "' + self._currTokenSet[self._tokenSetIndex] + ' ' + self._currTokenSet[self._tokenSetIndex+1] + '"')
       self._tokenSetIndex += 2
       return 'NO STARS'
     elif self._currTokenSet[self._tokenSetIndex] == 'N/A':
@@ -162,7 +158,7 @@ class MovieRatingsParser():
       return 'N/A'
     for c in self._currTokenSet[self._tokenSetIndex]:
       if c not in self._validStarRatingChars:
-        raise ParserException(_createBaseErrorMessage() + 'Invalid character in star rating: ' + c)
+        raise ParserException(self._createBaseErrorMessage() + 'Invalid character in star rating: \'' + c + '\'')
     self._tokenSetIndex += 1
     return self._currTokenSet[self._tokenSetIndex]
 
@@ -171,9 +167,9 @@ class MovieRatingsParser():
     mpaa = self._currTokenSet[self._tokenSetIndex].lstrip('[').rstrip(']')
     match = re.match('[NRGP\-13C7X]*', mpaa)
     if match == None:
-      raise ParserException(_createBaseErrorMessage() + 'illegal character in MPAA rating: ' + mpaa)
+      raise ParserException(self._createBaseErrorMessage() + 'illegal character in MPAA rating: ' + mpaa)
     if mpaa not in self._validMpaaRatings:
-      raise ParserException(_createBaseErrorMessage() + 'Unknown MPAA rating: ' + mpaa)
+      raise ParserException(self._createBaseErrorMessage() + 'Unknown MPAA rating: ' + mpaa)
     self._tokenSetIndex += 1
     return mpaa
 
@@ -184,9 +180,9 @@ class MovieRatingsParser():
     country = string.join(self._currTokenSet[self._tokenSetIndex:])
     match = re.match('[a-zA-Z ]+', country)
     if match == None:
-      raise ParserException(_createBaseErrorMessage() + 'illegal character in the country: ' + country)
+      raise ParserException(self._createBaseErrorMessage() + 'illegal character in the country: ' + country)
     if country not in self._countries:
-      raise ParserException(_createBaseErrorMessage() + 'Unknown country: ' + country)
+      raise ParserException(self._createBaseErrorMessage() + 'Unknown country: ' + country)
     return country
 
 
@@ -201,7 +197,7 @@ class MovieRatingsParser():
 
 
   def _createBaseErrorMessage(self):
-    return '\n**FAILURE on line ' + self._currLineNum + '(' + self._currLine + '):\n\tCause: '
+    return '\n**FAILURE on line ' + str(self._currLineNum) + ' ("' + self._currLine + '"):\n\tCause: '
 
     
 #------------------------------------------------------------------------------
@@ -249,5 +245,5 @@ if __name__ == '__main__':
   try:
     compiler.compileMovieRatings()
   except MovieRatingsCompilerException as e:
-    str(e)
+    print str(e)
   sys.exit(0)
