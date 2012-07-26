@@ -107,7 +107,7 @@ class MovieRatingsParser():
     self._errorMessage = ''
     self._yearMin = 1900
     self._yearMax = datetime.datetime.now().year + 3
-    self._validStarRatingChars = ['*','\xc2','\xbd']
+    self._validStarRatings = ['NO STARS', 'N/A', '\xc2\xbd*', '*', '*\xc2\xbd', '**', '**\xc2\xbd', '***', '***\xc2\xbd', '****']
     self._validMpaaRatings = ['NR','G','PG','PG-13','R','NC-17','X']
     self._countries = ['USA', 'France', 'England', 'Canada', 'China', 'Russia', 'Germany', 'Argentina', 'Portugal', 'Spain', 'Mexico', 'Italy', 'Ireland', 'Scotland', 'Czech Republic', 'Iran', 'The Netherlands', 'Sweden', 'Finland', 'Norway', 'Poland', 'Bosnia', 'Japan', 'Taiwan', 'India', 'Greece', 'Israel', 'Lebanon', 'South Africa', 'Australia', 'New Zealand', 'Brazil', 'Iceland', 'Vietnam', 'Denmark', 'Belgium', 'Switzerland', 'Austria', 'Kazakhstan', 'Algeria', 'Palestine', 'Nepal', 'Georgia', 'Macedonia', 'Cuba', 'Czechoslovakia', 'Puerto Rico', 'Hungary', 'Yugoslavia', 'Nicaragua', 'USSR', 'Ivory Coast', 'Wales']
 
@@ -148,19 +148,16 @@ class MovieRatingsParser():
 
   def _StarRating(self):
     self._tokenSetIndex += 1
-    if self._currTokenSet[self._tokenSetIndex] == 'NO':
-      if self._currTokenSet[self._tokenSetIndex+1] != 'STARS':
-        raise ParserException(self._createBaseErrorMessage() + 'expected "NO STARS" but got "' + self._currTokenSet[self._tokenSetIndex] + ' ' + self._currTokenSet[self._tokenSetIndex+1] + '"')
+    stars = self._currTokenSet[self._tokenSetIndex]
+    if stars == 'NO':
+      stars = string.join([stars, self._currTokenSet[self._tokenSetIndex+1]])
+    if stars not in self._validStarRatings:
+        raise ParserException(self._createBaseErrorMessage() + 'Invalid star rating: "' + stars + '".')
+    if stars == 'NO STARS':
       self._tokenSetIndex += 2
-      return 'NO STARS'
-    elif self._currTokenSet[self._tokenSetIndex] == 'N/A':
+    else:
       self._tokenSetIndex += 1
-      return 'N/A'
-    for c in self._currTokenSet[self._tokenSetIndex]:
-      if c not in self._validStarRatingChars:
-        raise ParserException(self._createBaseErrorMessage() + 'Invalid character in star rating: \'' + c + '\'')
-    self._tokenSetIndex += 1
-    return self._currTokenSet[self._tokenSetIndex]
+    return stars
 
 
   def _MpaaRating(self):
