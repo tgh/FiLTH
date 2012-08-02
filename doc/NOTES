@@ -68,7 +68,8 @@ WHERE LEFT OFF
 - add "Music" (61) to Almost Famous (73)
 - add "Music" (61) to 24-Hour Party People (13)
 - add "Disney" (69) to Alice in Wonderland (57)
-- add "Atlantis" (69) to Atlantis (124)
+- add "Disney" (69) to Atlantis (124)
+- add "Collection-of-short-films" (70) to Aria (115)
 
 - Gerry should be 2002
 - The Station Agent should probably be ***1/2, not ****
@@ -77,16 +78,6 @@ WHERE LEFT OFF
 - A Christmas Carol has an extra comma in the pdf?
 - change Ed Wood to ***
 - On Golden Pond should be ****
-
-
-- movie ratings grammar:
-
-  G -> M (Y) S [R] C
-  M -> [title characters]
-  Y -> [year]
-  S -> [star rating]
-  R -> [mpaa rating]
-  C -> [country] | epsilon
 
 
 NEEDS

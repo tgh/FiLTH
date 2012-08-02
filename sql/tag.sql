@@ -70,3 +70,5 @@ INSERT INTO tag VALUES (DEFAULT, 'Disney');
 INSERT INTO tag VALUES (DEFAULT, 'Pixar');
 INSERT INTO tag VALUES (DEFAULT, 'Epic');
 INSERT INTO tag VALUES (DEFAULT, 'Mockumentary');
+INSERT INTO tag VALUES (DEFAULT, 'Collection-of-short-films');
+INSERT INTO tag VALUES (DEFAULT, 'Film-Noir');
