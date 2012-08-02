@@ -1,7 +1,5 @@
 WHERE LEFT OFF
 ---------------
-- check movie.sh script--what if mrp.py fails (re: previous_movie...)
-
 - it takes 2 bytes to make ½ character: '\xc2\xbd'
 
 - creating a more agile environment...

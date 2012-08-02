@@ -4,15 +4,19 @@ filth_path=~/Projects/FiLTH
 filth_temp_path=~/Projects/FiLTH/temp
 first_run=0
 
-#create the file previous_movie_ratings.txt if not already created
+# create the file previous_movie_ratings.txt if not already created
 if [ ! -f $filth_temp_path/previous_movie_ratings.txt ]
 then
   first_run=1
   touch $filth_temp_path/previous_movie_ratings.txt
+else
+  # make a copy of previous_movie_ratings.txt in case Movie Ratings fails
+  #  verification later...
+  cp $filth_temp_path/previous_movie_ratings.txt $filth_temp_path/previous_movie_ratings.txt.backup
 fi
 
 # convert Word document to text file
-# (the '-w 120' option tells antiword to use line width of 120 chars)
+#  (the '-w 120' option tells antiword to use line width of 120 chars)
 antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/temp2
 
 # extract the additions to the Movie_Ratings document from the previous version
@@ -40,14 +44,27 @@ sed "/X, Y, Z/d" $filth_temp_path/temp > $filth_temp_path/temp2
 sed "/Total:/d" $filth_temp_path/temp2 > $filth_temp_path/temp
 sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 
-# parse the movie ratings (make sure there are no syntax errors and such)
-echo -e "\n[exec] mrp.py -- Parsing Movie_Ratings...\n"
-$filth_path/scripts/mrp.py $filth_temp_path/temp2
+# verify the movie ratings (make sure there are no syntax errors and such)
+echo -e "\n[exec] mrc.py -- Verifying Movie_Ratings..."
+$filth_path/scripts/mrc.py $filth_temp_path/temp2
 if [ $? -ne 0 ]
 then
+  # put previous_movie_ratings.txt back to its original state
+  if [ $first_run -eq 1 ]
+  then
+    rm $filth_temp_path/previous_movie_ratings.txt
+  else
+    cp $filth_temp_path/previous_movie_ratings.txt.backup $filth_temp_path/previous_movie_ratings.txt
+  fi
   exit
 fi
 echo -e "\n[exec] mrp.py -- Complete: Movie_Ratings ok.\n"
+
+# remove the backup of previous_movie_ratings.txt since verification passed
+if [ ! -f $filth_temp_path/previous_movie_ratings.txt.backup ]
+then
+  rm $filth_temp_path/previous_movie_ratings.txt.backup
+fi
 
 # run the movie2sql program on the resulting text
 # if this is the first run, just create movie.sql
