@@ -3398,3 +3398,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Albert Nobbs', 2011, '***', 'R', DEFAULT, NU
 INSERT INTO movie VALUES (DEFAULT, 'Brave', 2012, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Breaking Dawn Part 1', 2011, '**', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Mamma Mia!', 2008, '*½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Dark Knight Rises', 2012, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Mr. Popper''''s Penguins', 2011, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Never Let Me Go', 2010, '***', 'R', 'England', NULL);
