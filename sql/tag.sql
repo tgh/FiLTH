@@ -72,3 +72,6 @@ INSERT INTO tag VALUES (DEFAULT, 'Epic');
 INSERT INTO tag VALUES (DEFAULT, 'Mockumentary');
 INSERT INTO tag VALUES (DEFAULT, 'Collection-of-short-films');
 INSERT INTO tag VALUES (DEFAULT, 'Film-Noir');
+INSERT INTO tag VALUES (DEFAULT, 'Saga');
+INSERT INTO tag VALUES (DEFAULT, 'Espionage');
+INSERT INTO tag VALUES (DEFAULT, 'Mafia');
