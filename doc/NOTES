@@ -1,7 +1,5 @@
 WHERE LEFT OFF
 ---------------
-- it takes 2 bytes to make ½ character: '\xc2\xbd'
-
 - creating a more agile environment...
   - create a new spreadsheet for stories based on tickets.ods
     - add columns for level (1: high, 2: medium, 3:low, 4:nice-to-have low,
@@ -126,6 +124,8 @@ IDEAS/THOUGHTS
 
 HELPFUL HINTS/REMINDERS
 ------------------------
+- it takes 2 bytes to make ½ character: '\xc2\xbd'
+
 - password for filth database: 0o9..
 
 - to connect to the database with psql:
