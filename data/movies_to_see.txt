@@ -1,6 +1,8 @@
 Django Unchained (2012)
 Bernie (2012)
 Queen of Verseilles (2012)
+Paranorman (2012)
+Searching for Sugarman (2012)
 
 The Conspirator (2011)
 London Boulevard (2011)
@@ -64,7 +66,6 @@ The Proposition (2006)
 
 49 Up (2005)
 The Willow Tree (2005)
-Duane Hopwood (2005)
 Nobody Knows (2005)
 Chicken Little (2005)
 Kingdom of Heaven (2005)
