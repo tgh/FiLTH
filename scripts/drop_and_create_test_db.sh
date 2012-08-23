@@ -1,8 +1,8 @@
 #!/bin/bash
 
-filth_sql_path=~/Projects/FiLTH/sql
-filth_temp_path=~/Projects/FiLTH/temp
-filth_path=~/Projects/FiLTH
+filth_sql_path=~/workspace/FiLTH/sql
+filth_temp_path=~/workspace/FiLTH/temp
+filth_path=~/workspace/FiLTH
 
 echo "Dropping test database..."
 sleep 0.5

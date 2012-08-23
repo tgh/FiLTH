@@ -1,7 +1,7 @@
 #!/bin/bash
 
-filth_path=~/Projects/FiLTH
-filth_temp_path=~/Projects/FiLTH/temp
+filth_path=~/workspace/FiLTH
+filth_temp_path=~/workspace/FiLTH/temp
 
 antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/movie_ratings.txt
 

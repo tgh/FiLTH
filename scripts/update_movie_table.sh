@@ -4,8 +4,8 @@
 # This script updates only the movie table of the database.
 #
 
-filth_path=~/Projects/FiLTH
-filth_temp_path=~/Projects/FiLTH/temp
+filth_path=~/workspace/FiLTH
+filth_temp_path=~/workspace/FiLTH/temp
 
 # remove the previous_movie_ratings.txt file that is created and checked for by movie.sh
 echo "Removing previous_movie_ratings.txt (if exists)..."

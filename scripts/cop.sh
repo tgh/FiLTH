@@ -3,7 +3,7 @@
 # cop means "compile OscarParser"
 # uses the jar files found in jar/ and places the .class file in bin/
 
-filth_path=~/Projects/FiLTH
+filth_path=~/workspace/FiLTH
 
 # remove the 'recompile_OscarParser' file from the temp directory if it
 #  exists.  This will then allow the runop.sh script to execute.

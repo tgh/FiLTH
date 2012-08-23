@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filth_path=~/Projects/FiLTH
+filth_path=~/workspace/FiLTH
 
 #-------------------------------------------------------------------------------
 # PHASE 1: EXTRACTION                                                         --

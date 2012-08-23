@@ -7,7 +7,7 @@ then
   exit 1
 fi
 
-filth_path=~/Projects/FiLTH
+filth_path=~/workspace/FiLTH
 
 # check for the file 'recompile_OscarParser' in the temp directory
 if [ -e $filth_path/temp/recompile_OscarParser ]
