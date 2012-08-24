@@ -12,7 +12,7 @@ import imp
 import string
 import traceback
 
-models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
+models = imp.load_source('models', '/home/tgh/workspace/FiLTH/src/python/models.py')
 tagGivenToFilename = "/home/tgh/Projects/FiLTH/sql/tag_given_to.sql"
 tagGivenToFile = None
 tagFilename = '/home/tgh/Projects/FiLTH/sql/tag.sql'

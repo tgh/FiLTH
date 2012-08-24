@@ -7,7 +7,7 @@ import traceback
 from sqlalchemy.orm.exc import NoResultFound
 from os import system
 
-models = imp.load_source('models', '/home/tgh/Projects/FiLTH/src/orm/models.py')
+models = imp.load_source('models', '/home/tgh/workspace/FiLTH/src/python/models.py')
 movieSqlFile = "/home/tgh/Projects/FiLTH/sql/movie.sql"
 logFile = '/home/tgh/Projects/FiLTH/temp/movie2sql.log'
 log = None

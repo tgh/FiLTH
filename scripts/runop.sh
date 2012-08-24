@@ -18,8 +18,8 @@ fi
 
 # run the OscarParser java program
 cd $filth_path/bin/
-java -cp $filth_path/bin/:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/javacsv.jar OscarParser $1 $2
-cd $filth_path/scripts/
+java -cp $filth_path/bin/:$filth_path/jar/postgres/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/tylerhayes.tools/tylerhayes.tools.jar:$filth_path/jar/csv/javacsv.jar OscarParser $1 $2
+cd -
 
 # combine the created movie sql file (if created) with movie.sql
 if [ -e $filth_path/sql/movie2.sql ]

@@ -13,4 +13,4 @@ then
 fi
 
 # compile OscarParser
-javac -cp $filth_path/jar/tylerhayes.tools.jar:$filth_path/jar/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/javacsv.jar -d $filth_path/bin/ $filth_path/src/OscarParser.java
+javac -cp $filth_path/jar/tylerhayes.tools/tylerhayes.tools.jar:$filth_path/jar/postgres/postgresql-8.4-701.jdbc4.jar:$filth_path/jar/csv/javacsv.jar -d $filth_path/bin/ $filth_path/src/data/OscarParser.java
