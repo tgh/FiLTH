@@ -2,7 +2,6 @@
 temp
 *.swp
 *bin/tylerhayes/*
-src/orm/models.pyc
 .classpath
 .project
 .pydevproject
