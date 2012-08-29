@@ -47,6 +47,8 @@ sed "/shorts$/d" $filth_temp_path/temp > $filth_temp_path/temp2
 # verify the movie ratings (make sure there are no syntax errors and such)
 echo -e "\n[exec] mrc.py -- Verifying Movie_Ratings..."
 $filth_path/scripts/mrc.py $filth_temp_path/temp2
+
+# see if mrc.py failed
 if [ $? -ne 0 ]
 then
   # put previous_movie_ratings.txt back to its original state
@@ -60,18 +62,20 @@ then
 fi
 echo -e "\n[exec] mrp.py -- Complete: Movie_Ratings ok.\n"
 
-# remove the backup of previous_movie_ratings.txt since verification passed
-if [ ! -f $filth_temp_path/previous_movie_ratings.txt.backup ]
-then
-  rm $filth_temp_path/previous_movie_ratings.txt.backup
-fi
-
 # run the movie2sql program on the resulting text
 # if this is the first run, just create movie.sql
 if [ $first_run -eq 1 ]
 then
   # movie2sql.py without the -u option creates $filth_path/sql/movie.sql
   $filth_path/scripts/movie2sql.py $filth_temp_path/temp2
+  
+  # see if movie2sql.py failed
+  if [ $? -ne 0 ]
+  then
+    rm $filth_temp_path/previous_movie_ratings.txt
+  fi
+  exit
+  
 # if this is not the first run...
 else
   # movie2sql.py with the -u option creates/overwrites movie_additions.sql,
@@ -79,6 +83,15 @@ else
   # (the -u option also checks for, and applies, updates to movies already in
   # the db)
   $filth_path/scripts/movie2sql.py -u $filth_temp_path/temp2
+  
+  # see if movie2sql.py failed
+  if [ $? -ne 0 ]
+  # put previous_movie_ratings.txt back to its original state
+  then
+    cp $filth_temp_path/previous_movie_ratings.txt.backup $filth_temp_path/previous_movie_ratings.txt
+  fi
+  exit
+  
   # append the new insertions to the main movie,sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
   # insert the additions into the Postgres database

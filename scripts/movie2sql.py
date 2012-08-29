@@ -24,7 +24,7 @@ def checkArgs():
   if len(sys.argv) != 2 and len(sys.argv) != 3:
     sys.stderr.write("**ERROR: arguments\n\n")
     sys.stderr.write("  usage: movie2sql.py [-u] <input file>\n\n")
-    sys.exit()
+    sys.exit(1)
   #no update option
   if len(sys.argv) == 2:
     fileIdx = 1
@@ -200,6 +200,7 @@ def checkForUpdate(title, year, stars, mpaa, country):
 if __name__ == '__main__':
   fileIdx = 0       #index into argv for the filename
   update  = False   #flag for checking for updates
+  retVal  = 0       #value to return to shell
 
   #check the command-line arguments
   fileIdx, update = checkArgs()
@@ -289,9 +290,12 @@ if __name__ == '__main__':
     if update:
       lg('main', 'committing changes to database...')
       models.session.commit()
+      lg('main', 'exiting with return value \'0\'')
   except Exception:
     traceback.print_exc(file=log)
     traceback.print_exc(file=sys.stdout)
+    retVal = 1
   finally:
     log.close()
     f.close()
+    sys.exit(retVal)
