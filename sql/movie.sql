@@ -3403,3 +3403,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Mr. Popper''''s Penguins', 2011, '**', 'PG',
 INSERT INTO movie VALUES (DEFAULT, 'Never Let Me Go', 2010, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Hope Springs', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Duane Hopwood', 2005, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Bullhead', 2011, '***', 'R', 'Belgium', NULL);
