@@ -12,14 +12,16 @@ import imp
 import string
 import traceback
 
-models = imp.load_source('models', '/home/tgh/workspace/FiLTH/src/python/models.py')
-tagGivenToFilename = "/home/tgh/Projects/FiLTH/sql/tag_given_to.sql"
+FILTH_PATH = '/home/tgh/workspace/FiLTH'
+
+models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
+tagGivenToFilename = FILTH_PATH + '/sql/tag_given_to.sql'
 tagGivenToFile = None
-tagFilename = '/home/tgh/Projects/FiLTH/sql/tag.sql'
+tagFilename = FILTH_PATH + '/sql/tag.sql'
 tagFile = None
-logFilename = '/home/tgh/Projects/FiLTH/temp/tagging.log'
+logFilename = FILTH_PATH + '/temp/tagging.log'
 logger = None
-tempFilename = '/home/tgh/Projects/FiLTH/temp/tagTemp.txt'
+tempFilename = FILTH_PATH + '/temp/tagTemp.txt'
 tempFile = None
 tags = []
 tagMap = {}

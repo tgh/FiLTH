@@ -7,9 +7,11 @@ import traceback
 from sqlalchemy.orm.exc import NoResultFound
 from os import system
 
-models = imp.load_source('models', '/home/tgh/workspace/FiLTH/src/python/models.py')
-movieSqlFile = "/home/tgh/Projects/FiLTH/sql/movie.sql"
-logFile = '/home/tgh/Projects/FiLTH/temp/movie2sql.log'
+FILTH_PATH = '/home/tgh/workspace/FiLTH'
+
+models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
+movieSqlFile = FILTH_PATH + '/sql/movie.sql'
+logFile = FILTH_PATH + '/temp/movie2sql.log'
 log = None
 
 
@@ -218,10 +220,10 @@ if __name__ == '__main__':
 
     if update:
       lg('main', 'this is an update')
-      f = open('/home/tgh/Projects/FiLTH/temp/movie_additions.sql', 'w')
+      f = open(FILTH_PATH + '/temp/movie_additions.sql', 'w')
     else:
       lg('main', 'this is NOT an update')
-      f = open('/home/tgh/Projects/FiLTH/sql/movie.sql', 'w')
+      f = open(FILTH_PATH + '/sql/movie.sql', 'w')
 
     #iterate over the lines retrieved from the file
     for line in lines:

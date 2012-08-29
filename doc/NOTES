@@ -21,16 +21,16 @@ WHERE LEFT OFF
 
         was updating "Hannah" to "Hanna" and received this output:
 
-        (21:49)tgh:~/Projects/FiLTH/scripts[master]$ ./movie.sh 
+        (21:49)tgh:~/workspace/FiLTH/scripts[master]$ ./movie.sh 
 
           Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
           Is this an update? (y/n) y
 
           What is the id of the movie? 704
           Traceback (most recent call last):
-            File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 230, in <module>
+            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 230, in <module>
               insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
-            File "/home/tgh/Projects/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
+            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
               search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
           UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
 

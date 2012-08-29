@@ -20,7 +20,7 @@ import java.util.*;
 public class OscarParser implements GracefulShutdown {
 
   //absolute path to FiLTH project
-  private String filthPath = "/home/tgh/Projects/FiLTH";
+  private String filthPath = "/home/tgh/workspace/FiLTH";
   //for a file to log certain actions and events
   private Log log = null;
   //for a connection to the database
