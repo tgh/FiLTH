@@ -6,3 +6,4 @@ temp
 .project
 .pydevproject
 *.pyc
+.setting*
