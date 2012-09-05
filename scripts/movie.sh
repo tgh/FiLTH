@@ -73,8 +73,8 @@ then
   if [ $? -ne 0 ]
   then
     rm $filth_temp_path/previous_movie_ratings.txt
+    exit
   fi
-  exit
   
 # if this is not the first run...
 else
@@ -89,8 +89,8 @@ else
   # put previous_movie_ratings.txt back to its original state
   then
     cp $filth_temp_path/previous_movie_ratings.txt.backup $filth_temp_path/previous_movie_ratings.txt
+    exit
   fi
-  exit
   
   # append the new insertions to the main movie,sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
