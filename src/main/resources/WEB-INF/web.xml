@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.4">
+	
+	<!--
+      - Servlet that dispatches requests to registered handlers (Controller
+      - methods).  This has its own application context--by default it is
+      - defined in "{servlet-name}-servlet.xml" in the WEB_INF directory.
+      -->
+    <servlet>
+        <servlet-name>filth</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+</web-app>
