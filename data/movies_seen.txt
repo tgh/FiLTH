@@ -75,30 +75,31 @@ Breaking Dawn Part 1 **
 Albert Nobbs ***
 Mr. Popper's Penguins **
 Bullhead ***
+A Separation ****
 
 Top Ten
 1. The Artist
 2. The Tree of Life
 3. Moneyball
-4. The Adventures of Tintin
-5. Midnight in Paris
-6. Take Shelter
-7. The Descendants
-8. Margin Call
-9. Rango
+4. A Separation
+5. The Adventures of Tintin
+6. Midnight in Paris
+7. Take Shelter
+8. The Descendants
+9. Margin Call
 10. Hugo
 
-11. The Ides of March
+11. Rango
 12. Bill Cunningham: New York
-13. Trust
-14. Harry Potter and the Deathy Hollows Part 2
-15. We Need to Talk About Kevin
+13. The Ides of March
+14. Trust
+15. Harry Potter and the Deathy Hollows Part 2
 
 Best Picture
   The Adventures of Tintin
 * The Artist
-  Midnight in Paris
   Moneyball
+  A Separation
   The Tree of Life
 
 Best Actor
@@ -140,11 +141,11 @@ Best Supporting Actress
 
 Best Director
   Woody Allen for "Midnight in Paris"
+  Asghar Farhadi for "A Separation"
 * Michel Hazanavicius for "The Artist"
 * Terrence Malick for "The Tree of Life"
   David Schwimmer for "Trust"
   Martin Scorsese for "Hugo"
-  Gore Verbinski for "Rango"
 
 Best Cinematography
   The Adventures of Tintin
@@ -164,8 +165,9 @@ Best Cinematography
 Best Original Screenplay
   The Artist
   Margin Call
-* Midnight in Paris
+  Midnight in Paris
   Rango
+* A Separation
   Trust
 
 Best Adapted Screenplay
