@@ -3405,3 +3405,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Hope Springs', 2012, '***', 'PG-13', 'USA', 
 INSERT INTO movie VALUES (DEFAULT, 'Duane Hopwood', 2005, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Bullhead', 2011, '***', 'R', 'Belgium', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'A Separation', 2011, '****', 'PG-13', 'Iran', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Lemony Snicket''''s a Series of Unfortunate Events', 2004, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Samsara', 2012, '****', 'PG-13', 'USA', NULL);
