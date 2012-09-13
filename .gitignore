@@ -7,3 +7,4 @@ temp
 .pydevproject
 *.pyc
 .setting*
+build.passwords.properties
