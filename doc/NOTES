@@ -81,6 +81,28 @@ WHERE LEFT OFF
 - Bourne Ultimatum should be The Bourne Ultimatum
 
 
+HOW TO
+-------
+- to start/stop/restart apache:
+
+	$ sudo /etc/init.d/apache2 [start|stop|restart]
+
+- to start tomcat:
+
+	$ workspace/tomcat/bin/catalina.sh start
+
+
+SETTING UP SPRING APP
+----------------------
+- Used tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
+  for some of the setup
+  - had to replace
+  		<taskdef name="install" classname="org.apache.catalina.ant.InstallTask">
+  	with
+  		<taskdef name="install" classname="org.apache.catalina.ant.DeployTask">
+  	because InstallTask was depracated after Tomcat 6, and I'm using Tomcat 7
+
+
 NEEDS
 ------
 - all entity tables need to be inserted before any relationship tables
