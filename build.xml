@@ -4,14 +4,14 @@
     <property file="build.properties"/>
 	<property file="build.passwords.properties" />
 
-    <property name="src.dir" value="src"/>
+    <property name="src.dir" value="src/main/java"/>
     <property name="web.dir" value="src/main/resources"/>
     <property name="build.dir" value="target"/>
     <property name="name" value="filth"/>
 
     <path id="master-classpath">
-        <fileset dir="${web.dir}/WEB-INF/lib">
-            <include name="*.jar"/>
+        <fileset dir="jar">
+            <include name="*/*.jar"/>
         </fileset>
         <!-- We need the servlet API classes: -->
         <!--  * for Tomcat 5/6 use servlet-api.jar -->

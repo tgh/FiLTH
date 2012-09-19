@@ -11,9 +11,33 @@
 
 	<mvc:resources mapping="/src/main/resources/**"
 				   location="/src/main/resources/" />
-				   
 	<mvc:annotation-driven />
-	
 	<context:component-scan base-package="net.tylerhayes.filth" />
+	
+	
+	<!-- Freemarker config --------------------------------------------------->
+	
+	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+	  <property name="templateLoaderPath">
+	  	<value>/freemarker/</value>
+	  </property>
+	  
+	  <!-- Uncomment any of the following for specific settings:
+	  <property name="freemarkerSettings">
+        <util:properties>
+          <prop key="auto_import">layouts.ftl as layout, /common/util.ftl as util, /spring.ftl as spring</prop>
+          <prop key="template_exception_handler">rethrow</prop>
+          <!-- This avoids ints greater than '1000' from showing up with commas like '1,000'
+          <prop key="number_format">0.####</prop>
+        </util:properties>
+      </property>
+      -->
+	</bean>
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+	  <property name="cache" value="true"/>
+	  <property name="suffix" value=".ftl"/>
+	  <property name="contentType" value="text/html;charset=UTF-8"/>
+	</bean>
 				   
 </beans>
