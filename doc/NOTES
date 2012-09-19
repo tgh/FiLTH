@@ -90,10 +90,39 @@ HOW TO
 - to start tomcat:
 
 	$ workspace/tomcat/bin/catalina.sh start
+	
+- to check apache:
+	- go to url: localhost
+- to check tomcat:
+	- got to url: localhost:8080
 
 
-SETTING UP SPRING APP
-----------------------
+SETTING UP ENVIRONMENT
+-----------------------
+- I installed ant like this at first:
+	- download tarball from http://httpd.apache.org/download.cgi#apache24
+	- extract tarball to ~/apache
+	- install Apache Portable Runtime project (APR)
+	  - download tarballs apr-1.4.6.tar.gz and apr-util-1.4.1.tar.gz from http://apr.apache.org/download.cgi
+	  - extract them to ~/apache/srclib/apr and ~/apache/srclib/apr-util, respectively
+	- install prce (Perl Compatible Regular Expressions)
+	  - download zip file from http://sourceforge.net/projects/pcre/files/pcre/
+	  - extract to ~/pcre-8.30
+	  - run configure; make; sudo make install in pcre-8.30
+	- in ~/apache: $ configure --with-included-apr --prefex=/home/tgh/Installed_Programs/apache_2.4
+	- in ~/apache: $ make
+	- in ~/apache: $ sudo make install
+	- add ~/Installed_Programs/apache_2.4/bin to $PATH
+		
+- for seting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
+
+- download Spring from http://www.springsource.org/download
+	- extract to workspace
+- download Hibernate from http://www.hibernate.org/downloads
+	- extract to workspace
+- download Freemkarker from http://freemarker.sourceforge.net/freemarkerdownload.html
+	- extract freemarker.jar from /lib
+
 - Used tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
   for some of the setup
   - had to replace
@@ -189,18 +218,10 @@ HELPFUL HINTS/REMINDERS
   - arrange diagram how you want
   - zoom in to the level of resolution you want
   - click the export button below and to the left of "References" tab
-
-- to start apache:
-
-  $ apachectl start
   
-  - (apachectl is found in ~/Installed_Programs/apache_2.4/bin)
-  - everything is ok if no output
-  - ($ apachectl stop) to stop
-  - ~/Installed_Programs/apache_2.4/logs/httpd.pid contains the pid of httpd
-  - apache logs found in ~/Installed_Programs/apache_2.4/logs
-  - config file: ~/Installed_Programs/apache_2.4/conf/httpd.conf
-  - using port 2121
+- apache2 is located in /etc/apache2, where you'll find files such as
+	- apache2.conf (also specifies where the log files are located)
+	- httpd.conf
 
 
 REFERENCES
