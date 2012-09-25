@@ -9,3 +9,4 @@ temp
 .setting*
 build.passwords.properties
 target
+doc/setup/*
