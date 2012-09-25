@@ -2224,7 +2224,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Murphy''s Romance', 1985, 'not seen', 'PG-13
 INSERT INTO movie VALUES (DEFAULT, 'Runaway Train', 1985, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Cocoon', 1985, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Salvador', 1986, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Good Morning, Vietnam', 1987, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Good Morning, Vietnam', 1987, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Ironweed', 1987, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Dark Eyes', 1987, 'not seen', 'NR', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Street Smart', 1987, 'not seen', 'R', 'USA', DEFAULT);
@@ -3407,3 +3407,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Bullhead', 2011, '***', 'R', 'Belgium', NULL
 INSERT INTO movie VALUES (DEFAULT, 'A Separation', 2011, '****', 'PG-13', 'Iran', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Lemony Snicket''''s a Series of Unfortunate Events', 2004, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Samsara', 2012, '****', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Master', 2012, '***', 'R', 'USA', NULL);
