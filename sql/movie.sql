@@ -3408,3 +3408,5 @@ INSERT INTO movie VALUES (DEFAULT, 'A Separation', 2011, '****', 'PG-13', 'Iran'
 INSERT INTO movie VALUES (DEFAULT, 'Lemony Snicket''''s a Series of Unfortunate Events', 2004, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Samsara', 2012, '****', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Master', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 1974, '*', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Koyaanisqatsi', 1982, '***½', 'NR', 'USA', NULL);
