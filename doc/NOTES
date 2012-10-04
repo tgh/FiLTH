@@ -126,10 +126,40 @@ SETTING UP ENVIRONMENT
 - Used tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
   for some of the setup
   - had to replace
+  
   		<taskdef name="install" classname="org.apache.catalina.ant.InstallTask">
+  		
   	with
+  	
   		<taskdef name="install" classname="org.apache.catalina.ant.DeployTask">
-  	because InstallTask was depracated after Tomcat 6, and I'm using Tomcat 7
+  		
+  	because InstallTask was deprecated after Tomcat 6, and I'm using Tomcat 7
+  	
+  - had to replace
+  
+        <path id="catalina-ant-classpath">
+            <!-- We need the Catalina jars for Tomcat -->
+            <!--  * for other app servers - check the docs -->
+            <fileset dir="${appserver.lib}">
+                <include name="catalina-ant.jar"/>
+            </fileset>
+        </path>
+        
+    with
+    
+        <path id="catalina-ant-classpath">
+            <!-- We need the Catalina jars for Tomcat -->
+            <!--  * for other app servers - check the docs -->
+            <fileset dir="${appserver.lib}">
+               <include name="catalina-ant.jar"/>
+               <include name="tomcat-coyote.jar"/>
+               <include name="tomcat-util.jar"/>
+            </fileset>
+            <fileset dir="${appserver.home}/bin">
+               <include name="tomcat-juli.jar"/>
+            </fileset>
+    
+        </path>
 
 
 NEEDS
@@ -222,6 +252,10 @@ HELPFUL HINTS/REMINDERS
 - apache2 is located in /etc/apache2, where you'll find files such as
 	- apache2.conf (also specifies where the log files are located)
 	- httpd.conf
+	
+- ant is located in /usr/share/ant
+
+- tomcat is located in ~/workspace/tomcat
 
 
 REFERENCES
