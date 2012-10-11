@@ -324,7 +324,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Chinatown', 1974, '****', 'R', 'USA', DEFAUL
 INSERT INTO movie VALUES (DEFAULT, 'Chocolat', 2000, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Chop Shop', 2008, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Chorus', 2004, '***', 'PG-13', 'France', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'A Christmas, Carol', 2009, '***½', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'A Christmas Carol', 2009, '***½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'A Christmas Story', 1983, '****', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe', 2005, '**½', 'PG', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Chronicles of Narnia: Prince Caspian', 2008, '***', 'PG', DEFAULT, DEFAULT);
@@ -622,7 +622,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Gattaca', 1997, '***½', 'PG-13', 'USA', DEF
 INSERT INTO movie VALUES (DEFAULT, 'The General', 1926, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The General', 1999, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'George Washington', 2000, '****', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Gerry', 2003, '****', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Gerry', 2002, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Get on the Bus', 1996, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Get Shorty', 1995, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Ghost', 1990, '**', 'PG-13', 'USA', DEFAULT);

@@ -1,5 +1,7 @@
 WHERE LEFT OFF
 ---------------
+- traceback for movie2sql.py when trying to update Ed Wood (see movie2sql log)
+
 - creating a more agile environment...
   - create a new spreadsheet for stories based on tickets.ods
     - add columns for level (1: high, 2: medium, 3:low, 4:nice-to-have low,
@@ -68,14 +70,13 @@ WHERE LEFT OFF
 - add "Disney" (69) to Alice in Wonderland (57)
 - add "Disney" (69) to Atlantis (124)
 - add "Collection-of-short-films" (70) to Aria (115)
-- add "Espionage" (76) to all Austin Powers movies
-- add "Mafia" (77) to Analyze This
+- add "Espionage" (76) to all Austin Powers movies (128,129,130)
+- add "Mafia" (77) to Analyze This (93)
+- add "Epic" (71) to Birth of a Nation (210)
 
-- Gerry should be 2002
 - The Station Agent should probably be ***1/2, not ****
 - sorting on star_rating has undesired results now that it is test rather than
   integer.  use "C" locale???
-- A Christmas Carol has an extra comma in the pdf?
 - change Ed Wood to ***
 - On Golden Pond should be ****
 - Bourne Ultimatum should be The Bourne Ultimatum
@@ -201,6 +202,8 @@ IDEAS/THOUGHTS
 
   However, this still does not take you directly to the movie page, but a search
   results page, which is what I'm trying to avoid.
+
+- create a Comparator for star ratings (maybe make star ratings an enum?)
 
 
 HELPFUL HINTS/REMINDERS
