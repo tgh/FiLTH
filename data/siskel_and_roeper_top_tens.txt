@@ -1,7 +1,7 @@
 Gene Siskel
 ------------
 1969
-  01. Z (Costa-Gravas)
+* 01. Z (Costa-Gravas)
 * 02. Midnight Cowboy (John Schlesinger)
   03. Alice's Restaurant (Arthur Penn)
   04. Simon of the Desert (Luis Bunuel)
@@ -21,7 +21,7 @@ Gene Siskel
   06. Adalen 31 (Bo Widerberg)
   07. Salesman (Albert & David Maysles)
   08. Woodstock (Michael Wadleigh)
-  09. Trilogy ()
+  09. Trilogy (Frank Perry)
   10. The Wild Child (Francois Truffaut)
 
 1971
@@ -461,16 +461,16 @@ Richard Roeper
 *  10. Blood Diamond
 
 2007
-*   1. Michael Clayton
-*   2. No Country For Old Men
-    3. The Lookout
-*   4. Juno
-    5. American Gangster
-*   6. Gone Baby Gone
-*   7. Zodiac
-    8. Superbad
-*   9. Once
-*   10. Paris, Je T'aime
+*  1. Michael Clayton
+*  2. No Country For Old Men
+   3. The Lookout
+*  4. Juno
+   5. American Gangster
+*  6. Gone Baby Gone
+*  7. Zodiac
+   8. Superbad
+*  9. Once
+*  10. Paris, Je T'aime
 
 2008 - (top 25)
 *  1. Slumdog Millionaire
@@ -480,7 +480,7 @@ Richard Roeper
    5. I've Loved You So Long
 *  6. Gran Torino
    7. Milk
-   8. The Visitor
+*  8. The Visitor
    9. Forgetting Sarah Marshall
 * 10. Frozen River
 * 11. Doubt
@@ -522,3 +522,16 @@ Richard Roeper
 * 08. True Grit
 * 09. The King's Speech
   10. Somewhere
+
+2011
+* 01. Drive
+* 02. The Artist
+* 03. Contagion
+* 04. The Tree of Life
+* 05. The Descendants
+  06. Young Adult
+  07. Source Code
+* 08. Moneyball
+  09. The Beaver
+  10. Hugo
+  11. 50/50

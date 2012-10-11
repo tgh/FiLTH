@@ -3410,3 +3410,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Samsara', 2012, '****', 'PG-13', 'USA', NULL
 INSERT INTO movie VALUES (DEFAULT, 'The Master', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 1974, '*', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Koyaanisqatsi', 1982, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Into the Abyss', 2011, '***', 'NR', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Powaqqatsi', 1988, '***', 'G', 'USA', NULL);

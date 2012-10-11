@@ -18,12 +18,12 @@
   05. The Two of Us (Claude Berri)
 * 06. The Producers (Mel Brooks)
   07. Oliver! (Carol Reed)
-  08. The Fifth Horseman Is Fear ()
+  08. The Fifth Horseman Is Fear (Zbynek Brynych)
   09. Rachel, Rachel (Paul Newman)
 * 10. Romeo and Juliet (Franco Zeffirelli)
 
 1969
-  01. Z (Costa-Gravas)
+* 01. Z (Costa-Gravas)
   02. Medium Cool (Haskell Wexler)
   03. Weekend (Jean-Luc Godard)
 * 04. if.... (Lindsay Anderson)
@@ -512,7 +512,7 @@ stars to during the year.
 * The Queen (Stephen Frears)
   Three Times (Hou Hsiao-hsien)
   Tristam Shandy: A Cock & Bull Story (Michael Winterbottom)
-  Tsoti (Gavin Hood)
+  Tsotsi (Gavin Hood)
 * United 93 (Paul Greengrass)
   Volver (Pedro Almodóvar)
 
@@ -615,7 +615,7 @@ Special Jury Prize:
 
 (animation top ten - not ranked)
 *   A Christmas Carol
-    Coraline
+*   Coraline
 *   Fantastic Mr. Fox
     Sita Sings the Blues
 *   9
@@ -664,7 +664,7 @@ Also:
 
 
 2011
-  01. A Separation
+* 01. A Separation
   02. Shame
 * 03. The Tree of Life
 * 04. Hugo
@@ -675,7 +675,7 @@ Also:
   09. Le Havre
 * 10. The Artist
 
-  11. Melancholia
+* 11. Melancholia
   12. Terri
 * 13. The Descendents
   14. Margaret
@@ -683,16 +683,16 @@ Also:
 * 16. Harry Potter and the Deathly Hollows Part 2
 * 17. Trust
   18. Life, Above All
-  19. The Mill and the Cross
+* 19. The Mill and the Cross
   20. Another Earth
 
   Best Documentaries
-  01. The Interrupters
+* 01. The Interrupters
 * 02. Bill Cunningham New York
-  03. Into the Abyss: A Tale of Death, A Tale of Life
+* 03. Into the Abyss: A Tale of Death, A Tale of Life
   04. Tabloid
   05. Resurrect Dead: The Mystery of the Toynbee Tiles
-  06. Cave of Forgotten Dreams
+* 06. Cave of Forgotten Dreams
   07. Pina
   08. Garbo the Spy
   09. The Last Mountain
