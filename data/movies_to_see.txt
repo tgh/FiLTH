@@ -26,7 +26,6 @@ Monsieur Lazhar | 2011 | library, Netflix dvd | nominated best foreign language 
 Undefeated | 2011  | Netflix future | best documentary, Ebert ***1/2
 Pirates: On Stranger Tides | 2011 | library, Netflix dvd | next in series, Ebert **
 
-All Good Things | 2010 | Netflix instant | looks good, Ryan Gosling, Ebert ***1/2
 Conviction | 2010 | Netflix dvd | looks good, Sam Rockwell, Ebert ***
 45365 | 2010 | Netflix future | interesting documentary, Ebert ****
 The Last Airbender | 2010 | library, Netflix instant | directed by M. Night Shyamalan, Ebert 1/2*
