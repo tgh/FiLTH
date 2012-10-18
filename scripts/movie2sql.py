@@ -85,9 +85,6 @@ def FormatTitle(title):
 def lg(func, mesg):
   '''Writes an entry to the log file with format "[function name]: message"'''
 
-  #replace '½' (which is represented by "\xc2\xbd") with "1/2", because it is
-  # just too much of a pain otherwise 
-  mesg = re.sub(r'[\xc2\xbd]', '1/2', mesg)
   log.write('[' + func + ']: ' + mesg + '\n')
 
 
@@ -162,7 +159,11 @@ def checkForUpdate(title, year, stars, mpaa, country):
       movie.year = year
   #update what needs updating
   if movie.star_rating != unicode(stars, 'utf_8'):
-    lg('checkForUpdate', 'star ratings differ: db star rating = ' + movie.star_rating + ', entry star rating = ' + str(stars) + '.  Updating...')
+    #replace "\xc2\xbd" (the representation of a '1/2' character) with the
+    # literal "1/2", because it is just too much of a pain otherwise
+    dbStars = re.sub(r'[\xc2\xbd]', '1/2', movie.star_rating)
+    entryStars = re.sub(r'[\xc2\xbd]', '1/2', stars)
+    lg('checkForUpdate', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
     origStars = movie.star_rating
     movie.star_rating = stars
   if movie.mpaa != mpaa:
