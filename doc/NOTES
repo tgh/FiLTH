@@ -1,85 +1,5 @@
 WHERE LEFT OFF
 ---------------
-- traceback for movie2sql.py when trying to update Ed Wood (see movie2sql log)
-
-- creating a more agile environment...
-  - create a new spreadsheet for stories based on tickets.ods
-    - add columns for level (1: high, 2: medium, 3:low, 4:nice-to-have low,
-      5:nice-to-have medium, 6:nice-to-have high), points estimated, tasks #
-      (e.g. if Story #21, then tesk 21.1, 21.2, 21.3, etc)
-  - description will be like wgen story format: "As ... I would like ... " etc
-    - S19 description: As an end user, I would like the movie results of a
-      search in filth to be a URL link to the movie's IMDB page.
-  - need to doc bug statuses, bug levels, story statuses, etc
-  - create a bug spreadsheet
-    - b1
-      - status: O
-      - level: 3
-      - description: For whatever reason, Python does not handle unicode well.
-        This kind of error happens frequently.  This was a simple update of a
-        title of a movie, and dealt only with ascii characters, but it still
-        barfed on unicode?
-      - example:
-
-        was updating "Hannah" to "Hanna" and received this output:
-
-        (21:49)tgh:~/workspace/FiLTH/scripts[master]$ ./movie.sh 
-
-          Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
-          Is this an update? (y/n) y
-
-          What is the id of the movie? 704
-          Traceback (most recent call last):
-            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 230, in <module>
-              insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
-            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
-              search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
-          UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
-
-
-- add "Black-and-White"(tid=32) tag to 8 1/2 (mid=4)
-- add "New York" tag to 13 Going on 30 (mid=9)
-- add "Odd" (51) to "3 Women" (1)
-- add "Odd" (51) to "12 Monkeys" (6)
-- add "Psychological" (46) to "12 Monkeys" (6) ?
-- add "Series" (55) to "21 Up" (12)
-- add "Series" (55) to "28 Up" (17)
-- add "Series" (55) to "35 Up" (19)
-- add "Series" (55) to "42 Up" (20)
-- add "Remake" (57) to 3:10 to Yuma (2)
-- add "Based-on-book" (58) to 127 Hours (21)
-- add "Based-on-short-story" (59) to 2001 (25)
-- add "Based-on-short-story" (59) to AI (27)
-- add "Based-on-book" (58) to About a Boy (28)
-- add "Based-on-book" (58) to Adaptation (36)
-- add "Based-on-short-story" (59) to The Adjustment Bureau (37)
-- add "Based-on-book" (58) to The Adventures of Robin Hood (40)
-- add "Based-on-book" (58) to 25th Hour (14)
-- add "Based-on-book" (58) to About Schmidt (29)
-- add "Based-on-book" (58) to The Accidental Tourist (32)
-- add "Based-on-book" (58) to Adventures of Baron (38)
-- add "Based-on-book" (58) to Affliction (41)
-- add "Based-on-book" (58) to African Queen (42)
-- add "Based-on-book" (58) to The Age of Innocence (45)
-- add "Based-on-play" (60) to Alfie (52)
-- add "Based-on-book" (58) to Alice in Wonderland (57)
-- add "Black-and-white" (32) to All Quiet on the Western Front (69)
-- add "Music" (61) to All That Jazz (70)
-- add "Music" (61) to Almost Famous (73)
-- add "Music" (61) to 24-Hour Party People (13)
-- add "Disney" (69) to Alice in Wonderland (57)
-- add "Disney" (69) to Atlantis (124)
-- add "Collection-of-short-films" (70) to Aria (115)
-- add "Espionage" (76) to all Austin Powers movies (128,129,130)
-- add "Mafia" (77) to Analyze This (93)
-- add "Epic" (71) to Birth of a Nation (210)
-
-- The Station Agent should probably be ***1/2, not ****
-- sorting on star_rating has undesired results now that it is test rather than
-  integer.  use "C" locale???
-- change Ed Wood to ***
-- On Golden Pond should be ****
-- Bourne Ultimatum should be The Bourne Ultimatum
 
 
 HOW TO
@@ -203,7 +123,44 @@ IDEAS/THOUGHTS
   However, this still does not take you directly to the movie page, but a search
   results page, which is what I'm trying to avoid.
 
-- create a Comparator for star ratings (maybe make star ratings an enum?)
+- sorting on star_rating has undesired results now that it is test rather than
+  integer
+  ? use "C" locale
+  ? create a Comparator for star ratings (maybe make star ratings an enum?)
+
+- Ticket #71: creating a more agile environment...
+  - create a new spreadsheet for stories based on tickets.ods
+    - add columns for level (1: high, 2: medium, 3:low, 4:nice-to-have low,
+      5:nice-to-have medium, 6:nice-to-have high), points estimated, tasks #
+      (e.g. if Story #21, then tesk 21.1, 21.2, 21.3, etc)
+  - description will be like wgen story format: "As ... I would like ... " etc
+    - S19 description: As an end user, I would like the movie results of a
+      search in filth to be a URL link to the movie's IMDB page.
+  - need to doc bug statuses, bug levels, story statuses, etc
+  - create a bug spreadsheet
+    - b1
+      - status: O
+      - level: 3
+      - description: For whatever reason, Python does not handle unicode well.
+        This kind of error happens frequently.  This was a simple update of a
+        title of a movie, and dealt only with ascii characters, but it still
+        barfed on unicode?
+      - example:
+
+        was updating "Hannah" to "Hanna" and received this output:
+
+        (21:49)tgh:~/workspace/FiLTH/scripts[master]$ ./movie.sh 
+
+          Did not find <"Hanna" (2011) **½ [PG-13] USA> in the database.
+          Is this an update? (y/n) y
+
+          What is the id of the movie? 704
+          Traceback (most recent call last):
+            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 230, in <module>
+              insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
+            File "/home/tgh/workspace/FiLTH/scripts/movie2sql.py", line 140, in checkForUpdate
+              search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
+          UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 2: ordinal not in range(128)
 
 
 HELPFUL HINTS/REMINDERS
