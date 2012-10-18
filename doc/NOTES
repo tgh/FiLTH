@@ -1,6 +1,7 @@
 WHERE LEFT OFF
 ---------------
-
+- installed SpringSource Tool (in ~/Installed_Programs/springsource/sts-3.1.0.RELEASE)
+- making year csv files: working on 2004.csv
 
 HOW TO
 -------
@@ -10,7 +11,7 @@ HOW TO
 
 - to start tomcat:
 
-	$ workspace/tomcat/bin/catalina.sh start
+	$ ~/workspace/tomcat/bin/catalina.sh start
 	
 - to check apache:
 	- go to url: localhost
@@ -216,6 +217,8 @@ HELPFUL HINTS/REMINDERS
 - ant is located in /usr/share/ant
 
 - tomcat is located in ~/workspace/tomcat
+
+- Java is located in /usr/lib/jvm/java-6-sun-1.6.0.26
 
 
 REFERENCES
