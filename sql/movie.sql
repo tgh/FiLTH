@@ -240,7 +240,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Bottle Rocket', 1996, '***½', 'R', 'USA', D
 INSERT INTO movie VALUES (DEFAULT, 'Bound', 1996, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Bourne Identity', 2002, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Bourne Supremacy', 2004, '***', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Bourne Ultimatum', 2007, '***', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'The Bourne Ultimatum', 2007, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Bowling for Columbine', 2002, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Boxcar Bertha', 1972, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Boys Don''t Cry', 1999, '***½', 'R', 'USA', DEFAULT);
@@ -499,7 +499,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Easy Rider', 1969, '****', 'R', 'USA', DEFAU
 INSERT INTO movie VALUES (DEFAULT, 'Eclipse', 2010, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'An Education', 2009, '**½', 'PG-13', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Education of Little Tree', 1997, '***', 'PG', 'Canada', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Ed Wood', 1994, '***½', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Ed Wood', 1994, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Edward Scissorhands', 1990, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Election', 1999, '*½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Elephant', 2003, '****', 'R', 'USA', DEFAULT);
@@ -1202,7 +1202,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Ocean''s Twelve', 2004, '***', 'PG-13', 'USA
 INSERT INTO movie VALUES (DEFAULT, 'Ocean''s Thirteen', 2006, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Of Mice and Men', 1992, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Office Space', 1999, '***½', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'On Golden Pond', 1981, '***½', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'On Golden Pond', 1981, '****', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'On the Ropes', 1999, '**½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'On the Waterfront', 1954, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Once', 2007, '***½', 'R', 'Ireland', DEFAULT);
@@ -1552,7 +1552,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Stardust Memories', 1980, '***½', 'PG', 'US
 INSERT INTO movie VALUES (DEFAULT, 'Startup.com', 2001, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'State and Main', 2000, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'State of Play', 2009, '***', 'PG-13', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'The Station Agent', 2003, '****', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'The Station Agent', 2003, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Stay', 2005, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Steamboat Bill, Jr.', 1928, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Stevie', 2003, '***½', 'R', 'USA', DEFAULT);
@@ -3412,3 +3412,5 @@ INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 1974, '*', 'PG', 'USA', N
 INSERT INTO movie VALUES (DEFAULT, 'Koyaanisqatsi', 1982, '***½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Into the Abyss', 2011, '***', 'NR', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Powaqqatsi', 1988, '***', 'G', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'All Good Things', 2010, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Omen', 1976, '***', 'R', 'USA', NULL);
