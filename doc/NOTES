@@ -1,7 +1,23 @@
 WHERE LEFT OFF
 ---------------
 - installed SpringSource Tool (in ~/Installed_Programs/springsource/sts-3.1.0.RELEASE)
-- making year csv files: working on 2004.csv
+- making year csv files: completed 2011,2010,2009,2008
+  - after setting up all lines to start with the category, run these sed
+    commands on the appropriate year csv:
+
+sed -i 's/^/2008,/g' 2008.csv;
+sed -i 's/[0-9][0-9]\. //g' 2008.csv;
+sed -i 's/[0-9]\. //g' 2008.csv;
+sed -i "s/\(2008,Top Ten.*\)/\1,,0,/g" 2008.csv;
+sed -i "s/\(2008,Best Pictu.*\)/\1,,0,/g" 2008.csv;
+sed -i "s/\(2008,Best.*Act.*\)/\1,0,/g" 2008.csv;
+sed -i "s/\(2008,Best Director.*\)/\1,0,/g" 2008.csv;
+sed -i "s/\(2008,Best.*Screenplay.*\)/\1,,0,/g" 2008.csv;
+sed -i "s/\(2008,Best Cinemato.*\)/\1,,0,/g" 2008.csv;
+sed -i "s/\(2008,Worst.*\)/\1,,0,/g" 2008.csv;
+sed -i "s/\(.*\)\* \(.*\)0\(.*\)/\1\21\3/g" 2008.csv;
+
+
 
 HOW TO
 -------
