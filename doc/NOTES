@@ -1,5 +1,11 @@
 WHERE LEFT OFF
 ---------------
+** If there are problems connecting to te database, it might be due to changes
+  in /opt/PostgreSQL/9.0/data/pg_hba.conf for working from home.
+
+  I changed the last two lines of data to use METHOD "trust" instead of "md5"
+  which is what is was before.
+
 - installed SpringSource Tool (in ~/Installed_Programs/springsource/sts-3.1.0.RELEASE)
 - making year csv files: completed 2011,2010,2009,2008
   - after setting up all lines to start with the category, run these sed
