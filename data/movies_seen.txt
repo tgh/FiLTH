@@ -913,7 +913,7 @@ Best Picture
 
 Best Actor
   Christian Bale in "The Prestige"
-* Leonardo DiCaprio in "The Departed"
+* Leonardo DiCaprio in "The Departed" and "Blood Diamond"
   Paul Giamatti in "Lady in the Water"
   Ryan Gosling in "Half Nelson"
   Hugh Jackman in "The Prestige" and "The Fountain"
@@ -921,6 +921,7 @@ Best Actor
 
 Best Actress
   Debbie Doebereiner in "Bubble"
+  Kirsten Dunst in "Marie Antionette"
   Helen Miren in "The Queen"
 * Meryl Streep in "The Devil Wears Prada"
 
@@ -968,6 +969,17 @@ Best Adapted Screenplay
 * The Devil Wears Prada
   Letters From Iwo Jima
   The Prestige
+
+Best Scene
+  "You're No Cop" in The Departed
+  "The Rat Persuing the Mole" in The Departed
+  "I'm Not the Rat" in The Departed
+* "The Botched Operation" in The Departed
+  "A Lesson in Blue" in The Devil Wears Prada
+  "The Drug Deal by Teacher and Student" in Half Nelson
+  "Playing it Cool" in Monster House
+  "Pale Man Awakens" in Pan's Labyrinth
+  "Do You Fear Death?" in Pirates of the Carribean: Dead Man's Chest
 
 
 2005
