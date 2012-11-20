@@ -1,6 +1,7 @@
 WHERE LEFT OFF
 ---------------
 - maybe whittle down the number of nominees I have for my wards (e.g. best scene 2003)
+- 2004 awards
 
 ** If there are problems connecting to the database, it might be due to changes
   in /opt/PostgreSQL/9.0/data/pg_hba.conf for working from home.
