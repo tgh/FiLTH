@@ -1,5 +1,7 @@
 WHERE LEFT OFF
 ---------------
+- maybe whittle down the number of nominees I have for my wards (e.g. best scene 2003)
+
 ** If there are problems connecting to the database, it might be due to changes
   in /opt/PostgreSQL/9.0/data/pg_hba.conf for working from home.
 
@@ -13,8 +15,8 @@ WHERE LEFT OFF
     commands on the appropriate year csv:
 
 first:
-sed -i 's/^  //g' ./2006.csv
-sed -i '/^$/d' ./2006.csv
+sed -i 's/^  //g'
+sed -i '/^$/d'
 
 then manually place the category names in front of each line (followed by a comma)
 
@@ -265,6 +267,26 @@ HELPFUL HINTS/REMINDERS
 - tomcat is located in ~/workspace/tomcat
 
 - Java is located in /usr/lib/jvm/java-6-sun-1.6.0.26
+
+- Possible MPAA rating changes:
+
+    a clockwork orange
+    midnight cowboy
+    lenny
+    last tango in paris
+    little big man
+    le boucher
+    walkabout
+    my life as a dog
+    the passenger (pg or pg-13)
+    planet of the apes (nr or g)
+    requiem for a dream (nr or nc-17 or r)
+    romeo and juliet (g or pg)
+    romper stomper (r or nc-17)
+    santa sangre (r or nr or nc-17)
+    straw dogs (r or x)
+    thx-1138 (r or pg)
+    bananas (pg-13 or pg)
 
 
 REFERENCES
