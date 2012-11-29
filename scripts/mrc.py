@@ -243,4 +243,5 @@ if __name__ == '__main__':
     compiler.compileMovieRatings()
   except MovieRatingsCompilerException as e:
     print str(e)
+    sys.exit(1)
   sys.exit(0)

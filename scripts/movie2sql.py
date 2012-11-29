@@ -261,7 +261,7 @@ if __name__ == '__main__':
           title, year, stars, mpaa = temp.rsplit(None, 3)
         #oops, there's probably an extra space somewhere in Movie_Raings.doc
         except ValueError as e:
-          sys.stderr.write('Error with "' + line + '": ' + e + '\n')
+          sys.stderr.write('Error with "' + line + '": ' + str(e) + '\n')
           lg('main', '**ERROR: ValueError exception caught while trying to split title, year, stars, and mpaa: ' + e)
           f.close()
           log.close()
