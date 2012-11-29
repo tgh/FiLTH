@@ -1232,8 +1232,8 @@ INSERT INTO movie VALUES (DEFAULT, 'Pan''s Labyrinth', 2006, '***', 'R', 'Mexico
 INSERT INTO movie VALUES (DEFAULT, 'Papillon', 1973, '***½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Paper', 1994, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Paper Moon', 1973, '***', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Paradise Lost: Child Murders at Robin Hood Hills', 1996, '***½', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Paradise Lost 2: Revelations', 2000, '***½', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Paradise Lost: Child Murders at Robin Hood Hills', 1996, '****', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Paradise Lost 2: Revelations', 2000, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Parent Trap', 1961, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Paris Je T''aime', 2007, '**½', 'R', 'France', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Paris, Texas', 1984, '***', 'R', 'USA', DEFAULT);
@@ -3414,3 +3414,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Into the Abyss', 2011, '***', 'NR', DEFAULT,
 INSERT INTO movie VALUES (DEFAULT, 'Powaqqatsi', 1988, '***', 'G', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'All Good Things', 2010, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Omen', 1976, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Flight', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Footnote', 2011, '***', 'PG', 'Israel', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Paradise Lost 3: Purgatory', 2011, '****', 'NR', 'USA', NULL);
