@@ -4,39 +4,40 @@ The Hunger Games ***
 Mirror Mirror **½
 Men in Black III ***
 Snow White and the Huntsman **½
-Prometheus **½ (cinematography, supporting actor (Fassbender))
-Moonrise Kingdom ***½ (screenplay, director, cinematography)
+Prometheus **½
+Moonrise Kingdom ***½
 To Rome with Love ***
-The Dark Knight Rises ***½ (cinematography, screenplay, director)
-Hope Springs *** (screenplay, actor)
-Samsara **** (cinematography)
-The Master *** (cinematography, actor, supporting actor, scene "Processing")
-Flight *** (best actor, scene "Flying Inverted", supporting actress)
-Lincoln *** (best actor, best supporting actor, cinematography, scene "Thaddeus Stevens has the floor", director?)
-Anna Karenina ***½ (director, actress, screenplay, cinematography, scene "The Dance")
-Bernie **½ (actor?, screenplay?)
-The Hobbit: An Unexpected Journey *** (scene "Riddles")
+The Dark Knight Rises ***½
+Hope Springs ***
+Samsara ****
+The Master ***
+Flight ***
+Lincoln ***
+Anna Karenina ***½
+Bernie **½
+The Hobbit: An Unexpected Journey ***
 The Queen of Versailles ***½
-Les Miserables ***½ (best actor, best supporting actress, director, cinematography)
-The Promised Land *** (screenplay?)
+Les Miserables ***½
+Promised Land ***
+Django Unchained ***½
 
 Top Ten
 1. Samsara
 2. Les Miserables
-3. Anna Karenina
-4. The Queen of Versailles
+3. Django Unchained
+4. Anna Karenina
 5. Moonrise Kingdom
-6. The Dark Knight Rises
-7. Lincoln
-8. Hope Springs
-9. Flight
-10. The Promised Land
+6. The Queen of Versailles
+7. The Dark Knight Rises
+8. Lincoln
+9. Hope Springs
+10. Flight
 
 Best Picture
   Anna Karenina
+  Django Unchained
   Les Miserables
   Moonrise Kingdom
-  The Queen of Versailles
 * Samsara
 
 Best Actor
@@ -51,9 +52,11 @@ Best Actress
   Meryl Streep in "Hope Springs"
 
 Best Supporting Actor
+  Leonardo DiCaprio in "Django Unchained"
   Michael Fassbender in "Prometheus"
 * Phillip Seymour Hoffman in "The Master"
   Tommy Lee Jones in "Lincoln"
+  Cristoph Waltz in "Django Unchained"
 
 Best Supporting Actress
   Sally Field in "Lincoln"
@@ -62,13 +65,14 @@ Best Supporting Actress
 
 Best Director
   Wes Anderson for "Moonrise Kingdom"
-  Ron Fricke for "Samsara"
 * Tom Hooper for "Les Miserables"
   Christopher Nolan for "The Dark Knight Rises"
+  Quentin Tarantino for "Django Unchained"
   Joe Wright for "Anna Karenina"
 
 Best Cinematography
   The Dark Knight Rises
+  Django Unchained
   Les Miserables
   Lincoln
   The Master
@@ -78,8 +82,10 @@ Best Cinematography
 
 Best Original Screenplay
   The Dark Knight Rises
+  Django Unchained
 * Hope Springs
   Moonrise Kingdom
+  Promised Land
 
 Best Adapted Screenplay
 * Anna Karenina
@@ -91,6 +97,8 @@ Best Scene
   "Riddles" in The Hobbit: An Unexpected Journey
   "The Dance" in Anna Karenina
   "I Dreamed a Dream" in Les Miserables
+  "Dinner in Candyland" in Django Unchained
+  "Dr. Shultz Finds Django" in Django Unchained
 
 
 2011
@@ -641,6 +649,7 @@ The Duchess ***
 Step Brothers **½
 Mamma Mia! *½
 Four Christmases ***
+I.O.U.S.A.
 
 Top Ten
 1. The Dark Knight
@@ -655,10 +664,10 @@ Top Ten
 10. Slumdog Millionaire
 
 11. Chicago 10
-12. Changeling
-13. Body of Lies
-14. Frozen River
-15. Rachel Getting Married
+12. I.O.U.S.A.
+13. Changeling
+14. Body of Lies
+15. Frozen River
  
 
 Best Picture

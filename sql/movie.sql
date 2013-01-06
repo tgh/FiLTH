@@ -3429,3 +3429,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Men in Black II', 2002, '**½', 'PG-13', 'US
 INSERT INTO movie VALUES (DEFAULT, 'One Magic Christmas', 1985, '***½', 'G', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Queen of Versailles', 2012, '***½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Vanity Fair', 2004, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Django Unchained', 2012, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'I.O.U.S.A.', 2008, '***½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'James and the Giant Peach', 1996, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Promised Land', 2012, '***', 'R', 'USA', NULL);

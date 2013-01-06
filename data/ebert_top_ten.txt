@@ -552,7 +552,7 @@ stars to during the year.
 * Wall-E
 Five documentaries:
 *   Encounters at the End of the World
-    I.O.U.S.A.
+*   I.O.U.S.A.
 *	  Man on Wire
     Standard Operating Procedure
     Trouble the Water
