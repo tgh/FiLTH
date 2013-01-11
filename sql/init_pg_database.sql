@@ -1,9 +1,5 @@
 /*
- * This sql script is for Postgresql.  Also in the sql/ directory is a file
- * named init_mysql_database.sql for MySQL.  The difference in these is the
- * data types.  MySQL offers a tinyint--a numeric type of only one byte in size,
- * which is great for a lot of these attributes.  However, Postgres only offers
- * smallint, which is two bytes.
+ * This sql script is for PostgreSQL.
  */
 
 -- --------------------
