@@ -1,56 +1,8 @@
 WHERE LEFT OFF
 ---------------
-
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
-- 2004 best scene
-
-** If there are problems connecting to the database, it might be due to changes
-  in /opt/PostgreSQL/9.0/data/pg_hba.conf for working from home.
-
-  I changed the last two lines of data to use METHOD "trust" instead of "md5"
-  which is what is was before.
-
-- installed SpringSource Tool (in ~/Installed_Programs/springsource/sts-3.1.0.RELEASE)
-
-- making year csv files: completed 2011,2010,2009,2008
-  - after setting up all lines to start with the category, run these sed
-    commands on the appropriate year csv:
-
-first:
-sed -i 's/^  //g'
-sed -i '/^$/d'
-
-then manually place the category names in front of each line (followed by a comma)
-
-then run:
-sed -i "s/^/2008,/g" 2008.csv;
-sed -i "s/[0-9][0-9]\. //g" 2008.csv;
-sed -i "s/[0-9]\. //g" 2008.csv;
-sed -i "s/\(2008,Top Ten.*\)/\1,,0,/g" 2008.csv;
-sed -i "s/\(2008,Best Pictu.*\)/\1,,0,/g" 2008.csv;
-sed -i "s/\(2008,Best.*Act.*\)/\1,0,/g" 2008.csv;
-sed -i "s/\(2008,Best Director.*\)/\1,0,/g" 2008.csv;
-sed -i "s/\(2008,Best.*Screenplay.*\)/\1,,0,/g" 2008.csv;
-sed -i "s/\(2008,Best Cinemato.*\)/\1,,0,/g" 2008.csv;
-sed -i "s/\(2008,Worst.*\)/\1,,0,/g" 2008.csv;
-sed -i "s/\(.*\)\* \(.*\)0\(.*\)/\1\21\3/g" 2008.csv;
-sed -i 's/\(.*Best Actor\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Actor\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Supporting Actor\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Supporting Actor\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Actress\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Actress\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Supporting Actress\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Supporting Actress\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Director\),\(.*\) for "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Director\),\(.*\) for "\(.*\)"/\1,\3,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Scene\),"\(.*\)" in \(.*\)/\1,\3,,0,\2/g' ./2007.csv;
-sed -i 's/\(.*Best Scene\),\* "\(.*\)" in \(.*\)/\1,\3,,1,\2/g' ./2007.csv;
-
-then:
-- manually put the positions of top ten
-- manually enter nominee names for cinematography, screenplays
-
+- updating actor_filmographies.csv
+- update README for filmography stuff
 
 
 HOW TO
@@ -290,6 +242,58 @@ HELPFUL HINTS/REMINDERS
     thx-1138 (r or pg)
     bananas (pg-13 or pg)
 
+- Creating year csv files:
+
+  first:
+  sed -i 's/^  //g'
+  sed -i '/^$/d'
+
+  then manually place the category names in front of each line (followed by a comma)
+
+  then run:
+  sed -i "s/^/2008,/g" 2008.csv;
+  sed -i "s/[0-9][0-9]\. //g" 2008.csv;
+  sed -i "s/[0-9]\. //g" 2008.csv;
+  sed -i "s/\(2008,Top Ten.*\)/\1,,0,/g" 2008.csv;
+  sed -i "s/\(2008,Best Pictu.*\)/\1,,0,/g" 2008.csv;
+  sed -i "s/\(2008,Best.*Act.*\)/\1,0,/g" 2008.csv;
+  sed -i "s/\(2008,Best Director.*\)/\1,0,/g" 2008.csv;
+  sed -i "s/\(2008,Best.*Screenplay.*\)/\1,,0,/g" 2008.csv;
+  sed -i "s/\(2008,Best Cinemato.*\)/\1,,0,/g" 2008.csv;
+  sed -i "s/\(2008,Worst.*\)/\1,,0,/g" 2008.csv;
+  sed -i "s/\(.*\)\* \(.*\)0\(.*\)/\1\21\3/g" 2008.csv;
+  sed -i 's/\(.*Best Actor\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Actor\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Supporting Actor\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Supporting Actor\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Actress\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Actress\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Supporting Actress\),\(.*\) in "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Supporting Actress\),\(.*\) in "\(.*\)"/\1,\3,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Director\),\(.*\) for "\(.*\)" and "\(.*\)"/\1,\3|\4,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Director\),\(.*\) for "\(.*\)"/\1,\3,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Scene\),"\(.*\)" in \(.*\)/\1,\3,,0,\2/g' ./2007.csv;
+  sed -i 's/\(.*Best Scene\),\* "\(.*\)" in \(.*\)/\1,\3,,1,\2/g' ./2007.csv;
+
+  then:
+  - manually put the positions of top ten
+  - manually enter nominee names for cinematography, screenplays
+
+** If there are problems connecting to the database, it might be due to changes
+  in /opt/PostgreSQL/9.0/data/pg_hba.conf for working from home.
+
+  I changed the last two lines of data to use METHOD "trust" instead of "md5"
+  which is what is was before.
+
+- installed SpringSource Tool (in ~/Installed_Programs/springsource/sts-3.1.0.RELEASE)
+
+- using groups in sed:
+  - wrap groups in escaped parens, e.g. \([group]\)
+  - use an escaped index to reuse the group, e.g. \1 \2
+  - index starts at 1, and is read from left to right
+    - so, for example, in "s/Name: \(.*\), Id: \([0-9][0-9]\)/\1 (\2)/g", \1 refers to the group ".*" and \2 refers to "[0-9][0-9]"
+
+
 
 REFERENCES
 -----------
@@ -343,3 +347,17 @@ LANGUAGES USED
 
 SCRATCH
 --------
+
+--query for all oscars
+select m.title, m.year, m.star_rating, m.country, o.ocategory, c.f_name, c.m_name, c.l_name, ogt.ostatus
+from movie m join oscar_given_to ogt using (mid) join oscar o using (oid) join crew_person c using (cid)
+order by m.year, o.ocategory, c.l_name;
+
+--how many oscar nominations have I seen?
+select count(*)
+from movie join oscar_given_to using (mid) join oscar using (oid)
+where movie.star_rating <> 'not seen';
+
+--how many oscar nominations are there?
+select count(*)
+from movie join oscar_given_to using (mid) join oscar using (oid);
