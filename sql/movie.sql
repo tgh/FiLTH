@@ -3433,3 +3433,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Django Unchained', 2012, '***½', 'R', 'USA'
 INSERT INTO movie VALUES (DEFAULT, 'I.O.U.S.A.', 2008, '***½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'James and the Giant Peach', 1996, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Promised Land', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Chico & Rita', 2011, '***', 'NR', 'Spain', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Indian Runner', 1991, '***', 'R', 'USA', NULL);
