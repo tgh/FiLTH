@@ -78,6 +78,9 @@ then
   
 # if this is not the first run...
 else
+  # make a copy of movie.sql in case an error occurs later so we can revert it
+  cp $filth_path/sql/movie.sql $filth_temp_path/movie.sql.backup
+
   # movie2sql.py with the -u option creates/overwrites movie_additions.sql,
   # which is a file of sql inserts for just the new movies being added
   # (the -u option also checks for, and applies, updates to movies already in
@@ -86,8 +89,9 @@ else
   
   # see if movie2sql.py failed
   if [ $? -ne 0 ]
-  # put previous_movie_ratings.txt back to its original state
+  # put previous_movie_ratings.txt and movie.sql back to their original state
   then
+    cp $filth_temp_path/movie.sql.backup $filth_path/sql/movie.sql
     cp $filth_temp_path/previous_movie_ratings.txt.backup $filth_temp_path/previous_movie_ratings.txt
     exit
   fi
