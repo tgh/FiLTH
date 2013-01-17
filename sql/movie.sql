@@ -3348,7 +3348,6 @@ INSERT INTO movie VALUES (DEFAULT, 'We Need to Talk About Kevin', 2011, '***½',
 INSERT INTO movie VALUES (DEFAULT, 'The Iron Lady', 2011, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Woman in Black', 2012, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Coraline', 2009, '**½', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Coraline', 2009, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Bridesmaids', 2011, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Jane Eyre', 2011, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Tinker Tailor Soldier Spy', 2011, '***', 'R', 'England', NULL);
@@ -3358,13 +3357,7 @@ INSERT INTO movie VALUES (DEFAULT, 'A Better Life', 2011, '***', 'PG-13', 'USA',
 INSERT INTO movie VALUES (DEFAULT, 'Anonymous', 2011, '**½', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Puss in Boots', 2011, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Adventures of Tintin', 2011, '****', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'The Adventures of Tintin', 2011, '****', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Cave of Forgotten Dreams', 2010, '***', 'G', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Hunger Games', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Kung-Fu Panda 2', 2011, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Meek''''s Cutoff', 2011, '***', 'PG', 'USA', NULL);
