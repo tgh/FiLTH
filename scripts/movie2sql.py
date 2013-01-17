@@ -209,6 +209,7 @@ if __name__ == '__main__':
   fileIdx = 0       #index into argv for the filename
   update  = False   #flag for checking for updates
   retVal  = 0       #value to return to shell
+  inserts = None    #list of INSERT statements
 
   #check the command-line arguments
   fileIdx, update = checkArgs()
@@ -290,9 +291,13 @@ if __name__ == '__main__':
         insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
       #nope, this is a regular INSERT statement
       if insert:
-        #output the sql
-        f.write("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n"\
+        #add the sql to the INSERT statement list
+        inserts.append("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n"\
                 .format(title.replace("'","''"), year, stars, mpaa, country))
+
+    #write out all sql INSERT statements to the sql file
+    for insertStatement in inserts:
+      f.write(insertStatement)
 
     #commit the changes to the db (if any)
     if update:
