@@ -90,6 +90,75 @@ def lg(func, mesg):
 
 #------------------------------------------------------------------------------
 
+def getCrewPerson(last, middle, first):
+  '''Returns a CrewPerson object for the person with the given last name, middle
+     name, and first name.
+  '''
+
+  return models.CrewPerson.query.filter(models.CrewPerson.l_name == last)\
+                                    .filter(models.CrewPerson.m_name == middle)\
+                                    .filter(models.CrewPerson.f_name == first)\
+                                    .one()
+
+
+#------------------------------------------------------------------------------
+
+def getCrewForMovie(mid):
+  '''Prompts the user for crew persons'''
+
+  #TODO need comments and log entries throught this function
+  #TODO need helper methods for user input validation (DRY violations galore)
+
+  crew   = None
+  last   = None
+  middle = None
+  first  = None
+
+  while True:
+    response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\'): ')
+    name = response.split()
+    if len(name) == 2:
+      last = name[1]
+      first = name[0]
+    elif len(name) == 3:
+      last = name[2]
+      middle = name[1]
+      first = name[0]
+    elif len(name) == 1:
+      if reponse == 'quit':
+        lg('getCrewForMovie', 'quitting...')
+        raise Exception('user is quitting')
+      last = name[0]
+    else:
+      print '\n**Invalid entry: name cannot be more than 3 names long.\n'
+      continue
+
+    try:
+      crew = getCrewPerson(last, middle, first)
+    except NoResultFound:
+      while True:
+        response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): ')
+        if response.lower() not in ['y','n','quit']:
+          print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+          continue
+        if response.lower() == 'quit':
+          lg('getCrewForMovie', 'quitting...')
+          raise Exception('user is quitting')
+        if response.lower() == 'n':
+          print '\nLet\'s try this again, then...'
+          break
+        
+        #TODO prompt user for what the person is known for (using database values from position table)
+        #TODO need to get the new cid (how??)
+        #TODO create an INSERT statement for crew_person
+
+    #TODO prompt user for what position the person worked as (using database values from position table)
+    #TODO create an INSERT statement for worked_on
+  
+
+
+#------------------------------------------------------------------------------
+
 def checkForUpdate(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
@@ -133,6 +202,10 @@ def checkForUpdate(title, year, stars, mpaa, country):
       print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
     if response.lower() == 'n':
       lg('checkForUpdate', 'user marked this movie entry as not an update')
+      #
+      #TODO get the new mid for this movie (how??)
+      #TODO Prompt user for crew members and tags
+      #
       return False
     elif response.lower() == 'quit':
       lg('checkForUpdate', 'quitting...')
