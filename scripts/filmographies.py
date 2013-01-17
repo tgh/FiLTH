@@ -2,8 +2,8 @@
 
 '''
 This script is used within the filmographies.sh script, which converts the
-Filmographies.doc document into a csv file for easier ETL of the data into the
-database.
+Director_Filmographies.doc document into a csv file for easier ETL of the data
+into the database.
 '''
 
 import sys
