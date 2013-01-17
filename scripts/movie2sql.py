@@ -122,18 +122,21 @@ def checkForUpdate(title, year, stars, mpaa, country):
     response = ''
     while(True):
       #prompt user if this is in fact an update
-      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n) "\
+      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n/quit) "\
                            .format(title,\
                                    year,\
                                    stars,\
                                    mpaa,\
                                    country))
-      if response.lower() in ['n', 'y']:
+      if response.lower() in ['n', 'y', 'quit']:
         break
-      print '\n**Invalid entry: \'y\' or \'n\' please.\n'
+      print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
     if response.lower() == 'n':
       lg('checkForUpdate', 'user marked this movie entry as not an update')
       return False
+    elif response.lower() == 'quit':
+      lg('checkForUpdate', 'quitting...')
+      raise Exception('user is quitting')
     lg('checkForUpdate', 'user marked this movie entry as an update')
     #prompt user for the id of the movie (until a valid id is given)
     while True:
