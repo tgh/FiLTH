@@ -3428,3 +3428,5 @@ INSERT INTO movie VALUES (DEFAULT, 'James and the Giant Peach', 1996, '**', 'PG'
 INSERT INTO movie VALUES (DEFAULT, 'Promised Land', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Chico & Rita', 2011, '***', 'NR', 'Spain', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Indian Runner', 1991, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Beasts of the Southern Wild', 2012, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Zero Dark Thirty', 2012, '***', 'R', 'USA', NULL);

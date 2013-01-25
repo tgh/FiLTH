@@ -20,18 +20,20 @@ The Queen of Versailles ***½
 Les Miserables ***½
 Promised Land ***
 Django Unchained ***½
+Beasts of the Southern Wild ***½
+Zero Dark Thirty ***
 
 Top Ten
 1. Samsara
-2. Les Miserables
-3. Django Unchained
+2. Django Unchained
+3. Les Miserables
 4. Anna Karenina
 5. Moonrise Kingdom
-6. The Queen of Versailles
-7. The Dark Knight Rises
-8. Lincoln
-9. Hope Springs
-10. Flight
+6. Beasts of the Southern Wild
+7. The Queen of Versailles
+8. The Dark Knight Rises
+9. Lincoln
+10. Zero Dark Thirty
 
 Best Picture
   Anna Karenina
@@ -48,8 +50,10 @@ Best Actor
   Denzel Washington in "Flight"
 
 Best Actress
+  Jessica Chastain in "Zero Dark Thirty"
 * Keira Knightley in "Anna Karenina"
   Meryl Streep in "Hope Springs"
+  Quvenzhane Wallis in "Beasts of the Southern Wild"
 
 Best Supporting Actor
   Leonardo DiCaprio in "Django Unchained"
@@ -65,12 +69,13 @@ Best Supporting Actress
 
 Best Director
   Wes Anderson for "Moonrise Kingdom"
+  Benh Zeitlin for "Beasts of the Southern Wild"
 * Tom Hooper for "Les Miserables"
-  Christopher Nolan for "The Dark Knight Rises"
   Quentin Tarantino for "Django Unchained"
   Joe Wright for "Anna Karenina"
 
 Best Cinematography
+  Beasts of the Southern Wild
   The Dark Knight Rises
   Django Unchained
   Les Miserables
@@ -89,6 +94,7 @@ Best Original Screenplay
 
 Best Adapted Screenplay
 * Anna Karenina
+  Beasts of the Southern Wild
 
 Best Scene
 * "Processing" in The Master

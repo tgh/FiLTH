@@ -716,6 +716,6 @@ Also:
   05. Arbitrage
 * 06. Flight
   07. The Sessions
-  08. Beasts of the Southern Wild
+* 08. Beasts of the Southern Wild
   09. Oslo, August 31
   10. A Simple Life
