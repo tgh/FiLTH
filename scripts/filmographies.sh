@@ -15,5 +15,5 @@ sed -i 's/é/e/g' $temp
 #put quotes around the movie title, remove the parens around the year, and add the year after the title (comma-separated, of course)
 sed 's/\(.*\) (\([0-9][0-9][0-9][0-9]\))/"\1",\2,/g' $temp | $filth_path/scripts/filmographies.py > $filth_path/data/filmographies.csv
 #append actor filmographies
-cat $filth_path/data/actor_filmographies.csv >> $filth_path/data/filmographies.csv
+#cat $filth_path/data/actor_filmographies.csv >> $filth_path/data/filmographies.csv
 rm $temp
