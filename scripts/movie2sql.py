@@ -14,6 +14,11 @@ models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 movieSqlFile = FILTH_PATH + '/sql/movie.sql'
 logFile = FILTH_PATH + '/temp/movie2sql.log'
 log = None
+nextMid = 0
+nextCid = 0
+positions = []        # list of strings for crew person positions
+crewInserts = []      # sql INSERT statements for the crew_person table
+workedOnInserts = []  # sql INSERT statements for the worked_on table
 
 
 def checkArgs():
@@ -39,6 +44,26 @@ def checkArgs():
     fileIdx = 2
 
   return fileIdx, update
+
+
+#------------------------------------------------------------------------------
+
+def getPositions():
+  global positions
+
+  for position in models.Position.query.all():
+    positions.append(str(position.position_title))
+
+
+#------------------------------------------------------------------------------
+
+def printPositions():
+  global positions
+
+  i = 1
+  for position in positions:
+    print '{0}. {1}'.format(str(i), position)
+    i = i + 1
 
 
 #------------------------------------------------------------------------------
@@ -90,71 +115,160 @@ def lg(func, mesg):
 
 #------------------------------------------------------------------------------
 
-def getCrewPerson(last, middle, first):
-  '''Returns a CrewPerson object for the person with the given last name, middle
+def quit(functionName):
+  lg(functionName, 'quitting...')
+  raise Exception('user is quitting')
+
+#XXX Make sure this Exception doesn't get caught anywhere other than main...
+
+#------------------------------------------------------------------------------
+
+def getCid(last, middle, first):
+  '''Returns the database id for the person with the given last name, middle
      name, and first name.
   '''
 
-  return models.CrewPerson.query.filter(models.CrewPerson.l_name == last)\
+  crew = models.CrewPerson.query.filter(models.CrewPerson.l_name == last)\
                                     .filter(models.CrewPerson.m_name == middle)\
                                     .filter(models.CrewPerson.f_name == first)\
                                     .one()
+  return int(crew.cid)
 
 
 #------------------------------------------------------------------------------
 
-def getCrewForMovie(mid):
-  '''Prompts the user for crew persons'''
+def createInsertStatementForCrew(last, first, middle, position):
+  global crewInserts
+
+  insertStatement = "INSERT INTO crew_person VALUES(DEFAULT, {0}, {1}, {2}, '{3}');".format(last, first, middle, position)
+  crewInserts.append(insertStatement)
+
+
+#------------------------------------------------------------------------------
+
+def createInsertStatementForWorkedOn(cid, position, first, middle, last, title, year):
+  global nextMid, crewInserts
+
+  first = first.strip("'")
+  middle = middle.strip("'")
+  last = last.strip("'")
+  insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} {4} {5} for {6} ({7})".format(nextMid, cid, position, first, middle, last, title, year)
+  insertStatement = insertStatement.replace('NULL ', '')
+  workedOnInserts.append(insertStatement)
+
+
+#------------------------------------------------------------------------------
+
+def promptUserForCrewPerson(title, year):
+  '''Prompts the user for a crew person'''
 
   #TODO need comments and log entries throught this function
   #TODO need helper methods for user input validation (DRY violations galore)
 
+  global positions, nextMid, nextCid
+
   crew   = None
   last   = None
-  middle = None
-  first  = None
+  middle = 'NULL'
+  first  = 'NULL'
+  num    = 0
+  cid    = 0
 
   while True:
     response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\'): ')
+
+    if response.lower() == 'quit':
+      quit('getCrewForMovie')
+
     name = response.split()
     if len(name) == 2:
-      last = name[1]
-      first = name[0]
+      last = "'" + name[1] + "'"
+      first = "'" + name[0] + "'"
     elif len(name) == 3:
-      last = name[2]
-      middle = name[1]
-      first = name[0]
+      last = "'" + name[2] + "'"
+      middle = "'" + name[1] + "'"
+      first = "'" + name[0] + "'"
     elif len(name) == 1:
-      if reponse == 'quit':
-        lg('getCrewForMovie', 'quitting...')
-        raise Exception('user is quitting')
-      last = name[0]
+      last = "'" + name[0] + "'"
     else:
       print '\n**Invalid entry: name cannot be more than 3 names long.\n'
       continue
+    break
+  #end while
 
+  try:
+    #get the id of the crew person from the database
+    cid = getCid(last, middle, first)
+  except NoResultFound:
+    #crew person was not found in database, prompt if this is a new addition or a typo
+    while True:
+      response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): ')
+      if response.lower() not in ['y','n','quit']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+        continue
+      if response.lower() == 'quit':
+        quit('getCrewForMovie')
+      if response.lower() == 'n':
+        print '\nLet\'s try this again, then...'
+        getCrewForMovie()
+        return
+    #end while
+      
+    #prompt user for what the person is known as
+    printPositions()
+    while True:
+      response = raw_input('\nWhat is this person known as (1-5 or \'quit\')? ')
+      if response.lower() == 'quit':
+        quit()
+      try:
+        num = int(response)
+        if (num > 5 or num < 1):
+          raise ValueError
+      except ValueError:
+        print "\n**Invalid entry: '1', '2', '3', '4', '5', or 'quit', please."
+        continue
+    #end while
+
+    createInsertStatementForCrew(last, first, middle, positions[num-1])
+    cid = nextCid
+    nextCid = nextCid + 1
+  #end except NoResultFound
+
+  #prompt user for what position the person worked as
+  printPositions()
+  while True:
+    response = raw_input('\nWhat is this work as in this movie (1-5 or \'quit\')? ')
+    if response.lower() == 'quit':
+      quit()
     try:
-      crew = getCrewPerson(last, middle, first)
-    except NoResultFound:
-      while True:
-        response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): ')
-        if response.lower() not in ['y','n','quit']:
-          print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-          continue
-        if response.lower() == 'quit':
-          lg('getCrewForMovie', 'quitting...')
-          raise Exception('user is quitting')
-        if response.lower() == 'n':
-          print '\nLet\'s try this again, then...'
-          break
-        
-        #TODO prompt user for what the person is known for (using database values from position table)
-        #TODO need to get the new cid (how??)
-        #TODO create an INSERT statement for crew_person
+      num = int(response)
+      if (num > 5 or num < 1):
+        raise ValueError
+    except ValueError:
+      print "\n**Invalid entry: '1', '2', '3', '4', '5', or 'quit', please."
+      continue
+  #end while
 
-    #TODO prompt user for what position the person worked as (using database values from position table)
-    #TODO create an INSERT statement for worked_on
-  
+  createInsertStatementForWorkedOn(cid, positions[num-1], first, middle, last, title, year)
+
+
+#------------------------------------------------------------------------------
+
+def getCrewForMovie(title, year):
+  #TODO need comments and log entries throught this function
+
+  while True:
+    promptUserForCrewPerson(title, year)
+    while True:
+      response = raw_input('\nAny more? (y/n/quit) ')
+      if response.lower() not in ['y', 'n', 'quit']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+        continue
+      if response.lower() == 'quit':
+        quit()
+      if response.lower() == 'y':
+        break
+      return    
 
 
 #------------------------------------------------------------------------------
@@ -203,13 +317,15 @@ def checkForUpdate(title, year, stars, mpaa, country):
     if response.lower() == 'n':
       lg('checkForUpdate', 'user marked this movie entry as not an update')
       #
-      #TODO get the new mid for this movie (how??)
       #TODO Prompt user for crew members and tags
-      #
+      #  getCrewForMovie(title, year)
+      #  getTagsForMovie(title, year)
+      #TODO increment nextMid
+      #  nextMid = nextMid + 1
       return False
     elif response.lower() == 'quit':
-      lg('checkForUpdate', 'quitting...')
-      raise Exception('user is quitting')
+      quit('checkForUpdate')
+
     lg('checkForUpdate', 'user marked this movie entry as an update')
     #prompt user for the id of the movie (until a valid id is given)
     while True:
@@ -300,6 +416,12 @@ if __name__ == '__main__':
     lines = f.readlines()
     #close the file
     f.close()
+
+    #determine what the next mid and cid values will be for the next new movie and crew person, respectively
+    #XXX nextMid = models.session.query(models.Movie).order_by(models.Movie.mid.desc()).first().mid + 1
+    #XXX nextCid = models.session.query(models.CrewPerson).order_by(models.CrewPerson.cid.desc()).first().cid + 1
+
+    #XXX getPositions()
 
     if update:
       lg('main', 'this is an update')
