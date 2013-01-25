@@ -282,7 +282,7 @@ if __name__ == '__main__':
   fileIdx = 0       #index into argv for the filename
   update  = False   #flag for checking for updates
   retVal  = 0       #value to return to shell
-  inserts = None    #list of INSERT statements
+  inserts = []      #list of INSERT statements
 
   #check the command-line arguments
   fileIdx, update = checkArgs()
