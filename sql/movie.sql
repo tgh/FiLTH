@@ -3323,7 +3323,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Taxi to the Dark Side', 2007, 'not seen', 'R
 INSERT INTO movie VALUES (DEFAULT, 'War Dance', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Betrayal (Nerakhoon)', 2008, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Garden', 2008, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Trouble the Water', 2008, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Trouble the Water', 2008, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'My Country, My Country', 2006, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'These Three', 1936, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Sand', 1949, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3430,3 +3430,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Chico & Rita', 2011, '***', 'NR', 'Spain', N
 INSERT INTO movie VALUES (DEFAULT, 'The Indian Runner', 1991, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Beasts of the Southern Wild', 2012, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zero Dark Thirty', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Arbitrage', 2012, '***½', 'R', 'USA', NULL);

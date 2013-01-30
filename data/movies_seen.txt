@@ -22,6 +22,7 @@ Promised Land ***
 Django Unchained ***½
 Beasts of the Southern Wild ***½
 Zero Dark Thirty ***
+Arbitrage ***½
 
 Top Ten
 1. Samsara
@@ -29,11 +30,11 @@ Top Ten
 3. Les Miserables
 4. Anna Karenina
 5. Moonrise Kingdom
-6. Beasts of the Southern Wild
-7. The Queen of Versailles
-8. The Dark Knight Rises
-9. Lincoln
-10. Zero Dark Thirty
+6. Arbitrage
+7. Beasts of the Southern Wild
+8. The Queen of Versailles
+9. The Dark Knight Rises
+10. Lincoln
 
 Best Picture
   Anna Karenina
@@ -43,8 +44,8 @@ Best Picture
 * Samsara
 
 Best Actor
-  Tommy Lee Jones in "Hope Springs"
   Daniel Day-Lewis in "Lincoln"
+  Richard Gere in "Arbitrage"
   Hugh Jackman in "Les Miserables"
 * Joaquin Phoenix in "The Master"
   Denzel Washington in "Flight"
@@ -86,6 +87,7 @@ Best Cinematography
 * Samsara
 
 Best Original Screenplay
+  Arbitrage
   The Dark Knight Rises
   Django Unchained
 * Hope Springs
@@ -657,6 +659,7 @@ Step Brothers **½
 Mamma Mia! *½
 Four Christmases ***
 I.O.U.S.A. ***½
+Trouble the Water ***½
 
 Top Ten
 1. The Dark Knight
@@ -671,9 +674,9 @@ Top Ten
 10. Slumdog Millionaire
 
 11. Chicago 10
-12. I.O.U.S.A.
-13. Changeling
-14. Body of Lies
+12. Body of Lies
+13. I.O.U.S.A.
+14. Trouble the Water
 15. Frozen River
  
 

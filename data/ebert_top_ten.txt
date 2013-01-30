@@ -555,7 +555,7 @@ Five documentaries:
 *   I.O.U.S.A.
 *	  Man on Wire
     Standard Operating Procedure
-    Trouble the Water
+*   Trouble the Water
 
 2009
 (mainstream top ten list - not ranked)
@@ -713,7 +713,7 @@ Also:
   02. Life of Pi
 * 03. Lincoln
   04. End of Watch
-  05. Arbitrage
+* 05. Arbitrage
 * 06. Flight
   07. The Sessions
 * 08. Beasts of the Southern Wild
