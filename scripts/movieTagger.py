@@ -15,16 +15,15 @@ class QuitException(Exception):
 
 class MovieTagger(object):
 
-  def __init__(self, tags, tagGivenToSqlFilePath, tagSqlFilePath, logFile, session):
+  def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile, session):
     ''' Initialization
 
-        tags ([models.Tag]) : tags for this tagger to use
         tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
         tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
         logFile (file) : file to write log statements to
         session (sqlalchemy.orm.session.Session) : SQLAlchemy session to commit new tags to
     '''
-    self._tags = tags
+    self._tags = models.Tag.query.order_by(models.Tag.tid).all()
     self._tgtSqlFile = None
     self._tagSqlFile = None
     self._logFile = logFile

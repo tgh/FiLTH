@@ -16,12 +16,14 @@ _logFile = FILTH_PATH + '/temp/movie2sql.log'
 _crewSqlFile = FILTH_PATH + '/sql/crew_person.sql'
 _workedOnSqlFile = FILTH_PATH + '/sql/worked_on.sql'
 _tagGivenToSqlFile = FILTH_PATH + '/sql/tag_given_to.sql'
+_tagSqlFile = FILTH_PATH + '/sql/tag.sql'
 _log = None
 _nextMid = 0
 _nextCid = 0
-_positions = []        # list of strings for crew person positions
-_crewInserts = []      # sql INSERT statements for the crew_person table
-_workedOnInserts = []  # sql INSERT statements for the worked_on table
+_positions = []         # list of strings for crew person positions
+_crewInserts = []       # sql INSERT statements for the crew_person table
+_workedOnInserts = []   # sql INSERT statements for the worked_on table
+_tagger = None          # MovieTagger object for tagging movies
 
 
 def checkArgs():
@@ -436,6 +438,8 @@ if __name__ == '__main__':
     sys.exit()
 
   try:
+    #XXX _tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models.session)
+
     #grab all of the lines in the file
     lines = f.readlines()
     #close the file
@@ -532,5 +536,5 @@ if __name__ == '__main__':
   finally:
     _log.close()
     f.close()
-    #TODO close other sql files
+    #TODO close other sql files (including _tagger.close())
     sys.exit(retVal)

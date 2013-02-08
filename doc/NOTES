@@ -2,7 +2,9 @@ WHERE LEFT OFF
 ---------------
 - updating movie2sql.py to prompt use for crew persons and tags for new movies
   - finished crew person
-  - need to take code from tag.py and create a MovieTag class or something for both tag.py and movie2sql.py to use
+  - created MovieTagger
+  - need to add code to revert tag additions and not write to tag sql files until end
+  - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
 - update README for filmography stuff
 
