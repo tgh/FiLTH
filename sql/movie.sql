@@ -3431,3 +3431,4 @@ INSERT INTO movie VALUES (DEFAULT, 'The Indian Runner', 1991, '***', 'R', 'USA',
 INSERT INTO movie VALUES (DEFAULT, 'Beasts of the Southern Wild', 2012, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Zero Dark Thirty', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Arbitrage', 2012, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Premium Rush', 2012, '***', 'PG-13', 'USA', NULL);
