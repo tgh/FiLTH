@@ -29,7 +29,6 @@ tagMap = {}
 
 
 def log(func, message):
-  global count
   try:
     logger.write('[' + func + '] - ' + message + '\n')
   except UnicodeEncodeError:
