@@ -48,7 +48,7 @@ class MovieTagger(object):
       self._tagSqlFile = open(tagSqlFilePath, 'a')
     except IOError as e:
       sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
-      close()
+      self.close()
 
 
   #----------------------------------------------------------------------------
@@ -123,7 +123,7 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def self._promptUserAddingTag(self):
+  def _promptUserAddingTag(self):
     ''' Interacts with the user to get a new tag name.
 
         Returns models.Tag : the new tag as a Tag object
@@ -165,37 +165,39 @@ class MovieTagger(object):
         Throws QuitException when user quits
                Exception when an unknown error occurs
     '''
-    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
-    while(True):
-      try:
-        response = raw_input('Enter tags: ').lower()
-        if response == 'q':
-          self.close()
-          raise QuitException()
-        if response == 'skip':
-          print 'Skipping...\n'
-          return
-        if response == 'add':
-          tag = self._promptUserAddingTag()
-          self._updateTags(int(tag.tid), str(tag.tag_name))
-          printTags()
+    try:
+      self._printTags()
+      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
+      while(True):
+        try:
+          response = raw_input('Enter tags: ').lower()
+          if response == 'q':
+            self.close()
+            raise QuitException()
+          if response == 'skip':
+            print 'Skipping...\n'
+            return
+          if response == 'add':
+            tag = self._promptUserAddingTag()
+            self._updateTags(int(tag.tid), str(tag.tag_name))
+            self._printTags()
+            continue
+          tids = self._extractTagIds(response)
+        except ValueError:
+          print '\n**Only numeric values from 0 to ' + str(len(tags)-1)
           continue
-        tids = self._extractTagIds(response)
-      except ValueError:
-        print '\n**Only numeric values from 0 to ' + str(len(tags)-1)
-        continue
-      self._log('MovieTagger.promptUserForTag', 'user entered tag(s): ' + str(tids))
-      for tid in tids:
-        self._writeTagGivenToSql(movie, tid)
-      break
-  except Exception as e:
-    self._close()
-    raise e
+        self._log('MovieTagger.promptUserForTag', 'user entered tag(s): ' + str(tids))
+        for tid in tids:
+          self._writeTagGivenToSql(movie, tid)
+        break
+    except Exception as e:
+      self.close()
+      raise e
 
 
   #----------------------------------------------------------------------------
 
-  def printTags(self):
+  def _printTags(self):
     ''' Pretty-prints all tags with their tag ids.
     '''
     count = 1
@@ -205,14 +207,16 @@ class MovieTagger(object):
         print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name),
         prevLength = len(tag.tag_name)
       else:
-        if prevLength >= 18:
+        if prevLength >= 25:
           print '\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
-        elif prevLength >= 8 and int(tag.tid) > 9:
+        elif prevLength >= 18:
           print '\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
-        else:
+        elif prevLength >= 8 and int(tag.tid) > 9:
           print '\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+        else:
+          print '\t\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
       count += 1
-    if len(tags) % 2 == 1:
+    if len(self._tags) % 2 == 1:
       print '\n'
 
 

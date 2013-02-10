@@ -173,7 +173,7 @@ IDEAS/THOUGHTS
 HELPFUL HINTS/REMINDERS
 ------------------------
 - it takes 2 bytes to make ½ character: '\xc2\xbd'
-doc/NOTES
+
 - password for filth database: 0o9..
 
 - to connect to the database with psql:
