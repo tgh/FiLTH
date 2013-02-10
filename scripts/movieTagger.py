@@ -1,6 +1,7 @@
 #/usr/bin/env python
 
 import imp
+import string
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
@@ -98,7 +99,7 @@ class MovieTagger(object):
         tid (int) : the tag id
     '''
     self._log('MovieTagger.writeTagGivenToSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');')
-    self._tgtSqlFile.write('INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + tagMap[tid] + '\'\n')
+    self._tgtSqlFile.write('INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + self._tagMap[tid] + '\'\n')
 
 
   #----------------------------------------------------------------------------
@@ -173,7 +174,7 @@ class MovieTagger(object):
           response = raw_input('Enter tags: ').lower()
           if response == 'q':
             self.close()
-            raise QuitException()
+            raise QuitException('user quit')
           if response == 'skip':
             print 'Skipping...\n'
             return
@@ -184,7 +185,7 @@ class MovieTagger(object):
             continue
           tids = self._extractTagIds(response)
         except ValueError:
-          print '\n**Only numeric values from 0 to ' + str(len(tags)-1)
+          print '\n**Only numeric values from 0 to ' + str(len(self._tags)-1)
           continue
         self._log('MovieTagger.promptUserForTag', 'user entered tag(s): ' + str(tids))
         for tid in tids:
