@@ -2,16 +2,10 @@
 
 import imp
 import string
+from QuitException import QuitException
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
-
-
-
-class QuitException(Exception):
-  def __init__(self, mesg):
-    self.mesg = mesg
-
 
 
 class MovieTagger(object):
@@ -66,7 +60,7 @@ class MovieTagger(object):
   def _log(self, func, message):
     ''' Writes a message to the log file
     '''
-    self._logFile.write('[' + func + '] - ' + message + '\n')
+    self._logFile.write('[MovieTagger.' + func + '] - ' + message + '\n')
 
 
   #----------------------------------------------------------------------------
@@ -98,7 +92,7 @@ class MovieTagger(object):
         movie (models.Movie) : the movie being tagged
         tid (int) : the tag id
     '''
-    self._log('MovieTagger.writeTagGivenToSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');')
+    self._log('writeTagGivenToSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');')
     self._tgtSqlFile.write('INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + self._tagMap[tid] + '\'\n')
 
 
@@ -112,13 +106,13 @@ class MovieTagger(object):
 
         Returns models.Tag : the new tag as a Tag object
     '''
-    self._log('MovieTagger._addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
+    self._log('_addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
     self._tagSqlFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
-    self._log('MovieTagger._addTag', 'adding tag, \'' + tag + '\', to the database...')
+    self._log('_addTag', 'adding tag, \'' + tag + '\', to the database...')
     newTag = models.Tag(tag_name=tag)
     this._session.add(newTag)
     this._session.commit()
-    self._log('MovieTagger._addTag', 'tag, \'' + tag + '\', added to database')
+    self._log('_addTag', 'tag, \'' + tag + '\', added to database')
     return newTag
 
 
@@ -134,7 +128,7 @@ class MovieTagger(object):
       while(True):
         confirm = raw_input('Is this what you wanted: ' + tag + ' (y/n)? ').lower()
         if 'y' == confirm:
-          self._log('MovieTagger._promptUserAddingTag', 'User wants to add tag \'' + tag + '\'')
+          self._log('_promptUserAddingTag', 'User wants to add tag \'' + tag + '\'')
           return self._addTag(tag)
         elif 'n' == confirm:
           break
@@ -153,7 +147,7 @@ class MovieTagger(object):
     '''
     self._tags = models.Tag.query.order_by(models.Tag.tid).all()
     self._tagMap[tid] = tag
-    self._log('MovieTagger._updateTags', 'tags updated with \'' + tag + '\'')
+    self._log('_updateTags', 'tags updated with \'' + tag + '\'')
 
 
   #----------------------------------------------------------------------------
@@ -187,7 +181,7 @@ class MovieTagger(object):
         except ValueError:
           print '\n**Only numeric values from 0 to ' + str(len(self._tags)-1)
           continue
-        self._log('MovieTagger.promptUserForTag', 'user entered tag(s): ' + str(tids))
+        self._log('promptUserForTag', 'user entered tag(s): ' + str(tids))
         for tid in tids:
           self._writeTagGivenToSql(movie, tid)
         break
