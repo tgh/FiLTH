@@ -2,6 +2,7 @@
 
 import imp
 from QuitException import QuitException
+from sqlalchemy.orm.exc import NoResultFound
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
@@ -69,9 +70,16 @@ class MovieCrew(object):
 
         Returns int : the db id corresponding to the desired crew person
     '''
-    crew = models.CrewPerson.query.filter(_models.CrewPerson.l_name == last)\
-                                  .filter(_models.CrewPerson.m_name == middle)\
-                                  .filter(_models.CrewPerson.f_name == first)\
+    first = first.strip("'")
+    middle = middle.strip("'")
+    last = last.strip("'")
+    if first == 'NULL':
+      first = None
+    if middle == 'NULL':
+      middle = None
+    crew = models.CrewPerson.query.filter(models.CrewPerson.l_name == last)\
+                                  .filter(models.CrewPerson.m_name == middle)\
+                                  .filter(models.CrewPerson.f_name == first)\
                                   .one()
     return int(crew.cid)
 
@@ -186,14 +194,14 @@ class MovieCrew(object):
       #crew person was not found in database, prompt if this is a new addition or a typo
       self._log('_promptUserForCrewPersonHelper', 'crew person not found in database')
       while True:
-        response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): ')
+        response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): '.format(name))
         self._checkForQuit(response, '_promptUserForCrewPersonHelper')
         if response.lower() not in ['y','n']:
           print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
           continue
         if response.lower() == 'n':
           print '\nLet\'s try this again, then...'
-          self.promptUserForCrewPerson()
+          self.promptUserForCrewPerson(title, year)
           return
       #end while
 
@@ -218,7 +226,7 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def promptUserForCrewPerson(title, year):
+  def promptUserForCrewPerson(self, title, year):
     ''' Wrapper for prompting user for crew persons for a new movie
        
         title (string) : title of the movie
@@ -239,7 +247,7 @@ class MovieCrew(object):
           if response.lower() == 'y':
             break
           return
-    except Exception e:
+    except Exception as e:
       self.close()
       raise e
 
@@ -263,7 +271,7 @@ class MovieCrew(object):
         raise ValueError
       return num
     except ValueError as ve:
-      print "\n**Invalid entry: '" + low + "'-'" + high + "', or 'quit', please."
+      print "\n**Invalid entry: '" + str(low) + "'-'" + str(high) + "', or 'quit', please."
       raise ve
 
 
@@ -272,6 +280,7 @@ class MovieCrew(object):
   def _printPositions(self):
     ''' Pretty-prints all positions (numbered).
     '''
+    print
     i = 1
     for position in self._positions:
       print '{0}. {1}'.format(str(i), position)
@@ -299,7 +308,7 @@ class MovieCrew(object):
         Raises : QuitException
     '''
     self._log(functionName, 'quitting...')
-    self._close()
+    self.close()
     raise QuitException('user is quitting')
 
 
