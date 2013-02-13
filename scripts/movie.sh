@@ -4,9 +4,11 @@ filth_path=~/workspace/FiLTH
 filth_temp_path=~/workspace/FiLTH/temp
 first_run=0
 
-# create the file previous_movie_ratings.txt if not already created
+# the existence of previous_movie_ratings.txt determines whether or not this is
+#  a "first run"
 if [ ! -f $filth_temp_path/previous_movie_ratings.txt ]
 then
+  # create the (empty) file previous_movie_ratings.txt
   first_run=1
   touch $filth_temp_path/previous_movie_ratings.txt
 else
@@ -96,7 +98,7 @@ else
     exit
   fi
   
-  # append the new insertions to the main movie,sql file
+  # append the new insertions to the main movie.sql file
   cat $filth_temp_path/movie_additions.sql >> $filth_path/sql/movie.sql
   # insert the additions into the Postgres database
   psql -U postgres -d filth -f $filth_temp_path/movie_additions.sql
