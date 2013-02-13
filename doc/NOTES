@@ -1,8 +1,9 @@
 WHERE LEFT OFF
 ---------------
 - updating movie2sql.py to prompt use for crew persons and tags for new movies
-  - finished crew person
   - created MovieTagger
+  - create MovieCrew
+  - change MovieTagger to not update the db with session--move everything to files (maybe?)
   - need to add code to revert tag additions and not write to tag sql files until end
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)

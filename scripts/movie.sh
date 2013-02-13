@@ -62,7 +62,7 @@ then
   fi
   exit
 fi
-echo -e "\n[exec] mrp.py -- Complete: Movie_Ratings ok.\n"
+echo -e "\n[exec] mrc.py -- Complete: Movie_Ratings ok.\n"
 
 # run the movie2sql program on the resulting text
 # if this is the first run, just create movie.sql
