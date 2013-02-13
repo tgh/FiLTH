@@ -36,7 +36,7 @@ class MovieTagger(object):
         tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
         tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
 
-        Throws : IOError when there is a problem opening one of the files
+        Raises : IOError when there is a problem opening one of the files
     '''
     try:
       self._tgtSqlFile = open(tagGivenToSqlFilePath, 'a')
@@ -59,6 +59,9 @@ class MovieTagger(object):
 
   def _log(self, func, message):
     ''' Writes a message to the log file
+
+        func (string) : name of the function current execution is in at the time of this log entry
+        message (string) : log entry message
     '''
     self._logFile.write('[MovieTagger.' + func + '] - ' + message + '\n')
 
@@ -71,7 +74,7 @@ class MovieTagger(object):
         userInput (string) : expected comma-separated list of ids
 
         Returns [int] : a list of tag ids
-        Throws : ValueError when string does not contain a valid number
+        Raises : ValueError when string does not contain a valid number
                  (non-numeric or not within the range of tag ids)
     '''
     tids = userInput.split(',')
@@ -157,7 +160,7 @@ class MovieTagger(object):
 
         movie (models.Movie) : the movie in which tags are being applied
 
-        Throws QuitException when user quits
+        Raises QuitException when user quits
                Exception when an unknown error occurs
     '''
     try:
