@@ -1,11 +1,17 @@
 #!/usr/bin/env python
 
+import sys
+import string
 import imp
 from QuitException import QuitException
 from sqlalchemy.orm.exc import NoResultFound
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
+
+
+#simple exception to break out of outer loop when in a nested loop
+class Break(Exception): pass
 
 
 class MovieCrew(object):
@@ -162,29 +168,24 @@ class MovieCrew(object):
     cid    = 0      #crew person id
 
     #prompt user for a valid person name
-    while True:
-      response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\'): ')
-      self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + response)
+    print '\nEnter the name of someone who worked on this movie (or \'quit\' at anytime). Just hit [enter] to skip the first or middle name.'
 
-      self._checkForQuit(response, '_promptUserForCrewPersonHelper')
+    #first name
+    response = raw_input('\tFirst name: ')
+    self._checkForQuit(response, '_promptUserForCrewPersonHelper')
+    if response.lower() != '':
+      first = response
+    #middle name
+    response = raw_input('\tMiddle name: ')
+    self._checkForQuit(response, '_promptUserForCrewPersonHelper')
+    if response.lower() != '':
+      middle = response
+    #last name
+    last = raw_input('\tLast name: ')
+    self._checkForQuit(last, '_promptUserForCrewPersonHelper')
 
-      name = response.split()
-      if len(name) == 2:
-        last = "'" + name[1] + "'"
-        first = "'" + name[0] + "'"
-      elif len(name) == 3:
-        last = "'" + name[2] + "'"
-        middle = "'" + name[1] + "'"
-        first = "'" + name[0] + "'"
-      elif len(name) == 1:
-        last = "'" + name[0] + "'"
-      else:
-        print '\n**Invalid entry: name cannot be empty or more than 3 names long.\n'
-        continue
-      break
-    #end while
-
-    self._log('_promptUserForCrewPersonHelper', 'first: [' + first + '], middle: [' + middle + '], last: [' + last + ']')
+    name = first + ' ' + middle + ' ' + last
+    self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + name)
 
     try:
       #get the id of the crew person from the database
@@ -217,11 +218,60 @@ class MovieCrew(object):
       self._nextCid = self._nextCid + 1
     #end except NoResultFound
 
-    #prompt user for what position the person worked as
-    num = self._promptUserForPosition('\nWhat is this work as in this movie (1-5 or \'quit\')? ')
-    self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--crew person worked on "' + title + '" (' + str(year) + ') as ' + self._positions[num-1])
+    #prompt user for what positions the person worked as
+    pids = self._promptUserForWorkedAs(name, title, year)
 
-    self._createInsertStatementForWorkedOn(cid, _positions[num-1], first, middle, last, title, year)
+    #create an SQL INSERT statement for each of those positions
+    for pid in pids:
+      self._createInsertStatementForWorkedOn(cid, self._positions[pid-1], first, middle, last, title, year)
+    #end for
+
+
+  #----------------------------------------------------------------------------
+
+  def _promptUserForWorkedAs(self, name, title, year):
+    ''' Prompts the user for positions that the person worked on for the movie
+
+        name (string) : the name of the person
+        title (string) : the title of the movie
+        year (int) : the year of the movie
+
+        Returns [int] : list of position ids
+    '''
+    while True:
+      print '\nWhat positions did {0} work as in this movie?'.format(name)
+      try:
+        self._printPositions()
+        print '\nYou may enter \'quit\', or any number of positions as a comma-separated list (e.g. "1,3,5").'.format(name)
+        response = raw_input('Enter positions: ').lower()
+        self._checkForQuit(response, '_promptUserForWorkedAs')
+        pids = self._extractPositionIds(response)
+      except ValueError:
+        print '\n**Only numeric values from 1 to ' + str(len(self._positions))
+        continue
+      self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(pids) + '--crew person worked on "' + title + '" (' + str(year) + ') as ' + str(map(lambda p : self._positions[p-1], pids)))
+      return pids
+    #end while
+
+
+  #----------------------------------------------------------------------------
+
+  def _extractPositionIds(self, userInput):
+    ''' Extracts numeric position ids from the given string
+
+        userInput (string) : expected comma-separated list of ids
+
+        Returns [int] : a list of tag ids
+        Raises : ValueError when string does not contain a valid number
+                 (non-numeric or not within the range of position ids)
+    '''
+    pids = userInput.split(',')
+    map(string.strip, pids)
+    pids = map(int, pids)
+    for pid in pids:
+      if pid < 1 or pid > len(self._positions):
+        raise ValueError
+    return pids
 
 
   #----------------------------------------------------------------------------
@@ -239,7 +289,7 @@ class MovieCrew(object):
       while True:
         self._promptUserForCrewPersonHelper(title, year)
         while True:
-          response = raw_input('\nAny more? (y/n/quit) ')
+          response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
           self._checkForQuit(response, 'promptUserForCrewPerson')
           if response.lower() not in ['y', 'n', 'quit']:
             print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
@@ -302,14 +352,24 @@ class MovieCrew(object):
   #------------------------------------------------------------------------------
 
   def _quit(self, functionName):
-    ''' This is called when the user enters "quit".  Log entry is written, the
-        appropriate files are closed, and a QuitException is raised.
+    ''' This is called when the user enters "quit".  Log entry is written, and
+        a QuitException is raised.
 
         Raises : QuitException
     '''
     self._log(functionName, 'quitting...')
-    self.close()
     raise QuitException('user is quitting')
+
+
+  #----------------------------------------------------------------------------
+
+  def flush(self):
+    ''' Writes out all sql statements to their respective files.
+    '''
+    for statement in self._crewInserts:
+      self._crewSqlFile.write(statement)
+    for statement in self._workedOnInserts:
+      self._workedOnSqlFile.write(statement)
 
 
   #----------------------------------------------------------------------------

@@ -148,7 +148,6 @@ class MovieTagger(object):
         try:
           response = raw_input('Enter tags: ').lower()
           if response == 'q':
-            self.close()
             raise QuitException('user quit')
           if response == 'skip':
             self._log('promptUserForTag', 'User is skipping \'' + str(movie.title) + '\'')

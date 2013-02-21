@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from MovieCrew import MovieCrew
+from MovieCrew import MovieCrew, QuitException
 import imp
 
 if __name__ == '__main__':
@@ -14,5 +14,9 @@ if __name__ == '__main__':
 
   movieCrew = MovieCrew('/home/tgh/workspace/FiLTH/temp/wosql_temp.sql', '/home/tgh/workspace/FiLTH/temp/crewsql_temp.sql', log, positions, nextCid, nextMid)
   movies = models.Movie.query.all()
-  for movie in movies:
-    movieCrew.promptUserForCrewPerson(movie.title, movie.year)
+  try:
+    for movie in movies:
+      movieCrew.promptUserForCrewPerson(movie.title, movie.year)
+  except QuitException:
+    movieCrew.flush()
+    movieCrew.close()

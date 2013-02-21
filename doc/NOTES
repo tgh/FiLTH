@@ -2,8 +2,8 @@ WHERE LEFT OFF
 ---------------
 - updating movie2sql.py to prompt use for crew persons and tags for new movies
   - created MovieTagger
-  - create MovieCrew
-  - change MovieTagger to not update the db with session--move everything to files (maybe?)
+  - created MovieCrew
+  - there's a problem with MovieCrew--in flush it's saying the workedOnSqlFile is closed ??
   - need to add code to revert tag additions and not write to tag sql files until end
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
