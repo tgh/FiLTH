@@ -10,19 +10,16 @@ models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 
 class MovieTagger(object):
 
-  def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile, session):
+  def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile):
     ''' Initialization
 
         tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
         tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
         logFile (file) : file to write log statements to
-        session (sqlalchemy.orm.session.Session) : SQLAlchemy session to commit new tags to
     '''
-    self._tags = models.Tag.query.order_by(models.Tag.tid).all()
     self._tgtSqlFile = None
     self._tagSqlFile = None
     self._logFile = logFile
-    self._session = session
     self._openFiles(tagGivenToSqlFilePath, tagSqlFilePath)
     self._tagMap = {}
     self._initTagMap()
@@ -51,7 +48,7 @@ class MovieTagger(object):
   def _initTagMap(self):
     ''' Initialize a map from tag ids to tag names
     '''
-    for tag in self._tags:
+    for tag in models.Tag.query.order_by(models.Tag.tid).all():
       self._tagMap[int(tag.tid)] = str(tag.tag_name)
 
 
@@ -81,7 +78,7 @@ class MovieTagger(object):
     map(string.strip, tids)
     tids = map(int, tids)
     for tid in tids:
-      if tid < 1 or tid > len(self._tags):
+      if tid < 1 or tid > len(self._tagMap):
         raise ValueError
     return tids
 
@@ -102,29 +99,22 @@ class MovieTagger(object):
   #----------------------------------------------------------------------------
 
   def _addTag(self, tag):
-    ''' Adds a new tag to the database as well as writing a SQL INSERT statement
-        for the new tag to the corresponding sql file for the tag database table
+    ''' Writes a SQL INSERT statement for the new tag to the corresponding sql
+        file for the tag database table, and adds the tag to the tag map.
 
         tag (string) : the tag name
-
-        Returns models.Tag : the new tag as a Tag object
     '''
     self._log('_addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
     self._tagSqlFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
-    self._log('_addTag', 'adding tag, \'' + tag + '\', to the database...')
-    newTag = models.Tag(tag_name=tag)
-    this._session.add(newTag)
-    this._session.commit()
-    self._log('_addTag', 'tag, \'' + tag + '\', added to database')
-    return newTag
+    #add the tag to the map
+    self._tagMap[len(self._tagMap) + 1] = tag
+    print '\nTag "' + tag + '" added\n'
 
 
   #----------------------------------------------------------------------------
 
   def _promptUserAddingTag(self):
     ''' Interacts with the user to get a new tag name.
-
-        Returns models.Tag : the new tag as a Tag object
     '''
     while(True):
       tag = raw_input('\nEnter new tag: ')
@@ -132,25 +122,12 @@ class MovieTagger(object):
         confirm = raw_input('Is this what you wanted: ' + tag + ' (y/n)? ').lower()
         if 'y' == confirm:
           self._log('_promptUserAddingTag', 'User wants to add tag \'' + tag + '\'')
-          return self._addTag(tag)
+          self._addTag(tag)
+          return
         elif 'n' == confirm:
           break
         else:
           print '\n**Only \'y\' or \'n\' please.'
-
-
-  #----------------------------------------------------------------------------
-
-  def _updateTags(self, tid, tag):
-    ''' Refreshes the tag list by loading all tags from the database and adds
-        the given tag to the tag map.
-
-        tid (int) : a tag id
-        tag (string) : a tag
-    '''
-    self._tags = models.Tag.query.order_by(models.Tag.tid).all()
-    self._tagMap[tid] = tag
-    self._log('_updateTags', 'tags updated with \'' + tag + '\'')
 
 
   #----------------------------------------------------------------------------
@@ -164,8 +141,9 @@ class MovieTagger(object):
                Exception when an unknown error occurs
     '''
     try:
+      self._log('promptUserForTag', '*** Tagging movie: "' + str(movie.title) + '" (' + str(movie.year) + ') ***')
       self._printTags()
-      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
+      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
       while(True):
         try:
           response = raw_input('Enter tags: ').lower()
@@ -173,18 +151,18 @@ class MovieTagger(object):
             self.close()
             raise QuitException('user quit')
           if response == 'skip':
-            print 'Skipping...\n'
+            self._log('promptUserForTag', 'User is skipping \'' + str(movie.title) + '\'')
+            print '\nSkipping...\n'
             return
           if response == 'add':
-            tag = self._promptUserAddingTag()
-            self._updateTags(int(tag.tid), str(tag.tag_name))
+            self._promptUserAddingTag()
             self._printTags()
             continue
           tids = self._extractTagIds(response)
         except ValueError:
-          print '\n**Only numeric values from 0 to ' + str(len(self._tags)-1)
+          print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
           continue
-        self._log('promptUserForTag', 'user entered tag(s): ' + str(tids))
+        self._log('promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t]), tids)))
         for tid in tids:
           self._writeTagGivenToSql(movie, tid)
         break
@@ -198,23 +176,23 @@ class MovieTagger(object):
   def _printTags(self):
     ''' Pretty-prints all tags with their tag ids.
     '''
-    count = 1
     prevLength = 0
-    for tag in self._tags:
-      if count % 2 == 1:
-        print '  ' + str(tag.tid) + ' = ' + str(tag.tag_name),
-        prevLength = len(tag.tag_name)
+    for item in self._tagMap.items():
+      key = item[0]
+      tag = item[1]
+      if key % 2 == 1:
+        print '  ' + str(key) + ' = ' + tag,
+        prevLength = len(tag)
       else:
         if prevLength >= 25:
-          print '\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+          print '\t' + str(key) + ' = ' + tag
         elif prevLength >= 18:
-          print '\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
-        elif prevLength >= 8 and int(tag.tid) > 9:
-          print '\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
+          print '\t\t' + str(key) + ' = ' + tag
+        elif prevLength >= 8 and key > 9:
+          print '\t\t\t' + str(key) + ' = ' + tag
         else:
-          print '\t\t\t\t' + str(tag.tid) + ' = ' + str(tag.tag_name)
-      count += 1
-    if len(self._tags) % 2 == 1:
+          print '\t\t\t\t' + str(key) + ' = ' + tag
+    if len(self._tagMap) % 2 == 1:
       print '\n'
 
 
