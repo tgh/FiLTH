@@ -17,6 +17,8 @@ class MovieTagger(object):
         tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
         logFile (file) : file to write log statements to
     '''
+    self._tagGivenToInserts = []  #sql insert statements for the tag_given_to db table
+    self._tagInserts = []         #sql insert statements for the tag db table
     self._tgtSqlFile = None
     self._tagSqlFile = None
     self._logFile = logFile
@@ -85,27 +87,29 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def _writeTagGivenToSql(self, movie, tid):
-    ''' Writes a SQL INSERT statement with the given tag id and movie for the
-        tag_given_to database table to the corresponding sql file.
+  def _createTagGivenToSql(self, movie, tid):
+    ''' Creates a SQL INSERT statement with the given tag id and movie for the
+        tag_given_to database table and appens to the list of sql statements.
 
         movie (models.Movie) : the movie being tagged
         tid (int) : the tag id
     '''
-    self._log('writeTagGivenToSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');')
-    self._tgtSqlFile.write('INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + self._tagMap[tid] + '\'\n')
+    insertStatement = 'INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + self._tagMap[tid] + '\''
+    self._log('createTagGivenToSql', 'writing sql: ' + insertStatement)
+    self._tagGivenToInserts.append(insertStatement)
 
 
   #----------------------------------------------------------------------------
 
   def _addTag(self, tag):
-    ''' Writes a SQL INSERT statement for the new tag to the corresponding sql
+    ''' Creates a SQL INSERT statement for the new tag to the corresponding sql
         file for the tag database table, and adds the tag to the tag map.
 
         tag (string) : the tag name
     '''
-    self._log('_addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
-    self._tagSqlFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
+    insertStatement = 'INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');'
+    self._log('_addTag', 'writing sql: ' + insertStatement)
+    self._tagInserts.append(insertStatement)
     #add the tag to the map
     self._tagMap[len(self._tagMap) + 1] = tag
     print '\nTag "' + tag + '" added\n'
@@ -140,34 +144,30 @@ class MovieTagger(object):
         Raises QuitException when user quits
                Exception when an unknown error occurs
     '''
-    try:
-      self._log('promptUserForTag', '*** Tagging movie: "' + str(movie.title) + '" (' + str(movie.year) + ') ***')
-      self._printTags()
-      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
-      while(True):
-        try:
-          response = raw_input('Enter tags: ').lower()
-          if response == 'q':
-            raise QuitException('user quit')
-          if response == 'skip':
-            self._log('promptUserForTag', 'User is skipping \'' + str(movie.title) + '\'')
-            print '\nSkipping...\n'
-            return
-          if response == 'add':
-            self._promptUserAddingTag()
-            self._printTags()
-            continue
-          tids = self._extractTagIds(response)
-        except ValueError:
-          print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
+    self._log('promptUserForTag', '*** Tagging movie: "' + str(movie.title) + '" (' + str(movie.year) + ') ***')
+    self._printTags()
+    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
+    while(True):
+      try:
+        response = raw_input('Enter tags: ').lower()
+        if response == 'q':
+          raise QuitException('user quit')
+        if response == 'skip':
+          self._log('promptUserForTag', 'User is skipping \'' + str(movie.title) + '\'')
+          print '\nSkipping...\n'
+          return
+        if response == 'add':
+          self._promptUserAddingTag()
+          self._printTags()
           continue
-        self._log('promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t]), tids)))
-        for tid in tids:
-          self._writeTagGivenToSql(movie, tid)
-        break
-    except Exception as e:
-      self.close()
-      raise e
+        tids = self._extractTagIds(response)
+      except ValueError:
+        print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
+        continue
+      self._log('promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t]), tids)))
+      for tid in tids:
+        self._createTagGivenToSql(movie, tid)
+      break
 
 
   #----------------------------------------------------------------------------
@@ -193,6 +193,17 @@ class MovieTagger(object):
           print '\t\t\t\t' + str(key) + ' = ' + tag
     if len(self._tagMap) % 2 == 1:
       print '\n'
+
+
+  #----------------------------------------------------------------------------
+
+  def flush(self):
+    ''' Writes out all sql statements to their respective files.
+    '''
+    for statement in self._tagGivenToInserts:
+      self._tgtSqlFile.write(statement + '\n')
+    for statement in self._tagInserts:
+      self._tagSqlFile.write(statement + '\n')
 
 
   #----------------------------------------------------------------------------

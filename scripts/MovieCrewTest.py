@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-from MovieCrew import MovieCrew, QuitException
+from MovieCrew import MovieCrew
+from QuitException import QuitException
 import imp
 
 if __name__ == '__main__':
