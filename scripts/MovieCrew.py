@@ -10,10 +10,6 @@ FILTH_PATH = '/home/tgh/workspace/FiLTH'
 models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 
 
-#simple exception to break out of outer loop when in a nested loop
-class Break(Exception): pass
-
-
 class MovieCrew(object):
 
   def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, positions, nextCid, nextMid):
@@ -204,6 +200,8 @@ class MovieCrew(object):
           print '\nLet\'s try this again, then...'
           self.promptUserForCrewPerson(title, year)
           return
+        #user entered 'y'
+        break
       #end while
 
       self._log('_promptUserForCrewPersonHelper', 'this is a new crew person')
@@ -285,21 +283,17 @@ class MovieCrew(object):
         Raises : QuitException when user quits
                  Exception when an unknown error occurs
     '''
-    try:
+    while True:
+      self._promptUserForCrewPersonHelper(title, year)
       while True:
-        self._promptUserForCrewPersonHelper(title, year)
-        while True:
-          response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
-          self._checkForQuit(response, 'promptUserForCrewPerson')
-          if response.lower() not in ['y', 'n', 'quit']:
-            print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-            continue
-          if response.lower() == 'y':
-            break
-          return
-    except Exception as e:
-      self.close()
-      raise e
+        response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
+        self._checkForQuit(response, 'promptUserForCrewPerson')
+        if response.lower() not in ['y', 'n', 'quit']:
+          print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+          continue
+        if response.lower() == 'y':
+          break
+        return
 
 
   #----------------------------------------------------------------------------
@@ -367,9 +361,9 @@ class MovieCrew(object):
     ''' Writes out all sql statements to their respective files.
     '''
     for statement in self._crewInserts:
-      self._crewSqlFile.write(statement)
+      self._crewSqlFile.write(statement + '\n')
     for statement in self._workedOnInserts:
-      self._workedOnSqlFile.write(statement)
+      self._workedOnSqlFile.write(statement + '\n')
 
 
   #----------------------------------------------------------------------------
