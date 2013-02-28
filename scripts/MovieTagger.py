@@ -2,6 +2,7 @@
 
 import imp
 import string
+import sys
 from QuitException import QuitException
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
@@ -25,6 +26,7 @@ class MovieTagger(object):
     self._openFiles(tagGivenToSqlFilePath, tagSqlFilePath)
     self._tagMap = {}
     self._initTagMap()
+    self._longestTagLength = self._determineLongestTagLength()
 
 
   #----------------------------------------------------------------------------
@@ -52,6 +54,21 @@ class MovieTagger(object):
     '''
     for tag in models.Tag.query.order_by(models.Tag.tid).all():
       self._tagMap[int(tag.tid)] = str(tag.tag_name)
+
+
+  #----------------------------------------------------------------------------
+
+  def _determineLongestTagLength(self):
+    ''' Iterates over the tags and returns the length of the longest tag
+
+        Returns (int) : the length of the longest tag string
+    '''
+    longestLen = 0
+    for tag in self._tagMap.values():
+      if len(tag) > longestLen:
+        longestLen = len(tag)
+    
+    return longestLen
 
 
   #----------------------------------------------------------------------------
@@ -113,6 +130,9 @@ class MovieTagger(object):
     #add the tag to the map
     self._tagMap[len(self._tagMap) + 1] = tag
     print '\nTag "' + tag + '" added\n'
+    #update the longest tag length if applicable
+    if len(tag) > self._longestTagLength:
+      self._longestTagLength = len(tag)
 
 
   #----------------------------------------------------------------------------
@@ -175,23 +195,27 @@ class MovieTagger(object):
   def _printTags(self):
     ''' Pretty-prints all tags with their tag ids.
     '''
-    prevLength = 0
+    padding = '  '
     for item in self._tagMap.items():
       key = item[0]
       tag = item[1]
-      if key % 2 == 1:
-        print '  ' + str(key) + ' = ' + tag,
-        prevLength = len(tag)
+
+      if len(str(key)) == 1:
+        number = ' ' + str(key)
       else:
-        if prevLength >= 25:
-          print '\t' + str(key) + ' = ' + tag
-        elif prevLength >= 18:
-          print '\t\t' + str(key) + ' = ' + tag
-        elif prevLength >= 8 and key > 9:
-          print '\t\t\t' + str(key) + ' = ' + tag
-        else:
-          print '\t\t\t\t' + str(key) + ' = ' + tag
-    if len(self._tagMap) % 2 == 1:
+        number = str(key)
+
+      if key % 3 == 0:
+        print number + ' = ' + tag
+        continue
+      if key % 3 == 1:
+        sys.stdout.write(padding)
+      sys.stdout.write(number + ' = ' + tag)
+      longestLengthDiff = self._longestTagLength - len(tag)
+      for i in range(0,longestLengthDiff):
+        sys.stdout.write(' ')
+      sys.stdout.write(padding)
+    if len(self._tagMap) % 3 != 0:
       print '\n'
 
 
