@@ -104,14 +104,16 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def _createTagGivenToSql(self, movie, tid):
+  def _createTagGivenToSql(self, mid, title, year, tid):
     ''' Creates a SQL INSERT statement with the given tag id and movie for the
         tag_given_to database table and appens to the list of sql statements.
 
-        movie (models.Movie) : the movie being tagged
+        mid (int) : the movie id
+        title (string) : the title of the movie
+        year (int) : the year of the movie
         tid (int) : the tag id
     '''
-    insertStatement = 'INSERT INTO tag_given_to VALUES(' + str(movie.mid) + ', ' + str(tid) + ');  -- ' + str(movie.title) + ' (' + str(movie.year) + ') tagged with \'' + self._tagMap[tid] + '\''
+    insertStatement = 'INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');  -- ' + str(title) + ' (' + str(year) + ') tagged with \'' + self._tagMap[tid] + '\''
     self._log('createTagGivenToSql', 'writing sql: ' + insertStatement)
     self._tagGivenToInserts.append(insertStatement)
 
@@ -156,15 +158,17 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def promptUserForTag(self, movie):
+  def promptUserForTag(self, mid, title, year):
     ''' Interacts with the user to attach tags to the given movie.
 
-        movie (models.Movie) : the movie in which tags are being applied
+        mid (int) : the movie id
+        title (string) : the title of the movie
+        year (int) : the year of the movie
 
         Raises QuitException when user quits
                Exception when an unknown error occurs
     '''
-    self._log('promptUserForTag', '*** Tagging movie: "' + str(movie.title) + '" (' + str(movie.year) + ') ***')
+    self._log('promptUserForTag', '*** Tagging movie: "' + str(title) + '" (' + str(year) + ') ***')
     self._printTags()
     print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
     while(True):
@@ -173,7 +177,7 @@ class MovieTagger(object):
         if response == 'q':
           raise QuitException('user quit')
         if response == 'skip':
-          self._log('promptUserForTag', 'User is skipping \'' + str(movie.title) + '\'')
+          self._log('promptUserForTag', 'User is skipping \'' + str(title) + '\'')
           print '\nSkipping...\n'
           return
         if response == 'add':
@@ -186,7 +190,7 @@ class MovieTagger(object):
         continue
       self._log('promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t]), tids)))
       for tid in tids:
-        self._createTagGivenToSql(movie, tid)
+        self._createTagGivenToSql(mid, title, year, tid)
       break
 
 

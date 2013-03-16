@@ -10,7 +10,8 @@ if __name__ == '__main__':
   tagger = MovieTagger('/home/tgh/workspace/FiLTH/temp/tgtsql_temp.sql', '/home/tgh/workspace/FiLTH/temp/tagsql_temp.sql', log)
   movies = models.Movie.query.all()
   try:
-    map(tagger.promptUserForTag, movies)
+    for m in movies:
+      tagger.promptUserForTag(m.mid, m.title, m.year)
   except QuitException:
     tagger.flush()
     tagger.close()
