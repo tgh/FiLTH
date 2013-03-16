@@ -1,7 +1,12 @@
 WHERE LEFT OFF
 ---------------
+** If we are moving away from using sqlalchemy for modifications:
+  - need to output modifications to temporary [table]_modifications.sql files
+  - have movie.sh create backups (to revert back to upon failure) and run psql on these modifications.sql files
+  - delete or wipe the modifications.sql files once modifications are persisted in db
+
 - updating movie2sql.py to prompt use for crew persons and tags for new movies
-  - working on movie2sql.py (actually movei2sql_temp.py line 476)
+  - working on movie2sql.py (actually movei2sql_temp.py line 396)
   - created MovieTagger
   - created MovieCrew
   - need to add code to revert tag additions and not write to tag sql files until end
