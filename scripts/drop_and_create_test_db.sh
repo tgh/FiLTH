@@ -1,69 +1,51 @@
 #!/bin/bash
 
-filth_sql_path=~/workspace/FiLTH/sql
-filth_temp_path=~/workspace/FiLTH/temp
 filth_path=~/workspace/FiLTH
+filth_sql_path=$filth_path/sql
+filth_temp_path=$filth_path/temp
+error_file=$filth_temp_path/drop_filth_test_db_error.txt
 
-echo "Dropping test database..."
+
+function populate_db_table {
+  echo "Populating $1..."
+  sleep 0.5
+  psql -U postgres -d filth_test -f $filth_sql_path/$1.sql > /dev/null 2>>$error_file
+}
+
+
+#------------------------------------------------------------------------------
+
+
+echo "Dropping filth_test database..."
 sleep 0.5
-psql -U postgres -c "DROP DATABASE test;" > /dev/null 2>$filth_temp_path/drop_test_db_error.txt
+psql -U postgres -c "DROP DATABASE filth_test;" > /dev/null 2>$error_file
 
 
-echo "Creating database test..."
+echo "Creating database filth_test..."
 sleep 0.5
-createdb -U postgres -O postgres test > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+createdb -U postgres -O postgres filth_test > /dev/null 2>>$error_file
 
 
 echo "Creating database schema..."
 sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/init_pg_database.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+psql -U postgres -d filth_test -f $filth_sql_path/init_pg_database.sql > /dev/null 2>>$error_file
 
 
-echo "Populating country table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/country.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+#populate entity tables
+populate_db_table "country"
+populate_db_table "oscar"
+populate_db_table "tyler"
+populate_db_table "mpaa"
+populate_db_table "star_rating"
+populate_db_table "position"
+populate_db_table "crew_person"
+populate_db_table "tag"
+populate_db_table "movie"
 
-
-echo "Populating genre table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/genre.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating oscar table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/oscar.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating tyler table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/tyler.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating mpaa table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/mpaa.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating star_rating table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/star_rating.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating position table..."
-sleep 0.5
-psql -U postgres -d test -f $filth_sql_path/position.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating crewperson table..."
-psql -U postgres -d test -f $filth_sql_path/crew_person.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating movie table..."
-psql -U postgres -d test -f $filth_sql_path/movie.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
-
-
-echo "Populating oscar_given_to table..."
-psql -U postgres -d test -f $filth_sql_path/oscar_given_to.sql > /dev/null 2>>$filth_temp_path/drop_test_db_error.txt
+#populate relationship tables
+populate_db_table "oscar_given_to"
+populate_db_table "tag_given_to"
+populate_db_table "worked_on"
 
 
 echo "Creating temp/previous_movie_ratings.txt..."
