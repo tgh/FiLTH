@@ -533,5 +533,5 @@ Richard Roeper
   07. Source Code
 * 08. Moneyball
   09. The Beaver
-  10. Hugo
+* 10. Hugo
   11. 50/50
