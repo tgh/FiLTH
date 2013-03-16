@@ -12,7 +12,7 @@ models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 
 class MovieCrew(object):
 
-  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, positions, nextCid, nextMid):
+  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, positions, nextCid):
     ''' Initialization
 
         workedOnSqlFilePath (string) : name of the sql file to write inserts for the worked_on db table
@@ -20,14 +20,12 @@ class MovieCrew(object):
         logFile (file) : file to write log statements to
         positions ([string]) : list of crew person positions as strings
         nextCid (int) : the database id of crew_person for the next new crew person
-        nextMid (int) : the database id of movie for the next new movie
     '''
     self._crewInserts = []        # sql INSERT statements for the crew_person table
     self._workedOnInserts = []    # sql INSERT statements for the worked_on table
     self._logFile = logFile
     self._positions = positions
     self._nextCid = nextCid
-    self._nextMid = nextMid
     self._openFiles(workedOnSqlFilePath, crewSqlFilePath)
 
 
@@ -105,10 +103,11 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _createInsertStatementForWorkedOn(self, cid, position, first, middle, last, title, year):
+  def _createInsertStatementForWorkedOn(self, mid, cid, position, first, middle, last, title, year):
     ''' Creates a SQL INSERT statement for the worked_on db table with the given
         values and appends to the list of worked_on INSERT statements.
 
+        mid (int) : the database primary key value of the movie
         cid (int) : crew person id
         position (string) : the name of the position the crew person worked as on the movie
         first (string) : first name (with the appropriate surrounding apostrophes if applicable)
@@ -120,7 +119,7 @@ class MovieCrew(object):
     first = first.strip("'")
     middle = middle.strip("'")
     last = last.strip("'")
-    insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} {4} {5} for {6} ({7})".format(str(self._nextMid),\
+    insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} {4} {5} for {6} ({7})".format(str(mid),\
                       str(cid), position, first, middle, last, title, str(year))
     insertStatement = insertStatement.replace('NULL ', '')
     self._log('_createInsertStatementForWorkedOn', 'created SQL: ' + insertStatement)
@@ -150,9 +149,10 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _promptUserForCrewPersonHelper(self, title, year):
+  def _promptUserForCrewPersonHelper(self, mid, title, year):
     ''' Prompts the user for a crew person
 
+        mid (int) : the database primary key value of the movie
         title (string) : title of the movie
         year (int) : year of the movie
     '''
@@ -221,7 +221,7 @@ class MovieCrew(object):
 
     #create an SQL INSERT statement for each of those positions
     for pid in pids:
-      self._createInsertStatementForWorkedOn(cid, self._positions[pid-1], first, middle, last, title, year)
+      self._createInsertStatementForWorkedOn(mid, cid, self._positions[pid-1], first, middle, last, title, year)
     #end for
 
 
@@ -274,9 +274,10 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def promptUserForCrewPerson(self, title, year):
+  def promptUserForCrewPerson(self, mid, title, year):
     ''' Wrapper for prompting user for crew persons for a new movie
-       
+        
+        mid (int) : the database primary key value of the movie
         title (string) : title of the movie
         year (int) : year of the movie
 
@@ -284,7 +285,7 @@ class MovieCrew(object):
                  Exception when an unknown error occurs
     '''
     while True:
-      self._promptUserForCrewPersonHelper(title, year)
+      self._promptUserForCrewPersonHelper(mid, title, year)
       while True:
         response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
         self._checkForQuit(response, 'promptUserForCrewPerson')
