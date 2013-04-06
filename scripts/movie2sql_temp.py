@@ -14,6 +14,8 @@ from getopt import getopt
 from getopt import GetoptError
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
+MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
+MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 _logFile = FILTH_PATH + '/temp/movie2sql.log'
@@ -40,7 +42,7 @@ def usage():
 
 #------------------------------------------------------------------------------
 
-def checkForMissingFile(arg):
+def checkForMissingFileArg(arg):
   if arg == None:
     sys.stderr.write('***ERROR: missing file argument\n')
     usage()
@@ -53,7 +55,7 @@ def processArgs():
   """Sanity checks the command-line arguments."""
 
   inputFile = None
-  isUpdate = False`#TODO: rename this option ('update' is overloaded in this file and is confusing)
+  isUpdate = False #TODO: rename this option ('update' is overloaded in this file and is confusing)
 
   try:
     opts, args = getopt(sys.argv, 'ui:t:g:c:w:')
@@ -78,10 +80,20 @@ def processArgs():
     elif o == '-w':
       _workedOnSqlFile = a
 
-  map(checkForMissingFile, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
+  map(checkForMissingFileArg, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
 
   return inputFile, isUpdate
   
+
+#------------------------------------------------------------------------------
+
+def getLinesFromFile(filename):
+  f = open(filename, 'r')
+  #grab all of the lines in the file (stripping the ending newlines)
+  lines = map(string.rstrip, f.readlines())
+  f.close()
+  return lines
+
 
 #------------------------------------------------------------------------------
 
@@ -193,7 +205,6 @@ def quit(functionName):
   lg(functionName, 'quitting...')
   raise Exception('user is quitting')
 
-#XXX Make sure this Exception doesn't get caught anywhere other than main...
 
 #------------------------------------------------------------------------------
 
@@ -204,24 +215,10 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
-def parseIntInRangeInclusive(response, low, high):
-  #XXX: is this function used?
-  try:
-    num = int(response)
-    if (num > high or num < low):
-      raise ValueError
-  except ValueError as ve:
-    print "\n**Invalid entry: '" + low + "'-'" + high + "', or 'quit', please."
-    raise ve
-
-
-#------------------------------------------------------------------------------
-
-  #TODO: rename this to 'isMovieUpdate' and refactor so that it simply returns a boolean, then create a new function that actually takes care of an update
+#TODO: rename this to 'isMovieUpdate' and refactor so that it simply returns a boolean, then create a new function that actually takes care of an update
 def checkForMovieUpdate(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
-  global _models, _movieSqlFile
   movie = None  #to hold a Movie object
 
   lg('checkForMovieUpdate', 'in checkForMovieUpdate')
@@ -340,38 +337,29 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
 #--- MAIN ---
 #------------
 if __name__ == '__main__':
-  inputFile = None    #the path of the input file to read from
+  inputFile = None    #the path of the input file to read from (from command line arg)
   isUpdate  = False   #boolean flag for whether or not we are updating the database
                       # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
   isInsert  = True    #boolean flag for whether or not the particular line is going to be a movie SQL INSERT statement
   retVal    = 0       #value to return to shell
   inserts   = []      #list of INSERT statements
+  tagger    = None    #MovieTagger object
+  crewHandler = None  #MovieCrew object
 
   #process the command-line arguments
   inputFile, isUpdate = processArgs()
 
   #open the input file to read from
   try:
-    f = open(inputFile, 'r')
     _log = open(_logFile, 'w')
-
-    #grab all of the lines in the file (stripping the ending newlines)
-    lines = map(string.rstrip, f.readlines())
-    #close the file
-    f.close()
-
-    if isUpdate:
-      lg('main', 'this is an update')
-      f = open(FILTH_PATH + '/temp/movie_additions.sql', 'w')
-    else:
-      lg('main', 'this is NOT an update')
-      f = open(FILTH_PATH + '/sql/movie.sql', 'w')
+    tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log)
+    crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, getPositions(), getNextCid())
 
     #determine what mid value will be for the next new movie
     _nextMid = getNextMid()
 
     #iterate over the lines retrieved from the file
-    for line in lines:
+    for line in getLinesFromFile(inputFile):
       lg('main', 'current movie: "' + line + '"')
       title, year, stars, mpaa, country = getMovieData(line)
 
@@ -384,21 +372,27 @@ if __name__ == '__main__':
         if isInsert:
           #add an INSERT statement for the new movie
           inserts.append("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n".format(title.replace("'","''"), year, stars, mpaa, country))
-
           #ask user for tags for the movie
-          tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log)
           tagger.promptUserForTag(_nextMid, title, year)
-          #ask user for crew memebers who worked on the movie
-          crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, getPositions(), getNextCid())
+          #ask user for crew members who worked on the movie
           crewHandler.promptUserForCrewPerson(mid, title, year)
           #update the next mid
           _nextMid = _nextMid + 1
-    #end for line in lines
+    #end for
+
+    #determine which file to write out the movie INSERT statements to
+    if isUpdate:
+      lg('main', 'writing to ' + MOVIE_ADDITIONS_SQL_FILE)
+      f = open(MOVIE_ADDITIONS_SQL_FILE, 'w')
+    else:
+      lg('main', 'writing to ' + MOVIE_SQL_FILE)
+      f = open(MOVIE_SQL_FILE, 'w')
 
     #write out all sql INSERT statements to sql files
     for insertStatement in inserts:
       f.write(insertStatement)
-    #TODO write out crew, worked_on, and tag sql statements
+    tagger.flush()
+    crewHandler.flush()
 
     #commit the changes to the db (if any)
     if isUpdate:
@@ -412,5 +406,8 @@ if __name__ == '__main__':
   finally:
     _log.close()
     f.close()
-    #TODO close other sql files (including _tagger.close())
+    if (tagger):
+      tagger.close()
+    if (crewHandler):
+      crewHandler.close()
     sys.exit(retVal)
