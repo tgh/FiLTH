@@ -1,19 +1,10 @@
 WHERE LEFT OFF
 ---------------
-** If we are moving away from using sqlalchemy for modifications:
-  - need to output modifications to temporary [table]_modifications.sql files
-  - have movie.sh create backups (to revert back to upon failure) and run psql on these modifications.sql files
+- new movie.sh
+  - need to output modifications to temporary [table]_additions.sql files
+  - have movie.sh run psql on these additions.sql files
+  - append the additions.sql files to the real sql files
   - delete or wipe the modifications.sql files once modifications are persisted in db
-
-- updating movie2sql.py to prompt use for crew persons and tags for new movies
-  - working on movie2sql.py (actually movei2sql_temp.py line 396)
-  - created MovieTagger
-  - created MovieCrew
-  - need to add code to revert tag additions and not write to tag sql files until end
-    - add more parameters to movie2sql.py
-    - movie.sh will make a copy of the current sql files
-    - movie.sh will give movie2sql.py args for the sql filenames
-    - movie.sh will revert the sql files back to their original state upon error of movie2sql.py 
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
 - update README for filmography stuff
