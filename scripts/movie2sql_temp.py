@@ -15,7 +15,6 @@ from getopt import GetoptError
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
-MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 _logFile = FILTH_PATH + '/temp/movie2sql.log'
@@ -32,12 +31,13 @@ _nextMid = 0
 
 def usage():
   print "  usage: movie2sql.py [-u] -i <input file> -m <movie sql file> -t <tag sql file> -g <tagGivenTo sql file> -c <crewPerson sql file> -w <workedOn sql file>\n"
-  print "\t-i\tThe input file (to read each movie from)"
-  print "\t-m\tThe file for sql insert statements for the movie table of the FiLTH database"
-  print "\t-t\tThe file for sql insert statements for the tag table of the FiLTH database"
-  print "\t-g\tThe file for sql insert statements for the tag_given_to table of the FiLTH database"
-  print "\t-c\tThe file for sql insert statements for the crew_person table of the FiLTH database"
-  print "\t-w\tThe file for sql insert statements for the worked_on table of the FiLTH database\n"
+  print "\t-u\tuse this option for update mode
+  print "\t-i\tThe input file (to read each movie from) [required]"
+  print "\t-m\tThe file for sql insert statements for the movie table of the FiLTH database [required]"
+  print "\t-t\tThe file for sql insert statements for the tag table of the FiLTH database [required for update mode]"
+  print "\t-g\tThe file for sql insert statements for the tag_given_to table of the FiLTH database [required for update mode]"
+  print "\t-c\tThe file for sql insert statements for the crew_person table of the FiLTH database [required for update mode]"
+  print "\t-w\tThe file for sql insert statements for the worked_on table of the FiLTH database [required for update mode]\n"
 
 
 #------------------------------------------------------------------------------
@@ -80,7 +80,10 @@ def processArgs():
     elif o == '-w':
       _workedOnSqlFile = a
 
-  map(checkForMissingFileArg, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
+  if isUpdate:
+    map(checkForMissingFileArg, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
+  else:
+    map(checkForMissingFileArg, [inputFile, _movieSqlFile])
 
   return inputFile, isUpdate
   
@@ -93,23 +96,6 @@ def getLinesFromFile(filename):
   lines = map(string.rstrip, f.readlines())
   f.close()
   return lines
-
-
-#------------------------------------------------------------------------------
-
-def getPositions():
-  positions = []
-
-  for position in _models.Position.query.all():
-    positions.append(str(position.position_title))
-
-  return positions
-
-
-#------------------------------------------------------------------------------
-
-def getNextCid():
-  return _models.session.query(_models.CrewPerson.cid).order_by(_models.CrewPerson.cid.desc()).first().cid + 1
 
 
 #------------------------------------------------------------------------------
@@ -215,7 +201,6 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
-#TODO: rename this to 'isMovieUpdate' and refactor so that it simply returns a boolean, then create a new function that actually takes care of an update
 def checkForMovieUpdate(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
@@ -240,35 +225,33 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
     lg('checkForMovieUpdate', 'querying db for "' + title + '" (' + str(year) + ')...')
     movie = _models.Movie.query.filter(_models.Movie.title == unicode(title, 'utf_8')).filter(_models.Movie.year == year).one()
     lg('checkForMovieUpdate', 'movie found')
-  #even though the movie was not found in the db, this still might be an update
-  # (for the title, or year, or both)
+
   except NoResultFound:
+    #even though the movie was not found in the db, this still might be an update
+    # (for the title, or year, or both)
     lg('checkForMovieUpdate', 'movie NOT found in the db')
     response = ''
-    while(True):
+    while True:
       #prompt user if this is in fact an update
       response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n/quit) "\
                            .format(title,\
                                    year,\
                                    stars,\
                                    mpaa,\
-                                   country))
-      if response.lower() in ['n', 'y', 'quit']:
+                                   country)).lower()
+      checkForQuit(response, 'checkForMovieUpdate')
+      if response not in ['n', 'y', 'quit']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+      else:
         break
-      print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-    if response.lower() == 'n':
+    #end while
+
+    if response == 'n':
       lg('checkForMovieUpdate', 'user marked this movie entry as not an update')
-      #
-      #TODO Prompt user for crew members and tags
-      #  getCrewForMovie(title, year)
-      #  getTagsForMovie(title, year)
-      #TODO increment _nextMid
-      #  _nextMid = _nextMid + 1
       return False
-    elif response.lower() == 'quit':
-      quit('checkForMovieUpdate')
 
     lg('checkForMovieUpdate', 'user marked this movie entry as an update')
+
     #prompt user for the id of the movie (until a valid id is given)
     while True:
       try:
@@ -282,6 +265,8 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
         print "\t**ERROR: id does not exist."
       except ValueError:
         print "\t**ERROR: invalid id."
+    #end while
+
     #update the title and/or year
     if movie.title != unicode(title, 'utf_8'):
       lg('checkForMovieUpdate', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
@@ -337,14 +322,14 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
 #--- MAIN ---
 #------------
 if __name__ == '__main__':
-  inputFile = None    #the path of the input file to read from (from command line arg)
-  isUpdate  = False   #boolean flag for whether or not we are updating the database
-                      # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
-  isInsert  = True    #boolean flag for whether or not the particular line is going to be a movie SQL INSERT statement
-  retVal    = 0       #value to return to shell
-  inserts   = []      #list of INSERT statements
-  tagger    = None    #MovieTagger object
-  crewHandler = None  #MovieCrew object
+  inputFile   = None    #the path of the input file to read from (from command line arg)
+  isUpdate    = False   #boolean flag for whether or not we are updating the database
+                        # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
+  isInsert    = True    #boolean flag for whether or not the particular line is going to be a movie SQL INSERT statement
+  retVal      = 0       #value to return to shell
+  inserts     = []      #list of INSERT statements
+  tagger      = None    #MovieTagger object
+  crewHandler = None    #MovieCrew object
 
   #process the command-line arguments
   inputFile, isUpdate = processArgs()
@@ -352,8 +337,11 @@ if __name__ == '__main__':
   #open the input file to read from
   try:
     _log = open(_logFile, 'w')
-    tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log)
-    crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, getPositions(), getNextCid())
+
+    #setup a tagger and crew person handler only if in update mode
+    if isUpdate:
+      tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models)
+      crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, _models)
 
     #determine what mid value will be for the next new movie
     _nextMid = getNextMid()
@@ -385,16 +373,18 @@ if __name__ == '__main__':
       lg('main', 'writing to ' + MOVIE_ADDITIONS_SQL_FILE)
       f = open(MOVIE_ADDITIONS_SQL_FILE, 'w')
     else:
-      lg('main', 'writing to ' + MOVIE_SQL_FILE)
-      f = open(MOVIE_SQL_FILE, 'w')
+      lg('main', 'writing to ' + _movieSqlFile)
+      f = open(_movieSqlFile, 'w')
 
     #write out all sql INSERT statements to sql files
     for insertStatement in inserts:
       f.write(insertStatement)
-    tagger.flush()
-    crewHandler.flush()
+    if (tagger):
+      tagger.flush()
+    if (crewHandler):
+      crewHandler.flush()
 
-    #commit the changes to the db (if any)
+    #commit any changes to the db
     if isUpdate:
       lg('main', 'committing changes to database...')
       _models.session.commit()

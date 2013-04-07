@@ -2,31 +2,27 @@
 
 import sys
 import string
-import imp
 from QuitException import QuitException
 from sqlalchemy.orm.exc import NoResultFound
-
-FILTH_PATH = '/home/tgh/workspace/FiLTH'
-models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 
 
 class MovieCrew(object):
 
-  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, positions, nextCid):
+  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, models):
     ''' Initialization
 
         workedOnSqlFilePath (string) : name of the sql file to write inserts for the worked_on db table
         crewSqlFilePath (string) : name of the sql file to write inserts for the crew_person db table
         logFile (file) : file to write log statements to
-        positions ([string]) : list of crew person positions as strings
-        nextCid (int) : the database id of crew_person for the next new crew person
+        models (module) : module of SQLAlchemy data model objects for the FiLTH database
     '''
     self._crewInserts = []        # sql INSERT statements for the crew_person table
     self._workedOnInserts = []    # sql INSERT statements for the worked_on table
     self._logFile = logFile
-    self._positions = positions
-    self._nextCid = nextCid
+    self._models = models
     self._openFiles(workedOnSqlFilePath, crewSqlFilePath)
+    self._positions = self._getPositions()
+    self._nextCid = self._getNextCid()
 
 
   #----------------------------------------------------------------------------
@@ -45,6 +41,28 @@ class MovieCrew(object):
     except IOError as e:
       sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
       self.close()
+
+
+  #----------------------------------------------------------------------------
+
+  def _getNextCid(self):
+    ''' Returns the id of the next new crew person
+    '''
+    return self._models.session.query(self._models.CrewPerson.cid).order_by(self._models.CrewPerson.cid.desc()).first().cid + 1
+
+
+  #----------------------------------------------------------------------------
+
+  def _getPositions(self):
+    ''' Returns a list of Strings representing the possible position values
+        from the database (e.g. 'Cinematographer', 'Actor', 'Director', etc)
+    '''
+    positions = []
+
+    for position in self._models.Position.query.all():
+      positions.append(str(position.position_title))
+
+    return positions
 
 
   #----------------------------------------------------------------------------
@@ -77,10 +95,10 @@ class MovieCrew(object):
       first = None
     if middle == 'NULL':
       middle = None
-    crew = models.CrewPerson.query.filter(models.CrewPerson.l_name == last)\
-                                  .filter(models.CrewPerson.m_name == middle)\
-                                  .filter(models.CrewPerson.f_name == first)\
-                                  .one()
+    crew = self._models.CrewPerson.query.filter(self._models.CrewPerson.l_name == last)\
+                                        .filter(self._models.CrewPerson.m_name == middle)\
+                                        .filter(self._models.CrewPerson.f_name == first)\
+                                        .one()
     return int(crew.cid)
 
 

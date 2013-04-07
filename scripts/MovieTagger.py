@@ -1,28 +1,26 @@
 #/usr/bin/env python
 
-import imp
 import string
 import sys
 from QuitException import QuitException
 
-FILTH_PATH = '/home/tgh/workspace/FiLTH'
-models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
-
 
 class MovieTagger(object):
 
-  def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile):
+  def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile, models):
     ''' Initialization
 
         tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
         tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
         logFile (file) : file to write log statements to
+        models (module) : module of SQLAlchemy data model objects for the FiLTH database
     '''
     self._tagGivenToInserts = []  #sql insert statements for the tag_given_to db table
     self._tagInserts = []         #sql insert statements for the tag db table
     self._tgtSqlFile = None
     self._tagSqlFile = None
     self._logFile = logFile
+    self._models = models
     self._openFiles(tagGivenToSqlFilePath, tagSqlFilePath)
     self._tagMap = {}
     self._initTagMap()
@@ -52,7 +50,7 @@ class MovieTagger(object):
   def _initTagMap(self):
     ''' Initialize a map from tag ids to tag names
     '''
-    for tag in models.Tag.query.order_by(models.Tag.tid).all():
+    for tag in self._models.Tag.query.order_by(self._models.Tag.tid).all():
       self._tagMap[int(tag.tid)] = str(tag.tag_name)
 
 
