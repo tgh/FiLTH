@@ -9,6 +9,9 @@ WHERE LEFT OFF
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
 - update README for filmography stuff
 
+- ALSO: look at shell scripts in Dropbox work directory (array usage, use of
+  color for "usage" output, etc)
+
 
 HOW TO
 -------
