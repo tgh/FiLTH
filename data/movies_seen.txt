@@ -26,24 +26,25 @@ Arbitrage ***½
 Premium Rush ***
 Searching for Sugar Man ***½
 Argo ***
+Life of Pi ****
 
 Top Ten
 1. Samsara
-2. Django Unchained
-3. Les Miserables
-4. Anna Karenina
-5. Moonrise Kingdom
-6. Searching for Sugar Man
-7. Arbitrage
-8. Beasts of the Southern Wild
-9. The Queen of Versailles
-10. The Dark Knight Rises
+2. Life of Pi
+3. Django Unchained
+4. Les Miserables
+5. Anna Karenina
+6. Moonrise Kingdom
+7. Searching for Sugar Man
+8. Arbitrage
+9. Beasts of the Southern Wild
+10. The Queen of Versailles
 
 Best Picture
   Anna Karenina
   Django Unchained
   Les Miserables
-  Moonrise Kingdom
+  Life of Pi
 * Samsara
 
 Best Actor
@@ -72,17 +73,18 @@ Best Supporting Actress
   Kelly Reilly in "Flight"
 
 Best Director
-  Wes Anderson for "Moonrise Kingdom"
-  Benh Zeitlin for "Beasts of the Southern Wild"
-* Tom Hooper for "Les Miserables"
+  Tom Hooper for "Les Miserables"
+* Ang Lee for "Life of Pi"
   Quentin Tarantino for "Django Unchained"
   Joe Wright for "Anna Karenina"
+  Benh Zeitlin for "Beasts of the Southern Wild"
 
 Best Cinematography
   Beasts of the Southern Wild
   The Dark Knight Rises
   Django Unchained
   Les Miserables
+  Life of Pi
   Lincoln
   The Master
   Moonrise Kingdom
@@ -99,8 +101,9 @@ Best Original Screenplay
 
 Best Adapted Screenplay
   Argo
-* Anna Karenina
+  Anna Karenina
   Beasts of the Southern Wild
+* Life of Pi
 
 Best Scene
 * "Processing" in The Master
@@ -109,6 +112,7 @@ Best Scene
   "Riddles" in The Hobbit: An Unexpected Journey
   "The Dance" in Anna Karenina
   "I Dreamed a Dream" in Les Miserables
+  "The Floating Island" in Life of Pi
   "Dinner in Candyland" in Django Unchained
   "Dr. Shultz Finds Django" in Django Unchained
 

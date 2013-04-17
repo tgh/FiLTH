@@ -3434,3 +3434,4 @@ INSERT INTO movie VALUES (DEFAULT, 'Arbitrage', 2012, '***½', 'R', 'USA', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'Premium Rush', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Searching for Sugar Man', 2012, '***½', 'PG-13', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Argo', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Life of Pi', 2012, '****', 'PG', 'USA', NULL);
