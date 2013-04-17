@@ -19,7 +19,7 @@ fi
 echo "Running movie.sh script..."
 $filth_path/scripts/movie.sh
 
-# remove all tuples from the movie table in the database
+# remove all rows from the movie table in the database
 echo "Removing all rows in movie table..."
 sleep 0.5
 psql -U postgres -d filth -c "DELETE FROM movie;" > /dev/null 2>$filth_temp_path/update_movie_error.txt

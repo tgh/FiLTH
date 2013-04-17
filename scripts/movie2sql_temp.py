@@ -17,7 +17,7 @@ FILTH_PATH = '/home/tgh/workspace/FiLTH'
 MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
-_logFile = FILTH_PATH + '/temp/movie2sql.log'
+_logFile = FILTH_PATH + '/logs/movie2sql.log'
 _movieSqlFile = None
 _crewPersonSqlFile = None
 _workedOnSqlFile = None

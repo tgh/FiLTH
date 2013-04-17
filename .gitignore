@@ -1,5 +1,5 @@
 *~*
-temp
+temp/*
 *.swp
 *bin/tylerhayes/*
 .classpath
@@ -10,3 +10,4 @@ temp
 build.passwords.properties
 target
 doc/setup/*
+logs/*

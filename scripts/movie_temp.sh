@@ -6,23 +6,24 @@ SUCCESS=0
 
 FILTH_PATH=~/workspace/FiLTH
 FILTH_TEMP_PATH=$FILTH_PATH/temp
+FILTH_BACKUP_PATH=$FILTH_TEMP_PATH/backups
 FILTH_SQL_PATH=$FILTH_PATH/sql
 FILTH_SCRIPTS_PATH=$FILTH_PATH/scripts
 
 $previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
-$previous_ratings_backup=$previous_ratings_file.backup
+$previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
 $temp_file=$FILTH_TEMP_PATH/temp
 $movie_sql_file=$FILTH_SQL_PATH/movie.sql
-$movie_sql_backup=$FILTH_TEMP_PATH/movie.sql.backup
+$movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
 $movie_additions_sql_file=$FILTH_TEMP_PATH/movie_additions.sql
 $tag_sql_file=$FILTH_SQL_PATH/tag.sql
-$tag_sql_backup=$FILTH_TEMP_PATH/tag.sql.backup
+$tag_sql_backup=$FILTH_BACKUP_PATH/tag.sql.backup
 $tgt_sql_file=$FILTH_SQL_PATH/tag_given_to.sql
-$tgt_sql_backup=$FILTH_TEMP_PATH/tag_given_to.sql.backup
+$tgt_sql_backup=$FILTH_BACKUP_PATH/tag_given_to.sql.backup
 $cp_sql_file=$FILTH_SQL_PATH/crew_person.sql
-$cp_sql_backup=$FILTH_TEMP_PATH/crew_person.sql.backup
+$cp_sql_backup=$FILTH_BACKUP_PATH/crew_person.sql.backup
 $wo_sql_file=$FILTH_SQL_PATH/worked_on.sql
-$wo_sql_backup=$FILTH_TEMP_PATH/worked_on.sql.backup
+$wo_sql_backup=$FILTH_BACKUP_PATH/worked_on.sql.backup
 
 first_run=$FALSE
 
