@@ -1,10 +1,10 @@
 WHERE LEFT OFF
 ---------------
 - new movie.sh
-  - need to output modifications to temporary [table]_additions.sql files
-  - have movie.sh run psql on these additions.sql files
-  - append the additions.sql files to the real sql files
-  - delete or wipe the modifications.sql files once modifications are persisted in db
+  - use integers for table primary key ids rather than "DEFAULT"
+  - update schema to not use SERIAL, but an appropriate numeric type and explicitly declare the sequence
+  - make a note that in the future, inserts will have to use nextval(sequence_name) for id
+  - have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
 - update README for filmography stuff

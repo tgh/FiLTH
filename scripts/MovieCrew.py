@@ -36,8 +36,8 @@ class MovieCrew(object):
         Raises : IOError when there is a problem opening one of the files
     '''
     try:
-      self._workedOnSqlFile = open(workedOnSqlFilePath, 'a')
-      self._crewSqlFile = open(crewSqlFilePath, 'a')
+      self._workedOnSqlFile = open(workedOnSqlFilePath, 'w')
+      self._crewSqlFile = open(crewSqlFilePath, 'w')
     except IOError as e:
       sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
       self.close()

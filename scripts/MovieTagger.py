@@ -38,8 +38,8 @@ class MovieTagger(object):
         Raises : IOError when there is a problem opening one of the files
     '''
     try:
-      self._tgtSqlFile = open(tagGivenToSqlFilePath, 'a')
-      self._tagSqlFile = open(tagSqlFilePath, 'a')
+      self._tgtSqlFile = open(tagGivenToSqlFilePath, 'w')
+      self._tagSqlFile = open(tagSqlFilePath, 'w')
     except IOError as e:
       sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
       self.close()

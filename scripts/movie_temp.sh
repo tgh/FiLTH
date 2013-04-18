@@ -3,6 +3,7 @@
 TRUE=1
 FALSE=0
 SUCCESS=0
+ERROR=1
 
 FILTH_PATH=~/workspace/FiLTH
 FILTH_TEMP_PATH=$FILTH_PATH/temp
@@ -10,20 +11,23 @@ FILTH_BACKUP_PATH=$FILTH_TEMP_PATH/backups
 FILTH_SQL_PATH=$FILTH_PATH/sql
 FILTH_SCRIPTS_PATH=$FILTH_PATH/scripts
 
-$previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
-$previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
-$temp_file=$FILTH_TEMP_PATH/temp
-$movie_sql_file=$FILTH_SQL_PATH/movie.sql
-$movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
-$movie_additions_sql_file=$FILTH_TEMP_PATH/movie_additions.sql
-$tag_sql_file=$FILTH_SQL_PATH/tag.sql
-$tag_sql_backup=$FILTH_BACKUP_PATH/tag.sql.backup
-$tgt_sql_file=$FILTH_SQL_PATH/tag_given_to.sql
-$tgt_sql_backup=$FILTH_BACKUP_PATH/tag_given_to.sql.backup
-$cp_sql_file=$FILTH_SQL_PATH/crew_person.sql
-$cp_sql_backup=$FILTH_BACKUP_PATH/crew_person.sql.backup
-$wo_sql_file=$FILTH_SQL_PATH/worked_on.sql
-$wo_sql_backup=$FILTH_BACKUP_PATH/worked_on.sql.backup
+previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
+previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
+temp_file=$FILTH_TEMP_PATH/temp
+movie_sql_file=$FILTH_SQL_PATH/movie.sql
+movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
+movie_additions_sql_file=$FILTH_TEMP_PATH/movie_additions.sql
+tag_sql_file=$FILTH_SQL_PATH/tag.sql
+tag_additions_sql_file=$FILTH_TEMP_PATH/tag_additions.sql
+tgt_sql_file=$FILTH_SQL_PATH/tag_given_to.sql
+tgt_additions_sql_file=$FILTH_TEMP_PATH/tag_given_to_additions.sql
+cp_sql_file=$FILTH_SQL_PATH/crew_person.sql
+cp_additions_sql_file=$FILTH_TEMP_PATH/crew_person_additions.sql
+wo_sql_file=$FILTH_SQL_PATH/worked_on.sql
+wo_additions_sql_file=$FILTH_TEMP_PATH/worked_on_additions.sql
+
+error_file=$FILTH_TEMP_PATH/movie.sh.error
+previous_error_file_size=0
 
 first_run=$FALSE
 
@@ -37,12 +41,8 @@ function backup_previous_ratings() {
 
 #------------------------------------------------------------------------------
 
-function backup_sql_files() {
+function backup_movie_sql_file() {
   cp $movie_sql_file $movie_sql_backup
-  cp $tag_sql_file $tag_sql_backup
-  cp $tgt_sql_file $tgt_sql_backup
-  cp $cp_sql_file $cp_sql_backup
-  cp $wo_sql_file $wo_sql_backup
 }
 
 
@@ -60,14 +60,10 @@ function restore_previous_ratings() {
 
 #------------------------------------------------------------------------------
 
-function restore_sql_files() {
+function restore_movie_sql_file() {
   if [ $first_run -eq $FALSE ]
   then
     cp $movie_sql_backup $movie_sql_file
-    cp $tag_sql_backup $tag_sql_file
-    cp $tgt_sql_backup $tgt_sql_file
-    cp $cp_sql_backup $cp_sql_file
-    cp $wo_sql_backup $wo_sql_file
   fi
 }
 
@@ -97,13 +93,25 @@ function clean_movie_ratings() {
 
 #------------------------------------------------------------------------------
 
+function remove_additions_sql_files() {
+  rm -f $movie_additions_sql_file
+  rm -f $tag_additions_sql_file
+  rm -f $tgt_additions_sql_file
+  rm -f $cp_additions_sql_file
+  rm -f $wo_additions_sql_file
+}
+
+
+#------------------------------------------------------------------------------
+
 function process_return_value() {
   # did previously run program fail?
   if [ $? -ne $SUCCESS ]
   # put previous_movie_ratings.txt and sql files back to original state and exit
   then
     restore_previous_ratings
-    restore_sql_files
+    restore_movie_sql_file
+    remove_additions_sql_files
     # output given error message
     echo -e $1
     exit
@@ -136,19 +144,74 @@ function run_movie2sql() {
     $FILTH_SCRIPTS_PATH/movie2sql.py -i $1 -m $movie_sql_file
   else
     # make copies of sql files so we can revert them in the event of an error later
-    backup_sql_files
+    backup_movie_sql_file
 
     # movie2sql.py with the -u option creates/overwrites movie_additions.sql,
     # which is a file of sql inserts for just the new movies being added
     # (the -u option also checks for, and applies, updates to movies already in
     # the db)
-    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -t $tag_sql_file -g $tgt_sql_file -c $cp_sql_file -w $wo_sql_file
+    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file -t $tag_additions_sql_file -g $tgt_additions_sql_file -c $cp_additions_sql_file -w $wo_additions_sql_file
   fi
 
   # did movie2sql.py fail?
   process_return_value "\n[exec] movie2sql.py -- ERROR"
 
   echo -e "\n[exec] movie2sql.py -- Complete"
+}
+
+
+#------------------------------------------------------------------------------
+
+function check_psql_error() {
+  # see if the error file has grown since the last psql execution (to see if any error occurred)
+  current_error_file_size=`stat -c %s $error_file`
+  if [ $error_file_size -gt $previous_error_file_size ]
+  then
+    echo -e "\n[exec] psql -- ERROR running $1"
+    previous_error_file_size=$error_file_size
+    return $ERROR
+  fi
+}
+
+
+#------------------------------------------------------------------------------
+
+function run_sql_inserts() {
+  # redirects any psql errors to the error file (because apparently psql always returns 0?)
+
+  echo -e "\n[exec] psql -- Inserting movie additions"
+  psql -U postgres -d filth -f $movie_additions_sql_file > /dev/null 2>>$error_file
+  check_psql_error $movie_additions_sql_file
+  echo -e "\n[exec] psql -- Inserting tag additions"
+  psql -U postgres -d filth -f $tag_additions_sql_file > /dev/null 2>>$error_file
+  check_psql_error $tag_additions_sql_file
+  echo -e "\n[exec] psql -- Inserting tag_given_to additions"
+  psql -U postgres -d filth -f $tgt_additions_sql_file > /dev/null 2>>$error_file
+  check_psql_error $tgt_additions_sql_file
+  echo -e "\n[exec] psql -- Inserting crew_person additions"
+  psql -U postgres -d filth -f $cp_additions_sql_file > /dev/null 2>>$error_file
+  check_psql_error $cp_additions_sql_file
+  echo -e "\n[exec] psql -- Inserting worked_on additions"
+  psql -U postgres -d filth -f $wo_additions_sql_file > /dev/null 2>>$error_file
+  status=check_psql_error $wo_additions_sql_file
+  if [ $status -eq $ERROR ]
+  then
+    echo -e "\n**There was an error running the additional sql insert statements."
+    echo -e "\n  Check the *_additions.sql files in temp/ and note that they will be overwritten the next running of movie.sh."
+    echo -e "\n  Any sql statements that you want to keep will have to be manually appended to their cooresponding main sql file (e.g. tag_additions.sql >> tag.sql)."
+    exit
+  fi
+}
+
+
+#------------------------------------------------------------------------------
+
+function append_additions_to_sql_files() {
+  cat $movie_additions_sql_file >> $movie_sql_file
+  cat $tag_additions_sql_file >> $tag_sql_file
+  cat $tgt_additions_sql_file >> $tgt_sql_file
+  cat $cp_additions_sql_file >> $cp_sql_file
+  cat $wo_additions_sql_file >> $wo_sql_file
 }
 
 
@@ -189,10 +252,11 @@ run_movie2sql $temp_file
   
 if [ $first_run -eq $FALSE ]
 then
-  # append the new insertions to the main movie.sql file
-  cat $movie_additions_sql_file >> $movie_sql_file
-  # insert the additions into the Postgres database
-  psql -U postgres -d filth -f $movie_additions_sql_file
+  # insert any and all additions into the Postgres database
+  run_sql_inserts
+  # append the new insertions to the main sql files
+  append_additions_to_sql_files
+  remove_additions_sql_files
 fi
 
 # create a PDF of the movie ratings document (creates $FILTH_PATH/pdf/movie_ratings.pdf)
