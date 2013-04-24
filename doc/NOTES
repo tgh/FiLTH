@@ -1,9 +1,9 @@
 WHERE LEFT OFF
 ---------------
 - new movie.sh
-  - use integers for table primary key ids rather than "DEFAULT"
-  - update schema to not use SERIAL, but an appropriate numeric type and explicitly declare the sequence
+  - created temporary ids.py to update DEFAULT to integer for ids in sql files
   - make a note that in the future, inserts will have to use nextval(sequence_name) for id
+  - all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
   - have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
@@ -357,9 +357,9 @@ SCRATCH
 --------
 
 --query for all oscars
-select m.title, m.year, m.star_rating, m.country, o.ocategory, c.f_name, c.m_name, c.l_name, ogt.ostatus
+select m.title, m.year, m.star_rating, m.country, o.category, c.f_name, c.m_name, c.l_name, ogt.status
 from movie m join oscar_given_to ogt using (mid) join oscar o using (oid) join crew_person c using (cid)
-order by m.year, o.ocategory, c.l_name;
+order by m.year, o.category, c.l_name;
 
 --how many oscar nominations have I seen?
 select count(*)
@@ -369,3 +369,6 @@ where movie.star_rating <> 'not seen';
 --how many oscar nominations are there?
 select count(*)
 from movie join oscar_given_to using (mid) join oscar using (oid);
+
+-- to get a list of active connections to the database
+select * from pg_stat_activity where datname='filth';

@@ -6,10 +6,12 @@
 -- Create the tables --
 -- --------------------
 
--- a movie entity
+-- a movie entity -------------------------------------------------------------
+DROP SEQUENCE IF EXISTS movie_mid_seq;
+CREATE SEQUENCE movie_mid_seq;
 DROP TABLE IF EXISTS movie CASCADE;
 CREATE TABLE movie (
-mid serial NOT NULL,
+mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 year smallint NOT NULL,
@@ -27,14 +29,16 @@ country text DEFAULT NULL,
 comments text DEFAULT NULL);
 
 
--- a country entity (only used as an integrity constraint for movie.country)
+-- a country entity -----------------------------------------------------------
+-- (only used as an integrity constraint for movie.country)
 DROP TABLE IF EXISTS country CASCADE;
 CREATE TABLE country (
 country_name text NOT NULL);
 
 
--- a star rating entity (only used as an integrity constraint for
--- movie.star_rating) (see comment above the position table creation statement)
+-- a star rating entity -------------------------------------------------------
+-- (only used as an integrity constraint for movie.star_rating) (see comment
+-- above the position table creation statement)
 --
 -- current values:
 -- "not seen"
@@ -53,7 +57,8 @@ CREATE TABLE star_rating (
 rating text NOT NULL);
 
 
--- an mpaa rating entity (only used as an integrity constraint for movie.mpaa)
+-- an mpaa rating entity ------------------------------------------------------
+-- (only used as an integrity constraint for movie.mpaa)
 -- (see comment above the position table creation statement)
 --
 -- current values:
@@ -69,27 +74,28 @@ CREATE TABLE mpaa (
 rating text NOT NULL);
 
 
--- a crewperson entity
+-- a crewperson entity --------------------------------------------------------
+DROP SEQUENCE IF EXISTS crew_person_cid_seq;
+CREATE SEQUENCE crew_person_cid_seq;
 DROP TABLE IF EXISTS crew_person CASCADE;
 CREATE TABLE crew_person (
-cid serial NOT NULL,
+cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
 l_name text NOT NULL,
 f_name text DEFAULT NULL,     -- first and middle names can be NULL (in cases
 m_name text DEFAULT NULL,     -- such as Madonna, Cher, Costa-Gavras, etc, their
 known_as text DEFAULT NULL);  -- names will be considered last names)
 
--- At this point, Postgres creates an implicit sequence "crew_person_cid_seq"
--- for cid (the primary key for crew_person).  Since the oscar_given_to and
+-- Sequences start with 1 by default.  Since the oscar_given_to and
 -- tyler_given_to tables can contain records where cid (foreign key to
 -- crew_person's cid) is not needed (e.g. Best Picture, Best Documentary, etc.
 -- where no recipient is desired), there needs to be a value indicating no
 -- recipient (the value of cid cannot be NULL since it is a foreign key to a
--- primary key).  Thus, the sequence is altered here so that -1 is a valid cid
+-- primary key).  Thus, the sequence is altered here so that 0 is a valid cid
 -- value, indicating no recipient.
-ALTER SEQUENCE crew_person_cid_seq MINVALUE -1 RESTART WITH -1;
+ALTER SEQUENCE crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
 
 
--- crewperson <--> movie relationship
+-- crewperson <--> movie relationship -----------------------------------------
 DROP TABLE IF EXISTS worked_on CASCADE;
 CREATE TABLE worked_on (
 mid smallint NOT NULL,
@@ -97,64 +103,71 @@ cid smallint NOT NULL,
 position text NOT NULL);
 
 
--- a position entity (only used as an integrity constraint for
--- crew_person.known_as and worked_on.position).  Normally I would just use a
--- CHECK constraint for this since there are only about 5 positions I care about
--- right now, but if I ever wanted to add a position (such as costume designer)
--- this would make it much easier.
+-- a position entity ----------------------------------------------------------
+-- (only used as an integrity constraint for crew_person.known_as and
+-- worked_on.position).  Normally I would just use a CHECK constraint for this
+-- since there are only about 5 positions I care about right now, but if I ever
+-- wanted to add a position (such as costume designer) this would make it much
+-- easier.
 DROP TABLE IF EXISTS position CASCADE;
 CREATE TABLE position (
 position_title text NOT NULL);
 
 
--- a tag entity
+-- a tag entity ---------------------------------------------------------------
 --
 -- Tags are used to, well, tag a movie.  Movies can be tagged with keywords or
 -- phrases (e.g. "New York", "Indie", "Unconventional").  This will probably be
 -- used mostly for marking a movie with one or more genres.
+DROP SEQUENCE IF EXISTS tag_tid_seq;
+CREATE SEQUENCE tag_tid_seq;
 DROP TABLE IF EXISTS tag CASCADE;
 CREATE TABLE tag (
-tid serial NOT NULL,
+tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
 tag_name text NOT NULL);
 
 
--- tag <--> movie relationship
+-- tag <--> movie relationship ------------------------------------------------
 DROP TABLE IF EXISTS tag_given_to CASCADE;
 CREATE TABLE tag_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL);
 
 
--- an oscar entity
+-- an oscar entity ------------------------------------------------------------
+DROP SEQUENCE IF EXISTS oscar_oid_seq;
+CREATE SEQUENCE oscar_oid_seq;
 DROP TABLE IF EXISTS oscar CASCADE;
 CREATE TABLE oscar (
-oid serial NOT NULL,
-ocategory text NOT NULL);
+oid smallint DEFAULT nextval('oscar_oid_seq') NOT NULL,
+category text NOT NULL);
 
 
--- oscar <--> movie relationship
+-- oscar <--> movie relationship ----------------------------------------------
 DROP TABLE IF EXISTS oscar_given_to CASCADE;
 CREATE TABLE oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
-cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
+cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the oscar
 year smallint NOT NULL,
 -- status of the oscar: 0, 1, or 2 (nominated, won, or tie, respectively)
-ostatus smallint NOT NULL,
+status smallint NOT NULL,
 -- indicates how many other recipients this nominee is sharing the nomination
 -- with
 sharing_with smallint DEFAULT NULL);
 
 
--- a list entity
+-- a list entity --------------------------------------------------------------
+DROP SEQUENCE IF EXISTS list_lid_seq;
+CREATE SEQUENCE list_lid_seq;
 DROP TABLE IF EXISTS list CASCADE;
 CREATE TABLE list (
-lid serial NOT NULL,
+lid smallint DEFAULT nextval('list_lid_seq') NOT NULL,
 list_title text NOT NULL,
 list_author text DEFAULT NULL);
 
 
--- list <--> movie relationship
+-- list <--> movie relationship -----------------------------------------------
 DROP TABLE IF EXISTS list_contains CASCADE;
 CREATE TABLE list_contains (
 mid smallint NOT NULL,
@@ -162,21 +175,24 @@ lid smallint NOT NULL,
 rank smallint DEFAULT NULL);
 
 
--- a tyler entity (like oscar, but for my annual awards)
+-- a tyler entity -------------------------------------------------------------
+-- (like oscar, but for my annual awards)
+DROP SEQUENCE IF EXISTS tyler_tid_seq;
+CREATE SEQUENCE tyler_tid_seq;
 DROP TABLE IF EXISTS tyler CASCADE;
 CREATE TABLE tyler (
-tid serial NOT NULL,
-tcategory text NOT NULL);
+tid smallint DEFAULT nextval('tyler_tid_seq') NOT NULL,
+category text NOT NULL);
 
 
--- tyler <--> movie relationship
+-- tyler <--> movie relationship ----------------------------------------------
 DROP TABLE IF EXISTS tyler_given_to CASCADE;
 CREATE TABLE tyler_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL,
-cid smallint DEFAULT -1,  -- value of -1 indicates no recipient for the oscar
+cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the oscar
 -- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
-tstatus smallint NOT NULL,
+status smallint NOT NULL,
 -- this attribute is only used for the Best Scene category for the title of the
 -- scene--a waste, I know, but what else should I do?
 scene_title text DEFAULT NULL);
@@ -198,7 +214,7 @@ ALTER TABLE tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
 ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
 ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
-ALTER TABLE list_contains ADD CONSTRAINT listcontains_pkey PRIMARY KEY(mid, lid);
+ALTER TABLE list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
 
@@ -315,6 +331,7 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 -- the name being declared for SQL use.
 -- http://developer.postgresql.org/pgdocs/postgres/xfunc-internal.html
 --
+DROP FUNCTION IF EXISTS to_ascii(bytea, name);
 CREATE FUNCTION to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
 LANGUAGE internal;
 
@@ -324,6 +341,7 @@ LANGUAGE internal;
 -- Sanity checks the year of a movie.  A movie year must be between 1900 and
 -- 2 years into the future (current year + 2) inclusive.
 --
+DROP FUNCTION IF EXISTS movie_year_ok(year smallint);
 CREATE FUNCTION movie_year_ok(year smallint) RETURNS boolean AS $$
 BEGIN
   IF year < 1900 OR year > (SELECT extract(year FROM current_date) + 2) THEN
@@ -338,6 +356,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Returns the number of movies actually seen.
 --
+DROP FUNCTION IF EXISTS num_movies_seen();
 CREATE FUNCTION num_movies_seen() RETURNS integer AS $$
 DECLARE
   total integer;
@@ -355,6 +374,7 @@ $$ LANGUAGE plpgsql;
 -- Inserts a movie into the database.  This is to ensure that the year of the
 -- movie is not more than 2 years after the current year.
 --
+DROP FUNCTION IF EXISTS insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text);
 CREATE FUNCTION insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text) RETURNS void AS $$
 BEGIN
   -- check that the year makes sense (is not less than 1900 nor more than 2
@@ -371,6 +391,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's unique id.
 --
+DROP FUNCTION IF EXISTS update_movie_year(movie_id integer, new_year smallint);
 CREATE FUNCTION update_movie_year(movie_id integer, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
@@ -385,6 +406,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's title.
 --
+DROP FUNCTION IF EXISTS update_movie_year(movie_title text, new_year smallint);
 CREATE FUNCTION update_movie_year(movie_title text, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
@@ -408,9 +430,9 @@ CHECK (movie_year_ok(year));
 ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
 CHECK (rank > 0);
 
--- oscar_given_to ostatus
+-- oscar_given_to status
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_status_constraint
-CHECK (ostatus >= 0 AND ostatus <= 2);
+CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie (I believe this has only happened once in oscar history)
@@ -419,9 +441,9 @@ CHECK (ostatus >= 0 AND ostatus <= 2);
 ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_sharing_constraint
 CHECK (sharing_with >= 0);
 
--- tyler_given_to tstatus
+-- tyler_given_to status
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_status_constraint
-CHECK (tstatus >= 0 AND tstatus <= 2);
+CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie
