@@ -3436,3 +3436,5 @@ INSERT INTO movie VALUES (DEFAULT, 'Searching for Sugar Man', 2012, '***½', 'PG
 INSERT INTO movie VALUES (DEFAULT, 'Argo', 2013, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Life of Pi', 2012, '****', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Skyfall', 2012, '***', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'End of Watch', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Prince Avalanche', 2013, '***', 'NR', 'USA', NULL);
