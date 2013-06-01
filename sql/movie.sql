@@ -3442,3 +3442,4 @@ INSERT INTO movie VALUES (DEFAULT, 'The Bone Collector', 1999, '***', 'R', 'USA'
 INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 2013, '***', 'PG-13', 'Australia', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Place Beyond the Pines', 2013, '****', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Silver Linings Playbook', 2012, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Looper', 2012, '***', 'R', 'USA', NULL);
