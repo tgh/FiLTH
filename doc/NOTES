@@ -4,6 +4,15 @@ WHERE LEFT OFF
   - created temporary ids.py to update DEFAULT to integer for ids in sql files
   - make a note that in the future, inserts will have to use nextval(sequence_name) for id
   - all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
+    - OscarParser: 1107, 987
+    - country2sql.hs (who cares? don't need this anymore--if delete, delete scripts/country.sh too)
+    - genre2sql.hs (delete!)
+    - oscar2sql.hs (who cares? don't need this anymore)
+    - crew2sql.py (also update big comment block)
+    - movie2sql_temp.py: 356, 362
+    - MovieCrew: 117
+    - MovieTagger: 127
+    - tag.py: 105, 106 (if MovieTagger.py works as planned, this can be deleted)
   - have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
   - need to tie it all together and test
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
