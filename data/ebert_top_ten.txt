@@ -709,10 +709,10 @@ Also:
   20. Being Elmo: A Puppeteer’s Journey
 
 2012
-  01. Argo
-  02. Life of Pi
+* 01. Argo
+* 02. Life of Pi
 * 03. Lincoln
-  04. End of Watch
+* 04. End of Watch
 * 05. Arbitrage
 * 06. Flight
   07. The Sessions

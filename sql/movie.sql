@@ -3438,3 +3438,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Life of Pi', 2012, '****', 'PG', 'USA', NULL
 INSERT INTO movie VALUES (DEFAULT, 'Skyfall', 2012, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'End of Watch', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Prince Avalanche', 2013, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Bone Collector', 1999, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 2013, '***', 'PG-13', 'Australia', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Place Beyond the Pines', 2013, '****', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Silver Linings Playbook', 2012, '***½', 'R', 'USA', NULL);
