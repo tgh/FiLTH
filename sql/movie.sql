@@ -3443,3 +3443,4 @@ INSERT INTO movie VALUES (DEFAULT, 'The Great Gatsby', 2013, '***', 'PG-13', 'Au
 INSERT INTO movie VALUES (DEFAULT, 'The Place Beyond the Pines', 2013, '****', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Silver Linings Playbook', 2012, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Looper', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Romeo + Juliet', 1996, '***', 'PG-13', 'USA', NULL);
