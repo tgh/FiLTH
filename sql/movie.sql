@@ -3444,3 +3444,9 @@ INSERT INTO movie VALUES (DEFAULT, 'The Place Beyond the Pines', 2013, '****', '
 INSERT INTO movie VALUES (DEFAULT, 'Silver Linings Playbook', 2012, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Looper', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Romeo + Juliet', 1996, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Bling Ring', 2013, '**', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Grey', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Man of Steel', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Monsters University', 2013, '***', 'G', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Paranorman', 2012, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'World War Z', 2013, '***½', 'PG-13', 'USA', NULL);
