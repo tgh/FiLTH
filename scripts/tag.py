@@ -25,6 +25,7 @@ tempFilename = FILTH_PATH + '/temp/tagTemp.txt'
 tempFile = None
 tags = []
 tagMap = {}
+nextTid = 0
   
 
 
@@ -102,13 +103,14 @@ def extractTagIds(userInput):
 
 
 def addTag(tag):
-  log('addTag', 'writing sql: INSERT INTO tag VALUES(DEFAULT, \'' + tag + '\');')
+  log('addTag', 'writing sql: INSERT INTO tag VALUES(' + nextTid + ', \'' + tag + '\');')
   tagFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
   log('addTag', 'adding tag, \'' + tag + '\', to the database...')
   newTag = models.Tag(tag_name=tag)
   models.session.add(newTag)
   models.session.commit()
   log('addTag', 'tag, \'' + tag + '\', added to database')
+  nextTid = nextTid + 1
   return newTag
 
 
@@ -176,6 +178,7 @@ if __name__ == '__main__':
   log('main', 'last mid processed (cast): ' + str(lastProcessed))
   #grab all tags currently in db
   initTags()
+  nextTid = len(tagMap) + 1
   #grab all movies seen
   movies = models.Movie.query.filter(models.Movie.star_rating != 'not_seen').filter(models.Movie.mid > lastProcessed).order_by(models.Movie.mid).all()
   map(inquireMovie, movies)
