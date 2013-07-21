@@ -114,7 +114,7 @@ class MovieCrew(object):
         middle (string) : middle name (with the appropriate surrounding apostrophes if applicable)
         position (string) : the position name
     '''
-    insertStatement = "INSERT INTO crew_person VALUES(DEFAULT, {0}, {1}, {2}, '{3}');".format(last, first, middle, position)
+    insertStatement = "INSERT INTO crew_person VALUES({0}, {1}, {2}, {3}, '{4}');".format(str(self._nextCid), last, first, middle, position)
     self._log('_createInsertStatementForCrew', 'created SQL: ' + insertStatement)
     self._crewInserts.append(insertStatement)
 

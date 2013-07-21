@@ -46,6 +46,10 @@ public class OscarParser implements GracefulShutdown {
   private static boolean noarg;
   //for querying the database
   private PostgreSQLConsole db = null;
+  //the id of then next new movie
+  private int nextMid;
+  //the id of then next new crew person
+  private int nextCid;
   //these maps are used as cache storage for mid's and cid's from the database
   // The strings used in the movie maps are the title plus the year of the
   // movie.
@@ -137,6 +141,9 @@ public class OscarParser implements GracefulShutdown {
                                                  dbpw);
     //setup virtual SQL console with the db
     db = new PostgreSQLConsole(dbConn);
+
+    //initialize the next new ids for movie and crew person
+    initNextIds();
 
     //init the hash maps
     movieMap = new HashMap<String, Integer>();
@@ -329,6 +336,30 @@ public class OscarParser implements GracefulShutdown {
   }
 
   //--------------------------------------------------------------------------
+  
+  /**
+   * Initialize the ids of what would be the next movie/crew person in the
+   * movie/crew_person table respectively.
+   */
+  private void initNextIds() {
+    ResultSet qResult = null;
+    try {
+      qResult = db.select("SELECT cid FROM crew_person ORDER BY cid DESC LIMIT 1;");
+      if (qResult.next()) {
+        nextCid = qResult.getInt(1);
+      }
+      qResult = db.select("SELECT mid FROM movie ORDER BY mid DESC LIMIT 1;");
+      if (qResult.next()) {
+        nextMid = qResult.getInt(1);
+      }
+    }
+    catch (SQLException sqle) {
+      handleSQLException("SQLException caught in initNextIds().",sqle);
+    }
+  }
+
+  
+  //--------------------------------------------------------------------------
 
   /**
    * Find and open the next file to create for movies not seen.  Since going
@@ -458,7 +489,7 @@ public class OscarParser implements GracefulShutdown {
     //movie was in cache, no need to query database
     if (Mid != null) {
       log.logGeneralMessageWithoutIndicator("-- " + title + " not found.",1,false);
-      return -1;
+      return Mid.intValue();
     }
 
     //movie was not in cache, need to query database
@@ -485,7 +516,7 @@ public class OscarParser implements GracefulShutdown {
       else {
         log.logGeneralMessageWithoutIndicator("-- " + title + " not found.",1,false);
         //add movie to the hash map of movies not found
-        movieNotFoundMap.put(title + " " + year, new Integer(mid));
+        movieNotFoundMap.put(title + " " + year, new Integer(nextMid));
         //prompt user for movie attribute values and write the sql for the movie
         mid = writeMovieSql(title, year);
       }
@@ -534,7 +565,7 @@ public class OscarParser implements GracefulShutdown {
     //this nominee is in cache, no need to query database
     if (Cid != null) {
       log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
-      return -1;
+      return Cid.intValue();
     }
 
     //nominee crew id was not in cache, must query database
@@ -601,7 +632,7 @@ public class OscarParser implements GracefulShutdown {
     else {
       log.logGeneralMessageWithoutIndicator("-- Crewperson, " + name + ", not found.", 1, false);
       //add movie to the hash map of crew persons not found
-      crewNotFoundMap.put(name, new Integer(cid));
+      crewNotFoundMap.put(name, new Integer(nextCid));
       //prompt user for about the new person and write the sql statement for the person
       // (or get the cid if the user happens to provide it)
       cid = writeCrewSql(name, fname, mname, lname);
@@ -984,10 +1015,11 @@ public class OscarParser implements GracefulShutdown {
         openMovieSqlFile();
       }
       //write the appropriate sql for this movie
-      movieFileWriter.write("INSERT INTO movie VALUES (DEFAULT, '" + title + "', " + year + ", 'not seen', " + Mpaa + ", " + country + ", NULL);");
+      movieFileWriter.write("INSERT INTO movie VALUES (" + nextMid + ", '" + title + "', " + year + ", 'not seen', " + Mpaa + ", " + country + ", NULL);");
       movieFileWriter.write("  -- nominated for Academy Award: " + oscars.get(1));
       movieFileWriter.newLine();
       log.logGeneralMessage("\"" + title + "\" (" + year + ") has been written to the new movie sql file.", 1, false);
+      ++nextMid;
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeMovieSql().",1,false);
@@ -1104,10 +1136,11 @@ public class OscarParser implements GracefulShutdown {
         openCrewSqlFile();
       }
       //write the sql insert statement for this person to the appropriate file
-      crewFileWriter.write("INSERT INTO crew_person VALUES (DEFAULT, " + last + ", " + first + ", " + middle + ", " + position + ");");
+      crewFileWriter.write("INSERT INTO crew_person VALUES (" + nextCid + ", " + last + ", " + first + ", " + middle + ", " + position + ");");
       crewFileWriter.write("  -- " + position);
       crewFileWriter.newLine();
       log.logGeneralMessage("\"" + first + " " + middle + " " + last + " has been written to new crew sql file.", 1, false);
+      ++nextCid;
     }
     catch (IOException ioe) {
       log.logWarning("IOException caught in writeCrewSql().",1,false);

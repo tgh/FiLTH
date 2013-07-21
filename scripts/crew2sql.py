@@ -26,21 +26,23 @@ if __name__ == '__main__':
   # which can't be NULL, but there are many records in oscar_given_to where a
   # NULL value is desired (for oscars in which recipients don't matter like
   # Best Picture, Best Documentary, etc).  The sequence giving the values of
-  # cid has been set to start at -1 by the database schema (see
-  # sql/init_pg_database.sql).  This -1 value is to represent a "no-recipient"
+  # cid has been set to start at 0 by the database schema (see
+  # sql/init_pg_database.sql).  This 0 value is to represent a "no-recipient"
   # value--a work around for not be able to use NULL.  The first inserted record
   # into crew_person represented by this print statement will have the cid
-  # value of -1.
-  print "INSERT INTO crew_person VALUES (DEFAULT, '', DEFAULT, DEFAULT, DEFAULT); -- dummy record"
+  # value of 0.
+  print "INSERT INTO crew_person VALUES (0, '', DEFAULT, DEFAULT, DEFAULT); -- dummy record"
 
+  cid = 1
   #iterate over the lines retrieved from the file
   for line in lines:
     if find(line, "'") != -1:
       line = replace(line, "'", "''")
     words = line.split(',')
     if len(words) == 2:
-      print "INSERT INTO crew_person VALUES (DEFAULT, '" + str(words[0]) + "', '" + str(words[1].strip()) + "', DEFAULT, DEFAULT);"
+      print "INSERT INTO crew_person VALUES ({0}, '{1}', '{2}', DEFAULT, DEFAULT);".format(str(cid), str(words[0]), str(words[1].strip()))
     elif len(words) == 3:
-      print "INSERT INTO crew_person VALUES (DEFAULT, '" + str(words[0]) + "', '" + str(words[1]) + "', '" + str(words[2].strip()) + "', DEFAULT);"
+      print "INSERT INTO crew_person VALUES ({0}, '{1}', '{2}', '{3}', DEFAULT);".format(str(cid), str(words[0]), str(words[1]), str(words[2].strip()))
     elif len(words) == 1:
-      print "INSERT INTO crew_person VALUES (DEFAULT, '" + str(words[0].strip()) + "', DEFAULT, DEFAULT, DEFAULT);"
+      print "INSERT INTO crew_person VALUES ({0}, '{1}', DEFAULT, DEFAULT, DEFAULT);".format(str(cid), str(words[0].strip()))
+    cid = cid + 1

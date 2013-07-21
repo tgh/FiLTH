@@ -25,6 +25,7 @@ class MovieTagger(object):
     self._tagMap = {}
     self._initTagMap()
     self._longestTagLength = self._determineLongestTagLength()
+    self._nextTid = len(self._tagMap) + 1
 
 
   #----------------------------------------------------------------------------
@@ -95,7 +96,7 @@ class MovieTagger(object):
     map(string.strip, tids)
     tids = map(int, tids)
     for tid in tids:
-      if tid < 1 or tid > len(self._tagMap):
+      if tid < 1 or tid >= self._nextTid:
         raise ValueError
     return tids
 
@@ -124,15 +125,17 @@ class MovieTagger(object):
 
         tag (string) : the tag name
     '''
-    insertStatement = 'INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');'
+    insertStatement = "INSERT INTO tag VALUES ({0}, '{1}');".format(str(self._nextTid), tag)
     self._log('_addTag', 'writing sql: ' + insertStatement)
     self._tagInserts.append(insertStatement)
     #add the tag to the map
-    self._tagMap[len(self._tagMap) + 1] = tag
+    self._tagMap[self._nextTid] = tag
     print '\nTag "' + tag + '" added\n'
     #update the longest tag length if applicable
     if len(tag) > self._longestTagLength:
       self._longestTagLength = len(tag)
+    #update the next tid
+    self._nextTid = self._nextTid + 1
 
 
   #----------------------------------------------------------------------------
