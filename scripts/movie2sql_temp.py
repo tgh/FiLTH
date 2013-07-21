@@ -15,9 +15,11 @@ from getopt import GetoptError
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
+INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 _logFile = FILTH_PATH + '/logs/movie2sql.log'
+#XXX: why is this not a constant? (FILTH_PATH + '/sql/movie.sql')
 _movieSqlFile = None
 _crewPersonSqlFile = None
 _workedOnSqlFile = None
@@ -150,12 +152,12 @@ def getMovieData(line):
   title = re.search('(.*) \\(', line).group(1)
   year = re.search('\\((\d+)\\)', line).group(1)
   stars = re.search('\\) (.*) \[', line).group(1)
-  mpaa = re.search('', line).group(1)
+  mpaa = re.search('\[(.*)\]', line).group(1)
 
   countryMatch = re.search('\] ([a-zA-Z ]+)', line)
 
   #no country is specified for this movie
-  if !countryMatch:
+  if not countryMatch:
     lg('getMovieData', 'no country found for this movie')
     country = "DEFAULT"
   #this movie does have a country associated with it
@@ -201,12 +203,12 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
-def checkForMovieUpdate(title, year, stars, mpaa, country):
+def isNewMovie(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
   movie = None  #to hold a Movie object
 
-  lg('checkForMovieUpdate', 'in checkForMovieUpdate')
+  lg('isNewMovie', 'in isNewMovie')
 
   #convert the strings of integers to integers
   year = int(year)
@@ -222,43 +224,43 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
   #query for the movie in the db using the title and year since there is a
   # unique contraint on movies with those attributes
   try:
-    lg('checkForMovieUpdate', 'querying db for "' + title + '" (' + str(year) + ')...')
+    lg('isNewMovie', 'querying db for "' + title + '" (' + str(year) + ')...')
     movie = _models.Movie.query.filter(_models.Movie.title == unicode(title, 'utf_8')).filter(_models.Movie.year == year).one()
-    lg('checkForMovieUpdate', 'movie found')
+    lg('isNewMovie', 'movie found')
 
   except NoResultFound:
     #even though the movie was not found in the db, this still might be an update
     # (for the title, or year, or both)
-    lg('checkForMovieUpdate', 'movie NOT found in the db')
+    lg('isNewMovie', 'movie NOT found in the db')
     response = ''
     while True:
       #prompt user if this is in fact an update
-      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n/quit) "\
+      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this a new movie? (y/n/quit) "\
                            .format(title,\
                                    year,\
                                    stars,\
                                    mpaa,\
                                    country)).lower()
-      checkForQuit(response, 'checkForMovieUpdate')
+      checkForQuit(response, 'isNewMovie')
       if response not in ['n', 'y', 'quit']:
         print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
       else:
         break
     #end while
 
-    if response == 'n':
-      lg('checkForMovieUpdate', 'user marked this movie entry as not an update')
-      return False
+    if response == 'y':
+      lg('isNewMovie', 'user marked this movie entry as a new movie')
+      return True
 
-    lg('checkForMovieUpdate', 'user marked this movie entry as an update')
+    lg('isNewMovie', 'user marked this movie entry as an update')
 
     #prompt user for the id of the movie (until a valid id is given)
     while True:
       try:
         response = int(raw_input("\nWhat is the id of the movie? "))
-        lg('checkForMovieUpdate', 'user entered ' + str(response) + ' as the movie id')
+        lg('isNewMovie', 'user entered ' + str(response) + ' as the movie id')
         #get the movie from the db
-        lg('checkForMovieUpdate', 'querying db for movie with id ' + str(response) + '...')
+        lg('isNewMovie', 'querying db for movie with id ' + str(response) + '...')
         movie = _models.Movie.query.filter(_models.Movie.mid == response).one()
         break
       except NoResultFound:
@@ -269,11 +271,11 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
 
     #update the title and/or year
     if movie.title != unicode(title, 'utf_8'):
-      lg('checkForMovieUpdate', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
+      lg('isNewMovie', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
       origTitle = movie.title
       movie.title = title
     if movie.year != year:
-      lg('checkForMovieUpdate', 'years differ: db year = ' + str(movie.year) + ', entry year = ' + str(year) + '.  Updating...')
+      lg('isNewMovie', 'years differ: db year = ' + str(movie.year) + ', entry year = ' + str(year) + '.  Updating...')
       origYear = movie.year
       movie.year = year
   #update what needs updating
@@ -282,22 +284,22 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
     # literal "1/2", because it is just too much of a pain otherwise
     dbStars = re.sub(r'[\xc2\xbd]', '1/2', movie.star_rating)
     entryStars = re.sub(r'[\xc2\xbd]', '1/2', stars)
-    lg('checkForMovieUpdate', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
+    lg('isNewMovie', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
     origStars = movie.star_rating
     movie.star_rating = stars
   if movie.mpaa != mpaa:
-    lg('checkForMovieUpdate', 'mpaa ratings differ: db mpaa = ' + str(movie.mpaa) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
+    lg('isNewMovie', 'mpaa ratings differ: db mpaa = ' + str(movie.mpaa) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
     origMpaa = movie.mpaa
     movie.mpaa = mpaa
   if movie.country != country:
-    lg('checkForMovieUpdate', 'countries differ: db country = ' + str(movie.country) + ', entry title = ' + str(country) + '.  Updating...')
+    lg('isNewMovie', 'countries differ: db country = ' + str(movie.country) + ', entry title = ' + str(country) + '.  Updating...')
     origCountry = movie.country
     movie.country = country
   
   #rewrite the INSERT statement in movie.sql
   search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
   replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
-  lg('checkForMovieUpdate', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
+  lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
   #output message
@@ -313,7 +315,7 @@ def checkForMovieUpdate(title, year, stars, mpaa, country):
                  origStars.encode('utf-8'),\
                  origMpaa,\
                  origCountry)
-  return True
+  return False
 
 
 #------------------------------------------------------------------------------
@@ -342,9 +344,10 @@ if __name__ == '__main__':
     if isUpdate:
       tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models)
       crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, _models)
-
-    #determine what mid value will be for the next new movie
-    _nextMid = getNextMid()
+      #determine what mid value will be for the next new movie (XXX: this is assuming there is data in the Movie table in the db--do we want to assume that?)
+      _nextMid = getNextMid()
+    else
+      _nextMid = 1
 
     #iterate over the lines retrieved from the file
     for line in getLinesFromFile(inputFile):
@@ -353,19 +356,20 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating, so just add an INSERT statement from the movie data
-        inserts.append("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n".format(title.replace("'","''"), year, stars, mpaa, country))
+        inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
         #we are updating so see if we are updating a movie rather than adding a new one
-        isInsert = not checkForMovieUpdate(title, year, stars, mpaa, country.replace("'",""))
+        isInsert = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isInsert:
           #add an INSERT statement for the new movie
-          inserts.append("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n".format(title.replace("'","''"), year, stars, mpaa, country))
+          inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
           #ask user for tags for the movie
           tagger.promptUserForTag(_nextMid, title, year)
           #ask user for crew members who worked on the movie
-          crewHandler.promptUserForCrewPerson(mid, title, year)
-          #update the next mid
-          _nextMid = _nextMid + 1
+          crewHandler.promptUserForCrewPerson(_nextMid, title, year)
+
+      #update the next mid
+      _nextMid = _nextMid + 1
     #end for
 
     #determine which file to write out the movie INSERT statements to

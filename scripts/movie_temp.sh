@@ -79,7 +79,6 @@ function clean_movie_ratings() {
   sed -i "s/‘/''/g" $1
   sed -i "s/…/.../g" $1
   sed -i "s/♥/Heart/g" $1
-
   # remove the alphabetical headers
   sed -i "/^[A-Z]$/d" $1
   # remove the blank lines
@@ -234,12 +233,12 @@ fi
 #  (the '-w 120' option tells antiword to use line width of 120 chars)
 antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $temp_file
 
-# extract the additions to the Movie_Ratings document from the previous version
-diff $previous_ratings_file $temp_file | $FILTH_SCRIPTS_PATH/diff.py > $temp_file
-
 # make a copy of the new text version of Movie_Ratings.doc to be used in a diff
 #  the next time around
 cp $temp_file $previous_ratings_file
+
+# extract the additions to the Movie_Ratings document from the previous version
+diff $previous_ratings_file $temp_file | $FILTH_SCRIPTS_PATH/diff.py > $temp_file
 
 #clean up special characters, remove non-movie lines, etc
 clean_movie_ratings $temp_file

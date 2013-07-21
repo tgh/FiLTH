@@ -1,25 +1,36 @@
 WHERE LEFT OFF
 ---------------
-- new movie.sh
-  - created temporary ids.py to update DEFAULT to integer for ids in sql files
-  - make a note that in the future, inserts will have to use nextval(sequence_name) for id
-  - all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
-    - OscarParser: 1107, 987
-    - country2sql.hs (who cares? don't need this anymore--if delete, delete scripts/country.sh too)
-    - genre2sql.hs (delete!)
-    - oscar2sql.hs (who cares? don't need this anymore)
-    - crew2sql.py (also update big comment block)
-    - movie2sql_temp.py: 356, 362
-    - MovieCrew: 117
-    - MovieTagger: 127
-    - tag.py: 105, 106 (if MovieTagger.py works as planned, this can be deleted)
-  - have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
-  - need to tie it all together and test
+- methinks I should change my schema AGAIN back to having mpaa and especially
+  star_rating be a foreign key to a mpaa and star_rating table :/
+
+- dabled in Rails briefly:
+  - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
+  - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
+  - sounds like it might be complicated to use an existing pg db in rails... 
+
+- new movie.sh:
+  - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py
+  - make a note that in the future, inserts will have to use nextval(sequence_name) for id instead of DEFAULT
+  X all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
+    X OscarParser: 1107, 987
+    X country2sql.hs (who cares? don't need this anymore--if delete, delete scripts/country.sh too)
+    X genre2sql.hs (delete!)
+    X oscar2sql.hs (who cares? don't need this anymore)
+    X crew2sql.py (also update big comment block)
+    X MovieCrew: 117
+    X MovieTagger: 127
+    X tag.py: 105, 106 (if MovieTagger.py works as planned, this can be deleted)
+  X have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
+  - need to tie it all together and test movie2sql_temp.py, movie_temp.sh, and tag_temp.py
+  - haven't tested OscarParser, crew2sql since updating using ids rather than DEFAULT
+
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
 - update README for filmography stuff
 
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
+
+- need to rename Twilight movies with "The Twilight Saga: " etc
 
 
 HOW TO
