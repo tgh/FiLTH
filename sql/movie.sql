@@ -3279,7 +3279,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Suzanne Farrell: Elusive Muse', 1996, 'not s
 INSERT INTO movie VALUES (DEFAULT, 'Mandela', 1996, 'not seen', 'NR', 'South Africa', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Line King: The Al Hirschfeld Story', 1996, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Tell the Truth and Run: George Seldes and the American Press', 1996, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Waco: The Rules of Engagement', 1997, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Waco: The Rules of Engagement', 1997, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Ayn Rand: A Sense of Life', 1997, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Colors Straight Up', 1997, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Long Way Home', 1997, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3452,3 +3452,8 @@ INSERT INTO movie VALUES (DEFAULT, 'Paranorman', 2012, '***', 'PG', 'USA', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'World War Z', 2013, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Breaking Dawn Part 2', 2012, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Mission: Impossible II', 2000, '*', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Blue Jasmine', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'House at the End of the Street', 2012, '*', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Identity Thief', 2013, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Jack Reacher', 2012, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Lone Ranger', 2013, '***', 'PG-13', 'USA', NULL);
