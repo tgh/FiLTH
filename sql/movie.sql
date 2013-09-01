@@ -3457,3 +3457,6 @@ INSERT INTO movie VALUES (DEFAULT, 'House at the End of the Street', 2012, '*', 
 INSERT INTO movie VALUES (DEFAULT, 'Identity Thief', 2013, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Jack Reacher', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Lone Ranger', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Cloud Atlas', 2012, '****', 'R', DEFAULT, NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Elysium', 2013, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Heat', 2013, '***', 'R', 'USA', NULL);
