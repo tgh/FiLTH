@@ -3460,3 +3460,6 @@ INSERT INTO movie VALUES (DEFAULT, 'The Lone Ranger', 2013, '***', 'PG-13', 'USA
 INSERT INTO movie VALUES (DEFAULT, 'Cloud Atlas', 2012, '****', 'R', DEFAULT, NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Elysium', 2013, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Heat', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Elizabethtown', 2005, '*½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Englishman Who Went Up a Hill But Came Down a Mountain', 1995, '***', 'PG', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Sgt. Bilko', 1996, '**', 'PG', 'USA', NULL);
