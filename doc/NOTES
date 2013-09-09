@@ -6,7 +6,27 @@ WHERE LEFT OFF
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
   - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
-  - sounds like it might be complicated to use an existing pg db in rails... 
+  - sounds like it might be complicated to use an existing pg db in rails...
+
+  - Got the following errors when running `rails server` and `bundle install`:
+
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+
+    - sudo apt-get install libreadline-gplv2-dev
+    - apparently Ubuntu's rvm package is broken: from http://stackoverflow.com/questions/9056008/installed-ruby-1-9-3-with-rvm-but-command-line-doesnt-show-ruby-v/9056395#9056395:
+      - sudo apt-get --purge remove ruby-rvm
+      - sudo rm -rf /usr/share/ruby-rvm /etc/rvmrc /etc/profile.d/rvm.sh
+      - curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
+    - rvm install ruby-1.9.3-p448
+    - rvm use 1.9.3
+    - gem uninstall pg; gem install pg
+    
+    - tried: `sudo gem install rubygems-update` and `sudo update_rubygems`
+    - had to run `sudo gem install bundler` and `bundle install` to fix that mess
+    - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
 
 - new movie.sh:
   - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py

@@ -3463,3 +3463,5 @@ INSERT INTO movie VALUES (DEFAULT, 'The Heat', 2013, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Elizabethtown', 2005, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Englishman Who Went Up a Hill But Came Down a Mountain', 1995, '***', 'PG', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Sgt. Bilko', 1996, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Constant Gardener', 2006, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Naqoyqatsi', 2002, '**', 'PG', 'USA', NULL);
