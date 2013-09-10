@@ -42,10 +42,10 @@ def initTags():
 
   log('initTags', '***Initializing tag map***')
   taglines = tagFile.readlines()
-  for tagline in lines:
-    tid = re.search('VALUES \\((\d+),' tagline).group(1)
+  for tagline in taglines:
+    tid = re.search('VALUES \\((\d+),', tagline).group(1)
     tag = re.search(", '([a-zA-Z\- ]+)'\\);", tagline).group(1)
-    log('initTags', 
+    log('initTags', 'Found tag: ' + tid + ' - ' + tag)
     tagMap[int(tid)] = tag
   log('initTags', 'tagMap initialized')
 
@@ -57,6 +57,7 @@ def initMovies(lastProcessed):
   movielines = movieFile.readlines()
   for movieline in movielines:
     vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
+    #FIXME: this will not work if the movie has a comma in the title
     vals = vals.split(', ')
     #skip movie haven't seen or already tagged
     if vals[3] == "'not seen'" or int(vals[0]) <= lastProcessed:
