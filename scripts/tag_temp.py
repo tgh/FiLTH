@@ -8,14 +8,12 @@
 #------------------------------------------------------------------------------
 
 import sys
-import imp
 import string
 import traceback
 import re
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 
-models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
 tagGivenToFilename = FILTH_PATH + '/sql/tag_given_to.sql'
 tagGivenToFile = None
 tagFilename = FILTH_PATH + '/sql/tag.sql'
