@@ -15,24 +15,11 @@ I have seen, movies I want to see, filmographies, oscar winners/nominees, best-
 of lists, etc--all in one place, rather than multiple documents.
 
 In the end I hope it to be a GUI application with menus, buttons, forms, etc.
-and/or a web app that will let others search the database for my ratings.
-
-
-Source
--------
-Code consists of Python, Java, Haskell, bash scripts, and of course SQL.
-Database is Postgresql.
-Web pages in php (for now).
+and/or a web app.
 
 
 Files
 ------
-
-build.passwords.properties
-
-build.properties
-
-build.xml
 
 /bin (binary files)
 
@@ -42,21 +29,6 @@ build.xml
     project.  Used for logging in java programs such as /bin/OscarParser, as
     well as its database "virtual console".
 
-  country2sql
-
-    Parses the file given as its only argument and produces sql insert
-    statements for the database's country table.  To be used with
-    /data/country.txt as its argument.  Use shell redirection to store the sql
-    statements into /sql/country.sql.  Compiled from /src/country2sql.hs Haskell
-    source file.
-
-  genre2sql
-
-    Parses the file given as its only argument and produces sql insert
-    statements for the database's genre table.  To be used with /data/genre.txt
-    as its argument.  Use shell redirection to store the sql statements into
-    /sql/genre.sql.  Compiled from /src/genre2sql.hs Haskell source file.
-
   nameFormatter
 
     Takes a text file containing a list of names (such as /data/crew_person.txt)
@@ -65,13 +37,6 @@ build.xml
     /scripts/crew_person.sh which redirects the output to a temp file (in
     /temp), which is then used as an argument to /scripts/crew2sql.py.  Compiled
     from /src/nameFormatter.hs Haskell source file.
-
-  oscar2sql
-
-    Parses the file given as its only argument and produces sql insert
-    statements for the database's oscar table.  To be used with /data/oscar.txt
-    as its argument.  Use shell redirection to store the sql statements into
-    /sql/oscar.sql.  Compiled from /src/oscar2sql.hs Haskell source file.
 
   OscarParser.class
 
@@ -86,20 +51,9 @@ build.xml
 
 /data (data files in various formats used to populate the database)
 
-  2003.txt
+  2003.csv, 2004.csv, etc.
 
-    Text file containing my top ten and awards for 2003.
-
-  2004.txt
-
-    Text file containing my top ten and awards for 2004.
-
-  actedin.txt
-
-    Basically filmographies of a small handfull of actors--formatted in such a
-    way to make parsing easier for scripts and programs.  This file will be used
-    (as of now, 6/1/11, it has not been used) to help populate the worked_on
-    table of the database.
+    Csv files containing my top ten and awards data for various years.
 
   best_film_scores.txt
 
@@ -112,11 +66,6 @@ build.xml
     "Best of" lists for the 2000's.  Will probably be used to create lists in
     the database (there are tables called "list" and "list_contains" that model
     a list pertaining to movies).
-
-  country.txt
-
-    Countries that the database will contain in its "country" table.  This is
-    used to create /sql/country.sql.
 
   crew_person.txt
 
@@ -133,27 +82,19 @@ build.xml
     such as would be in Penélope Cruz.  It is still undecided as to whether the
     database will contain accented characters or not (ticket #47).
 
-  directed.txt
-
-    Filmographies of directors formatted like a list in the same way as
-    /data/actedin.txt to make parsing easier for scripts and programs.  This
-    file will be used (as of now, 11/22/11, it has not been used) to help
-    populate the worked_on table of the database... or maybe not.
-    Filmographies.doc may be used instead (see /data/Filmographies.doc).
-
   ebert_top_ten.txt
 
     Roger Ebert's annual top ten movie lists.  These will be re-created in the
     database with the "list" and "list_contains" tables. 
 
-  Filmographies.doc
+  Director_Filmographies.doc
 
-    An old Word document I still maintain for director filmographies.  Both
-    /data/actedin.txt and /data/directed.txt came from this document.  This will
-    most likely be used (with the help of antiword to convert it from a Word
-    document to a text file) to help populate the worked_on table of the
-    database.  Either that or converted to directed.txt, which will then be
-    used.
+    Word document of director filmographies.
+
+  filmographies.csv
+
+    Csv file of filmography data. Just a large handful of directors and a few
+    actors.
 
   Movie_Ratings.doc
 
@@ -178,13 +119,6 @@ build.xml
 
     Just a list of movies I would like to see.  There will most likely be a
     continually changing list in the database for movies to see.
-
-  oscar.txt
-
-    A list of the Oscar categories that I care about.  This file is used with
-    /bin/oscar2sql program as a command-line argument, whose output is sql
-    insert statements that populate the oscar table in the database.  This
-    output has been redirected to produce the /sql/oscar.sql file.
 
   oscars.csv
 
@@ -325,11 +259,6 @@ build.xml
   cop.sh
 
     Shell script that compiles /src/OscarParser.java into /bin/OscarParser.class
-
-  country.sh
-
-    Shell script to create the /sql/country.sql file using /bin/country2sql and
-    /data/country.txt.
 
   crew2sql.py
 
@@ -571,65 +500,17 @@ build.xml
 
   /data (source files for gathering/generating data for the db) 
   
-    country2sql.hs
-
-      Haskell source code for /bin/country2sql. (see /bin/country2sql)
-
-    genre2sql.hs
-  
-      Haskell source code for /bin/genre2sql. (see /bin/genre2sql)
-  
     nameFormatter.hs
   
       Haskell source code for /bin/nameFormatter. (see /bin/nameFormatter)
   
-    oscar2sql.hs
-  
-      Haskell source code for /bin/oscar2sql. (see /bin/oscar2sql)
-  
     OscarParser.java
   
       Java source code for /bin/OscarParser.class. (see /bin/OscarParser.class)
-
-  /main
-  
-    /java (all Java source for the filth webapp)
-    
-      /net
-      
-        /tylerhayes
-        
-          /filth
-          
-            /controller (all Controller classes)
-  
-    /resources
-    
-      /css (CSS files)
-      
-      /freemarker (Freemarker templates)
-    
-      /images (image files)
-      
-        filth_logo.png
-      
-          The logo for FiLTH created in Photoshop.  The background is transparent.
-          
-      /js (JavaScript files)
-      
-      /WEB-INF
-      
-        /lib
-        
-        app-context.xml
-        
-        filth-servlet.xml
-        
-        web.xml
         
   /python (Python files)
   
-    /orm/models.py
+    models.py
   
       Python source using SQLAlchemy to map the database to Python objects and to
       connect directly to the database via the objects.
@@ -696,42 +577,6 @@ build.xml
     Also created by /scripts/movie.sh.  Although deleting these or changing them
     in anyway doesn't matter--they're only used during the execution of
     movie.sh.
-
-/trash (unused-but-still-around-just-in-case files)
-
-  crew2sql.hs
-
-    This was replaced by /scripts/crew2sql.py Python script.
-    (see /trash/CSV.hs)
-
-  CSV.hs
-
-    A Haskell module written by someone at CalTech I think.  This module
-    provides functions that operate on CSV files.  This was used in the now
-    trashed crew2sql.hs code, which was replaced by the /scripts/crew2sql.py
-    Python script.  After getting a new laptop and updating the Haskell Platform
-    the crew2sql.hs (or anything else importing the CSV module) failed to
-    compile.
-
-  init_mysql_database.sql
-
-    SQL DDL (data definition language) for creating the filth database
-    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
-    MySQL.  I deprecated the option of using MySQL, and just stuck with
-    Postgres.  Maybe I'll bring it back, along with sqlite.
-
-  movie2sql.c
-
-    This was replaced by /scripts/movie2sql.py Python script.
-    (see /trash/CSV.hs)
-
-  *.php
-
-    All of these .php files are web page files that were created for the cs386
-    Intro to Databases class--which started this whole project.  These are old
-    and refer to the database as it was back then--in other words, a different
-    schema.  These are here as a basis for future web pages if FiLTH becomes a
-    web app as well.
 
 /workspace (directory to mess around, experiment, and test)
 
