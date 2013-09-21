@@ -1,5 +1,9 @@
 WHERE LEFT OFF
 ---------------
+** There were 4 instances of "''''" in the new movie.sql ???
+- testing tag_temp.py: LOOKS GOOD
+  - need to make tagTemp.txt known to git
+
 - methinks I should change my schema AGAIN back to having mpaa and especially
   star_rating be a foreign key to a mpaa and star_rating table :/
 

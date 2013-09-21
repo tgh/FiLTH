@@ -27,6 +27,7 @@ movieFile = None
 tagMap = {}
 movies = []
 nextTid = 0
+longestTagLength = 0
   
 
 
@@ -38,56 +39,69 @@ def log(func, message):
 
 
 def initTags():
-  global tagMap
+  global tagMap, longestTagLength
 
-  log('initTags', '***Initializing tag map***')
+  log('initTags', '>> Initializing tag map <<')
   taglines = tagFile.readlines()
   for tagline in taglines:
     tid = re.search('VALUES \\((\d+),', tagline).group(1)
     tag = re.search(", '([a-zA-Z\- ]+)'\\);", tagline).group(1)
     log('initTags', 'Found tag: ' + tid + ' - ' + tag)
     tagMap[int(tid)] = tag
-  log('initTags', 'tagMap initialized')
+    if len(tag) > longestTagLength:
+      longestTagLength = len(tag)
+  log('initTags', '>> tag map initialized <<')
 
 
 def initMovies(lastProcessed):
   global movies
 
-  log('initMovies', '***Initializing movie map***')
+  log('initMovies', '>> Initializing movie map <<')
   movielines = movieFile.readlines()
   for movieline in movielines:
+    movieline = movieline.replace("''", "'")
     vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
-    #FIXME: this will not work if the movie has a comma in the title
-    vals = vals.split(', ')
-    #skip movie haven't seen or already tagged
-    if vals[3] == "'not seen'" or int(vals[0]) <= lastProcessed:
-      continue
+
     movie = {}
-    movie['mid'] = int(vals[0])
-    movie['title'] = vals[1].strip("'")
-    movie['year'] = int(vals[2])
-    movie['stars'] = vals[3].strip("'")
-    movie['mpaa'] = vals[4].strip("'")
-    movie['country'] = vals[5].strip("'")
+    movie['mid'] = re.search('(\d+)', vals).group(1)
+    #skip movie if already tagged
+    if int(movie['mid']) <= lastProcessed:
+      continue
+    titleStartIndex = vals.find("'") + 1
+    titleEndIndex = vals.find("', ")
+    movie['title'] = vals[titleStartIndex:titleEndIndex]
+    vals = vals[(titleEndIndex + 3):]
+    vals = vals.split(', ')
+    #skip movie haven't seen
+    if vals[1] == "'not seen'":
+      continue
+    movie['year'] = int(vals[0])
     movies.append(movie)
+  log('initMovies', '>> movie map initialized <<')
 
 
 def printTags():
-  count = 1
-  prevLength = 0
-  for tag in tagMap.values():
-    if count % 2 == 1:
-      print '  ' + str(count) + ' = ' + tag,
-      prevLength = len(tag)
+  padding = '  '
+  for item in tagMap.items():
+    key = item[0]
+    tag = item[1]
+
+    if len(str(key)) == 1:
+      number = ' ' + str(key)
     else:
-      if prevLength >= 18:
-        print '\t' + str(count) + ' = ' + tag
-      elif prevLength >= 8 and count > 9:
-        print '\t\t' + str(count) + ' = ' + tag
-      else:
-        print '\t\t\t' + str(count) + ' = ' + tag
-    count += 1
-  if len(tagMap) % 2 == 1:
+      number = str(key)
+
+    if key % 3 == 0:
+      print number + ' = ' + tag
+      continue
+    if key % 3 == 1:
+      sys.stdout.write(padding)
+    sys.stdout.write(number + ' = ' + tag)
+    longestLengthDiff = longestTagLength - len(tag)
+    for i in range(0,longestLengthDiff):
+      sys.stdout.write(' ')
+    sys.stdout.write(padding)
+  if len(tagMap) % 3 != 0:
     print '\n'
 
 
@@ -133,10 +147,10 @@ def extractTagIds(userInput):
 
 
 def addTag(tag):
-  global tagMap
+  global tagMap, nextTid
 
-  log('addTag', 'writing sql: INSERT INTO tag VALUES(' + nextTid + ', \'' + tag + '\');')
-  tagFile.write('INSERT INTO tag VALUES (DEFAULT, \'' + tag + '\');\n')
+  log('addTag', 'writing sql: INSERT INTO tag VALUES(' + str(nextTid) + ', \'' + tag + '\');')
+  tagFile.write('INSERT INTO tag VALUES (' + str(nextTid) + ', \'' + tag + '\');\n')
   tagMap[nextTid] = tag
   nextTid = nextTid + 1
 
@@ -149,6 +163,7 @@ def addTagUI():
       if 'y' == confirm:
         log('addTagUI', 'User wants to add tag \'' + tag + '\'')
         addTag(tag)
+        return
       elif 'n' == confirm:
         break
       else:
@@ -166,7 +181,7 @@ def inquireMovie(movie):
       try:
         response = raw_input('Enter tags: ').lower()
         if response == 'q':
-          quit(movie['mid']-1)
+          quit(int(movie['mid'])-1)
         if response == 'skip':
           return
         if response == 'add':
@@ -182,11 +197,15 @@ def inquireMovie(movie):
         writeSql(movie, tid)
       break
   except Exception as e:
-    print '\n**FATAL ERROR: ' + str(e) + '\n'
+    print '\n***FATAL ERROR: ' + str(e) + '\n'
     log('EXCEPTION', str(e))
     traceback.print_exc(file=logger)
     traceback.print_exc(file=sys.stdout)
-    quit(movie.mid)
+    quit(int(movie['mid'])-1)
+  except KeyboardInterrupt:
+    print '\n**Fine.Whatever.\n'
+    log('EXCEPTION', '***Force quit by user.***')
+    quit(int(movie['mid'])-1)
 
 
 
@@ -201,9 +220,8 @@ if __name__ == '__main__':
     sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
     sys.exit()
   lastProcessed = tempFile.read()
-  log('main', 'last mid processed (from file): ' + lastProcessed)
+  log('main', 'last mid processed (read from ' + tempFilename + '): ' + lastProcessed)
   lastProcessed = int(lastProcessed)
-  log('main', 'last mid processed (cast): ' + str(lastProcessed))
   #grab all tags from tag file
   initTags()
   nextTid = len(tagMap) + 1
