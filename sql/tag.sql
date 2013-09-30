@@ -77,3 +77,4 @@ INSERT INTO tag VALUES (DEFAULT, 'Espionage');
 INSERT INTO tag VALUES (DEFAULT, 'Mafia');
 INSERT INTO tag VALUES (DEFAULT, 'Gambling');
 INSERT INTO tag VALUES (DEFAULT, 'Prison');
+INSERT INTO tag VALUES (DEFAULT, 'Martial-arts');
