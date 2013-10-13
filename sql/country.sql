@@ -51,3 +51,4 @@ INSERT INTO country VALUES ('Nicaragua');
 INSERT INTO country VALUES ('USSR');
 INSERT INTO country VALUES ('Ivory Coast');
 INSERT INTO country VALUES ('Wales');
+INSERT INTO country VALUES ('South Korea');

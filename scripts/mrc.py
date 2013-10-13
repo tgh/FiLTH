@@ -109,7 +109,7 @@ class MovieRatingsParser():
     self._yearMax = datetime.datetime.now().year + 3
     self._validStarRatings = ['NO STARS', 'N/A', '\xc2\xbd*', '*', '*\xc2\xbd', '**', '**\xc2\xbd', '***', '***\xc2\xbd', '****']
     self._validMpaaRatings = ['NR','G','PG','PG-13','R','NC-17','X']
-    self._countries = ['USA', 'France', 'England', 'Canada', 'China', 'Russia', 'Germany', 'Argentina', 'Portugal', 'Spain', 'Mexico', 'Italy', 'Ireland', 'Scotland', 'Czech Republic', 'Iran', 'The Netherlands', 'Sweden', 'Finland', 'Norway', 'Poland', 'Bosnia', 'Japan', 'Taiwan', 'India', 'Greece', 'Israel', 'Lebanon', 'South Africa', 'Australia', 'New Zealand', 'Brazil', 'Iceland', 'Vietnam', 'Denmark', 'Belgium', 'Switzerland', 'Austria', 'Kazakhstan', 'Algeria', 'Palestine', 'Nepal', 'Georgia', 'Macedonia', 'Cuba', 'Czechoslovakia', 'Puerto Rico', 'Hungary', 'Yugoslavia', 'Nicaragua', 'USSR', 'Ivory Coast', 'Wales']
+    self._countries = ['USA', 'France', 'England', 'Canada', 'China', 'Russia', 'Germany', 'Argentina', 'Portugal', 'Spain', 'Mexico', 'Italy', 'Ireland', 'Scotland', 'Czech Republic', 'Iran', 'The Netherlands', 'Sweden', 'Finland', 'Norway', 'Poland', 'Bosnia', 'Japan', 'Taiwan', 'India', 'Greece', 'Israel', 'Lebanon', 'South Africa', 'Australia', 'New Zealand', 'Brazil', 'Iceland', 'Vietnam', 'Denmark', 'Belgium', 'Switzerland', 'Austria', 'Kazakhstan', 'Algeria', 'Palestine', 'Nepal', 'Georgia', 'Macedonia', 'Cuba', 'Czechoslovakia', 'Puerto Rico', 'Hungary', 'Yugoslavia', 'Nicaragua', 'USSR', 'Ivory Coast', 'Wales', 'South Korea']
 
 
   def parse(self, tokenSets):

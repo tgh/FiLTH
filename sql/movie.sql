@@ -3465,3 +3465,15 @@ INSERT INTO movie VALUES (DEFAULT, 'Englishman Who Went Up a Hill But Came Down 
 INSERT INTO movie VALUES (DEFAULT, 'Sgt. Bilko', 1996, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Constant Gardener', 2006, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Naqoyqatsi', 2002, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, '50 First Dates', 2004, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, '2010', 1984, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Being Elmo: A Puppeteer''''s Journey', 2011, '***½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Host', 2006, '***', 'R', 'South Korea', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Lady Vanishes', 1938, '***½', 'NR', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Let the Right One In', 2008, '***', 'R', 'Sweden', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Oblivion', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Red Lights', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Side Effects', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'To the Wonder', 2013, '**', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Twilight', 1998, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Undefeated', 2011, '***½', 'PG-13', 'USA', NULL);
