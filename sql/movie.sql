@@ -14,10 +14,10 @@ INSERT INTO movie VALUES (DEFAULT, '24-Hour Party People', 2002, '***', 'R', 'En
 INSERT INTO movie VALUES (DEFAULT, '25th Hour', 2002, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, '27 Dresses', 2008, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, '28 Days Later', 2003, '***½', 'R', 'England', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, '28 Up', 1985, '****', 'NR', 'England', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, '28 Up', 1984, '****', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, '28 Weeks Later', 2007, '**½', 'R', 'England', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, '35 Up', 1992, '****', 'NR', 'England', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, '42 Up', 2000, '****', 'NR', 'England', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, '35 Up', 1991, '****', 'NR', 'England', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, '42 Up', 1998, '****', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, '127 Hours', 2010, '***½', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The 400 Blows', 1959, '****', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, '1900', 1976, '**', 'R', 'Italy', DEFAULT);
@@ -3477,3 +3477,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Side Effects', 2013, '***', 'R', 'USA', NULL
 INSERT INTO movie VALUES (DEFAULT, 'To the Wonder', 2013, '**', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Twilight', 1998, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Undefeated', 2011, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, '49 Up', 2005, '****', 'NR', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Charade', 1963, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Gravity', 2013, '***', 'PG-13', 'USA', NULL);
