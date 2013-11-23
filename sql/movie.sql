@@ -3480,3 +3480,6 @@ INSERT INTO movie VALUES (DEFAULT, 'Undefeated', 2011, '***½', 'PG-13', 'USA', 
 INSERT INTO movie VALUES (DEFAULT, '49 Up', 2005, '****', 'NR', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Charade', 1963, '***½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Gravity', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Awakening', 2011, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'West of Memphis', 2013, '****', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Wind Rises', 2013, '***½', 'PG-13', 'Japan', NULL);
