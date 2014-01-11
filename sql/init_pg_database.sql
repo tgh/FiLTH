@@ -7,9 +7,9 @@
 -- --------------------
 
 -- a movie entity -------------------------------------------------------------
+DROP TABLE IF EXISTS movie CASCADE;
 DROP SEQUENCE IF EXISTS movie_mid_seq;
 CREATE SEQUENCE movie_mid_seq;
-DROP TABLE IF EXISTS movie CASCADE;
 CREATE TABLE movie (
 mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
 title text NOT NULL,
@@ -75,9 +75,9 @@ rating text NOT NULL);
 
 
 -- a crewperson entity --------------------------------------------------------
+DROP TABLE IF EXISTS crew_person CASCADE;
 DROP SEQUENCE IF EXISTS crew_person_cid_seq;
 CREATE SEQUENCE crew_person_cid_seq;
-DROP TABLE IF EXISTS crew_person CASCADE;
 CREATE TABLE crew_person (
 cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
 l_name text NOT NULL,
@@ -119,9 +119,9 @@ position_title text NOT NULL);
 -- Tags are used to, well, tag a movie.  Movies can be tagged with keywords or
 -- phrases (e.g. "New York", "Indie", "Unconventional").  This will probably be
 -- used mostly for marking a movie with one or more genres.
+DROP TABLE IF EXISTS tag CASCADE;
 DROP SEQUENCE IF EXISTS tag_tid_seq;
 CREATE SEQUENCE tag_tid_seq;
-DROP TABLE IF EXISTS tag CASCADE;
 CREATE TABLE tag (
 tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
 tag_name text NOT NULL);
@@ -135,9 +135,9 @@ tid smallint NOT NULL);
 
 
 -- an oscar entity ------------------------------------------------------------
+DROP TABLE IF EXISTS oscar CASCADE;
 DROP SEQUENCE IF EXISTS oscar_oid_seq;
 CREATE SEQUENCE oscar_oid_seq;
-DROP TABLE IF EXISTS oscar CASCADE;
 CREATE TABLE oscar (
 oid smallint DEFAULT nextval('oscar_oid_seq') NOT NULL,
 category text NOT NULL);
@@ -158,9 +158,9 @@ sharing_with smallint DEFAULT NULL);
 
 
 -- a list entity --------------------------------------------------------------
+DROP TABLE IF EXISTS list CASCADE;
 DROP SEQUENCE IF EXISTS list_lid_seq;
 CREATE SEQUENCE list_lid_seq;
-DROP TABLE IF EXISTS list CASCADE;
 CREATE TABLE list (
 lid smallint DEFAULT nextval('list_lid_seq') NOT NULL,
 list_title text NOT NULL,
@@ -177,9 +177,9 @@ rank smallint DEFAULT NULL);
 
 -- a tyler entity -------------------------------------------------------------
 -- (like oscar, but for my annual awards)
+DROP TABLE IF EXISTS tyler CASCADE;
 DROP SEQUENCE IF EXISTS tyler_tid_seq;
 CREATE SEQUENCE tyler_tid_seq;
-DROP TABLE IF EXISTS tyler CASCADE;
 CREATE TABLE tyler (
 tid smallint DEFAULT nextval('tyler_tid_seq') NOT NULL,
 category text NOT NULL);
