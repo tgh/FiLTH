@@ -1,5 +1,6 @@
 *~*
 temp/*
+!temp/tagTemp.txt
 *.swp
 *bin/tylerhayes/*
 .classpath
