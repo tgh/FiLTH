@@ -9,7 +9,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from os import system
 from MovieTagger import MovieTagger
 from MovieCrew import MovieCrew
-fromQuitException import QuitException
+from QuitException import QuitException
 from getopt import getopt
 from getopt import GetoptError
 
@@ -33,7 +33,7 @@ _nextMid = 0
 
 def usage():
   print "  usage: movie2sql.py [-u] -i <input file> -m <movie sql file> -t <tag sql file> -g <tagGivenTo sql file> -c <crewPerson sql file> -w <workedOn sql file>\n"
-  print "\t-u\tuse this option for update mode
+  print "\t-u\tuse this option for update mode"
   print "\t-i\tThe input file (to read each movie from) [required]"
   print "\t-m\tThe file for sql insert statements for the movie table of the FiLTH database [required]"
   print "\t-t\tThe file for sql insert statements for the tag table of the FiLTH database [required for update mode]"
@@ -55,12 +55,13 @@ def checkForMissingFileArg(arg):
 
 def processArgs():
   """Sanity checks the command-line arguments."""
+  global _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile
 
   inputFile = None
   isUpdate = False #TODO: rename this option ('update' is overloaded in this file and is confusing)
 
   try:
-    opts, args = getopt(sys.argv, 'ui:t:g:c:w:')
+    opts, args = getopt(sys.argv[1:], 'ui:m:t:g:c:w:')
   except GetoptError as goe:
     sys.stderr.write(str(goe) + '\n\n')
     usage()
@@ -332,6 +333,7 @@ if __name__ == '__main__':
   inserts     = []      #list of INSERT statements
   tagger      = None    #MovieTagger object
   crewHandler = None    #MovieCrew object
+  f           = None    #file holder
 
   #process the command-line arguments
   inputFile, isUpdate = processArgs()
@@ -346,7 +348,7 @@ if __name__ == '__main__':
       crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, _models)
       #determine what mid value will be for the next new movie (XXX: this is assuming there is data in the Movie table in the db--do we want to assume that?)
       _nextMid = getNextMid()
-    else
+    else:
       _nextMid = 1
 
     #iterate over the lines retrieved from the file
@@ -399,7 +401,8 @@ if __name__ == '__main__':
     retVal = 1
   finally:
     _log.close()
-    f.close()
+    if f:
+      f.close()
     if (tagger):
       tagger.close()
     if (crewHandler):

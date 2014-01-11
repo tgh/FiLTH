@@ -140,7 +140,7 @@ function run_movie2sql() {
   if [ $first_run -eq $TRUE ]
   then
     # movie2sql.py without the -u option creates $movie_sql_file
-    $FILTH_SCRIPTS_PATH/movie2sql.py -i $1 -m $movie_sql_file
+    $FILTH_SCRIPTS_PATH/movie2sql_temp.py -i $1 -m $movie_sql_file
   else
     # make copies of sql files so we can revert them in the event of an error later
     backup_movie_sql_file
@@ -149,7 +149,7 @@ function run_movie2sql() {
     # which is a file of sql inserts for just the new movies being added
     # (the -u option also checks for, and applies, updates to movies already in
     # the db)
-    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file -t $tag_additions_sql_file -g $tgt_additions_sql_file -c $cp_additions_sql_file -w $wo_additions_sql_file
+    $FILTH_SCRIPTS_PATH/movie2sql_temp.py -u -i $1 -m $movie_sql_file -t $tag_additions_sql_file -g $tgt_additions_sql_file -c $cp_additions_sql_file -w $wo_additions_sql_file
   fi
 
   # did movie2sql.py fail?
@@ -164,10 +164,10 @@ function run_movie2sql() {
 function check_psql_error() {
   # see if the error file has grown since the last psql execution (to see if any error occurred)
   current_error_file_size=`stat -c %s $error_file`
-  if [ $error_file_size -gt $previous_error_file_size ]
+  if [ $current_error_file_size -gt $previous_error_file_size ]
   then
     echo -e "\n[exec] psql -- ERROR running $1"
-    previous_error_file_size=$error_file_size
+    previous_error_file_size=$current_error_file_size
     return $ERROR
   fi
 }
@@ -193,6 +193,7 @@ function run_sql_inserts() {
   echo -e "\n[exec] psql -- Inserting worked_on additions"
   psql -U postgres -d filth -f $wo_additions_sql_file > /dev/null 2>>$error_file
   status=check_psql_error $wo_additions_sql_file
+  #FIXME: this is wrong. The error message below needs to show if any of the check_psql_error calss returns ERROR, not just the last one
   if [ $status -eq $ERROR ]
   then
     echo -e "\n**There was an error running the additional sql insert statements."
