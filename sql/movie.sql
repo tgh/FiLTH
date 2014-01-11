@@ -3415,7 +3415,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Bernie', 2012, '**½', 'PG-13', 'USA', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'A Cat in Paris', 2011, '**½', 'PG', 'France', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Christmas with the Kranks', 2004, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Four Christmases', 2008, '***', 'PG-13', 'USA', NULL);
-INSERT INTO movie VALUES (DEFAULT, 'Hobbit: An Unexpected Journey', 2012, '***', 'PG-13', 'New Zealand', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Hobbit: An Unexpected Journey', 2012, '***', 'PG-13', 'New Zealand', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Les Miserables', 2012, '****', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Lincoln', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'Men in Black II', 2002, '**½', 'PG-13', 'USA', NULL);
