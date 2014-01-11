@@ -116,7 +116,6 @@ INSERT INTO worked_on VALUES(1943, 436, 'Actor');  -- Charles Coburn worked on T
 INSERT INTO worked_on VALUES(1944, 445, 'Actor');  -- Charles Bickford worked on The Song of Bernadette as Actor
 INSERT INTO worked_on VALUES(2084, 23, 'Actor');  -- Cary Grant worked on None but the Lonely Heart as Actor
 INSERT INTO worked_on VALUES(1951, 446, 'Actor');  -- Bing Crosby worked on Going My Way as Actor
-INSERT INTO worked_on VALUES(1951, 447, 'Actor');  -- Barry Fitzgerald worked on Going My Way as Actor
 INSERT INTO worked_on VALUES(1949, 448, 'Actor');  -- Alexander Knox worked on Wilson as Actor
 INSERT INTO worked_on VALUES(1948, 413, 'Actor');  -- Charles Boyer worked on Gaslight as Actor
 INSERT INTO worked_on VALUES(932, 449, 'Actor');  -- Clifton Webb worked on Laura as Actor
