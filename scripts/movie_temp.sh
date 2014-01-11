@@ -236,6 +236,7 @@ antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $temp_file
 
 # make a copy of the new text version of Movie_Ratings.doc to be used in a diff
 #  the next time around
+#FIXME: this is wrong. the following diff will always be empty.  need another temp file to hold result of antiword (e.g. current_movie_ratings.txt)
 cp $temp_file $previous_ratings_file
 
 # extract the additions to the Movie_Ratings document from the previous version
