@@ -1991,7 +1991,7 @@ INSERT INTO movie VALUES (DEFAULT, 'Mister Roberts', 1955, 'not seen', 'NR', 'US
 INSERT INTO movie VALUES (DEFAULT, 'The King and I', 1956, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Around the World in 80 Days', 1956, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Friendly Persuasion', 1956, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (DEFAULT, 'Witness for the Prosecution', 1957, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (DEFAULT, 'Witness for the Prosecution', 1957, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Peyton Place', 1957, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'The Defiant Ones', 1958, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (DEFAULT, 'Gigi', 1958, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3483,3 +3483,11 @@ INSERT INTO movie VALUES (DEFAULT, 'Gravity', 2013, '***', 'PG-13', 'USA', NULL)
 INSERT INTO movie VALUES (DEFAULT, 'The Awakening', 2011, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'West of Memphis', 2013, '****', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (DEFAULT, 'The Wind Rises', 2013, '***½', 'PG-13', 'Japan', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'August: Osage County', 2013, '****', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'For Your Consideration', 2006, '**', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'The Hobbit: The Desolation of Smaug', 2013, '**½', 'PG-13', 'New Zealand', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Knight and Day', 2010, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Paranoid Park', 2007, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Pirates of the Caribbean: On Stranger Tides', 2011, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'Taken', 2008, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (DEFAULT, 'White Christmas', 1954, '***', 'NR', 'USA', NULL);
