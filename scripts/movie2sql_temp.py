@@ -366,8 +366,12 @@ if __name__ == '__main__':
           #add an INSERT statement for the new movie
           inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
           #ask user for tags for the movie
+          print '\nTAGS'
+          print '-----\n'
           tagger.promptUserForTag(_nextMid, title, year)
           #ask user for crew members who worked on the movie
+          print '\nCREW'
+          print '-----\n'
           crewHandler.promptUserForCrewPerson(_nextMid, title, year)
 
       #update the next mid

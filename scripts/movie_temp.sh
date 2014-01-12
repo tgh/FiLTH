@@ -13,7 +13,8 @@ FILTH_SCRIPTS_PATH=$FILTH_PATH/scripts
 
 previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
 previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
-temp_file=$FILTH_TEMP_PATH/temp
+current_ratings_file=$FILTH_TEMP_PATH/current_movie_ratings.txt
+ratings_diff=$FILTH_TEMP_PATH/movie_ratings_diff.txt
 movie_sql_file=$FILTH_SQL_PATH/movie.sql
 movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
 movie_additions_sql_file=$FILTH_TEMP_PATH/movie_additions.sql
@@ -232,25 +233,24 @@ fi
 
 # convert Word document to text file
 #  (the '-w 120' option tells antiword to use line width of 120 chars)
-antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $temp_file
+antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $current_ratings_file
+
+# extract the additions to the Movie_Ratings document from the previous version
+diff $previous_ratings_file $current_ratings_file | $FILTH_SCRIPTS_PATH/diff.py > $ratings_diff
 
 # make a copy of the new text version of Movie_Ratings.doc to be used in a diff
 #  the next time around
-#FIXME: this is wrong. the following diff will always be empty.  need another temp file to hold result of antiword (e.g. current_movie_ratings.txt)
-cp $temp_file $previous_ratings_file
-
-# extract the additions to the Movie_Ratings document from the previous version
-diff $previous_ratings_file $temp_file | $FILTH_SCRIPTS_PATH/diff.py > $temp_file
+cp $current_ratings_file $previous_ratings_file
 
 #clean up special characters, remove non-movie lines, etc
-clean_movie_ratings $temp_file
+clean_movie_ratings $ratings_diff
 
 # verify that the movie ratings are valid (there are no syntax errors and such)
-validate_movie_ratings $temp_file
+validate_movie_ratings $ratings_diff
 
 # run the movie2sql program on the resulting text
-run_movie2sql $temp_file
-  
+run_movie2sql $ratings_diff
+
 if [ $first_run -eq $FALSE ]
 then
   # insert any and all additions into the Postgres database

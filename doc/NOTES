@@ -36,8 +36,10 @@ WHERE LEFT OFF
   - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py
   - all sql/ now have numeric ids rather than DEFAULT
   - testing movie_temp.sh
-    - fix the FIXMEs in movie_temp.sh
+    - fix the FIXME in movie_temp.sh
     - need to test with new movie(s)
+  - fix the XXX in movie2sql_temp.py
+  - remove old movie.sh and movie2sql.py
   X test tag_temp.py
   X all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
     X OscarParser: 1107, 987
