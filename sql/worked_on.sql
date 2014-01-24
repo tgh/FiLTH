@@ -3695,3 +3695,17 @@ INSERT INTO worked_on VALUES(801, 2055, 'Screenwriter');  -- Martin McDonagh wor
 INSERT INTO worked_on VALUES(2039, 2056, 'Screenwriter');  -- Dustin Lance Black worked on Milk as Screenwriter
 INSERT INTO worked_on VALUES(1733, 1962, 'Screenwriter');  -- Andrew Stanton worked on WALL-E as Screenwriter
 INSERT INTO worked_on VALUES(1733, 2057, 'Screenwriter');  -- Jim Reardon worked on WALL-E as Screenwriter
+INSERT INTO worked_on VALUES(3494, 1, 'Actor');  -- Christian Bale for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 168, 'Actress');  -- Amy Adams for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2059, 'Actress');  -- Jennifer Lawrence for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2060, 'Actor');  -- Bradley Cooper for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 348, 'Director');  -- David O. Russell for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 348, 'Screenwriter');  -- David O. Russell for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2061, 'Screenwriter');  -- Eric Warren Singer for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 3, 'Actor');  -- Robert De Niro for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2062, 'Actor');  -- Jeremy Renner for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2063, 'Actor');  -- Michael Pena for American Hustle (2013)
+INSERT INTO worked_on VALUES(3495, 368, 'Director');  -- Wim Wenders for Pina (2011)
+INSERT INTO worked_on VALUES(3496, 2064, 'Actor');  -- Shane Carruth for Upstream Color (2013)
+INSERT INTO worked_on VALUES(3496, 2064, 'Director');  -- Shane Carruth for Upstream Color (2013)
+INSERT INTO worked_on VALUES(3496, 2064, 'Screenwriter');  -- Shane Carruth for Upstream Color (2013)
