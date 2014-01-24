@@ -371,7 +371,7 @@ if __name__ == '__main__':
           tagger.promptUserForTag(_nextMid, title, year)
           #ask user for crew members who worked on the movie
           print '\nCREW'
-          print '-----\n'
+          print '-----'
           crewHandler.promptUserForCrewPerson(_nextMid, title, year)
 
       #update the next mid
