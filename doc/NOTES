@@ -1,5 +1,7 @@
 WHERE LEFT OFF
 ---------------
+- Could use Trello for tickets
+
 ** There were 4 instances of "''''" in the new movie.sql ???
 - testing tag_temp.py: LOOKS GOOD
   - need to make tagTemp.txt known to git
@@ -33,6 +35,12 @@ WHERE LEFT OFF
     - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
 
 - new movie.sh:
+  - BUG: received:
+
+      ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
+      ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
+
+    when running movei_temp.sh with only changing Argo's year from 2013 to 2012
   - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py
   - all sql/ now have numeric ids rather than DEFAULT
   - testing movie_temp.sh
@@ -51,7 +59,7 @@ WHERE LEFT OFF
     X MovieTagger: 127
     X tag.py: 105, 106 (if MovieTagger.py works as planned, this can be deleted)
   X have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
-  - need to tie it all together and test movie2sql_temp.py, movie_temp.sh, and tag_temp.py
+  X need to tie it all together and test movie2sql_temp.py, movie_temp.sh, and tag_temp.py
   - haven't tested OscarParser, crew2sql since updating using ids rather than DEFAULT
 
 - maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)

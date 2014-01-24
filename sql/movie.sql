@@ -3433,7 +3433,7 @@ INSERT INTO movie VALUES (3432, 'Zero Dark Thirty', 2012, '***', 'R', 'USA', NUL
 INSERT INTO movie VALUES (3433, 'Arbitrage', 2012, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3434, 'Premium Rush', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3435, 'Searching for Sugar Man', 2012, '***½', 'PG-13', DEFAULT, NULL);
-INSERT INTO movie VALUES (3436, 'Argo', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3436, 'Argo', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3437, 'Life of Pi', 2012, '****', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3438, 'Skyfall', 2012, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (3439, 'End of Watch', 2012, '***', 'R', 'USA', NULL);
