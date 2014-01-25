@@ -1,7 +1,6 @@
 WHERE LEFT OFF
 ---------------
 - BUG: NULL should not be quoted in crew_person.sql (look in MovieCrew.py)--maybe change to DEFAULT. And add comment at the end of the statement for position (see crew_person.sql) in case I change that column back to a id foreign key
-- BUG: worked_on cid values appear to be off by 1 (e.g. This Sporting Life)
 - BUG: received:
 
     ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
