@@ -1,13 +1,37 @@
 WHERE LEFT OFF
 ---------------
+- BUG: NULL should not be quoted in crew_person.sql (look in MovieCrew.py)--maybe change to DEFAULT. And add comment at the end of the statement for position (see crew_person.sql) in case I change that column back to a id foreign key
+- BUG: worked_on cid values appear to be off by 1 (e.g. This Sporting Life)
+- BUG: received:
+
+    ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
+    ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
+
+  when running movei_temp.sh with only changing Argo's year from 2013 to 2012
+- BUG: received:
+
+    UPDATE:
+        updated: "This Sporting Life" (1963) **½ [NR] England
+       original: "This Sporting Life" (1963) not seen [NR] England
+
+    /usr/lib/python2.7/dist-packages/sqlalchemy/types.py:84: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+      return x == y
+
+
+    and
+
+    [exec] psql -- Inserting worked_on additions
+    ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
+    ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
+
+    when running movie_temp.sh with a movie already in the db but now seen
+
 - Could use Trello for tickets
 
 ** There were 4 instances of "''''" in the new movie.sql ???
-- testing tag_temp.py: LOOKS GOOD
-  - need to make tagTemp.txt known to git
 
 - methinks I should change my schema AGAIN back to having mpaa and especially
-  star_rating be a foreign key to a mpaa and star_rating table :/
+  star_rating be a foreign key to a mpaa and star_rating table (and position) :/
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
@@ -35,12 +59,6 @@ WHERE LEFT OFF
     - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
 
 - new movie.sh:
-  - BUG: received:
-
-      ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
-      ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
-
-    when running movei_temp.sh with only changing Argo's year from 2013 to 2012
   - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py
   - all sql/ now have numeric ids rather than DEFAULT
   - testing movie_temp.sh

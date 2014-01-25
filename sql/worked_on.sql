@@ -3709,3 +3709,4 @@ INSERT INTO worked_on VALUES(3495, 368, 'Director');  -- Wim Wenders for Pina (2
 INSERT INTO worked_on VALUES(3496, 2064, 'Actor');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(3496, 2064, 'Director');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(3496, 2064, 'Screenwriter');  -- Shane Carruth for Upstream Color (2013)
+INSERT INTO worked_on VALUES(2153, 2065, 'Director');  -- Lindsay Anderson for This Sporting Life (1963)

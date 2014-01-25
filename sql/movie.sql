@@ -2150,7 +2150,7 @@ INSERT INTO movie VALUES (2149, 'Birdman of Alcatraz', 1962, 'not seen', 'NR', '
 INSERT INTO movie VALUES (2150, 'Divorce--Italian Style', 1962, 'not seen', 'NR', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (2151, 'Sweet Bird of Youth', 1962, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2152, 'Billy Budd', 1962, 'not seen', 'NR', 'England', DEFAULT);
-INSERT INTO movie VALUES (2153, 'This Sporting Life', 1963, 'not seen', 'NR', 'England', DEFAULT);
+INSERT INTO movie VALUES (2153, 'This Sporting Life', 1963, '**½', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2154, 'Hud', 1963, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2155, 'Captain Newman, M.D.', 1963, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2156, 'Twilight of Honor', 1963, 'not seen', 'NR', 'USA', DEFAULT);

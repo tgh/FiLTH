@@ -2057,9 +2057,10 @@ INSERT INTO crew_person VALUES (2055, 'Hunt', 'Courtney', DEFAULT, 'Screenwriter
 INSERT INTO crew_person VALUES (2056, 'McDonagh', 'Martin', DEFAULT, 'Screenwriter');  -- Screenwriter
 INSERT INTO crew_person VALUES (2057, 'Black', 'Dustin', 'Lance', 'Screenwriter');  -- Screenwriter
 INSERT INTO crew_person VALUES (2058, 'Reardon', 'Jim', DEFAULT, 'Screenwriter');  -- Screenwriter
-INSERT INTO crew_person VALUES(2059, 'Lawrence', 'Jennifer', 'NULL', 'Actress');
-INSERT INTO crew_person VALUES(2060, 'Cooper', 'Bradley', 'NULL', 'Actor');
+INSERT INTO crew_person VALUES(2059, 'Lawrence', 'Jennifer', DEFAULT, 'Actress');
+INSERT INTO crew_person VALUES(2060, 'Cooper', 'Bradley', DEFAULT, 'Actor');
 INSERT INTO crew_person VALUES(2061, 'Singer', 'Eric', 'Warren', 'Screenwriter');
-INSERT INTO crew_person VALUES(2062, 'Renner', 'Jeremy', 'NULL', 'Actor');
-INSERT INTO crew_person VALUES(2063, 'Pena', 'Michael', 'NULL', 'Actor');
-INSERT INTO crew_person VALUES(2064, 'Carruth', 'Shane', 'NULL', 'Director');
+INSERT INTO crew_person VALUES(2062, 'Renner', 'Jeremy', DEFAULT, 'Actor');
+INSERT INTO crew_person VALUES(2063, 'Pena', 'Michael', DEFAULT, 'Actor');
+INSERT INTO crew_person VALUES(2064, 'Carruth', 'Shane', DEFAULT, 'Director');
+INSERT INTO crew_person VALUES(2065, 'Lindsay', 'Anderson', DEFAULT, 'Director');
