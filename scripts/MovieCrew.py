@@ -104,17 +104,18 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _createInsertStatementForCrew(self, last, first, middle, position):
+  def _createInsertStatementForCrew(self, last, first, middle, fullName, position):
     ''' Creates a SQL INSERT statement for the crew_person db table for the
         given new crew person and appends to the list of crew_person INSERT
         statements.
 
-        last (string) : last name (with the appropriate surrounding apostrophes if applicable)
+        last (string) : last name
         first (string) : first name (with the appropriate surrounding apostrophes if applicable)
         middle (string) : middle name (with the appropriate surrounding apostrophes if applicable)
+        fullName (string): full name
         position (string) : the position name
     '''
-    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', '{2}', '{3}', '{4}');".format(str(self._nextCid), last, first, middle, position)
+    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', {2}, {3}, '{4}');  -- {4}: {5}".format(str(self._nextCid), last, first, middle, position, fullName)
     self._log('_createInsertStatementForCrew', 'created SQL: ' + insertStatement)
     self._crewInserts.append(insertStatement)
 
@@ -142,6 +143,27 @@ class MovieCrew(object):
     insertStatement = insertStatement.replace('NULL ', '')
     self._log('_createInsertStatementForWorkedOn', 'created SQL: ' + insertStatement)
     self._workedOnInserts.append(insertStatement)
+
+
+  #----------------------------------------------------------------------------
+
+  def _createFullNameString(self, first, middle, last):
+    ''' Creates a string for the full name of the crew person with the given names.
+        E.g.: _createFullNameString('Christian', 'DEFAULT', 'Bale') -> 'Christian Bale'
+
+        last (string) : last name
+        first (string) : first name
+        middle (string) : middle name
+    '''
+    fullName = ''
+    if first != 'DEFAULT':
+      if middle != 'DEFAULT':
+        fullName = first.strip("'") + ' ' + middle.strip("'") + ' ' + last
+      else:
+        fullName = first.strip("'") + ' ' last
+    else:
+      fullName = last
+    return fullName
 
 
   #----------------------------------------------------------------------------
@@ -174,12 +196,12 @@ class MovieCrew(object):
         title (string) : title of the movie
         year (int) : year of the movie
     '''
-    crew   = None   #CrewPerson object
-    last   = None   #last name string for sql
-    middle = 'NULL' #middle name string for sql
-    first  = 'NULL' #first name string for sql
-    num    = 0      #numeric input from user
-    cid    = 0      #crew person id
+    crew   = None       #CrewPerson object
+    last   = None       #last name string for sql
+    middle = 'DEFAULT'  #middle name string for sql
+    first  = 'DEFAULT'  #first name string for sql
+    num    = 0          #numeric input from user
+    cid    = 0          #crew person id
 
     #prompt user for a valid person name
     print '\nEnter the name of someone who worked on this movie (or \'quit\' at anytime). Just hit [enter] to skip the first or middle name.'
@@ -188,17 +210,17 @@ class MovieCrew(object):
     response = raw_input('\tFirst name: ')
     self._checkForQuit(response, '_promptUserForCrewPersonHelper')
     if response.lower() != '':
-      first = response
+      first = "'" + response + "'"
     #middle name
     response = raw_input('\tMiddle name: ')
     self._checkForQuit(response, '_promptUserForCrewPersonHelper')
     if response.lower() != '':
-      middle = response
+      middle = "'" + response + "'"
     #last name
     last = raw_input('\tLast name: ')
     self._checkForQuit(last, '_promptUserForCrewPersonHelper')
 
-    name = first + ' ' + middle + ' ' + last
+    name = self._createFullNameString(first, middle, last)
     self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + name)
 
     try:
@@ -228,7 +250,7 @@ class MovieCrew(object):
       num = self._promptUserForPosition('\nWhat is this person known as (1-5 or \'quit\')? ')
       self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--new crew person is known as ' + self._positions[num-1])
 
-      self._createInsertStatementForCrew(last, first, middle, self._positions[num-1])
+      self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
       cid = self._nextCid
       self._log('_promptUserForCrewPersonHelper', 'new crew person has an id of ' + str(cid))
       self._nextCid = self._nextCid + 1
