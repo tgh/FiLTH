@@ -25,8 +25,6 @@ WHERE LEFT OFF
 
     when running movie_temp.sh with a movie already in the db but now seen
 
-- Could use Trello for tickets
-
 ** There were 4 instances of "''''" in the new movie.sql ???
 
 - methinks I should change my schema AGAIN back to having mpaa and especially
@@ -222,7 +220,7 @@ IDEAS/THOUGHTS
   However, this still does not take you directly to the movie page, but a search
   results page, which is what I'm trying to avoid.
 
-- sorting on star_rating has undesired results now that it is test rather than
+- sorting on star_rating has undesired results now that it is text rather than
   integer
   ? use "C" locale
   ? create a Comparator for star ratings (maybe make star ratings an enum?)
@@ -265,8 +263,6 @@ IDEAS/THOUGHTS
 HELPFUL HINTS/REMINDERS
 ------------------------
 - it takes 2 bytes to make ½ character: '\xc2\xbd'
-
-- password for filth database: 0o9..
 
 - to connect to the database with psql:
 
@@ -453,10 +449,6 @@ order by m.year, o.category, c.l_name;
 select count(*)
 from movie join oscar_given_to using (mid) join oscar using (oid)
 where movie.star_rating <> 'not seen';
-
---how many oscar nominations are there?
-select count(*)
-from movie join oscar_given_to using (mid) join oscar using (oid);
 
 -- to get a list of active connections to the database
 select * from pg_stat_activity where datname='filth';
