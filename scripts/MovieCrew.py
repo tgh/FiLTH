@@ -156,11 +156,11 @@ class MovieCrew(object):
         middle (string) : middle name
     '''
     fullName = ''
-    if first != 'DEFAULT':
-      if middle != 'DEFAULT':
+    if first != 'NULL':
+      if middle != 'NULL':
         fullName = first.strip("'") + ' ' + middle.strip("'") + ' ' + last
       else:
-        fullName = first.strip("'") + ' ' last
+        fullName = first.strip("'") + ' ' + last
     else:
       fullName = last
     return fullName
@@ -198,8 +198,8 @@ class MovieCrew(object):
     '''
     crew   = None       #CrewPerson object
     last   = None       #last name string for sql
-    middle = 'DEFAULT'  #middle name string for sql
-    first  = 'DEFAULT'  #first name string for sql
+    middle = 'NULL'  #middle name string for sql
+    first  = 'NULL'  #first name string for sql
     num    = 0          #numeric input from user
     cid    = 0          #crew person id
 
@@ -238,7 +238,7 @@ class MovieCrew(object):
           continue
         if response.lower() == 'n':
           print '\nLet\'s try this again, then...'
-          self.promptUserForCrewPerson(title, year)
+          self.promptUserForCrewPerson(mid, title, year)
           return
         #user entered 'y'
         break
