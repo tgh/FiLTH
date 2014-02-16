@@ -2064,3 +2064,24 @@ INSERT INTO crew_person VALUES (2062, 'Renner', 'Jeremy', DEFAULT, 'Actor');
 INSERT INTO crew_person VALUES (2063, 'Pena', 'Michael', DEFAULT, 'Actor');
 INSERT INTO crew_person VALUES (2064, 'Carruth', 'Shane', DEFAULT, 'Director');
 INSERT INTO crew_person VALUES (2065, 'Lindsay', 'Anderson', DEFAULT, 'Director');
+INSERT INTO crew_person VALUES (2066, 'Ejiofor', 'Chiwetel', NULL, 'Actor');  -- Actor: Chiwetel Ejiofor
+INSERT INTO crew_person VALUES (2067, 'Fassbender', 'Michael', NULL, 'Actor');  -- Actor: Michael Fassbender
+INSERT INTO crew_person VALUES (2068, 'Dano', 'Paul', NULL, 'Actor');  -- Actor: Paul Dano
+INSERT INTO crew_person VALUES (2069, 'Ridley', 'John', NULL, 'Screenwriter');  -- Screenwriter: John Ridley
+INSERT INTO crew_person VALUES (2070, 'Nyongo', 'Lupita', NULL, 'Actress');  -- Actress: Lupita Nyongo
+INSERT INTO crew_person VALUES (2071, 'Cumberbatch', 'Benedict', NULL, 'Actor');  -- Actor: Benedict Cumberbatch
+INSERT INTO crew_person VALUES (2072, 'Abdi', 'Barkhad', NULL, 'Actor');  -- Actor: Barkhad Abdi
+INSERT INTO crew_person VALUES (2073, 'Ray', 'Billy', NULL, 'Screenwriter');  -- Screenwriter: Billy Ray
+INSERT INTO crew_person VALUES (2074, 'Van Dyke', 'Dick', NULL, 'Actor');  -- Actor: Dick Van Dyke
+INSERT INTO crew_person VALUES (2075, 'Hughes', 'Ken', NULL, 'Director');  -- Director: Ken Hughes
+INSERT INTO crew_person VALUES (2076, 'Dahl', 'Roald', NULL, 'Screenwriter');  -- Screenwriter: Roald Dahl
+INSERT INTO crew_person VALUES (2077, 'Stone', 'Emma', NULL, 'Actress');  -- Actress: Emma Stone
+INSERT INTO crew_person VALUES (2078, 'Reynolds', 'Ryan', NULL, 'Actor');  -- Actor: Ryan Reynolds
+INSERT INTO crew_person VALUES (2079, 'Heinzerling', 'Zachary', NULL, 'Director');  -- Director: Zachary Heinzerling
+INSERT INTO crew_person VALUES (2080, 'Nelson', 'Bob', NULL, 'Screenwriter');  -- Screenwriter: Bob Nelson
+INSERT INTO crew_person VALUES (2081, 'Forte', 'Will', NULL, 'Actor');  -- Actor: Will Forte
+INSERT INTO crew_person VALUES (2082, 'Squibb', 'June', NULL, 'Actress');  -- Actress: June Squibb
+INSERT INTO crew_person VALUES (2083, 'Keach', 'Stacy', NULL, 'Actor');  -- Actor: Stacy Keach
+INSERT INTO crew_person VALUES (2084, 'Hazanavicius', 'Michel', NULL, 'Director');  -- Director: Michel Hazanavicius
+INSERT INTO crew_person VALUES (2085, 'Halin', 'Jean-Francois', NULL, 'Screenwriter');  -- Screenwriter: Jean-Francois Halin
+INSERT INTO crew_person VALUES (2086, 'Dujardin', 'Jean', NULL, 'Actor');  -- Actor: Jean Dujardin

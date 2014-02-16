@@ -3494,3 +3494,10 @@ INSERT INTO movie VALUES (3493, 'White Christmas', 1954, '***', 'NR', 'USA', NUL
 INSERT INTO movie VALUES (3494, 'American Hustle', 2013, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3495, 'Pina', 2011, '***', 'PG', 'Germany', NULL);
 INSERT INTO movie VALUES (3496, 'Upstream Color', 2013, '**½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3497, '12 Years a Slave', 2013, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3498, 'Captain Phillips', 2013, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3499, 'Chitty Chitty Bang Bang', 1968, '**', 'G', 'England', NULL);
+INSERT INTO movie VALUES (3500, 'The Croods', 2013, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3501, 'Cutie and the Boxer', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3502, 'Nebraska', 2013, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3503, 'OSS 117: Lost in Rio', 2009, '***', 'NR', 'France', NULL);
