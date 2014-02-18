@@ -2085,3 +2085,7 @@ INSERT INTO crew_person VALUES (2083, 'Keach', 'Stacy', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2084, 'Hazanavicius', 'Michel', NULL, 'Director');  -- Director: Michel Hazanavicius
 INSERT INTO crew_person VALUES (2085, 'Halin', 'Jean-Francois', NULL, 'Screenwriter');  -- Screenwriter: Jean-Francois Halin
 INSERT INTO crew_person VALUES (2086, 'Dujardin', 'Jean', NULL, 'Actor');  -- Actor: Jean Dujardin
+INSERT INTO crew_person VALUES (2087, 'Oppenheimer', 'Joshua', NULL, 'Director');  -- Director: Joshua Oppenheimer
+INSERT INTO crew_person VALUES (2088, 'Cynn', 'Christine', NULL, 'Director');  -- Director: Christine Cynn
+INSERT INTO crew_person VALUES (2089, 'Anonymous', NULL, NULL, 'Director');  -- Director: Anonymous
+INSERT INTO crew_person VALUES (2090, 'Rowley', 'Rick', NULL, 'Director');  -- Director: Rick Rowley

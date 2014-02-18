@@ -3744,3 +3744,8 @@ INSERT INTO worked_on VALUES(3503, 2084, 'Director');  -- Michel Hazanavicius fo
 INSERT INTO worked_on VALUES(3503, 2084, 'Screenwriter');  -- Michel Hazanavicius for OSS 117: Lost in Rio (2009)
 INSERT INTO worked_on VALUES(3503, 2085, 'Screenwriter');  -- Jean-Francois Halin for OSS 117: Lost in Rio (2009)
 INSERT INTO worked_on VALUES(3503, 2086, 'Actor');  -- Jean Dujardin for OSS 117: Lost in Rio (2009)
+INSERT INTO worked_on VALUES(3504, 2087, 'Director');  -- Joshua Oppenheimer for The Act of Killing (2013)
+INSERT INTO worked_on VALUES(3504, 2088, 'Director');  -- Christine Cynn for The Act of Killing (2013)
+INSERT INTO worked_on VALUES(3504, 2089, 'Director');  -- Anonymous for The Act of Killing (2013)
+INSERT INTO worked_on VALUES(3505, 2090, 'Director');  -- Rick Rowley for Dirty Wars (2013)
+INSERT INTO worked_on VALUES(3505, 2090, 'Cinematographer');  -- Rick Rowley for Dirty Wars (2013)

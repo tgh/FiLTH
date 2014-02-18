@@ -3501,3 +3501,5 @@ INSERT INTO movie VALUES (3500, 'The Croods', 2013, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3501, 'Cutie and the Boxer', 2013, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3502, 'Nebraska', 2013, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3503, 'OSS 117: Lost in Rio', 2009, '***', 'NR', 'France', NULL);
+INSERT INTO movie VALUES (3504, 'The Act of Killing', 2013, '***½', 'NR', DEFAULT, NULL);
+INSERT INTO movie VALUES (3505, 'Dirty Wars', 2013, '***½', 'NR', 'USA', NULL);
