@@ -181,7 +181,7 @@ class MovieCrew(object):
       response = raw_input(prompt)
       self._checkForQuit(response, '_promptUserForPosition')
       try:
-        num = self._parseIntInRangeInclusive(response, 1, 5)
+        num = self._parseIntInRangeInclusive(response, 1, len(self._positions))
         return num
       except ValueError:
         continue
@@ -247,7 +247,7 @@ class MovieCrew(object):
       self._log('_promptUserForCrewPersonHelper', 'this is a new crew person')
         
       #prompt user for what the person is known as
-      num = self._promptUserForPosition('\nWhat is this person known as (1-5 or \'quit\')? ')
+      num = self._promptUserForPosition('\nWhat is this person known as (1-' + str(len(self._positions)) + ') or \'quit\')? ')
       self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--new crew person is known as ' + self._positions[num-1])
 
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
