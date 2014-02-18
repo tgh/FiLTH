@@ -2,15 +2,18 @@ WHERE LEFT OFF
 ---------------
 - Should add movie links to other movies in the data model. i.e. model that links all Pirates of the Carribbean movies together,
   all Up docs together, etc. Probably a movie_related_to table that will provide a many-to-many relationship with movie and itself
-- SHould modify the data model for tag hierarchy
+- Should modify the data model for tag hierarchy
+  - tags:
+    - gangster, terrorism, civil war, [any specific wars], disturbing, [specific sports], addiction, cops, Shakespeare,
+      based-on-Stephen-King-work, genocide, 
 
-- BUG: NULL should not be quoted in crew_person.sql (look in MovieCrew.py)--maybe change to DEFAULT. And add comment at the end of the statement for position (see crew_person.sql) in case I change that column back to a id foreign key
 - BUG: received:
 
     ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
     ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
 
   when running movei_temp.sh with only changing Argo's year from 2013 to 2012
+
 - BUG: received:
 
     UPDATE:
