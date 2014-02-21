@@ -5,7 +5,10 @@ WHERE LEFT OFF
 - Should modify the data model for tag hierarchy
   - tags:
     - gangster, terrorism, civil war, [any specific wars], disturbing, [specific sports], addiction, cops, Shakespeare,
-      based-on-Stephen-King-work, genocide, 
+      based-on-Stephen-King-work, genocide, art, [any specific art like painting, photography, film-making, etc], gory,
+      violent, made-for-tv (or tv-movie), apocalyptic (or post-apocalypse), coming-of-age, based-on-tv-show (Star Trek, Simpsons, etc),
+      con-artist (or con or con-man), based-on-true-story, peaceful (Straight Story?),
+      cinematography (b/w cinematography, color cinematography), confusing?
 
 - BUG: received:
 
