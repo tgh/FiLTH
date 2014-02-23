@@ -4846,6 +4846,7 @@ INSERT INTO tag_given_to VALUES(3504, 49);  -- The Act of Killing (2013) tagged 
 INSERT INTO tag_given_to VALUES(3505, 12);  -- Dirty Wars (2013) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3505, 17);  -- Dirty Wars (2013) tagged with 'War'
 INSERT INTO tag_given_to VALUES(3505, 24);  -- Dirty Wars (2013) tagged with 'Political'
+INSERT INTO tag_given_to VALUES(3505, 38);  -- Dirty Wars (2013) tagged with 'New York City'
 INSERT INTO tag_given_to VALUES(1507, 2);  -- Snatch (2001) tagged with 'Comedy'
 INSERT INTO tag_given_to VALUES(1507, 25);  -- Snatch (2001) tagged with 'Crime'
 INSERT INTO tag_given_to VALUES(1508, 33);  -- Sneakers (1992) tagged with 'Comedy-Drama'
