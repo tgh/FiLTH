@@ -140,8 +140,9 @@ def FormatTitle(title):
     if words[i] in ('The','And','Of','At','In','As','It','By','On','An','To','A'):
       words[i] = string.lower(words[i])
   #go back and check for words ending with ':' (e.g. "X-Files: the" -> "X-Files: The")
+  # or words equal to '-' (e.g. "Star Wars: Episode I - The Phantom Menace")
   for i in range (0,len(words)-1):
-    if words[i][-1] == ':':
+    if words[i][-1] == ':' or words[i] == '-':
       words[i+1] = string.capitalize(words[i+1])
 
   return ' '.join(words)
