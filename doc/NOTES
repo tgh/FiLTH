@@ -5,12 +5,14 @@ WHERE LEFT OFF
 - Should modify the data model for tag hierarchy
   - tags:
     - gangster, terrorism, civil war, [any specific wars], disturbing (Tarnation, Gummo, Julien Donkey-Boy), [specific sports], addiction, cops, Shakespeare,
-      based-on-Stephen-King-work, genocide, art, [any specific art like painting, photography, film-making, etc], gory,
+      based-on-Stephen-King-work, genocide, art, [any specific art like painting, photography, film-making (Tropic Thunder), etc], gory,
       violent (or graphic-violence), made-for-tv (or tv-movie), apocalyptic (or post-apocalypse), coming-of-age, based-on-tv-show (Star Trek, Simpsons, etc),
       con-artist (or con or con-man), based-on-true-story, peaceful (Straight Story?),
       cinematography (b/w cinematography, color cinematography), confusing?, military, nudity, female-nudity, male-frontal-nudity, rear-nudity,
       puppets (Team America, muppet movies), raunchy (or gross-out-comedy), based-on-article, based-on-a-true-story, serial-killer, detective,
-      child-abduction, bank-robbing, drugs, drug-addiction
+      child-abduction, bank-robbing, drugs, drug-addiction, claymation, rags-to-riches (Trading Places), riches-to-rags (Trading Places),
+      prospecting (Treaure of the Sierra Madre, The Claim, The Gold Rush), avante-garde? (Persona, Un Chien Andalou), vampires, zombies, homosexuality (Twist),
+      samurai
 
 - BUG: received:
 
