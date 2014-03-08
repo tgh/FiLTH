@@ -5789,3 +5789,7 @@ INSERT INTO tag_given_to VALUES(1805, 1);  -- The X-Files: I Want to Believe (20
 INSERT INTO tag_given_to VALUES(1805, 8);  -- The X-Files: I Want to Believe (2008) tagged with 'Mystery'
 INSERT INTO tag_given_to VALUES(1805, 6);  -- The X-Files: I Want to Believe (2008) tagged with 'Science-Fiction'
 INSERT INTO tag_given_to VALUES(1805, 35);  -- The X-Files: I Want to Believe (2008) tagged with 'Sequel'
+INSERT INTO tag_given_to VALUES(3506, 1);  -- Prisoners (2013) tagged with 'Drama'
+INSERT INTO tag_given_to VALUES(3506, 25);  -- Prisoners (2013) tagged with 'Crime'
+INSERT INTO tag_given_to VALUES(3506, 29);  -- Prisoners (2013) tagged with 'Dark'
+INSERT INTO tag_given_to VALUES(3506, 3);  -- Prisoners (2013) tagged with 'Thriller'

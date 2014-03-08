@@ -2089,3 +2089,4 @@ INSERT INTO crew_person VALUES (2087, 'Oppenheimer', 'Joshua', NULL, 'Director')
 INSERT INTO crew_person VALUES (2088, 'Cynn', 'Christine', NULL, 'Director');  -- Director: Christine Cynn
 INSERT INTO crew_person VALUES (2089, 'Anonymous', NULL, NULL, 'Director');  -- Director: Anonymous
 INSERT INTO crew_person VALUES (2090, 'Rowley', 'Rick', NULL, 'Director');  -- Director: Rick Rowley
+INSERT INTO crew_person VALUES (2091, 'Jackman', 'Hugh', NULL, 'Actor');  -- Actor: Hugh Jackman

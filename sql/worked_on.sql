@@ -3749,3 +3749,7 @@ INSERT INTO worked_on VALUES(3504, 2088, 'Director');  -- Christine Cynn for The
 INSERT INTO worked_on VALUES(3504, 2089, 'Director');  -- Anonymous for The Act of Killing (2013)
 INSERT INTO worked_on VALUES(3505, 2090, 'Director');  -- Rick Rowley for Dirty Wars (2013)
 INSERT INTO worked_on VALUES(3505, 2090, 'Cinematographer');  -- Rick Rowley for Dirty Wars (2013)
+INSERT INTO worked_on VALUES(3506, 2091, 'Actor');  -- Hugh Jackman for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 2068, 'Actor');  -- Paul Dano for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 663, 'Actor');  -- Jake Gyllenhaal for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 1054, 'Actress');  -- Viola Davis for Prisoners (2013)
