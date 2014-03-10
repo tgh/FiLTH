@@ -5875,3 +5875,7 @@ INSERT INTO tag_given_to VALUES(2028, 58);  -- Z (1969) tagged with 'Based-on-bo
 INSERT INTO tag_given_to VALUES(2028, 1);  -- Z (1969) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(2028, 25);  -- Z (1969) tagged with 'Crime'
 INSERT INTO tag_given_to VALUES(2028, 24);  -- Z (1969) tagged with 'Political'
+INSERT INTO tag_given_to VALUES(3506, 1);  -- Prisoners (2013) tagged with 'Drama'
+INSERT INTO tag_given_to VALUES(3506, 25);  -- Prisoners (2013) tagged with 'Crime'
+INSERT INTO tag_given_to VALUES(3506, 29);  -- Prisoners (2013) tagged with 'Dark'
+INSERT INTO tag_given_to VALUES(3506, 3);  -- Prisoners (2013) tagged with 'Thriller'
