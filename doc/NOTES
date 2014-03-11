@@ -4,20 +4,78 @@ WHERE LEFT OFF
   all Up docs together, etc. Probably a movie_related_to table that will provide a many-to-many relationship with movie and itself
 - Should modify the data model for tag hierarchy
   - tags:
-    - gangster, terrorism (Die Hard, United 93), civil war, [any specific wars], disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing), [specific sports], addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)], law-enforcement [cops, FBI, SWAT, ATF], Shakespeare,
-      based-on-Stephen-King-work, genocide, art, [any specific art like painting, photography, film-making (Tropic Thunder), etc], gory,
-      violent (or graphic-violence), apocalyptic (or post-apocalypse), coming-of-age, based-on-tv-show (Star Trek, Simpsons, Sgt. Bilko),
-      con-artist (or con or con-man), based-on-true-story, peaceful (Straight Story?),
-      cinematography (b/w cinematography, color cinematography), confusing?, military, nudity, female-nudity, male-frontal-nudity, rear-nudity,
-      puppets (Team America, muppet movies), raunchy (or gross-out-comedy), based-on-article(s) (Where the Buffalo Roam, Bernie, Argo, The Bling Ring), serial-killer, psychopath, detective,
-      child-abduction (Prisoners, Gone Baby Gone, The Searchers, The Woodsman), bank-robbing, drugs, claymation, rags-to-riches (Trading Places), riches-to-rags (Trading Places),
-      prospecting (Treaure of the Sierra Madre, The Claim, The Gold Rush), avante-garde? (Persona, Un Chien Andalou), vampires, zombies, homosexuality (Twist),
-      samurai, excessive-swearing (Casino, Big Lebowski, Usual Suspects, Departed), marriage (The War of the Roses), stock-brokers,
-      post-apocolyptic (Waterworld, The Road), mental-conditions (or just conditions?) [autism, insanity, etc], 1900s, 1910s, 1920s, etc.,
-      out-at-sea (White Squall, Mutiny on the Bounty, Captain Phillips), lost-at-sea (Lifeboat, Open Water, Life of Pi), aviation (Wings, The Aviator, The Wind Rises, Flight), spiritual [Christian, Catholic, etc], made-for-tv (or tv-movie) (Wit, Mr. Headmistress, It), miniseries (The Stand), based-on-poem (Troy, With a Friend like Harry), amish (Witness, Kingpin), based-on-song (Yellow Submarine), beatles, school-shooting (Zero Day, Elephant, Bowling for Columbine), corruption (And Justice For All, Copland), outer-space (Apollo 13, Apollo 18, Moon, 2001, 2010, The Right Stuff, Gravity, Star Wars), adultery (The Descendents, Woody Allen movies, Closer, Anna Karenina),
-      death-row (Into the Abyss, In Cold Blood, The Green Mile, Dead Man Walking, Monster's Ball), slavery (Django Unchained, Amistad, 12 Years a Slave),
-      james-bond, fashion (Devil Wears Prada, September Issue, The Bling Ring, Coco Before Chanel, Valentino), survival (The Grey, Alive), super-hero, scary,
-      based-on-radio-series (The Lone Ranger), private-investigator (Twilight, Chinatown, Maltese Falcon, The Long Goodbye), wrongly-accused (Shawshank, Paradise Lost docs, West of Memphis)
+    - gangster
+    - terrorism (Die Hard, United 93)
+    X civil war [any specific wars]
+    - disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing)
+    - [specific sports]
+    - addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)]
+    - law-enforcement [cops, FBI, SWAT, ATF]
+    - based-on-Shakespeare
+    - based-on-Stephen-King-work
+    - genocide
+    - art [any specific art like painting, photography, film-making (Tropic Thunder), etc]
+    - gory
+    - violent (or graphic-violence)
+    - coming-of-age
+    - based-on-tv-show (Star Trek, Simpsons, Sgt. Bilko)
+    - con-artist (or con or con-man)
+    - based-on-true-story
+    - peaceful (or light or calm or laid-back) (Straight Story?)
+    - cinematography (b/w cinematography, color cinematography)
+    - confusing?
+    - military
+    - nudity, female-nudity, male-frontal-nudity, rear-nudity
+    - puppets (Team America, muppet movies)
+    X raunchy (or gross-out-comedy)
+    - based-on-article(s) (Where the Buffalo Roam, Bernie, Argo, The Bling Ring)
+    - serial-killer
+    - psychopath
+    - detective
+    - child-abduction (Prisoners, Gone Baby Gone, The Searchers, The Woodsman)
+    - bank-robbing
+    - drugs (Traffic)
+    X claymation
+    - rags-to-riches (Trading Places)
+    - riches-to-rags (Trading Places)
+    - prospecting (Treaure of the Sierra Madre, The Claim, The Gold Rush)
+    - avante-garde? (Persona, Un Chien Andalou)
+    - vampires
+    - zombies
+    - homosexuality (Twist, Brokeback Mountain)
+    - samurai
+    - excessive-swearing (Casino, Big Lebowski, Usual Suspects, Departed)
+    - marriage (The War of the Roses)
+    - stock-brokers
+    - post-apocolyptic (or apocalyse or apocalysptic or post-apolalypse) (Waterworld, The Road)
+    - mental-conditions (or just conditions?) [autism, insanity, etc]
+    - 1900s, 1910s, 1920s, etc.
+    - out-at-sea (White Squall, Mutiny on the Bounty, Captain Phillips)
+    - lost-at-sea (Lifeboat, Open Water, Life of Pi)
+    - aviation (Wings, The Aviator, The Wind Rises, Flight)
+    - spiritual [Christian, Catholic, etc]
+    - made-for-tv (or tv-movie) (Wit, Mr. Headmistress, It)
+    - miniseries (The Stand)
+    - based-on-poem (Troy, With a Friend like Harry)
+    - amish (Witness, Kingpin)
+    - based-on-song (Yellow Submarine)
+    - beatles
+    - school-shooting (Zero Day, Elephant, Bowling for Columbine)
+    - corruption (And Justice For All, Copland)
+    - outer-space (Apollo 13, Apollo 18, Moon, 2001, 2010, The Right Stuff, Gravity, Star Wars)
+    - adultery (The Descendents, Woody Allen movies, Closer, Anna Karenina)
+    - death-row (Into the Abyss, In Cold Blood, The Green Mile, Dead Man Walking, Monster's Ball)
+    - slavery (Django Unchained, Amistad, 12 Years a Slave)
+    - james-bond
+    - fashion (Devil Wears Prada, September Issue, The Bling Ring, Coco Before Chanel, Valentino)
+    - survival (The Grey, Alive, The Way Back)
+    - super-hero
+    - scary
+    - based-on-radio-series (The Lone Ranger)
+    - private-investigator (Twilight, Chinatown, Maltese Falcon, The Long Goodbye)
+    - wrongly-accused (Shawshank, Paradise Lost docs, West of Memphis)
+    - cold-war
+    - communism
 
 - BUG: received:
 
