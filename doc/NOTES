@@ -4,11 +4,11 @@ WHERE LEFT OFF
   all Up docs together, etc. Probably a movie_related_to table that will provide a many-to-many relationship with movie and itself
 - Should modify the data model for tag hierarchy
   - tags:
-    - gangster
+    X gangster
     - terrorism (Die Hard, United 93)
     X civil war [any specific wars]
     - disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing)
-    - [specific sports]
+    X [specific sports]
     - addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)]
     - law-enforcement [cops, FBI, SWAT, ATF]
     - based-on-Shakespeare
@@ -19,7 +19,7 @@ WHERE LEFT OFF
     - violent (or graphic-violence)
     - coming-of-age
     - based-on-tv-show (Star Trek, Simpsons, Sgt. Bilko)
-    - con-artist (or con or con-man)
+    X con-artist (or con or con-man)
     - based-on-true-story
     - peaceful (or light or calm or laid-back) (Straight Story?)
     - cinematography (b/w cinematography, color cinematography)
@@ -32,9 +32,9 @@ WHERE LEFT OFF
     - serial-killer
     - psychopath
     - detective
-    - child-abduction (Prisoners, Gone Baby Gone, The Searchers, The Woodsman)
-    - bank-robbing
-    - drugs (Traffic)
+    X child-abduction (Prisoners, Gone Baby Gone, The Searchers, The Woodsman)
+    X bank-robbing
+    X drugs (Traffic)
     X claymation
     - rags-to-riches (Trading Places)
     - riches-to-rags (Trading Places)
@@ -49,11 +49,11 @@ WHERE LEFT OFF
     - stock-brokers
     - post-apocolyptic (or apocalyse or apocalysptic or post-apolalypse) (Waterworld, The Road)
     - mental-conditions (or just conditions?) [autism, insanity, etc]
-    - 1900s, 1910s, 1920s, etc.
+    X 1900s, 1910s, 1920s, etc.
     - out-at-sea (White Squall, Mutiny on the Bounty, Captain Phillips)
     - lost-at-sea (Lifeboat, Open Water, Life of Pi)
     - aviation (Wings, The Aviator, The Wind Rises, Flight)
-    - spiritual [Christian, Catholic, etc]
+    X spiritual [Christian, Catholic, etc]
     - made-for-tv (or tv-movie) (Wit, Mr. Headmistress, It)
     - miniseries (The Stand)
     - based-on-poem (Troy, With a Friend like Harry)
@@ -76,6 +76,7 @@ WHERE LEFT OFF
     - wrongly-accused (Shawshank, Paradise Lost docs, West of Memphis)
     - cold-war
     - communism
+    - racism
 
 - BUG: received:
 
