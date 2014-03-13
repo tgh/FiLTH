@@ -5,28 +5,28 @@ WHERE LEFT OFF
 - Should modify the data model for tag hierarchy
   - tags:
     X gangster
-    - terrorism (Die Hard, United 93)
+    X terrorism (Die Hard, United 93)
     X civil war [any specific wars]
-    - disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing)
+    X disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing)
     X [specific sports]
-    - addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)]
-    - law-enforcement [cops, FBI, SWAT, ATF]
+    X addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)]
+    X law-enforcement [cops, FBI, SWAT, ATF]
     X based-on-Shakespeare
     X based-on-Stephen-King-work
-    - genocide
+    X genocide
     X art [any specific art like painting, photography, film-making (Tropic Thunder), etc]
-    - gory
+    X gory
     X violent (or graphic-violence)
-    - coming-of-age
+    X coming-of-age
     X based-on-tv-show (Star Trek, Simpsons, Sgt. Bilko)
     X con-artist (or con or con-man)
-    - based-on-true-story
-    - peaceful (or light or calm or laid-back) (Straight Story?)
-    - cinematography (b/w cinematography, color cinematography)
-    - confusing?
-    - military
-    - nudity, female-nudity, male-frontal-nudity, rear-nudity
-    - puppets (Team America, muppet movies)
+    X based-on-true-story
+    X peaceful (or light or calm or laid-back) (Straight Story?)
+    X cinematography (b/w cinematography, color cinematography)
+    X confusing?
+    X military
+    X nudity, female-nudity, male-frontal-nudity, rear-nudity
+    X puppets (Team America, muppet movies)
     X raunchy (or gross-out-comedy)
     X based-on-article(s) (Where the Buffalo Roam, Bernie, Argo, The Bling Ring)
     - serial-killer
@@ -64,7 +64,7 @@ WHERE LEFT OFF
     - corruption (And Justice For All, Copland)
     - outer-space (Apollo 13, Apollo 18, Moon, 2001, 2010, The Right Stuff, Gravity, Star Wars)
     - adultery (The Descendents, Woody Allen movies, Closer, Anna Karenina)
-    - death-row (Into the Abyss, In Cold Blood, The Green Mile, Dead Man Walking, Monster's Ball)
+    X death-row (Into the Abyss, In Cold Blood, The Green Mile, Dead Man Walking, Monster's Ball)
     - slavery (Django Unchained, Amistad, 12 Years a Slave)
     - james-bond
     - fashion (Devil Wears Prada, September Issue, The Bling Ring, Coco Before Chanel, Valentino)
