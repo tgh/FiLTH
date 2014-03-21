@@ -124,7 +124,8 @@ DROP SEQUENCE IF EXISTS tag_tid_seq;
 CREATE SEQUENCE tag_tid_seq;
 CREATE TABLE tag (
 tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
-tag_name text NOT NULL);
+tag_name text NOT NULL,
+parent_tid smallint);
 
 
 -- tag <--> movie relationship ------------------------------------------------
@@ -315,6 +316,11 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_tid_fkey
 FOREIGN KEY (tid) REFERENCES tyler(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- tag parent_tid FK
+ALTER TABLE tag ADD CONTRAINT tag_parent_tid_fkey
+FOREIGN KEY (parent_tid) REFERENCES tag(tid)
+ON UPDATE CASCADE ON DELETE SET NULL;
 
 
 -- ------------
