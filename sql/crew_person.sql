@@ -2090,3 +2090,11 @@ INSERT INTO crew_person VALUES (2088, 'Cynn', 'Christine', NULL, 'Director');  -
 INSERT INTO crew_person VALUES (2089, 'Anonymous', NULL, NULL, 'Director');  -- Director: Anonymous
 INSERT INTO crew_person VALUES (2090, 'Rowley', 'Rick', NULL, 'Director');  -- Director: Rick Rowley
 INSERT INTO crew_person VALUES (2091, 'Jackman', 'Hugh', NULL, 'Actor');  -- Actor: Hugh Jackman
+INSERT INTO crew_person VALUES (2092, 'Neville', 'Morgan', NULL, 'Director');  -- Director: Morgan Neville
+INSERT INTO crew_person VALUES (2093, 'Sutherland', 'Donald', NULL, 'Actor');  -- Actor: Donald Sutherland
+INSERT INTO crew_person VALUES (2094, 'Hutcherson', 'Josh', NULL, 'Actor');  -- Actor: Josh Hutcherson
+INSERT INTO crew_person VALUES (2095, 'Hemsworth', 'Liam', NULL, 'Actor');  -- Actor: Liam Hemsworth
+INSERT INTO crew_person VALUES (2096, 'Tucci', 'Stanley', NULL, 'Actor');  -- Actor: Stanley Tucci
+INSERT INTO crew_person VALUES (2097, 'Mulligan', 'Carey', NULL, 'Actress');  -- Actress: Carey Mulligan
+INSERT INTO crew_person VALUES (2098, 'Isaac', 'Oscar', NULL, 'Actor');  -- Actor: Oscar Isaac
+INSERT INTO crew_person VALUES (2099, 'Timberlake', 'Justin', NULL, 'Actor');  -- Actor: Justin Timberlake
