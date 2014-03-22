@@ -103,6 +103,22 @@ WHERE LEFT OFF
 
     when running movie_temp.sh with a movie already in the db but now seen
 
+- BUG: received:
+
+    Did not find <"The Hunger Games: Catching Fire" (2013) ***½ [PG-13] USA> in the database.
+    Is this a new movie? (y/n/quit) n
+
+    What is the id of the movie? 3508
+    Traceback (most recent call last):
+      File "/home/tgh/workspace/FiLTH/scripts/movie2sql_temp.py", line 365, in <module>
+        isInsert = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
+      File "/home/tgh/workspace/FiLTH/scripts/movie2sql_temp.py", line 302, in isNewMovie
+        search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
+    UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 3: ordinal not in range(128)
+
+  when modifying Hunger Games, The: Catching Fire
+
+
 ** There were 4 instances of "''''" in the new movie.sql ???
 
 - methinks I should change my schema AGAIN back to having mpaa and especially
