@@ -1,202 +1,8 @@
 WHERE LEFT OFF
 ---------------
-- Should add movie links to other movies in the data model. i.e. model that links all Pirates of the Carribbean movies together,
-  all Up docs together, etc. Probably a movie_related_to table that will provide a many-to-many relationship with movie and itself
-- Should modify the data model for tag hierarchy
-  - tags:
-    X gangster
-    X terrorism (Die Hard, United 93)
-    X civil war [any specific wars]
-    X disturbing (Tarnation, Gummo, Julien Donkey-Boy, We Need to talk About Kevin, The Act of Killing)
-    X [specific sports]
-    X addiction [drugs, alcohol (My Name is Joe, Flight, Leaving Las Vegas, Barfly, Days of Wine and Roses)]
-    X law-enforcement [cops, FBI, SWAT, ATF]
-    X based-on-Shakespeare
-    X based-on-Stephen-King-work
-    X genocide
-    X art [any specific art like painting, photography, film-making (Tropic Thunder), etc]
-    X gory
-    X violent (or graphic-violence)
-    X coming-of-age
-    X based-on-tv-show (Star Trek, Simpsons, Sgt. Bilko)
-    X con-artist (or con or con-man)
-    X based-on-true-story
-    X peaceful (or light or calm or laid-back) (Straight Story?)
-    X cinematography (b/w cinematography, color cinematography)
-    X confusing?
-    X military
-    X nudity, female-nudity, male-frontal-nudity, rear-nudity
-    X puppets (Team America, muppet movies)
-    X raunchy (or gross-out-comedy)
-    X based-on-article(s) (Where the Buffalo Roam, Bernie, Argo, The Bling Ring)
-    X serial-killer
-    X psychopath
-    X detective
-    X child-abduction (Prisoners, Gone Baby Gone, The Searchers, The Woodsman)
-    X bank-robbing
-    X drugs (Traffic)
-    X claymation
-    X rags-to-riches (Trading Places)
-    X riches-to-rags (Trading Places)
-    X prospecting (Treaure of the Sierra Madre, The Claim, The Gold Rush)
-    X avante-garde? (Persona, Un Chien Andalou)
-    X vampires
-    X zombies
-    X homosexuality (Twist, Brokeback Mountain)
-    X samurai
-    X excessive-swearing (Casino, Big Lebowski, Usual Suspects, Departed)
-    X marriage (The War of the Roses)
-    X stock-brokers
-    X post-apocolyptic (or apocalyse or apocalysptic or post-apolalypse) (Waterworld, The Road)
-    X mental-conditions (or just conditions?) [autism, insanity, etc]
-    X 1900s, 1910s, 1920s, etc.
-    X out-at-sea (White Squall, Mutiny on the Bounty, Captain Phillips)
-    X lost-at-sea (Lifeboat, Open Water, Life of Pi)
-    X aviation (Wings, The Aviator, The Wind Rises, Flight)
-    X spiritual [Christian, Catholic, etc]
-    X made-for-tv (or tv-movie) (Wit, Mr. Headmistress, It)
-    X miniseries (The Stand)
-    X based-on-poem (Troy, With a Friend like Harry)
-    X amish (Witness, Kingpin)
-    X based-on-song (Yellow Submarine)
-    X beatles
-    X school-shooting (Zero Day, Elephant, Bowling for Columbine)
-    X corruption (And Justice For All, Copland)
-    X outer-space (Apollo 13, Apollo 18, Moon, 2001, 2010, The Right Stuff, Gravity, Star Wars)
-    X adultery (The Descendents, Woody Allen movies, Closer, Anna Karenina)
-    X death-row (Into the Abyss, In Cold Blood, The Green Mile, Dead Man Walking, Monster's Ball)
-    X slavery (Django Unchained, Amistad, 12 Years a Slave)
-    X james-bond
-    X fashion (Devil Wears Prada, September Issue, The Bling Ring, Coco Before Chanel, Valentino)
-    X survival (The Grey, Alive, The Way Back)
-    X super-hero
-    X scary
-    X based-on-radio-series (The Lone Ranger)
-    X private-investigator (Twilight, Chinatown, Maltese Falcon, The Long Goodbye)
-    X wrongly-accused (Shawshank, Paradise Lost docs, West of Memphis, In the Name of the Father)
-    X cold-war
-    X communism
-    X racism
-
-- BUG: received:
-
-    ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
-    ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
-
-  when running movei_temp.sh with only changing Argo's year from 2013 to 2012
-
-- BUG: received:
-
-    UPDATE:
-        updated: "This Sporting Life" (1963) **½ [NR] England
-       original: "This Sporting Life" (1963) not seen [NR] England
-
-    /usr/lib/python2.7/dist-packages/sqlalchemy/types.py:84: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
-      return x == y
-
-
-    and
-
-    [exec] psql -- Inserting worked_on additions
-    ./scripts/movie_temp.sh: line 196: /home/tgh/workspace/FiLTH/temp/worked_on_additions.sql: Permission denied
-    ./scripts/movie_temp.sh: line 198: [: -eq: unary operator expected
-
-    when running movie_temp.sh with a movie already in the db but now seen
-
-- BUG: received:
-
-    Did not find <"The Hunger Games: Catching Fire" (2013) ***½ [PG-13] USA> in the database.
-    Is this a new movie? (y/n/quit) n
-
-    What is the id of the movie? 3508
-    Traceback (most recent call last):
-      File "/home/tgh/workspace/FiLTH/scripts/movie2sql_temp.py", line 365, in <module>
-        isInsert = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
-      File "/home/tgh/workspace/FiLTH/scripts/movie2sql_temp.py", line 302, in isNewMovie
-        search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
-    UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 3: ordinal not in range(128)
-
-  when modifying Hunger Games, The: Catching Fire
-
-
-** There were 4 instances of "''''" in the new movie.sql ???
-
-- methinks I should change my schema AGAIN back to having mpaa and especially
-  star_rating be a foreign key to a mpaa and star_rating table (and position) :/
-
-- dabled in Rails briefly:
-  - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
-  - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
-  - sounds like it might be complicated to use an existing pg db in rails...
-
-  - Got the following errors when running `rails server` and `bundle install`:
-
-    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
-    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
-    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
-    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
-
-    - sudo apt-get install libreadline-gplv2-dev
-    - apparently Ubuntu's rvm package is broken: from http://stackoverflow.com/questions/9056008/installed-ruby-1-9-3-with-rvm-but-command-line-doesnt-show-ruby-v/9056395#9056395:
-      - sudo apt-get --purge remove ruby-rvm
-      - sudo rm -rf /usr/share/ruby-rvm /etc/rvmrc /etc/profile.d/rvm.sh
-      - curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
-    - rvm install ruby-1.9.3-p448
-    - rvm use 1.9.3
-    - gem uninstall pg; gem install pg
-    
-    - tried: `sudo gem install rubygems-update` and `sudo update_rubygems`
-    - had to run `sudo gem install bundler` and `bundle install` to fix that mess
-    - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
-
-- new movie.sh:
-  - completed the new scripts: movie2sql_temp.py, movie_temp.sh, and tag_temp.py
-  - all sql/ now have numeric ids rather than DEFAULT
-  - testing movie_temp.sh
-    - fix the FIXME in movie_temp.sh
-    - need to test with new movie(s)
-  - fix the XXX in movie2sql_temp.py
-  - remove old movie.sh and movie2sql.py
-  X test tag_temp.py
-  X all [table].sql files in temp/ need to be copied to sql/ (or a temporary safe place until all relavant scripts are updated not to output DEFAULT for ids)
-    X OscarParser: 1107, 987
-    X country2sql.hs (who cares? don't need this anymore--if delete, delete scripts/country.sh too)
-    X genre2sql.hs (delete!)
-    X oscar2sql.hs (who cares? don't need this anymore)
-    X crew2sql.py (also update big comment block)
-    X MovieCrew: 117
-    X MovieTagger: 127
-    X tag.py: 105, 106 (if MovieTagger.py works as planned, this can be deleted)
-  X have tag.py use movie.sql rather than the database (so I can add tags without a db connection).  Mids and tids will be needed in the sql files, hence the schema update.
-  X need to tie it all together and test movie2sql_temp.py, movie_temp.sh, and tag_temp.py
-  - haven't tested OscarParser, crew2sql since updating using ids rather than DEFAULT
-
-- maybe whittle down the number of nominees I have for my awards (e.g. best scene 2003)
-- update README for filmography stuff
 
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
-
-- need to rename Twilight movies with "The Twilight Saga: " etc
-- need to change Cape Fear from 1961 to 1962
-- need to add Based-on-play to Casablanca
-- is Annie Hall tagged with 'unconventional'?
-- The Gameplan is actually The Game Plan
-- Ghost Day:... should be Ghost Dog:...
-- "If..." was actually rated X
-- "Innocence" should be 2000 or 2001, not 2002
-- add Christian tag to Jesus, Jesus of Nazareth, etc
-- "Lost on La Macha" should be "Lost IN La Mancha"
-- "Lovely and Amazing" should be "Lovely & Amazing"
-- "Mr. and Mrs. Smith" should be "Mr. & Mrs. Smith"
-- "A Night at the Museum" should be "Night at the Museum"
-- Ninja Scroll is actually 1993
-- "Number 23" should be "The Number 23"
-- Orphues is actually 1950
-- "Open Water" is based on a true story
-- "Owning Mahoney" should be "Owning Mahowny"
-- "Sherlock, Jr." should be "Sherlock Jr."
-- "The Simpsons: The Movie" should be "The Simpsons Movie"
 
 
 HOW TO
@@ -278,6 +84,31 @@ SETTING UP ENVIRONMENT
             </fileset>
     
         </path>
+
+- dabled in Rails briefly:
+  - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
+  - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
+  - sounds like it might be complicated to use an existing pg db in rails...
+
+  - Got the following errors when running `rails server` and `bundle install`:
+
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+    Invalid gemspec in [/var/lib/gems/1.8/specifications/jquery-rails-3.0.4.gemspec]: invalid date format in specification: "2013-07-11 00:00:00.000000000Z"
+
+    - sudo apt-get install libreadline-gplv2-dev
+    - apparently Ubuntu's rvm package is broken: from http://stackoverflow.com/questions/9056008/installed-ruby-1-9-3-with-rvm-but-command-line-doesnt-show-ruby-v/9056395#9056395:
+      - sudo apt-get --purge remove ruby-rvm
+      - sudo rm -rf /usr/share/ruby-rvm /etc/rvmrc /etc/profile.d/rvm.sh
+      - curl -L https://get.rvm.io | bash -s stable --ruby --autolibs=enable --auto-dotfiles
+    - rvm install ruby-1.9.3-p448
+    - rvm use 1.9.3
+    - gem uninstall pg; gem install pg
+    
+    - tried: `sudo gem install rubygems-update` and `sudo update_rubygems`
+    - had to run `sudo gem install bundler` and `bundle install` to fix that mess
+    - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
 
 
 NEEDS

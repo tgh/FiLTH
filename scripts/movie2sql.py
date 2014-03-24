@@ -7,68 +7,104 @@ import traceback
 import re
 from sqlalchemy.orm.exc import NoResultFound
 from os import system
+from MovieTagger import MovieTagger
+from MovieCrew import MovieCrew
+from QuitException import QuitException
+from getopt import getopt
+from getopt import GetoptError
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
+MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
+INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
-_movieSqlFile = FILTH_PATH + '/sql/movie.sql'
-_logFile = FILTH_PATH + '/temp/movie2sql.log'
-_crewSqlFile = FILTH_PATH + '/sql/crew_person.sql'
-_workedOnSqlFile = FILTH_PATH + '/sql/worked_on.sql'
-_tagGivenToSqlFile = FILTH_PATH + '/sql/tag_given_to.sql'
-_tagSqlFile = FILTH_PATH + '/sql/tag.sql'
+_logFile = FILTH_PATH + '/logs/movie2sql.log'
+#XXX: why is this not a constant? (FILTH_PATH + '/sql/movie.sql')
+_movieSqlFile = None
+_crewPersonSqlFile = None
+_workedOnSqlFile = None
+_tagGivenToSqlFile = None
+_tagSqlFile = None
 _log = None
 _nextMid = 0
-_nextCid = 0
-_positions = []         # list of strings for crew person positions
-_crewInserts = []       # sql INSERT statements for the crew_person table
-_workedOnInserts = []   # sql INSERT statements for the worked_on table
-_tagger = None          # MovieTagger object for tagging movies
 
 
-def checkArgs():
-  """Sanity checks the command-line arguments."""
+#------------------------------------------------------------------------------
 
-  fileIdx = 0
-  update = False
+def usage():
+  print "  usage: movie2sql.py [-u] -i <input file> -m <movie sql file> -t <tag sql file> -g <tagGivenTo sql file> -c <crewPerson sql file> -w <workedOn sql file>\n"
+  print "\t-u\tuse this option for update mode"
+  print "\t-i\tThe input file (to read each movie from) [required]"
+  print "\t-m\tThe file for sql insert statements for the movie table of the FiLTH database [required]"
+  print "\t-t\tThe file for sql insert statements for the tag table of the FiLTH database [required for update mode]"
+  print "\t-g\tThe file for sql insert statements for the tag_given_to table of the FiLTH database [required for update mode]"
+  print "\t-c\tThe file for sql insert statements for the crew_person table of the FiLTH database [required for update mode]"
+  print "\t-w\tThe file for sql insert statements for the worked_on table of the FiLTH database [required for update mode]\n"
 
-  if len(sys.argv) != 2 and len(sys.argv) != 3:
-    sys.stderr.write("**ERROR: arguments\n\n")
-    sys.stderr.write("  usage: movie2sql.py [-u] <input file>\n\n")
+
+#------------------------------------------------------------------------------
+
+def checkForMissingFileArg(arg):
+  if arg == None:
+    sys.stderr.write('***ERROR: missing file argument\n')
+    usage()
     sys.exit(1)
-  #no update option
-  if len(sys.argv) == 2:
-    fileIdx = 1
-  #possible "-u" option passed in through command-line
+
+
+#------------------------------------------------------------------------------
+
+def processArgs():
+  """Sanity checks the command-line arguments."""
+  global _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile
+
+  inputFile = None
+  isUpdate = False #TODO: rename this option ('update' is overloaded in this file and is confusing)
+
+  try:
+    opts, args = getopt(sys.argv[1:], 'ui:m:t:g:c:w:')
+  except GetoptError as goe:
+    sys.stderr.write(str(goe) + '\n\n')
+    usage()
+    sys.exit(1)
+
+  for o, a in opts:
+    if o == '-u':
+      isUpdate = True
+    elif o == '-i':
+      inputFile = a
+    elif o == '-m':
+      _movieSqlFile = a
+    elif o == '-t':
+      _tagSqlFile = a
+    elif o == '-g':
+      _tagGivenToSqlFile = a
+    elif o == '-c':
+      _crewPersonSqlFile = a
+    elif o == '-w':
+      _workedOnSqlFile = a
+
+  if isUpdate:
+    map(checkForMissingFileArg, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
   else:
-    if sys.argv[1] != '-u':
-      sys.stderr.write("**ERROR: unknown first argument: {0}\n\n".format(sys.argv[1]))
-      sys.stderr.write("  usage: movie2sql.py [-u] <input file>\n\n")
-      sys.exit()
-    update = True
-    fileIdx = 2
+    map(checkForMissingFileArg, [inputFile, _movieSqlFile])
 
-  return fileIdx, update
+  return inputFile, isUpdate
+  
+
+#------------------------------------------------------------------------------
+
+def getLinesFromFile(filename):
+  f = open(filename, 'r')
+  #grab all of the lines in the file (stripping the ending newlines)
+  lines = map(string.rstrip, f.readlines())
+  f.close()
+  return lines
 
 
 #------------------------------------------------------------------------------
 
-def getPositions():
-  global _positions
-
-  for position in _models.Position.query.all():
-    _positions.append(str(position.position_title))
-
-
-#------------------------------------------------------------------------------
-
-def printPositions():
-  global _positions
-
-  i = 1
-  for position in _positions:
-    print '{0}. {1}'.format(str(i), position)
-    i = i + 1
+def getNextMid():
+  return _models.session.query(_models.Movie.mid).order_by(_models.Movie.mid.desc()).first().mid + 1
 
 
 #------------------------------------------------------------------------------
@@ -77,6 +113,7 @@ def FormatTitle(title):
   """Properly format the movie title. e.g. "Falcon And The Snowman, The" ->
      "The Falcon and the Snowman"
   """
+  lg('FormatTitle', '  unformatted title: ' + title)
   #split title into separate words
   words = title.split()
   #one word title--no need to format
@@ -103,11 +140,45 @@ def FormatTitle(title):
     if words[i] in ('The','And','Of','At','In','As','It','By','On','An','To','A'):
       words[i] = string.lower(words[i])
   #go back and check for words ending with ':' (e.g. "X-Files: the" -> "X-Files: The")
+  # or words equal to '-' (e.g. "Star Wars: Episode I - The Phantom Menace")
   for i in range (0,len(words)-1):
-    if words[i][-1] == ':':
+    if words[i][-1] == ':' or words[i] == '-':
       words[i+1] = string.capitalize(words[i+1])
 
   return ' '.join(words)
+
+
+#------------------------------------------------------------------------------
+
+def getMovieData(line):
+  title = re.search('(.*) \\(', line).group(1)
+  year = re.search('\\((\d+)\\)', line).group(1)
+  stars = re.search('\\) (.*) \[', line).group(1)
+  mpaa = re.search('\[(.*)\]', line).group(1)
+
+  countryMatch = re.search('\] ([a-zA-Z ]+)', line)
+
+  #no country is specified for this movie
+  if not countryMatch:
+    lg('getMovieData', 'no country found for this movie')
+    country = "DEFAULT"
+  #this movie does have a country associated with it
+  else:
+    lg('getMovieData', 'country found')
+    country = countryMatch.group(1)
+    #add single quotes to the beginning and end of the country
+    country = string.join(["'",country,"'"], "")
+
+  #properly format the title
+  title = FormatTitle(title)
+
+  lg('getMovieData', '  formatted title: ' + title)
+  lg('getMovieData', '  year: ' + year)
+  lg('getMovieData', '  star rating: ' + stars)
+  lg('getMovieData', '  mpaa rating: ' + mpaa)
+  lg('getMovieData', '  country: ' + country)
+
+  return title, year, stars, mpaa, country
 
 
 #------------------------------------------------------------------------------
@@ -124,7 +195,6 @@ def quit(functionName):
   lg(functionName, 'quitting...')
   raise Exception('user is quitting')
 
-#XXX Make sure this Exception doesn't get caught anywhere other than main...
 
 #------------------------------------------------------------------------------
 
@@ -135,177 +205,12 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
-def parseIntInRangeInclusive(response, low, high):
-  try:
-    num = int(response)
-    if (num > high or num < low):
-      raise ValueError
-  except ValueError as ve:
-    print "\n**Invalid entry: '" + low + "'-'" + high + "', or 'quit', please."
-    raise ve
-
-
-#------------------------------------------------------------------------------
-
-def getCid(last, middle, first):
-  '''Returns the database id for the person with the given last name, middle
-     name, and first name.
-  '''
-
-  crew = _models.CrewPerson.query.filter(_models.CrewPerson.l_name == last)\
-                                    .filter(_models.CrewPerson.m_name == middle)\
-                                    .filter(_models.CrewPerson.f_name == first)\
-                                    .one()
-  return int(crew.cid)
-
-
-#------------------------------------------------------------------------------
-
-def createInsertStatementForCrew(last, first, middle, position):
-  global _crewInserts
-
-  insertStatement = "INSERT INTO crew_person VALUES(DEFAULT, {0}, {1}, {2}, '{3}');".format(last, first, middle, position)
-  lg('createInsertStatementForCrew', 'created SQL: ' + insertStatement)
-  _crewInserts.append(insertStatement)
-
-
-#------------------------------------------------------------------------------
-
-def createInsertStatementForWorkedOn(cid, position, first, middle, last, title, year):
-  global _nextMid, _workedOnInserts
-
-  first = first.strip("'")
-  middle = middle.strip("'")
-  last = last.strip("'")
-  insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} {4} {5} for {6} ({7})".format(str(_nextMid), str(cid), position, first, middle, last, title, str(year))
-  insertStatement = insertStatement.replace('NULL ', '')
-  lg('createInsertStatementForWorkedOn', 'created SQL: ' + insertStatement)
-  _workedOnInserts.append(insertStatement)
-
-
-#------------------------------------------------------------------------------
-
-def promptUserForCrewPerson(title, year):
-  '''Prompts the user for a crew person'''
-
-  global _positions, _nextMid, _nextCid
-
-  crew   = None   #CrewPerson object
-  last   = None   #last name string for sql
-  middle = 'NULL' #middle name string for sql
-  first  = 'NULL' #first name string for sql
-  num    = 0      #numeric input from user
-  cid    = 0      #crew person id
-
-  #prompt user for a valid person name
-  while True:
-    response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\'): ')
-    lg('promptUserForCrewPerson', 'user entered crew person: ' + response)
-
-    checkForQuit(response, 'promptUserForCrewPerson')
-
-    name = response.split()
-    if len(name) == 2:
-      last = "'" + name[1] + "'"
-      first = "'" + name[0] + "'"
-    elif len(name) == 3:
-      last = "'" + name[2] + "'"
-      middle = "'" + name[1] + "'"
-      first = "'" + name[0] + "'"
-    elif len(name) == 1:
-      last = "'" + name[0] + "'"
-    else:
-      print '\n**Invalid entry: name cannot be empty or more than 3 names long.\n'
-      continue
-    break
-  #end while
-
-  lg('promptUserForCrewPerson', 'first: [' + first + '], middle: [' + middle + '], last: [' + last + ']')
-
-  try:
-    #get the id of the crew person from the database
-    cid = getCid(last, middle, first)
-    lg('promptUserForCrewPerson', 'crew person found in database with id of ' + str(cid))
-  except NoResultFound:
-    #crew person was not found in database, prompt if this is a new addition or a typo
-    lg('promptUserForCrewPerson', 'crew person not found in database')
-    while True:
-      response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): ')
-      checkForQuit(response, 'promptUserForCrewPerson')
-      if response.lower() not in ['y','n']:
-        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-        continue
-      if response.lower() == 'n':
-        print '\nLet\'s try this again, then...'
-        getCrewForMovie()
-        return
-    #end while
-
-    lg('promptUserForCrewPerson', 'this is a new crew person')
-      
-    #prompt user for what the person is known as
-    printPositions()
-    while True:
-      response = raw_input('\nWhat is this person known as (1-5 or \'quit\')? ')
-      checkForQuit(response, 'promptUserForCrewPerson')
-      try:
-        num = parseIntInRangeInclusive(response, 1, 5)
-      except ValueError:
-        continue
-    #end while
-
-    lg('promptUserForCrewPerson', 'user entered ' + str(num) + '--new crew person is known as ' + _positions[num-1])
-
-    createInsertStatementForCrew(last, first, middle, _positions[num-1])
-    cid = _nextCid
-    lg('promptUserForCrewPerson', 'new crew person has an id of ' + str(cid))
-    _nextCid = _nextCid + 1
-  #end except NoResultFound
-
-  #prompt user for what position the person worked as
-  printPositions()
-  while True:
-    response = raw_input('\nWhat is this work as in this movie (1-5 or \'quit\')? ')
-    checkForQuit(response, 'promptUserForCrewPerson')
-    try:
-      num = parseIntInRangeInclusive(response, 1, 5)
-    except ValueError:
-      continue
-  #end while
-
-  lg('promptUserForCrewPerson', 'user entered ' + str(num) + '--crew person worked on "' + title + '" (' + str(year) + ') as ' + _positions[num-1])
-
-  createInsertStatementForWorkedOn(cid, _positions[num-1], first, middle, last, title, year)
-
-
-#------------------------------------------------------------------------------
-
-def getCrewForMovie(title, year):
-  '''Wrapper for prompting user for crew persons for a new movie'''
-
-  while True:
-    promptUserForCrewPerson(title, year)
-    while True:
-      response = raw_input('\nAny more? (y/n/quit) ')
-      if response.lower() not in ['y', 'n', 'quit']:
-        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-        continue
-      if response.lower() == 'quit':
-        quit('getCrewForMovie')
-      if response.lower() == 'y':
-        break
-      return
-
-
-#------------------------------------------------------------------------------
-
-def checkForUpdate(title, year, stars, mpaa, country):
+def isNewMovie(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it."""
 
-  global _models, _movieSqlFile
   movie = None  #to hold a Movie object
 
-  lg('checkForUpdate', 'in checkForUpdate')
+  lg('isNewMovie', 'in isNewMovie')
 
   #convert the strings of integers to integers
   year = int(year)
@@ -321,58 +226,58 @@ def checkForUpdate(title, year, stars, mpaa, country):
   #query for the movie in the db using the title and year since there is a
   # unique contraint on movies with those attributes
   try:
-    lg('checkForUpdate', 'querying db for "' + title + '" (' + str(year) + ')...')
+    lg('isNewMovie', 'querying db for "' + title + '" (' + str(year) + ')...')
     movie = _models.Movie.query.filter(_models.Movie.title == unicode(title, 'utf_8')).filter(_models.Movie.year == year).one()
-    lg('checkForUpdate', 'movie found')
-  #even though the movie was not found in the db, this still might be an update
-  # (for the title, or year, or both)
+    lg('isNewMovie', 'movie found')
+
   except NoResultFound:
-    lg('checkForUpdate', 'movie NOT found in the db')
+    #even though the movie was not found in the db, this still might be an update
+    # (for the title, or year, or both)
+    lg('isNewMovie', 'movie NOT found in the db')
     response = ''
-    while(True):
+    while True:
       #prompt user if this is in fact an update
-      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this an update? (y/n/quit) "\
+      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this a new movie? (y/n/quit) "\
                            .format(title,\
                                    year,\
                                    stars,\
                                    mpaa,\
-                                   country))
-      if response.lower() in ['n', 'y', 'quit']:
+                                   country)).lower()
+      checkForQuit(response, 'isNewMovie')
+      if response not in ['n', 'y', 'quit']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+      else:
         break
-      print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
-    if response.lower() == 'n':
-      lg('checkForUpdate', 'user marked this movie entry as not an update')
-      #
-      #TODO Prompt user for crew members and tags
-      #  getCrewForMovie(title, year)
-      #  getTagsForMovie(title, year)
-      #TODO increment _nextMid
-      #  _nextMid = _nextMid + 1
-      return False
-    elif response.lower() == 'quit':
-      quit('checkForUpdate')
+    #end while
 
-    lg('checkForUpdate', 'user marked this movie entry as an update')
+    if response == 'y':
+      lg('isNewMovie', 'user marked this movie entry as a new movie')
+      return True
+
+    lg('isNewMovie', 'user marked this movie entry as an update')
+
     #prompt user for the id of the movie (until a valid id is given)
     while True:
       try:
         response = int(raw_input("\nWhat is the id of the movie? "))
-        lg('checkForUpdate', 'user entered ' + str(response) + ' as the movie id')
+        lg('isNewMovie', 'user entered ' + str(response) + ' as the movie id')
         #get the movie from the db
-        lg('checkForUpdate', 'querying db for movie with id ' + str(response) + '...')
+        lg('isNewMovie', 'querying db for movie with id ' + str(response) + '...')
         movie = _models.Movie.query.filter(_models.Movie.mid == response).one()
         break
       except NoResultFound:
         print "\t**ERROR: id does not exist."
       except ValueError:
         print "\t**ERROR: invalid id."
+    #end while
+
     #update the title and/or year
     if movie.title != unicode(title, 'utf_8'):
-      lg('checkForUpdate', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
+      lg('isNewMovie', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
       origTitle = movie.title
       movie.title = title
     if movie.year != year:
-      lg('checkForUpdate', 'years differ: db year = ' + str(movie.year) + ', entry year = ' + str(year) + '.  Updating...')
+      lg('isNewMovie', 'years differ: db year = ' + str(movie.year) + ', entry year = ' + str(year) + '.  Updating...')
       origYear = movie.year
       movie.year = year
   #update what needs updating
@@ -381,22 +286,22 @@ def checkForUpdate(title, year, stars, mpaa, country):
     # literal "1/2", because it is just too much of a pain otherwise
     dbStars = re.sub(r'[\xc2\xbd]', '1/2', movie.star_rating)
     entryStars = re.sub(r'[\xc2\xbd]', '1/2', stars)
-    lg('checkForUpdate', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
+    lg('isNewMovie', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
     origStars = movie.star_rating
     movie.star_rating = stars
   if movie.mpaa != mpaa:
-    lg('checkForUpdate', 'mpaa ratings differ: db mpaa = ' + str(movie.mpaa) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
+    lg('isNewMovie', 'mpaa ratings differ: db mpaa = ' + str(movie.mpaa) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
     origMpaa = movie.mpaa
     movie.mpaa = mpaa
   if movie.country != country:
-    lg('checkForUpdate', 'countries differ: db country = ' + str(movie.country) + ', entry title = ' + str(country) + '.  Updating...')
+    lg('isNewMovie', 'countries differ: db country = ' + str(movie.country) + ', entry title = ' + str(country) + '.  Updating...')
     origCountry = movie.country
     movie.country = country
   
   #rewrite the INSERT statement in movie.sql
   search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
   replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
-  lg('checkForUpdate', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
+  lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
   #output message
@@ -412,7 +317,7 @@ def checkForUpdate(title, year, stars, mpaa, country):
                  origStars.encode('utf-8'),\
                  origMpaa,\
                  origCountry)
-  return True
+  return False
 
 
 #------------------------------------------------------------------------------
@@ -421,111 +326,77 @@ def checkForUpdate(title, year, stars, mpaa, country):
 #--- MAIN ---
 #------------
 if __name__ == '__main__':
-  fileIdx = 0       #index into argv for the filename
-  update  = False   #flag for checking for updates
-  retVal  = 0       #value to return to shell
-  inserts = []      #list of INSERT statements
+  inputFile   = None    #the path of the input file to read from (from command line arg)
+  isUpdate    = False   #boolean flag for whether or not we are updating the database
+                        # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
+  isInsert    = True    #boolean flag for whether or not the particular line is going to be a movie SQL INSERT statement
+  retVal      = 0       #value to return to shell
+  inserts     = []      #list of INSERT statements
+  tagger      = None    #MovieTagger object
+  crewHandler = None    #MovieCrew object
+  f           = None    #file holder
 
-  #check the command-line arguments
-  fileIdx, update = checkArgs()
+  #process the command-line arguments
+  inputFile, isUpdate = processArgs()
 
-  #open the file
+  #open the input file to read from
   try:
-    f = open(sys.argv[fileIdx], 'r')
     _log = open(_logFile, 'w')
-  except IOError as e:
-    sys.stderr.write("**ERROR: opening file: " + e + ".\n")
-    sys.exit()
 
-  try:
-    #XXX _tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models.session)
-
-    #grab all of the lines in the file
-    lines = f.readlines()
-    #close the file
-    f.close()
-
-    #determine what the next mid and cid values will be for the next new movie and crew person, respectively
-    #XXX _nextMid = _models.session.query(_models.Movie).order_by(_models.Movie.mid.desc()).first().mid + 1
-    #XXX _nextCid = _models.session.query(_models.CrewPerson).order_by(_models.CrewPerson.cid.desc()).first().cid + 1
-
-    #XXX getPositions()
-
-    if update:
-      lg('main', 'this is an update')
-      f = open(FILTH_PATH + '/temp/movie_additions.sql', 'w')
+    #setup a tagger and crew person handler only if in update mode
+    if isUpdate:
+      tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models)
+      crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, _models)
+      #determine what mid value will be for the next new movie (XXX: this is assuming there is data in the Movie table in the db--do we want to assume that?)
+      _nextMid = getNextMid()
     else:
-      lg('main', 'this is NOT an update')
-      f = open(FILTH_PATH + '/sql/movie.sql', 'w')
+      _nextMid = 1
 
     #iterate over the lines retrieved from the file
-    for line in lines:
-      #strip ending newline character
-      line = line.rstrip('\n')
+    for line in getLinesFromFile(inputFile):
       lg('main', 'current movie: "' + line + '"')
-      #no country is specified for this movie
-      if line[-1] == ']':
-        lg('main', 'no country found for this movie')
-        title, year, stars, mpaa = line.rsplit(None, 3)
-        country = "DEFAULT"
-      #this movie does have a country associated with it
+      title, year, stars, mpaa, country = getMovieData(line)
+
+      if not isUpdate:
+        #we are not updating, so just add an INSERT statement from the movie data
+        inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
-        lg('main', 'country found')
-        #get the index of the ']' of the mpaa rating
-        idx = line.rfind(']')
-        #find out the length of the country in words (e.g. The Netherlands = 2)
-        countryWordCount = line.count(' ', idx, -1)
-        #create a list of strings where the tail represents the country
-        countryTemp = line.rsplit(None, countryWordCount)
-        #join the tail into its own string--this is the country
-        country = string.join(countryTemp[-countryWordCount:])
-        #add single quotes to the beginning and end of the country
-        country = string.join(["'",country,"'"], "")
-        #strip off the country from the original line now that we have the country
-        temp = string.join(countryTemp[:-countryWordCount])
-        #split the rest
-        try:
-          title, year, stars, mpaa = temp.rsplit(None, 3)
-        #oops, there's probably an extra space somewhere in Movie_Raings.doc
-        except ValueError as e:
-          sys.stderr.write('Error with "' + line + '": ' + str(e) + '\n')
-          lg('main', '**ERROR: ValueError exception caught while trying to split title, year, stars, and mpaa: ' + e)
-          f.close()
-          _log.close()
-          sys.exit()
-      lg('main', '  unformatted title: ' + title)
-      #format the title
-      title = FormatTitle(title)
-      lg('main', '  formatted title: ' + title)
-      #remove the parens around the year
-      year = year[1:-1]
-      #remove the brackets around the mpaa rating
-      mpaa = mpaa[1:-1]
+        #we are updating so see if we are updating a movie rather than adding a new one
+        isInsert = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
+        if isInsert:
+          #add an INSERT statement for the new movie
+          inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+          #ask user for tags for the movie
+          print '\nTAGS'
+          print '-----\n'
+          tagger.promptUserForTag(_nextMid, title, year)
+          #ask user for crew members who worked on the movie
+          print '\nCREW'
+          print '-----'
+          crewHandler.promptUserForCrewPerson(_nextMid, title, year)
 
-      lg('main', '  year: ' + year)
-      lg('main', '  star rating: ' + stars)
-      lg('main', '  mpaa rating: ' + mpaa)
-      lg('main', '  country: ' + country)
-      
-      insert = True   #flag for whether or not this will be a sql INSERT statement
+      #update the next mid
+      _nextMid = _nextMid + 1
+    #end for
 
-      #check to see if this new line is an update of a movie already in the db
-      if update:
-        insert = not checkForUpdate(title, year, stars, mpaa, country.replace("'",""))
-      #nope, this is a regular INSERT statement
-      if insert:
-        #add the sql to the INSERT statement list
-        inserts.append("INSERT INTO movie VALUES (DEFAULT, '{0}', {1}, '{2}', '{3}', {4}, NULL);\n"\
-                .format(title.replace("'","''"), year, stars, mpaa, country))
-    #end for line in lines
+    #determine which file to write out the movie INSERT statements to
+    if isUpdate:
+      lg('main', 'writing to ' + MOVIE_ADDITIONS_SQL_FILE)
+      f = open(MOVIE_ADDITIONS_SQL_FILE, 'w')
+    else:
+      lg('main', 'writing to ' + _movieSqlFile)
+      f = open(_movieSqlFile, 'w')
 
     #write out all sql INSERT statements to sql files
     for insertStatement in inserts:
       f.write(insertStatement)
-    #TODO write out crew, worked_on, and tag sql statements
+    if (tagger):
+      tagger.flush()
+    if (crewHandler):
+      crewHandler.flush()
 
-    #commit the changes to the db (if any)
-    if update:
+    #commit any changes to the db
+    if isUpdate:
       lg('main', 'committing changes to database...')
       _models.session.commit()
       lg('main', 'exiting with return value \'0\'')
@@ -535,6 +406,10 @@ if __name__ == '__main__':
     retVal = 1
   finally:
     _log.close()
-    f.close()
-    #TODO close other sql files (including _tagger.close())
+    if f:
+      f.close()
+    if (tagger):
+      tagger.close()
+    if (crewHandler):
+      crewHandler.close()
     sys.exit(retVal)

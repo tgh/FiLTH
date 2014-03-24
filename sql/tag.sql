@@ -282,3 +282,4 @@ INSERT INTO tag VALUES (281, 'communism', NULL);
 INSERT INTO tag VALUES (282, 'racism', NULL);
 INSERT INTO tag VALUES (283, 'cute', NULL);
 INSERT INTO tag VALUES (284, 'outer-space', NULL);
+INSERT INTO tag VALUES (285, 'no-dialog', NULL);
