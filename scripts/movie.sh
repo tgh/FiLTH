@@ -171,6 +171,7 @@ function check_psql_error() {
     previous_error_file_size=$current_error_file_size
     return $ERROR
   fi
+  return $SUCCESS
 }
 
 
@@ -182,20 +183,25 @@ function run_sql_inserts() {
   echo -e "\n[exec] psql -- Inserting movie additions"
   psql -U postgres -d filth -f $movie_additions_sql_file > /dev/null 2>>$error_file
   check_psql_error $movie_additions_sql_file
+  status=$?
   echo -e "\n[exec] psql -- Inserting tag additions"
   psql -U postgres -d filth -f $tag_additions_sql_file > /dev/null 2>>$error_file
   check_psql_error $tag_additions_sql_file
+  status=$((status + $?))
   echo -e "\n[exec] psql -- Inserting tag_given_to additions"
   psql -U postgres -d filth -f $tgt_additions_sql_file > /dev/null 2>>$error_file
   check_psql_error $tgt_additions_sql_file
+  status=$((status + $?))
   echo -e "\n[exec] psql -- Inserting crew_person additions"
   psql -U postgres -d filth -f $cp_additions_sql_file > /dev/null 2>>$error_file
   check_psql_error $cp_additions_sql_file
+  status=$((status + $?))
   echo -e "\n[exec] psql -- Inserting worked_on additions"
   psql -U postgres -d filth -f $wo_additions_sql_file > /dev/null 2>>$error_file
-  status=check_psql_error $wo_additions_sql_file
-  #FIXME: this is wrong. The error message below needs to show if any of the check_psql_error calss returns ERROR, not just the last one
-  if [ $status -eq $ERROR ]
+  check_psql_error $wo_additions_sql_file
+  status=$((status + $?))
+
+  if [ $status -ne $SUCCESS ]
   then
     echo -e "\n**There was an error running the additional sql insert statements."
     echo -e "\n  Check the *_additions.sql files in temp/ and note that they will be overwritten the next running of movie.sh."
