@@ -198,8 +198,8 @@ class MovieCrew(object):
     '''
     crew   = None       #CrewPerson object
     last   = None       #last name string for sql
-    middle = 'NULL'  #middle name string for sql
-    first  = 'NULL'  #first name string for sql
+    middle = 'NULL'     #middle name string for sql
+    first  = 'NULL'     #first name string for sql
     num    = 0          #numeric input from user
     cid    = 0          #crew person id
 
@@ -324,6 +324,16 @@ class MovieCrew(object):
         Raises : QuitException when user quits
                  Exception when an unknown error occurs
     '''
+    # does the user even want to add crew members?
+    while True:
+      response = raw_input('\nAre there any crew members that you want to associate with this movie (y/n/quit)? ')
+      if response.lower() not in ['y', 'n', 'quit']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+        continue
+      if response.lower() == 'n':
+        return
+      break
+    # prompt for crew members
     while True:
       self._promptUserForCrewPersonHelper(mid, title, year)
       while True:
