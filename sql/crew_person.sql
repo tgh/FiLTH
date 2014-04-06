@@ -2098,3 +2098,4 @@ INSERT INTO crew_person VALUES (2096, 'Tucci', 'Stanley', NULL, 'Actor');  -- Ac
 INSERT INTO crew_person VALUES (2097, 'Mulligan', 'Carey', NULL, 'Actress');  -- Actress: Carey Mulligan
 INSERT INTO crew_person VALUES (2098, 'Isaac', 'Oscar', NULL, 'Actor');  -- Actor: Oscar Isaac
 INSERT INTO crew_person VALUES (2099, 'Timberlake', 'Justin', NULL, 'Actor');  -- Actor: Justin Timberlake
+INSERT INTO crew_person VALUES (2100, 'Chandor', 'J.C.', NULL, 'Director');  -- Director: J.C. Chandor

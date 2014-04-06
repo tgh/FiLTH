@@ -3507,3 +3507,5 @@ INSERT INTO movie VALUES (3506, 'Prisoners', 2013, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3507, '20 Feet from Stardom', 2013, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3508, 'Hunger Games, The: Catching Fire', 2013, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3509, 'Inside Llewyn Davis', 2013, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3510, 'All Is Lost', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3511, 'Son of God', 2014, '***', 'PG-13', 'USA', NULL);

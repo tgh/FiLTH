@@ -3767,3 +3767,6 @@ INSERT INTO worked_on VALUES(3509, 2097, 'Actress');  -- Carey Mulligan for Insi
 INSERT INTO worked_on VALUES(3509, 2098, 'Actor');  -- Oscar Isaac for Inside Llewyn Davis (2013)
 INSERT INTO worked_on VALUES(3509, 2099, 'Actor');  -- Justin Timberlake for Inside Llewyn Davis (2013)
 INSERT INTO worked_on VALUES(3509, 200, 'Actor');  -- F. Murray Abraham for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3510, 76, 'Actor');  -- Robert Redford for All Is Lost (2013)
+INSERT INTO worked_on VALUES(3510, 2100, 'Director');  -- J.C. Chandor for All Is Lost (2013)
+INSERT INTO worked_on VALUES(3510, 2100, 'Screenwriter');  -- J.C. Chandor for All Is Lost (2013)
