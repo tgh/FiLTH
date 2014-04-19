@@ -332,7 +332,6 @@ if __name__ == '__main__':
   inputFile   = None    #the path of the input file to read from (from command line arg)
   isUpdate    = False   #boolean flag for whether or not we are updating the database
                         # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
-  isInsert    = True    #boolean flag for whether or not the particular line is going to be a movie SQL INSERT statement
   retVal      = 0       #value to return to shell
   inserts     = []      #list of INSERT statements
   tagger      = None    #MovieTagger object
@@ -361,12 +360,12 @@ if __name__ == '__main__':
       title, year, stars, mpaa, country = getMovieData(line)
 
       if not isUpdate:
-        #we are not updating (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
+        #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
         inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
-        #are we updating a movie rather than adding a new one?
-        isInsert, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
-        if isInsert:
+        #are we updating an existing movie rather than adding a new one?
+        isNewMovie, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
+        if isNewMovie:
           #add an INSERT statement for the new movie
           inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
           mid = _nextMid
@@ -380,7 +379,7 @@ if __name__ == '__main__':
         print '-----'
         crewHandler.promptUserForCrewPerson(mid, title, year)
 
-        if isInsert:
+        if isNewMovie:
           #update the next mid
           _nextMid = _nextMid + 1
       #end if-else
