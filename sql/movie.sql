@@ -2034,7 +2034,7 @@ INSERT INTO movie VALUES (2033, 'The Emigrants', 1971, 'not seen', 'PG', 'Sweden
 INSERT INTO movie VALUES (2034, 'The Exorcist', 1973, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2035, 'Bound for Glory', 1976, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2036, 'An Unmarried Woman', 1978, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2037, 'A Passage to India', 1984, 'not seen', 'PG', 'England', DEFAULT);
+INSERT INTO movie VALUES (2037, 'A Passage to India', 1984, '***', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2038, 'Brokeback Mountain', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2039, 'Milk', 2008, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2040, 'The Reader', 2008, 'not seen', 'R', 'USA', DEFAULT);

@@ -206,7 +206,10 @@ def checkForQuit(response, functionName):
 #------------------------------------------------------------------------------
 
 def isNewMovie(title, year, stars, mpaa, country):
-  """Is this movie already in the database?  If so, update it."""
+  """Is this movie already in the database?  If so, update it.
+
+  Returns a (boolean, Integer) pair: (isUpdate?, mid of movie if found)
+  """
 
   movie = None  #to hold a Movie object
 
@@ -252,7 +255,7 @@ def isNewMovie(title, year, stars, mpaa, country):
 
     if response == 'y':
       lg('isNewMovie', 'user marked this movie entry as a new movie')
-      return True
+      return True, None
 
     lg('isNewMovie', 'user marked this movie entry as an update')
 
@@ -317,7 +320,7 @@ def isNewMovie(title, year, stars, mpaa, country):
                  origStars.encode('utf-8'),\
                  origMpaa,\
                  origCountry)
-  return False
+  return False, movie.mid
 
 
 #------------------------------------------------------------------------------
@@ -358,25 +361,29 @@ if __name__ == '__main__':
       title, year, stars, mpaa, country = getMovieData(line)
 
       if not isUpdate:
-        #we are not updating, so just add an INSERT statement from the movie data
+        #we are not updating (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
         inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
-        #we are updating so see if we are updating a movie rather than adding a new one
-        isInsert = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
+        #are we updating a movie rather than adding a new one?
+        isInsert, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isInsert:
           #add an INSERT statement for the new movie
           inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
-          #ask user for tags for the movie
-          print '\nTAGS'
-          print '-----\n'
-          tagger.promptUserForTag(_nextMid, title, year)
-          #ask user for crew members who worked on the movie
-          print '\nCREW'
-          print '-----'
-          crewHandler.promptUserForCrewPerson(_nextMid, title, year)
+          mid = _nextMid
 
-      #update the next mid
-      _nextMid = _nextMid + 1
+        #ask user for tags for the movie
+        print '\nTAGS'
+        print '-----\n'
+        tagger.promptUserForTag(mid, title, year)
+        #ask user for crew members who worked on the movie
+        print '\nCREW'
+        print '-----'
+        crewHandler.promptUserForCrewPerson(mid, title, year)
+
+        if isInsert:
+          #update the next mid
+          _nextMid = _nextMid + 1
+      #end if-else
     #end for
 
     #determine which file to write out the movie INSERT statements to

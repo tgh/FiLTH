@@ -3770,3 +3770,4 @@ INSERT INTO worked_on VALUES(3509, 200, 'Actor');  -- F. Murray Abraham for Insi
 INSERT INTO worked_on VALUES(3510, 76, 'Actor');  -- Robert Redford for All Is Lost (2013)
 INSERT INTO worked_on VALUES(3510, 2100, 'Director');  -- J.C. Chandor for All Is Lost (2013)
 INSERT INTO worked_on VALUES(3510, 2100, 'Screenwriter');  -- J.C. Chandor for All Is Lost (2013)
+INSERT INTO worked_on VALUES(2037, 121, 'Actor');  -- Alec Guinness for A Passage to India (1984)

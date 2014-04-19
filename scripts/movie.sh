@@ -204,8 +204,9 @@ function run_sql_inserts() {
   if [ $status -ne $SUCCESS ]
   then
     echo -e "\n**There was an error running the additional sql insert statements."
-    echo -e "\n  Check the *_additions.sql files in temp/ and note that they will be overwritten the next running of movie.sh."
-    echo -e "\n  Any sql statements that you want to keep will have to be manually appended to their cooresponding main sql file (e.g. tag_additions.sql >> tag.sql)."
+    echo -e "  Check the *_additions.sql files in temp/ and note that they will be over-written the next running of movie.sh."
+    echo -e "  Any sql statements that you want to keep will have to be manually appended to their cooresponding main sql file (e.g. tag_additions.sql >> tag.sql)."
+    echo -e "  Once you have resolved the issue, $error_file must be emptied before running movie.sh again."
     exit
   fi
 }
