@@ -2105,3 +2105,5 @@ INSERT INTO crew_person VALUES (2103, 'Walker', 'Scott', NULL, 'Director');  -- 
 INSERT INTO crew_person VALUES (2104, 'Roberts', 'Dallas', NULL, 'Actor');  -- Actor: Dallas Roberts
 INSERT INTO crew_person VALUES (2105, 'Brownjohn', 'John', NULL, 'Screenwriter');  -- Screenwriter: John Brownjohn
 INSERT INTO crew_person VALUES (2106, 'Urbizu', 'Enrique', NULL, 'Screenwriter');  -- Screenwriter: Enrique Urbizu
+INSERT INTO crew_person VALUES (2107, 'Cranston', 'Bryan', NULL, 'Actor');  -- Actor: Bryan Cranston
+INSERT INTO crew_person VALUES (2108, 'Hawkins', 'Sally', NULL, 'Actress');  -- Actress: Sally Hawkins
