@@ -501,7 +501,7 @@ stars to during the year.
   Army of Shadows (1969, Jean-Pierre Melville)
 * Bubble (Stephen Soderbergh)
   The Death of Mr. Lazarescu (Cristi Puiu)
-  49 Up (Michael Apted)
+* 49 Up (Michael Apted)
   An Inconvenient Truth (Davis Guggenheim)
   L'Enfant (Jean-Pierre & Luc Dardenne)
 * Man Push Cart (Ramin Bahrani)
@@ -672,7 +672,7 @@ Also:
   06. Kinyarwanda
 * 07. Drive
 * 08. Midnight in Paris
-  09. Le Havre
+* 09. Le Havre
 * 10. The Artist
 
 * 11. Melancholia
@@ -693,7 +693,7 @@ Also:
   04. Tabloid
   05. Resurrect Dead: The Mystery of the Toynbee Tiles
 * 06. Cave of Forgotten Dreams
-  07. Pina
+* 07. Pina
   08. Garbo the Spy
   09. The Last Mountain
   10. Louder than a Bomb
@@ -717,5 +717,5 @@ Also:
 * 06. Flight
   07. The Sessions
 * 08. Beasts of the Southern Wild
-  09. Oslo, August 31
+* 09. Oslo, August 31
   10. A Simple Life
