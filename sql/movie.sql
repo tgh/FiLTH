@@ -3520,3 +3520,5 @@ INSERT INTO movie VALUES (3519, 'George Harrison: Living in the Material World',
 INSERT INTO movie VALUES (3520, 'Godzilla', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3521, 'Angel Heart', 1987, '***', 'X', 'USA', NULL);
 INSERT INTO movie VALUES (3522, 'The Square', 2013, '***', 'NR', DEFAULT, NULL);
+INSERT INTO movie VALUES (3523, 'Hot Rod', 2007, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3524, 'The Tale of Despereaux', 2008, '**½', 'G', 'England', NULL);

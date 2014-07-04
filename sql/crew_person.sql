@@ -2110,3 +2110,10 @@ INSERT INTO crew_person VALUES (2108, 'Hawkins', 'Sally', NULL, 'Actress');  -- 
 INSERT INTO crew_person VALUES (2110, 'Rampling', 'Charlotte', NULL, 'Actress');  -- Actress: Charlotte Rampling
 INSERT INTO crew_person VALUES (2111, 'Bonet', 'Lisa', NULL, 'Actress');  -- Actress: Lisa Bonet
 INSERT INTO crew_person VALUES (2112, 'Noujaim', 'Jehane', NULL, 'Director');  -- Director: Jehane Noujaim
+INSERT INTO crew_person VALUES (2113, 'Samberg', 'Andy', NULL, 'Actor');  -- Actor: Andy Samberg
+INSERT INTO crew_person VALUES (2114, 'Fisher', 'Isla', NULL, 'Actress');  -- Actress: Isla Fisher
+INSERT INTO crew_person VALUES (2115, 'McShane', 'Ian', NULL, 'Actor');  -- Actor: Ian McShane
+INSERT INTO crew_person VALUES (2116, 'Hader', 'Bill', NULL, 'Actor');  -- Actor: Bill Hader
+INSERT INTO crew_person VALUES (2117, 'McBride', 'Danny', NULL, 'Actor');  -- Actor: Danny McBride
+INSERT INTO crew_person VALUES (2118, 'Arnett', 'Will', NULL, 'Actor');  -- Actor: Will Arnett
+INSERT INTO crew_person VALUES (2119, 'Parnell', 'Chris', NULL, 'Actor');  -- Actor: Chris Parnell
