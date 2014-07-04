@@ -2102,3 +2102,4 @@ INSERT INTO crew_person VALUES (2100, 'Chandor', 'J.C.', NULL, 'Director');  -- 
 INSERT INTO crew_person VALUES (2101, 'Coogan', 'Steve', NULL, 'Actor');  -- Actor: Steve Coogan
 INSERT INTO crew_person VALUES (2102, 'Pope', 'Jeff', NULL, 'Screenwriter');  -- Screenwriter: Jeff Pope
 INSERT INTO crew_person VALUES (2103, 'Walker', 'Scott', NULL, 'Director');  -- Director: Scott Walker
+INSERT INTO crew_person VALUES (2104, 'Roberts', 'Dallas', NULL, 'Actor');  -- Actor: Dallas Roberts

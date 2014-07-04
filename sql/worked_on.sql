@@ -3780,3 +3780,5 @@ INSERT INTO worked_on VALUES(3514, 210, 'Actor');  -- Nicolas Cage for Frozen Gr
 INSERT INTO worked_on VALUES(3514, 149, 'Actor');  -- John Cusack for Frozen Ground (2013)
 INSERT INTO worked_on VALUES(3514, 2103, 'Director');  -- Scott Walker for Frozen Ground (2013)
 INSERT INTO worked_on VALUES(3514, 2103, 'Screenwriter');  -- Scott Walker for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3516, 149, 'Actor');  -- John Cusack for The Factory (2012)
+INSERT INTO worked_on VALUES(3516, 2104, 'Actor');  -- Dallas Roberts for The Factory (2012)
