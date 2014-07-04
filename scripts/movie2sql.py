@@ -364,8 +364,8 @@ if __name__ == '__main__':
         inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
         #are we updating an existing movie rather than adding a new one?
-        isNewMovie, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
-        if isNewMovie:
+        isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
+        if isNew:
           #add an INSERT statement for the new movie
           inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
           mid = _nextMid
@@ -379,7 +379,7 @@ if __name__ == '__main__':
         print '-----'
         crewHandler.promptUserForCrewPerson(mid, title, year)
 
-        if isNewMovie:
+        if isNew:
           #update the next mid
           _nextMid = _nextMid + 1
       #end if-else
