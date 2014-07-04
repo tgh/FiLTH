@@ -3512,5 +3512,5 @@ INSERT INTO movie VALUES (3511, 'Son of God', 2014, '***', 'PG-13', 'USA', NULL)
 INSERT INTO movie VALUES (3512, 'Philomena', 2013, '***½', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (3513, 'Frozen', 2013, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3514, 'Frozen Ground', 2013, '***', 'R', 'USA', NULL);
-INSERT INTO movie VALUES (3515, 'Devil', 2010, '***', 'R', 'USA', NULL);
-INSERT INTO movie VALUES (3516, 'The Factory', 2012, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3517, 'The Ninth Gate', 1999, '***', 'R', DEFAULT, NULL);
+INSERT INTO movie VALUES (3518, 'The Oxford Murders', 2008, '***', 'R', 'England', NULL);
