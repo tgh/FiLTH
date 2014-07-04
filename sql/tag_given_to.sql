@@ -6429,3 +6429,6 @@ INSERT INTO tag_given_to VALUES(3511, 22);  -- Son of God (2014) tagged with 'Bi
 INSERT INTO tag_given_to VALUES(3511, 26);  -- Son of God (2014) tagged with 'History'
 INSERT INTO tag_given_to VALUES(3511, 50);  -- Son of God (2014) tagged with 'Christian'
 INSERT INTO tag_given_to VALUES(3511, 58);  -- Son of God (2014) tagged with 'Based-on-book'
+INSERT INTO tag_given_to VALUES(3512, 1);  -- Philomena (2013) tagged with 'Drama'
+INSERT INTO tag_given_to VALUES(3512, 22);  -- Philomena (2013) tagged with 'Biography'
+INSERT INTO tag_given_to VALUES(3512, 58);  -- Philomena (2013) tagged with 'Based-on-book'

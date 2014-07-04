@@ -3771,3 +3771,8 @@ INSERT INTO worked_on VALUES(3510, 76, 'Actor');  -- Robert Redford for All Is L
 INSERT INTO worked_on VALUES(3510, 2100, 'Director');  -- J.C. Chandor for All Is Lost (2013)
 INSERT INTO worked_on VALUES(3510, 2100, 'Screenwriter');  -- J.C. Chandor for All Is Lost (2013)
 INSERT INTO worked_on VALUES(2037, 121, 'Actor');  -- Alec Guinness for A Passage to India (1984)
+INSERT INTO worked_on VALUES(3512, 1011, 'Actress');  -- Judi Dench for Philomena (2013)
+INSERT INTO worked_on VALUES(3512, 2101, 'Actor');  -- Steve Coogan for Philomena (2013)
+INSERT INTO worked_on VALUES(3512, 2101, 'Screenwriter');  -- Steve Coogan for Philomena (2013)
+INSERT INTO worked_on VALUES(3512, 286, 'Director');  -- Stephen Frears for Philomena (2013)
+INSERT INTO worked_on VALUES(3512, 2102, 'Screenwriter');  -- Jeff Pope for Philomena (2013)
