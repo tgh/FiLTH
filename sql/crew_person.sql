@@ -2119,3 +2119,8 @@ INSERT INTO crew_person VALUES (2118, 'Arnett', 'Will', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2119, 'Parnell', 'Chris', NULL, 'Actor');  -- Actor: Chris Parnell
 INSERT INTO crew_person VALUES (2120, 'Russell', 'Kurt', NULL, 'Actor');  -- Actor: Kurt Russell
 INSERT INTO crew_person VALUES (2121, 'Walsh', 'J.T.', NULL, 'Actor');  -- Actor: J.T. Walsh
+INSERT INTO crew_person VALUES (2122, 'Pepper', 'Barry', NULL, 'Actor');  -- Actor: Barry Pepper
+INSERT INTO crew_person VALUES (2123, 'Moynahan', 'Bridget', NULL, 'Actress');  -- Actress: Bridget Moynahan
+INSERT INTO crew_person VALUES (2124, 'Pantoliano', 'Joe', NULL, 'Actor');  -- Actor: Joe Pantoliano
+INSERT INTO crew_person VALUES (2125, 'Sisto', 'Jeremy', NULL, 'Actor');  -- Actor: Jeremy Sisto
+INSERT INTO crew_person VALUES (2126, 'Stormare', 'Peter', NULL, 'Actor');  -- Actor: Peter Stormare

@@ -6487,3 +6487,7 @@ INSERT INTO tag_given_to VALUES(3526, 1);  -- The Silence (2010) tagged with 'Dr
 INSERT INTO tag_given_to VALUES(3526, 29);  -- The Silence (2010) tagged with 'Dark'
 INSERT INTO tag_given_to VALUES(3526, 25);  -- The Silence (2010) tagged with 'Crime'
 INSERT INTO tag_given_to VALUES(3526, 58);  -- The Silence (2010) tagged with 'Based-on-book'
+INSERT INTO tag_given_to VALUES(3527, 34);  -- Le Havre (2011) tagged with 'Drama-Comedy'
+INSERT INTO tag_given_to VALUES(3528, 1);  -- Unknown (2006) tagged with 'Drama'
+INSERT INTO tag_given_to VALUES(3528, 25);  -- Unknown (2006) tagged with 'Crime'
+INSERT INTO tag_given_to VALUES(3528, 8);  -- Unknown (2006) tagged with 'Mystery'

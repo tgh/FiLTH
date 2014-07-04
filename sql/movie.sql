@@ -3524,3 +3524,5 @@ INSERT INTO movie VALUES (3523, 'Hot Rod', 2007, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3524, 'The Tale of Despereaux', 2008, '**½', 'G', 'England', NULL);
 INSERT INTO movie VALUES (3525, 'Breakdown', 1997, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3526, 'The Silence', 2010, '***½', 'NR', 'Germany', NULL);
+INSERT INTO movie VALUES (3527, 'Le Havre', 2011, '**½', 'NR', 'France', NULL);
+INSERT INTO movie VALUES (3528, 'Unknown', 2006, '***', 'NR', 'USA', NULL);
