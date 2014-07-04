@@ -3526,3 +3526,5 @@ INSERT INTO movie VALUES (3525, 'Breakdown', 1997, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3526, 'The Silence', 2010, '***½', 'NR', 'Germany', NULL);
 INSERT INTO movie VALUES (3527, 'Le Havre', 2011, '**½', 'NR', 'France', NULL);
 INSERT INTO movie VALUES (3528, 'Unknown', 2006, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3529, 'Edge of Tomorrow', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3530, 'Star Trek Into Darkness', 2013, '***', 'PG-13', 'USA', NULL);
