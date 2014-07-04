@@ -3518,3 +3518,5 @@ INSERT INTO movie VALUES (3517, 'The Ninth Gate', 1999, '***', 'R', DEFAULT, NUL
 INSERT INTO movie VALUES (3518, 'The Oxford Murders', 2008, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3519, 'George Harrison: Living in the Material World', 2011, '**½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3520, 'Godzilla', 2014, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3521, 'Angel Heart', 1987, '***', 'X', 'USA', NULL);
+INSERT INTO movie VALUES (3522, 'The Square', 2013, '***', 'NR', DEFAULT, NULL);
