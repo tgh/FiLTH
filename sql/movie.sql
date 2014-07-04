@@ -3510,3 +3510,5 @@ INSERT INTO movie VALUES (3509, 'Inside Llewyn Davis', 2013, '**½', 'R', 'USA',
 INSERT INTO movie VALUES (3510, 'All Is Lost', 2013, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3511, 'Son of God', 2014, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3512, 'Philomena', 2013, '***½', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (3513, 'Frozen', 2013, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3514, 'Frozen Ground', 2013, '***', 'R', 'USA', NULL);

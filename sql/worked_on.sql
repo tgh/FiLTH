@@ -3776,3 +3776,7 @@ INSERT INTO worked_on VALUES(3512, 2101, 'Actor');  -- Steve Coogan for Philomen
 INSERT INTO worked_on VALUES(3512, 2101, 'Screenwriter');  -- Steve Coogan for Philomena (2013)
 INSERT INTO worked_on VALUES(3512, 286, 'Director');  -- Stephen Frears for Philomena (2013)
 INSERT INTO worked_on VALUES(3512, 2102, 'Screenwriter');  -- Jeff Pope for Philomena (2013)
+INSERT INTO worked_on VALUES(3514, 210, 'Actor');  -- Nicolas Cage for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3514, 149, 'Actor');  -- John Cusack for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3514, 2103, 'Director');  -- Scott Walker for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3514, 2103, 'Screenwriter');  -- Scott Walker for Frozen Ground (2013)
