@@ -3491,7 +3491,7 @@ INSERT INTO movie VALUES (3490, 'Paranoid Park', 2007, '**½', 'R', 'USA', NULL)
 INSERT INTO movie VALUES (3491, 'Pirates of the Caribbean: On Stranger Tides', 2011, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3492, 'Taken', 2008, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3493, 'White Christmas', 1954, '***', 'NR', 'USA', NULL);
-INSERT INTO movie VALUES (3494, 'American Hustle', 2013, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3494, 'American Hustle', 2013, '****', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3495, 'Pina', 2011, '***', 'PG', 'Germany', NULL);
 INSERT INTO movie VALUES (3496, 'Upstream Color', 2013, '**½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3497, '12 Years a Slave', 2013, '***½', 'R', 'USA', NULL);
