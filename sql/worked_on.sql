@@ -3812,3 +3812,6 @@ INSERT INTO worked_on VALUES(3523, 918, 'Actress');  -- Sissy Spacek for Hot Rod
 INSERT INTO worked_on VALUES(3523, 2117, 'Actor');  -- Danny McBride for Hot Rod (2007)
 INSERT INTO worked_on VALUES(3523, 2118, 'Actor');  -- Will Arnett for Hot Rod (2007)
 INSERT INTO worked_on VALUES(3523, 2119, 'Actor');  -- Chris Parnell for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3525, 2120, 'Actor');  -- Kurt Russell for Breakdown (1997)
+INSERT INTO worked_on VALUES(3525, 2121, 'Actor');  -- J.T. Walsh for Breakdown (1997)
+INSERT INTO worked_on VALUES(3525, 1000, 'Actress');  -- Kathleen Quinlan for Breakdown (1997)

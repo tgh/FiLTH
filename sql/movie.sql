@@ -3522,3 +3522,5 @@ INSERT INTO movie VALUES (3521, 'Angel Heart', 1987, '***', 'X', 'USA', NULL);
 INSERT INTO movie VALUES (3522, 'The Square', 2013, '***', 'NR', DEFAULT, NULL);
 INSERT INTO movie VALUES (3523, 'Hot Rod', 2007, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3524, 'The Tale of Despereaux', 2008, '**½', 'G', 'England', NULL);
+INSERT INTO movie VALUES (3525, 'Breakdown', 1997, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3526, 'The Silence', 2010, '***½', 'NR', 'Germany', NULL);

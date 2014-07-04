@@ -2117,3 +2117,5 @@ INSERT INTO crew_person VALUES (2116, 'Hader', 'Bill', NULL, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (2117, 'McBride', 'Danny', NULL, 'Actor');  -- Actor: Danny McBride
 INSERT INTO crew_person VALUES (2118, 'Arnett', 'Will', NULL, 'Actor');  -- Actor: Will Arnett
 INSERT INTO crew_person VALUES (2119, 'Parnell', 'Chris', NULL, 'Actor');  -- Actor: Chris Parnell
+INSERT INTO crew_person VALUES (2120, 'Russell', 'Kurt', NULL, 'Actor');  -- Actor: Kurt Russell
+INSERT INTO crew_person VALUES (2121, 'Walsh', 'J.T.', NULL, 'Actor');  -- Actor: J.T. Walsh
