@@ -6506,3 +6506,5 @@ INSERT INTO tag_given_to VALUES(3531, 58);  -- The Monuments Men (2014) tagged w
 INSERT INTO tag_given_to VALUES(3532, 1);  -- Oslo, August 31st (2011) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(3532, 30);  -- Oslo, August 31st (2011) tagged with 'Depressing'
 INSERT INTO tag_given_to VALUES(3532, 58);  -- Oslo, August 31st (2011) tagged with 'Based-on-book'
+INSERT INTO tag_given_to VALUES(3533, 2);  -- Girls Just Want to Have Fun (1985) tagged with 'Comedy'
+INSERT INTO tag_given_to VALUES(3534, 2);  -- Tammy (2014) tagged with 'Comedy'

@@ -2136,3 +2136,6 @@ INSERT INTO crew_person VALUES (2135, 'Quinto', 'Zachary', NULL, 'Actor');  -- A
 INSERT INTO crew_person VALUES (2136, 'Saldana', 'Zoe', NULL, 'Actress');  -- Actress: Zoe Saldana
 INSERT INTO crew_person VALUES (2137, 'Bonneville', 'Hugh', NULL, 'Actor');  -- Actor: Hugh Bonneville
 INSERT INTO crew_person VALUES (2138, 'Balaban', 'Bob', NULL, 'Actor');  -- Actor: Bob Balaban
+INSERT INTO crew_person VALUES (2139, 'Parker', 'Sarah', 'Jessica', 'Actress');  -- Actress: Sarah Jessica Parker
+INSERT INTO crew_person VALUES (2140, 'McCarthy', 'Melissa', NULL, 'Actress');  -- Actress: Melissa McCarthy
+INSERT INTO crew_person VALUES (2141, 'Falcone', 'Ben', NULL, 'Director');  -- Director: Ben Falcone

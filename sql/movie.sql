@@ -3530,3 +3530,5 @@ INSERT INTO movie VALUES (3529, 'Edge of Tomorrow', 2014, '***', 'PG-13', 'USA',
 INSERT INTO movie VALUES (3530, 'Star Trek Into Darkness', 2013, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3531, 'The Monuments Men', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3532, 'Oslo, August 31st', 2011, '***½', 'NR', 'Norway', NULL);
+INSERT INTO movie VALUES (3533, 'Girls Just Want to Have Fun', 1985, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3534, 'Tammy', 2014, '**½', 'R', 'USA', NULL);
