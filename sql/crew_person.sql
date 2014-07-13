@@ -2139,3 +2139,8 @@ INSERT INTO crew_person VALUES (2138, 'Balaban', 'Bob', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2139, 'Parker', 'Sarah', 'Jessica', 'Actress');  -- Actress: Sarah Jessica Parker
 INSERT INTO crew_person VALUES (2140, 'McCarthy', 'Melissa', NULL, 'Actress');  -- Actress: Melissa McCarthy
 INSERT INTO crew_person VALUES (2141, 'Falcone', 'Ben', NULL, 'Director');  -- Director: Ben Falcone
+INSERT INTO crew_person VALUES (2142, 'Carell', 'Steve', NULL, 'Actor');  -- Actor: Steve Carell
+INSERT INTO crew_person VALUES (2143, 'Wiig', 'Kristen', NULL, 'Actress');  -- Actress: Kristen Wiig
+INSERT INTO crew_person VALUES (2144, 'Segel', 'Jason', NULL, 'Actor');  -- Actor: Jason Segel
+INSERT INTO crew_person VALUES (2145, 'Brand', 'Russell', NULL, 'Actor');  -- Actor: Russell Brand
+INSERT INTO crew_person VALUES (2146, 'James', 'Steve', NULL, 'Director');  -- Director: Steve James

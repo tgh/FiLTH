@@ -6508,3 +6508,8 @@ INSERT INTO tag_given_to VALUES(3532, 30);  -- Oslo, August 31st (2011) tagged w
 INSERT INTO tag_given_to VALUES(3532, 58);  -- Oslo, August 31st (2011) tagged with 'Based-on-book'
 INSERT INTO tag_given_to VALUES(3533, 2);  -- Girls Just Want to Have Fun (1985) tagged with 'Comedy'
 INSERT INTO tag_given_to VALUES(3534, 2);  -- Tammy (2014) tagged with 'Comedy'
+INSERT INTO tag_given_to VALUES(3535, 2);  -- Despicable Me (2010) tagged with 'Comedy'
+INSERT INTO tag_given_to VALUES(3535, 19);  -- Despicable Me (2010) tagged with 'Family'
+INSERT INTO tag_given_to VALUES(3535, 28);  -- Despicable Me (2010) tagged with 'Computer-Animated'
+INSERT INTO tag_given_to VALUES(3536, 12);  -- Life Itself (2014) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3536, 22);  -- Life Itself (2014) tagged with 'Biography'
