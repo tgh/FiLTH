@@ -2147,3 +2147,14 @@ INSERT INTO crew_person VALUES (2146, 'James', 'Steve', NULL, 'Director');  -- D
 INSERT INTO crew_person VALUES (2147, 'Dick', 'Kirby', NULL, 'Director');  -- Director: Kirby Dick
 INSERT INTO crew_person VALUES (2148, 'Gibney', 'Alex', NULL, 'Director');  -- Director: Alex Gibney
 INSERT INTO crew_person VALUES (2149, 'Ferguson', 'Charles', NULL, 'Director');  -- Director: Charles Ferguson
+INSERT INTO crew_person VALUES (2150, 'Evans', 'Chris', NULL, 'Actor');  -- Actor: Chris Evans
+INSERT INTO crew_person VALUES (2151, 'Johansson', 'Scarlett', NULL, 'Actress');  -- Actress: Scarlett Johansson
+INSERT INTO crew_person VALUES (2152, 'Ruffalo', 'Mark', NULL, 'Actor');  -- Actor: Mark Ruffalo
+INSERT INTO crew_person VALUES (2153, 'Hemsworth', 'Chris', NULL, 'Actor');  -- Actor: Chris Hemsworth
+INSERT INTO crew_person VALUES (2154, 'Skarsgard', 'Stellan', NULL, 'Actor');  -- Actor: Stellan Skarsgard
+INSERT INTO crew_person VALUES (2155, 'Bettany', 'Paul', NULL, 'Actor');  -- Actor: Paul Bettany
+INSERT INTO crew_person VALUES (2156, 'Schwartzman', 'Jason', NULL, 'Actor');  -- Actor: Jason Schwartzman
+INSERT INTO crew_person VALUES (2157, 'Quinn', 'Aidan', NULL, 'Actor');  -- Actor: Aidan Quinn
+INSERT INTO crew_person VALUES (2158, 'Ormond', 'Julia', NULL, 'Actress');  -- Actress: Julia Ormond
+INSERT INTO crew_person VALUES (2159, 'Thomas', 'Henry', NULL, 'Actor');  -- Actor: Henry Thomas
+INSERT INTO crew_person VALUES (2160, 'Zwick', 'Edward', NULL, 'Director');  -- Director: Edward Zwick

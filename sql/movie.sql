@@ -2704,7 +2704,7 @@ INSERT INTO movie VALUES (2703, 'Henry & June', 1990, 'not seen', 'NC-17', 'USA'
 INSERT INTO movie VALUES (2704, 'A River Runs Through It', 1992, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2705, 'The Lover', 1992, 'not seen', 'NC-17', 'France', DEFAULT);
 INSERT INTO movie VALUES (2706, 'Hoffa', 1992, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2707, 'Legends of the Fall', 1994, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2707, 'Legends of the Fall', 1994, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2708, 'Batman Forever', 1995, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2709, 'Shanghai Triad', 1995, 'not seen', 'R', 'China', DEFAULT);
 INSERT INTO movie VALUES (2710, 'Fly Away Home', 1996, 'not seen', 'PG', 'USA', DEFAULT);
@@ -3313,10 +3313,10 @@ INSERT INTO movie VALUES (3312, 'Enron: The Smartest Guys in the Room', 2005, '*
 INSERT INTO movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3321, 'Sicko', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3322, 'Taxi to the Dark Side', 2007, 'not seen', 'R', 'USA', DEFAULT);
@@ -3540,3 +3540,5 @@ INSERT INTO movie VALUES (3539, 'The Invisible War', 2012, '***½', 'NR', 'USA',
 INSERT INTO movie VALUES (3540, 'Food Matters', 2008, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3541, 'Tabloid', 2010, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3542, 'Buck', 2011, '***½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3543, 'The Avengers', 2012, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3544, 'The Grand Budapest Hotel', 2014, '***½', 'R', 'USA', NULL);
