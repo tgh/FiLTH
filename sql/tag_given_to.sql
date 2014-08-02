@@ -6513,3 +6513,6 @@ INSERT INTO tag_given_to VALUES(3535, 19);  -- Despicable Me (2010) tagged with 
 INSERT INTO tag_given_to VALUES(3535, 28);  -- Despicable Me (2010) tagged with 'Computer-Animated'
 INSERT INTO tag_given_to VALUES(3536, 12);  -- Life Itself (2014) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3536, 22);  -- Life Itself (2014) tagged with 'Biography'
+INSERT INTO tag_given_to VALUES(3537, 12);  -- Blackfish (2013) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3538, 12);  -- Food, Inc. (2008) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3539, 12);  -- The Invisible War (2012) tagged with 'Documentary'

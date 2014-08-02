@@ -3534,3 +3534,6 @@ INSERT INTO movie VALUES (3533, 'Girls Just Want to Have Fun', 1985, '**½', 'PG
 INSERT INTO movie VALUES (3534, 'Tammy', 2014, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3535, 'Despicable Me', 2010, '*½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3536, 'Life Itself', 2014, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3537, 'Blackfish', 2013, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3538, 'Food, Inc.', 2008, '***½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3539, 'The Invisible War', 2012, '***½', 'NR', 'USA', NULL);

@@ -605,7 +605,7 @@ Special Jury Prize:
     Anvil! The Story of Anvil
     Beaches of Agnes
     Collapse
-    Food, Inc.
+*   Food, Inc.
     Must Read After My Death
     Of Time and the City
 *   The September Issue
@@ -690,7 +690,7 @@ Also:
 * 01. The Interrupters
 * 02. Bill Cunningham New York
 * 03. Into the Abyss: A Tale of Death, A Tale of Life
-  04. Tabloid
+* 04. Tabloid
   05. Resurrect Dead: The Mystery of the Toynbee Tiles
 * 06. Cave of Forgotten Dreams
 * 07. Pina
@@ -699,14 +699,14 @@ Also:
   10. Louder than a Bomb
   11. Page One: Inside the New York Times
   12. One Lucky Elephant
-  13. Buck
+* 13. Buck
   14. Conan O'Brian Can't Stop
   15. Strongman
   16. Project Nim
   17. Waste Land
   18. Phunny Business: A Black Comedy
   19. Make Believe
-  20. Being Elmo: A Puppeteer’s Journey
+* 20. Being Elmo: A Puppeteer’s Journey
 
 2012
 * 01. Argo
