@@ -3309,7 +3309,7 @@ INSERT INTO movie VALUES (3308, 'The Weather Underground', 2002, 'not seen', 'NR
 INSERT INTO movie VALUES (3309, 'Tupac: Resurrection', 2003, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3310, 'Born into Brothels', 2004, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3311, 'Twist of Faith', 2004, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3312, 'Enron: The Smartest Guys in the Room', 2005, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3312, 'Enron: The Smartest Guys in the Room', 2005, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3537,3 +3537,5 @@ INSERT INTO movie VALUES (3536, 'Life Itself', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3537, 'Blackfish', 2013, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3538, 'Food, Inc.', 2008, '***½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3539, 'The Invisible War', 2012, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3540, 'Food Matters', 2008, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3541, 'Tabloid', 2010, '**½', 'R', 'USA', NULL);

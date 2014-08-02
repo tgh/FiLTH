@@ -2145,3 +2145,4 @@ INSERT INTO crew_person VALUES (2144, 'Segel', 'Jason', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2145, 'Brand', 'Russell', NULL, 'Actor');  -- Actor: Russell Brand
 INSERT INTO crew_person VALUES (2146, 'James', 'Steve', NULL, 'Director');  -- Director: Steve James
 INSERT INTO crew_person VALUES (2147, 'Dick', 'Kirby', NULL, 'Director');  -- Director: Kirby Dick
+INSERT INTO crew_person VALUES (2148, 'Gibney', 'Alex', NULL, 'Director');  -- Director: Alex Gibney

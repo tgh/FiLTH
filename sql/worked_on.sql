@@ -3865,3 +3865,5 @@ INSERT INTO worked_on VALUES(3535, 2144, 'Character Voice');  -- Jason Segel for
 INSERT INTO worked_on VALUES(3535, 2145, 'Character Voice');  -- Russell Brand for Despicable Me (2010)
 INSERT INTO worked_on VALUES(3536, 2146, 'Director');  -- Steve James for Life Itself (2014)
 INSERT INTO worked_on VALUES(3539, 2147, 'Director');  -- Kirby Dick for The Invisible War (2012)
+INSERT INTO worked_on VALUES(3312, 2148, 'Director');  -- Alex Gibney for Enron: The Smartest Guys in the Room (2005)
+INSERT INTO worked_on VALUES(3541, 332, 'Director');  -- Errol Morris for Tabloid (2010)

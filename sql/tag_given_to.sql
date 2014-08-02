@@ -6516,3 +6516,6 @@ INSERT INTO tag_given_to VALUES(3536, 22);  -- Life Itself (2014) tagged with 'B
 INSERT INTO tag_given_to VALUES(3537, 12);  -- Blackfish (2013) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3538, 12);  -- Food, Inc. (2008) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3539, 12);  -- The Invisible War (2012) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3312, 12);  -- Enron: The Smartest Guys in the Room (2005) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3540, 12);  -- Food Matters (2008) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3541, 12);  -- Tabloid (2010) tagged with 'Documentary'
