@@ -6519,3 +6519,8 @@ INSERT INTO tag_given_to VALUES(3539, 12);  -- The Invisible War (2012) tagged w
 INSERT INTO tag_given_to VALUES(3312, 12);  -- Enron: The Smartest Guys in the Room (2005) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3540, 12);  -- Food Matters (2008) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(3541, 12);  -- Tabloid (2010) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3542, 12);  -- Buck (2011) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3316, 12);  -- Jesus Camp (2006) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3319, 12);  -- No End in Sight (2007) tagged with 'Documentary'
+INSERT INTO tag_given_to VALUES(3319, 17);  -- No End in Sight (2007) tagged with 'War'
+INSERT INTO tag_given_to VALUES(3319, 24);  -- No End in Sight (2007) tagged with 'Political'

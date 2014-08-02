@@ -3867,3 +3867,4 @@ INSERT INTO worked_on VALUES(3536, 2146, 'Director');  -- Steve James for Life I
 INSERT INTO worked_on VALUES(3539, 2147, 'Director');  -- Kirby Dick for The Invisible War (2012)
 INSERT INTO worked_on VALUES(3312, 2148, 'Director');  -- Alex Gibney for Enron: The Smartest Guys in the Room (2005)
 INSERT INTO worked_on VALUES(3541, 332, 'Director');  -- Errol Morris for Tabloid (2010)
+INSERT INTO worked_on VALUES(3319, 2149, 'Director');  -- Charles Ferguson for No End in Sight (2007)
