@@ -105,6 +105,14 @@ def printTags():
     print '\n'
 
 
+def printTagsForMovie(mid):
+    pass
+    #get lines from tag_given_to file with given mid
+    #extract tids from lines
+    #for each tid, get the corresponding tag value from tagMap
+    #pretty print them
+
+
 def writeSql(movie, tid):
   log('writeSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie['mid']) + ', ' + str(tid) + ');')
   tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(movie['mid']) + ', ' + str(tid) + ');  -- ' + movie['title'] + ' (' + str(movie['year']) + ') tagged with \'' + tagMap[tid] + '\'\n')
@@ -176,6 +184,7 @@ def inquireMovie(movie):
     print '\n--------------------------------------------------------------------'
     print '\nMOVIE: [' + str(movie['mid']) + '] ' + movie['title'] + ' (' + str(movie['year']) + ')\n'
     printTags()
+    printTagsForMovie(movie['mid'])
     print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
     while(True):
       try:
