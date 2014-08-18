@@ -106,11 +106,32 @@ def printTags():
 
 
 def printTagsForMovie(mid):
-    pass
-    #get lines from tag_given_to file with given mid
-    #extract tids from lines
-    #for each tid, get the corresponding tag value from tagMap
-    #pretty print them
+  tgt = open(tagGivenToFilename, 'r')
+  relevantLines = []
+  tids = []
+  tags = []
+
+  #get lines from tag_given_to file with given movie id
+  while True:
+    line = tgt.readline()
+    #eof
+    if '' == line:
+      tgt.close()
+      break
+    #keep lines only containing the given movie id
+    if 'VALUES(' + str(mid) + ',' in line:
+      relevantLines.append(line.rstrip())
+  #extract tag ids
+  for line in relevantLines:
+    tid = re.search('VALUES \\((\d+),', line).group(1)
+    tids.append(tid)
+
+  print '\nThis movie is already tagged with: \n"
+
+  #for each tid, get the corresponding tag value from tagMap and print
+  for tid in tids[:-1]:
+    print tagMap[tid] + ' (' + str(tid) + '),',
+  print tagMap[tids[-1]] + ' (' + str(tid) + ')\n'
 
 
 def writeSql(movie, tid):
