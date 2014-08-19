@@ -3547,3 +3547,5 @@ INSERT INTO movie VALUES (3546, 'Which Way Home', 2009, '***½', 'NR', 'USA', NU
 INSERT INTO movie VALUES (3547, 'Farmageddon', 2011, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3548, 'Noah', 2014, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3549, 'Out of the Furnace', 2013, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3550, 'Despicable Me 2', 2013, '*½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA', NULL);
