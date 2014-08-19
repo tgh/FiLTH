@@ -45,7 +45,7 @@ def initTags():
   taglines = tagFile.readlines()
   for tagline in taglines:
     tid = re.search('VALUES \\((\d+),', tagline).group(1)
-    tag = re.search(", '([a-zA-Z\- ]+)'\\);", tagline).group(1)
+    tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
     log('initTags', 'Found tag: ' + tid + ' - ' + tag)
     tagMap[int(tid)] = tag
     if len(tag) > longestTagLength:
@@ -123,15 +123,15 @@ def printTagsForMovie(mid):
       relevantLines.append(line.rstrip())
   #extract tag ids
   for line in relevantLines:
-    tid = re.search('VALUES \\((\d+),', line).group(1)
-    tids.append(tid)
+    tid = re.search('VALUES\\(\d+, (\d+)', line).group(1)
+    tids.append(int(tid))
 
-  print '\nThis movie is already tagged with: \n"
+  sys.stdout.write('\nThis movie is already tagged with: ')
 
   #for each tid, get the corresponding tag value from tagMap and print
   for tid in tids[:-1]:
-    print tagMap[tid] + ' (' + str(tid) + '),',
-  print tagMap[tids[-1]] + ' (' + str(tid) + ')\n'
+    sys.stdout.write(tagMap[tid] + ' (' + str(tid) + '), ')
+  sys.stdout.write(tagMap[tids[-1]] + ' (' + str(tid) + ')\n\n')
 
 
 def writeSql(movie, tid):
