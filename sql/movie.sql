@@ -2337,7 +2337,7 @@ INSERT INTO movie VALUES (2336, 'Pickup on South Street', 1953, 'not seen', 'NR'
 INSERT INTO movie VALUES (2337, 'Torch Song', 1953, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2338, 'Hondo', 1953, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2339, 'Magnificent Obsession', 1954, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2340, 'Sabrina', 1954, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2340, 'Sabrina', 1954, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2341, 'Carmen Jones', 1954, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2342, 'Executive Suite', 1954, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2343, 'Broken Lance', 1954, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3546,3 +3546,4 @@ INSERT INTO movie VALUES (3545, 'The Lego Movie', 2014, '***', 'PG', 'USA', NULL
 INSERT INTO movie VALUES (3546, 'Which Way Home', 2009, '***½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3547, 'Farmageddon', 2011, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3548, 'Noah', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3549, 'Out of the Furnace', 2013, '***½', 'R', 'USA', NULL);
