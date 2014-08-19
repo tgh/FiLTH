@@ -2167,3 +2167,6 @@ INSERT INTO crew_person VALUES (2166, 'Handel', 'Ari', NULL, 'Screenwriter');  -
 INSERT INTO crew_person VALUES (2167, 'Watson', 'Emma', NULL, 'Actress');  -- Actress: Emma Watson
 INSERT INTO crew_person VALUES (2168, 'Cooper', 'Scott', NULL, 'Director');  -- Director: Scott Cooper
 INSERT INTO crew_person VALUES (2169, 'Ingelsby', 'Brad', NULL, 'Screenwriter');  -- Screenwriter: Brad Ingelsby
+INSERT INTO crew_person VALUES (2170, 'Lane', 'Nathan', NULL, 'Actor');  -- Actor: Nathan Lane
+INSERT INTO crew_person VALUES (2171, 'Azaria', 'Hank', NULL, 'Actor');  -- Actor: Hank Azaria
+INSERT INTO crew_person VALUES (2172, 'Randall', 'Tony', NULL, 'Actor');  -- Actor: Tony Randall

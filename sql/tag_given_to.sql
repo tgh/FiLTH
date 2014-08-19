@@ -6558,3 +6558,8 @@ INSERT INTO tag_given_to VALUES(3550, 35);  -- Despicable Me 2 (2013) tagged wit
 INSERT INTO tag_given_to VALUES(3551, 1);  -- Evidence of Blood (1998) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(3551, 8);  -- Evidence of Blood (1998) tagged with 'Mystery'
 INSERT INTO tag_given_to VALUES(3551, 58);  -- Evidence of Blood (1998) tagged with 'Based-on-book'
+INSERT INTO tag_given_to VALUES(3552, 2);  -- The Birdcage (1996) tagged with 'Comedy'
+INSERT INTO tag_given_to VALUES(3552, 60);  -- The Birdcage (1996) tagged with 'Based-on-play'
+INSERT INTO tag_given_to VALUES(3552, 57);  -- The Birdcage (1996) tagged with 'Remake'
+INSERT INTO tag_given_to VALUES(2812, 27);  -- Lover Come Back (1961) tagged with 'Romantic-Comedy'
+INSERT INTO tag_given_to VALUES(2812, 38);  -- Lover Come Back (1961) tagged with 'New York City'

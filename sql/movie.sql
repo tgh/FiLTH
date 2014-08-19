@@ -2809,7 +2809,7 @@ INSERT INTO movie VALUES (2808, 'Tunes of Glory', 1960, 'not seen', 'NR', 'Engla
 INSERT INTO movie VALUES (2809, 'The Angry Silence', 1960, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2810, 'Hiroshima, Mon Amour', 1960, 'not seen', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (2811, 'General Della Rovere', 1961, 'not seen', 'NR', 'Italy', DEFAULT);
-INSERT INTO movie VALUES (2812, 'Lover Come Back', 1961, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2812, 'Lover Come Back', 1961, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2813, 'Ballad of a Soldier', 1961, 'not seen', 'NR', 'USSR', DEFAULT);
 INSERT INTO movie VALUES (2814, 'That Touch of Mink', 1962, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2815, 'Freud', 1962, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3549,3 +3549,4 @@ INSERT INTO movie VALUES (3548, 'Noah', 2014, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3549, 'Out of the Furnace', 2013, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3550, 'Despicable Me 2', 2013, '*½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3552, 'The Birdcage', 1996, '***', 'R', 'USA', NULL);
