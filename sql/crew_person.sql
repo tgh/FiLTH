@@ -2158,3 +2158,8 @@ INSERT INTO crew_person VALUES (2157, 'Quinn', 'Aidan', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2158, 'Ormond', 'Julia', NULL, 'Actress');  -- Actress: Julia Ormond
 INSERT INTO crew_person VALUES (2159, 'Thomas', 'Henry', NULL, 'Actor');  -- Actor: Henry Thomas
 INSERT INTO crew_person VALUES (2160, 'Zwick', 'Edward', NULL, 'Director');  -- Director: Edward Zwick
+INSERT INTO crew_person VALUES (2161, 'Ferrell', 'Will', NULL, 'Actor');  -- Actor: Will Ferrell
+INSERT INTO crew_person VALUES (2162, 'Banks', 'Elizabeth', NULL, 'Actress');  -- Actress: Elizabeth Banks
+INSERT INTO crew_person VALUES (2163, 'Hill', 'Jonah', NULL, 'Actor');  -- Actor: Jonah Hill
+INSERT INTO crew_person VALUES (2164, 'Pratt', 'Chris', NULL, 'Actor');  -- Actor: Chris Pratt
+INSERT INTO crew_person VALUES (2165, 'Tatum', 'Channing', NULL, 'Actor');  -- Actor: Channing Tatum

@@ -6533,3 +6533,7 @@ INSERT INTO tag_given_to VALUES(2707, 1);  -- Legends of the Fall (1994) tagged 
 INSERT INTO tag_given_to VALUES(2707, 18);  -- Legends of the Fall (1994) tagged with 'Romance'
 INSERT INTO tag_given_to VALUES(2707, 40);  -- Legends of the Fall (1994) tagged with 'World War I'
 INSERT INTO tag_given_to VALUES(2707, 58);  -- Legends of the Fall (1994) tagged with 'Based-on-book'
+INSERT INTO tag_given_to VALUES(3545, 28);  -- Lego Movie (2014) tagged with 'Computer-Animated'
+INSERT INTO tag_given_to VALUES(3545, 2);  -- Lego Movie (2014) tagged with 'Comedy'
+INSERT INTO tag_given_to VALUES(3545, 11);  -- Lego Movie (2014) tagged with 'Adventure'
+INSERT INTO tag_given_to VALUES(3545, 5);  -- Lego Movie (2014) tagged with 'Fantasy'
