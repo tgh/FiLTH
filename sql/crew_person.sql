@@ -2170,3 +2170,6 @@ INSERT INTO crew_person VALUES (2169, 'Ingelsby', 'Brad', NULL, 'Screenwriter');
 INSERT INTO crew_person VALUES (2170, 'Lane', 'Nathan', NULL, 'Actor');  -- Actor: Nathan Lane
 INSERT INTO crew_person VALUES (2171, 'Azaria', 'Hank', NULL, 'Actor');  -- Actor: Hank Azaria
 INSERT INTO crew_person VALUES (2172, 'Randall', 'Tony', NULL, 'Actor');  -- Actor: Tony Randall
+INSERT INTO crew_person VALUES (2173, 'Firth', 'Colin', NULL, 'Actor');  -- Actor: Colin Firth
+INSERT INTO crew_person VALUES (2174, 'Weaver', 'Jacki', NULL, 'Actress');  -- Actress: Jackie Weaver
+INSERT INTO crew_person VALUES (2175, 'Atkins', 'Eileen', NULL, 'Actress');  -- Actress: Eileen Atkins

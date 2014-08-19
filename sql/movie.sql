@@ -3550,3 +3550,4 @@ INSERT INTO movie VALUES (3549, 'Out of the Furnace', 2013, '***½', 'R', 'USA',
 INSERT INTO movie VALUES (3550, 'Despicable Me 2', 2013, '*½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3552, 'The Birdcage', 1996, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3553, 'Magic in the Moonlight', 2014, '**½', 'PG-13', 'USA', NULL);
