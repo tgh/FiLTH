@@ -6537,3 +6537,4 @@ INSERT INTO tag_given_to VALUES(3545, 28);  -- Lego Movie (2014) tagged with 'Co
 INSERT INTO tag_given_to VALUES(3545, 2);  -- Lego Movie (2014) tagged with 'Comedy'
 INSERT INTO tag_given_to VALUES(3545, 11);  -- Lego Movie (2014) tagged with 'Adventure'
 INSERT INTO tag_given_to VALUES(3545, 5);  -- Lego Movie (2014) tagged with 'Fantasy'
+INSERT INTO tag_given_to VALUES(3546, 12);  -- Which Way Home (2009) tagged with 'Documentary'
