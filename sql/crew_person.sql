@@ -2163,3 +2163,5 @@ INSERT INTO crew_person VALUES (2162, 'Banks', 'Elizabeth', NULL, 'Actress');  -
 INSERT INTO crew_person VALUES (2163, 'Hill', 'Jonah', NULL, 'Actor');  -- Actor: Jonah Hill
 INSERT INTO crew_person VALUES (2164, 'Pratt', 'Chris', NULL, 'Actor');  -- Actor: Chris Pratt
 INSERT INTO crew_person VALUES (2165, 'Tatum', 'Channing', NULL, 'Actor');  -- Actor: Channing Tatum
+INSERT INTO crew_person VALUES (2166, 'Handel', 'Ari', NULL, 'Screenwriter');  -- Screenwriter: Ari Handel
+INSERT INTO crew_person VALUES (2167, 'Watson', 'Emma', NULL, 'Actress');  -- Actress: Emma Watson

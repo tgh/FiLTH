@@ -3544,3 +3544,5 @@ INSERT INTO movie VALUES (3543, 'The Avengers', 2012, '***', 'PG-13', 'USA', NUL
 INSERT INTO movie VALUES (3544, 'The Grand Budapest Hotel', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3545, 'The Lego Movie', 2014, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3546, 'Which Way Home', 2009, '***½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3547, 'Farmageddon', 2011, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3548, 'Noah', 2014, '***', 'PG-13', 'USA', NULL);
