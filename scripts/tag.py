@@ -12,6 +12,7 @@ import string
 import traceback
 import re
 
+#FILTH_PATH = '/home/thayes/Projects/FiLTH'
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 
 tagGivenToFilename = FILTH_PATH + '/sql/tag_given_to.sql'
@@ -105,7 +106,7 @@ def printTags():
     print '\n'
 
 
-def printTagsForMovie(mid):
+def printTagsForMovie(mid, title):
   tgt = open(tagGivenToFilename, 'r')
   relevantLines = []
   tids = []
@@ -126,12 +127,12 @@ def printTagsForMovie(mid):
     tid = re.search('VALUES\\(\d+, (\d+)', line).group(1)
     tids.append(int(tid))
 
-  sys.stdout.write('\nThis movie is already tagged with: ')
+  sys.stdout.write('\n"' + title + '" is already tagged with: ')
 
   #for each tid, get the corresponding tag value from tagMap and print
   for tid in tids[:-1]:
     sys.stdout.write(tagMap[tid] + ' (' + str(tid) + '), ')
-  sys.stdout.write(tagMap[tids[-1]] + ' (' + str(tid) + ')\n\n')
+  sys.stdout.write(tagMap[tids[-1]] + ' (' + str(tids[-1]) + ')\n\n')
 
 
 def writeSql(movie, tid):
@@ -205,7 +206,7 @@ def inquireMovie(movie):
     print '\n--------------------------------------------------------------------'
     print '\nMOVIE: [' + str(movie['mid']) + '] ' + movie['title'] + ' (' + str(movie['year']) + ')\n'
     printTags()
-    printTagsForMovie(movie['mid'])
+    printTagsForMovie(movie['mid'], movie['title'])
     print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "0,3,5").'
     while(True):
       try:
