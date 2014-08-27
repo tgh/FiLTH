@@ -205,7 +205,7 @@ INSERT INTO tag VALUES (204, 'based-on-radio-series', 59);
 INSERT INTO tag VALUES (205, 'based-on-tv-show', 59);
 INSERT INTO tag VALUES (206, 'based-on-stephen-king-work', 59);
 INSERT INTO tag VALUES (207, 'based-on-a-true-story', 58);
-INSERT INTO tag VALUES (208, 'music', 61)
+INSERT INTO tag VALUES (208, 'music', 61);
 INSERT INTO tag VALUES (209, 'filmmaking', 208);
 INSERT INTO tag VALUES (210, 'poetry', 208);
 INSERT INTO tag VALUES (211, 'television', 208);
