@@ -3551,3 +3551,5 @@ INSERT INTO movie VALUES (3550, 'Despicable Me 2', 2013, '*½', 'PG', 'USA', NUL
 INSERT INTO movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3552, 'The Birdcage', 1996, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3553, 'Magic in the Moonlight', 2014, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3554, 'Ernest & Celestine', 2012, '***½', 'PG', 'France', NULL);
+INSERT INTO movie VALUES (3555, 'Capitalism: A Love Story', 2009, '***½', 'R', 'USA', NULL);
