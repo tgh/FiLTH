@@ -12,8 +12,8 @@ import string
 import traceback
 import re
 
-#FILTH_PATH = '/home/thayes/Projects/FiLTH'
-FILTH_PATH = '/home/tgh/workspace/FiLTH'
+FILTH_PATH = '/home/thayes/Projects/FiLTH'
+#FILTH_PATH = '/home/tgh/workspace/FiLTH'
 
 tagGivenToFilename = FILTH_PATH + '/sql/tag_given_to.sql'
 tagGivenToFile = None
@@ -25,7 +25,7 @@ tempFilename = FILTH_PATH + '/temp/tagTemp.txt'
 tempFile = None
 movieFilename = FILTH_PATH + '/sql/movie.sql'
 movieFile = None
-tagMap = {}
+tagMap = {} # tid -> (tag, [tids])
 movies = []
 nextTid = 0
 longestTagLength = 0
@@ -40,6 +40,39 @@ def log(func, message):
 
 
 def initTags():
+  global tagMap
+
+  log('initTags', '>> Initializing tag map <<')
+  taglines = tagFile.readlines()
+  for tagline in taglines:
+    tid = re.search('VALUES \\((\d+),', tagline).group(1)
+    tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
+    log('initTags', 'Found tag: ' + tid + ' - ' + tag)
+
+    if (', NULL)' not in tagline):
+      parentId = re.search(', (\d+)\\);', tagline).group(1)
+      tagMap[int(parentId)][1].append(int(tid))
+    tagMap[int(tid)] = (tag, [])
+      
+
+def printTags():
+  tagsPrinted = []
+  for tid in tagMap:
+    printTagsHelper(tid, 0, tagsPrinted)
+
+
+def printTagsHelper(tid, level, tagsPrinted):
+  if tid not in tagsPrinted:
+    for i in range(0,level):
+      print '  ',
+    print str(tid) + ': ' + tagMap[tid][0]
+    tagsPrinted.append(tid)
+    if len(tagMap[tid][1]) > 0:
+      for childid in tagMap[tid][1]:
+        printTagsHelper(childid, level+1, tagsPrinted)
+
+
+def deprecatedInitTags():
   global tagMap, longestTagLength
 
   log('initTags', '>> Initializing tag map <<')
@@ -81,7 +114,7 @@ def initMovies(lastProcessed):
   log('initMovies', '>> movie map initialized <<')
 
 
-def printTags():
+def deprecatedPrintTags():
   padding = '  '
   for item in tagMap.items():
     key = item[0]
@@ -131,8 +164,8 @@ def printTagsForMovie(mid, title):
 
   #for each tid, get the corresponding tag value from tagMap and print
   for tid in tids[:-1]:
-    sys.stdout.write(tagMap[tid] + ' (' + str(tid) + '), ')
-  sys.stdout.write(tagMap[tids[-1]] + ' (' + str(tids[-1]) + ')\n\n')
+    sys.stdout.write(tagMap[tid][0] + ' (' + str(tid) + '), ')
+  sys.stdout.write(tagMap[tids[-1]][0] + ' (' + str(tids[-1]) + ')\n\n')
 
 
 def writeSql(movie, tid):
