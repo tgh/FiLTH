@@ -3557,3 +3557,6 @@ INSERT INTO movie VALUES (3557, 'Ip Man 2: Legend of the Grandmaster', 2010, '**
 INSERT INTO movie VALUES (3558, 'Mud', 2013, '****', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3559, 'The Grandmaster', 2013, '**½', 'PG-13', 'China', NULL);
 INSERT INTO movie VALUES (3560, 'Sabrina', 1995, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3561, 'Once Upon a Time in the West', 1968, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3562, 'Patriot Games', 1992, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3563, 'Reign on Me', 2007, '***', 'R', 'USA', NULL);

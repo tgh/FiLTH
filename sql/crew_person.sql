@@ -2176,3 +2176,12 @@ INSERT INTO crew_person VALUES (2175, 'Atkins', 'Eileen', NULL, 'Actress');  -- 
 INSERT INTO crew_person VALUES (2176, 'McConaughey', 'Matthew', NULL, 'Actor');  -- Actor: Matthew McConaughey
 INSERT INTO crew_person VALUES (2177, 'Nichols', 'Jeff', NULL, 'Director');  -- Director: Jeff Nichols
 INSERT INTO crew_person VALUES (2178, 'McKinnon', 'Ray', NULL, 'Actor');  -- Actor: Ray McKinnon
+INSERT INTO crew_person VALUES (2179, 'Donati', 'Sergio', NULL, 'Screenwriter');  -- Screenwriter: Sergio Donati
+INSERT INTO crew_person VALUES (2180, 'Cardinale', 'Claudia', NULL, 'Actress');  -- Actress: Claudia Cardinale
+INSERT INTO crew_person VALUES (2181, 'Bronson', 'Charles', NULL, 'Actor');  -- Actor: Charles Bronson
+INSERT INTO crew_person VALUES (2182, 'Noyce', 'Phillip', NULL, 'Director');  -- Director: Phillip Noyce
+INSERT INTO crew_person VALUES (2183, 'Sandler', 'Adam', NULL, 'Actor');  -- Actor: Adam Sandler
+INSERT INTO crew_person VALUES (2184, 'Smith', 'Jada', 'Pinkett', 'Actress');  -- Actress: Jada Pinkett Smith
+INSERT INTO crew_person VALUES (2185, 'Tyler', 'Liv', NULL, 'Actress');  -- Actress: Liv Tyler
+INSERT INTO crew_person VALUES (2186, 'Binder', 'Mike', NULL, 'Actor');  -- Actor: Mike Binder
+INSERT INTO crew_person VALUES (2187, 'Burrows', 'Saffron', NULL, 'Actress');  -- Actress: Saffron Burrows
