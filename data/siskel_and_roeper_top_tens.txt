@@ -539,7 +539,7 @@ Richard Roeper
 2012
 * 01. Zero Dark Thirty
 * 02. Argo
-  03. The Grey
+* 03. The Grey
 * 04. Life of Pi
 * 05. The Dark Knight Rises
 * 06. Django Unchained
@@ -550,8 +550,8 @@ Richard Roeper
 
 2013
 * American Hustle
-  Out of the Furnace
-  Mud
+* Out of the Furnace
+* Mud
 * Gravity
   The Spectacular Now
 * Captain Phillips

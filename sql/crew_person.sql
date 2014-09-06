@@ -2173,3 +2173,6 @@ INSERT INTO crew_person VALUES (2172, 'Randall', 'Tony', NULL, 'Actor');  -- Act
 INSERT INTO crew_person VALUES (2173, 'Firth', 'Colin', NULL, 'Actor');  -- Actor: Colin Firth
 INSERT INTO crew_person VALUES (2174, 'Weaver', 'Jacki', NULL, 'Actress');  -- Actress: Jackie Weaver
 INSERT INTO crew_person VALUES (2175, 'Atkins', 'Eileen', NULL, 'Actress');  -- Actress: Eileen Atkins
+INSERT INTO crew_person VALUES (2176, 'McConaughey', 'Matthew', NULL, 'Actor');  -- Actor: Matthew McConaughey
+INSERT INTO crew_person VALUES (2177, 'Nichols', 'Jeff', NULL, 'Director');  -- Director: Jeff Nichols
+INSERT INTO crew_person VALUES (2178, 'McKinnon', 'Ray', NULL, 'Actor');  -- Actor: Ray McKinnon

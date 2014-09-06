@@ -3313,10 +3313,10 @@ INSERT INTO movie VALUES (3312, 'Enron: The Smartest Guys in the Room', 2005, '*
 INSERT INTO movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3321, 'Sicko', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3322, 'Taxi to the Dark Side', 2007, 'not seen', 'R', 'USA', DEFAULT);
@@ -3552,4 +3552,6 @@ INSERT INTO movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA'
 INSERT INTO movie VALUES (3552, 'The Birdcage', 1996, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3553, 'Magic in the Moonlight', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3554, 'Ernest & Celestine', 2012, '***½', 'PG', 'France', NULL);
-INSERT INTO movie VALUES (3555, 'Capitalism: A Love Story', 2009, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3556, 'Ip Man', 2008, '***', 'R', 'China', NULL);
+INSERT INTO movie VALUES (3557, 'Ip Man 2: Legend of the Grandmaster', 2010, '**½', 'R', 'China', NULL);
+INSERT INTO movie VALUES (3558, 'Mud', 2013, '****', 'R', 'USA', NULL);
