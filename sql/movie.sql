@@ -3318,7 +3318,7 @@ INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG',
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3321, 'Sicko', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3321, 'Sicko', 2007, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3322, 'Taxi to the Dark Side', 2007, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3323, 'War Dance', 2007, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3324, 'The Betrayal (Nerakhoon)', 2008, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3555,3 +3555,5 @@ INSERT INTO movie VALUES (3554, 'Ernest & Celestine', 2012, '***½', 'PG', 'Fran
 INSERT INTO movie VALUES (3556, 'Ip Man', 2008, '***', 'R', 'China', NULL);
 INSERT INTO movie VALUES (3557, 'Ip Man 2: Legend of the Grandmaster', 2010, '**½', 'R', 'China', NULL);
 INSERT INTO movie VALUES (3558, 'Mud', 2013, '****', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3559, 'The Grandmaster', 2013, '**½', 'PG-13', 'China', NULL);
+INSERT INTO movie VALUES (3560, 'Sabrina', 1995, '***', 'PG', 'USA', NULL);
