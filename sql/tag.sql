@@ -293,3 +293,5 @@ INSERT INTO tag VALUES (292, 'post-traumatic-stress-disorder', 143);
 INSERT INTO tag VALUES (293, 'improvised', NULL);
 INSERT INTO tag VALUES (294, 'road-trip', NULL);
 INSERT INTO tag VALUES (295, 'food', NULL);
+INSERT INTO tag VALUES (296, 'family-disfunction', 263);
+INSERT INTO tag VALUES (297, 'war-on-terror', 17);

@@ -2189,3 +2189,6 @@ INSERT INTO crew_person VALUES (2188, 'Waits', 'Tom', NULL, 'Actor');  -- Actor:
 INSERT INTO crew_person VALUES (2189, 'Belluci', 'Monica', NULL, 'Actress');  -- Actress: Monica Belluci
 INSERT INTO crew_person VALUES (2190, 'Holmes', 'Katie', NULL, 'Actress');  -- Actress: Katie Holmes
 INSERT INTO crew_person VALUES (2191, 'Brydon', 'Rob', NULL, 'Actor');  -- Actor: Rob Brydon
+INSERT INTO crew_person VALUES (2192, 'Arquette', 'Patricia', NULL, 'Actress');  -- Actress: Patricia Arquette
+INSERT INTO crew_person VALUES (2193, 'Leoni', 'Tea', NULL, 'Actress');  -- Actress: Tea Leoni
+INSERT INTO crew_person VALUES (2194, 'Gordon', 'Seth', NULL, 'Director');  -- Director: Seth Gordon
