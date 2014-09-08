@@ -25,7 +25,7 @@ tempFilename = FILTH_PATH + '/temp/tagTemp.txt'
 tempFile = None
 movieFilename = FILTH_PATH + '/sql/movie.sql'
 movieFile = None
-tagMap = {} # tid -> (tag, [tids])
+tagMap = {} # tid -> (tag, [child tids])
 movies = []
 nextTid = 0
 longestTagLength = 0
@@ -209,12 +209,14 @@ def extractTagIds(userInput):
   return tids
 
 
-def addTag(tag):
+def addTag(tag, parentId):
   global tagMap, nextTid
 
-  log('addTag', 'writing sql: INSERT INTO tag VALUES(' + str(nextTid) + ', \'' + tag + '\');')
-  tagFile.write('INSERT INTO tag VALUES (' + str(nextTid) + ', \'' + tag + '\');\n')
-  tagMap[nextTid] = tag
+  log('addTag', 'writing sql: INSERT INTO tag VALUES(' + str(nextTid) + ', \'' + tag + '\', ' + str(parentId) + ');')
+  tagFile.write('INSERT INTO tag VALUES (' + str(nextTid) + ', \'' + tag + '\', ' + str(parentId) + ');\n')
+  if parentId != 'NULL':
+    tagMap[parentId][1].append(nextTid)
+  tagMap[nextTid] = (tag, [])
   nextTid = nextTid + 1
 
 
@@ -224,8 +226,21 @@ def addTagUI():
     while(True):
       confirm = raw_input('Is this what you wanted: ' + tag + ' (y/n)? ').lower()
       if 'y' == confirm:
-        log('addTagUI', 'User wants to add tag \'' + tag + '\'')
-        addTag(tag)
+        while(True):
+          parentId = raw_input('Parent tag id (just leave blank if none): ')
+          try:
+            if parentId == '':
+              parentId = 'NULL'
+              break
+            parentId = int(parentId)
+            if parentId < 1 or parentId > len(tagMap):
+              raise ValueError
+            break
+          except ValueError:
+            print '\n**Only numeric input between 1 and ' + len(tagMap) + '.'
+            continue
+        log('addTagUI', 'User wants to add tag \'' + tag + '\' with parent id: ' + str(parentId))
+        addTag(tag, parentId)
         return
       elif 'n' == confirm:
         break
