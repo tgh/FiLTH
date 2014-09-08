@@ -25,7 +25,7 @@ tempFilename = FILTH_PATH + '/temp/tagTemp.txt'
 tempFile = None
 movieFilename = FILTH_PATH + '/sql/movie.sql'
 movieFile = None
-tagMap = {} # tid -> (tag, [child tids])
+tagMap = {} # tid -> (tag, parent id, [child tids])
 movies = []
 nextTid = 0
 longestTagLength = 0
@@ -51,8 +51,10 @@ def initTags():
 
     if (', NULL)' not in tagline):
       parentId = re.search(', (\d+)\\);', tagline).group(1)
-      tagMap[int(parentId)][1].append(int(tid))
-    tagMap[int(tid)] = (tag, [])
+      tagMap[int(parentId)][2].append(int(tid))
+      tagMap[int(tid)] = (tag, int(parentId), [])
+    else:
+      tagMap[int(tid)] = (tag, None, [])
       
 
 def printTags():
@@ -67,8 +69,8 @@ def printTagsHelper(tid, level, tagsPrinted):
       print '  ',
     print str(tid) + ': ' + tagMap[tid][0]
     tagsPrinted.append(tid)
-    if len(tagMap[tid][1]) > 0:
-      for childid in tagMap[tid][1]:
+    if len(tagMap[tid][2]) > 0:
+      for childid in tagMap[tid][2]:
         printTagsHelper(childid, level+1, tagsPrinted)
 
 
@@ -170,7 +172,7 @@ def printTagsForMovie(mid, title):
 
 def writeSql(movie, tid):
   log('writeSql', 'writing sql: INSERT INTO tag_given_to VALUES(' + str(movie['mid']) + ', ' + str(tid) + ');')
-  tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(movie['mid']) + ', ' + str(tid) + ');  -- ' + movie['title'] + ' (' + str(movie['year']) + ') tagged with \'' + tagMap[tid] + '\'\n')
+  tagGivenToFile.write('INSERT INTO tag_given_to VALUES(' + str(movie['mid']) + ', ' + str(tid) + ');  -- ' + movie['title'] + ' (' + str(movie['year']) + ') tagged with \'' + tagMap[tid][0] + '\'\n')
 
 
 def closeFiles():
@@ -215,8 +217,10 @@ def addTag(tag, parentId):
   log('addTag', 'writing sql: INSERT INTO tag VALUES(' + str(nextTid) + ', \'' + tag + '\', ' + str(parentId) + ');')
   tagFile.write('INSERT INTO tag VALUES (' + str(nextTid) + ', \'' + tag + '\', ' + str(parentId) + ');\n')
   if parentId != 'NULL':
-    tagMap[parentId][1].append(nextTid)
-  tagMap[nextTid] = (tag, [])
+    tagMap[parentId][2].append(nextTid)
+    tagMap[nextTid] = (tag, parentId, [])
+  else:
+    tagMap[nextTid] = (tag, None, [])
   nextTid = nextTid + 1
 
 
@@ -237,7 +241,7 @@ def addTagUI():
               raise ValueError
             break
           except ValueError:
-            print '\n**Only numeric input between 1 and ' + len(tagMap) + '.'
+            print '\n**Only numeric values between 1 and ' + len(tagMap) + '.'
             continue
         log('addTagUI', 'User wants to add tag \'' + tag + '\' with parent id: ' + str(parentId))
         addTag(tag, parentId)
@@ -246,6 +250,21 @@ def addTagUI():
         break
       else:
         print '\n**Only \'y\' or \'n\' please.'
+
+
+def addParentTagIds(tids):
+  for tid in tids:
+    addParentTagIdsHelper(tid, tids)
+  return tids
+
+
+def addParentTagIdsHelper(tid, tids):
+  parentId = tagMap[tid][1]
+  if parentId != None:
+    if parentId not in tids:
+      tids.append(parentId)
+      log('addParentTagIdsHelper', 'Auto-adding parent tag \'' + tagMap[parentId][0] + '\' for tag \'' + tagMap[tid][0] + '\'')
+    addParentTagIdsHelper(parentId, tids)
 
 
 def inquireMovie(movie):
@@ -268,10 +287,11 @@ def inquireMovie(movie):
           printTags()
           continue
         tids = extractTagIds(response)
+        log('inquireMovie', 'user entered tag(s): ' + str(tids))
+        tids = addParentTagIds(tids)
       except ValueError:
         print '\n**Only numeric values from 1 to ' + str(len(tagMap))
         continue
-      log('inquireMovie', 'user entered tag(s): ' + str(tids))
       for tid in tids:
         writeSql(movie, tid)
       break
