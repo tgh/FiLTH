@@ -162,7 +162,7 @@ def printTagsForMovie(mid, title):
     tid = re.search('VALUES\\(\d+, (\d+)', line).group(1)
     tids.append(int(tid))
 
-  sys.stdout.write('\n"' + title + '" is already tagged with: ')
+  sys.stdout.write('\n"' + title + '" (' + str(mid) + ') is already tagged with: ')
 
   #for each tid, get the corresponding tag value from tagMap and print
   for tid in tids[:-1]:
