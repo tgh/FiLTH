@@ -3563,3 +3563,4 @@ INSERT INTO movie VALUES (3563, 'Reign on Me', 2007, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3567, 'Flirting with Disaster', 1996, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3568, 'The King of Kong: A Fistful of Quarters', 2007, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3569, 'The Unknown Known', 2013, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3570, 'The Wind That Shakes the Barley', 2006, '**½', 'NR', 'Ireland', NULL);

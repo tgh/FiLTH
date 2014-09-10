@@ -4029,3 +4029,5 @@ INSERT INTO worked_on VALUES(3567, 134, 'Actor');  -- Josh Brolin for Flirting w
 INSERT INTO worked_on VALUES(3568, 2194, 'Director');  -- Seth Gordon for The King of Kong: A Fistful of Quarters (2007)
 INSERT INTO worked_on VALUES(3569, 332, 'Director');  -- Errol Morris for The Unknown Known (2013)
 INSERT INTO worked_on VALUES(3569, 332, 'Screenwriter');  -- Errol Morris for The Unknown Known (2013)
+INSERT INTO worked_on VALUES(3570, 2195, 'Director');  -- Ken Loach for The Wind That Shakes the Barley (2006)
+INSERT INTO worked_on VALUES(3570, 2196, 'Actor');  -- Cillian Murphy for The Wind That Shakes the Barley (2006)

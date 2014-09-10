@@ -295,3 +295,4 @@ INSERT INTO tag VALUES (294, 'road-trip', NULL);
 INSERT INTO tag VALUES (295, 'food', NULL);
 INSERT INTO tag VALUES (296, 'family-disfunction', 263);
 INSERT INTO tag VALUES (297, 'war-on-terror', 17);
+INSERT INTO tag VALUES (298, 'ira', 217);
