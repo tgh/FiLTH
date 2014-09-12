@@ -29,6 +29,7 @@ tagMap = {} # tid -> (tag, parent id, [child tids])
 movies = []
 nextTid = 0
 longestTagLength = 0
+existingTagIds = [] # tag ids already given to the current movie being tagged
   
 
 
@@ -142,6 +143,8 @@ def deprecatedPrintTags():
 
 
 def printTagsForMovie(mid, title):
+  global existingTagIds
+
   tgt = open(tagGivenToFilename, 'r')
   relevantLines = []
   tids = []
@@ -161,6 +164,8 @@ def printTagsForMovie(mid, title):
   for line in relevantLines:
     tid = re.search('VALUES\\(\d+, (\d+)', line).group(1)
     tids.append(int(tid))
+
+  existingTagIds = tids
 
   sys.stdout.write('\n"' + title + '" (' + str(mid) + ') is already tagged with: ')
 
@@ -253,9 +258,10 @@ def addTagUI():
 
 
 def addParentTagIds(tids):
-  for tid in tids:
-    addParentTagIdsHelper(tid, tids)
-  return tids
+  newTidList = list(tids)
+  for tid in newTidList:
+    addParentTagIdsHelper(tid, newTidList)
+  return newTidList
 
 
 def addParentTagIdsHelper(tid, tids):
@@ -265,6 +271,14 @@ def addParentTagIdsHelper(tid, tids):
       tids.append(parentId)
       log('addParentTagIdsHelper', 'Auto-adding parent tag \'' + tagMap[parentId][0] + '\' for tag \'' + tagMap[tid][0] + '\'')
     addParentTagIdsHelper(parentId, tids)
+
+
+def removeDuplicates(tids):
+  ids = []
+  for tid in tids:
+    if tid not in ids:
+      ids.append(tid)
+  return ids
 
 
 def inquireMovie(movie):
@@ -280,20 +294,25 @@ def inquireMovie(movie):
         response = raw_input('Enter tags: ').lower()
         if response == 'q':
           quit(int(movie['mid'])-1)
-        if response == 'skip':
-          return
-        if response == 'add':
+        elif response == 'skip':
+          tids = addParentTagIds(existingTagIds)
+        elif response == 'add':
           addTagUI()
           printTags()
           continue
-        tids = extractTagIds(response)
-        log('inquireMovie', 'user entered tag(s): ' + str(tids))
-        tids = addParentTagIds(tids)
+        else:
+          tids = extractTagIds(response)
+          log('inquireMovie', 'user entered tag(s): ' + str(tids))
+          tids.append(existingTagIds)
+          tids = removeDuplicates(tids)
+          tids = addParentTagIds(tids)
       except ValueError:
         print '\n**Only numeric values from 1 to ' + str(len(tagMap))
         continue
       for tid in tids:
-        writeSql(movie, tid)
+        print tid
+        if tid not in existingTagIds:
+          writeSql(movie, tid)
       break
   except Exception as e:
     print '\n***FATAL ERROR: ' + str(e) + '\n'
