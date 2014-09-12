@@ -303,14 +303,13 @@ def inquireMovie(movie):
         else:
           tids = extractTagIds(response)
           log('inquireMovie', 'user entered tag(s): ' + str(tids))
-          tids.append(existingTagIds)
+          tids.extend(existingTagIds)
           tids = removeDuplicates(tids)
           tids = addParentTagIds(tids)
       except ValueError:
         print '\n**Only numeric values from 1 to ' + str(len(tagMap))
         continue
       for tid in tids:
-        print tid
         if tid not in existingTagIds:
           writeSql(movie, tid)
       break
