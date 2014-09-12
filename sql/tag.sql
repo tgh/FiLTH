@@ -298,3 +298,4 @@ INSERT INTO tag VALUES (297, 'war-on-terror', 17);
 INSERT INTO tag VALUES (298, 'ira', 217);
 INSERT INTO tag VALUES (299, 'future', 6);
 INSERT INTO tag VALUES (300, 'based-on-short-film', 59);
+INSERT INTO tag VALUES (301, 'french-new-wave', NULL);
