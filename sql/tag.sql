@@ -301,3 +301,5 @@ INSERT INTO tag VALUES (300, 'based-on-short-film', 59);
 INSERT INTO tag VALUES (301, 'french-new-wave', NULL);
 INSERT INTO tag VALUES (302, 'alien(s)', 6);
 INSERT INTO tag VALUES (303, 'alien-invasion', 302);
+INSERT INTO tag VALUES (304, 'old-age', NULL);
+INSERT INTO tag VALUES (305, 'hostage-situation', 25);
