@@ -6781,3 +6781,8 @@ INSERT INTO tag_given_to VALUES(47, 305);  -- Airheads (1994) tagged with 'hosta
 INSERT INTO tag_given_to VALUES(47, 25);  -- Airheads (1994) tagged with 'crime'
 INSERT INTO tag_given_to VALUES(48, 87);  -- Airplane! (1980) tagged with 'silly'
 INSERT INTO tag_given_to VALUES(48, 267);  -- Airplane! (1980) tagged with 'aviation'
+INSERT INTO tag_given_to VALUES(49, 267);  -- Airport (1970) tagged with 'aviation'
+INSERT INTO tag_given_to VALUES(50, 232);  -- Akira (1988) tagged with 'non-brief-sexual-female-nudity'
+INSERT INTO tag_given_to VALUES(50, 10);  -- Akira (1988) tagged with 'action'
+INSERT INTO tag_given_to VALUES(50, 230);  -- Akira (1988) tagged with 'non-sexual-nudity'
+INSERT INTO tag_given_to VALUES(50, 225);  -- Akira (1988) tagged with 'nudity'
