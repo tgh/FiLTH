@@ -20,9 +20,8 @@ class MovieTagger(object):
     self._tagSqlFile = None
     self._logFile = logFile
     self._openFiles(tagGivenToSqlFilePath, tagSqlFilePath)
-    self._tagMap = {}
+    self._tagMap = {}             #tid -> (tag, parent id, [child tids])
     self._initTagMap()
-    self._longestTagLength = self._determineLongestTagLength()
     self._nextTid = len(self._tagMap) + 1
 
 
@@ -51,21 +50,6 @@ class MovieTagger(object):
     ''' Initialize a map from tag ids to tag names
     '''
     pass #init tags from file
-
-
-  #----------------------------------------------------------------------------
-
-  def _determineLongestTagLength(self):
-    ''' Iterates over the tags and returns the length of the longest tag
-
-        Returns (int) : the length of the longest tag string
-    '''
-    longestLen = 0
-    for tag in self._tagMap.values():
-      if len(tag) > longestLen:
-        longestLen = len(tag)
-    
-    return longestLen
 
 
   #----------------------------------------------------------------------------
@@ -129,9 +113,6 @@ class MovieTagger(object):
     #add the tag to the map
     self._tagMap[self._nextTid] = tag
     print '\nTag "' + tag + '" added\n'
-    #update the longest tag length if applicable
-    if len(tag) > self._longestTagLength:
-      self._longestTagLength = len(tag)
     #update the next tid
     self._nextTid = self._nextTid + 1
 
@@ -195,31 +176,23 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def _printTags(self):
-    ''' Pretty-prints all tags with their tag ids.
-    '''
-    padding = '  '
-    for item in self._tagMap.items():
-      key = item[0]
-      tag = item[1]
+  def _printTags():
+    tagsPrinted = []
+    for tid in self._tagMap:
+      self._printTagsHelper(tid, 0, tagsPrinted)
 
-      if len(str(key)) == 1:
-        number = ' ' + str(key)
-      else:
-        number = str(key)
 
-      if key % 3 == 0:
-        print number + ' = ' + tag
-        continue
-      if key % 3 == 1:
-        sys.stdout.write(padding)
-      sys.stdout.write(number + ' = ' + tag)
-      longestLengthDiff = self._longestTagLength - len(tag)
-      for i in range(0,longestLengthDiff):
-        sys.stdout.write(' ')
-      sys.stdout.write(padding)
-    if len(self._tagMap) % 3 != 0:
-      print '\n'
+  #----------------------------------------------------------------------------
+
+  def _printTagsHelper(tid, level, tagsPrinted):
+    if tid not in tagsPrinted:
+      for i in range(0,level):
+        print '  ',
+      print str(tid) + ': ' + self._tagMap[tid][0]
+      tagsPrinted.append(tid)
+      if len(self._tagMap[tid][2]) > 0:
+        for childid in self._tagMap[tid][2]:
+          printTagsHelper(childid, level+1, tagsPrinted)
 
 
   #----------------------------------------------------------------------------
