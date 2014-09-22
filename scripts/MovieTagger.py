@@ -17,41 +17,23 @@ class MovieTagger(object):
     '''
     self._tagGivenToInserts = []  #sql insert statements for the tag_given_to db table
     self._tagInserts = []         #sql insert statements for the tag db table
-    self._tgtSqlFile = None
-    self._tagSqlFile = None
+    self._tagGivenToSqlFilePath = tagGivenToSqlFilePath
     self._logFile = logFile
-    self._openFiles(tagGivenToSqlFilePath, tagSqlFilePath)
     self._tagMap = {}             #tid -> (tag, parent id, [child tids])
-    self._initTagMap()
+    self._initTagMap(tagSqlFilePath)
     self._nextTid = len(self._tagMap) + 1
+    self._existingTagIds = []     #tids for movies already tagged
 
 
   #----------------------------------------------------------------------------
 
-  def _openFiles(self, tagGivenToSqlFilePath, tagSqlFilePath):
-    ''' Attempts to open the sql files to append to by the given file names
-
-        tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
-        tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
-
-        Raises : IOError when there is a problem opening one of the files
-    '''
-    try:
-      self._tgtSqlFile = open(tagGivenToSqlFilePath, 'w')
-      self._tagSqlFile = open(tagSqlFilePath, 'w')
-    except IOError as e:
-      self._log('_openFiles', '**ERROR: opening file: ' + str(e) + '.\n')
-      sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
-      self.close()
-
-
-  #----------------------------------------------------------------------------
-
-  def _initTagMap(self):
+  def _initTagMap(self, tagSqlFilePath):
     ''' Initialize the tag map (tag id -> (tag name, parent tag id, [child tag ids]) )
     '''
     self._log('_initTagMap', '>> Initializing tag map <<')
-    taglines = self._tagSqlFile.readlines()
+    tagSqlFile = open(tagSqlFilePath, 'r')
+    taglines = tagSqlFile.readlines()
+    tagSqlFile.close()
     for tagline in taglines:
       tid = re.search('VALUES \\((\d+),', tagline).group(1)
       tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
@@ -180,34 +162,47 @@ class MovieTagger(object):
                Exception when an unknown error occurs
     '''
     self._log('_promptUserForTag', '*** Tagging movie: "' + str(title) + '" (' + str(year) + ') ***')
-    self._printTags()
-    print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
     while(True):
-      try:
-        response = raw_input('Enter tags: ').lower()
-        if response == 'q':
-          raise QuitException('user quit')
-        if response == 'skip':
-          self._log('_promptUserForTag', 'User is skipping \'' + str(title) + '\'')
-          print '\nSkipping...\n'
-          return
-        if response == 'add':
-          self._promptUserAddingTag()
-          self._printTags()
-          continue
-        tids = self._extractTagIds(response)
-      except ValueError:
-        print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
+      print '\n--------------------------------------------------------------------'
+      print '\nMOVIE: [' + str(mid) + '] ' + title + ' (' + str(year) + ')\n'
+      self._printTags()
+      self._printTagsForMovie(mid, title)
+      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
+      response = raw_input('Enter tags: ').lower()
+      if response == 'q':
+        raise QuitException('user quit')
+      elif response == 'skip':
+        self._log('_promptUserForTag', 'User is skipping \'' + str(title) + '\' (' + str(year) + ')')
+        print '\nSkipping...\n'
+        if len(self._existingTagIds) > 0:
+          tids = self._addParentTagIds(self._existingTagIds)
+          for tid in tids:
+            if tid not in self._existingTagIds:
+              self._createTagGivenToSql(mid, title, year, tid)
+        return
+      elif response == 'add':
+        self._promptUserAddingTag()
         continue
-      self._log('_promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t][0]), tids)))
-      for tid in tids:
-        self._createTagGivenToSql(mid, title, year, tid)
-      break
+      else:
+        try:
+          tids = self._extractTagIds(response)
+        except ValueError:
+          print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
+          raw_input('HIT ANY KEY TO CONTINUE')
+          continue
+        self._log('_promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t][0]), tids)))
+        tids.extend(self._existingTagIds)
+        tids = self._removeDuplicates(tids)
+        tids = self._addParentTagIds(tids)
+        for tid in tids:
+          if tid not in self._existingTagIds:
+            self._createTagGivenToSql(mid, title, year, tid)
+        break
 
 
   #----------------------------------------------------------------------------
 
-  def _printTags():
+  def _printTags(self):
     tagsPrinted = []
     for tid in self._tagMap:
       self._printTagsHelper(tid, 0, tagsPrinted)
@@ -215,7 +210,7 @@ class MovieTagger(object):
 
   #----------------------------------------------------------------------------
 
-  def _printTagsHelper(tid, level, tagsPrinted):
+  def _printTagsHelper(self, tid, level, tagsPrinted):
     if tid not in tagsPrinted:
       for i in range(0,level):
         print '  ',
@@ -223,28 +218,101 @@ class MovieTagger(object):
       tagsPrinted.append(tid)
       if len(self._tagMap[tid][2]) > 0:
         for childid in self._tagMap[tid][2]:
-          printTagsHelper(childid, level+1, tagsPrinted)
+          self._printTagsHelper(childid, level+1, tagsPrinted)
 
 
   #----------------------------------------------------------------------------
 
-  def flush(self):
-    ''' Writes out all sql statements to their respective files.
-    '''
-    for statement in self._tagGivenToInserts:
-      self._tgtSqlFile.write(statement + '\n')
+
+  def _printTagsForMovie(self, mid, title):
+    tagGivenToFile = open(self._tagGivenToSqlFilePath, 'r')
+    relevantLines = []
+    tids = []
+    tags = []
+
+    #get lines from tag_given_to file with given movie id
+    while True:
+      line = tagGivenToFile.readline()
+      #eof
+      if '' == line:
+        tagGivenToFile.close()
+        break
+      #keep lines only containing the given movie id
+      if 'VALUES(' + str(mid) + ',' in line:
+        relevantLines.append(line.rstrip())
+    #extract tag ids
+    for line in relevantLines:
+      tid = re.search('VALUES\\(\d+, (\d+)', line).group(1)
+      self._log('_printTagsForMovie', 'found existing tag for movie (' + str(mid) + ': "' + title + '"): "' + self._tagMap[int(tid)][0] + '" (' + str(tid) + ')')
+      tids.append(int(tid))
+
+    self._existingTagIds = tids
+
+    if len(tids) > 0:
+      sys.stdout.write('\n"' + title + '" (' + str(mid) + ') is already tagged with: ')
+
+      #for each tid, get the corresponding tag value from tagMap and print
+      for tid in tids[:-1]:
+        sys.stdout.write(self._tagMap[tid][0] + ' (' + str(tid) + '), ')
+      sys.stdout.write(self._tagMap[tids[-1]][0] + ' (' + str(tids[-1]) + ')\n\n')
+
+
+  #----------------------------------------------------------------------------
+
+  def _addParentTagIds(self, tids):
+    newTidList = list(tids)
+    for tid in newTidList:
+      self._addParentTagIdsHelper(tid, newTidList)
+    return newTidList
+
+
+  #----------------------------------------------------------------------------
+
+  def _addParentTagIdsHelper(self, tid, tids):
+    parentId = self._tagMap[tid][1]
+    if parentId != None:
+      if parentId not in tids:
+        tids.append(parentId)
+        self._log('_addParentTagIdsHelper', 'Auto-adding parent tag \'' + self._tagMap[parentId][0] + '\' for tag \'' + self._tagMap[tid][0] + '\'')
+      self._addParentTagIdsHelper(parentId, tids)
+
+
+  #----------------------------------------------------------------------------
+
+  def _removeDuplicates(self, tids):
+    ids = []
+    for tid in tids:
+      if tid not in ids:
+        ids.append(tid)
+    return ids
+
+
+  #----------------------------------------------------------------------------
+
+  def writeTagInsertsToFile(self, tagSqlFile):
     for statement in self._tagInserts:
-      self._tagSqlFile.write(statement + '\n')
+      tagSqlFile.write(statement + '\n')
+    self._tagInserts = []
+
+
+  #----------------------------------------------------------------------------
+
+  def writeTagGivenToInsertsToFile(self, tgtSqlFile):
+    for statement in self._tagGivenToInserts:
+      tgtSqlFile.write(statement + '\n')
+    self._tagGivenToInserts = []
+
+
+  #----------------------------------------------------------------------------
+
+  def hasInserts(self):
+    return len(self._tagGivenToInserts) > 0 or len(self._tagInserts) > 0
 
 
   #----------------------------------------------------------------------------
 
   def close(self):
-    ''' Closes the sql files properly and empties the tag list and tag map.
+    ''' Empties the tag list and tag map.
     '''
     self._tags = []
     self._tagMap = {}
-    if self._tgtSqlFile:
-      self._tgtSqlFile.close()
-    if self._tagSqlFile:
-      self._tagSqlFile.close()
