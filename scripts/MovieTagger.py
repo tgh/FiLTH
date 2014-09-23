@@ -11,8 +11,8 @@ class MovieTagger(object):
   def __init__(self, tagGivenToSqlFilePath, tagSqlFilePath, logFile):
     ''' Initialization
 
-        tagGivenToSqlFilePath (string) : name of the sql file to write inserts for the tag_given_to db table
-        tagSqlFilePath (string) : name of the sql file to write inserts for the tag db table
+        tagGivenToSqlFilePath (string) : name of the sql file from which to get tags already given to movies
+        tagSqlFilePath (string) : name of the sql file from which to init the tag map
         logFile (file) : file to write log statements to
     '''
     self._tagGivenToInserts = []  #sql insert statements for the tag_given_to db table
@@ -134,11 +134,11 @@ class MovieTagger(object):
                 parentId = 'NULL'
                 break
               parentId = int(parentId)
-              if parentId < 1 or parentId > len(tagMap):
+              if parentId < 1 or parentId > len(self._tagMap):
                 raise ValueError
               break
             except ValueError:
-              print '\n**Only numeric values between 1 and ' + len(tagMap) + '.'
+              print '\n**Only numeric values between 1 and ' + len(self._tagMap) + '.'
               continue
           self._log('_promptUserAddingTag', 'User wants to add tag \'' + tag + '\' with parent id: ' + str(parentId))
           self._addTag(tag, parentId)
@@ -163,9 +163,9 @@ class MovieTagger(object):
     '''
     self._log('_promptUserForTag', '*** Tagging movie: "' + str(title) + '" (' + str(year) + ') ***')
     while(True):
+      self._printTags()
       print '\n--------------------------------------------------------------------'
       print '\nMOVIE: [' + str(mid) + '] ' + title + ' (' + str(year) + ')\n'
-      self._printTags()
       self._printTagsForMovie(mid, title)
       print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
       response = raw_input('Enter tags: ').lower()
