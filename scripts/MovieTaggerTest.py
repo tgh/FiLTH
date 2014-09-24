@@ -2,7 +2,6 @@
 
 from MovieTagger import MovieTagger
 from QuitException import QuitException
-import imp
 import re
 
 def initMovies(lastProcessed):
@@ -34,11 +33,14 @@ def initMovies(lastProcessed):
 if __name__ == '__main__':
   log = open('/home/thayes/Projects/FiLTH/logs/MovieTaggerTest.log', 'w')
   tagger = MovieTagger('/home/thayes/Projects/FiLTH/sql/tag_given_to.sql', '/home/thayes/Projects/FiLTH/sql/tag.sql', log)
-  movies = initMovies(100)
+  #movies = initMovies(100)
   try:
-    for m in movies:
-      tagger.promptUserForTag(m['mid'], m['title'], m['year'])
+    #for m in movies:
+    #  tagger.promptUserForTag(m['mid'], m['title'], m['year'])
+    tagger.promptUserForTag(999999, 'Foo', 1999)
   except (QuitException, KeyboardInterrupt):
+    print '\nQUITTING\n'
+  finally:
     if tagger.hasInserts():
        while True:
          response = raw_input('\nThere are still unwritten sql insert statements. Write them out? ').lower()

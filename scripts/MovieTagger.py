@@ -73,7 +73,7 @@ class MovieTagger(object):
     map(string.strip, tids)
     tids = map(int, tids)
     for tid in tids:
-      if tid < 1 or tid >= len(self._tagMap):
+      if tid < 1 or tid > len(self._tagMap):
         raise ValueError
     return tids
 
@@ -188,7 +188,7 @@ class MovieTagger(object):
           tids = self._extractTagIds(response)
         except ValueError:
           print '\n**Only numeric values from 1 to ' + str(len(self._tagMap))
-          raw_input('HIT ANY KEY TO CONTINUE')
+          raw_input('HIT ENTER KEY TO CONTINUE')
           continue
         self._log('_promptUserForTag', 'user entered tag(s): ' + str(map(lambda t : (t, self._tagMap[t][0]), tids)))
         tids.extend(self._existingTagIds)
