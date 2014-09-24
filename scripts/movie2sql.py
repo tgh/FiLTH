@@ -15,6 +15,8 @@ from getopt import GetoptError
 
 FILTH_PATH = '/home/tgh/workspace/FiLTH'
 MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
+TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
+TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
 
 _models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
@@ -347,7 +349,7 @@ if __name__ == '__main__':
 
     #setup a tagger and crew person handler only if in update mode
     if isUpdate:
-      tagger = MovieTagger(_tagGivenToSqlFile, _tagSqlFile, _log, _models)
+      tagger = MovieTagger(TAG_GIVEN_TO_SQL_FILE, TAG_SQL_FILE, _log)
       crewHandler = MovieCrew(_workedOnSqlFile, _crewPersonSqlFile, _log, _models)
       #determine what mid value will be for the next new movie (XXX: this is assuming there is data in the Movie table in the db--do we want to assume that?)
       _nextMid = getNextMid()
@@ -397,7 +399,12 @@ if __name__ == '__main__':
     for insertStatement in inserts:
       f.write(insertStatement)
     if (tagger):
-      tagger.flush()
+      tgtf = open(_tagGivenToSqlFile, 'w')
+      tagf = open(_tagSqlFile, 'w')
+      tagger.writeTagInsertsToFile(tagf)
+      tagger.writeTagGivenToInsertsToFile(tgtf)
+      tgtf.close()
+      tagf.close()
     if (crewHandler):
       crewHandler.flush()
 
