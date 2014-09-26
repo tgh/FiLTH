@@ -2000,7 +2000,7 @@ INSERT INTO movie VALUES (1999, 'Separate Tables', 1958, 'not seen', 'NR', 'USA'
 INSERT INTO movie VALUES (2000, 'Room at the Top', 1959, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2001, 'The Diary of Anne Frank', 1959, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2002, 'The Nun''s Story', 1959, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2003, 'Anatomy of a Murder', 1959, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2003, 'Anatomy of a Murder', 1959, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2004, 'The Sundowners', 1960, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2005, 'The Alamo', 1960, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2006, 'Sons and Lovers', 1960, 'not seen', 'NR', 'England', DEFAULT);
@@ -2033,7 +2033,7 @@ INSERT INTO movie VALUES (2032, 'Sounder', 1972, 'not seen', 'G', 'USA', DEFAULT
 INSERT INTO movie VALUES (2033, 'The Emigrants', 1971, 'not seen', 'PG', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (2034, 'The Exorcist', 1973, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2035, 'Bound for Glory', 1976, 'not seen', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2036, 'An Unmarried Woman', 1978, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2036, 'An Unmarried Woman', 1978, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2037, 'A Passage to India', 1984, '***', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2038, 'Brokeback Mountain', 2005, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2039, 'Milk', 2008, 'not seen', 'R', 'USA', DEFAULT);
@@ -3564,3 +3564,4 @@ INSERT INTO movie VALUES (3567, 'Flirting with Disaster', 1996, '**½', 'R', 'US
 INSERT INTO movie VALUES (3568, 'The King of Kong: A Fistful of Quarters', 2007, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3569, 'The Unknown Known', 2013, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3570, 'The Wind That Shakes the Barley', 2006, '**½', 'NR', 'Ireland', NULL);
+INSERT INTO movie VALUES (3571, 'Hank: 5 Years from the Brink', 2013, '***', 'NR', 'USA', NULL);

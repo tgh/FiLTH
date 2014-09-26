@@ -4031,3 +4031,7 @@ INSERT INTO worked_on VALUES(3569, 332, 'Director');  -- Errol Morris for The Un
 INSERT INTO worked_on VALUES(3569, 332, 'Screenwriter');  -- Errol Morris for The Unknown Known (2013)
 INSERT INTO worked_on VALUES(3570, 2195, 'Director');  -- Ken Loach for The Wind That Shakes the Barley (2006)
 INSERT INTO worked_on VALUES(3570, 2196, 'Actor');  -- Cillian Murphy for The Wind That Shakes the Barley (2006)
+INSERT INTO worked_on VALUES(2036, 1751, 'Director');  -- Paul Mazursky for An Unmarried Woman (1978)
+INSERT INTO worked_on VALUES(2003, 1090, 'Director');  -- Otto Preminger for Anatomy of a Murder (1959)
+INSERT INTO worked_on VALUES(3571, 2197, 'Director');  -- Joe Berlinger for Hank: 5 Years from the Brink (2013)
+INSERT INTO worked_on VALUES(3571, 2197, 'Screenwriter');  -- Joe Berlinger for Hank: 5 Years from the Brink (2013)
