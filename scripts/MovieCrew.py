@@ -23,7 +23,7 @@ class MovieCrew(object):
     self._workedOnSqlFilePath = workedOnSqlFilePath
     self._positions = []
     self._initPositions()
-    self._crewMap = {}
+    self._crewMap = {}            # full name (string) -> cid (int)
     self._initCrewMap(crewSqlFilePath)
     self._nextCid = len(self._crewMap) + 1
 
@@ -48,7 +48,7 @@ class MovieCrew(object):
     crewSqlFile.close()
     for line in lines:
       matcher = re.search("(\d+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ", line)
-      cid = matcher.group(1)
+      cid = int(matcher.group(1))
       lastName = self._sanitizeName(matcher.group(2))
       firstName = self._sanitizeName(matcher.group(3))
       middleName = self._sanitizeName(matcher.group(4))
@@ -261,7 +261,8 @@ class MovieCrew(object):
 
 
   #----------------------------------------------------------------------------
-
+  #PUBLIC
+  #
   def promptUserForCrewPerson(self, mid, title, year):
     ''' Wrapper for prompting user for crew persons for a new movie
         
@@ -272,6 +273,9 @@ class MovieCrew(object):
         Raises : QuitException when user quits
                  Exception when an unknown error occurs
     '''
+    # print any existing worked-on relationships for this movie
+    self._printWorkedOnRelationshipsForMovie(mid, title, year)
+
     # does the user even want to add crew members?
     while True:
       response = raw_input('\nAre there any crew members that you want to associate with this movie (y/n/quit)? ')
@@ -284,6 +288,7 @@ class MovieCrew(object):
         self._quit('promptUserForCrewPerson')
         return
       break
+
     # prompt for crew members
     while True:
       self._promptUserForCrewPersonHelper(mid, title, year)
@@ -296,6 +301,31 @@ class MovieCrew(object):
         if response.lower() == 'y':
           break
         return
+
+
+  #----------------------------------------------------------------------------
+
+  def _printWorkedOnRelationshipsForMovie(self, mid, title, year):
+    workedOnSqlFile = open(self._workedOnSqlFilePath, 'r')
+    lines = workedOnSqlFile.readlines()
+    workedOnSqlFile.close()
+
+    cidsAndPositions = {}
+
+    for line in lines:
+      currentMid = int(re.search('VALUES\\((\d+),', line).group(1))
+      if mid == currentMid:
+        matcher = re.search('VALUES\\(\d+, (\d+), \'([a-zA-Z ]+)\'', line)
+        cid = int(matcher.group(1))
+        position = matcher.group(2)
+        cidsAndPositions[cid] = position
+    if len(cidsAndPositions) > 0:
+      print '\n--------------------------------------------------------------------'
+      print 'Existing worked-on relationships for ' + title + ' (' + str(year) + '):\n'
+      for existingCid, position in cidsAndPositions.iteritems():
+        for name, currentCid in self._crewMap.iteritems():
+          if existingCid == currentCid:
+            print ' - ' + name + ' (' + position + ')'
 
 
   #----------------------------------------------------------------------------
@@ -358,7 +388,8 @@ class MovieCrew(object):
 
 
   #----------------------------------------------------------------------------
-
+  #PUBLIC
+  #
   def writeCrewInsertsToFile(self, crewSqlFile):
     for statement in self._crewInserts:
       crewSqlFile.write(statement + '\n')
@@ -366,7 +397,8 @@ class MovieCrew(object):
 
 
   #----------------------------------------------------------------------------
-
+  #PUBLIC
+  #
   def writeWorkedOnInsertsToFile(self, workedOnSqlFile):
     for statement in self._workedOnInserts:
       workedOnSqlFile.write(statement + '\n')
@@ -374,13 +406,15 @@ class MovieCrew(object):
 
 
   #----------------------------------------------------------------------------
-
+  #PUBLIC
+  #
   def hasInserts(self):
     return len(self._crewInserts) > 0 or len(self._workedOnInserts) > 0
 
 
   #----------------------------------------------------------------------------
-
+  #PUBLIC
+  #
   def close(self):
     self._workedOnInserts = []
     self._crewInserts = []
