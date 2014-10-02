@@ -171,9 +171,9 @@ class MovieCrew(object):
           print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
           continue
         if response.lower() == 'n':
-          print '\nLet\'s try this again, then...'
-          self.promptUserForCrewPerson(mid, title, year)
-          return
+          raw_input('\nTry entering the name again.\nHIT ENTER TO CONTINUE')
+          #self.promptUserForCrewPerson(mid, title, year)
+          return False
         #user entered 'y'
         break
       #end while
@@ -211,6 +211,8 @@ class MovieCrew(object):
     for pid in pids:
       self._createInsertStatementForWorkedOn(mid, cid, self._positions[pid-1], name, title, year)
     #end for
+
+    return  True
 
 
   #----------------------------------------------------------------------------
@@ -291,7 +293,9 @@ class MovieCrew(object):
 
     # prompt for crew members
     while True:
-      self._promptUserForCrewPersonHelper(mid, title, year)
+      okToProceed = self._promptUserForCrewPersonHelper(mid, title, year)
+      if not okToProceed:
+        continue
       while True:
         response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
         self._checkForQuit(response, 'promptUserForCrewPerson')
