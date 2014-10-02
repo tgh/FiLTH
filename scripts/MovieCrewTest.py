@@ -2,17 +2,31 @@
 
 from MovieCrew import MovieCrew
 from QuitException import QuitException
-import imp
 
 if __name__ == '__main__':
-  models = imp.load_source('models', '/home/tgh/workspace/FiLTH/src/python/models.py')
-  log = open('/home/tgh/workspace/FiLTH/logs/MovieCrewTest.log', 'w')
+  log = open('/home/thayes/Projects/FiLTH/logs/MovieCrewTest.log', 'w')
 
-  movieCrew = MovieCrew('/home/tgh/workspace/FiLTH/temp/wosql_temp.sql', '/home/tgh/workspace/FiLTH/temp/crewsql_temp.sql', log, models)
-  movies = models.Movie.query.all()
+  movieCrew = None
   try:
-    for movie in movies:
-      movieCrew.promptUserForCrewPerson(movie.mid, movie.title, movie.year)
+    movieCrew = MovieCrew('/home/thayes/Projects/FiLTH/sql/worked_on.sql', '/home/thayes/Projects/FiLTH/sql/crew_person.sql', log)
+    movieCrew.promptUserForCrewPerson(99999, 'Foo', 2000)
   except QuitException:
-    movieCrew.flush()
-    movieCrew.close()
+    print '\nQUITTING\n'
+  except Exception:
+    print '\n***EXCEPTION!***\n'
+  finally:
+    if movieCrew:
+      if movieCrew.hasInserts():
+        while True:
+          response = raw_input('\nThere are still unwritten sql insert statements. Write them out? ').lower()
+          if response not in ['y','n']:
+            print "Only 'y'/'n'\n"
+            continue
+          if response == 'y':
+            movieCrew.writeCrewInsertsToFile(open('/home/thayes/Projects/FiLTH/sql/crew_person.sql', 'a'))
+            movieCrew.writeWorkedOnInsertsToFile(open('/home/thayes/Projects/FiLTH/sql/worked_on.sql', 'a'))
+            break
+          else:
+            break
+      movieCrew.close()
+    log.close()

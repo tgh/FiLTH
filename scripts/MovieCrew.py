@@ -2,67 +2,67 @@
 
 import sys
 import string
+import re
 from QuitException import QuitException
-from sqlalchemy.orm.exc import NoResultFound
+
+POSITIONS_FILE_PATH = "/home/thayes/Projects/FiLTH/sql/position.sql"
 
 
 class MovieCrew(object):
 
-  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile, models):
+  def __init__(self, workedOnSqlFilePath, crewSqlFilePath, logFile):
     ''' Initialization
 
-        workedOnSqlFilePath (string) : name of the sql file to write inserts for the worked_on db table
-        crewSqlFilePath (string) : name of the sql file to write inserts for the crew_person db table
+        workedOnSqlFilePath (string) : name of the sql file from which to read existing worked on relationships
+        crewSqlFilePath (string) : name of the sql file from which to read existing crew members
         logFile (file) : file to write log statements to
-        models (module) : module of SQLAlchemy data model objects for the FiLTH database
     '''
     self._crewInserts = []        # sql INSERT statements for the crew_person table
     self._workedOnInserts = []    # sql INSERT statements for the worked_on table
     self._logFile = logFile
-    self._models = models
-    self._openFiles(workedOnSqlFilePath, crewSqlFilePath)
-    self._positions = self._getPositions()
-    self._nextCid = self._getNextCid()
+    self._workedOnSqlFilePath = workedOnSqlFilePath
+    self._positions = []
+    self._initPositions()
+    self._crewMap = {}
+    self._initCrewMap(crewSqlFilePath)
+    self._nextCid = len(self._crewMap) + 1
 
 
   #----------------------------------------------------------------------------
 
-  def _openFiles(self, workedOnSqlFilePath, crewSqlFilePath):
-    ''' Attempts to open the sql files to append to by the given file names
-
-        workedOnSqlFilePath (string) : name of the sql file to write inserts for the worked_on db table
-        crewSqlFilePath (string) : name of the sql file to write inserts for the crew_person db table
-
-        Raises : IOError when there is a problem opening one of the files
-    '''
-    try:
-      self._workedOnSqlFile = open(workedOnSqlFilePath, 'w')
-      self._crewSqlFile = open(crewSqlFilePath, 'w')
-    except IOError as e:
-      sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
-      self.close()
+  def _initPositions(self):
+    positionSqlFile = open(POSITIONS_FILE_PATH, 'r')
+    lines = positionSqlFile.readlines()
+    positionSqlFile.close()
+    for line in lines:
+      position = re.search("VALUES\\('([a-zA-Z ]+)'", line).group(1)
+      self._positions.append(position)
 
 
   #----------------------------------------------------------------------------
 
-  def _getNextCid(self):
-    ''' Returns the id of the next new crew person
-    '''
-    return self._models.session.query(self._models.CrewPerson.cid).order_by(self._models.CrewPerson.cid.desc()).first().cid + 1
+  def _initCrewMap(self, crewSqlFilepath):
+    self._log('_initCrewMap', '>> Initializing crew map <<')
+    crewSqlFile = open(crewSqlFilepath, 'r')
+    lines = crewSqlFile.readlines()
+    crewSqlFile.close()
+    for line in lines:
+      matcher = re.search("(\d+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ", line)
+      cid = matcher.group(1)
+      lastName = self._sanitizeName(matcher.group(2))
+      firstName = self._sanitizeName(matcher.group(3))
+      middleName = self._sanitizeName(matcher.group(4))
+      fullName = " ".join([firstName, middleName, lastName]).replace('  ', ' ').rstrip()
+      self._crewMap[fullName] = cid
+      self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
 
 
   #----------------------------------------------------------------------------
 
-  def _getPositions(self):
-    ''' Returns a list of Strings representing the possible position values
-        from the database (e.g. 'Cinematographer', 'Actor', 'Director', etc)
-    '''
-    positions = []
-
-    for position in self._models.Position.query.all():
-      positions.append(str(position.position_title))
-
-    return positions
+  def _sanitizeName(self, name):
+    if name in ['NULL', 'DEFAULT']:
+      return ''
+    return name.strip("'")
 
 
   #----------------------------------------------------------------------------
@@ -74,32 +74,6 @@ class MovieCrew(object):
         message (string) : log entry message
     '''
     self._logFile.write('[MovieCrew.' + func + '] - ' + message + '\n')
-
-
-  #----------------------------------------------------------------------------
-
-  def _getCid(self, last, middle, first):
-    ''' Returns the database id for the person with the given last name, middle
-        name, and first name.
-
-        last (string) : last name
-        middle (string) : middle name
-        first (string) : first name
-
-        Returns int : the db id corresponding to the desired crew person
-    '''
-    first = first.strip("'")
-    middle = middle.strip("'")
-    last = last.strip("'")
-    if first == 'NULL':
-      first = None
-    if middle == 'NULL':
-      middle = None
-    crew = self._models.CrewPerson.query.filter(self._models.CrewPerson.l_name == last)\
-                                        .filter(self._models.CrewPerson.m_name == middle)\
-                                        .filter(self._models.CrewPerson.f_name == first)\
-                                        .one()
-    return int(crew.cid)
 
 
   #----------------------------------------------------------------------------
@@ -122,48 +96,22 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _createInsertStatementForWorkedOn(self, mid, cid, position, first, middle, last, title, year):
+  def _createInsertStatementForWorkedOn(self, mid, cid, position, name, title, year):
     ''' Creates a SQL INSERT statement for the worked_on db table with the given
         values and appends to the list of worked_on INSERT statements.
 
         mid (int) : the database primary key value of the movie
         cid (int) : crew person id
         position (string) : the name of the position the crew person worked as on the movie
-        first (string) : first name (with the appropriate surrounding apostrophes if applicable)
-        middle (string) : middle name (with the appropriate surrounding apostrophes if applicable)
-        last (string) : last name (with the appropriate surrounding apostrophes if applicable)
+        name (string) : full name of the person
         title (string) : title of the movie
         year (int) : year of the movie
     '''
-    first = first.strip("'")
-    middle = middle.strip("'")
-    last = last.strip("'")
-    insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} {4} {5} for {6} ({7})".format(str(mid),\
-                      str(cid), position, first, middle, last, title, str(year))
+    insertStatement = "INSERT INTO worked_on VALUES({0}, {1}, '{2}');  -- {3} for {4} ({5})".format(str(mid),\
+                      str(cid), position, name, title, str(year))
     insertStatement = insertStatement.replace('NULL ', '')
     self._log('_createInsertStatementForWorkedOn', 'created SQL: ' + insertStatement)
     self._workedOnInserts.append(insertStatement)
-
-
-  #----------------------------------------------------------------------------
-
-  def _createFullNameString(self, first, middle, last):
-    ''' Creates a string for the full name of the crew person with the given names.
-        E.g.: _createFullNameString('Christian', 'DEFAULT', 'Bale') -> 'Christian Bale'
-
-        last (string) : last name
-        first (string) : first name
-        middle (string) : middle name
-    '''
-    fullName = ''
-    if first != 'NULL':
-      if middle != 'NULL':
-        fullName = first.strip("'") + ' ' + middle.strip("'") + ' ' + last
-      else:
-        fullName = first.strip("'") + ' ' + last
-    else:
-      fullName = last
-    return fullName
 
 
   #----------------------------------------------------------------------------
@@ -196,40 +144,26 @@ class MovieCrew(object):
         title (string) : title of the movie
         year (int) : year of the movie
     '''
-    crew   = None       #CrewPerson object
-    last   = None       #last name string for sql
-    middle = 'NULL'     #middle name string for sql
-    first  = 'NULL'     #first name string for sql
-    num    = 0          #numeric input from user
-    cid    = 0          #crew person id
-
     #prompt user for a valid person name
-    print '\nEnter the name of someone who worked on this movie (or \'quit\' at anytime). Just hit [enter] to skip the first or middle name.'
-
-    #first name
-    response = raw_input('\tFirst name: ')
-    self._checkForQuit(response, '_promptUserForCrewPersonHelper')
-    if response.lower() != '':
-      first = "'" + response + "'"
-    #middle name
-    response = raw_input('\tMiddle name: ')
-    self._checkForQuit(response, '_promptUserForCrewPersonHelper')
-    if response.lower() != '':
-      middle = "'" + response + "'"
-    #last name
-    last = raw_input('\tLast name: ')
-    self._checkForQuit(last, '_promptUserForCrewPersonHelper')
-
-    name = self._createFullNameString(first, middle, last)
+    while True:
+      response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\' at anytime): ')
+      self._checkForQuit(response, '_promptUserForCrewPersonHelper')
+      matcher = re.search("[^a-zA-Z '\-\.]", response)
+      if matcher != None:
+        print '**Input error: the name you entered contains at least one character not expected in a name.\n'
+      else:
+        break
+    
+    name = response
     self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + name)
 
     try:
-      #get the id of the crew person from the database
-      cid = self._getCid(last, middle, first)
-      self._log('_promptUserForCrewPersonHelper', 'crew person found in database with id of ' + str(cid))
-    except NoResultFound:
-      #crew person was not found in database, prompt if this is a new addition or a typo
-      self._log('_promptUserForCrewPersonHelper', 'crew person not found in database')
+      #get the id of the crew person
+      cid = self._crewMap[name]
+      self._log('_promptUserForCrewPersonHelper', 'crew person found with id of ' + str(cid))
+    except KeyError:
+      #crew person was not found, prompt if this is a new addition or a typo
+      self._log('_promptUserForCrewPersonHelper', 'crew person not found')
       while True:
         response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): '.format(name))
         self._checkForQuit(response, '_promptUserForCrewPersonHelper')
@@ -250,18 +184,32 @@ class MovieCrew(object):
       num = self._promptUserForPosition('\nWhat is this person known as (1-' + str(len(self._positions)) + ') or \'quit\')? ')
       self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--new crew person is known as ' + self._positions[num-1])
 
+      last   = None       #last name string for sql
+      middle = 'NULL'     #middle name string for sql
+      first  = 'NULL'     #first name string for sql
+      nameList = name.split(' ')
+      if len(nameList) == 3:
+        last = nameList[2]
+        middle = nameList[1]
+        first = nameList[0]
+      elif len(nameList) == 2:
+        last = nameList[1]
+        first = nameList[0]
+      else:
+        last = nameList[0]
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
       cid = self._nextCid
+      self._crewMap[name] = cid
       self._log('_promptUserForCrewPersonHelper', 'new crew person has an id of ' + str(cid))
-      self._nextCid = self._nextCid + 1
-    #end except NoResultFound
+      self._nextCid += 1
+    #end except KeyError
 
     #prompt user for what positions the person worked as
     pids = self._promptUserForWorkedAs(name, title, year)
 
     #create an SQL INSERT statement for each of those positions
     for pid in pids:
-      self._createInsertStatementForWorkedOn(mid, cid, self._positions[pid-1], first, middle, last, title, year)
+      self._createInsertStatementForWorkedOn(mid, cid, self._positions[pid-1], name, title, year)
     #end for
 
 
@@ -331,6 +279,9 @@ class MovieCrew(object):
         print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
         continue
       if response.lower() == 'n':
+        return
+      if response.lower() == 'quit':
+        self._quit('promptUserForCrewPerson')
         return
       break
     # prompt for crew members
@@ -408,21 +359,28 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def flush(self):
-    ''' Writes out all sql statements to their respective files.
-    '''
+  def writeCrewInsertsToFile(self, crewSqlFile):
     for statement in self._crewInserts:
-      self._crewSqlFile.write(statement + '\n')
+      crewSqlFile.write(statement + '\n')
+    self._crewInserts = []
+
+
+  #----------------------------------------------------------------------------
+
+  def writeWorkedOnInsertsToFile(self, workedOnSqlFile):
     for statement in self._workedOnInserts:
-      self._workedOnSqlFile.write(statement + '\n')
+      workedOnSqlFile.write(statement + '\n')
+    self._workedOnInserts = []
+
+
+  #----------------------------------------------------------------------------
+
+  def hasInserts(self):
+    return len(self._crewInserts) > 0 or len(self._workedOnInserts) > 0
 
 
   #----------------------------------------------------------------------------
 
   def close(self):
-    ''' Closes the sql files properly..
-    '''
-    if self._workedOnSqlFile:
-      self._workedOnSqlFile.close()
-    if self._crewSqlFile:
-      self._crewSqlFile.close()
+    self._workedOnInserts = []
+    self._crewInserts = []
