@@ -1,34 +1,13 @@
 #!/bin/bash
 
-TRUE=1
-FALSE=0
-SUCCESS=0
-ERROR=1
-
-FILTH_PATH=~/workspace/FiLTH
-FILTH_TEMP_PATH=$FILTH_PATH/temp
-FILTH_BACKUP_PATH=$FILTH_TEMP_PATH/backups
-FILTH_SQL_PATH=$FILTH_PATH/sql
-FILTH_SCRIPTS_PATH=$FILTH_PATH/scripts
+source common.sh
 
 previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
 previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
 current_ratings_file=$FILTH_TEMP_PATH/current_movie_ratings.txt
 ratings_diff=$FILTH_TEMP_PATH/movie_ratings_diff.txt
-movie_sql_file=$FILTH_SQL_PATH/movie.sql
-movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
-movie_additions_sql_file=$FILTH_TEMP_PATH/movie_additions.sql
-tag_sql_file=$FILTH_SQL_PATH/tag.sql
-tag_additions_sql_file=$FILTH_TEMP_PATH/tag_additions.sql
-tgt_sql_file=$FILTH_SQL_PATH/tag_given_to.sql
-tgt_additions_sql_file=$FILTH_TEMP_PATH/tag_given_to_additions.sql
-cp_sql_file=$FILTH_SQL_PATH/crew_person.sql
-cp_additions_sql_file=$FILTH_TEMP_PATH/crew_person_additions.sql
-wo_sql_file=$FILTH_SQL_PATH/worked_on.sql
-wo_additions_sql_file=$FILTH_TEMP_PATH/worked_on_additions.sql
 
 error_file=$FILTH_TEMP_PATH/movie.sh.error
-previous_error_file_size=0
 
 first_run=$FALSE
 
@@ -93,17 +72,6 @@ function clean_movie_ratings() {
 
 #------------------------------------------------------------------------------
 
-function remove_additions_sql_files() {
-  rm -f $movie_additions_sql_file
-  rm -f $tag_additions_sql_file
-  rm -f $tgt_additions_sql_file
-  rm -f $cp_additions_sql_file
-  rm -f $wo_additions_sql_file
-}
-
-
-#------------------------------------------------------------------------------
-
 function process_return_value() {
   # did previously run program fail?
   if [ $? -ne $SUCCESS ]
@@ -111,7 +79,6 @@ function process_return_value() {
   then
     restore_previous_ratings
     restore_movie_sql_file
-    remove_additions_sql_files
     # output given error message
     echo -e $1
     exit
@@ -160,69 +127,6 @@ function run_movie2sql() {
 }
 
 
-#------------------------------------------------------------------------------
-
-function check_psql_error() {
-  # see if the error file has grown since the last psql execution (to see if any error occurred)
-  current_error_file_size=`stat -c %s $error_file`
-  if [ $current_error_file_size -gt $previous_error_file_size ]
-  then
-    echo -e "\n[exec] psql -- ERROR running $1"
-    previous_error_file_size=$current_error_file_size
-    return $ERROR
-  fi
-  return $SUCCESS
-}
-
-
-#------------------------------------------------------------------------------
-
-function run_sql_inserts() {
-  # redirects any psql errors to the error file (because apparently psql always returns 0?)
-
-  echo -e "\n[exec] psql -- Inserting movie additions"
-  psql -U postgres -d filth -f $movie_additions_sql_file > /dev/null 2>>$error_file
-  check_psql_error $movie_additions_sql_file
-  status=$?
-  echo -e "\n[exec] psql -- Inserting tag additions"
-  psql -U postgres -d filth -f $tag_additions_sql_file > /dev/null 2>>$error_file
-  check_psql_error $tag_additions_sql_file
-  status=$((status + $?))
-  echo -e "\n[exec] psql -- Inserting tag_given_to additions"
-  psql -U postgres -d filth -f $tgt_additions_sql_file > /dev/null 2>>$error_file
-  check_psql_error $tgt_additions_sql_file
-  status=$((status + $?))
-  echo -e "\n[exec] psql -- Inserting crew_person additions"
-  psql -U postgres -d filth -f $cp_additions_sql_file > /dev/null 2>>$error_file
-  check_psql_error $cp_additions_sql_file
-  status=$((status + $?))
-  echo -e "\n[exec] psql -- Inserting worked_on additions"
-  psql -U postgres -d filth -f $wo_additions_sql_file > /dev/null 2>>$error_file
-  check_psql_error $wo_additions_sql_file
-  status=$((status + $?))
-
-  if [ $status -ne $SUCCESS ]
-  then
-    echo -e "\n**There was an error running the additional sql insert statements."
-    echo -e "  Check the *_additions.sql files in temp/ and note that they will be over-written the next running of movie.sh."
-    echo -e "  Any sql statements that you want to keep will have to be manually appended to their cooresponding main sql file (e.g. tag_additions.sql >> tag.sql)."
-    echo -e "  Once you have resolved the issue, $error_file must be emptied before running movie.sh again."
-    exit
-  fi
-}
-
-
-#------------------------------------------------------------------------------
-
-function append_additions_to_sql_files() {
-  cat $movie_additions_sql_file >> $movie_sql_file
-  cat $tag_additions_sql_file >> $tag_sql_file
-  cat $tgt_additions_sql_file >> $tgt_sql_file
-  cat $cp_additions_sql_file >> $cp_sql_file
-  cat $wo_additions_sql_file >> $wo_sql_file
-}
-
-
 #== SCRIPT ====================================================================
 
 # the existence of previous_movie_ratings.txt determines whether or not this is
@@ -257,15 +161,6 @@ validate_movie_ratings $ratings_diff
 
 # run the movie2sql program on the resulting text
 run_movie2sql $ratings_diff
-
-if [ $first_run -eq $FALSE ]
-then
-  # insert any and all additions into the Postgres database
-  run_sql_inserts
-  # append the new insertions to the main sql files
-  append_additions_to_sql_files
-  remove_additions_sql_files
-fi
 
 # create a PDF of the movie ratings document (creates $FILTH_PATH/pdf/movie_ratings.pdf)
 echo -e "\nCreating pdf file...\n"

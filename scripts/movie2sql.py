@@ -2,26 +2,26 @@
 
 import sys
 import string
-import imp
 import traceback
 import re
-from sqlalchemy.orm.exc import NoResultFound
 from os import system
+from os import getenv
 from MovieTagger import MovieTagger
 from MovieCrew import MovieCrew
 from QuitException import QuitException
 from getopt import getopt
 from getopt import GetoptError
 
-FILTH_PATH = '/home/tgh/workspace/FiLTH'
-MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/temp/movie_additions.sql'
+FILTH_PATH = os.getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
+MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/movie_additions.sql'
 TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
 INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
 
-_models = imp.load_source('models', FILTH_PATH + '/src/python/models.py')
+_inserts = []   #list of INSERT statements for movies
+_updates = []   #list of UPDATE statements for movies
 _logFile = FILTH_PATH + '/logs/movie2sql.log'
 #XXX: why is this not a constant? (FILTH_PATH + '/sql/movie.sql')
 _movieSqlFile = None
@@ -31,6 +31,13 @@ _tagGivenToSqlFile = None
 _tagSqlFile = None
 _log = None
 _nextMid = 0
+
+
+#------------------------------------------------------------------------------
+
+class MovieNotFoundException(Exception):
+  def __init__(self, mesg):
+    self.mesg = mesg
 
 
 #------------------------------------------------------------------------------
@@ -108,7 +115,10 @@ def getLinesFromFile(filename):
 #------------------------------------------------------------------------------
 
 def getNextMid():
-  return _models.session.query(_models.Movie.mid).order_by(_models.Movie.mid.desc()).first().mid + 1
+  f = open(_movieSqlFile, 'r')
+  lastLine = f.readlines()[-1]
+  f.close()
+  return int(re.search('VALUES \\((\d+),', lastLine).group(1)) + 1
 
 
 #------------------------------------------------------------------------------
@@ -209,13 +219,58 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
+def searchForMovieByTitleAndYear(title, year):
+  lg('searchForMovieByTitleAndYear', 'looking for "' + title + '" (' + str(year) + ')...')
+  f = open(_movieSqlFile, 'r')
+  lines = f.readlines()
+  f.close()
+  title = "'" + title + "'"
+  year = str(year) + ','
+  for line in lines:
+    if title in line and str(year) in line:
+      lg('searchForMovieByTitleAndYear', 'movie found')
+      movie = {}
+      matcher = re.search("VALUES \\((\d+), '(.*?)', (\d+), \'(.*?)\', \'(.*?)\', \'?(.*?)\'?, ", line)
+      movie['mid'] = int(matcher.group(1))
+      movie['title'] = matcher.group(2)
+      movie['year'] = int(matcher.group(3))
+      movie['star_rating'] = matcher.group(4)
+      movie['mpaa'] = matcher.group(5)
+      movie['country'] = matcher.group(6)
+      return movie
+  raise MovieNotFoundException(title + ' (' + year.rstrip(',') + ') not found')
+
+
+#------------------------------------------------------------------------------
+
+def searchForMovieById(mid):
+  lg('searchForMovieById', 'searching for movie with id ' + str(mid) + '...')
+  f = open(_movieSqlFile, 'r')
+  lines = f.readlines()
+  f.close()
+  for line in lines:
+    currentMid = int(re.search('VALUES \\((\d+),', line).group(1))
+    if mid == currentMid:
+      movie = {}
+      matcher = re.search("VALUES \\(\d+, '(.*?)', (\d+), \'(.*?)\', \'(.*?)\', \'?(.*?)\'?, ", line)
+      movie['mid'] = mid
+      movie['title'] = matcher.group(1)
+      movie['year'] = int(matcher.group(2))
+      movie['star_rating'] = matcher.group(3)
+      movie['mpaa'] = matcher.group(4)
+      movie['country'] = matcher.group(5)
+      return movie
+  raise MovieNotFoundException('Movie with id ' + str(mid) + ' not found')
+
+
+#------------------------------------------------------------------------------
+
 def isNewMovie(title, year, stars, mpaa, country):
   """Is this movie already in the database?  If so, update it.
 
   Returns a (boolean, Integer) pair: (isUpdate?, mid of movie if found)
   """
-
-  movie = None  #to hold a Movie object
+  global _inserts
 
   lg('isNewMovie', 'in isNewMovie')
 
@@ -230,14 +285,13 @@ def isNewMovie(title, year, stars, mpaa, country):
   origMpaa    = mpaa
   origCountry = country
 
-  #query for the movie in the db using the title and year since there is a
+  updateValueList = []    #e.g. ["star_rating = '***'", "country = 'USA'"]
+
+  #search for the movie using the title and year since there is a
   # unique contraint on movies with those attributes
   try:
-    lg('isNewMovie', 'querying db for "' + title + '" (' + str(year) + ')...')
-    movie = _models.Movie.query.filter(_models.Movie.title == unicode(title, 'utf_8')).filter(_models.Movie.year == year).one()
-    lg('isNewMovie', 'movie found')
-
-  except NoResultFound:
+    movie = searchForMovieByTitleAndYear(title, year)
+  except MovieNotFoundException:
     #even though the movie was not found in the db, this still might be an update
     # (for the title, or year, or both)
     lg('isNewMovie', 'movie NOT found in the db')
@@ -268,42 +322,47 @@ def isNewMovie(title, year, stars, mpaa, country):
       try:
         response = int(raw_input("\nWhat is the id of the movie? "))
         lg('isNewMovie', 'user entered ' + str(response) + ' as the movie id')
-        #get the movie from the db
-        lg('isNewMovie', 'querying db for movie with id ' + str(response) + '...')
-        movie = _models.Movie.query.filter(_models.Movie.mid == response).one()
+        mid = response
+        movie = searchForMovieById(mid)
         break
-      except NoResultFound:
+      except MovieNotFoundException:
         print "\t**ERROR: id does not exist."
       except ValueError:
         print "\t**ERROR: invalid id."
     #end while
 
     #update the title and/or year
-    if movie.title != unicode(title, 'utf_8'):
-      lg('isNewMovie', 'titles differ: db title = ' + movie.title + ', entry title = "' + title + '".  Updating...')
-      origTitle = movie.title
-      movie.title = title
-    if movie.year != year:
-      lg('isNewMovie', 'years differ: db year = ' + str(movie.year) + ', entry year = ' + str(year) + '.  Updating...')
-      origYear = movie.year
-      movie.year = year
+    if movie['title'] != title:
+      lg('isNewMovie', 'titles differ: db title = ' + movie['title'] + ', entry title = "' + title + '".  Updating...')
+      origTitle = movie['title']
+      movie['title'] = title
+      updateValueList.append("title = '" + title + "'")
+    if movie['year'] != year:
+      lg('isNewMovie', 'years differ: db year = ' + str(movie['year']) + ', entry year = ' + str(year) + '.  Updating...')
+      origYear = movie['year']
+      movie['year'] = year
+      updateValueList.append("year = " + str(year))
   #update what needs updating
-  if movie.star_rating != unicode(stars, 'utf_8'):
+  if movie['star_rating'] != stars:
     #replace "\xc2\xbd" (the representation of a '1/2' character) with the
     # literal "1/2", because it is just too much of a pain otherwise
-    dbStars = re.sub(r'[\xc2\xbd]', '1/2', movie.star_rating)
+    dbStars = re.sub(r'[\xc2\xbd]', '1/2', movie['star_rating'])
     entryStars = re.sub(r'[\xc2\xbd]', '1/2', stars)
     lg('isNewMovie', 'star ratings differ: db star rating = ' + dbStars + ', entry star rating = ' + entryStars + '.  Updating...')
-    origStars = movie.star_rating
-    movie.star_rating = stars
-  if movie.mpaa != mpaa:
-    lg('isNewMovie', 'mpaa ratings differ: db mpaa = ' + str(movie.mpaa) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
-    origMpaa = movie.mpaa
-    movie.mpaa = mpaa
-  if movie.country != country:
-    lg('isNewMovie', 'countries differ: db country = ' + str(movie.country) + ', entry title = ' + str(country) + '.  Updating...')
-    origCountry = movie.country
-    movie.country = country
+    origStars = movie['star_rating']
+    updateValueList.append("star_rating = '" + stars + "'")
+  if movie['mpaa'] != mpaa:
+    lg('isNewMovie', 'mpaa ratings differ: db mpaa = ' + str(movie['mpaa']) + ', entry mpaa = ' + str(mpaa) + '.  Updating...')
+    origMpaa = movie['mpaa']
+    updateValueList.append("mpaa = '" + mpaa + "'")
+  if movie['country'] != country:
+    lg('isNewMovie', 'countries differ: db country = ' + str(movie['country']) + ', entry title = ' + str(country) + '.  Updating...')
+    origCountry = movie['country']
+    updateValueList.append("country = '" + country + "'")
+
+  #add UPDATE statement
+  updateStatement = 'UPDATE movie SET ' + ', '.join(updateValueList) + ' WHERE mid = ' + str(movie['mid']) + ';\n'
+  _updates.append(updateStatement)
   
   #rewrite the INSERT statement in movie.sql
   search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
@@ -324,7 +383,7 @@ def isNewMovie(title, year, stars, mpaa, country):
                  origStars.encode('utf-8'),\
                  origMpaa,\
                  origCountry)
-  return False, movie.mid
+  return False, movie['mid']
 
 
 #------------------------------------------------------------------------------
@@ -337,7 +396,6 @@ if __name__ == '__main__':
   isUpdate    = False   #boolean flag for whether or not we are updating the database
                         # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
   retVal      = 0       #value to return to shell
-  inserts     = []      #list of INSERT statements
   tagger      = None    #MovieTagger object
   crewHandler = None    #MovieCrew object
   f           = None    #file holder
@@ -353,7 +411,6 @@ if __name__ == '__main__':
     if isUpdate:
       tagger = MovieTagger(TAG_GIVEN_TO_SQL_FILE, TAG_SQL_FILE, _log)
       crewHandler = MovieCrew(WORKED_ON_SQL_FILE, CREW_PERSON_SQL_FILE, _log)
-      #determine what mid value will be for the next new movie (XXX: this is assuming there is data in the Movie table in the db--do we want to assume that?)
       _nextMid = getNextMid()
     else:
       _nextMid = 1
@@ -365,13 +422,13 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isNew:
           #add an INSERT statement for the new movie
-          inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
           mid = _nextMid
 
         #ask user for tags for the movie
@@ -389,37 +446,41 @@ if __name__ == '__main__':
       #end if-else
     #end for
 
-    #determine which file to write out the movie INSERT statements to
+    #write out all sql INSERT statements to sql files
+    lg('main', 'writing to ' + _movieSqlFile)
+    f = open(_movieSqlFile, 'a')
+    for insertStatement in _inserts:
+      f.write(insertStatement)
+    f.close()
+
     if isUpdate:
       lg('main', 'writing to ' + MOVIE_ADDITIONS_SQL_FILE)
-      f = open(MOVIE_ADDITIONS_SQL_FILE, 'w')
-    else:
-      lg('main', 'writing to ' + _movieSqlFile)
-      f = open(_movieSqlFile, 'w')
+      f = open(MOVIE_ADDITIONS_SQL_FILE, 'a')
+      for insertStatement in _inserts:
+        f.write(insertStatement)
+      for updateStatement in _updates:
+        f.write(updateStatement)
+      f.close()
 
-    #write out all sql INSERT statements to sql files
-    for insertStatement in inserts:
-      f.write(insertStatement)
-    if (tagger):
-      tgtf = open(_tagGivenToSqlFile, 'w')
-      tagf = open(_tagSqlFile, 'w')
+    if tagger:
+      lg('main', 'writing to ' + _tagSqlFile)
+      tagf = open(_tagSqlFile, 'a')
       tagger.writeTagInsertsToFile(tagf)
+      tagf.close()
+      lg('main', 'writing to ' + _tagGivenToSqlFile)
+      tgtf = open(_tagGivenToSqlFile, 'a')
       tagger.writeTagGivenToInsertsToFile(tgtf)
       tgtf.close()
-      tagf.close()
-    if (crewHandler):
-      wof = open(_workedOnSqlFile, 'w')
-      cf  = oprn(_crewPersonSqlFile, 'w')
-      crewHandler.writeWorkedOnInsertsToFile(wof)
-      crewHandler.writeCrewInsertsToFile(cf)
-      wof.close()
-      cf.close()
 
-    #commit any changes to the db
-    if isUpdate:
-      lg('main', 'committing changes to database...')
-      _models.session.commit()
-      lg('main', 'exiting with return value \'0\'')
+    if crewHandler:
+      lg('main', 'writing to ' + _crewPersonSqlFile)
+      cf  = open(_crewPersonSqlFile, 'a')
+      crewHandler.writeCrewInsertsToFile(cf)
+      cf.close()
+      lg('main', 'writing to ' + _workedOnSqlFile)
+      wof = open(_workedOnSqlFile, 'a')
+      crewHandler.writeWorkedOnInsertsToFile(wof)
+      wof.close()
   except Exception:
     traceback.print_exc(file=_log)
     traceback.print_exc(file=sys.stdout)
@@ -428,8 +489,8 @@ if __name__ == '__main__':
     _log.close()
     if f:
       f.close()
-    if (tagger):
+    if tagger:
       tagger.close()
-    if (crewHandler):
+    if crewHandler:
       crewHandler.close()
     sys.exit(retVal)
