@@ -12,7 +12,7 @@ from QuitException import QuitException
 from getopt import getopt
 from getopt import GetoptError
 
-FILTH_PATH = os.getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
+FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/movie_additions.sql'
 TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
@@ -207,7 +207,7 @@ def lg(func, mesg):
 
 def quit(functionName):
   lg(functionName, 'quitting...')
-  raise Exception('user is quitting')
+  raise QuitException('user is quitting')
 
 
 #------------------------------------------------------------------------------
@@ -481,6 +481,8 @@ if __name__ == '__main__':
       wof = open(_workedOnSqlFile, 'a')
       crewHandler.writeWorkedOnInsertsToFile(wof)
       wof.close()
+  except QuitException:
+    _log('main', 'caught QuitException')
   except Exception:
     traceback.print_exc(file=_log)
     traceback.print_exc(file=sys.stdout)

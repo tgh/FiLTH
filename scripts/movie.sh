@@ -2,6 +2,7 @@
 
 source common.sh
 
+movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
 previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt
 previous_ratings_backup=$FILTH_BACKUP_PATH/previous_movie_ratings.txt.backup
 current_ratings_file=$FILTH_TEMP_PATH/current_movie_ratings.txt
