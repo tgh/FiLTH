@@ -3316,7 +3316,7 @@ INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'US
 INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3321, 'Sicko', 2007, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (3322, 'Taxi to the Dark Side', 2007, 'not seen', 'R', 'USA', DEFAULT);
