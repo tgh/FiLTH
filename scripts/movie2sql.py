@@ -298,7 +298,7 @@ def isNewMovie(title, year, stars, mpaa, country):
     response = ''
     while True:
       #prompt user if this is in fact an update
-      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}> in the database.\nIs this a new movie? (y/n/quit) "\
+      response = raw_input("\nDid not find <\"{0}\" ({1}) {2} [{3}] {4}>.\nIs this a new movie? (y/n/quit) "\
                            .format(title,\
                                    year,\
                                    stars,\
@@ -388,12 +388,55 @@ def isNewMovie(title, year, stars, mpaa, country):
 
 #------------------------------------------------------------------------------
 
+def writeOutTagInserts(tagger):
+  lg('writeOutTagInserts', 'writing to ' + _tagSqlFile)
+  tagf = open(_tagSqlFile, 'a')
+  tagger.writeTagInsertsToFile(tagf)
+  tagf.close()
+  lg('writeOutTagInserts', 'writing to ' + TAG_SQL_FILE)
+  tagf = open(TAG_SQL_FILE, 'a')
+  tagger.writeTagInsertsToFile(tagf)
+  tagf.close()
+  lg('writeOutTagInserts', 'writing to ' + _tagGivenToSqlFile)
+  tgtf = open(_tagGivenToSqlFile, 'a')
+  tagger.writeTagGivenToInsertsToFile(tgtf)
+  tgtf.close()
+  lg('writeOutTagInserts', 'writing to ' + TAG_GIVEN_TO_SQL_FILE)
+  tgtf = open(TAG_GIVEN_TO_SQL_FILE, 'a')
+  tagger.writeTagGivenToInsertsToFile(tgtf)
+  tgtf.close()
+
+
+#------------------------------------------------------------------------------
+
+def writeOutCrewInserts(crewHandler):
+  lg('writeOutCrewInserts', 'writing to ' + _crewPersonSqlFile)
+  cf  = open(_crewPersonSqlFile, 'a')
+  crewHandler.writeCrewInsertsToFile(cf)
+  cf.close()
+  lg('writeOutCrewInserts', 'writing to ' + CREW_PERSON_SQL_FILE)
+  cf  = open(CREW_PERSON_SQL_FILE, 'a')
+  crewHandler.writeCrewInsertsToFile(cf)
+  cf.close()
+  lg('writeOutCrewInserts', 'writing to ' + _workedOnSqlFile)
+  wof = open(_workedOnSqlFile, 'a')
+  crewHandler.writeWorkedOnInsertsToFile(wof)
+  wof.close()
+  lg('writeOutCrewInserts', 'writing to ' + WORKED_ON_SQL_FILE)
+  wof = open(WORKED_ON_SQL_FILE, 'a')
+  crewHandler.writeWorkedOnInsertsToFile(wof)
+  wof.close()
+
+
+
+#------------------------------------------------------------------------------
+
 #------------
 #--- MAIN ---
 #------------
 if __name__ == '__main__':
   inputFile   = None    #the path of the input file to read from (from command line arg)
-  isUpdate    = False   #boolean flag for whether or not we are updating the database
+  isUpdate    = False   #boolean flag for whether or not we are updating
                         # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
   retVal      = 0       #value to return to shell
   tagger      = None    #MovieTagger object
@@ -463,24 +506,11 @@ if __name__ == '__main__':
       f.close()
 
     if tagger:
-      lg('main', 'writing to ' + _tagSqlFile)
-      tagf = open(_tagSqlFile, 'a')
-      tagger.writeTagInsertsToFile(tagf)
-      tagf.close()
-      lg('main', 'writing to ' + _tagGivenToSqlFile)
-      tgtf = open(_tagGivenToSqlFile, 'a')
-      tagger.writeTagGivenToInsertsToFile(tgtf)
-      tgtf.close()
+      writeOutTagInserts(tagger)
 
     if crewHandler:
-      lg('main', 'writing to ' + _crewPersonSqlFile)
-      cf  = open(_crewPersonSqlFile, 'a')
-      crewHandler.writeCrewInsertsToFile(cf)
-      cf.close()
-      lg('main', 'writing to ' + _workedOnSqlFile)
-      wof = open(_workedOnSqlFile, 'a')
-      crewHandler.writeWorkedOnInsertsToFile(wof)
-      wof.close()
+      writeOutCrewInserts(crewHandler)
+
   except QuitException:
     _log('main', 'caught QuitException')
   except Exception:

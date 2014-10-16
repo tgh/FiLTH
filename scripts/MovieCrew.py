@@ -397,7 +397,6 @@ class MovieCrew(object):
   def writeCrewInsertsToFile(self, crewSqlFile):
     for statement in self._crewInserts:
       crewSqlFile.write(statement + '\n')
-    self._crewInserts = []
 
 
   #----------------------------------------------------------------------------
@@ -406,7 +405,6 @@ class MovieCrew(object):
   def writeWorkedOnInsertsToFile(self, workedOnSqlFile):
     for statement in self._workedOnInserts:
       workedOnSqlFile.write(statement + '\n')
-    self._workedOnInserts = []
 
 
   #----------------------------------------------------------------------------

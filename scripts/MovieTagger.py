@@ -292,7 +292,6 @@ class MovieTagger(object):
   def writeTagInsertsToFile(self, tagSqlFile):
     for statement in self._tagInserts:
       tagSqlFile.write(statement + '\n')
-    self._tagInserts = []
 
 
   #----------------------------------------------------------------------------
@@ -300,7 +299,6 @@ class MovieTagger(object):
   def writeTagGivenToInsertsToFile(self, tgtSqlFile):
     for statement in self._tagGivenToInserts:
       tgtSqlFile.write(statement + '\n')
-    self._tagGivenToInserts = []
 
 
   #----------------------------------------------------------------------------
