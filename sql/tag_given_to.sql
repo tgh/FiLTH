@@ -6809,3 +6809,5 @@ INSERT INTO tag_given_to VALUES(2003, 25);  -- Anatomy of a Murder (1959) tagged
 INSERT INTO tag_given_to VALUES(3571, 12);  -- Hank: 5 Years from the Brink (2013) tagged with 'documentary'
 INSERT INTO tag_given_to VALUES(3571, 24);  -- Hank: 5 Years from the Brink (2013) tagged with 'political'
 INSERT INTO tag_given_to VALUES(3571, 26);  -- Hank: 5 Years from the Brink (2013) tagged with 'history'
+INSERT INTO tag_given_to VALUES(2, 169);  -- 3:10 to Yuma (2007) tagged with 'stealing'
+INSERT INTO tag_given_to VALUES(2, 25);  -- 3:10 to Yuma (2007) tagged with 'crime'

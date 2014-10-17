@@ -2195,3 +2195,5 @@ INSERT INTO crew_person VALUES (2194, 'Gordon', 'Seth', NULL, 'Director');  -- D
 INSERT INTO crew_person VALUES (2195, 'Loach', 'Ken', NULL, 'Director');  -- Director: Ken Loach
 INSERT INTO crew_person VALUES (2196, 'Murphy', 'Cillian', NULL, 'Actor');  -- Actor: Cillian Murphy
 INSERT INTO crew_person VALUES (2197, 'Berlinger', 'Joe', NULL, 'Director');  -- Director: Joe Berlinger
+INSERT INTO crew_person VALUES (2196, 'Duvall', Shelley, NULL, 'Actress');  -- Actress: Shelley Duvall
+INSERT INTO crew_person VALUES (2197, 'Foster', Ben, NULL, 'Actor');  -- Actor: Ben Foster
