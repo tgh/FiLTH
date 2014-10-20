@@ -2197,3 +2197,8 @@ INSERT INTO crew_person VALUES (2196, 'Murphy', 'Cillian', NULL, 'Actor');  -- A
 INSERT INTO crew_person VALUES (2197, 'Berlinger', 'Joe', NULL, 'Director');  -- Director: Joe Berlinger
 INSERT INTO crew_person VALUES (2196, 'Duvall', Shelley, NULL, 'Actress');  -- Actress: Shelley Duvall
 INSERT INTO crew_person VALUES (2197, 'Foster', Ben, NULL, 'Actor');  -- Actor: Ben Foster
+INSERT INTO crew_person VALUES (2198, 'Glover', Crispin, NULL, 'Actor');  -- Actor: Crispin Glover
+INSERT INTO crew_person VALUES (2199, 'Plummer', Christopher, NULL, 'Actor');  -- Actor: Christopher Plummer
+INSERT INTO crew_person VALUES (2200, 'Stowe', Madeleine, NULL, 'Actress');  -- Actress: Madeleine Stowe
+INSERT INTO crew_person VALUES (2201, 'Morse', David, NULL, 'Actor');  -- Actor: David Morse
+INSERT INTO crew_person VALUES (2202, 'Peoples', Janet, NULL, 'Screenwriter');  -- Screenwriter: Janet Peoples

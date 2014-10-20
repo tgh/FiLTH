@@ -53,7 +53,7 @@ def initMovies(lastProcessed):
     vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
 
     movie = {}
-    movie['mid'] = re.search('(\d+)', vals).group(1)
+    movie['mid'] = int(re.search('(\d+)', vals).group(1))
     #skip movie if already tagged
     if int(movie['mid']) <= lastProcessed:
       continue
