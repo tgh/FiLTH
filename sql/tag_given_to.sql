@@ -6811,3 +6811,6 @@ INSERT INTO tag_given_to VALUES(3571, 24);  -- Hank: 5 Years from the Brink (201
 INSERT INTO tag_given_to VALUES(3571, 26);  -- Hank: 5 Years from the Brink (2013) tagged with 'history'
 INSERT INTO tag_given_to VALUES(2, 169);  -- 3:10 to Yuma (2007) tagged with 'stealing'
 INSERT INTO tag_given_to VALUES(2, 25);  -- 3:10 to Yuma (2007) tagged with 'crime'
+INSERT INTO tag_given_to VALUES(13, 61);  -- 24-Hour Party People (2002) tagged with 'arts/entertainment'
+INSERT INTO tag_given_to VALUES(14, 59);  -- 25th Hour (2002) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(14, 58);  -- 25th Hour (2002) tagged with 'based-on-something'
