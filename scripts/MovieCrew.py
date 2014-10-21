@@ -190,11 +190,11 @@ class MovieCrew(object):
       nameList = name.split(' ')
       if len(nameList) == 3:
         last = nameList[2]
-        middle = nameList[1]
-        first = nameList[0]
+        middle = "'" + nameList[1] + "'"
+        first = "'" + nameList[0] + "'"
       elif len(nameList) == 2:
         last = nameList[1]
-        first = nameList[0]
+        first = "'" + nameList[0] + "'"
       else:
         last = nameList[0]
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
