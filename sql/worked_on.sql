@@ -4140,3 +4140,4 @@ INSERT INTO worked_on VALUES(25, 309, 'Director');  -- Stanley Kubrick for 2001:
 INSERT INTO worked_on VALUES(25, 1296, 'Cinematographer');  -- Geoffrey Unsworth for 2001: A Space Odyssey (1968)
 INSERT INTO worked_on VALUES(25, 2230, 'Actor');  -- Keir Dullea for 2001: A Space Odyssey (1968)
 INSERT INTO worked_on VALUES(25, 2231, 'Character Voice');  -- Douglas Rain for 2001: A Space Odyssey (1968)
+INSERT INTO worked_on VALUES(3572, 332, 'Director');  -- Errol Morris for Standard Operating Procedure (2008)
