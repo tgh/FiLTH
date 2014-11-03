@@ -571,7 +571,6 @@ Best Scene
   "The Ambush" in The Social Network
   "Opening Conversation" in The Social Network
   "Bargaining" in True Grit
-  
 
 
 2009
@@ -791,6 +790,7 @@ The Tale of Despereaux **½
 Food, Inc. ***½
 Food Matters ***
 Ip Man ***
+Standard Operating Procedure ***
 
 Top Ten
 1. The Dark Knight
