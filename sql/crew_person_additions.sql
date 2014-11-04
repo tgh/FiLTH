@@ -34,3 +34,4 @@ INSERT INTO crew_person VALUES (2228, 'Candy', 'John', NULL, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (2229, 'Pickens', 'Slim', NULL, 'Actor');  -- Actor: Slim Pickens
 INSERT INTO crew_person VALUES (2230, 'Dullea', 'Keir', NULL, 'Actor');  -- Actor: Keir Dullea
 INSERT INTO crew_person VALUES (2231, 'Rain', 'Douglas', NULL, 'Actor');  -- Actor: Douglas Rain
+INSERT INTO crew_person VALUES (2232, 'Winter', 'Alex', NULL, 'Actor');  -- Actor: Alex Winter

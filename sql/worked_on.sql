@@ -4141,3 +4141,7 @@ INSERT INTO worked_on VALUES(25, 1296, 'Cinematographer');  -- Geoffrey Unsworth
 INSERT INTO worked_on VALUES(25, 2230, 'Actor');  -- Keir Dullea for 2001: A Space Odyssey (1968)
 INSERT INTO worked_on VALUES(25, 2231, 'Character Voice');  -- Douglas Rain for 2001: A Space Odyssey (1968)
 INSERT INTO worked_on VALUES(3572, 332, 'Director');  -- Errol Morris for Standard Operating Procedure (2008)
+INSERT INTO worked_on VALUES(3573, 2232, 'Director');  -- Alex Winter for Downloaded (2013)
+INSERT INTO worked_on VALUES(3574, 306, 'Actor');  -- Buster Keaton for Go West (1925)
+INSERT INTO worked_on VALUES(3574, 306, 'Screenwriter');  -- Buster Keaton for Go West (1925)
+INSERT INTO worked_on VALUES(3574, 306, 'Director');  -- Buster Keaton for Go West (1925)
