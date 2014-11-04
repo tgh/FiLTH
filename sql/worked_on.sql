@@ -4155,3 +4155,8 @@ INSERT INTO worked_on VALUES(3575, 915, 'Actress');  -- Lily Tomlin for A Prarie
 INSERT INTO worked_on VALUES(3575, 2233, 'Actress');  -- Lindsay Lohan for A Prarie Home Companion (2006)
 INSERT INTO worked_on VALUES(3575, 1038, 'Actress');  -- Virginia Madsen for A Prarie Home Companion (2006)
 INSERT INTO worked_on VALUES(3575, 2234, 'Actress');  -- Maya Rudolph for A Prarie Home Companion (2006)
+INSERT INTO worked_on VALUES(3578, 13, 'Actor');  -- Brad Pitt for Fury (2014)
+INSERT INTO worked_on VALUES(3578, 2235, 'Director');  -- David Ayer for Fury (2014)
+INSERT INTO worked_on VALUES(3578, 2235, 'Screenwriter');  -- David Ayer for Fury (2014)
+INSERT INTO worked_on VALUES(3578, 154, 'Actor');  -- Shia LaBeouf for Fury (2014)
+INSERT INTO worked_on VALUES(3578, 2063, 'Actor');  -- Michael Pena for Fury (2014)
