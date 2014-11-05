@@ -5,7 +5,7 @@ INSERT INTO movie VALUES (4, '8½', 1963, '****', 'NR', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (5, '9', 2009, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (6, '12 Angry Men', 1957, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (7, '12 Monkeys', 1995, '****', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (8, '13 Conversations About One Thing', 2002, '***½', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (8, 'Thirteen Conversations About One Thing', 2002, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (9, '13 Going on 30', 2004, '**', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (10, '17 Again', 2009, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (11, '21 Grams', 2003, '***', 'R', 'USA', DEFAULT);

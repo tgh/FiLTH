@@ -18,3 +18,4 @@ UPDATE movie SET title = 'Owning Mahowny' WHERE mid = 1226;
 UPDATE movie SET title = 'Vagabond' WHERE mid = 1711;
 UPDATE movie SET title = 'The Curse of the Were-Rabbit' WHERE mid = 1735;
 UPDATE movie SET title = 'The Hunger Games: Catching Fire' WHERE mid = 3508;
+UPDATE movie SET title = 'Thirteen Conversations About One Thing' WHERE mid = 8;
