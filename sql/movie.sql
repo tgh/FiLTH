@@ -282,7 +282,7 @@ INSERT INTO movie VALUES (281, 'The Butterfly Effect', 2004, '***', 'R', 'USA', 
 INSERT INTO movie VALUES (282, 'The Cable Guy', 1996, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (283, 'Cache', 2005, '****', 'R', 'France', DEFAULT);
 INSERT INTO movie VALUES (284, 'California Split', 1974, '***', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (285, 'Cape Fear', 1961, '***', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (285, 'Cape Fear', 1962, '***', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (286, 'Cape Fear', 1991, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (287, 'Capote', 2005, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (288, 'Captains Courageous', 1937, '***', 'NR', 'USA', DEFAULT);

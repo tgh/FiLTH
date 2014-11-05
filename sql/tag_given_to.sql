@@ -6889,3 +6889,5 @@ INSERT INTO tag_given_to VALUES(3581, 230);  -- Nightwatch (1997) tagged with 'n
 INSERT INTO tag_given_to VALUES(3581, 225);  -- Nightwatch (1997) tagged with 'nudity'
 INSERT INTO tag_given_to VALUES(3581, 167);  -- Nightwatch (1997) tagged with 'murder'
 INSERT INTO tag_given_to VALUES(3581, 25);  -- Nightwatch (1997) tagged with 'crime'
+INSERT INTO tag_given_to VALUES(285, 59);  -- Cape Fear (1962) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(285, 58);  -- Cape Fear (1962) tagged with 'based-on-something'
