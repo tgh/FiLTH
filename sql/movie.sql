@@ -1172,7 +1172,7 @@ INSERT INTO movie VALUES (1171, 'New York Stories: Life Lessons', 1989, '**½', 
 INSERT INTO movie VALUES (1172, 'New York Stories: Life Without Zoe', 1989, '*', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1173, 'New York Stories: Oedipus Wrecks', 1989, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1174, 'Night and Fog', 1955, '**½', 'NR', 'France', DEFAULT);
-INSERT INTO movie VALUES (1175, 'A Night at the Museum', 2007, '***', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1175, 'Night at the Museum', 2007, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1176, 'A Night at the Museum: Battle of the Smithsonian', 2009, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1177, 'A Night at the Opera', 1935, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1178, 'The Night of the Hunter', 1955, '***', 'NR', 'USA', DEFAULT);
