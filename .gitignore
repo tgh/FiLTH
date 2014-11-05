@@ -13,3 +13,4 @@ target
 doc/setup/*
 logs/*
 !temp/previous_movie_ratings.txt
+!temp/crewTagTemp.txt
