@@ -611,7 +611,7 @@ INSERT INTO movie VALUES (610, 'Funny Face', 1957, '***½', 'NR', 'USA', DEFAULT
 INSERT INTO movie VALUES (611, 'Galaxy Quest', 1999, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (612, 'Gallipoli', 1981, '***½', 'PG', 'Australia', DEFAULT);
 INSERT INTO movie VALUES (613, 'The Game', 1997, '***½', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (614, 'The Gameplan', 2007, '**½', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (614, 'The Game Plan', 2007, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (615, 'Gandhi', 1982, '****', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (616, 'Gangs of New York', 2002, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (617, 'Gangster No. 1', 2002, '***', 'R', 'England', DEFAULT);
