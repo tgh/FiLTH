@@ -986,7 +986,7 @@ INSERT INTO movie VALUES (985, 'Love Liza', 2003, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (986, 'The Love Nest', 1923, '**½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (987, 'Love Story', 1970, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (988, 'The Lovely Bones', 2009, '**½', 'PG-13', 'USA', DEFAULT);
-INSERT INTO movie VALUES (989, 'Lovely and Amazing', 2002, '**½', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (989, 'Lovely & Amazing', 2002, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (990, 'Lucas', 1985, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (991, 'M', 1931, '****', 'NR', 'Germany', DEFAULT);
 INSERT INTO movie VALUES (992, 'The Machinist', 2004, '***½', 'R', 'USA', DEFAULT);
