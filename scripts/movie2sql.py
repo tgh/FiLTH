@@ -363,10 +363,15 @@ def isNewMovie(title, year, stars, mpaa, country):
   #add UPDATE statement
   updateStatement = 'UPDATE movie SET ' + ', '.join(updateValueList) + ' WHERE mid = ' + str(movie['mid']) + ';\n'
   _updates.append(updateStatement)
+
+  if (origCountry != 'DEFAULT'):
+    origCountry = "'" + origCountry + "'"
+  if (country != 'DEFAULT'):
+    country = "'" + country + "'"
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
-  replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
+  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
+  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("'","''").replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
