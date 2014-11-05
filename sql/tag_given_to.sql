@@ -6897,3 +6897,5 @@ INSERT INTO tag_given_to VALUES(1626, 61);  -- Thirty Two Short Films About Glen
 INSERT INTO tag_given_to VALUES(1112, 2);  -- Mr. & Mrs. Smith (2005) tagged with 'comedy'
 INSERT INTO tag_given_to VALUES(1226, 59);  -- Owning Mahowny (2003) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(1226, 58);  -- Owning Mahowny (2003) tagged with 'based-on-something'
+INSERT INTO tag_given_to VALUES(3508, 59);  -- The Hunger Games: Catching Fire (2013) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(3508, 58);  -- The Hunger Games: Catching Fire (2013) tagged with 'based-on-something'
