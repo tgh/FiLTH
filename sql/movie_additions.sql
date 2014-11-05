@@ -16,3 +16,4 @@ UPDATE movie SET title = 'Mr. & Mrs. Smith' WHERE mid = 1112;
 UPDATE movie SET year = 1950 WHERE mid = 1217;
 UPDATE movie SET title = 'Owning Mahowny' WHERE mid = 1226;
 UPDATE movie SET title = 'Vagabond' WHERE mid = 1711;
+UPDATE movie SET title = 'The Curse of the Were-Rabbit' WHERE mid = 1735;

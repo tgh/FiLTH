@@ -1732,7 +1732,7 @@ INSERT INTO movie VALUES (1731, 'Walk the Line', 2005, '***½', 'PG-13', 'USA', 
 INSERT INTO movie VALUES (1732, 'Walkabout', 1971, '***½', 'R', 'Australia', DEFAULT);
 INSERT INTO movie VALUES (1733, 'WALL-E', 2008, '****', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1734, 'Wall Street', 1987, '***', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1735, 'Wallace & Gromit in the Curse of the Were Rabbit', 2005, '***', 'G', 'England', DEFAULT);
+INSERT INTO movie VALUES (1735, 'The Curse of the Were-Rabbit', 2005, '***', 'G', 'England', DEFAULT);
 INSERT INTO movie VALUES (1736, 'Waltz with Bashir', 2008, '**½', 'R', 'Israel', DEFAULT);
 INSERT INTO movie VALUES (1737, 'Wanted', 2008, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1738, 'The War', 1994, '***½', 'PG-13', 'USA', DEFAULT);
