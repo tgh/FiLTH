@@ -1179,7 +1179,7 @@ INSERT INTO movie VALUES (1178, 'The Night of the Hunter', 1955, '***', 'NR', 'U
 INSERT INTO movie VALUES (1179, 'Night on Earth', 1992, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1180, 'The Nightcomers', 1972, '**½', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (1181, 'Nights of Cabiria', 1957, '****', 'NR', 'Italy', DEFAULT);
-INSERT INTO movie VALUES (1182, 'Ninja Scroll', 1995, 'NO STARS', 'NR', 'Japan', DEFAULT);
+INSERT INTO movie VALUES (1182, 'Ninja Scroll', 1993, 'NO STARS', 'NR', 'Japan', DEFAULT);
 INSERT INTO movie VALUES (1183, 'Ninotchka', 1939, '***½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1184, 'Nixon', 1995, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1185, 'No Country for Old Men', 2007, '****', 'R', 'USA', DEFAULT);
