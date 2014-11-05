@@ -2235,3 +2235,6 @@ INSERT INTO crew_person VALUES (2232, 'Winter', 'Alex', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2233, 'Lohan', 'Lindsay', NULL, 'Actress');  -- Actress: Lindsay Lohan
 INSERT INTO crew_person VALUES (2234, 'Rudolph', 'Maya', NULL, 'Actress');  -- Actress: Maya Rudolph
 INSERT INTO crew_person VALUES (2235, 'Ayer', 'David', NULL, 'Director');  -- Director: David Ayer
+INSERT INTO crew_person VALUES (2236, 'Price', 'Vincent', NULL, 'Actor');  -- Actor: Vincent Price
+INSERT INTO crew_person VALUES (2237, 'Hooper', 'Tom', NULL, 'Director');  -- Director: Tom Hooper
+INSERT INTO crew_person VALUES (2238, 'Bornedal', 'Ole', NULL, 'Director');  -- Director: Ole Bornedal

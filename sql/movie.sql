@@ -3572,3 +3572,6 @@ INSERT INTO movie VALUES (3575, 'A Prarie Home Companion', 2006, '***', 'PG-13',
 INSERT INTO movie VALUES (3576, 'Waste Land', 2010, '***', 'NR', DEFAULT, NULL);
 INSERT INTO movie VALUES (3577, 'Forks Over Knives', 2011, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3578, 'Fury', 2014, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3579, 'House on Haunted Hill', 1959, '**', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3580, 'John Adams', 2008, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3581, 'Nightwatch', 1997, '**½', 'R', 'USA', NULL);
