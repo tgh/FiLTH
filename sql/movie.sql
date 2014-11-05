@@ -1623,7 +1623,7 @@ INSERT INTO movie VALUES (1622, 'The Thin Red Line', 1998, '****', 'R', 'USA', D
 INSERT INTO movie VALUES (1623, 'The Third Man', 1949, '***', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (1624, 'Thirteen', 2003, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1625, 'Thirteen Days', 2001, '***½', 'PG-13', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1626, 'Thirty-Two Short Films About Glenn Gould', 1994, '****', 'NR', 'Canada', DEFAULT);
+INSERT INTO movie VALUES (1626, 'Thirty Two Short Films About Glenn Gould', 1994, '****', 'NR', 'Canada', DEFAULT);
 INSERT INTO movie VALUES (1627, 'This Boy''s Life', 1993, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1628, 'This is Spinal Tap!', 1984, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1629, 'Three Kings', 1999, '***½', 'R', 'USA', DEFAULT);
