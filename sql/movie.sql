@@ -1484,7 +1484,7 @@ INSERT INTO movie VALUES (1483, 'Silver City', 2004, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1484, 'Silverado', 1985, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1485, 'Simon Birch', 1998, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1486, 'A Simple Plan', 1998, '***½', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1487, 'The Simpsons: The Movie', 2007, '***', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1487, 'The Simpsons Movie', 2007, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1488, 'Sin City', 2005, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1489, 'Singin'' in the Rain', 1952, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1490, 'The Sixth Sense', 1999, '***½', 'PG-13', 'USA', DEFAULT);
