@@ -1634,7 +1634,7 @@ INSERT INTO movie VALUES (1633, 'THX-1138', 1971, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1634, 'Tigerland', 2000, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1635, 'The Tigger Movie', 2000, '***', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1636, 'The Tillman Story', 2010, '***½', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1637, 'Time Code', 2000, '***', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1637, 'Timecode', 2000, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1638, 'Titan A.E.', 2000, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1639, 'Titanic', 1997, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1640, 'To Catch a Thief', 1955, '***', 'NR', 'USA', DEFAULT);
