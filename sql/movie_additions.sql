@@ -5,3 +5,4 @@ UPDATE movie SET mpaa = 'X' WHERE mid = 790;
 UPDATE movie SET title = 'Lost in La Mancha' WHERE mid = 981;
 UPDATE movie SET title = 'Night at the Museum' WHERE mid = 1175;
 UPDATE movie SET year = 1993 WHERE mid = 1182;
+UPDATE movie SET title = 'The Number 23' WHERE mid = 1196;

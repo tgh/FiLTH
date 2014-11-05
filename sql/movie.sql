@@ -1193,7 +1193,7 @@ INSERT INTO movie VALUES (1192, 'Northfork', 2003, '***½', 'PG-13', 'USA', DEFA
 INSERT INTO movie VALUES (1193, 'Nosferatu', 1922, '**½', 'NR', 'Germany', DEFAULT);
 INSERT INTO movie VALUES (1194, 'Nostalghia', 1983, '***', 'NR', 'USSR', DEFAULT);
 INSERT INTO movie VALUES (1195, 'Notorious', 1946, '**½', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1196, 'Number 23', 2007, '**', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1196, 'The Number 23', 2007, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1197, 'Nurse Betty', 2000, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1198, 'The Nutty Professor', 1996, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1199, 'O Brother, Where Art Thou?', 2000, '***', 'PG-13', 'USA', DEFAULT);
