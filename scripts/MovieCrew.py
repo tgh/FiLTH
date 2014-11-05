@@ -3,9 +3,11 @@
 import sys
 import string
 import re
+from os import getenv
 from QuitException import QuitException
 
-POSITIONS_FILE_PATH = "/home/thayes/Projects/FiLTH/sql/position.sql"
+FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
+POSITIONS_FILE_PATH = FILTH_PATH + "/sql/position.sql"
 
 
 class MovieCrew(object):
