@@ -978,7 +978,7 @@ INSERT INTO movie VALUES (977, 'The Lord of the Rings: The Fellowship of the Rin
 INSERT INTO movie VALUES (978, 'The Lord of the Rings: The Two Towers', 2002, '****', 'PG-13', 'New Zealand', DEFAULT);
 INSERT INTO movie VALUES (979, 'The Lord of the Rings: The Return of the King', 2003, '****', 'PG-13', 'New Zealand', DEFAULT);
 INSERT INTO movie VALUES (980, 'Lost Highway', 1997, 'NO STARS', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (981, 'Lost on La Mancha', 2002, '***', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (981, 'Lost in La Mancha', 2002, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (982, 'Lost in Translation', 2003, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (983, 'The Lost World: Jurassic Park', 1997, '*½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (984, 'Love and Death', 1975, '***', 'PG', 'USA', DEFAULT);
