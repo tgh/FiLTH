@@ -626,7 +626,7 @@ INSERT INTO movie VALUES (625, 'Gerry', 2002, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (626, 'Get on the Bus', 1996, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (627, 'Get Shorty', 1995, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (628, 'Ghost', 1990, '**', 'PG-13', 'USA', DEFAULT);
-INSERT INTO movie VALUES (629, 'Ghost Day: Way of the Samurai', 2000, '***', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (629, 'Ghost Dog: Way of the Samurai', 2000, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (630, 'Ghost Ship', 2002, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (631, 'Ghost World', 2001, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (632, 'The Ghost Writer', 2010, '***½', 'PG-13', 'USA', DEFAULT);
