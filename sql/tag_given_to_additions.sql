@@ -4,3 +4,5 @@ INSERT INTO tag_given_to VALUES(1175, 59);  -- Night at the Museum (2007) tagged
 INSERT INTO tag_given_to VALUES(1175, 58);  -- Night at the Museum (2007) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(1626, 61);  -- Thirty Two Short Films About Glenn Gould (1994) tagged with 'arts/entertainment'
 INSERT INTO tag_given_to VALUES(1112, 2);  -- Mr. & Mrs. Smith (2005) tagged with 'comedy'
+INSERT INTO tag_given_to VALUES(1226, 59);  -- Owning Mahowny (2003) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(1226, 58);  -- Owning Mahowny (2003) tagged with 'based-on-something'

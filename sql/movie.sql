@@ -1223,7 +1223,7 @@ INSERT INTO movie VALUES (1222, 'Out of Africa', 1985, '***', 'PG', 'USA', DEFAU
 INSERT INTO movie VALUES (1223, 'Out of Sight', 1998, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1224, 'Overboard', 1987, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1225, 'Overnight', 2004, '***', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1226, 'Owning Mahoney', 2003, '***½', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1226, 'Owning Mahowny', 2003, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1227, 'Pacific Heights', 1990, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1228, 'Pandora''s Box', 1929, '**', 'NR', 'Germany', DEFAULT);
 INSERT INTO movie VALUES (1229, 'Panic', 2001, '***½', 'R', 'USA', DEFAULT);
