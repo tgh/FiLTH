@@ -1399,7 +1399,7 @@ INSERT INTO movie VALUES (1398, 'Run Lola Run', 1999, '***½', 'R', 'Germany', D
 INSERT INTO movie VALUES (1399, 'Running on Empty', 1988, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1400, 'Rushmore', 1998, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1401, 'Russian Ark', 2003, '**½', 'NR', 'Russia', DEFAULT);
-INSERT INTO movie VALUES (1402, 'Sacrifice,The', 1986, '***', 'PG', 'Sweden', DEFAULT);
+INSERT INTO movie VALUES (1402, 'The Sacrifice', 1986, '***', 'PG', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (1403, 'The Saddest Music in the World', 2004, '*½', 'R', 'Canada', DEFAULT);
 INSERT INTO movie VALUES (1404, 'Safe', 1995, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1405, 'Saints and Soldiers', 2004, '***', 'PG-13', 'USA', DEFAULT);
