@@ -1708,7 +1708,7 @@ INSERT INTO movie VALUES (1707, 'Valkyrie', 2008, '***', 'PG-13', 'USA', DEFAULT
 INSERT INTO movie VALUES (1708, 'Vanilla Sky', 2001, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1709, 'Vantage Point', 2008, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1710, 'Vanya on 42nd Street', 1994, '***½', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1711, 'Vegabond', 1985, '**½', 'R', DEFAULT, DEFAULT);
+INSERT INTO movie VALUES (1711, 'Vagabond', 1985, '**½', 'R', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (1712, 'Velvet Goldmine', 1998, '*', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (1713, 'Vera Drake', 2004, '***½', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (1714, 'The Verdict', 1982, '****', 'R', 'USA', DEFAULT);
