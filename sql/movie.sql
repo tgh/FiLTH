@@ -1214,7 +1214,7 @@ INSERT INTO movie VALUES (1213, 'Open Season', 2006, '**', 'PG', 'USA', DEFAULT)
 INSERT INTO movie VALUES (1214, 'Open Water', 2004, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1215, 'Ordinary People', 1980, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1216, 'The Orphanage', 2007, '***', 'R', 'Spain', DEFAULT);
-INSERT INTO movie VALUES (1217, 'Orpheus', 1949, '***½', 'NR', 'France', DEFAULT);
+INSERT INTO movie VALUES (1217, 'Orpheus', 1950, '***½', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (1218, 'Osmosis Jones', 2001, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1219, 'The Other Guys', 2010, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1220, 'The Others', 2001, '***', 'PG-13', DEFAULT, DEFAULT);
