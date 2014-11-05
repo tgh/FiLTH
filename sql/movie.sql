@@ -1109,7 +1109,7 @@ INSERT INTO movie VALUES (1108, 'The Mothman Prophecies', 2002, '***', 'PG-13', 
 INSERT INTO movie VALUES (1109, 'The Motorcycle Diaries', 2004, '**½', 'R', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (1110, 'Moulin Rouge', 2001, '***', 'PG-13', 'Australia', DEFAULT);
 INSERT INTO movie VALUES (1111, 'Mousehunt', 1997, '***', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1112, 'Mr. and Mrs. Smith', 2005, '**½', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1112, 'Mr. & Mrs. Smith', 2005, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1113, 'Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr.', 1999, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1114, 'Mr. Deeds', 2002, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1115, 'Mr. Headmistress', 1998, '***', 'NR', 'USA', DEFAULT);
