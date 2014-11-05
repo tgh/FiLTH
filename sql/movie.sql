@@ -1459,7 +1459,7 @@ INSERT INTO movie VALUES (1458, 'Shark Tale', 2004, '***', 'PG', 'USA', DEFAULT)
 INSERT INTO movie VALUES (1459, 'Shaun of the Dead', 2004, '**½', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (1460, 'The Shawshank Redemption', 1994, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1461, 'Sherlock Holmes', 2009, '***', 'PG-13', 'England', DEFAULT);
-INSERT INTO movie VALUES (1462, 'Sherlock, Jr.', 1924, '****', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1462, 'Sherlock Jr.', 1924, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1463, 'She''s Gotta Have It', 1986, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1464, 'She''s So Lovely', 1997, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1465, 'Shine', 1996, '***½', 'PG-13', 'Australia', DEFAULT);
