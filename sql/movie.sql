@@ -1668,7 +1668,7 @@ INSERT INTO movie VALUES (1667, 'The Trial', 1962, '**', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1668, 'The Triplets of Belleville', 2003, '***½', 'PG-13', 'France', DEFAULT);
 INSERT INTO movie VALUES (1669, 'Tristana', 1970, '**', 'PG', 'Spain', DEFAULT);
 INSERT INTO movie VALUES (1670, 'Tron', 1982, '****', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1671, 'Tron: The Legacy', 2010, '**', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1671, 'Tron: Legacy', 2010, '**', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1672, 'Tropic Thunder', 2008, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1673, 'Trouble in Mind', 1985, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1674, 'Troy', 2004, '**', 'R', 'USA', DEFAULT);

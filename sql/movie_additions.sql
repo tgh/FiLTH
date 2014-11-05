@@ -10,3 +10,4 @@ UPDATE movie SET title = 'Sherlock Jr.' WHERE mid = 1462;
 UPDATE movie SET title = 'The Simpsons Movie' WHERE mid = 1487;
 UPDATE movie SET title = 'Thirty Two Short Films About Glenn Gould' WHERE mid = 1626;
 UPDATE movie SET title = 'Timecode' WHERE mid = 1637;
+UPDATE movie SET title = 'Tron: Legacy' WHERE mid = 1671;
