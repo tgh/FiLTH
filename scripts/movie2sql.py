@@ -365,8 +365,8 @@ def isNewMovie(title, year, stars, mpaa, country):
   _updates.append(updateStatement)
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.encode('utf-8').replace("*","\*"), origMpaa, origCountry)
-  replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/"), year, stars, mpaa, country)
+  search  = "'{0}', {1}, '{2}', '{3}', '{4}'".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
+  replace = "'{0}', {1}, '{2}', '{3}', '{4}'".format(title.replace("'","''").replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
@@ -380,7 +380,7 @@ def isNewMovie(title, year, stars, mpaa, country):
   print "   original: \"{0}\" ({1}) {2} [{3}] {4}\n"\
          .format(origTitle.encode('utf-8'),\
                  origYear,\
-                 origStars.encode('utf-8'),\
+                 origStars,\
                  origMpaa,\
                  origCountry)
   return False, movie['mid']
