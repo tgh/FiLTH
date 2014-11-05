@@ -787,7 +787,7 @@ INSERT INTO movie VALUES (786, 'Ice Age', 2002, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (787, 'The Ice Storm', 1997, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (788, 'Identity', 2003, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (789, 'The Idle Class', 1921, '***½', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (790, 'If...', 1968, '***', 'R', 'England', DEFAULT);
+INSERT INTO movie VALUES (790, 'If...', 1968, '***', 'X', 'England', DEFAULT);
 INSERT INTO movie VALUES (791, 'Igby Goes Down', 2002, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (792, 'Il Postino', 1995, '***½', 'PG', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (793, 'I''ll Sleep When I''m Dead', 2004, '***', 'R', 'England', DEFAULT);
