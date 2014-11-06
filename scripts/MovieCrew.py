@@ -26,8 +26,9 @@ class MovieCrew(object):
     self._positions = []
     self._initPositions()
     self._crewMap = {}            # full name (string) -> cid (int)
-    self._initCrewMap(crewSqlFilePath)
-    self._nextCid = len(self._crewMap) + 1
+    #initialize crew map and get next cid
+    self._nextCid = self._initCrewMap(crewSqlFilePath) + 1
+    self._log('__init__', 'Next cid: ' + str(self._nextCid))
 
 
   #----------------------------------------------------------------------------
@@ -48,6 +49,7 @@ class MovieCrew(object):
     crewSqlFile = open(crewSqlFilepath, 'r')
     lines = crewSqlFile.readlines()
     crewSqlFile.close()
+    lastCid = 0
     for line in lines:
       matcher = re.search("(\d+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ", line)
       cid = int(matcher.group(1))
@@ -55,8 +57,12 @@ class MovieCrew(object):
       firstName = self._sanitizeName(matcher.group(3))
       middleName = self._sanitizeName(matcher.group(4))
       fullName = " ".join([firstName, middleName, lastName]).replace('  ', ' ').rstrip()
+      #FIXME: need to handle when crew has the same full name as someone else
+      # - if dictionary already contains fullName, make it's value a list of cids
       self._crewMap[fullName] = cid
       self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
+      lastCid = cid
+    return lastCid
 
 
   #----------------------------------------------------------------------------
@@ -162,6 +168,8 @@ class MovieCrew(object):
     try:
       #get the id of the crew person
       cid = self._crewMap[name]
+      #FIXME: check if cid is a list of cids (to handle crew with the same full name)
+      # - if it is a list, prompt user for the correct one
       self._log('_promptUserForCrewPersonHelper', 'crew person found with id of ' + str(cid))
     except KeyError:
       #crew person was not found, prompt if this is a new addition or a typo
