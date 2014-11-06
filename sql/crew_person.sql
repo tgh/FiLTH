@@ -2238,6 +2238,6 @@ INSERT INTO crew_person VALUES (2237, 'Ayer', 'David', NULL, 'Director');  -- Di
 INSERT INTO crew_person VALUES (2238, 'Price', 'Vincent', NULL, 'Actor');  -- Actor: Vincent Price
 INSERT INTO crew_person VALUES (2239, 'Hooper', 'Tom', NULL, 'Director');  -- Director: Tom Hooper
 INSERT INTO crew_person VALUES (2240, 'Bornedal', 'Ole', NULL, 'Director');  -- Director: Ole Bornedal
-INSERT INTO crew_person VALUES (2239, 'Emmerich', 'Roland', NULL, 'Director');  -- Director: Roland Emmerich
-INSERT INTO crew_person VALUES (2240, 'Kloser', 'Harald', NULL, 'Screenwriter');  -- Screenwriter: Harald Kloser
-INSERT INTO crew_person VALUES (2241, 'Watson', 'Ian', NULL, 'Screenwriter');  -- Screenwriter: Ian Watson
+INSERT INTO crew_person VALUES (2241, 'Emmerich', 'Roland', NULL, 'Director');  -- Director: Roland Emmerich
+INSERT INTO crew_person VALUES (2242, 'Kloser', 'Harald', NULL, 'Screenwriter');  -- Screenwriter: Harald Kloser
+INSERT INTO crew_person VALUES (2243, 'Watson', 'Ian', NULL, 'Screenwriter');  -- Screenwriter: Ian Watson
