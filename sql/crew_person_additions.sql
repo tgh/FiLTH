@@ -1,0 +1,9 @@
+INSERT INTO crew_person VALUES (2244, 'Grant', 'Hugh', NULL, 'Actor');  -- Actor: Hugh Grant
+INSERT INTO crew_person VALUES (2245, 'Davis', 'Hope', NULL, 'Actress');  -- Actress: Hope Davis
+INSERT INTO crew_person VALUES (2246, 'Mulroney', 'Dermot', NULL, 'Actor');  -- Actor: Dermot Mulroney
+INSERT INTO crew_person VALUES (2247, 'Amenabar', 'Alejandro', NULL, 'Director');  -- Director: Alejandro Amenabar
+INSERT INTO crew_person VALUES (2248, 'Gil', 'Mateo', NULL, 'Screenwriter');  -- Screenwriter: Mateo Gil
+INSERT INTO crew_person VALUES (2249, 'Pullman', 'Bill', NULL, 'Actor');  -- Actor: Bill Pullman
+INSERT INTO crew_person VALUES (2250, 'McGillis', 'Kelly', NULL, 'Actress');  -- Actress: Kelly McGillis
+INSERT INTO crew_person VALUES (2251, 'Cox', 'Courteney', NULL, 'Actress');  -- Actress: Courteney Cox
+INSERT INTO crew_person VALUES (2252, 'Young', 'Sean', NULL, 'Actress');  -- Actress: Sean Young
