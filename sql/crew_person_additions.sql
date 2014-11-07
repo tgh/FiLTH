@@ -7,3 +7,27 @@ INSERT INTO crew_person VALUES (2249, 'Pullman', 'Bill', NULL, 'Actor');  -- Act
 INSERT INTO crew_person VALUES (2250, 'McGillis', 'Kelly', NULL, 'Actress');  -- Actress: Kelly McGillis
 INSERT INTO crew_person VALUES (2251, 'Cox', 'Courteney', NULL, 'Actress');  -- Actress: Courteney Cox
 INSERT INTO crew_person VALUES (2252, 'Young', 'Sean', NULL, 'Actress');  -- Actress: Sean Young
+INSERT INTO crew_person VALUES (2253, 'Mackie', 'Anthony', NULL, 'Actor');  -- Actor: Anthony Mackie
+INSERT INTO crew_person VALUES (2254, 'Idle', 'Eric', NULL, 'Actor');  -- Actor: Eric Idle
+INSERT INTO crew_person VALUES (2255, 'Neville', 'John', NULL, 'Actor');  -- Actor: John Neville
+INSERT INTO crew_person VALUES (2256, 'Pryce', 'Jonathan', NULL, 'Actor');  -- Actor: Jonathan Pryce
+INSERT INTO crew_person VALUES (2257, 'Flynn', 'Errol', NULL, 'Actor');  -- Actor: Errol Flynn
+INSERT INTO crew_person VALUES (2258, 'Minion', 'Joseph', NULL, 'Screenwriter');  -- Screenwriter: Joseph Minion
+INSERT INTO crew_person VALUES (2259, 'Dunne', 'Griffin', NULL, 'Actor');  -- Actor: Griffin Dunne
+INSERT INTO crew_person VALUES (2260, 'Arquette', 'Rosanna', NULL, 'Actress');  -- Actress: Rosanna Arquette
+INSERT INTO crew_person VALUES (2261, 'O'Hara', 'Catherine', NULL, 'Actress');  -- Actress: Catherine O'Hara
+INSERT INTO crew_person VALUES (2262, 'Patton', 'Will', NULL, 'Actor');  -- Actor: Will Patton
+INSERT INTO crew_person VALUES (2263, 'Dutton', 'Charles', 'S.', 'Actor');  -- Actor: Charles S. Dutton
+INSERT INTO crew_person VALUES (2264, 'Ryan', 'Meg', NULL, 'Actress');  -- Actress: Meg Ryan
+INSERT INTO crew_person VALUES (2265, 'Shalhoub', 'Tony', NULL, 'Actor');  -- Actor: Tony Shalhoub
+INSERT INTO crew_person VALUES (2266, 'Washington', 'Kerry', NULL, 'Actress');  -- Actress: Kerry Washington
+INSERT INTO crew_person VALUES (2267, 'Epps', 'Omar', NULL, 'Actor');  -- Actor: Omar Epps
+INSERT INTO crew_person VALUES (2268, 'Daly', 'Tim', NULL, 'Actor');  -- Actor: Tim Daly
+INSERT INTO crew_person VALUES (2269, 'Kinski', 'Klaus', NULL, 'Actor');  -- Actor: Klaus Kinski
+INSERT INTO crew_person VALUES (2270, 'Buscemi', 'Steve', NULL, 'Actor');  -- Actor: Steve Buscemi
+INSERT INTO crew_person VALUES (2271, 'Fraser', 'Brendan', NULL, 'Actor');  -- Actor: Brendan Fraser
+INSERT INTO crew_person VALUES (2272, 'Farley', 'Chris', NULL, 'Actor');  -- Actor: Chris Farley
+INSERT INTO crew_person VALUES (2273, 'Richards', 'Michael', NULL, 'Actor');  -- Actor: Michael Richards
+INSERT INTO crew_person VALUES (2274, 'Mantegna', 'Joe', NULL, 'Actor');  -- Actor: Joe Mantegna
+INSERT INTO crew_person VALUES (2275, 'Arquette', 'David', NULL, 'Actor');  -- Actor: David Arquette
+INSERT INTO crew_person VALUES (2276, 'Nelson', 'Judd', NULL, 'Actor');  -- Actor: Judd Nelson

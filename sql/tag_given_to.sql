@@ -6899,3 +6899,4 @@ INSERT INTO tag_given_to VALUES(1226, 59);  -- Owning Mahowny (2003) tagged with
 INSERT INTO tag_given_to VALUES(1226, 58);  -- Owning Mahowny (2003) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(3508, 59);  -- The Hunger Games: Catching Fire (2013) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(3508, 58);  -- The Hunger Games: Catching Fire (2013) tagged with 'based-on-something'
+INSERT INTO tag_given_to VALUES(38, 57);  -- The Adventures of Baron Munchausen (1989) tagged with 'remake'
