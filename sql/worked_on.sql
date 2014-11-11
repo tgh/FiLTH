@@ -1,1537 +1,1537 @@
-INSERT INTO worked_on VALUES(2041, 385, 'Actor');  -- Emil Jannings worked on The Last Command as Actor
-INSERT INTO worked_on VALUES(2042, 385, 'Actor');  -- Emil Jannings worked on The Way of All Flesh as Actor
-INSERT INTO worked_on VALUES(2043, 386, 'Actor');  -- Richard Barthelmess worked on The Noose as Actor
-INSERT INTO worked_on VALUES(2044, 386, 'Actor');  -- Richard Barthelmess worked on The Patent Leather Kid as Actor
-INSERT INTO worked_on VALUES(1832, 387, 'Actor');  -- Chester Morris worked on Alibi as Actor
-INSERT INTO worked_on VALUES(2045, 388, 'Actor');  -- George Bancroft worked on Thunderbolt as Actor
-INSERT INTO worked_on VALUES(2046, 389, 'Actor');  -- Paul Muni worked on The Valiant as Actor
-INSERT INTO worked_on VALUES(1834, 390, 'Actor');  -- Warner Baxter worked on In Old Arizona as Actor
-INSERT INTO worked_on VALUES(1836, 391, 'Actor');  -- Lewis Stone worked on The Patriot as Actor
-INSERT INTO worked_on VALUES(2047, 392, 'Actor');  -- Ronald Colman worked on Bulldog Drummond as Actor
-INSERT INTO worked_on VALUES(2048, 392, 'Actor');  -- Ronald Colman worked on Condemned as Actor
-INSERT INTO worked_on VALUES(2049, 393, 'Actor');  -- Maurice Chevalier worked on The Big Pond as Actor
-INSERT INTO worked_on VALUES(1837, 393, 'Actor');  -- Maurice Chevalier worked on The Love Parade as Actor
-INSERT INTO worked_on VALUES(2050, 394, 'Actor');  -- Lawrence Tibbett worked on The Rogue Song as Actor
-INSERT INTO worked_on VALUES(1839, 395, 'Actor');  -- George Arliss worked on Disraeli as Actor
-INSERT INTO worked_on VALUES(2051, 395, 'Actor');  -- George Arliss worked on The Green Goddess as Actor
-INSERT INTO worked_on VALUES(1838, 396, 'Actor');  -- Wallace Beery worked on The Big House as Actor
-INSERT INTO worked_on VALUES(2052, 397, 'Actor');  -- Fredric March worked on The Royal Family of Broadway as Actor
-INSERT INTO worked_on VALUES(1841, 398, 'Actor');  -- Richard Dix worked on Cimarron as Actor
-INSERT INTO worked_on VALUES(2053, 399, 'Actor');  -- Lionel Barrymore worked on A Free Soul as Actor
-INSERT INTO worked_on VALUES(1842, 400, 'Actor');  -- Adolphe Menjou worked on The Front Page as Actor
-INSERT INTO worked_on VALUES(1843, 401, 'Actor');  -- Jackie Cooper worked on Skippy as Actor
-INSERT INTO worked_on VALUES(2054, 397, 'Actor');  -- Fredric March worked on Dr. Jekyll and Mr. Hyde as Actor
-INSERT INTO worked_on VALUES(1853, 396, 'Actor');  -- Wallace Beery worked on The Champ as Actor
-INSERT INTO worked_on VALUES(2055, 402, 'Actor');  -- Alfred Lunt worked on The Guardsman as Actor
-INSERT INTO worked_on VALUES(1859, 179, 'Actor');  -- Charles Laughton worked on The Private Life of Henry VIII as Actor
-INSERT INTO worked_on VALUES(1856, 389, 'Actor');  -- Paul Muni worked on I Am a Fugitive from a Chain Gang as Actor
-INSERT INTO worked_on VALUES(2056, 403, 'Actor');  -- Leslie Howard worked on Berkeley Square as Actor
-INSERT INTO worked_on VALUES(2057, 404, 'Actor');  -- Frank Morgan worked on The Affairs of Cellini as Actor
-INSERT INTO worked_on VALUES(841, 177, 'Actor');  -- Clark Gable worked on It Happened One Night as Actor
-INSERT INTO worked_on VALUES(1867, 405, 'Actor');  -- William Powell worked on The Thin Man as Actor
-INSERT INTO worked_on VALUES(1885, 406, 'Actor');  -- Victor McLaglen worked on The Informer as Actor
-INSERT INTO worked_on VALUES(1131, 407, 'Actor');  -- Franchot Tone worked on Mutiny on the Bounty as Actor
-INSERT INTO worked_on VALUES(2058, 389, 'Actor');  -- Paul Muni worked on Black Fury as Actor
-INSERT INTO worked_on VALUES(1131, 179, 'Actor');  -- Charles Laughton worked on Mutiny on the Bounty as Actor
-INSERT INTO worked_on VALUES(1131, 177, 'Actor');  -- Clark Gable worked on Mutiny on the Bounty as Actor
-INSERT INTO worked_on VALUES(1887, 178, 'Actor');  -- Gary Cooper worked on Mr. Deeds Goes to Town as Actor
-INSERT INTO worked_on VALUES(1890, 408, 'Actor');  -- Walter Huston worked on Dodsworth as Actor
-INSERT INTO worked_on VALUES(1889, 118, 'Actor');  -- Spencer Tracy worked on San Francisco as Actor
-INSERT INTO worked_on VALUES(2059, 405, 'Actor');  -- William Powell worked on My Man Godfrey as Actor
-INSERT INTO worked_on VALUES(1892, 389, 'Actor');  -- Paul Muni worked on The Story of Louis Pasteur as Actor
-INSERT INTO worked_on VALUES(1894, 409, 'Actor');  -- Basil Rathbone worked on Romeo and Juliet as Actor
-INSERT INTO worked_on VALUES(2060, 410, 'Actor');  -- Stuart Erwin worked on Pigskin Parade as Actor
-INSERT INTO worked_on VALUES(2059, 411, 'Actor');  -- Mischa Auer worked on My Man Godfrey as Actor
-INSERT INTO worked_on VALUES(2061, 412, 'Actor');  -- Walter Brennan worked on Come and Get It as Actor
-INSERT INTO worked_on VALUES(2062, 413, 'Actor');  -- Akim Tamiroff worked on The General Died at Dawn as Actor
-INSERT INTO worked_on VALUES(1896, 397, 'Actor');  -- Fredric March worked on A Star Is Born as Actor
-INSERT INTO worked_on VALUES(2063, 414, 'Actor');  -- Charles Boyer worked on Conquest as Actor
-INSERT INTO worked_on VALUES(2064, 415, 'Actor');  -- Robert Montgomery worked on Night Must Fall as Actor
-INSERT INTO worked_on VALUES(288, 118, 'Actor');  -- Spencer Tracy worked on Captains Courageous as Actor
-INSERT INTO worked_on VALUES(1902, 389, 'Actor');  -- Paul Muni worked on The Life of Emile Zola as Actor
-INSERT INTO worked_on VALUES(1902, 416, 'Actor');  -- Joseph Schildkraut worked on The Life of Emile Zola as Actor
-INSERT INTO worked_on VALUES(1897, 417, 'Actor');  -- Ralph Bellamy worked on The Awful Truth as Actor
-INSERT INTO worked_on VALUES(2065, 418, 'Actor');  -- Thomas Mitchell worked on The Hurricane as Actor
-INSERT INTO worked_on VALUES(1904, 419, 'Actor');  -- H. B. Warner worked on Lost Horizon as Actor
-INSERT INTO worked_on VALUES(2066, 420, 'Actor');  -- Roland Young worked on Topper as Actor
-INSERT INTO worked_on VALUES(1909, 403, 'Actor');  -- Leslie Howard worked on Pygmalion as Actor
-INSERT INTO worked_on VALUES(1908, 118, 'Actor');  -- Spencer Tracy worked on Boys Town as Actor
-INSERT INTO worked_on VALUES(1905, 421, 'Actor');  -- Robert Donat worked on The Citadel as Actor
-INSERT INTO worked_on VALUES(2067, 176, 'Actor');  -- James Cagney worked on Angels with Dirty Faces as Actor
-INSERT INTO worked_on VALUES(2068, 414, 'Actor');  -- Charles Boyer worked on Algiers as Actor
-INSERT INTO worked_on VALUES(2069, 409, 'Actor');  -- Basil Rathbone worked on If I Were King as Actor
-INSERT INTO worked_on VALUES(2068, 422, 'Actor');  -- Gene Lockhart worked on Algiers as Actor
-INSERT INTO worked_on VALUES(1910, 423, 'Actor');  -- John Garfield worked on Four Daughters as Actor
-INSERT INTO worked_on VALUES(2070, 412, 'Actor');  -- Walter Brennan worked on Kentucky as Actor
-INSERT INTO worked_on VALUES(2071, 424, 'Actor');  -- Robert Morley worked on Marie Antoinette as Actor
-INSERT INTO worked_on VALUES(657, 177, 'Actor');  -- Clark Gable worked on Gone with the Wind as Actor
-INSERT INTO worked_on VALUES(1119, 23, 'Actor');  -- Jimmy Stewart worked on Mr. Smith Goes to Washington as Actor
-INSERT INTO worked_on VALUES(1802, 119, 'Actor');  -- Laurence Olivier worked on Wuthering Heights as Actor
-INSERT INTO worked_on VALUES(1916, 421, 'Actor');  -- Robert Donat worked on Goodbye, Mr. Chips as Actor
-INSERT INTO worked_on VALUES(2072, 425, 'Actor');  -- Mickey Rooney worked on Babes in Arms as Actor
-INSERT INTO worked_on VALUES(1119, 426, 'Actor');  -- Claude Rains worked on Mr. Smith Goes to Washington as Actor
-INSERT INTO worked_on VALUES(2073, 427, 'Actor');  -- Brian Donlevy worked on Beau Geste as Actor
-INSERT INTO worked_on VALUES(1539, 418, 'Actor');  -- Thomas Mitchell worked on Stagecoach as Actor
-INSERT INTO worked_on VALUES(2074, 428, 'Actor');  -- Brian Aherne worked on Juarez as Actor
-INSERT INTO worked_on VALUES(1119, 429, 'Actor');  -- Harry Carey worked on Mr. Smith Goes to Washington as Actor
-INSERT INTO worked_on VALUES(1343, 119, 'Actor');  -- Laurence Olivier worked on Rebecca as Actor
-INSERT INTO worked_on VALUES(2075, 430, 'Actor');  -- Raymond Massey worked on Abe Lincoln in Illinois as Actor
-INSERT INTO worked_on VALUES(680, 266, 'Actor');  -- Charlie Chaplin worked on The Great Dictator as Actor
-INSERT INTO worked_on VALUES(1260, 23, 'Actor');  -- Jimmy Stewart worked on The Philadelphia Story as Actor
-INSERT INTO worked_on VALUES(676, 66, 'Actor');  -- Henry Fonda worked on The Grapes of Wrath as Actor
-INSERT INTO worked_on VALUES(680, 431, 'Actor');  -- Jack Oakie worked on The Great Dictator as Actor
-INSERT INTO worked_on VALUES(1921, 432, 'Actor');  -- James Stephenson worked on The Letter as Actor
-INSERT INTO worked_on VALUES(2076, 412, 'Actor');  -- Walter Brennan worked on The Westerner as Actor
-INSERT INTO worked_on VALUES(2077, 433, 'Actor');  -- William Gargan worked on They Knew What They Wanted as Actor
-INSERT INTO worked_on VALUES(1917, 434, 'Actor');  -- Albert Bassermann worked on Foreign Correspondent as Actor
-INSERT INTO worked_on VALUES(2078, 408, 'Actor');  -- Walter Huston worked on The Devil and Daniel Webster as Actor
-INSERT INTO worked_on VALUES(338, 19, 'Actor');  -- Orson Welles worked on Citizen Kane as Actor
-INSERT INTO worked_on VALUES(1925, 415, 'Actor');  -- Robert Montgomery worked on Here Comes Mr. Jordan as Actor
-INSERT INTO worked_on VALUES(1929, 178, 'Actor');  -- Gary Cooper worked on Sergeant York as Actor
-INSERT INTO worked_on VALUES(2079, 24, 'Actor');  -- Cary Grant worked on Penny Serenade as Actor
-INSERT INTO worked_on VALUES(1004, 435, 'Actor');  -- Sydney Greenstreet worked on The Maltese Falcon as Actor
-INSERT INTO worked_on VALUES(1930, 436, 'Actor');  -- Donald Crisp worked on How Green Was My Valley as Actor
-INSERT INTO worked_on VALUES(2080, 437, 'Actor');  -- Charles Coburn worked on The Devil and Miss Jones as Actor
-INSERT INTO worked_on VALUES(1929, 412, 'Actor');  -- Walter Brennan worked on Sergeant York as Actor
-INSERT INTO worked_on VALUES(1925, 438, 'Actor');  -- James Gleason worked on Here Comes Mr. Jordan as Actor
-INSERT INTO worked_on VALUES(1810, 176, 'Actor');  -- James Cagney worked on Yankee Doodle Dandy as Actor
-INSERT INTO worked_on VALUES(1931, 439, 'Actor');  -- Monty Woolley worked on The Pied Piper as Actor
-INSERT INTO worked_on VALUES(1936, 392, 'Actor');  -- Ronald Colman worked on Random Harvest as Actor
-INSERT INTO worked_on VALUES(1932, 178, 'Actor');  -- Gary Cooper worked on The Pride of the Yankees as Actor
-INSERT INTO worked_on VALUES(1938, 440, 'Actor');  -- Walter Pidgeon worked on Mrs. Miniver as Actor
-INSERT INTO worked_on VALUES(1938, 441, 'Actor');  -- Henry Travers worked on Mrs. Miniver as Actor
-INSERT INTO worked_on VALUES(2081, 404, 'Actor');  -- Frank Morgan worked on Tortilla Flat as Actor
-INSERT INTO worked_on VALUES(1937, 442, 'Actor');  -- William Bendix worked on Wake Island as Actor
-INSERT INTO worked_on VALUES(2082, 443, 'Actor');  -- Van Heflin worked on Johnny Eager as Actor
-INSERT INTO worked_on VALUES(1810, 408, 'Actor');  -- Walter Huston worked on Yankee Doodle Dandy as Actor
-INSERT INTO worked_on VALUES(1940, 440, 'Actor');  -- Walter Pidgeon worked on Madame Curie as Actor
-INSERT INTO worked_on VALUES(292, 22, 'Actor');  -- Humphrey Bogart worked on Casablanca as Actor
-INSERT INTO worked_on VALUES(1947, 444, 'Actor');  -- Paul Lukas worked on Watch on the Rhine as Actor
-INSERT INTO worked_on VALUES(1942, 178, 'Actor');  -- Gary Cooper worked on For Whom the Bell Tolls as Actor
-INSERT INTO worked_on VALUES(1946, 425, 'Actor');  -- Mickey Rooney worked on The Human Comedy as Actor
-INSERT INTO worked_on VALUES(2083, 445, 'Actor');  -- J. Carrol Naish worked on Sahara as Actor
-INSERT INTO worked_on VALUES(292, 426, 'Actor');  -- Claude Rains worked on Casablanca as Actor
-INSERT INTO worked_on VALUES(1942, 413, 'Actor');  -- Akim Tamiroff worked on For Whom the Bell Tolls as Actor
-INSERT INTO worked_on VALUES(1943, 437, 'Actor');  -- Charles Coburn worked on The More the Merrier as Actor
-INSERT INTO worked_on VALUES(1944, 446, 'Actor');  -- Charles Bickford worked on The Song of Bernadette as Actor
-INSERT INTO worked_on VALUES(2084, 24, 'Actor');  -- Cary Grant worked on None but the Lonely Heart as Actor
-INSERT INTO worked_on VALUES(1951, 447, 'Actor');  -- Bing Crosby worked on Going My Way as Actor
-INSERT INTO worked_on VALUES(1949, 449, 'Actor');  -- Alexander Knox worked on Wilson as Actor
-INSERT INTO worked_on VALUES(1948, 414, 'Actor');  -- Charles Boyer worked on Gaslight as Actor
-INSERT INTO worked_on VALUES(932, 450, 'Actor');  -- Clifton Webb worked on Laura as Actor
-INSERT INTO worked_on VALUES(2085, 426, 'Actor');  -- Claude Rains worked on Mr. Skeffington as Actor
-INSERT INTO worked_on VALUES(2086, 451, 'Actor');  -- Hume Cronyn worked on The Seventh Cross as Actor
-INSERT INTO worked_on VALUES(1951, 448, 'Actor');  -- Barry Fitzgerald worked on Going My Way as Actor
-INSERT INTO worked_on VALUES(1950, 439, 'Actor');  -- Monty Woolley worked on Since You Went Away as Actor
-INSERT INTO worked_on VALUES(1953, 452, 'Actor');  -- Gene Kelly worked on Anchors Aweigh as Actor
-INSERT INTO worked_on VALUES(1952, 453, 'Actor');  -- Ray Milland worked on The Lost Weekend as Actor
-INSERT INTO worked_on VALUES(1955, 447, 'Actor');  -- Bing Crosby worked on The Bells of St. Mary's as Actor
-INSERT INTO worked_on VALUES(2087, 454, 'Actor');  -- Cornel Wilde worked on A Song to Remember as Actor
-INSERT INTO worked_on VALUES(2088, 180, 'Actor');  -- Gregory Peck worked on The Keys of the Kingdom as Actor
-INSERT INTO worked_on VALUES(2089, 455, 'Actor');  -- John Dall worked on The Corn Is Green as Actor
-INSERT INTO worked_on VALUES(2090, 25, 'Actor');  -- Robert Mitchum worked on The Story of G. I. Joe as Actor
-INSERT INTO worked_on VALUES(2091, 456, 'Actor');  -- James Dunn worked on A Tree Grows in Brooklyn as Actor
-INSERT INTO worked_on VALUES(1531, 457, 'Actor');  -- Michael Chekhov worked on Spellbound as Actor
-INSERT INTO worked_on VALUES(2092, 445, 'Actor');  -- J. Carrol Naish worked on A Medal for Benny as Actor
-INSERT INTO worked_on VALUES(1956, 180, 'Actor');  -- Gregory Peck worked on The Yearling as Actor
-INSERT INTO worked_on VALUES(1957, 119, 'Actor');  -- Laurence Olivier worked on Henry V as Actor
-INSERT INTO worked_on VALUES(844, 23, 'Actor');  -- Jimmy Stewart worked on It's a Wonderful Life as Actor
-INSERT INTO worked_on VALUES(2093, 458, 'Actor');  -- Larry Parks worked on The Jolson Story as Actor
-INSERT INTO worked_on VALUES(188, 397, 'Actor');  -- Fredric March worked on The Best Years of Our Lives as Actor
-INSERT INTO worked_on VALUES(188, 459, 'Actor');  -- Harold Russell worked on The Best Years of Our Lives as Actor
-INSERT INTO worked_on VALUES(1195, 426, 'Actor');  -- Claude Rains worked on Notorious as Actor
-INSERT INTO worked_on VALUES(1958, 450, 'Actor');  -- Clifton Webb worked on The Razor's Edge as Actor
-INSERT INTO worked_on VALUES(2093, 460, 'Actor');  -- William Demarest worked on The Jolson Story as Actor
-INSERT INTO worked_on VALUES(2094, 437, 'Actor');  -- Charles Coburn worked on The Green Years as Actor
-INSERT INTO worked_on VALUES(2095, 405, 'Actor');  -- William Powell worked on Life with Father as Actor
-INSERT INTO worked_on VALUES(2096, 423, 'Actor');  -- John Garfield worked on Body and Soul as Actor
-INSERT INTO worked_on VALUES(1962, 180, 'Actor');  -- Gregory Peck worked on Gentleman's Agreement as Actor
-INSERT INTO worked_on VALUES(2097, 392, 'Actor');  -- Ronald Colman worked on A Double Life as Actor
-INSERT INTO worked_on VALUES(2098, 461, 'Actor');  -- Michael Redgrave worked on Mourning Becomes Electra as Actor
-INSERT INTO worked_on VALUES(2099, 462, 'Actor');  -- Thomas Gomez worked on Ride the Pink Horse as Actor
-INSERT INTO worked_on VALUES(2100, 463, 'Actor');  -- Richard Widmark worked on Kiss of Death as Actor
-INSERT INTO worked_on VALUES(1960, 464, 'Actor');  -- Robert Ryan worked on Crossfire as Actor
-INSERT INTO worked_on VALUES(2101, 446, 'Actor');  -- Charles Bickford worked on The Farmer's Daughter as Actor
-INSERT INTO worked_on VALUES(1959, 465, 'Actor');  -- Edmund Gwenn worked on Miracle on 34th Street as Actor
-INSERT INTO worked_on VALUES(1966, 119, 'Actor');  -- Laurence Olivier worked on Hamlet as Actor
-INSERT INTO worked_on VALUES(2102, 450, 'Actor');  -- Clifton Webb worked on Sitting Pretty as Actor
-INSERT INTO worked_on VALUES(1963, 466, 'Actor');  -- Lew Ayres worked on Johnny Belinda as Actor
-INSERT INTO worked_on VALUES(2103, 181, 'Actor');  -- Montgomery Clift worked on The Search as Actor
-INSERT INTO worked_on VALUES(2104, 467, 'Actor');  -- Dan Dailey worked on When My Baby Smiles at Me as Actor
-INSERT INTO worked_on VALUES(2105, 468, 'Actor');  -- Oscar Homolka worked on I Remember Mama as Actor
-INSERT INTO worked_on VALUES(2106, 469, 'Actor');  -- Jose Ferrer worked on Joan of Arc as Actor
-INSERT INTO worked_on VALUES(1665, 408, 'Actor');  -- Walter Huston worked on The Treasure of the Sierra Madre as Actor
-INSERT INTO worked_on VALUES(1963, 446, 'Actor');  -- Charles Bickford worked on Johnny Belinda as Actor
-INSERT INTO worked_on VALUES(2107, 470, 'Actor');  -- Cecil Kellaway worked on The Luck of the Irish as Actor
-INSERT INTO worked_on VALUES(308, 78, 'Actor');  -- Kirk Douglas worked on Champion as Actor
-INSERT INTO worked_on VALUES(2108, 471, 'Actor');  -- Richard Todd worked on The Hasty Heart as Actor
-INSERT INTO worked_on VALUES(1967, 472, 'Actor');  -- Broderick Crawford worked on All the King's Men as Actor
-INSERT INTO worked_on VALUES(1968, 180, 'Actor');  -- Gregory Peck worked on Twelve O'Clock High as Actor
-INSERT INTO worked_on VALUES(2109, 65, 'Actor');  -- John Wayne worked on Sands of Iwo Jima as Actor
-INSERT INTO worked_on VALUES(308, 473, 'Actor');  -- Arthur Kennedy worked on Champion as Actor
-INSERT INTO worked_on VALUES(1967, 474, 'Actor');  -- John Ireland worked on All the King's Men as Actor
-INSERT INTO worked_on VALUES(1970, 475, 'Actor');  -- Ralph Richardson worked on The Heiress as Actor
-INSERT INTO worked_on VALUES(1969, 476, 'Actor');  -- James Whitmore worked on Battleground as Actor
-INSERT INTO worked_on VALUES(1968, 477, 'Actor');  -- Dean Jagger worked on Twelve O'Clock High as Actor
-INSERT INTO worked_on VALUES(2110, 469, 'Actor');  -- Jose Ferrer worked on Cyrano de Bergerac as Actor
-INSERT INTO worked_on VALUES(1974, 118, 'Actor');  -- Spencer Tracy worked on Father of the Bride as Actor
-INSERT INTO worked_on VALUES(725, 23, 'Actor');  -- Jimmy Stewart worked on Harvey as Actor
-INSERT INTO worked_on VALUES(2111, 478, 'Actor');  -- Louis Calhern worked on The Magnificent Yankee as Actor
-INSERT INTO worked_on VALUES(1575, 182, 'Actor');  -- William Holden worked on Sunset Boulevard as Actor
-INSERT INTO worked_on VALUES(2112, 479, 'Actor');  -- Jeff Chandler worked on Broken Arrow as Actor
-INSERT INTO worked_on VALUES(2113, 465, 'Actor');  -- Edmund Gwenn worked on Mister 880 as Actor
-INSERT INTO worked_on VALUES(2114, 480, 'Actor');  -- Sam Jaffe worked on The Asphalt Jungle as Actor
-INSERT INTO worked_on VALUES(1575, 481, 'Actor');  -- Erich von Stroheim worked on Sunset Boulevard as Actor
-INSERT INTO worked_on VALUES(66, 482, 'Actor');  -- George Sanders worked on All about Eve as Actor
-INSERT INTO worked_on VALUES(1274, 181, 'Actor');  -- Montgomery Clift worked on A Place in the Sun as Actor
-INSERT INTO worked_on VALUES(2115, 473, 'Actor');  -- Arthur Kennedy worked on Bright Victory as Actor
-INSERT INTO worked_on VALUES(2116, 397, 'Actor');  -- Fredric March worked on Death of a Salesman as Actor
-INSERT INTO worked_on VALUES(1566, 2, 'Actor');  -- Marlon Brando worked on A Streetcar Named Desire as Actor
-INSERT INTO worked_on VALUES(42, 22, 'Actor');  -- Humphrey Bogart worked on The African Queen as Actor
-INSERT INTO worked_on VALUES(1975, 483, 'Actor');  -- Peter Ustinov worked on Quo Vadis as Actor
-INSERT INTO worked_on VALUES(1566, 484, 'Actor');  -- Karl Malden worked on A Streetcar Named Desire as Actor
-INSERT INTO worked_on VALUES(1975, 485, 'Actor');  -- Leo Genn worked on Quo Vadis as Actor
-INSERT INTO worked_on VALUES(2117, 486, 'Actor');  -- Gig Young worked on Come Fill the Cup as Actor
-INSERT INTO worked_on VALUES(2116, 487, 'Actor');  -- Kevin McCarthy worked on Death of a Salesman as Actor
-INSERT INTO worked_on VALUES(146, 78, 'Actor');  -- Kirk Douglas worked on The Bad and the Beautiful as Actor
-INSERT INTO worked_on VALUES(1977, 469, 'Actor');  -- Jose Ferrer worked on Moulin Rouge as Actor
-INSERT INTO worked_on VALUES(1723, 2, 'Actor');  -- Marlon Brando worked on Viva Zapata! as Actor
-INSERT INTO worked_on VALUES(744, 178, 'Actor');  -- Gary Cooper worked on High Noon as Actor
-INSERT INTO worked_on VALUES(2118, 121, 'Actor');  -- Alec Guinness worked on The Lavender Hill Mob as Actor
-INSERT INTO worked_on VALUES(2119, 488, 'Actor');  -- Arthur Hunnicutt worked on The Big Sky as Actor
-INSERT INTO worked_on VALUES(2120, 185, 'Actor');  -- Jack Palance worked on Sudden Fear as Actor
-INSERT INTO worked_on VALUES(1979, 406, 'Actor');  -- Victor McLaglen worked on The Quiet Man as Actor
-INSERT INTO worked_on VALUES(1723, 489, 'Actor');  -- Anthony Quinn worked on Viva Zapata! as Actor
-INSERT INTO worked_on VALUES(2121, 192, 'Actor');  -- Richard Burton worked on My Cousin Rachel as Actor
-INSERT INTO worked_on VALUES(604, 181, 'Actor');  -- Montgomery Clift worked on From Here to Eternity as Actor
-INSERT INTO worked_on VALUES(2122, 182, 'Actor');  -- William Holden worked on Stalag 17 as Actor
-INSERT INTO worked_on VALUES(1982, 2, 'Actor');  -- Marlon Brando worked on Julius Caesar as Actor
-INSERT INTO worked_on VALUES(1981, 192, 'Actor');  -- Richard Burton worked on The Robe as Actor
-INSERT INTO worked_on VALUES(604, 183, 'Actor');  -- Burt Lancaster worked on From Here to Eternity as Actor
-INSERT INTO worked_on VALUES(1457, 185, 'Actor');  -- Jack Palance worked on Shane as Actor
-INSERT INTO worked_on VALUES(2122, 490, 'Actor');  -- Robert Strauss worked on Stalag 17 as Actor
-INSERT INTO worked_on VALUES(1384, 491, 'Actor');  -- Eddie Albert worked on Roman Holiday as Actor
-INSERT INTO worked_on VALUES(604, 186, 'Actor');  -- Frank Sinatra worked on From Here to Eternity as Actor
-INSERT INTO worked_on VALUES(1457, 492, 'Actor');  -- Brandon De Wilde worked on Shane as Actor
-INSERT INTO worked_on VALUES(2123, 493, 'Actor');  -- Dan O'Herlihy worked on Robinson Crusoe as Actor
-INSERT INTO worked_on VALUES(2124, 184, 'Actor');  -- James Mason worked on A Star Is Born as Actor
-INSERT INTO worked_on VALUES(1207, 2, 'Actor');  -- Marlon Brando worked on On the Waterfront as Actor
-INSERT INTO worked_on VALUES(1986, 22, 'Actor');  -- Humphrey Bogart worked on The Caine Mutiny as Actor
-INSERT INTO worked_on VALUES(1983, 447, 'Actor');  -- Bing Crosby worked on The Country Girl as Actor
-INSERT INTO worked_on VALUES(1986, 494, 'Actor');  -- Tom Tully worked on The Caine Mutiny as Actor
-INSERT INTO worked_on VALUES(1207, 191, 'Actor');  -- Rod Steiger worked on On the Waterfront as Actor
-INSERT INTO worked_on VALUES(1207, 495, 'Actor');  -- Lee J. Cobb worked on On the Waterfront as Actor
-INSERT INTO worked_on VALUES(2125, 496, 'Actor');  -- Edmond O'Brien worked on The Barefoot Contessa as Actor
-INSERT INTO worked_on VALUES(1207, 484, 'Actor');  -- Karl Malden worked on On the Waterfront as Actor
-INSERT INTO worked_on VALUES(2126, 118, 'Actor');  -- Spencer Tracy worked on Bad Day at Black Rock as Actor
-INSERT INTO worked_on VALUES(2127, 176, 'Actor');  -- James Cagney worked on Love Me or Leave Me as Actor
-INSERT INTO worked_on VALUES(497, 117, 'Actor');  -- James Dean worked on East of Eden as Actor
-INSERT INTO worked_on VALUES(1027, 187, 'Actor');  -- Ernest Borgnine worked on Marty as Actor
-INSERT INTO worked_on VALUES(1013, 186, 'Actor');  -- Frank Sinatra worked on The Man with the Golden Arm as Actor
-INSERT INTO worked_on VALUES(1344, 497, 'Actor');  -- Sal Mineo worked on Rebel without a Cause as Actor
-INSERT INTO worked_on VALUES(1027, 498, 'Actor');  -- Joe Mantell worked on Marty as Actor
-INSERT INTO worked_on VALUES(2128, 473, 'Actor');  -- Arthur Kennedy worked on Trial as Actor
-INSERT INTO worked_on VALUES(1988, 499, 'Actor');  -- Arthur O'Connell worked on Picnic as Actor
-INSERT INTO worked_on VALUES(1990, 189, 'Actor');  -- Jack Lemmon worked on Mister Roberts as Actor
-INSERT INTO worked_on VALUES(2129, 78, 'Actor');  -- Kirk Douglas worked on Lust for Life as Actor
-INSERT INTO worked_on VALUES(1991, 500, 'Actor');  -- Yul Brynner worked on The King and I as Actor
-INSERT INTO worked_on VALUES(633, 188, 'Actor');  -- Rock Hudson worked on Giant as Actor
-INSERT INTO worked_on VALUES(633, 117, 'Actor');  -- James Dean worked on Giant as Actor
-INSERT INTO worked_on VALUES(2130, 119, 'Actor');  -- Laurence Olivier worked on Richard III as Actor
-INSERT INTO worked_on VALUES(2131, 501, 'Actor');  -- Don Murray worked on Bus Stop as Actor
-INSERT INTO worked_on VALUES(1801, 502, 'Actor');  -- Robert Stack worked on Written on the Wind as Actor
-INSERT INTO worked_on VALUES(2129, 489, 'Actor');  -- Anthony Quinn worked on Lust for Life as Actor
-INSERT INTO worked_on VALUES(1993, 503, 'Actor');  -- Anthony Perkins worked on Friendly Persuasion as Actor
-INSERT INTO worked_on VALUES(2132, 425, 'Actor');  -- Mickey Rooney worked on The Bold and the Brave as Actor
-INSERT INTO worked_on VALUES(1994, 179, 'Actor');  -- Charles Laughton worked on Witness for the Prosecution as Actor
-INSERT INTO worked_on VALUES(2133, 489, 'Actor');  -- Anthony Quinn worked on Wild Is the Wind as Actor
-INSERT INTO worked_on VALUES(257, 121, 'Actor');  -- Alec Guinness worked on The Bridge on the River Kwai as Actor
-INSERT INTO worked_on VALUES(2134, 504, 'Actor');  -- Anthony Franciosa worked on A Hatful of Rain as Actor
-INSERT INTO worked_on VALUES(1412, 2, 'Actor');  -- Marlon Brando worked on Sayonara as Actor
-INSERT INTO worked_on VALUES(1412, 224, 'Actor');  -- Red Buttons worked on Sayonara as Actor
-INSERT INTO worked_on VALUES(2135, 276, 'Actor');  -- Vittorio De Sica worked on A Farewell to Arms as Actor
-INSERT INTO worked_on VALUES(257, 505, 'Actor');  -- Sessue Hayakawa worked on The Bridge on the River Kwai as Actor
-INSERT INTO worked_on VALUES(1995, 473, 'Actor');  -- Arthur Kennedy worked on Peyton Place as Actor
-INSERT INTO worked_on VALUES(1995, 506, 'Actor');  -- Russ Tamblyn worked on Peyton Place as Actor
-INSERT INTO worked_on VALUES(1996, 34, 'Actor');  -- Sidney Poitier worked on The Defiant Ones as Actor
-INSERT INTO worked_on VALUES(2136, 118, 'Actor');  -- Spencer Tracy worked on The Old Man and the Sea as Actor
-INSERT INTO worked_on VALUES(1999, 507, 'Actor');  -- David Niven worked on Separate Tables as Actor
-INSERT INTO worked_on VALUES(1996, 508, 'Actor');  -- Tony Curtis worked on The Defiant Ones as Actor
-INSERT INTO worked_on VALUES(298, 41, 'Actor');  -- Paul Newman worked on Cat on a Hot Tin Roof as Actor
-INSERT INTO worked_on VALUES(2137, 473, 'Actor');  -- Arthur Kennedy worked on Some Came Running as Actor
-INSERT INTO worked_on VALUES(2138, 486, 'Actor');  -- Gig Young worked on Teacher's Pet as Actor
-INSERT INTO worked_on VALUES(1996, 509, 'Actor');  -- Theodore Bikel worked on The Defiant Ones as Actor
-INSERT INTO worked_on VALUES(2139, 495, 'Actor');  -- Lee J. Cobb worked on The Brothers Karamazov as Actor
-INSERT INTO worked_on VALUES(2140, 510, 'Actor');  -- Burl Ives worked on The Big Country as Actor
-INSERT INTO worked_on VALUES(2141, 389, 'Actor');  -- Paul Muni worked on The Last Angry Man as Actor
-INSERT INTO worked_on VALUES(2003, 23, 'Actor');  -- Jimmy Stewart worked on Anatomy of a Murder as Actor
-INSERT INTO worked_on VALUES(1517, 189, 'Actor');  -- Jack Lemmon worked on Some Like It Hot as Actor
-INSERT INTO worked_on VALUES(2000, 511, 'Actor');  -- Laurence Harvey worked on Room at the Top as Actor
-INSERT INTO worked_on VALUES(182, 223, 'Actor');  -- Charlton Heston worked on Ben-Hur as Actor
-INSERT INTO worked_on VALUES(182, 512, 'Actor');  -- Hugh Griffith worked on Ben-Hur as Actor
-INSERT INTO worked_on VALUES(2001, 513, 'Actor');  -- Ed Wynn worked on The Diary of Anne Frank as Actor
-INSERT INTO worked_on VALUES(2003, 499, 'Actor');  -- Arthur O'Connell worked on Anatomy of a Murder as Actor
-INSERT INTO worked_on VALUES(2003, 75, 'Actor');  -- George C. Scott worked on Anatomy of a Murder as Actor
-INSERT INTO worked_on VALUES(2142, 514, 'Actor');  -- Robert Vaughn worked on The Young Philadelphians as Actor
-INSERT INTO worked_on VALUES(510, 183, 'Actor');  -- Burt Lancaster worked on Elmer Gantry as Actor
-INSERT INTO worked_on VALUES(2143, 118, 'Actor');  -- Spencer Tracy worked on Inherit the Wind as Actor
-INSERT INTO worked_on VALUES(2144, 119, 'Actor');  -- Laurence Olivier worked on The Entertainer as Actor
-INSERT INTO worked_on VALUES(107, 189, 'Actor');  -- Jack Lemmon worked on The Apartment as Actor
-INSERT INTO worked_on VALUES(2006, 515, 'Actor');  -- Trevor Howard worked on Sons and Lovers as Actor
-INSERT INTO worked_on VALUES(2145, 516, 'Actor');  -- Peter Falk worked on Murder, Inc. as Actor
-INSERT INTO worked_on VALUES(2146, 497, 'Actor');  -- Sal Mineo worked on Exodus as Actor
-INSERT INTO worked_on VALUES(1528, 483, 'Actor');  -- Peter Ustinov worked on Spartacus as Actor
-INSERT INTO worked_on VALUES(107, 517, 'Actor');  -- Jack Kruschen worked on The Apartment as Actor
-INSERT INTO worked_on VALUES(2005, 518, 'Actor');  -- Chill Wills worked on The Alamo as Actor
-INSERT INTO worked_on VALUES(2007, 414, 'Actor');  -- Charles Boyer worked on Fanny as Actor
-INSERT INTO worked_on VALUES(2147, 519, 'Actor');  -- Stuart Whitman worked on The Mark as Actor
-INSERT INTO worked_on VALUES(2008, 520, 'Actor');  -- Maximilian Schell worked on Judgment at Nuremberg as Actor
-INSERT INTO worked_on VALUES(2008, 118, 'Actor');  -- Spencer Tracy worked on Judgment at Nuremberg as Actor
-INSERT INTO worked_on VALUES(778, 41, 'Actor');  -- Paul Newman worked on The Hustler as Actor
-INSERT INTO worked_on VALUES(778, 521, 'Actor');  -- Jackie Gleason worked on The Hustler as Actor
-INSERT INTO worked_on VALUES(2008, 181, 'Actor');  -- Montgomery Clift worked on Judgment at Nuremberg as Actor
-INSERT INTO worked_on VALUES(2148, 516, 'Actor');  -- Peter Falk worked on Pocketful of Miracles as Actor
-INSERT INTO worked_on VALUES(778, 75, 'Actor');  -- George C. Scott worked on The Hustler as Actor
-INSERT INTO worked_on VALUES(1750, 522, 'Actor');  -- George Chakiris worked on West Side Story as Actor
-INSERT INTO worked_on VALUES(415, 189, 'Actor');  -- Jack Lemmon worked on Days of Wine and Roses as Actor
-INSERT INTO worked_on VALUES(1642, 180, 'Actor');  -- Gregory Peck worked on To Kill a Mockingbird as Actor
-INSERT INTO worked_on VALUES(935, 120, 'Actor');  -- Peter O'Toole worked on Lawrence of Arabia as Actor
-INSERT INTO worked_on VALUES(2149, 183, 'Actor');  -- Burt Lancaster worked on Birdman of Alcatraz as Actor
-INSERT INTO worked_on VALUES(2150, 204, 'Actor');  -- Marcello Mastroianni worked on Divorce--Italian Style as Actor
-INSERT INTO worked_on VALUES(935, 523, 'Actor');  -- Omar Sharif worked on Lawrence of Arabia as Actor
-INSERT INTO worked_on VALUES(2151, 524, 'Actor');  -- Ed Begley worked on Sweet Bird of Youth as Actor
-INSERT INTO worked_on VALUES(2152, 525, 'Actor');  -- Terence Stamp worked on Billy Budd as Actor
-INSERT INTO worked_on VALUES(2149, 526, 'Actor');  -- Telly Savalas worked on Birdman of Alcatraz as Actor
-INSERT INTO worked_on VALUES(1754, 527, 'Actor');  -- Victor Buono worked on What Ever Happened to Baby Jane? as Actor
-INSERT INTO worked_on VALUES(2153, 528, 'Actor');  -- Richard Harris worked on This Sporting Life as Actor
-INSERT INTO worked_on VALUES(2012, 34, 'Actor');  -- Sidney Poitier worked on Lilies of the Field as Actor
-INSERT INTO worked_on VALUES(2014, 198, 'Actor');  -- Albert Finney worked on Tom Jones as Actor
-INSERT INTO worked_on VALUES(2154, 41, 'Actor');  -- Paul Newman worked on Hud as Actor
-INSERT INTO worked_on VALUES(2013, 190, 'Actor');  -- Rex Harrison worked on Cleopatra as Actor
-INSERT INTO worked_on VALUES(2155, 529, 'Actor');  -- Bobby Darin worked on Captain Newman, M.D. as Actor
-INSERT INTO worked_on VALUES(2154, 530, 'Actor');  -- Melvyn Douglas worked on Hud as Actor
-INSERT INTO worked_on VALUES(2156, 531, 'Actor');  -- Nick Adams worked on Twilight of Honor as Actor
-INSERT INTO worked_on VALUES(2014, 512, 'Actor');  -- Hugh Griffith worked on Tom Jones as Actor
-INSERT INTO worked_on VALUES(2157, 297, 'Actor');  -- John Huston worked on The Cardinal as Actor
-INSERT INTO worked_on VALUES(481, 74, 'Actor');  -- Peter Sellers worked on Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb as Actor
-INSERT INTO worked_on VALUES(2016, 489, 'Actor');  -- Anthony Quinn worked on Zorba the Greek as Actor
-INSERT INTO worked_on VALUES(2015, 120, 'Actor');  -- Peter O'Toole worked on Becket as Actor
-INSERT INTO worked_on VALUES(1138, 190, 'Actor');  -- Rex Harrison worked on My Fair Lady as Actor
-INSERT INTO worked_on VALUES(2015, 192, 'Actor');  -- Richard Burton worked on Becket as Actor
-INSERT INTO worked_on VALUES(1138, 532, 'Actor');  -- Stanley Holloway worked on My Fair Lady as Actor
-INSERT INTO worked_on VALUES(2158, 483, 'Actor');  -- Peter Ustinov worked on Topkapi as Actor
-INSERT INTO worked_on VALUES(2159, 533, 'Actor');  -- Lee Tracy worked on The Best Man as Actor
-INSERT INTO worked_on VALUES(2015, 534, 'Actor');  -- John Gielgud worked on Becket as Actor
-INSERT INTO worked_on VALUES(2160, 496, 'Actor');  -- Edmond O'Brien worked on Seven Days in May as Actor
-INSERT INTO worked_on VALUES(2018, 535, 'Actor');  -- Oskar Werner worked on Ship of Fools as Actor
-INSERT INTO worked_on VALUES(2161, 536, 'Actor');  -- Lee Marvin worked on Cat Ballou as Actor
-INSERT INTO worked_on VALUES(2162, 119, 'Actor');  -- Laurence Olivier worked on Othello as Actor
-INSERT INTO worked_on VALUES(2163, 192, 'Actor');  -- Richard Burton worked on The Spy Who Came In from the Cold as Actor
-INSERT INTO worked_on VALUES(1248, 191, 'Actor');  -- Rod Steiger worked on The Pawnbroker as Actor
-INSERT INTO worked_on VALUES(2018, 537, 'Actor');  -- Michael Dunn worked on Ship of Fools as Actor
-INSERT INTO worked_on VALUES(459, 227, 'Actor');  -- Tom Courtenay worked on Doctor Zhivago as Actor
-INSERT INTO worked_on VALUES(2162, 538, 'Actor');  -- Frank Finlay worked on Othello as Actor
-INSERT INTO worked_on VALUES(2164, 539, 'Actor');  -- Ian Bannen worked on The Flight of the Phoenix as Actor
-INSERT INTO worked_on VALUES(2017, 540, 'Actor');  -- Martin Balsam worked on A Thousand Clowns as Actor
-INSERT INTO worked_on VALUES(2021, 541, 'Actor');  -- Paul Scofield worked on A Man for All Seasons as Actor
-INSERT INTO worked_on VALUES(2020, 42, 'Actor');  -- Steve McQueen worked on The Sand Pebbles as Actor
-INSERT INTO worked_on VALUES(52, 165, 'Actor');  -- Michael Caine worked on Alfie as Actor
-INSERT INTO worked_on VALUES(1772, 192, 'Actor');  -- Richard Burton worked on Who's Afraid of Virginia Woolf? as Actor
-INSERT INTO worked_on VALUES(2019, 193, 'Actor');  -- Alan Arkin worked on The Russians Are Coming The Russians Are Coming as Actor
-INSERT INTO worked_on VALUES(2020, 542, 'Actor');  -- Mako worked on The Sand Pebbles as Actor
-INSERT INTO worked_on VALUES(2165, 543, 'Actor');  -- Walter Matthau worked on The Fortune Cookie as Actor
-INSERT INTO worked_on VALUES(1772, 544, 'Actor');  -- George Segal worked on Who's Afraid of Virginia Woolf? as Actor
-INSERT INTO worked_on VALUES(2021, 545, 'Actor');  -- Robert Shaw worked on A Man for All Seasons as Actor
-INSERT INTO worked_on VALUES(2166, 184, 'Actor');  -- James Mason worked on Georgy Girl as Actor
-INSERT INTO worked_on VALUES(672, 5, 'Actor');  -- Dustin Hoffman worked on The Graduate as Actor
-INSERT INTO worked_on VALUES(806, 191, 'Actor');  -- Rod Steiger worked on In the Heat of the Night as Actor
-INSERT INTO worked_on VALUES(696, 118, 'Actor');  -- Spencer Tracy worked on Guess Who's Coming to Dinner as Actor
-INSERT INTO worked_on VALUES(234, 141, 'Actor');  -- Warren Beatty worked on Bonnie and Clyde as Actor
-INSERT INTO worked_on VALUES(371, 41, 'Actor');  -- Paul Newman worked on Cool Hand Luke as Actor
-INSERT INTO worked_on VALUES(234, 115, 'Actor');  -- Gene Hackman worked on Bonnie and Clyde as Actor
-INSERT INTO worked_on VALUES(234, 546, 'Actor');  -- Michael J. Pollard worked on Bonnie and Clyde as Actor
-INSERT INTO worked_on VALUES(696, 470, 'Actor');  -- Cecil Kellaway worked on Guess Who's Coming to Dinner as Actor
-INSERT INTO worked_on VALUES(371, 547, 'Actor');  -- George Kennedy worked on Cool Hand Luke as Actor
-INSERT INTO worked_on VALUES(2167, 265, 'Actor');  -- John Cassavetes worked on The Dirty Dozen as Actor
-INSERT INTO worked_on VALUES(2168, 193, 'Actor');  -- Alan Arkin worked on The Heart Is a Lonely Hunter as Actor
-INSERT INTO worked_on VALUES(2169, 548, 'Actor');  -- Cliff Robertson worked on Charly as Actor
-INSERT INTO worked_on VALUES(2025, 120, 'Actor');  -- Peter O'Toole worked on The Lion in Winter as Actor
-INSERT INTO worked_on VALUES(2023, 549, 'Actor');  -- Ron Moody worked on Oliver! as Actor
-INSERT INTO worked_on VALUES(2170, 550, 'Actor');  -- Alan Bates worked on The Fixer as Actor
-INSERT INTO worked_on VALUES(542, 551, 'Actor');  -- Seymour Cassel worked on Faces as Actor
-INSERT INTO worked_on VALUES(2023, 552, 'Actor');  -- Jack Wild worked on Oliver! as Actor
-INSERT INTO worked_on VALUES(2171, 553, 'Actor');  -- Jack Albertson worked on The Subject Was Roses as Actor
-INSERT INTO worked_on VALUES(1309, 554, 'Actor');  -- Gene Wilder worked on The Producers as Actor
-INSERT INTO worked_on VALUES(2172, 555, 'Actor');  -- Daniel Massey worked on Star! as Actor
-INSERT INTO worked_on VALUES(1066, 68, 'Actor');  -- Jon Voight worked on Midnight Cowboy as Actor
-INSERT INTO worked_on VALUES(2027, 192, 'Actor');  -- Richard Burton worked on Anne of the Thousand Days as Actor
-INSERT INTO worked_on VALUES(1066, 5, 'Actor');  -- Dustin Hoffman worked on Midnight Cowboy as Actor
-INSERT INTO worked_on VALUES(1675, 65, 'Actor');  -- John Wayne worked on True Grit as Actor
-INSERT INTO worked_on VALUES(2173, 120, 'Actor');  -- Peter O'Toole worked on Goodbye, Mr. Chips as Actor
-INSERT INTO worked_on VALUES(498, 9, 'Actor');  -- Jack Nicholson worked on Easy Rider as Actor
-INSERT INTO worked_on VALUES(2174, 556, 'Actor');  -- Elliott Gould worked on Bob & Carol & Ted & Alice as Actor
-INSERT INTO worked_on VALUES(2175, 486, 'Actor');  -- Gig Young worked on They Shoot Horses, Don't They? as Actor
-INSERT INTO worked_on VALUES(2027, 557, 'Actor');  -- Anthony Quayle worked on Anne of the Thousand Days as Actor
-INSERT INTO worked_on VALUES(2176, 558, 'Actor');  -- Rupert Crosse worked on The Reivers as Actor
-INSERT INTO worked_on VALUES(987, 194, 'Actor');  -- Ryan O'Neal worked on Love Story as Actor
-INSERT INTO worked_on VALUES(2177, 122, 'Actor');  -- James Earl Jones worked on The Great White Hope as Actor
-INSERT INTO worked_on VALUES(576, 9, 'Actor');  -- Jack Nicholson worked on Five Easy Pieces as Actor
-INSERT INTO worked_on VALUES(2178, 530, 'Actor');  -- Melvyn Douglas worked on I Never Sang for My Father as Actor
-INSERT INTO worked_on VALUES(1247, 75, 'Actor');  -- George C. Scott worked on Patton as Actor
-INSERT INTO worked_on VALUES(2179, 559, 'Actor');  -- Richard Castellano worked on Lovers and Other Strangers as Actor
-INSERT INTO worked_on VALUES(2180, 560, 'Actor');  -- John Mills worked on Ryan's Daughter as Actor
-INSERT INTO worked_on VALUES(987, 561, 'Actor');  -- John Marley worked on Love Story as Actor
-INSERT INTO worked_on VALUES(962, 562, 'Actor');  -- Chief Dan George worked on Little Big Man as Actor
-INSERT INTO worked_on VALUES(2178, 115, 'Actor');  -- Gene Hackman worked on I Never Sang for My Father as Actor
-INSERT INTO worked_on VALUES(2031, 563, 'Actor');  -- Topol worked on Fiddler on the Roof as Actor
-INSERT INTO worked_on VALUES(759, 75, 'Actor');  -- George C. Scott worked on The Hospital as Actor
-INSERT INTO worked_on VALUES(598, 115, 'Actor');  -- Gene Hackman worked on The French Connection as Actor
-INSERT INTO worked_on VALUES(1572, 195, 'Actor');  -- Peter Finch worked on Sunday Bloody Sunday as Actor
-INSERT INTO worked_on VALUES(2181, 543, 'Actor');  -- Walter Matthau worked on Kotch as Actor
-INSERT INTO worked_on VALUES(598, 197, 'Actor');  -- Roy Scheider worked on The French Connection as Actor
-INSERT INTO worked_on VALUES(2031, 564, 'Actor');  -- Leonard Frey worked on Fiddler on the Roof as Actor
-INSERT INTO worked_on VALUES(922, 565, 'Actor');  -- Ben Johnson worked on The Last Picture Show as Actor
-INSERT INTO worked_on VALUES(2182, 566, 'Actor');  -- Richard Jaeckel worked on Sometimes a Great Notion as Actor
-INSERT INTO worked_on VALUES(922, 71, 'Actor');  -- Jeff Bridges worked on The Last Picture Show as Actor
-INSERT INTO worked_on VALUES(647, 2, 'Actor');  -- Marlon Brando worked on The Godfather as Actor
-INSERT INTO worked_on VALUES(2032, 567, 'Actor');  -- Paul Winfield worked on Sounder as Actor
-INSERT INTO worked_on VALUES(1498, 165, 'Actor');  -- Michael Caine worked on Sleuth as Actor
-INSERT INTO worked_on VALUES(2183, 120, 'Actor');  -- Peter O'Toole worked on The Ruling Class as Actor
-INSERT INTO worked_on VALUES(1498, 119, 'Actor');  -- Laurence Olivier worked on Sleuth as Actor
-INSERT INTO worked_on VALUES(647, 568, 'Actor');  -- James Caan worked on The Godfather as Actor
-INSERT INTO worked_on VALUES(1828, 569, 'Actor');  -- Joel Grey worked on Cabaret as Actor
-INSERT INTO worked_on VALUES(2184, 491, 'Actor');  -- Eddie Albert worked on The Heartbreak Kid as Actor
-INSERT INTO worked_on VALUES(647, 56, 'Actor');  -- Al Pacino worked on The Godfather as Actor
-INSERT INTO worked_on VALUES(647, 96, 'Actor');  -- Robert Duvall worked on The Godfather as Actor
-INSERT INTO worked_on VALUES(2185, 56, 'Actor');  -- Al Pacino worked on Serpico as Actor
-INSERT INTO worked_on VALUES(2186, 189, 'Actor');  -- Jack Lemmon worked on Save the Tiger as Actor
-INSERT INTO worked_on VALUES(1559, 76, 'Actor');  -- Robert Redford worked on The Sting as Actor
-INSERT INTO worked_on VALUES(918, 9, 'Actor');  -- Jack Nicholson worked on The Last Detail as Actor
-INSERT INTO worked_on VALUES(926, 2, 'Actor');  -- Marlon Brando worked on Last Tango in Paris as Actor
-INSERT INTO worked_on VALUES(2187, 570, 'Actor');  -- John Houseman worked on The Paper Chase as Actor
-INSERT INTO worked_on VALUES(2186, 571, 'Actor');  -- Jack Gilford worked on Save the Tiger as Actor
-INSERT INTO worked_on VALUES(155, 572, 'Actor');  -- Vincent Gardenia worked on Bang the Drum Slowly as Actor
-INSERT INTO worked_on VALUES(2034, 573, 'Actor');  -- Jason Miller worked on The Exorcist as Actor
-INSERT INTO worked_on VALUES(918, 574, 'Actor');  -- Randy Quaid worked on The Last Detail as Actor
-INSERT INTO worked_on VALUES(323, 9, 'Actor');  -- Jack Nicholson worked on Chinatown as Actor
-INSERT INTO worked_on VALUES(2188, 575, 'Actor');  -- Art Carney worked on Harry and Tonto as Actor
-INSERT INTO worked_on VALUES(2189, 198, 'Actor');  -- Albert Finney worked on Murder on the Orient Express as Actor
-INSERT INTO worked_on VALUES(944, 5, 'Actor');  -- Dustin Hoffman worked on Lenny as Actor
-INSERT INTO worked_on VALUES(648, 56, 'Actor');  -- Al Pacino worked on The Godfather Part II as Actor
-INSERT INTO worked_on VALUES(1652, 576, 'Actor');  -- Fred Astaire worked on The Towering Inferno as Actor
-INSERT INTO worked_on VALUES(648, 577, 'Actor');  -- Lee Strasberg worked on The Godfather Part II as Actor
-INSERT INTO worked_on VALUES(2190, 71, 'Actor');  -- Jeff Bridges worked on Thunderbolt and Lightfoot as Actor
-INSERT INTO worked_on VALUES(648, 578, 'Actor');  -- Michael V. Gazzo worked on The Godfather Part II as Actor
-INSERT INTO worked_on VALUES(648, 3, 'Actor');  -- Robert De Niro worked on The Godfather Part II as Actor
-INSERT INTO worked_on VALUES(2191, 543, 'Actor');  -- Walter Matthau worked on The Sunshine Boys as Actor
-INSERT INTO worked_on VALUES(1210, 9, 'Actor');  -- Jack Nicholson worked on One Flew over the Cuckoo's Nest as Actor
-INSERT INTO worked_on VALUES(461, 56, 'Actor');  -- Al Pacino worked on Dog Day Afternoon as Actor
-INSERT INTO worked_on VALUES(2192, 476, 'Actor');  -- James Whitmore worked on Give 'em' Hell, Harry! as Actor
-INSERT INTO worked_on VALUES(2193, 520, 'Actor');  -- Maximilian Schell worked on The Man in the Glass Booth as Actor
-INSERT INTO worked_on VALUES(461, 579, 'Actor');  -- Chris Sarandon worked on Dog Day Afternoon as Actor
-INSERT INTO worked_on VALUES(2194, 580, 'Actor');  -- Burgess Meredith worked on The Day of the Locust as Actor
-INSERT INTO worked_on VALUES(1210, 581, 'Actor');  -- Brad Dourif worked on One Flew over the Cuckoo's Nest as Actor
-INSERT INTO worked_on VALUES(2191, 582, 'Actor');  -- George Burns worked on The Sunshine Boys as Actor
-INSERT INTO worked_on VALUES(2195, 583, 'Actor');  -- Jack Warden worked on Shampoo as Actor
-INSERT INTO worked_on VALUES(1602, 3, 'Actor');  -- Robert De Niro worked on Taxi Driver as Actor
-INSERT INTO worked_on VALUES(1443, 584, 'Actor');  -- Giancarlo Giannini worked on Seven Beauties as Actor
-INSERT INTO worked_on VALUES(1380, 196, 'Actor');  -- Sylvester Stallone worked on Rocky as Actor
-INSERT INTO worked_on VALUES(1166, 195, 'Actor');  -- Peter Finch worked on Network as Actor
-INSERT INTO worked_on VALUES(1166, 182, 'Actor');  -- William Holden worked on Network as Actor
-INSERT INTO worked_on VALUES(1380, 585, 'Actor');  -- Burt Young worked on Rocky as Actor
-INSERT INTO worked_on VALUES(71, 586, 'Actor');  -- Jason Robards worked on All the President's Men as Actor
-INSERT INTO worked_on VALUES(1166, 587, 'Actor');  -- Ned Beatty worked on Network as Actor
-INSERT INTO worked_on VALUES(1022, 119, 'Actor');  -- Laurence Olivier worked on Marathon Man as Actor
-INSERT INTO worked_on VALUES(1380, 580, 'Actor');  -- Burgess Meredith worked on Rocky as Actor
-INSERT INTO worked_on VALUES(102, 245, 'Actor');  -- Woody Allen worked on Annie Hall as Actor
-INSERT INTO worked_on VALUES(663, 163, 'Actor');  -- Richard Dreyfuss worked on The Goodbye Girl as Actor
-INSERT INTO worked_on VALUES(2196, 192, 'Actor');  -- Richard Burton worked on Equus as Actor
-INSERT INTO worked_on VALUES(2197, 204, 'Actor');  -- Marcello Mastroianni worked on A Special Day as Actor
-INSERT INTO worked_on VALUES(1410, 225, 'Actor');  -- John Travolta worked on Saturday Night Fever as Actor
-INSERT INTO worked_on VALUES(1548, 121, 'Actor');  -- Alec Guinness worked on Star Wars as Actor
-INSERT INTO worked_on VALUES(2196, 588, 'Actor');  -- Peter Firth worked on Equus as Actor
-INSERT INTO worked_on VALUES(1680, 589, 'Actor');  -- Mikhail Baryshnikov worked on The Turning Point as Actor
-INSERT INTO worked_on VALUES(868, 586, 'Actor');  -- Jason Robards worked on Julia as Actor
-INSERT INTO worked_on VALUES(868, 520, 'Actor');  -- Maximilian Schell worked on Julia as Actor
-INSERT INTO worked_on VALUES(359, 68, 'Actor');  -- Jon Voight worked on Coming Home as Actor
-INSERT INTO worked_on VALUES(438, 3, 'Actor');  -- Robert De Niro worked on The Deer Hunter as Actor
-INSERT INTO worked_on VALUES(731, 141, 'Actor');  -- Warren Beatty worked on Heaven Can Wait as Actor
-INSERT INTO worked_on VALUES(2198, 590, 'Actor');  -- Gary Busey worked on The Buddy Holly Story as Actor
-INSERT INTO worked_on VALUES(2199, 119, 'Actor');  -- Laurence Olivier worked on The Boys from Brazil as Actor
-INSERT INTO worked_on VALUES(1067, 226, 'Actor');  -- John Hurt worked on Midnight Express as Actor
-INSERT INTO worked_on VALUES(359, 591, 'Actor');  -- Bruce Dern worked on Coming Home as Actor
-INSERT INTO worked_on VALUES(438, 592, 'Actor');  -- Christopher Walken worked on The Deer Hunter as Actor
-INSERT INTO worked_on VALUES(731, 583, 'Actor');  -- Jack Warden worked on Heaven Can Wait as Actor
-INSERT INTO worked_on VALUES(2200, 215, 'Actor');  -- Richard Farnsworth worked on Comes a Horseman as Actor
-INSERT INTO worked_on VALUES(2201, 56, 'Actor');  -- Al Pacino worked on ...And Justice for All as Actor
-INSERT INTO worked_on VALUES(322, 189, 'Actor');  -- Jack Lemmon worked on The China Syndrome as Actor
-INSERT INTO worked_on VALUES(70, 197, 'Actor');  -- Roy Scheider worked on All That Jazz as Actor
-INSERT INTO worked_on VALUES(179, 74, 'Actor');  -- Peter Sellers worked on Being There as Actor
-INSERT INTO worked_on VALUES(904, 5, 'Actor');  -- Dustin Hoffman worked on Kramer vs. Kramer as Actor
-INSERT INTO worked_on VALUES(2202, 593, 'Actor');  -- Frederic Forrest worked on The Rose as Actor
-INSERT INTO worked_on VALUES(109, 96, 'Actor');  -- Robert Duvall worked on Apocalypse Now as Actor
-INSERT INTO worked_on VALUES(179, 530, 'Actor');  -- Melvyn Douglas worked on Being There as Actor
-INSERT INTO worked_on VALUES(904, 594, 'Actor');  -- Justin Henry worked on Kramer vs. Kramer as Actor
-INSERT INTO worked_on VALUES(2203, 425, 'Actor');  -- Mickey Rooney worked on The Black Stallion as Actor
-INSERT INTO worked_on VALUES(1329, 3, 'Actor');  -- Robert De Niro worked on Raging Bull as Actor
-INSERT INTO worked_on VALUES(2204, 120, 'Actor');  -- Peter O'Toole worked on The Stunt Man as Actor
-INSERT INTO worked_on VALUES(506, 226, 'Actor');  -- John Hurt worked on The Elephant Man as Actor
-INSERT INTO worked_on VALUES(2205, 96, 'Actor');  -- Robert Duvall worked on The Great Santini as Actor
-INSERT INTO worked_on VALUES(2206, 189, 'Actor');  -- Jack Lemmon worked on Tribute as Actor
-INSERT INTO worked_on VALUES(1329, 103, 'Actor');  -- Joe Pesci worked on Raging Bull as Actor
-INSERT INTO worked_on VALUES(2205, 595, 'Actor');  -- Michael O'Keefe worked on The Great Santini as Actor
-INSERT INTO worked_on VALUES(2207, 586, 'Actor');  -- Jason Robards worked on Melvin and Howard as Actor
-INSERT INTO worked_on VALUES(1215, 596, 'Actor');  -- Timothy Hutton worked on Ordinary People as Actor
-INSERT INTO worked_on VALUES(1215, 597, 'Actor');  -- Judd Hirsch worked on Ordinary People as Actor
-INSERT INTO worked_on VALUES(2208, 41, 'Actor');  -- Paul Newman worked on Absence of Malice as Actor
-INSERT INTO worked_on VALUES(1351, 141, 'Actor');  -- Warren Beatty worked on Reds as Actor
-INSERT INTO worked_on VALUES(123, 183, 'Actor');  -- Burt Lancaster worked on Atlantic City as Actor
-INSERT INTO worked_on VALUES(2209, 598, 'Actor');  -- Dudley Moore worked on Arthur as Actor
-INSERT INTO worked_on VALUES(1205, 66, 'Actor');  -- Henry Fonda worked on On Golden Pond as Actor
-INSERT INTO worked_on VALUES(313, 599, 'Actor');  -- Ian Holm worked on Chariots of Fire as Actor
-INSERT INTO worked_on VALUES(2210, 600, 'Actor');  -- James Coco worked on Only When I Laugh as Actor
-INSERT INTO worked_on VALUES(1351, 9, 'Actor');  -- Jack Nicholson worked on Reds as Actor
-INSERT INTO worked_on VALUES(2211, 601, 'Actor');  -- Howard E. Rollins Jr. worked on Ragtime as Actor
-INSERT INTO worked_on VALUES(2209, 534, 'Actor');  -- John Gielgud worked on Arthur as Actor
-INSERT INTO worked_on VALUES(2212, 120, 'Actor');  -- Peter O'Toole worked on My Favorite Year as Actor
-INSERT INTO worked_on VALUES(1084, 189, 'Actor');  -- Jack Lemmon worked on Missing as Actor
-INSERT INTO worked_on VALUES(615, 143, 'Actor');  -- Ben Kingsley worked on Gandhi as Actor
-INSERT INTO worked_on VALUES(1644, 5, 'Actor');  -- Dustin Hoffman worked on Tootsie as Actor
-INSERT INTO worked_on VALUES(1714, 41, 'Actor');  -- Paul Newman worked on The Verdict as Actor
-INSERT INTO worked_on VALUES(1714, 184, 'Actor');  -- James Mason worked on The Verdict as Actor
-INSERT INTO worked_on VALUES(2213, 602, 'Actor');  -- Robert Preston worked on Victor Victoria as Actor
-INSERT INTO worked_on VALUES(1798, 603, 'Actor');  -- John Lithgow worked on The World According to Garp as Actor
-INSERT INTO worked_on VALUES(2214, 604, 'Actor');  -- Charles Durning worked on The Best Little Whorehouse in Texas as Actor
-INSERT INTO worked_on VALUES(2215, 605, 'Actor');  -- Louis Gossett Jr. worked on An Officer and a Gentleman as Actor
-INSERT INTO worked_on VALUES(486, 198, 'Actor');  -- Albert Finney worked on The Dresser as Actor
-INSERT INTO worked_on VALUES(2216, 165, 'Actor');  -- Michael Caine worked on Educating Rita as Actor
-INSERT INTO worked_on VALUES(2217, 606, 'Actor');  -- Tom Conti worked on Reuben, Reuben as Actor
-INSERT INTO worked_on VALUES(486, 227, 'Actor');  -- Tom Courtenay worked on The Dresser as Actor
-INSERT INTO worked_on VALUES(1607, 96, 'Actor');  -- Robert Duvall worked on Tender Mercies as Actor
-INSERT INTO worked_on VALUES(2218, 607, 'Actor');  -- Rip Torn worked on Cross Creek as Actor
-INSERT INTO worked_on VALUES(1613, 9, 'Actor');  -- Jack Nicholson worked on Terms of Endearment as Actor
-INSERT INTO worked_on VALUES(1368, 608, 'Actor');  -- Sam Shepard worked on The Right Stuff as Actor
-INSERT INTO worked_on VALUES(2219, 604, 'Actor');  -- Charles Durning worked on To Be or Not to Be as Actor
-INSERT INTO worked_on VALUES(1613, 603, 'Actor');  -- John Lithgow worked on Terms of Endearment as Actor
-INSERT INTO worked_on VALUES(2220, 198, 'Actor');  -- Albert Finney worked on Under the Volcano as Actor
-INSERT INTO worked_on VALUES(75, 199, 'Actor');  -- Tom Hulce worked on Amadeus as Actor
-INSERT INTO worked_on VALUES(75, 200, 'Actor');  -- F. Murray Abraham worked on Amadeus as Actor
-INSERT INTO worked_on VALUES(2221, 71, 'Actor');  -- Jeff Bridges worked on Starman as Actor
-INSERT INTO worked_on VALUES(890, 201, 'Actor');  -- Sam Waterston worked on The Killing Fields as Actor
-INSERT INTO worked_on VALUES(879, 609, 'Actor');  -- Pat Morita worked on The Karate Kid as Actor
-INSERT INTO worked_on VALUES(2222, 475, 'Actor');  -- Ralph Richardson worked on Greystoke: The Legend of Tarzan, Lord of the Apes as Actor
-INSERT INTO worked_on VALUES(1514, 610, 'Actor');  -- Adolph Caesar worked on A Soldier's Story as Actor
-INSERT INTO worked_on VALUES(890, 611, 'Actor');  -- Haing S. Ngor worked on The Killing Fields as Actor
-INSERT INTO worked_on VALUES(1275, 7, 'Actor');  -- John Malkovich worked on Places in the Heart as Actor
-INSERT INTO worked_on VALUES(2223, 612, 'Actor');  -- James Garner worked on Murphy's Romance as Actor
-INSERT INTO worked_on VALUES(1308, 9, 'Actor');  -- Jack Nicholson worked on Prizzi's Honor as Actor
-INSERT INTO worked_on VALUES(900, 202, 'Actor');  -- William Hurt worked on Kiss of the Spider Woman as Actor
-INSERT INTO worked_on VALUES(1788, 26, 'Actor');  -- Harrison Ford worked on Witness as Actor
-INSERT INTO worked_on VALUES(2224, 68, 'Actor');  -- Jon Voight worked on Runaway Train as Actor
-INSERT INTO worked_on VALUES(850, 613, 'Actor');  -- Robert Loggia worked on Jagged Edge as Actor
-INSERT INTO worked_on VALUES(2224, 614, 'Actor');  -- Eric Roberts worked on Runaway Train as Actor
-INSERT INTO worked_on VALUES(2225, 615, 'Actor');  -- Don Ameche worked on Cocoon as Actor
-INSERT INTO worked_on VALUES(1222, 616, 'Actor');  -- Klaus Maria Brandauer worked on Out of Africa as Actor
-INSERT INTO worked_on VALUES(1308, 617, 'Actor');  -- William Hickey worked on Prizzi's Honor as Actor
-INSERT INTO worked_on VALUES(1392, 228, 'Actor');  -- Dexter Gordon worked on 'Round Midnight as Actor
-INSERT INTO worked_on VALUES(319, 202, 'Actor');  -- William Hurt worked on Children of a Lesser God as Actor
-INSERT INTO worked_on VALUES(2226, 618, 'Actor');  -- James Woods worked on Salvador as Actor
-INSERT INTO worked_on VALUES(355, 41, 'Actor');  -- Paul Newman worked on The Color of Money as Actor
-INSERT INTO worked_on VALUES(1094, 203, 'Actor');  -- Bob Hoskins worked on Mona Lisa as Actor
-INSERT INTO worked_on VALUES(757, 116, 'Actor');  -- Dennis Hopper worked on Hoosiers as Actor
-INSERT INTO worked_on VALUES(1389, 619, 'Actor');  -- Denholm Elliott worked on A Room with a View as Actor
-INSERT INTO worked_on VALUES(1279, 620, 'Actor');  -- Willem Dafoe worked on Platoon as Actor
-INSERT INTO worked_on VALUES(1279, 621, 'Actor');  -- Tom Berenger worked on Platoon as Actor
-INSERT INTO worked_on VALUES(705, 165, 'Actor');  -- Michael Caine worked on Hannah and Her Sisters as Actor
-INSERT INTO worked_on VALUES(2227, 205, 'Actor');  -- Robin Williams worked on Good Morning, Vietnam as Actor
-INSERT INTO worked_on VALUES(1734, 79, 'Actor');  -- Michael Douglas worked on Wall Street as Actor
-INSERT INTO worked_on VALUES(2228, 9, 'Actor');  -- Jack Nicholson worked on Ironweed as Actor
-INSERT INTO worked_on VALUES(264, 202, 'Actor');  -- William Hurt worked on Broadcast News as Actor
-INSERT INTO worked_on VALUES(2229, 204, 'Actor');  -- Marcello Mastroianni worked on Dark Eyes as Actor
-INSERT INTO worked_on VALUES(2230, 64, 'Actor');  -- Morgan Freeman worked on Street Smart as Actor
-INSERT INTO worked_on VALUES(1699, 622, 'Actor');  -- Sean Connery worked on The Untouchables as Actor
-INSERT INTO worked_on VALUES(264, 623, 'Actor');  -- Albert Brooks worked on Broadcast News as Actor
-INSERT INTO worked_on VALUES(2231, 35, 'Actor');  -- Denzel Washington worked on Cry Freedom as Actor
-INSERT INTO worked_on VALUES(1106, 572, 'Actor');  -- Vincent Gardenia worked on Moonstruck as Actor
-INSERT INTO worked_on VALUES(1088, 115, 'Actor');  -- Gene Hackman worked on Mississippi Burning as Actor
-INSERT INTO worked_on VALUES(2232, 624, 'Actor');  -- Edward James Olmos worked on Stand and Deliver as Actor
-INSERT INTO worked_on VALUES(1331, 5, 'Actor');  -- Dustin Hoffman worked on Rain Man as Actor
-INSERT INTO worked_on VALUES(193, 4, 'Actor');  -- Tom Hanks worked on Big as Actor
-INSERT INTO worked_on VALUES(2233, 625, 'Actor');  -- Max Von Sydow worked on Pelle the Conqueror as Actor
-INSERT INTO worked_on VALUES(2234, 626, 'Actor');  -- Martin Landau worked on Tucker: The Man and His Dream as Actor
-INSERT INTO worked_on VALUES(2235, 121, 'Actor');  -- Alec Guinness worked on Little Dorrit as Actor
-INSERT INTO worked_on VALUES(1399, 162, 'Actor');  -- River Phoenix worked on Running on Empty as Actor
-INSERT INTO worked_on VALUES(573, 172, 'Actor');  -- Kevin Kline worked on A Fish Called Wanda as Actor
-INSERT INTO worked_on VALUES(2236, 627, 'Actor');  -- Dean Stockwell worked on Married to the Mob as Actor
-INSERT INTO worked_on VALUES(237, 33, 'Actor');  -- Tom Cruise worked on Born on the Fourth of July as Actor
-INSERT INTO worked_on VALUES(419, 205, 'Actor');  -- Robin Williams worked on Dead Poets Society as Actor
-INSERT INTO worked_on VALUES(2237, 628, 'Actor');  -- Kenneth Branagh worked on Henry V as Actor
-INSERT INTO worked_on VALUES(1142, 17, 'Actor');  -- Daniel Day-Lewis worked on My Left Foot as Actor
-INSERT INTO worked_on VALUES(488, 64, 'Actor');  -- Morgan Freeman worked on Driving Miss Daisy as Actor
-INSERT INTO worked_on VALUES(643, 35, 'Actor');  -- Denzel Washington worked on Glory as Actor
-INSERT INTO worked_on VALUES(386, 626, 'Actor');  -- Martin Landau worked on Crimes and Misdemeanors as Actor
-INSERT INTO worked_on VALUES(490, 2, 'Actor');  -- Marlon Brando worked on A Dry White Season as Actor
-INSERT INTO worked_on VALUES(458, 629, 'Actor');  -- Danny Aiello worked on Do the Right Thing as Actor
-INSERT INTO worked_on VALUES(488, 630, 'Actor');  -- Dan Aykroyd worked on Driving Miss Daisy as Actor
-INSERT INTO worked_on VALUES(1366, 206, 'Actor');  -- Jeremy Irons worked on Reversal of Fortune as Actor
-INSERT INTO worked_on VALUES(135, 3, 'Actor');  -- Robert De Niro worked on Awakenings as Actor
-INSERT INTO worked_on VALUES(2238, 631, 'Actor');  -- Gerard Depardieu worked on Cyrano de Bergerac as Actor
-INSERT INTO worked_on VALUES(2363, 528, 'Actor');  -- Richard Harris worked on The Field as Actor
-INSERT INTO worked_on VALUES(400, 207, 'Actor');  -- Kevin Costner worked on Dances With Wolves as Actor
-INSERT INTO worked_on VALUES(400, 632, 'Actor');  -- Graham Greene worked on Dances With Wolves as Actor
-INSERT INTO worked_on VALUES(448, 56, 'Actor');  -- Al Pacino worked on Dick Tracy as Actor
-INSERT INTO worked_on VALUES(666, 103, 'Actor');  -- Joe Pesci worked on Goodfellas as Actor
-INSERT INTO worked_on VALUES(2239, 633, 'Actor');  -- Bruce Davison worked on Longtime Companion as Actor
-INSERT INTO worked_on VALUES(649, 634, 'Actor');  -- Andy Garcia worked on The Godfather Part III as Actor
-INSERT INTO worked_on VALUES(1480, 98, 'Actor');  -- Anthony Hopkins worked on The Silence of the Lambs as Actor
-INSERT INTO worked_on VALUES(574, 205, 'Actor');  -- Robin Williams worked on The Fisher King as Actor
-INSERT INTO worked_on VALUES(286, 3, 'Actor');  -- Robert De Niro worked on Cape Fear as Actor
-INSERT INTO worked_on VALUES(275, 141, 'Actor');  -- Warren Beatty worked on Bugsy as Actor
-INSERT INTO worked_on VALUES(1302, 164, 'Actor');  -- Nick Nolte worked on The Prince of Tides as Actor
-INSERT INTO worked_on VALUES(275, 143, 'Actor');  -- Ben Kingsley worked on Bugsy as Actor
-INSERT INTO worked_on VALUES(275, 53, 'Actor');  -- Harvey Keitel worked on Bugsy as Actor
-INSERT INTO worked_on VALUES(162, 635, 'Actor');  -- Michael Lerner worked on Barton Fink as Actor
-INSERT INTO worked_on VALUES(341, 185, 'Actor');  -- Jack Palance worked on City Slickers as Actor
-INSERT INTO worked_on VALUES(862, 28, 'Actor');  -- Tommy Lee Jones worked on JFK as Actor
-INSERT INTO worked_on VALUES(311, 32, 'Actor');  -- Robert Downey Jr. worked on Chaplin as Actor
-INSERT INTO worked_on VALUES(1003, 35, 'Actor');  -- Denzel Washington worked on Malcolm X as Actor
-INSERT INTO worked_on VALUES(395, 208, 'Actor');  -- Stephen Rea worked on The Crying Game as Actor
-INSERT INTO worked_on VALUES(1418, 56, 'Actor');  -- Al Pacino worked on Scent of a Woman as Actor
-INSERT INTO worked_on VALUES(1697, 279, 'Actor');  -- Clint Eastwood worked on Unforgiven as Actor
-INSERT INTO worked_on VALUES(395, 636, 'Actor');  -- Jaye Davidson worked on The Crying Game as Actor
-INSERT INTO worked_on VALUES(563, 9, 'Actor');  -- Jack Nicholson worked on A Few Good Men as Actor
-INSERT INTO worked_on VALUES(2240, 637, 'Actor');  -- David Paymer worked on Mr. Saturday Night as Actor
-INSERT INTO worked_on VALUES(1697, 115, 'Actor');  -- Gene Hackman worked on Unforgiven as Actor
-INSERT INTO worked_on VALUES(642, 56, 'Actor');  -- Al Pacino worked on Glengarry Glen Ross as Actor
-INSERT INTO worked_on VALUES(1355, 98, 'Actor');  -- Anthony Hopkins worked on The Remains of the Day as Actor
-INSERT INTO worked_on VALUES(1758, 126, 'Actor');  -- Laurence Fishburne worked on What's Love Got to Do with It as Actor
-INSERT INTO worked_on VALUES(1259, 4, 'Actor');  -- Tom Hanks worked on Philadelphia as Actor
-INSERT INTO worked_on VALUES(1419, 142, 'Actor');  -- Liam Neeson worked on Schindler's List as Actor
-INSERT INTO worked_on VALUES(808, 17, 'Actor');  -- Daniel Day-Lewis worked on In the Name of the Father as Actor
-INSERT INTO worked_on VALUES(607, 28, 'Actor');  -- Tommy Lee Jones worked on The Fugitive as Actor
-INSERT INTO worked_on VALUES(808, 638, 'Actor');  -- Pete Postlethwaite worked on In the Name of the Father as Actor
-INSERT INTO worked_on VALUES(1757, 18, 'Actor');  -- Leonardo DiCaprio worked on What's Eating Gilbert Grape as Actor
-INSERT INTO worked_on VALUES(1419, 213, 'Actor');  -- Ralph Fiennes worked on Schindler's List as Actor
-INSERT INTO worked_on VALUES(807, 7, 'Actor');  -- John Malkovich worked on In the Line of Fire as Actor
-INSERT INTO worked_on VALUES(1188, 41, 'Actor');  -- Paul Newman worked on Nobody's Fool as Actor
-INSERT INTO worked_on VALUES(2241, 639, 'Actor');  -- Nigel Hawthorne worked on The Madness of King George as Actor
-INSERT INTO worked_on VALUES(1315, 225, 'Actor');  -- John Travolta worked on Pulp Fiction as Actor
-INSERT INTO worked_on VALUES(587, 4, 'Actor');  -- Tom Hanks worked on Forrest Gump as Actor
-INSERT INTO worked_on VALUES(1460, 64, 'Actor');  -- Morgan Freeman worked on The Shawshank Redemption as Actor
-INSERT INTO worked_on VALUES(502, 626, 'Actor');  -- Martin Landau worked on Ed Wood as Actor
-INSERT INTO worked_on VALUES(1315, 54, 'Actor');  -- Samuel L. Jackson worked on Pulp Fiction as Actor
-INSERT INTO worked_on VALUES(587, 640, 'Actor');  -- Gary Sinise worked on Forrest Gump as Actor
-INSERT INTO worked_on VALUES(277, 641, 'Actor');  -- Chazz Palminteri worked on Bullets over Broadway as Actor
-INSERT INTO worked_on VALUES(1323, 541, 'Actor');  -- Paul Scofield worked on Quiz Show as Actor
-INSERT INTO worked_on VALUES(1116, 163, 'Actor');  -- Richard Dreyfuss worked on Mr. Holland's Opus as Actor
-INSERT INTO worked_on VALUES(792, 209, 'Actor');  -- Massimo Troisi worked on Il Postino as Actor
-INSERT INTO worked_on VALUES(418, 11, 'Actor');  -- Sean Penn worked on Dead Man Walking as Actor
-INSERT INTO worked_on VALUES(941, 210, 'Actor');  -- Nicolas Cage worked on Leaving Las Vegas as Actor
-INSERT INTO worked_on VALUES(1184, 98, 'Actor');  -- Anthony Hopkins worked on Nixon as Actor
-INSERT INTO worked_on VALUES(2242, 642, 'Actor');  -- Tim Roth worked on Rob Roy as Actor
-INSERT INTO worked_on VALUES(7, 13, 'Actor');  -- Brad Pitt worked on 12 Monkeys as Actor
-INSERT INTO worked_on VALUES(1703, 174, 'Actor');  -- Kevin Spacey worked on The Usual Suspects as Actor
-INSERT INTO worked_on VALUES(112, 229, 'Actor');  -- Ed Harris worked on Apollo 13 as Actor
-INSERT INTO worked_on VALUES(138, 643, 'Actor');  -- James Cromwell worked on Babe as Actor
-INSERT INTO worked_on VALUES(1500, 211, 'Actor');  -- Billy Bob Thornton worked on Sling Blade as Actor
-INSERT INTO worked_on VALUES(1254, 107, 'Actor');  -- Woody Harrelson worked on The People vs. Larry Flynt as Actor
-INSERT INTO worked_on VALUES(857, 33, 'Actor');  -- Tom Cruise worked on Jerry Maguire as Actor
-INSERT INTO worked_on VALUES(1465, 212, 'Actor');  -- Geoffrey Rush worked on Shine as Actor
-INSERT INTO worked_on VALUES(520, 213, 'Actor');  -- Ralph Fiennes worked on The English Patient as Actor
-INSERT INTO worked_on VALUES(1465, 644, 'Actor');  -- Armin Mueller-Stahl worked on Shine as Actor
-INSERT INTO worked_on VALUES(2243, 618, 'Actor');  -- James Woods worked on Ghosts of Mississippi as Actor
-INSERT INTO worked_on VALUES(857, 645, 'Actor');  -- Cuba Gooding Jr. worked on Jerry Maguire as Actor
-INSERT INTO worked_on VALUES(1298, 10, 'Actor');  -- Edward Norton worked on Primal Fear as Actor
-INSERT INTO worked_on VALUES(553, 646, 'Actor');  -- William H. Macy worked on Fargo as Actor
-INSERT INTO worked_on VALUES(1690, 114, 'Actor');  -- Peter Fonda worked on Ulee's Gold as Actor
-INSERT INTO worked_on VALUES(662, 20, 'Actor');  -- Matt Damon worked on Good Will Hunting as Actor
-INSERT INTO worked_on VALUES(1725, 5, 'Actor');  -- Dustin Hoffman worked on Wag the Dog as Actor
-INSERT INTO worked_on VALUES(119, 9, 'Actor');  -- Jack Nicholson worked on As Good As It Gets as Actor
-INSERT INTO worked_on VALUES(113, 96, 'Actor');  -- Robert Duvall worked on The Apostle as Actor
-INSERT INTO worked_on VALUES(90, 98, 'Actor');  -- Anthony Hopkins worked on Amistad as Actor
-INSERT INTO worked_on VALUES(235, 647, 'Actor');  -- Burt Reynolds worked on Boogie Nights as Actor
-INSERT INTO worked_on VALUES(848, 648, 'Actor');  -- Robert Forster worked on Jackie Brown as Actor
-INSERT INTO worked_on VALUES(119, 649, 'Actor');  -- Greg Kinnear worked on As Good As It Gets as Actor
-INSERT INTO worked_on VALUES(662, 205, 'Actor');  -- Robin Williams worked on Good Will Hunting as Actor
-INSERT INTO worked_on VALUES(1413, 4, 'Actor');  -- Tom Hanks worked on Saving Private Ryan as Actor
-INSERT INTO worked_on VALUES(41, 164, 'Actor');  -- Nick Nolte worked on Affliction as Actor
-INSERT INTO worked_on VALUES(650, 137, 'Actor');  -- Ian McKellen worked on Gods and Monsters as Actor
-INSERT INTO worked_on VALUES(952, 214, 'Actor');  -- Roberto Benigni worked on Life Is Beautiful as Actor
-INSERT INTO worked_on VALUES(83, 10, 'Actor');  -- Edward Norton worked on American History X as Actor
-INSERT INTO worked_on VALUES(1455, 212, 'Actor');  -- Geoffrey Rush worked on Shakespeare in Love as Actor
-INSERT INTO worked_on VALUES(342, 96, 'Actor');  -- Robert Duvall worked on A Civil Action as Actor
-INSERT INTO worked_on VALUES(1678, 229, 'Actor');  -- Ed Harris worked on The Truman Show as Actor
-INSERT INTO worked_on VALUES(41, 650, 'Actor');  -- James Coburn worked on Affliction as Actor
-INSERT INTO worked_on VALUES(1486, 211, 'Actor');  -- Billy Bob Thornton worked on A Simple Plan as Actor
-INSERT INTO worked_on VALUES(775, 35, 'Actor');  -- Denzel Washington worked on The Hurricane as Actor
-INSERT INTO worked_on VALUES(1587, 11, 'Actor');  -- Sean Penn worked on Sweet and Lowdown as Actor
-INSERT INTO worked_on VALUES(78, 174, 'Actor');  -- Kevin Spacey worked on American Beauty as Actor
-INSERT INTO worked_on VALUES(1561, 215, 'Actor');  -- Richard Farnsworth worked on The Straight Story as Actor
-INSERT INTO worked_on VALUES(823, 49, 'Actor');  -- Russell Crowe worked on The Insider as Actor
-INSERT INTO worked_on VALUES(1490, 651, 'Actor');  -- Haley Joel Osment worked on The Sixth Sense as Actor
-INSERT INTO worked_on VALUES(333, 165, 'Actor');  -- Michael Caine worked on The Cider House Rules as Actor
-INSERT INTO worked_on VALUES(686, 652, 'Actor');  -- Michael Clarke Duncan worked on The Green Mile as Actor
-INSERT INTO worked_on VALUES(1595, 102, 'Actor');  -- Jude Law worked on The Talented Mr. Ripley as Actor
-INSERT INTO worked_on VALUES(999, 33, 'Actor');  -- Tom Cruise worked on Magnolia as Actor
-INSERT INTO worked_on VALUES(173, 30, 'Actor');  -- Javier Bardem worked on Before Night Falls as Actor
-INSERT INTO worked_on VALUES(1322, 212, 'Actor');  -- Geoffrey Rush worked on Quills as Actor
-INSERT INTO worked_on VALUES(295, 4, 'Actor');  -- Tom Hanks worked on Cast Away as Actor
-INSERT INTO worked_on VALUES(1286, 229, 'Actor');  -- Ed Harris worked on Pollock as Actor
-INSERT INTO worked_on VALUES(640, 49, 'Actor');  -- Russell Crowe worked on Gladiator as Actor
-INSERT INTO worked_on VALUES(640, 61, 'Actor');  -- Joaquin Phoenix worked on Gladiator as Actor
-INSERT INTO worked_on VALUES(523, 198, 'Actor');  -- Albert Finney worked on Erin Brockovich as Actor
-INSERT INTO worked_on VALUES(369, 71, 'Actor');  -- Jeff Bridges worked on The Contender as Actor
-INSERT INTO worked_on VALUES(1452, 620, 'Actor');  -- Willem Dafoe worked on Shadow of the Vampire as Actor
-INSERT INTO worked_on VALUES(1659, 27, 'Actor');  -- Benicio Del Toro worked on Traffic as Actor
-INSERT INTO worked_on VALUES(169, 49, 'Actor');  -- Russell Crowe worked on A Beautiful Mind as Actor
-INSERT INTO worked_on VALUES(782, 11, 'Actor');  -- Sean Penn worked on I Am Sam as Actor
-INSERT INTO worked_on VALUES(53, 95, 'Actor');  -- Will Smith worked on Ali as Actor
-INSERT INTO worked_on VALUES(804, 216, 'Actor');  -- Tom Wilkinson worked on In the Bedroom as Actor
-INSERT INTO worked_on VALUES(1660, 35, 'Actor');  -- Denzel Washington worked on Training Day as Actor
-INSERT INTO worked_on VALUES(835, 653, 'Actor');  -- Jim Broadbent worked on Iris as Actor
-INSERT INTO worked_on VALUES(53, 68, 'Actor');  -- Jon Voight worked on Ali as Actor
-INSERT INTO worked_on VALUES(1660, 654, 'Actor');  -- Ethan Hawke worked on Training Day as Actor
-INSERT INTO worked_on VALUES(1451, 143, 'Actor');  -- Ben Kingsley worked on Sexy Beast as Actor
-INSERT INTO worked_on VALUES(977, 137, 'Actor');  -- Ian McKellen worked on The Lord of the Rings: The Fellowship of the Ring as Actor
-INSERT INTO worked_on VALUES(616, 17, 'Actor');  -- Daniel Day-Lewis worked on Gangs of New York as Actor
-INSERT INTO worked_on VALUES(1263, 217, 'Actor');  -- Adrien Brody worked on The Pianist as Actor
-INSERT INTO worked_on VALUES(1320, 165, 'Actor');  -- Michael Caine worked on The Quiet American as Actor
-INSERT INTO worked_on VALUES(29, 9, 'Actor');  -- Jack Nicholson worked on About Schmidt as Actor
-INSERT INTO worked_on VALUES(36, 210, 'Actor');  -- Nicolas Cage worked on Adaptation as Actor
-INSERT INTO worked_on VALUES(761, 229, 'Actor');  -- Ed Harris worked on The Hours as Actor
-INSERT INTO worked_on VALUES(36, 655, 'Actor');  -- Chris Cooper worked on Adaptation as Actor
-INSERT INTO worked_on VALUES(316, 93, 'Actor');  -- John C. Reilly worked on Chicago as Actor
-INSERT INTO worked_on VALUES(299, 592, 'Actor');  -- Christopher Walken worked on Catch Me If You Can as Actor
-INSERT INTO worked_on VALUES(1375, 41, 'Actor');  -- Paul Newman worked on Road to Perdition as Actor
-INSERT INTO worked_on VALUES(353, 102, 'Actor');  -- Jude Law worked on Cold Mountain as Actor
-INSERT INTO worked_on VALUES(1271, 14, 'Actor');  -- Johnny Depp worked on Pirates of the Caribbean: The Curse of the Black Pearl as Actor
-INSERT INTO worked_on VALUES(1154, 11, 'Actor');  -- Sean Penn worked on Mystic River as Actor
-INSERT INTO worked_on VALUES(765, 143, 'Actor');  -- Ben Kingsley worked on House of Sand and Fog as Actor
-INSERT INTO worked_on VALUES(982, 88, 'Actor');  -- Bill Murray worked on Lost in Translation as Actor
-INSERT INTO worked_on VALUES(2244, 656, 'Actor');  -- Alec Baldwin worked on The Cooler as Actor
-INSERT INTO worked_on VALUES(1154, 63, 'Actor');  -- Tim Robbins worked on Mystic River as Actor
-INSERT INTO worked_on VALUES(800, 657, 'Actor');  -- Djimon Hounsou worked on In America as Actor
-INSERT INTO worked_on VALUES(11, 27, 'Actor');  -- Benicio Del Toro worked on 21 Grams as Actor
-INSERT INTO worked_on VALUES(923, 658, 'Actor');  -- Ken Watanabe worked on The Last Samurai as Actor
-INSERT INTO worked_on VALUES(571, 14, 'Actor');  -- Johnny Depp worked on Finding Neverland as Actor
-INSERT INTO worked_on VALUES(134, 18, 'Actor');  -- Leonardo DiCaprio worked on The Aviator as Actor
-INSERT INTO worked_on VALUES(1340, 218, 'Actor');  -- Jamie Foxx worked on Ray as Actor
-INSERT INTO worked_on VALUES(760, 146, 'Actor');  -- Don Cheadle worked on Hotel Rwanda as Actor
-INSERT INTO worked_on VALUES(1077, 279, 'Actor');  -- Clint Eastwood worked on Million Dollar Baby as Actor
-INSERT INTO worked_on VALUES(2245, 659, 'Actor');  -- Clive Owen worked on Closer as Actor
-INSERT INTO worked_on VALUES(354, 218, 'Actor');  -- Jamie Foxx worked on Collateral as Actor
-INSERT INTO worked_on VALUES(1477, 660, 'Actor');  -- Thomas Haden Church worked on Sideways as Actor
-INSERT INTO worked_on VALUES(1077, 64, 'Actor');  -- Morgan Freeman worked on Million Dollar Baby as Actor
-INSERT INTO worked_on VALUES(134, 661, 'Actor');  -- Alan Alda worked on The Aviator as Actor
-INSERT INTO worked_on VALUES(1731, 61, 'Actor');  -- Joaquin Phoenix worked on Walk the Line as Actor
-INSERT INTO worked_on VALUES(659, 219, 'Actor');  -- David Strathairn worked on Good Night, and Good Luck. as Actor
-INSERT INTO worked_on VALUES(2246, 662, 'Actor');  -- Terrence Howard worked on Hustle & Flow as Actor
-INSERT INTO worked_on VALUES(2038, 70, 'Actor');  -- Heath Ledger worked on Brokeback Mountain as Actor
-INSERT INTO worked_on VALUES(287, 6, 'Actor');  -- Philip Seymour Hoffman worked on Capote as Actor
-INSERT INTO worked_on VALUES(383, 147, 'Actor');  -- Matt Dillon worked on Crash as Actor
-INSERT INTO worked_on VALUES(2038, 663, 'Actor');  -- Jake Gyllenhaal worked on Brokeback Mountain as Actor
-INSERT INTO worked_on VALUES(748, 202, 'Actor');  -- William Hurt worked on A History of Violence as Actor
-INSERT INTO worked_on VALUES(335, 108, 'Actor');  -- Paul Giamatti worked on Cinderella Man as Actor
-INSERT INTO worked_on VALUES(1593, 16, 'Actor');  -- George Clooney worked on Syriana as Actor
-INSERT INTO worked_on VALUES(701, 31, 'Actor');  -- Ryan Gosling worked on Half Nelson as Actor
-INSERT INTO worked_on VALUES(1318, 95, 'Actor');  -- Will Smith worked on The Pursuit of Happyness as Actor
-INSERT INTO worked_on VALUES(218, 18, 'Actor');  -- Leonardo DiCaprio worked on Blood Diamond as Actor
-INSERT INTO worked_on VALUES(2247, 220, 'Actor');  -- Forest Whitaker worked on The Last King of Scotland as Actor
-INSERT INTO worked_on VALUES(2248, 120, 'Actor');  -- Peter O'Toole worked on Venus as Actor
-INSERT INTO worked_on VALUES(2249, 664, 'Actor');  -- Jackie Earle Haley worked on Little Children as Actor
-INSERT INTO worked_on VALUES(964, 193, 'Actor');  -- Alan Arkin worked on Little Miss Sunshine as Actor
-INSERT INTO worked_on VALUES(441, 37, 'Actor');  -- Mark Wahlberg worked on The Departed as Actor
-INSERT INTO worked_on VALUES(2250, 665, 'Actor');  -- Eddie Murphy worked on Dreamgirls as Actor
-INSERT INTO worked_on VALUES(218, 657, 'Actor');  -- Djimon Hounsou worked on Blood Diamond as Actor
-INSERT INTO worked_on VALUES(1063, 16, 'Actor');  -- George Clooney worked on Michael Clayton as Actor
-INSERT INTO worked_on VALUES(1619, 17, 'Actor');  -- Daniel Day-Lewis worked on There Will Be Blood as Actor
-INSERT INTO worked_on VALUES(1585, 14, 'Actor');  -- Johnny Depp worked on Sweeney Todd: The Demon Barber of Fleet Street as Actor
-INSERT INTO worked_on VALUES(2251, 28, 'Actor');  -- Tommy Lee Jones worked on In the Valley of Elah as Actor
-INSERT INTO worked_on VALUES(2252, 666, 'Actor');  -- Viggo Mortensen worked on Eastern Promises as Actor
-INSERT INTO worked_on VALUES(120, 667, 'Actor');  -- Casey Affleck worked on The Assassination of Jesse James by the Coward Robert Ford as Actor
-INSERT INTO worked_on VALUES(1185, 30, 'Actor');  -- Javier Bardem worked on No Country for Old Men as Actor
-INSERT INTO worked_on VALUES(2253, 6, 'Actor');  -- Philip Seymour Hoffman worked on Charlie Wilson's War as Actor
-INSERT INTO worked_on VALUES(829, 668, 'Actor');  -- Hal Holbrook worked on Into the Wild as Actor
-INSERT INTO worked_on VALUES(1063, 216, 'Actor');  -- Tom Wilkinson worked on Michael Clayton as Actor
-INSERT INTO worked_on VALUES(2254, 221, 'Actor');  -- Richard Jenkins worked on The Visitor as Actor
-INSERT INTO worked_on VALUES(605, 222, 'Actor');  -- Frank Langella worked on Frost/Nixon as Actor
-INSERT INTO worked_on VALUES(2039, 11, 'Actor');  -- Sean Penn worked on Milk as Actor
-INSERT INTO worked_on VALUES(396, 13, 'Actor');  -- Brad Pitt worked on The Curious Case of Benjamin Button as Actor
-INSERT INTO worked_on VALUES(2255, 43, 'Actor');  -- Mickey Rourke worked on The Wrestler as Actor
-INSERT INTO worked_on VALUES(2039, 134, 'Actor');  -- Josh Brolin worked on Milk as Actor
-INSERT INTO worked_on VALUES(1672, 32, 'Actor');  -- Robert Downey Jr. worked on Tropic Thunder as Actor
-INSERT INTO worked_on VALUES(475, 6, 'Actor');  -- Philip Seymour Hoffman worked on Doubt as Actor
-INSERT INTO worked_on VALUES(404, 70, 'Actor');  -- Heath Ledger worked on The Dark Knight as Actor
-INSERT INTO worked_on VALUES(2256, 669, 'Actor');  -- Michael Shannon worked on Revolutionary Road as Actor
-INSERT INTO worked_on VALUES(2257, 670, 'Actress');  -- Louise Dresser worked on A Ship Comes In as Actress
-INSERT INTO worked_on VALUES(1831, 671, 'Actress');  -- Janet Gaynor worked on 7th Heaven as Actress
-INSERT INTO worked_on VALUES(2258, 671, 'Actress');  -- Janet Gaynor worked on Street Angel as Actress
-INSERT INTO worked_on VALUES(1574, 671, 'Actress');  -- Janet Gaynor worked on Sunrise as Actress
-INSERT INTO worked_on VALUES(2259, 672, 'Actress');  -- Gloria Swanson worked on Sadie Thompson as Actress
-INSERT INTO worked_on VALUES(2260, 673, 'Actress');  -- Ruth Chatterton worked on Madame X as Actress
-INSERT INTO worked_on VALUES(2261, 674, 'Actress');  -- Mary Pickford worked on Coquette as Actress
-INSERT INTO worked_on VALUES(2262, 675, 'Actress');  -- Jeanne Eagels worked on The Letter as Actress
-INSERT INTO worked_on VALUES(2263, 676, 'Actress');  -- Betty Compson worked on The Barker as Actress
-INSERT INTO worked_on VALUES(1833, 677, 'Actress');  -- Bessie Love worked on The Broadway Melody as Actress
-INSERT INTO worked_on VALUES(2264, 678, 'Actress');  -- Corinne Griffith worked on The Divine Lady as Actress
-INSERT INTO worked_on VALUES(2265, 679, 'Actress');  -- Nancy Carroll worked on The Devil's Holiday as Actress
-INSERT INTO worked_on VALUES(1840, 680, 'Actress');  -- Norma Shearer worked on The Divorcee as Actress
-INSERT INTO worked_on VALUES(2266, 680, 'Actress');  -- Norma Shearer worked on Their Own Desire as Actress
-INSERT INTO worked_on VALUES(2267, 672, 'Actress');  -- Gloria Swanson worked on The Trespasser as Actress
-INSERT INTO worked_on VALUES(2268, 673, 'Actress');  -- Ruth Chatterton worked on Sarah and Son as Actress
-INSERT INTO worked_on VALUES(2269, 681, 'Actress');  -- Greta Garbo worked on Anna Christie as Actress
-INSERT INTO worked_on VALUES(2270, 681, 'Actress');  -- Greta Garbo worked on Romance as Actress
-INSERT INTO worked_on VALUES(2271, 682, 'Actress');  -- Marie Dressler worked on Min and Bill as Actress
-INSERT INTO worked_on VALUES(2053, 680, 'Actress');  -- Norma Shearer worked on A Free Soul as Actress
-INSERT INTO worked_on VALUES(1841, 683, 'Actress');  -- Irene Dunne worked on Cimarron as Actress
-INSERT INTO worked_on VALUES(2272, 684, 'Actress');  -- Ann Harding worked on Holiday as Actress
-INSERT INTO worked_on VALUES(2273, 685, 'Actress');  -- Marlene Dietrich worked on Morocco as Actress
-INSERT INTO worked_on VALUES(2055, 686, 'Actress');  -- Lynn Fontanne worked on The Guardsman as Actress
-INSERT INTO worked_on VALUES(2274, 687, 'Actress');  -- Helen Hayes worked on The Sin of Madelon Claudet as Actress
-INSERT INTO worked_on VALUES(2275, 682, 'Actress');  -- Marie Dressler worked on Emma as Actress
-INSERT INTO worked_on VALUES(1863, 688, 'Actress');  -- Diana Wynyard worked on Cavalcade as Actress
-INSERT INTO worked_on VALUES(2276, 21, 'Actress');  -- Katharine Hepburn worked on Morning Glory as Actress
-INSERT INTO worked_on VALUES(1862, 689, 'Actress');  -- May Robson worked on Lady for a Day as Actress
-INSERT INTO worked_on VALUES(2277, 113, 'Actress');  -- Bette Davis worked on Of Human Bondage as Actress
-INSERT INTO worked_on VALUES(1868, 680, 'Actress');  -- Norma Shearer worked on The Barretts of Wimpole Street as Actress
-INSERT INTO worked_on VALUES(1866, 690, 'Actress');  -- Grace Moore worked on One Night of Love as Actress
-INSERT INTO worked_on VALUES(841, 691, 'Actress');  -- Claudette Colbert worked on It Happened One Night as Actress
-INSERT INTO worked_on VALUES(2278, 692, 'Actress');  -- Elisabeth Bergner worked on Escape Me Never as Actress
-INSERT INTO worked_on VALUES(2279, 693, 'Actress');  -- Miriam Hopkins worked on Becky Sharp as Actress
-INSERT INTO worked_on VALUES(2280, 694, 'Actress');  -- Merle Oberon worked on The Dark Angel as Actress
-INSERT INTO worked_on VALUES(1877, 21, 'Actress');  -- Katharine Hepburn worked on Alice Adams as Actress
-INSERT INTO worked_on VALUES(2281, 113, 'Actress');  -- Bette Davis worked on Dangerous as Actress
-INSERT INTO worked_on VALUES(2282, 691, 'Actress');  -- Claudette Colbert worked on Private Worlds as Actress
-INSERT INTO worked_on VALUES(2059, 695, 'Actress');  -- Carole Lombard worked on My Man Godfrey as Actress
-INSERT INTO worked_on VALUES(2283, 683, 'Actress');  -- Irene Dunne worked on Theodora Goes Wild as Actress
-INSERT INTO worked_on VALUES(1894, 680, 'Actress');  -- Norma Shearer worked on Romeo and Juliet as Actress
-INSERT INTO worked_on VALUES(1891, 696, 'Actress');  -- Luise Rainer worked on The Great Ziegfeld as Actress
-INSERT INTO worked_on VALUES(2284, 697, 'Actress');  -- Gladys George worked on Valiant Is the Word for Carrie as Actress
-INSERT INTO worked_on VALUES(1890, 698, 'Actress');  -- Maria Ouspenskaya worked on Dodsworth as Actress
-INSERT INTO worked_on VALUES(2059, 699, 'Actress');  -- Alice Brady worked on My Man Godfrey as Actress
-INSERT INTO worked_on VALUES(3328, 700, 'Actress');  -- Bonita Granville worked on These Three as Actress
-INSERT INTO worked_on VALUES(2285, 701, 'Actress');  -- Beulah Bondi worked on The Gorgeous Hussy as Actress
-INSERT INTO worked_on VALUES(1893, 702, 'Actress');  -- Gale Sondergaard worked on Anthony Adverse as Actress
-INSERT INTO worked_on VALUES(2286, 681, 'Actress');  -- Greta Garbo worked on Camille as Actress
-INSERT INTO worked_on VALUES(2287, 703, 'Actress');  -- Barbara Stanwyck worked on Stella Dallas as Actress
-INSERT INTO worked_on VALUES(1897, 683, 'Actress');  -- Irene Dunne worked on The Awful Truth as Actress
-INSERT INTO worked_on VALUES(1898, 696, 'Actress');  -- Luise Rainer worked on The Good Earth as Actress
-INSERT INTO worked_on VALUES(1896, 671, 'Actress');  -- Janet Gaynor worked on A Star Is Born as Actress
-INSERT INTO worked_on VALUES(2064, 704, 'Actress');  -- May Whitty worked on Night Must Fall as Actress
-INSERT INTO worked_on VALUES(1899, 699, 'Actress');  -- Alice Brady worked on In Old Chicago as Actress
-INSERT INTO worked_on VALUES(1903, 705, 'Actress');  -- Claire Trevor worked on Dead End as Actress
-INSERT INTO worked_on VALUES(2287, 706, 'Actress');  -- Anne Shirley worked on Stella Dallas as Actress
-INSERT INTO worked_on VALUES(1901, 707, 'Actress');  -- Andrea Leeds worked on Stage Door as Actress
-INSERT INTO worked_on VALUES(1909, 708, 'Actress');  -- Wendy Hiller worked on Pygmalion as Actress
-INSERT INTO worked_on VALUES(2288, 709, 'Actress');  -- Margaret Sullavan worked on Three Comrades as Actress
-INSERT INTO worked_on VALUES(1907, 113, 'Actress');  -- Bette Davis worked on Jezebel as Actress
-INSERT INTO worked_on VALUES(2071, 680, 'Actress');  -- Norma Shearer worked on Marie Antoinette as Actress
-INSERT INTO worked_on VALUES(2289, 710, 'Actress');  -- Fay Bainter worked on White Banners as Actress
-INSERT INTO worked_on VALUES(1906, 711, 'Actress');  -- Spring Byington worked on You Can't Take It with You as Actress
-INSERT INTO worked_on VALUES(2290, 701, 'Actress');  -- Beulah Bondi worked on Of Human Hearts as Actress
-INSERT INTO worked_on VALUES(2291, 712, 'Actress');  -- Billie Burke worked on Merrily We Live as Actress
-INSERT INTO worked_on VALUES(2292, 713, 'Actress');  -- Miliza Korjus worked on The Great Waltz as Actress
-INSERT INTO worked_on VALUES(1907, 710, 'Actress');  -- Fay Bainter worked on Jezebel as Actress
-INSERT INTO worked_on VALUES(1916, 714, 'Actress');  -- Greer Garson worked on Goodbye, Mr. Chips as Actress
-INSERT INTO worked_on VALUES(1915, 113, 'Actress');  -- Bette Davis worked on Dark Victory as Actress
-INSERT INTO worked_on VALUES(657, 715, 'Actress');  -- Vivien Leigh worked on Gone with the Wind as Actress
-INSERT INTO worked_on VALUES(1913, 683, 'Actress');  -- Irene Dunne worked on Love Affair as Actress
-INSERT INTO worked_on VALUES(1183, 681, 'Actress');  -- Greta Garbo worked on Ninotchka as Actress
-INSERT INTO worked_on VALUES(1802, 716, 'Actress');  -- Geraldine Fitzgerald worked on Wuthering Heights as Actress
-INSERT INTO worked_on VALUES(657, 717, 'Actress');  -- Olivia de Havilland worked on Gone with the Wind as Actress
-INSERT INTO worked_on VALUES(1913, 698, 'Actress');  -- Maria Ouspenskaya worked on Love Affair as Actress
-INSERT INTO worked_on VALUES(2293, 718, 'Actress');  -- Edna May Oliver worked on Drums along the Mohawk as Actress
-INSERT INTO worked_on VALUES(657, 719, 'Actress');  -- Hattie McDaniel worked on Gone with the Wind as Actress
-INSERT INTO worked_on VALUES(1921, 113, 'Actress');  -- Bette Davis worked on The Letter as Actress
-INSERT INTO worked_on VALUES(1343, 720, 'Actress');  -- Joan Fontaine worked on Rebecca as Actress
-INSERT INTO worked_on VALUES(1919, 721, 'Actress');  -- Ginger Rogers worked on Kitty Foyle as Actress
-INSERT INTO worked_on VALUES(1922, 722, 'Actress');  -- Martha Scott worked on Our Town as Actress
-INSERT INTO worked_on VALUES(1260, 21, 'Actress');  -- Katharine Hepburn worked on The Philadelphia Story as Actress
-INSERT INTO worked_on VALUES(2294, 723, 'Actress');  -- Marjorie Rambeau worked on Primrose Path as Actress
-INSERT INTO worked_on VALUES(1260, 724, 'Actress');  -- Ruth Hussey worked on The Philadelphia Story as Actress
-INSERT INTO worked_on VALUES(1920, 725, 'Actress');  -- Barbara O'Neil worked on All This, and Heaven Too as Actress
-INSERT INTO worked_on VALUES(676, 726, 'Actress');  -- Jane Darwell worked on The Grapes of Wrath as Actress
-INSERT INTO worked_on VALUES(1343, 727, 'Actress');  -- Judith Anderson worked on Rebecca as Actress
-INSERT INTO worked_on VALUES(1928, 720, 'Actress');  -- Joan Fontaine worked on Suspicion as Actress
-INSERT INTO worked_on VALUES(1924, 717, 'Actress');  -- Olivia de Havilland worked on Hold Back the Dawn as Actress
-INSERT INTO worked_on VALUES(1926, 113, 'Actress');  -- Bette Davis worked on The Little Foxes as Actress
-INSERT INTO worked_on VALUES(1927, 714, 'Actress');  -- Greer Garson worked on Blossoms in the Dust as Actress
-INSERT INTO worked_on VALUES(2295, 703, 'Actress');  -- Barbara Stanwyck worked on Ball of Fire as Actress
-INSERT INTO worked_on VALUES(2296, 728, 'Actress');  -- Mary Astor worked on The Great Lie as Actress
-INSERT INTO worked_on VALUES(1926, 729, 'Actress');  -- Patricia Collinge worked on The Little Foxes as Actress
-INSERT INTO worked_on VALUES(1926, 730, 'Actress');  -- Teresa Wright worked on The Little Foxes as Actress
-INSERT INTO worked_on VALUES(1930, 731, 'Actress');  -- Sara Allgood worked on How Green Was My Valley as Actress
-INSERT INTO worked_on VALUES(1929, 732, 'Actress');  -- Margaret Wycherly worked on Sergeant York as Actress
-INSERT INTO worked_on VALUES(2297, 113, 'Actress');  -- Bette Davis worked on Now, Voyager as Actress
-INSERT INTO worked_on VALUES(1932, 730, 'Actress');  -- Teresa Wright worked on The Pride of the Yankees as Actress
-INSERT INTO worked_on VALUES(2298, 733, 'Actress');  -- Rosalind Russell worked on My Sister Eileen as Actress
-INSERT INTO worked_on VALUES(1938, 714, 'Actress');  -- Greer Garson worked on Mrs. Miniver as Actress
-INSERT INTO worked_on VALUES(1791, 21, 'Actress');  -- Katharine Hepburn worked on Woman of the Year as Actress
-INSERT INTO worked_on VALUES(1936, 734, 'Actress');  -- Susan Peters worked on Random Harvest as Actress
-INSERT INTO worked_on VALUES(998, 735, 'Actress');  -- Agnes Moorehead worked on The Magnificent Ambersons as Actress
-INSERT INTO worked_on VALUES(1938, 704, 'Actress');  -- May Whitty worked on Mrs. Miniver as Actress
-INSERT INTO worked_on VALUES(1938, 730, 'Actress');  -- Teresa Wright worked on Mrs. Miniver as Actress
-INSERT INTO worked_on VALUES(2297, 736, 'Actress');  -- Gladys Cooper worked on Now, Voyager as Actress
-INSERT INTO worked_on VALUES(2299, 720, 'Actress');  -- Joan Fontaine worked on The Constant Nymph as Actress
-INSERT INTO worked_on VALUES(1940, 714, 'Actress');  -- Greer Garson worked on Madame Curie as Actress
-INSERT INTO worked_on VALUES(1944, 737, 'Actress');  -- Jennifer Jones worked on The Song of Bernadette as Actress
-INSERT INTO worked_on VALUES(1943, 738, 'Actress');  -- Jean Arthur worked on The More the Merrier as Actress
-INSERT INTO worked_on VALUES(1942, 739, 'Actress');  -- Ingrid Bergman worked on For Whom the Bell Tolls as Actress
-INSERT INTO worked_on VALUES(1947, 740, 'Actress');  -- Lucile Watson worked on Watch on the Rhine as Actress
-INSERT INTO worked_on VALUES(1944, 741, 'Actress');  -- Anne Revere worked on The Song of Bernadette as Actress
-INSERT INTO worked_on VALUES(2300, 742, 'Actress');  -- Paulette Goddard worked on So Proudly We Hail! as Actress
-INSERT INTO worked_on VALUES(1944, 736, 'Actress');  -- Gladys Cooper worked on The Song of Bernadette as Actress
-INSERT INTO worked_on VALUES(1942, 743, 'Actress');  -- Katina Paxinou worked on For Whom the Bell Tolls as Actress
-INSERT INTO worked_on VALUES(2301, 714, 'Actress');  -- Greer Garson worked on Mrs. Parkington as Actress
-INSERT INTO worked_on VALUES(1950, 691, 'Actress');  -- Claudette Colbert worked on Since You Went Away as Actress
-INSERT INTO worked_on VALUES(473, 703, 'Actress');  -- Barbara Stanwyck worked on Double Indemnity as Actress
-INSERT INTO worked_on VALUES(1948, 739, 'Actress');  -- Ingrid Bergman worked on Gaslight as Actress
-INSERT INTO worked_on VALUES(2085, 113, 'Actress');  -- Bette Davis worked on Mr. Skeffington as Actress
-INSERT INTO worked_on VALUES(1948, 744, 'Actress');  -- Angela Lansbury worked on Gaslight as Actress
-INSERT INTO worked_on VALUES(2302, 745, 'Actress');  -- Aline MacMahon worked on Dragon Seed as Actress
-INSERT INTO worked_on VALUES(1950, 737, 'Actress');  -- Jennifer Jones worked on Since You Went Away as Actress
-INSERT INTO worked_on VALUES(2084, 746, 'Actress');  -- Ethel Barrymore worked on None but the Lonely Heart as Actress
-INSERT INTO worked_on VALUES(2301, 735, 'Actress');  -- Agnes Moorehead worked on Mrs. Parkington as Actress
-INSERT INTO worked_on VALUES(2303, 747, 'Actress');  -- Gene Tierney worked on Leave Her to Heaven as Actress
-INSERT INTO worked_on VALUES(2304, 737, 'Actress');  -- Jennifer Jones worked on Love Letters as Actress
-INSERT INTO worked_on VALUES(2305, 714, 'Actress');  -- Greer Garson worked on The Valley of Decision as Actress
-INSERT INTO worked_on VALUES(1954, 748, 'Actress');  -- Joan Crawford worked on Mildred Pierce as Actress
-INSERT INTO worked_on VALUES(1955, 739, 'Actress');  -- Ingrid Bergman worked on The Bells of St. Mary's as Actress
-INSERT INTO worked_on VALUES(1954, 749, 'Actress');  -- Ann Blyth worked on Mildred Pierce as Actress
-INSERT INTO worked_on VALUES(2089, 750, 'Actress');  -- Joan Lorring worked on The Corn Is Green as Actress
-INSERT INTO worked_on VALUES(1954, 751, 'Actress');  -- Eve Arden worked on Mildred Pierce as Actress
-INSERT INTO worked_on VALUES(2306, 744, 'Actress');  -- Angela Lansbury worked on The Picture of Dorian Gray as Actress
-INSERT INTO worked_on VALUES(2307, 741, 'Actress');  -- Anne Revere worked on National Velvet as Actress
-INSERT INTO worked_on VALUES(2308, 737, 'Actress');  -- Jennifer Jones worked on Duel in the Sun as Actress
-INSERT INTO worked_on VALUES(2309, 717, 'Actress');  -- Olivia de Havilland worked on To Each His Own as Actress
-INSERT INTO worked_on VALUES(1956, 752, 'Actress');  -- Jane Wyman worked on The Yearling as Actress
-INSERT INTO worked_on VALUES(2310, 733, 'Actress');  -- Rosalind Russell worked on Sister Kenny as Actress
-INSERT INTO worked_on VALUES(2311, 753, 'Actress');  -- Celia Johnson worked on Brief Encounter as Actress
-INSERT INTO worked_on VALUES(2312, 702, 'Actress');  -- Gale Sondergaard worked on Anna and the King of Siam as Actress
-INSERT INTO worked_on VALUES(1958, 754, 'Actress');  -- Anne Baxter worked on The Razor's Edge as Actress
-INSERT INTO worked_on VALUES(2308, 755, 'Actress');  -- Lillian Gish worked on Duel in the Sun as Actress
-INSERT INTO worked_on VALUES(2313, 756, 'Actress');  -- Flora Robson worked on Saratoga Trunk as Actress
-INSERT INTO worked_on VALUES(2314, 746, 'Actress');  -- Ethel Barrymore worked on The Spiral Staircase as Actress
-INSERT INTO worked_on VALUES(2315, 757, 'Actress');  -- Susan Hayward worked on Smash-Up: The Story of a Woman as Actress
-INSERT INTO worked_on VALUES(2098, 733, 'Actress');  -- Rosalind Russell worked on Mourning Becomes Electra as Actress
-INSERT INTO worked_on VALUES(1962, 758, 'Actress');  -- Dorothy McGuire worked on Gentleman's Agreement as Actress
-INSERT INTO worked_on VALUES(2316, 748, 'Actress');  -- Joan Crawford worked on Possessed as Actress
-INSERT INTO worked_on VALUES(2101, 759, 'Actress');  -- Loretta Young worked on The Farmer's Daughter as Actress
-INSERT INTO worked_on VALUES(2317, 746, 'Actress');  -- Ethel Barrymore worked on The Paradine Case as Actress
-INSERT INTO worked_on VALUES(2318, 760, 'Actress');  -- Marjorie Main worked on The Egg and I as Actress
-INSERT INTO worked_on VALUES(1962, 761, 'Actress');  -- Celeste Holm worked on Gentleman's Agreement as Actress
-INSERT INTO worked_on VALUES(1960, 762, 'Actress');  -- Gloria Grahame worked on Crossfire as Actress
-INSERT INTO worked_on VALUES(1962, 741, 'Actress');  -- Anne Revere worked on Gentleman's Agreement as Actress
-INSERT INTO worked_on VALUES(1963, 752, 'Actress');  -- Jane Wyman worked on Johnny Belinda as Actress
-INSERT INTO worked_on VALUES(1964, 717, 'Actress');  -- Olivia de Havilland worked on The Snake Pit as Actress
-INSERT INTO worked_on VALUES(2319, 703, 'Actress');  -- Barbara Stanwyck worked on Sorry, Wrong Number as Actress
-INSERT INTO worked_on VALUES(2105, 683, 'Actress');  -- Irene Dunne worked on I Remember Mama as Actress
-INSERT INTO worked_on VALUES(2106, 739, 'Actress');  -- Ingrid Bergman worked on Joan of Arc as Actress
-INSERT INTO worked_on VALUES(1966, 763, 'Actress');  -- Jean Simmons worked on Hamlet as Actress
-INSERT INTO worked_on VALUES(1963, 735, 'Actress');  -- Agnes Moorehead worked on Johnny Belinda as Actress
-INSERT INTO worked_on VALUES(2105, 764, 'Actress');  -- Ellen Corby worked on I Remember Mama as Actress
-INSERT INTO worked_on VALUES(2105, 765, 'Actress');  -- Barbara Bel Geddes worked on I Remember Mama as Actress
-INSERT INTO worked_on VALUES(2320, 705, 'Actress');  -- Claire Trevor worked on Key Largo as Actress
-INSERT INTO worked_on VALUES(2321, 766, 'Actress');  -- Jeanne Crain worked on Pinky as Actress
-INSERT INTO worked_on VALUES(2322, 759, 'Actress');  -- Loretta Young worked on Come to the Stable as Actress
-INSERT INTO worked_on VALUES(2323, 757, 'Actress');  -- Susan Hayward worked on My Foolish Heart as Actress
-INSERT INTO worked_on VALUES(1970, 717, 'Actress');  -- Olivia de Havilland worked on The Heiress as Actress
-INSERT INTO worked_on VALUES(2324, 767, 'Actress');  -- Deborah Kerr worked on Edward, My Son as Actress
-INSERT INTO worked_on VALUES(2322, 768, 'Actress');  -- Elsa Lanchester worked on Come to the Stable as Actress
-INSERT INTO worked_on VALUES(1967, 769, 'Actress');  -- Mercedes McCambridge worked on All the King's Men as Actress
-INSERT INTO worked_on VALUES(2321, 770, 'Actress');  -- Ethel Waters worked on Pinky as Actress
-INSERT INTO worked_on VALUES(2322, 761, 'Actress');  -- Celeste Holm worked on Come to the Stable as Actress
-INSERT INTO worked_on VALUES(2321, 746, 'Actress');  -- Ethel Barrymore worked on Pinky as Actress
-INSERT INTO worked_on VALUES(1575, 672, 'Actress');  -- Gloria Swanson worked on Sunset Boulevard as Actress
-INSERT INTO worked_on VALUES(1972, 771, 'Actress');  -- Judy Holliday worked on Born Yesterday as Actress
-INSERT INTO worked_on VALUES(2325, 772, 'Actress');  -- Eleanor Parker worked on Caged as Actress
-INSERT INTO worked_on VALUES(66, 113, 'Actress');  -- Bette Davis worked on All about Eve as Actress
-INSERT INTO worked_on VALUES(66, 754, 'Actress');  -- Anne Baxter worked on All about Eve as Actress
-INSERT INTO worked_on VALUES(66, 761, 'Actress');  -- Celeste Holm worked on All about Eve as Actress
-INSERT INTO worked_on VALUES(1575, 773, 'Actress');  -- Nancy Olson worked on Sunset Boulevard as Actress
-INSERT INTO worked_on VALUES(725, 774, 'Actress');  -- Josephine Hull worked on Harvey as Actress
-INSERT INTO worked_on VALUES(2325, 775, 'Actress');  -- Hope Emerson worked on Caged as Actress
-INSERT INTO worked_on VALUES(66, 776, 'Actress');  -- Thelma Ritter worked on All about Eve as Actress
-INSERT INTO worked_on VALUES(2326, 752, 'Actress');  -- Jane Wyman worked on The Blue Veil as Actress
-INSERT INTO worked_on VALUES(42, 21, 'Actress');  -- Katharine Hepburn worked on The African Queen as Actress
-INSERT INTO worked_on VALUES(1274, 777, 'Actress');  -- Shelley Winters worked on A Place in the Sun as Actress
-INSERT INTO worked_on VALUES(1566, 715, 'Actress');  -- Vivien Leigh worked on A Streetcar Named Desire as Actress
-INSERT INTO worked_on VALUES(2327, 772, 'Actress');  -- Eleanor Parker worked on Detective Story as Actress
-INSERT INTO worked_on VALUES(1566, 778, 'Actress');  -- Kim Hunter worked on A Streetcar Named Desire as Actress
-INSERT INTO worked_on VALUES(2328, 776, 'Actress');  -- Thelma Ritter worked on The Mating Season as Actress
-INSERT INTO worked_on VALUES(2326, 779, 'Actress');  -- Joan Blondell worked on The Blue Veil as Actress
-INSERT INTO worked_on VALUES(2327, 780, 'Actress');  -- Lee Grant worked on Detective Story as Actress
-INSERT INTO worked_on VALUES(2116, 781, 'Actress');  -- Mildred Dunnock worked on Death of a Salesman as Actress
-INSERT INTO worked_on VALUES(2329, 782, 'Actress');  -- Julie Harris worked on The Member of the Wedding as Actress
-INSERT INTO worked_on VALUES(2330, 113, 'Actress');  -- Bette Davis worked on The Star as Actress
-INSERT INTO worked_on VALUES(2331, 783, 'Actress');  -- Shirley Booth worked on Come Back, Little Sheba as Actress
-INSERT INTO worked_on VALUES(2120, 748, 'Actress');  -- Joan Crawford worked on Sudden Fear as Actress
-INSERT INTO worked_on VALUES(2332, 757, 'Actress');  -- Susan Hayward worked on With a Song in My Heart as Actress
-INSERT INTO worked_on VALUES(1977, 784, 'Actress');  -- Colette Marchand worked on Moulin Rouge as Actress
-INSERT INTO worked_on VALUES(146, 762, 'Actress');  -- Gloria Grahame worked on The Bad and the Beautiful as Actress
-INSERT INTO worked_on VALUES(1489, 785, 'Actress');  -- Jean Hagen worked on Singin' in the Rain as Actress
-INSERT INTO worked_on VALUES(2331, 786, 'Actress');  -- Terry Moore worked on Come Back, Little Sheba as Actress
-INSERT INTO worked_on VALUES(2332, 776, 'Actress');  -- Thelma Ritter worked on With a Song in My Heart as Actress
-INSERT INTO worked_on VALUES(1384, 112, 'Actress');  -- Audrey Hepburn worked on Roman Holiday as Actress
-INSERT INTO worked_on VALUES(2333, 787, 'Actress');  -- Ava Gardner worked on Mogambo as Actress
-INSERT INTO worked_on VALUES(2334, 788, 'Actress');  -- Maggie McNamara worked on The Moon Is Blue as Actress
-INSERT INTO worked_on VALUES(604, 767, 'Actress');  -- Deborah Kerr worked on From Here to Eternity as Actress
-INSERT INTO worked_on VALUES(2335, 789, 'Actress');  -- Leslie Caron worked on Lili as Actress
-INSERT INTO worked_on VALUES(604, 790, 'Actress');  -- Donna Reed worked on From Here to Eternity as Actress
-INSERT INTO worked_on VALUES(2336, 776, 'Actress');  -- Thelma Ritter worked on Pickup on South Street as Actress
-INSERT INTO worked_on VALUES(2337, 723, 'Actress');  -- Marjorie Rambeau worked on Torch Song as Actress
-INSERT INTO worked_on VALUES(2338, 791, 'Actress');  -- Geraldine Page worked on Hondo as Actress
-INSERT INTO worked_on VALUES(2333, 792, 'Actress');  -- Grace Kelly worked on Mogambo as Actress
-INSERT INTO worked_on VALUES(2339, 752, 'Actress');  -- Jane Wyman worked on Magnificent Obsession as Actress
-INSERT INTO worked_on VALUES(2340, 112, 'Actress');  -- Audrey Hepburn worked on Sabrina as Actress
-INSERT INTO worked_on VALUES(2341, 793, 'Actress');  -- Dorothy Dandridge worked on Carmen Jones as Actress
-INSERT INTO worked_on VALUES(1983, 792, 'Actress');  -- Grace Kelly worked on The Country Girl as Actress
-INSERT INTO worked_on VALUES(2124, 794, 'Actress');  -- Judy Garland worked on A Star Is Born as Actress
-INSERT INTO worked_on VALUES(2342, 795, 'Actress');  -- Nina Foch worked on Executive Suite as Actress
-INSERT INTO worked_on VALUES(2343, 796, 'Actress');  -- Katy Jurado worked on Broken Lance as Actress
-INSERT INTO worked_on VALUES(1207, 797, 'Actress');  -- Eva Marie Saint worked on On the Waterfront as Actress
-INSERT INTO worked_on VALUES(2344, 798, 'Actress');  -- Jan Sterling worked on The High and the Mighty as Actress
-INSERT INTO worked_on VALUES(2344, 705, 'Actress');  -- Claire Trevor worked on The High and the Mighty as Actress
-INSERT INTO worked_on VALUES(1571, 21, 'Actress');  -- Katharine Hepburn worked on Summertime as Actress
-INSERT INTO worked_on VALUES(2345, 757, 'Actress');  -- Susan Hayward worked on I'll Cry Tomorrow as Actress
-INSERT INTO worked_on VALUES(2346, 772, 'Actress');  -- Eleanor Parker worked on Interrupted Melody as Actress
-INSERT INTO worked_on VALUES(1987, 737, 'Actress');  -- Jennifer Jones worked on Love Is a Many-Splendored Thing as Actress
-INSERT INTO worked_on VALUES(1989, 799, 'Actress');  -- Anna Magnani worked on The Rose Tattoo as Actress
-INSERT INTO worked_on VALUES(1989, 800, 'Actress');  -- Marisa Pavan worked on The Rose Tattoo as Actress
-INSERT INTO worked_on VALUES(1027, 801, 'Actress');  -- Betsy Blair worked on Marty as Actress
-INSERT INTO worked_on VALUES(497, 802, 'Actress');  -- Jo Van Fleet worked on East of Eden as Actress
-INSERT INTO worked_on VALUES(2347, 803, 'Actress');  -- Peggy Lee worked on Pete Kelly's Blues as Actress
-INSERT INTO worked_on VALUES(1344, 804, 'Actress');  -- Natalie Wood worked on Rebel without a Cause as Actress
-INSERT INTO worked_on VALUES(2348, 805, 'Actress');  -- Carroll Baker worked on Baby Doll as Actress
-INSERT INTO worked_on VALUES(2349, 806, 'Actress');  -- Nancy Kelly worked on The Bad Seed as Actress
-INSERT INTO worked_on VALUES(2350, 21, 'Actress');  -- Katharine Hepburn worked on The Rainmaker as Actress
-INSERT INTO worked_on VALUES(1991, 767, 'Actress');  -- Deborah Kerr worked on The King and I as Actress
-INSERT INTO worked_on VALUES(2351, 739, 'Actress');  -- Ingrid Bergman worked on Anastasia as Actress
-INSERT INTO worked_on VALUES(2349, 807, 'Actress');  -- Eileen Heckart worked on The Bad Seed as Actress
-INSERT INTO worked_on VALUES(633, 769, 'Actress');  -- Mercedes McCambridge worked on Giant as Actress
-INSERT INTO worked_on VALUES(2349, 808, 'Actress');  -- Patty McCormack worked on The Bad Seed as Actress
-INSERT INTO worked_on VALUES(1801, 809, 'Actress');  -- Dorothy Malone worked on Written on the Wind as Actress
-INSERT INTO worked_on VALUES(2348, 781, 'Actress');  -- Mildred Dunnock worked on Baby Doll as Actress
-INSERT INTO worked_on VALUES(2352, 810, 'Actress');  -- Joanne Woodward worked on The Three Faces of Eve as Actress
-INSERT INTO worked_on VALUES(2353, 811, 'Actress');  -- Elizabeth Taylor worked on Raintree County as Actress
-INSERT INTO worked_on VALUES(2133, 799, 'Actress');  -- Anna Magnani worked on Wild Is the Wind as Actress
-INSERT INTO worked_on VALUES(2354, 767, 'Actress');  -- Deborah Kerr worked on Heaven Knows, Mr. Allison as Actress
-INSERT INTO worked_on VALUES(1995, 812, 'Actress');  -- Lana Turner worked on Peyton Place as Actress
-INSERT INTO worked_on VALUES(1994, 768, 'Actress');  -- Elsa Lanchester worked on Witness for the Prosecution as Actress
-INSERT INTO worked_on VALUES(1995, 813, 'Actress');  -- Hope Lange worked on Peyton Place as Actress
-INSERT INTO worked_on VALUES(1412, 814, 'Actress');  -- Miyoshi Umeki worked on Sayonara as Actress
-INSERT INTO worked_on VALUES(2355, 815, 'Actress');  -- Carolyn Jones worked on The Bachelor Party as Actress
-INSERT INTO worked_on VALUES(1995, 816, 'Actress');  -- Diane Varsi worked on Peyton Place as Actress
-INSERT INTO worked_on VALUES(1998, 733, 'Actress');  -- Rosalind Russell worked on Auntie Mame as Actress
-INSERT INTO worked_on VALUES(1999, 767, 'Actress');  -- Deborah Kerr worked on Separate Tables as Actress
-INSERT INTO worked_on VALUES(2356, 757, 'Actress');  -- Susan Hayward worked on I Want To Live! as Actress
-INSERT INTO worked_on VALUES(298, 811, 'Actress');  -- Elizabeth Taylor worked on Cat on a Hot Tin Roof as Actress
-INSERT INTO worked_on VALUES(2137, 817, 'Actress');  -- Shirley MacLaine worked on Some Came Running as Actress
-INSERT INTO worked_on VALUES(1999, 708, 'Actress');  -- Wendy Hiller worked on Separate Tables as Actress
-INSERT INTO worked_on VALUES(2357, 818, 'Actress');  -- Maureen Stapleton worked on Lonelyhearts as Actress
-INSERT INTO worked_on VALUES(2137, 819, 'Actress');  -- Martha Hyer worked on Some Came Running as Actress
-INSERT INTO worked_on VALUES(1996, 820, 'Actress');  -- Cara Williams worked on The Defiant Ones as Actress
-INSERT INTO worked_on VALUES(1998, 821, 'Actress');  -- Peggy Cass worked on Auntie Mame as Actress
-INSERT INTO worked_on VALUES(2000, 822, 'Actress');  -- Simone Signoret worked on Room at the Top as Actress
-INSERT INTO worked_on VALUES(2358, 21, 'Actress');  -- Katharine Hepburn worked on Suddenly, Last Summer as Actress
-INSERT INTO worked_on VALUES(2002, 112, 'Actress');  -- Audrey Hepburn worked on The Nun's Story as Actress
-INSERT INTO worked_on VALUES(2359, 823, 'Actress');  -- Doris Day worked on Pillow Talk as Actress
-INSERT INTO worked_on VALUES(2358, 811, 'Actress');  -- Elizabeth Taylor worked on Suddenly, Last Summer as Actress
-INSERT INTO worked_on VALUES(2000, 824, 'Actress');  -- Hermione Baddeley worked on Room at the Top as Actress
-INSERT INTO worked_on VALUES(2360, 825, 'Actress');  -- Juanita Moore worked on Imitation of Life as Actress
-INSERT INTO worked_on VALUES(2001, 777, 'Actress');  -- Shelley Winters worked on The Diary of Anne Frank as Actress
-INSERT INTO worked_on VALUES(2359, 776, 'Actress');  -- Thelma Ritter worked on Pillow Talk as Actress
-INSERT INTO worked_on VALUES(2360, 826, 'Actress');  -- Susan Kohner worked on Imitation of Life as Actress
-INSERT INTO worked_on VALUES(2361, 811, 'Actress');  -- Elizabeth Taylor worked on Butterfield 8 as Actress
-INSERT INTO worked_on VALUES(2362, 827, 'Actress');  -- Melina Mercouri worked on Never on Sunday as Actress
-INSERT INTO worked_on VALUES(2004, 767, 'Actress');  -- Deborah Kerr worked on The Sundowners as Actress
-INSERT INTO worked_on VALUES(107, 817, 'Actress');  -- Shirley MacLaine worked on The Apartment as Actress
-INSERT INTO worked_on VALUES(2364, 714, 'Actress');  -- Greer Garson worked on Sunrise at Campobello as Actress
-INSERT INTO worked_on VALUES(1312, 828, 'Actress');  -- Janet Leigh worked on Psycho as Actress
-INSERT INTO worked_on VALUES(2006, 829, 'Actress');  -- Mary Ure worked on Sons and Lovers as Actress
-INSERT INTO worked_on VALUES(2004, 830, 'Actress');  -- Glynis Johns worked on The Sundowners as Actress
-INSERT INTO worked_on VALUES(2365, 831, 'Actress');  -- Shirley Knight worked on The Dark at the Top of the Stairs as Actress
-INSERT INTO worked_on VALUES(510, 832, 'Actress');  -- Shirley Jones worked on Elmer Gantry as Actress
-INSERT INTO worked_on VALUES(778, 833, 'Actress');  -- Piper Laurie worked on The Hustler as Actress
-INSERT INTO worked_on VALUES(2366, 804, 'Actress');  -- Natalie Wood worked on Splendor in the Grass as Actress
-INSERT INTO worked_on VALUES(2367, 834, 'Actress');  -- Sophia Loren worked on Two Women as Actress
-INSERT INTO worked_on VALUES(2368, 791, 'Actress');  -- Geraldine Page worked on Summer and Smoke as Actress
-INSERT INTO worked_on VALUES(251, 112, 'Actress');  -- Audrey Hepburn worked on Breakfast at Tiffany's as Actress
-INSERT INTO worked_on VALUES(2008, 794, 'Actress');  -- Judy Garland worked on Judgment at Nuremberg as Actress
-INSERT INTO worked_on VALUES(1750, 835, 'Actress');  -- Rita Moreno worked on West Side Story as Actress
-INSERT INTO worked_on VALUES(2369, 836, 'Actress');  -- Lotte Lenya worked on The Roman Spring of Mrs. Stone as Actress
-INSERT INTO worked_on VALUES(2370, 710, 'Actress');  -- Fay Bainter worked on The Children's Hour as Actress
-INSERT INTO worked_on VALUES(2368, 837, 'Actress');  -- Una Merkel worked on Summer and Smoke as Actress
-INSERT INTO worked_on VALUES(415, 838, 'Actress');  -- Lee Remick worked on Days of Wine and Roses as Actress
-INSERT INTO worked_on VALUES(1754, 113, 'Actress');  -- Bette Davis worked on What Ever Happened to Baby Jane? as Actress
-INSERT INTO worked_on VALUES(2371, 21, 'Actress');  -- Katharine Hepburn worked on Long Day's Journey into Night as Actress
-INSERT INTO worked_on VALUES(1082, 169, 'Actress');  -- Anne Bancroft worked on The Miracle Worker as Actress
-INSERT INTO worked_on VALUES(2151, 791, 'Actress');  -- Geraldine Page worked on Sweet Bird of Youth as Actress
-INSERT INTO worked_on VALUES(1082, 839, 'Actress');  -- Patty Duke worked on The Miracle Worker as Actress
-INSERT INTO worked_on VALUES(2151, 831, 'Actress');  -- Shirley Knight worked on Sweet Bird of Youth as Actress
-INSERT INTO worked_on VALUES(2149, 776, 'Actress');  -- Thelma Ritter worked on Birdman of Alcatraz as Actress
-INSERT INTO worked_on VALUES(1014, 744, 'Actress');  -- Angela Lansbury worked on The Manchurian Candidate as Actress
-INSERT INTO worked_on VALUES(1642, 840, 'Actress');  -- Mary Badham worked on To Kill a Mockingbird as Actress
-INSERT INTO worked_on VALUES(2153, 841, 'Actress');  -- Rachel Roberts worked on This Sporting Life as Actress
-INSERT INTO worked_on VALUES(2154, 842, 'Actress');  -- Patricia Neal worked on Hud as Actress
-INSERT INTO worked_on VALUES(2372, 789, 'Actress');  -- Leslie Caron worked on The L-Shaped Room as Actress
-INSERT INTO worked_on VALUES(2373, 804, 'Actress');  -- Natalie Wood worked on Love with the Proper Stranger as Actress
-INSERT INTO worked_on VALUES(2374, 817, 'Actress');  -- Shirley MacLaine worked on Irma La Douce as Actress
-INSERT INTO worked_on VALUES(2375, 843, 'Actress');  -- Margaret Rutherford worked on The V.I.P.s as Actress
-INSERT INTO worked_on VALUES(2012, 844, 'Actress');  -- Lilia Skala worked on Lilies of the Field as Actress
-INSERT INTO worked_on VALUES(2014, 845, 'Actress');  -- Edith Evans worked on Tom Jones as Actress
-INSERT INTO worked_on VALUES(2014, 846, 'Actress');  -- Joyce Redman worked on Tom Jones as Actress
-INSERT INTO worked_on VALUES(2014, 847, 'Actress');  -- Diane Cilento worked on Tom Jones as Actress
-INSERT INTO worked_on VALUES(2376, 848, 'Actress');  -- Kim Stanley worked on Seance on a Wet Afternoon as Actress
-INSERT INTO worked_on VALUES(2377, 849, 'Actress');  -- Debbie Reynolds worked on The Unsinkable Molly Brown as Actress
-INSERT INTO worked_on VALUES(2378, 169, 'Actress');  -- Anne Bancroft worked on The Pumpkin Eater as Actress
-INSERT INTO worked_on VALUES(2379, 834, 'Actress');  -- Sophia Loren worked on Marriage Italian Style as Actress
-INSERT INTO worked_on VALUES(1029, 850, 'Actress');  -- Julie Andrews worked on Mary Poppins as Actress
-INSERT INTO worked_on VALUES(2016, 851, 'Actress');  -- Lila Kedrova worked on Zorba the Greek as Actress
-INSERT INTO worked_on VALUES(2380, 735, 'Actress');  -- Agnes Moorehead worked on Hush...Hush, Sweet Charlotte as Actress
-INSERT INTO worked_on VALUES(2381, 845, 'Actress');  -- Edith Evans worked on The Chalk Garden as Actress
-INSERT INTO worked_on VALUES(1138, 736, 'Actress');  -- Gladys Cooper worked on My Fair Lady as Actress
-INSERT INTO worked_on VALUES(2382, 852, 'Actress');  -- Grayson Hall worked on The Night of the Iguana as Actress
-INSERT INTO worked_on VALUES(2018, 822, 'Actress');  -- Simone Signoret worked on Ship of Fools as Actress
-INSERT INTO worked_on VALUES(2383, 853, 'Actress');  -- Elizabeth Hartman worked on A Patch of Blue as Actress
-INSERT INTO worked_on VALUES(1522, 850, 'Actress');  -- Julie Andrews worked on The Sound of Music as Actress
-INSERT INTO worked_on VALUES(2384, 854, 'Actress');  -- Samantha Eggar worked on The Collector as Actress
-INSERT INTO worked_on VALUES(406, 855, 'Actress');  -- Julie Christie worked on Darling as Actress
-INSERT INTO worked_on VALUES(2162, 856, 'Actress');  -- Maggie Smith worked on Othello as Actress
-INSERT INTO worked_on VALUES(1522, 857, 'Actress');  -- Peggy Wood worked on The Sound of Music as Actress
-INSERT INTO worked_on VALUES(2162, 846, 'Actress');  -- Joyce Redman worked on Othello as Actress
-INSERT INTO worked_on VALUES(2385, 858, 'Actress');  -- Ruth Gordon worked on Inside Daisy Clover as Actress
-INSERT INTO worked_on VALUES(2383, 777, 'Actress');  -- Shelley Winters worked on A Patch of Blue as Actress
-INSERT INTO worked_on VALUES(1772, 811, 'Actress');  -- Elizabeth Taylor worked on Who's Afraid of Virginia Woolf? as Actress
-INSERT INTO worked_on VALUES(2386, 859, 'Actress');  -- Ida Kaminska worked on The Shop on Main Street as Actress
-INSERT INTO worked_on VALUES(2166, 860, 'Actress');  -- Lynn Redgrave worked on Georgy Girl as Actress
-INSERT INTO worked_on VALUES(2387, 861, 'Actress');  -- Vanessa Redgrave worked on Morgan! as Actress
-INSERT INTO worked_on VALUES(2388, 862, 'Actress');  -- Anouk Aimee worked on A Man and a Woman as Actress
-INSERT INTO worked_on VALUES(52, 863, 'Actress');  -- Vivien Merchant worked on Alfie as Actress
-INSERT INTO worked_on VALUES(2389, 864, 'Actress');  -- Jocelyne Lagarde worked on Hawaii as Actress
-INSERT INTO worked_on VALUES(1772, 865, 'Actress');  -- Sandy Dennis worked on Who's Afraid of Virginia Woolf? as Actress
-INSERT INTO worked_on VALUES(2021, 708, 'Actress');  -- Wendy Hiller worked on A Man for All Seasons as Actress
-INSERT INTO worked_on VALUES(2390, 791, 'Actress');  -- Geraldine Page worked on You're a Big Boy Now as Actress
-INSERT INTO worked_on VALUES(2391, 845, 'Actress');  -- Edith Evans worked on The Whisperers as Actress
-INSERT INTO worked_on VALUES(696, 21, 'Actress');  -- Katharine Hepburn worked on Guess Who's Coming to Dinner as Actress
-INSERT INTO worked_on VALUES(234, 100, 'Actress');  -- Faye Dunaway worked on Bonnie and Clyde as Actress
-INSERT INTO worked_on VALUES(672, 169, 'Actress');  -- Anne Bancroft worked on The Graduate as Actress
-INSERT INTO worked_on VALUES(2392, 112, 'Actress');  -- Audrey Hepburn worked on Wait until Dark as Actress
-INSERT INTO worked_on VALUES(2393, 866, 'Actress');  -- Mildred Natwick worked on Barefoot in the Park as Actress
-INSERT INTO worked_on VALUES(234, 867, 'Actress');  -- Estelle Parsons worked on Bonnie and Clyde as Actress
-INSERT INTO worked_on VALUES(696, 868, 'Actress');  -- Beah Richards worked on Guess Who's Coming to Dinner as Actress
-INSERT INTO worked_on VALUES(2394, 869, 'Actress');  -- Carol Channing worked on Thoroughly Modern Millie as Actress
-INSERT INTO worked_on VALUES(672, 870, 'Actress');  -- Katharine Ross worked on The Graduate as Actress
-INSERT INTO worked_on VALUES(2395, 861, 'Actress');  -- Vanessa Redgrave worked on Isadora as Actress
-INSERT INTO worked_on VALUES(2026, 810, 'Actress');  -- Joanne Woodward worked on Rachel, Rachel as Actress
-INSERT INTO worked_on VALUES(2024, 871, 'Actress');  -- Barbra Streisand worked on Funny Girl as Actress
-INSERT INTO worked_on VALUES(2171, 842, 'Actress');  -- Patricia Neal worked on The Subject Was Roses as Actress
-INSERT INTO worked_on VALUES(2025, 21, 'Actress');  -- Katharine Hepburn worked on The Lion in Winter as Actress
-INSERT INTO worked_on VALUES(1391, 858, 'Actress');  -- Ruth Gordon worked on Rosemary's Baby as Actress
-INSERT INTO worked_on VALUES(542, 872, 'Actress');  -- Lynn Carlin worked on Faces as Actress
-INSERT INTO worked_on VALUES(2026, 867, 'Actress');  -- Estelle Parsons worked on Rachel, Rachel as Actress
-INSERT INTO worked_on VALUES(2168, 873, 'Actress');  -- Sondra Locke worked on The Heart Is a Lonely Hunter as Actress
-INSERT INTO worked_on VALUES(2024, 874, 'Actress');  -- Kay Medford worked on Funny Girl as Actress
-INSERT INTO worked_on VALUES(2396, 875, 'Actress');  -- Liza Minnelli worked on The Sterile Cuckoo as Actress
-INSERT INTO worked_on VALUES(2397, 763, 'Actress');  -- Jean Simmons worked on The Happy Ending as Actress
-INSERT INTO worked_on VALUES(2027, 876, 'Actress');  -- Genevieve Bujold worked on Anne of the Thousand Days as Actress
-INSERT INTO worked_on VALUES(2398, 856, 'Actress');  -- Maggie Smith worked on The Prime of Miss Jean Brodie as Actress
-INSERT INTO worked_on VALUES(2175, 67, 'Actress');  -- Jane Fonda worked on They Shoot Horses, Don't They? as Actress
-INSERT INTO worked_on VALUES(2399, 877, 'Actress');  -- Goldie Hawn worked on Cactus Flower as Actress
-INSERT INTO worked_on VALUES(2400, 878, 'Actress');  -- Catherine Burns worked on Last Summer as Actress
-INSERT INTO worked_on VALUES(2174, 879, 'Actress');  -- Dyan Cannon worked on Bob & Carol & Ted & Alice as Actress
-INSERT INTO worked_on VALUES(1066, 880, 'Actress');  -- Sylvia Miles worked on Midnight Cowboy as Actress
-INSERT INTO worked_on VALUES(2175, 881, 'Actress');  -- Susannah York worked on They Shoot Horses, Don't They? as Actress
-INSERT INTO worked_on VALUES(2401, 882, 'Actress');  -- Carrie Snodgress worked on Diary of a Mad Housewife as Actress
-INSERT INTO worked_on VALUES(2180, 883, 'Actress');  -- Sarah Miles worked on Ryan's Daughter as Actress
-INSERT INTO worked_on VALUES(987, 884, 'Actress');  -- Ali MacGraw worked on Love Story as Actress
-INSERT INTO worked_on VALUES(2177, 885, 'Actress');  -- Jane Alexander worked on The Great White Hope as Actress
-INSERT INTO worked_on VALUES(2402, 886, 'Actress');  -- Glenda Jackson worked on Women in Love as Actress
-INSERT INTO worked_on VALUES(49, 818, 'Actress');  -- Maureen Stapleton worked on Airport as Actress
-INSERT INTO worked_on VALUES(1031, 887, 'Actress');  -- Sally Kellerman worked on M*A*S*H as Actress
-INSERT INTO worked_on VALUES(2403, 780, 'Actress');  -- Lee Grant worked on The Landlord as Actress
-INSERT INTO worked_on VALUES(49, 687, 'Actress');  -- Helen Hayes worked on Airport as Actress
-INSERT INTO worked_on VALUES(576, 888, 'Actress');  -- Karen Black worked on Five Easy Pieces as Actress
-INSERT INTO worked_on VALUES(2404, 861, 'Actress');  -- Vanessa Redgrave worked on Mary, Queen of Scots as Actress
-INSERT INTO worked_on VALUES(1572, 886, 'Actress');  -- Glenda Jackson worked on Sunday Bloody Sunday as Actress
-INSERT INTO worked_on VALUES(2030, 889, 'Actress');  -- Janet Suzman worked on Nicholas and Alexandra as Actress
-INSERT INTO worked_on VALUES(1044, 855, 'Actress');  -- Julie Christie worked on McCabe & Mrs. Miller as Actress
-INSERT INTO worked_on VALUES(2405, 67, 'Actress');  -- Jane Fonda worked on Klute as Actress
-INSERT INTO worked_on VALUES(922, 145, 'Actress');  -- Ellen Burstyn worked on The Last Picture Show as Actress
-INSERT INTO worked_on VALUES(2406, 890, 'Actress');  -- Barbara Harris worked on Who Is Harry Kellerman and Why Is He Saying Those Terrible Things about Me? as Actress
-INSERT INTO worked_on VALUES(922, 891, 'Actress');  -- Cloris Leachman worked on The Last Picture Show as Actress
-INSERT INTO worked_on VALUES(2407, 892, 'Actress');  -- Ann-Margret worked on Carnal Knowledge as Actress
-INSERT INTO worked_on VALUES(2408, 893, 'Actress');  -- Margaret Leighton worked on The Go-Between as Actress
-INSERT INTO worked_on VALUES(1828, 875, 'Actress');  -- Liza Minnelli worked on Cabaret as Actress
-INSERT INTO worked_on VALUES(2409, 894, 'Actress');  -- Diana Ross worked on Lady Sings the Blues as Actress
-INSERT INTO worked_on VALUES(2410, 856, 'Actress');  -- Maggie Smith worked on Travels with My Aunt as Actress
-INSERT INTO worked_on VALUES(2033, 895, 'Actress');  -- Liv Ullmann worked on The Emigrants as Actress
-INSERT INTO worked_on VALUES(2032, 896, 'Actress');  -- Cicely Tyson worked on Sounder as Actress
-INSERT INTO worked_on VALUES(2411, 897, 'Actress');  -- Susan Tyrrell worked on Fat City as Actress
-INSERT INTO worked_on VALUES(2412, 777, 'Actress');  -- Shelley Winters worked on The Poseidon Adventure as Actress
-INSERT INTO worked_on VALUES(2413, 791, 'Actress');  -- Geraldine Page worked on Pete 'n' Tillie as Actress
-INSERT INTO worked_on VALUES(2414, 807, 'Actress');  -- Eileen Heckart worked on Butterflies Are Free as Actress
-INSERT INTO worked_on VALUES(2184, 898, 'Actress');  -- Jeannie Berlin worked on The Heartbreak Kid as Actress
-INSERT INTO worked_on VALUES(2415, 871, 'Actress');  -- Barbra Streisand worked on The Way We Were as Actress
-INSERT INTO worked_on VALUES(2034, 145, 'Actress');  -- Ellen Burstyn worked on The Exorcist as Actress
-INSERT INTO worked_on VALUES(1648, 886, 'Actress');  -- Glenda Jackson worked on A Touch of Class as Actress
-INSERT INTO worked_on VALUES(2416, 899, 'Actress');  -- Marsha Mason worked on Cinderella Liberty as Actress
-INSERT INTO worked_on VALUES(2417, 810, 'Actress');  -- Joanne Woodward worked on Summer Wishes, Winter Dreams as Actress
-INSERT INTO worked_on VALUES(82, 900, 'Actress');  -- Candy Clark worked on American Graffiti as Actress
-INSERT INTO worked_on VALUES(1234, 901, 'Actress');  -- Tatum O'Neal worked on Paper Moon as Actress
-INSERT INTO worked_on VALUES(2417, 902, 'Actress');  -- Sylvia Sidney worked on Summer Wishes, Winter Dreams as Actress
-INSERT INTO worked_on VALUES(2034, 903, 'Actress');  -- Linda Blair worked on The Exorcist as Actress
-INSERT INTO worked_on VALUES(1234, 904, 'Actress');  -- Madeline Kahn worked on Paper Moon as Actress
-INSERT INTO worked_on VALUES(2418, 905, 'Actress');  -- Diahann Carroll worked on Claudine as Actress
-INSERT INTO worked_on VALUES(56, 145, 'Actress');  -- Ellen Burstyn worked on Alice Doesn't Live Here Anymore as Actress
-INSERT INTO worked_on VALUES(323, 100, 'Actress');  -- Faye Dunaway worked on Chinatown as Actress
-INSERT INTO worked_on VALUES(1792, 906, 'Actress');  -- Gena Rowlands worked on A Woman under the Influence as Actress
-INSERT INTO worked_on VALUES(944, 907, 'Actress');  -- Valerie Perrine worked on Lenny as Actress
-INSERT INTO worked_on VALUES(2189, 739, 'Actress');  -- Ingrid Bergman worked on Murder on the Orient Express as Actress
-INSERT INTO worked_on VALUES(56, 908, 'Actress');  -- Diane Ladd worked on Alice Doesn't Live Here Anymore as Actress
-INSERT INTO worked_on VALUES(2419, 904, 'Actress');  -- Madeline Kahn worked on Blazing Saddles as Actress
-INSERT INTO worked_on VALUES(412, 909, 'Actress');  -- Valentina Cortese worked on Day for Night as Actress
-INSERT INTO worked_on VALUES(648, 910, 'Actress');  -- Talia Shire worked on The Godfather Part II as Actress
-INSERT INTO worked_on VALUES(2420, 911, 'Actress');  -- Carol Kane worked on Hester Street as Actress
-INSERT INTO worked_on VALUES(1210, 912, 'Actress');  -- Louise Fletcher worked on One Flew over the Cuckoo's Nest as Actress
-INSERT INTO worked_on VALUES(2421, 886, 'Actress');  -- Glenda Jackson worked on Hedda as Actress
-INSERT INTO worked_on VALUES(2422, 892, 'Actress');  -- Ann-Margret worked on Tommy as Actress
-INSERT INTO worked_on VALUES(2423, 913, 'Actress');  -- Isabelle Adjani worked on The Story of Adele H. as Actress
-INSERT INTO worked_on VALUES(2424, 914, 'Actress');  -- Brenda Vaccaro worked on Once Is Not Enough as Actress
-INSERT INTO worked_on VALUES(2425, 880, 'Actress');  -- Sylvia Miles worked on Farewell, My Lovely as Actress
-INSERT INTO worked_on VALUES(1159, 915, 'Actress');  -- Lily Tomlin worked on Nashville as Actress
-INSERT INTO worked_on VALUES(1159, 916, 'Actress');  -- Ronee Blakley worked on Nashville as Actress
-INSERT INTO worked_on VALUES(2195, 780, 'Actress');  -- Lee Grant worked on Shampoo as Actress
-INSERT INTO worked_on VALUES(1166, 100, 'Actress');  -- Faye Dunaway worked on Network as Actress
-INSERT INTO worked_on VALUES(2426, 895, 'Actress');  -- Liv Ullmann worked on Face to Face as Actress
-INSERT INTO worked_on VALUES(2427, 917, 'Actress');  -- Marie-Christine Barrault worked on Cousin, Cousine as Actress
-INSERT INTO worked_on VALUES(1380, 910, 'Actress');  -- Talia Shire worked on Rocky as Actress
-INSERT INTO worked_on VALUES(2428, 918, 'Actress');  -- Sissy Spacek worked on Carrie as Actress
-INSERT INTO worked_on VALUES(2428, 833, 'Actress');  -- Piper Laurie worked on Carrie as Actress
-INSERT INTO worked_on VALUES(1166, 919, 'Actress');  -- Beatrice Straight worked on Network as Actress
-INSERT INTO worked_on VALUES(71, 885, 'Actress');  -- Jane Alexander worked on All the President's Men as Actress
-INSERT INTO worked_on VALUES(1602, 99, 'Actress');  -- Jodie Foster worked on Taxi Driver as Actress
-INSERT INTO worked_on VALUES(2429, 780, 'Actress');  -- Lee Grant worked on Voyage of the Damned as Actress
-INSERT INTO worked_on VALUES(1680, 817, 'Actress');  -- Shirley MacLaine worked on The Turning Point as Actress
-INSERT INTO worked_on VALUES(102, 55, 'Actress');  -- Diane Keaton worked on Annie Hall as Actress
-INSERT INTO worked_on VALUES(868, 67, 'Actress');  -- Jane Fonda worked on Julia as Actress
-INSERT INTO worked_on VALUES(1680, 169, 'Actress');  -- Anne Bancroft worked on The Turning Point as Actress
-INSERT INTO worked_on VALUES(663, 899, 'Actress');  -- Marsha Mason worked on The Goodbye Girl as Actress
-INSERT INTO worked_on VALUES(868, 861, 'Actress');  -- Vanessa Redgrave worked on Julia as Actress
-INSERT INTO worked_on VALUES(2430, 920, 'Actress');  -- Tuesday Weld worked on Looking for Mr. Goodbar as Actress
-INSERT INTO worked_on VALUES(1680, 921, 'Actress');  -- Leslie Browne worked on The Turning Point as Actress
-INSERT INTO worked_on VALUES(663, 922, 'Actress');  -- Quinn Cummings worked on The Goodbye Girl as Actress
-INSERT INTO worked_on VALUES(348, 923, 'Actress');  -- Melinda Dillon worked on Close Encounters of the Third Kind as Actress
-INSERT INTO worked_on VALUES(131, 739, 'Actress');  -- Ingrid Bergman worked on Autumn Sonata as Actress
-INSERT INTO worked_on VALUES(2036, 924, 'Actress');  -- Jill Clayburgh worked on An Unmarried Woman as Actress
-INSERT INTO worked_on VALUES(825, 791, 'Actress');  -- Geraldine Page worked on Interiors as Actress
-INSERT INTO worked_on VALUES(2431, 145, 'Actress');  -- Ellen Burstyn worked on Same Time, Next Year as Actress
-INSERT INTO worked_on VALUES(359, 67, 'Actress');  -- Jane Fonda worked on Coming Home as Actress
-INSERT INTO worked_on VALUES(438, 12, 'Actress');  -- Meryl Streep worked on The Deer Hunter as Actress
-INSERT INTO worked_on VALUES(731, 879, 'Actress');  -- Dyan Cannon worked on Heaven Can Wait as Actress
-INSERT INTO worked_on VALUES(825, 818, 'Actress');  -- Maureen Stapleton worked on Interiors as Actress
-INSERT INTO worked_on VALUES(2432, 856, 'Actress');  -- Maggie Smith worked on California Suite as Actress
-INSERT INTO worked_on VALUES(359, 925, 'Actress');  -- Penelope Milford worked on Coming Home as Actress
-INSERT INTO worked_on VALUES(322, 67, 'Actress');  -- Jane Fonda worked on The China Syndrome as Actress
-INSERT INTO worked_on VALUES(2433, 899, 'Actress');  -- Marsha Mason worked on Chapter Two as Actress
-INSERT INTO worked_on VALUES(2434, 924, 'Actress');  -- Jill Clayburgh worked on Starting Over as Actress
-INSERT INTO worked_on VALUES(1189, 926, 'Actress');  -- Sally Field worked on Norma Rae as Actress
-INSERT INTO worked_on VALUES(2202, 927, 'Actress');  -- Bette Midler worked on The Rose as Actress
-INSERT INTO worked_on VALUES(904, 12, 'Actress');  -- Meryl Streep worked on Kramer vs. Kramer as Actress
-INSERT INTO worked_on VALUES(904, 885, 'Actress');  -- Jane Alexander worked on Kramer vs. Kramer as Actress
-INSERT INTO worked_on VALUES(1016, 928, 'Actress');  -- Mariel Hemingway worked on Manhattan as Actress
-INSERT INTO worked_on VALUES(253, 929, 'Actress');  -- Barbara Barrie worked on Breaking Away as Actress
-INSERT INTO worked_on VALUES(2434, 930, 'Actress');  -- Candice Bergen worked on Starting Over as Actress
-INSERT INTO worked_on VALUES(351, 918, 'Actress');  -- Sissy Spacek worked on Coal Miner's Daughter as Actress
-INSERT INTO worked_on VALUES(1215, 931, 'Actress');  -- Mary Tyler Moore worked on Ordinary People as Actress
-INSERT INTO worked_on VALUES(2435, 906, 'Actress');  -- Gena Rowlands worked on Gloria as Actress
-INSERT INTO worked_on VALUES(2436, 145, 'Actress');  -- Ellen Burstyn worked on Resurrection as Actress
-INSERT INTO worked_on VALUES(2437, 877, 'Actress');  -- Goldie Hawn worked on Private Benjamin as Actress
-INSERT INTO worked_on VALUES(2207, 932, 'Actress');  -- Mary Steenburgen worked on Melvin and Howard as Actress
-INSERT INTO worked_on VALUES(2438, 933, 'Actress');  -- Diana Scarwid worked on Inside Moves as Actress
-INSERT INTO worked_on VALUES(2436, 934, 'Actress');  -- Eva Le Gallienne worked on Resurrection as Actress
-INSERT INTO worked_on VALUES(1329, 935, 'Actress');  -- Cathy Moriarty worked on Raging Bull as Actress
-INSERT INTO worked_on VALUES(2437, 936, 'Actress');  -- Eileen Brennan worked on Private Benjamin as Actress
-INSERT INTO worked_on VALUES(1205, 21, 'Actress');  -- Katharine Hepburn worked on On Golden Pond as Actress
-INSERT INTO worked_on VALUES(2439, 12, 'Actress');  -- Meryl Streep worked on The French Lieutenant's Woman as Actress
-INSERT INTO worked_on VALUES(1351, 55, 'Actress');  -- Diane Keaton worked on Reds as Actress
-INSERT INTO worked_on VALUES(123, 937, 'Actress');  -- Susan Sarandon worked on Atlantic City as Actress
-INSERT INTO worked_on VALUES(2210, 899, 'Actress');  -- Marsha Mason worked on Only When I Laugh as Actress
-INSERT INTO worked_on VALUES(2208, 923, 'Actress');  -- Melinda Dillon worked on Absence of Malice as Actress
-INSERT INTO worked_on VALUES(1205, 67, 'Actress');  -- Jane Fonda worked on On Golden Pond as Actress
-INSERT INTO worked_on VALUES(2211, 938, 'Actress');  -- Elizabeth McGovern worked on Ragtime as Actress
-INSERT INTO worked_on VALUES(1351, 818, 'Actress');  -- Maureen Stapleton worked on Reds as Actress
-INSERT INTO worked_on VALUES(2210, 939, 'Actress');  -- Joan Hackett worked on Only When I Laugh as Actress
-INSERT INTO worked_on VALUES(2213, 850, 'Actress');  -- Julie Andrews worked on Victor Victoria as Actress
-INSERT INTO worked_on VALUES(1520, 12, 'Actress');  -- Meryl Streep worked on Sophie's Choice as Actress
-INSERT INTO worked_on VALUES(2440, 940, 'Actress');  -- Jessica Lange worked on Frances as Actress
-INSERT INTO worked_on VALUES(1084, 918, 'Actress');  -- Sissy Spacek worked on Missing as Actress
-INSERT INTO worked_on VALUES(2215, 941, 'Actress');  -- Debra Winger worked on An Officer and a Gentleman as Actress
-INSERT INTO worked_on VALUES(1798, 942, 'Actress');  -- Glenn Close worked on The World According to Garp as Actress
-INSERT INTO worked_on VALUES(1644, 943, 'Actress');  -- Teri Garr worked on Tootsie as Actress
-INSERT INTO worked_on VALUES(1644, 940, 'Actress');  -- Jessica Lange worked on Tootsie as Actress
-INSERT INTO worked_on VALUES(2440, 848, 'Actress');  -- Kim Stanley worked on Frances as Actress
-INSERT INTO worked_on VALUES(2213, 944, 'Actress');  -- Lesley Ann Warren worked on Victor Victoria as Actress
-INSERT INTO worked_on VALUES(1482, 12, 'Actress');  -- Meryl Streep worked on Silkwood as Actress
-INSERT INTO worked_on VALUES(2216, 945, 'Actress');  -- Julie Walters worked on Educating Rita as Actress
-INSERT INTO worked_on VALUES(1613, 817, 'Actress');  -- Shirley MacLaine worked on Terms of Endearment as Actress
-INSERT INTO worked_on VALUES(1613, 941, 'Actress');  -- Debra Winger worked on Terms of Endearment as Actress
-INSERT INTO worked_on VALUES(2441, 885, 'Actress');  -- Jane Alexander worked on Testament as Actress
-INSERT INTO worked_on VALUES(2442, 946, 'Actress');  -- Linda Hunt worked on The Year of Living Dangerously as Actress
-INSERT INTO worked_on VALUES(2218, 947, 'Actress');  -- Alfre Woodard worked on Cross Creek as Actress
-INSERT INTO worked_on VALUES(2443, 948, 'Actress');  -- Amy Irving worked on Yentl as Actress
-INSERT INTO worked_on VALUES(195, 942, 'Actress');  -- Glenn Close worked on The Big Chill as Actress
-INSERT INTO worked_on VALUES(1482, 175, 'Actress');  -- Cher worked on Silkwood as Actress
-INSERT INTO worked_on VALUES(2444, 940, 'Actress');  -- Jessica Lange worked on Country as Actress
-INSERT INTO worked_on VALUES(2445, 918, 'Actress');  -- Sissy Spacek worked on The River as Actress
-INSERT INTO worked_on VALUES(2446, 861, 'Actress');  -- Vanessa Redgrave worked on The Bostonians as Actress
-INSERT INTO worked_on VALUES(1275, 926, 'Actress');  -- Sally Field worked on Places in the Heart as Actress
-INSERT INTO worked_on VALUES(2037, 949, 'Actress');  -- Judy Davis worked on A Passage to India as Actress
-INSERT INTO worked_on VALUES(2037, 950, 'Actress');  -- Peggy Ashcroft worked on A Passage to India as Actress
-INSERT INTO worked_on VALUES(2447, 791, 'Actress');  -- Geraldine Page worked on The Pope of Greenwich Village as Actress
-INSERT INTO worked_on VALUES(2448, 942, 'Actress');  -- Glenn Close worked on The Natural as Actress
-INSERT INTO worked_on VALUES(1275, 951, 'Actress');  -- Lindsay Crouse worked on Places in the Heart as Actress
-INSERT INTO worked_on VALUES(2449, 952, 'Actress');  -- Christine Lahti worked on Swing Shift as Actress
-INSERT INTO worked_on VALUES(2450, 791, 'Actress');  -- Geraldine Page worked on The Trip to Bountiful as Actress
-INSERT INTO worked_on VALUES(2451, 940, 'Actress');  -- Jessica Lange worked on Sweet Dreams as Actress
-INSERT INTO worked_on VALUES(2452, 169, 'Actress');  -- Anne Bancroft worked on Agnes of God as Actress
-INSERT INTO worked_on VALUES(1222, 12, 'Actress');  -- Meryl Streep worked on Out of Africa as Actress
-INSERT INTO worked_on VALUES(357, 953, 'Actress');  -- Whoopi Goldberg worked on The Color Purple as Actress
-INSERT INTO worked_on VALUES(2452, 954, 'Actress');  -- Meg Tilly worked on Agnes of God as Actress
-INSERT INTO worked_on VALUES(357, 955, 'Actress');  -- Margaret Avery worked on The Color Purple as Actress
-INSERT INTO worked_on VALUES(1308, 139, 'Actress');  -- Anjelica Huston worked on Prizzi's Honor as Actress
-INSERT INTO worked_on VALUES(357, 956, 'Actress');  -- Oprah Winfrey worked on The Color Purple as Actress
-INSERT INTO worked_on VALUES(2453, 957, 'Actress');  -- Amy Madigan worked on Twice in a Lifetime as Actress
-INSERT INTO worked_on VALUES(63, 958, 'Actress');  -- Sigourney Weaver worked on Aliens as Actress
-INSERT INTO worked_on VALUES(2454, 918, 'Actress');  -- Sissy Spacek worked on Crimes of the Heart as Actress
-INSERT INTO worked_on VALUES(2455, 67, 'Actress');  -- Jane Fonda worked on The Morning After as Actress
-INSERT INTO worked_on VALUES(319, 959, 'Actress');  -- Marlee Matlin worked on Children of a Lesser God as Actress
-INSERT INTO worked_on VALUES(1253, 960, 'Actress');  -- Kathleen Turner worked on Peggy Sue Got Married as Actress
-INSERT INTO worked_on VALUES(705, 961, 'Actress');  -- Dianne Wiest worked on Hannah and Her Sisters as Actress
-INSERT INTO worked_on VALUES(2454, 962, 'Actress');  -- Tess Harper worked on Crimes of the Heart as Actress
-INSERT INTO worked_on VALUES(319, 833, 'Actress');  -- Piper Laurie worked on Children of a Lesser God as Actress
-INSERT INTO worked_on VALUES(355, 963, 'Actress');  -- Mary Elizabeth Mastrantonio worked on The Color of Money as Actress
-INSERT INTO worked_on VALUES(1389, 856, 'Actress');  -- Maggie Smith worked on A Room with a View as Actress
-INSERT INTO worked_on VALUES(2456, 964, 'Actress');  -- Sally Kirkland worked on Anna as Actress
-INSERT INTO worked_on VALUES(1106, 175, 'Actress');  -- Cher worked on Moonstruck as Actress
-INSERT INTO worked_on VALUES(557, 942, 'Actress');  -- Glenn Close worked on Fatal Attraction as Actress
-INSERT INTO worked_on VALUES(2228, 12, 'Actress');  -- Meryl Streep worked on Ironweed as Actress
-INSERT INTO worked_on VALUES(264, 965, 'Actress');  -- Holly Hunter worked on Broadcast News as Actress
-INSERT INTO worked_on VALUES(2457, 966, 'Actress');  -- Norma Aleandro worked on Gaby: A True Story as Actress
-INSERT INTO worked_on VALUES(1106, 967, 'Actress');  -- Olympia Dukakis worked on Moonstruck as Actress
-INSERT INTO worked_on VALUES(557, 968, 'Actress');  -- Anne Archer worked on Fatal Attraction as Actress
-INSERT INTO worked_on VALUES(2458, 969, 'Actress');  -- Anne Ramsey worked on Throw Momma from the Train as Actress
-INSERT INTO worked_on VALUES(2459, 970, 'Actress');  -- Ann Sothern worked on The Whales of August as Actress
-INSERT INTO worked_on VALUES(1797, 971, 'Actress');  -- Melanie Griffith worked on Working Girl as Actress
-INSERT INTO worked_on VALUES(394, 12, 'Actress');  -- Meryl Streep worked on A Cry in the Dark as Actress
-INSERT INTO worked_on VALUES(401, 942, 'Actress');  -- Glenn Close worked on Dangerous Liaisons as Actress
-INSERT INTO worked_on VALUES(2460, 958, 'Actress');  -- Sigourney Weaver worked on Gorillas in the Mist as Actress
-INSERT INTO worked_on VALUES(33, 99, 'Actress');  -- Jodie Foster worked on The Accused as Actress
-INSERT INTO worked_on VALUES(32, 972, 'Actress');  -- Geena Davis worked on The Accidental Tourist as Actress
-INSERT INTO worked_on VALUES(1797, 148, 'Actress');  -- Joan Cusack worked on Working Girl as Actress
-INSERT INTO worked_on VALUES(401, 973, 'Actress');  -- Michelle Pfeiffer worked on Dangerous Liaisons as Actress
-INSERT INTO worked_on VALUES(1797, 958, 'Actress');  -- Sigourney Weaver worked on Working Girl as Actress
-INSERT INTO worked_on VALUES(1088, 47, 'Actress');  -- Frances McDormand worked on Mississippi Burning as Actress
-INSERT INTO worked_on VALUES(2461, 940, 'Actress');  -- Jessica Lange worked on Music Box as Actress
-INSERT INTO worked_on VALUES(488, 974, 'Actress');  -- Jessica Tandy worked on Driving Miss Daisy as Actress
-INSERT INTO worked_on VALUES(2462, 975, 'Actress');  -- Pauline Collins worked on Shirley Valentine as Actress
-INSERT INTO worked_on VALUES(2463, 973, 'Actress');  -- Michelle Pfeiffer worked on The Fabulous Baker Boys as Actress
-INSERT INTO worked_on VALUES(2464, 913, 'Actress');  -- Isabelle Adjani worked on Camille Claudel as Actress
-INSERT INTO worked_on VALUES(2465, 69, 'Actress');  -- Julia Roberts worked on Steel Magnolias as Actress
-INSERT INTO worked_on VALUES(1142, 976, 'Actress');  -- Brenda Fricker worked on My Left Foot as Actress
-INSERT INTO worked_on VALUES(516, 139, 'Actress');  -- Anjelica Huston worked on Enemies, A Love Story as Actress
-INSERT INTO worked_on VALUES(516, 977, 'Actress');  -- Lena Olin worked on Enemies, A Love Story as Actress
-INSERT INTO worked_on VALUES(2466, 961, 'Actress');  -- Dianne Wiest worked on Parenthood as Actress
-INSERT INTO worked_on VALUES(1083, 978, 'Actress');  -- Kathy Bates worked on Misery as Actress
-INSERT INTO worked_on VALUES(2467, 810, 'Actress');  -- Joanne Woodward worked on Mr. & Mrs. Bridge as Actress
-INSERT INTO worked_on VALUES(2468, 69, 'Actress');  -- Julia Roberts worked on Pretty Woman as Actress
-INSERT INTO worked_on VALUES(1291, 12, 'Actress');  -- Meryl Streep worked on Postcards from the Edge as Actress
-INSERT INTO worked_on VALUES(691, 139, 'Actress');  -- Anjelica Huston worked on The Grifters as Actress
-INSERT INTO worked_on VALUES(2469, 908, 'Actress');  -- Diane Ladd worked on Wild at Heart as Actress
-INSERT INTO worked_on VALUES(628, 953, 'Actress');  -- Whoopi Goldberg worked on Ghost as Actress
-INSERT INTO worked_on VALUES(400, 979, 'Actress');  -- Mary McDonnell worked on Dances With Wolves as Actress
-INSERT INTO worked_on VALUES(691, 140, 'Actress');  -- Annette Bening worked on The Grifters as Actress
-INSERT INTO worked_on VALUES(666, 980, 'Actress');  -- Lorraine Bracco worked on Goodfellas as Actress
-INSERT INTO worked_on VALUES(1618, 937, 'Actress');  -- Susan Sarandon worked on Thelma & Louise as Actress
-INSERT INTO worked_on VALUES(2470, 981, 'Actress');  -- Laura Dern worked on Rambling Rose as Actress
-INSERT INTO worked_on VALUES(2471, 927, 'Actress');  -- Bette Midler worked on For the Boys as Actress
-INSERT INTO worked_on VALUES(1618, 972, 'Actress');  -- Geena Davis worked on Thelma & Louise as Actress
-INSERT INTO worked_on VALUES(1480, 99, 'Actress');  -- Jodie Foster worked on The Silence of the Lambs as Actress
-INSERT INTO worked_on VALUES(2470, 908, 'Actress');  -- Diane Ladd worked on Rambling Rose as Actress
-INSERT INTO worked_on VALUES(2472, 974, 'Actress');  -- Jessica Tandy worked on Fried Green Tomatoes as Actress
-INSERT INTO worked_on VALUES(1302, 982, 'Actress');  -- Kate Nelligan worked on The Prince of Tides as Actress
-INSERT INTO worked_on VALUES(574, 983, 'Actress');  -- Mercedes Ruehl worked on The Fisher King as Actress
-INSERT INTO worked_on VALUES(286, 984, 'Actress');  -- Juliette Lewis worked on Cape Fear as Actress
-INSERT INTO worked_on VALUES(2473, 973, 'Actress');  -- Michelle Pfeiffer worked on Love Field as Actress
-INSERT INTO worked_on VALUES(2474, 985, 'Actress');  -- Catherine Deneuve worked on Indochine as Actress
-INSERT INTO worked_on VALUES(2475, 937, 'Actress');  -- Susan Sarandon worked on Lorenzo's Oil as Actress
-INSERT INTO worked_on VALUES(769, 94, 'Actress');  -- Emma Thompson worked on Howards End as Actress
-INSERT INTO worked_on VALUES(2476, 979, 'Actress');  -- Mary McDonnell worked on Passion Fish as Actress
-INSERT INTO worked_on VALUES(398, 986, 'Actress');  -- Miranda Richardson worked on Damage as Actress
-INSERT INTO worked_on VALUES(769, 861, 'Actress');  -- Vanessa Redgrave worked on Howards End as Actress
-INSERT INTO worked_on VALUES(1136, 987, 'Actress');  -- Marisa Tomei worked on My Cousin Vinny as Actress
-INSERT INTO worked_on VALUES(777, 949, 'Actress');  -- Judy Davis worked on Husbands and Wives as Actress
-INSERT INTO worked_on VALUES(2477, 988, 'Actress');  -- Joan Plowright worked on Enchanted April as Actress
-INSERT INTO worked_on VALUES(2478, 989, 'Actress');  -- Stockard Channing worked on Six Degrees of Separation as Actress
-INSERT INTO worked_on VALUES(1758, 990, 'Actress');  -- Angela Bassett worked on What's Love Got to Do with It as Actress
-INSERT INTO worked_on VALUES(1264, 965, 'Actress');  -- Holly Hunter worked on The Piano as Actress
-INSERT INTO worked_on VALUES(1355, 94, 'Actress');  -- Emma Thompson worked on The Remains of the Day as Actress
-INSERT INTO worked_on VALUES(1453, 941, 'Actress');  -- Debra Winger worked on Shadowlands as Actress
-INSERT INTO worked_on VALUES(1264, 991, 'Actress');  -- Anna Paquin worked on The Piano as Actress
-INSERT INTO worked_on VALUES(45, 992, 'Actress');  -- Winona Ryder worked on The Age of Innocence as Actress
-INSERT INTO worked_on VALUES(2479, 965, 'Actress');  -- Holly Hunter worked on The Firm as Actress
-INSERT INTO worked_on VALUES(808, 94, 'Actress');  -- Emma Thompson worked on In the Name of the Father as Actress
-INSERT INTO worked_on VALUES(2480, 993, 'Actress');  -- Rosie Perez worked on Fearless as Actress
-INSERT INTO worked_on VALUES(2481, 99, 'Actress');  -- Jodie Foster worked on Nell as Actress
-INSERT INTO worked_on VALUES(2482, 940, 'Actress');  -- Jessica Lange worked on Blue Sky as Actress
-INSERT INTO worked_on VALUES(970, 992, 'Actress');  -- Winona Ryder worked on Little Women as Actress
-INSERT INTO worked_on VALUES(2483, 937, 'Actress');  -- Susan Sarandon worked on The Client as Actress
-INSERT INTO worked_on VALUES(2484, 986, 'Actress');  -- Miranda Richardson worked on Tom & Viv as Actress
-INSERT INTO worked_on VALUES(2484, 994, 'Actress');  -- Rosemary Harris worked on Tom & Viv as Actress
-INSERT INTO worked_on VALUES(1315, 995, 'Actress');  -- Uma Thurman worked on Pulp Fiction as Actress
-INSERT INTO worked_on VALUES(277, 996, 'Actress');  -- Jennifer Tilly worked on Bullets over Broadway as Actress
-INSERT INTO worked_on VALUES(2241, 997, 'Actress');  -- Helen Mirren worked on The Madness of King George as Actress
-INSERT INTO worked_on VALUES(277, 961, 'Actress');  -- Dianne Wiest worked on Bullets over Broadway as Actress
-INSERT INTO worked_on VALUES(2485, 12, 'Actress');  -- Meryl Streep worked on The Bridges of Madison County as Actress
-INSERT INTO worked_on VALUES(293, 998, 'Actress');  -- Sharon Stone worked on Casino as Actress
-INSERT INTO worked_on VALUES(1438, 94, 'Actress');  -- Emma Thompson worked on Sense and Sensibility as Actress
-INSERT INTO worked_on VALUES(941, 999, 'Actress');  -- Elisabeth Shue worked on Leaving Las Vegas as Actress
-INSERT INTO worked_on VALUES(418, 937, 'Actress');  -- Susan Sarandon worked on Dead Man Walking as Actress
-INSERT INTO worked_on VALUES(112, 1000, 'Actress');  -- Kathleen Quinlan worked on Apollo 13 as Actress
-INSERT INTO worked_on VALUES(1438, 90, 'Actress');  -- Kate Winslet worked on Sense and Sensibility as Actress
-INSERT INTO worked_on VALUES(2486, 1001, 'Actress');  -- Mare Winningham worked on Georgia as Actress
-INSERT INTO worked_on VALUES(1184, 1002, 'Actress');  -- Joan Allen worked on Nixon as Actress
-INSERT INTO worked_on VALUES(1072, 1003, 'Actress');  -- Mira Sorvino worked on Mighty Aphrodite as Actress
-INSERT INTO worked_on VALUES(254, 1004, 'Actress');  -- Emily Watson worked on Breaking the Waves as Actress
-INSERT INTO worked_on VALUES(520, 1005, 'Actress');  -- Kristin Scott Thomas worked on The English Patient as Actress
-INSERT INTO worked_on VALUES(1437, 1006, 'Actress');  -- Brenda Blethyn worked on Secrets & Lies as Actress
-INSERT INTO worked_on VALUES(1028, 55, 'Actress');  -- Diane Keaton worked on Marvin's Room as Actress
-INSERT INTO worked_on VALUES(553, 47, 'Actress');  -- Frances McDormand worked on Fargo as Actress
-INSERT INTO worked_on VALUES(1437, 1007, 'Actress');  -- Marianne Jean-Baptiste worked on Secrets & Lies as Actress
-INSERT INTO worked_on VALUES(520, 1008, 'Actress');  -- Juliette Binoche worked on The English Patient as Actress
-INSERT INTO worked_on VALUES(2487, 1009, 'Actress');  -- Lauren Bacall worked on The Mirror Has Two Faces as Actress
-INSERT INTO worked_on VALUES(391, 1002, 'Actress');  -- Joan Allen worked on The Crucible as Actress
-INSERT INTO worked_on VALUES(1289, 1010, 'Actress');  -- Barbara Hershey worked on The Portrait of a Lady as Actress
-INSERT INTO worked_on VALUES(2488, 855, 'Actress');  -- Julie Christie worked on Afterglow as Actress
-INSERT INTO worked_on VALUES(1639, 90, 'Actress');  -- Kate Winslet worked on Titanic as Actress
-INSERT INTO worked_on VALUES(1120, 1011, 'Actress');  -- Judi Dench worked on Mrs. Brown as Actress
-INSERT INTO worked_on VALUES(2489, 124, 'Actress');  -- Helena Bonham Carter worked on The Wings of the Dove as Actress
-INSERT INTO worked_on VALUES(119, 1012, 'Actress');  -- Helen Hunt worked on As Good As It Gets as Actress
-INSERT INTO worked_on VALUES(662, 1013, 'Actress');  -- Minnie Driver worked on Good Will Hunting as Actress
-INSERT INTO worked_on VALUES(235, 1014, 'Actress');  -- Julianne Moore worked on Boogie Nights as Actress
-INSERT INTO worked_on VALUES(799, 148, 'Actress');  -- Joan Cusack worked on In & Out as Actress
-INSERT INTO worked_on VALUES(906, 1015, 'Actress');  -- Kim Basinger worked on L.A. Confidential as Actress
-INSERT INTO worked_on VALUES(1639, 1016, 'Actress');  -- Gloria Stuart worked on Titanic as Actress
-INSERT INTO worked_on VALUES(2490, 12, 'Actress');  -- Meryl Streep worked on One True Thing as Actress
-INSERT INTO worked_on VALUES(508, 45, 'Actress');  -- Cate Blanchett worked on Elizabeth as Actress
-INSERT INTO worked_on VALUES(307, 1017, 'Actress');  -- Fernanda Montenegro worked on Central Station as Actress
-INSERT INTO worked_on VALUES(1455, 106, 'Actress');  -- Gwyneth Paltrow worked on Shakespeare in Love as Actress
-INSERT INTO worked_on VALUES(746, 1004, 'Actress');  -- Emily Watson worked on Hilary and Jackie as Actress
-INSERT INTO worked_on VALUES(1455, 1011, 'Actress');  -- Judi Dench worked on Shakespeare in Love as Actress
-INSERT INTO worked_on VALUES(969, 1006, 'Actress');  -- Brenda Blethyn worked on Little Voice as Actress
-INSERT INTO worked_on VALUES(1299, 978, 'Actress');  -- Kathy Bates worked on Primary Colors as Actress
-INSERT INTO worked_on VALUES(650, 860, 'Actress');  -- Lynn Redgrave worked on Gods and Monsters as Actress
-INSERT INTO worked_on VALUES(746, 1018, 'Actress');  -- Rachel Griffiths worked on Hilary and Jackie as Actress
-INSERT INTO worked_on VALUES(78, 140, 'Actress');  -- Annette Bening worked on American Beauty as Actress
-INSERT INTO worked_on VALUES(2491, 1014, 'Actress');  -- Julianne Moore worked on The End of the Affair as Actress
-INSERT INTO worked_on VALUES(1128, 12, 'Actress');  -- Meryl Streep worked on Music of the Heart as Actress
-INSERT INTO worked_on VALUES(246, 1019, 'Actress');  -- Hilary Swank worked on Boys Don't Cry as Actress
-INSERT INTO worked_on VALUES(2492, 1020, 'Actress');  -- Janet McTeer worked on Tumbleweeds as Actress
-INSERT INTO worked_on VALUES(178, 153, 'Actress');  -- Catherine Keener worked on Being John Malkovich as Actress
-INSERT INTO worked_on VALUES(1587, 1021, 'Actress');  -- Samantha Morton worked on Sweet and Lowdown as Actress
-INSERT INTO worked_on VALUES(638, 44, 'Actress');  -- Angelina Jolie worked on Girl, Interrupted as Actress
-INSERT INTO worked_on VALUES(246, 1022, 'Actress');  -- Chloe Sevigny worked on Boys Don't Cry as Actress
-INSERT INTO worked_on VALUES(1490, 1023, 'Actress');  -- Toni Collette worked on The Sixth Sense as Actress
-INSERT INTO worked_on VALUES(369, 1002, 'Actress');  -- Joan Allen worked on The Contender as Actress
-INSERT INTO worked_on VALUES(1815, 1024, 'Actress');  -- Laura Linney worked on You Can Count on Me as Actress
-INSERT INTO worked_on VALUES(324, 1008, 'Actress');  -- Juliette Binoche worked on Chocolat as Actress
-INSERT INTO worked_on VALUES(1360, 145, 'Actress');  -- Ellen Burstyn worked on Requiem for a Dream as Actress
-INSERT INTO worked_on VALUES(523, 69, 'Actress');  -- Julia Roberts worked on Erin Brockovich as Actress
-INSERT INTO worked_on VALUES(73, 1025, 'Actress');  -- Kate Hudson worked on Almost Famous as Actress
-INSERT INTO worked_on VALUES(324, 1011, 'Actress');  -- Judi Dench worked on Chocolat as Actress
-INSERT INTO worked_on VALUES(1286, 1026, 'Actress');  -- Marcia Gay Harden worked on Pollock as Actress
-INSERT INTO worked_on VALUES(73, 47, 'Actress');  -- Frances McDormand worked on Almost Famous as Actress
-INSERT INTO worked_on VALUES(2493, 945, 'Actress');  -- Julie Walters worked on Billy Elliot as Actress
-INSERT INTO worked_on VALUES(1110, 171, 'Actress');  -- Nicole Kidman worked on Moulin Rouge as Actress
-INSERT INTO worked_on VALUES(259, 111, 'Actress');  -- Renee Zellweger worked on Bridget Jones's Diary as Actress
-INSERT INTO worked_on VALUES(804, 918, 'Actress');  -- Sissy Spacek worked on In the Bedroom as Actress
-INSERT INTO worked_on VALUES(1100, 1027, 'Actress');  -- Halle Berry worked on Monster's Ball as Actress
-INSERT INTO worked_on VALUES(835, 1011, 'Actress');  -- Judi Dench worked on Iris as Actress
-INSERT INTO worked_on VALUES(169, 1028, 'Actress');  -- Jennifer Connelly worked on A Beautiful Mind as Actress
-INSERT INTO worked_on VALUES(668, 997, 'Actress');  -- Helen Mirren worked on Gosford Park as Actress
-INSERT INTO worked_on VALUES(835, 90, 'Actress');  -- Kate Winslet worked on Iris as Actress
-INSERT INTO worked_on VALUES(804, 987, 'Actress');  -- Marisa Tomei worked on In the Bedroom as Actress
-INSERT INTO worked_on VALUES(668, 856, 'Actress');  -- Maggie Smith worked on Gosford Park as Actress
-INSERT INTO worked_on VALUES(316, 111, 'Actress');  -- Renee Zellweger worked on Chicago as Actress
-INSERT INTO worked_on VALUES(551, 1014, 'Actress');  -- Julianne Moore worked on Far from Heaven as Actress
-INSERT INTO worked_on VALUES(2494, 1029, 'Actress');  -- Diane Lane worked on Unfaithful as Actress
-INSERT INTO worked_on VALUES(761, 171, 'Actress');  -- Nicole Kidman worked on The Hours as Actress
-INSERT INTO worked_on VALUES(2495, 1030, 'Actress');  -- Salma Hayek worked on Frida as Actress
-INSERT INTO worked_on VALUES(761, 1014, 'Actress');  -- Julianne Moore worked on The Hours as Actress
-INSERT INTO worked_on VALUES(36, 12, 'Actress');  -- Meryl Streep worked on Adaptation as Actress
-INSERT INTO worked_on VALUES(29, 978, 'Actress');  -- Kathy Bates worked on About Schmidt as Actress
-INSERT INTO worked_on VALUES(316, 109, 'Actress');  -- Catherine Zeta-Jones worked on Chicago as Actress
-INSERT INTO worked_on VALUES(316, 1031, 'Actress');  -- Queen Latifah worked on Chicago as Actress
-INSERT INTO worked_on VALUES(800, 1021, 'Actress');  -- Samantha Morton worked on In America as Actress
-INSERT INTO worked_on VALUES(1099, 1032, 'Actress');  -- Charlize Theron worked on Monster as Actress
-INSERT INTO worked_on VALUES(1751, 1033, 'Actress');  -- Keisha Castle-Hughes worked on Whale Rider as Actress
-INSERT INTO worked_on VALUES(1518, 55, 'Actress');  -- Diane Keaton worked on Something's Gotta Give as Actress
-INSERT INTO worked_on VALUES(11, 89, 'Actress');  -- Naomi Watts worked on 21 Grams as Actress
-INSERT INTO worked_on VALUES(1624, 965, 'Actress');  -- Holly Hunter worked on Thirteen as Actress
-INSERT INTO worked_on VALUES(1267, 1034, 'Actress');  -- Patricia Clarkson worked on Pieces of April as Actress
-INSERT INTO worked_on VALUES(1154, 1026, 'Actress');  -- Marcia Gay Harden worked on Mystic River as Actress
-INSERT INTO worked_on VALUES(765, 1035, 'Actress');  -- Shohreh Aghdashloo worked on House of Sand and Fog as Actress
-INSERT INTO worked_on VALUES(353, 111, 'Actress');  -- Renee Zellweger worked on Cold Mountain as Actress
-INSERT INTO worked_on VALUES(1024, 1036, 'Actress');  -- Catalina Sandino Moreno worked on Maria Full of Grace as Actress
-INSERT INTO worked_on VALUES(1713, 1037, 'Actress');  -- Imelda Staunton worked on Vera Drake as Actress
-INSERT INTO worked_on VALUES(2496, 140, 'Actress');  -- Annette Bening worked on Being Julia as Actress
-INSERT INTO worked_on VALUES(524, 90, 'Actress');  -- Kate Winslet worked on Eternal Sunshine of the Spotless Mind as Actress
-INSERT INTO worked_on VALUES(1077, 1019, 'Actress');  -- Hilary Swank worked on Million Dollar Baby as Actress
-INSERT INTO worked_on VALUES(1477, 1038, 'Actress');  -- Virginia Madsen worked on Sideways as Actress
-INSERT INTO worked_on VALUES(2497, 1024, 'Actress');  -- Laura Linney worked on Kinsey as Actress
-INSERT INTO worked_on VALUES(134, 45, 'Actress');  -- Cate Blanchett worked on The Aviator as Actress
-INSERT INTO worked_on VALUES(760, 1039, 'Actress');  -- Sophie Okonedo worked on Hotel Rwanda as Actress
-INSERT INTO worked_on VALUES(2245, 101, 'Actress');  -- Natalie Portman worked on Closer as Actress
-INSERT INTO worked_on VALUES(1297, 1040, 'Actress');  -- Keira Knightley worked on Pride & Prejudice as Actress
-INSERT INTO worked_on VALUES(2498, 1041, 'Actress');  -- Felicity Huffman worked on Transamerica as Actress
-INSERT INTO worked_on VALUES(2499, 1011, 'Actress');  -- Judi Dench worked on Mrs. Henderson Presents as Actress
-INSERT INTO worked_on VALUES(1191, 1032, 'Actress');  -- Charlize Theron worked on North Country as Actress
-INSERT INTO worked_on VALUES(1731, 60, 'Actress');  -- Reese Witherspoon worked on Walk the Line as Actress
-INSERT INTO worked_on VALUES(2500, 168, 'Actress');  -- Amy Adams worked on Junebug as Actress
-INSERT INTO worked_on VALUES(2501, 1042, 'Actress');  -- Rachel Weisz worked on The Constant Gardener as Actress
-INSERT INTO worked_on VALUES(1191, 47, 'Actress');  -- Frances McDormand worked on North Country as Actress
-INSERT INTO worked_on VALUES(2038, 1043, 'Actress');  -- Michelle Williams worked on Brokeback Mountain as Actress
-INSERT INTO worked_on VALUES(287, 153, 'Actress');  -- Catherine Keener worked on Capote as Actress
-INSERT INTO worked_on VALUES(2502, 1011, 'Actress');  -- Judi Dench worked on Notes on a Scandal as Actress
-INSERT INTO worked_on VALUES(1319, 997, 'Actress');  -- Helen Mirren worked on The Queen as Actress
-INSERT INTO worked_on VALUES(2249, 90, 'Actress');  -- Kate Winslet worked on Little Children as Actress
-INSERT INTO worked_on VALUES(2503, 91, 'Actress');  -- Penelope Cruz worked on Volver as Actress
-INSERT INTO worked_on VALUES(445, 12, 'Actress');  -- Meryl Streep worked on The Devil Wears Prada as Actress
-INSERT INTO worked_on VALUES(140, 1044, 'Actress');  -- Rinko Kikuchi worked on Babel as Actress
-INSERT INTO worked_on VALUES(2502, 45, 'Actress');  -- Cate Blanchett worked on Notes on a Scandal as Actress
-INSERT INTO worked_on VALUES(2250, 1045, 'Actress');  -- Jennifer Hudson worked on Dreamgirls as Actress
-INSERT INTO worked_on VALUES(140, 1046, 'Actress');  -- Adriana Barraza worked on Babel as Actress
-INSERT INTO worked_on VALUES(964, 1047, 'Actress');  -- Abigail Breslin worked on Little Miss Sunshine as Actress
-INSERT INTO worked_on VALUES(509, 45, 'Actress');  -- Cate Blanchett worked on Elizabeth: The Golden Age as Actress
-INSERT INTO worked_on VALUES(136, 855, 'Actress');  -- Julie Christie worked on Away from Her as Actress
-INSERT INTO worked_on VALUES(911, 138, 'Actress');  -- Marion Cotillard worked on La Vie en Rose as Actress
-INSERT INTO worked_on VALUES(2504, 1024, 'Actress');  -- Laura Linney worked on The Savages as Actress
-INSERT INTO worked_on VALUES(873, 1048, 'Actress');  -- Ellen Page worked on Juno as Actress
-INSERT INTO worked_on VALUES(2505, 45, 'Actress');  -- Cate Blanchett worked on I'm Not There as Actress
-INSERT INTO worked_on VALUES(2506, 1049, 'Actress');  -- Ruby Dee worked on American Gangster as Actress
-INSERT INTO worked_on VALUES(125, 1050, 'Actress');  -- Saoirse Ronan worked on Atonement as Actress
-INSERT INTO worked_on VALUES(656, 1051, 'Actress');  -- Amy Ryan worked on Gone Baby Gone as Actress
-INSERT INTO worked_on VALUES(1063, 1052, 'Actress');  -- Tilda Swinton worked on Michael Clayton as Actress
-INSERT INTO worked_on VALUES(1325, 167, 'Actress');  -- Anne Hathaway worked on Rachel Getting Married as Actress
-INSERT INTO worked_on VALUES(309, 44, 'Actress');  -- Angelina Jolie worked on Changeling as Actress
-INSERT INTO worked_on VALUES(606, 1053, 'Actress');  -- Melissa Leo worked on Frozen River as Actress
-INSERT INTO worked_on VALUES(475, 12, 'Actress');  -- Meryl Streep worked on Doubt as Actress
-INSERT INTO worked_on VALUES(2040, 90, 'Actress');  -- Kate Winslet worked on The Reader as Actress
-INSERT INTO worked_on VALUES(475, 168, 'Actress');  -- Amy Adams worked on Doubt as Actress
-INSERT INTO worked_on VALUES(2507, 91, 'Actress');  -- Penelope Cruz worked on Vicky Cristina Barcelona as Actress
-INSERT INTO worked_on VALUES(475, 1054, 'Actress');  -- Viola Davis worked on Doubt as Actress
-INSERT INTO worked_on VALUES(396, 1055, 'Actress');  -- Taraji P. Henson worked on The Curious Case of Benjamin Button as Actress
-INSERT INTO worked_on VALUES(2255, 987, 'Actress');  -- Marisa Tomei worked on The Wrestler as Actress
+INSERT INTO worked_on VALUES(2041, 385, 'Lead Actor');  -- Emil Jannings worked on The Last Command as Lead Actor
+INSERT INTO worked_on VALUES(2042, 385, 'Lead Actor');  -- Emil Jannings worked on The Way of All Flesh as Lead Actor
+INSERT INTO worked_on VALUES(2043, 386, 'Lead Actor');  -- Richard Barthelmess worked on The Noose as Lead Actor
+INSERT INTO worked_on VALUES(2044, 386, 'Lead Actor');  -- Richard Barthelmess worked on The Patent Leather Kid as Lead Actor
+INSERT INTO worked_on VALUES(1832, 387, 'Lead Actor');  -- Chester Morris worked on Alibi as Lead Actor
+INSERT INTO worked_on VALUES(2045, 388, 'Lead Actor');  -- George Bancroft worked on Thunderbolt as Lead Actor
+INSERT INTO worked_on VALUES(2046, 389, 'Lead Actor');  -- Paul Muni worked on The Valiant as Lead Actor
+INSERT INTO worked_on VALUES(1834, 390, 'Lead Actor');  -- Warner Baxter worked on In Old Arizona as Lead Actor
+INSERT INTO worked_on VALUES(1836, 391, 'Lead Actor');  -- Lewis Stone worked on The Patriot as Lead Actor
+INSERT INTO worked_on VALUES(2047, 392, 'Lead Actor');  -- Ronald Colman worked on Bulldog Drummond as Lead Actor
+INSERT INTO worked_on VALUES(2048, 392, 'Lead Actor');  -- Ronald Colman worked on Condemned as Lead Actor
+INSERT INTO worked_on VALUES(2049, 393, 'Lead Actor');  -- Maurice Chevalier worked on The Big Pond as Lead Actor
+INSERT INTO worked_on VALUES(1837, 393, 'Lead Actor');  -- Maurice Chevalier worked on The Love Parade as Lead Actor
+INSERT INTO worked_on VALUES(2050, 394, 'Lead Actor');  -- Lawrence Tibbett worked on The Rogue Song as Lead Actor
+INSERT INTO worked_on VALUES(1839, 395, 'Lead Actor');  -- George Arliss worked on Disraeli as Lead Actor
+INSERT INTO worked_on VALUES(2051, 395, 'Lead Actor');  -- George Arliss worked on The Green Goddess as Lead Actor
+INSERT INTO worked_on VALUES(1838, 396, 'Lead Actor');  -- Wallace Beery worked on The Big House as Lead Actor
+INSERT INTO worked_on VALUES(2052, 397, 'Lead Actor');  -- Fredric March worked on The Royal Family of Broadway as Lead Actor
+INSERT INTO worked_on VALUES(1841, 398, 'Lead Actor');  -- Richard Dix worked on Cimarron as Lead Actor
+INSERT INTO worked_on VALUES(2053, 399, 'Lead Actor');  -- Lionel Barrymore worked on A Free Soul as Lead Actor
+INSERT INTO worked_on VALUES(1842, 400, 'Lead Actor');  -- Adolphe Menjou worked on The Front Page as Lead Actor
+INSERT INTO worked_on VALUES(1843, 401, 'Lead Actor');  -- Jackie Cooper worked on Skippy as Lead Actor
+INSERT INTO worked_on VALUES(2054, 397, 'Lead Actor');  -- Fredric March worked on Dr. Jekyll and Mr. Hyde as Lead Actor
+INSERT INTO worked_on VALUES(1853, 396, 'Lead Actor');  -- Wallace Beery worked on The Champ as Lead Actor
+INSERT INTO worked_on VALUES(2055, 402, 'Lead Actor');  -- Alfred Lunt worked on The Guardsman as Lead Actor
+INSERT INTO worked_on VALUES(1859, 179, 'Lead Actor');  -- Charles Laughton worked on The Private Life of Henry VIII as Lead Actor
+INSERT INTO worked_on VALUES(1856, 389, 'Lead Actor');  -- Paul Muni worked on I Am a Fugitive from a Chain Gang as Lead Actor
+INSERT INTO worked_on VALUES(2056, 403, 'Lead Actor');  -- Leslie Howard worked on Berkeley Square as Lead Actor
+INSERT INTO worked_on VALUES(2057, 404, 'Lead Actor');  -- Frank Morgan worked on The Affairs of Cellini as Lead Actor
+INSERT INTO worked_on VALUES(841, 177, 'Lead Actor');  -- Clark Gable worked on It Happened One Night as Lead Actor
+INSERT INTO worked_on VALUES(1867, 405, 'Lead Actor');  -- William Powell worked on The Thin Man as Lead Actor
+INSERT INTO worked_on VALUES(1885, 406, 'Lead Actor');  -- Victor McLaglen worked on The Informer as Lead Actor
+INSERT INTO worked_on VALUES(1131, 407, 'Lead Actor');  -- Franchot Tone worked on Mutiny on the Bounty as Lead Actor
+INSERT INTO worked_on VALUES(2058, 389, 'Lead Actor');  -- Paul Muni worked on Black Fury as Lead Actor
+INSERT INTO worked_on VALUES(1131, 179, 'Lead Actor');  -- Charles Laughton worked on Mutiny on the Bounty as Lead Actor
+INSERT INTO worked_on VALUES(1131, 177, 'Lead Actor');  -- Clark Gable worked on Mutiny on the Bounty as Lead Actor
+INSERT INTO worked_on VALUES(1887, 178, 'Lead Actor');  -- Gary Cooper worked on Mr. Deeds Goes to Town as Lead Actor
+INSERT INTO worked_on VALUES(1890, 408, 'Lead Actor');  -- Walter Huston worked on Dodsworth as Lead Actor
+INSERT INTO worked_on VALUES(1889, 118, 'Lead Actor');  -- Spencer Tracy worked on San Francisco as Lead Actor
+INSERT INTO worked_on VALUES(2059, 405, 'Lead Actor');  -- William Powell worked on My Man Godfrey as Lead Actor
+INSERT INTO worked_on VALUES(1892, 389, 'Lead Actor');  -- Paul Muni worked on The Story of Louis Pasteur as Lead Actor
+INSERT INTO worked_on VALUES(1894, 409, 'Supporting Actor');  -- Basil Rathbone worked on Romeo and Juliet as Supporting Actor
+INSERT INTO worked_on VALUES(2060, 410, 'Supporting Actor');  -- Stuart Erwin worked on Pigskin Parade as Supporting Actor
+INSERT INTO worked_on VALUES(2059, 411, 'Supporting Actor');  -- Mischa Auer worked on My Man Godfrey as Supporting Actor
+INSERT INTO worked_on VALUES(2061, 412, 'Supporting Actor');  -- Walter Brennan worked on Come and Get It as Supporting Actor
+INSERT INTO worked_on VALUES(2062, 413, 'Supporting Actor');  -- Akim Tamiroff worked on The General Died at Dawn as Supporting Actor
+INSERT INTO worked_on VALUES(1896, 397, 'Lead Actor');  -- Fredric March worked on A Star Is Born as Lead Actor
+INSERT INTO worked_on VALUES(2063, 414, 'Lead Actor');  -- Charles Boyer worked on Conquest as Lead Actor
+INSERT INTO worked_on VALUES(2064, 415, 'Lead Actor');  -- Robert Montgomery worked on Night Must Fall as Lead Actor
+INSERT INTO worked_on VALUES(288, 118, 'Lead Actor');  -- Spencer Tracy worked on Captains Courageous as Lead Actor
+INSERT INTO worked_on VALUES(1902, 389, 'Lead Actor');  -- Paul Muni worked on The Life of Emile Zola as Lead Actor
+INSERT INTO worked_on VALUES(1902, 416, 'Supporting Actor');  -- Joseph Schildkraut worked on The Life of Emile Zola as Supporting Actor
+INSERT INTO worked_on VALUES(1897, 417, 'Supporting Actor');  -- Ralph Bellamy worked on The Awful Truth as Supporting Actor
+INSERT INTO worked_on VALUES(2065, 418, 'Supporting Actor');  -- Thomas Mitchell worked on The Hurricane as Supporting Actor
+INSERT INTO worked_on VALUES(1904, 419, 'Supporting Actor');  -- H. B. Warner worked on Lost Horizon as Supporting Actor
+INSERT INTO worked_on VALUES(2066, 420, 'Supporting Actor');  -- Roland Young worked on Topper as Supporting Actor
+INSERT INTO worked_on VALUES(1909, 403, 'Lead Actor');  -- Leslie Howard worked on Pygmalion as Lead Actor
+INSERT INTO worked_on VALUES(1908, 118, 'Lead Actor');  -- Spencer Tracy worked on Boys Town as Lead Actor
+INSERT INTO worked_on VALUES(1905, 421, 'Lead Actor');  -- Robert Donat worked on The Citadel as Lead Actor
+INSERT INTO worked_on VALUES(2067, 176, 'Lead Actor');  -- James Cagney worked on Angels with Dirty Faces as Lead Actor
+INSERT INTO worked_on VALUES(2068, 414, 'Lead Actor');  -- Charles Boyer worked on Algiers as Lead Actor
+INSERT INTO worked_on VALUES(2069, 409, 'Supporting Actor');  -- Basil Rathbone worked on If I Were King as Supporting Actor
+INSERT INTO worked_on VALUES(2068, 422, 'Supporting Actor');  -- Gene Lockhart worked on Algiers as Supporting Actor
+INSERT INTO worked_on VALUES(1910, 423, 'Supporting Actor');  -- John Garfield worked on Four Daughters as Supporting Actor
+INSERT INTO worked_on VALUES(2070, 412, 'Supporting Actor');  -- Walter Brennan worked on Kentucky as Supporting Actor
+INSERT INTO worked_on VALUES(2071, 424, 'Supporting Actor');  -- Robert Morley worked on Marie Antoinette as Supporting Actor
+INSERT INTO worked_on VALUES(657, 177, 'Lead Actor');  -- Clark Gable worked on Gone with the Wind as Lead Actor
+INSERT INTO worked_on VALUES(1119, 23, 'Lead Actor');  -- Jimmy Stewart worked on Mr. Smith Goes to Washington as Lead Actor
+INSERT INTO worked_on VALUES(1802, 119, 'Lead Actor');  -- Laurence Olivier worked on Wuthering Heights as Lead Actor
+INSERT INTO worked_on VALUES(1916, 421, 'Lead Actor');  -- Robert Donat worked on Goodbye, Mr. Chips as Lead Actor
+INSERT INTO worked_on VALUES(2072, 425, 'Lead Actor');  -- Mickey Rooney worked on Babes in Arms as Lead Actor
+INSERT INTO worked_on VALUES(1119, 426, 'Supporting Actor');  -- Claude Rains worked on Mr. Smith Goes to Washington as Supporting Actor
+INSERT INTO worked_on VALUES(2073, 427, 'Supporting Actor');  -- Brian Donlevy worked on Beau Geste as Supporting Actor
+INSERT INTO worked_on VALUES(1539, 418, 'Supporting Actor');  -- Thomas Mitchell worked on Stagecoach as Supporting Actor
+INSERT INTO worked_on VALUES(2074, 428, 'Supporting Actor');  -- Brian Aherne worked on Juarez as Supporting Actor
+INSERT INTO worked_on VALUES(1119, 429, 'Supporting Actor');  -- Harry Carey worked on Mr. Smith Goes to Washington as Supporting Actor
+INSERT INTO worked_on VALUES(1343, 119, 'Lead Actor');  -- Laurence Olivier worked on Rebecca as Lead Actor
+INSERT INTO worked_on VALUES(2075, 430, 'Lead Actor');  -- Raymond Massey worked on Abe Lincoln in Illinois as Lead Actor
+INSERT INTO worked_on VALUES(680, 266, 'Lead Actor');  -- Charlie Chaplin worked on The Great Dictator as Lead Actor
+INSERT INTO worked_on VALUES(1260, 23, 'Lead Actor');  -- Jimmy Stewart worked on The Philadelphia Story as Lead Actor
+INSERT INTO worked_on VALUES(676, 66, 'Lead Actor');  -- Henry Fonda worked on The Grapes of Wrath as Lead Actor
+INSERT INTO worked_on VALUES(680, 431, 'Supporting Actor');  -- Jack Oakie worked on The Great Dictator as Supporting Actor
+INSERT INTO worked_on VALUES(1921, 432, 'Supporting Actor');  -- James Stephenson worked on The Letter as Supporting Actor
+INSERT INTO worked_on VALUES(2076, 412, 'Supporting Actor');  -- Walter Brennan worked on The Westerner as Supporting Actor
+INSERT INTO worked_on VALUES(2077, 433, 'Supporting Actor');  -- William Gargan worked on They Knew What They Wanted as Supporting Actor
+INSERT INTO worked_on VALUES(1917, 434, 'Supporting Actor');  -- Albert Bassermann worked on Foreign Correspondent as Supporting Actor
+INSERT INTO worked_on VALUES(2078, 408, 'Lead Actor');  -- Walter Huston worked on The Devil and Daniel Webster as Lead Actor
+INSERT INTO worked_on VALUES(338, 19, 'Lead Actor');  -- Orson Welles worked on Citizen Kane as Lead Actor
+INSERT INTO worked_on VALUES(1925, 415, 'Lead Actor');  -- Robert Montgomery worked on Here Comes Mr. Jordan as Lead Actor
+INSERT INTO worked_on VALUES(1929, 178, 'Lead Actor');  -- Gary Cooper worked on Sergeant York as Lead Actor
+INSERT INTO worked_on VALUES(2079, 24, 'Lead Actor');  -- Cary Grant worked on Penny Serenade as Lead Actor
+INSERT INTO worked_on VALUES(1004, 435, 'Supporting Actor');  -- Sydney Greenstreet worked on The Maltese Falcon as Supporting Actor
+INSERT INTO worked_on VALUES(1930, 436, 'Supporting Actor');  -- Donald Crisp worked on How Green Was My Valley as Supporting Actor
+INSERT INTO worked_on VALUES(2080, 437, 'Supporting Actor');  -- Charles Coburn worked on The Devil and Miss Jones as Supporting Actor
+INSERT INTO worked_on VALUES(1929, 412, 'Supporting Actor');  -- Walter Brennan worked on Sergeant York as Supporting Actor
+INSERT INTO worked_on VALUES(1925, 438, 'Supporting Actor');  -- James Gleason worked on Here Comes Mr. Jordan as Supporting Actor
+INSERT INTO worked_on VALUES(1810, 176, 'Lead Actor');  -- James Cagney worked on Yankee Doodle Dandy as Lead Actor
+INSERT INTO worked_on VALUES(1931, 439, 'Lead Actor');  -- Monty Woolley worked on The Pied Piper as Lead Actor
+INSERT INTO worked_on VALUES(1936, 392, 'Lead Actor');  -- Ronald Colman worked on Random Harvest as Lead Actor
+INSERT INTO worked_on VALUES(1932, 178, 'Lead Actor');  -- Gary Cooper worked on The Pride of the Yankees as Lead Actor
+INSERT INTO worked_on VALUES(1938, 440, 'Lead Actor');  -- Walter Pidgeon worked on Mrs. Miniver as Lead Actor
+INSERT INTO worked_on VALUES(1938, 441, 'Supporting Actor');  -- Henry Travers worked on Mrs. Miniver as Supporting Actor
+INSERT INTO worked_on VALUES(2081, 404, 'Supporting Actor');  -- Frank Morgan worked on Tortilla Flat as Supporting Actor
+INSERT INTO worked_on VALUES(1937, 442, 'Supporting Actor');  -- William Bendix worked on Wake Island as Supporting Actor
+INSERT INTO worked_on VALUES(2082, 443, 'Supporting Actor');  -- Van Heflin worked on Johnny Eager as Supporting Actor
+INSERT INTO worked_on VALUES(1810, 408, 'Supporting Actor');  -- Walter Huston worked on Yankee Doodle Dandy as Supporting Actor
+INSERT INTO worked_on VALUES(1940, 440, 'Lead Actor');  -- Walter Pidgeon worked on Madame Curie as Lead Actor
+INSERT INTO worked_on VALUES(292, 22, 'Lead Actor');  -- Humphrey Bogart worked on Casablanca as Lead Actor
+INSERT INTO worked_on VALUES(1947, 444, 'Lead Actor');  -- Paul Lukas worked on Watch on the Rhine as Lead Actor
+INSERT INTO worked_on VALUES(1942, 178, 'Lead Actor');  -- Gary Cooper worked on For Whom the Bell Tolls as Lead Actor
+INSERT INTO worked_on VALUES(1946, 425, 'Lead Actor');  -- Mickey Rooney worked on The Human Comedy as Lead Actor
+INSERT INTO worked_on VALUES(2083, 445, 'Supporting Actor');  -- J. Carrol Naish worked on Sahara as Supporting Actor
+INSERT INTO worked_on VALUES(292, 426, 'Supporting Actor');  -- Claude Rains worked on Casablanca as Supporting Actor
+INSERT INTO worked_on VALUES(1942, 413, 'Supporting Actor');  -- Akim Tamiroff worked on For Whom the Bell Tolls as Supporting Actor
+INSERT INTO worked_on VALUES(1943, 437, 'Supporting Actor');  -- Charles Coburn worked on The More the Merrier as Supporting Actor
+INSERT INTO worked_on VALUES(1944, 446, 'Supporting Actor');  -- Charles Bickford worked on The Song of Bernadette as Supporting Actor
+INSERT INTO worked_on VALUES(2084, 24, 'Lead Actor');  -- Cary Grant worked on None but the Lonely Heart as Lead Actor
+INSERT INTO worked_on VALUES(1951, 447, 'Lead Actor');  -- Bing Crosby worked on Going My Way as Lead Actor
+INSERT INTO worked_on VALUES(1949, 449, 'Lead Actor');  -- Alexander Knox worked on Wilson as Lead Actor
+INSERT INTO worked_on VALUES(1948, 414, 'Lead Actor');  -- Charles Boyer worked on Gaslight as Lead Actor
+INSERT INTO worked_on VALUES(932, 450, 'Supporting Actor');  -- Clifton Webb worked on Laura as Lead Actor
+INSERT INTO worked_on VALUES(2085, 426, 'Supporting Actor');  -- Claude Rains worked on Mr. Skeffington as Supporting Actor
+INSERT INTO worked_on VALUES(2086, 451, 'Supporting Actor');  -- Hume Cronyn worked on The Seventh Cross as Supporting Actor
+INSERT INTO worked_on VALUES(1951, 448, 'Supporting Actor');  -- Barry Fitzgerald worked on Going My Way as Supporting Actor
+INSERT INTO worked_on VALUES(1950, 439, 'Supporting Actor');  -- Monty Woolley worked on Since You Went Away as Supporting Actor
+INSERT INTO worked_on VALUES(1953, 452, 'Lead Actor');  -- Gene Kelly worked on Anchors Aweigh as Supporting Actor
+INSERT INTO worked_on VALUES(1952, 453, 'Lead Actor');  -- Ray Milland worked on The Lost Weekend as Lead Actor
+INSERT INTO worked_on VALUES(1955, 447, 'Lead Actor');  -- Bing Crosby worked on The Bells of St. Mary's as Lead Actor
+INSERT INTO worked_on VALUES(2087, 454, 'Lead Actor');  -- Cornel Wilde worked on A Song to Remember as Lead Actor
+INSERT INTO worked_on VALUES(2088, 180, 'Lead Actor');  -- Gregory Peck worked on The Keys of the Kingdom as Lead Actor
+INSERT INTO worked_on VALUES(2089, 455, 'Supporting Actor');  -- John Dall worked on The Corn Is Green as Supporting Actor
+INSERT INTO worked_on VALUES(2090, 25, 'Supporting Actor');  -- Robert Mitchum worked on The Story of G. I. Joe as Supporting Actor
+INSERT INTO worked_on VALUES(2091, 456, 'Supporting Actor');  -- James Dunn worked on A Tree Grows in Brooklyn as Supporting Actor
+INSERT INTO worked_on VALUES(1531, 457, 'Supporting Actor');  -- Michael Chekhov worked on Spellbound as Supporting Actor
+INSERT INTO worked_on VALUES(2092, 445, 'Supporting Actor');  -- J. Carrol Naish worked on A Medal for Benny as Supporting Actor
+INSERT INTO worked_on VALUES(1956, 180, 'Lead Actor');  -- Gregory Peck worked on The Yearling as Lead Actor
+INSERT INTO worked_on VALUES(1957, 119, 'Lead Actor');  -- Laurence Olivier worked on Henry V as Lead Actor
+INSERT INTO worked_on VALUES(844, 23, 'Lead Actor');  -- Jimmy Stewart worked on It's a Wonderful Life as Lead Actor
+INSERT INTO worked_on VALUES(2093, 458, 'Lead Actor');  -- Larry Parks worked on The Jolson Story as Lead Actor
+INSERT INTO worked_on VALUES(188, 397, 'Lead Actor');  -- Fredric March worked on The Best Years of Our Lives as Lead Actor
+INSERT INTO worked_on VALUES(188, 459, 'Supporting Actor');  -- Harold Russell worked on The Best Years of Our Lives as Supporting Actor
+INSERT INTO worked_on VALUES(1195, 426, 'Supporting Actor');  -- Claude Rains worked on Notorious as Supporting Actor
+INSERT INTO worked_on VALUES(1958, 450, 'Supporting Actor');  -- Clifton Webb worked on The Razor's Edge as Supporting Actor
+INSERT INTO worked_on VALUES(2093, 460, 'Supporting Actor');  -- William Demarest worked on The Jolson Story as Supporting Actor
+INSERT INTO worked_on VALUES(2094, 437, 'Supporting Actor');  -- Charles Coburn worked on The Green Years as Supporting Actor
+INSERT INTO worked_on VALUES(2095, 405, 'Lead Actor');  -- William Powell worked on Life with Father as Lead Actor
+INSERT INTO worked_on VALUES(2096, 423, 'Lead Actor');  -- John Garfield worked on Body and Soul as Lead Actor
+INSERT INTO worked_on VALUES(1962, 180, 'Lead Actor');  -- Gregory Peck worked on Gentleman's Agreement as Lead Actor
+INSERT INTO worked_on VALUES(2097, 392, 'Lead Actor');  -- Ronald Colman worked on A Double Life as Lead Actor
+INSERT INTO worked_on VALUES(2098, 461, 'Lead Actor');  -- Michael Redgrave worked on Mourning Becomes Electra as Lead Actor
+INSERT INTO worked_on VALUES(2099, 462, 'Supporting Actor');  -- Thomas Gomez worked on Ride the Pink Horse as Supporting Actor
+INSERT INTO worked_on VALUES(2100, 463, 'Supporting Actor');  -- Richard Widmark worked on Kiss of Death as Supporting Actor
+INSERT INTO worked_on VALUES(1960, 464, 'Supporting Actor');  -- Robert Ryan worked on Crossfire as Supporting Actor
+INSERT INTO worked_on VALUES(2101, 446, 'Supporting Actor');  -- Charles Bickford worked on The Farmer's Daughter as Supporting Actor
+INSERT INTO worked_on VALUES(1959, 465, 'Supporting Actor');  -- Edmund Gwenn worked on Miracle on 34th Street as Supporting Actor
+INSERT INTO worked_on VALUES(1966, 119, 'Lead Actor');  -- Laurence Olivier worked on Hamlet as Lead Actor
+INSERT INTO worked_on VALUES(2102, 450, 'Lead Actor');  -- Clifton Webb worked on Sitting Pretty as Lead Actor
+INSERT INTO worked_on VALUES(1963, 466, 'Lead Actor');  -- Lew Ayres worked on Johnny Belinda as Lead Actor
+INSERT INTO worked_on VALUES(2103, 181, 'Lead Actor');  -- Montgomery Clift worked on The Search as Lead Actor
+INSERT INTO worked_on VALUES(2104, 467, 'Lead Actor');  -- Dan Dailey worked on When My Baby Smiles at Me as Lead Actor
+INSERT INTO worked_on VALUES(2105, 468, 'Supporting Actor');  -- Oscar Homolka worked on I Remember Mama as Supporting Actor
+INSERT INTO worked_on VALUES(2106, 469, 'Supporting Actor');  -- Jose Ferrer worked on Joan of Arc as Supporting Actor
+INSERT INTO worked_on VALUES(1665, 408, 'Supporting Actor');  -- Walter Huston worked on The Treasure of the Sierra Madre as Supporting Actor
+INSERT INTO worked_on VALUES(1963, 446, 'Supporting Actor');  -- Charles Bickford worked on Johnny Belinda as Supporting Actor
+INSERT INTO worked_on VALUES(2107, 470, 'Supporting Actor');  -- Cecil Kellaway worked on The Luck of the Irish as Supporting Actor
+INSERT INTO worked_on VALUES(308, 78, 'Lead Actor');  -- Kirk Douglas worked on Champion as Lead Actor
+INSERT INTO worked_on VALUES(2108, 471, 'Lead Actor');  -- Richard Todd worked on The Hasty Heart as Lead Actor
+INSERT INTO worked_on VALUES(1967, 472, 'Lead Actor');  -- Broderick Crawford worked on All the King's Men as Lead Actor
+INSERT INTO worked_on VALUES(1968, 180, 'Lead Actor');  -- Gregory Peck worked on Twelve O'Clock High as Lead Actor
+INSERT INTO worked_on VALUES(2109, 65, 'Lead Actor');  -- John Wayne worked on Sands of Iwo Jima as Lead Actor
+INSERT INTO worked_on VALUES(308, 473, 'Supporting Actor');  -- Arthur Kennedy worked on Champion as Supporting Actor
+INSERT INTO worked_on VALUES(1967, 474, 'Supporting Actor');  -- John Ireland worked on All the King's Men as Supporting Actor
+INSERT INTO worked_on VALUES(1970, 475, 'Supporting Actor');  -- Ralph Richardson worked on The Heiress as Supporting Actor
+INSERT INTO worked_on VALUES(1969, 476, 'Supporting Actor');  -- James Whitmore worked on Battleground as Supporting Actor
+INSERT INTO worked_on VALUES(1968, 477, 'Supporting Actor');  -- Dean Jagger worked on Twelve O'Clock High as Supporting Actor
+INSERT INTO worked_on VALUES(2110, 469, 'Lead Actor');  -- Jose Ferrer worked on Cyrano de Bergerac as Lead Actor
+INSERT INTO worked_on VALUES(1974, 118, 'Lead Actor');  -- Spencer Tracy worked on Father of the Bride as Lead Actor
+INSERT INTO worked_on VALUES(725, 23, 'Lead Actor');  -- Jimmy Stewart worked on Harvey as Lead Actor
+INSERT INTO worked_on VALUES(2111, 478, 'Lead Actor');  -- Louis Calhern worked on The Magnificent Yankee as Lead Actor
+INSERT INTO worked_on VALUES(1575, 182, 'Lead Actor');  -- William Holden worked on Sunset Boulevard as Lead Actor
+INSERT INTO worked_on VALUES(2112, 479, 'Supporting Actor');  -- Jeff Chandler worked on Broken Arrow as Supporting Actor
+INSERT INTO worked_on VALUES(2113, 465, 'Supporting Actor');  -- Edmund Gwenn worked on Mister 880 as Supporting Actor
+INSERT INTO worked_on VALUES(2114, 480, 'Supporting Actor');  -- Sam Jaffe worked on The Asphalt Jungle as Supporting Actor
+INSERT INTO worked_on VALUES(1575, 481, 'Supporting Actor');  -- Erich von Stroheim worked on Sunset Boulevard as Supporting Actor
+INSERT INTO worked_on VALUES(66, 482, 'Supporting Actor');  -- George Sanders worked on All about Eve as Supporting Actor
+INSERT INTO worked_on VALUES(1274, 181, 'Lead Actor');  -- Montgomery Clift worked on A Place in the Sun as Lead Actor
+INSERT INTO worked_on VALUES(2115, 473, 'Lead Actor');  -- Arthur Kennedy worked on Bright Victory as Lead Actor
+INSERT INTO worked_on VALUES(2116, 397, 'Lead Actor');  -- Fredric March worked on Death of a Salesman as Lead Actor
+INSERT INTO worked_on VALUES(1566, 2, 'Lead Actor');  -- Marlon Brando worked on A Streetcar Named Desire as Lead Actor
+INSERT INTO worked_on VALUES(42, 22, 'Lead Actor');  -- Humphrey Bogart worked on The African Queen as Lead Actor
+INSERT INTO worked_on VALUES(1975, 483, 'Supporting Actor');  -- Peter Ustinov worked on Quo Vadis as Supporting Actor
+INSERT INTO worked_on VALUES(1566, 484, 'Supporting Actor');  -- Karl Malden worked on A Streetcar Named Desire as Supporting Actor
+INSERT INTO worked_on VALUES(1975, 485, 'Supporting Actor');  -- Leo Genn worked on Quo Vadis as Supporting Actor
+INSERT INTO worked_on VALUES(2117, 486, 'Supporting Actor');  -- Gig Young worked on Come Fill the Cup as Supporting Actor
+INSERT INTO worked_on VALUES(2116, 487, 'Supporting Actor');  -- Kevin McCarthy worked on Death of a Salesman as Supporting Actor
+INSERT INTO worked_on VALUES(146, 78, 'Lead Actor');  -- Kirk Douglas worked on The Bad and the Beautiful as Lead Actor
+INSERT INTO worked_on VALUES(1977, 469, 'Lead Actor');  -- Jose Ferrer worked on Moulin Rouge as Lead Actor
+INSERT INTO worked_on VALUES(1723, 2, 'Lead Actor');  -- Marlon Brando worked on Viva Zapata! as Lead Actor
+INSERT INTO worked_on VALUES(744, 178, 'Lead Actor');  -- Gary Cooper worked on High Noon as Lead Actor
+INSERT INTO worked_on VALUES(2118, 121, 'Lead Actor');  -- Alec Guinness worked on The Lavender Hill Mob as Lead Actor
+INSERT INTO worked_on VALUES(2119, 488, 'Supporting Actor');  -- Arthur Hunnicutt worked on The Big Sky as Supporting Actor
+INSERT INTO worked_on VALUES(2120, 185, 'Supporting Actor');  -- Jack Palance worked on Sudden Fear as Supporting Actor
+INSERT INTO worked_on VALUES(1979, 406, 'Supporting Actor');  -- Victor McLaglen worked on The Quiet Man as Supporting Actor
+INSERT INTO worked_on VALUES(1723, 489, 'Supporting Actor');  -- Anthony Quinn worked on Viva Zapata! as Supporting Actor
+INSERT INTO worked_on VALUES(2121, 192, 'Supporting Actor');  -- Richard Burton worked on My Cousin Rachel as Supporting Actor
+INSERT INTO worked_on VALUES(604, 181, 'Lead Actor');  -- Montgomery Clift worked on From Here to Eternity as Lead Actor
+INSERT INTO worked_on VALUES(2122, 182, 'Lead Actor');  -- William Holden worked on Stalag 17 as Lead Actor
+INSERT INTO worked_on VALUES(1982, 2, 'Lead Actor');  -- Marlon Brando worked on Julius Caesar as Lead Actor
+INSERT INTO worked_on VALUES(1981, 192, 'Lead Actor');  -- Richard Burton worked on The Robe as Lead Actor
+INSERT INTO worked_on VALUES(604, 183, 'Lead Actor');  -- Burt Lancaster worked on From Here to Eternity as Lead Actor
+INSERT INTO worked_on VALUES(1457, 185, 'Supporting Actor');  -- Jack Palance worked on Shane as Supporting Actor
+INSERT INTO worked_on VALUES(2122, 490, 'Supporting Actor');  -- Robert Strauss worked on Stalag 17 as Supporting Actor
+INSERT INTO worked_on VALUES(1384, 491, 'Supporting Actor');  -- Eddie Albert worked on Roman Holiday as Supporting Actor
+INSERT INTO worked_on VALUES(604, 186, 'Supporting Actor');  -- Frank Sinatra worked on From Here to Eternity as Supporting Actor
+INSERT INTO worked_on VALUES(1457, 492, 'Supporting Actor');  -- Brandon De Wilde worked on Shane as Supporting Actor
+INSERT INTO worked_on VALUES(2123, 493, 'Lead Actor');  -- Dan O'Herlihy worked on Robinson Crusoe as Lead Actor
+INSERT INTO worked_on VALUES(2124, 184, 'Lead Actor');  -- James Mason worked on A Star Is Born as Lead Actor
+INSERT INTO worked_on VALUES(1207, 2, 'Lead Actor');  -- Marlon Brando worked on On the Waterfront as Lead Actor
+INSERT INTO worked_on VALUES(1986, 22, 'Lead Actor');  -- Humphrey Bogart worked on The Caine Mutiny as Lead Actor
+INSERT INTO worked_on VALUES(1983, 447, 'Lead Actor');  -- Bing Crosby worked on The Country Girl as Lead Actor
+INSERT INTO worked_on VALUES(1986, 494, 'Supporting Actor');  -- Tom Tully worked on The Caine Mutiny as Supporting Actor
+INSERT INTO worked_on VALUES(1207, 191, 'Supporting Actor');  -- Rod Steiger worked on On the Waterfront as Supporting Actor
+INSERT INTO worked_on VALUES(1207, 495, 'Supporting Actor');  -- Lee J. Cobb worked on On the Waterfront as Supporting Actor
+INSERT INTO worked_on VALUES(2125, 496, 'Supporting Actor');  -- Edmond O'Brien worked on The Barefoot Contessa as Supporting Actor
+INSERT INTO worked_on VALUES(1207, 484, 'Supporting Actor');  -- Karl Malden worked on On the Waterfront as Supporting Actor
+INSERT INTO worked_on VALUES(2126, 118, 'Lead Actor');  -- Spencer Tracy worked on Bad Day at Black Rock as Lead Actor
+INSERT INTO worked_on VALUES(2127, 176, 'Lead Actor');  -- James Cagney worked on Love Me or Leave Me as Lead Actor
+INSERT INTO worked_on VALUES(497, 117, 'Lead Actor');  -- James Dean worked on East of Eden as Lead Actor
+INSERT INTO worked_on VALUES(1027, 187, 'Lead Actor');  -- Ernest Borgnine worked on Marty as Lead Actor
+INSERT INTO worked_on VALUES(1013, 186, 'Lead Actor');  -- Frank Sinatra worked on The Man with the Golden Arm as Lead Actor
+INSERT INTO worked_on VALUES(1344, 497, 'Supporting Actor');  -- Sal Mineo worked on Rebel without a Cause as Supporting Actor
+INSERT INTO worked_on VALUES(1027, 498, 'Supporting Actor');  -- Joe Mantell worked on Marty as Supporting Actor
+INSERT INTO worked_on VALUES(2128, 473, 'Supporting Actor');  -- Arthur Kennedy worked on Trial as Supporting Actor
+INSERT INTO worked_on VALUES(1988, 499, 'Supporting Actor');  -- Arthur O'Connell worked on Picnic as Supporting Actor
+INSERT INTO worked_on VALUES(1990, 189, 'Supporting Actor');  -- Jack Lemmon worked on Mister Roberts as Supporting Actor
+INSERT INTO worked_on VALUES(2129, 78, 'Lead Actor');  -- Kirk Douglas worked on Lust for Life as Lead Actor
+INSERT INTO worked_on VALUES(1991, 500, 'Lead Actor');  -- Yul Brynner worked on The King and I as Lead Actor
+INSERT INTO worked_on VALUES(633, 188, 'Lead Actor');  -- Rock Hudson worked on Giant as Lead Actor
+INSERT INTO worked_on VALUES(633, 117, 'Lead Actor');  -- James Dean worked on Giant as Lead Actor
+INSERT INTO worked_on VALUES(2130, 119, 'Lead Actor');  -- Laurence Olivier worked on Richard III as Lead Actor
+INSERT INTO worked_on VALUES(2131, 501, 'Supporting Actor');  -- Don Murray worked on Bus Stop as Supporting Actor
+INSERT INTO worked_on VALUES(1801, 502, 'Supporting Actor');  -- Robert Stack worked on Written on the Wind as Supporting Actor
+INSERT INTO worked_on VALUES(2129, 489, 'Supporting Actor');  -- Anthony Quinn worked on Lust for Life as Supporting Actor
+INSERT INTO worked_on VALUES(1993, 503, 'Supporting Actor');  -- Anthony Perkins worked on Friendly Persuasion as Supporting Actor
+INSERT INTO worked_on VALUES(2132, 425, 'Supporting Actor');  -- Mickey Rooney worked on The Bold and the Brave as Supporting Actor
+INSERT INTO worked_on VALUES(1994, 179, 'Lead Actor');  -- Charles Laughton worked on Witness for the Prosecution as Lead Actor
+INSERT INTO worked_on VALUES(2133, 489, 'Lead Actor');  -- Anthony Quinn worked on Wild Is the Wind as Lead Actor
+INSERT INTO worked_on VALUES(257, 121, 'Lead Actor');  -- Alec Guinness worked on The Bridge on the River Kwai as Lead Actor
+INSERT INTO worked_on VALUES(2134, 504, 'Lead Actor');  -- Anthony Franciosa worked on A Hatful of Rain as Lead Actor
+INSERT INTO worked_on VALUES(1412, 2, 'Lead Actor');  -- Marlon Brando worked on Sayonara as Lead Actor
+INSERT INTO worked_on VALUES(1412, 224, 'Supporting Actor');  -- Red Buttons worked on Sayonara as Supporting Actor
+INSERT INTO worked_on VALUES(2135, 276, 'Supporting Actor');  -- Vittorio De Sica worked on A Farewell to Arms as Supporting Actor
+INSERT INTO worked_on VALUES(257, 505, 'Supporting Actor');  -- Sessue Hayakawa worked on The Bridge on the River Kwai as Supporting Actor
+INSERT INTO worked_on VALUES(1995, 473, 'Supporting Actor');  -- Arthur Kennedy worked on Peyton Place as Supporting Actor
+INSERT INTO worked_on VALUES(1995, 506, 'Supporting Actor');  -- Russ Tamblyn worked on Peyton Place as Supporting Actor
+INSERT INTO worked_on VALUES(1996, 34, 'Lead Actor');  -- Sidney Poitier worked on The Defiant Ones as Lead Actor
+INSERT INTO worked_on VALUES(2136, 118, 'Lead Actor');  -- Spencer Tracy worked on The Old Man and the Sea as Lead Actor
+INSERT INTO worked_on VALUES(1999, 507, 'Lead Actor');  -- David Niven worked on Separate Tables as Lead Actor
+INSERT INTO worked_on VALUES(1996, 508, 'Lead Actor');  -- Tony Curtis worked on The Defiant Ones as Lead Actor
+INSERT INTO worked_on VALUES(298, 41, 'Lead Actor');  -- Paul Newman worked on Cat on a Hot Tin Roof as Lead Actor
+INSERT INTO worked_on VALUES(2137, 473, 'Supporting Actor');  -- Arthur Kennedy worked on Some Came Running as Supporting Actor
+INSERT INTO worked_on VALUES(2138, 486, 'Supporting Actor');  -- Gig Young worked on Teacher's Pet as Supporting Actor
+INSERT INTO worked_on VALUES(1996, 509, 'Supporting Actor');  -- Theodore Bikel worked on The Defiant Ones as Supporting Actor
+INSERT INTO worked_on VALUES(2139, 495, 'Supporting Actor');  -- Lee J. Cobb worked on The Brothers Karamazov as Supporting Actor
+INSERT INTO worked_on VALUES(2140, 510, 'Supporting Actor');  -- Burl Ives worked on The Big Country as Supporting Actor
+INSERT INTO worked_on VALUES(2141, 389, 'Lead Actor');  -- Paul Muni worked on The Last Angry Man as Lead Actor
+INSERT INTO worked_on VALUES(2003, 23, 'Lead Actor');  -- Jimmy Stewart worked on Anatomy of a Murder as Lead Actor
+INSERT INTO worked_on VALUES(1517, 189, 'Lead Actor');  -- Jack Lemmon worked on Some Like It Hot as Lead Actor
+INSERT INTO worked_on VALUES(2000, 511, 'Lead Actor');  -- Laurence Harvey worked on Room at the Top as Lead Actor
+INSERT INTO worked_on VALUES(182, 223, 'Lead Actor');  -- Charlton Heston worked on Ben-Hur as Lead Actor
+INSERT INTO worked_on VALUES(182, 512, 'Supporting Actor');  -- Hugh Griffith worked on Ben-Hur as Supporting Actor
+INSERT INTO worked_on VALUES(2001, 513, 'Supporting Actor');  -- Ed Wynn worked on The Diary of Anne Frank as Supporting Actor
+INSERT INTO worked_on VALUES(2003, 499, 'Supporting Actor');  -- Arthur O'Connell worked on Anatomy of a Murder as Supporting Actor
+INSERT INTO worked_on VALUES(2003, 75, 'Supporting Actor');  -- George C. Scott worked on Anatomy of a Murder as Supporting Actor
+INSERT INTO worked_on VALUES(2142, 514, 'Supporting Actor');  -- Robert Vaughn worked on The Young Philadelphians as Supporting Actor
+INSERT INTO worked_on VALUES(510, 183, 'Lead Actor');  -- Burt Lancaster worked on Elmer Gantry as Lead Actor
+INSERT INTO worked_on VALUES(2143, 118, 'Lead Actor');  -- Spencer Tracy worked on Inherit the Wind as Lead Actor
+INSERT INTO worked_on VALUES(2144, 119, 'Lead Actor');  -- Laurence Olivier worked on The Entertainer as Lead Actor
+INSERT INTO worked_on VALUES(107, 189, 'Lead Actor');  -- Jack Lemmon worked on The Apartment as Lead Actor
+INSERT INTO worked_on VALUES(2006, 515, 'Lead Actor');  -- Trevor Howard worked on Sons and Lovers as Lead Actor
+INSERT INTO worked_on VALUES(2145, 516, 'Supporting Actor');  -- Peter Falk worked on Murder, Inc. as Supporting Actor
+INSERT INTO worked_on VALUES(2146, 497, 'Supporting Actor');  -- Sal Mineo worked on Exodus as Supporting Actor
+INSERT INTO worked_on VALUES(1528, 483, 'Supporting Actor');  -- Peter Ustinov worked on Spartacus as Supporting Actor
+INSERT INTO worked_on VALUES(107, 517, 'Supporting Actor');  -- Jack Kruschen worked on The Apartment as Supporting Actor
+INSERT INTO worked_on VALUES(2005, 518, 'Supporting Actor');  -- Chill Wills worked on The Alamo as Supporting Actor
+INSERT INTO worked_on VALUES(2007, 414, 'Lead Actor');  -- Charles Boyer worked on Fanny as Lead Actor
+INSERT INTO worked_on VALUES(2147, 519, 'Lead Actor');  -- Stuart Whitman worked on The Mark as Lead Actor
+INSERT INTO worked_on VALUES(2008, 520, 'Lead Actor');  -- Maximilian Schell worked on Judgment at Nuremberg as Lead Actor
+INSERT INTO worked_on VALUES(2008, 118, 'Lead Actor');  -- Spencer Tracy worked on Judgment at Nuremberg as Lead Actor
+INSERT INTO worked_on VALUES(778, 41, 'Lead Actor');  -- Paul Newman worked on The Hustler as Lead Actor
+INSERT INTO worked_on VALUES(778, 521, 'Supporting Actor');  -- Jackie Gleason worked on The Hustler as Supporting Actor
+INSERT INTO worked_on VALUES(2008, 181, 'Supporting Actor');  -- Montgomery Clift worked on Judgment at Nuremberg as Supporting Actor
+INSERT INTO worked_on VALUES(2148, 516, 'Supporting Actor');  -- Peter Falk worked on Pocketful of Miracles as Supporting Actor
+INSERT INTO worked_on VALUES(778, 75, 'Supporting Actor');  -- George C. Scott worked on The Hustler as Supporting Actor
+INSERT INTO worked_on VALUES(1750, 522, 'Supporting Actor');  -- George Chakiris worked on West Side Story as Supporting Actor
+INSERT INTO worked_on VALUES(415, 189, 'Lead Actor');  -- Jack Lemmon worked on Days of Wine and Roses as Lead Actor
+INSERT INTO worked_on VALUES(1642, 180, 'Lead Actor');  -- Gregory Peck worked on To Kill a Mockingbird as Lead Actor
+INSERT INTO worked_on VALUES(935, 120, 'Lead Actor');  -- Peter O'Toole worked on Lawrence of Arabia as Lead Actor
+INSERT INTO worked_on VALUES(2149, 183, 'Lead Actor');  -- Burt Lancaster worked on Birdman of Alcatraz as Lead Actor
+INSERT INTO worked_on VALUES(2150, 204, 'Lead Actor');  -- Marcello Mastroianni worked on Divorce--Italian Style as Lead Actor
+INSERT INTO worked_on VALUES(935, 523, 'Supporting Actor');  -- Omar Sharif worked on Lawrence of Arabia as Supporting Actor
+INSERT INTO worked_on VALUES(2151, 524, 'Supporting Actor');  -- Ed Begley worked on Sweet Bird of Youth as Supporting Actor
+INSERT INTO worked_on VALUES(2152, 525, 'Supporting Actor');  -- Terence Stamp worked on Billy Budd as Supporting Actor
+INSERT INTO worked_on VALUES(2149, 526, 'Supporting Actor');  -- Telly Savalas worked on Birdman of Alcatraz as Supporting Actor
+INSERT INTO worked_on VALUES(1754, 527, 'Supporting Actor');  -- Victor Buono worked on What Ever Happened to Baby Jane? as Supporting Actor
+INSERT INTO worked_on VALUES(2153, 528, 'Lead Actor');  -- Richard Harris worked on This Sporting Life as Lead Actor
+INSERT INTO worked_on VALUES(2012, 34, 'Lead Actor');  -- Sidney Poitier worked on Lilies of the Field as Lead Actor
+INSERT INTO worked_on VALUES(2014, 198, 'Lead Actor');  -- Albert Finney worked on Tom Jones as Lead Actor
+INSERT INTO worked_on VALUES(2154, 41, 'Lead Actor');  -- Paul Newman worked on Hud as Lead Actor
+INSERT INTO worked_on VALUES(2013, 190, 'Lead Actor');  -- Rex Harrison worked on Cleopatra as Lead Actor
+INSERT INTO worked_on VALUES(2155, 529, 'Supporting Actor');  -- Bobby Darin worked on Captain Newman, M.D. as Supporting Actor
+INSERT INTO worked_on VALUES(2154, 530, 'Supporting Actor');  -- Melvyn Douglas worked on Hud as Supporting Actor
+INSERT INTO worked_on VALUES(2156, 531, 'Supporting Actor');  -- Nick Adams worked on Twilight of Honor as Supporting Actor
+INSERT INTO worked_on VALUES(2014, 512, 'Supporting Actor');  -- Hugh Griffith worked on Tom Jones as Supporting Actor
+INSERT INTO worked_on VALUES(2157, 297, 'Supporting Actor');  -- John Huston worked on The Cardinal as Supporting Actor
+INSERT INTO worked_on VALUES(481, 74, 'Lead Actor');  -- Peter Sellers worked on Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb as Lead Actor
+INSERT INTO worked_on VALUES(2016, 489, 'Lead Actor');  -- Anthony Quinn worked on Zorba the Greek as Lead Actor
+INSERT INTO worked_on VALUES(2015, 120, 'Lead Actor');  -- Peter O'Toole worked on Becket as Lead Actor
+INSERT INTO worked_on VALUES(1138, 190, 'Lead Actor');  -- Rex Harrison worked on My Fair Lady as Lead Actor
+INSERT INTO worked_on VALUES(2015, 192, 'Lead Actor');  -- Richard Burton worked on Becket as Lead Actor
+INSERT INTO worked_on VALUES(1138, 532, 'Supporting Actor');  -- Stanley Holloway worked on My Fair Lady as Supporting Actor
+INSERT INTO worked_on VALUES(2158, 483, 'Supporting Actor');  -- Peter Ustinov worked on Topkapi as Supporting Actor
+INSERT INTO worked_on VALUES(2159, 533, 'Supporting Actor');  -- Lee Tracy worked on The Best Man as Supporting Actor
+INSERT INTO worked_on VALUES(2015, 534, 'Supporting Actor');  -- John Gielgud worked on Becket as Supporting Actor
+INSERT INTO worked_on VALUES(2160, 496, 'Supporting Actor');  -- Edmond O'Brien worked on Seven Days in May as Supporting Actor
+INSERT INTO worked_on VALUES(2018, 535, 'Lead Actor');  -- Oskar Werner worked on Ship of Fools as Lead Actor
+INSERT INTO worked_on VALUES(2161, 536, 'Lead Actor');  -- Lee Marvin worked on Cat Ballou as Lead Actor
+INSERT INTO worked_on VALUES(2162, 119, 'Lead Actor');  -- Laurence Olivier worked on Othello as Lead Actor
+INSERT INTO worked_on VALUES(2163, 192, 'Lead Actor');  -- Richard Burton worked on The Spy Who Came In from the Cold as Lead Actor
+INSERT INTO worked_on VALUES(1248, 191, 'Lead Actor');  -- Rod Steiger worked on The Pawnbroker as Lead Actor
+INSERT INTO worked_on VALUES(2018, 537, 'Supporting Actor');  -- Michael Dunn worked on Ship of Fools as Supporting Actor
+INSERT INTO worked_on VALUES(459, 227, 'Supporting Actor');  -- Tom Courtenay worked on Doctor Zhivago as Supporting Actor
+INSERT INTO worked_on VALUES(2162, 538, 'Supporting Actor');  -- Frank Finlay worked on Othello as Supporting Actor
+INSERT INTO worked_on VALUES(2164, 539, 'Supporting Actor');  -- Ian Bannen worked on The Flight of the Phoenix as Supporting Actor
+INSERT INTO worked_on VALUES(2017, 540, 'Supporting Actor');  -- Martin Balsam worked on A Thousand Clowns as Supporting Actor
+INSERT INTO worked_on VALUES(2021, 541, 'Lead Actor');  -- Paul Scofield worked on A Man for All Seasons as Lead Actor
+INSERT INTO worked_on VALUES(2020, 42, 'Lead Actor');  -- Steve McQueen worked on The Sand Pebbles as Lead Actor
+INSERT INTO worked_on VALUES(52, 165, 'Lead Actor');  -- Michael Caine worked on Alfie as Lead Actor
+INSERT INTO worked_on VALUES(1772, 192, 'Lead Actor');  -- Richard Burton worked on Who's Afraid of Virginia Woolf? as Lead Actor
+INSERT INTO worked_on VALUES(2019, 193, 'Lead Actor');  -- Alan Arkin worked on The Russians Are Coming The Russians Are Coming as Lead Actor
+INSERT INTO worked_on VALUES(2020, 542, 'Supporting Actor');  -- Mako worked on The Sand Pebbles as Supporting Actor
+INSERT INTO worked_on VALUES(2165, 543, 'Supporting Actor');  -- Walter Matthau worked on The Fortune Cookie as Supporting Actor
+INSERT INTO worked_on VALUES(1772, 544, 'Supporting Actor');  -- George Segal worked on Who's Afraid of Virginia Woolf? as Supporting Actor
+INSERT INTO worked_on VALUES(2021, 545, 'Supporting Actor');  -- Robert Shaw worked on A Man for All Seasons as Supporting Actor
+INSERT INTO worked_on VALUES(2166, 184, 'Supporting Actor');  -- James Mason worked on Georgy Girl as Supporting Actor
+INSERT INTO worked_on VALUES(672, 5, 'Lead Actor');  -- Dustin Hoffman worked on The Graduate as Lead Actor
+INSERT INTO worked_on VALUES(806, 191, 'Lead Actor');  -- Rod Steiger worked on In the Heat of the Night as Lead Actor
+INSERT INTO worked_on VALUES(696, 118, 'Lead Actor');  -- Spencer Tracy worked on Guess Who's Coming to Dinner as Lead Actor
+INSERT INTO worked_on VALUES(234, 141, 'Lead Actor');  -- Warren Beatty worked on Bonnie and Clyde as Lead Actor
+INSERT INTO worked_on VALUES(371, 41, 'Lead Actor');  -- Paul Newman worked on Cool Hand Luke as Lead Actor
+INSERT INTO worked_on VALUES(234, 115, 'Supporting Actor');  -- Gene Hackman worked on Bonnie and Clyde as Supporting Actor
+INSERT INTO worked_on VALUES(234, 546, 'Supporting Actor');  -- Michael J. Pollard worked on Bonnie and Clyde as Supporting Actor
+INSERT INTO worked_on VALUES(696, 470, 'Supporting Actor');  -- Cecil Kellaway worked on Guess Who's Coming to Dinner as Supporting Actor
+INSERT INTO worked_on VALUES(371, 547, 'Supporting Actor');  -- George Kennedy worked on Cool Hand Luke as Supporting Actor
+INSERT INTO worked_on VALUES(2167, 265, 'Supporting Actor');  -- John Cassavetes worked on The Dirty Dozen as Supporting Actor
+INSERT INTO worked_on VALUES(2168, 193, 'Lead Actor');  -- Alan Arkin worked on The Heart Is a Lonely Hunter as Lead Actor
+INSERT INTO worked_on VALUES(2169, 548, 'Lead Actor');  -- Cliff Robertson worked on Charly as Lead Actor
+INSERT INTO worked_on VALUES(2025, 120, 'Lead Actor');  -- Peter O'Toole worked on The Lion in Winter as Lead Actor
+INSERT INTO worked_on VALUES(2023, 549, 'Lead Actor');  -- Ron Moody worked on Oliver! as Lead Actor
+INSERT INTO worked_on VALUES(2170, 550, 'Lead Actor');  -- Alan Bates worked on The Fixer as Lead Actor
+INSERT INTO worked_on VALUES(542, 551, 'Supporting Actor');  -- Seymour Cassel worked on Faces as Supporting Actor
+INSERT INTO worked_on VALUES(2023, 552, 'Supporting Actor');  -- Jack Wild worked on Oliver! as Supporting Actor
+INSERT INTO worked_on VALUES(2171, 553, 'Supporting Actor');  -- Jack Albertson worked on The Subject Was Roses as Supporting Actor
+INSERT INTO worked_on VALUES(1309, 554, 'Supporting Actor');  -- Gene Wilder worked on The Producers as Supporting Actor
+INSERT INTO worked_on VALUES(2172, 555, 'Supporting Actor');  -- Daniel Massey worked on Star! as Supporting Actor
+INSERT INTO worked_on VALUES(1066, 68, 'Lead Actor');  -- Jon Voight worked on Midnight Cowboy as Lead Actor
+INSERT INTO worked_on VALUES(2027, 192, 'Lead Actor');  -- Richard Burton worked on Anne of the Thousand Days as Lead Actor
+INSERT INTO worked_on VALUES(1066, 5, 'Lead Actor');  -- Dustin Hoffman worked on Midnight Cowboy as Lead Actor
+INSERT INTO worked_on VALUES(1675, 65, 'Lead Actor');  -- John Wayne worked on True Grit as Lead Actor
+INSERT INTO worked_on VALUES(2173, 120, 'Lead Actor');  -- Peter O'Toole worked on Goodbye, Mr. Chips as Lead Actor
+INSERT INTO worked_on VALUES(498, 9, 'Supporting Actor');  -- Jack Nicholson worked on Easy Rider as Supporting Actor
+INSERT INTO worked_on VALUES(2174, 556, 'Supporting Actor');  -- Elliott Gould worked on Bob & Carol & Ted & Alice as Supporting Actor
+INSERT INTO worked_on VALUES(2175, 486, 'Supporting Actor');  -- Gig Young worked on They Shoot Horses, Don't They? as Supporting Actor
+INSERT INTO worked_on VALUES(2027, 557, 'Supporting Actor');  -- Anthony Quayle worked on Anne of the Thousand Days as Supporting Actor
+INSERT INTO worked_on VALUES(2176, 558, 'Supporting Actor');  -- Rupert Crosse worked on The Reivers as Supporting Actor
+INSERT INTO worked_on VALUES(987, 194, 'Lead Actor');  -- Ryan O'Neal worked on Love Story as Lead Actor
+INSERT INTO worked_on VALUES(2177, 122, 'Lead Actor');  -- James Earl Jones worked on The Great White Hope as Lead Actor
+INSERT INTO worked_on VALUES(576, 9, 'Lead Actor');  -- Jack Nicholson worked on Five Easy Pieces as Lead Actor
+INSERT INTO worked_on VALUES(2178, 530, 'Lead Actor');  -- Melvyn Douglas worked on I Never Sang for My Father as Lead Actor
+INSERT INTO worked_on VALUES(1247, 75, 'Lead Actor');  -- George C. Scott worked on Patton as Lead Actor
+INSERT INTO worked_on VALUES(2179, 559, 'Supporting Actor');  -- Richard Castellano worked on Lovers and Other Strangers as Supporting Actor
+INSERT INTO worked_on VALUES(2180, 560, 'Supporting Actor');  -- John Mills worked on Ryan's Daughter as Supporting Actor
+INSERT INTO worked_on VALUES(987, 561, 'Supporting Actor');  -- John Marley worked on Love Story as Supporting Actor
+INSERT INTO worked_on VALUES(962, 562, 'Supporting Actor');  -- Chief Dan George worked on Little Big Man as Supporting Actor
+INSERT INTO worked_on VALUES(2178, 115, 'Supporting Actor');  -- Gene Hackman worked on I Never Sang for My Father as Supporting Actor
+INSERT INTO worked_on VALUES(2031, 563, 'Lead Actor');  -- Topol worked on Fiddler on the Roof as Lead Actor
+INSERT INTO worked_on VALUES(759, 75, 'Lead Actor');  -- George C. Scott worked on The Hospital as Lead Actor
+INSERT INTO worked_on VALUES(598, 115, 'Lead Actor');  -- Gene Hackman worked on The French Connection as Lead Actor
+INSERT INTO worked_on VALUES(1572, 195, 'Lead Actor');  -- Peter Finch worked on Sunday Bloody Sunday as Lead Actor
+INSERT INTO worked_on VALUES(2181, 543, 'Lead Actor');  -- Walter Matthau worked on Kotch as Lead Actor
+INSERT INTO worked_on VALUES(598, 197, 'Supporting Actor');  -- Roy Scheider worked on The French Connection as Supporting Actor
+INSERT INTO worked_on VALUES(2031, 564, 'Supporting Actor');  -- Leonard Frey worked on Fiddler on the Roof as Supporting Actor
+INSERT INTO worked_on VALUES(922, 565, 'Supporting Actor');  -- Ben Johnson worked on The Last Picture Show as Supporting Actor
+INSERT INTO worked_on VALUES(2182, 566, 'Supporting Actor');  -- Richard Jaeckel worked on Sometimes a Great Notion as Supporting Actor
+INSERT INTO worked_on VALUES(922, 71, 'Supporting Actor');  -- Jeff Bridges worked on The Last Picture Show as Supporting Actor
+INSERT INTO worked_on VALUES(647, 2, 'Lead Actor');  -- Marlon Brando worked on The Godfather as Lead Actor
+INSERT INTO worked_on VALUES(2032, 567, 'Lead Actor');  -- Paul Winfield worked on Sounder as Lead Actor
+INSERT INTO worked_on VALUES(1498, 165, 'Lead Actor');  -- Michael Caine worked on Sleuth as Lead Actor
+INSERT INTO worked_on VALUES(2183, 120, 'Lead Actor');  -- Peter O'Toole worked on The Ruling Class as Lead Actor
+INSERT INTO worked_on VALUES(1498, 119, 'Lead Actor');  -- Laurence Olivier worked on Sleuth as Lead Actor
+INSERT INTO worked_on VALUES(647, 568, 'Supporting Actor');  -- James Caan worked on The Godfather as Supporting Actor
+INSERT INTO worked_on VALUES(1828, 569, 'Supporting Actor');  -- Joel Grey worked on Cabaret as Supporting Actor
+INSERT INTO worked_on VALUES(2184, 491, 'Supporting Actor');  -- Eddie Albert worked on The Heartbreak Kid as Supporting Actor
+INSERT INTO worked_on VALUES(647, 56, 'Supporting Actor');  -- Al Pacino worked on The Godfather as Supporting Actor
+INSERT INTO worked_on VALUES(647, 96, 'Supporting Actor');  -- Robert Duvall worked on The Godfather as Supporting Actor
+INSERT INTO worked_on VALUES(2185, 56, 'Lead Actor');  -- Al Pacino worked on Serpico as Lead Actor
+INSERT INTO worked_on VALUES(2186, 189, 'Lead Actor');  -- Jack Lemmon worked on Save the Tiger as Lead Actor
+INSERT INTO worked_on VALUES(1559, 76, 'Lead Actor');  -- Robert Redford worked on The Sting as Lead Actor
+INSERT INTO worked_on VALUES(918, 9, 'Lead Actor');  -- Jack Nicholson worked on The Last Detail as Lead Actor
+INSERT INTO worked_on VALUES(926, 2, 'Lead Actor');  -- Marlon Brando worked on Last Tango in Paris as Lead Actor
+INSERT INTO worked_on VALUES(2187, 570, 'Supporting Actor');  -- John Houseman worked on The Paper Chase as Supporting Actor
+INSERT INTO worked_on VALUES(2186, 571, 'Supporting Actor');  -- Jack Gilford worked on Save the Tiger as Supporting Actor
+INSERT INTO worked_on VALUES(155, 572, 'Supporting Actor');  -- Vincent Gardenia worked on Bang the Drum Slowly as Supporting Actor
+INSERT INTO worked_on VALUES(2034, 573, 'Supporting Actor');  -- Jason Miller worked on The Exorcist as Supporting Actor
+INSERT INTO worked_on VALUES(918, 574, 'Supporting Actor');  -- Randy Quaid worked on The Last Detail as Supporting Actor
+INSERT INTO worked_on VALUES(323, 9, 'Lead Actor');  -- Jack Nicholson worked on Chinatown as Lead Actor
+INSERT INTO worked_on VALUES(2188, 575, 'Lead Actor');  -- Art Carney worked on Harry and Tonto as Lead Actor
+INSERT INTO worked_on VALUES(2189, 198, 'Lead Actor');  -- Albert Finney worked on Murder on the Orient Express as Lead Actor
+INSERT INTO worked_on VALUES(944, 5, 'Lead Actor');  -- Dustin Hoffman worked on Lenny as Lead Actor
+INSERT INTO worked_on VALUES(648, 56, 'Lead Actor');  -- Al Pacino worked on The Godfather Part II as Lead Actor
+INSERT INTO worked_on VALUES(1652, 576, 'Supporting Actor');  -- Fred Astaire worked on The Towering Inferno as Supporting Actor
+INSERT INTO worked_on VALUES(648, 577, 'Supporting Actor');  -- Lee Strasberg worked on The Godfather Part II as Supporting Actor
+INSERT INTO worked_on VALUES(2190, 71, 'Supporting Actor');  -- Jeff Bridges worked on Thunderbolt and Lightfoot as Supporting Actor
+INSERT INTO worked_on VALUES(648, 578, 'Supporting Actor');  -- Michael V. Gazzo worked on The Godfather Part II as Supporting Actor
+INSERT INTO worked_on VALUES(648, 3, 'Supporting Actor');  -- Robert De Niro worked on The Godfather Part II as Supporting Actor
+INSERT INTO worked_on VALUES(2191, 543, 'Lead Actor');  -- Walter Matthau worked on The Sunshine Boys as Lead Actor
+INSERT INTO worked_on VALUES(1210, 9, 'Lead Actor');  -- Jack Nicholson worked on One Flew over the Cuckoo's Nest as Lead Actor
+INSERT INTO worked_on VALUES(461, 56, 'Lead Actor');  -- Al Pacino worked on Dog Day Afternoon as Lead Actor
+INSERT INTO worked_on VALUES(2192, 476, 'Lead Actor');  -- James Whitmore worked on Give 'em' Hell, Harry! as Lead Actor
+INSERT INTO worked_on VALUES(2193, 520, 'Lead Actor');  -- Maximilian Schell worked on The Man in the Glass Booth as Lead Actor
+INSERT INTO worked_on VALUES(461, 579, 'Supporting Actor');  -- Chris Sarandon worked on Dog Day Afternoon as Lead Actor
+INSERT INTO worked_on VALUES(2194, 580, 'Supporting Actor');  -- Burgess Meredith worked on The Day of the Locust as Supporting Actor
+INSERT INTO worked_on VALUES(1210, 581, 'Supporting Actor');  -- Brad Dourif worked on One Flew over the Cuckoo's Nest as Supporting Actor
+INSERT INTO worked_on VALUES(2191, 582, 'Supporting Actor');  -- George Burns worked on The Sunshine Boys as Supporting Actor
+INSERT INTO worked_on VALUES(2195, 583, 'Supporting Actor');  -- Jack Warden worked on Shampoo as Supporting Actor
+INSERT INTO worked_on VALUES(1602, 3, 'Lead Actor');  -- Robert De Niro worked on Taxi Driver as Lead Actor
+INSERT INTO worked_on VALUES(1443, 584, 'Lead Actor');  -- Giancarlo Giannini worked on Seven Beauties as Lead Actor
+INSERT INTO worked_on VALUES(1380, 196, 'Lead Actor');  -- Sylvester Stallone worked on Rocky as Lead Actor
+INSERT INTO worked_on VALUES(1166, 195, 'Lead Actor');  -- Peter Finch worked on Network as Lead Actor
+INSERT INTO worked_on VALUES(1166, 182, 'Lead Actor');  -- William Holden worked on Network as Lead Actor
+INSERT INTO worked_on VALUES(1380, 585, 'Supporting Actor');  -- Burt Young worked on Rocky as Supporting Actor
+INSERT INTO worked_on VALUES(71, 586, 'Supporting Actor');  -- Jason Robards worked on All the President's Men as Supporting Actor
+INSERT INTO worked_on VALUES(1166, 587, 'Supporting Actor');  -- Ned Beatty worked on Network as Supporting Actor
+INSERT INTO worked_on VALUES(1022, 119, 'Supporting Actor');  -- Laurence Olivier worked on Marathon Man as Supporting Actor
+INSERT INTO worked_on VALUES(1380, 580, 'Supporting Actor');  -- Burgess Meredith worked on Rocky as Supporting Actor
+INSERT INTO worked_on VALUES(102, 245, 'Lead Actor');  -- Woody Allen worked on Annie Hall as Lead Actor
+INSERT INTO worked_on VALUES(663, 163, 'Lead Actor');  -- Richard Dreyfuss worked on The Goodbye Girl as Lead Actor
+INSERT INTO worked_on VALUES(2196, 192, 'Lead Actor');  -- Richard Burton worked on Equus as Lead Actor
+INSERT INTO worked_on VALUES(2197, 204, 'Lead Actor');  -- Marcello Mastroianni worked on A Special Day as Lead Actor
+INSERT INTO worked_on VALUES(1410, 225, 'Lead Actor');  -- John Travolta worked on Saturday Night Fever as Lead Actor
+INSERT INTO worked_on VALUES(1548, 121, 'Supporting Actor');  -- Alec Guinness worked on Star Wars as Supporting Actor
+INSERT INTO worked_on VALUES(2196, 588, 'Supporting Actor');  -- Peter Firth worked on Equus as Supporting Actor
+INSERT INTO worked_on VALUES(1680, 589, 'Supporting Actor');  -- Mikhail Baryshnikov worked on The Turning Point as Supporting Actor
+INSERT INTO worked_on VALUES(868, 586, 'Supporting Actor');  -- Jason Robards worked on Julia as Supporting Actor
+INSERT INTO worked_on VALUES(868, 520, 'Supporting Actor');  -- Maximilian Schell worked on Julia as Supporting Actor
+INSERT INTO worked_on VALUES(359, 68, 'Lead Actor');  -- Jon Voight worked on Coming Home as Lead Actor
+INSERT INTO worked_on VALUES(438, 3, 'Lead Actor');  -- Robert De Niro worked on The Deer Hunter as Lead Actor
+INSERT INTO worked_on VALUES(731, 141, 'Lead Actor');  -- Warren Beatty worked on Heaven Can Wait as Lead Actor
+INSERT INTO worked_on VALUES(2198, 590, 'Lead Actor');  -- Gary Busey worked on The Buddy Holly Story as Lead Actor
+INSERT INTO worked_on VALUES(2199, 119, 'Lead Actor');  -- Laurence Olivier worked on The Boys from Brazil as Lead Actor
+INSERT INTO worked_on VALUES(1067, 226, 'Supporting Actor');  -- John Hurt worked on Midnight Express as Supporting Actor
+INSERT INTO worked_on VALUES(359, 591, 'Supporting Actor');  -- Bruce Dern worked on Coming Home as Supporting Actor
+INSERT INTO worked_on VALUES(438, 592, 'Supporting Actor');  -- Christopher Walken worked on The Deer Hunter as Supporting Actor
+INSERT INTO worked_on VALUES(731, 583, 'Supporting Actor');  -- Jack Warden worked on Heaven Can Wait as Supporting Actor
+INSERT INTO worked_on VALUES(2200, 215, 'Supporting Actor');  -- Richard Farnsworth worked on Comes a Horseman as Supporting Actor
+INSERT INTO worked_on VALUES(2201, 56, 'Lead Actor');  -- Al Pacino worked on ...And Justice for All as Lead Actor
+INSERT INTO worked_on VALUES(322, 189, 'Lead Actor');  -- Jack Lemmon worked on The China Syndrome as Lead Actor
+INSERT INTO worked_on VALUES(70, 197, 'Lead Actor');  -- Roy Scheider worked on All That Jazz as Lead Actor
+INSERT INTO worked_on VALUES(179, 74, 'Lead Actor');  -- Peter Sellers worked on Being There as Lead Actor
+INSERT INTO worked_on VALUES(904, 5, 'Lead Actor');  -- Dustin Hoffman worked on Kramer vs. Kramer as Lead Actor
+INSERT INTO worked_on VALUES(2202, 593, 'Supporting Actor');  -- Frederic Forrest worked on The Rose as Supporting Actor
+INSERT INTO worked_on VALUES(109, 96, 'Supporting Actor');  -- Robert Duvall worked on Apocalypse Now as Supporting Actor
+INSERT INTO worked_on VALUES(179, 530, 'Supporting Actor');  -- Melvyn Douglas worked on Being There as Supporting Actor
+INSERT INTO worked_on VALUES(904, 594, 'Supporting Actor');  -- Justin Henry worked on Kramer vs. Kramer as Supporting Actor
+INSERT INTO worked_on VALUES(2203, 425, 'Supporting Actor');  -- Mickey Rooney worked on The Black Stallion as Supporting Actor
+INSERT INTO worked_on VALUES(1329, 3, 'Lead Actor');  -- Robert De Niro worked on Raging Bull as Lead Actor
+INSERT INTO worked_on VALUES(2204, 120, 'Lead Actor');  -- Peter O'Toole worked on The Stunt Man as Lead Actor
+INSERT INTO worked_on VALUES(506, 226, 'Lead Actor');  -- John Hurt worked on The Elephant Man as Lead Actor
+INSERT INTO worked_on VALUES(2205, 96, 'Lead Actor');  -- Robert Duvall worked on The Great Santini as Lead Actor
+INSERT INTO worked_on VALUES(2206, 189, 'Lead Actor');  -- Jack Lemmon worked on Tribute as Lead Actor
+INSERT INTO worked_on VALUES(1329, 103, 'Supporting Actor');  -- Joe Pesci worked on Raging Bull as Supporting Actor
+INSERT INTO worked_on VALUES(2205, 595, 'Supporting Actor');  -- Michael O'Keefe worked on The Great Santini as Supporting Actor
+INSERT INTO worked_on VALUES(2207, 586, 'Supporting Actor');  -- Jason Robards worked on Melvin and Howard as Supporting Actor
+INSERT INTO worked_on VALUES(1215, 596, 'Supporting Actor');  -- Timothy Hutton worked on Ordinary People as Supporting Actor
+INSERT INTO worked_on VALUES(1215, 597, 'Supporting Actor');  -- Judd Hirsch worked on Ordinary People as Supporting Actor
+INSERT INTO worked_on VALUES(2208, 41, 'Lead Actor');  -- Paul Newman worked on Absence of Malice as Lead Actor
+INSERT INTO worked_on VALUES(1351, 141, 'Lead Actor');  -- Warren Beatty worked on Reds as Lead Actor
+INSERT INTO worked_on VALUES(123, 183, 'Lead Actor');  -- Burt Lancaster worked on Atlantic City as Lead Actor
+INSERT INTO worked_on VALUES(2209, 598, 'Lead Actor');  -- Dudley Moore worked on Arthur as Lead Actor
+INSERT INTO worked_on VALUES(1205, 66, 'Lead Actor');  -- Henry Fonda worked on On Golden Pond as Lead Actor
+INSERT INTO worked_on VALUES(313, 599, 'Supporting Actor');  -- Ian Holm worked on Chariots of Fire as Supporting Actor
+INSERT INTO worked_on VALUES(2210, 600, 'Supporting Actor');  -- James Coco worked on Only When I Laugh as Supporting Actor
+INSERT INTO worked_on VALUES(1351, 9, 'Supporting Actor');  -- Jack Nicholson worked on Reds as Supporting Actor
+INSERT INTO worked_on VALUES(2211, 601, 'Supporting Actor');  -- Howard E. Rollins Jr. worked on Ragtime as Supporting Actor
+INSERT INTO worked_on VALUES(2209, 534, 'Supporting Actor');  -- John Gielgud worked on Arthur as Supporting Actor
+INSERT INTO worked_on VALUES(2212, 120, 'Lead Actor');  -- Peter O'Toole worked on My Favorite Year as Lead Actor
+INSERT INTO worked_on VALUES(1084, 189, 'Lead Actor');  -- Jack Lemmon worked on Missing as Lead Actor
+INSERT INTO worked_on VALUES(615, 143, 'Lead Actor');  -- Ben Kingsley worked on Gandhi as Lead Actor
+INSERT INTO worked_on VALUES(1644, 5, 'Lead Actor');  -- Dustin Hoffman worked on Tootsie as Lead Actor
+INSERT INTO worked_on VALUES(1714, 41, 'Lead Actor');  -- Paul Newman worked on The Verdict as Lead Actor
+INSERT INTO worked_on VALUES(1714, 184, 'Supporting Actor');  -- James Mason worked on The Verdict as Supporting Actor
+INSERT INTO worked_on VALUES(2213, 602, 'Supporting Actor');  -- Robert Preston worked on Victor Victoria as Supporting Actor
+INSERT INTO worked_on VALUES(1798, 603, 'Supporting Actor');  -- John Lithgow worked on The World According to Garp as Supporting Actor
+INSERT INTO worked_on VALUES(2214, 604, 'Supporting Actor');  -- Charles Durning worked on The Best Little Whorehouse in Texas as Supporting Actor
+INSERT INTO worked_on VALUES(2215, 605, 'Supporting Actor');  -- Louis Gossett Jr. worked on An Officer and a Gentleman as Supporting Actor
+INSERT INTO worked_on VALUES(486, 198, 'Lead Actor');  -- Albert Finney worked on The Dresser as Lead Actor
+INSERT INTO worked_on VALUES(2216, 165, 'Lead Actor');  -- Michael Caine worked on Educating Rita as Lead Actor
+INSERT INTO worked_on VALUES(2217, 606, 'Lead Actor');  -- Tom Conti worked on Reuben, Reuben as Lead Actor
+INSERT INTO worked_on VALUES(486, 227, 'Lead Actor');  -- Tom Courtenay worked on The Dresser as Lead Actor
+INSERT INTO worked_on VALUES(1607, 96, 'Lead Actor');  -- Robert Duvall worked on Tender Mercies as Lead Actor
+INSERT INTO worked_on VALUES(2218, 607, 'Supporting Actor');  -- Rip Torn worked on Cross Creek as Supporting Actor
+INSERT INTO worked_on VALUES(1613, 9, 'Supporting Actor');  -- Jack Nicholson worked on Terms of Endearment as Supporting Actor
+INSERT INTO worked_on VALUES(1368, 608, 'Supporting Actor');  -- Sam Shepard worked on The Right Stuff as Supporting Actor
+INSERT INTO worked_on VALUES(2219, 604, 'Supporting Actor');  -- Charles Durning worked on To Be or Not to Be as Supporting Actor
+INSERT INTO worked_on VALUES(1613, 603, 'Supporting Actor');  -- John Lithgow worked on Terms of Endearment as Supporting Actor
+INSERT INTO worked_on VALUES(2220, 198, 'Lead Actor');  -- Albert Finney worked on Under the Volcano as Lead Actor
+INSERT INTO worked_on VALUES(75, 199, 'Lead Actor');  -- Tom Hulce worked on Amadeus as Lead Actor
+INSERT INTO worked_on VALUES(75, 200, 'Lead Actor');  -- F. Murray Abraham worked on Amadeus as Lead Actor
+INSERT INTO worked_on VALUES(2221, 71, 'Lead Actor');  -- Jeff Bridges worked on Starman as Lead Actor
+INSERT INTO worked_on VALUES(890, 201, 'Lead Actor');  -- Sam Waterston worked on The Killing Fields as Lead Actor
+INSERT INTO worked_on VALUES(879, 609, 'Supporting Actor');  -- Pat Morita worked on The Karate Kid as Supporting Actor
+INSERT INTO worked_on VALUES(2222, 475, 'Supporting Actor');  -- Ralph Richardson worked on Greystoke: The Legend of Tarzan, Lord of the Apes as Supporting Actor
+INSERT INTO worked_on VALUES(1514, 610, 'Supporting Actor');  -- Adolph Caesar worked on A Soldier's Story as Supporting Actor
+INSERT INTO worked_on VALUES(890, 611, 'Supporting Actor');  -- Haing S. Ngor worked on The Killing Fields as Supporting Actor
+INSERT INTO worked_on VALUES(1275, 7, 'Supporting Actor');  -- John Malkovich worked on Places in the Heart as Supporting Actor
+INSERT INTO worked_on VALUES(2223, 612, 'Lead Actor');  -- James Garner worked on Murphy's Romance as Lead Actor
+INSERT INTO worked_on VALUES(1308, 9, 'Lead Actor');  -- Jack Nicholson worked on Prizzi's Honor as Lead Actor
+INSERT INTO worked_on VALUES(900, 202, 'Lead Actor');  -- William Hurt worked on Kiss of the Spider Woman as Lead Actor
+INSERT INTO worked_on VALUES(1788, 26, 'Lead Actor');  -- Harrison Ford worked on Witness as Lead Actor
+INSERT INTO worked_on VALUES(2224, 68, 'Lead Actor');  -- Jon Voight worked on Runaway Train as Lead Actor
+INSERT INTO worked_on VALUES(850, 613, 'Supporting Actor');  -- Robert Loggia worked on Jagged Edge as Supporting Actor
+INSERT INTO worked_on VALUES(2224, 614, 'Supporting Actor');  -- Eric Roberts worked on Runaway Train as Supporting Actor
+INSERT INTO worked_on VALUES(2225, 615, 'Supporting Actor');  -- Don Ameche worked on Cocoon as Supporting Actor
+INSERT INTO worked_on VALUES(1222, 616, 'Supporting Actor');  -- Klaus Maria Brandauer worked on Out of Africa as Supporting Actor
+INSERT INTO worked_on VALUES(1308, 617, 'Supporting Actor');  -- William Hickey worked on Prizzi's Honor as Supporting Actor
+INSERT INTO worked_on VALUES(1392, 228, 'Lead Actor');  -- Dexter Gordon worked on 'Round Midnight as Lead Actor
+INSERT INTO worked_on VALUES(319, 202, 'Lead Actor');  -- William Hurt worked on Children of a Lesser God as Lead Actor
+INSERT INTO worked_on VALUES(2226, 618, 'Lead Actor');  -- James Woods worked on Salvador as Lead Actor
+INSERT INTO worked_on VALUES(355, 41, 'Lead Actor');  -- Paul Newman worked on The Color of Money as Lead Actor
+INSERT INTO worked_on VALUES(1094, 203, 'Lead Actor');  -- Bob Hoskins worked on Mona Lisa as Lead Actor
+INSERT INTO worked_on VALUES(757, 116, 'Supporting Actor');  -- Dennis Hopper worked on Hoosiers as Supporting Actor
+INSERT INTO worked_on VALUES(1389, 619, 'Supporting Actor');  -- Denholm Elliott worked on A Room with a View as Supporting Actor
+INSERT INTO worked_on VALUES(1279, 620, 'Supporting Actor');  -- Willem Dafoe worked on Platoon as Supporting Actor
+INSERT INTO worked_on VALUES(1279, 621, 'Supporting Actor');  -- Tom Berenger worked on Platoon as Supporting Actor
+INSERT INTO worked_on VALUES(705, 165, 'Supporting Actor');  -- Michael Caine worked on Hannah and Her Sisters as Supporting Actor
+INSERT INTO worked_on VALUES(2227, 205, 'Lead Actor');  -- Robin Williams worked on Good Morning, Vietnam as Lead Actor
+INSERT INTO worked_on VALUES(1734, 79, 'Lead Actor');  -- Michael Douglas worked on Wall Street as Lead Actor
+INSERT INTO worked_on VALUES(2228, 9, 'Lead Actor');  -- Jack Nicholson worked on Ironweed as Lead Actor
+INSERT INTO worked_on VALUES(264, 202, 'Lead Actor');  -- William Hurt worked on Broadcast News as Lead Actor
+INSERT INTO worked_on VALUES(2229, 204, 'Lead Actor');  -- Marcello Mastroianni worked on Dark Eyes as Lead Actor
+INSERT INTO worked_on VALUES(2230, 64, 'Supporting Actor');  -- Morgan Freeman worked on Street Smart as Supporting Actor
+INSERT INTO worked_on VALUES(1699, 622, 'Supporting Actor');  -- Sean Connery worked on The Untouchables as Supporting Actor
+INSERT INTO worked_on VALUES(264, 623, 'Supporting Actor');  -- Albert Brooks worked on Broadcast News as Supporting Actor
+INSERT INTO worked_on VALUES(2231, 35, 'Supporting Actor');  -- Denzel Washington worked on Cry Freedom as Supporting Actor
+INSERT INTO worked_on VALUES(1106, 572, 'Supporting Actor');  -- Vincent Gardenia worked on Moonstruck as Supporting Actor
+INSERT INTO worked_on VALUES(1088, 115, 'Lead Actor');  -- Gene Hackman worked on Mississippi Burning as Lead Actor
+INSERT INTO worked_on VALUES(2232, 624, 'Lead Actor');  -- Edward James Olmos worked on Stand and Deliver as Lead Actor
+INSERT INTO worked_on VALUES(1331, 5, 'Lead Actor');  -- Dustin Hoffman worked on Rain Man as Lead Actor
+INSERT INTO worked_on VALUES(193, 4, 'Lead Actor');  -- Tom Hanks worked on Big as Lead Actor
+INSERT INTO worked_on VALUES(2233, 625, 'Lead Actor');  -- Max Von Sydow worked on Pelle the Conqueror as Lead Actor
+INSERT INTO worked_on VALUES(2234, 626, 'Supporting Actor');  -- Martin Landau worked on Tucker: The Man and His Dream as Supporting Actor
+INSERT INTO worked_on VALUES(2235, 121, 'Supporting Actor');  -- Alec Guinness worked on Little Dorrit as Supporting Actor
+INSERT INTO worked_on VALUES(1399, 162, 'Supporting Actor');  -- River Phoenix worked on Running on Empty as Supporting Actor
+INSERT INTO worked_on VALUES(573, 172, 'Supporting Actor');  -- Kevin Kline worked on A Fish Called Wanda as Supporting Actor
+INSERT INTO worked_on VALUES(2236, 627, 'Supporting Actor');  -- Dean Stockwell worked on Married to the Mob as Supporting Actor
+INSERT INTO worked_on VALUES(237, 33, 'Lead Actor');  -- Tom Cruise worked on Born on the Fourth of July as Lead Actor
+INSERT INTO worked_on VALUES(419, 205, 'Lead Actor');  -- Robin Williams worked on Dead Poets Society as Lead Actor
+INSERT INTO worked_on VALUES(2237, 628, 'Lead Actor');  -- Kenneth Branagh worked on Henry V as Lead Actor
+INSERT INTO worked_on VALUES(1142, 17, 'Lead Actor');  -- Daniel Day-Lewis worked on My Left Foot as Lead Actor
+INSERT INTO worked_on VALUES(488, 64, 'Lead Actor');  -- Morgan Freeman worked on Driving Miss Daisy as Lead Actor
+INSERT INTO worked_on VALUES(643, 35, 'Supporting Actor');  -- Denzel Washington worked on Glory as Supporting Actor
+INSERT INTO worked_on VALUES(386, 626, 'Supporting Actor');  -- Martin Landau worked on Crimes and Misdemeanors as Supporting Actor
+INSERT INTO worked_on VALUES(490, 2, 'Supporting Actor');  -- Marlon Brando worked on A Dry White Season as Supporting Actor
+INSERT INTO worked_on VALUES(458, 629, 'Supporting Actor');  -- Danny Aiello worked on Do the Right Thing as Supporting Actor
+INSERT INTO worked_on VALUES(488, 630, 'Supporting Actor');  -- Dan Aykroyd worked on Driving Miss Daisy as Supporting Actor
+INSERT INTO worked_on VALUES(1366, 206, 'Lead Actor');  -- Jeremy Irons worked on Reversal of Fortune as Lead Actor
+INSERT INTO worked_on VALUES(135, 3, 'Lead Actor');  -- Robert De Niro worked on Awakenings as Lead Actor
+INSERT INTO worked_on VALUES(2238, 631, 'Lead Actor');  -- Gerard Depardieu worked on Cyrano de Bergerac as Lead Actor
+INSERT INTO worked_on VALUES(2363, 528, 'Lead Actor');  -- Richard Harris worked on The Field as Lead Actor
+INSERT INTO worked_on VALUES(400, 207, 'Lead Actor');  -- Kevin Costner worked on Dances With Wolves as Lead Actor
+INSERT INTO worked_on VALUES(400, 632, 'Supporting Actor');  -- Graham Greene worked on Dances With Wolves as Supporting Actor
+INSERT INTO worked_on VALUES(448, 56, 'Supporting Actor');  -- Al Pacino worked on Dick Tracy as Supporting Actor
+INSERT INTO worked_on VALUES(666, 103, 'Supporting Actor');  -- Joe Pesci worked on Goodfellas as Supporting Actor
+INSERT INTO worked_on VALUES(2239, 633, 'Supporting Actor');  -- Bruce Davison worked on Longtime Companion as Supporting Actor
+INSERT INTO worked_on VALUES(649, 634, 'Supporting Actor');  -- Andy Garcia worked on The Godfather Part III as Supporting Actor
+INSERT INTO worked_on VALUES(1480, 98, 'Lead Actor');  -- Anthony Hopkins worked on The Silence of the Lambs as Lead Actor
+INSERT INTO worked_on VALUES(574, 205, 'Lead Actor');  -- Robin Williams worked on The Fisher King as Lead Actor
+INSERT INTO worked_on VALUES(286, 3, 'Lead Actor');  -- Robert De Niro worked on Cape Fear as Lead Actor
+INSERT INTO worked_on VALUES(275, 141, 'Lead Actor');  -- Warren Beatty worked on Bugsy as Lead Actor
+INSERT INTO worked_on VALUES(1302, 164, 'Lead Actor');  -- Nick Nolte worked on The Prince of Tides as Lead Actor
+INSERT INTO worked_on VALUES(275, 143, 'Supporting Actor');  -- Ben Kingsley worked on Bugsy as Supporting Actor
+INSERT INTO worked_on VALUES(275, 53, 'Supporting Actor');  -- Harvey Keitel worked on Bugsy as Supporting Actor
+INSERT INTO worked_on VALUES(162, 635, 'Supporting Actor');  -- Michael Lerner worked on Barton Fink as Supporting Actor
+INSERT INTO worked_on VALUES(341, 185, 'Supporting Actor');  -- Jack Palance worked on City Slickers as Supporting Actor
+INSERT INTO worked_on VALUES(862, 28, 'Supporting Actor');  -- Tommy Lee Jones worked on JFK as Supporting Actor
+INSERT INTO worked_on VALUES(311, 32, 'Lead Actor');  -- Robert Downey Jr. worked on Chaplin as Lead Actor
+INSERT INTO worked_on VALUES(1003, 35, 'Lead Actor');  -- Denzel Washington worked on Malcolm X as Lead Actor
+INSERT INTO worked_on VALUES(395, 208, 'Lead Actor');  -- Stephen Rea worked on The Crying Game as Lead Actor
+INSERT INTO worked_on VALUES(1418, 56, 'Lead Actor');  -- Al Pacino worked on Scent of a Woman as Lead Actor
+INSERT INTO worked_on VALUES(1697, 279, 'Lead Actor');  -- Clint Eastwood worked on Unforgiven as Lead Actor
+INSERT INTO worked_on VALUES(395, 636, 'Supporting Actor');  -- Jaye Davidson worked on The Crying Game as Supporting Actor
+INSERT INTO worked_on VALUES(563, 9, 'Supporting Actor');  -- Jack Nicholson worked on A Few Good Men as Supporting Actor
+INSERT INTO worked_on VALUES(2240, 637, 'Supporting Actor');  -- David Paymer worked on Mr. Saturday Night as Supporting Actor
+INSERT INTO worked_on VALUES(1697, 115, 'Supporting Actor');  -- Gene Hackman worked on Unforgiven as Supporting Actor
+INSERT INTO worked_on VALUES(642, 56, 'Supporting Actor');  -- Al Pacino worked on Glengarry Glen Ross as Supporting Actor
+INSERT INTO worked_on VALUES(1355, 98, 'Lead Actor');  -- Anthony Hopkins worked on The Remains of the Day as Supporting Actor
+INSERT INTO worked_on VALUES(1758, 126, 'Lead Actor');  -- Laurence Fishburne worked on What's Love Got to Do with It as Supporting Actor
+INSERT INTO worked_on VALUES(1259, 4, 'Lead Actor');  -- Tom Hanks worked on Philadelphia as Supporting Actor
+INSERT INTO worked_on VALUES(1419, 142, 'Lead Actor');  -- Liam Neeson worked on Schindler's List as Supporting Actor
+INSERT INTO worked_on VALUES(808, 17, 'Lead Actor');  -- Daniel Day-Lewis worked on In the Name of the Father as Supporting Actor
+INSERT INTO worked_on VALUES(607, 28, 'Supporting Actor');  -- Tommy Lee Jones worked on The Fugitive as Supporting Actor
+INSERT INTO worked_on VALUES(808, 638, 'Supporting Actor');  -- Pete Postlethwaite worked on In the Name of the Father as Supporting Actor
+INSERT INTO worked_on VALUES(1757, 18, 'Supporting Actor');  -- Leonardo DiCaprio worked on What's Eating Gilbert Grape as Supporting Actor
+INSERT INTO worked_on VALUES(1419, 213, 'Supporting Actor');  -- Ralph Fiennes worked on Schindler's List as Supporting Actor
+INSERT INTO worked_on VALUES(807, 7, 'Supporting Actor');  -- John Malkovich worked on In the Line of Fire as Supporting Actor
+INSERT INTO worked_on VALUES(1188, 41, 'Lead Actor');  -- Paul Newman worked on Nobody's Fool as Lead Actor
+INSERT INTO worked_on VALUES(2241, 639, 'Lead Actor');  -- Nigel Hawthorne worked on The Madness of King George as Lead Actor
+INSERT INTO worked_on VALUES(1315, 225, 'Lead Actor');  -- John Travolta worked on Pulp Fiction as Lead Actor
+INSERT INTO worked_on VALUES(587, 4, 'Lead Actor');  -- Tom Hanks worked on Forrest Gump as Lead Actor
+INSERT INTO worked_on VALUES(1460, 64, 'Lead Actor');  -- Morgan Freeman worked on The Shawshank Redemption as Lead Actor
+INSERT INTO worked_on VALUES(502, 626, 'Supporting Actor');  -- Martin Landau worked on Ed Wood as Supporting Actor
+INSERT INTO worked_on VALUES(1315, 54, 'Supporting Actor');  -- Samuel L. Jackson worked on Pulp Fiction as Supporting Actor
+INSERT INTO worked_on VALUES(587, 640, 'Supporting Actor');  -- Gary Sinise worked on Forrest Gump as Supporting Actor
+INSERT INTO worked_on VALUES(277, 641, 'Supporting Actor');  -- Chazz Palminteri worked on Bullets over Broadway as Supporting Actor
+INSERT INTO worked_on VALUES(1323, 541, 'Supporting Actor');  -- Paul Scofield worked on Quiz Show as Supporting Actor
+INSERT INTO worked_on VALUES(1116, 163, 'Lead Actor');  -- Richard Dreyfuss worked on Mr. Holland's Opus as Lead Actor
+INSERT INTO worked_on VALUES(792, 209, 'Lead Actor');  -- Massimo Troisi worked on Il Postino as Lead Actor
+INSERT INTO worked_on VALUES(418, 11, 'Lead Actor');  -- Sean Penn worked on Dead Man Walking as Lead Actor
+INSERT INTO worked_on VALUES(941, 210, 'Lead Actor');  -- Nicolas Cage worked on Leaving Las Vegas as Lead Actor
+INSERT INTO worked_on VALUES(1184, 98, 'Lead Actor');  -- Anthony Hopkins worked on Nixon as Lead Actor
+INSERT INTO worked_on VALUES(2242, 642, 'Supporting Actor');  -- Tim Roth worked on Rob Roy as Supporting Actor
+INSERT INTO worked_on VALUES(7, 13, 'Supporting Actor');  -- Brad Pitt worked on 12 Monkeys as Supporting Actor
+INSERT INTO worked_on VALUES(1703, 174, 'Supporting Actor');  -- Kevin Spacey worked on The Usual Suspects as Supporting Actor
+INSERT INTO worked_on VALUES(112, 229, 'Supporting Actor');  -- Ed Harris worked on Apollo 13 as Supporting Actor
+INSERT INTO worked_on VALUES(138, 643, 'Supporting Actor');  -- James Cromwell worked on Babe as Supporting Actor
+INSERT INTO worked_on VALUES(1500, 211, 'Lead Actor');  -- Billy Bob Thornton worked on Sling Blade as Lead Actor
+INSERT INTO worked_on VALUES(1254, 107, 'Lead Actor');  -- Woody Harrelson worked on The People vs. Larry Flynt as Lead Actor
+INSERT INTO worked_on VALUES(857, 33, 'Lead Actor');  -- Tom Cruise worked on Jerry Maguire as Lead Actor
+INSERT INTO worked_on VALUES(1465, 212, 'Lead Actor');  -- Geoffrey Rush worked on Shine as Lead Actor
+INSERT INTO worked_on VALUES(520, 213, 'Lead Actor');  -- Ralph Fiennes worked on The English Patient as Lead Actor
+INSERT INTO worked_on VALUES(1465, 644, 'Supporting Actor');  -- Armin Mueller-Stahl worked on Shine as Supporting Actor
+INSERT INTO worked_on VALUES(2243, 618, 'Supporting Actor');  -- James Woods worked on Ghosts of Mississippi as Supporting Actor
+INSERT INTO worked_on VALUES(857, 645, 'Supporting Actor');  -- Cuba Gooding Jr. worked on Jerry Maguire as Supporting Actor
+INSERT INTO worked_on VALUES(1298, 10, 'Supporting Actor');  -- Edward Norton worked on Primal Fear as Supporting Actor
+INSERT INTO worked_on VALUES(553, 646, 'Supporting Actor');  -- William H. Macy worked on Fargo as Supporting Actor
+INSERT INTO worked_on VALUES(1690, 114, 'Lead Actor');  -- Peter Fonda worked on Ulee's Gold as Lead Actor
+INSERT INTO worked_on VALUES(662, 20, 'Lead Actor');  -- Matt Damon worked on Good Will Hunting as Lead Actor
+INSERT INTO worked_on VALUES(1725, 5, 'Lead Actor');  -- Dustin Hoffman worked on Wag the Dog as Lead Actor
+INSERT INTO worked_on VALUES(119, 9, 'Lead Actor');  -- Jack Nicholson worked on As Good As It Gets as Lead Actor
+INSERT INTO worked_on VALUES(113, 96, 'Lead Actor');  -- Robert Duvall worked on The Apostle as Lead Actor
+INSERT INTO worked_on VALUES(90, 98, 'Supporting Actor');  -- Anthony Hopkins worked on Amistad as Supporting Actor
+INSERT INTO worked_on VALUES(235, 647, 'Supporting Actor');  -- Burt Reynolds worked on Boogie Nights as Supporting Actor
+INSERT INTO worked_on VALUES(848, 648, 'Supporting Actor');  -- Robert Forster worked on Jackie Brown as Supporting Actor
+INSERT INTO worked_on VALUES(119, 649, 'Supporting Actor');  -- Greg Kinnear worked on As Good As It Gets as Supporting Actor
+INSERT INTO worked_on VALUES(662, 205, 'Supporting Actor');  -- Robin Williams worked on Good Will Hunting as Supporting Actor
+INSERT INTO worked_on VALUES(1413, 4, 'Lead Actor');  -- Tom Hanks worked on Saving Private Ryan as Lead Actor
+INSERT INTO worked_on VALUES(41, 164, 'Lead Actor');  -- Nick Nolte worked on Affliction as Lead Actor
+INSERT INTO worked_on VALUES(650, 137, 'Lead Actor');  -- Ian McKellen worked on Gods and Monsters as Lead Actor
+INSERT INTO worked_on VALUES(952, 214, 'Lead Actor');  -- Roberto Benigni worked on Life Is Beautiful as Lead Actor
+INSERT INTO worked_on VALUES(83, 10, 'Lead Actor');  -- Edward Norton worked on American History X as Lead Actor
+INSERT INTO worked_on VALUES(1455, 212, 'Supporting Actor');  -- Geoffrey Rush worked on Shakespeare in Love as Supporting Actor
+INSERT INTO worked_on VALUES(342, 96, 'Supporting Actor');  -- Robert Duvall worked on A Civil Action as Supporting Actor
+INSERT INTO worked_on VALUES(1678, 229, 'Supporting Actor');  -- Ed Harris worked on The Truman Show as Supporting Actor
+INSERT INTO worked_on VALUES(41, 650, 'Supporting Actor');  -- James Coburn worked on Affliction as Supporting Actor
+INSERT INTO worked_on VALUES(1486, 211, 'Supporting Actor');  -- Billy Bob Thornton worked on A Simple Plan as Supporting Actor
+INSERT INTO worked_on VALUES(775, 35, 'Lead Actor');  -- Denzel Washington worked on The Hurricane as Lead Actor
+INSERT INTO worked_on VALUES(1587, 11, 'Lead Actor');  -- Sean Penn worked on Sweet and Lowdown as Lead Actor
+INSERT INTO worked_on VALUES(78, 174, 'Lead Actor');  -- Kevin Spacey worked on American Beauty as Lead Actor
+INSERT INTO worked_on VALUES(1561, 215, 'Lead Actor');  -- Richard Farnsworth worked on The Straight Story as Lead Actor
+INSERT INTO worked_on VALUES(823, 49, 'Lead Actor');  -- Russell Crowe worked on The Insider as Lead Actor
+INSERT INTO worked_on VALUES(1490, 651, 'Supporting Actor');  -- Haley Joel Osment worked on The Sixth Sense as Supporting Actor
+INSERT INTO worked_on VALUES(333, 165, 'Supporting Actor');  -- Michael Caine worked on The Cider House Rules as Supporting Actor
+INSERT INTO worked_on VALUES(686, 652, 'Supporting Actor');  -- Michael Clarke Duncan worked on The Green Mile as Supporting Actor
+INSERT INTO worked_on VALUES(1595, 102, 'Supporting Actor');  -- Jude Law worked on The Talented Mr. Ripley as Supporting Actor
+INSERT INTO worked_on VALUES(999, 33, 'Supporting Actor');  -- Tom Cruise worked on Magnolia as Supporting Actor
+INSERT INTO worked_on VALUES(173, 30, 'Lead Actor');  -- Javier Bardem worked on Before Night Falls as Lead Actor
+INSERT INTO worked_on VALUES(1322, 212, 'Lead Actor');  -- Geoffrey Rush worked on Quills as Lead Actor
+INSERT INTO worked_on VALUES(295, 4, 'Lead Actor');  -- Tom Hanks worked on Cast Away as Lead Actor
+INSERT INTO worked_on VALUES(1286, 229, 'Lead Actor');  -- Ed Harris worked on Pollock as Lead Actor
+INSERT INTO worked_on VALUES(640, 49, 'Lead Actor');  -- Russell Crowe worked on Gladiator as Lead Actor
+INSERT INTO worked_on VALUES(640, 61, 'Supporting Actor');  -- Joaquin Phoenix worked on Gladiator as Supporting Actor
+INSERT INTO worked_on VALUES(523, 198, 'Supporting Actor');  -- Albert Finney worked on Erin Brockovich as Supporting Actor
+INSERT INTO worked_on VALUES(369, 71, 'Supporting Actor');  -- Jeff Bridges worked on The Contender as Supporting Actor
+INSERT INTO worked_on VALUES(1452, 620, 'Supporting Actor');  -- Willem Dafoe worked on Shadow of the Vampire as Supporting Actor
+INSERT INTO worked_on VALUES(1659, 27, 'Supporting Actor');  -- Benicio Del Toro worked on Traffic as Supporting Actor
+INSERT INTO worked_on VALUES(169, 49, 'Lead Actor');  -- Russell Crowe worked on A Beautiful Mind as Lead Actor
+INSERT INTO worked_on VALUES(782, 11, 'Lead Actor');  -- Sean Penn worked on I Am Sam as Lead Actor
+INSERT INTO worked_on VALUES(53, 95, 'Lead Actor');  -- Will Smith worked on Ali as Lead Actor
+INSERT INTO worked_on VALUES(804, 216, 'Lead Actor');  -- Tom Wilkinson worked on In the Bedroom as Lead Actor
+INSERT INTO worked_on VALUES(1660, 35, 'Lead Actor');  -- Denzel Washington worked on Training Day as Lead Actor
+INSERT INTO worked_on VALUES(835, 653, 'Supporting Actor');  -- Jim Broadbent worked on Iris as Supporting Actor
+INSERT INTO worked_on VALUES(53, 68, 'Supporting Actor');  -- Jon Voight worked on Ali as Supporting Actor
+INSERT INTO worked_on VALUES(1660, 654, 'Supporting Actor');  -- Ethan Hawke worked on Training Day as Supporting Actor
+INSERT INTO worked_on VALUES(1451, 143, 'Supporting Actor');  -- Ben Kingsley worked on Sexy Beast as Supporting Actor
+INSERT INTO worked_on VALUES(977, 137, 'Supporting Actor');  -- Ian McKellen worked on The Lord of the Rings: The Fellowship of the Ring as Supporting Actor
+INSERT INTO worked_on VALUES(616, 17, 'Lead Actor');  -- Daniel Day-Lewis worked on Gangs of New York as Lead Actor
+INSERT INTO worked_on VALUES(1263, 217, 'Lead Actor');  -- Adrien Brody worked on The Pianist as Lead Actor
+INSERT INTO worked_on VALUES(1320, 165, 'Lead Actor');  -- Michael Caine worked on The Quiet American as Lead Actor
+INSERT INTO worked_on VALUES(29, 9, 'Lead Actor');  -- Jack Nicholson worked on About Schmidt as Lead Actor
+INSERT INTO worked_on VALUES(36, 210, 'Lead Actor');  -- Nicolas Cage worked on Adaptation as Lead Actor
+INSERT INTO worked_on VALUES(761, 229, 'Supporting Actor');  -- Ed Harris worked on The Hours as Supporting Actor
+INSERT INTO worked_on VALUES(36, 655, 'Supporting Actor');  -- Chris Cooper worked on Adaptation as Supporting Actor
+INSERT INTO worked_on VALUES(316, 93, 'Supporting Actor');  -- John C. Reilly worked on Chicago as Supporting Actor
+INSERT INTO worked_on VALUES(299, 592, 'Supporting Actor');  -- Christopher Walken worked on Catch Me If You Can as Supporting Actor
+INSERT INTO worked_on VALUES(1375, 41, 'Supporting Actor');  -- Paul Newman worked on Road to Perdition as Supporting Actor
+INSERT INTO worked_on VALUES(353, 102, 'Lead Actor');  -- Jude Law worked on Cold Mountain as Lead Actor
+INSERT INTO worked_on VALUES(1271, 14, 'Lead Actor');  -- Johnny Depp worked on Pirates of the Caribbean: The Curse of the Black Pearl as Lead Actor
+INSERT INTO worked_on VALUES(1154, 11, 'Lead Actor');  -- Sean Penn worked on Mystic River as Lead Actor
+INSERT INTO worked_on VALUES(765, 143, 'Lead Actor');  -- Ben Kingsley worked on House of Sand and Fog as Lead Actor
+INSERT INTO worked_on VALUES(982, 88, 'Lead Actor');  -- Bill Murray worked on Lost in Translation as Lead Actor
+INSERT INTO worked_on VALUES(2244, 656, 'Supporting Actor');  -- Alec Baldwin worked on The Cooler as Supporting Actor
+INSERT INTO worked_on VALUES(1154, 63, 'Supporting Actor');  -- Tim Robbins worked on Mystic River as Supporting Actor
+INSERT INTO worked_on VALUES(800, 657, 'Supporting Actor');  -- Djimon Hounsou worked on In America as Supporting Actor
+INSERT INTO worked_on VALUES(11, 27, 'Supporting Actor');  -- Benicio Del Toro worked on 21 Grams as Supporting Actor
+INSERT INTO worked_on VALUES(923, 658, 'Supporting Actor');  -- Ken Watanabe worked on The Last Samurai as Supporting Actor
+INSERT INTO worked_on VALUES(571, 14, 'Lead Actor');  -- Johnny Depp worked on Finding Neverland as Lead Actor
+INSERT INTO worked_on VALUES(134, 18, 'Lead Actor');  -- Leonardo DiCaprio worked on The Aviator as Lead Actor
+INSERT INTO worked_on VALUES(1340, 218, 'Lead Actor');  -- Jamie Foxx worked on Ray as Lead Actor
+INSERT INTO worked_on VALUES(760, 146, 'Lead Actor');  -- Don Cheadle worked on Hotel Rwanda as Lead Actor
+INSERT INTO worked_on VALUES(1077, 279, 'Lead Actor');  -- Clint Eastwood worked on Million Dollar Baby as Lead Actor
+INSERT INTO worked_on VALUES(2245, 659, 'Supporting Actor');  -- Clive Owen worked on Closer as Supporting Actor
+INSERT INTO worked_on VALUES(354, 218, 'Supporting Actor');  -- Jamie Foxx worked on Collateral as Supporting Actor
+INSERT INTO worked_on VALUES(1477, 660, 'Supporting Actor');  -- Thomas Haden Church worked on Sideways as Supporting Actor
+INSERT INTO worked_on VALUES(1077, 64, 'Supporting Actor');  -- Morgan Freeman worked on Million Dollar Baby as Supporting Actor
+INSERT INTO worked_on VALUES(134, 661, 'Supporting Actor');  -- Alan Alda worked on The Aviator as Supporting Actor
+INSERT INTO worked_on VALUES(1731, 61, 'Lead Actor');  -- Joaquin Phoenix worked on Walk the Line as Lead Actor
+INSERT INTO worked_on VALUES(659, 219, 'Lead Actor');  -- David Strathairn worked on Good Night, and Good Luck. as Lead Actor
+INSERT INTO worked_on VALUES(2246, 662, 'Lead Actor');  -- Terrence Howard worked on Hustle & Flow as Lead Actor
+INSERT INTO worked_on VALUES(2038, 70, 'Lead Actor');  -- Heath Ledger worked on Brokeback Mountain as Lead Actor
+INSERT INTO worked_on VALUES(287, 6, 'Lead Actor');  -- Philip Seymour Hoffman worked on Capote as Lead Actor
+INSERT INTO worked_on VALUES(383, 147, 'Supporting Actor');  -- Matt Dillon worked on Crash as Supporting Actor
+INSERT INTO worked_on VALUES(2038, 663, 'Supporting Actor');  -- Jake Gyllenhaal worked on Brokeback Mountain as Supporting Actor
+INSERT INTO worked_on VALUES(748, 202, 'Supporting Actor');  -- William Hurt worked on A History of Violence as Supporting Actor
+INSERT INTO worked_on VALUES(335, 108, 'Supporting Actor');  -- Paul Giamatti worked on Cinderella Man as Supporting Actor
+INSERT INTO worked_on VALUES(1593, 16, 'Supporting Actor');  -- George Clooney worked on Syriana as Supporting Actor
+INSERT INTO worked_on VALUES(701, 31, 'Lead Actor');  -- Ryan Gosling worked on Half Nelson as Lead Actor
+INSERT INTO worked_on VALUES(1318, 95, 'Lead Actor');  -- Will Smith worked on The Pursuit of Happyness as Lead Actor
+INSERT INTO worked_on VALUES(218, 18, 'Lead Actor');  -- Leonardo DiCaprio worked on Blood Diamond as Lead Actor
+INSERT INTO worked_on VALUES(2247, 220, 'Lead Actor');  -- Forest Whitaker worked on The Last King of Scotland as Lead Actor
+INSERT INTO worked_on VALUES(2248, 120, 'Lead Actor');  -- Peter O'Toole worked on Venus as Lead Actor
+INSERT INTO worked_on VALUES(2249, 664, 'Supporting Actor');  -- Jackie Earle Haley worked on Little Children as Supporting Actor
+INSERT INTO worked_on VALUES(964, 193, 'Supporting Actor');  -- Alan Arkin worked on Little Miss Sunshine as Supporting Actor
+INSERT INTO worked_on VALUES(441, 37, 'Supporting Actor');  -- Mark Wahlberg worked on The Departed as Supporting Actor
+INSERT INTO worked_on VALUES(2250, 665, 'Supporting Actor');  -- Eddie Murphy worked on Dreamgirls as Supporting Actor
+INSERT INTO worked_on VALUES(218, 657, 'Supporting Actor');  -- Djimon Hounsou worked on Blood Diamond as Supporting Actor
+INSERT INTO worked_on VALUES(1063, 16, 'Lead Actor');  -- George Clooney worked on Michael Clayton as Lead Actor
+INSERT INTO worked_on VALUES(1619, 17, 'Lead Actor');  -- Daniel Day-Lewis worked on There Will Be Blood as Lead Actor
+INSERT INTO worked_on VALUES(1585, 14, 'Lead Actor');  -- Johnny Depp worked on Sweeney Todd: The Demon Barber of Fleet Street as Lead Actor
+INSERT INTO worked_on VALUES(2251, 28, 'Lead Actor');  -- Tommy Lee Jones worked on In the Valley of Elah as Lead Actor
+INSERT INTO worked_on VALUES(2252, 666, 'Lead Actor');  -- Viggo Mortensen worked on Eastern Promises as Lead Actor
+INSERT INTO worked_on VALUES(120, 667, 'Supporting Actor');  -- Casey Affleck worked on The Assassination of Jesse James by the Coward Robert Ford as Lead Actor
+INSERT INTO worked_on VALUES(1185, 30, 'Supporting Actor');  -- Javier Bardem worked on No Country for Old Men as Supporting Actor
+INSERT INTO worked_on VALUES(2253, 6, 'Supporting Actor');  -- Philip Seymour Hoffman worked on Charlie Wilson's War as Supporting Actor
+INSERT INTO worked_on VALUES(829, 668, 'Supporting Actor');  -- Hal Holbrook worked on Into the Wild as Supporting Actor
+INSERT INTO worked_on VALUES(1063, 216, 'Supporting Actor');  -- Tom Wilkinson worked on Michael Clayton as Supporting Actor
+INSERT INTO worked_on VALUES(2254, 221, 'Lead Actor');  -- Richard Jenkins worked on The Visitor as Lead Actor
+INSERT INTO worked_on VALUES(605, 222, 'Lead Actor');  -- Frank Langella worked on Frost/Nixon as Lead Actor
+INSERT INTO worked_on VALUES(2039, 11, 'Lead Actor');  -- Sean Penn worked on Milk as Lead Actor
+INSERT INTO worked_on VALUES(396, 13, 'Lead Actor');  -- Brad Pitt worked on The Curious Case of Benjamin Button as Lead Actor
+INSERT INTO worked_on VALUES(2255, 43, 'Lead Actor');  -- Mickey Rourke worked on The Wrestler as Lead Actor
+INSERT INTO worked_on VALUES(2039, 134, 'Supporting Actor');  -- Josh Brolin worked on Milk as Supporting Actor
+INSERT INTO worked_on VALUES(1672, 32, 'Supporting Actor');  -- Robert Downey Jr. worked on Tropic Thunder as Supporting Actor
+INSERT INTO worked_on VALUES(475, 6, 'Supporting Actor');  -- Philip Seymour Hoffman worked on Doubt as Supporting Actor
+INSERT INTO worked_on VALUES(404, 70, 'Supporting Actor');  -- Heath Ledger worked on The Dark Knight as Supporting Actor
+INSERT INTO worked_on VALUES(2256, 669, 'Supporting Actor');  -- Michael Shannon worked on Revolutionary Road as Supporting Actor
+INSERT INTO worked_on VALUES(2257, 670, 'Lead Actress');  -- Louise Dresser worked on A Ship Comes In as Lead Actress
+INSERT INTO worked_on VALUES(1831, 671, 'Lead Actress');  -- Janet Gaynor worked on 7th Heaven as Lead Actress
+INSERT INTO worked_on VALUES(2258, 671, 'Lead Actress');  -- Janet Gaynor worked on Street Angel as Lead Actress
+INSERT INTO worked_on VALUES(1574, 671, 'Lead Actress');  -- Janet Gaynor worked on Sunrise as Lead Actress
+INSERT INTO worked_on VALUES(2259, 672, 'Lead Actress');  -- Gloria Swanson worked on Sadie Thompson as Lead Actress
+INSERT INTO worked_on VALUES(2260, 673, 'Lead Actress');  -- Ruth Chatterton worked on Madame X as Lead Actress
+INSERT INTO worked_on VALUES(2261, 674, 'Lead Actress');  -- Mary Pickford worked on Coquette as Lead Actress
+INSERT INTO worked_on VALUES(2262, 675, 'Lead Actress');  -- Jeanne Eagels worked on The Letter as Lead Actress
+INSERT INTO worked_on VALUES(2263, 676, 'Lead Actress');  -- Betty Compson worked on The Barker as Lead Actress
+INSERT INTO worked_on VALUES(1833, 677, 'Lead Actress');  -- Bessie Love worked on The Broadway Melody as Lead Actress
+INSERT INTO worked_on VALUES(2264, 678, 'Lead Actress');  -- Corinne Griffith worked on The Divine Lady as Lead Actress
+INSERT INTO worked_on VALUES(2265, 679, 'Lead Actress');  -- Nancy Carroll worked on The Devil's Holiday as Lead Actress
+INSERT INTO worked_on VALUES(1840, 680, 'Lead Actress');  -- Norma Shearer worked on The Divorcee as Lead Actress
+INSERT INTO worked_on VALUES(2266, 680, 'Lead Actress');  -- Norma Shearer worked on Their Own Desire as Lead Actress
+INSERT INTO worked_on VALUES(2267, 672, 'Lead Actress');  -- Gloria Swanson worked on The Trespasser as Lead Actress
+INSERT INTO worked_on VALUES(2268, 673, 'Lead Actress');  -- Ruth Chatterton worked on Sarah and Son as Lead Actress
+INSERT INTO worked_on VALUES(2269, 681, 'Lead Actress');  -- Greta Garbo worked on Anna Christie as Lead Actress
+INSERT INTO worked_on VALUES(2270, 681, 'Lead Actress');  -- Greta Garbo worked on Romance as Lead Actress
+INSERT INTO worked_on VALUES(2271, 682, 'Lead Actress');  -- Marie Dressler worked on Min and Bill as Lead Actress
+INSERT INTO worked_on VALUES(2053, 680, 'Lead Actress');  -- Norma Shearer worked on A Free Soul as Lead Actress
+INSERT INTO worked_on VALUES(1841, 683, 'Lead Actress');  -- Irene Dunne worked on Cimarron as Lead Actress
+INSERT INTO worked_on VALUES(2272, 684, 'Lead Actress');  -- Ann Harding worked on Holiday as Lead Actress
+INSERT INTO worked_on VALUES(2273, 685, 'Lead Actress');  -- Marlene Dietrich worked on Morocco as Lead Actress
+INSERT INTO worked_on VALUES(2055, 686, 'Lead Actress');  -- Lynn Fontanne worked on The Guardsman as Lead Actress
+INSERT INTO worked_on VALUES(2274, 687, 'Lead Actress');  -- Helen Hayes worked on The Sin of Madelon Claudet as Lead Actress
+INSERT INTO worked_on VALUES(2275, 682, 'Lead Actress');  -- Marie Dressler worked on Emma as Lead Actress
+INSERT INTO worked_on VALUES(1863, 688, 'Lead Actress');  -- Diana Wynyard worked on Cavalcade as Lead Actress
+INSERT INTO worked_on VALUES(2276, 21, 'Lead Actress');  -- Katharine Hepburn worked on Morning Glory as Lead Actress
+INSERT INTO worked_on VALUES(1862, 689, 'Lead Actress');  -- May Robson worked on Lady for a Day as Lead Actress
+INSERT INTO worked_on VALUES(2277, 113, 'Lead Actress');  -- Bette Davis worked on Of Human Bondage as Lead Actress
+INSERT INTO worked_on VALUES(1868, 680, 'Lead Actress');  -- Norma Shearer worked on The Barretts of Wimpole Street as Lead Actress
+INSERT INTO worked_on VALUES(1866, 690, 'Lead Actress');  -- Grace Moore worked on One Night of Love as Lead Actress
+INSERT INTO worked_on VALUES(841, 691, 'Lead Actress');  -- Claudette Colbert worked on It Happened One Night as Lead Actress
+INSERT INTO worked_on VALUES(2278, 692, 'Lead Actress');  -- Elisabeth Bergner worked on Escape Me Never as Lead Actress
+INSERT INTO worked_on VALUES(2279, 693, 'Lead Actress');  -- Miriam Hopkins worked on Becky Sharp as Lead Actress
+INSERT INTO worked_on VALUES(2280, 694, 'Lead Actress');  -- Merle Oberon worked on The Dark Angel as Lead Actress
+INSERT INTO worked_on VALUES(1877, 21, 'Lead Actress');  -- Katharine Hepburn worked on Alice Adams as Lead Actress
+INSERT INTO worked_on VALUES(2281, 113, 'Lead Actress');  -- Bette Davis worked on Dangerous as Lead Actress
+INSERT INTO worked_on VALUES(2282, 691, 'Lead Actress');  -- Claudette Colbert worked on Private Worlds as Lead Actress
+INSERT INTO worked_on VALUES(2059, 695, 'Lead Actress');  -- Carole Lombard worked on My Man Godfrey as Lead Actress
+INSERT INTO worked_on VALUES(2283, 683, 'Lead Actress');  -- Irene Dunne worked on Theodora Goes Wild as Lead Actress
+INSERT INTO worked_on VALUES(1894, 680, 'Lead Actress');  -- Norma Shearer worked on Romeo and Juliet as Lead Actress
+INSERT INTO worked_on VALUES(1891, 696, 'Lead Actress');  -- Luise Rainer worked on The Great Ziegfeld as Lead Actress
+INSERT INTO worked_on VALUES(2284, 697, 'Lead Actress');  -- Gladys George worked on Valiant Is the Word for Carrie as Lead Actress
+INSERT INTO worked_on VALUES(1890, 698, 'Supporting Actress');  -- Maria Ouspenskaya worked on Dodsworth as Supporting Actress
+INSERT INTO worked_on VALUES(2059, 699, 'Supporting Actress');  -- Alice Brady worked on My Man Godfrey as Supporting Actress
+INSERT INTO worked_on VALUES(3328, 700, 'Supporting Actress');  -- Bonita Granville worked on These Three as Supporting Actress
+INSERT INTO worked_on VALUES(2285, 701, 'Supporting Actress');  -- Beulah Bondi worked on The Gorgeous Hussy as Supporting Actress
+INSERT INTO worked_on VALUES(1893, 702, 'Supporting Actress');  -- Gale Sondergaard worked on Anthony Adverse as Supporting Actress
+INSERT INTO worked_on VALUES(2286, 681, 'Lead Actress');  -- Greta Garbo worked on Camille as Lead Actress
+INSERT INTO worked_on VALUES(2287, 703, 'Lead Actress');  -- Barbara Stanwyck worked on Stella Dallas as Lead Actress
+INSERT INTO worked_on VALUES(1897, 683, 'Lead Actress');  -- Irene Dunne worked on The Awful Truth as Lead Actress
+INSERT INTO worked_on VALUES(1898, 696, 'Lead Actress');  -- Luise Rainer worked on The Good Earth as Lead Actress
+INSERT INTO worked_on VALUES(1896, 671, 'Lead Actress');  -- Janet Gaynor worked on A Star Is Born as Lead Actress
+INSERT INTO worked_on VALUES(2064, 704, 'Supporting Actress');  -- May Whitty worked on Night Must Fall as Supporting Actress
+INSERT INTO worked_on VALUES(1899, 699, 'Supporting Actress');  -- Alice Brady worked on In Old Chicago as Supporting Actress
+INSERT INTO worked_on VALUES(1903, 705, 'Supporting Actress');  -- Claire Trevor worked on Dead End as Supporting Actress
+INSERT INTO worked_on VALUES(2287, 706, 'Supporting Actress');  -- Anne Shirley worked on Stella Dallas as Supporting Actress
+INSERT INTO worked_on VALUES(1901, 707, 'Supporting Actress');  -- Andrea Leeds worked on Stage Door as Supporting Actress
+INSERT INTO worked_on VALUES(1909, 708, 'Lead Actress');  -- Wendy Hiller worked on Pygmalion as Lead Actress
+INSERT INTO worked_on VALUES(2288, 709, 'Lead Actress');  -- Margaret Sullavan worked on Three Comrades as Lead Actress
+INSERT INTO worked_on VALUES(1907, 113, 'Lead Actress');  -- Bette Davis worked on Jezebel as Lead Actress
+INSERT INTO worked_on VALUES(2071, 680, 'Lead Actress');  -- Norma Shearer worked on Marie Antoinette as Lead Actress
+INSERT INTO worked_on VALUES(2289, 710, 'Lead Actress');  -- Fay Bainter worked on White Banners as Lead Actress
+INSERT INTO worked_on VALUES(1906, 711, 'Supporting Actress');  -- Spring Byington worked on You Can't Take It with You as Supporting Actress
+INSERT INTO worked_on VALUES(2290, 701, 'Supporting Actress');  -- Beulah Bondi worked on Of Human Hearts as Supporting Actress
+INSERT INTO worked_on VALUES(2291, 712, 'Supporting Actress');  -- Billie Burke worked on Merrily We Live as Supporting Actress
+INSERT INTO worked_on VALUES(2292, 713, 'Supporting Actress');  -- Miliza Korjus worked on The Great Waltz as Supporting Actress
+INSERT INTO worked_on VALUES(1907, 710, 'Supporting Actress');  -- Fay Bainter worked on Jezebel as Supporting Actress
+INSERT INTO worked_on VALUES(1916, 714, 'Lead Actress');  -- Greer Garson worked on Goodbye, Mr. Chips as Lead Actress
+INSERT INTO worked_on VALUES(1915, 113, 'Lead Actress');  -- Bette Davis worked on Dark Victory as Lead Actress
+INSERT INTO worked_on VALUES(657, 715, 'Lead Actress');  -- Vivien Leigh worked on Gone with the Wind as Lead Actress
+INSERT INTO worked_on VALUES(1913, 683, 'Lead Actress');  -- Irene Dunne worked on Love Affair as Lead Actress
+INSERT INTO worked_on VALUES(1183, 681, 'Lead Actress');  -- Greta Garbo worked on Ninotchka as Lead Actress
+INSERT INTO worked_on VALUES(1802, 716, 'Supporting Actress');  -- Geraldine Fitzgerald worked on Wuthering Heights as Supporting Actress
+INSERT INTO worked_on VALUES(657, 717, 'Supporting Actress');  -- Olivia de Havilland worked on Gone with the Wind as Supporting Actress
+INSERT INTO worked_on VALUES(1913, 698, 'Supporting Actress');  -- Maria Ouspenskaya worked on Love Affair as Supporting Actress
+INSERT INTO worked_on VALUES(2293, 718, 'Supporting Actress');  -- Edna May Oliver worked on Drums along the Mohawk as Supporting Actress
+INSERT INTO worked_on VALUES(657, 719, 'Supporting Actress');  -- Hattie McDaniel worked on Gone with the Wind as Supporting Actress
+INSERT INTO worked_on VALUES(1921, 113, 'Lead Actress');  -- Bette Davis worked on The Letter as Lead Actress
+INSERT INTO worked_on VALUES(1343, 720, 'Lead Actress');  -- Joan Fontaine worked on Rebecca as Lead Actress
+INSERT INTO worked_on VALUES(1919, 721, 'Lead Actress');  -- Ginger Rogers worked on Kitty Foyle as Lead Actress
+INSERT INTO worked_on VALUES(1922, 722, 'Lead Actress');  -- Martha Scott worked on Our Town as Lead Actress
+INSERT INTO worked_on VALUES(1260, 21, 'Lead Actress');  -- Katharine Hepburn worked on The Philadelphia Story as Lead Actress
+INSERT INTO worked_on VALUES(2294, 723, 'Supporting Actress');  -- Marjorie Rambeau worked on Primrose Path as Supporting Actress
+INSERT INTO worked_on VALUES(1260, 724, 'Supporting Actress');  -- Ruth Hussey worked on The Philadelphia Story as Supporting Actress
+INSERT INTO worked_on VALUES(1920, 725, 'Supporting Actress');  -- Barbara O'Neil worked on All This, and Heaven Too as Supporting Actress
+INSERT INTO worked_on VALUES(676, 726, 'Supporting Actress');  -- Jane Darwell worked on The Grapes of Wrath as Supporting Actress
+INSERT INTO worked_on VALUES(1343, 727, 'Supporting Actress');  -- Judith Anderson worked on Rebecca as Supporting Actress
+INSERT INTO worked_on VALUES(1928, 720, 'Lead Actress');  -- Joan Fontaine worked on Suspicion as Lead Actress
+INSERT INTO worked_on VALUES(1924, 717, 'Lead Actress');  -- Olivia de Havilland worked on Hold Back the Dawn as Lead Actress
+INSERT INTO worked_on VALUES(1926, 113, 'Lead Actress');  -- Bette Davis worked on The Little Foxes as Lead Actress
+INSERT INTO worked_on VALUES(1927, 714, 'Lead Actress');  -- Greer Garson worked on Blossoms in the Dust as Lead Actress
+INSERT INTO worked_on VALUES(2295, 703, 'Lead Actress');  -- Barbara Stanwyck worked on Ball of Fire as Lead Actress
+INSERT INTO worked_on VALUES(2296, 728, 'Supporting Actress');  -- Mary Astor worked on The Great Lie as Supporting Actress
+INSERT INTO worked_on VALUES(1926, 729, 'Supporting Actress');  -- Patricia Collinge worked on The Little Foxes as Supporting Actress
+INSERT INTO worked_on VALUES(1926, 730, 'Supporting Actress');  -- Teresa Wright worked on The Little Foxes as Supporting Actress
+INSERT INTO worked_on VALUES(1930, 731, 'Supporting Actress');  -- Sara Allgood worked on How Green Was My Valley as Supporting Actress
+INSERT INTO worked_on VALUES(1929, 732, 'Supporting Actress');  -- Margaret Wycherly worked on Sergeant York as Supporting Actress
+INSERT INTO worked_on VALUES(2297, 113, 'Lead Actress');  -- Bette Davis worked on Now, Voyager as Lead Actress
+INSERT INTO worked_on VALUES(1932, 730, 'Lead Actress');  -- Teresa Wright worked on The Pride of the Yankees as Lead Actress
+INSERT INTO worked_on VALUES(2298, 733, 'Lead Actress');  -- Rosalind Russell worked on My Sister Eileen as Lead Actress
+INSERT INTO worked_on VALUES(1938, 714, 'Lead Actress');  -- Greer Garson worked on Mrs. Miniver as Lead Actress
+INSERT INTO worked_on VALUES(1791, 21, 'Lead Actress');  -- Katharine Hepburn worked on Woman of the Year as Lead Actress
+INSERT INTO worked_on VALUES(1936, 734, 'Supporting Actress');  -- Susan Peters worked on Random Harvest as Supporting Actress
+INSERT INTO worked_on VALUES(998, 735, 'Supporting Actress');  -- Agnes Moorehead worked on The Magnificent Ambersons as Supporting Actress
+INSERT INTO worked_on VALUES(1938, 704, 'Supporting Actress');  -- May Whitty worked on Mrs. Miniver as Supporting Actress
+INSERT INTO worked_on VALUES(1938, 730, 'Supporting Actress');  -- Teresa Wright worked on Mrs. Miniver as Supporting Actress
+INSERT INTO worked_on VALUES(2297, 736, 'Supporting Actress');  -- Gladys Cooper worked on Now, Voyager as Supporting Actress
+INSERT INTO worked_on VALUES(2299, 720, 'Lead Actress');  -- Joan Fontaine worked on The Constant Nymph as Lead Actress
+INSERT INTO worked_on VALUES(1940, 714, 'Lead Actress');  -- Greer Garson worked on Madame Curie as Lead Actress
+INSERT INTO worked_on VALUES(1944, 737, 'Lead Actress');  -- Jennifer Jones worked on The Song of Bernadette as Lead Actress
+INSERT INTO worked_on VALUES(1943, 738, 'Lead Actress');  -- Jean Arthur worked on The More the Merrier as Lead Actress
+INSERT INTO worked_on VALUES(1942, 739, 'Lead Actress');  -- Ingrid Bergman worked on For Whom the Bell Tolls as Lead Actress
+INSERT INTO worked_on VALUES(1947, 740, 'Supporting Actress');  -- Lucile Watson worked on Watch on the Rhine as Supporting Actress
+INSERT INTO worked_on VALUES(1944, 741, 'Supporting Actress');  -- Anne Revere worked on The Song of Bernadette as Supporting Actress
+INSERT INTO worked_on VALUES(2300, 742, 'Supporting Actress');  -- Paulette Goddard worked on So Proudly We Hail! as Supporting Actress
+INSERT INTO worked_on VALUES(1944, 736, 'Supporting Actress');  -- Gladys Cooper worked on The Song of Bernadette as Supporting Actress
+INSERT INTO worked_on VALUES(1942, 743, 'Supporting Actress');  -- Katina Paxinou worked on For Whom the Bell Tolls as Supporting Actress
+INSERT INTO worked_on VALUES(2301, 714, 'Lead Actress');  -- Greer Garson worked on Mrs. Parkington as Lead Actress
+INSERT INTO worked_on VALUES(1950, 691, 'Lead Actress');  -- Claudette Colbert worked on Since You Went Away as Lead Actress
+INSERT INTO worked_on VALUES(473, 703, 'Lead Actress');  -- Barbara Stanwyck worked on Double Indemnity as Lead Actress
+INSERT INTO worked_on VALUES(1948, 739, 'Lead Actress');  -- Ingrid Bergman worked on Gaslight as Lead Actress
+INSERT INTO worked_on VALUES(2085, 113, 'Lead Actress');  -- Bette Davis worked on Mr. Skeffington as Lead Actress
+INSERT INTO worked_on VALUES(1948, 744, 'Supporting Actress');  -- Angela Lansbury worked on Gaslight as Supporting Actress
+INSERT INTO worked_on VALUES(2302, 745, 'Supporting Actress');  -- Aline MacMahon worked on Dragon Seed as Supporting Actress
+INSERT INTO worked_on VALUES(1950, 737, 'Supporting Actress');  -- Jennifer Jones worked on Since You Went Away as Supporting Actress
+INSERT INTO worked_on VALUES(2084, 746, 'Supporting Actress');  -- Ethel Barrymore worked on None but the Lonely Heart as Supporting Actress
+INSERT INTO worked_on VALUES(2301, 735, 'Supporting Actress');  -- Agnes Moorehead worked on Mrs. Parkington as Supporting Actress
+INSERT INTO worked_on VALUES(2303, 747, 'Lead Actress');  -- Gene Tierney worked on Leave Her to Heaven as Lead Actress
+INSERT INTO worked_on VALUES(2304, 737, 'Lead Actress');  -- Jennifer Jones worked on Love Letters as Lead Actress
+INSERT INTO worked_on VALUES(2305, 714, 'Lead Actress');  -- Greer Garson worked on The Valley of Decision as Lead Actress
+INSERT INTO worked_on VALUES(1954, 748, 'Lead Actress');  -- Joan Crawford worked on Mildred Pierce as Lead Actress
+INSERT INTO worked_on VALUES(1955, 739, 'Lead Actress');  -- Ingrid Bergman worked on The Bells of St. Mary's as Lead Actress
+INSERT INTO worked_on VALUES(1954, 749, 'Supporting Actress');  -- Ann Blyth worked on Mildred Pierce as Supporting Actress
+INSERT INTO worked_on VALUES(2089, 750, 'Supporting Actress');  -- Joan Lorring worked on The Corn Is Green as Supporting Actress
+INSERT INTO worked_on VALUES(1954, 751, 'Supporting Actress');  -- Eve Arden worked on Mildred Pierce as Supporting Actress
+INSERT INTO worked_on VALUES(2306, 744, 'Supporting Actress');  -- Angela Lansbury worked on The Picture of Dorian Gray as Supporting Actress
+INSERT INTO worked_on VALUES(2307, 741, 'Supporting Actress');  -- Anne Revere worked on National Velvet as Supporting Actress
+INSERT INTO worked_on VALUES(2308, 737, 'Lead Actress');  -- Jennifer Jones worked on Duel in the Sun as Lead Actress
+INSERT INTO worked_on VALUES(2309, 717, 'Lead Actress');  -- Olivia de Havilland worked on To Each His Own as Lead Actress
+INSERT INTO worked_on VALUES(1956, 752, 'Lead Actress');  -- Jane Wyman worked on The Yearling as Lead Actress
+INSERT INTO worked_on VALUES(2310, 733, 'Lead Actress');  -- Rosalind Russell worked on Sister Kenny as Lead Actress
+INSERT INTO worked_on VALUES(2311, 753, 'Lead Actress');  -- Celia Johnson worked on Brief Encounter as Lead Actress
+INSERT INTO worked_on VALUES(2312, 702, 'Supporting Actress');  -- Gale Sondergaard worked on Anna and the King of Siam as Supporting Actress
+INSERT INTO worked_on VALUES(1958, 754, 'Supporting Actress');  -- Anne Baxter worked on The Razor's Edge as Supporting Actress
+INSERT INTO worked_on VALUES(2308, 755, 'Supporting Actress');  -- Lillian Gish worked on Duel in the Sun as Supporting Actress
+INSERT INTO worked_on VALUES(2313, 756, 'Supporting Actress');  -- Flora Robson worked on Saratoga Trunk as Supporting Actress
+INSERT INTO worked_on VALUES(2314, 746, 'Supporting Actress');  -- Ethel Barrymore worked on The Spiral Staircase as Supporting Actress
+INSERT INTO worked_on VALUES(2315, 757, 'Lead Actress');  -- Susan Hayward worked on Smash-Up: The Story of a Woman as Lead Actress
+INSERT INTO worked_on VALUES(2098, 733, 'Lead Actress');  -- Rosalind Russell worked on Mourning Becomes Electra as Lead Actress
+INSERT INTO worked_on VALUES(1962, 758, 'Lead Actress');  -- Dorothy McGuire worked on Gentleman's Agreement as Lead Actress
+INSERT INTO worked_on VALUES(2316, 748, 'Lead Actress');  -- Joan Crawford worked on Possessed as Lead Actress
+INSERT INTO worked_on VALUES(2101, 759, 'Lead Actress');  -- Loretta Young worked on The Farmer's Daughter as Lead Actress
+INSERT INTO worked_on VALUES(2317, 746, 'Supporting Actress');  -- Ethel Barrymore worked on The Paradine Case as Supporting Actress
+INSERT INTO worked_on VALUES(2318, 760, 'Supporting Actress');  -- Marjorie Main worked on The Egg and I as Supporting Actress
+INSERT INTO worked_on VALUES(1962, 761, 'Supporting Actress');  -- Celeste Holm worked on Gentleman's Agreement as Supporting Actress
+INSERT INTO worked_on VALUES(1960, 762, 'Supporting Actress');  -- Gloria Grahame worked on Crossfire as Supporting Actress
+INSERT INTO worked_on VALUES(1962, 741, 'Supporting Actress');  -- Anne Revere worked on Gentleman's Agreement as Supporting Actress
+INSERT INTO worked_on VALUES(1963, 752, 'Lead Actress');  -- Jane Wyman worked on Johnny Belinda as Lead Actress
+INSERT INTO worked_on VALUES(1964, 717, 'Lead Actress');  -- Olivia de Havilland worked on The Snake Pit as Lead Actress
+INSERT INTO worked_on VALUES(2319, 703, 'Lead Actress');  -- Barbara Stanwyck worked on Sorry, Wrong Number as Lead Actress
+INSERT INTO worked_on VALUES(2105, 683, 'Lead Actress');  -- Irene Dunne worked on I Remember Mama as Lead Actress
+INSERT INTO worked_on VALUES(2106, 739, 'Lead Actress');  -- Ingrid Bergman worked on Joan of Arc as Lead Actress
+INSERT INTO worked_on VALUES(1966, 763, 'Supporting Actress');  -- Jean Simmons worked on Hamlet as Supporting Actress
+INSERT INTO worked_on VALUES(1963, 735, 'Supporting Actress');  -- Agnes Moorehead worked on Johnny Belinda as Supporting Actress
+INSERT INTO worked_on VALUES(2105, 764, 'Supporting Actress');  -- Ellen Corby worked on I Remember Mama as Supporting Actress
+INSERT INTO worked_on VALUES(2105, 765, 'Supporting Actress');  -- Barbara Bel Geddes worked on I Remember Mama as Supporting Actress
+INSERT INTO worked_on VALUES(2320, 705, 'Supporting Actress');  -- Claire Trevor worked on Key Largo as Supporting Actress
+INSERT INTO worked_on VALUES(2321, 766, 'Lead Actress');  -- Jeanne Crain worked on Pinky as Lead Actress
+INSERT INTO worked_on VALUES(2322, 759, 'Lead Actress');  -- Loretta Young worked on Come to the Stable as Lead Actress
+INSERT INTO worked_on VALUES(2323, 757, 'Lead Actress');  -- Susan Hayward worked on My Foolish Heart as Lead Actress
+INSERT INTO worked_on VALUES(1970, 717, 'Lead Actress');  -- Olivia de Havilland worked on The Heiress as Lead Actress
+INSERT INTO worked_on VALUES(2324, 767, 'Lead Actress');  -- Deborah Kerr worked on Edward, My Son as Lead Actress
+INSERT INTO worked_on VALUES(2322, 768, 'Supporting Actress');  -- Elsa Lanchester worked on Come to the Stable as Supporting Actress
+INSERT INTO worked_on VALUES(1967, 769, 'Supporting Actress');  -- Mercedes McCambridge worked on All the King's Men as Supporting Actress
+INSERT INTO worked_on VALUES(2321, 770, 'Supporting Actress');  -- Ethel Waters worked on Pinky as Supporting Actress
+INSERT INTO worked_on VALUES(2322, 761, 'Supporting Actress');  -- Celeste Holm worked on Come to the Stable as Supporting Actress
+INSERT INTO worked_on VALUES(2321, 746, 'Supporting Actress');  -- Ethel Barrymore worked on Pinky as Supporting Actress
+INSERT INTO worked_on VALUES(1575, 672, 'Lead Actress');  -- Gloria Swanson worked on Sunset Boulevard as Lead Actress
+INSERT INTO worked_on VALUES(1972, 771, 'Lead Actress');  -- Judy Holliday worked on Born Yesterday as Lead Actress
+INSERT INTO worked_on VALUES(2325, 772, 'Lead Actress');  -- Eleanor Parker worked on Caged as Lead Actress
+INSERT INTO worked_on VALUES(66, 113, 'Lead Actress');  -- Bette Davis worked on All about Eve as Lead Actress
+INSERT INTO worked_on VALUES(66, 754, 'Lead Actress');  -- Anne Baxter worked on All about Eve as Lead Actress
+INSERT INTO worked_on VALUES(66, 761, 'Supporting Actress');  -- Celeste Holm worked on All about Eve as Supporting Actress
+INSERT INTO worked_on VALUES(1575, 773, 'Supporting Actress');  -- Nancy Olson worked on Sunset Boulevard as Supporting Actress
+INSERT INTO worked_on VALUES(725, 774, 'Supporting Actress');  -- Josephine Hull worked on Harvey as Supporting Actress
+INSERT INTO worked_on VALUES(2325, 775, 'Supporting Actress');  -- Hope Emerson worked on Caged as Supporting Actress
+INSERT INTO worked_on VALUES(66, 776, 'Supporting Actress');  -- Thelma Ritter worked on All about Eve as Supporting Actress
+INSERT INTO worked_on VALUES(2326, 752, 'Lead Actress');  -- Jane Wyman worked on The Blue Veil as Lead Actress
+INSERT INTO worked_on VALUES(42, 21, 'Lead Actress');  -- Katharine Hepburn worked on The African Queen as Lead Actress
+INSERT INTO worked_on VALUES(1274, 777, 'Lead Actress');  -- Shelley Winters worked on A Place in the Sun as Lead Actress
+INSERT INTO worked_on VALUES(1566, 715, 'Lead Actress');  -- Vivien Leigh worked on A Streetcar Named Desire as Lead Actress
+INSERT INTO worked_on VALUES(2327, 772, 'Lead Actress');  -- Eleanor Parker worked on Detective Story as Lead Actress
+INSERT INTO worked_on VALUES(1566, 778, 'Supporting Actress');  -- Kim Hunter worked on A Streetcar Named Desire as Supporting Actress
+INSERT INTO worked_on VALUES(2328, 776, 'Supporting Actress');  -- Thelma Ritter worked on The Mating Season as Supporting Actress
+INSERT INTO worked_on VALUES(2326, 779, 'Supporting Actress');  -- Joan Blondell worked on The Blue Veil as Supporting Actress
+INSERT INTO worked_on VALUES(2327, 780, 'Supporting Actress');  -- Lee Grant worked on Detective Story as Supporting Actress
+INSERT INTO worked_on VALUES(2116, 781, 'Supporting Actress');  -- Mildred Dunnock worked on Death of a Salesman as Supporting Actress
+INSERT INTO worked_on VALUES(2329, 782, 'Lead Actress');  -- Julie Harris worked on The Member of the Wedding as Lead Actress
+INSERT INTO worked_on VALUES(2330, 113, 'Lead Actress');  -- Bette Davis worked on The Star as Lead Actress
+INSERT INTO worked_on VALUES(2331, 783, 'Lead Actress');  -- Shirley Booth worked on Come Back, Little Sheba as Lead Actress
+INSERT INTO worked_on VALUES(2120, 748, 'Lead Actress');  -- Joan Crawford worked on Sudden Fear as Lead Actress
+INSERT INTO worked_on VALUES(2332, 757, 'Lead Actress');  -- Susan Hayward worked on With a Song in My Heart as Lead Actress
+INSERT INTO worked_on VALUES(1977, 784, 'Supporting Actress');  -- Colette Marchand worked on Moulin Rouge as Supporting Actress
+INSERT INTO worked_on VALUES(146, 762, 'Supporting Actress');  -- Gloria Grahame worked on The Bad and the Beautiful as Supporting Actress
+INSERT INTO worked_on VALUES(1489, 785, 'Supporting Actress');  -- Jean Hagen worked on Singin' in the Rain as Supporting Actress
+INSERT INTO worked_on VALUES(2331, 786, 'Supporting Actress');  -- Terry Moore worked on Come Back, Little Sheba as Supporting Actress
+INSERT INTO worked_on VALUES(2332, 776, 'Supporting Actress');  -- Thelma Ritter worked on With a Song in My Heart as Supporting Actress
+INSERT INTO worked_on VALUES(1384, 112, 'Lead Actress');  -- Audrey Hepburn worked on Roman Holiday as Lead Actress
+INSERT INTO worked_on VALUES(2333, 787, 'Lead Actress');  -- Ava Gardner worked on Mogambo as Lead Actress
+INSERT INTO worked_on VALUES(2334, 788, 'Lead Actress');  -- Maggie McNamara worked on The Moon Is Blue as Lead Actress
+INSERT INTO worked_on VALUES(604, 767, 'Lead Actress');  -- Deborah Kerr worked on From Here to Eternity as Lead Actress
+INSERT INTO worked_on VALUES(2335, 789, 'Lead Actress');  -- Leslie Caron worked on Lili as Lead Actress
+INSERT INTO worked_on VALUES(604, 790, 'Supporting Actress');  -- Donna Reed worked on From Here to Eternity as Supporting Actress
+INSERT INTO worked_on VALUES(2336, 776, 'Supporting Actress');  -- Thelma Ritter worked on Pickup on South Street as Supporting Actress
+INSERT INTO worked_on VALUES(2337, 723, 'Supporting Actress');  -- Marjorie Rambeau worked on Torch Song as Supporting Actress
+INSERT INTO worked_on VALUES(2338, 791, 'Supporting Actress');  -- Geraldine Page worked on Hondo as Supporting Actress
+INSERT INTO worked_on VALUES(2333, 792, 'Supporting Actress');  -- Grace Kelly worked on Mogambo as Supporting Actress
+INSERT INTO worked_on VALUES(2339, 752, 'Lead Actress');  -- Jane Wyman worked on Magnificent Obsession as Lead Actress
+INSERT INTO worked_on VALUES(2340, 112, 'Lead Actress');  -- Audrey Hepburn worked on Sabrina as Lead Actress
+INSERT INTO worked_on VALUES(2341, 793, 'Lead Actress');  -- Dorothy Dandridge worked on Carmen Jones as Lead Actress
+INSERT INTO worked_on VALUES(1983, 792, 'Lead Actress');  -- Grace Kelly worked on The Country Girl as Lead Actress
+INSERT INTO worked_on VALUES(2124, 794, 'Lead Actress');  -- Judy Garland worked on A Star Is Born as Lead Actress
+INSERT INTO worked_on VALUES(2342, 795, 'Supporting Actress');  -- Nina Foch worked on Executive Suite as Supporting Actress
+INSERT INTO worked_on VALUES(2343, 796, 'Supporting Actress');  -- Katy Jurado worked on Broken Lance as Supporting Actress
+INSERT INTO worked_on VALUES(1207, 797, 'Supporting Actress');  -- Eva Marie Saint worked on On the Waterfront as Supporting Actress
+INSERT INTO worked_on VALUES(2344, 798, 'Supporting Actress');  -- Jan Sterling worked on The High and the Mighty as Supporting Actress
+INSERT INTO worked_on VALUES(2344, 705, 'Supporting Actress');  -- Claire Trevor worked on The High and the Mighty as Supporting Actress
+INSERT INTO worked_on VALUES(1571, 21, 'Lead Actress');  -- Katharine Hepburn worked on Summertime as Lead Actress
+INSERT INTO worked_on VALUES(2345, 757, 'Lead Actress');  -- Susan Hayward worked on I'll Cry Tomorrow as Lead Actress
+INSERT INTO worked_on VALUES(2346, 772, 'Lead Actress');  -- Eleanor Parker worked on Interrupted Melody as Lead Actress
+INSERT INTO worked_on VALUES(1987, 737, 'Lead Actress');  -- Jennifer Jones worked on Love Is a Many-Splendored Thing as Lead Actress
+INSERT INTO worked_on VALUES(1989, 799, 'Lead Actress');  -- Anna Magnani worked on The Rose Tattoo as Lead Actress
+INSERT INTO worked_on VALUES(1989, 800, 'Supporting Actress');  -- Marisa Pavan worked on The Rose Tattoo as Supporting Actress
+INSERT INTO worked_on VALUES(1027, 801, 'Supporting Actress');  -- Betsy Blair worked on Marty as Supporting Actress
+INSERT INTO worked_on VALUES(497, 802, 'Supporting Actress');  -- Jo Van Fleet worked on East of Eden as Supporting Actress
+INSERT INTO worked_on VALUES(2347, 803, 'Supporting Actress');  -- Peggy Lee worked on Pete Kelly's Blues as Supporting Actress
+INSERT INTO worked_on VALUES(1344, 804, 'Supporting Actress');  -- Natalie Wood worked on Rebel without a Cause as Supporting Actress
+INSERT INTO worked_on VALUES(2348, 805, 'Lead Actress');  -- Carroll Baker worked on Baby Doll as Lead Actress
+INSERT INTO worked_on VALUES(2349, 806, 'Lead Actress');  -- Nancy Kelly worked on The Bad Seed as Lead Actress
+INSERT INTO worked_on VALUES(2350, 21, 'Lead Actress');  -- Katharine Hepburn worked on The Rainmaker as Lead Actress
+INSERT INTO worked_on VALUES(1991, 767, 'Lead Actress');  -- Deborah Kerr worked on The King and I as Lead Actress
+INSERT INTO worked_on VALUES(2351, 739, 'Lead Actress');  -- Ingrid Bergman worked on Anastasia as Lead Actress
+INSERT INTO worked_on VALUES(2349, 807, 'Supporting Actress');  -- Eileen Heckart worked on The Bad Seed as Supporting Actress
+INSERT INTO worked_on VALUES(633, 769, 'Supporting Actress');  -- Mercedes McCambridge worked on Giant as Supporting Actress
+INSERT INTO worked_on VALUES(2349, 808, 'Supporting Actress');  -- Patty McCormack worked on The Bad Seed as Supporting Actress
+INSERT INTO worked_on VALUES(1801, 809, 'Supporting Actress');  -- Dorothy Malone worked on Written on the Wind as Supporting Actress
+INSERT INTO worked_on VALUES(2348, 781, 'Supporting Actress');  -- Mildred Dunnock worked on Baby Doll as Supporting Actress
+INSERT INTO worked_on VALUES(2352, 810, 'Lead Actress');  -- Joanne Woodward worked on The Three Faces of Eve as Lead Actress
+INSERT INTO worked_on VALUES(2353, 811, 'Lead Actress');  -- Elizabeth Taylor worked on Raintree County as Lead Actress
+INSERT INTO worked_on VALUES(2133, 799, 'Lead Actress');  -- Anna Magnani worked on Wild Is the Wind as Lead Actress
+INSERT INTO worked_on VALUES(2354, 767, 'Lead Actress');  -- Deborah Kerr worked on Heaven Knows, Mr. Allison as Lead Actress
+INSERT INTO worked_on VALUES(1995, 812, 'Lead Actress');  -- Lana Turner worked on Peyton Place as Lead Actress
+INSERT INTO worked_on VALUES(1994, 768, 'Supporting Actress');  -- Elsa Lanchester worked on Witness for the Prosecution as Supporting Actress
+INSERT INTO worked_on VALUES(1995, 813, 'Supporting Actress');  -- Hope Lange worked on Peyton Place as Supporting Actress
+INSERT INTO worked_on VALUES(1412, 814, 'Supporting Actress');  -- Miyoshi Umeki worked on Sayonara as Supporting Actress
+INSERT INTO worked_on VALUES(2355, 815, 'Supporting Actress');  -- Carolyn Jones worked on The Bachelor Party as Supporting Actress
+INSERT INTO worked_on VALUES(1995, 816, 'Supporting Actress');  -- Diane Varsi worked on Peyton Place as Supporting Actress
+INSERT INTO worked_on VALUES(1998, 733, 'Lead Actress');  -- Rosalind Russell worked on Auntie Mame as Lead Actress
+INSERT INTO worked_on VALUES(1999, 767, 'Lead Actress');  -- Deborah Kerr worked on Separate Tables as Lead Actress
+INSERT INTO worked_on VALUES(2356, 757, 'Lead Actress');  -- Susan Hayward worked on I Want To Live! as Lead Actress
+INSERT INTO worked_on VALUES(298, 811, 'Lead Actress');  -- Elizabeth Taylor worked on Cat on a Hot Tin Roof as Lead Actress
+INSERT INTO worked_on VALUES(2137, 817, 'Lead Actress');  -- Shirley MacLaine worked on Some Came Running as Lead Actress
+INSERT INTO worked_on VALUES(1999, 708, 'Supporting Actress');  -- Wendy Hiller worked on Separate Tables as Supporting Actress
+INSERT INTO worked_on VALUES(2357, 818, 'Supporting Actress');  -- Maureen Stapleton worked on Lonelyhearts as Supporting Actress
+INSERT INTO worked_on VALUES(2137, 819, 'Supporting Actress');  -- Martha Hyer worked on Some Came Running as Supporting Actress
+INSERT INTO worked_on VALUES(1996, 820, 'Supporting Actress');  -- Cara Williams worked on The Defiant Ones as Supporting Actress
+INSERT INTO worked_on VALUES(1998, 821, 'Supporting Actress');  -- Peggy Cass worked on Auntie Mame as Supporting Actress
+INSERT INTO worked_on VALUES(2000, 822, 'Lead Actress');  -- Simone Signoret worked on Room at the Top as Lead Actress
+INSERT INTO worked_on VALUES(2358, 21, 'Lead Actress');  -- Katharine Hepburn worked on Suddenly, Last Summer as Lead Actress
+INSERT INTO worked_on VALUES(2002, 112, 'Lead Actress');  -- Audrey Hepburn worked on The Nun's Story as Lead Actress
+INSERT INTO worked_on VALUES(2359, 823, 'Lead Actress');  -- Doris Day worked on Pillow Talk as Lead Actress
+INSERT INTO worked_on VALUES(2358, 811, 'Lead Actress');  -- Elizabeth Taylor worked on Suddenly, Last Summer as Lead Actress
+INSERT INTO worked_on VALUES(2000, 824, 'Supporting Actress');  -- Hermione Baddeley worked on Room at the Top as Supporting Actress
+INSERT INTO worked_on VALUES(2360, 825, 'Supporting Actress');  -- Juanita Moore worked on Imitation of Life as Supporting Actress
+INSERT INTO worked_on VALUES(2001, 777, 'Supporting Actress');  -- Shelley Winters worked on The Diary of Anne Frank as Supporting Actress
+INSERT INTO worked_on VALUES(2359, 776, 'Supporting Actress');  -- Thelma Ritter worked on Pillow Talk as Supporting Actress
+INSERT INTO worked_on VALUES(2360, 826, 'Supporting Actress');  -- Susan Kohner worked on Imitation of Life as Supporting Actress
+INSERT INTO worked_on VALUES(2361, 811, 'Lead Actress');  -- Elizabeth Taylor worked on Butterfield 8 as Lead Actress
+INSERT INTO worked_on VALUES(2362, 827, 'Lead Actress');  -- Melina Mercouri worked on Never on Sunday as Lead Actress
+INSERT INTO worked_on VALUES(2004, 767, 'Lead Actress');  -- Deborah Kerr worked on The Sundowners as Lead Actress
+INSERT INTO worked_on VALUES(107, 817, 'Lead Actress');  -- Shirley MacLaine worked on The Apartment as Lead Actress
+INSERT INTO worked_on VALUES(2364, 714, 'Lead Actress');  -- Greer Garson worked on Sunrise at Campobello as Lead Actress
+INSERT INTO worked_on VALUES(1312, 828, 'Supporting Actress');  -- Janet Leigh worked on Psycho as Supporting Actress
+INSERT INTO worked_on VALUES(2006, 829, 'Supporting Actress');  -- Mary Ure worked on Sons and Lovers as Supporting Actress
+INSERT INTO worked_on VALUES(2004, 830, 'Supporting Actress');  -- Glynis Johns worked on The Sundowners as Supporting Actress
+INSERT INTO worked_on VALUES(2365, 831, 'Supporting Actress');  -- Shirley Knight worked on The Dark at the Top of the Stairs as Supporting Actress
+INSERT INTO worked_on VALUES(510, 832, 'Supporting Actress');  -- Shirley Jones worked on Elmer Gantry as Supporting Actress
+INSERT INTO worked_on VALUES(778, 833, 'Lead Actress');  -- Piper Laurie worked on The Hustler as Lead Actress
+INSERT INTO worked_on VALUES(2366, 804, 'Lead Actress');  -- Natalie Wood worked on Splendor in the Grass as Lead Actress
+INSERT INTO worked_on VALUES(2367, 834, 'Lead Actress');  -- Sophia Loren worked on Two Women as Lead Actress
+INSERT INTO worked_on VALUES(2368, 791, 'Lead Actress');  -- Geraldine Page worked on Summer and Smoke as Lead Actress
+INSERT INTO worked_on VALUES(251, 112, 'Lead Actress');  -- Audrey Hepburn worked on Breakfast at Tiffany's as Lead Actress
+INSERT INTO worked_on VALUES(2008, 794, 'Supporting Actress');  -- Judy Garland worked on Judgment at Nuremberg as Supporting Actress
+INSERT INTO worked_on VALUES(1750, 835, 'Supporting Actress');  -- Rita Moreno worked on West Side Story as Supporting Actress
+INSERT INTO worked_on VALUES(2369, 836, 'Supporting Actress');  -- Lotte Lenya worked on The Roman Spring of Mrs. Stone as Supporting Actress
+INSERT INTO worked_on VALUES(2370, 710, 'Supporting Actress');  -- Fay Bainter worked on The Children's Hour as Supporting Actress
+INSERT INTO worked_on VALUES(2368, 837, 'Supporting Actress');  -- Una Merkel worked on Summer and Smoke as Supporting Actress
+INSERT INTO worked_on VALUES(415, 838, 'Lead Actress');  -- Lee Remick worked on Days of Wine and Roses as Lead Actress
+INSERT INTO worked_on VALUES(1754, 113, 'Lead Actress');  -- Bette Davis worked on What Ever Happened to Baby Jane? as Lead Actress
+INSERT INTO worked_on VALUES(2371, 21, 'Lead Actress');  -- Katharine Hepburn worked on Long Day's Journey into Night as Lead Actress
+INSERT INTO worked_on VALUES(1082, 169, 'Lead Actress');  -- Anne Bancroft worked on The Miracle Worker as Lead Actress
+INSERT INTO worked_on VALUES(2151, 791, 'Lead Actress');  -- Geraldine Page worked on Sweet Bird of Youth as Lead Actress
+INSERT INTO worked_on VALUES(1082, 839, 'Supporting Actress');  -- Patty Duke worked on The Miracle Worker as Supporting Actress
+INSERT INTO worked_on VALUES(2151, 831, 'Supporting Actress');  -- Shirley Knight worked on Sweet Bird of Youth as Supporting Actress
+INSERT INTO worked_on VALUES(2149, 776, 'Supporting Actress');  -- Thelma Ritter worked on Birdman of Alcatraz as Supporting Actress
+INSERT INTO worked_on VALUES(1014, 744, 'Supporting Actress');  -- Angela Lansbury worked on The Manchurian Candidate as Supporting Actress
+INSERT INTO worked_on VALUES(1642, 840, 'Supporting Actress');  -- Mary Badham worked on To Kill a Mockingbird as Supporting Actress
+INSERT INTO worked_on VALUES(2153, 841, 'Lead Actress');  -- Rachel Roberts worked on This Sporting Life as Lead Actress
+INSERT INTO worked_on VALUES(2154, 842, 'Lead Actress');  -- Patricia Neal worked on Hud as Lead Actress
+INSERT INTO worked_on VALUES(2372, 789, 'Lead Actress');  -- Leslie Caron worked on The L-Shaped Room as Lead Actress
+INSERT INTO worked_on VALUES(2373, 804, 'Lead Actress');  -- Natalie Wood worked on Love with the Proper Stranger as Lead Actress
+INSERT INTO worked_on VALUES(2374, 817, 'Lead Actress');  -- Shirley MacLaine worked on Irma La Douce as Lead Actress
+INSERT INTO worked_on VALUES(2375, 843, 'Supporting Actress');  -- Margaret Rutherford worked on The V.I.P.s as Supporting Actress
+INSERT INTO worked_on VALUES(2012, 844, 'Supporting Actress');  -- Lilia Skala worked on Lilies of the Field as Supporting Actress
+INSERT INTO worked_on VALUES(2014, 845, 'Supporting Actress');  -- Edith Evans worked on Tom Jones as Supporting Actress
+INSERT INTO worked_on VALUES(2014, 846, 'Supporting Actress');  -- Joyce Redman worked on Tom Jones as Supporting Actress
+INSERT INTO worked_on VALUES(2014, 847, 'Supporting Actress');  -- Diane Cilento worked on Tom Jones as Supporting Actress
+INSERT INTO worked_on VALUES(2376, 848, 'Lead Actress');  -- Kim Stanley worked on Seance on a Wet Afternoon as Lead Actress
+INSERT INTO worked_on VALUES(2377, 849, 'Lead Actress');  -- Debbie Reynolds worked on The Unsinkable Molly Brown as Lead Actress
+INSERT INTO worked_on VALUES(2378, 169, 'Lead Actress');  -- Anne Bancroft worked on The Pumpkin Eater as Lead Actress
+INSERT INTO worked_on VALUES(2379, 834, 'Lead Actress');  -- Sophia Loren worked on Marriage Italian Style as Lead Actress
+INSERT INTO worked_on VALUES(1029, 850, 'Lead Actress');  -- Julie Andrews worked on Mary Poppins as Lead Actress
+INSERT INTO worked_on VALUES(2016, 851, 'Supporting Actress');  -- Lila Kedrova worked on Zorba the Greek as Supporting Actress
+INSERT INTO worked_on VALUES(2380, 735, 'Supporting Actress');  -- Agnes Moorehead worked on Hush...Hush, Sweet Charlotte as Supporting Actress
+INSERT INTO worked_on VALUES(2381, 845, 'Supporting Actress');  -- Edith Evans worked on The Chalk Garden as Supporting Actress
+INSERT INTO worked_on VALUES(1138, 736, 'Supporting Actress');  -- Gladys Cooper worked on My Fair Lady as Supporting Actress
+INSERT INTO worked_on VALUES(2382, 852, 'Supporting Actress');  -- Grayson Hall worked on The Night of the Iguana as Supporting Actress
+INSERT INTO worked_on VALUES(2018, 822, 'Lead Actress');  -- Simone Signoret worked on Ship of Fools as Lead Actress
+INSERT INTO worked_on VALUES(2383, 853, 'Lead Actress');  -- Elizabeth Hartman worked on A Patch of Blue as Lead Actress
+INSERT INTO worked_on VALUES(1522, 850, 'Lead Actress');  -- Julie Andrews worked on The Sound of Music as Lead Actress
+INSERT INTO worked_on VALUES(2384, 854, 'Lead Actress');  -- Samantha Eggar worked on The Collector as Lead Actress
+INSERT INTO worked_on VALUES(406, 855, 'Lead Actress');  -- Julie Christie worked on Darling as Lead Actress
+INSERT INTO worked_on VALUES(2162, 856, 'Supporting Actress');  -- Maggie Smith worked on Othello as Supporting Actress
+INSERT INTO worked_on VALUES(1522, 857, 'Supporting Actress');  -- Peggy Wood worked on The Sound of Music as Supporting Actress
+INSERT INTO worked_on VALUES(2162, 846, 'Supporting Actress');  -- Joyce Redman worked on Othello as Supporting Actress
+INSERT INTO worked_on VALUES(2385, 858, 'Supporting Actress');  -- Ruth Gordon worked on Inside Daisy Clover as Supporting Actress
+INSERT INTO worked_on VALUES(2383, 777, 'Supporting Actress');  -- Shelley Winters worked on A Patch of Blue as Supporting Actress
+INSERT INTO worked_on VALUES(1772, 811, 'Lead Actress');  -- Elizabeth Taylor worked on Who's Afraid of Virginia Woolf? as Lead Actress
+INSERT INTO worked_on VALUES(2386, 859, 'Lead Actress');  -- Ida Kaminska worked on The Shop on Main Street as Lead Actress
+INSERT INTO worked_on VALUES(2166, 860, 'Lead Actress');  -- Lynn Redgrave worked on Georgy Girl as Lead Actress
+INSERT INTO worked_on VALUES(2387, 861, 'Lead Actress');  -- Vanessa Redgrave worked on Morgan! as Lead Actress
+INSERT INTO worked_on VALUES(2388, 862, 'Lead Actress');  -- Anouk Aimee worked on A Man and a Woman as Lead Actress
+INSERT INTO worked_on VALUES(52, 863, 'Supporting Actress');  -- Vivien Merchant worked on Alfie as Supporting Actress
+INSERT INTO worked_on VALUES(2389, 864, 'Supporting Actress');  -- Jocelyne Lagarde worked on Hawaii as Supporting Actress
+INSERT INTO worked_on VALUES(1772, 865, 'Supporting Actress');  -- Sandy Dennis worked on Who's Afraid of Virginia Woolf? as Supporting Actress
+INSERT INTO worked_on VALUES(2021, 708, 'Supporting Actress');  -- Wendy Hiller worked on A Man for All Seasons as Supporting Actress
+INSERT INTO worked_on VALUES(2390, 791, 'Supporting Actress');  -- Geraldine Page worked on You're a Big Boy Now as Supporting Actress
+INSERT INTO worked_on VALUES(2391, 845, 'Lead Actress');  -- Edith Evans worked on The Whisperers as Lead Actress
+INSERT INTO worked_on VALUES(696, 21, 'Lead Actress');  -- Katharine Hepburn worked on Guess Who's Coming to Dinner as Lead Actress
+INSERT INTO worked_on VALUES(234, 100, 'Lead Actress');  -- Faye Dunaway worked on Bonnie and Clyde as Lead Actress
+INSERT INTO worked_on VALUES(672, 169, 'Lead Actress');  -- Anne Bancroft worked on The Graduate as Lead Actress
+INSERT INTO worked_on VALUES(2392, 112, 'Lead Actress');  -- Audrey Hepburn worked on Wait until Dark as Lead Actress
+INSERT INTO worked_on VALUES(2393, 866, 'Supporting Actress');  -- Mildred Natwick worked on Barefoot in the Park as Supporting Actress
+INSERT INTO worked_on VALUES(234, 867, 'Supporting Actress');  -- Estelle Parsons worked on Bonnie and Clyde as Supporting Actress
+INSERT INTO worked_on VALUES(696, 868, 'Supporting Actress');  -- Beah Richards worked on Guess Who's Coming to Dinner as Supporting Actress
+INSERT INTO worked_on VALUES(2394, 869, 'Supporting Actress');  -- Carol Channing worked on Thoroughly Modern Millie as Supporting Actress
+INSERT INTO worked_on VALUES(672, 870, 'Supporting Actress');  -- Katharine Ross worked on The Graduate as Supporting Actress
+INSERT INTO worked_on VALUES(2395, 861, 'Lead Actress');  -- Vanessa Redgrave worked on Isadora as Lead Actress
+INSERT INTO worked_on VALUES(2026, 810, 'Lead Actress');  -- Joanne Woodward worked on Rachel, Rachel as Lead Actress
+INSERT INTO worked_on VALUES(2024, 871, 'Lead Actress');  -- Barbra Streisand worked on Funny Girl as Lead Actress
+INSERT INTO worked_on VALUES(2171, 842, 'Lead Actress');  -- Patricia Neal worked on The Subject Was Roses as Lead Actress
+INSERT INTO worked_on VALUES(2025, 21, 'Lead Actress');  -- Katharine Hepburn worked on The Lion in Winter as Lead Actress
+INSERT INTO worked_on VALUES(1391, 858, 'Supporting Actress');  -- Ruth Gordon worked on Rosemary's Baby as Supporting Actress
+INSERT INTO worked_on VALUES(542, 872, 'Supporting Actress');  -- Lynn Carlin worked on Faces as Supporting Actress
+INSERT INTO worked_on VALUES(2026, 867, 'Supporting Actress');  -- Estelle Parsons worked on Rachel, Rachel as Supporting Actress
+INSERT INTO worked_on VALUES(2168, 873, 'Supporting Actress');  -- Sondra Locke worked on The Heart Is a Lonely Hunter as Supporting Actress
+INSERT INTO worked_on VALUES(2024, 874, 'Supporting Actress');  -- Kay Medford worked on Funny Girl as Supporting Actress
+INSERT INTO worked_on VALUES(2396, 875, 'Lead Actress');  -- Liza Minnelli worked on The Sterile Cuckoo as Lead Actress
+INSERT INTO worked_on VALUES(2397, 763, 'Lead Actress');  -- Jean Simmons worked on The Happy Ending as Lead Actress
+INSERT INTO worked_on VALUES(2027, 876, 'Lead Actress');  -- Genevieve Bujold worked on Anne of the Thousand Days as Lead Actress
+INSERT INTO worked_on VALUES(2398, 856, 'Lead Actress');  -- Maggie Smith worked on The Prime of Miss Jean Brodie as Lead Actress
+INSERT INTO worked_on VALUES(2175, 67, 'Lead Actress');  -- Jane Fonda worked on They Shoot Horses, Don't They? as Lead Actress
+INSERT INTO worked_on VALUES(2399, 877, 'Supporting Actress');  -- Goldie Hawn worked on Cactus Flower as Supporting Actress
+INSERT INTO worked_on VALUES(2400, 878, 'Supporting Actress');  -- Catherine Burns worked on Last Summer as Supporting Actress
+INSERT INTO worked_on VALUES(2174, 879, 'Supporting Actress');  -- Dyan Cannon worked on Bob & Carol & Ted & Alice as Supporting Actress
+INSERT INTO worked_on VALUES(1066, 880, 'Supporting Actress');  -- Sylvia Miles worked on Midnight Cowboy as Supporting Actress
+INSERT INTO worked_on VALUES(2175, 881, 'Supporting Actress');  -- Susannah York worked on They Shoot Horses, Don't They? as Supporting Actress
+INSERT INTO worked_on VALUES(2401, 882, 'Lead Actress');  -- Carrie Snodgress worked on Diary of a Mad Housewife as Lead Actress
+INSERT INTO worked_on VALUES(2180, 883, 'Lead Actress');  -- Sarah Miles worked on Ryan's Daughter as Lead Actress
+INSERT INTO worked_on VALUES(987, 884, 'Lead Actress');  -- Ali MacGraw worked on Love Story as Lead Actress
+INSERT INTO worked_on VALUES(2177, 885, 'Lead Actress');  -- Jane Alexander worked on The Great White Hope as Lead Actress
+INSERT INTO worked_on VALUES(2402, 886, 'Lead Actress');  -- Glenda Jackson worked on Women in Love as Lead Actress
+INSERT INTO worked_on VALUES(49, 818, 'Supporting Actress');  -- Maureen Stapleton worked on Airport as Supporting Actress
+INSERT INTO worked_on VALUES(1031, 887, 'Supporting Actress');  -- Sally Kellerman worked on M*A*S*H as Supporting Actress
+INSERT INTO worked_on VALUES(2403, 780, 'Supporting Actress');  -- Lee Grant worked on The Landlord as Supporting Actress
+INSERT INTO worked_on VALUES(49, 687, 'Supporting Actress');  -- Helen Hayes worked on Airport as Supporting Actress
+INSERT INTO worked_on VALUES(576, 888, 'Supporting Actress');  -- Karen Black worked on Five Easy Pieces as Supporting Actress
+INSERT INTO worked_on VALUES(2404, 861, 'Lead Actress');  -- Vanessa Redgrave worked on Mary, Queen of Scots as Lead Actress
+INSERT INTO worked_on VALUES(1572, 886, 'Lead Actress');  -- Glenda Jackson worked on Sunday Bloody Sunday as Lead Actress
+INSERT INTO worked_on VALUES(2030, 889, 'Lead Actress');  -- Janet Suzman worked on Nicholas and Alexandra as Lead Actress
+INSERT INTO worked_on VALUES(1044, 855, 'Lead Actress');  -- Julie Christie worked on McCabe & Mrs. Miller as Lead Actress
+INSERT INTO worked_on VALUES(2405, 67, 'Lead Actress');  -- Jane Fonda worked on Klute as Lead Actress
+INSERT INTO worked_on VALUES(922, 145, 'Supporting Actress');  -- Ellen Burstyn worked on The Last Picture Show as Supporting Actress
+INSERT INTO worked_on VALUES(2406, 890, 'Supporting Actress');  -- Barbara Harris worked on Who Is Harry Kellerman and Why Is He Saying Those Terrible Things about Me? as Supporting Actress
+INSERT INTO worked_on VALUES(922, 891, 'Supporting Actress');  -- Cloris Leachman worked on The Last Picture Show as Supporting Actress
+INSERT INTO worked_on VALUES(2407, 892, 'Supporting Actress');  -- Ann-Margret worked on Carnal Knowledge as Supporting Actress
+INSERT INTO worked_on VALUES(2408, 893, 'Supporting Actress');  -- Margaret Leighton worked on The Go-Between as Supporting Actress
+INSERT INTO worked_on VALUES(1828, 875, 'Lead Actress');  -- Liza Minnelli worked on Cabaret as Lead Actress
+INSERT INTO worked_on VALUES(2409, 894, 'Lead Actress');  -- Diana Ross worked on Lady Sings the Blues as Lead Actress
+INSERT INTO worked_on VALUES(2410, 856, 'Lead Actress');  -- Maggie Smith worked on Travels with My Aunt as Lead Actress
+INSERT INTO worked_on VALUES(2033, 895, 'Lead Actress');  -- Liv Ullmann worked on The Emigrants as Lead Actress
+INSERT INTO worked_on VALUES(2032, 896, 'Lead Actress');  -- Cicely Tyson worked on Sounder as Lead Actress
+INSERT INTO worked_on VALUES(2411, 897, 'Supporting Actress');  -- Susan Tyrrell worked on Fat City as Supporting Actress
+INSERT INTO worked_on VALUES(2412, 777, 'Supporting Actress');  -- Shelley Winters worked on The Poseidon Adventure as Supporting Actress
+INSERT INTO worked_on VALUES(2413, 791, 'Supporting Actress');  -- Geraldine Page worked on Pete 'n' Tillie as Supporting Actress
+INSERT INTO worked_on VALUES(2414, 807, 'Supporting Actress');  -- Eileen Heckart worked on Butterflies Are Free as Supporting Actress
+INSERT INTO worked_on VALUES(2184, 898, 'Supporting Actress');  -- Jeannie Berlin worked on The Heartbreak Kid as Supporting Actress
+INSERT INTO worked_on VALUES(2415, 871, 'Lead Actress');  -- Barbra Streisand worked on The Way We Were as Lead Actress
+INSERT INTO worked_on VALUES(2034, 145, 'Lead Actress');  -- Ellen Burstyn worked on The Exorcist as Lead Actress
+INSERT INTO worked_on VALUES(1648, 886, 'Lead Actress');  -- Glenda Jackson worked on A Touch of Class as Lead Actress
+INSERT INTO worked_on VALUES(2416, 899, 'Lead Actress');  -- Marsha Mason worked on Cinderella Liberty as Lead Actress
+INSERT INTO worked_on VALUES(2417, 810, 'Lead Actress');  -- Joanne Woodward worked on Summer Wishes, Winter Dreams as Lead Actress
+INSERT INTO worked_on VALUES(82, 900, 'Supporting Actress');  -- Candy Clark worked on American Graffiti as Supporting Actress
+INSERT INTO worked_on VALUES(1234, 901, 'Supporting Actress');  -- Tatum O'Neal worked on Paper Moon as Supporting Actress
+INSERT INTO worked_on VALUES(2417, 902, 'Supporting Actress');  -- Sylvia Sidney worked on Summer Wishes, Winter Dreams as Supporting Actress
+INSERT INTO worked_on VALUES(2034, 903, 'Supporting Actress');  -- Linda Blair worked on The Exorcist as Supporting Actress
+INSERT INTO worked_on VALUES(1234, 904, 'Supporting Actress');  -- Madeline Kahn worked on Paper Moon as Supporting Actress
+INSERT INTO worked_on VALUES(2418, 905, 'Lead Actress');  -- Diahann Carroll worked on Claudine as Lead Actress
+INSERT INTO worked_on VALUES(56, 145, 'Lead Actress');  -- Ellen Burstyn worked on Alice Doesn't Live Here Anymore as Lead Actress
+INSERT INTO worked_on VALUES(323, 100, 'Lead Actress');  -- Faye Dunaway worked on Chinatown as Lead Actress
+INSERT INTO worked_on VALUES(1792, 906, 'Lead Actress');  -- Gena Rowlands worked on A Woman under the Influence as Lead Actress
+INSERT INTO worked_on VALUES(944, 907, 'Lead Actress');  -- Valerie Perrine worked on Lenny as Lead Actress
+INSERT INTO worked_on VALUES(2189, 739, 'Supporting Actress');  -- Ingrid Bergman worked on Murder on the Orient Express as Supporting Actress
+INSERT INTO worked_on VALUES(56, 908, 'Supporting Actress');  -- Diane Ladd worked on Alice Doesn't Live Here Anymore as Supporting Actress
+INSERT INTO worked_on VALUES(2419, 904, 'Supporting Actress');  -- Madeline Kahn worked on Blazing Saddles as Supporting Actress
+INSERT INTO worked_on VALUES(412, 909, 'Supporting Actress');  -- Valentina Cortese worked on Day for Night as Supporting Actress
+INSERT INTO worked_on VALUES(648, 910, 'Supporting Actress');  -- Talia Shire worked on The Godfather Part II as Supporting Actress
+INSERT INTO worked_on VALUES(2420, 911, 'Lead Actress');  -- Carol Kane worked on Hester Street as Lead Actress
+INSERT INTO worked_on VALUES(1210, 912, 'Lead Actress');  -- Louise Fletcher worked on One Flew over the Cuckoo's Nest as Lead Actress
+INSERT INTO worked_on VALUES(2421, 886, 'Lead Actress');  -- Glenda Jackson worked on Hedda as Lead Actress
+INSERT INTO worked_on VALUES(2422, 892, 'Lead Actress');  -- Ann-Margret worked on Tommy as Lead Actress
+INSERT INTO worked_on VALUES(2423, 913, 'Lead Actress');  -- Isabelle Adjani worked on The Story of Adele H. as Lead Actress
+INSERT INTO worked_on VALUES(2424, 914, 'Supporting Actress');  -- Brenda Vaccaro worked on Once Is Not Enough as Supporting Actress
+INSERT INTO worked_on VALUES(2425, 880, 'Supporting Actress');  -- Sylvia Miles worked on Farewell, My Lovely as Supporting Actress
+INSERT INTO worked_on VALUES(1159, 915, 'Supporting Actress');  -- Lily Tomlin worked on Nashville as Supporting Actress
+INSERT INTO worked_on VALUES(1159, 916, 'Supporting Actress');  -- Ronee Blakley worked on Nashville as Supporting Actress
+INSERT INTO worked_on VALUES(2195, 780, 'Supporting Actress');  -- Lee Grant worked on Shampoo as Supporting Actress
+INSERT INTO worked_on VALUES(1166, 100, 'Lead Actress');  -- Faye Dunaway worked on Network as Lead Actress
+INSERT INTO worked_on VALUES(2426, 895, 'Lead Actress');  -- Liv Ullmann worked on Face to Face as Lead Actress
+INSERT INTO worked_on VALUES(2427, 917, 'Lead Actress');  -- Marie-Christine Barrault worked on Cousin, Cousine as Lead Actress
+INSERT INTO worked_on VALUES(1380, 910, 'Lead Actress');  -- Talia Shire worked on Rocky as Lead Actress
+INSERT INTO worked_on VALUES(2428, 918, 'Lead Actress');  -- Sissy Spacek worked on Carrie as Lead Actress
+INSERT INTO worked_on VALUES(2428, 833, 'Supporting Actress');  -- Piper Laurie worked on Carrie as Supporting Actress
+INSERT INTO worked_on VALUES(1166, 919, 'Supporting Actress');  -- Beatrice Straight worked on Network as Supporting Actress
+INSERT INTO worked_on VALUES(71, 885, 'Supporting Actress');  -- Jane Alexander worked on All the President's Men as Supporting Actress
+INSERT INTO worked_on VALUES(1602, 99, 'Supporting Actress');  -- Jodie Foster worked on Taxi Driver as Supporting Actress
+INSERT INTO worked_on VALUES(2429, 780, 'Supporting Actress');  -- Lee Grant worked on Voyage of the Damned as Supporting Actress
+INSERT INTO worked_on VALUES(1680, 817, 'Lead Actress');  -- Shirley MacLaine worked on The Turning Point as Lead Actress
+INSERT INTO worked_on VALUES(102, 55, 'Lead Actress');  -- Diane Keaton worked on Annie Hall as Lead Actress
+INSERT INTO worked_on VALUES(868, 67, 'Lead Actress');  -- Jane Fonda worked on Julia as Lead Actress
+INSERT INTO worked_on VALUES(1680, 169, 'Lead Actress');  -- Anne Bancroft worked on The Turning Point as Lead Actress
+INSERT INTO worked_on VALUES(663, 899, 'Lead Actress');  -- Marsha Mason worked on The Goodbye Girl as Lead Actress
+INSERT INTO worked_on VALUES(868, 861, 'Supporting Actress');  -- Vanessa Redgrave worked on Julia as Supporting Actress
+INSERT INTO worked_on VALUES(2430, 920, 'Supporting Actress');  -- Tuesday Weld worked on Looking for Mr. Goodbar as Supporting Actress
+INSERT INTO worked_on VALUES(1680, 921, 'Supporting Actress');  -- Leslie Browne worked on The Turning Point as Supporting Actress
+INSERT INTO worked_on VALUES(663, 922, 'Supporting Actress');  -- Quinn Cummings worked on The Goodbye Girl as Supporting Actress
+INSERT INTO worked_on VALUES(348, 923, 'Supporting Actress');  -- Melinda Dillon worked on Close Encounters of the Third Kind as Supporting Actress
+INSERT INTO worked_on VALUES(131, 739, 'Lead Actress');  -- Ingrid Bergman worked on Autumn Sonata as Lead Actress
+INSERT INTO worked_on VALUES(2036, 924, 'Lead Actress');  -- Jill Clayburgh worked on An Unmarried Woman as Lead Actress
+INSERT INTO worked_on VALUES(825, 791, 'Lead Actress');  -- Geraldine Page worked on Interiors as Lead Actress
+INSERT INTO worked_on VALUES(2431, 145, 'Lead Actress');  -- Ellen Burstyn worked on Same Time, Next Year as Lead Actress
+INSERT INTO worked_on VALUES(359, 67, 'Lead Actress');  -- Jane Fonda worked on Coming Home as Lead Actress
+INSERT INTO worked_on VALUES(438, 12, 'Supporting Actress');  -- Meryl Streep worked on The Deer Hunter as Supporting Actress
+INSERT INTO worked_on VALUES(731, 879, 'Supporting Actress');  -- Dyan Cannon worked on Heaven Can Wait as Supporting Actress
+INSERT INTO worked_on VALUES(825, 818, 'Supporting Actress');  -- Maureen Stapleton worked on Interiors as Supporting Actress
+INSERT INTO worked_on VALUES(2432, 856, 'Supporting Actress');  -- Maggie Smith worked on California Suite as Supporting Actress
+INSERT INTO worked_on VALUES(359, 925, 'Supporting Actress');  -- Penelope Milford worked on Coming Home as Supporting Actress
+INSERT INTO worked_on VALUES(322, 67, 'Lead Actress');  -- Jane Fonda worked on The China Syndrome as Lead Actress
+INSERT INTO worked_on VALUES(2433, 899, 'Lead Actress');  -- Marsha Mason worked on Chapter Two as Lead Actress
+INSERT INTO worked_on VALUES(2434, 924, 'Lead Actress');  -- Jill Clayburgh worked on Starting Over as Lead Actress
+INSERT INTO worked_on VALUES(1189, 926, 'Lead Actress');  -- Sally Field worked on Norma Rae as Lead Actress
+INSERT INTO worked_on VALUES(2202, 927, 'Lead Actress');  -- Bette Midler worked on The Rose as Lead Actress
+INSERT INTO worked_on VALUES(904, 12, 'Supporting Actress');  -- Meryl Streep worked on Kramer vs. Kramer as Supporting Actress
+INSERT INTO worked_on VALUES(904, 885, 'Supporting Actress');  -- Jane Alexander worked on Kramer vs. Kramer as Supporting Actress
+INSERT INTO worked_on VALUES(1016, 928, 'Supporting Actress');  -- Mariel Hemingway worked on Manhattan as Supporting Actress
+INSERT INTO worked_on VALUES(253, 929, 'Supporting Actress');  -- Barbara Barrie worked on Breaking Away as Supporting Actress
+INSERT INTO worked_on VALUES(2434, 930, 'Supporting Actress');  -- Candice Bergen worked on Starting Over as Supporting Actress
+INSERT INTO worked_on VALUES(351, 918, 'Lead Actress');  -- Sissy Spacek worked on Coal Miner's Daughter as Lead Actress
+INSERT INTO worked_on VALUES(1215, 931, 'Lead Actress');  -- Mary Tyler Moore worked on Ordinary People as Lead Actress
+INSERT INTO worked_on VALUES(2435, 906, 'Lead Actress');  -- Gena Rowlands worked on Gloria as Lead Actress
+INSERT INTO worked_on VALUES(2436, 145, 'Lead Actress');  -- Ellen Burstyn worked on Resurrection as Lead Actress
+INSERT INTO worked_on VALUES(2437, 877, 'Lead Actress');  -- Goldie Hawn worked on Private Benjamin as Lead Actress
+INSERT INTO worked_on VALUES(2207, 932, 'Supporting Actress');  -- Mary Steenburgen worked on Melvin and Howard as Supporting Actress
+INSERT INTO worked_on VALUES(2438, 933, 'Supporting Actress');  -- Diana Scarwid worked on Inside Moves as Supporting Actress
+INSERT INTO worked_on VALUES(2436, 934, 'Supporting Actress');  -- Eva Le Gallienne worked on Resurrection as Supporting Actress
+INSERT INTO worked_on VALUES(1329, 935, 'Supporting Actress');  -- Cathy Moriarty worked on Raging Bull as Supporting Actress
+INSERT INTO worked_on VALUES(2437, 936, 'Supporting Actress');  -- Eileen Brennan worked on Private Benjamin as Supporting Actress
+INSERT INTO worked_on VALUES(1205, 21, 'Lead Actress');  -- Katharine Hepburn worked on On Golden Pond as Lead Actress
+INSERT INTO worked_on VALUES(2439, 12, 'Lead Actress');  -- Meryl Streep worked on The French Lieutenant's Woman as Lead Actress
+INSERT INTO worked_on VALUES(1351, 55, 'Lead Actress');  -- Diane Keaton worked on Reds as Lead Actress
+INSERT INTO worked_on VALUES(123, 937, 'Lead Actress');  -- Susan Sarandon worked on Atlantic City as Lead Actress
+INSERT INTO worked_on VALUES(2210, 899, 'Lead Actress');  -- Marsha Mason worked on Only When I Laugh as Lead Actress
+INSERT INTO worked_on VALUES(2208, 923, 'Supporting Actress');  -- Melinda Dillon worked on Absence of Malice as Supporting Actress
+INSERT INTO worked_on VALUES(1205, 67, 'Supporting Actress');  -- Jane Fonda worked on On Golden Pond as Supporting Actress
+INSERT INTO worked_on VALUES(2211, 938, 'Supporting Actress');  -- Elizabeth McGovern worked on Ragtime as Supporting Actress
+INSERT INTO worked_on VALUES(1351, 818, 'Supporting Actress');  -- Maureen Stapleton worked on Reds as Supporting Actress
+INSERT INTO worked_on VALUES(2210, 939, 'Supporting Actress');  -- Joan Hackett worked on Only When I Laugh as Supporting Actress
+INSERT INTO worked_on VALUES(2213, 850, 'Lead Actress');  -- Julie Andrews worked on Victor Victoria as Lead Actress
+INSERT INTO worked_on VALUES(1520, 12, 'Lead Actress');  -- Meryl Streep worked on Sophie's Choice as Lead Actress
+INSERT INTO worked_on VALUES(2440, 940, 'Lead Actress');  -- Jessica Lange worked on Frances as Lead Actress
+INSERT INTO worked_on VALUES(1084, 918, 'Lead Actress');  -- Sissy Spacek worked on Missing as Lead Actress
+INSERT INTO worked_on VALUES(2215, 941, 'Lead Actress');  -- Debra Winger worked on An Officer and a Gentleman as Lead Actress
+INSERT INTO worked_on VALUES(1798, 942, 'Supporting Actress');  -- Glenn Close worked on The World According to Garp as Supporting Actress
+INSERT INTO worked_on VALUES(1644, 943, 'Supporting Actress');  -- Teri Garr worked on Tootsie as Supporting Actress
+INSERT INTO worked_on VALUES(1644, 940, 'Supporting Actress');  -- Jessica Lange worked on Tootsie as Supporting Actress
+INSERT INTO worked_on VALUES(2440, 848, 'Supporting Actress');  -- Kim Stanley worked on Frances as Supporting Actress
+INSERT INTO worked_on VALUES(2213, 944, 'Supporting Actress');  -- Lesley Ann Warren worked on Victor Victoria as Supporting Actress
+INSERT INTO worked_on VALUES(1482, 12, 'Lead Actress');  -- Meryl Streep worked on Silkwood as Lead Actress
+INSERT INTO worked_on VALUES(2216, 945, 'Lead Actress');  -- Julie Walters worked on Educating Rita as Lead Actress
+INSERT INTO worked_on VALUES(1613, 817, 'Lead Actress');  -- Shirley MacLaine worked on Terms of Endearment as Lead Actress
+INSERT INTO worked_on VALUES(1613, 941, 'Lead Actress');  -- Debra Winger worked on Terms of Endearment as Lead Actress
+INSERT INTO worked_on VALUES(2441, 885, 'Lead Actress');  -- Jane Alexander worked on Testament as Lead Actress
+INSERT INTO worked_on VALUES(2442, 946, 'Supporting Actress');  -- Linda Hunt worked on The Year of Living Dangerously as Supporting Actress
+INSERT INTO worked_on VALUES(2218, 947, 'Supporting Actress');  -- Alfre Woodard worked on Cross Creek as Supporting Actress
+INSERT INTO worked_on VALUES(2443, 948, 'Supporting Actress');  -- Amy Irving worked on Yentl as Supporting Actress
+INSERT INTO worked_on VALUES(195, 942, 'Supporting Actress');  -- Glenn Close worked on The Big Chill as Supporting Actress
+INSERT INTO worked_on VALUES(1482, 175, 'Supporting Actress');  -- Cher worked on Silkwood as Supporting Actress
+INSERT INTO worked_on VALUES(2444, 940, 'Lead Actress');  -- Jessica Lange worked on Country as Lead Actress
+INSERT INTO worked_on VALUES(2445, 918, 'Lead Actress');  -- Sissy Spacek worked on The River as Lead Actress
+INSERT INTO worked_on VALUES(2446, 861, 'Lead Actress');  -- Vanessa Redgrave worked on The Bostonians as Lead Actress
+INSERT INTO worked_on VALUES(1275, 926, 'Lead Actress');  -- Sally Field worked on Places in the Heart as Lead Actress
+INSERT INTO worked_on VALUES(2037, 949, 'Lead Actress');  -- Judy Davis worked on A Passage to India as Lead Actress
+INSERT INTO worked_on VALUES(2037, 950, 'Supporting Actress');  -- Peggy Ashcroft worked on A Passage to India as Supporting Actress
+INSERT INTO worked_on VALUES(2447, 791, 'Supporting Actress');  -- Geraldine Page worked on The Pope of Greenwich Village as Supporting Actress
+INSERT INTO worked_on VALUES(2448, 942, 'Supporting Actress');  -- Glenn Close worked on The Natural as Supporting Actress
+INSERT INTO worked_on VALUES(1275, 951, 'Supporting Actress');  -- Lindsay Crouse worked on Places in the Heart as Supporting Actress
+INSERT INTO worked_on VALUES(2449, 952, 'Supporting Actress');  -- Christine Lahti worked on Swing Shift as Supporting Actress
+INSERT INTO worked_on VALUES(2450, 791, 'Lead Actress');  -- Geraldine Page worked on The Trip to Bountiful as Lead Actress
+INSERT INTO worked_on VALUES(2451, 940, 'Lead Actress');  -- Jessica Lange worked on Sweet Dreams as Lead Actress
+INSERT INTO worked_on VALUES(2452, 169, 'Lead Actress');  -- Anne Bancroft worked on Agnes of God as Lead Actress
+INSERT INTO worked_on VALUES(1222, 12, 'Lead Actress');  -- Meryl Streep worked on Out of Africa as Lead Actress
+INSERT INTO worked_on VALUES(357, 953, 'Lead Actress');  -- Whoopi Goldberg worked on The Color Purple as Lead Actress
+INSERT INTO worked_on VALUES(2452, 954, 'Supporting Actress');  -- Meg Tilly worked on Agnes of God as Supporting Actress
+INSERT INTO worked_on VALUES(357, 955, 'Supporting Actress');  -- Margaret Avery worked on The Color Purple as Supporting Actress
+INSERT INTO worked_on VALUES(1308, 139, 'Supporting Actress');  -- Anjelica Huston worked on Prizzi's Honor as Supporting Actress
+INSERT INTO worked_on VALUES(357, 956, 'Supporting Actress');  -- Oprah Winfrey worked on The Color Purple as Supporting Actress
+INSERT INTO worked_on VALUES(2453, 957, 'Supporting Actress');  -- Amy Madigan worked on Twice in a Lifetime as Supporting Actress
+INSERT INTO worked_on VALUES(63, 958, 'Lead Actress');  -- Sigourney Weaver worked on Aliens as Lead Actress
+INSERT INTO worked_on VALUES(2454, 918, 'Lead Actress');  -- Sissy Spacek worked on Crimes of the Heart as Lead Actress
+INSERT INTO worked_on VALUES(2455, 67, 'Lead Actress');  -- Jane Fonda worked on The Morning After as Lead Actress
+INSERT INTO worked_on VALUES(319, 959, 'Lead Actress');  -- Marlee Matlin worked on Children of a Lesser God as Lead Actress
+INSERT INTO worked_on VALUES(1253, 960, 'Lead Actress');  -- Kathleen Turner worked on Peggy Sue Got Married as Lead Actress
+INSERT INTO worked_on VALUES(705, 961, 'Supporting Actress');  -- Dianne Wiest worked on Hannah and Her Sisters as Supporting Actress
+INSERT INTO worked_on VALUES(2454, 962, 'Supporting Actress');  -- Tess Harper worked on Crimes of the Heart as Supporting Actress
+INSERT INTO worked_on VALUES(319, 833, 'Supporting Actress');  -- Piper Laurie worked on Children of a Lesser God as Supporting Actress
+INSERT INTO worked_on VALUES(355, 963, 'Supporting Actress');  -- Mary Elizabeth Mastrantonio worked on The Color of Money as Supporting Actress
+INSERT INTO worked_on VALUES(1389, 856, 'Supporting Actress');  -- Maggie Smith worked on A Room with a View as Supporting Actress
+INSERT INTO worked_on VALUES(2456, 964, 'Lead Actress');  -- Sally Kirkland worked on Anna as Lead Actress
+INSERT INTO worked_on VALUES(1106, 175, 'Lead Actress');  -- Cher worked on Moonstruck as Lead Actress
+INSERT INTO worked_on VALUES(557, 942, 'Lead Actress');  -- Glenn Close worked on Fatal Attraction as Lead Actress
+INSERT INTO worked_on VALUES(2228, 12, 'Lead Actress');  -- Meryl Streep worked on Ironweed as Lead Actress
+INSERT INTO worked_on VALUES(264, 965, 'Lead Actress');  -- Holly Hunter worked on Broadcast News as Lead Actress
+INSERT INTO worked_on VALUES(2457, 966, 'Supporting Actress');  -- Norma Aleandro worked on Gaby: A True Story as Supporting Actress
+INSERT INTO worked_on VALUES(1106, 967, 'Supporting Actress');  -- Olympia Dukakis worked on Moonstruck as Supporting Actress
+INSERT INTO worked_on VALUES(557, 968, 'Supporting Actress');  -- Anne Archer worked on Fatal Attraction as Supporting Actress
+INSERT INTO worked_on VALUES(2458, 969, 'Supporting Actress');  -- Anne Ramsey worked on Throw Momma from the Train as Supporting Actress
+INSERT INTO worked_on VALUES(2459, 970, 'Supporting Actress');  -- Ann Sothern worked on The Whales of August as Supporting Actress
+INSERT INTO worked_on VALUES(1797, 971, 'Lead Actress');  -- Melanie Griffith worked on Working Girl as Lead Actress
+INSERT INTO worked_on VALUES(394, 12, 'Lead Actress');  -- Meryl Streep worked on A Cry in the Dark as Lead Actress
+INSERT INTO worked_on VALUES(401, 942, 'Lead Actress');  -- Glenn Close worked on Dangerous Liaisons as Lead Actress
+INSERT INTO worked_on VALUES(2460, 958, 'Lead Actress');  -- Sigourney Weaver worked on Gorillas in the Mist as Lead Actress
+INSERT INTO worked_on VALUES(33, 99, 'Lead Actress');  -- Jodie Foster worked on The Accused as Lead Actress
+INSERT INTO worked_on VALUES(32, 972, 'Supporting Actress');  -- Geena Davis worked on The Accidental Tourist as Supporting Actress
+INSERT INTO worked_on VALUES(1797, 148, 'Supporting Actress');  -- Joan Cusack worked on Working Girl as Supporting Actress
+INSERT INTO worked_on VALUES(401, 973, 'Supporting Actress');  -- Michelle Pfeiffer worked on Dangerous Liaisons as Supporting Actress
+INSERT INTO worked_on VALUES(1797, 958, 'Supporting Actress');  -- Sigourney Weaver worked on Working Girl as Supporting Actress
+INSERT INTO worked_on VALUES(1088, 47, 'Supporting Actress');  -- Frances McDormand worked on Mississippi Burning as Supporting Actress
+INSERT INTO worked_on VALUES(2461, 940, 'Lead Actress');  -- Jessica Lange worked on Music Box as Lead Actress
+INSERT INTO worked_on VALUES(488, 974, 'Lead Actress');  -- Jessica Tandy worked on Driving Miss Daisy as Lead Actress
+INSERT INTO worked_on VALUES(2462, 975, 'Lead Actress');  -- Pauline Collins worked on Shirley Valentine as Lead Actress
+INSERT INTO worked_on VALUES(2463, 973, 'Lead Actress');  -- Michelle Pfeiffer worked on The Fabulous Baker Boys as Lead Actress
+INSERT INTO worked_on VALUES(2464, 913, 'Lead Actress');  -- Isabelle Adjani worked on Camille Claudel as Lead Actress
+INSERT INTO worked_on VALUES(2465, 69, 'Supporting Actress');  -- Julia Roberts worked on Steel Magnolias as Supporting Actress
+INSERT INTO worked_on VALUES(1142, 976, 'Supporting Actress');  -- Brenda Fricker worked on My Left Foot as Supporting Actress
+INSERT INTO worked_on VALUES(516, 139, 'Supporting Actress');  -- Anjelica Huston worked on Enemies, A Love Story as Supporting Actress
+INSERT INTO worked_on VALUES(516, 977, 'Supporting Actress');  -- Lena Olin worked on Enemies, A Love Story as Supporting Actress
+INSERT INTO worked_on VALUES(2466, 961, 'Supporting Actress');  -- Dianne Wiest worked on Parenthood as Supporting Actress
+INSERT INTO worked_on VALUES(1083, 978, 'Lead Actress');  -- Kathy Bates worked on Misery as Lead Actress
+INSERT INTO worked_on VALUES(2467, 810, 'Lead Actress');  -- Joanne Woodward worked on Mr. & Mrs. Bridge as Lead Actress
+INSERT INTO worked_on VALUES(2468, 69, 'Lead Actress');  -- Julia Roberts worked on Pretty Woman as Lead Actress
+INSERT INTO worked_on VALUES(1291, 12, 'Lead Actress');  -- Meryl Streep worked on Postcards from the Edge as Lead Actress
+INSERT INTO worked_on VALUES(691, 139, 'Lead Actress');  -- Anjelica Huston worked on The Grifters as Lead Actress
+INSERT INTO worked_on VALUES(2469, 908, 'Supporting Actress');  -- Diane Ladd worked on Wild at Heart as Supporting Actress
+INSERT INTO worked_on VALUES(628, 953, 'Supporting Actress');  -- Whoopi Goldberg worked on Ghost as Supporting Actress
+INSERT INTO worked_on VALUES(400, 979, 'Supporting Actress');  -- Mary McDonnell worked on Dances With Wolves as Supporting Actress
+INSERT INTO worked_on VALUES(691, 140, 'Supporting Actress');  -- Annette Bening worked on The Grifters as Supporting Actress
+INSERT INTO worked_on VALUES(666, 980, 'Supporting Actress');  -- Lorraine Bracco worked on Goodfellas as Supporting Actress
+INSERT INTO worked_on VALUES(1618, 937, 'Lead Actress');  -- Susan Sarandon worked on Thelma & Louise as Lead Actress
+INSERT INTO worked_on VALUES(2470, 981, 'Lead Actress');  -- Laura Dern worked on Rambling Rose as Lead Actress
+INSERT INTO worked_on VALUES(2471, 927, 'Lead Actress');  -- Bette Midler worked on For the Boys as Lead Actress
+INSERT INTO worked_on VALUES(1618, 972, 'Lead Actress');  -- Geena Davis worked on Thelma & Louise as Lead Actress
+INSERT INTO worked_on VALUES(1480, 99, 'Lead Actress');  -- Jodie Foster worked on The Silence of the Lambs as Lead Actress
+INSERT INTO worked_on VALUES(2470, 908, 'Supporting Actress');  -- Diane Ladd worked on Rambling Rose as Supporting Actress
+INSERT INTO worked_on VALUES(2472, 974, 'Supporting Actress');  -- Jessica Tandy worked on Fried Green Tomatoes as Supporting Actress
+INSERT INTO worked_on VALUES(1302, 982, 'Supporting Actress');  -- Kate Nelligan worked on The Prince of Tides as Supporting Actress
+INSERT INTO worked_on VALUES(574, 983, 'Supporting Actress');  -- Mercedes Ruehl worked on The Fisher King as Supporting Actress
+INSERT INTO worked_on VALUES(286, 984, 'Supporting Actress');  -- Juliette Lewis worked on Cape Fear as Supporting Actress
+INSERT INTO worked_on VALUES(2473, 973, 'Lead Actress');  -- Michelle Pfeiffer worked on Love Field as Lead Actress
+INSERT INTO worked_on VALUES(2474, 985, 'Lead Actress');  -- Catherine Deneuve worked on Indochine as Lead Actress
+INSERT INTO worked_on VALUES(2475, 937, 'Lead Actress');  -- Susan Sarandon worked on Lorenzo's Oil as Lead Actress
+INSERT INTO worked_on VALUES(769, 94, 'Lead Actress');  -- Emma Thompson worked on Howards End as Lead Actress
+INSERT INTO worked_on VALUES(2476, 979, 'Lead Actress');  -- Mary McDonnell worked on Passion Fish as Lead Actress
+INSERT INTO worked_on VALUES(398, 986, 'Supporting Actress');  -- Miranda Richardson worked on Damage as Supporting Actress
+INSERT INTO worked_on VALUES(769, 861, 'Supporting Actress');  -- Vanessa Redgrave worked on Howards End as Supporting Actress
+INSERT INTO worked_on VALUES(1136, 987, 'Supporting Actress');  -- Marisa Tomei worked on My Cousin Vinny as Supporting Actress
+INSERT INTO worked_on VALUES(777, 949, 'Supporting Actress');  -- Judy Davis worked on Husbands and Wives as Supporting Actress
+INSERT INTO worked_on VALUES(2477, 988, 'Supporting Actress');  -- Joan Plowright worked on Enchanted April as Supporting Actress
+INSERT INTO worked_on VALUES(2478, 989, 'Lead Actress');  -- Stockard Channing worked on Six Degrees of Separation as Lead Actress
+INSERT INTO worked_on VALUES(1758, 990, 'Lead Actress');  -- Angela Bassett worked on What's Love Got to Do with It as Lead Actress
+INSERT INTO worked_on VALUES(1264, 965, 'Lead Actress');  -- Holly Hunter worked on The Piano as Lead Actress
+INSERT INTO worked_on VALUES(1355, 94, 'Lead Actress');  -- Emma Thompson worked on The Remains of the Day as Lead Actress
+INSERT INTO worked_on VALUES(1453, 941, 'Lead Actress');  -- Debra Winger worked on Shadowlands as Lead Actress
+INSERT INTO worked_on VALUES(1264, 991, 'Supporting Actress');  -- Anna Paquin worked on The Piano as Supporting Actress
+INSERT INTO worked_on VALUES(45, 992, 'Supporting Actress');  -- Winona Ryder worked on The Age of Innocence as Supporting Actress
+INSERT INTO worked_on VALUES(2479, 965, 'Supporting Actress');  -- Holly Hunter worked on The Firm as Supporting Actress
+INSERT INTO worked_on VALUES(808, 94, 'Supporting Actress');  -- Emma Thompson worked on In the Name of the Father as Supporting Actress
+INSERT INTO worked_on VALUES(2480, 993, 'Supporting Actress');  -- Rosie Perez worked on Fearless as Supporting Actress
+INSERT INTO worked_on VALUES(2481, 99, 'Lead Actress');  -- Jodie Foster worked on Nell as Lead Actress
+INSERT INTO worked_on VALUES(2482, 940, 'Lead Actress');  -- Jessica Lange worked on Blue Sky as Lead Actress
+INSERT INTO worked_on VALUES(970, 992, 'Lead Actress');  -- Winona Ryder worked on Little Women as Lead Actress
+INSERT INTO worked_on VALUES(2483, 937, 'Lead Actress');  -- Susan Sarandon worked on The Client as Lead Actress
+INSERT INTO worked_on VALUES(2484, 986, 'Lead Actress');  -- Miranda Richardson worked on Tom & Viv as Lead Actress
+INSERT INTO worked_on VALUES(2484, 994, 'Supporting Actress');  -- Rosemary Harris worked on Tom & Viv as Supporting Actress
+INSERT INTO worked_on VALUES(1315, 995, 'Supporting Actress');  -- Uma Thurman worked on Pulp Fiction as Supporting Actress
+INSERT INTO worked_on VALUES(277, 996, 'Supporting Actress');  -- Jennifer Tilly worked on Bullets over Broadway as Supporting Actress
+INSERT INTO worked_on VALUES(2241, 997, 'Supporting Actress');  -- Helen Mirren worked on The Madness of King George as Supporting Actress
+INSERT INTO worked_on VALUES(277, 961, 'Supporting Actress');  -- Dianne Wiest worked on Bullets over Broadway as Supporting Actress
+INSERT INTO worked_on VALUES(2485, 12, 'Lead Actress');  -- Meryl Streep worked on The Bridges of Madison County as Lead Actress
+INSERT INTO worked_on VALUES(293, 998, 'Lead Actress');  -- Sharon Stone worked on Casino as Lead Actress
+INSERT INTO worked_on VALUES(1438, 94, 'Lead Actress');  -- Emma Thompson worked on Sense and Sensibility as Lead Actress
+INSERT INTO worked_on VALUES(941, 999, 'Lead Actress');  -- Elisabeth Shue worked on Leaving Las Vegas as Lead Actress
+INSERT INTO worked_on VALUES(418, 937, 'Lead Actress');  -- Susan Sarandon worked on Dead Man Walking as Lead Actress
+INSERT INTO worked_on VALUES(112, 1000, 'Supporting Actress');  -- Kathleen Quinlan worked on Apollo 13 as Supporting Actress
+INSERT INTO worked_on VALUES(1438, 90, 'Supporting Actress');  -- Kate Winslet worked on Sense and Sensibility as Supporting Actress
+INSERT INTO worked_on VALUES(2486, 1001, 'Supporting Actress');  -- Mare Winningham worked on Georgia as Supporting Actress
+INSERT INTO worked_on VALUES(1184, 1002, 'Supporting Actress');  -- Joan Allen worked on Nixon as Supporting Actress
+INSERT INTO worked_on VALUES(1072, 1003, 'Supporting Actress');  -- Mira Sorvino worked on Mighty Aphrodite as Supporting Actress
+INSERT INTO worked_on VALUES(254, 1004, 'Lead Actress');  -- Emily Watson worked on Breaking the Waves as Lead Actress
+INSERT INTO worked_on VALUES(520, 1005, 'Lead Actress');  -- Kristin Scott Thomas worked on The English Patient as Lead Actress
+INSERT INTO worked_on VALUES(1437, 1006, 'Lead Actress');  -- Brenda Blethyn worked on Secrets & Lies as Lead Actress
+INSERT INTO worked_on VALUES(1028, 55, 'Lead Actress');  -- Diane Keaton worked on Marvin's Room as Lead Actress
+INSERT INTO worked_on VALUES(553, 47, 'Lead Actress');  -- Frances McDormand worked on Fargo as Lead Actress
+INSERT INTO worked_on VALUES(1437, 1007, 'Supporting Actress');  -- Marianne Jean-Baptiste worked on Secrets & Lies as Supporting Actress
+INSERT INTO worked_on VALUES(520, 1008, 'Supporting Actress');  -- Juliette Binoche worked on The English Patient as Supporting Actress
+INSERT INTO worked_on VALUES(2487, 1009, 'Supporting Actress');  -- Lauren Bacall worked on The Mirror Has Two Faces as Supporting Actress
+INSERT INTO worked_on VALUES(391, 1002, 'Supporting Actress');  -- Joan Allen worked on The Crucible as Supporting Actress
+INSERT INTO worked_on VALUES(1289, 1010, 'Supporting Actress');  -- Barbara Hershey worked on The Portrait of a Lady as Supporting Actress
+INSERT INTO worked_on VALUES(2488, 855, 'Lead Actress');  -- Julie Christie worked on Afterglow as Lead Actress
+INSERT INTO worked_on VALUES(1639, 90, 'Lead Actress');  -- Kate Winslet worked on Titanic as Lead Actress
+INSERT INTO worked_on VALUES(1120, 1011, 'Lead Actress');  -- Judi Dench worked on Mrs. Brown as Lead Actress
+INSERT INTO worked_on VALUES(2489, 124, 'Lead Actress');  -- Helena Bonham Carter worked on The Wings of the Dove as Lead Actress
+INSERT INTO worked_on VALUES(119, 1012, 'Lead Actress');  -- Helen Hunt worked on As Good As It Gets as Lead Actress
+INSERT INTO worked_on VALUES(662, 1013, 'Supporting Actress');  -- Minnie Driver worked on Good Will Hunting as Supporting Actress
+INSERT INTO worked_on VALUES(235, 1014, 'Supporting Actress');  -- Julianne Moore worked on Boogie Nights as Supporting Actress
+INSERT INTO worked_on VALUES(799, 148, 'Supporting Actress');  -- Joan Cusack worked on In & Out as Supporting Actress
+INSERT INTO worked_on VALUES(906, 1015, 'Supporting Actress');  -- Kim Basinger worked on L.A. Confidential as Supporting Actress
+INSERT INTO worked_on VALUES(1639, 1016, 'Supporting Actress');  -- Gloria Stuart worked on Titanic as Supporting Actress
+INSERT INTO worked_on VALUES(2490, 12, 'Lead Actress');  -- Meryl Streep worked on One True Thing as Lead Actress
+INSERT INTO worked_on VALUES(508, 45, 'Lead Actress');  -- Cate Blanchett worked on Elizabeth as Lead Actress
+INSERT INTO worked_on VALUES(307, 1017, 'Lead Actress');  -- Fernanda Montenegro worked on Central Station as Lead Actress
+INSERT INTO worked_on VALUES(1455, 106, 'Lead Actress');  -- Gwyneth Paltrow worked on Shakespeare in Love as Lead Actress
+INSERT INTO worked_on VALUES(746, 1004, 'Lead Actress');  -- Emily Watson worked on Hilary and Jackie as Lead Actress
+INSERT INTO worked_on VALUES(1455, 1011, 'Supporting Actress');  -- Judi Dench worked on Shakespeare in Love as Supporting Actress
+INSERT INTO worked_on VALUES(969, 1006, 'Supporting Actress');  -- Brenda Blethyn worked on Little Voice as Supporting Actress
+INSERT INTO worked_on VALUES(1299, 978, 'Supporting Actress');  -- Kathy Bates worked on Primary Colors as Supporting Actress
+INSERT INTO worked_on VALUES(650, 860, 'Supporting Actress');  -- Lynn Redgrave worked on Gods and Monsters as Supporting Actress
+INSERT INTO worked_on VALUES(746, 1018, 'Supporting Actress');  -- Rachel Griffiths worked on Hilary and Jackie as Supporting Actress
+INSERT INTO worked_on VALUES(78, 140, 'Lead Actress');  -- Annette Bening worked on American Beauty as Lead Actress
+INSERT INTO worked_on VALUES(2491, 1014, 'Lead Actress');  -- Julianne Moore worked on The End of the Affair as Lead Actress
+INSERT INTO worked_on VALUES(1128, 12, 'Lead Actress');  -- Meryl Streep worked on Music of the Heart as Lead Actress
+INSERT INTO worked_on VALUES(246, 1019, 'Lead Actress');  -- Hilary Swank worked on Boys Don't Cry as Lead Actress
+INSERT INTO worked_on VALUES(2492, 1020, 'Lead Actress');  -- Janet McTeer worked on Tumbleweeds as Lead Actress
+INSERT INTO worked_on VALUES(178, 153, 'Supporting Actress');  -- Catherine Keener worked on Being John Malkovich as Supporting Actress
+INSERT INTO worked_on VALUES(1587, 1021, 'Supporting Actress');  -- Samantha Morton worked on Sweet and Lowdown as Supporting Actress
+INSERT INTO worked_on VALUES(638, 44, 'Supporting Actress');  -- Angelina Jolie worked on Girl, Interrupted as Supporting Actress
+INSERT INTO worked_on VALUES(246, 1022, 'Supporting Actress');  -- Chloe Sevigny worked on Boys Don't Cry as Supporting Actress
+INSERT INTO worked_on VALUES(1490, 1023, 'Supporting Actress');  -- Toni Collette worked on The Sixth Sense as Supporting Actress
+INSERT INTO worked_on VALUES(369, 1002, 'Lead Actress');  -- Joan Allen worked on The Contender as Lead Actress
+INSERT INTO worked_on VALUES(1815, 1024, 'Lead Actress');  -- Laura Linney worked on You Can Count on Me as Lead Actress
+INSERT INTO worked_on VALUES(324, 1008, 'Lead Actress');  -- Juliette Binoche worked on Chocolat as Lead Actress
+INSERT INTO worked_on VALUES(1360, 145, 'Lead Actress');  -- Ellen Burstyn worked on Requiem for a Dream as Lead Actress
+INSERT INTO worked_on VALUES(523, 69, 'Lead Actress');  -- Julia Roberts worked on Erin Brockovich as Lead Actress
+INSERT INTO worked_on VALUES(73, 1025, 'Supporting Actress');  -- Kate Hudson worked on Almost Famous as Supporting Actress
+INSERT INTO worked_on VALUES(324, 1011, 'Supporting Actress');  -- Judi Dench worked on Chocolat as Supporting Actress
+INSERT INTO worked_on VALUES(1286, 1026, 'Supporting Actress');  -- Marcia Gay Harden worked on Pollock as Supporting Actress
+INSERT INTO worked_on VALUES(73, 47, 'Supporting Actress');  -- Frances McDormand worked on Almost Famous as Supporting Actress
+INSERT INTO worked_on VALUES(2493, 945, 'Supporting Actress');  -- Julie Walters worked on Billy Elliot as Supporting Actress
+INSERT INTO worked_on VALUES(1110, 171, 'Lead Actress');  -- Nicole Kidman worked on Moulin Rouge as Lead Actress
+INSERT INTO worked_on VALUES(259, 111, 'Lead Actress');  -- Renee Zellweger worked on Bridget Jones's Diary as Lead Actress
+INSERT INTO worked_on VALUES(804, 918, 'Lead Actress');  -- Sissy Spacek worked on In the Bedroom as Lead Actress
+INSERT INTO worked_on VALUES(1100, 1027, 'Lead Actress');  -- Halle Berry worked on Monster's Ball as Lead Actress
+INSERT INTO worked_on VALUES(835, 1011, 'Lead Actress');  -- Judi Dench worked on Iris as Lead Actress
+INSERT INTO worked_on VALUES(169, 1028, 'Supporting Actress');  -- Jennifer Connelly worked on A Beautiful Mind as Supporting Actress
+INSERT INTO worked_on VALUES(668, 997, 'Supporting Actress');  -- Helen Mirren worked on Gosford Park as Supporting Actress
+INSERT INTO worked_on VALUES(835, 90, 'Supporting Actress');  -- Kate Winslet worked on Iris as Supporting Actress
+INSERT INTO worked_on VALUES(804, 987, 'Supporting Actress');  -- Marisa Tomei worked on In the Bedroom as Supporting Actress
+INSERT INTO worked_on VALUES(668, 856, 'Supporting Actress');  -- Maggie Smith worked on Gosford Park as Supporting Actress
+INSERT INTO worked_on VALUES(316, 111, 'Lead Actress');  -- Renee Zellweger worked on Chicago as Lead Actress
+INSERT INTO worked_on VALUES(551, 1014, 'Lead Actress');  -- Julianne Moore worked on Far from Heaven as Lead Actress
+INSERT INTO worked_on VALUES(2494, 1029, 'Lead Actress');  -- Diane Lane worked on Unfaithful as Lead Actress
+INSERT INTO worked_on VALUES(761, 171, 'Lead Actress');  -- Nicole Kidman worked on The Hours as Lead Actress
+INSERT INTO worked_on VALUES(2495, 1030, 'Lead Actress');  -- Salma Hayek worked on Frida as Lead Actress
+INSERT INTO worked_on VALUES(761, 1014, 'Supporting Actress');  -- Julianne Moore worked on The Hours as Supporting Actress
+INSERT INTO worked_on VALUES(36, 12, 'Supporting Actress');  -- Meryl Streep worked on Adaptation as Supporting Actress
+INSERT INTO worked_on VALUES(29, 978, 'Supporting Actress');  -- Kathy Bates worked on About Schmidt as Supporting Actress
+INSERT INTO worked_on VALUES(316, 109, 'Supporting Actress');  -- Catherine Zeta-Jones worked on Chicago as Supporting Actress
+INSERT INTO worked_on VALUES(316, 1031, 'Supporting Actress');  -- Queen Latifah worked on Chicago as Supporting Actress
+INSERT INTO worked_on VALUES(800, 1021, 'Lead Actress');  -- Samantha Morton worked on In America as Lead Actress
+INSERT INTO worked_on VALUES(1099, 1032, 'Lead Actress');  -- Charlize Theron worked on Monster as Lead Actress
+INSERT INTO worked_on VALUES(1751, 1033, 'Lead Actress');  -- Keisha Castle-Hughes worked on Whale Rider as Lead Actress
+INSERT INTO worked_on VALUES(1518, 55, 'Lead Actress');  -- Diane Keaton worked on Something's Gotta Give as Lead Actress
+INSERT INTO worked_on VALUES(11, 89, 'Lead Actress');  -- Naomi Watts worked on 21 Grams as Lead Actress
+INSERT INTO worked_on VALUES(1624, 965, 'Supporting Actress');  -- Holly Hunter worked on Thirteen as Supporting Actress
+INSERT INTO worked_on VALUES(1267, 1034, 'Supporting Actress');  -- Patricia Clarkson worked on Pieces of April as Supporting Actress
+INSERT INTO worked_on VALUES(1154, 1026, 'Supporting Actress');  -- Marcia Gay Harden worked on Mystic River as Supporting Actress
+INSERT INTO worked_on VALUES(765, 1035, 'Supporting Actress');  -- Shohreh Aghdashloo worked on House of Sand and Fog as Supporting Actress
+INSERT INTO worked_on VALUES(353, 111, 'Supporting Actress');  -- Renee Zellweger worked on Cold Mountain as Supporting Actress
+INSERT INTO worked_on VALUES(1024, 1036, 'Lead Actress');  -- Catalina Sandino Moreno worked on Maria Full of Grace as Lead Actress
+INSERT INTO worked_on VALUES(1713, 1037, 'Lead Actress');  -- Imelda Staunton worked on Vera Drake as Lead Actress
+INSERT INTO worked_on VALUES(2496, 140, 'Lead Actress');  -- Annette Bening worked on Being Julia as Lead Actress
+INSERT INTO worked_on VALUES(524, 90, 'Lead Actress');  -- Kate Winslet worked on Eternal Sunshine of the Spotless Mind as Lead Actress
+INSERT INTO worked_on VALUES(1077, 1019, 'Lead Actress');  -- Hilary Swank worked on Million Dollar Baby as Lead Actress
+INSERT INTO worked_on VALUES(1477, 1038, 'Supporting Actress');  -- Virginia Madsen worked on Sideways as Supporting Actress
+INSERT INTO worked_on VALUES(2497, 1024, 'Supporting Actress');  -- Laura Linney worked on Kinsey as Supporting Actress
+INSERT INTO worked_on VALUES(134, 45, 'Supporting Actress');  -- Cate Blanchett worked on The Aviator as Supporting Actress
+INSERT INTO worked_on VALUES(760, 1039, 'Supporting Actress');  -- Sophie Okonedo worked on Hotel Rwanda as Supporting Actress
+INSERT INTO worked_on VALUES(2245, 101, 'Supporting Actress');  -- Natalie Portman worked on Closer as Supporting Actress
+INSERT INTO worked_on VALUES(1297, 1040, 'Lead Actress');  -- Keira Knightley worked on Pride & Prejudice as Lead Actress
+INSERT INTO worked_on VALUES(2498, 1041, 'Lead Actress');  -- Felicity Huffman worked on Transamerica as Lead Actress
+INSERT INTO worked_on VALUES(2499, 1011, 'Lead Actress');  -- Judi Dench worked on Mrs. Henderson Presents as Lead Actress
+INSERT INTO worked_on VALUES(1191, 1032, 'Lead Actress');  -- Charlize Theron worked on North Country as Lead Actress
+INSERT INTO worked_on VALUES(1731, 60, 'Lead Actress');  -- Reese Witherspoon worked on Walk the Line as Lead Actress
+INSERT INTO worked_on VALUES(2500, 168, 'Supporting Actress');  -- Amy Adams worked on Junebug as Supporting Actress
+INSERT INTO worked_on VALUES(2501, 1042, 'Supporting Actress');  -- Rachel Weisz worked on The Constant Gardener as Supporting Actress
+INSERT INTO worked_on VALUES(1191, 47, 'Supporting Actress');  -- Frances McDormand worked on North Country as Supporting Actress
+INSERT INTO worked_on VALUES(2038, 1043, 'Supporting Actress');  -- Michelle Williams worked on Brokeback Mountain as Supporting Actress
+INSERT INTO worked_on VALUES(287, 153, 'Supporting Actress');  -- Catherine Keener worked on Capote as Supporting Actress
+INSERT INTO worked_on VALUES(2502, 1011, 'Lead Actress');  -- Judi Dench worked on Notes on a Scandal as Lead Actress
+INSERT INTO worked_on VALUES(1319, 997, 'Lead Actress');  -- Helen Mirren worked on The Queen as Lead Actress
+INSERT INTO worked_on VALUES(2249, 90, 'Lead Actress');  -- Kate Winslet worked on Little Children as Lead Actress
+INSERT INTO worked_on VALUES(2503, 91, 'Lead Actress');  -- Penelope Cruz worked on Volver as Lead Actress
+INSERT INTO worked_on VALUES(445, 12, 'Lead Actress');  -- Meryl Streep worked on The Devil Wears Prada as Lead Actress
+INSERT INTO worked_on VALUES(140, 1044, 'Supporting Actress');  -- Rinko Kikuchi worked on Babel as Supporting Actress
+INSERT INTO worked_on VALUES(2502, 45, 'Supporting Actress');  -- Cate Blanchett worked on Notes on a Scandal as Supporting Actress
+INSERT INTO worked_on VALUES(2250, 1045, 'Supporting Actress');  -- Jennifer Hudson worked on Dreamgirls as Supporting Actress
+INSERT INTO worked_on VALUES(140, 1046, 'Supporting Actress');  -- Adriana Barraza worked on Babel as Supporting Actress
+INSERT INTO worked_on VALUES(964, 1047, 'Supporting Actress');  -- Abigail Breslin worked on Little Miss Sunshine as Supporting Actress
+INSERT INTO worked_on VALUES(509, 45, 'Lead Actress');  -- Cate Blanchett worked on Elizabeth: The Golden Age as Lead Actress
+INSERT INTO worked_on VALUES(136, 855, 'Lead Actress');  -- Julie Christie worked on Away from Her as Lead Actress
+INSERT INTO worked_on VALUES(911, 138, 'Lead Actress');  -- Marion Cotillard worked on La Vie en Rose as Lead Actress
+INSERT INTO worked_on VALUES(2504, 1024, 'Lead Actress');  -- Laura Linney worked on The Savages as Lead Actress
+INSERT INTO worked_on VALUES(873, 1048, 'Lead Actress');  -- Ellen Page worked on Juno as Lead Actress
+INSERT INTO worked_on VALUES(2505, 45, 'Supporting Actress');  -- Cate Blanchett worked on I'm Not There as Supporting Actress
+INSERT INTO worked_on VALUES(2506, 1049, 'Supporting Actress');  -- Ruby Dee worked on American Gangster as Supporting Actress
+INSERT INTO worked_on VALUES(125, 1050, 'Supporting Actress');  -- Saoirse Ronan worked on Atonement as Supporting Actress
+INSERT INTO worked_on VALUES(656, 1051, 'Supporting Actress');  -- Amy Ryan worked on Gone Baby Gone as Supporting Actress
+INSERT INTO worked_on VALUES(1063, 1052, 'Supporting Actress');  -- Tilda Swinton worked on Michael Clayton as Supporting Actress
+INSERT INTO worked_on VALUES(1325, 167, 'Lead Actress');  -- Anne Hathaway worked on Rachel Getting Married as Lead Actress
+INSERT INTO worked_on VALUES(309, 44, 'Lead Actress');  -- Angelina Jolie worked on Changeling as Lead Actress
+INSERT INTO worked_on VALUES(606, 1053, 'Lead Actress');  -- Melissa Leo worked on Frozen River as Lead Actress
+INSERT INTO worked_on VALUES(475, 12, 'Lead Actress');  -- Meryl Streep worked on Doubt as Lead Actress
+INSERT INTO worked_on VALUES(2040, 90, 'Lead Actress');  -- Kate Winslet worked on The Reader as Lead Actress
+INSERT INTO worked_on VALUES(475, 168, 'Supporting Actress');  -- Amy Adams worked on Doubt as Supporting Actress
+INSERT INTO worked_on VALUES(2507, 91, 'Supporting Actress');  -- Penelope Cruz worked on Vicky Cristina Barcelona as Supporting Actress
+INSERT INTO worked_on VALUES(475, 1054, 'Supporting Actress');  -- Viola Davis worked on Doubt as Supporting Actress
+INSERT INTO worked_on VALUES(396, 1055, 'Supporting Actress');  -- Taraji P. Henson worked on The Curious Case of Benjamin Button as Supporting Actress
+INSERT INTO worked_on VALUES(2255, 987, 'Supporting Actress');  -- Marisa Tomei worked on The Wrestler as Supporting Actress
 INSERT INTO worked_on VALUES(2508, 1056, 'Director');  -- Lewis Milestone worked on Two Arabian Knights as Director
 INSERT INTO worked_on VALUES(2509, 1057, 'Director');  -- Ted Wilde worked on Speedy as Director
 INSERT INTO worked_on VALUES(2510, 1058, 'Director');  -- Herbert Brenon worked on Sorrell and Son as Director
@@ -3695,36 +3695,36 @@ INSERT INTO worked_on VALUES(801, 2056, 'Screenwriter');  -- Martin McDonagh wor
 INSERT INTO worked_on VALUES(2039, 2057, 'Screenwriter');  -- Dustin Lance Black worked on Milk as Screenwriter
 INSERT INTO worked_on VALUES(1733, 1963, 'Screenwriter');  -- Andrew Stanton worked on WALL-E as Screenwriter
 INSERT INTO worked_on VALUES(1733, 2058, 'Screenwriter');  -- Jim Reardon worked on WALL-E as Screenwriter
-INSERT INTO worked_on VALUES(3494, 1, 'Actor');  -- Christian Bale for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 168, 'Actress');  -- Amy Adams for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 2059, 'Actress');  -- Jennifer Lawrence for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 2060, 'Actor');  -- Bradley Cooper for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 1, 'Lead Actor');  -- Christian Bale for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 168, 'Lead Actress');  -- Amy Adams for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2059, 'Supporting Actress');  -- Jennifer Lawrence for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2060, 'Supporting Actor');  -- Bradley Cooper for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 348, 'Director');  -- David O. Russell for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 348, 'Screenwriter');  -- David O. Russell for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 2061, 'Screenwriter');  -- Eric Warren Singer for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 3, 'Actor');  -- Robert De Niro for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 2062, 'Actor');  -- Jeremy Renner for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 2063, 'Actor');  -- Michael Pena for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 3, 'Supporting Actor');  -- Robert De Niro for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2062, 'Supporting Actor');  -- Jeremy Renner for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2063, 'Supporting Actor');  -- Michael Pena for American Hustle (2013)
 INSERT INTO worked_on VALUES(3495, 368, 'Director');  -- Wim Wenders for Pina (2011)
-INSERT INTO worked_on VALUES(3496, 2064, 'Actor');  -- Shane Carruth for Upstream Color (2013)
+INSERT INTO worked_on VALUES(3496, 2064, 'Lead Actor');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(3496, 2064, 'Director');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(3496, 2064, 'Screenwriter');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(2153, 2065, 'Director');  -- Lindsay Anderson for This Sporting Life (1963)
-INSERT INTO worked_on VALUES(3497, 2066, 'Actor');  -- Chiwetel Ejiofor for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 2067, 'Actor');  -- Michael Fassbender for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 108, 'Actor');  -- Paul Giamatti for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 2068, 'Actor');  -- Paul Dano for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 2066, 'Lead Actor');  -- Chiwetel Ejiofor for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 2067, 'Supporting Actor');  -- Michael Fassbender for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 108, 'Supporting Actor');  -- Paul Giamatti for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 2068, 'Supporting Actor');  -- Paul Dano for 12 Years a Slave (2013)
 INSERT INTO worked_on VALUES(3497, 2069, 'Screenwriter');  -- John Ridley for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 2070, 'Actress');  -- Lupita Nyongo for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 2071, 'Actor');  -- Benedict Cumberbatch for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 947, 'Actress');  -- Alfre Woodard for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3497, 13, 'Actor');  -- Brad Pitt for 12 Years a Slave (2013)
-INSERT INTO worked_on VALUES(3498, 4, 'Actor');  -- Tom Hanks for Captain Phillips (2013)
+INSERT INTO worked_on VALUES(3497, 2070, 'Supporting Actress');  -- Lupita Nyongo for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 2071, 'Supporting Actor');  -- Benedict Cumberbatch for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 947, 'Supporting Actress');  -- Alfre Woodard for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3497, 13, 'Supporting Actor');  -- Brad Pitt for 12 Years a Slave (2013)
+INSERT INTO worked_on VALUES(3498, 4, 'Lead Actor');  -- Tom Hanks for Captain Phillips (2013)
 INSERT INTO worked_on VALUES(3498, 1178, 'Director');  -- Paul Greengrass for Captain Phillips (2013)
-INSERT INTO worked_on VALUES(3498, 2072, 'Actor');  -- Barkhad Abdi for Captain Phillips (2013)
+INSERT INTO worked_on VALUES(3498, 2072, 'Supporting Actor');  -- Barkhad Abdi for Captain Phillips (2013)
 INSERT INTO worked_on VALUES(3498, 2073, 'Screenwriter');  -- Billy Ray for Captain Phillips (2013)
-INSERT INTO worked_on VALUES(3498, 153, 'Actress');  -- Catherine Keener for Captain Phillips (2013)
-INSERT INTO worked_on VALUES(3499, 2074, 'Actor');  -- Dick Van Dyke for Chitty Chitty Bang Bang (1968)
+INSERT INTO worked_on VALUES(3498, 153, 'Supporting Actress');  -- Catherine Keener for Captain Phillips (2013)
+INSERT INTO worked_on VALUES(3499, 2074, 'Lead Actor');  -- Dick Van Dyke for Chitty Chitty Bang Bang (1968)
 INSERT INTO worked_on VALUES(3499, 2075, 'Director');  -- Ken Hughes for Chitty Chitty Bang Bang (1968)
 INSERT INTO worked_on VALUES(3499, 2075, 'Screenwriter');  -- Ken Hughes for Chitty Chitty Bang Bang (1968)
 INSERT INTO worked_on VALUES(3499, 2076, 'Screenwriter');  -- Roald Dahl for Chitty Chitty Bang Bang (1968)
@@ -3736,127 +3736,127 @@ INSERT INTO worked_on VALUES(3500, 891, 'Character Voice');  -- Cloris Leachman 
 INSERT INTO worked_on VALUES(3501, 2079, 'Director');  -- Zachary Heinzerling for Cutie and the Boxer (2013)
 INSERT INTO worked_on VALUES(3502, 338, 'Director');  -- Alexander Payne for Nebraska (2013)
 INSERT INTO worked_on VALUES(3502, 2080, 'Screenwriter');  -- Bob Nelson for Nebraska (2013)
-INSERT INTO worked_on VALUES(3502, 591, 'Actor');  -- Bruce Dern for Nebraska (2013)
-INSERT INTO worked_on VALUES(3502, 2081, 'Actor');  -- Will Forte for Nebraska (2013)
-INSERT INTO worked_on VALUES(3502, 2082, 'Actress');  -- June Squibb for Nebraska (2013)
-INSERT INTO worked_on VALUES(3502, 2083, 'Actor');  -- Stacy Keach for Nebraska (2013)
+INSERT INTO worked_on VALUES(3502, 591, 'Lead Actor');  -- Bruce Dern for Nebraska (2013)
+INSERT INTO worked_on VALUES(3502, 2081, 'Lead Actor');  -- Will Forte for Nebraska (2013)
+INSERT INTO worked_on VALUES(3502, 2082, 'Supporting Actress');  -- June Squibb for Nebraska (2013)
+INSERT INTO worked_on VALUES(3502, 2083, 'Supporting Actor');  -- Stacy Keach for Nebraska (2013)
 INSERT INTO worked_on VALUES(3503, 2084, 'Director');  -- Michel Hazanavicius for OSS 117: Lost in Rio (2009)
 INSERT INTO worked_on VALUES(3503, 2084, 'Screenwriter');  -- Michel Hazanavicius for OSS 117: Lost in Rio (2009)
 INSERT INTO worked_on VALUES(3503, 2085, 'Screenwriter');  -- Jean-Francois Halin for OSS 117: Lost in Rio (2009)
-INSERT INTO worked_on VALUES(3503, 2086, 'Actor');  -- Jean Dujardin for OSS 117: Lost in Rio (2009)
+INSERT INTO worked_on VALUES(3503, 2086, 'Lead Actor');  -- Jean Dujardin for OSS 117: Lost in Rio (2009)
 INSERT INTO worked_on VALUES(3504, 2087, 'Director');  -- Joshua Oppenheimer for The Act of Killing (2013)
 INSERT INTO worked_on VALUES(3504, 2088, 'Director');  -- Christine Cynn for The Act of Killing (2013)
 INSERT INTO worked_on VALUES(3504, 2089, 'Director');  -- Anonymous for The Act of Killing (2013)
 INSERT INTO worked_on VALUES(3505, 2090, 'Director');  -- Rick Rowley for Dirty Wars (2013)
 INSERT INTO worked_on VALUES(3505, 2090, 'Cinematographer');  -- Rick Rowley for Dirty Wars (2013)
-INSERT INTO worked_on VALUES(3506, 2091, 'Actor');  -- Hugh Jackman for Prisoners (2013)
-INSERT INTO worked_on VALUES(3506, 2068, 'Actor');  -- Paul Dano for Prisoners (2013)
-INSERT INTO worked_on VALUES(3506, 663, 'Actor');  -- Jake Gyllenhaal for Prisoners (2013)
-INSERT INTO worked_on VALUES(3506, 1054, 'Actress');  -- Viola Davis for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 2091, 'Lead Actor');  -- Hugh Jackman for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 2068, 'Supporting Actor');  -- Paul Dano for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 663, 'Lead Actor');  -- Jake Gyllenhaal for Prisoners (2013)
+INSERT INTO worked_on VALUES(3506, 1054, 'Supporting Actress');  -- Viola Davis for Prisoners (2013)
 INSERT INTO worked_on VALUES(3507, 2092, 'Director');  -- Morgan Neville for 20 Feet from Stardom (2013)
-INSERT INTO worked_on VALUES(3508, 2059, 'Actress');  -- Jennifer Lawrence for Hunger Games, The: Catching Fire (2013)
-INSERT INTO worked_on VALUES(3508, 2093, 'Actor');  -- Donald Sutherland for Hunger Games, The: Catching Fire (2013)
-INSERT INTO worked_on VALUES(3508, 2094, 'Actor');  -- Josh Hutcherson for Hunger Games, The: Catching Fire (2013)
-INSERT INTO worked_on VALUES(3508, 2095, 'Actor');  -- Liam Hemsworth for Hunger Games, The: Catching Fire (2013)
-INSERT INTO worked_on VALUES(3508, 107, 'Actor');  -- Woody Harrelson for Hunger Games, The: Catching Fire (2013)
-INSERT INTO worked_on VALUES(3508, 2096, 'Actor');  -- Stanley Tucci for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 2059, 'Lead Actress');  -- Jennifer Lawrence for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 2093, 'Supporting Actor');  -- Donald Sutherland for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 2094, 'Supporting Actor');  -- Josh Hutcherson for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 2095, 'Supporting Actor');  -- Liam Hemsworth for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 107, 'Supporting Actor');  -- Woody Harrelson for Hunger Games, The: Catching Fire (2013)
+INSERT INTO worked_on VALUES(3508, 2096, 'Supporting Actor');  -- Stanley Tucci for Hunger Games, The: Catching Fire (2013)
 INSERT INTO worked_on VALUES(3509, 268, 'Director');  -- Joel and Ethan Coen for Inside Llewyn Davis (2013)
 INSERT INTO worked_on VALUES(3509, 268, 'Screenwriter');  -- Joel and Ethan Coen for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3509, 151, 'Actor');  -- John Goodman for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3509, 2097, 'Actress');  -- Carey Mulligan for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3509, 2098, 'Actor');  -- Oscar Isaac for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3509, 2099, 'Actor');  -- Justin Timberlake for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3509, 200, 'Actor');  -- F. Murray Abraham for Inside Llewyn Davis (2013)
-INSERT INTO worked_on VALUES(3510, 76, 'Actor');  -- Robert Redford for All Is Lost (2013)
+INSERT INTO worked_on VALUES(3509, 151, 'Supporting Actor');  -- John Goodman for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3509, 2097, 'Supporting Actress');  -- Carey Mulligan for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3509, 2098, 'Lead Actor');  -- Oscar Isaac for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3509, 2099, 'Supporting Actor');  -- Justin Timberlake for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3509, 200, 'Supporting Actor');  -- F. Murray Abraham for Inside Llewyn Davis (2013)
+INSERT INTO worked_on VALUES(3510, 76, 'Lead Actor');  -- Robert Redford for All Is Lost (2013)
 INSERT INTO worked_on VALUES(3510, 2100, 'Director');  -- J.C. Chandor for All Is Lost (2013)
 INSERT INTO worked_on VALUES(3510, 2100, 'Screenwriter');  -- J.C. Chandor for All Is Lost (2013)
-INSERT INTO worked_on VALUES(2037, 121, 'Actor');  -- Alec Guinness for A Passage to India (1984)
-INSERT INTO worked_on VALUES(3512, 1011, 'Actress');  -- Judi Dench for Philomena (2013)
-INSERT INTO worked_on VALUES(3512, 2101, 'Actor');  -- Steve Coogan for Philomena (2013)
+INSERT INTO worked_on VALUES(2037, 121, 'Supporting Actor');  -- Alec Guinness for A Passage to India (1984)
+INSERT INTO worked_on VALUES(3512, 1011, 'Lead Actress');  -- Judi Dench for Philomena (2013)
+INSERT INTO worked_on VALUES(3512, 2101, 'Lead Actor');  -- Steve Coogan for Philomena (2013)
 INSERT INTO worked_on VALUES(3512, 2101, 'Screenwriter');  -- Steve Coogan for Philomena (2013)
 INSERT INTO worked_on VALUES(3512, 286, 'Director');  -- Stephen Frears for Philomena (2013)
 INSERT INTO worked_on VALUES(3512, 2102, 'Screenwriter');  -- Jeff Pope for Philomena (2013)
-INSERT INTO worked_on VALUES(3514, 210, 'Actor');  -- Nicolas Cage for Frozen Ground (2013)
-INSERT INTO worked_on VALUES(3514, 149, 'Actor');  -- John Cusack for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3514, 210, 'Lead Actor');  -- Nicolas Cage for Frozen Ground (2013)
+INSERT INTO worked_on VALUES(3514, 149, 'Supporting Actor');  -- John Cusack for Frozen Ground (2013)
 INSERT INTO worked_on VALUES(3514, 2103, 'Director');  -- Scott Walker for Frozen Ground (2013)
 INSERT INTO worked_on VALUES(3514, 2103, 'Screenwriter');  -- Scott Walker for Frozen Ground (2013)
-INSERT INTO worked_on VALUES(3516, 149, 'Actor');  -- John Cusack for The Factory (2012)
-INSERT INTO worked_on VALUES(3516, 2104, 'Actor');  -- Dallas Roberts for The Factory (2012)
-INSERT INTO worked_on VALUES(3517, 14, 'Actor');  -- Johnny Depp for The Ninth Gate (1999)
+INSERT INTO worked_on VALUES(3516, 149, 'Lead Actor');  -- John Cusack for The Factory (2012)
+INSERT INTO worked_on VALUES(3516, 2104, 'Supporting Actor');  -- Dallas Roberts for The Factory (2012)
+INSERT INTO worked_on VALUES(3517, 14, 'Lead Actor');  -- Johnny Depp for The Ninth Gate (1999)
 INSERT INTO worked_on VALUES(3517, 342, 'Director');  -- Roman Polanski for The Ninth Gate (1999)
 INSERT INTO worked_on VALUES(3517, 342, 'Screenwriter');  -- Roman Polanski for The Ninth Gate (1999)
-INSERT INTO worked_on VALUES(3517, 222, 'Actor');  -- Frank Langella for The Ninth Gate (1999)
-INSERT INTO worked_on VALUES(3517, 977, 'Actress');  -- Lena Olin for The Ninth Gate (1999)
+INSERT INTO worked_on VALUES(3517, 222, 'Supporting Actor');  -- Frank Langella for The Ninth Gate (1999)
+INSERT INTO worked_on VALUES(3517, 977, 'Supporting Actress');  -- Lena Olin for The Ninth Gate (1999)
 INSERT INTO worked_on VALUES(3517, 2105, 'Screenwriter');  -- John Brownjohn for The Ninth Gate (1999)
 INSERT INTO worked_on VALUES(3517, 2106, 'Screenwriter');  -- Enrique Urbizu for The Ninth Gate (1999)
-INSERT INTO worked_on VALUES(3518, 226, 'Actor');  -- John Hurt for The Oxford Murders (2008)
-INSERT INTO worked_on VALUES(3518, 135, 'Actor');  -- Elijah Wood for The Oxford Murders (2008)
+INSERT INTO worked_on VALUES(3518, 226, 'Lead Actor');  -- John Hurt for The Oxford Murders (2008)
+INSERT INTO worked_on VALUES(3518, 135, 'Lead Actor');  -- Elijah Wood for The Oxford Murders (2008)
 INSERT INTO worked_on VALUES(3519, 351, 'Director');  -- Martin Scorsese for George Harrison: Living in the Material World (2011)
-INSERT INTO worked_on VALUES(3520, 658, 'Actor');  -- Ken Watanabe for Godzilla (2014)
-INSERT INTO worked_on VALUES(3520, 2107, 'Actor');  -- Bryan Cranston for Godzilla (2014)
-INSERT INTO worked_on VALUES(3520, 2108, 'Actress');  -- Sally Hawkins for Godzilla (2014)
-INSERT INTO worked_on VALUES(3520, 1008, 'Actress');  -- Juliette Binoche for Godzilla (2014)
-INSERT INTO worked_on VALUES(3520, 219, 'Actor');  -- David Strathairn for Godzilla (2014)
+INSERT INTO worked_on VALUES(3520, 658, 'Supporting Actor');  -- Ken Watanabe for Godzilla (2014)
+INSERT INTO worked_on VALUES(3520, 2107, 'Supporting Actor');  -- Bryan Cranston for Godzilla (2014)
+INSERT INTO worked_on VALUES(3520, 2108, 'Supporting Actress');  -- Sally Hawkins for Godzilla (2014)
+INSERT INTO worked_on VALUES(3520, 1008, 'Supporting Actress');  -- Juliette Binoche for Godzilla (2014)
+INSERT INTO worked_on VALUES(3520, 219, 'Supporting Actor');  -- David Strathairn for Godzilla (2014)
 INSERT INTO worked_on VALUES(3521, 336, 'Director');  -- Alan Parker for Angel Heart (1987)
 INSERT INTO worked_on VALUES(3521, 336, 'Screenwriter');  -- Alan Parker for Angel Heart (1987)
-INSERT INTO worked_on VALUES(3521, 43, 'Actor');  -- Mickey Rourke for Angel Heart (1987)
-INSERT INTO worked_on VALUES(3521, 3, 'Actor');  -- Robert De Niro for Angel Heart (1987)
-INSERT INTO worked_on VALUES(3521, 2110, 'Actress');  -- Charlotte Rampling for Angel Heart (1987)
-INSERT INTO worked_on VALUES(3521, 2111, 'Actress');  -- Lisa Bonet for Angel Heart (1987)
+INSERT INTO worked_on VALUES(3521, 43, 'Lead Actor');  -- Mickey Rourke for Angel Heart (1987)
+INSERT INTO worked_on VALUES(3521, 3, 'Supporting Actor');  -- Robert De Niro for Angel Heart (1987)
+INSERT INTO worked_on VALUES(3521, 2110, 'Supporting Actress');  -- Charlotte Rampling for Angel Heart (1987)
+INSERT INTO worked_on VALUES(3521, 2111, 'Supporting Actress');  -- Lisa Bonet for Angel Heart (1987)
 INSERT INTO worked_on VALUES(3522, 2112, 'Director');  -- Jehane Noujaim for The Square (2013)
-INSERT INTO worked_on VALUES(3523, 2113, 'Actor');  -- Andy Samberg for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2114, 'Actress');  -- Isla Fisher for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2115, 'Actor');  -- Ian McShane for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2116, 'Actor');  -- Bill Hader for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 918, 'Actress');  -- Sissy Spacek for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2117, 'Actor');  -- Danny McBride for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2118, 'Actor');  -- Will Arnett for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3523, 2119, 'Actor');  -- Chris Parnell for Hot Rod (2007)
-INSERT INTO worked_on VALUES(3525, 2120, 'Actor');  -- Kurt Russell for Breakdown (1997)
-INSERT INTO worked_on VALUES(3525, 2121, 'Actor');  -- J.T. Walsh for Breakdown (1997)
-INSERT INTO worked_on VALUES(3525, 1000, 'Actress');  -- Kathleen Quinlan for Breakdown (1997)
-INSERT INTO worked_on VALUES(3528, 97, 'Actor');  -- Jim Caviezel for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 649, 'Actor');  -- Greg Kinnear for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 2122, 'Actor');  -- Barry Pepper for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 2123, 'Actress');  -- Bridget Moynahan for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 2124, 'Actor');  -- Joe Pantoliano for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 2125, 'Actor');  -- Jeremy Sisto for Unknown (2006)
-INSERT INTO worked_on VALUES(3528, 2126, 'Actor');  -- Peter Stormare for Unknown (2006)
-INSERT INTO worked_on VALUES(3529, 33, 'Actor');  -- Tom Cruise for Edge of Tomorrow (2014)
-INSERT INTO worked_on VALUES(3529, 2127, 'Actress');  -- Emily Blunt for Edge of Tomorrow (2014)
-INSERT INTO worked_on VALUES(3529, 2128, 'Actor');  -- Bill Paxton for Edge of Tomorrow (2014)
-INSERT INTO worked_on VALUES(3529, 2129, 'Actor');  -- Brendan Gleeson for Edge of Tomorrow (2014)
-INSERT INTO worked_on VALUES(3529, 2130, 'Actor');  -- Noah Taylor for Edge of Tomorrow (2014)
+INSERT INTO worked_on VALUES(3523, 2113, 'Lead Actor');  -- Andy Samberg for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2114, 'Supporting Actress');  -- Isla Fisher for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2115, 'Supporting Actor');  -- Ian McShane for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2116, 'Supporting Actor');  -- Bill Hader for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 918, 'Supporting Actress');  -- Sissy Spacek for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2117, 'Supporting Actor');  -- Danny McBride for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2118, 'Supporting Actor');  -- Will Arnett for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3523, 2119, 'Supporting Actor');  -- Chris Parnell for Hot Rod (2007)
+INSERT INTO worked_on VALUES(3525, 2120, 'Lead Actor');  -- Kurt Russell for Breakdown (1997)
+INSERT INTO worked_on VALUES(3525, 2121, 'Supporting Actor');  -- J.T. Walsh for Breakdown (1997)
+INSERT INTO worked_on VALUES(3525, 1000, 'Supporting Actress');  -- Kathleen Quinlan for Breakdown (1997)
+INSERT INTO worked_on VALUES(3528, 97, 'Lead Actor');  -- Jim Caviezel for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 649, 'Supporting Actor');  -- Greg Kinnear for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 2122, 'Supporting Actor');  -- Barry Pepper for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 2123, 'Supporting Actress');  -- Bridget Moynahan for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 2124, 'Supporting Actor');  -- Joe Pantoliano for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 2125, 'Supporting Actor');  -- Jeremy Sisto for Unknown (2006)
+INSERT INTO worked_on VALUES(3528, 2126, 'Supporting Actor');  -- Peter Stormare for Unknown (2006)
+INSERT INTO worked_on VALUES(3529, 33, 'Lead Actor');  -- Tom Cruise for Edge of Tomorrow (2014)
+INSERT INTO worked_on VALUES(3529, 2127, 'Lead Actress');  -- Emily Blunt for Edge of Tomorrow (2014)
+INSERT INTO worked_on VALUES(3529, 2128, 'Supporting Actor');  -- Bill Paxton for Edge of Tomorrow (2014)
+INSERT INTO worked_on VALUES(3529, 2129, 'Supporting Actor');  -- Brendan Gleeson for Edge of Tomorrow (2014)
+INSERT INTO worked_on VALUES(3529, 2130, 'Supporting Actor');  -- Noah Taylor for Edge of Tomorrow (2014)
 INSERT INTO worked_on VALUES(3529, 376, 'Screenwriter');  -- Christopher McQuarrie for Edge of Tomorrow (2014)
 INSERT INTO worked_on VALUES(3529, 2131, 'Screenwriter');  -- Jez Butterworth for Edge of Tomorrow (2014)
 INSERT INTO worked_on VALUES(3529, 2132, 'Screenwriter');  -- John-Henry Butterworth for Edge of Tomorrow (2014)
 INSERT INTO worked_on VALUES(3530, 2133, 'Director');  -- J.J. Abrams for Star Trek Into Darkness (2013)
-INSERT INTO worked_on VALUES(3530, 2134, 'Actor');  -- Chris Pine for Star Trek Into Darkness (2013)
-INSERT INTO worked_on VALUES(3530, 2135, 'Actor');  -- Zachary Quinto for Star Trek Into Darkness (2013)
-INSERT INTO worked_on VALUES(3530, 2136, 'Actress');  -- Zoe Saldana for Star Trek Into Darkness (2013)
-INSERT INTO worked_on VALUES(3530, 2071, 'Actor');  -- Benedict Cumberbatch for Star Trek Into Darkness (2013)
-INSERT INTO worked_on VALUES(3531, 16, 'Actor');  -- George Clooney for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3530, 2134, 'Lead Actor');  -- Chris Pine for Star Trek Into Darkness (2013)
+INSERT INTO worked_on VALUES(3530, 2135, 'Supporting Actor');  -- Zachary Quinto for Star Trek Into Darkness (2013)
+INSERT INTO worked_on VALUES(3530, 2136, 'Supporting Actress');  -- Zoe Saldana for Star Trek Into Darkness (2013)
+INSERT INTO worked_on VALUES(3530, 2071, 'Supporting Actor');  -- Benedict Cumberbatch for Star Trek Into Darkness (2013)
+INSERT INTO worked_on VALUES(3531, 16, 'Lead Actor');  -- George Clooney for The Monuments Men (2014)
 INSERT INTO worked_on VALUES(3531, 16, 'Screenwriter');  -- George Clooney for The Monuments Men (2014)
 INSERT INTO worked_on VALUES(3531, 16, 'Director');  -- George Clooney for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 20, 'Actor');  -- Matt Damon for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 88, 'Actor');  -- Bill Murray for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 45, 'Actress');  -- Cate Blanchett for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 151, 'Actor');  -- John Goodman for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 2086, 'Actor');  -- Jean Dujardin for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 2137, 'Actor');  -- Hugh Bonneville for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3531, 2138, 'Actor');  -- Bob Balaban for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 20, 'Supporting Actor');  -- Matt Damon for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 88, 'Supporting Actor');  -- Bill Murray for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 45, 'Supporting Actress');  -- Cate Blanchett for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 151, 'Supporting Actor');  -- John Goodman for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 2086, 'Supporting Actor');  -- Jean Dujardin for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 2137, 'Supporting Actor');  -- Hugh Bonneville for The Monuments Men (2014)
+INSERT INTO worked_on VALUES(3531, 2138, 'Supporting Actor');  -- Bob Balaban for The Monuments Men (2014)
 INSERT INTO worked_on VALUES(3531, 2034, 'Screenwriter');  -- Grant Heslov for The Monuments Men (2014)
-INSERT INTO worked_on VALUES(3533, 2139, 'Actress');  -- Sarah Jessica Parker for Girls Just Want to Have Fun (1985)
-INSERT INTO worked_on VALUES(3533, 1012, 'Actress');  -- Helen Hunt for Girls Just Want to Have Fun (1985)
-INSERT INTO worked_on VALUES(3534, 2140, 'Actress');  -- Melissa McCarthy for Tammy (2014)
+INSERT INTO worked_on VALUES(3533, 2139, 'Lead Actress');  -- Sarah Jessica Parker for Girls Just Want to Have Fun (1985)
+INSERT INTO worked_on VALUES(3533, 1012, 'Supporting Actress');  -- Helen Hunt for Girls Just Want to Have Fun (1985)
+INSERT INTO worked_on VALUES(3534, 2140, 'Lead Actress');  -- Melissa McCarthy for Tammy (2014)
 INSERT INTO worked_on VALUES(3534, 2140, 'Screenwriter');  -- Melissa McCarthy for Tammy (2014)
-INSERT INTO worked_on VALUES(3534, 937, 'Actress');  -- Susan Sarandon for Tammy (2014)
-INSERT INTO worked_on VALUES(3534, 978, 'Actress');  -- Kathy Bates for Tammy (2014)
-INSERT INTO worked_on VALUES(3534, 2141, 'Actor');  -- Ben Falcone for Tammy (2014)
+INSERT INTO worked_on VALUES(3534, 937, 'Supporting Actress');  -- Susan Sarandon for Tammy (2014)
+INSERT INTO worked_on VALUES(3534, 978, 'Supporting Actress');  -- Kathy Bates for Tammy (2014)
+INSERT INTO worked_on VALUES(3534, 2141, 'Supporting Actor');  -- Ben Falcone for Tammy (2014)
 INSERT INTO worked_on VALUES(3534, 2141, 'Screenwriter');  -- Ben Falcone for Tammy (2014)
 INSERT INTO worked_on VALUES(3534, 2141, 'Director');  -- Ben Falcone for Tammy (2014)
-INSERT INTO worked_on VALUES(3534, 630, 'Actor');  -- Dan Aykroyd for Tammy (2014)
-INSERT INTO worked_on VALUES(3534, 1023, 'Actress');  -- Toni Collette for Tammy (2014)
+INSERT INTO worked_on VALUES(3534, 630, 'Supporting Actor');  -- Dan Aykroyd for Tammy (2014)
+INSERT INTO worked_on VALUES(3534, 1023, 'Supporting Actress');  -- Toni Collette for Tammy (2014)
 INSERT INTO worked_on VALUES(3535, 2142, 'Character Voice');  -- Steve Carell for Despicable Me (2010)
 INSERT INTO worked_on VALUES(3535, 850, 'Character Voice');  -- Julie Andrews for Despicable Me (2010)
 INSERT INTO worked_on VALUES(3535, 2143, 'Character Voice');  -- Kristen Wiig for Despicable Me (2010)
@@ -3868,40 +3868,40 @@ INSERT INTO worked_on VALUES(3539, 2147, 'Director');  -- Kirby Dick for The Inv
 INSERT INTO worked_on VALUES(3312, 2148, 'Director');  -- Alex Gibney for Enron: The Smartest Guys in the Room (2005)
 INSERT INTO worked_on VALUES(3541, 332, 'Director');  -- Errol Morris for Tabloid (2010)
 INSERT INTO worked_on VALUES(3319, 2149, 'Director');  -- Charles Ferguson for No End in Sight (2007)
-INSERT INTO worked_on VALUES(3543, 32, 'Actor');  -- Robert Downey Jr. for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2150, 'Actor');  -- Chris Evans for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2151, 'Actress');  -- Scarlett Johansson for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2152, 'Actor');  -- Mark Ruffalo for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2153, 'Actor');  -- Chris Hemsworth for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2062, 'Actor');  -- Jeremy Renner for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 2154, 'Actor');  -- Stellan Skarsgard for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 54, 'Actor');  -- Samuel L. Jackson for The Avengers (2012)
-INSERT INTO worked_on VALUES(3543, 106, 'Actress');  -- Gwyneth Paltrow for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 32, 'Supporting Actor');  -- Robert Downey Jr. for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2150, 'Supporting Actor');  -- Chris Evans for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2151, 'Supporting Actress');  -- Scarlett Johansson for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2152, 'Supporting Actor');  -- Mark Ruffalo for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2153, 'Supporting Actor');  -- Chris Hemsworth for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2062, 'Supporting Actor');  -- Jeremy Renner for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 2154, 'Supporting Actor');  -- Stellan Skarsgard for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 54, 'Supporting Actor');  -- Samuel L. Jackson for The Avengers (2012)
+INSERT INTO worked_on VALUES(3543, 106, 'Supporting Actress');  -- Gwyneth Paltrow for The Avengers (2012)
 INSERT INTO worked_on VALUES(3543, 2155, 'Character Voice');  -- Paul Bettany for The Avengers (2012)
 INSERT INTO worked_on VALUES(3544, 248, 'Director');  -- Wes Anderson for The Grand Budapest Hotel (2014)
 INSERT INTO worked_on VALUES(3544, 248, 'Screenwriter');  -- Wes Anderson for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 213, 'Actor');  -- Ralph Fiennes for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 200, 'Actor');  -- F. Murray Abraham for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 217, 'Actor');  -- Adrien Brody for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 620, 'Actor');  -- Willem Dafoe for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 87, 'Actor');  -- Jeff Goldblum for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 53, 'Actor');  -- Harvey Keitel for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 102, 'Actor');  -- Jude Law for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 88, 'Actor');  -- Bill Murray for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 10, 'Actor');  -- Edward Norton for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 1050, 'Actress');  -- Saoirse Ronan for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 2156, 'Actor');  -- Jason Schwartzman for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 1052, 'Actress');  -- Tilda Swinton for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 216, 'Actor');  -- Tom Wilkinson for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 57, 'Actor');  -- Owen Wilson for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(3544, 2138, 'Actor');  -- Bob Balaban for The Grand Budapest Hotel (2014)
-INSERT INTO worked_on VALUES(2707, 13, 'Actor');  -- Brad Pitt for Legends of the Fall (1994)
-INSERT INTO worked_on VALUES(2707, 98, 'Actor');  -- Anthony Hopkins for Legends of the Fall (1994)
-INSERT INTO worked_on VALUES(2707, 2157, 'Actor');  -- Aidan Quinn for Legends of the Fall (1994)
-INSERT INTO worked_on VALUES(2707, 2158, 'Actress');  -- Julia Ormond for Legends of the Fall (1994)
-INSERT INTO worked_on VALUES(2707, 2159, 'Actor');  -- Henry Thomas for Legends of the Fall (1994)
+INSERT INTO worked_on VALUES(3544, 213, 'Lead Actor');  -- Ralph Fiennes for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 200, 'Supporting Actor');  -- F. Murray Abraham for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 217, 'Supporting Actor');  -- Adrien Brody for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 620, 'Supporting Actor');  -- Willem Dafoe for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 87, 'Supporting Actor');  -- Jeff Goldblum for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 53, 'Supporting Actor');  -- Harvey Keitel for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 102, 'Supporting Actor');  -- Jude Law for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 88, 'Supporting Actor');  -- Bill Murray for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 10, 'Supporting Actor');  -- Edward Norton for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 1050, 'Supporting Actress');  -- Saoirse Ronan for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 2156, 'Supporting Actor');  -- Jason Schwartzman for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 1052, 'Supporting Actress');  -- Tilda Swinton for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 216, 'Supporting Actor');  -- Tom Wilkinson for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 57, 'Supporting Actor');  -- Owen Wilson for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(3544, 2138, 'Supporting Actor');  -- Bob Balaban for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(2707, 13, 'Lead Actor');  -- Brad Pitt for Legends of the Fall (1994)
+INSERT INTO worked_on VALUES(2707, 98, 'Lead Actor');  -- Anthony Hopkins for Legends of the Fall (1994)
+INSERT INTO worked_on VALUES(2707, 2157, 'Supporting Actor');  -- Aidan Quinn for Legends of the Fall (1994)
+INSERT INTO worked_on VALUES(2707, 2158, 'Supporting Actress');  -- Julia Ormond for Legends of the Fall (1994)
+INSERT INTO worked_on VALUES(2707, 2159, 'Supporting Actor');  -- Henry Thomas for Legends of the Fall (1994)
 INSERT INTO worked_on VALUES(2707, 2160, 'Director');  -- Edward Zwick for Legends of the Fall (1994)
-INSERT INTO worked_on VALUES(3545, 2161, 'Actor');  -- Will Ferrell for Lego Movie (2014)
+INSERT INTO worked_on VALUES(3545, 2161, 'Supporting Actor');  -- Will Ferrell for Lego Movie (2014)
 INSERT INTO worked_on VALUES(3545, 2161, 'Character Voice');  -- Will Ferrell for Lego Movie (2014)
 INSERT INTO worked_on VALUES(3545, 2118, 'Character Voice');  -- Will Arnett for Lego Movie (2014)
 INSERT INTO worked_on VALUES(3545, 2162, 'Character Voice');  -- Elizabeth Banks for Lego Movie (2014)
@@ -3911,95 +3911,95 @@ INSERT INTO worked_on VALUES(3545, 64, 'Character Voice');  -- Morgan Freeman fo
 INSERT INTO worked_on VALUES(3545, 142, 'Character Voice');  -- Liam Neeson for Lego Movie (2014)
 INSERT INTO worked_on VALUES(3545, 2164, 'Character Voice');  -- Chris Pratt for Lego Movie (2014)
 INSERT INTO worked_on VALUES(3545, 2165, 'Character Voice');  -- Channing Tatum for Lego Movie (2014)
-INSERT INTO worked_on VALUES(3548, 49, 'Actor');  -- Russell Crowe for Noah (2014)
+INSERT INTO worked_on VALUES(3548, 49, 'Lead Actor');  -- Russell Crowe for Noah (2014)
 INSERT INTO worked_on VALUES(3548, 252, 'Director');  -- Darren Aronofsky for Noah (2014)
 INSERT INTO worked_on VALUES(3548, 252, 'Screenwriter');  -- Darren Aronofsky for Noah (2014)
 INSERT INTO worked_on VALUES(3548, 2166, 'Screenwriter');  -- Ari Handel for Noah (2014)
-INSERT INTO worked_on VALUES(3548, 1028, 'Actress');  -- Jennifer Connelly for Noah (2014)
-INSERT INTO worked_on VALUES(3548, 98, 'Actor');  -- Anthony Hopkins for Noah (2014)
-INSERT INTO worked_on VALUES(3548, 105, 'Actor');  -- Ray Winstone for Noah (2014)
-INSERT INTO worked_on VALUES(3548, 2167, 'Actress');  -- Emma Watson for Noah (2014)
+INSERT INTO worked_on VALUES(3548, 1028, 'Lead Actress');  -- Jennifer Connelly for Noah (2014)
+INSERT INTO worked_on VALUES(3548, 98, 'Supporting Actor');  -- Anthony Hopkins for Noah (2014)
+INSERT INTO worked_on VALUES(3548, 105, 'Supporting Actor');  -- Ray Winstone for Noah (2014)
+INSERT INTO worked_on VALUES(3548, 2167, 'Supporting Actress');  -- Emma Watson for Noah (2014)
 INSERT INTO worked_on VALUES(3548, 164, 'Character Voice');  -- Nick Nolte for Noah (2014)
 INSERT INTO worked_on VALUES(3548, 233, 'Cinematographer');  -- Matthew Libatique for Noah (2014)
-INSERT INTO worked_on VALUES(3549, 1, 'Actor');  -- Christian Bale for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 667, 'Actor');  -- Casey Affleck for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 2136, 'Actress');  -- Zoe Saldana for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 107, 'Actor');  -- Woody Harrelson for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 608, 'Actor');  -- Sam Shepard for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 620, 'Actor');  -- Willem Dafoe for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(3549, 220, 'Actor');  -- Forest Whitaker for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 1, 'Lead Actor');  -- Christian Bale for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 667, 'Supporting Actor');  -- Casey Affleck for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 2136, 'Supporting Actress');  -- Zoe Saldana for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 107, 'Supporting Actor');  -- Woody Harrelson for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 608, 'Supporting Actor');  -- Sam Shepard for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 620, 'Supporting Actor');  -- Willem Dafoe for Out of the Furnace (2013)
+INSERT INTO worked_on VALUES(3549, 220, 'Supporting Actor');  -- Forest Whitaker for Out of the Furnace (2013)
 INSERT INTO worked_on VALUES(3549, 2168, 'Director');  -- Scott Cooper for Out of the Furnace (2013)
 INSERT INTO worked_on VALUES(3549, 2168, 'Screenwriter');  -- Scott Cooper for Out of the Furnace (2013)
 INSERT INTO worked_on VALUES(3549, 2169, 'Screenwriter');  -- Brad Ingelsby for Out of the Furnace (2013)
-INSERT INTO worked_on VALUES(2340, 22, 'Actor');  -- Humphrey Bogart for Sabrina (1954)
-INSERT INTO worked_on VALUES(2340, 182, 'Actor');  -- William Holden for Sabrina (1954)
+INSERT INTO worked_on VALUES(2340, 22, 'Lead Actor');  -- Humphrey Bogart for Sabrina (1954)
+INSERT INTO worked_on VALUES(2340, 182, 'Supporting Actor');  -- William Holden for Sabrina (1954)
 INSERT INTO worked_on VALUES(3550, 2142, 'Character Voice');  -- Steve Carell for Despicable Me 2 (2013)
 INSERT INTO worked_on VALUES(3550, 2143, 'Character Voice');  -- Kristen Wiig for Despicable Me 2 (2013)
 INSERT INTO worked_on VALUES(3550, 2145, 'Character Voice');  -- Russell Brand for Despicable Me 2 (2013)
 INSERT INTO worked_on VALUES(3550, 2101, 'Character Voice');  -- Steve Coogan for Despicable Me 2 (2013)
-INSERT INTO worked_on VALUES(3551, 219, 'Actor');  -- David Strathairn for Evidence of Blood (1998)
-INSERT INTO worked_on VALUES(3551, 979, 'Actress');  -- Mary McDonnell for Evidence of Blood (1998)
-INSERT INTO worked_on VALUES(3552, 205, 'Actor');  -- Robin Williams for The Birdcage (1996)
-INSERT INTO worked_on VALUES(3552, 2170, 'Actor');  -- Nathan Lane for The Birdcage (1996)
-INSERT INTO worked_on VALUES(3552, 115, 'Actor');  -- Gene Hackman for The Birdcage (1996)
-INSERT INTO worked_on VALUES(3552, 961, 'Actress');  -- Dianne Wiest for The Birdcage (1996)
-INSERT INTO worked_on VALUES(3552, 2171, 'Actor');  -- Hank Azaria for The Birdcage (1996)
+INSERT INTO worked_on VALUES(3551, 219, 'Lead Actor');  -- David Strathairn for Evidence of Blood (1998)
+INSERT INTO worked_on VALUES(3551, 979, 'Supporting Actress');  -- Mary McDonnell for Evidence of Blood (1998)
+INSERT INTO worked_on VALUES(3552, 205, 'Lead Actor');  -- Robin Williams for The Birdcage (1996)
+INSERT INTO worked_on VALUES(3552, 2170, 'Supporting Actor');  -- Nathan Lane for The Birdcage (1996)
+INSERT INTO worked_on VALUES(3552, 115, 'Supporting Actor');  -- Gene Hackman for The Birdcage (1996)
+INSERT INTO worked_on VALUES(3552, 961, 'Supporting Actress');  -- Dianne Wiest for The Birdcage (1996)
+INSERT INTO worked_on VALUES(3552, 2171, 'Supporting Actor');  -- Hank Azaria for The Birdcage (1996)
 INSERT INTO worked_on VALUES(3552, 1813, 'Screenwriter');  -- Elaine May for The Birdcage (1996)
 INSERT INTO worked_on VALUES(3552, 334, 'Director');  -- Mike Nichols for The Birdcage (1996)
-INSERT INTO worked_on VALUES(2812, 823, 'Actress');  -- Doris Day for Lover Come Back (1961)
-INSERT INTO worked_on VALUES(2812, 188, 'Actor');  -- Rock Hudson for Lover Come Back (1961)
-INSERT INTO worked_on VALUES(2812, 2172, 'Actor');  -- Tony Randall for Lover Come Back (1961)
+INSERT INTO worked_on VALUES(2812, 823, 'Lead Actress');  -- Doris Day for Lover Come Back (1961)
+INSERT INTO worked_on VALUES(2812, 188, 'Lead Actor');  -- Rock Hudson for Lover Come Back (1961)
+INSERT INTO worked_on VALUES(2812, 2172, 'Supporting Actor');  -- Tony Randall for Lover Come Back (1961)
 INSERT INTO worked_on VALUES(2812, 1105, 'Director');  -- Delbert Mann for Lover Come Back (1961)
 INSERT INTO worked_on VALUES(3553, 245, 'Director');  -- Woody Allen for Magic in the Moonlight (2014)
 INSERT INTO worked_on VALUES(3553, 245, 'Screenwriter');  -- Woody Allen for Magic in the Moonlight (2014)
-INSERT INTO worked_on VALUES(3553, 2173, 'Actor');  -- Colin Firth for Magic in the Moonlight (2014)
-INSERT INTO worked_on VALUES(3553, 2077, 'Actress');  -- Emma Stone for Magic in the Moonlight (2014)
-INSERT INTO worked_on VALUES(3553, 1026, 'Actress');  -- Marcia Gay Harden for Magic in the Moonlight (2014)
-INSERT INTO worked_on VALUES(3553, 2174, 'Actress');  -- Jackie Weaver for Magic in the Moonlight (2014)
-INSERT INTO worked_on VALUES(3553, 2175, 'Actress');  -- Eileen Atkins for Magic in the Moonlight (2014)
+INSERT INTO worked_on VALUES(3553, 2173, 'Lead Actor');  -- Colin Firth for Magic in the Moonlight (2014)
+INSERT INTO worked_on VALUES(3553, 2077, 'Lead Actress');  -- Emma Stone for Magic in the Moonlight (2014)
+INSERT INTO worked_on VALUES(3553, 1026, 'Supporting Actress');  -- Marcia Gay Harden for Magic in the Moonlight (2014)
+INSERT INTO worked_on VALUES(3553, 2174, 'Supporting Actress');  -- Jackie Weaver for Magic in the Moonlight (2014)
+INSERT INTO worked_on VALUES(3553, 2175, 'Supporting Actress');  -- Eileen Atkins for Magic in the Moonlight (2014)
 INSERT INTO worked_on VALUES(3554, 220, 'Character Voice');  -- Forest Whitaker for Ernest & Celestine (2012)
 INSERT INTO worked_on VALUES(3554, 108, 'Character Voice');  -- Paul Giamatti for Ernest & Celestine (2012)
 INSERT INTO worked_on VALUES(3554, 1009, 'Character Voice');  -- Lauren Bacall for Ernest & Celestine (2012)
 INSERT INTO worked_on VALUES(3554, 646, 'Character Voice');  -- William H. Macy for Ernest & Celestine (2012)
 INSERT INTO worked_on VALUES(3555, 331, 'Director');  -- Michael Moore for Capitalism: A Love Story (2009)
 INSERT INTO worked_on VALUES(3555, 331, 'Screenwriter');  -- Michael Moore for Capitalism: A Love Story (2009)
-INSERT INTO worked_on VALUES(3558, 2176, 'Actor');  -- Matthew McConaughey for Mud (2013)
+INSERT INTO worked_on VALUES(3558, 2176, 'Lead Actor');  -- Matthew McConaughey for Mud (2013)
 INSERT INTO worked_on VALUES(3558, 2177, 'Director');  -- Jeff Nichols for Mud (2013)
 INSERT INTO worked_on VALUES(3558, 2177, 'Screenwriter');  -- Jeff Nichols for Mud (2013)
-INSERT INTO worked_on VALUES(3558, 60, 'Actress');  -- Reese Witherspoon for Mud (2013)
-INSERT INTO worked_on VALUES(3558, 608, 'Actor');  -- Sam Shepard for Mud (2013)
-INSERT INTO worked_on VALUES(3558, 2178, 'Actor');  -- Ray McKinnon for Mud (2013)
-INSERT INTO worked_on VALUES(3558, 669, 'Actor');  -- Michael Shannon for Mud (2013)
-INSERT INTO worked_on VALUES(3560, 26, 'Actor');  -- Harrison Ford for Sabrina (1995)
-INSERT INTO worked_on VALUES(3560, 649, 'Actor');  -- Greg Kinnear for Sabrina (1995)
+INSERT INTO worked_on VALUES(3558, 60, 'Supporting Actress');  -- Reese Witherspoon for Mud (2013)
+INSERT INTO worked_on VALUES(3558, 608, 'Supporting Actor');  -- Sam Shepard for Mud (2013)
+INSERT INTO worked_on VALUES(3558, 2178, 'Supporting Actor');  -- Ray McKinnon for Mud (2013)
+INSERT INTO worked_on VALUES(3558, 669, 'Supporting Actor');  -- Michael Shannon for Mud (2013)
+INSERT INTO worked_on VALUES(3560, 26, 'Lead Actor');  -- Harrison Ford for Sabrina (1995)
+INSERT INTO worked_on VALUES(3560, 649, 'Supporting Actor');  -- Greg Kinnear for Sabrina (1995)
 INSERT INTO worked_on VALUES(3560, 1133, 'Director');  -- Sydney Pollack for Sabrina (1995)
-INSERT INTO worked_on VALUES(3560, 2158, 'Actress');  -- Julia Ormond for Sabrina (1995)
-INSERT INTO worked_on VALUES(3560, 108, 'Actor');  -- Paul Giamatti for Sabrina (1995)
+INSERT INTO worked_on VALUES(3560, 2158, 'Lead Actress');  -- Julia Ormond for Sabrina (1995)
+INSERT INTO worked_on VALUES(3560, 108, 'Supporting Actor');  -- Paul Giamatti for Sabrina (1995)
 INSERT INTO worked_on VALUES(3321, 331, 'Director');  -- Michael Moore for Sicko (2007)
 INSERT INTO worked_on VALUES(3321, 331, 'Screenwriter');  -- Michael Moore for Sicko (2007)
 INSERT INTO worked_on VALUES(3561, 316, 'Director');  -- Sergio Leone for Once Upon a Time in the West (1968)
 INSERT INTO worked_on VALUES(3561, 316, 'Screenwriter');  -- Sergio Leone for Once Upon a Time in the West (1968)
 INSERT INTO worked_on VALUES(3561, 2179, 'Screenwriter');  -- Sergio Donati for Once Upon a Time in the West (1968)
-INSERT INTO worked_on VALUES(3561, 66, 'Actor');  -- Henry Fonda for Once Upon a Time in the West (1968)
-INSERT INTO worked_on VALUES(3561, 2180, 'Actress');  -- Claudia Cardinale for Once Upon a Time in the West (1968)
-INSERT INTO worked_on VALUES(3561, 586, 'Actor');  -- Jason Robards for Once Upon a Time in the West (1968)
-INSERT INTO worked_on VALUES(3561, 2181, 'Actor');  -- Charles Bronson for Once Upon a Time in the West (1968)
-INSERT INTO worked_on VALUES(3562, 26, 'Actor');  -- Harrison Ford for Patriot Games (1992)
-INSERT INTO worked_on VALUES(3562, 132, 'Actor');  -- Sean Bean for Patriot Games (1992)
-INSERT INTO worked_on VALUES(3562, 122, 'Actor');  -- James Earl Jones for Patriot Games (1992)
-INSERT INTO worked_on VALUES(3562, 54, 'Actor');  -- Samuel L. Jackson for Patriot Games (1992)
-INSERT INTO worked_on VALUES(3562, 528, 'Actor');  -- Richard Harris for Patriot Games (1992)
+INSERT INTO worked_on VALUES(3561, 66, 'Supporting Actor');  -- Henry Fonda for Once Upon a Time in the West (1968)
+INSERT INTO worked_on VALUES(3561, 2180, 'Lead Actress');  -- Claudia Cardinale for Once Upon a Time in the West (1968)
+INSERT INTO worked_on VALUES(3561, 586, 'Supporting Actor');  -- Jason Robards for Once Upon a Time in the West (1968)
+INSERT INTO worked_on VALUES(3561, 2181, 'Lead Actor');  -- Charles Bronson for Once Upon a Time in the West (1968)
+INSERT INTO worked_on VALUES(3562, 26, 'Lead Actor');  -- Harrison Ford for Patriot Games (1992)
+INSERT INTO worked_on VALUES(3562, 132, 'Supporting Actor');  -- Sean Bean for Patriot Games (1992)
+INSERT INTO worked_on VALUES(3562, 122, 'Supporting Actor');  -- James Earl Jones for Patriot Games (1992)
+INSERT INTO worked_on VALUES(3562, 54, 'Supporting Actor');  -- Samuel L. Jackson for Patriot Games (1992)
+INSERT INTO worked_on VALUES(3562, 528, 'Supporting Actor');  -- Richard Harris for Patriot Games (1992)
 INSERT INTO worked_on VALUES(3562, 2182, 'Director');  -- Phillip Noyce for Patriot Games (1992)
-INSERT INTO worked_on VALUES(3563, 2183, 'Actor');  -- Adam Sandler for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 146, 'Actor');  -- Don Cheadle for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 2184, 'Actress');  -- Jada Pinkett Smith for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 2185, 'Actress');  -- Liv Tyler for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 2093, 'Actor');  -- Donald Sutherland for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 923, 'Actress');  -- Melinda Dillon for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 2186, 'Actor');  -- Mike Binder for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2183, 'Lead Actor');  -- Adam Sandler for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 146, 'Lead Actor');  -- Don Cheadle for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2184, 'Supporting Actress');  -- Jada Pinkett Smith for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2185, 'Supporting Actress');  -- Liv Tyler for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2093, 'Supporting Actor');  -- Donald Sutherland for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 923, 'Supporting Actress');  -- Melinda Dillon for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2186, 'Supporting Actor');  -- Mike Binder for Reign on Me (2007)
 INSERT INTO worked_on VALUES(3563, 2186, 'Director');  -- Mike Binder for Reign on Me (2007)
 INSERT INTO worked_on VALUES(3563, 2186, 'Screenwriter');  -- Mike Binder for Reign on Me (2007)
-INSERT INTO worked_on VALUES(3563, 2187, 'Actress');  -- Saffron Burrows for Reign on Me (2007)
+INSERT INTO worked_on VALUES(3563, 2187, 'Supporting Actress');  -- Saffron Burrows for Reign on Me (2007)
 INSERT INTO worked_on VALUES(3564, 270, 'Director');  -- Francis Ford Coppola for Dracula (1992)
 INSERT INTO worked_on VALUES(3564, 72, 'Actor');  -- Gary Oldman for Dracula (1992)
 INSERT INTO worked_on VALUES(3564, 98, 'Actor');  -- Anthony Hopkins for Dracula (1992)
