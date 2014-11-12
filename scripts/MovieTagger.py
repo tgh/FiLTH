@@ -167,11 +167,11 @@ class MovieTagger(object):
       print '\n--------------------------------------------------------------------'
       print '\nMOVIE: [' + str(mid) + '] ' + title + ' (' + str(year) + ')\n'
       self._printTagsForMovie(mid, title)
-      print 'You may enter \'q\' to quit, \'skip\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
+      print 'You may enter \'q\' to quit, \'s\' to skip the current movie, \'add\' to add a new tag, or any number of tags as a comma-separated list (e.g. "1,3,5").'
       response = raw_input('Enter tags: ').lower()
       if response == 'q':
         raise QuitException('user quit')
-      elif response == 'skip':
+      elif response == 's':
         self._log('_promptUserForTag', 'User is skipping \'' + str(title) + '\' (' + str(year) + ')')
         print '\nSkipping...\n'
         if len(self._existingTagIds) > 0:

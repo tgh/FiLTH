@@ -154,7 +154,7 @@ class MovieCrew(object):
     '''
     #prompt user for a valid person name
     while True:
-      response = raw_input('\nEnter the name of someone who worked on this movie (or \'quit\' at anytime): ')
+      response = raw_input('\nEnter the name of someone who worked on this movie (or \'q\' to quit at anytime): ')
       self._checkForQuit(response, '_promptUserForCrewPersonHelper')
       matcher = re.search("[^a-zA-Z '\-\.]", response)
       if matcher != None:
@@ -175,10 +175,10 @@ class MovieCrew(object):
       #crew person was not found, prompt if this is a new addition or a typo
       self._log('_promptUserForCrewPersonHelper', 'crew person not found')
       while True:
-        response = raw_input('\nCrew person {0} not found. New person? (y/n/quit): '.format(name))
+        response = raw_input('\nCrew person {0} not found. New person? (y/n/q): '.format(name))
         self._checkForQuit(response, '_promptUserForCrewPersonHelper')
         if response.lower() not in ['y','n']:
-          print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+          print '\n**Invalid entry: \'y\', \'n\', or \'q\' please.\n'
           continue
         if response.lower() == 'n':
           raw_input('\nTry entering the name again.\nHIT ENTER TO CONTINUE')
@@ -191,7 +191,7 @@ class MovieCrew(object):
       self._log('_promptUserForCrewPersonHelper', 'this is a new crew person')
         
       #prompt user for what the person is known as
-      num = self._promptUserForPosition('\nWhat is this person known as (1-' + str(len(self._positions)) + ') or \'quit\')? ')
+      num = self._promptUserForPosition('\nWhat is this person known as (1-' + str(len(self._positions)) + ') or \'q\')? ')
       self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--new crew person is known as ' + self._positions[num-1])
 
       last   = None       #last name string for sql
@@ -240,7 +240,7 @@ class MovieCrew(object):
       print '\nWhat positions did {0} work as in this movie?'.format(name)
       try:
         self._printPositions()
-        print '\nYou may enter \'quit\', or any number of positions as a comma-separated list (e.g. "1,3,5").'.format(name)
+        print '\nYou may enter \'q\' to quit, or any number of positions as a comma-separated list (e.g. "1,3,5").'.format(name)
         response = raw_input('Enter positions: ').lower()
         self._checkForQuit(response, '_promptUserForWorkedAs')
         pids = self._extractPositionIds(response)
@@ -290,13 +290,13 @@ class MovieCrew(object):
 
     # does the user even want to add crew members?
     while True:
-      response = raw_input('\nAre there any crew members that you want to associate with this movie (y/n/quit)? ')
-      if response.lower() not in ['y', 'n', 'quit']:
-        print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+      response = raw_input('\nAre there any crew members that you want to associate with this movie (y/n/q)? ')
+      if response.lower() not in ['y', 'n', 'q']:
+        print '\n**Invalid entry: \'y\', \'n\', or \'q\' please.\n'
         continue
       if response.lower() == 'n':
         return
-      if response.lower() == 'quit':
+      if response.lower() == 'q':
         self._quit('promptUserForCrewPerson')
         return
       break
@@ -307,10 +307,10 @@ class MovieCrew(object):
       if not okToProceed:
         continue
       while True:
-        response = raw_input('\nAny more people work on this movie? (y/n/quit) ')
+        response = raw_input('\nAny more people work on this movie? (y/n/q) ')
         self._checkForQuit(response, 'promptUserForCrewPerson')
-        if response.lower() not in ['y', 'n', 'quit']:
-          print '\n**Invalid entry: \'y\', \'n\', or \'quit\' please.\n'
+        if response.lower() not in ['y', 'n', 'q']:
+          print '\n**Invalid entry: \'y\', \'n\', or \'q\' please.\n'
           continue
         if response.lower() == 'y':
           break
@@ -361,7 +361,7 @@ class MovieCrew(object):
         raise ValueError
       return num
     except ValueError as ve:
-      print "\n**Invalid entry: '" + str(low) + "'-'" + str(high) + "', or 'quit', please."
+      print "\n**Invalid entry: '" + str(low) + "'-'" + str(high) + "', or 'q', please."
       raise ve
 
 
@@ -380,19 +380,19 @@ class MovieCrew(object):
   #----------------------------------------------------------------------------
 
   def _checkForQuit(self, response, functionName):
-    ''' Checks the given response string for "quit"
+    ''' Checks the given response string for quit ("q")
 
         response (string) : a user's response text
         functionName (string) : the function name of caller
     '''
-    if response.lower() == 'quit':
+    if response.lower() == 'q':
       self._quit(functionName)
 
 
   #------------------------------------------------------------------------------
 
   def _quit(self, functionName):
-    ''' This is called when the user enters "quit".  Log entry is written, and
+    ''' This is called when the user enters "q".  Log entry is written, and
         a QuitException is raised.
 
         Raises : QuitException
