@@ -332,6 +332,7 @@ class MovieCrew(object):
         matcher = re.search('VALUES\\(\d+, (\d+), \'([a-zA-Z ]+)\'', line)
         cid = int(matcher.group(1))
         position = matcher.group(2)
+        #FIXME: handle multiple positions by the same person (make the value a list of positions)
         cidsAndPositions[cid] = position
     if len(cidsAndPositions) > 0:
       print '\n--------------------------------------------------------------------'

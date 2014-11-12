@@ -2258,7 +2258,7 @@ INSERT INTO crew_person VALUES (2257, 'Flynn', 'Errol', NULL, 'Actor');  -- Acto
 INSERT INTO crew_person VALUES (2258, 'Minion', 'Joseph', NULL, 'Screenwriter');  -- Screenwriter: Joseph Minion
 INSERT INTO crew_person VALUES (2259, 'Dunne', 'Griffin', NULL, 'Actor');  -- Actor: Griffin Dunne
 INSERT INTO crew_person VALUES (2260, 'Arquette', 'Rosanna', NULL, 'Actress');  -- Actress: Rosanna Arquette
-INSERT INTO crew_person VALUES (2261, 'O'Hara', 'Catherine', NULL, 'Actress');  -- Actress: Catherine O'Hara
+INSERT INTO crew_person VALUES (2261, 'O''Hara', 'Catherine', NULL, 'Actress');  -- Actress: Catherine O'Hara
 INSERT INTO crew_person VALUES (2262, 'Patton', 'Will', NULL, 'Actor');  -- Actor: Will Patton
 INSERT INTO crew_person VALUES (2263, 'Dutton', 'Charles', 'S.', 'Actor');  -- Actor: Charles S. Dutton
 INSERT INTO crew_person VALUES (2264, 'Ryan', 'Meg', NULL, 'Actress');  -- Actress: Meg Ryan
@@ -2279,3 +2279,13 @@ INSERT INTO crew_person VALUES (2278, 'Nielsen', 'Leslie', NULL, 'Actor');  -- A
 INSERT INTO crew_person VALUES (2279, 'Bridges', 'Lloyd', NULL, 'Actor');  -- Actor: Lloyd Bridges
 INSERT INTO crew_person VALUES (2280, 'Hagerty', 'Julie', NULL, 'Actress');  -- Actress: Julie Hagerty
 INSERT INTO crew_person VALUES (2281, 'Martin', 'Dean', NULL, 'Actor');  -- Actor: Dean Martin
+INSERT INTO crew_person VALUES (2282, 'Hancock', 'John', 'Lee', 'Director');  -- Director: John Lee Hancock
+INSERT INTO crew_person VALUES (2283, 'Bohem', 'Leslie', NULL, 'Screenwriter');  -- Screenwriter: Leslie Bohem
+INSERT INTO crew_person VALUES (2284, 'Quaid', 'Dennis', NULL, 'Actor');  -- Actor: Dennis Quaid
+INSERT INTO crew_person VALUES (2285, 'Patric', 'Jason', NULL, 'Actor');  -- Actor: Jason Patric
+INSERT INTO crew_person VALUES (2286, 'Gilbert', 'Lewis', NULL, 'Director');  -- Director: Lewis Gilbert
+INSERT INTO crew_person VALUES (2287, 'Fassbinder', 'Rainer', 'Werner', 'Director');  -- Director: Rainer Werner Fassbinder
+INSERT INTO crew_person VALUES (2288, 'Farrow', 'Mia', NULL, 'Actress');  -- Actress: Mia Farrow
+INSERT INTO crew_person VALUES (2289, 'Kavner', 'Julie', NULL, 'Actress');  -- Actress: Julie Kavner
+INSERT INTO crew_person VALUES (2290, 'Shepherd', 'Cybill', NULL, 'Actress');  -- Actress: Cybill Shepherd
+INSERT INTO crew_person VALUES (2291, 'Di Palma', 'Carlo', NULL, 'Cinematographer');  -- Cinematographer: Carlo Di Palma
