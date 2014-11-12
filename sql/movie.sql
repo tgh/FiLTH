@@ -45,7 +45,7 @@ INSERT INTO movie VALUES (44, 'Against the Ropes', 2004, '**', 'PG-13', 'USA', D
 INSERT INTO movie VALUES (45, 'The Age of Innocence', 1993, '**½', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (46, 'Aguirre, Wrath of God', 1972, '****', 'NR', 'Germany', DEFAULT);
 INSERT INTO movie VALUES (47, 'Airheads', 1994, 'NO STARS', 'PG-13', 'USA', DEFAULT);
-INSERT INTO movie VALUES (48, 'Airplane!', 1980, '***', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (48, 'Airplane!', 1980, '***', 'PG', 'USA', 'A spoof of the dramatic disaster movie "Zero Hour!" (1957)');
 INSERT INTO movie VALUES (49, 'Airport', 1970, '***', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (50, 'Akira', 1988, '*', 'R', 'Japan', DEFAULT);
 INSERT INTO movie VALUES (51, 'The Alamo', 2004, '***', 'PG-13', 'USA', DEFAULT);

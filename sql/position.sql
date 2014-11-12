@@ -6,3 +6,7 @@ INSERT INTO position VALUES('Screenwriter');
 INSERT INTO position VALUES('Producer');
 INSERT INTO position VALUES('Character Voice');
 INSERT INTO position VALUES('Narrator');
+INSERT INTO position VALUES('Lead Actor');
+INSERT INTO position VALUES('Supporting Actor');
+INSERT INTO position VALUES('Lead Actress');
+INSERT INTO position VALUES('Supporting Actress');

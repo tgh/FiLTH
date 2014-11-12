@@ -2274,3 +2274,8 @@ INSERT INTO crew_person VALUES (2273, 'Richards', 'Michael', NULL, 'Actor');  --
 INSERT INTO crew_person VALUES (2274, 'Mantegna', 'Joe', NULL, 'Actor');  -- Actor: Joe Mantegna
 INSERT INTO crew_person VALUES (2275, 'Arquette', 'David', NULL, 'Actor');  -- Actor: David Arquette
 INSERT INTO crew_person VALUES (2276, 'Nelson', 'Judd', NULL, 'Actor');  -- Actor: Judd Nelson
+INSERT INTO crew_person VALUES (2277, 'Hays', 'Robert', NULL, 'Actor');  -- Actor: Robert Hays
+INSERT INTO crew_person VALUES (2278, 'Nielsen', 'Leslie', NULL, 'Actor');  -- Actor: Leslie Nielsen
+INSERT INTO crew_person VALUES (2279, 'Bridges', 'Lloyd', NULL, 'Actor');  -- Actor: Lloyd Bridges
+INSERT INTO crew_person VALUES (2280, 'Hagerty', 'Julie', NULL, 'Actress');  -- Actress: Julie Hagerty
+INSERT INTO crew_person VALUES (2281, 'Martin', 'Dean', NULL, 'Actor');  -- Actor: Dean Martin
