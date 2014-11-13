@@ -23,11 +23,12 @@ class MovieCrew(object):
     self._workedOnInserts = []    # sql INSERT statements for the worked_on table
     self._logFile = logFile
     self._workedOnSqlFilePath = workedOnSqlFilePath
+    self._crewSqlFilePath = crewSqlFilePath
     self._positions = []
     self._initPositions()
-    self._crewMap = {}            # full name (string) -> cid (int)
+    self._crewMap = {}            # full name (string) -> [cid (int)]
     #initialize crew map and get next cid
-    self._nextCid = self._initCrewMap(crewSqlFilePath) + 1
+    self._nextCid = self._initCrewMap() + 1
     self._log('__init__', 'Next cid: ' + str(self._nextCid))
 
 
@@ -44,9 +45,9 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _initCrewMap(self, crewSqlFilepath):
+  def _initCrewMap(self):
     self._log('_initCrewMap', '>> Initializing crew map <<')
-    crewSqlFile = open(crewSqlFilepath, 'r')
+    crewSqlFile = open(self._crewSqlFilePath, 'r')
     lines = crewSqlFile.readlines()
     crewSqlFile.close()
     lastCid = 0
@@ -57,9 +58,13 @@ class MovieCrew(object):
       firstName = self._sanitizeName(matcher.group(3))
       middleName = self._sanitizeName(matcher.group(4))
       fullName = " ".join([firstName, middleName, lastName]).replace('  ', ' ').rstrip()
-      #FIXME: need to handle when crew has the same full name as someone else
-      # - if dictionary already contains fullName, make it's value a list of cids
-      self._crewMap[fullName] = cid
+
+      #handle when crew has the same full name as someone else
+      if fullName in self._crewMap.keys():
+        self._crewMap[fullName].append(cid)
+      else:
+        self._crewMap[fullName] = [cid]
+
       self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
       lastCid = cid
     return lastCid
@@ -82,6 +87,27 @@ class MovieCrew(object):
         message (string) : log entry message
     '''
     self._logFile.write('[MovieCrew.' + func + '] - ' + message + '\n')
+
+
+  #----------------------------------------------------------------------------
+
+  def _getKnownForPositionsForCids(self, cids):
+    ''' Searches the crew_person.sql file for crew with the given cids and
+        returns a dictionary where the keys are the cids passed in and the
+        value of each is the position that crew is known for
+    '''
+    f = open(self._crewSqlFilePath, 'r')
+    lines = f.readlines()
+    f.close()
+
+    positions = {}
+    for line in lines:
+      cid = int(re.search('VALUES \\((\d+), ', line))
+      position = re.search("'(.*)'\\);", line)
+      if cid in cids:
+        positions[cid] = position
+
+    return positions
 
 
   #----------------------------------------------------------------------------
@@ -166,10 +192,30 @@ class MovieCrew(object):
     self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + name)
 
     try:
-      #get the id of the crew person
-      cid = self._crewMap[name]
-      #FIXME: check if cid is a list of cids (to handle crew with the same full name)
-      # - if it is a list, prompt user for the correct one
+      #get the (possible) id(s) of the crew person
+      cids = self._crewMap[name]
+      
+      if len(cids) > 1:
+        #there is more than one crew member with this name
+        print '**There is more than one crew member named ' + name
+        #get positions that each of the crew members are known for
+        knownForPositions = self._getKnownForPositionsForCids(cids)
+        #output the positions
+        for cid, position in knownForPositions:
+          print '\t' + position + ' (' + cid + ')'
+        #prompt user for which one is the one desired
+        while True:
+          response = raw_input('Which id? ')
+          try:
+            cid = int(response)
+            if cid not in cids:
+              raise ValueError
+            break
+          except ValueError:
+            print '**Only values in ' + cids
+            continue 
+      else:
+        cid = cids[0]
       self._log('_promptUserForCrewPersonHelper', 'crew person found with id of ' + str(cid))
     except KeyError:
       #crew person was not found, prompt if this is a new addition or a typo
@@ -209,7 +255,10 @@ class MovieCrew(object):
         last = nameList[0]
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
       cid = self._nextCid
-      self._crewMap[name] = cid
+      if name in self._crewMap.keys():
+        self._crewMap[name].append(cid)
+      else:
+        self._crewMap[name] = [cid]
       self._log('_promptUserForCrewPersonHelper', 'new crew person has an id of ' + str(cid))
       self._nextCid += 1
     #end except KeyError
@@ -332,15 +381,19 @@ class MovieCrew(object):
         matcher = re.search('VALUES\\(\d+, (\d+), \'([a-zA-Z ]+)\'', line)
         cid = int(matcher.group(1))
         position = matcher.group(2)
-        #FIXME: handle multiple positions by the same person (make the value a list of positions)
-        cidsAndPositions[cid] = position
+
+        if cid in cidsAndPositions.keys():
+          cidsAndPositions[cid].append(position)
+        else:
+          cidsAndPositions[cid] = [position]
     if len(cidsAndPositions) > 0:
       print '\n--------------------------------------------------------------------'
       print 'Existing worked-on relationships for ' + title + ' (' + str(year) + '):\n'
-      for existingCid, position in cidsAndPositions.iteritems():
-        for name, currentCid in self._crewMap.iteritems():
-          if existingCid == currentCid:
-            print ' - ' + name + ' (' + position + ')'
+      for existingCid, positions in cidsAndPositions.iteritems():
+        for name, currentCids in self._crewMap.iteritems():
+          if existingCid in currentCids:
+            for position in positions:
+              print ' - ' + name + ' (' + position + ')'
 
 
   #----------------------------------------------------------------------------
