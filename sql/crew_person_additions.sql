@@ -46,3 +46,8 @@ INSERT INTO crew_person VALUES (2288, 'Farrow', 'Mia', NULL, 'Actress');  -- Act
 INSERT INTO crew_person VALUES (2289, 'Kavner', 'Julie', NULL, 'Actress');  -- Actress: Julie Kavner
 INSERT INTO crew_person VALUES (2290, 'Shepherd', 'Cybill', NULL, 'Actress');  -- Actress: Cybill Shepherd
 INSERT INTO crew_person VALUES (2291, 'Di Palma', 'Carlo', NULL, 'Cinematographer');  -- Cinematographer: Carlo Di Palma
+INSERT INTO crew_person VALUES (2292, 'Kristofferson', 'Kris', NULL, 'Actor');  -- Actor: Kris Kristofferson
+INSERT INTO crew_person VALUES (2293, 'Wasikowska', 'Mia', NULL, 'Actress');  -- Actress: Mia Wasikowska
+INSERT INTO crew_person VALUES (2294, 'Spall', 'Timothy', NULL, 'Actor');  -- Actor: Timothy Spall
+INSERT INTO crew_person VALUES (2295, 'Skerritt', 'Tom', NULL, 'Actor');  -- Actor: Tom Skerritt
+INSERT INTO crew_person VALUES (2296, 'Stanton', 'Harry', 'Dean', 'Actor');  -- Actor: Harry Dean Stanton
