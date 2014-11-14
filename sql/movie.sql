@@ -817,7 +817,7 @@ INSERT INTO movie VALUES (816, 'Indiana Jones and the Kingdom of the Crystal Sku
 INSERT INTO movie VALUES (817, 'The Informant!', 2009, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (818, 'Inglorious Basterds', 2009, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (819, 'Innerspace', 1987, '***', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (820, 'Innocence', 2002, '**½', 'R', 'Australia', DEFAULT);
+INSERT INTO movie VALUES (820, 'Innocence', 2001, '**½', 'R', 'Australia', DEFAULT);
 INSERT INTO movie VALUES (821, 'Inside Job', 2010, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (822, 'Inside Man', 2006, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (823, 'The Insider', 1999, '***½', 'R', 'USA', DEFAULT);
