@@ -47,7 +47,13 @@ populate_db_table "oscar_given_to"
 populate_db_table "tag_given_to"
 populate_db_table "worked_on"
 
-
+echo "Clearing *additions.sql files..."
+> $FILTH_SQL_PATH/crew_person_additions.sql
+> $FILTH_SQL_PATH/movie_additions.sql
+> $FILTH_SQL_PATH/tag_additions.sql
+> $FILTH_SQL_PATH/tag_given_to_additions.sql
+> $FILTH_SQL_PATH/worked_on_additions.sql
+sleep 0.5
 echo "Creating temp/previous_movie_ratings.txt..."
 sleep 0.5
 antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/previous_movie_ratings.txt
