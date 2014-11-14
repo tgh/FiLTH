@@ -2,13 +2,20 @@
  * This sql script is for PostgreSQL.
  */
 
+-- ----------------------
+-- Create the database --
+-- ----------------------
+
+DROP DATABASE IF EXISTS filth;
+CREATE DATABASE filth;
+CREATE SCHEMA filth;
+
+
 -- --------------------
 -- Create the tables --
 -- --------------------
 
 -- a movie entity -------------------------------------------------------------
-DROP TABLE IF EXISTS movie CASCADE;
-DROP SEQUENCE IF EXISTS movie_mid_seq;
 CREATE SEQUENCE movie_mid_seq;
 CREATE TABLE movie (
 mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
@@ -31,7 +38,6 @@ comments text DEFAULT NULL);
 
 -- a country entity -----------------------------------------------------------
 -- (only used as an integrity constraint for movie.country)
-DROP TABLE IF EXISTS country CASCADE;
 CREATE TABLE country (
 country_name text NOT NULL);
 
@@ -52,7 +58,6 @@ country_name text NOT NULL);
 -- "***"
 -- "***½"
 -- "****"
-DROP TABLE IF EXISTS star_rating CASCADE;
 CREATE TABLE star_rating (
 rating text NOT NULL);
 
@@ -69,14 +74,11 @@ rating text NOT NULL);
 -- "R" (Restricted)
 -- "X" (no one under 17 admitted [prior to 1990])
 -- "NC-17" (no one under 17 admitted [after 1990 when X renamed to NC-17])
-DROP TABLE IF EXISTS mpaa CASCADE;
 CREATE TABLE mpaa (
 rating text NOT NULL);
 
 
 -- a crewperson entity --------------------------------------------------------
-DROP TABLE IF EXISTS crew_person CASCADE;
-DROP SEQUENCE IF EXISTS crew_person_cid_seq;
 CREATE SEQUENCE crew_person_cid_seq;
 CREATE TABLE crew_person (
 cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
@@ -96,7 +98,6 @@ ALTER SEQUENCE crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
 
 
 -- crewperson <--> movie relationship -----------------------------------------
-DROP TABLE IF EXISTS worked_on CASCADE;
 CREATE TABLE worked_on (
 mid smallint NOT NULL,
 cid smallint NOT NULL,
@@ -109,7 +110,6 @@ position text NOT NULL);
 -- since there are only about 5 positions I care about right now, but if I ever
 -- wanted to add a position (such as costume designer) this would make it much
 -- easier.
-DROP TABLE IF EXISTS position CASCADE;
 CREATE TABLE position (
 position_title text NOT NULL);
 
@@ -119,8 +119,6 @@ position_title text NOT NULL);
 -- Tags are used to, well, tag a movie.  Movies can be tagged with keywords or
 -- phrases (e.g. "New York", "Indie", "Unconventional").  This will probably be
 -- used mostly for marking a movie with one or more genres.
-DROP TABLE IF EXISTS tag CASCADE;
-DROP SEQUENCE IF EXISTS tag_tid_seq;
 CREATE SEQUENCE tag_tid_seq;
 CREATE TABLE tag (
 tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
@@ -129,15 +127,12 @@ parent_tid smallint);
 
 
 -- tag <--> movie relationship ------------------------------------------------
-DROP TABLE IF EXISTS tag_given_to CASCADE;
 CREATE TABLE tag_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL);
 
 
 -- an oscar entity ------------------------------------------------------------
-DROP TABLE IF EXISTS oscar CASCADE;
-DROP SEQUENCE IF EXISTS oscar_oid_seq;
 CREATE SEQUENCE oscar_oid_seq;
 CREATE TABLE oscar (
 oid smallint DEFAULT nextval('oscar_oid_seq') NOT NULL,
@@ -145,7 +140,6 @@ category text NOT NULL);
 
 
 -- oscar <--> movie relationship ----------------------------------------------
-DROP TABLE IF EXISTS oscar_given_to CASCADE;
 CREATE TABLE oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
@@ -159,8 +153,6 @@ sharing_with smallint DEFAULT NULL);
 
 
 -- a list entity --------------------------------------------------------------
-DROP TABLE IF EXISTS list CASCADE;
-DROP SEQUENCE IF EXISTS list_lid_seq;
 CREATE SEQUENCE list_lid_seq;
 CREATE TABLE list (
 lid smallint DEFAULT nextval('list_lid_seq') NOT NULL,
@@ -169,7 +161,6 @@ list_author text DEFAULT NULL);
 
 
 -- list <--> movie relationship -----------------------------------------------
-DROP TABLE IF EXISTS list_contains CASCADE;
 CREATE TABLE list_contains (
 mid smallint NOT NULL,
 lid smallint NOT NULL,
@@ -178,8 +169,6 @@ rank smallint DEFAULT NULL);
 
 -- a tyler entity -------------------------------------------------------------
 -- (like oscar, but for my annual awards)
-DROP TABLE IF EXISTS tyler CASCADE;
-DROP SEQUENCE IF EXISTS tyler_tid_seq;
 CREATE SEQUENCE tyler_tid_seq;
 CREATE TABLE tyler (
 tid smallint DEFAULT nextval('tyler_tid_seq') NOT NULL,
@@ -187,7 +176,6 @@ category text NOT NULL);
 
 
 -- tyler <--> movie relationship ----------------------------------------------
-DROP TABLE IF EXISTS tyler_given_to CASCADE;
 CREATE TABLE tyler_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL,
@@ -337,7 +325,6 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 -- the name being declared for SQL use.
 -- http://developer.postgresql.org/pgdocs/postgres/xfunc-internal.html
 --
-DROP FUNCTION IF EXISTS to_ascii(bytea, name);
 CREATE FUNCTION to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
 LANGUAGE internal;
 
@@ -347,7 +334,6 @@ LANGUAGE internal;
 -- Sanity checks the year of a movie.  A movie year must be between 1900 and
 -- 2 years into the future (current year + 2) inclusive.
 --
-DROP FUNCTION IF EXISTS movie_year_ok(year smallint);
 CREATE FUNCTION movie_year_ok(year smallint) RETURNS boolean AS $$
 BEGIN
   IF year < 1900 OR year > (SELECT extract(year FROM current_date) + 2) THEN
@@ -362,7 +348,6 @@ $$ LANGUAGE plpgsql;
 --
 -- Returns the number of movies actually seen.
 --
-DROP FUNCTION IF EXISTS num_movies_seen();
 CREATE FUNCTION num_movies_seen() RETURNS integer AS $$
 DECLARE
   total integer;
@@ -380,7 +365,6 @@ $$ LANGUAGE plpgsql;
 -- Inserts a movie into the database.  This is to ensure that the year of the
 -- movie is not more than 2 years after the current year.
 --
-DROP FUNCTION IF EXISTS insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text);
 CREATE FUNCTION insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text) RETURNS void AS $$
 BEGIN
   -- check that the year makes sense (is not less than 1900 nor more than 2
@@ -397,7 +381,6 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's unique id.
 --
-DROP FUNCTION IF EXISTS update_movie_year(movie_id integer, new_year smallint);
 CREATE FUNCTION update_movie_year(movie_id integer, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
@@ -412,7 +395,6 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's title.
 --
-DROP FUNCTION IF EXISTS update_movie_year(movie_title text, new_year smallint);
 CREATE FUNCTION update_movie_year(movie_title text, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
