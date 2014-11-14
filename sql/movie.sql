@@ -496,7 +496,7 @@ INSERT INTO movie VALUES (495, 'E.T. the Extra-Terrestrial', 1982, '****', 'PG',
 INSERT INTO movie VALUES (496, 'Eagle Eye', 2008, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (497, 'East of Eden', 1955, '****', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (498, 'Easy Rider', 1969, '****', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (499, 'Eclipse', 2010, '**½', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (499, 'The Twilight Saga: Eclipse', 2010, '**½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (500, 'An Education', 2009, '**½', 'PG-13', 'England', DEFAULT);
 INSERT INTO movie VALUES (501, 'The Education of Little Tree', 1997, '***', 'PG', 'Canada', DEFAULT);
 INSERT INTO movie VALUES (502, 'Ed Wood', 1994, '***', 'R', 'USA', DEFAULT);
@@ -1165,7 +1165,7 @@ INSERT INTO movie VALUES (1164, 'Neighbors', 1920, '****', 'NR', 'USA', DEFAULT)
 INSERT INTO movie VALUES (1165, 'The Net', 1995, '**', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1166, 'Network', 1976, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1167, 'The Neverending Story', 1984, '***', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1168, 'New Moon', 2009, '***', 'PG-13', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1168, 'The Twilight Saga: New Moon', 2009, '***', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1169, 'The New World', 2005, '***½', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1170, 'New York Stories', 1989, '**', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1171, 'New York Stories: Life Lessons', 1989, '**½', 'PG', 'USA', DEFAULT);
@@ -3389,7 +3389,7 @@ INSERT INTO movie VALUES (3388, 'To Rome with Love', 2012, '***', 'R', 'USA', NU
 INSERT INTO movie VALUES (3389, 'Tower Heist', 2011, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3390, 'Albert Nobbs', 2011, '***', 'R', DEFAULT, NULL);
 INSERT INTO movie VALUES (3391, 'Brave', 2012, '***', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (3392, 'Breaking Dawn Part 1', 2011, '**', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3392, 'The Twilight Saga: Breaking Dawn Part 1', 2011, '**', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3393, 'Mamma Mia!', 2008, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3394, 'The Dark Knight Rises', 2012, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3395, 'Mr. Popper''''s Penguins', 2011, '**', 'PG', 'USA', NULL);
@@ -3450,7 +3450,7 @@ INSERT INTO movie VALUES (3449, 'Man of Steel', 2013, '***', 'PG-13', 'USA', NUL
 INSERT INTO movie VALUES (3450, 'Monsters University', 2013, '***', 'G', 'USA', NULL);
 INSERT INTO movie VALUES (3451, 'Paranorman', 2012, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3452, 'World War Z', 2013, '***½', 'PG-13', 'USA', NULL);
-INSERT INTO movie VALUES (3453, 'Breaking Dawn Part 2', 2012, '*½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3453, 'The Twilight Saga: Breaking Dawn Part 2', 2012, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3454, 'Mission: Impossible II', 2000, '*', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3455, 'Blue Jasmine', 2013, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3456, 'House at the End of the Street', 2012, '*', 'PG-13', 'USA', NULL);

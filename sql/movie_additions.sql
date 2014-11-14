@@ -19,3 +19,7 @@ UPDATE movie SET title = 'Vagabond' WHERE mid = 1711;
 UPDATE movie SET title = 'The Curse of the Were-Rabbit' WHERE mid = 1735;
 UPDATE movie SET title = 'The Hunger Games: Catching Fire' WHERE mid = 3508;
 UPDATE movie SET title = 'Thirteen Conversations About One Thing' WHERE mid = 8;
+UPDATE movie SET title = 'The Twilight Saga: New Moon' WHERE mid = 1168;
+UPDATE movie SET title = 'The Twilight Saga: Eclipse' WHERE mid = 499;
+UPDATE movie SET title = 'The Twilight Saga: Breaking Dawn Part 1' WHERE mid = 3392;
+UPDATE movie SET title = 'The Twilight Saga: Breaking Dawn Part 2' WHERE mid = 3453;

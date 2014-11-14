@@ -292,8 +292,6 @@ Breakdown (1997) *** [R] USA
 Breakfast at Tiffany’s (1961) **½ [NR] USA
 Breakfast Club, The (1985) *** [R] USA
 Breaking Away (1979) **** [PG] USA
-Breaking Dawn Part 1 (2011) ** [PG-13] USA
-Breaking Dawn Part 2 (2012) *½ [PG-13] USA
 Breaking the Waves (1996) **½ [R] Denmark
 Breathless (1961) ** [NR] France
 Bride of Frankenstein, The (1935) *** [NR] USA
@@ -573,7 +571,6 @@ E.T. The Extra-Terrestrial (1982) **** [PG] USA
 Eagle Eye (2008) *** [PG-13] USA
 East of Eden (1955) **** [NR] USA
 Easy Rider (1969) **** [R] USA
-Eclipse (2010) **½ [PG-13] USA
 Education, An (2009) **½ [PG-13] England
 Education of Little Tree, The (1997) *** [PG] Canada
 Ed Wood (1994) *** [R] USA
@@ -1360,7 +1357,6 @@ Net, The (1995) ** [PG-13] USA
 Network (1976) **** [R] USA
 Never Let Me Go (2010) *** [R] England
 Neverending Story, The (1984) *** [PG] USA
-New Moon (2009) *** [PG-13] USA
 New World, The (2005) ***½ [PG-13] USA
 New York Stories (1989) ** [PG] USA
 New York Stories: Life Lessons [short] (1989) **½ [PG] USA
@@ -1951,6 +1947,10 @@ Turning Point, The (1977) ½* [PG] USA
 TwentyFourSeven (1998) **½ [R] England
 Twilight (1998) **½ [R] USA
 Twilight (2008) *** [PG-13] USA
+Twilight Saga: New Moon, The (2009) *** [PG-13] USA
+Twilight Saga: Eclipse, The (2010) **½ [PG-13] USA
+Twilight Saga: Breaking Dawn Part 1, The (2011) ** [PG-13] USA
+Twilight Saga: Breaking Dawn Part 2, The (2012) *½ [PG-13] USA
 Twin Falls Idaho (1999) *** [R] USA
 Twist (2003) ***½ [R] USA
 Twisted (2004) * [R] USA
