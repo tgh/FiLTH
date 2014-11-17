@@ -2182,7 +2182,7 @@ INSERT INTO movie VALUES (2181, 'Kotch', 1971, 'not seen', 'PG', 'USA', DEFAULT)
 INSERT INTO movie VALUES (2182, 'Sometimes a Great Notion', 1971, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2183, 'The Ruling Class', 1972, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2184, 'The Heartbreak Kid', 1972, 'not seen', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2185, 'Serpico', 1973, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2185, 'Serpico', 1973, '**½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2186, 'Save the Tiger', 1973, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2187, 'The Paper Chase', 1973, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2188, 'Harry and Tonto', 1974, 'not seen', 'R', 'USA', DEFAULT);
@@ -3575,3 +3575,4 @@ INSERT INTO movie VALUES (3578, 'Fury', 2014, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3579, 'House on Haunted Hill', 1959, '**', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3580, 'John Adams', 2008, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3581, 'Nightwatch', 1997, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3582, 'Saving Mr. Banks', 2013, '***½', 'PG-13', 'USA', NULL);
