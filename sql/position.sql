@@ -10,3 +10,5 @@ INSERT INTO position VALUES('Lead Actor');
 INSERT INTO position VALUES('Supporting Actor');
 INSERT INTO position VALUES('Lead Actress');
 INSERT INTO position VALUES('Supporting Actress');
+INSERT INTO position VALUES('Small Part');
+INSERT INTO position VALUES('Cameo');
