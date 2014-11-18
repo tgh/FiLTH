@@ -51,3 +51,12 @@ INSERT INTO crew_person VALUES (2293, 'Wasikowska', 'Mia', NULL, 'Actress');  --
 INSERT INTO crew_person VALUES (2294, 'Spall', 'Timothy', NULL, 'Actor');  -- Actor: Timothy Spall
 INSERT INTO crew_person VALUES (2295, 'Skerritt', 'Tom', NULL, 'Actor');  -- Actor: Tom Skerritt
 INSERT INTO crew_person VALUES (2296, 'Stanton', 'Harry', 'Dean', 'Actor');  -- Actor: Harry Dean Stanton
+INSERT INTO crew_person VALUES (2297, 'Marshall', 'Frank', NULL, 'Producer');  -- Producer: Frank Marshall
+INSERT INTO crew_person VALUES (2298, 'Monroe', 'Marilyn', NULL, 'Actress');  -- Actress: Marilyn Monroe
+INSERT INTO crew_person VALUES (2299, 'Manville', 'Lesley', NULL, 'Actress');  -- Actress: Lesley Manville
+INSERT INTO crew_person VALUES (2300, 'Schneider', 'Paul', NULL, 'Actor');  -- Lead Actor: Paul Schneider
+INSERT INTO crew_person VALUES (2301, 'Deschanel', 'Zooey', NULL, 'Actress');  -- Actress: Zooey Deschanel
+INSERT INTO crew_person VALUES (2302, 'Whigham', 'Shea', NULL, 'Actor');  -- Actor: Shea Whigham
+INSERT INTO crew_person VALUES (2303, 'Fugit', 'Patrick', NULL, 'Actor');  -- Actor: Patrick Fugit
+INSERT INTO crew_person VALUES (2304, 'Lee', 'Jason', NULL, 'Actor');  -- Actor: Jason Lee
+INSERT INTO crew_person VALUES (2305, 'Jones', 'Jeffrey', NULL, 'Actor');  -- Actor: Jeffrey Jones
