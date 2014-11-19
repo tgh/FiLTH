@@ -305,3 +305,5 @@ INSERT INTO tag VALUES (304, 'old-age', NULL);
 INSERT INTO tag VALUES (305, 'hostage-situation', 25);
 INSERT INTO tag VALUES (306, 'divorce', 262);
 INSERT INTO tag VALUES (307, 'spoof', 2);
+INSERT INTO tag VALUES (308, 'graphic-sexual-content', 63);
+INSERT INTO tag VALUES (309, 'graphic-violence', 63);

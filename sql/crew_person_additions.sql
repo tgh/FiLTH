@@ -60,3 +60,21 @@ INSERT INTO crew_person VALUES (2302, 'Whigham', 'Shea', NULL, 'Actor');  -- Act
 INSERT INTO crew_person VALUES (2303, 'Fugit', 'Patrick', NULL, 'Actor');  -- Actor: Patrick Fugit
 INSERT INTO crew_person VALUES (2304, 'Lee', 'Jason', NULL, 'Actor');  -- Actor: Jason Lee
 INSERT INTO crew_person VALUES (2305, 'Jones', 'Jeffrey', NULL, 'Actor');  -- Actor: Jeffrey Jones
+INSERT INTO crew_person VALUES (2306, 'Tautou', 'Audrey', NULL, 'Actress');  -- Actress: Audrey Tautou
+INSERT INTO crew_person VALUES (2307, 'Birch', 'Thora', NULL, 'Actress');  -- Actress: Thora Birch
+INSERT INTO crew_person VALUES (2308, 'Bentley', 'Wes', NULL, 'Actor');  -- Actor: Wes Bentley
+INSERT INTO crew_person VALUES (2309, 'Franz', 'Dennis', NULL, 'Actor');  -- Actor: Dennis Franz
+INSERT INTO crew_person VALUES (2310, 'Caplan', 'Cathy', NULL, 'Editor');  -- Director: Cathy Caplan
+INSERT INTO crew_person VALUES (2311, 'Haneke', 'Tom', NULL, 'Editor');  -- Director: Tom Haneke
+INSERT INTO crew_person VALUES (2312, 'Silk', 'Lawrence', NULL, 'Editor');  -- Director: Lawrence Silk
+INSERT INTO crew_person VALUES (2313, 'Smith', 'Charles', 'Martin', 'Actor');  -- Actor: Charles Martin Smith
+INSERT INTO crew_person VALUES (2314, 'Kaye', 'Tony', NULL, 'Director');  -- Director: Tony Kaye
+INSERT INTO crew_person VALUES (2315, 'Furlong', 'Edward', NULL, 'Actor');  -- Actor: Edward Furlong
+INSERT INTO crew_person VALUES (2316, 'D''Angelo', 'Beverly', NULL, 'Actress');  -- Actress: Beverly D'Angelo
+INSERT INTO crew_person VALUES (2317, 'Suplee', 'Ethan', NULL, 'Actor');  -- Actor: Ethan Suplee
+INSERT INTO crew_person VALUES (2318, 'Smith', 'Chris', NULL, 'Director');  -- Director: Chris Smith
+INSERT INTO crew_person VALUES (2319, 'Sorkin', 'Aaron', NULL, 'Screenwriter');  -- Screenwriter: Aaron Sorkin
+INSERT INTO crew_person VALUES (2320, 'Harron', 'Mary', NULL, 'Director');  -- Director: Mary Harron
+INSERT INTO crew_person VALUES (2321, 'Turner', 'Guinevere', NULL, 'Actress');  -- Actress: Guinevere Turner
+INSERT INTO crew_person VALUES (2322, 'Lucas', 'Josh', NULL, 'Actor');  -- Actor: Josh Lucas
+INSERT INTO crew_person VALUES (2323, 'Theroux', 'Justin', NULL, 'Actor');  -- Actor: Justin Theroux
