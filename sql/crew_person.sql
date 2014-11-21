@@ -2321,3 +2321,6 @@ INSERT INTO crew_person VALUES (2320, 'Harron', 'Mary', NULL, 'Director');  -- D
 INSERT INTO crew_person VALUES (2321, 'Turner', 'Guinevere', NULL, 'Actress');  -- Actress: Guinevere Turner
 INSERT INTO crew_person VALUES (2322, 'Lucas', 'Josh', NULL, 'Actor');  -- Actor: Josh Lucas
 INSERT INTO crew_person VALUES (2323, 'Theroux', 'Justin', NULL, 'Actor');  -- Actor: Justin Theroux
+INSERT INTO crew_person VALUES (2324, 'Nolan', 'Jonathan', NULL, 'Screenwriter');  -- Screenwriter: Jonathan Nolan
+INSERT INTO crew_person VALUES (2325, 'Chastain', 'Jessica', NULL, 'Actress');  -- Actress: Jessica Chastain
+INSERT INTO crew_person VALUES (2326, 'Grace', 'Topher', NULL, 'Actor');  -- Actor: Topher Grace

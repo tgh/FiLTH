@@ -26,3 +26,4 @@ UPDATE movie SET title = 'The Twilight Saga: Breaking Dawn Part 2' WHERE mid = 3
 UPDATE movie SET year = 2001 WHERE mid = 820;
 INSERT INTO movie VALUES (3582, 'Saving Mr. Banks', 2013, '***½', 'PG-13', 'USA', NULL);
 UPDATE movie SET star_rating = '**½' WHERE mid = 2185;
+INSERT INTO movie VALUES (3583, 'Interstellar', 2014, '***½', 'PG-13', 'USA', NULL);

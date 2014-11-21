@@ -7056,3 +7056,8 @@ INSERT INTO tag_given_to VALUES(87, 225);  -- American Psycho (2000) tagged with
 INSERT INTO tag_given_to VALUES(87, 59);  -- American Psycho (2000) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(87, 58);  -- American Psycho (2000) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(87, 2);  -- American Psycho (2000) tagged with 'comedy'
+INSERT INTO tag_given_to VALUES(3583, 1);  -- Interstellar (2014) tagged with 'drama'
+INSERT INTO tag_given_to VALUES(3583, 11);  -- Interstellar (2014) tagged with 'adventure'
+INSERT INTO tag_given_to VALUES(3583, 299);  -- Interstellar (2014) tagged with 'future'
+INSERT INTO tag_given_to VALUES(3583, 284);  -- Interstellar (2014) tagged with 'outer-space'
+INSERT INTO tag_given_to VALUES(3583, 6);  -- Interstellar (2014) tagged with 'science-fiction'

@@ -3576,3 +3576,4 @@ INSERT INTO movie VALUES (3579, 'House on Haunted Hill', 1959, '**', 'NR', 'USA'
 INSERT INTO movie VALUES (3580, 'John Adams', 2008, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3581, 'Nightwatch', 1997, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3582, 'Saving Mr. Banks', 2013, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3583, 'Interstellar', 2014, '***½', 'PG-13', 'USA', NULL);
