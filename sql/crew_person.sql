@@ -2324,3 +2324,10 @@ INSERT INTO crew_person VALUES (2323, 'Theroux', 'Justin', NULL, 'Actor');  -- A
 INSERT INTO crew_person VALUES (2324, 'Nolan', 'Jonathan', NULL, 'Screenwriter');  -- Screenwriter: Jonathan Nolan
 INSERT INTO crew_person VALUES (2325, 'Chastain', 'Jessica', NULL, 'Actress');  -- Actress: Jessica Chastain
 INSERT INTO crew_person VALUES (2326, 'Grace', 'Topher', NULL, 'Actor');  -- Actor: Topher Grace
+INSERT INTO crew_person VALUES (2327, 'Friedlander', 'Judah', NULL, 'Actor');  -- Actor: Judah Friedlander
+INSERT INTO crew_person VALUES (2328, 'Crystal', 'Billy', NULL, 'Actor');  -- Actor: Billy Crystal
+INSERT INTO crew_person VALUES (2329, 'Tolan', 'Peter', NULL, 'Screenwriter');  -- Screenwriter: Peter Tolan
+INSERT INTO crew_person VALUES (2330, 'Bernal', 'Gael', 'Garcia', 'Actor');  -- Actor: Gael Garcia Bernal
+INSERT INTO crew_person VALUES (2331, 'Lopez', 'Jennifer', NULL, 'Actress');  -- Actress: Jennifer Lopez
+INSERT INTO crew_person VALUES (2332, 'Stoltz', 'Eric', NULL, 'Actor');  -- Actor: Eric Stoltz
+INSERT INTO crew_person VALUES (2333, 'Cube', 'Ice', NULL, 'Actor');  -- Actor: Ice Cube
