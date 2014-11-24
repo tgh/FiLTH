@@ -96,3 +96,16 @@ INSERT INTO crew_person VALUES (2338, 'Berg', 'Peter', NULL, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (2339, 'Hirsch', 'Emile', NULL, 'Actor');  -- Actor: Emile Hirsch
 INSERT INTO crew_person VALUES (2340, 'Kitsch', 'Taylor', NULL, 'Actor');  -- Actor: Taylor Kitsch
 INSERT INTO crew_person VALUES (2341, 'Bana', 'Eric', NULL, 'Actor');  -- Actor: Eric Bana
+INSERT INTO crew_person VALUES (2342, 'Ramis', 'Harold', NULL, 'Actor');  -- Actor: Harold Ramis
+INSERT INTO crew_person VALUES (2343, 'Kudrow', 'Lisa', NULL, 'Actress');  -- Actress: Lisa Kudrow
+INSERT INTO crew_person VALUES (2344, 'Grammer', 'Kelsey', NULL, 'Actor');  -- Actor: Kelsey Grammer
+INSERT INTO crew_person VALUES (2345, 'Dunst', 'Kirsten', NULL, 'Actress');  -- Actress: Kirsten Dunst
+INSERT INTO crew_person VALUES (2346, 'Peters', 'Bernadette', NULL, 'Actress');  -- Actress: Bernadette Peters
+INSERT INTO crew_person VALUES (2347, 'McKay', 'Adam', NULL, 'Director');  -- Director: Adam McKay
+INSERT INTO crew_person VALUES (2348, 'Applegate', 'Christina', NULL, 'Actress');  -- Actress: Christina Applegate
+INSERT INTO crew_person VALUES (2349, 'Rudd', 'Paul', NULL, 'Actor');  -- Actor: Paul Rudd
+INSERT INTO crew_person VALUES (2350, 'Koechner', 'David', NULL, 'Actor');  -- Actor: David Koechner
+INSERT INTO crew_person VALUES (2351, 'Willard', 'Fred', NULL, 'Actor');  -- Actor: Fred Willard
+INSERT INTO crew_person VALUES (2352, 'Armisen', 'Fred', NULL, 'Actor');  -- Actor: Fred Armisen
+INSERT INTO crew_person VALUES (2353, 'Rogen', 'Seth', NULL, 'Actor');  -- Actor: Seth Rogen
+INSERT INTO crew_person VALUES (2354, 'Apatow', 'Judd', NULL, 'Producer');  -- Producer: Judd Apatow

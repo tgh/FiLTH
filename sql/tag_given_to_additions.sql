@@ -198,3 +198,7 @@ INSERT INTO tag_given_to VALUES(3584, 17);  -- Lone Survivor (2013) tagged with 
 INSERT INTO tag_given_to VALUES(3584, 58);  -- Lone Survivor (2013) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(3584, 59);  -- Lone Survivor (2013) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(3584, 63);  -- Lone Survivor (2013) tagged with 'graphic'
+INSERT INTO tag_given_to VALUES(94, 120);  -- Anastasia (1997) tagged with '1910''s'
+INSERT INTO tag_given_to VALUES(94, 118);  -- Anastasia (1997) tagged with '20th-century'
+INSERT INTO tag_given_to VALUES(96, 32);  -- The Anderson Platoon (1967) tagged with 'black-and-white'
+INSERT INTO tag_given_to VALUES(96, 17);  -- The Anderson Platoon (1967) tagged with 'war'
