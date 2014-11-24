@@ -2476,7 +2476,7 @@ INSERT INTO movie VALUES (2475, 'Lorenzo''s Oil', 1992, 'not seen', 'PG-13', 'US
 INSERT INTO movie VALUES (2476, 'Passion Fish', 1992, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2477, 'Enchanted April', 1992, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2478, 'Six Degrees of Separation', 1993, 'not seen', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2479, 'The Firm', 1993, 'not seen', 'R', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2479, 'The Firm', 1993, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2480, 'Fearless', 1993, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2481, 'Nell', 1994, 'not seen', 'PG-13', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2482, 'Blue Sky', 1994, 'not seen', 'PG-13', 'USA', DEFAULT);
@@ -3577,3 +3577,4 @@ INSERT INTO movie VALUES (3580, 'John Adams', 2008, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3581, 'Nightwatch', 1997, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3582, 'Saving Mr. Banks', 2013, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3583, 'Interstellar', 2014, '***½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3584, 'Lone Survivor', 2013, '***', 'R', 'USA', NULL);

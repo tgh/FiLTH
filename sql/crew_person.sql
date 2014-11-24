@@ -2331,3 +2331,11 @@ INSERT INTO crew_person VALUES (2330, 'Bernal', 'Gael', 'Garcia', 'Actor');  -- 
 INSERT INTO crew_person VALUES (2331, 'Lopez', 'Jennifer', NULL, 'Actress');  -- Actress: Jennifer Lopez
 INSERT INTO crew_person VALUES (2332, 'Stoltz', 'Eric', NULL, 'Actor');  -- Actor: Eric Stoltz
 INSERT INTO crew_person VALUES (2333, 'Cube', 'Ice', NULL, 'Actor');  -- Actor: Ice Cube
+INSERT INTO crew_person VALUES (2334, 'Rabe', 'David', NULL, 'Screenwriter');  -- Screenwriter: David Rabe
+INSERT INTO crew_person VALUES (2335, 'Rayfiel', 'David', NULL, 'Screenwriter');  -- Screenwriter: David Rayfiel
+INSERT INTO crew_person VALUES (2336, 'Tripplehorn', 'Jeanne', NULL, 'Actress');  -- Actress: Jeanne Tripplehorn
+INSERT INTO crew_person VALUES (2337, 'Brimley', 'Wilford', NULL, 'Actor');  -- Actor: Wilford Brimley
+INSERT INTO crew_person VALUES (2338, 'Berg', 'Peter', NULL, 'Actor');  -- Actor: Peter Berg
+INSERT INTO crew_person VALUES (2339, 'Hirsch', 'Emile', NULL, 'Actor');  -- Actor: Emile Hirsch
+INSERT INTO crew_person VALUES (2340, 'Kitsch', 'Taylor', NULL, 'Actor');  -- Actor: Taylor Kitsch
+INSERT INTO crew_person VALUES (2341, 'Bana', 'Eric', NULL, 'Actor');  -- Actor: Eric Bana
