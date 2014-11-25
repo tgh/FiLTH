@@ -78,7 +78,7 @@ INSERT INTO crew_person VALUES (76, 'Redford', 'Robert', DEFAULT, 'Actor');  -- 
 INSERT INTO crew_person VALUES (77, 'Lorre', 'Peter', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (78, 'Douglas', 'Kirk', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (79, 'Douglas', 'Michael', DEFAULT, 'Actor');  -- Actor
-INSERT INTO crew_person VALUES (80, 'De Vito', 'Danny', DEFAULT, 'Actor');  -- Actor
+INSERT INTO crew_person VALUES (80, 'DeVito', 'Danny', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (81, 'Lloyd', 'Christopher', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (82, 'Fox', 'Michael', 'J.', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (83, 'Moore', 'Joel', 'David', 'Actor');  -- Actor
@@ -129,7 +129,7 @@ INSERT INTO crew_person VALUES (127, 'Vaughn', 'Vince', DEFAULT, 'Actor');  -- A
 INSERT INTO crew_person VALUES (128, 'Modine', 'Matthew', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (129, 'Keaton', 'Michael', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (130, 'D''Onofrio', 'Vincent', DEFAULT, 'Actor');  -- Actor
-INSERT INTO crew_person VALUES (131, 'Pierce', 'Guy', DEFAULT, 'Actor');  -- Actor
+INSERT INTO crew_person VALUES (131, 'Pearce', 'Guy', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (132, 'Bean', 'Sean', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (133, 'Astin', 'Sean', DEFAULT, 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (134, 'Brolin', 'Josh', DEFAULT, 'Actor');  -- Actor
@@ -2352,3 +2352,18 @@ INSERT INTO crew_person VALUES (2351, 'Willard', 'Fred', NULL, 'Actor');  -- Act
 INSERT INTO crew_person VALUES (2352, 'Armisen', 'Fred', NULL, 'Actor');  -- Actor: Fred Armisen
 INSERT INTO crew_person VALUES (2353, 'Rogen', 'Seth', NULL, 'Actor');  -- Actor: Seth Rogen
 INSERT INTO crew_person VALUES (2354, 'Apatow', 'Judd', NULL, 'Producer');  -- Producer: Judd Apatow
+INSERT INTO crew_person VALUES (2355, 'Jones', 'Laura', NULL, 'Screenwriter');  -- Screenwriter: Laura Jones
+INSERT INTO crew_person VALUES (2356, 'Guzman', 'Luis', NULL, 'Actor');  -- Actor: Luis Guzman
+INSERT INTO crew_person VALUES (2357, 'Segal', 'Peter', NULL, 'Director');  -- Director: Peter Segal
+INSERT INTO crew_person VALUES (2358, 'Michod', 'David', NULL, 'Director');  -- Director: David Michod
+INSERT INTO crew_person VALUES (2359, 'Frecheville', 'James', NULL, 'Actor');  -- Actor: James Frecheville
+INSERT INTO crew_person VALUES (2360, 'Edgerton', 'Joel', NULL, 'Actor');  -- Actor: Joel Edgerton
+INSERT INTO crew_person VALUES (2361, 'Mendelsohn', 'Ben', NULL, 'Actor');  -- Actor: Ben Mendelsohn
+INSERT INTO crew_person VALUES (2362, 'Roberts', 'Tony', NULL, 'Actor');  -- Actor: Tony Roberts
+INSERT INTO crew_person VALUES (2363, 'Curtain', 'Jane', NULL, 'Actress');  -- Actress: Jane Curtain
+INSERT INTO crew_person VALUES (2364, 'Mahoney', 'John', NULL, 'Actor');  -- Actor: John Mahoney
+INSERT INTO crew_person VALUES (2365, 'Alcott', 'Todd', NULL, 'Screenwriter');  -- Screenwriter: Todd Alcott
+INSERT INTO crew_person VALUES (2366, 'Biggs', 'Jason', NULL, 'Actor');  -- Actor: Jason Biggs
+INSERT INTO crew_person VALUES (2367, 'Ricci', 'Christina', NULL, 'Actress');  -- Actress: Christina Ricci
+INSERT INTO crew_person VALUES (2368, 'Fallon', 'Jimmy', NULL, 'Actor');  -- Actor: Jimmy Fallon
+INSERT INTO crew_person VALUES (2369, 'Stevens', 'Fisher', NULL, 'Actor');  -- Actor: Fisher Stevens
