@@ -1959,7 +1959,7 @@ INSERT INTO movie VALUES (1958, 'The Razor''s Edge', 1946, 'not seen', 'NR', 'US
 INSERT INTO movie VALUES (1959, 'Miracle on 34th Street', 1947, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1960, 'Crossfire', 1947, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1961, 'The Bishop''s Wife', 1947, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (1962, 'Gentleman''s Agreement', 1947, 'not seen', 'NR', 'USA', DEFAULT);
+INSERT INTO movie VALUES (1962, 'Gentleman''s Agreement', 1947, '**½', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1963, 'Johnny Belinda', 1948, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1964, 'The Snake Pit', 1948, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1965, 'The Red Shoes', 1948, 'not seen', 'NR', 'England', DEFAULT);
@@ -2012,7 +2012,7 @@ INSERT INTO movie VALUES (2011, 'America America', 1963, 'not seen', 'NR', 'USA'
 INSERT INTO movie VALUES (2012, 'Lilies of the Field', 1963, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2013, 'Cleopatra', 1963, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2014, 'Tom Jones', 1963, 'not seen', 'NR', 'England', DEFAULT);
-INSERT INTO movie VALUES (2015, 'Becket', 1964, 'not seen', 'NR', 'England', DEFAULT);
+INSERT INTO movie VALUES (2015, 'Becket', 1964, '***', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2016, 'Zorba the Greek', 1964, 'not seen', 'NR', DEFAULT, DEFAULT);
 INSERT INTO movie VALUES (2017, 'A Thousand Clowns', 1965, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2018, 'Ship of Fools', 1965, 'not seen', 'NR', 'USA', DEFAULT);
@@ -3578,3 +3578,7 @@ INSERT INTO movie VALUES (3581, 'Nightwatch', 1997, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3582, 'Saving Mr. Banks', 2013, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3583, 'Interstellar', 2014, '***½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3584, 'Lone Survivor', 2013, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3585, 'Alan Partridge', 2013, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (3586, 'Dream House', 2011, '**', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3587, 'The Imitation Game', 2014, '***', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NULL);
