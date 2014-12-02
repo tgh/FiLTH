@@ -139,3 +139,7 @@ INSERT INTO crew_person VALUES (2381, 'Lefebvre', 'Philippe', NULL, 'Screenwrite
 INSERT INTO crew_person VALUES (2382, 'Cluzet', 'Francois', NULL, 'Actor');  -- Actor: Francois Cluzet
 INSERT INTO crew_person VALUES (2383, 'Rochefort', 'Jean', NULL, 'Actor');  -- Actor: Jean Rochefort
 INSERT INTO crew_person VALUES (2384, 'Croze', 'Marie-Josee', NULL, 'Actress');  -- Actress: Marie-Josee Croze
+INSERT INTO crew_person VALUES (2385, 'Wallis', 'Shani', NULL, 'Actress');  -- Actress: Shani Wallis
+INSERT INTO crew_person VALUES (2386, 'Reed', 'Oliver', NULL, 'Actor');  -- Actor: Oliver Reed
+INSERT INTO crew_person VALUES (2387, 'Lester', 'Mark', NULL, 'Actor');  -- Actor: Mark Lester
+INSERT INTO crew_person VALUES (2388, 'Rossiter', 'Leonard', NULL, 'Actor');  -- Actor: Leonard Rossiter

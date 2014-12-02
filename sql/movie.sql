@@ -2020,7 +2020,7 @@ INSERT INTO movie VALUES (2019, 'The Russians Are Coming The Russians Are Coming
 INSERT INTO movie VALUES (2020, 'The Sand Pebbles', 1966, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2021, 'A Man for All Seasons', 1966, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2022, 'Doctor Dolittle', 1967, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2023, 'Oliver!', 1968, 'not seen', 'G', 'England', DEFAULT);
+INSERT INTO movie VALUES (2023, 'Oliver!', 1968, '***', 'G', 'England', DEFAULT);
 INSERT INTO movie VALUES (2024, 'Funny Girl', 1968, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2025, 'The Lion in Winter', 1968, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2026, 'Rachel, Rachel', 1968, 'not seen', 'R', 'USA', DEFAULT);

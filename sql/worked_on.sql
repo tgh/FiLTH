@@ -356,12 +356,12 @@ INSERT INTO worked_on VALUES(2167, 265, 'Supporting Actor');  -- John Cassavetes
 INSERT INTO worked_on VALUES(2168, 193, 'Lead Actor');  -- Alan Arkin worked on The Heart Is a Lonely Hunter as Lead Actor
 INSERT INTO worked_on VALUES(2169, 548, 'Lead Actor');  -- Cliff Robertson worked on Charly as Lead Actor
 INSERT INTO worked_on VALUES(2025, 120, 'Lead Actor');  -- Peter O'Toole worked on The Lion in Winter as Lead Actor
-INSERT INTO worked_on VALUES(2023, 549, 'Lead Actor');  -- Ron Moody worked on Oliver! as Lead Actor
+INSERT INTO worked_on VALUES(2023, 549, 'Supporting Actor');  -- Ron Moody worked on Oliver! as Lead Actor
 INSERT INTO worked_on VALUES(2170, 550, 'Lead Actor');  -- Alan Bates worked on The Fixer as Lead Actor
 INSERT INTO worked_on VALUES(542, 551, 'Supporting Actor');  -- Seymour Cassel worked on Faces as Supporting Actor
 INSERT INTO worked_on VALUES(2023, 552, 'Supporting Actor');  -- Jack Wild worked on Oliver! as Supporting Actor
 INSERT INTO worked_on VALUES(2171, 553, 'Supporting Actor');  -- Jack Albertson worked on The Subject Was Roses as Supporting Actor
-INSERT INTO worked_on VALUES(1309, 554, 'Supporting Actor');  -- Gene Wilder worked on The Producers as Supporting Actor
+INSERT INTO worked_on VALUES(1309, 554, 'Lead Actor');  -- Gene Wilder worked on The Producers as Supporting Actor
 INSERT INTO worked_on VALUES(2172, 555, 'Supporting Actor');  -- Daniel Massey worked on Star! as Supporting Actor
 INSERT INTO worked_on VALUES(1066, 68, 'Lead Actor');  -- Jon Voight worked on Midnight Cowboy as Lead Actor
 INSERT INTO worked_on VALUES(2027, 192, 'Lead Actor');  -- Richard Burton worked on Anne of the Thousand Days as Lead Actor
@@ -3702,9 +3702,9 @@ INSERT INTO worked_on VALUES(3494, 2060, 'Supporting Actor');  -- Bradley Cooper
 INSERT INTO worked_on VALUES(3494, 348, 'Director');  -- David O. Russell for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 348, 'Screenwriter');  -- David O. Russell for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 2061, 'Screenwriter');  -- Eric Warren Singer for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 3, 'Supporting Actor');  -- Robert De Niro for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 3, 'Small Part');  -- Robert De Niro for American Hustle (2013)
 INSERT INTO worked_on VALUES(3494, 2062, 'Supporting Actor');  -- Jeremy Renner for American Hustle (2013)
-INSERT INTO worked_on VALUES(3494, 2063, 'Supporting Actor');  -- Michael Pena for American Hustle (2013)
+INSERT INTO worked_on VALUES(3494, 2063, 'Small Part');  -- Michael Pena for American Hustle (2013)
 INSERT INTO worked_on VALUES(3495, 368, 'Director');  -- Wim Wenders for Pina (2011)
 INSERT INTO worked_on VALUES(3496, 2064, 'Lead Actor');  -- Shane Carruth for Upstream Color (2013)
 INSERT INTO worked_on VALUES(3496, 2064, 'Director');  -- Shane Carruth for Upstream Color (2013)
@@ -4618,3 +4618,7 @@ INSERT INTO worked_on VALUES(3588, 1005, 'Supporting Actress');  -- Kristin Scot
 INSERT INTO worked_on VALUES(3588, 2380, 'Small Part');  -- Guillaume Canet for Tell No One (2006)
 INSERT INTO worked_on VALUES(3588, 2383, 'Supporting Actor');  -- Jean Rochefort for Tell No One (2006)
 INSERT INTO worked_on VALUES(3588, 2384, 'Supporting Actress');  -- Marie-Josee Croze for Tell No One (2006)
+INSERT INTO worked_on VALUES(2023, 2385, 'Supporting Actress');  -- Shani Wallis for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2386, 'Supporting Actor');  -- Oliver Reed for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2387, 'Lead Actor');  -- Mark Lester for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2388, 'Supporting Actor');  -- Leonard Rossiter for Oliver! (1968)

@@ -35,3 +35,4 @@ INSERT INTO movie VALUES (3587, 'The Imitation Game', 2014, '***', 'PG-13', 'Eng
 INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NULL);
 UPDATE movie SET star_rating = '***' WHERE mid = 2015;
 UPDATE movie SET star_rating = '**½' WHERE mid = 1962;
+UPDATE movie SET star_rating = '***' WHERE mid = 2023;

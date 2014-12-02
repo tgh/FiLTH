@@ -430,3 +430,7 @@ INSERT INTO worked_on VALUES(3588, 1005, 'Supporting Actress');  -- Kristin Scot
 INSERT INTO worked_on VALUES(3588, 2380, 'Small Part');  -- Guillaume Canet for Tell No One (2006)
 INSERT INTO worked_on VALUES(3588, 2383, 'Supporting Actor');  -- Jean Rochefort for Tell No One (2006)
 INSERT INTO worked_on VALUES(3588, 2384, 'Supporting Actress');  -- Marie-Josee Croze for Tell No One (2006)
+INSERT INTO worked_on VALUES(2023, 2385, 'Supporting Actress');  -- Shani Wallis for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2386, 'Supporting Actor');  -- Oliver Reed for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2387, 'Lead Actor');  -- Mark Lester for Oliver! (1968)
+INSERT INTO worked_on VALUES(2023, 2388, 'Supporting Actor');  -- Leonard Rossiter for Oliver! (1968)
