@@ -2386,3 +2386,9 @@ INSERT INTO crew_person VALUES (2385, 'Wallis', 'Shani', NULL, 'Actress');  -- A
 INSERT INTO crew_person VALUES (2386, 'Reed', 'Oliver', NULL, 'Actor');  -- Actor: Oliver Reed
 INSERT INTO crew_person VALUES (2387, 'Lester', 'Mark', NULL, 'Actor');  -- Actor: Mark Lester
 INSERT INTO crew_person VALUES (2388, 'Rossiter', 'Leonard', NULL, 'Actor');  -- Actor: Leonard Rossiter
+INSERT INTO crew_person VALUES (2389, 'MacMurray', 'Fred', NULL, 'Actor');  -- Actor: Fred MacMurray
+INSERT INTO crew_person VALUES (2390, 'Bochner', 'Hart', NULL, 'Actor');  -- Actor: Hart Bochner
+INSERT INTO crew_person VALUES (2391, 'Bottoms', 'Sam', NULL, 'Actor');  -- Actor: Sam Bottoms
+INSERT INTO crew_person VALUES (2392, 'Safinia', 'Farhad', NULL, 'Screenwriter');  -- Screenwriter: Farhad Safinia
+INSERT INTO crew_person VALUES (2393, 'Fawcett', 'Farrah', NULL, 'Actress');  -- Actress: Farrah Fawcett
+INSERT INTO crew_person VALUES (2394, 'Goggins', 'Walton', NULL, 'Actor');  -- Actor: Walton Goggins
