@@ -75,7 +75,7 @@ class MovieCrew(object):
   def _sanitizeName(self, name):
     if name in ['NULL', 'DEFAULT']:
       return ''
-    return name.strip("'")
+    return name.strip("'").replace("''", "'")
 
 
   #----------------------------------------------------------------------------
@@ -245,20 +245,23 @@ class MovieCrew(object):
       first  = 'NULL'     #first name string for sql
       nameList = name.split(' ')
       if len(nameList) == 3:
-        last = nameList[2]
-        middle = "'" + nameList[1] + "'"
-        first = "'" + nameList[0] + "'"
+        last = nameList[2].replace("'","''")
+        middle = "'" + nameList[1].replace("'","''") + "'"
+        first = "'" + nameList[0].replace("'","''") + "'"
       elif len(nameList) == 2:
-        last = nameList[1]
-        first = "'" + nameList[0] + "'"
+        last = nameList[1].replace("'","''")
+        first = "'" + nameList[0].replace("'","''") + "'"
       else:
-        last = nameList[0]
+        last = nameList[0].replace("'","''")
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
       cid = self._nextCid
+
+      #XXX: why is this if statement here? this will never be true right?
       if name in self._crewMap.keys():
         self._crewMap[name].append(cid)
       else:
         self._crewMap[name] = [cid]
+
       self._log('_promptUserForCrewPersonHelper', 'new crew person has an id of ' + str(cid))
       self._nextCid += 1
     #end except KeyError
