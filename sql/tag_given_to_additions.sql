@@ -341,3 +341,8 @@ INSERT INTO tag_given_to VALUES(112, 118);  -- Apollo 13 (1995) tagged with '20t
 INSERT INTO tag_given_to VALUES(112, 21);  -- Apollo 13 (1995) tagged with 'period'
 INSERT INTO tag_given_to VALUES(112, 59);  -- Apollo 13 (1995) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(113, 50);  -- The Apostle (1997) tagged with 'spiritual/religion'
+INSERT INTO tag_given_to VALUES(114, 117);  -- Appaloosa (2008) tagged with '19th-century'
+INSERT INTO tag_given_to VALUES(114, 133);  -- Appaloosa (2008) tagged with 'law-enforcement'
+INSERT INTO tag_given_to VALUES(114, 21);  -- Appaloosa (2008) tagged with 'period'
+INSERT INTO tag_given_to VALUES(114, 59);  -- Appaloosa (2008) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(114, 58);  -- Appaloosa (2008) tagged with 'based-on-something'
