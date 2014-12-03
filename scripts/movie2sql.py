@@ -342,6 +342,8 @@ def isNewMovie(title, year, stars, mpaa, country):
       origYear = movie['year']
       movie['year'] = year
       updateValueList.append("year = " + str(year))
+  #end except
+
   #update what needs updating
   if movie['star_rating'] != stars:
     #replace "\xc2\xbd" (the representation of a '1/2' character) with the
@@ -370,8 +372,8 @@ def isNewMovie(title, year, stars, mpaa, country):
     country = "'" + country + "'"
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
-  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("'","''").replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
+  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
+  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
