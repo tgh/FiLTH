@@ -2681,7 +2681,7 @@ INSERT INTO movie VALUES (2680, 'Camelot', 1967, 'not seen', 'NR', 'USA', DEFAUL
 INSERT INTO movie VALUES (2681, 'Ice Station Zebra', 1968, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2682, 'Marooned', 1969, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2683, 'Tora! Tora! Tora!', 1970, 'not seen', 'G', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2684, 'Summer of ''42''', 1971, 'not seen', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2684, 'Summer of ''42', 1971, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2685, '1776', 1972, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2686, 'Jonathan Livingston Seagull', 1973, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2687, 'Earthquake', 1974, 'not seen', 'PG', 'USA', DEFAULT);
@@ -2820,7 +2820,7 @@ INSERT INTO movie VALUES (2819, 'That Man from Rio', 1964, 'not seen', 'NR', 'Fr
 INSERT INTO movie VALUES (2820, 'One Potato, Two Potato', 1964, 'not seen', 'NR', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2821, 'The Umbrellas of Cherbourg', 1964, 'not seen', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (2822, 'The Train', 1965, 'not seen', 'NR', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2823, 'Casanova ''70''', 1965, 'not seen', 'NR', 'Italy', DEFAULT);
+INSERT INTO movie VALUES (2823, 'Casanova ''70', 1965, 'not seen', 'NR', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (2824, 'Those Magnificent Men in Their Flying Machines or How I Flew from London to Paris in 25 Hours 11 Minutes', 1965, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2825, 'Khartoum', 1966, 'not seen', 'NR', 'England', DEFAULT);
 INSERT INTO movie VALUES (2826, 'The Naked Prey', 1966, 'not seen', 'NR', 'USA', DEFAULT);
@@ -2927,7 +2927,7 @@ INSERT INTO movie VALUES (2926, 'War and Peace', 1967, 'not seen', 'NR', 'USSR',
 INSERT INTO movie VALUES (2927, 'The Girl with a Pistol', 1968, 'not seen', 'NR', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (2928, 'The Boys of Paul Street', 1968, 'not seen', 'G', 'Hungary', DEFAULT);
 INSERT INTO movie VALUES (2929, 'The Battle of Neretva', 1969, 'not seen', 'G', 'Yugoslavia', DEFAULT);
-INSERT INTO movie VALUES (2930, 'Adalen ''31''', 1969, 'not seen', 'X', 'Sweden', DEFAULT);
+INSERT INTO movie VALUES (2930, 'Adalen ''31', 1969, 'not seen', 'X', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (2931, 'The Brothers Karamazov', 1969, 'not seen', 'NR', 'USSR', DEFAULT);
 INSERT INTO movie VALUES (2932, 'Hoa-Binh', 1970, 'not seen', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (2933, 'First Love', 1970, 'not seen', 'R', 'Sweden', DEFAULT);
@@ -3069,7 +3069,7 @@ INSERT INTO movie VALUES (3068, 'Zelary', 2003, 'not seen', 'R', 'Czech Republic
 INSERT INTO movie VALUES (3069, 'The Sea Inside', 2004, 'not seen', 'PG-13', 'Spain', DEFAULT);
 INSERT INTO movie VALUES (3070, 'As It Is in Heaven', 2004, 'not seen', 'NR', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (3071, 'Yesterday', 2004, 'not seen', 'R', 'South Africa', DEFAULT);
-INSERT INTO movie VALUES (3072, 'Don''''t Tell', 2005, 'not seen', 'R', 'Italy', DEFAULT);
+INSERT INTO movie VALUES (3072, 'Don''t Tell', 2005, 'not seen', 'R', 'Italy', DEFAULT);
 INSERT INTO movie VALUES (3073, 'Joyeux Noel', 2005, 'not seen', 'PG-13', 'France', DEFAULT);
 INSERT INTO movie VALUES (3074, 'Paradise Now', 2005, 'not seen', 'PG-13', 'Palestine', DEFAULT);
 INSERT INTO movie VALUES (3075, 'Tsotsi', 2005, 'not seen', 'R', 'South Africa', DEFAULT);
@@ -3360,7 +3360,7 @@ INSERT INTO movie VALUES (3359, 'Cave of Forgotten Dreams', 2010, '***', 'G', DE
 INSERT INTO movie VALUES (3360, 'The Adventures of Tintin', 2011, '****', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3361, 'The Hunger Games', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3362, 'Kung-Fu Panda 2', 2011, '**½', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (3363, 'Meek''''s Cutoff', 2011, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3363, 'Meek''s Cutoff', 2011, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3364, 'The Ides of March', 2011, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3365, 'Mirror Mirror', 2012, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3366, 'Sleuth', 2007, '**½', 'R', 'England', NULL);
@@ -3392,13 +3392,13 @@ INSERT INTO movie VALUES (3391, 'Brave', 2012, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3392, 'The Twilight Saga: Breaking Dawn Part 1', 2011, '**', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3393, 'Mamma Mia!', 2008, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3394, 'The Dark Knight Rises', 2012, '***½', 'PG-13', 'USA', NULL);
-INSERT INTO movie VALUES (3395, 'Mr. Popper''''s Penguins', 2011, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3395, 'Mr. Popper''s Penguins', 2011, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3396, 'Never Let Me Go', 2010, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3397, 'Hope Springs', 2012, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3398, 'Duane Hopwood', 2005, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3399, 'Bullhead', 2011, '***', 'R', 'Belgium', NULL);
 INSERT INTO movie VALUES (3400, 'A Separation', 2011, '****', 'PG-13', 'Iran', NULL);
-INSERT INTO movie VALUES (3401, 'Lemony Snicket''''s a Series of Unfortunate Events', 2004, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3401, 'Lemony Snicket''s a Series of Unfortunate Events', 2004, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3402, 'Samsara', 2012, '****', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3403, 'The Master', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3404, 'The Great Gatsby', 1974, '*', 'PG', 'USA', NULL);
@@ -3467,7 +3467,7 @@ INSERT INTO movie VALUES (3466, 'The Constant Gardener', 2006, '***', 'R', 'Engl
 INSERT INTO movie VALUES (3467, 'Naqoyqatsi', 2002, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3468, '50 First Dates', 2004, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3469, '2010', 1984, '***', 'PG', 'USA', NULL);
-INSERT INTO movie VALUES (3470, 'Being Elmo: A Puppeteer''''s Journey', 2011, '***½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3470, 'Being Elmo: A Puppeteer''s Journey', 2011, '***½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3471, 'The Host', 2006, '***', 'R', 'South Korea', NULL);
 INSERT INTO movie VALUES (3472, 'The Lady Vanishes', 1938, '***½', 'NR', 'England', NULL);
 INSERT INTO movie VALUES (3473, 'Let the Right One In', 2008, '***', 'R', 'Sweden', NULL);
@@ -3582,3 +3582,4 @@ INSERT INTO movie VALUES (3585, 'Alan Partridge', 2013, '***', 'R', 'England', N
 INSERT INTO movie VALUES (3586, 'Dream House', 2011, '**', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3587, 'The Imitation Game', 2014, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NULL);
+INSERT INTO movie VALUES (3589, 'Test''s', 1999, '**', 'R', 'USA', NULL);

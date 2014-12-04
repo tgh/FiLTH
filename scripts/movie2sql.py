@@ -472,13 +472,13 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isNew:
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country))
           mid = _nextMid
 
         #ask user for tags for the movie
