@@ -2393,3 +2393,23 @@ INSERT INTO crew_person VALUES (2392, 'Safinia', 'Farhad', NULL, 'Farhad Safinia
 INSERT INTO crew_person VALUES (2393, 'Fawcett', 'Farrah', NULL, 'Farrah Fawcett', 'Actress');  -- Actress: Farrah Fawcett
 INSERT INTO crew_person VALUES (2394, 'Goggins', 'Walton', NULL, 'Walton Goggins', 'Actor');  -- Actor: Walton Goggins
 INSERT INTO crew_person VALUES (2395, 'Knott', 'Robert', NULL, 'Robert Knott', 'Screenwriter');  -- Screenwriter: Robert Knott
+INSERT INTO crew_person VALUES (2396, 'Bryden', 'Bill', NULL, 'Bill Bryden', 'Director');  -- Director: Bill Bryden
+INSERT INTO crew_person VALUES (2397, 'Jarman', 'Derek', NULL, 'Derek Jarman', 'Director');  -- Director: Derek Jarman
+INSERT INTO crew_person VALUES (2398, 'Roddam', 'Franc', NULL, 'Franc Roddam', 'Director');  -- Director: Franc Roddam
+INSERT INTO crew_person VALUES (2399, 'Roeg', 'Nicolas', NULL, 'Nicolas Roeg', 'Director');  -- Director: Nicolas Roeg
+INSERT INTO crew_person VALUES (2400, 'Sturridge', 'Charles', NULL, 'Charles Sturridge', 'Director');  -- Director: Charles Sturridge
+INSERT INTO crew_person VALUES (2401, 'Temple', 'Julien', NULL, 'Julien Temple', 'Director');  -- Director: Julien Temple
+INSERT INTO crew_person VALUES (2402, 'Hurley', 'Elizabeth', NULL, 'Elizabeth Hurley', 'Actress');  -- Actress: Elizabeth Hurley
+INSERT INTO crew_person VALUES (2403, 'Fonda', 'Bridget', NULL, 'Bridget Fonda', 'Actress');  -- Actress: Bridget Fonda
+INSERT INTO crew_person VALUES (2404, 'Pellington', 'Mark', NULL, 'Mark Pellington', 'Director');  -- Director: Mark Pellington
+INSERT INTO crew_person VALUES (2405, 'Gamble', 'Mason', NULL, 'Mason Gamble', 'Actor');  -- Actor: Mason Gamble
+INSERT INTO crew_person VALUES (2406, 'Clark', 'Spencer', 'Treat', 'Spencer Treat Clark', 'Actor');  -- Actor: Spencer Treat Clark
+INSERT INTO crew_person VALUES (2407, 'Raimi', 'Sam', NULL, 'Sam Raimi', 'Director');  -- Director: Sam Raimi
+INSERT INTO crew_person VALUES (2408, 'Raimi', 'Ivan', NULL, 'Ivan Raimi', 'Screenwriter');  -- Screenwriter: Ivan Raimi
+INSERT INTO crew_person VALUES (2409, 'Campbell', 'Bruce', NULL, 'Bruce Campbell', 'Actor');  -- Actor: Bruce Campbell
+INSERT INTO crew_person VALUES (2410, 'Headly', 'Glenne', NULL, 'Glenne Headly', 'Actress');  -- Actress: Glenne Headly
+INSERT INTO crew_person VALUES (2411, 'Roberts', 'Jordan', NULL, 'Jordan Roberts', 'Screenwriter');  -- Screenwriter: Jordan Roberts
+INSERT INTO crew_person VALUES (2412, 'Rominik', 'Andrew', NULL, 'Andrew Rominik', 'Director');  -- Director: Andrew Rominik
+INSERT INTO crew_person VALUES (2413, 'Parker', 'Mary-Louise', NULL, 'Mary-Louise Parker', 'Actress');  -- Actress: Mary-Louise Parker
+INSERT INTO crew_person VALUES (2414, 'Mueller', 'Niels', NULL, 'Niels Mueller', 'Director');  -- Director: Niels Mueller
+INSERT INTO crew_person VALUES (2415, 'Kennedy', 'Kevin', NULL, 'Kevin Kennedy', 'Screenwriter');  -- Screenwriter: Kevin Kennedy
