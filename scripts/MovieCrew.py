@@ -123,7 +123,7 @@ class MovieCrew(object):
         fullName (string): full name
         position (string) : the position name
     '''
-    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', {2}, {3}, '{4}');  -- {4}: {5}".format(str(self._nextCid), last, first, middle, position, fullName)
+    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', {2}, {3}, '{5}', '{4}');  -- {4}: {5}".format(str(self._nextCid), last, first, middle, position, fullName)
     self._log('_createInsertStatementForCrew', 'created SQL: ' + insertStatement)
     self._crewInserts.append(insertStatement)
 

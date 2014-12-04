@@ -80,9 +80,12 @@ DROP SEQUENCE IF EXISTS crew_person_cid_seq;
 CREATE SEQUENCE crew_person_cid_seq;
 CREATE TABLE crew_person (
 cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
-l_name text NOT NULL,
-f_name text DEFAULT NULL,     -- first and middle names can be NULL (in cases
-m_name text DEFAULT NULL,     -- such as Madonna, Cher, Costa-Gavras, etc, their
+last_name text NOT NULL,
+-- first and middle names can be NULL (in cases
+-- such as Madonna, Cher, Costa-Gavras, etc, their
+first_name text DEFAULT NULL,
+middle_name text DEFAULT NULL,
+full_name text NOT NULL,
 known_as text DEFAULT NULL);  -- names will be considered last names)
 
 -- Sequences start with 1 by default.  Since the oscar_given_to and

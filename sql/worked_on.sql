@@ -3055,7 +3055,7 @@ INSERT INTO worked_on VALUES(481, 1696, 'Screenwriter');  -- Peter George worked
 INSERT INTO worked_on VALUES(481, 1697, 'Screenwriter');  -- Terry Southern worked on Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb as Screenwriter
 INSERT INTO worked_on VALUES(2817, 1698, 'Screenwriter');  -- Peter Stone worked on Father Goose as Screenwriter
 INSERT INTO worked_on VALUES(2817, 1699, 'Screenwriter');  -- Frank Tarloff worked on Father Goose as Screenwriter
-INSERT INTO worked_on VALUES(2818, 1700, 'Screenwriter');  -- Age worked on The Organizer as Screenwriter
+INSERT INTO worked_on VALUES(2818, 1700, 'Screenwriter');  -- Agenore Incrocci worked on The Organizer as Screenwriter
 INSERT INTO worked_on VALUES(2818, 1701, 'Screenwriter');  -- Furio Scarpelli worked on The Organizer as Screenwriter
 INSERT INTO worked_on VALUES(2818, 1702, 'Screenwriter');  -- Mario Monicelli worked on The Organizer as Screenwriter
 INSERT INTO worked_on VALUES(2819, 1703, 'Screenwriter');  -- Jean-Paul Rappeneau worked on That Man from Rio as Screenwriter
@@ -3076,7 +3076,7 @@ INSERT INTO worked_on VALUES(406, 1714, 'Screenwriter');  -- Frederic Raphael wo
 INSERT INTO worked_on VALUES(2821, 1715, 'Screenwriter');  -- Jacques Demy worked on The Umbrellas of Cherbourg as Screenwriter
 INSERT INTO worked_on VALUES(2822, 1716, 'Screenwriter');  -- Franklin Coen worked on The Train as Screenwriter
 INSERT INTO worked_on VALUES(2822, 1536, 'Screenwriter');  -- Frank Davis worked on The Train as Screenwriter
-INSERT INTO worked_on VALUES(2823, 1700, 'Screenwriter');  -- Age worked on Casanova '70' as Screenwriter
+INSERT INTO worked_on VALUES(2823, 1700, 'Screenwriter');  -- Agenore Incrocci worked on Casanova '70' as Screenwriter
 INSERT INTO worked_on VALUES(2823, 1701, 'Screenwriter');  -- Furio Scarpelli worked on Casanova '70' as Screenwriter
 INSERT INTO worked_on VALUES(2823, 1702, 'Screenwriter');  -- Mario Monicelli worked on Casanova '70' as Screenwriter
 INSERT INTO worked_on VALUES(2823, 1717, 'Screenwriter');  -- Tonino Guerra worked on Casanova '70' as Screenwriter
