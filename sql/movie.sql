@@ -3583,3 +3583,4 @@ INSERT INTO movie VALUES (3586, 'Dream House', 2011, '**', 'PG-13', 'USA', NULL)
 INSERT INTO movie VALUES (3587, 'The Imitation Game', 2014, '***', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NULL);
 INSERT INTO movie VALUES (3589, 'Test''s', 1999, '**', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3590, 'Maleficent', 2014, '**½', 'PG', 'USA', NULL);

@@ -4731,3 +4731,7 @@ INSERT INTO worked_on VALUES(121, 146, 'Supporting Actor');  -- Don Cheadle for 
 INSERT INTO worked_on VALUES(121, 2414, 'Director');  -- Niels Mueller for The Assassination of Richard Nixon (2004)
 INSERT INTO worked_on VALUES(121, 2414, 'Screenwriter');  -- Niels Mueller for The Assassination of Richard Nixon (2004)
 INSERT INTO worked_on VALUES(121, 2415, 'Screenwriter');  -- Kevin Kennedy for The Assassination of Richard Nixon (2004)
+INSERT INTO worked_on VALUES(3590, 44, 'Lead Actor');  -- Angelina Jolie for Maleficent (2014)
+INSERT INTO worked_on VALUES(3590, 2416, 'Supporting Actress');  -- Elle Fanning for Maleficent (2014)
+INSERT INTO worked_on VALUES(3590, 2417, 'Supporting Actor');  -- Sharlto Copley for Maleficent (2014)
+INSERT INTO worked_on VALUES(3590, 1037, 'Supporting Actress');  -- Imelda Staunton for Maleficent (2014)

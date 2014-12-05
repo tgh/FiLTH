@@ -36,3 +36,4 @@ INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NUL
 UPDATE movie SET star_rating = '***' WHERE mid = 2015;
 UPDATE movie SET star_rating = '**½' WHERE mid = 1962;
 UPDATE movie SET star_rating = '***' WHERE mid = 2023;
+INSERT INTO movie VALUES (3590, 'Maleficent', 2014, '**½', 'PG', 'USA', NULL);

@@ -170,3 +170,5 @@ INSERT INTO crew_person VALUES (2412, 'Rominik', 'Andrew', NULL, 'Andrew Rominik
 INSERT INTO crew_person VALUES (2413, 'Parker', 'Mary-Louise', NULL, 'Mary-Louise Parker', 'Actress');  -- Actress: Mary-Louise Parker
 INSERT INTO crew_person VALUES (2414, 'Mueller', 'Niels', NULL, 'Niels Mueller', 'Director');  -- Director: Niels Mueller
 INSERT INTO crew_person VALUES (2415, 'Kennedy', 'Kevin', NULL, 'Kevin Kennedy', 'Screenwriter');  -- Screenwriter: Kevin Kennedy
+INSERT INTO crew_person VALUES (2416, 'Fanning', 'Elle', NULL, 'Elle Fanning', 'Actress');  -- Actress: Elle Fanning
+INSERT INTO crew_person VALUES (2417, 'Copley', 'Sharlto', NULL, 'Sharlto Copley', 'Actor');  -- Actor: Sharlto Copley
