@@ -2415,3 +2415,10 @@ INSERT INTO crew_person VALUES (2414, 'Mueller', 'Niels', NULL, 'Niels Mueller',
 INSERT INTO crew_person VALUES (2415, 'Kennedy', 'Kevin', NULL, 'Kevin Kennedy', 'Screenwriter');  -- Screenwriter: Kevin Kennedy
 INSERT INTO crew_person VALUES (2416, 'Fanning', 'Elle', NULL, 'Elle Fanning', 'Actress');  -- Actress: Elle Fanning
 INSERT INTO crew_person VALUES (2417, 'Copley', 'Sharlto', NULL, 'Sharlto Copley', 'Actor');  -- Actor: Sharlto Copley
+INSERT INTO crew_person VALUES (2418, 'Foley', 'James', NULL, 'James Foley', 'Director');  -- Director: James Foley
+INSERT INTO crew_person VALUES (2419, 'Penn', 'Chris', NULL, 'Chris Penn', 'Actor');  -- Actor: Chris Penn
+INSERT INTO crew_person VALUES (2420, 'Masterson', 'Mary', 'Stuart', 'Mary Stuart Masterson', 'Actress');  -- Actress: Mary Stuart Masterson
+INSERT INTO crew_person VALUES (2421, 'Sutherland', 'Kiefer', NULL, 'Kiefer Sutherland', 'Actor');  -- Actor: Kiefer Sutherland
+INSERT INTO crew_person VALUES (2422, 'Shawn', 'Wallace', NULL, 'Wallace Shawn', 'Actor');  -- Actor: Wallace Shawn
+INSERT INTO crew_person VALUES (2423, 'McAvoy', 'James', NULL, 'James McAvoy', 'Actor');  -- Actor: James McAvoy
+INSERT INTO crew_person VALUES (2424, 'Wright', 'Joe', NULL, 'Joe Wright', 'Director');  -- Director: Joe Wright

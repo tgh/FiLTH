@@ -121,7 +121,7 @@ INSERT INTO movie VALUES (120, 'The Assassination of Jesse James by the Coward R
 INSERT INTO movie VALUES (121, 'The Assassination of Richard Nixon', 2004, '***½', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (122, 'At Close Range', 1986, '**', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (123, 'Atlantic City', 1981, '**', 'R', 'USA', DEFAULT);
-INSERT INTO movie VALUES (124, 'Atlantis', 2001, '***', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (124, 'Atlantis: The Lost Empire', 2001, '***', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (125, 'Atonement', 2007, '***½', 'R', 'England', DEFAULT);
 INSERT INTO movie VALUES (126, 'Au Hazard Balthazar', 1966, '***', 'NR', 'France', DEFAULT);
 INSERT INTO movie VALUES (127, 'Au Revoir Les Enfants', 1987, '****', 'PG', 'France', DEFAULT);
