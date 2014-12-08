@@ -2422,3 +2422,9 @@ INSERT INTO crew_person VALUES (2421, 'Sutherland', 'Kiefer', NULL, 'Kiefer Suth
 INSERT INTO crew_person VALUES (2422, 'Shawn', 'Wallace', NULL, 'Wallace Shawn', 'Actor');  -- Actor: Wallace Shawn
 INSERT INTO crew_person VALUES (2423, 'McAvoy', 'James', NULL, 'James McAvoy', 'Actor');  -- Actor: James McAvoy
 INSERT INTO crew_person VALUES (2424, 'Wright', 'Joe', NULL, 'Joe Wright', 'Director');  -- Director: Joe Wright
+INSERT INTO crew_person VALUES (2425, 'Daniels', 'Jeff', NULL, 'Jeff Daniels', 'Actor');  -- Actor: Jeff Daniels
+INSERT INTO crew_person VALUES (2426, 'Cave', 'Nick', NULL, 'Nick Cave', 'Screenwriter');  -- Screenwriter: Nick Cave
+INSERT INTO crew_person VALUES (2427, 'Hillcoat', 'John', NULL, 'John Hillcoat', 'Director');  -- Director: John Hillcoat
+INSERT INTO crew_person VALUES (2428, 'Hardy', 'Tom', NULL, 'Tom Hardy', 'Actor');  -- Actor: Tom Hardy
+INSERT INTO crew_person VALUES (2429, 'Clarke', 'Jason', NULL, 'Jason Clarke', 'Actor');  -- Actor: Jason Clarke
+INSERT INTO crew_person VALUES (2430, 'DeHaan', 'Dane', NULL, 'Dane DeHaan', 'Actor');  -- Actor: Dane DeHaan

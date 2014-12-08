@@ -3584,3 +3584,7 @@ INSERT INTO movie VALUES (3587, 'The Imitation Game', 2014, '***', 'PG-13', 'Eng
 INSERT INTO movie VALUES (3588, 'Tell No One', 2006, '***½', 'R', 'France', NULL);
 INSERT INTO movie VALUES (3589, 'Test''s', 1999, '**', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3590, 'Maleficent', 2014, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3591, 'Armadillo', 2010, '***', 'NR', 'Denmark', NULL);
+INSERT INTO movie VALUES (3592, 'Dear Mr. Watterson', 2013, '**½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3593, 'Heartburn', 1986, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3594, 'Lawless', 2012, '*½', 'R', 'USA', NULL);

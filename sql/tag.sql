@@ -307,3 +307,4 @@ INSERT INTO tag VALUES (306, 'divorce', 262);
 INSERT INTO tag VALUES (307, 'spoof', 2);
 INSERT INTO tag VALUES (308, 'graphic-sexual-content', 63);
 INSERT INTO tag VALUES (309, 'graphic-violence', 63);
+INSERT INTO tag VALUES (310, 'prohibition', NULL);

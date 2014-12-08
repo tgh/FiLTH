@@ -38,3 +38,7 @@ UPDATE movie SET star_rating = '**½' WHERE mid = 1962;
 UPDATE movie SET star_rating = '***' WHERE mid = 2023;
 INSERT INTO movie VALUES (3590, 'Maleficent', 2014, '**½', 'PG', 'USA', NULL);
 UPDATE movie SET title = 'Atlantis: The Lost Empire' WHERE mid = 124;
+INSERT INTO movie VALUES (3591, 'Armadillo', 2010, '***', 'NR', 'Denmark', NULL);
+INSERT INTO movie VALUES (3592, 'Dear Mr. Watterson', 2013, '**½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3593, 'Heartburn', 1986, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3594, 'Lawless', 2012, '*½', 'R', 'USA', NULL);
