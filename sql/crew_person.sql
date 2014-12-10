@@ -2428,3 +2428,24 @@ INSERT INTO crew_person VALUES (2427, 'Hillcoat', 'John', NULL, 'John Hillcoat',
 INSERT INTO crew_person VALUES (2428, 'Hardy', 'Tom', NULL, 'Tom Hardy', 'Actor');  -- Actor: Tom Hardy
 INSERT INTO crew_person VALUES (2429, 'Clarke', 'Jason', NULL, 'Jason Clarke', 'Actor');  -- Actor: Jason Clarke
 INSERT INTO crew_person VALUES (2430, 'DeHaan', 'Dane', NULL, 'Dane DeHaan', 'Actor');  -- Actor: Dane DeHaan
+INSERT INTO crew_person VALUES (2431, 'Roach', 'Jay', NULL, 'Jay Roach', 'Director');  -- Director: Jay Roach
+INSERT INTO crew_person VALUES (2432, 'Myers', 'Mike', NULL, 'Mike Myers', 'Actor');  -- Actor: Mike Myers
+INSERT INTO crew_person VALUES (2433, 'York', 'Michael', NULL, 'Michael York', 'Actor');  -- Actor: Michael York
+INSERT INTO crew_person VALUES (2434, 'Green', 'Seth', NULL, 'Seth Green', 'Actor');  -- Actor: Seth Green
+INSERT INTO crew_person VALUES (2435, 'Rogers', 'Mimi', NULL, 'Mimi Rogers', 'Actress');  -- Actress: Mimi Rogers
+INSERT INTO crew_person VALUES (2436, 'Wagner', 'Robert', NULL, 'Robert Wagner', 'Actor');  -- Actor: Robert Wagner
+INSERT INTO crew_person VALUES (2437, 'Howard', 'Clint', NULL, 'Clint Howard', 'Actor');  -- Actor: Clint Howard
+INSERT INTO crew_person VALUES (2438, 'Arnold', 'Tom', NULL, 'Tom Arnold', 'Actor');  -- Actor: Tom Arnold
+INSERT INTO crew_person VALUES (2439, 'Fisher', 'Carrie', NULL, 'Carrie Fisher', 'Actress');  -- Actress: Carrie Fisher
+INSERT INTO crew_person VALUES (2440, 'Lowe', 'Rob', NULL, 'Rob Lowe', 'Actor');  -- Actor: Rob Lowe
+INSERT INTO crew_person VALUES (2441, 'Slater', 'Christian', NULL, 'Christian Slater', 'Actor');  -- Actor: Christian Slater
+INSERT INTO crew_person VALUES (2442, 'McCullers', 'Michael', NULL, 'Michael McCullers', 'Screenwriter');  -- Screenwriter: Michael McCullers
+INSERT INTO crew_person VALUES (2443, 'Graham', 'Heather', NULL, 'Heather Graham', 'Actress');  -- Actress: Heather Graham
+INSERT INTO crew_person VALUES (2444, 'Knowles', 'Beyonce', NULL, 'Beyonce Knowles', 'Actress');  -- Actress: Beyonce Knowles
+INSERT INTO crew_person VALUES (2445, 'Savage', 'Fred', NULL, 'Fred Savage', 'Actor');  -- Actor: Fred Savage
+INSERT INTO crew_person VALUES (2446, 'Josephson', 'Erland', NULL, 'Erland Josephson', 'Actor');  -- Actor: Erland Josephson
+INSERT INTO crew_person VALUES (2447, 'Perkins', 'Elizabeth', NULL, 'Elizabeth Perkins', 'Actress');  -- Actress: Elizabeth Perkins
+INSERT INTO crew_person VALUES (2448, 'Pollak', 'Kevin', NULL, 'Kevin Pollak', 'Actor');  -- Actor: Kevin Pollak
+INSERT INTO crew_person VALUES (2449, 'Worthington', 'Sam', NULL, 'Sam Worthington', 'Actor');  -- Actor: Sam Worthington
+INSERT INTO crew_person VALUES (2450, 'Beckinsale', 'Kate', NULL, 'Kate Beckinsale', 'Actress');  -- Actress: Kate Beckinsale
+INSERT INTO crew_person VALUES (2451, 'Miller', 'Penelope', 'Ann', 'Penelope Ann Miller', 'Actress');  -- Actress: Penelope Ann Miller
