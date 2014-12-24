@@ -206,3 +206,17 @@ INSERT INTO crew_person VALUES (2448, 'Pollak', 'Kevin', NULL, 'Kevin Pollak', '
 INSERT INTO crew_person VALUES (2449, 'Worthington', 'Sam', NULL, 'Sam Worthington', 'Actor');  -- Actor: Sam Worthington
 INSERT INTO crew_person VALUES (2450, 'Beckinsale', 'Kate', NULL, 'Kate Beckinsale', 'Actress');  -- Actress: Kate Beckinsale
 INSERT INTO crew_person VALUES (2451, 'Miller', 'Penelope', 'Ann', 'Penelope Ann Miller', 'Actress');  -- Actress: Penelope Ann Miller
+INSERT INTO crew_person VALUES (2452, 'Bautista', 'Dave', NULL, 'Dave Bautista', 'Actor');  -- Actor: Dave Bautista
+INSERT INTO crew_person VALUES (2453, 'Diesel', 'Vin', NULL, 'Vin Diesel', 'Actor');  -- Actor: Vin Diesel
+INSERT INTO crew_person VALUES (2454, 'Pace', 'Lee', NULL, 'Lee Pace', 'Actor');  -- Actor: Lee Pace
+INSERT INTO crew_person VALUES (2455, 'Freeman', 'Martin', NULL, 'Martin Freeman', 'Actor');  -- Actor: Martin Freeman
+INSERT INTO crew_person VALUES (2456, 'Bloom', 'Orlando', NULL, 'Orlando Bloom', 'Actor');  -- Actor: Orlando Bloom
+INSERT INTO crew_person VALUES (2457, 'Weaving', 'Hugo', NULL, 'Hugo Weaving', 'Actor');  -- Actor: Hugo Weaving
+INSERT INTO crew_person VALUES (2458, 'Connolly', 'Billy', NULL, 'Billy Connolly', 'Actor');  -- Actor: Billy Connolly
+INSERT INTO crew_person VALUES (2459, 'Armitage', 'Richard', NULL, 'Richard Armitage', 'Actor');  -- Actor: Richard Armitage
+INSERT INTO crew_person VALUES (2460, 'Feldman', 'Corey', NULL, 'Corey Feldman', 'Actor');  -- Actor: Corey Feldman
+INSERT INTO crew_person VALUES (2461, 'Hoag', 'Judith', NULL, 'Judith Hoag', 'Actress');  -- Actress: Judith Hoag
+INSERT INTO crew_person VALUES (2462, 'Fox', 'Megan', NULL, 'Megan Fox', 'Actress');  -- Actress: Megan Fox
+INSERT INTO crew_person VALUES (2463, 'Fichtner', 'William', NULL, 'William Fichtner', 'Actor');  -- Actor: William Fichtner
+INSERT INTO crew_person VALUES (2464, 'Knoxville', 'Johnny', NULL, 'Johnny Knoxville', 'Actor');  -- Actor: Johnny Knoxville
+INSERT INTO crew_person VALUES (2465, 'Killam', 'Taran', NULL, 'Taran Killam', 'Actor');  -- Actor: Taran Killam

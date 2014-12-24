@@ -3588,3 +3588,7 @@ INSERT INTO movie VALUES (3591, 'Armadillo', 2010, '***', 'NR', 'Denmark', NULL)
 INSERT INTO movie VALUES (3592, 'Dear Mr. Watterson', 2013, '**½', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3593, 'Heartburn', 1986, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3594, 'Lawless', 2012, '*½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3595, 'Guardians of the Galaxy', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3596, 'The Hobbit: The Battle of the Five Armies', 2014, '**', 'PG-13', 'New Zealand', NULL);
+INSERT INTO movie VALUES (3597, 'Teenage Mutant Ninja Turtles', 1990, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3598, 'Teenage Mutant Ninja Turtles', 2014, '*½', 'PG-13', 'USA', NULL);
