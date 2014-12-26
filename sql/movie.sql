@@ -3592,3 +3592,5 @@ INSERT INTO movie VALUES (3595, 'Guardians of the Galaxy', 2014, '***', 'PG-13',
 INSERT INTO movie VALUES (3596, 'The Hobbit: The Battle of the Five Armies', 2014, '**', 'PG-13', 'New Zealand', NULL);
 INSERT INTO movie VALUES (3597, 'Teenage Mutant Ninja Turtles', 1990, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3598, 'Teenage Mutant Ninja Turtles', 2014, '*½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3599, 'Snowpiercer', 2013, '***', 'R', 'South Korea', NULL);
+INSERT INTO movie VALUES (3600, 'The Trip to Italy', 2014, '***', 'NR', 'England', NULL);
