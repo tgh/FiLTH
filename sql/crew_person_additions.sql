@@ -229,3 +229,7 @@ INSERT INTO crew_person VALUES (2471, 'Bremner', 'Ewen', NULL, 'Ewen Bremner', '
 INSERT INTO crew_person VALUES (2472, 'Ko', 'Ah-sung', NULL, 'Ah-sung Ko', 'Actress');  -- Actress: Ah-sung Ko
 INSERT INTO crew_person VALUES (2473, 'Pill', 'Alison', NULL, 'Alison Pill', 'Actress');  -- Actress: Alison Pill
 INSERT INTO crew_person VALUES (2474, 'Hong', 'Kyung-pyo', NULL, 'Kyung-pyo Hong', 'Cinematographer');  -- Cinematographer: Kyung-pyo Hong
+INSERT INTO crew_person VALUES (2475, 'Hall', 'Jason', NULL, 'Jason Hall', 'Screenwriter');  -- Screenwriter: Jason Hall
+INSERT INTO crew_person VALUES (2476, 'Miller', 'Sienna', NULL, 'Sienna Miller', 'Actress');  -- Actress: Sienna Miller
+INSERT INTO crew_person VALUES (2477, 'Coltrane', 'Ellar', NULL, 'Ellar Coltrane', 'Actor');  -- Actor: Ellar Coltrane
+INSERT INTO crew_person VALUES (2478, 'Linklater', 'Lorelei', NULL, 'Lorelei Linklater', 'Actress');  -- Actress: Lorelei Linklater

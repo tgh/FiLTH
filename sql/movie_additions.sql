@@ -48,3 +48,6 @@ INSERT INTO movie VALUES (3597, 'Teenage Mutant Ninja Turtles', 1990, '**', 'PG'
 INSERT INTO movie VALUES (3598, 'Teenage Mutant Ninja Turtles', 2014, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3599, 'Snowpiercer', 2013, '***', 'R', 'South Korea', NULL);
 INSERT INTO movie VALUES (3600, 'The Trip to Italy', 2014, '***', 'NR', 'England', NULL);
+INSERT INTO movie VALUES (3601, 'American Sniper', 2014, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3602, 'Boyhood', 2014, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3603, 'The Muppet Christmas Carol', 1992, '**½', 'G', 'USA', NULL);
