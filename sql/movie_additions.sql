@@ -54,3 +54,4 @@ INSERT INTO movie VALUES (3603, 'The Muppet Christmas Carol', 1992, '**½', 'G',
 INSERT INTO movie VALUES (3604, 'The Conspirator', 2010, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3605, 'The Out-of-Towners', 1999, '**½', 'PG-13', 'USA', NULL);
 UPDATE movie SET star_rating = '***' WHERE mid = 2398;
+UPDATE movie SET star_rating = '**' WHERE mid = 3605;

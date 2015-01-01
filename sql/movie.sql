@@ -3598,4 +3598,4 @@ INSERT INTO movie VALUES (3601, 'American Sniper', 2014, '***', 'R', 'USA', NULL
 INSERT INTO movie VALUES (3602, 'Boyhood', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3603, 'The Muppet Christmas Carol', 1992, '**½', 'G', 'USA', NULL);
 INSERT INTO movie VALUES (3604, 'The Conspirator', 2010, '**½', 'PG-13', 'USA', NULL);
-INSERT INTO movie VALUES (3605, 'The Out-of-Towners', 1999, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3605, 'The Out-of-Towners', 1999, '**', 'PG-13', 'USA', NULL);
