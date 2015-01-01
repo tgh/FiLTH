@@ -2476,3 +2476,10 @@ INSERT INTO crew_person VALUES (2475, 'Hall', 'Jason', NULL, 'Jason Hall', 'Scre
 INSERT INTO crew_person VALUES (2476, 'Miller', 'Sienna', NULL, 'Sienna Miller', 'Actress');  -- Actress: Sienna Miller
 INSERT INTO crew_person VALUES (2477, 'Coltrane', 'Ellar', NULL, 'Ellar Coltrane', 'Actor');  -- Actor: Ellar Coltrane
 INSERT INTO crew_person VALUES (2478, 'Linklater', 'Lorelei', NULL, 'Lorelei Linklater', 'Actress');  -- Actress: Lorelei Linklater
+INSERT INTO crew_person VALUES (2479, 'Wood', 'Evan', 'Rachel', 'Evan Rachel Wood', 'Actress');  -- Actress: Evan Rachel Wood
+INSERT INTO crew_person VALUES (2480, 'Long', 'Justin', NULL, 'Justin Long', 'Actor');  -- Actor: Justin Long
+INSERT INTO crew_person VALUES (2481, 'Huston', 'Danny', NULL, 'Danny Huston', 'Actor');  -- Actor: Danny Huston
+INSERT INTO crew_person VALUES (2482, 'Root', 'Stephen', NULL, 'Stephen Root', 'Actor');  -- Actor: Stephen Root
+INSERT INTO crew_person VALUES (2483, 'Martin', 'Steve', NULL, 'Steve Martin', 'Actor');  -- Actor: Steve Martin
+INSERT INTO crew_person VALUES (2484, 'McKinney', 'Mark', NULL, 'Mark McKinney', 'Actor');  -- Actor: Mark McKinney
+INSERT INTO crew_person VALUES (2485, 'Franklin', 'Pamela', NULL, 'Pamela Franklin', 'Actress');  -- Actress: Pamela Franklin

@@ -2395,7 +2395,7 @@ INSERT INTO movie VALUES (2394, 'Thoroughly Modern Millie', 1967, 'not seen', 'N
 INSERT INTO movie VALUES (2395, 'Isadora', 1968, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2396, 'The Sterile Cuckoo', 1969, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2397, 'The Happy Ending', 1969, 'not seen', 'PG', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2398, 'The Prime of Miss Jean Brodie', 1969, 'not seen', 'PG', 'England', DEFAULT);
+INSERT INTO movie VALUES (2398, 'The Prime of Miss Jean Brodie', 1969, '***', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2399, 'Cactus Flower', 1969, 'not seen', 'PG', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2400, 'Last Summer', 1969, 'not seen', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2401, 'Diary of a Mad Housewife', 1970, 'not seen', 'R', 'USA', DEFAULT);
@@ -3597,3 +3597,5 @@ INSERT INTO movie VALUES (3600, 'The Trip to Italy', 2014, '***', 'NR', 'England
 INSERT INTO movie VALUES (3601, 'American Sniper', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3602, 'Boyhood', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3603, 'The Muppet Christmas Carol', 1992, '**½', 'G', 'USA', NULL);
+INSERT INTO movie VALUES (3604, 'The Conspirator', 2010, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3605, 'The Out-of-Towners', 1999, '**½', 'PG-13', 'USA', NULL);
