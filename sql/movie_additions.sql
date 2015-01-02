@@ -55,3 +55,8 @@ INSERT INTO movie VALUES (3604, 'The Conspirator', 2010, '**½', 'PG-13', 'USA',
 INSERT INTO movie VALUES (3605, 'The Out-of-Towners', 1999, '**½', 'PG-13', 'USA', NULL);
 UPDATE movie SET star_rating = '***' WHERE mid = 2398;
 UPDATE movie SET star_rating = '**' WHERE mid = 3605;
+INSERT INTO movie VALUES (3606, 'Altman', 2014, '***', 'NR', 'Canada', NULL);
+INSERT INTO movie VALUES (3607, 'Grand Piano', 2013, '**½', 'R', 'Spain', NULL);
+INSERT INTO movie VALUES (3608, 'Ida', 2013, '**½', 'PG-13', 'Poland', NULL);
+INSERT INTO movie VALUES (3609, 'Into the Woods', 2014, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3610, 'Vernon, Florida', 1981, '**½', 'NR', 'USA', NULL);
