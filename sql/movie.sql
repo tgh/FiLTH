@@ -3604,3 +3604,6 @@ INSERT INTO movie VALUES (3607, 'Grand Piano', 2013, '**½', 'R', 'Spain', NULL)
 INSERT INTO movie VALUES (3608, 'Ida', 2013, '**½', 'PG-13', 'Poland', NULL);
 INSERT INTO movie VALUES (3609, 'Into the Woods', 2014, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3610, 'Vernon, Florida', 1981, '**½', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3611, 'The Iceman', 2012, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3612, 'Jack Ryan: Shadow Recruit', 2014, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3613, 'Selma', 2014, '****', 'PG-13', 'USA', NULL);

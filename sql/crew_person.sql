@@ -2492,3 +2492,15 @@ INSERT INTO crew_person VALUES (2491, 'Huttlestone', 'Daniel', NULL, 'Daniel Hut
 INSERT INTO crew_person VALUES (2492, 'Corden', 'James', NULL, 'James Corden', 'Actor');  -- Actor: James Corden
 INSERT INTO crew_person VALUES (2493, 'Ullman', 'Tracey', NULL, 'Tracey Ullman', 'Actress');  -- Actress: Tracey Ullman
 INSERT INTO crew_person VALUES (2494, 'Crawford', 'Lilla', NULL, 'Lilla Crawford', 'Actress');  -- Actress: Lilla Crawford
+INSERT INTO crew_person VALUES (2495, 'Vromen', 'Ariel', NULL, 'Ariel Vromen', 'Director');  -- Director: Ariel Vromen
+INSERT INTO crew_person VALUES (2496, 'Land', 'Morgan', NULL, 'Morgan Land', 'Screenwriter');  -- Screenwriter: Morgan Land
+INSERT INTO crew_person VALUES (2497, 'Schwimmer', 'David', NULL, 'David Schwimmer', 'Actor');  -- Actor: David Schwimmer
+INSERT INTO crew_person VALUES (2498, 'Dorff', 'Stephen', NULL, 'Stephen Dorff', 'Actor');  -- Actor: Stephen Dorff
+INSERT INTO crew_person VALUES (2499, 'Feore', 'Colm', NULL, 'Colm Feore', 'Actor');  -- Actor: Colm Feore
+INSERT INTO crew_person VALUES (2500, 'Koepp', 'David', NULL, 'David Koepp', 'Screenwriter');  -- Screenwriter: David Koepp
+INSERT INTO crew_person VALUES (2501, 'Cozad', 'Adam', NULL, 'Adam Cozad', 'Screenwriter');  -- Screenwriter: Adam Cozad
+INSERT INTO crew_person VALUES (2502, 'DuVernay', 'Ava', NULL, 'Ava DuVernay', 'Director');  -- Director: Ava DuVernay
+INSERT INTO crew_person VALUES (2503, 'Webb', 'Paul', NULL, 'Paul Webb', 'Screenwriter');  -- Screenwriter: Paul Webb
+INSERT INTO crew_person VALUES (2504, 'Oyelowo', 'David', NULL, 'David Oyelowo', 'Actor');  -- Actor: David Oyelowo
+INSERT INTO crew_person VALUES (2505, 'Ejogo', 'Carmen', NULL, 'Carmen Ejogo', 'Actress');  -- Actress: Carmen Ejogo
+INSERT INTO crew_person VALUES (2506, 'Baker', 'Dylan', NULL, 'Dylan Baker', 'Actor');  -- Actor: Dylan Baker
