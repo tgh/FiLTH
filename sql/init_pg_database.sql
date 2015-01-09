@@ -321,7 +321,7 @@ FOREIGN KEY (tid) REFERENCES tyler(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tag parent_tid FK
-ALTER TABLE tag ADD CONTRAINT tag_parent_tid_fkey
+ALTER TABLE tag ADD CONSTRAINT tag_parent_tid_fkey
 FOREIGN KEY (parent_tid) REFERENCES tag(tid)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
