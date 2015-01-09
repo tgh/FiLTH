@@ -1,15 +1,14 @@
 #!/bin/bash
 
-filth_path=~/workspace/FiLTH
-filth_sql_path=$filth_path/sql
-filth_temp_path=$filth_path/temp
-error_file=$filth_temp_path/drop_filth_db_error.txt
+source common.sh
+
+ERROR_FILE=$FILTH_TEMP_PATH/drop_filth_db_error.txt
 
 
 function populate_db_table {
   echo "Populating $1..."
   sleep 0.5
-  psql -U postgres -d filth -f $filth_sql_path/$1.sql > /dev/null 2>>$error_file
+  psql -U postgres -d filth -f $FILTH_SQL_PATH/$1.sql > /dev/null 2>>$ERROR_FILE
 }
 
 
@@ -18,17 +17,17 @@ function populate_db_table {
 
 echo "Dropping filth database..."
 sleep 0.5
-psql -U postgres -c "DROP DATABASE filth;" > /dev/null 2>$error_file
+psql -U postgres -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
 
 
 echo "Creating database filth..."
 sleep 0.5
-createdb -U postgres -O postgres filth > /dev/null 2>>$error_file
+createdb -U postgres -O postgres filth > /dev/null 2>>$ERROR_FILE
 
 
 echo "Creating database schema..."
 sleep 0.5
-psql -U postgres -d filth -f $filth_sql_path/init_pg_database.sql > /dev/null 2>>$error_file
+psql -U postgres -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$ERROR_FILE
 
 
 #populate entity tables
@@ -56,4 +55,4 @@ echo "Clearing *additions.sql files..."
 sleep 0.5
 echo "Creating temp/previous_movie_ratings.txt..."
 sleep 0.5
-antiword -w 120 $filth_path/data/Movie_Ratings.doc > $filth_temp_path/previous_movie_ratings.txt
+antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $FILTH_TEMP_PATH/previous_movie_ratings.txt
