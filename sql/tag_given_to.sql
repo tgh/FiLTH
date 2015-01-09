@@ -3393,7 +3393,6 @@ INSERT INTO tag_given_to VALUES(1071, 27);  -- A Midsummer Night's Sex Comedy (1
 INSERT INTO tag_given_to VALUES(1071, 5);  -- A Midsummer Night's Sex Comedy (1982) tagged with 'Fantasy'
 INSERT INTO tag_given_to VALUES(1072, 2);  -- Mighty Aphrodite (1995) tagged with 'Comedy'
 INSERT INTO tag_given_to VALUES(1072, 38);  -- Mighty Aphrodite (1995) tagged with 'New York City'
-INSERT INTO tag_given_to VALUES(1072, 12);  -- Mighty Aphrodite (1995) tagged with 'Documentary'
 INSERT INTO tag_given_to VALUES(1073, 1);  -- A Mighty Heart (2007) tagged with 'Drama'
 INSERT INTO tag_given_to VALUES(1073, 26);  -- A Mighty Heart (2007) tagged with 'History'
 INSERT INTO tag_given_to VALUES(1073, 60);  -- A Mighty Heart (2007) tagged with 'Based-on-book'
