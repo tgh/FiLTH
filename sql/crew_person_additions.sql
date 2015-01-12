@@ -261,3 +261,5 @@ INSERT INTO crew_person VALUES (2503, 'Webb', 'Paul', NULL, 'Paul Webb', 'Screen
 INSERT INTO crew_person VALUES (2504, 'Oyelowo', 'David', NULL, 'David Oyelowo', 'Actor');  -- Actor: David Oyelowo
 INSERT INTO crew_person VALUES (2505, 'Ejogo', 'Carmen', NULL, 'Carmen Ejogo', 'Actress');  -- Actress: Carmen Ejogo
 INSERT INTO crew_person VALUES (2506, 'Baker', 'Dylan', NULL, 'Dylan Baker', 'Actor');  -- Actor: Dylan Baker
+INSERT INTO crew_person VALUES (2507, 'Tweel', 'J.', 'Clay', 'J. Clay Tweel', 'Director');  -- Director: J. Clay Tweel
+INSERT INTO crew_person VALUES (2508, 'Caruso', 'D.J.', NULL, 'D.J. Caruso', 'Director');  -- Director: D.J. Caruso

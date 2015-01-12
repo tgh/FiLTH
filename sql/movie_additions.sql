@@ -63,3 +63,7 @@ INSERT INTO movie VALUES (3610, 'Vernon, Florida', 1981, '**½', 'NR', 'USA', NU
 INSERT INTO movie VALUES (3611, 'The Iceman', 2012, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3612, 'Jack Ryan: Shadow Recruit', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3613, 'Selma', 2014, '****', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3614, 'Big Hero 6', 2014, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3615, 'Capitalism: A Love Story', 2009, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3616, 'Make Believe', 2011, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3617, 'Taking Lives', 2004, '**½', 'R', 'USA', NULL);

@@ -703,9 +703,9 @@ Also:
   14. Conan O'Brian Can't Stop
   15. Strongman
   16. Project Nim
-  17. Waste Land
+* 17. Waste Land
   18. Phunny Business: A Black Comedy
-  19. Make Believe
+* 19. Make Believe
 * 20. Being Elmo: A Puppeteer’s Journey
 
 2012
