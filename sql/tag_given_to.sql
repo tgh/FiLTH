@@ -7522,6 +7522,7 @@ INSERT INTO tag_given_to VALUES(3612, 137);  -- Jack Ryan: Shadow Recruit (2014)
 INSERT INTO tag_given_to VALUES(3612, 315);  -- Jack Ryan: Shadow Recruit (2014) tagged with 'jack-ryan'
 INSERT INTO tag_given_to VALUES(3612, 25);  -- Jack Ryan: Shadow Recruit (2014) tagged with 'crime'
 INSERT INTO tag_given_to VALUES(3612, 136);  -- Jack Ryan: Shadow Recruit (2014) tagged with 'government-agency'
+INSERT INTO tag_given_to VALUES(3612, 38);  -- Jack Ryan: Shadow Recruit (2014) tagged with 'new-york-city'
 INSERT INTO tag_given_to VALUES(3613, 1);  -- Selma (2014) tagged with 'drama'
 INSERT INTO tag_given_to VALUES(3613, 26);  -- Selma (2014) tagged with 'history'
 INSERT INTO tag_given_to VALUES(3613, 288);  -- Selma (2014) tagged with 'upsetting'
@@ -7598,3 +7599,4 @@ INSERT INTO tag_given_to VALUES(3620, 47);  -- Whiplash (2014) tagged with 'inte
 INSERT INTO tag_given_to VALUES(3620, 208);  -- Whiplash (2014) tagged with 'music'
 INSERT INTO tag_given_to VALUES(3620, 4);  -- Whiplash (2014) tagged with 'independent'
 INSERT INTO tag_given_to VALUES(3620, 61);  -- Whiplash (2014) tagged with 'arts/entertainment'
+INSERT INTO tag_given_to VALUES(3620, 38);  -- Whiplash (2014) tagged with 'new-york-city'
