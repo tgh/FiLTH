@@ -2506,3 +2506,15 @@ INSERT INTO crew_person VALUES (2505, 'Ejogo', 'Carmen', NULL, 'Carmen Ejogo', '
 INSERT INTO crew_person VALUES (2506, 'Baker', 'Dylan', NULL, 'Dylan Baker', 'Actor');  -- Actor: Dylan Baker
 INSERT INTO crew_person VALUES (2507, 'Tweel', 'J.', 'Clay', 'J. Clay Tweel', 'Director');  -- Director: J. Clay Tweel
 INSERT INTO crew_person VALUES (2508, 'Caruso', 'D.J.', NULL, 'D.J. Caruso', 'Director');  -- Director: D.J. Caruso
+INSERT INTO crew_person VALUES (2509, 'Elice', 'Rick', NULL, 'Rick Elice', 'Screenwriter');  -- Screenwriter: Rick Elice
+INSERT INTO crew_person VALUES (2510, 'Piazza', 'Vincent', NULL, 'Vincent Piazza', 'Actor');  -- Actor: Vincent Piazza
+INSERT INTO crew_person VALUES (2511, 'Young', 'John', 'Lloyd', 'John Lloyd Young', 'Actor');  -- Actor: John Lloyd Young
+INSERT INTO crew_person VALUES (2512, 'Lomenda', 'Michael', NULL, 'Michael Lomenda', 'Actor');  -- Actor: Michael Lomenda
+INSERT INTO crew_person VALUES (2513, 'Bergen', 'Erich', NULL, 'Erich Bergen', 'Actor');  -- Actor: Erich Bergen
+INSERT INTO crew_person VALUES (2514, 'Doyle', 'Mike', NULL, 'Mike Doyle', 'Actor');  -- Actor: Mike Doyle
+INSERT INTO crew_person VALUES (2515, 'Stewart', 'Kristen', NULL, 'Kristen Stewart', 'Actress');  -- Actress: Kristen Stewart
+INSERT INTO crew_person VALUES (2516, 'Bosworth', 'Kate', NULL, 'Kate Bosworth', 'Actress');  -- Actress: Kate Bosworth
+INSERT INTO crew_person VALUES (2517, 'Chazelle', 'Damien', NULL, 'Damien Chazelle', 'Director');  -- Director: Damien Chazelle
+INSERT INTO crew_person VALUES (2518, 'Teller', 'Miles', NULL, 'Miles Teller', 'Actor');  -- Actor: Miles Teller
+INSERT INTO crew_person VALUES (2519, 'Reiser', 'Paul', NULL, 'Paul Reiser', 'Actor');  -- Actor: Paul Reiser
+INSERT INTO crew_person VALUES (2520, 'Simmons', 'J.K.', NULL, 'J.K. Simmons', 'Actor');  -- Actor: J.K. Simmons
