@@ -275,3 +275,12 @@ INSERT INTO crew_person VALUES (2517, 'Chazelle', 'Damien', NULL, 'Damien Chazel
 INSERT INTO crew_person VALUES (2518, 'Teller', 'Miles', NULL, 'Miles Teller', 'Actor');  -- Actor: Miles Teller
 INSERT INTO crew_person VALUES (2519, 'Reiser', 'Paul', NULL, 'Paul Reiser', 'Actor');  -- Actor: Paul Reiser
 INSERT INTO crew_person VALUES (2520, 'Simmons', 'J.K.', NULL, 'J.K. Simmons', 'Actor');  -- Actor: J.K. Simmons
+INSERT INTO crew_person VALUES (2521, 'Gervais', 'Ricky', NULL, 'Ricky Gervais', 'Actor');  -- Actor: Ricky Gervais
+INSERT INTO crew_person VALUES (2522, 'Burrell', 'Ty', NULL, 'Ty Burrell', 'Actor');  -- Actor: Ty Burrell
+INSERT INTO crew_person VALUES (2523, 'Fey', 'Tina', NULL, 'Tina Fey', 'Actress');  -- Actress: Tina Fey
+INSERT INTO crew_person VALUES (2524, 'Galifianakis', 'Zach', NULL, 'Zach Galifianakis', 'Actor');  -- Actor: Zach Galifianakis
+INSERT INTO crew_person VALUES (2525, 'Hayek', 'Selma', NULL, 'Selma Hayek', 'Actress');  -- Actress: Selma Hayek
+INSERT INTO crew_person VALUES (2526, 'Hiddleston', 'Tom', NULL, 'Tom Hiddleston', 'Actor');  -- Actor: Tom Hiddleston
+INSERT INTO crew_person VALUES (2527, 'Jones', 'Toby', NULL, 'Toby Jones', 'Actor');  -- Actor: Toby Jones
+INSERT INTO crew_person VALUES (2528, 'Moretz', 'Chloe', 'Grace', 'Chloe Grace Moretz', 'Actress');  -- Actress: Chloe Grace Moretz
+INSERT INTO crew_person VALUES (2529, 'Waltz', 'Christoph', NULL, 'Christoph Waltz', 'Actor');  -- Actor: Christoph Waltz

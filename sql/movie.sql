@@ -3614,3 +3614,4 @@ INSERT INTO movie VALUES (3617, 'Taking Lives', 2004, '**½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3618, 'Jersey Boys', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3619, 'Still Alice', 2014, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3620, 'Whiplash', 2014, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3621, 'Muppets Most Wanted', 2014, '***', 'PG', 'USA', NULL);
