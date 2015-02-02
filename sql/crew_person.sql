@@ -2527,3 +2527,6 @@ INSERT INTO crew_person VALUES (2526, 'Hiddleston', 'Tom', NULL, 'Tom Hiddleston
 INSERT INTO crew_person VALUES (2527, 'Jones', 'Toby', NULL, 'Toby Jones', 'Actor');  -- Actor: Toby Jones
 INSERT INTO crew_person VALUES (2528, 'Moretz', 'Chloe', 'Grace', 'Chloe Grace Moretz', 'Actress');  -- Actress: Chloe Grace Moretz
 INSERT INTO crew_person VALUES (2529, 'Waltz', 'Christoph', NULL, 'Christoph Waltz', 'Actor');  -- Actor: Christoph Waltz
+INSERT INTO crew_person VALUES (2530, 'Frye', 'E.', 'Max', 'E. Max Frye', 'Screenwriter');  -- Screenwriter: E. Max Frye
+INSERT INTO crew_person VALUES (2531, 'Fraser', 'Greig', NULL, 'Greig Fraser', 'Cinematographer');  -- Cinematographer: Greig Fraser
+INSERT INTO crew_person VALUES (2532, 'Hall', 'Anthony', 'Michael', 'Anthony Michael Hall', 'Actor');  -- Actor: Anthony Michael Hall
