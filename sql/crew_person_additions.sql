@@ -287,3 +287,24 @@ INSERT INTO crew_person VALUES (2529, 'Waltz', 'Christoph', NULL, 'Christoph Wal
 INSERT INTO crew_person VALUES (2530, 'Frye', 'E.', 'Max', 'E. Max Frye', 'Screenwriter');  -- Screenwriter: E. Max Frye
 INSERT INTO crew_person VALUES (2531, 'Fraser', 'Greig', NULL, 'Greig Fraser', 'Cinematographer');  -- Cinematographer: Greig Fraser
 INSERT INTO crew_person VALUES (2532, 'Hall', 'Anthony', 'Michael', 'Anthony Michael Hall', 'Actor');  -- Actor: Anthony Michael Hall
+INSERT INTO crew_person VALUES (2533, 'Peebles', 'Mario', 'Van', 'Mario Van Peebles', 'Actor');  -- Actor: Mario Van Peebles
+INSERT INTO crew_person VALUES (2534, 'Haggerty', 'Dennis', NULL, 'Dennis Haggerty', 'Screenwriter');  -- Screenwriter: Dennis Haggerty
+INSERT INTO crew_person VALUES (2535, 'Davis', 'Ossie', NULL, 'Ossie Davis', 'Actor');  -- Actor: Ossie Davis
+INSERT INTO crew_person VALUES (2536, 'Grier', 'David', 'Alan', 'David Alan Grier', 'Actor');  -- Actor: David Alan Grier
+INSERT INTO crew_person VALUES (2537, 'Wilson', 'Rainn', NULL, 'Rainn Wilson', 'Actor');  -- Actor: Rainn Wilson
+INSERT INTO crew_person VALUES (2538, 'West', 'Adam', NULL, 'Adam West', 'Actor');  -- Actor: Adam West
+INSERT INTO crew_person VALUES (2539, 'Crews', 'Terry', NULL, 'Terry Crews', 'Actor');  -- Actor: Terry Crews
+INSERT INTO crew_person VALUES (2540, 'Bryant', 'Joy', NULL, 'Joy Bryant', 'Actress');  -- Actress: Joy Bryant
+INSERT INTO crew_person VALUES (2541, 'Morris', 'Judy', NULL, 'Judy Morris', 'Screenwriter');  -- Screenwriter: Judy Morris
+INSERT INTO crew_person VALUES (2542, 'Lamprell', 'Mark', NULL, 'Mark Lamprell', 'Screenwriter');  -- Screenwriter: Mark Lamprell
+INSERT INTO crew_person VALUES (2543, 'Goldberg', 'Adam', NULL, 'Adam Goldberg', 'Actor');  -- Actor: Adam Goldberg
+INSERT INTO crew_person VALUES (2544, 'Gamble', 'Nathan', NULL, 'Nathan Gamble', 'Actor');  -- Actor: Nathan Gamble
+INSERT INTO crew_person VALUES (2545, 'Gibson', 'Tyrese', NULL, 'Tyrese Gibson', 'Actor');  -- Actor: Tyrese Gibson
+INSERT INTO crew_person VALUES (2546, 'Rhames', 'Ving', NULL, 'Ving Rhames', 'Actor');  -- Actor: Ving Rhames
+INSERT INTO crew_person VALUES (2547, 'Mo''Nique', NULL, NULL, 'Mo'Nique', 'Actress');  -- Actress: Mo'Nique
+INSERT INTO crew_person VALUES (2548, 'Thompson', 'Lea', NULL, 'Lea Thompson', 'Actress');  -- Actress: Lea Thompson
+INSERT INTO crew_person VALUES (2549, 'Wilson', 'Thomas', 'F.', 'Thomas F. Wilson', 'Actor');  -- Actor: Thomas F. Wilson
+INSERT INTO crew_person VALUES (2550, 'Siemaszko', 'Casey', NULL, 'Casey Siemaszko', 'Actor');  -- Actor: Casey Siemaszko
+INSERT INTO crew_person VALUES (2551, 'Zane', 'Billy', NULL, 'Billy Zane', 'Actor');  -- Actor: Billy Zane
+INSERT INTO crew_person VALUES (2552, 'Lewis', 'Huey', NULL, 'Huey Lewis', 'Actor');  -- Actor: Huey Lewis
+INSERT INTO crew_person VALUES (2553, 'Flea', NULL, NULL, 'Flea', 'Actor');  -- Actor: Flea
