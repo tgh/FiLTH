@@ -930,3 +930,5 @@ INSERT INTO worked_on VALUES(145, 2498, 'Lead Actor');  -- Stephen Dorff for Bac
 INSERT INTO worked_on VALUES(145, 2555, 'Supporting Actor');  -- Ian Hart for Backbeat (1994)
 INSERT INTO worked_on VALUES(146, 1100, 'Director');  -- Vincente Minnelli for The Bad and the Beautiful (1952)
 INSERT INTO worked_on VALUES(146, 812, 'Lead Actress');  -- Lana Turner for The Bad and the Beautiful (1952)
+INSERT INTO worked_on VALUES(3623, 2556, 'Lead Actor');  -- Jean Reno for Le Chef (2012)
+INSERT INTO worked_on VALUES(3623, 2557, 'Lead Actor');  -- Michael Youn for Le Chef (2012)

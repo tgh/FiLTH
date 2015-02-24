@@ -310,3 +310,5 @@ INSERT INTO crew_person VALUES (2552, 'Lewis', 'Huey', NULL, 'Huey Lewis', 'Acto
 INSERT INTO crew_person VALUES (2553, 'Flea', NULL, NULL, 'Flea', 'Actor');  -- Actor: Flea
 INSERT INTO crew_person VALUES (2554, 'Lee', 'Sheryl', NULL, 'Sheryl Lee', 'Actress');  -- Actress: Sheryl Lee
 INSERT INTO crew_person VALUES (2555, 'Hart', 'Ian', NULL, 'Ian Hart', 'Actor');  -- Actor: Ian Hart
+INSERT INTO crew_person VALUES (2556, 'Reno', 'Jean', NULL, 'Jean Reno', 'Actor');  -- Actor: Jean Reno
+INSERT INTO crew_person VALUES (2557, 'Youn', 'Michael', NULL, 'Michael Youn', 'Actor');  -- Actor: Michael Youn
