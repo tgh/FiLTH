@@ -6,3 +6,8 @@ INSERT INTO tag VALUES (313, 'navy-seals', 217);
 INSERT INTO tag VALUES (314, 'contract-killer', 167);
 INSERT INTO tag VALUES (315, 'jack-ryan', NULL);
 INSERT INTO tag VALUES (316, 'wrestling', 20);
+INSERT INTO tag VALUES (317, 'abuse', NULL);
+INSERT INTO tag VALUES (318, 'child-abuse', 317);
+INSERT INTO tag VALUES (319, 'child-sexual-abuse', 318);
+INSERT INTO tag VALUES (320, 'spousal-abuse', 317);
+INSERT INTO tag VALUES (321, 'bullying', 317);
