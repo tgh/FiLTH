@@ -2568,3 +2568,11 @@ INSERT INTO crew_person VALUES (2567, 'Wayans', 'Damon', NULL, 'Damon Wayans', '
 INSERT INTO crew_person VALUES (2568, 'Glover', 'Savion', NULL, 'Savion Glover', 'Actor');  -- Actor: Savion Glover
 INSERT INTO crew_person VALUES (2569, 'Davidson', 'Tommy', NULL, 'Tommy Davidson', 'Actor');  -- Actor: Tommy Davidson
 INSERT INTO crew_person VALUES (2570, 'Rapaport', 'Michael', NULL, 'Michael Rapaport', 'Actor');  -- Actor: Michael Rapaport
+INSERT INTO crew_person VALUES (2571, 'Burnett', 'Carol', NULL, 'Carol Burnett', 'Actress');  -- Actress: Carol Burnett
+INSERT INTO crew_person VALUES (2572, 'Reinking', 'Ann', NULL, 'Ann Reinking', 'Actress');  -- Actress: Ann Reinking
+INSERT INTO crew_person VALUES (2573, 'Curry', 'Tim', NULL, 'Tim Curry', 'Actress');  -- Actress: Tim Curry
+INSERT INTO crew_person VALUES (2574, 'Quinn', 'Aileen', NULL, 'Aileen Quinn', 'Actress');  -- Actress: Aileen Quinn
+INSERT INTO crew_person VALUES (2575, 'Herrmann', 'Edward', NULL, 'Edward Herrmann', 'Actor');  -- Actor: Edward Herrmann
+INSERT INTO crew_person VALUES (2576, 'Sheridan', 'Tye', NULL, 'Tye Sheridan', 'Actor');  -- Actor: Tye Sheridan
+INSERT INTO crew_person VALUES (2577, 'Poulter', 'Gary', NULL, 'Gary Poulter', 'Actor');  -- Actor: Gary Poulter
+INSERT INTO crew_person VALUES (2578, 'Blevins', 'Ronnie', 'Gene', 'Ronnie Gene Blevins', 'Actor');  -- Actor: Ronnie Gene Blevins

@@ -75,3 +75,5 @@ INSERT INTO movie VALUES (3622, 'Foxcatcher', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3623, 'Le Chef', 2012, '**½', 'PG-13', 'France', NULL);
 INSERT INTO movie VALUES (3624, 'Virunga', 2014, '**½', 'NR', 'England', NULL);
 UPDATE movie SET star_rating = '***½' WHERE mid = 3622;
+INSERT INTO movie VALUES (3625, 'Annie', 1982, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3626, 'Joe', 2014, '**½', 'R', 'USA', NULL);
