@@ -333,3 +333,19 @@ INSERT INTO crew_person VALUES (2575, 'Herrmann', 'Edward', NULL, 'Edward Herrma
 INSERT INTO crew_person VALUES (2576, 'Sheridan', 'Tye', NULL, 'Tye Sheridan', 'Actor');  -- Actor: Tye Sheridan
 INSERT INTO crew_person VALUES (2577, 'Poulter', 'Gary', NULL, 'Gary Poulter', 'Actor');  -- Actor: Gary Poulter
 INSERT INTO crew_person VALUES (2578, 'Blevins', 'Ronnie', 'Gene', 'Ronnie Gene Blevins', 'Actor');  -- Actor: Ronnie Gene Blevins
+INSERT INTO crew_person VALUES (2579, 'Rose', 'Mickey', NULL, 'Mickey Rose', 'Screenwriter');  -- Screenwriter: Mickey Rose
+INSERT INTO crew_person VALUES (2580, 'Lasser', 'Louise', NULL, 'Louise Lasser', 'Actress');  -- Actress: Louise Lasser
+INSERT INTO crew_person VALUES (2581, 'Garity', 'Troy', NULL, 'Troy Garity', 'Actor');  -- Actor: Troy Garity
+INSERT INTO crew_person VALUES (2582, 'Hancock', 'John', 'D.', 'John D. Hancock', 'Director');  -- Director: John D. Hancock
+INSERT INTO crew_person VALUES (2583, 'Moriarty', 'Michael', NULL, 'Michael Moriarty', 'Actor');  -- Actor: Michael Moriarty
+INSERT INTO crew_person VALUES (2584, 'Story', 'Tim', NULL, 'Tim Story', 'Director');  -- Director: Tim Story
+INSERT INTO crew_person VALUES (2585, 'Entertainer', 'Cedric', 'the', 'Cedric the Entertainer', 'Actor');  -- Actor: Cedric the Entertainer
+INSERT INTO crew_person VALUES (2586, 'Anderson', 'Anthony', NULL, 'Anthony Anderson', 'Actor');  -- Actor: Anthony Anderson
+INSERT INTO crew_person VALUES (2587, 'David', 'Keith', NULL, 'Keith David', 'Actor');  -- Actor: Keith David
+INSERT INTO crew_person VALUES (2588, 'Nance', 'Jack', NULL, 'Jack Nance', 'Actor');  -- Actor: Jack Nance
+INSERT INTO crew_person VALUES (2589, 'Stallone', 'Frank', NULL, 'Frank Stallone', 'Actor');  -- Actor: Frank Stallone
+INSERT INTO crew_person VALUES (2590, 'Oedekerk', 'Steve', NULL, 'Steve Oedekerk', 'Actor');  -- Actor: Steve Oedekerk
+INSERT INTO crew_person VALUES (2591, 'James', 'Kevin', NULL, 'Kevin James', 'Actor');  -- Actor: Kevin James
+INSERT INTO crew_person VALUES (2592, 'Elliott', 'Sam', NULL, 'Sam Elliott', 'Actor');  -- Actor: Sam Elliott
+INSERT INTO crew_person VALUES (2593, 'MacDowell', 'Andie', NULL, 'Andie MacDowell', 'Actress');  -- Actress: Andie MacDowell
+INSERT INTO crew_person VALUES (2594, 'Sykes', 'Wanda', NULL, 'Wanda Sykes', 'Actress');  -- Actress: Wanda Sykes
