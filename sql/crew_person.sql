@@ -2592,3 +2592,5 @@ INSERT INTO crew_person VALUES (2591, 'James', 'Kevin', NULL, 'Kevin James', 'Ac
 INSERT INTO crew_person VALUES (2592, 'Elliott', 'Sam', NULL, 'Sam Elliott', 'Actor');  -- Actor: Sam Elliott
 INSERT INTO crew_person VALUES (2593, 'MacDowell', 'Andie', NULL, 'Andie MacDowell', 'Actress');  -- Actress: Andie MacDowell
 INSERT INTO crew_person VALUES (2594, 'Sykes', 'Wanda', NULL, 'Wanda Sykes', 'Actress');  -- Actress: Wanda Sykes
+INSERT INTO crew_person VALUES (2595, 'Berenson', 'Marisa', NULL, 'Marisa Berenson', 'Actress');  -- Actress: Marisa Berenson
+INSERT INTO crew_person VALUES (2596, 'Vitali', 'Leon', NULL, 'Leon Vitali', 'Actor');  -- Actor: Leon Vitali
