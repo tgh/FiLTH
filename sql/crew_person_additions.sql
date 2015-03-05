@@ -351,3 +351,7 @@ INSERT INTO crew_person VALUES (2593, 'MacDowell', 'Andie', NULL, 'Andie MacDowe
 INSERT INTO crew_person VALUES (2594, 'Sykes', 'Wanda', NULL, 'Wanda Sykes', 'Actress');  -- Actress: Wanda Sykes
 INSERT INTO crew_person VALUES (2595, 'Berenson', 'Marisa', NULL, 'Marisa Berenson', 'Actress');  -- Actress: Marisa Berenson
 INSERT INTO crew_person VALUES (2596, 'Vitali', 'Leon', NULL, 'Leon Vitali', 'Actor');  -- Actor: Leon Vitali
+INSERT INTO crew_person VALUES (2597, 'Williams', 'Billy', 'Dee', 'Billy Dee Williams', 'Actor');  -- Actor: Billy Dee Williams
+INSERT INTO crew_person VALUES (2598, 'Goyer', 'David', 'S.', 'David S. Goyer', 'Screenwriter');  -- Screenwriter: David S. Goyer
+INSERT INTO crew_person VALUES (2599, 'Def', 'Mos', NULL, 'Mos Def', 'Actor');  -- Actor: Mos Def
+INSERT INTO crew_person VALUES (2600, 'Kuras', 'Ellen', NULL, 'Ellen Kuras', 'Cinematographer');  -- Cinematographer: Ellen Kuras
