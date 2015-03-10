@@ -2598,3 +2598,11 @@ INSERT INTO crew_person VALUES (2597, 'Williams', 'Billy', 'Dee', 'Billy Dee Wil
 INSERT INTO crew_person VALUES (2598, 'Goyer', 'David', 'S.', 'David S. Goyer', 'Screenwriter');  -- Screenwriter: David S. Goyer
 INSERT INTO crew_person VALUES (2599, 'Def', 'Mos', NULL, 'Mos Def', 'Actor');  -- Actor: Mos Def
 INSERT INTO crew_person VALUES (2600, 'Kuras', 'Ellen', NULL, 'Ellen Kuras', 'Cinematographer');  -- Cinematographer: Ellen Kuras
+INSERT INTO crew_person VALUES (2601, 'Flynn', 'Gillian', NULL, 'Gillian Flynn', 'Screenwriter');  -- Screenwriter: Gillian Flynn
+INSERT INTO crew_person VALUES (2602, 'Pike', 'Rosamund', NULL, 'Rosamund Pike', 'Actress');  -- Actress: Rosamund Pike
+INSERT INTO crew_person VALUES (2603, 'Harris', 'Neil', 'Patrick', 'Neil Patrick Harris', 'Actor');  -- Actor: Neil Patrick Harris
+INSERT INTO crew_person VALUES (2604, 'Perry', 'Tyler', NULL, 'Tyler Perry', 'Actor');  -- Actor: Tyler Perry
+INSERT INTO crew_person VALUES (2605, 'Coon', 'Carrie', NULL, 'Carrie Coon', 'Actress');  -- Actress: Carrie Coon
+INSERT INTO crew_person VALUES (2606, 'Dickens', 'Kim', NULL, 'Kim Dickens', 'Actress');  -- Actress: Kim Dickens
+INSERT INTO crew_person VALUES (2607, 'Ward', 'Sela', NULL, 'Sela Ward', 'Actress');  -- Actress: Sela Ward
+INSERT INTO crew_person VALUES (2608, 'Cronenweth', 'Jeff', NULL, 'Jeff Cronenweth', 'Cinematographer');  -- Cinematographer: Jeff Cronenweth

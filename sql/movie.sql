@@ -3620,3 +3620,4 @@ INSERT INTO movie VALUES (3623, 'Le Chef', 2012, '**½', 'PG-13', 'France', NULL
 INSERT INTO movie VALUES (3624, 'Virunga', 2014, '**½', 'NR', 'England', NULL);
 INSERT INTO movie VALUES (3625, 'Annie', 1982, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3626, 'Joe', 2014, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3627, 'Gone Girl', 2014, '***½', 'R', 'USA', NULL);
