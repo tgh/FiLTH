@@ -320,3 +320,4 @@ INSERT INTO tag VALUES (319, 'child-sexual-abuse', 318);
 INSERT INTO tag VALUES (320, 'spousal-abuse', 317);
 INSERT INTO tag VALUES (321, 'bullying', 317);
 INSERT INTO tag VALUES (322, 'revolution', NULL);
+INSERT INTO tag VALUES (323, 'long-shot(s)', NULL);
