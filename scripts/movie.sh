@@ -94,7 +94,13 @@ function validate_movie_ratings() {
   $FILTH_SCRIPTS_PATH/mrc.py $1
 
   # did mrc.py fail?
-  process_return_value "\n[exec] mrc.py -- FAILURE"
+  if [ $? -ne $SUCCESS ]
+  # put previous_movie_ratings.txt back to original state and exit
+  then
+    restore_previous_ratings
+    echo -e "\n[exec] mrc.py -- FAILURE"
+    exit
+  fi
 
   echo -e "\n[exec] mrc.py -- Complete: Movie_Ratings ok.\n"
 }
