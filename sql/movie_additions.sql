@@ -82,3 +82,5 @@ INSERT INTO movie VALUES (3628, 'Birdman or the Unexpected Virtue of Ignorance',
 INSERT INTO movie VALUES (3629, 'The Judge', 2014, '***', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3630, 'Nausicaa of the Valley of the Wind', 1984, '***½', 'PG', 'Japan', NULL);
 INSERT INTO movie VALUES (3631, 'The Theory of Everything', 2014, '**½', 'PG-13', 'England', NULL);
+INSERT INTO movie VALUES (3632, 'The Better Angels', 2014, '***', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3633, 'Castle in the Sky', 1986, '***', 'PG', 'Japan', NULL);

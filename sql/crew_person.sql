@@ -2623,3 +2623,8 @@ INSERT INTO crew_person VALUES (2622, 'Redmayne', 'Eddie', NULL, 'Eddie Redmayne
 INSERT INTO crew_person VALUES (2623, 'Jones', 'Felicity', NULL, 'Felicity Jones', 'Actress');  -- Actress: Felicity Jones
 INSERT INTO crew_person VALUES (2624, 'Thewlis', 'David', NULL, 'David Thewlis', 'Actor');  -- Actor: David Thewlis
 INSERT INTO crew_person VALUES (2625, 'Delhomme', 'Benoit', NULL, 'Benoit Delhomme', 'Cinematographer');  -- Cinematographer: Benoit Delhomme
+INSERT INTO crew_person VALUES (2626, 'Edwards', 'A.J.', NULL, 'A.J. Edwards', 'Director');  -- Director: A.J. Edwards
+INSERT INTO crew_person VALUES (2627, 'Kruger', 'Diane', NULL, 'Diane Kruger', 'Actress');  -- Actress: Diane Kruger
+INSERT INTO crew_person VALUES (2628, 'Denney', 'Braydon', NULL, 'Braydon Denney', 'Actor');  -- Actor: Braydon Denney
+INSERT INTO crew_person VALUES (2629, 'Patinkin', 'Mandy', NULL, 'Mandy Patinkin', 'Actor');  -- Actor: Mandy Patinkin
+INSERT INTO crew_person VALUES (2630, 'James', NULL, NULL, 'James Van Der Beek', 'Actor');  -- Actor: James Van Der Beek
