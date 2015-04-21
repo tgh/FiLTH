@@ -84,3 +84,4 @@ INSERT INTO movie VALUES (3630, 'Nausicaa of the Valley of the Wind', 1984, '***
 INSERT INTO movie VALUES (3631, 'The Theory of Everything', 2014, '**½', 'PG-13', 'England', NULL);
 INSERT INTO movie VALUES (3632, 'The Better Angels', 2014, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3633, 'Castle in the Sky', 1986, '***', 'PG', 'Japan', NULL);
+INSERT INTO movie VALUES (3634, 'The Tale of Princess Kaguya', 2013, '***', 'PG', 'Japan', NULL);

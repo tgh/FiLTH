@@ -385,3 +385,21 @@ INSERT INTO crew_person VALUES (2627, 'Kruger', 'Diane', NULL, 'Diane Kruger', '
 INSERT INTO crew_person VALUES (2628, 'Denney', 'Braydon', NULL, 'Braydon Denney', 'Actor');  -- Actor: Braydon Denney
 INSERT INTO crew_person VALUES (2629, 'Patinkin', 'Mandy', NULL, 'Mandy Patinkin', 'Actor');  -- Actor: Mandy Patinkin
 INSERT INTO crew_person VALUES (2630, 'James', NULL, NULL, 'James Van Der Beek', 'Actor');  -- Actor: James Van Der Beek
+INSERT INTO crew_person VALUES (2631, 'Liu', 'Lucy', NULL, 'Lucy Liu', 'Actress');  -- Actress: Lucy Liu
+INSERT INTO crew_person VALUES (2632, 'Bridges', 'Beau', NULL, 'Beau Bridges', 'Actor');  -- Actor: Beau Bridges
+INSERT INTO crew_person VALUES (2633, 'Platt', 'Oliver', NULL, 'Oliver Platt', 'Actor');  -- Actor: Oliver Platt
+INSERT INTO crew_person VALUES (2634, 'Takahata', 'Isao', NULL, 'Isao Takahata', 'Director');  -- Director: Isao Takahata
+INSERT INTO crew_person VALUES (2635, 'Sakaguchi', 'Riko', NULL, 'Riko Sakaguchi', 'Screenwriter');  -- Screenwriter: Riko Sakaguchi
+INSERT INTO crew_person VALUES (2636, 'Marais', 'Jean', NULL, 'Jean Marais', 'Actor');  -- Actor: Jean Marais
+INSERT INTO crew_person VALUES (2637, 'Day', 'Josette', NULL, 'Josette Day', 'Actress');  -- Actress: Josette Day
+INSERT INTO crew_person VALUES (2638, 'Stiers', 'David', 'Ogden', 'David Ogden Stiers', 'Actor');  -- Actor: David Ogden Stiers
+INSERT INTO crew_person VALUES (2639, 'Seinfeld', 'Jerry', NULL, 'Jerry Seinfeld', 'Actor');  -- Actor: Jerry Seinfeld
+INSERT INTO crew_person VALUES (2640, 'Broderick', 'Matthew', NULL, 'Matthew Broderick', 'Actor');  -- Actor: Matthew Broderick
+INSERT INTO crew_person VALUES (2641, 'Rock', 'Chris', NULL, 'Chris Rock', 'Actor');  -- Actor: Chris Rock
+INSERT INTO crew_person VALUES (2642, 'Sting', NULL, NULL, 'Sting', 'Actor');  -- Actor: Sting
+INSERT INTO crew_person VALUES (2643, 'Miller', 'Larry', NULL, 'Larry Miller', 'Actor');  -- Actor: Larry Miller
+INSERT INTO crew_person VALUES (2644, 'O''Keefe', 'Cunningham', NULL, 'Cunningham O'Keefe', 'Screenwriter');  -- Screenwriter: Cunningham O'Keefe
+INSERT INTO crew_person VALUES (2645, 'Carriles', 'Lazaro', 'Gomez', 'Lazaro Gomez Carriles', 'Screenwriter');  -- Screenwriter: Lazaro Gomez Carriles
+INSERT INTO crew_person VALUES (2646, 'Luna', 'Diego', NULL, 'Diego Luna', 'Actor');  -- Actor: Diego Luna
+INSERT INTO crew_person VALUES (2647, 'Krizan', 'Kim', NULL, 'Kim Krizan', 'Screenwriter');  -- Screenwriter: Kim Krizan
+INSERT INTO crew_person VALUES (2648, 'Daniel', 'Lee', NULL, 'Lee Daniel', 'Cinematographer');  -- Cinematographer: Lee Daniel
