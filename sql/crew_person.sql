@@ -154,7 +154,7 @@ INSERT INTO crew_person VALUES (152, 'Turturro', 'John', DEFAULT, 'John Turturro
 INSERT INTO crew_person VALUES (153, 'Keener', 'Catherine', DEFAULT, 'Catherine Keener', 'Actress');  -- Actress
 INSERT INTO crew_person VALUES (154, 'LaBeouf', 'Shia', DEFAULT, 'Shia LaBeouf', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (155, 'Diaz', 'Cameron', DEFAULT, 'Cameron Diaz', 'Actress');  -- Actress
-INSERT INTO crew_person VALUES (156, 'Wright-Penn', 'Robin', DEFAULT, 'Robin Wright-Penn', 'Actress');  -- Actress
+INSERT INTO crew_person VALUES (156, 'Wright', 'Robin', DEFAULT, 'Robin Wright', 'Actress');  -- Actress
 INSERT INTO crew_person VALUES (157, 'Elwes', 'Cary', DEFAULT, 'Cary Elwes', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (158, 'McKean', 'Michael', DEFAULT, 'Michael McKean', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (159, 'Shearer', 'Harry', DEFAULT, 'Harry Shearer', 'Actor');  -- Actor
@@ -2646,3 +2646,20 @@ INSERT INTO crew_person VALUES (2645, 'Carriles', 'Lazaro', 'Gomez', 'Lazaro Gom
 INSERT INTO crew_person VALUES (2646, 'Luna', 'Diego', NULL, 'Diego Luna', 'Actor');  -- Actor: Diego Luna
 INSERT INTO crew_person VALUES (2647, 'Krizan', 'Kim', NULL, 'Kim Krizan', 'Screenwriter');  -- Screenwriter: Kim Krizan
 INSERT INTO crew_person VALUES (2648, 'Daniel', 'Lee', NULL, 'Lee Daniel', 'Cinematographer');  -- Cinematographer: Lee Daniel
+INSERT INTO crew_person VALUES (2649, 'Place', 'Mary', 'Kay', 'Mary Kay Place', 'Actress');  -- Actress: Mary Kay Place
+INSERT INTO crew_person VALUES (2650, 'Acord', 'Lance', NULL, 'Lance Acord', 'Cinematographer');  -- Cinematographer: Lance Acord
+INSERT INTO crew_person VALUES (2651, 'Phoenix', 'Summer', NULL, 'Summer Phoenix', 'Actress');  -- Actress: Summer Phoenix
+INSERT INTO crew_person VALUES (2652, 'Dugan', 'Dennis', NULL, 'Dennis Dugan', 'Director');  -- Director: Dennis Dugan
+INSERT INTO crew_person VALUES (2653, 'Schneider', 'Rob', NULL, 'Rob Schneider', 'Actor');  -- Actor: Rob Schneider
+INSERT INTO crew_person VALUES (2654, 'Spade', 'David', NULL, 'David Spade', 'Actor');  -- Actor: David Spade
+INSERT INTO crew_person VALUES (2655, 'Heder', 'Jon', NULL, 'Jon Heder', 'Actor');  -- Actor: Jon Heder
+INSERT INTO crew_person VALUES (2656, 'Lovitz', 'Jon', NULL, 'Jon Lovitz', 'Actor');  -- Actor: Jon Lovitz
+INSERT INTO crew_person VALUES (2657, 'Kilborn', 'Craig', NULL, 'Craig Kilborn', 'Actor');  -- Actor: Craig Kilborn
+INSERT INTO crew_person VALUES (2658, 'Meadows', 'Tim', NULL, 'Tim Meadows', 'Actor');  -- Actor: Tim Meadows
+INSERT INTO crew_person VALUES (2659, 'Nagra', 'Parminder', NULL, 'Parminder Nagra', 'Actress');  -- Actress: Parminder Nagra
+INSERT INTO crew_person VALUES (2660, 'Meyers', 'Jonathan', 'Rhys', 'Jonathan Rhys Meyers', 'Actor');  -- Actor: Jonathan Rhys Meyers
+INSERT INTO crew_person VALUES (2661, 'Presley', 'Robert', NULL, 'Robert Presley', 'Cinematographer');  -- Cinematographer: Robert Presley
+INSERT INTO crew_person VALUES (2662, 'Levy', 'Eugene', NULL, 'Eugene Levy', 'Actor');  -- Actor: Eugene Levy
+INSERT INTO crew_person VALUES (2663, 'Posey', 'Parker', NULL, 'Parker Posey', 'Actress');  -- Actress: Parker Posey
+INSERT INTO crew_person VALUES (2664, 'Lynch', 'Jane', NULL, 'Jane Lynch', 'Actress');  -- Actress: Jane Lynch
+INSERT INTO crew_person VALUES (2665, 'Begley Jr.', 'Ed', NULL, 'Ed Begley Jr.', 'Actor');  -- Actor: Ed Begley Jr.
