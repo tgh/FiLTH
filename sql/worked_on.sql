@@ -2374,7 +2374,7 @@ INSERT INTO worked_on VALUES(1559, 1244, 'Cinematographer');  -- Robert Surtees 
 INSERT INTO worked_on VALUES(2034, 1310, 'Cinematographer');  -- Owen Roizman worked on The Exorcist as Cinematographer
 INSERT INTO worked_on VALUES(1652, 1308, 'Cinematographer');  -- Fred J. Koenekamp worked on The Towering Inferno as Cinematographer
 INSERT INTO worked_on VALUES(1652, 1293, 'Cinematographer');  -- Joseph Biroc worked on The Towering Inferno as Cinematographer
-INSERT INTO worked_on VALUES(944, 1244, 'Cinematographer');  -- Robert Surtees worked on Lenny as Cinematographer
+INSERT INTO worked_on VALUES(944, 1280, 'Cinematographer');  -- Bruce Surtees worked on Lenny as Cinematographer
 INSERT INTO worked_on VALUES(2687, 1292, 'Cinematographer');  -- Philip H. Lathrop worked on Earthquake as Cinematographer
 INSERT INTO worked_on VALUES(2189, 1296, 'Cinematographer');  -- Geoffrey Unsworth worked on Murder on the Orient Express as Cinematographer
 INSERT INTO worked_on VALUES(323, 1315, 'Cinematographer');  -- John A. Alonzo worked on Chinatown as Cinematographer
@@ -5432,3 +5432,13 @@ INSERT INTO worked_on VALUES(3636, 2128, 'Supporting Actor');  -- Bill Paxton fo
 INSERT INTO worked_on VALUES(3636, 2667, 'Supporting Actress');  -- Rene Russo for Nightcrawler (2014)
 INSERT INTO worked_on VALUES(3636, 234, 'Cinematographer');  -- Robert Elswit for Nightcrawler (2014)
 INSERT INTO worked_on VALUES(3636, 2668, 'Supporting Actor');  -- Riz Ahmed for Nightcrawler (2014)
+INSERT INTO worked_on VALUES(188, 2669, 'Lead Actress');  -- Myrna Loy for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(188, 2670, 'Supporting Actor');  -- Dana Andrews for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(188, 2671, 'Supporting Actress');  -- Virginia Mayo for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(188, 2672, 'Supporting Actress');  -- Cathy O'Connell for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(188, 730, 'Supporting Actress');  -- Teresa Wright for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(188, 244, 'Cinematographer');  -- Gregg Toland for The Best Years of Our Lives (1946)
+INSERT INTO worked_on VALUES(190, 1161, 'Director');  -- Martin Brest for Beverly Hills Cop (1984)
+INSERT INTO worked_on VALUES(190, 665, 'Lead Actor');  -- Eddie Murphy for Beverly Hills Cop (1984)
+INSERT INTO worked_on VALUES(190, 2673, 'Supporting Actor');  -- Judge Reinhold for Beverly Hills Cop (1984)
+INSERT INTO worked_on VALUES(190, 1244, 'Cinematographer');  -- Bruce Surtees for Beverly Hills Cop (1984)

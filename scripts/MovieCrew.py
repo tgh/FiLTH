@@ -102,8 +102,8 @@ class MovieCrew(object):
 
     positions = {}
     for line in lines:
-      cid = int(re.search('VALUES \\((\d+), ', line))
-      position = re.search("'(.*)'\\);", line)
+      cid = int(re.search('VALUES \\((\d+), ', line).group(1))
+      position = re.search("'(.*)'\\);", line).group(1)
       if cid in cids:
         positions[cid] = position
 

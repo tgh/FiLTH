@@ -423,3 +423,8 @@ INSERT INTO crew_person VALUES (2665, 'Jr.', 'Ed', 'Begley', 'Ed Begley Jr.', 'A
 INSERT INTO crew_person VALUES (2666, 'Gilroy', 'Dan', NULL, 'Dan Gilroy', 'Director');  -- Director: Dan Gilroy
 INSERT INTO crew_person VALUES (2667, 'Russo', 'Rene', NULL, 'Rene Russo', 'Actress');  -- Actress: Rene Russo
 INSERT INTO crew_person VALUES (2668, 'Ahmed', 'Riz', NULL, 'Riz Ahmed', 'Actor');  -- Actor: Riz Ahmed
+INSERT INTO crew_person VALUES (2669, 'Loy', 'Myrna', NULL, 'Myrna Loy', 'Actress');  -- Actress: Myrna Loy
+INSERT INTO crew_person VALUES (2670, 'Andrews', 'Dana', NULL, 'Dana Andrews', 'Actor');  -- Actor: Dana Andrews
+INSERT INTO crew_person VALUES (2671, 'Mayo', 'Virginia', NULL, 'Virginia Mayo', 'Actress');  -- Actress: Virginia Mayo
+INSERT INTO crew_person VALUES (2672, 'O''Connell', 'Cathy', NULL, 'Cathy O'Connell', 'Actress');  -- Actress: Cathy O'Connell
+INSERT INTO crew_person VALUES (2673, 'Reinhold', 'Judge', NULL, 'Judge Reinhold', 'Actor');  -- Actor: Judge Reinhold

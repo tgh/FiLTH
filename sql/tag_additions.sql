@@ -15,3 +15,5 @@ INSERT INTO tag VALUES (322, 'revolution', NULL);
 INSERT INTO tag VALUES (323, 'long-shot(s)', NULL);
 INSERT INTO tag VALUES (324, 'based-on-fairy-tale', 59);
 INSERT INTO tag VALUES (325, 'tv-news', NULL);
+INSERT INTO tag VALUES (326, 'teenager(s)', NULL);
+INSERT INTO tag VALUES (327, 'high-school', NULL);

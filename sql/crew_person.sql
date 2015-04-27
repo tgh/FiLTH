@@ -1278,7 +1278,7 @@ INSERT INTO crew_person VALUES (1276, 'Hildyard', 'Jack', DEFAULT, 'Jack Hildyar
 INSERT INTO crew_person VALUES (1277, 'Fapp', 'Daniel', 'L.', 'Daniel L. Fapp', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1278, 'Leavitt', 'Sam', DEFAULT, 'Sam Leavitt', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1279, 'MacDonald', 'Joseph', DEFAULT, 'Joseph MacDonald', 'Cinematographer');  -- Cinematographer
-INSERT INTO crew_person VALUES (1280, 'Surtees', 'Robert', DEFAULT, 'Robert Surtees', 'Cinematographer');  -- Cinematographer
+INSERT INTO crew_person VALUES (1244, 'Surtees', 'Bruce', DEFAULT, 'Bruce Surtees', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1281, 'Russell', 'John', 'L.', 'John L. Russell', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1282, 'Francis', 'Freddie', DEFAULT, 'Freddie Francis', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1283, 'Laszlo', 'Ernest', DEFAULT, 'Ernest Laszlo', 'Cinematographer');  -- Cinematographer
@@ -2666,3 +2666,8 @@ INSERT INTO crew_person VALUES (2665, 'Begley Jr.', 'Ed', NULL, 'Ed Begley Jr.',
 INSERT INTO crew_person VALUES (2666, 'Gilroy', 'Dan', NULL, 'Dan Gilroy', 'Director');  -- Director: Dan Gilroy
 INSERT INTO crew_person VALUES (2667, 'Russo', 'Rene', NULL, 'Rene Russo', 'Actress');  -- Actress: Rene Russo
 INSERT INTO crew_person VALUES (2668, 'Ahmed', 'Riz', NULL, 'Riz Ahmed', 'Actor');  -- Actor: Riz Ahmed
+INSERT INTO crew_person VALUES (2669, 'Loy', 'Myrna', NULL, 'Myrna Loy', 'Actress');  -- Actress: Myrna Loy
+INSERT INTO crew_person VALUES (2670, 'Andrews', 'Dana', NULL, 'Dana Andrews', 'Actor');  -- Actor: Dana Andrews
+INSERT INTO crew_person VALUES (2671, 'Mayo', 'Virginia', NULL, 'Virginia Mayo', 'Actress');  -- Actress: Virginia Mayo
+INSERT INTO crew_person VALUES (2672, 'O''Connell', 'Cathy', NULL, 'Cathy O'Connell', 'Actress');  -- Actress: Cathy O'Connell
+INSERT INTO crew_person VALUES (2673, 'Reinhold', 'Judge', NULL, 'Judge Reinhold', 'Actor');  -- Actor: Judge Reinhold
