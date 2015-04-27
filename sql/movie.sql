@@ -3628,3 +3628,5 @@ INSERT INTO movie VALUES (3631, 'The Theory of Everything', 2014, '**½', 'PG-13
 INSERT INTO movie VALUES (3632, 'The Better Angels', 2014, '***', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3633, 'Castle in the Sky', 1986, '***', 'PG', 'Japan', NULL);
 INSERT INTO movie VALUES (3634, 'The Tale of Princess Kaguya', 2013, '***', 'PG', 'Japan', NULL);
+INSERT INTO movie VALUES (3635, 'Kings of Pastry', 2009, '***', 'NR', DEFAULT, NULL);
+INSERT INTO movie VALUES (3636, 'Nightcrawler', 2014, '***½', 'R', 'USA', NULL);

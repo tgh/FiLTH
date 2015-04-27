@@ -420,3 +420,6 @@ INSERT INTO crew_person VALUES (2662, 'Levy', 'Eugene', NULL, 'Eugene Levy', 'Ac
 INSERT INTO crew_person VALUES (2663, 'Posey', 'Parker', NULL, 'Parker Posey', 'Actress');  -- Actress: Parker Posey
 INSERT INTO crew_person VALUES (2664, 'Lynch', 'Jane', NULL, 'Jane Lynch', 'Actress');  -- Actress: Jane Lynch
 INSERT INTO crew_person VALUES (2665, 'Jr.', 'Ed', 'Begley', 'Ed Begley Jr.', 'Actor');  -- Actor: Ed Begley Jr.
+INSERT INTO crew_person VALUES (2666, 'Gilroy', 'Dan', NULL, 'Dan Gilroy', 'Director');  -- Director: Dan Gilroy
+INSERT INTO crew_person VALUES (2667, 'Russo', 'Rene', NULL, 'Rene Russo', 'Actress');  -- Actress: Rene Russo
+INSERT INTO crew_person VALUES (2668, 'Ahmed', 'Riz', NULL, 'Riz Ahmed', 'Actor');  -- Actor: Riz Ahmed

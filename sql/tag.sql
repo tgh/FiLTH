@@ -322,3 +322,4 @@ INSERT INTO tag VALUES (321, 'bullying', 317);
 INSERT INTO tag VALUES (322, 'revolution', NULL);
 INSERT INTO tag VALUES (323, 'long-shot(s)', NULL);
 INSERT INTO tag VALUES (324, 'based-on-fairy-tale', 59);
+INSERT INTO tag VALUES (325, 'tv-news', NULL);
