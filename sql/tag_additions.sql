@@ -17,3 +17,6 @@ INSERT INTO tag VALUES (324, 'based-on-fairy-tale', 59);
 INSERT INTO tag VALUES (325, 'tv-news', NULL);
 INSERT INTO tag VALUES (326, 'teenager(s)', NULL);
 INSERT INTO tag VALUES (327, 'high-school', NULL);
+INSERT INTO tag VALUES (328, 'friend(s)/friendship', NULL);
+INSERT INTO tag VALUES (329, 'parenthood', NULL);
+INSERT INTO tag VALUES (330, 'bowling', 20);
