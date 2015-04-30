@@ -21,3 +21,4 @@ INSERT INTO tag VALUES (328, 'friend(s)/friendship', NULL);
 INSERT INTO tag VALUES (329, 'parenthood', NULL);
 INSERT INTO tag VALUES (330, 'bowling', 20);
 INSERT INTO tag VALUES (331, 'philip-marlowe', NULL);
+INSERT INTO tag VALUES (332, 'olympics', 20);

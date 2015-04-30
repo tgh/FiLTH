@@ -3623,6 +3623,7 @@ INSERT INTO oscar_given_to VALUES(1247, 11, 1758, 1970, 1, 1);  -- 1970 Best Ori
 INSERT INTO oscar_given_to VALUES(2835, 11, 1759, 1970, 0, 0);  -- 1970 Best Original Screenplay: Norman Wexler for "Joe"
 INSERT INTO oscar_given_to VALUES(2836, 11, 1760, 1970, 0, 0);  -- 1970 Best Original Screenplay: Eric Rohmer for "My Night at Maud's"
 INSERT INTO oscar_given_to VALUES(576, 11, 1761, 1970, 0, 0);  -- 1970 Best Original Screenplay: Adrien Joyce for "Five Easy Pieces"
+INSERT INTO oscar_given_to VALUES(576, 11, 2726, 1970, 0, 0);  -- 1970 Best Original Screenplay: Bob Rafelson for "Five Easy Pieces"
 INSERT INTO oscar_given_to VALUES(987, 11, 1762, 1970, 0, 0);  -- 1970 Best Original Screenplay: Erich Segal for "Love Story"
 INSERT INTO oscar_given_to VALUES(922, 10, 1763, 1971, 0, 1);  -- 1971 Best Adapted Screenplay: Larry McMurtry for "The Last Picture Show"
 INSERT INTO oscar_given_to VALUES(922, 10, 256, 1971, 0, 1);  -- 1971 Best Adapted Screenplay: Peter Bogdanovich for "The Last Picture Show"

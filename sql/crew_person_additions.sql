@@ -466,3 +466,20 @@ INSERT INTO crew_person VALUES (2707, 'Woods', 'Frank', 'E.', 'Frank E. Woods', 
 INSERT INTO crew_person VALUES (2708, 'Hartnett', 'Josh', NULL, 'Josh Hartnett', 'Actor');  -- Actor: Josh Hartnett
 INSERT INTO crew_person VALUES (2709, 'Sizemore', 'Tom', NULL, 'Tom Sizemore', 'Actor');  -- Actor: Tom Sizemore
 INSERT INTO crew_person VALUES (2710, 'Isaacs', 'Jason', NULL, 'Jason Isaacs', 'Actor');  -- Actor: Jason Isaacs
+INSERT INTO crew_person VALUES (2711, 'Kunis', 'Mila', NULL, 'Mila Kunis', 'Actress');  -- Actress: Mila Kunis
+INSERT INTO crew_person VALUES (2712, 'Cassel', 'Vincent', NULL, 'Vincent Cassel', 'Actor');  -- Actor: Vincent Cassel
+INSERT INTO crew_person VALUES (2713, 'Walsh', 'M.', 'Emmet', 'M. Emmet Walsh', 'Supporting Actor');  -- Supporting Actor: M. Emmet Walsh
+INSERT INTO crew_person VALUES (2714, 'Fancher', 'Hampton', NULL, 'Hampton Fancher', 'Screenwriter');  -- Screenwriter: Hampton Fancher
+INSERT INTO crew_person VALUES (2715, 'Hannah', 'Daryl', NULL, 'Daryl Hannah', 'Actress');  -- Actress: Daryl Hannah
+INSERT INTO crew_person VALUES (2716, 'Poehler', 'Amy', NULL, 'Amy Poehler', 'Actress');  -- Actress: Amy Poehler
+INSERT INTO crew_person VALUES (2717, 'Nelson', 'Craig', 'T.', 'Craig T. Nelson', 'Actor');  -- Actor: Craig T. Nelson
+INSERT INTO crew_person VALUES (2718, 'Myrick', 'Daniel', NULL, 'Daniel Myrick', 'Director');  -- Director: Daniel Myrick
+INSERT INTO crew_person VALUES (2719, 'Sanchez', 'Eduardo', NULL, 'Eduardo Sanchez', 'Director');  -- Director: Eduardo Sanchez
+INSERT INTO crew_person VALUES (2720, 'Donahue', 'Heather', NULL, 'Heather Donahue', 'Actress');  -- Actress: Heather Donahue
+INSERT INTO crew_person VALUES (2721, 'Williams', 'Michael', 'C.', 'Michael C. Williams', 'Actor');  -- Actor: Michael C. Williams
+INSERT INTO crew_person VALUES (2722, 'Leonard', 'Joshua', NULL, 'Joshua Leonard', 'Actor');  -- Actor: Joshua Leonard
+INSERT INTO crew_person VALUES (2723, 'Bullock', 'Sandra', NULL, 'Sandra Bullock', 'Actress');  -- Actress: Sandra Bullock
+INSERT INTO crew_person VALUES (2724, 'Aaron', 'Quinton', NULL, 'Quinton Aaron', 'Actor');  -- Actor: Quinton Aaron
+INSERT INTO crew_person VALUES (2725, 'McGraw', 'Tim', NULL, 'Tim McGraw', 'Actor');  -- Actor: Tim McGraw
+INSERT INTO crew_person VALUES (2726, 'Rafelson', 'Bob', NULL, 'Bob Rafelson', 'Director');  -- Director: Bob Rafelson
+INSERT INTO crew_person VALUES (2727, 'Sigel', 'Newton', 'Thomas', 'Newton Thomas Sigel', 'Cinematographer');  -- Cinematographer: Newton Thomas Sigel
