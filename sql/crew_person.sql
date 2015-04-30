@@ -2725,3 +2725,12 @@ INSERT INTO crew_person VALUES (2724, 'Aaron', 'Quinton', NULL, 'Quinton Aaron',
 INSERT INTO crew_person VALUES (2725, 'McGraw', 'Tim', NULL, 'Tim McGraw', 'Actor');  -- Actor: Tim McGraw
 INSERT INTO crew_person VALUES (2726, 'Rafelson', 'Bob', NULL, 'Bob Rafelson', 'Director');  -- Director: Bob Rafelson
 INSERT INTO crew_person VALUES (2727, 'Sigel', 'Newton', 'Thomas', 'Newton Thomas Sigel', 'Cinematographer');  -- Cinematographer: Newton Thomas Sigel
+INSERT INTO crew_person VALUES (2728, 'Carnahan', 'Joe', NULL, 'Joe Carnahan', 'Director');  -- Director: Joe Carnahan
+INSERT INTO crew_person VALUES (2729, 'Getz', 'John', NULL, 'John Getz', 'Actor');  -- Actor: John Getz
+INSERT INTO crew_person VALUES (2730, 'Hedaya', 'Dan', NULL, 'Dan Hedaya', 'Actor');  -- Actor: Dan Hedaya
+INSERT INTO crew_person VALUES (2731, 'Nesbitt', 'James', NULL, 'James Nesbitt', 'Actor');  -- Actor: James Nesbitt
+INSERT INTO crew_person VALUES (2732, 'Cassavetes', 'Nick', NULL, 'Nick Cassavetes', 'Actor');  -- Actor: Nick Cassavetes
+INSERT INTO crew_person VALUES (2733, 'Reubens', 'Paul', NULL, 'Paul Reubens', 'Actor');  -- Actor: Paul Reubens
+INSERT INTO crew_person VALUES (2734, 'Allen', 'Nancy', NULL, 'Nancy Allen', 'Actress');  -- Actress: Nancy Allen
+INSERT INTO crew_person VALUES (2735, 'Amis', 'Suzy', NULL, 'Suzy Amis', 'Actress');  -- Actress: Suzy Amis
+INSERT INTO crew_person VALUES (2736, 'Hemmings', 'David', NULL, 'David Hemmings', 'Actor');  -- Actor: David Hemmings
