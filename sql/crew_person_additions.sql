@@ -492,3 +492,16 @@ INSERT INTO crew_person VALUES (2733, 'Reubens', 'Paul', NULL, 'Paul Reubens', '
 INSERT INTO crew_person VALUES (2734, 'Allen', 'Nancy', NULL, 'Nancy Allen', 'Actress');  -- Actress: Nancy Allen
 INSERT INTO crew_person VALUES (2735, 'Amis', 'Suzy', NULL, 'Suzy Amis', 'Actress');  -- Actress: Suzy Amis
 INSERT INTO crew_person VALUES (2736, 'Hemmings', 'David', NULL, 'David Hemmings', 'Actor');  -- Actor: David Hemmings
+INSERT INTO crew_person VALUES (2737, 'MacLachlan', 'Kyle', NULL, 'Kyle MacLachlan', 'Actor');  -- Actor: Kyle MacLachlan
+INSERT INTO crew_person VALUES (2738, 'Geraghty', 'Brian', NULL, 'Brian Geraghty', 'Actor');  -- Actor: Brian Geraghty
+INSERT INTO crew_person VALUES (2739, 'Jackson', 'Joshua', NULL, 'Joshua Jackson', 'Actor');  -- Actor: Joshua Jackson
+INSERT INTO crew_person VALUES (2740, 'Kutcher', 'Ashton', NULL, 'Ashton Kutcher', 'Actor');  -- Actor: Ashton Kutcher
+INSERT INTO crew_person VALUES (2741, 'Moore', 'Demi', NULL, 'Demi Moore', 'Actress');  -- Actress: Demi Moore
+INSERT INTO crew_person VALUES (2742, 'Danson', 'Ted', NULL, 'Ted Danson', 'Actor');  -- Actor: Ted Danson
+INSERT INTO crew_person VALUES (2743, 'Younger', 'Ben', NULL, 'Ben Younger', 'Director');  -- Director: Ben Younger
+INSERT INTO crew_person VALUES (2744, 'Long', 'Nia', NULL, 'Nia Long', 'Supporting Actress');  -- Supporting Actress: Nia Long
+INSERT INTO crew_person VALUES (2745, 'Caan', 'Scott', NULL, 'Scott Caan', 'Actor');  -- Actor: Scott Caan
+INSERT INTO crew_person VALUES (2746, 'Scott', 'Tom', 'Everett', 'Tom Everett Scott', 'Actor');  -- Actor: Tom Everett Scott
+INSERT INTO crew_person VALUES (2747, 'Rifkin', 'Ron', NULL, 'Ron Rifkin', 'Actor');  -- Actor: Ron Rifkin
+INSERT INTO crew_person VALUES (2748, 'Katt', 'Nicky', NULL, 'Nicky Katt', 'Actor');  -- Actor: Nicky Katt
+INSERT INTO crew_person VALUES (2749, 'Kennedy', 'Jamie', NULL, 'Jamie Kennedy', 'Actor');  -- Actor: Jamie Kennedy
