@@ -505,3 +505,7 @@ INSERT INTO crew_person VALUES (2746, 'Scott', 'Tom', 'Everett', 'Tom Everett Sc
 INSERT INTO crew_person VALUES (2747, 'Rifkin', 'Ron', NULL, 'Ron Rifkin', 'Actor');  -- Actor: Ron Rifkin
 INSERT INTO crew_person VALUES (2748, 'Katt', 'Nicky', NULL, 'Nicky Katt', 'Actor');  -- Actor: Nicky Katt
 INSERT INTO crew_person VALUES (2749, 'Kennedy', 'Jamie', NULL, 'Jamie Kennedy', 'Actor');  -- Actor: Jamie Kennedy
+INSERT INTO crew_person VALUES (2750, 'Moore', 'Tomm', NULL, 'Tomm Moore', 'Director');  -- Director: Tomm Moore
+INSERT INTO crew_person VALUES (2751, 'Scott', 'Tony', NULL, 'Tony Scott', 'Director');  -- Director: Tony Scott
+INSERT INTO crew_person VALUES (2752, 'Edwards', 'Anthony', NULL, 'Anthony Edwards', 'Actor');  -- Actor: Anthony Edwards
+INSERT INTO crew_person VALUES (2753, 'Kilmer', 'Val', NULL, 'Val Kilmer', 'Actor');  -- Actor: Val Kilmer

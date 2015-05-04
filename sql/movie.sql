@@ -3630,3 +3630,5 @@ INSERT INTO movie VALUES (3633, 'Castle in the Sky', 1986, '***', 'PG', 'Japan',
 INSERT INTO movie VALUES (3634, 'The Tale of Princess Kaguya', 2013, '***', 'PG', 'Japan', NULL);
 INSERT INTO movie VALUES (3635, 'Kings of Pastry', 2009, '***', 'NR', DEFAULT, NULL);
 INSERT INTO movie VALUES (3636, 'Nightcrawler', 2014, '***½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3637, 'Song of the Sea', 2014, '***', 'PG', 'Ireland', NULL);
+INSERT INTO movie VALUES (3638, 'Top Gun', 1986, '**', 'PG', 'USA', NULL);
