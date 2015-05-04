@@ -509,3 +509,13 @@ INSERT INTO crew_person VALUES (2750, 'Moore', 'Tomm', NULL, 'Tomm Moore', 'Dire
 INSERT INTO crew_person VALUES (2751, 'Scott', 'Tony', NULL, 'Tony Scott', 'Director');  -- Director: Tony Scott
 INSERT INTO crew_person VALUES (2752, 'Edwards', 'Anthony', NULL, 'Anthony Edwards', 'Actor');  -- Actor: Anthony Edwards
 INSERT INTO crew_person VALUES (2753, 'Kilmer', 'Val', NULL, 'Val Kilmer', 'Actor');  -- Actor: Val Kilmer
+INSERT INTO crew_person VALUES (2754, 'Jay', 'Ricky', NULL, 'Ricky Jay', 'Actor');  -- Actor: Ricky Jay
+INSERT INTO crew_person VALUES (2755, 'Walters', 'Melora', NULL, 'Melora Walters', 'Actress');  -- Actress: Melora Walters
+INSERT INTO crew_person VALUES (2756, 'Hall', 'Philip', 'Baker', 'Philip Baker Hall', 'Supporting Actor');  -- Supporting Actor: Philip Baker Hall
+INSERT INTO crew_person VALUES (2757, 'Jane', 'Thomas', NULL, 'Thomas Jane', 'Actor');  -- Actor: Thomas Jane
+INSERT INTO crew_person VALUES (2758, 'Albert', NULL, NULL, 'Albert and Allen Hughes', 'Director');  -- Director: Albert and Allen Hughes
+INSERT INTO crew_person VALUES (2759, 'Gambon', 'Michael', NULL, 'Michael Gambon', 'Actor');  -- Actor: Michael Gambon
+INSERT INTO crew_person VALUES (2760, 'Whaley', 'Frank', NULL, 'Frank Whaley', 'Actor');  -- Actor: Frank Whaley
+INSERT INTO crew_person VALUES (2761, 'Baldwin', 'Stephen', NULL, 'Stephen Baldwin', 'Actor');  -- Actor: Stephen Baldwin
+INSERT INTO crew_person VALUES (2762, 'Sedgwick', 'Kyra', NULL, 'Kyra Sedgwick', 'Actress');  -- Actress: Kyra Sedgwick
+INSERT INTO crew_person VALUES (2763, 'Fleischer', 'Richard', NULL, 'Richard Fleischer', 'Director');  -- Director: Richard Fleischer
