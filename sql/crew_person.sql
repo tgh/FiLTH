@@ -2761,3 +2761,17 @@ INSERT INTO crew_person VALUES (2760, 'Whaley', 'Frank', NULL, 'Frank Whaley', '
 INSERT INTO crew_person VALUES (2761, 'Baldwin', 'Stephen', NULL, 'Stephen Baldwin', 'Actor');  -- Actor: Stephen Baldwin
 INSERT INTO crew_person VALUES (2762, 'Sedgwick', 'Kyra', NULL, 'Kyra Sedgwick', 'Actress');  -- Actress: Kyra Sedgwick
 INSERT INTO crew_person VALUES (2763, 'Fleischer', 'Richard', NULL, 'Richard Fleischer', 'Director');  -- Director: Richard Fleischer
+INSERT INTO crew_person VALUES (2764, 'Yeomen', 'Robert', 'D.', 'Robert D. Yeomen', 'Cinematographer');  -- Cinematographer: Robert D. Yeomen
+INSERT INTO crew_person VALUES (2765, 'Andy', NULL, NULL, 'Andy and Lana Wachowski', 'Director');  -- Director: Andy and Lana Wachowski
+INSERT INTO crew_person VALUES (2766, 'Gershon', 'Gina', NULL, 'Gina Gershon', 'Actress');  -- Actress: Gina Gershon
+INSERT INTO crew_person VALUES (2767, 'Meloni', 'Christopher', NULL, 'Christopher Meloni', 'Actor');  -- Actor: Christopher Meloni
+INSERT INTO crew_person VALUES (2768, 'Liman', 'Doug', NULL, 'Doug Liman', 'Director');  -- Director: Doug Liman
+INSERT INTO crew_person VALUES (2769, 'Herron', 'W.', 'Blake', 'W. Blake Herron', 'Screenwriter');  -- Screenwriter: W. Blake Herron
+INSERT INTO crew_person VALUES (2770, 'Potente', 'Franka', NULL, 'Franka Potente', 'Actress');  -- Actress: Franka Potente
+INSERT INTO crew_person VALUES (2771, 'Stiles', 'Julia', NULL, 'Julia Stiles', 'Actress');  -- Actress: Julia Stiles
+INSERT INTO crew_person VALUES (2772, 'Urban', 'Karl', NULL, 'Karl Urban', 'Actor');  -- Actor: Karl Urban
+INSERT INTO crew_person VALUES (2773, 'Burns', 'Scott', 'Z.', 'Scott Z. Burns', 'Screenwriter');  -- Screenwriter: Scott Z. Burns
+INSERT INTO crew_person VALUES (2774, 'Nolfi', 'George', NULL, 'George Nolfi', 'Screenwriter');  -- Screenwriter: George Nolfi
+INSERT INTO crew_person VALUES (2775, 'Glenn', 'Scott', NULL, 'Scott Glenn', 'Actor');  -- Actor: Scott Glenn
+INSERT INTO crew_person VALUES (2776, 'Carradine', 'David', NULL, 'David Carradine', 'Actor');  -- Actor: David Carradine
+INSERT INTO crew_person VALUES (2777, 'Sarsgaard', 'Peter', NULL, 'Peter Sarsgaard', 'Actor');  -- Actor: Peter Sarsgaard
