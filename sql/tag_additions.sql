@@ -23,3 +23,4 @@ INSERT INTO tag VALUES (330, 'bowling', 20);
 INSERT INTO tag VALUES (331, 'philip-marlowe', NULL);
 INSERT INTO tag VALUES (332, 'olympics', 20);
 INSERT INTO tag VALUES (333, 'siblings', NULL);
+INSERT INTO tag VALUES (334, 'prisoner(s)-of-war', NULL);
