@@ -2792,3 +2792,23 @@ INSERT INTO crew_person VALUES (2791, 'Belmondo', 'Jean-Paul', NULL, 'Jean-Paul 
 INSERT INTO crew_person VALUES (2792, 'Seberg', 'Jean', NULL, 'Jean Seberg', 'Actress');  -- Actress: Jean Seberg
 INSERT INTO crew_person VALUES (2793, 'Whale', 'James', NULL, 'James Whale', 'Director');  -- Director: James Whale
 INSERT INTO crew_person VALUES (2794, 'Karloff', 'Boris', NULL, 'Boris Karloff', 'Actor');  -- Actor: Boris Karloff
+INSERT INTO crew_person VALUES (2795, 'Hurt', 'Mary', 'Beth', 'Mary Beth Hurt', 'Actress');  -- Actress: Mary Beth Hurt
+INSERT INTO crew_person VALUES (2796, 'Woo', 'John', NULL, 'John Woo', 'Director');  -- Director: John Woo
+INSERT INTO crew_person VALUES (2797, 'Mathis', 'Samantha', NULL, 'Samantha Mathis', 'Actress');  -- Actress: Samantha Mathis
+INSERT INTO crew_person VALUES (2798, 'Bellucci', 'Monica', NULL, 'Monica Bellucci', 'Actress');  -- Actress: Monica Bellucci
+INSERT INTO crew_person VALUES (2799, 'Sinofsky', 'Bruce', NULL, 'Bruce Sinofsky', 'Director');  -- Director: Bruce Sinofsky
+INSERT INTO crew_person VALUES (2800, 'Shadyac', 'Tom', NULL, 'Tom Shadyac', 'Director');  -- Director: Tom Shadyac
+INSERT INTO crew_person VALUES (2801, 'Aniston', 'Jennifer', NULL, 'Jennifer Aniston', 'Actress');  -- Actress: Jennifer Aniston
+INSERT INTO crew_person VALUES (2802, 'Gallo', 'Vincent', NULL, 'Vincent Gallo', 'Actor');  -- Actor: Vincent Gallo
+INSERT INTO crew_person VALUES (2803, 'Bagnall', 'Alison', NULL, 'Alison Bagnall', 'Screenwriter');  -- Screenwriter: Alison Bagnall
+INSERT INTO crew_person VALUES (2804, 'Rudolph', 'Alan', NULL, 'Alan Rudolph', 'Screenwriter');  -- Screenwriter: Alan Rudolph
+INSERT INTO crew_person VALUES (2805, 'Lasseter', 'John', NULL, 'John Lasseter', 'Director');  -- Director: John Lasseter
+INSERT INTO crew_person VALUES (2806, 'Shaw', 'Bob', NULL, 'Bob Shaw', 'Screenwriter');  -- Screenwriter: Bob Shaw
+INSERT INTO crew_person VALUES (2807, 'McEnery', 'Don', NULL, 'Don McEnery', 'Screenwriter');  -- Screenwriter: Don McEnery
+INSERT INTO crew_person VALUES (2808, 'Ranft', 'Joe', NULL, 'Joe Ranft', 'Screenwriter');  -- Screenwriter: Joe Ranft
+INSERT INTO crew_person VALUES (2809, 'Foley', 'Dave', NULL, 'Dave Foley', 'Actor');  -- Actor: Dave Foley
+INSERT INTO crew_person VALUES (2810, 'Louis-Dreyfus', 'Julia', NULL, 'Julia Louis-Dreyfus', 'Actress');  -- Actress: Julia Louis-Dreyfus
+INSERT INTO crew_person VALUES (2811, 'Leary', 'Denis', NULL, 'Denis Leary', 'Actor');  -- Actor: Denis Leary
+INSERT INTO crew_person VALUES (2812, 'Hunt', 'Bonnie', NULL, 'Bonnie Hunt', 'Actress');  -- Actress: Bonnie Hunt
+INSERT INTO crew_person VALUES (2813, 'Ratzenberger', 'John', NULL, 'John Ratzenberger', 'Actor');  -- Actor: John Ratzenberger
+INSERT INTO crew_person VALUES (2814, 'Garrett', 'Brad', NULL, 'Brad Garrett', 'Actor');  -- Actor: Brad Garrett
