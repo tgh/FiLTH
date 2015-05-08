@@ -570,3 +570,6 @@ INSERT INTO crew_person VALUES (2811, 'Leary', 'Denis', NULL, 'Denis Leary', 'Ac
 INSERT INTO crew_person VALUES (2812, 'Hunt', 'Bonnie', NULL, 'Bonnie Hunt', 'Actress');  -- Actress: Bonnie Hunt
 INSERT INTO crew_person VALUES (2813, 'Ratzenberger', 'John', NULL, 'John Ratzenberger', 'Actor');  -- Actor: John Ratzenberger
 INSERT INTO crew_person VALUES (2814, 'Garrett', 'Brad', NULL, 'Brad Garrett', 'Actor');  -- Actor: Brad Garrett
+INSERT INTO crew_person VALUES (2815, 'Renfro', 'Brad', NULL, 'Brad Renfro', 'Actor');  -- Actor: Brad Renfro
+INSERT INTO crew_person VALUES (2816, 'Stahl', 'Nick', NULL, 'Nick Stahl', 'Actor');  -- Actor: Nick Stahl
+INSERT INTO crew_person VALUES (2817, 'Pitt', 'Michael', NULL, 'Michael Pitt', 'Actor');  -- Actor: Michael Pitt
