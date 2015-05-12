@@ -27,3 +27,4 @@ INSERT INTO tag VALUES (334, 'prisoner(s)-of-war', NULL);
 INSERT INTO tag VALUES (335, 'death-row', 79);
 INSERT INTO tag VALUES (336, 'escape', NULL);
 INSERT INTO tag VALUES (337, 'on-the-run', NULL);
+INSERT INTO tag VALUES (338, 'video-game(s)', NULL);

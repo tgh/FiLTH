@@ -573,3 +573,7 @@ INSERT INTO crew_person VALUES (2814, 'Garrett', 'Brad', NULL, 'Brad Garrett', '
 INSERT INTO crew_person VALUES (2815, 'Renfro', 'Brad', NULL, 'Brad Renfro', 'Actor');  -- Actor: Brad Renfro
 INSERT INTO crew_person VALUES (2816, 'Stahl', 'Nick', NULL, 'Nick Stahl', 'Actor');  -- Actor: Nick Stahl
 INSERT INTO crew_person VALUES (2817, 'Pitt', 'Michael', NULL, 'Michael Pitt', 'Actor');  -- Actor: Michael Pitt
+INSERT INTO crew_person VALUES (2818, 'Penn', 'Zak', NULL, 'Zak Penn', 'Screenwriter');  -- Screenwriter: Zak Penn
+INSERT INTO crew_person VALUES (2819, 'Lawrence', 'Francis', NULL, 'Francis Lawrence', 'Director');  -- Director: Francis Lawrence
+INSERT INTO crew_person VALUES (2820, 'Malone', 'Jena', NULL, 'Jena Malone', 'Actress');  -- Actress: Jena Malone
+INSERT INTO crew_person VALUES (2821, 'Wright', 'Jeffrey', NULL, 'Jeffrey Wright', 'Actor');  -- Actor: Jeffrey Wright

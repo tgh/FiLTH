@@ -3594,7 +3594,7 @@ INSERT INTO movie VALUES (3597, 'Teenage Mutant Ninja Turtles', 1990, '**', 'PG'
 INSERT INTO movie VALUES (3598, 'Teenage Mutant Ninja Turtles', 2014, '*½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3599, 'Snowpiercer', 2013, '***', 'R', 'South Korea', NULL);
 INSERT INTO movie VALUES (3600, 'The Trip to Italy', 2014, '***', 'NR', 'England', NULL);
-INSERT INTO movie VALUES (3601, 'American Sniper', 2014, '***', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3601, 'American Sniper', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3602, 'Boyhood', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3603, 'The Muppet Christmas Carol', 1992, '**½', 'G', 'USA', NULL);
 INSERT INTO movie VALUES (3604, 'The Conspirator', 2010, '**½', 'PG-13', 'USA', NULL);
@@ -3632,3 +3632,5 @@ INSERT INTO movie VALUES (3635, 'Kings of Pastry', 2009, '***', 'NR', DEFAULT, N
 INSERT INTO movie VALUES (3636, 'Nightcrawler', 2014, '***½', 'R', 'USA', NULL);
 INSERT INTO movie VALUES (3637, 'Song of the Sea', 2014, '***', 'PG', 'Ireland', NULL);
 INSERT INTO movie VALUES (3638, 'Top Gun', 1986, '**', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3639, 'Atari: Game Over', 2014, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3640, 'The Hunger Games: Mockingjay – Part 1', 2014, '***', 'PG-13', 'USA', NULL);
