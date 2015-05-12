@@ -25,3 +25,5 @@ INSERT INTO tag VALUES (332, 'olympics', 20);
 INSERT INTO tag VALUES (333, 'siblings', NULL);
 INSERT INTO tag VALUES (334, 'prisoner(s)-of-war', NULL);
 INSERT INTO tag VALUES (335, 'death-row', 79);
+INSERT INTO tag VALUES (336, 'escape', NULL);
+INSERT INTO tag VALUES (337, 'on-the-run', NULL);
