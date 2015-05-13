@@ -336,3 +336,5 @@ INSERT INTO tag VALUES (335, 'death-row', 79);
 INSERT INTO tag VALUES (336, 'escape', NULL);
 INSERT INTO tag VALUES (337, 'on-the-run', NULL);
 INSERT INTO tag VALUES (338, 'video-game(s)', NULL);
+INSERT INTO tag VALUES (339, 'orphan(s)/orphanage', NULL);
+INSERT INTO tag VALUES (340, 'law/lawyer(s)', NULL);
