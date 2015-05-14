@@ -34,3 +34,7 @@ INSERT INTO tag VALUES (341, 'monster(s)', NULL);
 INSERT INTO tag VALUES (342, 'blindness', 156);
 INSERT INTO tag VALUES (343, 'stand-up-comedy', 61);
 INSERT INTO tag VALUES (344, 'based-on-snl-skit', 59);
+INSERT INTO tag VALUES (345, 'small-town', NULL);
+INSERT INTO tag VALUES (346, 'supernatural', NULL);
+INSERT INTO tag VALUES (347, 'revenge', NULL);
+INSERT INTO tag VALUES (348, 'submarine', NULL);
