@@ -3634,3 +3634,5 @@ INSERT INTO movie VALUES (3637, 'Song of the Sea', 2014, '***', 'PG', 'Ireland',
 INSERT INTO movie VALUES (3638, 'Top Gun', 1986, '**', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3639, 'Atari: Game Over', 2014, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3640, 'The Hunger Games: Mockingjay – Part 1', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3641, 'Big Eyes', 2014, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3642, 'Light Keeps Me Company', 2000, '**½', 'NR', 'Sweden', NULL);
