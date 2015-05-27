@@ -1199,7 +1199,7 @@ INSERT INTO crew_person VALUES (1197, 'McGill', 'Barney', DEFAULT, 'Barney McGil
 INSERT INTO crew_person VALUES (1198, 'Garmes', 'Lee', DEFAULT, 'Lee Garmes', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1199, 'Cronjager', 'Edward', DEFAULT, 'Edward Cronjager', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1200, 'June', 'Ray', DEFAULT, 'Ray June', 'Cinematographer');  -- Cinematographer
-INSERT INTO crew_person VALUES (1201, 'Lang', 'Charles', DEFAULT, 'Charles Lang', 'Cinematographer');  -- Cinematographer
+--INSERT INTO crew_person VALUES (1201, 'Lang', 'Charles', DEFAULT, 'Charles Lang', 'Cinematographer');  -- Cinematographer (DUPLICATE ENTRY)
 INSERT INTO crew_person VALUES (1202, 'Folsey', 'George', 'J.', 'George J. Folsey', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1203, 'Mohr', 'Hal', DEFAULT, 'Hal Mohr', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1204, 'Valentine', 'Joseph', DEFAULT, 'Joseph Valentine', 'Cinematographer');  -- Cinematographer
