@@ -412,6 +412,7 @@ def writeOutTagInserts(tagger):
   tgtf = open(TAG_GIVEN_TO_SQL_FILE, 'a')
   tagger.writeTagGivenToInsertsToFile(tgtf)
   tgtf.close()
+  tagger.close()
 
 
 #------------------------------------------------------------------------------
@@ -433,7 +434,7 @@ def writeOutCrewInserts(crewHandler):
   wof = open(WORKED_ON_SQL_FILE, 'a')
   crewHandler.writeWorkedOnInsertsToFile(wof)
   wof.close()
-
+  crewHandler.close()
 
 
 #------------------------------------------------------------------------------
@@ -520,7 +521,27 @@ if __name__ == '__main__':
 
   except QuitException:
     _log('main', 'caught QuitException')
-  except Exception:
+  except Exception as e:
+    _log('main', 'caught Exception: ' + str(e))
+    print '\t***ERROR: Exception caught'
+    if crewHandler and crewHandler.hasInserts():
+        while True:
+          response = raw_input('\nThere are still unwritten crew sql insert statements. Write them out? ').lower()
+          if response not in ['y','n']:
+            print "Only 'y'/'n'\n"
+            continue
+          if response == 'y':
+            writeOutCrewInserts(crewHandler)
+          break
+    if tagger and tagger.hasInserts():
+        while True:
+          response = raw_input('\nThere are still unwritten tag sql insert statements. Write them out? ').lower()
+          if response not in ['y','n']:
+            print "Only 'y'/'n'\n"
+            continue
+          if response == 'y':
+            writeOutTagInserts(tagger)
+          break
     traceback.print_exc(file=_log)
     traceback.print_exc(file=sys.stdout)
     retVal = 1

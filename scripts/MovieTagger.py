@@ -310,7 +310,9 @@ class MovieTagger(object):
   #----------------------------------------------------------------------------
 
   def close(self):
-    ''' Empties the tag list and tag map.
+    ''' Empties the tag list and tag map, and insert statements
     '''
     self._tags = []
     self._tagMap = {}
+    self._tagGivenToInserts = []
+    self._tagInserts = []

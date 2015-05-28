@@ -52,6 +52,9 @@ class MovieCrew(object):
     crewSqlFile.close()
     lastCid = 0
     for line in lines:
+      #ignore commented out lines
+      if line.startswith('--'):
+        continue
       matcher = re.search("(\d+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ", line)
       cid = int(matcher.group(1))
       lastName = self._sanitizeName(matcher.group(2))
@@ -100,12 +103,15 @@ class MovieCrew(object):
     lines = f.readlines()
     f.close()
 
+    #remove the first line (the dummy record)
+    lines = lines[1:]
+
     positions = {}
     for line in lines:
       cid = int(re.search('VALUES \\((\d+), ', line).group(1))
-      positionString = line.split(',')[-1]
-      position = re.search("'(.*)'\\);", positionString).group(1)
       if cid in cids:
+        positionString = line.split(',')[-1]
+        position = re.search("'(.*)'\\);", positionString).group(1)
         positions[cid] = position
 
     return positions
@@ -202,8 +208,8 @@ class MovieCrew(object):
         #get positions that each of the crew members are known for
         knownForPositions = self._getKnownForPositionsForCids(cids)
         #output the positions
-        for cid, position in knownForPositions:
-          print '\t' + position + ' (' + cid + ')'
+        for cid, position in knownForPositions.iteritems():
+          print '\t' + position + ' (' + str(cid) + ')'
         #prompt user for which one is the one desired
         while True:
           response = raw_input('Which id? ')
@@ -488,3 +494,5 @@ class MovieCrew(object):
   def close(self):
     self._workedOnInserts = []
     self._crewInserts = []
+    self._positions = []
+    self._crewMap = {}
