@@ -3636,3 +3636,8 @@ INSERT INTO movie VALUES (3639, 'Atari: Game Over', 2014, '***', 'NR', 'USA', NU
 INSERT INTO movie VALUES (3640, 'The Hunger Games: Mockingjay – Part 1', 2014, '***', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3641, 'Big Eyes', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3642, 'Light Keeps Me Company', 2000, '**½', 'NR', 'Sweden', NULL);
+INSERT INTO movie VALUES (3643, 'Avengers: Age of Ultron', 2015, '**½', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3644, 'Force Majeure', 2014, '***', 'R', 'Sweden', NULL);
+INSERT INTO movie VALUES (3645, 'How to Steal a Million', 1966, '***', 'NR', 'USA', NULL);
+INSERT INTO movie VALUES (3646, 'Locke', 2014, '***½', 'R', 'England', NULL);
+INSERT INTO movie VALUES (3647, 'Two Faces of January', 2014, '**½', 'PG-13', 'USA', NULL);

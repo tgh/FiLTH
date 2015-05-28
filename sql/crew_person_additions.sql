@@ -577,3 +577,9 @@ INSERT INTO crew_person VALUES (2818, 'Penn', 'Zak', NULL, 'Zak Penn', 'Screenwr
 INSERT INTO crew_person VALUES (2819, 'Lawrence', 'Francis', NULL, 'Francis Lawrence', 'Director');  -- Director: Francis Lawrence
 INSERT INTO crew_person VALUES (2820, 'Malone', 'Jena', NULL, 'Jena Malone', 'Actress');  -- Actress: Jena Malone
 INSERT INTO crew_person VALUES (2821, 'Wright', 'Jeffrey', NULL, 'Jeffrey Wright', 'Actor');  -- Actor: Jeffrey Wright
+INSERT INTO crew_person VALUES (2822, 'Olsen', 'Elizabeth', NULL, 'Elizabeth Olsen', 'Actress');  -- Actress: Elizabeth Olsen
+INSERT INTO crew_person VALUES (2823, 'Taylor-Johnson', 'Aaron', NULL, 'Aaron Taylor-Johnson', 'Actor');  -- Actor: Aaron Taylor-Johnson
+INSERT INTO crew_person VALUES (2824, 'Spader', 'James', NULL, 'James Spader', 'Actor');  -- Actor: James Spader
+INSERT INTO crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Supporting Actor');  -- Supporting Actor: Eli Wallach
+INSERT INTO crew_person VALUES (2826, 'Scott', 'Andrew', NULL, 'Andrew Scott', 'Actor');  -- Actor: Andrew Scott
+INSERT INTO crew_person VALUES (2827, 'Wilson', 'Ruth', NULL, 'Ruth Wilson', 'Actress');  -- Actress: Ruth Wilson
