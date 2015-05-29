@@ -9015,3 +9015,8 @@ INSERT INTO tag_given_to VALUES(3647, 21);  -- Two Faces of January (2014) tagge
 INSERT INTO tag_given_to VALUES(3647, 59);  -- Two Faces of January (2014) tagged with 'based-on-previously-written-material'
 INSERT INTO tag_given_to VALUES(3647, 58);  -- Two Faces of January (2014) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(3647, 25);  -- Two Faces of January (2014) tagged with 'crime'
+INSERT INTO tag_given_to VALUES(3648, 33);  -- The Boxtrolls (2014) tagged with 'comedy-drama'
+INSERT INTO tag_given_to VALUES(3648, 88);  -- The Boxtrolls (2014) tagged with 'stop-motion'
+INSERT INTO tag_given_to VALUES(3648, 11);  -- The Boxtrolls (2014) tagged with 'adventure'
+INSERT INTO tag_given_to VALUES(3648, 341);  -- The Boxtrolls (2014) tagged with 'monster(s)'
+INSERT INTO tag_given_to VALUES(3648, 7);  -- The Boxtrolls (2014) tagged with 'animation'
