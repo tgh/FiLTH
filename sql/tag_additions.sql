@@ -39,3 +39,4 @@ INSERT INTO tag VALUES (346, 'supernatural', NULL);
 INSERT INTO tag VALUES (347, 'revenge', NULL);
 INSERT INTO tag VALUES (348, 'submarine', NULL);
 INSERT INTO tag VALUES (349, 'writing', 61);
+INSERT INTO tag VALUES (351, 'manic-depression', 143);
