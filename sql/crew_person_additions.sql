@@ -586,3 +586,5 @@ INSERT INTO crew_person VALUES (2827, 'Wilson', 'Ruth', NULL, 'Ruth Wilson', 'Ac
 INSERT INTO crew_person VALUES (2828, 'Morgan', 'Tracy', NULL, 'Tracy Morgan', 'Actor');  -- Actor: Tracy Morgan
 INSERT INTO crew_person VALUES (2829, 'Harris', 'Jared', NULL, 'Jared Harris', 'Actor');  -- Actor: Jared Harris
 INSERT INTO crew_person VALUES (2830, 'Pegg', 'Simon', NULL, 'Simon Pegg', 'Actor');  -- Actor: Simon Pegg
+INSERT INTO crew_person VALUES (2831, 'Joffe', 'Rowan', NULL, 'Rowan Joffe', 'Screenwriter');  -- Screenwriter: Rowan Joffe
+INSERT INTO crew_person VALUES (2832, 'Jayston', 'Michael', NULL, 'Michael Jayston', 'Actor');  -- Actor: Michael Jayston

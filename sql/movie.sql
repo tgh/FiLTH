@@ -2027,7 +2027,7 @@ INSERT INTO movie VALUES (2026, 'Rachel, Rachel', 1968, 'not seen', 'R', 'USA', 
 INSERT INTO movie VALUES (2027, 'Anne of the Thousand Days', 1969, 'not seen', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2028, 'Z', 1969, '***½', 'PG', 'France', DEFAULT);
 INSERT INTO movie VALUES (2029, 'Hello, Dolly!', 1969, 'not seen', 'G', 'USA', DEFAULT);
-INSERT INTO movie VALUES (2030, 'Nicholas and Alexandra', 1971, 'not seen', 'PG', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2030, 'Nicholas and Alexandra', 1971, '***', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (2031, 'Fiddler on the Roof', 1971, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2032, 'Sounder', 1972, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2033, 'The Emigrants', 1971, 'not seen', 'PG', 'Sweden', DEFAULT);
@@ -3642,3 +3642,4 @@ INSERT INTO movie VALUES (3645, 'How to Steal a Million', 1966, '***', 'NR', 'US
 INSERT INTO movie VALUES (3646, 'Locke', 2014, '***½', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3647, 'Two Faces of January', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3648, 'The Boxtrolls', 2014, '**½', 'PG', 'USA', NULL);
+INSERT INTO movie VALUES (3649, 'Before I Go to Spleep', 2014, '**½', 'R', 'England', NULL);
