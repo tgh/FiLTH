@@ -338,7 +338,7 @@ INSERT INTO tag VALUES (337, 'on-the-run', NULL);
 INSERT INTO tag VALUES (338, 'video-game(s)', NULL);
 INSERT INTO tag VALUES (339, 'orphan(s)/orphanage', NULL);
 INSERT INTO tag VALUES (340, 'law/lawyer(s)', NULL);
-INSERT INTO tag VALUES (341, 'monster(s)', NULL);
+INSERT INTO tag VALUES (341, 'monster(s)/creature(s)', NULL);
 INSERT INTO tag VALUES (342, 'blindness', 156);
 INSERT INTO tag VALUES (343, 'stand-up-comedy', 61);
 INSERT INTO tag VALUES (344, 'based-on-snl-skit', 59);
