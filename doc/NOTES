@@ -110,6 +110,16 @@ SETTING UP ENVIRONMENT
     - had to run `sudo gem install bundler` and `bundle install` to fix that mess
     - ran `sudo gem install rdoc-data` and tried `sudo rdoc-data --install` but the latter failed.  `rails server` worked at this point though so I'm not sure if that last successful command was necessary (sudo gem install rdoc-data)
 
+- created postgres user filth_admin:
+  - $ sudo su - postgres
+  - # createuser -sr filth_admin
+- edited /etc/postgresql/9.3/main/pg_hba.conf:
+  - added a line below where the 'postgres' user in configured:
+
+    # TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+    local   all             filth_admin                             trust
+
 
 NEEDS
 ------
