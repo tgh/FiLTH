@@ -3643,3 +3643,5 @@ INSERT INTO movie VALUES (3646, 'Locke', 2014, '***½', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3647, 'Two Faces of January', 2014, '**½', 'PG-13', 'USA', NULL);
 INSERT INTO movie VALUES (3648, 'The Boxtrolls', 2014, '**½', 'PG', 'USA', NULL);
 INSERT INTO movie VALUES (3649, 'Before I Go to Spleep', 2014, '**½', 'R', 'England', NULL);
+INSERT INTO movie VALUES (3650, 'Spy', 2015, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3651, 'X-Men: First Class', 2011, '**½', 'PG-13', 'USA', NULL);
