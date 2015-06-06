@@ -3,16 +3,6 @@
 # This script assumes:
 #  - a postgresql user "filth_admin" has been created (see the "SETTING UP ENVIRONMENT"
 #    section in /doc/NOTES about setting up the user
-#  - the OS user "postgres" is running the script
-#  - the following files have write access for postgres user
-#    - sql/crew_person_additions.sql
-#    - sql/movie_additions.sql
-#    - sql/tag_additions.sql
-#    - sql/tag_given_to_additions.sql
-#    - sql/worked_on_additions.sql
-#    - temp/drop_filth_db_error.txt
-#    - temp/previous_movie_ratings.txt
-#  - the FILTH_HOME environment variable may also need to be set for user postgres
 
 source common.sh
 
@@ -31,7 +21,7 @@ function populate_db_table {
 
 echo "Dropping filth database..."
 sleep 0.5
-psql -U filth_admin -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
+psql -U filth_admin -d postgres -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
 
 
 echo "Creating database filth..."
