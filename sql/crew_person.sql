@@ -1278,7 +1278,7 @@ INSERT INTO crew_person VALUES (1276, 'Hildyard', 'Jack', DEFAULT, 'Jack Hildyar
 INSERT INTO crew_person VALUES (1277, 'Fapp', 'Daniel', 'L.', 'Daniel L. Fapp', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1278, 'Leavitt', 'Sam', DEFAULT, 'Sam Leavitt', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1279, 'MacDonald', 'Joseph', DEFAULT, 'Joseph MacDonald', 'Cinematographer');  -- Cinematographer
-INSERT INTO crew_person VALUES (1244, 'Surtees', 'Bruce', DEFAULT, 'Bruce Surtees', 'Cinematographer');  -- Cinematographer
+INSERT INTO crew_person VALUES (1280, 'Surtees', 'Bruce', DEFAULT, 'Bruce Surtees', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1281, 'Russell', 'John', 'L.', 'John L. Russell', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1282, 'Francis', 'Freddie', DEFAULT, 'Freddie Francis', 'Cinematographer');  -- Cinematographer
 INSERT INTO crew_person VALUES (1283, 'Laszlo', 'Ernest', DEFAULT, 'Ernest Laszlo', 'Cinematographer');  -- Cinematographer
@@ -2544,7 +2544,7 @@ INSERT INTO crew_person VALUES (2543, 'Goldberg', 'Adam', NULL, 'Adam Goldberg',
 INSERT INTO crew_person VALUES (2544, 'Gamble', 'Nathan', NULL, 'Nathan Gamble', 'Actor');  -- Actor: Nathan Gamble
 INSERT INTO crew_person VALUES (2545, 'Gibson', 'Tyrese', NULL, 'Tyrese Gibson', 'Actor');  -- Actor: Tyrese Gibson
 INSERT INTO crew_person VALUES (2546, 'Rhames', 'Ving', NULL, 'Ving Rhames', 'Actor');  -- Actor: Ving Rhames
-INSERT INTO crew_person VALUES (2547, 'Mo''Nique', NULL, NULL, 'Mo'Nique', 'Actress');  -- Actress: Mo'Nique
+INSERT INTO crew_person VALUES (2547, 'Mo''Nique', NULL, NULL, 'Mo''Nique', 'Actress');  -- Actress: Mo'Nique
 INSERT INTO crew_person VALUES (2548, 'Thompson', 'Lea', NULL, 'Lea Thompson', 'Actress');  -- Actress: Lea Thompson
 INSERT INTO crew_person VALUES (2549, 'Wilson', 'Thomas', 'F.', 'Thomas F. Wilson', 'Actor');  -- Actor: Thomas F. Wilson
 INSERT INTO crew_person VALUES (2550, 'Siemaszko', 'Casey', NULL, 'Casey Siemaszko', 'Actor');  -- Actor: Casey Siemaszko
@@ -2641,7 +2641,7 @@ INSERT INTO crew_person VALUES (2640, 'Broderick', 'Matthew', NULL, 'Matthew Bro
 INSERT INTO crew_person VALUES (2641, 'Rock', 'Chris', NULL, 'Chris Rock', 'Actor');  -- Actor: Chris Rock
 INSERT INTO crew_person VALUES (2642, 'Sting', NULL, NULL, 'Sting', 'Actor');  -- Actor: Sting
 INSERT INTO crew_person VALUES (2643, 'Miller', 'Larry', NULL, 'Larry Miller', 'Actor');  -- Actor: Larry Miller
-INSERT INTO crew_person VALUES (2644, 'O''Keefe', 'Cunningham', NULL, 'Cunningham O'Keefe', 'Screenwriter');  -- Screenwriter: Cunningham O'Keefe
+INSERT INTO crew_person VALUES (2644, 'O''Keefe', 'Cunningham', NULL, 'Cunningham O''Keefe', 'Screenwriter');  -- Screenwriter: Cunningham O'Keefe
 INSERT INTO crew_person VALUES (2645, 'Carriles', 'Lazaro', 'Gomez', 'Lazaro Gomez Carriles', 'Screenwriter');  -- Screenwriter: Lazaro Gomez Carriles
 INSERT INTO crew_person VALUES (2646, 'Luna', 'Diego', NULL, 'Diego Luna', 'Actor');  -- Actor: Diego Luna
 INSERT INTO crew_person VALUES (2647, 'Krizan', 'Kim', NULL, 'Kim Krizan', 'Screenwriter');  -- Screenwriter: Kim Krizan
@@ -2669,7 +2669,7 @@ INSERT INTO crew_person VALUES (2668, 'Ahmed', 'Riz', NULL, 'Riz Ahmed', 'Actor'
 INSERT INTO crew_person VALUES (2669, 'Loy', 'Myrna', NULL, 'Myrna Loy', 'Actress');  -- Actress: Myrna Loy
 INSERT INTO crew_person VALUES (2670, 'Andrews', 'Dana', NULL, 'Dana Andrews', 'Actor');  -- Actor: Dana Andrews
 INSERT INTO crew_person VALUES (2671, 'Mayo', 'Virginia', NULL, 'Virginia Mayo', 'Actress');  -- Actress: Virginia Mayo
-INSERT INTO crew_person VALUES (2672, 'O''Connell', 'Cathy', NULL, 'Cathy O'Connell', 'Actress');  -- Actress: Cathy O'Connell
+INSERT INTO crew_person VALUES (2672, 'O''Connell', 'Cathy', NULL, 'Cathy O''Connell', 'Actress');  -- Actress: Cathy O'Connell
 INSERT INTO crew_person VALUES (2673, 'Reinhold', 'Judge', NULL, 'Judge Reinhold', 'Actor');  -- Actor: Judge Reinhold
 INSERT INTO crew_person VALUES (2674, 'Durang', 'Christopher', NULL, 'Christopher Durang', 'Screenwriter');  -- Screenwriter: Christopher Durang
 INSERT INTO crew_person VALUES (2675, 'Heard', 'John', NULL, 'John Heard', 'Actor');  -- Actor: John Heard
