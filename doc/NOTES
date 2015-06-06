@@ -119,6 +119,15 @@ SETTING UP ENVIRONMENT
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
     local   all             filth_admin                             trust
+- **may want to change 'trust' to 'ident' or 'md5' to force password
+- added global write access to these files (for postgres user)
+  - sql/crew_person_additions.sql
+  - sql/movie_additions.sql
+  - sql/tag_additions.sql
+  - sql/tag_given_to_additions.sql
+  - sql/worked_on_additions.sql
+  - temp/drop_filth_db_error.txt
+  - temp/previous_movie_ratings.txt
 
 
 NEEDS

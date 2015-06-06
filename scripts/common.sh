@@ -7,7 +7,7 @@ ERROR=1
 
 if [ -z "$FILTH_PATH" ]
 then
-    FILTH_PATH=~/workspace/FiLTH
+    FILTH_PATH=/home/tgh/workspace/FiLTH
 fi
 
 FILTH_TEMP_PATH=$FILTH_PATH/temp
