@@ -2761,7 +2761,7 @@ INSERT INTO crew_person VALUES (2760, 'Whaley', 'Frank', NULL, 'Frank Whaley', '
 INSERT INTO crew_person VALUES (2761, 'Baldwin', 'Stephen', NULL, 'Stephen Baldwin', 'Actor');  -- Actor: Stephen Baldwin
 INSERT INTO crew_person VALUES (2762, 'Sedgwick', 'Kyra', NULL, 'Kyra Sedgwick', 'Actress');  -- Actress: Kyra Sedgwick
 INSERT INTO crew_person VALUES (2763, 'Fleischer', 'Richard', NULL, 'Richard Fleischer', 'Director');  -- Director: Richard Fleischer
-INSERT INTO crew_person VALUES (2764, 'Yeomen', 'Robert', 'D.', 'Robert D. Yeomen', 'Cinematographer');  -- Cinematographer: Robert D. Yeomen
+INSERT INTO crew_person VALUES (2764, 'Yeoman', 'Robert', 'D.', 'Robert D. Yeoman', 'Cinematographer');  -- Cinematographer: Robert D. Yeoman
 INSERT INTO crew_person VALUES (2765, 'Andy', NULL, NULL, 'Andy and Lana Wachowski', 'Director');  -- Director: Andy and Lana Wachowski
 INSERT INTO crew_person VALUES (2766, 'Gershon', 'Gina', NULL, 'Gina Gershon', 'Actress');  -- Actress: Gina Gershon
 INSERT INTO crew_person VALUES (2767, 'Meloni', 'Christopher', NULL, 'Christopher Meloni', 'Actor');  -- Actor: Christopher Meloni
