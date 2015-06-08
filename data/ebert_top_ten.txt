@@ -17,7 +17,7 @@
 * 04. Faces (John Cassavetes)
   05. The Two of Us (Claude Berri)
 * 06. The Producers (Mel Brooks)
-  07. Oliver! (Carol Reed)
+* 07. Oliver! (Carol Reed)
   08. The Fifth Horseman Is Fear (Zbynek Brynych)
   09. Rachel, Rachel (Paul Newman)
 * 10. Romeo and Juliet (Franco Zeffirelli)
@@ -131,7 +131,7 @@
 * 10. Star Wars (George Lucas)
 
 1978
-  01. An Unmarried Woman (Paul Mazursky)
+* 01. An Unmarried Woman (Paul Mazursky)
 * 02. Days of Heaven (Terrence Malick)
   03. Heart of Glass (Werner Herzog)
 * 04. Stroszek (Werner Herzog)
@@ -498,7 +498,6 @@ year's offerings. Instead, this is a listing of the films that he gave four
 stars to during the year.
 
   Akeelah and the Bee (Doug Atchison)
-  Army of Shadows (1969, Jean-Pierre Melville)
 * Bubble (Stephen Soderbergh)
   The Death of Mr. Lazarescu (Cristi Puiu)
 * 49 Up (Michael Apted)
@@ -508,7 +507,7 @@ stars to during the year.
 * Marie Antoinette (Sofia Coppola)
   Overlord (1975, Stuart Cooper)
   Perfume (Tom Tykwer)
-  A Prairie Home Companion (Robert Altman)
+* A Prairie Home Companion (Robert Altman)
 * The Queen (Stephen Frears)
   Three Times (Hou Hsiao-hsien)
   Tristam Shandy: A Cock & Bull Story (Michael Winterbottom)
@@ -698,7 +697,7 @@ Also:
   09. The Last Mountain
   10. Louder than a Bomb
   11. Page One: Inside the New York Times
-  12. One Lucky Elephant
+* 12. One Lucky Elephant
 * 13. Buck
   14. Conan O'Brian Can't Stop
   15. Strongman
