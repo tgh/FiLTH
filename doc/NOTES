@@ -48,7 +48,7 @@ SETTING UP ENVIRONMENT
 	- extract freemarker.jar from /lib
 
 - Used tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
-  for some of the setup
+  for some of the setup (this is where the build.xml file came from)
   - had to replace
   
   		<taskdef name="install" classname="org.apache.catalina.ant.InstallTask">
@@ -77,13 +77,63 @@ SETTING UP ENVIRONMENT
             <fileset dir="${appserver.lib}">
                <include name="catalina-ant.jar"/>
                <include name="tomcat-coyote.jar"/>
-               <include name="doc/NOTEStomcat-util.jar"/>
+               <include name="tomcat-util.jar"/>
             </fileset>
             <fileset dir="${appserver.home}/bin">
                <include name="tomcat-juli.jar"/>
             </fileset>
     
         </path>
+        
+  - the tutorial also neglected to say that you need to:
+    - add src/main/java directory
+    - name the "war" directory "web" instead
+    - set web.dir to "web/" in build.xml
+    - add tomcat.manager.password=s3cret to build.properties (maybe)
+    
+  - still haven't been able to run `ant list` successfully--getting 401 error
+    - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml
+  - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although t=it only displayed unknown characters :-/)
+    - RESOLVED: switched to using tomcat6 ("appserver.home=${env.WORKSPACE}/tomcat6" in build.properties)
+  
+  - to get Ivy with ant:
+      - http://ant.apache.org/ivy/history/2.2.0/ant.html
+      - http://ant.apache.org/ivy/history/2.2.0/tutorial/start.html
+      - added xmlns:ivy="antlib:org.apache.ivy.ant" to the <project> element in build.xml
+      - added to build.xml:
+      
+        <taskdef resource="net/sf/antcontrib/antlib.xml">
+            <classpath>
+                <pathelement path="${build.lib.dir}/ant-contrib.jar"/>
+            </classpath>
+        </taskdef>
+    
+        <taskdef name="ivy-configure" classname="org.apache.ivy.ant.IvyConfigure"/>
+        <taskdef name="ivy-resolve" classname="org.apache.ivy.ant.IvyResolve"/>
+        <taskdef name="ivy-retrieve" classname="org.apache.ivy.ant.IvyRetrieve"/>
+        <taskdef name="ivy-deliver" classname="org.apache.ivy.ant.IvyDeliver"/> 
+        <taskdef name="ivy-publish" classname="org.apache.ivy.ant.IvyPublish"/>
+        
+        <ivy:retrieve />
+        
+      - created ivy.xml:
+      
+        <ivy-module version="2.0">
+            <info organisation="org.apache" module="hello-ivy"/>
+            <dependencies>
+                <dependency org="org.springframework" name="spring-context" rev="4.1.6.RELEASE"/>
+            </dependencies>
+        </ivy-module>
+        
+      - `ant ivy-resolve` seems to be working, but at the end "Target "ivy-resolve" does not exist in the project "filth"." is output. will probably replace <ivy:retrieve /> with:
+      
+        <target name="resolve">
+            <ivy:configure />
+            
+            <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
+            
+            <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
+        </target>
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
