@@ -3652,3 +3652,8 @@ INSERT INTO movie VALUES (3652, 'Haute Cuisine', 2012, '**½', 'PG-13', 'France'
 INSERT INTO movie VALUES (3653, 'The Man Who Shot Liberty Valance', 1962, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3654, 'One Lucky Elephant', 2011, '***', 'NR', 'USA', NULL);
 INSERT INTO movie VALUES (3655, 'Payback', 1999, '**½', 'R', 'USA', NULL);
+INSERT INTO movie VALUES (3656, 'The Debt', 2011, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (3657, 'Hector and the Search for Happiness', 2014, '**½', 'R', DEFAULT, NULL);
+INSERT INTO movie VALUES (3658, 'Hot Fuzz', 2007, '***', 'R', 'England', NULL);
+INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England', NULL);
+INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL);
