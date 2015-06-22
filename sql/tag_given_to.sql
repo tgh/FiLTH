@@ -9413,3 +9413,6 @@ INSERT INTO tag_given_to VALUES(3661, 11);  -- Inside Out (2015) tagged with 'ad
 INSERT INTO tag_given_to VALUES(3661, 7);  -- Inside Out (2015) tagged with 'animation'
 INSERT INTO tag_given_to VALUES(1242, 43);  -- The Passion of Anna (1970) tagged with 'slow'
 INSERT INTO tag_given_to VALUES(1242, 30);  -- The Passion of Anna (1970) tagged with 'depressing'
+INSERT INTO tag_given_to VALUES(1242, 225);  -- The Passion of Anna (1970) tagged with 'nudity'
+INSERT INTO tag_given_to VALUES(1242, 226);  -- The Passion of Anna (1970) tagged with 'sexual-nudity'
+INSERT INTO tag_given_to VALUES(1242, 228);  -- The Passion of Anna (1970) tagged with 'brief-sexual-female-nudity'
