@@ -16,3 +16,13 @@ INSERT INTO crew_person VALUES (2854, 'Considine', 'Paddy', NULL, 'Paddy Considi
 INSERT INTO crew_person VALUES (2855, 'Dinklage', 'Peter', NULL, 'Peter Dinklage', 'Actor');  -- Actor: Peter Dinklage
 INSERT INTO crew_person VALUES (2856, 'Janssen', 'Famke', NULL, 'Famke Janssen', 'Actress');  -- Actress: Famke Janssen
 INSERT INTO crew_person VALUES (2857, 'Peters', 'Evan', NULL, 'Evan Peters', 'Actor');  -- Actor: Evan Peters
+INSERT INTO crew_person VALUES (2858, 'Docter', 'Pete', NULL, 'Pete Docter', 'Screenwriter');  -- Screenwriter: Pete Docter
+INSERT INTO crew_person VALUES (2859, 'Carmen', 'Ronaldo', 'Del', 'Ronaldo Del Carmen', 'Screenwriter');  -- Screenwriter: Ronaldo Del Carmen
+INSERT INTO crew_person VALUES (2860, 'LeFauve', 'Meg', NULL, 'Meg LeFauve', 'Screenwriter');  -- Screenwriter: Meg LeFauve
+INSERT INTO crew_person VALUES (2861, 'Cooley', 'Josh', NULL, 'Josh Cooley', 'Screenwriter');  -- Screenwriter: Josh Cooley
+INSERT INTO crew_person VALUES (2862, 'Smith', 'Phyllis', NULL, 'Phyllis Smith', 'Actress');  -- Actress: Phyllis Smith
+INSERT INTO crew_person VALUES (2863, 'Kind', 'Richard', NULL, 'Richard Kind', 'Actor');  -- Actor: Richard Kind
+INSERT INTO crew_person VALUES (2864, 'Black', 'Lewis', NULL, 'Lewis Black', 'Actress');  -- Actress: Lewis Black
+INSERT INTO crew_person VALUES (2865, 'Kaling', 'Mindy', NULL, 'Mindy Kaling', 'Actress');  -- Actress: Mindy Kaling
+INSERT INTO crew_person VALUES (2866, 'Oz', 'Frank', NULL, 'Frank Oz', 'Director');  -- Director: Frank Oz
+INSERT INTO crew_person VALUES (2867, 'Andersson', 'Bibi', NULL, 'Bibi Andersson', 'Actress');  -- Actress: Bibi Andersson

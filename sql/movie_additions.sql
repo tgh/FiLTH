@@ -8,3 +8,6 @@ INSERT INTO movie VALUES (3657, 'Hector and the Search for Happiness', 2014, '**
 INSERT INTO movie VALUES (3658, 'Hot Fuzz', 2007, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England', NULL);
 INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL);
+UPDATE movie SET star_rating = '**½' WHERE mid = 2031;
+UPDATE movie SET star_rating = '**½' WHERE mid = 1242;

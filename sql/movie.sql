@@ -1239,7 +1239,7 @@ INSERT INTO movie VALUES (1238, 'Paris Je T''aime', 2007, '**½', 'R', 'France',
 INSERT INTO movie VALUES (1239, 'Paris, Texas', 1984, '***', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1240, 'The Party', 1968, '***', 'PG', 'England', DEFAULT);
 INSERT INTO movie VALUES (1241, 'The Passenger', 1975, '**½', 'PG', 'Italy', DEFAULT);
-INSERT INTO movie VALUES (1242, 'The Passion of Anna', 1970, '**', 'R', 'Sweden', DEFAULT);
+INSERT INTO movie VALUES (1242, 'The Passion of Anna', 1970, '**½', 'R', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (1243, 'The Passion of the Christ', 2004, '****', 'R', 'USA', DEFAULT);
 INSERT INTO movie VALUES (1244, 'Pather Panchali', 1955, '***½', 'NR', 'India', DEFAULT);
 INSERT INTO movie VALUES (1245, 'Paths of Glory', 1957, '****', 'NR', 'USA', DEFAULT);
@@ -2028,7 +2028,7 @@ INSERT INTO movie VALUES (2027, 'Anne of the Thousand Days', 1969, 'not seen', '
 INSERT INTO movie VALUES (2028, 'Z', 1969, '***½', 'PG', 'France', DEFAULT);
 INSERT INTO movie VALUES (2029, 'Hello, Dolly!', 1969, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2030, 'Nicholas and Alexandra', 1971, '***', 'PG', 'England', DEFAULT);
-INSERT INTO movie VALUES (2031, 'Fiddler on the Roof', 1971, 'not seen', 'G', 'USA', DEFAULT);
+INSERT INTO movie VALUES (2031, 'Fiddler on the Roof', 1971, '**½', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2032, 'Sounder', 1972, 'not seen', 'G', 'USA', DEFAULT);
 INSERT INTO movie VALUES (2033, 'The Emigrants', 1971, 'not seen', 'PG', 'Sweden', DEFAULT);
 INSERT INTO movie VALUES (2034, 'The Exorcist', 1973, 'not seen', 'R', 'USA', DEFAULT);
@@ -3657,3 +3657,4 @@ INSERT INTO movie VALUES (3657, 'Hector and the Search for Happiness', 2014, '**
 INSERT INTO movie VALUES (3658, 'Hot Fuzz', 2007, '***', 'R', 'England', NULL);
 INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England', NULL);
 INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL);
+INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL);
