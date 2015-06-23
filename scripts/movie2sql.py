@@ -18,7 +18,7 @@ TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
+INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6});\n";
 
 _inserts = []   #list of INSERT statements for movies
 _updates = []   #list of UPDATE statements for movies
@@ -439,6 +439,16 @@ def writeOutCrewInserts(crewHandler):
 
 #------------------------------------------------------------------------------
 
+def promptUserForImdbId():
+  response = raw_input('\nIMDB id (\'s\' to skip): ')
+  if response == 's':
+    return 'NULL'
+  return "'" + response + "'"
+
+
+
+#------------------------------------------------------------------------------
+
 #------------
 #--- MAIN ---
 #------------
@@ -473,13 +483,15 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL'))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isNew:
+          #ask user for imdb id
+          imdbId = promptUserForImdbId()
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, imdbId))
           mid = _nextMid
 
         #ask user for tags for the movie

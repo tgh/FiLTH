@@ -26,7 +26,9 @@ mpaa text DEFAULT NULL,
 -- column referencing the country table.
 country text DEFAULT NULL,
 -- text field for comments/notes regarding the movie
-comments text DEFAULT NULL);
+comments text DEFAULT NULL,
+-- id for IMDB
+imdb_id text DEFAULT NULL);
 
 
 -- a country entity -----------------------------------------------------------
