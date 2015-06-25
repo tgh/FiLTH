@@ -170,5 +170,5 @@ validate_movie_ratings $ratings_diff
 run_movie2sql $ratings_diff
 
 # create a PDF of the movie ratings document (creates $FILTH_PATH/pdf/movie_ratings.pdf)
-echo -e "\nCreating pdf file...\n"
-$FILTH_SCRIPTS_PATH/movie_ratings_to_pdf.sh
+#echo -e "\nCreating pdf file...\n"
+#$FILTH_SCRIPTS_PATH/movie_ratings_to_pdf.sh

@@ -1,17 +1,45 @@
 <?xml version="1.0"?>
 
-<project name="filth" basedir="." default="usage">
+<project name="filth" xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="usage">
+    
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement path="${build.lib.dir}/ant-contrib.jar"/>
+        </classpath>
+    </taskdef>
+
+    <taskdef name="ivy-configure" classname="org.apache.ivy.ant.IvyConfigure"/>
+    <taskdef name="ivy-resolve" classname="org.apache.ivy.ant.IvyResolve"/>
+    <taskdef name="ivy-retrieve" classname="org.apache.ivy.ant.IvyRetrieve"/>
+    <taskdef name="ivy-deliver" classname="org.apache.ivy.ant.IvyDeliver"/> 
+    <taskdef name="ivy-publish" classname="org.apache.ivy.ant.IvyPublish"/>
+	
+	<target name="ivy-resolve">
+        <ivy:configure />
+        
+        <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
+        
+        <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
+		<echo message="ivy.dep.file: ${ivy.dep.file}"/>
+		<echo message="ivy.configurations: ${ivy.configurations}"/>
+		<echo message="ivy.retrieve.pattern: ${ivy.retrieve.pattern}"/>
+    </target>
+    
+    <property environment="env"/>
+    
     <property file="build.properties"/>
-	<property file="build.passwords.properties" />
+    <property file="build.passwords.properties" />
 
     <property name="src.dir" value="src/main/java"/>
-    <property name="web.dir" value="src/main/resources"/>
+	<property name="test.dir" value="src/test"/>
+    <property name="web.dir" value="web/"/>
     <property name="build.dir" value="target"/>
     <property name="name" value="filth"/>
+	<property name="resources.dir" value="src/main/resources"/>
 
     <path id="master-classpath">
-        <fileset dir="jar">
-            <include name="*/*.jar"/>
+        <fileset dir="lib">
+            <include name="**/*.jar"/>
         </fileset>
         <!-- We need the servlet API classes: -->
         <!--  * for Tomcat 5/6 use servlet-api.jar -->
@@ -19,6 +47,7 @@
         <fileset dir="${appserver.lib}">
             <include name="servlet*.jar"/>
         </fileset>
+    	<pathelement path="${resources.dir}"/>
         <pathelement path="${build.dir}"/>
     </path>
 
@@ -42,7 +71,7 @@
 
     <target name="build" description="Compile main source tree java files">
         <mkdir dir="${build.dir}"/>
-        <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
                deprecation="false" optimize="false" failonerror="true">
             <src path="${src.dir}"/>
             <classpath refid="master-classpath"/>
@@ -69,6 +98,41 @@
             </fileset>
         </copy>
     </target>
+	
+	<target name="buildtests" description="Compile test tree java files">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
+            deprecation="false" optimize="false" failonerror="true">
+            <src path="${test.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+    
+    <target name="tests" depends="build, buildtests" description="Run tests">
+        <junit printsummary="on"
+            fork="false"
+            haltonfailure="false"
+            failureproperty="tests.failed"
+            showoutput="true">
+            <classpath refid="master-classpath"/>
+            <formatter type="brief" usefile="false"/>
+            
+            <batchtest>
+                <fileset dir="${build.dir}">
+                    <include name="**/*Test.*"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        
+        <fail if="tests.failed">
+            tests.failed=${tests.failed}
+            ***********************************************************
+            ***********************************************************
+            ****  One or more tests failed!  Check the output ...  ****
+            ***********************************************************
+            ***********************************************************
+        </fail>
+    </target>
     
 <!-- ============================================================== -->
 <!-- Tomcat tasks - remove these if you don't have Tomcat installed -->
@@ -78,7 +142,12 @@
         <!-- We need the Catalina jars for Tomcat -->
         <!--  * for other app servers - check the docs -->
         <fileset dir="${appserver.lib}">
-            <include name="catalina-ant.jar"/>
+           <include name="catalina-ant.jar"/>
+           <include name="tomcat-coyote.jar"/>
+           <include name="tomcat-util.jar"/>
+        </fileset>
+        <fileset dir="${appserver.home}/bin">
+           <include name="tomcat-juli.jar"/>
         </fileset>
     </path>
 

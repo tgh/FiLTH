@@ -1,6 +1,8 @@
 WHERE LEFT OFF
 ---------------
 
+- going through spring tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
+    - at 1.12, but getting 404 for localhost:8080/filth/hello.html
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
 
@@ -38,7 +40,9 @@ SETTING UP ENVIRONMENT
 	- in ~/apache: $ sudo make install
 	- add ~/Installed_Programs/apache_2.4/bin to $PATH
 		
-- for seting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
+- for setting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
+
+- may need to set CATALINA_HOME environment variable and point to tomcat base directory?
 
 - download Spring from http://www.springsource.org/download
 	- extract to workspace
@@ -125,15 +129,38 @@ SETTING UP ENVIRONMENT
             </dependencies>
         </ivy-module>
         
-      - `ant ivy-resolve` seems to be working, but at the end "Target "ivy-resolve" does not exist in the project "filth"." is output. will probably replace <ivy:retrieve /> with:
+      - added ivy-resolve target to build.xml
       
-        <target name="resolve">
+        <target name="ivy-resolve">
             <ivy:configure />
             
             <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
             
             <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
         </target>
+        
+  - added to ivy.xml:
+  
+        <dependency org="org.springframework" name="spring-webmvc" rev="4.1.6.RELEASE"/>
+        <dependency org="commons-logging" name="commons-logging" rev="1.2"/>
+        <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
+        <dependency org="junit" name="junit" rev="4.12"/>
+        
+  - changed src and target from 1.5 to 1.6 in build.xml (since I'm using java 6):
+  
+        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
+  
+  - modified <path id="master-classpath"> with the following:
+  
+        <fileset dir="lib"> <!-- changed from "jar" -->
+            <include name="**/*.jar"/> <!-- changed from "*/*.jar" -->
+        </fileset>
+        
+  - had to add  <property name="test.dir" value="src/test"/>  to build.xml
+  - changed **/*Tests.* to **/*Test.* since I name my test (and any future tests) class HelloControllerTest.java
+  - had to add log4j.properties file in src/main/resources,
+    then added <pathelement path="${resources.dir}"/> to <path id="master-classpath"> in build.xml
+    (and <property name="resources.dir" value="src/main/resources"/> in build.xml as well)
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
