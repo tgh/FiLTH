@@ -350,3 +350,4 @@ INSERT INTO tag VALUES (349, 'writing', 61);
 INSERT INTO tag VALUES (350, 'robot(s)', 6);
 INSERT INTO tag VALUES (351, 'manic-depression', 143);
 INSERT INTO tag VALUES (352, 'sophmoric', 2);
+INSERT INTO tag VALUES (353, 'civil-rights', NULL);

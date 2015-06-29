@@ -26,3 +26,8 @@ INSERT INTO crew_person VALUES (2864, 'Black', 'Lewis', NULL, 'Lewis Black', 'Ac
 INSERT INTO crew_person VALUES (2865, 'Kaling', 'Mindy', NULL, 'Mindy Kaling', 'Actress');  -- Actress: Mindy Kaling
 INSERT INTO crew_person VALUES (2866, 'Oz', 'Frank', NULL, 'Frank Oz', 'Director');  -- Director: Frank Oz
 INSERT INTO crew_person VALUES (2867, 'Andersson', 'Bibi', NULL, 'Bibi Andersson', 'Actress');  -- Actress: Bibi Andersson
+INSERT INTO crew_person VALUES (2868, 'Daniels', 'Lee', NULL, 'Lee Daniels', 'Director');  -- Director: Lee Daniels
+INSERT INTO crew_person VALUES (2869, 'Carey', 'Mariah', NULL, 'Mariah Carey', 'Actress');  -- Actress: Mariah Carey
+INSERT INTO crew_person VALUES (2870, 'Kravitz', 'Lenny', NULL, 'Lenny Kravitz', 'Supporting Actor');  -- Supporting Actor: Lenny Kravitz
+INSERT INTO crew_person VALUES (2871, 'Place', 'Mark', 'Kay', 'Mark Kay Place', 'Actress');  -- Actress: Mark Kay Place
+INSERT INTO crew_person VALUES (2872, 'Kovacs', 'Laszlo', NULL, 'Laszlo Kovacs', 'Cinematographer');  -- Cinematographer: Laszlo Kovacs

@@ -3083,7 +3083,7 @@ INSERT INTO movie VALUES (3082, 'Mongol', 2007, 'not seen', 'R', 'Kazakhstan', D
 INSERT INTO movie VALUES (3083, '12', 2007, 'not seen', 'PG-13', 'Russia', DEFAULT, NULL);
 INSERT INTO movie VALUES (3084, 'The Baader Meinhof Complex', 2008, 'not seen', 'R', 'Germany', DEFAULT, NULL);
 INSERT INTO movie VALUES (3085, 'The Class', 2008, 'not seen', 'PG-13', 'France', DEFAULT, NULL);
-INSERT INTO movie VALUES (3086, 'Departures', 2008, 'not seen', 'PG-13', 'Japan', DEFAULT, NULL);
+INSERT INTO movie VALUES (3086, 'Departures', 2008, '***', 'PG-13', 'Japan', DEFAULT, 'tt1069238');
 INSERT INTO movie VALUES (3087, 'Revanche', 2008, 'not seen', 'NR', 'Austria', DEFAULT, NULL);
 INSERT INTO movie VALUES (3088, 'The Quiet One', 1948, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3089, 'The Secret Land', 1948, 'not seen', 'NR', 'USA', DEFAULT, NULL);
@@ -3658,3 +3658,5 @@ INSERT INTO movie VALUES (3658, 'Hot Fuzz', 2007, '***', 'R', 'England', NULL, N
 INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England', NULL, NULL);
 INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL, NULL);
 INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL, NULL);
+INSERT INTO movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1069238');
+INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', NULL, 'tt0076451');

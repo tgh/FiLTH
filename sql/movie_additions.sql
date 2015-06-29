@@ -11,3 +11,6 @@ INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-1
 INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL);
 UPDATE movie SET star_rating = '**½' WHERE mid = 2031;
 UPDATE movie SET star_rating = '**½' WHERE mid = 1242;
+INSERT INTO movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1069238');
+INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', NULL, 'tt0076451');
+UPDATE movie SET star_rating = '***' WHERE mid = 3086;
