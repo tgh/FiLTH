@@ -12,6 +12,6 @@ public class HelloControllerTest extends TestCase {
     public void testHandleRequestView() throws Exception {       
         HelloController controller = new HelloController();
         ModelAndView modelAndView = controller.handleRequest(null, null);       
-        assertEquals("view/hello.jsp", modelAndView.getViewName());
+        assertEquals("hello", modelAndView.getViewName());
     }
 }
