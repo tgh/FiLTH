@@ -31,3 +31,11 @@ INSERT INTO crew_person VALUES (2869, 'Carey', 'Mariah', NULL, 'Mariah Carey', '
 INSERT INTO crew_person VALUES (2870, 'Kravitz', 'Lenny', NULL, 'Lenny Kravitz', 'Supporting Actor');  -- Supporting Actor: Lenny Kravitz
 INSERT INTO crew_person VALUES (2871, 'Place', 'Mark', 'Kay', 'Mark Kay Place', 'Actress');  -- Actress: Mark Kay Place
 INSERT INTO crew_person VALUES (2872, 'Kovacs', 'Laszlo', NULL, 'Laszlo Kovacs', 'Cinematographer');  -- Cinematographer: Laszlo Kovacs
+INSERT INTO crew_person VALUES (2872, 'Wells', 'John', NULL, 'John Wells', 'Producer');  -- Producer: John Wells
+INSERT INTO crew_person VALUES (2873, 'Bruhl', 'Daniel', NULL, 'Daniel Bruhl', 'Actor');  -- Actor: Daniel Bruhl
+INSERT INTO crew_person VALUES (2874, 'Sy', 'Omar', NULL, 'Omar Sy', 'Actor');  -- Actor: Omar Sy
+INSERT INTO crew_person VALUES (2875, 'Guggenheim', 'Davis', NULL, 'Davis Guggenheim', 'Director');  -- Director: Davis Guggenheim
+INSERT INTO crew_person VALUES (2876, 'Howard', 'Bryce', 'Dallas', 'Bryce Dallas Howard', 'Actress');  -- Actress: Bryce Dallas Howard
+INSERT INTO crew_person VALUES (2877, 'Khan', 'Irrfan', NULL, 'Irrfan Khan', 'Actor');  -- Actor: Irrfan Khan
+INSERT INTO crew_person VALUES (2878, 'Greer', 'Judy', NULL, 'Judy Greer', 'Actress');  -- Actress: Judy Greer
+INSERT INTO crew_person VALUES (2879, 'Wong', 'B.D.', NULL, 'B.D. Wong', 'Actor');  -- Actor: B.D. Wong

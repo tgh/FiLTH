@@ -3314,7 +3314,7 @@ INSERT INTO movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'USA', D
 INSERT INTO movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, '***½', 'PG', 'USA', DEFAULT, 'tt0497116'); -- 7/5/2015
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT, NULL);
@@ -3659,4 +3659,7 @@ INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England',
 INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL, NULL);
 INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL, NULL);
 INSERT INTO movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1069238');
-INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', NULL, 'tt0076451');
+INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', 'Great shot of DeNiro being dragged out of nightclub through a hallway covered in lightbulbs. Also good shot of DeNiro next to a payphone in a club--purple suit/yellow background.', 'tt0076451');
+INSERT INTO movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', 'Was a member of a test audience for this movie, so the rating is based on viewing an unfinished version.', 'tt2503944'); -- 6/30/15
+INSERT INTO movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610'); -- 7/2/2015
+INSERT INTO movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037'); -- 7/5/2015

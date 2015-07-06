@@ -14,3 +14,7 @@ UPDATE movie SET star_rating = '**½' WHERE mid = 1242;
 INSERT INTO movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1069238');
 INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', NULL, 'tt0076451');
 UPDATE movie SET star_rating = '***' WHERE mid = 3086;
+INSERT INTO movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', NULL, 'tt2503944');
+INSERT INTO movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610');
+INSERT INTO movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037');
+UPDATE movie SET star_rating = '***½' WHERE mid = 3317;
