@@ -18,3 +18,6 @@ INSERT INTO movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', NULL, 't
 INSERT INTO movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610');
 INSERT INTO movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037');
 UPDATE movie SET star_rating = '***½' WHERE mid = 3317;
+INSERT INTO movie VALUES (3667, 'Away We Go', 2009, '**', 'R', 'USA', NULL, 'tt1176740');
+INSERT INTO movie VALUES (3668, 'The Cabinet of Dr. Caligari', 1920, '***½', 'NR', 'Germany', NULL, 'tt0010323');
+INSERT INTO movie VALUES (3669, 'Stonehearst Asylum', 2014, '**½', 'PG-13', 'USA', NULL, 'tt1772264');

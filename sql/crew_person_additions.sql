@@ -39,3 +39,12 @@ INSERT INTO crew_person VALUES (2876, 'Howard', 'Bryce', 'Dallas', 'Bryce Dallas
 INSERT INTO crew_person VALUES (2877, 'Khan', 'Irrfan', NULL, 'Irrfan Khan', 'Actor');  -- Actor: Irrfan Khan
 INSERT INTO crew_person VALUES (2878, 'Greer', 'Judy', NULL, 'Judy Greer', 'Actress');  -- Actress: Judy Greer
 INSERT INTO crew_person VALUES (2879, 'Wong', 'B.D.', NULL, 'B.D. Wong', 'Actor');  -- Actor: B.D. Wong
+INSERT INTO crew_person VALUES (2880, 'Krasinski', 'John', NULL, 'John Krasinski', 'Actor');  -- Actor: John Krasinski
+INSERT INTO crew_person VALUES (2881, 'Janney', 'Allison', NULL, 'Allison Janney', 'Actress');  -- Actress: Allison Janney
+INSERT INTO crew_person VALUES (2882, 'Gaffigan', 'Jim', NULL, 'Jim Gaffigan', 'Supporting Actor');  -- Supporting Actor: Jim Gaffigan
+INSERT INTO crew_person VALUES (2883, 'Gyllenhaal', 'Maggie', NULL, 'Maggie Gyllenhaal', 'Actress');  -- Actress: Maggie Gyllenhaal
+INSERT INTO crew_person VALUES (2884, 'Messina', 'Chris', NULL, 'Chris Messina', 'Actor');  -- Actor: Chris Messina
+INSERT INTO crew_person VALUES (2885, 'Weine', 'Robert', NULL, 'Robert Weine', 'Director');  -- Director: Robert Weine
+INSERT INTO crew_person VALUES (2886, 'Veidt', 'Conrad', NULL, 'Conrad Veidt', 'Actor');  -- Actor: Conrad Veidt
+INSERT INTO crew_person VALUES (2887, 'Anderson', 'Brad', NULL, 'Brad Anderson', 'Director');  -- Director: Brad Anderson
+INSERT INTO crew_person VALUES (2888, 'Sturgess', 'Jim', NULL, 'Jim Sturgess', 'Actor');  -- Actor: Jim Sturgess
