@@ -6242,3 +6242,5 @@ INSERT INTO worked_on VALUES(3671, 2325, 'Supporting Actress');  -- Jessica Chas
 INSERT INTO worked_on VALUES(3671, 623, 'Supporting Actor');  -- Albert Brooks for A Most Violent Year (2014)
 INSERT INTO worked_on VALUES(3671, 2504, 'Supporting Actor');  -- David Oyelowo for A Most Violent Year (2014)
 INSERT INTO worked_on VALUES(3671, 2889, 'Cinematographer');  -- Bradford Young for A Most Violent Year (2014)
+INSERT INTO worked_on VALUES(513, 294, 'Director');  -- Werner Herzog for Encounters at the End of the World (2008)
+INSERT INTO worked_on VALUES(513, 294, 'Screenwriter');  -- Werner Herzog for Encounters at the End of the World (2008)

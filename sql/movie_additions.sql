@@ -25,3 +25,5 @@ INSERT INTO movie VALUES (3670, 'Irrational Man', 2015, '**½', 'R', 'USA', NULL
 INSERT INTO movie VALUES (3671, 'A Most Violent Year', 2014, '***½', 'R', 'USA', NULL, 'tt2937898');
 INSERT INTO movie VALUES (3672, 'The Search for General Tso', 2014, '***', 'NR', 'USA', NULL, 'tt3576038');
 UPDATE movie SET star_rating = '**½' WHERE mid = 163;
+UPDATE movie SET title = 'Enemies: A Love Story' WHERE mid = 516;
+UPDATE movie SET star_rating = '***' WHERE mid = 536;
