@@ -3669,3 +3669,6 @@ INSERT INTO movie VALUES (3669, 'Stonehearst Asylum', 2014, '**½', 'PG-13', 'US
 INSERT INTO movie VALUES (3670, 'Irrational Man', 2015, '**½', 'R', 'USA', NULL, 'tt3715320');
 INSERT INTO movie VALUES (3671, 'A Most Violent Year', 2014, '***½', 'R', 'USA', NULL, 'tt2937898');
 INSERT INTO movie VALUES (3672, 'The Search for General Tso', 2014, '***', 'NR', 'USA', NULL, 'tt3576038');
+INSERT INTO movie VALUES (3673, 'How to Train Your Dragon', 2010, '***', 'PG', 'USA', NULL, 'tt0892769');
+INSERT INTO movie VALUES (3674, 'How to Train Your Dragon 2', 2014, '***', 'PG', 'USA', NULL, 'tt1646971');
+INSERT INTO movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'England', NULL, 'tt1972571');

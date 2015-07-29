@@ -570,7 +570,7 @@ Richard Roeper
 * 04. Birdman
   05. The Drop
 * 06. Whiplash
-  07. A Most Wanted Man
+* 07. A Most Wanted Man
 * 08. Foxcatcher
-  09. A Most Violent Year
+* 09. A Most Violent Year
 * 10. Guardians of the Galaxy

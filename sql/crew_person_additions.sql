@@ -49,3 +49,7 @@ INSERT INTO crew_person VALUES (2886, 'Veidt', 'Conrad', NULL, 'Conrad Veidt', '
 INSERT INTO crew_person VALUES (2887, 'Anderson', 'Brad', NULL, 'Brad Anderson', 'Director');  -- Director: Brad Anderson
 INSERT INTO crew_person VALUES (2888, 'Sturgess', 'Jim', NULL, 'Jim Sturgess', 'Actor');  -- Actor: Jim Sturgess
 INSERT INTO crew_person VALUES (2889, 'Young', 'Bradford', NULL, 'Bradford Young', 'Cinematographer');  -- Cinematographer: Bradford Young
+INSERT INTO crew_person VALUES (2890, 'Baruchel', 'Jay', NULL, 'Jay Baruchel', 'Actor');  -- Actor: Jay Baruchel
+INSERT INTO crew_person VALUES (2891, 'Butler', 'Gerard', NULL, 'Gerard Butler', 'Actor');  -- Actor: Gerard Butler
+INSERT INTO crew_person VALUES (2892, 'Corbijn', 'Anton', NULL, 'Anton Corbijn', 'Director');  -- Director: Anton Corbijn
+INSERT INTO crew_person VALUES (2893, 'McAdams', 'Rachel', NULL, 'Rachel McAdams', 'Actress');  -- Actress: Rachel McAdams

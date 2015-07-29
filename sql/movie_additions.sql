@@ -27,3 +27,6 @@ INSERT INTO movie VALUES (3672, 'The Search for General Tso', 2014, '***', 'NR',
 UPDATE movie SET star_rating = '**½' WHERE mid = 163;
 UPDATE movie SET title = 'Enemies: A Love Story' WHERE mid = 516;
 UPDATE movie SET star_rating = '***' WHERE mid = 536;
+INSERT INTO movie VALUES (3673, 'How to Train Your Dragon', 2010, '***', 'PG', 'USA', NULL, 'tt0892769');
+INSERT INTO movie VALUES (3674, 'How to Train Your Dragon 2', 2014, '***', 'PG', 'USA', NULL, 'tt1646971');
+INSERT INTO movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'England', NULL, 'tt1972571');
