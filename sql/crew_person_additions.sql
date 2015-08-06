@@ -53,3 +53,4 @@ INSERT INTO crew_person VALUES (2890, 'Baruchel', 'Jay', NULL, 'Jay Baruchel', '
 INSERT INTO crew_person VALUES (2891, 'Butler', 'Gerard', NULL, 'Gerard Butler', 'Actor');  -- Actor: Gerard Butler
 INSERT INTO crew_person VALUES (2892, 'Corbijn', 'Anton', NULL, 'Anton Corbijn', 'Director');  -- Director: Anton Corbijn
 INSERT INTO crew_person VALUES (2893, 'McAdams', 'Rachel', NULL, 'Rachel McAdams', 'Actress');  -- Actress: Rachel McAdams
+INSERT INTO crew_person VALUES (2894, 'Donner', 'Richard', NULL, 'Richard Donner', 'Director');  -- Director: Richard Donner
