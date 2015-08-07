@@ -17,7 +17,7 @@ Gene Siskel
 * 02. M*A*S*H (Robert Altman)
   03. Women in Love (Ken Russell)
 * 04. Five Easy Pieces (Bob Rafelson)
-  05. The Passion of Anna (Ingmar Bergman)
+* 05. The Passion of Anna (Ingmar Bergman)
   06. Adalen 31 (Bo Widerberg)
   07. Salesman (Albert & David Maysles)
   08. Woodstock (Michael Wadleigh)
@@ -188,7 +188,7 @@ Gene Siskel
   05. Purple Rain (Albert Magnoli)
 * 06. The Killing Fields (Roland Jaffe)
 * 07. Secret Honor (Robert Altman)
-  08. A Passge to India (David Lean)
+* 08. A Passge to India (David Lean)
   09. Micki & Maude (Blake Edwards)
   10. The Natural (Barry Levinson)
 
@@ -357,7 +357,7 @@ Best Films of the 1980s
 * 06. The Full Monty (Peter Cattaneo)
 * 07. The Sweet Hereafter (Atom Egoyan)
 * 08. Good Will Hunting (Gus Van Sant)
-  09. Mrs Brown (John Madden)
+* 09. Mrs Brown (John Madden)
 * 10. As Good As It Gets (James L. Brooks)
 
 1998
@@ -562,3 +562,15 @@ Richard Roeper
   Dallas Buyers Club
   This is the End
   Spring Breakers
+
+2014
+* 01. Boyhood
+* 02. Interstellar
+* 03. Locke
+* 04. Birdman
+  05. The Drop
+* 06. Whiplash
+* 07. A Most Wanted Man
+* 08. Foxcatcher
+* 09. A Most Violent Year
+* 10. Guardians of the Galaxy

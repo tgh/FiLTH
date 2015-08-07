@@ -501,7 +501,7 @@ stars to during the year.
 * Bubble (Stephen Soderbergh)
   The Death of Mr. Lazarescu (Cristi Puiu)
 * 49 Up (Michael Apted)
-  An Inconvenient Truth (Davis Guggenheim)
+* An Inconvenient Truth (Davis Guggenheim)
   L'Enfant (Jean-Pierre & Luc Dardenne)
 * Man Push Cart (Ramin Bahrani)
 * Marie Antoinette (Sofia Coppola)
@@ -572,7 +572,7 @@ Special Jury Prize:
 *   Avatar
 
 (independent top ten list - not ranked)
-    Departures
+*   Departures
     Disgrace
     Everlasting Moments
 *   Goodbye Solo

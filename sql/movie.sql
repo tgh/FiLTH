@@ -160,7 +160,7 @@ INSERT INTO movie VALUES (159, 'Barfly', 1987, '***', 'R', 'USA', DEFAULT, NULL)
 INSERT INTO movie VALUES (160, 'Barnyard', 2006, '**½', 'PG', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (161, 'Barry Lyndon', 1975, '****', 'R', 'England', DEFAULT, NULL);
 INSERT INTO movie VALUES (162, 'Barton Fink', 1991, '****', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (163, 'Batman', 1989, '***', 'PG-13', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (163, 'Batman', 1989, '**½', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (164, 'Batman Begins', 2005, '***', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (165, 'The Battle of Algiers', 1966, '***', 'NR', DEFAULT, DEFAULT, NULL);
 INSERT INTO movie VALUES (166, 'Battleship Potemkin', 1925, '***½', 'NR', 'USSR', DEFAULT, NULL);
@@ -510,30 +510,30 @@ INSERT INTO movie VALUES (509, 'Elizabeth: The Golden Age', 2007, '**', 'PG-13',
 INSERT INTO movie VALUES (510, 'Elmer Gantry', 1960, '**½', 'NR', 'USA', DEFAULT, 'tt0053793');
 INSERT INTO movie VALUES (511, 'Emma', 1996, '***', 'PG', 'England', DEFAULT, 'tt0116191');
 INSERT INTO movie VALUES (512, 'Empire of the Sun', 1987, '***½', 'PG', 'USA', DEFAULT, 'tt0092965');
-INSERT INTO movie VALUES (513, 'Encounters at the End of the World', 2008, '***½', 'G', 'Germany', DEFAULT, NULL);
-INSERT INTO movie VALUES (514, 'The End of Violence', 1997, '**', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (515, 'Enduring Love', 2004, '***', 'R', 'England', DEFAULT, NULL);
-INSERT INTO movie VALUES (516, 'Enemies, a Love Story', 1989, '**½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (517, 'Enemy at the Gates', 2000, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (518, 'Enemy of the State', 1998, '***', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (519, 'Enemy Mine', 1985, '***', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (520, 'The English Patient', 1996, '**½', 'R', DEFAULT, DEFAULT, NULL);
-INSERT INTO movie VALUES (521, 'Equilibrium', 2003, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (522, 'Eraserhead', 1977, '***', 'NR', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (523, 'Erin Brockovich', 2000, '**½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (524, 'Eternal Sunshine of the Spotless Mind', 2004, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (525, 'Event Horizon', 1997, '**½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (526, 'Everyone Says I Love You', 1997, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (527, 'Everything is Illuminated', 2005, '***', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (528, 'Everything Must Go', 2011, '***', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (529, 'Everything You Always Wanted to Know About Sex But Were Afraid to Ask', 1972, '**½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (530, 'Eve''s Bayou', 1997, '***', 'R', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (513, 'Encounters at the End of the World', 2008, '***½', 'G', 'Germany', DEFAULT, 'tt1093824');
+INSERT INTO movie VALUES (514, 'The End of Violence', 1997, '**', 'R', 'USA', DEFAULT, 'tt0119062');
+INSERT INTO movie VALUES (515, 'Enduring Love', 2004, '***', 'R', 'England', DEFAULT, 'tt0375735');
+INSERT INTO movie VALUES (516, 'Enemies: A Love Story', 1989, '**½', 'R', 'USA', DEFAULT, 'tt0097276');
+INSERT INTO movie VALUES (517, 'Enemy at the Gates', 2000, '***½', 'R', 'USA', DEFAULT, 'tt0215750');
+INSERT INTO movie VALUES (518, 'Enemy of the State', 1998, '***', 'R', 'USA', DEFAULT, 'tt0120660');
+INSERT INTO movie VALUES (519, 'Enemy Mine', 1985, '***', 'PG-13', 'USA', DEFAULT, 'tt0089092');
+INSERT INTO movie VALUES (520, 'The English Patient', 1996, '**½', 'R', DEFAULT, DEFAULT, 'tt0116209');
+INSERT INTO movie VALUES (521, 'Equilibrium', 2003, '***½', 'R', 'USA', DEFAULT, 'tt0238380');
+INSERT INTO movie VALUES (522, 'Eraserhead', 1977, '***', 'NR', 'USA', DEFAULT, 'tt0074486');
+INSERT INTO movie VALUES (523, 'Erin Brockovich', 2000, '**½', 'R', 'USA', DEFAULT, 'tt0195685');
+INSERT INTO movie VALUES (524, 'Eternal Sunshine of the Spotless Mind', 2004, '***½', 'R', 'USA', DEFAULT, 'tt0338013');
+INSERT INTO movie VALUES (525, 'Event Horizon', 1997, '**½', 'R', 'USA', DEFAULT, 'tt0119081');
+INSERT INTO movie VALUES (526, 'Everyone Says I Love You', 1997, '***½', 'R', 'USA', DEFAULT, 'tt0116242');
+INSERT INTO movie VALUES (527, 'Everything is Illuminated', 2005, '***', 'PG-13', 'USA', DEFAULT, 'tt0404030');
+INSERT INTO movie VALUES (528, 'Everything Must Go', 2011, '***', 'R', 'USA', DEFAULT, 'tt1531663');
+INSERT INTO movie VALUES (529, 'Everything You Always Wanted to Know About Sex But Were Afraid to Ask', 1972, '**½', 'R', 'USA', DEFAULT, 'tt0068555');
+INSERT INTO movie VALUES (530, 'Eve''s Bayou', 1997, '***', 'R', 'USA', DEFAULT, 'tt0119080');
 INSERT INTO movie VALUES (531, 'Evil Alien Conquerors', 2003, '***', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (532, 'Evolution', 2001, '***', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (533, 'eXistenZ', 1999, '**½', 'R', 'Canada', DEFAULT, NULL);
 INSERT INTO movie VALUES (534, 'Exit Through the Gift Shop', 2010, '****', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (535, 'Exotica', 1995, '**½', 'R', 'Canada', DEFAULT, NULL);
-INSERT INTO movie VALUES (536, 'Explorers', 1985, '***½', 'PG', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (536, 'Explorers', 1985, '***', 'PG', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (537, 'The Exterminating Angel', 1962, '***', 'NR', 'Mexico', DEFAULT, NULL);
 INSERT INTO movie VALUES (538, 'Extreme Measures', 1996, '***', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (539, 'The Eyes of Tammy Faye', 2000, '**½', 'PG-13', 'USA', DEFAULT, NULL);
@@ -3083,7 +3083,7 @@ INSERT INTO movie VALUES (3082, 'Mongol', 2007, 'not seen', 'R', 'Kazakhstan', D
 INSERT INTO movie VALUES (3083, '12', 2007, 'not seen', 'PG-13', 'Russia', DEFAULT, NULL);
 INSERT INTO movie VALUES (3084, 'The Baader Meinhof Complex', 2008, 'not seen', 'R', 'Germany', DEFAULT, NULL);
 INSERT INTO movie VALUES (3085, 'The Class', 2008, 'not seen', 'PG-13', 'France', DEFAULT, NULL);
-INSERT INTO movie VALUES (3086, 'Departures', 2008, 'not seen', 'PG-13', 'Japan', DEFAULT, NULL);
+INSERT INTO movie VALUES (3086, 'Departures', 2008, '***', 'PG-13', 'Japan', DEFAULT, 'tt1069238');
 INSERT INTO movie VALUES (3087, 'Revanche', 2008, 'not seen', 'NR', 'Austria', DEFAULT, NULL);
 INSERT INTO movie VALUES (3088, 'The Quiet One', 1948, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3089, 'The Secret Land', 1948, 'not seen', 'NR', 'USA', DEFAULT, NULL);
@@ -3314,7 +3314,7 @@ INSERT INTO movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'USA', D
 INSERT INTO movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, 'not seen', 'PG', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (3317, 'An Inconvenient Truth', 2006, '***½', 'PG', 'USA', DEFAULT, 'tt0497116'); -- 7/5/2015
 INSERT INTO movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', DEFAULT, NULL);
@@ -3658,3 +3658,18 @@ INSERT INTO movie VALUES (3658, 'Hot Fuzz', 2007, '***', 'R', 'England', NULL, N
 INSERT INTO movie VALUES (3659, 'The Italian Job', 1969, '**½', 'G', 'England', NULL, NULL);
 INSERT INTO movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***', 'PG-13', 'USA', NULL, NULL);
 INSERT INTO movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL, NULL);
+INSERT INTO movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1069238');
+INSERT INTO movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', 'Great shot of DeNiro being dragged out of nightclub through a hallway covered in lightbulbs. Also good shot of DeNiro next to a payphone in a club--purple suit/yellow background.', 'tt0076451');
+INSERT INTO movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', 'Was a member of a test audience for this movie, so the rating is based on viewing an unfinished version.', 'tt2503944'); -- 6/30/15
+INSERT INTO movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610'); -- 7/2/2015
+INSERT INTO movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037'); -- 7/5/2015
+INSERT INTO movie VALUES (3667, 'Away We Go', 2009, '**', 'R', 'USA', NULL, 'tt1176740');
+INSERT INTO movie VALUES (3668, 'The Cabinet of Dr. Caligari', 1920, '***½', 'NR', 'Germany', NULL, 'tt0010323');
+INSERT INTO movie VALUES (3669, 'Stonehearst Asylum', 2014, '**½', 'PG-13', 'USA', NULL, 'tt1772264');
+INSERT INTO movie VALUES (3670, 'Irrational Man', 2015, '**½', 'R', 'USA', NULL, 'tt3715320');
+INSERT INTO movie VALUES (3671, 'A Most Violent Year', 2014, '***½', 'R', 'USA', NULL, 'tt2937898');
+INSERT INTO movie VALUES (3672, 'The Search for General Tso', 2014, '***', 'NR', 'USA', NULL, 'tt3576038');
+INSERT INTO movie VALUES (3673, 'How to Train Your Dragon', 2010, '***', 'PG', 'USA', NULL, 'tt0892769');
+INSERT INTO movie VALUES (3674, 'How to Train Your Dragon 2', 2014, '***', 'PG', 'USA', NULL, 'tt1646971');
+INSERT INTO movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'England', NULL, 'tt1972571');
+INSERT INTO movie VALUES (3676, 'Conspiracy Theory', 1997, '***', 'R', 'USA', NULL, 'tt0118883');
