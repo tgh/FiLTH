@@ -61,7 +61,7 @@ SETTING UP ENVIRONMENT
   	
   		<taskdef name="install" classname="org.apache.catalina.ant.DeployTask">
   		
-  	because InstallTask was deprecated after Tomcat 6, and I'm using Tomcat 7
+  	because InstallTask was deprecated after Tomcat 6, and I'm using Tomcat 7 (not anymore--see RESOLVED note below)
   	
   - had to replace
   
@@ -97,7 +97,7 @@ SETTING UP ENVIRONMENT
     
   - still haven't been able to run `ant list` successfully--getting 401 error
     - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml
-  - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although t=it only displayed unknown characters :-/)
+  - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although it only displayed unknown characters :-/)
     - RESOLVED: switched to using tomcat6 ("appserver.home=${env.WORKSPACE}/tomcat6" in build.properties)
   
   - to get Ivy with ant:
