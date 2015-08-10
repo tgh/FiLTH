@@ -2892,3 +2892,7 @@ INSERT INTO crew_person VALUES (2891, 'Butler', 'Gerard', NULL, 'Gerard Butler',
 INSERT INTO crew_person VALUES (2892, 'Corbijn', 'Anton', NULL, 'Anton Corbijn', 'Director');  -- Director: Anton Corbijn
 INSERT INTO crew_person VALUES (2893, 'McAdams', 'Rachel', NULL, 'Rachel McAdams', 'Actress');  -- Actress: Rachel McAdams
 INSERT INTO crew_person VALUES (2894, 'Donner', 'Richard', NULL, 'Richard Donner', 'Director');  -- Director: Richard Donner
+INSERT INTO crew_person VALUES (2895, 'Ferguson', 'Rebecca', NULL, 'Rebecca Ferguson', 'Actress');  -- Actress: Rebecca Ferguson
+INSERT INTO crew_person VALUES (2896, 'Harris', 'Sean', NULL, 'Sean Harris', 'Actor');  -- Actor: Sean Harris
+INSERT INTO crew_person VALUES (2897, 'McBurney', 'Simon', NULL, 'Simon McBurney', 'Actor');  -- Actor: Simon McBurney
+INSERT INTO crew_person VALUES (2898, 'Hollander', 'Tom', NULL, 'Tom Hollander', 'Actor');  -- Actor: Tom Hollander
