@@ -2896,3 +2896,9 @@ INSERT INTO crew_person VALUES (2895, 'Ferguson', 'Rebecca', NULL, 'Rebecca Ferg
 INSERT INTO crew_person VALUES (2896, 'Harris', 'Sean', NULL, 'Sean Harris', 'Actor');  -- Actor: Sean Harris
 INSERT INTO crew_person VALUES (2897, 'McBurney', 'Simon', NULL, 'Simon McBurney', 'Actor');  -- Actor: Simon McBurney
 INSERT INTO crew_person VALUES (2898, 'Hollander', 'Tom', NULL, 'Tom Hollander', 'Actor');  -- Actor: Tom Hollander
+INSERT INTO crew_person VALUES (2899, 'Benson', 'Ned', NULL, 'Ned Benson', 'Director');  -- Director: Ned Benson
+INSERT INTO crew_person VALUES (2900, 'Huppert', 'Isabelle', NULL, 'Isabelle Huppert', 'Actress');  -- Actress: Isabelle Huppert
+INSERT INTO crew_person VALUES (2901, 'Parker', 'Milo', NULL, 'Milo Parker', 'Actor');  -- Actor: Milo Parker
+INSERT INTO crew_person VALUES (2902, 'Irwin', 'Bill', NULL, 'Bill Irwin', 'Actor');  -- Actor: Bill Irwin
+INSERT INTO crew_person VALUES (2903, 'Gummer', 'Mamie', NULL, 'Mamie Gummer', 'Actress');  -- Actress: Mamie Gummer
+INSERT INTO crew_person VALUES (2904, 'Springfield', 'Rick', NULL, 'Rick Springfield', 'Actor');  -- Actor: Rick Springfield

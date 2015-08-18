@@ -32,3 +32,6 @@ INSERT INTO movie VALUES (3674, 'How to Train Your Dragon 2', 2014, '***', 'PG',
 INSERT INTO movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'England', NULL, 'tt1972571');
 INSERT INTO movie VALUES (3676, 'Conspiracy Theory', 1997, '***', 'R', 'USA', NULL, 'tt0118883');
 INSERT INTO movie VALUES (3677, 'Mission: Impossible – Rogue Nation', 2015, '***½', 'PG-13', 'USA', NULL, 'tt2381249');
+INSERT INTO movie VALUES (3678, 'The Disappearance of Eleanor Rigby: Her', 2013, '**½', 'R', 'USA', NULL, 'tt3720788');
+INSERT INTO movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230');
+INSERT INTO movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726');
