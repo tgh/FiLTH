@@ -593,24 +593,24 @@ INSERT INTO movie VALUES (592, 'Four Weddings and a Funeral', 1994, '***', 'R', 
 INSERT INTO movie VALUES (593, 'Fracture', 2007, '***', 'R', 'USA', DEFAULT, 'tt0488120');
 INSERT INTO movie VALUES (594, 'Frailty', 2002, '****', 'R', 'USA', DEFAULT, 'tt0264616');
 INSERT INTO movie VALUES (595, 'Frankenstein', 1931, '***', 'NR', 'USA', DEFAULT, 'tt0021884');
-INSERT INTO movie VALUES (596, 'Freaks', 1932, '***', 'NR', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (597, 'Fred Clause', 2007, '***', 'PG', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (598, 'The French Connection', 1971, '****', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (599, 'Frenzy', 1972, '***', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (600, 'Fresh', 1994, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (601, 'The Freshman', 1990, '***½', 'PG', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (602, 'Friday Night Lights', 2003, '**½', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (603, 'From Hell', 2001, '***', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (604, 'From Here to Eternity', 1953, '***', 'NR', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (605, 'Frost/Nixon', 2008, '****', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (606, 'Frozen River', 2008, '***½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (607, 'The Fugitive', 1993, '***½', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (608, 'Full Metal Jacket', 1987, '***½', 'R', 'England', DEFAULT, NULL);
-INSERT INTO movie VALUES (609, 'The Full Monty', 1997, '***', 'R', 'England', DEFAULT, NULL);
-INSERT INTO movie VALUES (610, 'Funny Face', 1957, '***½', 'NR', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (611, 'Galaxy Quest', 1999, '**½', 'PG', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (612, 'Gallipoli', 1981, '***½', 'PG', 'Australia', DEFAULT, NULL);
-INSERT INTO movie VALUES (613, 'The Game', 1997, '***½', 'R', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (596, 'Freaks', 1932, '***', 'NR', 'USA', DEFAULT, 'tt0022913');
+INSERT INTO movie VALUES (597, 'Fred Clause', 2007, '***', 'PG', 'USA', DEFAULT, 'tt0486583');
+INSERT INTO movie VALUES (598, 'The French Connection', 1971, '****', 'R', 'USA', DEFAULT, 'tt0067116');
+INSERT INTO movie VALUES (599, 'Frenzy', 1972, '***', 'R', 'USA', DEFAULT, 'tt0068611');
+INSERT INTO movie VALUES (600, 'Fresh', 1994, '***½', 'R', 'USA', DEFAULT, 'tt0109842');
+INSERT INTO movie VALUES (601, 'The Freshman', 1990, '***½', 'PG', 'USA', DEFAULT, 'tt0099615');
+INSERT INTO movie VALUES (602, 'Friday Night Lights', 2003, '**½', 'PG-13', 'USA', DEFAULT, 'tt0390022');
+INSERT INTO movie VALUES (603, 'From Hell', 2001, '***', 'R', 'USA', DEFAULT, 'tt0120681');
+INSERT INTO movie VALUES (604, 'From Here to Eternity', 1953, '***', 'NR', 'USA', DEFAULT, 'tt0045793');
+INSERT INTO movie VALUES (605, 'Frost/Nixon', 2008, '****', 'R', 'USA', DEFAULT, 'tt0870111');
+INSERT INTO movie VALUES (606, 'Frozen River', 2008, '***½', 'R', 'USA', DEFAULT, 'tt0978759');
+INSERT INTO movie VALUES (607, 'The Fugitive', 1993, '***½', 'PG-13', 'USA', DEFAULT, 'tt0106977');
+INSERT INTO movie VALUES (608, 'Full Metal Jacket', 1987, '***½', 'R', 'England', DEFAULT, 'tt0093058');
+INSERT INTO movie VALUES (609, 'The Full Monty', 1997, '***', 'R', 'England', DEFAULT, 'tt0119164');
+INSERT INTO movie VALUES (610, 'Funny Face', 1957, '***½', 'NR', 'USA', DEFAULT, 'tt0050419');
+INSERT INTO movie VALUES (611, 'Galaxy Quest', 1999, '**½', 'PG', 'USA', DEFAULT, 'tt0177789');
+INSERT INTO movie VALUES (612, 'Gallipoli', 1981, '***½', 'PG', 'Australia', DEFAULT, 'tt0082432');
+INSERT INTO movie VALUES (613, 'The Game', 1997, '***½', 'R', 'USA', DEFAULT, 'tt0119174');
 INSERT INTO movie VALUES (614, 'The Game Plan', 2007, '**½', 'PG', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (615, 'Gandhi', 1982, '****', 'PG', 'England', DEFAULT, NULL);
 INSERT INTO movie VALUES (616, 'Gangs of New York', 2002, '***½', 'R', 'USA', DEFAULT, NULL);
@@ -3675,5 +3675,5 @@ INSERT INTO movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'Englan
 INSERT INTO movie VALUES (3676, 'Conspiracy Theory', 1997, '***', 'R', 'USA', NULL, 'tt0118883');
 INSERT INTO movie VALUES (3677, 'Mission: Impossible – Rogue Nation', 2015, '***½', 'PG-13', 'USA', NULL, 'tt2381249'); -- 8/8/15
 INSERT INTO movie VALUES (3678, 'The Disappearance of Eleanor Rigby: Her', 2013, '**½', 'R', 'USA', NULL, 'tt3720788');
-INSERT INTO movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230');
-INSERT INTO movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726');
+INSERT INTO movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230'); -- 8/15/15
+INSERT INTO movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726'); -- 8/14/15
