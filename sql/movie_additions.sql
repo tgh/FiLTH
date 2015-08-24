@@ -35,3 +35,5 @@ INSERT INTO movie VALUES (3677, 'Mission: Impossible – Rogue Nation', 2015, '*
 INSERT INTO movie VALUES (3678, 'The Disappearance of Eleanor Rigby: Her', 2013, '**½', 'R', 'USA', NULL, 'tt3720788');
 INSERT INTO movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230');
 INSERT INTO movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726');
+INSERT INTO movie VALUES (3681, 'The Skeleton Twins', 2014, '***', 'R', 'USA', NULL, 'tt1571249');
+INSERT INTO movie VALUES (3682, 'Two Days, One Night', 2014, '**½', 'PG-13', 'France', NULL, 'tt2737050');

@@ -2902,3 +2902,7 @@ INSERT INTO crew_person VALUES (2901, 'Parker', 'Milo', NULL, 'Milo Parker', 'Ac
 INSERT INTO crew_person VALUES (2902, 'Irwin', 'Bill', NULL, 'Bill Irwin', 'Actor');  -- Actor: Bill Irwin
 INSERT INTO crew_person VALUES (2903, 'Gummer', 'Mamie', NULL, 'Mamie Gummer', 'Actress');  -- Actress: Mamie Gummer
 INSERT INTO crew_person VALUES (2904, 'Springfield', 'Rick', NULL, 'Rick Springfield', 'Actor');  -- Actor: Rick Springfield
+INSERT INTO crew_person VALUES (2905, 'Johnson', 'Craig', NULL, 'Craig Johnson', 'Director');  -- Director: Craig Johnson
+INSERT INTO crew_person VALUES (2906, 'Heyman', 'Mark', NULL, 'Mark Heyman', 'Screenwriter');  -- Screenwriter: Mark Heyman
+INSERT INTO crew_person VALUES (2907, 'Dardenne', 'Jean-Pierre', NULL, 'Jean-Pierre Dardenne', 'Director');  -- Director: Jean-Pierre Dardenne
+INSERT INTO crew_person VALUES (2908, 'Dardenne', 'Luc', NULL, 'Luc Dardenne', 'Director');  -- Director: Luc Dardenne
