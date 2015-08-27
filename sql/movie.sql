@@ -3679,3 +3679,5 @@ INSERT INTO movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL
 INSERT INTO movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726'); -- 8/14/15
 INSERT INTO movie VALUES (3681, 'The Skeleton Twins', 2014, '***', 'R', 'USA', NULL, 'tt1571249');
 INSERT INTO movie VALUES (3682, 'Two Days, One Night', 2014, '**½', 'PG-13', 'France', NULL, 'tt2737050');
+INSERT INTO movie VALUES (3683, 'Ace Ventura: When Nature Calls', 1995, '**', 'PG-13', 'USA', NULL, 'tt0112281');
+INSERT INTO movie VALUES (3684, 'Captain America: The First Avenger', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0458339');
