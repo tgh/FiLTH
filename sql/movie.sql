@@ -698,11 +698,11 @@ INSERT INTO movie VALUES (697, 'Gulliver''s Travels', 2010, '**½', 'PG', 'USA',
 INSERT INTO movie VALUES (698, 'Gummo', 1997, '**½', 'R', 'USA', DEFAULT, 'tt0119237');
 INSERT INTO movie VALUES (699, 'Gunner Palace', 2005, '***', 'R', 'USA', DEFAULT, 'tt0424129');
 INSERT INTO movie VALUES (700, 'Gypsy', 1962, '***', 'NR', 'USA', DEFAULT, 'tt0056048');
-INSERT INTO movie VALUES (701, 'Half Nelson', 2006, '***', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (702, 'Hamburger Hill', 1987, '**½', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (703, 'Hannibal', 2001, '**', 'R', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (704, 'Hanna', 2011, '**½', 'PG-13', 'USA', DEFAULT, NULL);
-INSERT INTO movie VALUES (705, 'Hannah and Her Sisters', 1986, '****', 'PG-13', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (701, 'Half Nelson', 2006, '***', 'R', 'USA', DEFAULT, 'tt0468489');
+INSERT INTO movie VALUES (702, 'Hamburger Hill', 1987, '**½', 'R', 'USA', DEFAULT, 'tt0093137');
+INSERT INTO movie VALUES (703, 'Hannibal', 2001, '**', 'R', 'USA', DEFAULT, 'tt0212985');
+INSERT INTO movie VALUES (704, 'Hanna', 2011, '**½', 'PG-13', 'USA', DEFAULT, 'tt0993842');
+INSERT INTO movie VALUES (705, 'Hannah and Her Sisters', 1986, '****', 'PG-13', 'USA', DEFAULT, 'tt0091167');
 INSERT INTO movie VALUES (706, 'Hannah Montana: The Movie', 2009, '**½', 'G', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (707, 'The Happening', 2008, '***', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (708, 'Happiness', 1998, '*', 'NR', 'USA', DEFAULT, NULL);
