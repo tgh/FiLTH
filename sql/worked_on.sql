@@ -6322,3 +6322,7 @@ INSERT INTO worked_on VALUES(3684, 54, 'Small Part');  -- Samuel L. Jackson for 
 INSERT INTO worked_on VALUES(3684, 2527, 'Supporting Actor');  -- Toby Jones for Captain America: The First Avenger (2011)
 INSERT INTO worked_on VALUES(3684, 2910, 'Small Part');  -- Derek Luke for Captain America: The First Avenger (2011)
 INSERT INTO worked_on VALUES(3684, 2911, 'Small Part');  -- Neal McDonough for Captain America: The First Avenger (2011)
+INSERT INTO worked_on VALUES(3685, 2060, 'Lead Actor');  -- Bradley Cooper for Limitless (2011)
+INSERT INTO worked_on VALUES(3685, 3, 'Supporting Actor');  -- Robert De Niro for Limitless (2011)
+INSERT INTO worked_on VALUES(3685, 2912, 'Supporting Actress');  -- Abbie Cornish for Limitless (2011)
+INSERT INTO worked_on VALUES(3685, 2913, 'Director');  -- Neil Burger for Limitless (2011)
