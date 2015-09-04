@@ -749,7 +749,7 @@ INSERT INTO movie VALUES (748, 'A History of Violence', 2005, '**½', 'R', 'Cana
 INSERT INTO movie VALUES (749, 'The Hit', 1984, '***', 'R', 'England', DEFAULT, 'tt0087414');
 INSERT INTO movie VALUES (750, 'Holes', 2003, '***½', 'PG', 'USA', DEFAULT, 'tt0311289');
 INSERT INTO movie VALUES (751, 'Home Alone', 1990, '***', 'PG', 'USA', DEFAULT, 'tt0099785');
-INSERT INTO movie VALUES (752, 'Home Alone 2: Lost in New York', 1992, '***', 'PG', 'USA', DEFAULT, NULL);
+INSERT INTO movie VALUES (752, 'Home Alone 2: Lost in New York', 1992, '***', 'PG', 'USA', DEFAULT, 'tt0104431');
 INSERT INTO movie VALUES (753, 'Home Movie', 2002, '**½', 'NR', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (754, 'Hoodwinked!', 2005, '***', 'PG', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (755, 'Hook', 1991, '***', 'PG', 'USA', DEFAULT, NULL);
