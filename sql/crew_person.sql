@@ -2911,3 +2911,4 @@ INSERT INTO crew_person VALUES (2910, 'Luke', 'Derek', NULL, 'Derek Luke', 'Acto
 INSERT INTO crew_person VALUES (2911, 'McDonough', 'Neal', NULL, 'Neal McDonough', 'Actor');  -- Actor: Neal McDonough
 INSERT INTO crew_person VALUES (2912, 'Cornish', 'Abbie', NULL, 'Abbie Cornish', 'Actress');  -- Actress: Abbie Cornish
 INSERT INTO crew_person VALUES (2913, 'Burger', 'Neil', NULL, 'Neil Burger', 'Director');  -- Director: Neil Burger
+INSERT INTO crew_person VALUES (2914, 'Brosnan', 'Pierce', NULL, 'Pierce Brosnan', 'Actor');  -- Actor: Pierce Brosnan
