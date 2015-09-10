@@ -358,3 +358,4 @@ INSERT INTO tag VALUES (357, 'magic/magician(s)', 61);
 INSERT INTO tag VALUES (358, 'college', NULL);
 INSERT INTO tag VALUES (359, 'golf', 20);
 INSERT INTO tag VALUES (360, 'missing-person(s)', NULL);
+INSERT INTO tag VALUES (361, 'non-professional-actor(s)', NULL);
