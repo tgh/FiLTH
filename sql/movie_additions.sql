@@ -41,3 +41,4 @@ INSERT INTO movie VALUES (3683, 'Ace Ventura: When Nature Calls', 1995, '**', 'P
 INSERT INTO movie VALUES (3684, 'Captain America: The First Avenger', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0458339');
 INSERT INTO movie VALUES (3685, 'Limitless', 2011, '***', 'PG-13', 'USA', NULL, 'tt1219289');
 INSERT INTO movie VALUES (3686, 'The World''s End', 2013, '***', 'R', 'England', NULL, 'tt1213663');
+UPDATE movie SET year = 1996 WHERE mid = 779;

@@ -776,7 +776,7 @@ INSERT INTO movie VALUES (775, 'The Hurricane', 1999, '**½', 'R', 'USA', DEFAUL
 INSERT INTO movie VALUES (776, 'The Hurt Locker', 2009, '****', 'R', 'USA', DEFAULT, 'tt0887912');
 INSERT INTO movie VALUES (777, 'Husbands and Wives', 1992, '***½', 'R', 'USA', DEFAULT, 'tt0104466');
 INSERT INTO movie VALUES (778, 'The Hustler', 1961, '****', 'NR', 'USA', DEFAULT, 'tt0054997');
-INSERT INTO movie VALUES (779, 'Hype!', 1997, '***', 'NR', 'USA', DEFAULT, 'tt0116589');
+INSERT INTO movie VALUES (779, 'Hype!', 1996, '***', 'NR', 'USA', DEFAULT, 'tt0116589');
 INSERT INTO movie VALUES (780, 'I Heart Huckabees', 2004, '***½', 'R', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (781, 'I Am Legend', 2007, '**', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO movie VALUES (782, 'I Am Sam', 2001, '***', 'PG-13', 'USA', DEFAULT, NULL);
