@@ -28,7 +28,9 @@ country text DEFAULT NULL,
 -- text field for comments/notes regarding the movie
 comments text DEFAULT NULL,
 -- id for IMDB
-imdb_id text DEFAULT NULL);
+imdb_id text DEFAULT NULL,
+-- number of times seen in the theater
+theater_viewings smallint DEFAULT NULL);
 
 
 -- a country entity -----------------------------------------------------------
