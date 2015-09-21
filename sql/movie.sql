@@ -3684,3 +3684,4 @@ INSERT INTO movie VALUES (3685, 'Limitless', 2011, '***', 'PG-13', 'USA', NULL, 
 INSERT INTO movie VALUES (3686, 'The World''s End', 2013, '***', 'R', 'England', NULL, 'tt1213663', 0);
 INSERT INTO movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0);
 INSERT INTO movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0);
+INSERT INTO movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1);

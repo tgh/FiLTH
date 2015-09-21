@@ -78,3 +78,6 @@ INSERT INTO crew_person VALUES (2915, 'Sheen', 'Ruth', NULL, 'Ruth Sheen', 'Actr
 INSERT INTO crew_person VALUES (2916, 'Atkinson', 'Dorothy', NULL, 'Dorothy Atkinson', 'Actress');  -- Actress: Dorothy Atkinson
 INSERT INTO crew_person VALUES (2917, 'Jesson', 'Paul', NULL, 'Paul Jesson', 'Actor');  -- Actor: Paul Jesson
 INSERT INTO crew_person VALUES (2918, 'Bailey', 'Marion', NULL, 'Marion Bailey', 'Actress');  -- Actress: Marion Bailey
+INSERT INTO crew_person VALUES (2919, 'Villeneuve', 'Denis', NULL, 'Denis Villeneuve', 'Director');  -- Director: Denis Villeneuve
+INSERT INTO crew_person VALUES (2920, 'Donovan', 'Jeffrey', NULL, 'Jeffrey Donovan', 'Actor');  -- Actor: Jeffrey Donovan
+INSERT INTO crew_person VALUES (2921, 'Kaluuya', 'Daniel', NULL, 'Daniel Kaluuya', 'Actor');  -- Actor: Daniel Kaluuya
