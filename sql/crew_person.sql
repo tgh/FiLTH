@@ -2951,3 +2951,8 @@ INSERT INTO crew_person VALUES (2952, 'Seresin', 'Michael', NULL, 'Michael Seres
 INSERT INTO crew_person VALUES (2953, 'Zhao', 'Xiaoding', NULL, 'Xiaoding Zhao', 'Cinematographer');  -- Cinematographer: Xiaoding Zhao
 INSERT INTO crew_person VALUES (2954, 'Baena', 'Jeff', NULL, 'Jeff Baena', 'Screenwriter');  -- Screenwriter: Jeff Baena
 INSERT INTO crew_person VALUES (2955, 'Barratier', 'Christophe', NULL, 'Christophe Barratier', 'Director');  -- Director: Christophe Barratier
+INSERT INTO crew_person VALUES (2956, 'Lopes-Curval', 'Philippe', NULL, 'Philippe Lopes-Curval', 'Screenwriter');  -- Screenwriter: Philippe Lopes-Curval
+INSERT INTO crew_person VALUES (2957, 'Ammaniti', 'Niccolo', NULL, 'Niccolo Ammaniti', 'Screenwriter');  -- Screenwriter: Niccolo Ammaniti
+INSERT INTO crew_person VALUES (2958, 'Marciano', 'Francesca', NULL, 'Francesca Marciano', 'Screenwriter');  -- Screenwriter: Francesca Marciano
+INSERT INTO crew_person VALUES (2959, 'Pyne', 'Daniel', NULL, 'Daniel Pyne', 'Screenwriter');  -- Screenwriter: Daniel Pyne
+INSERT INTO crew_person VALUES (2960, 'Georgaris', 'Dean', NULL, 'Dean Georgaris', 'Screenwriter');  -- Screenwriter: Dean Georgaris
