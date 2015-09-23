@@ -170,6 +170,8 @@ SETTING UP ENVIRONMENT
 
     local   all             filth_admin                             trust
 - **may want to change 'trust' to 'ident' or 'md5' to force password
+- to query db as filth_admin:
+  $ psql -U filth_admin -d filth
 
 
 NEEDS
@@ -390,7 +392,7 @@ REFERENCES
 
 TOOLS USED/TRIED OUT
 ---------------------
-* denotes possible requirements for end user
+* denotes possible requirements for dev
 - Dia (diagram tool--used for E-R diagram for database schema)
 - Git (for version control)
 - Postgres* (database)
