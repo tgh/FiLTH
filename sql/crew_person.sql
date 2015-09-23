@@ -2956,3 +2956,4 @@ INSERT INTO crew_person VALUES (2957, 'Ammaniti', 'Niccolo', NULL, 'Niccolo Amma
 INSERT INTO crew_person VALUES (2958, 'Marciano', 'Francesca', NULL, 'Francesca Marciano', 'Screenwriter');  -- Screenwriter: Francesca Marciano
 INSERT INTO crew_person VALUES (2959, 'Pyne', 'Daniel', NULL, 'Daniel Pyne', 'Screenwriter');  -- Screenwriter: Daniel Pyne
 INSERT INTO crew_person VALUES (2960, 'Georgaris', 'Dean', NULL, 'Dean Georgaris', 'Screenwriter');  -- Screenwriter: Dean Georgaris
+INSERT INTO crew_person VALUES (2961, 'Auteuil', 'Daniel', NULL, 'Daniel Auteuil', 'Actor');  -- Actor: Daniel Auteuil

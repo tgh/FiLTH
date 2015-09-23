@@ -6399,3 +6399,4 @@ INSERT INTO worked_on VALUES(795, 2957, 'Screenwriter');  -- Niccolo Ammaniti fo
 INSERT INTO worked_on VALUES(795, 2958, 'Screenwriter');  -- Francesca Marciano for I'm Not Scared (2004)
 INSERT INTO worked_on VALUES(1015, 2959, 'Screenwriter');  -- Daniel Pyne for The Manchurian Candidate (2004)
 INSERT INTO worked_on VALUES(1015, 2960, 'Screenwriter');  -- Dean Georgaris for The Manchurian Candidate (2004)
+INSERT INTO worked_on VALUES(283, 2961, 'Lead Actor');  -- Daniel Auteuil for Cache (2005)
