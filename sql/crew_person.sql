@@ -2957,3 +2957,22 @@ INSERT INTO crew_person VALUES (2958, 'Marciano', 'Francesca', NULL, 'Francesca 
 INSERT INTO crew_person VALUES (2959, 'Pyne', 'Daniel', NULL, 'Daniel Pyne', 'Screenwriter');  -- Screenwriter: Daniel Pyne
 INSERT INTO crew_person VALUES (2960, 'Georgaris', 'Dean', NULL, 'Dean Georgaris', 'Screenwriter');  -- Screenwriter: Dean Georgaris
 INSERT INTO crew_person VALUES (2961, 'Auteuil', 'Daniel', NULL, 'Daniel Auteuil', 'Actor');  -- Actor: Daniel Auteuil
+INSERT INTO crew_person VALUES (2962, 'Jentsch', 'Julia', NULL, 'Julia Jentsch', 'Actress');  -- Actress: Julia Jentsch
+INSERT INTO crew_person VALUES (2963, 'Monaghan', 'Michelle', NULL, 'Michelle Monaghan', 'Actress');  -- Actress: Michelle Monaghan
+INSERT INTO crew_person VALUES (2964, 'Newton', 'Thandie', NULL, 'Thandie Newton', 'Actress');  -- Actress: Thandie Newton
+INSERT INTO crew_person VALUES (2965, 'Caro', 'Niki', NULL, 'Niki Caro', 'Director');  -- Director: Niki Caro
+INSERT INTO crew_person VALUES (2966, 'Haneke', 'Michael', NULL, 'Michael Haneke', 'Director');  -- Director: Michael Haneke
+INSERT INTO crew_person VALUES (2967, 'Doebereiner', 'Debbie', NULL, 'Debbie Doebereiner', 'Actress');  -- Actress: Debbie Doebereiner
+INSERT INTO crew_person VALUES (2968, 'Wilkins', 'Misty', NULL, 'Misty Wilkins', 'Actress');  -- Actress: Misty Wilkins
+INSERT INTO crew_person VALUES (2969, 'Feuerzeig', 'Jeff', NULL, 'Jeff Feuerzeig', 'Director');  -- Director: Jeff Feuerzeig
+INSERT INTO crew_person VALUES (2970, 'Babin', 'Paul', 'C.', 'Paul C. Babin', 'Cinematographer');  -- Cinematographer: Paul C. Babin
+INSERT INTO crew_person VALUES (2971, 'Grobet', 'Xavier', 'Perez', 'Xavier Pérez Grobet', 'Cinematographer');  -- Cinematographer: Xavier Perez Grobet
+INSERT INTO crew_person VALUES (2972, 'Hough', 'Coleman', NULL, 'Coleman Hough', 'Screenwriter');  -- Screenwriter: Coleman Hough
+INSERT INTO crew_person VALUES (2973, 'Fogelman', 'Dan', NULL, 'Dan Fogelman', 'Screenwriter');  -- Screenwriter: Dan Fogelman
+INSERT INTO crew_person VALUES (2974, 'Murray', 'Kiel', NULL, 'Kiel Murray', 'Screenwriter');  -- Screenwriter: Kiel Murray
+INSERT INTO crew_person VALUES (2975, 'Lorin', 'Phil', NULL, 'Phil Lorin', 'Screenwriter');  -- Screenwriter: Phil Lorin
+INSERT INTO crew_person VALUES (2976, 'Klubien', 'Jorgen', NULL, 'Jorgen Klubien', 'Screenwriter');  -- Screenwriter: Jorgen Klubien
+INSERT INTO crew_person VALUES (2977, 'Fleck', 'Ryan', NULL, 'Ryan Fleck', 'Director');  -- Director: Ryan Fleck
+INSERT INTO crew_person VALUES (2978, 'Boden', 'Anna', NULL, 'Anna Boden', 'Screenwriter');  -- Screenwriter: Anna Boden
+INSERT INTO crew_person VALUES (2979, 'Helm', 'Zach', NULL, 'Zach Helm', 'Screenwriter');  -- Screenwriter: Zach Helm
+INSERT INTO crew_person VALUES (2980, 'McKenna', 'Aline', 'Brosh', 'Aline Brosh McKenna', 'Screenwriter');  -- Screenwriter: Aline Brosh McKenna
