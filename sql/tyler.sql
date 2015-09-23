@@ -8,6 +8,6 @@ INSERT INTO tyler VALUES (7, 'Best Documentary');
 INSERT INTO tyler VALUES (8, 'Best Cinematography');
 INSERT INTO tyler VALUES (9, 'Best Adapted Screenplay');
 INSERT INTO tyler VALUES (10, 'Best Original Screenplay');
-INSERT INTO tyler VALUES (11, 'Best Animated Film');
+INSERT INTO tyler VALUES (11, 'Best Animated Feature');
 INSERT INTO tyler VALUES (12, 'Best Scene');
 INSERT INTO tyler VALUES (13, 'Worst Picture');
