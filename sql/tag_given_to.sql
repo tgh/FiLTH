@@ -10657,7 +10657,7 @@ INSERT INTO tag_given_to VALUES(737, 189);  -- Hereafter (2010) tagged with 'nat
 INSERT INTO tag_given_to VALUES(737, 56);  -- Hereafter (2010) tagged with 'disaster'
 INSERT INTO tag_given_to VALUES(738, 241);  -- Hero (1992) tagged with 'class-conflict'
 INSERT INTO tag_given_to VALUES(738, 238);  -- Hero (1992) tagged with 'lower-class'
-INSERT INTO tag_given_to VALUES(738, 240);  -- Hero (1992) tagged with 'riches-to-rags'
+INSERT INTO tag_given_to VALUES(738, 239);  -- Hero (1992) tagged with 'rags-to-riches'
 INSERT INTO tag_given_to VALUES(738, 194);  -- Hero (1992) tagged with 'plane-crash'
 INSERT INTO tag_given_to VALUES(738, 325);  -- Hero (1992) tagged with 'tv-news'
 INSERT INTO tag_given_to VALUES(738, 236);  -- Hero (1992) tagged with 'social-classes'
