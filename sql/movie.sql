@@ -441,7 +441,7 @@ INSERT INTO movie VALUES (440, 'Deliverance', 1972, '***', 'R', 'USA', DEFAULT, 
 INSERT INTO movie VALUES (441, 'The Departed', 2006, '****', 'R', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (442, 'Desk Set', 1957, '***½', 'NR', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (443, 'Deterrence', 2000, '***½', 'R', 'USA', DEFAULT, NULL, 0);
-INSERT INTO movie VALUES (444, 'Devil and Daniel Johnston', 2006, '***½', 'PG-13', 'USA', DEFAULT, NULL, 0);
+INSERT INTO movie VALUES (444, 'The Devil and Daniel Johnston', 2006, '***½', 'PG-13', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (445, 'The Devil Wears Prada', 2006, '***½', 'PG-13', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (446, 'Dial M for Murder', 1954, '***', 'NR', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (447, 'Diary of a Country Priest', 1951, '***½', 'NR', 'France', DEFAULT, NULL, 0);
