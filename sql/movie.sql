@@ -3682,6 +3682,6 @@ INSERT INTO movie VALUES (3683, 'Ace Ventura: When Nature Calls', 1995, '**', 'P
 INSERT INTO movie VALUES (3684, 'Captain America: The First Avenger', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0458339', 0); -- 8/26/15
 INSERT INTO movie VALUES (3685, 'Limitless', 2011, '***', 'PG-13', 'USA', NULL, 'tt1219289', 0); -- 9/1/15
 INSERT INTO movie VALUES (3686, 'The World''s End', 2013, '***', 'R', 'England', NULL, 'tt1213663', 0);
-INSERT INTO movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0);
-INSERT INTO movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0);
-INSERT INTO movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1);
+INSERT INTO movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0); -- 9/13/15
+INSERT INTO movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0); -- 9/17/15
+INSERT INTO movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1); -- 9/19/15
