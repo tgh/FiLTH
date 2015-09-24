@@ -10860,3 +10860,4 @@ INSERT INTO tag_given_to VALUES(3689, 309);  -- Sicario (2015) tagged with 'grap
 INSERT INTO tag_given_to VALUES(3689, 25);  -- Sicario (2015) tagged with 'crime'
 INSERT INTO tag_given_to VALUES(3689, 133);  -- Sicario (2015) tagged with 'law-enforcement'
 INSERT INTO tag_given_to VALUES(3689, 63);  -- Sicario (2015) tagged with 'graphic'
+INSERT INTO tag_given_to VALUES(3689, 347);  -- Sicario (2015) tagged with 'revenge'
