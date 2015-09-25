@@ -11,3 +11,4 @@ INSERT INTO tyler VALUES (10, 'Best Original Screenplay');
 INSERT INTO tyler VALUES (11, 'Best Animated Feature');
 INSERT INTO tyler VALUES (12, 'Best Scene');
 INSERT INTO tyler VALUES (13, 'Worst Picture');
+INSERT INTO tyler VALUES (14, 'Best Foreign Language Film');
