@@ -3685,3 +3685,7 @@ INSERT INTO movie VALUES (3686, 'The World''s End', 2013, '***', 'R', 'England',
 INSERT INTO movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0); -- 9/13/15
 INSERT INTO movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0); -- 9/17/15
 INSERT INTO movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1); -- 9/19/15
+INSERT INTO movie VALUES (3690, 'Aloha', 2015, '**', 'PG-13', 'USA', NULL, 'tt1243974', 0); -- 9/25/15
+INSERT INTO movie VALUES (3691, 'The Disappearance of Eleanor Rigby: Him', 2013, '***', 'R', 'USA', NULL, 'tt1531924', 0); -- 9/26/15
+INSERT INTO movie VALUES (3692, 'Leap Year', 2010, '**', 'PG', 'USA', NULL, 'tt1216492', 0); -- 9/27/15
+INSERT INTO movie VALUES (3693, 'Reservation Road', 2007, '***', 'R', 'USA', NULL, 'tt0831884', 0); -- 9/26/15

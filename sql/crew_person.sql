@@ -3051,3 +3051,6 @@ INSERT INTO crew_person VALUES (3052, 'Taylor', 'Tate', NULL, 'Tate Taylor', 'Di
 INSERT INTO crew_person VALUES (3053, 'Willimon', 'Beau', NULL, 'Beau Willimon', 'Screenwriter');  -- Screenwriter: Beau Willimon
 INSERT INTO crew_person VALUES (3054, 'Trier', 'Joachim', NULL, 'Joachim Trier', 'Director');  -- Director: Joachim Trier
 INSERT INTO crew_person VALUES (3055, 'Vogt', 'Eskil', NULL, 'Eskil Vogt', 'Screenwriter');  -- Screenwriter: Eskil Vogt
+INSERT INTO crew_person VALUES (3056, 'Tucker', 'Anand', NULL, 'Anand Tucker', 'Director');  -- Director: Anand Tucker
+INSERT INTO crew_person VALUES (3057, 'Scott', 'Adam', NULL, 'Adam Scott', 'Actor');  -- Actor: Adam Scott
+INSERT INTO crew_person VALUES (3058, 'Schwartz', 'John', 'Burnham', 'John Burnham Schwartz', 'Screenwriter');  -- Screenwriter: John Burnham Schwartz

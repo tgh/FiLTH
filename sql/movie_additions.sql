@@ -45,3 +45,7 @@ UPDATE movie SET year = 1996 WHERE mid = 779;
 INSERT INTO movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0);
 INSERT INTO movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0);
 INSERT INTO movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1);
+INSERT INTO movie VALUES (3690, 'Aloha', 2015, '**', 'PG-13', 'USA', NULL, 'tt1243974', 0);
+INSERT INTO movie VALUES (3691, 'The Disappearance of Eleanor Rigby: Him', 2013, '***', 'R', 'USA', NULL, 'tt1531924', 0);
+INSERT INTO movie VALUES (3692, 'Leap Year', 2010, '**', 'PG', 'USA', NULL, 'enter 'q' to quit, or any number of positions as a comma-separated list (e.g. "1,3,5").', 0);
+INSERT INTO movie VALUES (3693, 'Reservation Road', 2007, '***', 'R', 'USA', NULL, 'tt0831884', 0);

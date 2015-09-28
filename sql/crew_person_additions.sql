@@ -81,3 +81,6 @@ INSERT INTO crew_person VALUES (2918, 'Bailey', 'Marion', NULL, 'Marion Bailey',
 INSERT INTO crew_person VALUES (2919, 'Villeneuve', 'Denis', NULL, 'Denis Villeneuve', 'Director');  -- Director: Denis Villeneuve
 INSERT INTO crew_person VALUES (2920, 'Donovan', 'Jeffrey', NULL, 'Jeffrey Donovan', 'Actor');  -- Actor: Jeffrey Donovan
 INSERT INTO crew_person VALUES (2921, 'Kaluuya', 'Daniel', NULL, 'Daniel Kaluuya', 'Actor');  -- Actor: Daniel Kaluuya
+INSERT INTO crew_person VALUES (3056, 'Tucker', 'Anand', NULL, 'Anand Tucker', 'Director');  -- Director: Anand Tucker
+INSERT INTO crew_person VALUES (3057, 'Scott', 'Adam', NULL, 'Adam Scott', 'Actor');  -- Actor: Adam Scott
+INSERT INTO crew_person VALUES (3058, 'Schwartz', 'John', 'Burnham', 'John Burnham Schwartz', 'Screenwriter');  -- Screenwriter: John Burnham Schwartz
