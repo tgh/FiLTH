@@ -3054,3 +3054,8 @@ INSERT INTO crew_person VALUES (3055, 'Vogt', 'Eskil', NULL, 'Eskil Vogt', 'Scre
 INSERT INTO crew_person VALUES (3056, 'Tucker', 'Anand', NULL, 'Anand Tucker', 'Director');  -- Director: Anand Tucker
 INSERT INTO crew_person VALUES (3057, 'Scott', 'Adam', NULL, 'Adam Scott', 'Actor');  -- Actor: Adam Scott
 INSERT INTO crew_person VALUES (3058, 'Schwartz', 'John', 'Burnham', 'John Burnham Schwartz', 'Screenwriter');  -- Screenwriter: John Burnham Schwartz
+INSERT INTO crew_person VALUES (3059, 'Salgado', 'Juliano', 'Ribeiro', 'Juliano Ribeiro Salgado', 'Director');  -- Director: Juliano Ribeiro Salgado
+INSERT INTO crew_person VALUES (3060, 'Rosier', 'David', NULL, 'David Rosier', 'Screenwriter');  -- Screenwriter: David Rosier
+INSERT INTO crew_person VALUES (3061, 'Barbier', 'Hugo', NULL, 'Hugo Barbier', 'Cinematographer');  -- Cinematographer: Hugo Barbier
+INSERT INTO crew_person VALUES (3062, 'Browne', 'Christopher', NULL, 'Christopher Browne', 'Screenwriter');  -- Screenwriter: Christopher Browne
+INSERT INTO crew_person VALUES (3063, 'Gordon-Levitt', 'Joseph', NULL, 'Joseph Gordon-Levitt', 'Actor');  -- Actor: Joseph Gordon-Levitt

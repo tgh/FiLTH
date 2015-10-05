@@ -49,3 +49,6 @@ INSERT INTO movie VALUES (3690, 'Aloha', 2015, '**', 'PG-13', 'USA', NULL, 'tt12
 INSERT INTO movie VALUES (3691, 'The Disappearance of Eleanor Rigby: Him', 2013, '***', 'R', 'USA', NULL, 'tt1531924', 0);
 INSERT INTO movie VALUES (3692, 'Leap Year', 2010, '**', 'PG', 'USA', NULL, 'enter 'q' to quit, or any number of positions as a comma-separated list (e.g. "1,3,5").', 0);
 INSERT INTO movie VALUES (3693, 'Reservation Road', 2007, '***', 'R', 'USA', NULL, 'tt0831884', 0);
+INSERT INTO movie VALUES (3694, 'Food Chains', 2014, '***', 'NR', 'USA', NULL, 'tt2141739', 0);
+INSERT INTO movie VALUES (3695, 'The Salt of the Earth', 2014, '***', 'PG-13', DEFAULT, NULL, 'tt3674140', 0);
+INSERT INTO movie VALUES (3696, 'The Walk', 2015, '***', 'PG', 'USA', NULL, 'tt3488710', 1);
