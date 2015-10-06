@@ -15,7 +15,7 @@ POSITIONS = {'1':'Director','2':'Screenwriter','3':'Cinematographer','4':'Actor'
 CATEGORY_POSITIONS = {'Best Actor':'Lead Actor','Best Actress':'Lead Actress','Best Supporting Actor':'Supporting Actor','Best Supporting Actress':'Supporting Actress','Best Director':'Director','Best Cinematography':'Cinematographer','Best Adapted Screenplay':'Screenwriter','Best Original Screenplay':'Screenwriter'}
 
 FIRST_YEAR = 2003
-LAST_YEAR = 2011
+LAST_YEAR = 2012
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 DATA_PATH = FILTH_PATH + '/data/'
 MOVIE_FILE = FILTH_PATH + '/sql/movie.sql'
@@ -240,7 +240,7 @@ def processAwardFile(filename):
         if fields[SCENE].strip() == '':
             scene = 'NULL'
         else:
-            scene = "'" + fields[SCENE].strip().replace("'", "''") + "'"
+            scene = "'" + fields[SCENE].strip()..strip('"').replace("'", "''") + "'"
 
         if '|' in fields[TITLE]:
             movies = fields[TITLE].split('|')
