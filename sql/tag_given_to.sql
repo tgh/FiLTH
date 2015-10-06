@@ -8013,6 +8013,7 @@ INSERT INTO tag_given_to VALUES(213, 58);  -- Blade Runner (1982) tagged with 'b
 INSERT INTO tag_given_to VALUES(214, 332);  -- Blades of Glory (2007) tagged with 'olympics'
 INSERT INTO tag_given_to VALUES(214, 87);  -- Blades of Glory (2007) tagged with 'silly'
 INSERT INTO tag_given_to VALUES(215, 8);  -- The Blair Witch Project (1999) tagged with 'mystery'
+INSERT INTO tag_given_to VALUES(215, 277);  -- The Blair Witch Project (1999) tagged with 'scary'
 INSERT INTO tag_given_to VALUES(216, 96);  -- The Blind Side (2009) tagged with 'football'
 INSERT INTO tag_given_to VALUES(216, 207);  -- The Blind Side (2009) tagged with 'based-on-a-true-story'
 INSERT INTO tag_given_to VALUES(216, 263);  -- The Blind Side (2009) tagged with 'family'
@@ -11128,3 +11129,5 @@ INSERT INTO tag_given_to VALUES(3696, 26);  -- The Walk (2015) tagged with 'hist
 INSERT INTO tag_given_to VALUES(3696, 58);  -- The Walk (2015) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(3696, 118);  -- The Walk (2015) tagged with '20th-century'
 INSERT INTO tag_given_to VALUES(3696, 21);  -- The Walk (2015) tagged with 'period'
+INSERT INTO tag_given_to VALUES(3696, 59);  -- The Walk (20015) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(3696, 60);  -- The Walk (20015) tagged with 'based-on-book'
