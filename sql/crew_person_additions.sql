@@ -89,3 +89,4 @@ INSERT INTO crew_person VALUES (3060, 'Rosier', 'David', NULL, 'David Rosier', '
 INSERT INTO crew_person VALUES (3061, 'Barbier', 'Hugo', NULL, 'Hugo Barbier', 'Cinematographer');  -- Cinematographer: Hugo Barbier
 INSERT INTO crew_person VALUES (3062, 'Browne', 'Christopher', NULL, 'Christopher Browne', 'Screenwriter');  -- Screenwriter: Christopher Browne
 INSERT INTO crew_person VALUES (3063, 'Gordon-Levitt', 'Joseph', NULL, 'Joseph Gordon-Levitt', 'Actor');  -- Actor: Joseph Gordon-Levitt
+INSERT INTO crew_person VALUES (3064, 'Stuhlbarg', 'Michael', NULL, 'Michael Stuhlbarg', 'Actor');  -- Actor: Michael Stuhlbarg
