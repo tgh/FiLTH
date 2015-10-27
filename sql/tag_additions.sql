@@ -9,3 +9,4 @@ INSERT INTO tag VALUES (360, 'missing-person(s)', NULL);
 INSERT INTO tag VALUES (361, 'non-professional-actor(s)', NULL);
 INSERT INTO tag VALUES (362, 'loss', NULL);
 INSERT INTO tag VALUES (363, 'deafness', 156);
+INSERT INTO tag VALUES (364, 'jewish/judaism', 50);
