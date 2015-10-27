@@ -38,6 +38,7 @@ WORKED_ON_FILE = FILTH_PATH + '/sql/worked_on.sql'
 LOG_FILE = FILTH_PATH + '/logs/oscars_2009_and_up.log'
 OSCAR_FILE = FILTH_PATH + '/sql/oscar.sql'
 OSCAR_GIVEN_TO_FILE = FILTH_PATH + '/sql/oscar_given_to.sql'
+COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
 
                                                          # mid, oid, cid, year, status, sharing_with
 INSERT_FORMAT_STRING = "INSERT INTO oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
@@ -46,6 +47,8 @@ _inserts = []
 _crewInserts = []
 _workedOnInserts = []
 _movieInserts = []
+_countryInserts = []
+_countries = [] # set of known countries
 _woCache = []   # list of tuples: (mid, cid, position)
 _movies = {}    # "title (year)" -> id 
 _crew = {}      # "firstname middlename lastname" -> id
@@ -69,6 +72,8 @@ def init():
     initMoviesMap()
     initCrewMap()
     initOscarMap()
+    initWorkedOnCache()
+    initCountries()
 
 
 #-----------------------------------------------------------------------------
@@ -106,7 +111,6 @@ def initMoviesMap():
         year = vals[0]
 
         _movies[title + ' (' + year + ')'] = mid
-        _logFile.write('Movie: ' + title + ' (' + year + ') -> ' + mid + '\n')
 
     _nextMid = str(int(mid) + 1)
 
@@ -129,7 +133,6 @@ def initCrewMap():
         name = vals[4].strip().strip("'")
 
         _crew[name] = cid
-        _logFile.write('Crew: ' + name + ' -> ' + cid + '\n')
 
     _nextCid = str(int(cid) + 1)
 
@@ -169,16 +172,33 @@ def initWorkedOnCache():
         vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
 
         mid = vals[0]
-        cid = vals[1]
-        pos = vales[2].strip("'")
+        cid = vals[1].strip()
+        pos = vals[2].strip().strip("'")
 
-        _woCache.insert((mid,cid,pos))
+        _woCache.append((mid,cid,pos))
+        _logFile.write('    (' + mid + ', ' + cid + ', ' + pos + ')\n')
+
+
+#-----------------------------------------------------------------------------
+
+def initCountries():
+    global _countries, _logFile
+
+    _logFile.write('\n\n>>> Initializing countries set <<<\n\n')
+    f = open(COUNTRY_FILE, 'r')
+    lines = f.readlines()
+    f.close()
+
+    for line in lines:
+        country = re.search('VALUES \\(\'(.*)\'\\);', line).group(1)
+        _countries.append(country)
+        _logFile.write('    Adding country: ' + country + '\n')
 
 
 #-----------------------------------------------------------------------------
 
 def getMid(title, year, country):
-    global _nextMid, _logFile
+    global _nextMid, _logFile, _countries, _countryInserts
 
     try:
         mid = _movies[title + ' (' + year + ')']
@@ -202,10 +222,15 @@ def getMid(title, year, country):
                         country = raw_input('Country (leave blank if unknown)? ')
                         if country == '':
                             country = 'DEFAULT'
-                        else:
-                            country = "'" + country + "'"
                     else:
-                        country = "'" + country.strip() + "'"
+                        country = country.strip()
+
+                    if country != 'DEFAULT' and country not in _countries:
+                        _logFile.write('! Unknown country: ' + country + ' -- adding country\n')
+                        _countries.append(country)
+                        countryInsert = "INSERT INTO country VALUES ('" + country + "');\n"
+                        _countryInserts.append(countryInsert)
+                    country = "'" + country + "'"
 
                     mid = _nextMid
                     _nextMid = str(int(_nextMid) + 1)
@@ -233,7 +258,7 @@ def getCid(name, mid, title, year, category):
             _logFile.write('### No worked_on entry found for ' + name + ' for "' + title + '" (' + year + ')--adding INSERT to worked_on.sql\n')
             
             position = "'" + position + "'"        
-            woInsert = 'INSERT INTO worked_on VALUES(' + mid + ', ' + cid + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+            woInsert = 'INSERT INTO worked_on VALUES(' + str(mid) + ', ' + str(cid) + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
             _workedOnInserts.append(woInsert)
     except KeyError:
         while True:
@@ -309,7 +334,13 @@ def processOscarFile():
         status = fields[STATUS]
         title = fields[TITLE]
         country = fields[COUNTRY]
-        mid = getMid(title, year, country)
+
+        if title == 'Food Inc.':
+            mid = 3538
+        elif title == 'Two Days One Night':
+            mid = 3682
+        else:
+            mid = getMid(title, year, country)
 
         if '|' in fields[NOMINEES]:
             nominees = fields[NOMINEES].split('|')
@@ -350,6 +381,11 @@ def writeInserts():
     if len(_movieInserts) > 0:
         f = open(MOVIE_FILE, 'a')
         for insert in _movieInserts:
+            f.write(insert)
+        f.close()
+    if len(_countryInserts) > 0:
+        f = open(COUNTRY_FILE, 'a')
+        for insert in _countryInserts:
             f.write(insert)
         f.close()
 
