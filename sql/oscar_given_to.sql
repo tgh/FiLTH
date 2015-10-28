@@ -1213,7 +1213,7 @@ INSERT INTO oscar_given_to VALUES(1063, 2, 16, 2007, 0, 0);  -- 2007 Best Actor:
 INSERT INTO oscar_given_to VALUES(1619, 2, 17, 2007, 1, 0);  -- 2007 Best Actor: Daniel Day-Lewis for "There Will Be Blood"
 INSERT INTO oscar_given_to VALUES(1585, 2, 14, 2007, 0, 0);  -- 2007 Best Actor: Johnny Depp for "Sweeney Todd: The Demon Barber of Fleet Street"
 INSERT INTO oscar_given_to VALUES(2251, 2, 28, 2007, 0, 0);  -- 2007 Best Actor: Tommy Lee Jones for "In the Valley of Elah"
-INSERT INTO oscar_given_to VALUES(2252, 2, 666, 2007, 0, 0);  -- 2007 Best Actor: Viggo Mortensen for "Eastern Promises"
+INSERT INTO oscar_given_to VALUES(2252, 2, 29, 2007, 0, 0);  -- 2007 Best Actor: Viggo Mortensen for "Eastern Promises"
 INSERT INTO oscar_given_to VALUES(120, 4, 667, 2007, 0, 0);  -- 2007 Best Supporting Actor: Casey Affleck for "The Assassination of Jesse James by the Coward Robert Ford"
 INSERT INTO oscar_given_to VALUES(1185, 4, 30, 2007, 1, 0);  -- 2007 Best Supporting Actor: Javier Bardem for "No Country for Old Men"
 INSERT INTO oscar_given_to VALUES(2253, 4, 6, 2007, 0, 0);  -- 2007 Best Supporting Actor: Philip Seymour Hoffman for "Charlie Wilson's War"

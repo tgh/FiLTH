@@ -747,7 +747,7 @@ INSERT INTO worked_on VALUES(1063, 16, 'Lead Actor');  -- George Clooney worked 
 INSERT INTO worked_on VALUES(1619, 17, 'Lead Actor');  -- Daniel Day-Lewis worked on There Will Be Blood as Lead Actor
 INSERT INTO worked_on VALUES(1585, 14, 'Lead Actor');  -- Johnny Depp worked on Sweeney Todd: The Demon Barber of Fleet Street as Lead Actor
 INSERT INTO worked_on VALUES(2251, 28, 'Lead Actor');  -- Tommy Lee Jones worked on In the Valley of Elah as Lead Actor
-INSERT INTO worked_on VALUES(2252, 666, 'Lead Actor');  -- Viggo Mortensen worked on Eastern Promises as Lead Actor
+INSERT INTO worked_on VALUES(2252, 29, 'Lead Actor');  -- Viggo Mortensen worked on Eastern Promises as Lead Actor
 INSERT INTO worked_on VALUES(120, 667, 'Supporting Actor');  -- Casey Affleck worked on The Assassination of Jesse James by the Coward Robert Ford as Lead Actor
 INSERT INTO worked_on VALUES(1185, 30, 'Supporting Actor');  -- Javier Bardem worked on No Country for Old Men as Supporting Actor
 INSERT INTO worked_on VALUES(2253, 6, 'Supporting Actor');  -- Philip Seymour Hoffman worked on Charlie Wilson's War as Supporting Actor
@@ -4664,7 +4664,7 @@ INSERT INTO worked_on VALUES(114, 229, 'Director');  -- Ed Harris for Appaloosa 
 INSERT INTO worked_on VALUES(114, 229, 'Screenwriter');  -- Ed Harris for Appaloosa (2008)
 INSERT INTO worked_on VALUES(114, 229, 'Lead Actor');  -- Ed Harris for Appaloosa (2008)
 INSERT INTO worked_on VALUES(114, 2395, 'Screenwriter');  -- Robert Knott for Appaloosa (2008)
-INSERT INTO worked_on VALUES(114, 666, 'Supporting Actor');  -- Viggo Mortensen for Appaloosa (2008)
+INSERT INTO worked_on VALUES(114, 29, 'Supporting Actor');  -- Viggo Mortensen for Appaloosa (2008)
 INSERT INTO worked_on VALUES(114, 206, 'Supporting Actor');  -- Jeremy Irons for Appaloosa (2008)
 INSERT INTO worked_on VALUES(114, 2294, 'Supporting Actor');  -- Timothy Spall for Appaloosa (2008)
 INSERT INTO worked_on VALUES(114, 111, 'Lead Actress');  -- Renee Zellweger for Appaloosa (2008)
@@ -6045,7 +6045,7 @@ INSERT INTO worked_on VALUES(3646, 2018, 'Director');  -- Steven Knight for Lock
 INSERT INTO worked_on VALUES(3646, 2018, 'Screenwriter');  -- Steven Knight for Locke (2014)
 INSERT INTO worked_on VALUES(3647, 1969, 'Director');  -- Hossein Amini for Two Faces of January (2014)
 INSERT INTO worked_on VALUES(3647, 1969, 'Screenwriter');  -- Hossein Amini for Two Faces of January (2014)
-INSERT INTO worked_on VALUES(3647, 666, 'Lead Actor');  -- Viggo Mortensen for Two Faces of January (2014)
+INSERT INTO worked_on VALUES(3647, 29, 'Lead Actor');  -- Viggo Mortensen for Two Faces of January (2014)
 INSERT INTO worked_on VALUES(3647, 2098, 'Lead Actor');  -- Oscar Isaac for Two Faces of January (2014)
 INSERT INTO worked_on VALUES(3647, 2345, 'Supporting Actress');  -- Kirsten Dunst for Two Faces of January (2014)
 INSERT INTO worked_on VALUES(3648, 143, 'Character Voice');  -- Ben Kingsley for The Boxtrolls (2014)

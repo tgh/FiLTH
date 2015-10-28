@@ -471,7 +471,7 @@ INSERT INTO tyler_given_to VALUES (817, 2, 20, 0, NULL); -- Matt Damon for Best 
 INSERT INTO tyler_given_to VALUES (832, 2, 64, 0, NULL); -- Morgan Freeman for Best Actor for Invictus (2009)
 INSERT INTO tyler_given_to VALUES (1616, 2, 668, 0, NULL); -- Hal Holbrook for Best Actor for That Evening Sun (2009)
 INSERT INTO tyler_given_to VALUES (678, 2, 7, 0, NULL); -- John Malkovich for Best Actor for The Great Buck Howard (2009)
-INSERT INTO tyler_given_to VALUES (1374, 2, 666, 0, NULL); -- Viggo Mortensen for Best Actor for The Road (2009)
+INSERT INTO tyler_given_to VALUES (1374, 2, 29, 0, NULL); -- Viggo Mortensen for Best Actor for The Road (2009)
 INSERT INTO tyler_given_to VALUES (776, 2, 2062, 0, NULL); -- Jeremy Renner for Best Actor for The Hurt Locker (2009)
 INSERT INTO tyler_given_to VALUES (1104, 2, 173, 1, NULL); -- Sam Rockwell for Best Actor for Moon (2009)
 INSERT INTO tyler_given_to VALUES (216, 3, 2723, 0, NULL); -- Sandra Bullock for Best Actress for The Blind Side (2009)

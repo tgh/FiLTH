@@ -664,7 +664,7 @@ INSERT INTO crew_person VALUES (662, 'Howard', 'Terrence', DEFAULT, 'Terrence Ho
 INSERT INTO crew_person VALUES (663, 'Gyllenhaal', 'Jake', DEFAULT, 'Jake Gyllenhaal', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (664, 'Haley', 'Jackie', 'Earle', 'Jackie Earle Haley', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (665, 'Murphy', 'Eddie', DEFAULT, 'Eddie Murphy', 'Actor');  -- Actor
-INSERT INTO crew_person VALUES (666, 'Mortensen', 'Viggo', DEFAULT, 'Viggo Mortensen', 'Actor');  -- Actor
+-- there was a duplicate entry of Viggo Mortensen at id 666
 INSERT INTO crew_person VALUES (667, 'Affleck', 'Casey', DEFAULT, 'Casey Affleck', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (668, 'Holbrook', 'Hal', DEFAULT, 'Hal Holbrook', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (669, 'Shannon', 'Michael', DEFAULT, 'Michael Shannon', 'Actor');  -- Actor
