@@ -815,7 +815,7 @@ INSERT INTO movie VALUES (814, 'Indiana Jones and the Last Crusade', 1989, '***'
 INSERT INTO movie VALUES (815, 'Indiana Jones and the Temple of Doom', 1984, '**', 'PG-13', 'USA', DEFAULT, 'tt0087469', 0);
 INSERT INTO movie VALUES (816, 'Indiana Jones and the Kingdom of the Crystal Skull', 2008, '**', 'PG-13', 'USA', DEFAULT, 'tt0367882', 1);
 INSERT INTO movie VALUES (817, 'The Informant!', 2009, '***½', 'R', 'USA', DEFAULT, 'tt1130080', 1);
-INSERT INTO movie VALUES (818, 'Inglorious Basterds', 2009, '***½', 'R', 'USA', DEFAULT, 'tt0361748', 0);
+INSERT INTO movie VALUES (818, 'Inglourious Basterds', 2009, '***½', 'R', 'USA', DEFAULT, 'tt0361748', 0);
 INSERT INTO movie VALUES (819, 'Innerspace', 1987, '***', 'PG', 'USA', DEFAULT, 'tt0093260', 1);
 INSERT INTO movie VALUES (820, 'Innocence', 2001, '**½', 'R', 'Australia', DEFAULT, 'tt0251141', 0);
 INSERT INTO movie VALUES (821, 'Inside Job', 2010, '***½', 'PG-13', 'USA', DEFAULT, 'tt1645089', 0);
@@ -844,7 +844,7 @@ INSERT INTO movie VALUES (843, 'The Italian Job', 2003, '***', 'PG-13', 'USA', D
 INSERT INTO movie VALUES (844, 'It''s a Wonderful Life', 1946, '****', 'NR', 'USA', DEFAULT, 'tt0038650', 0);
 INSERT INTO movie VALUES (845, 'It''s Complicated', 2009, '***', 'PG-13', 'USA', DEFAULT, 'tt1230414', 0);
 INSERT INTO movie VALUES (846, 'Jackass: The Movie', 2002, 'N/A', 'R', 'USA', DEFAULT, 'tt0322802', 1);
-INSERT INTO movie VALUES (847, 'The Jackel', 1997, '**½', 'R', 'USA', DEFAULT, 'tt0119395', 1);
+INSERT INTO movie VALUES (847, 'The Jackal', 1997, '**½', 'R', 'USA', DEFAULT, 'tt0119395', 1);
 INSERT INTO movie VALUES (848, 'Jackie Brown', 1997, '***', 'R', 'USA', DEFAULT, 'tt0119396', 0);
 INSERT INTO movie VALUES (849, 'Jacob''s Ladder', 1990, '**½', 'R', 'USA', DEFAULT, 'tt0099871', 0);
 INSERT INTO movie VALUES (850, 'Jagged Edge', 1985, '***', 'R', 'USA', DEFAULT, 'tt0089360', 0);
@@ -3623,7 +3623,7 @@ INSERT INTO movie VALUES (3624, 'Virunga', 2014, '**½', 'NR', 'England', NULL, 
 INSERT INTO movie VALUES (3625, 'Annie', 1982, '**', 'PG', 'USA', NULL, NULL, 0);
 INSERT INTO movie VALUES (3626, 'Joe', 2014, '**½', 'R', 'USA', NULL, NULL, 0);
 INSERT INTO movie VALUES (3627, 'Gone Girl', 2014, '***½', 'R', 'USA', NULL, NULL, 0);
-INSERT INTO movie VALUES (3628, 'Birdman or the Unexpected Virtue of Ignorance', 2014, '***', 'R', 'USA', NULL, NULL, 0);
+INSERT INTO movie VALUES (3628, 'Birdman: or (The Unexpected Virtue of Ignorance)', 2014, '***', 'R', 'USA', NULL, NULL, 0);
 INSERT INTO movie VALUES (3629, 'The Judge', 2014, '***', 'R', 'USA', NULL, NULL, 0);
 INSERT INTO movie VALUES (3630, 'Nausicaa of the Valley of the Wind', 1984, '***½', 'PG', 'Japan', NULL, NULL, 0);
 INSERT INTO movie VALUES (3631, 'The Theory of Everything', 2014, '**½', 'PG-13', 'England', NULL, NULL, 0);

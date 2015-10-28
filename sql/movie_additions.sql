@@ -53,3 +53,6 @@ INSERT INTO movie VALUES (3694, 'Food Chains', 2014, '***', 'NR', 'USA', NULL, '
 INSERT INTO movie VALUES (3695, 'The Salt of the Earth', 2014, '***', 'PG-13', DEFAULT, NULL, 'tt3674140', 0);
 INSERT INTO movie VALUES (3696, 'The Walk', 2015, '***', 'PG', 'USA', NULL, 'tt3488710', 1);
 INSERT INTO movie VALUES (3697, 'Steve Jobs', 2015, '***½', 'R', 'USA', NULL, 'tt2080374', 1);
+UPDATE movie SET title = 'Birdman: Or the Unexpected Virtue of Ignorance' WHERE mid = 3628;
+UPDATE movie SET title = 'Inglourious Basterds' WHERE mid = 818;
+UPDATE movie SET title = 'The Jackal' WHERE mid = 847;
