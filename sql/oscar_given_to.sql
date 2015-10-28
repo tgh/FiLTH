@@ -587,7 +587,7 @@ INSERT INTO oscar_given_to VALUES(1948, 2, 414, 1944, 0, 0);  -- 1944 Best Actor
 INSERT INTO oscar_given_to VALUES(932, 4, 450, 1944, 0, 0);  -- 1944 Best Supporting Actor: Clifton Webb for "Laura"
 INSERT INTO oscar_given_to VALUES(2085, 4, 426, 1944, 0, 0);  -- 1944 Best Supporting Actor: Claude Rains for "Mr. Skeffington"
 INSERT INTO oscar_given_to VALUES(2086, 4, 451, 1944, 0, 0);  -- 1944 Best Supporting Actor: Hume Cronyn for "The Seventh Cross"
-INSERT INTO oscar_given_to VALUES(1951, 4, 448, 1944, 1, 0);  -- 1944 Best Supporting Actor: Barry Fitzgerald for "Going My Way"
+INSERT INTO oscar_given_to VALUES(1951, 4, 448, 1944, 1, 0);  -- 1944 Best Supporting Actor: Barry Fitzgerald for "Going My Way" (this is not an error: he was actually nominated for both acting categories for the same role!)
 INSERT INTO oscar_given_to VALUES(1950, 4, 439, 1944, 0, 0);  -- 1944 Best Supporting Actor: Monty Woolley for "Since You Went Away"
 INSERT INTO oscar_given_to VALUES(1953, 2, 452, 1945, 0, 0);  -- 1945 Best Actor: Gene Kelly for "Anchors Aweigh"
 INSERT INTO oscar_given_to VALUES(1952, 2, 453, 1945, 1, 0);  -- 1945 Best Actor: Ray Milland for "The Lost Weekend"
