@@ -6734,3 +6734,4 @@ INSERT INTO worked_on VALUES(3739, 235, 'Cinematographer');  -- Roger Deakins fo
 INSERT INTO worked_on VALUES(3587, 3099, 'Screenwriter');  -- Graham Moore for The Imitation Game (2014)
 INSERT INTO worked_on VALUES(3747, 247, 'Screenwriter');  -- Paul Thomas Anderson for Inherent Vice (2014)
 INSERT INTO worked_on VALUES(3544, 3100, 'Screenwriter');  -- Hugo Guinness for The Grand Budapest Hotel (2014)
+INSERT INTO worked_on VALUES(2862, 1866, 'Director');  -- Gregory Nava for El Norte (1983)

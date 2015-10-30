@@ -2859,7 +2859,7 @@ INSERT INTO movie VALUES (2858, 'Prince of the City', 1981, 'not seen', 'R', 'US
 INSERT INTO movie VALUES (2859, 'Pennies from Heaven', 1981, 'not seen', 'R', 'USA', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (2860, 'Betrayal', 1983, 'not seen', 'R', 'England', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (2861, 'Splash', 1984, 'not seen', 'PG', 'USA', DEFAULT, NULL, NULL);
-INSERT INTO movie VALUES (2862, 'El Norte', 1984, 'not seen', 'R', 'USA', DEFAULT, NULL, NULL);
+INSERT INTO movie VALUES (2862, 'El Norte', 1983, '***½', 'R', 'USA', DEFAULT, 'tt0085482', 0);
 INSERT INTO movie VALUES (2863, 'The Official Story', 1985, 'not seen', 'R', 'Argentina', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (2864, 'My Beautiful Laundrette', 1986, 'not seen', 'R', 'England', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (2865, 'Crocodile Dundee', 1986, 'not seen', 'PG-13', 'Australia', DEFAULT, NULL, NULL);

@@ -56,3 +56,4 @@ INSERT INTO movie VALUES (3697, 'Steve Jobs', 2015, '***½', 'R', 'USA', NULL, '
 UPDATE movie SET title = 'Birdman: Or the Unexpected Virtue of Ignorance' WHERE mid = 3628;
 UPDATE movie SET title = 'Inglourious Basterds' WHERE mid = 818;
 UPDATE movie SET title = 'The Jackal' WHERE mid = 847;
+INSERT INTO movie VALUES (3748, 'El Norte', 1983, '***½', 'R', 'USA', NULL, 'tt0085482', 0);

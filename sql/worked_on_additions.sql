@@ -320,3 +320,4 @@ INSERT INTO worked_on VALUES(3697, 90, 'Supporting Actress');  -- Kate Winslet f
 INSERT INTO worked_on VALUES(3697, 2425, 'Supporting Actor');  -- Jeff Daniels for Steve Jobs (2015)
 INSERT INTO worked_on VALUES(3697, 2353, 'Supporting Actor');  -- Seth Rogen for Steve Jobs (2015)
 INSERT INTO worked_on VALUES(3697, 3064, 'Supporting Actor');  -- Michael Stuhlbarg for Steve Jobs (2015)
+INSERT INTO worked_on VALUES(3748, 1866, 'Director');  -- Gregory Nava for El Norte (1983)
