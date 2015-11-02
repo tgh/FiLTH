@@ -3743,3 +3743,6 @@ INSERT INTO movie VALUES (3744, 'Tangerines', 2014, 'not seen', 'NR', 'Estonia',
 INSERT INTO movie VALUES (3745, 'Timbuktu', 2014, 'not seen', 'PG-13', 'Mauritania', NULL, 'tt3409392', NULL);
 INSERT INTO movie VALUES (3746, 'Wild Tales', 2014, 'not seen', 'R', 'Argentina', NULL, 'tt3011894', NULL);
 INSERT INTO movie VALUES (3747, 'Inherent Vice', 2014, 'not seen', 'R', 'USA', NULL, 'tt1791528', NULL);
+INSERT INTO movie VALUES (3748, 'Bridge of Spies', 2015, '***', 'PG-13', 'USA', NULL, 'tt3682448', 1);
+INSERT INTO movie VALUES (3749, 'Crimson Peak', 2015, '**½', 'R', 'USA', NULL, 'tt2554274', 1);
+INSERT INTO movie VALUES (3750, 'The Martian', 2015, '***½', 'PG-13', 'USA', NULL, 'tt3659388', 1);

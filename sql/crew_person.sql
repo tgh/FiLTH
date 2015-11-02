@@ -3096,3 +3096,7 @@ INSERT INTO crew_person VALUES (3097, 'Zal', 'Lukasz', NULL, 'Lukasz Zal', 'Cine
 INSERT INTO crew_person VALUES (3098, 'Lenczewski', 'Ryszard', NULL, 'Ryszard Lenczewski', 'Cinematographer');  -- Cinematographer: Ryszard Lenczewski
 INSERT INTO crew_person VALUES (3099, 'Moore', 'Graham', NULL, 'Graham Moore', 'Screenwriter');  -- Screenwriter: Graham Moore
 INSERT INTO crew_person VALUES (3100, 'Guinness', 'Hugo', NULL, 'Hugo Guinness', 'Screenwriter');  -- Screenwriter: Hugo Guinness
+INSERT INTO crew_person VALUES (3101, 'Rylance', 'Mark', NULL, 'Mark Rylance', 'Actor');  -- Actor: Mark Rylance
+INSERT INTO crew_person VALUES (3102, 'Robbins', 'Matthew', NULL, 'Matthew Robbins', 'Screenwriter');  -- Screenwriter: Matthew Robbins
+INSERT INTO crew_person VALUES (3103, 'Mara', 'Kate', NULL, 'Kate Mara', 'Actress');  -- Actress: Kate Mara
+INSERT INTO crew_person VALUES (3104, 'Charman', 'Matt', NULL, 'Matt Charman', 'Screenwriter');  -- Screenwriter: Matt Charman

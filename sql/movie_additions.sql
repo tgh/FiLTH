@@ -57,3 +57,6 @@ UPDATE movie SET title = 'Birdman: Or the Unexpected Virtue of Ignorance' WHERE 
 UPDATE movie SET title = 'Inglourious Basterds' WHERE mid = 818;
 UPDATE movie SET title = 'The Jackal' WHERE mid = 847;
 INSERT INTO movie VALUES (3748, 'El Norte', 1983, '***½', 'R', 'USA', NULL, 'tt0085482', 0);
+INSERT INTO movie VALUES (3748, 'Bridge of Spies', 2015, '***', 'PG-13', 'USA', NULL, 'tt3682448', 1);
+INSERT INTO movie VALUES (3749, 'Crimson Peak', 2015, '**½', 'R', 'USA', NULL, 'tt2554274', 1);
+INSERT INTO movie VALUES (3750, 'The Martian', 2015, '***½', 'PG-13', 'USA', NULL, 'tt3659388', 1);
