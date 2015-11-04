@@ -6,12 +6,12 @@ Roger Ebert
 *Amadeus
 *Amarcord
 *Annie Hall
-*Au Hasard, Balthazar
+*Au Hasard Balthazar
 The Bank Dick
 Beat the Devil
 *Being There
 *The Big Heat
-*The Birth of a Nation
+*Birth of a Nation
 *The Blue Kite
 Bob le Flambeur
 *Breathless
@@ -30,9 +30,9 @@ The Fall of the House of Usher
 *The Firemen's Ball
 *Five Easy Pieces
 *Goldfinger
-*The Good, the Bad and the Ugly
-*Goodfellas
-*The Gospel According to Matthew
+*The Good, the Bad, and the Ugly
+*GoodFellas
+*The Gospel According to St. Matthew
 *The Grapes of Wrath
 *Grave of the Fireflies
 *Great Expectations
@@ -76,7 +76,7 @@ Rififi
 *Romeo and Juliet
 The Rules of the Game
 *Saturday Night Fever
-*Say Anything
+*Say Anything...
 *Scarface
 *The Searchers
 *Shane
@@ -88,7 +88,7 @@ A Sunday in the Country
 *Sunrise
 A Tale of Winter
 The Thin Man
-*This is Spinal Tap
+*This is Spinal Tap!
 *Tokyo Story
 Touchez Pas au Grisbi
 *Touch of Evil

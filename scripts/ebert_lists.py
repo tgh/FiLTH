@@ -16,7 +16,7 @@ LIST_INSERT_FORMAT = "INSERT INTO list VALUES ({0}, '{1}', '{2}');\n";
                                                                # mid, lid, rank    title          list    author
 LIST_CONTAINS_INSERT_FORMAT = 'INSERT INTO list_contains VALUES ({0}, {1}, {2}); -- "{3}" in list "{4} by {5}"\n'
                                                # mid, title, year, star_rating, mpaa, country, comments, imdb_id, theatre_viewings
-MOVIE_INSERT_FORMAT = "INSERT INTO movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, NULL, {6}, {7});\n";
+MOVIE_INSERT_FORMAT = "INSERT INTO movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8});\n";
 
 _inputFileLines = []
 _listInserts = []
