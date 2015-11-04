@@ -14,7 +14,8 @@ CREATE TABLE movie (
 mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
-year smallint NOT NULL,
+-- NULL year would indicate a reference movie--i.e. one that references a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
+year smallint DEFAULT NULL,
 -- my star rating for the movie ("****", "NO STARS", "not seen", etc)
 star_rating text DEFAULT NULL,
 -- mpaa rating ("PG", "R", etc)

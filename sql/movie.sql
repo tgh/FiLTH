@@ -3746,3 +3746,16 @@ INSERT INTO movie VALUES (3747, 'Inherent Vice', 2014, 'not seen', 'R', 'USA', N
 INSERT INTO movie VALUES (3748, 'Bridge of Spies', 2015, '***', 'PG-13', 'USA', NULL, 'tt3682448', 1);
 INSERT INTO movie VALUES (3749, 'Crimson Peak', 2015, '**½', 'R', 'USA', NULL, 'tt2554274', 1);
 INSERT INTO movie VALUES (3750, 'The Martian', 2015, '***½', 'PG-13', 'USA', NULL, 'tt3659388', 1);
+INSERT INTO movie VALUES (3751, 'The Apu Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (3752, 'Broken Blossoms', 1919, 'not seen', 'NR', 'USA', NULL, 'tt0009968', NULL);
+INSERT INTO movie VALUES (3753, 'Detour', 1945, 'not seen', 'NR', 'USA', NULL, 'tt0037638', NULL);
+INSERT INTO movie VALUES (3754, 'Greed', 1924, 'not seen', 'NR', 'USA', NULL, 'tt0015881', NULL);
+INSERT INTO movie VALUES (3755, 'Ikiru', 1952, 'not seen', 'NR', 'Japan', NULL, 'tt0044741', NULL);
+INSERT INTO movie VALUES (3756, 'My Darling Clementine', 1946, 'not seen', 'NR', 'USA', NULL, 'tt0038762', NULL);
+INSERT INTO movie VALUES (3757, 'My Life to Live', 1962, 'not seen', 'NR', 'France', NULL, 'tt0056663', NULL);
+INSERT INTO movie VALUES (3758, 'The Passion of Joan of Arc', 1928, 'not seen', 'NR', 'France', NULL, 'tt0019254', NULL);
+INSERT INTO movie VALUES (3759, 'Peeping Tom', 1960, 'not seen', 'NR', 'England', NULL, 'tt0054167', NULL);
+INSERT INTO movie VALUES (3760, 'Swing Time', 1936, 'not seen', 'NR', 'USA', NULL, 'tt0028333', NULL);
+INSERT INTO movie VALUES (3761, 'Trouble in Paradise', 1932, 'not seen', 'NR', 'USA', NULL, 'tt0023622', NULL);
+INSERT INTO movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO movie VALUES (3763, 'Vertigo', 1958, '***½', 'NR', 'USA', NULL, 'tt0052357', 0);
