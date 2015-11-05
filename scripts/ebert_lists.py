@@ -158,6 +158,9 @@ def getMid(title):
         if response == 'n':
             return raw_input('Enter mid: ')
         else:
+            #title
+            title = title.replace("'","''")
+
             #year
             year = raw_input('\tYear (or leave blank): ')
             if year == '':

@@ -37,7 +37,7 @@ Diva
 El Topo
 The Enigma of Kaspar Hauser
 *Exotica
-*Fanny and Alexander
+*Fanny & Alexander
 Faust
 *Fitzcarraldo
 Forbidden Games
@@ -62,7 +62,7 @@ The Marriage of Maria Braun
 Mephisto
 Mishima: A Life in Four Chapters
 Mon Oncle Antoine
-Moolade
+Moolaade
 *My Fair Lady
 My Man Godfrey
 *Nanook of the North
@@ -97,6 +97,6 @@ Wreckmeister Harmonies
 Withnail & I
 *A Woman's Tale
 Woodstock
-WR--Mysteries of the Organism
+WR: Mysteries of the Organism
 *A Year of the Quiet Sun
 Yojimbo
