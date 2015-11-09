@@ -57,7 +57,7 @@ INSERT INTO tag VALUES (56, 'disaster', NULL);
 INSERT INTO tag VALUES (57, 'remake', NULL);
 INSERT INTO tag VALUES (58, 'based-on-something', NULL);
 INSERT INTO tag VALUES (59, 'based-on-previously-written-material', 58);
-INSERT INTO tag VALUES (60, 'based-on-book', 59);
+INSERT INTO tag VALUES (60, 'based-on-book(s)', 59);
 INSERT INTO tag VALUES (61, 'arts/entertainment', NULL);
 INSERT INTO tag VALUES (62, 'satire', 2);
 INSERT INTO tag VALUES (63, 'graphic', NULL);
