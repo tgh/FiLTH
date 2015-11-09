@@ -93,3 +93,9 @@ INSERT INTO crew_person VALUES (3064, 'Stuhlbarg', 'Michael', NULL, 'Michael Stu
 INSERT INTO crew_person VALUES (3101, 'Rylance', 'Mark', NULL, 'Mark Rylance', 'Actor');  -- Actor: Mark Rylance
 INSERT INTO crew_person VALUES (3102, 'Robbins', 'Matthew', NULL, 'Matthew Robbins', 'Screenwriter');  -- Screenwriter: Matthew Robbins
 INSERT INTO crew_person VALUES (3103, 'Mara', 'Kate', NULL, 'Kate Mara', 'Actress');  -- Actress: Kate Mara
+INSERT INTO crew_person VALUES (3105, 'Caplan', 'Lizzy', NULL, 'Lizzy Caplan', 'Actress');  -- Actress: Lizzy Caplan
+INSERT INTO crew_person VALUES (3106, 'Goldberg', 'Evan', NULL, 'Evan Goldberg', 'Screenwriter');  -- Screenwriter: Evan Goldberg
+INSERT INTO crew_person VALUES (3107, 'Sterling', 'Dan', NULL, 'Dan Sterling', 'Screenwriter');  -- Screenwriter: Dan Sterling
+INSERT INTO crew_person VALUES (3108, 'Park', 'Randall', NULL, 'Randall Park', 'Actor');  -- Actor: Randall Park
+INSERT INTO crew_person VALUES (3109, 'Novak', 'Kim', NULL, 'Kim Novak', 'Actress');  -- Actress: Kim Novak
+INSERT INTO crew_person VALUES (3110, 'Coppel', 'Alec', NULL, 'Alec Coppel', 'Screenwriter');  -- Screenwriter: Alec Coppel

@@ -3852,3 +3852,5 @@ INSERT INTO movie VALUES (3853, 'Superman', 1978, 'not seen', 'PG', 'USA', NULL,
 INSERT INTO movie VALUES (3854, 'Veronika Voss', 1982, 'not seen', 'R', 'Germany', NULL, 'tt0084654', NULL);
 INSERT INTO movie VALUES (3855, 'Viridiana', 1961, 'not seen', 'NR', 'Spain', NULL, 'tt0055601', NULL);
 INSERT INTO movie VALUES (3856, 'Ivan the Terrible, Part II', 1958, 'not seen', 'NR', 'USSR', NULL, 'tt0051790', NULL);
+INSERT INTO movie VALUES (3857, 'The Great Mouse Detective', 1986, '***', 'G', 'USA', NULL, 'tt0091149', 0);
+INSERT INTO movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, 'tt2788710', 0);

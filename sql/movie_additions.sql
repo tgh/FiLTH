@@ -60,3 +60,6 @@ INSERT INTO movie VALUES (3748, 'El Norte', 1983, '***½', 'R', 'USA', NULL, 'tt
 INSERT INTO movie VALUES (3748, 'Bridge of Spies', 2015, '***', 'PG-13', 'USA', NULL, 'tt3682448', 1);
 INSERT INTO movie VALUES (3749, 'Crimson Peak', 2015, '**½', 'R', 'USA', NULL, 'tt2554274', 1);
 INSERT INTO movie VALUES (3750, 'The Martian', 2015, '***½', 'PG-13', 'USA', NULL, 'tt3659388', 1);
+INSERT INTO movie VALUES (3857, 'The Great Mouse Detective', 1986, '***', 'G', 'USA', NULL, 'tt0091149', 0);
+INSERT INTO movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, 'tt2788710', 0);
+UPDATE movie SET  WHERE mid = 3763;
