@@ -172,7 +172,7 @@ INSERT INTO tag VALUES (171, 'robbery', 169);
 INSERT INTO tag VALUES (172, 'bank-robbery', 171);
 INSERT INTO tag VALUES (173, 'auto-theft', 169);
 INSERT INTO tag VALUES (174, 'gangster', 77);
-INSERT INTO tag VALUES (175, 'drug-dealing', 25);
+INSERT INTO tag VALUES (175, 'drug-dealing/producing', 25);
 INSERT INTO tag VALUES (176, 'gangs', 25);
 INSERT INTO tag VALUES (177, 'kidnapping', 25);
 INSERT INTO tag VALUES (178, 'child-abduction', 177);

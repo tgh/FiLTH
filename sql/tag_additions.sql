@@ -11,3 +11,4 @@ INSERT INTO tag VALUES (362, 'loss', NULL);
 INSERT INTO tag VALUES (363, 'deafness', 156);
 INSERT INTO tag VALUES (364, 'jewish/judaism', 50);
 INSERT INTO tag VALUES (365, 'actor(s)-playing-multiple-roles', NULL);
+INSERT INTO tag VALUES (366, 'native-american(s)', NULL);
