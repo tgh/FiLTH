@@ -366,3 +366,4 @@ INSERT INTO tag VALUES (365, 'actor(s)-playing-multiple-roles', NULL);
 INSERT INTO tag VALUES (366, 'native-american(s)', NULL);
 INSERT INTO tag VALUES (367, 'insomnia', 156);
 INSERT INTO tag VALUES (368, 'gulf-war', 17);
+INSERT INTO tag VALUES (369, 'journalism/reporter(s)', NULL);
