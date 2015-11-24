@@ -3854,3 +3854,4 @@ INSERT INTO movie VALUES (3855, 'Viridiana', 1961, 'not seen', 'NR', 'Spain', NU
 INSERT INTO movie VALUES (3856, 'Ivan the Terrible, Part II', 1958, 'not seen', 'NR', 'USSR', NULL, 'tt0051790', NULL);
 INSERT INTO movie VALUES (3857, 'The Great Mouse Detective', 1986, '***', 'G', 'USA', NULL, 'tt0091149', 0);
 INSERT INTO movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, 'tt2788710', 0);
+INSERT INTO movie VALUES (3859, 'The Day the Earth Stood Still', 1951, '***', 'NR', 'USA', NULL, 'tt0043456', 0);

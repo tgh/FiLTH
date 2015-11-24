@@ -342,3 +342,6 @@ INSERT INTO tag_given_to VALUES(1084, 58);  -- Missing (1982) tagged with 'based
 INSERT INTO tag_given_to VALUES(1084, 118);  -- Missing (1982) tagged with '20th-century'
 INSERT INTO tag_given_to VALUES(1084, 21);  -- Missing (1982) tagged with 'period'
 INSERT INTO tag_given_to VALUES(1084, 59);  -- Missing (1982) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(3859, 1);  -- The Day the Earth Stood Still (1951) tagged with 'drama'
+INSERT INTO tag_given_to VALUES(3859, 302);  -- The Day the Earth Stood Still (1951) tagged with 'alien(s)'
+INSERT INTO tag_given_to VALUES(3859, 6);  -- The Day the Earth Stood Still (1951) tagged with 'science-fiction'

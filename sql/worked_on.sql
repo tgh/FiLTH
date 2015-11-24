@@ -6774,3 +6774,5 @@ INSERT INTO worked_on VALUES(3763, 3109, 'Lead Actress');  -- Kim Novak for Vert
 INSERT INTO worked_on VALUES(3763, 1259, 'Cinematographer');  -- Robert Burks for Vertigo (1958)
 INSERT INTO worked_on VALUES(3763, 3110, 'Screenwriter');  -- Alec Coppel for Vertigo (1958)
 INSERT INTO worked_on VALUES(3763, 1607, 'Screenwriter');  -- Samuel Taylor for Vertigo (1958)
+INSERT INTO worked_on VALUES(3859, 1112, 'Director');  -- Robert Wise for The Day the Earth Stood Still (1951)
+INSERT INTO worked_on VALUES(3859, 842, 'Supporting Actress');  -- Patricia Neal for The Day the Earth Stood Still (1951)
