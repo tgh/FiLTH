@@ -3738,7 +3738,7 @@ INSERT INTO movie VALUES (3739, 'Unbroken', 2014, 'not seen', 'PG-13', 'USA', NU
 INSERT INTO movie VALUES (3740, 'CitizenFour', 2014, 'not seen', 'R', 'USA', NULL, 'tt4044364', NULL);
 INSERT INTO movie VALUES (3741, 'Finding Vivian Maier', 2014, 'not seen', 'NR', 'USA', NULL, 'tt2714900', NULL);
 INSERT INTO movie VALUES (3742, 'Last Days in Vietnam', 2014, 'not seen', 'NR', 'USA', NULL, 'tt3279124', NULL);
-INSERT INTO movie VALUES (3743, 'Leviathan', 2014, 'not seen', 'R', 'Russia', NULL, 'tt2802154', NULL);
+INSERT INTO movie VALUES (3743, 'Leviathan', 2014, '**½', 'R', 'Russia', NULL, 'tt2802154', NULL);
 INSERT INTO movie VALUES (3744, 'Tangerines', 2014, 'not seen', 'NR', 'Estonia', NULL, 'tt2991224', NULL);
 INSERT INTO movie VALUES (3745, 'Timbuktu', 2014, 'not seen', 'PG-13', 'Mauritania', NULL, 'tt3409392', NULL);
 INSERT INTO movie VALUES (3746, 'Wild Tales', 2014, 'not seen', 'R', 'Argentina', NULL, 'tt3011894', NULL);
@@ -3855,3 +3855,5 @@ INSERT INTO movie VALUES (3856, 'Ivan the Terrible, Part II', 1958, 'not seen', 
 INSERT INTO movie VALUES (3857, 'The Great Mouse Detective', 1986, '***', 'G', 'USA', NULL, 'tt0091149', 0);
 INSERT INTO movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, 'tt2788710', 0);
 INSERT INTO movie VALUES (3859, 'The Day the Earth Stood Still', 1951, '***', 'NR', 'USA', NULL, 'tt0043456', 0);
+INSERT INTO movie VALUES (3860, 'Spectre', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2379713', 1);
+INSERT INTO movie VALUES (3861, 'Spotlight', 2015, '****', 'R', 'USA', NULL, 'tt1895587', 1);
