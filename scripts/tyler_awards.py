@@ -14,7 +14,7 @@ SCENE = 5
 POSITIONS = {'1':'Director','2':'Screenwriter','3':'Cinematographer','4':'Actor','5':'Actress','6':'Lead Actor','7':'Supporting Actor','8':'Lead Actress','9':'Supporting Actress'}
 CATEGORY_POSITIONS = {'Best Actor':'Lead Actor','Best Actress':'Lead Actress','Best Supporting Actor':'Supporting Actor','Best Supporting Actress':'Supporting Actress','Best Director':'Director','Best Cinematography':'Cinematographer','Best Adapted Screenplay':'Screenwriter','Best Original Screenplay':'Screenwriter'}
 
-FIRST_YEAR = 2003
+FIRST_YEAR = 1997
 LAST_YEAR = 2012
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 DATA_PATH = FILTH_PATH + '/data/'
@@ -72,7 +72,9 @@ def initMoviesMap():
         titleStartIndex = vals.find("'") + 1
         titleEndIndex = vals.find("', ")
         title = vals[titleStartIndex:titleEndIndex]
+        title = title.replace(',','')
 
+        '''
         if title == 'Good Night, and Good Luck.':
             title = 'Good Night and Good Luck.'
         elif title == 'The Chronicles of Narnia: The Lion, the Witch, and the Wardrobe':
@@ -81,6 +83,11 @@ def initMoviesMap():
             title = 'Oslo August 31st'
         elif title == 'Crazy, Stupid, Love.':
             title = 'Crazy Stupid Love.'
+        elif title == 'Fast, Cheap, and Out of Control':
+            title = 'Fast Cheap and Out of Control'
+        elif title == 'Crouching Tiger, Hidden Dragon':
+            title = 'Crouching Tiger Hidden Dragon'
+        '''
 
         vals = vals[(titleEndIndex + 3):]
         vals = vals.split(', ')
@@ -240,7 +247,7 @@ def processAwardFile(filename):
         if fields[SCENE].strip() == '':
             scene = 'NULL'
         else:
-            scene = "'" + fields[SCENE].strip()..strip('"').replace("'", "''") + "'"
+            scene = "'" + fields[SCENE].strip().strip('"').replace("'", "''") + "'"
 
         if '|' in fields[TITLE]:
             movies = fields[TITLE].split('|')

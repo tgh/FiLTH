@@ -1,4 +1,421 @@
 
+-- 1997
+INSERT INTO tyler_given_to VALUES (113, 1, 0, 0, NULL); -- The Apostle (1997) for Best Picture
+INSERT INTO tyler_given_to VALUES (119, 1, 0, 0, NULL); -- As Good as it Gets (1997) for Best Picture
+INSERT INTO tyler_given_to VALUES (662, 1, 0, 1, NULL); -- Good Will Hunting (1997) for Best Picture
+INSERT INTO tyler_given_to VALUES (906, 1, 0, 0, NULL); -- L.A. Confidential (1997) for Best Picture
+INSERT INTO tyler_given_to VALUES (1726, 1, 0, 0, NULL); -- Waiting for Guffman (1997) for Best Picture
+INSERT INTO tyler_given_to VALUES (662, 2, 20, 0, NULL); -- Matt Damon for Best Actor for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (113, 2, 96, 1, NULL); -- Robert Duvall for Best Actor for The Apostle (1997)
+INSERT INTO tyler_given_to VALUES (805, 2, 110, 0, NULL); -- Aaron Eckhart for Best Actor for In the Company of Men (1997)
+INSERT INTO tyler_given_to VALUES (1726, 2, 160, 0, NULL); -- Christopher Guest for Best Actor for Waiting for Guffman (1997)
+INSERT INTO tyler_given_to VALUES (119, 2, 9, 0, NULL); -- Jack Nicholson for Best Actor for As Good as it Gets (1997)
+INSERT INTO tyler_given_to VALUES (848, 3, 2702, 0, NULL); -- Pam Grier for Best Actress for Jackie Brown (1997)
+INSERT INTO tyler_given_to VALUES (119, 3, 1012, 1, NULL); -- Helen Hunt for Best Actress for As Good as it Gets (1997)
+INSERT INTO tyler_given_to VALUES (1028, 3, 55, 0, NULL); -- Diane Keaton for Best Actress for Marvin's Room (1997)
+INSERT INTO tyler_given_to VALUES (1028, 3, 12, 0, NULL); -- Meryl Streep for Best Actress for Marvin's Room (1997)
+INSERT INTO tyler_given_to VALUES (1639, 3, 90, 0, NULL); -- Kate Winslet for Best Actress for Titanic (1997)
+INSERT INTO tyler_given_to VALUES (235, 4, 6, 0, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for Boogie Nights (1997)
+INSERT INTO tyler_given_to VALUES (713, 4, 6, 0, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for Hard Eight (1997)
+INSERT INTO tyler_given_to VALUES (119, 4, 649, 0, NULL); -- Greg Kinnear for Best Supporting Actor for As Good as it Gets (1997)
+INSERT INTO tyler_given_to VALUES (621, 4, 102, 0, NULL); -- Jude Law for Best Supporting Actor for Gattaca (1997)
+INSERT INTO tyler_given_to VALUES (468, 4, 56, 0, NULL); -- Al Pacino for Best Supporting Actor for Donnie Brasco (1997)
+INSERT INTO tyler_given_to VALUES (662, 4, 205, 1, NULL); -- Robin Williams for Best Supporting Actor for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (906, 5, 1015, 0, NULL); -- Kim Basinger for Best Supporting Actress for L.A. Confidential (1997)
+INSERT INTO tyler_given_to VALUES (662, 5, 1013, 0, NULL); -- Minnie Driver for Best Supporting Actress for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (235, 5, 1014, 1, NULL); -- Julianne Moore for Best Supporting Actress for Boogie Nights (1997)
+INSERT INTO tyler_given_to VALUES (113, 5, 986, 0, NULL); -- Miranda Richardson for Best Supporting Actress for The Apostle (1997)
+INSERT INTO tyler_given_to VALUES (787, 5, 958, 0, NULL); -- Sigourney Weaver for Best Supporting Actress for The Ice Storm (1997)
+INSERT INTO tyler_given_to VALUES (235, 6, 247, 0, NULL); -- Paul Thomas Anderson for Best Director for Boogie Nights (1997)
+INSERT INTO tyler_given_to VALUES (113, 6, 96, 0, NULL); -- Robert Duvall for Best Director for The Apostle (1997)
+INSERT INTO tyler_given_to VALUES (1726, 6, 160, 0, NULL); -- Christopher Guest for Best Director for Waiting for Guffman (1997)
+INSERT INTO tyler_given_to VALUES (906, 6, 1168, 0, NULL); -- Curtis Hanson for Best Director for L.A. Confidential (1997)
+INSERT INTO tyler_given_to VALUES (662, 6, 364, 1, NULL); -- Gus Van Sant for Best Director for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (621, 8, 1373, 0, NULL); -- Slawomir Idziak for Best Cinematography for Gattaca (1997)
+INSERT INTO tyler_given_to VALUES (662, 8, 3119, 0, NULL); -- Jean-Yves Escoffier for Best Cinematography for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (906, 8, 1361, 0, NULL); -- Dante Spinotti for Best Cinematography for L.A. Confidential (1997)
+INSERT INTO tyler_given_to VALUES (1065, 8, 2940, 1, NULL); -- Thierry Machado for Best Cinematography for Microcosmos (1997)
+INSERT INTO tyler_given_to VALUES (1448, 8, 1350, 0, NULL); -- Robert Fraisse for Best Cinematography for Seven Years in Tibet (1997)
+INSERT INTO tyler_given_to VALUES (113, 10, 96, 0, NULL); -- Robert Duvall for Best Original Screenplay for The Apostle (1997)
+INSERT INTO tyler_given_to VALUES (613, 10, 3120, 0, NULL); -- John D. Brancato for Best Original Screenplay for The Game (1997)
+INSERT INTO tyler_given_to VALUES (613, 10, 3121, 0, NULL); -- Michael Ferris for Best Original Screenplay for The Game (1997)
+INSERT INTO tyler_given_to VALUES (662, 10, 48, 1, NULL); -- Ben Affleck for Best Original Screenplay for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (662, 10, 20, 1, NULL); -- Matt Damon for Best Original Screenplay for Good Will Hunting (1997)
+INSERT INTO tyler_given_to VALUES (805, 10, 311, 0, NULL); -- Neil LaBute for Best Original Screenplay for In the Company of Men (1997)
+INSERT INTO tyler_given_to VALUES (1726, 10, 160, 0, NULL); -- Christopher Guest for Best Original Screenplay for Waiting for Guffman (1997)
+INSERT INTO tyler_given_to VALUES (1726, 10, 2662, 0, NULL); -- Eugene Levy for Best Original Screenplay for Waiting for Guffman (1997)
+INSERT INTO tyler_given_to VALUES (468, 9, 1950, 0, NULL); -- Paul Attanasio for Best Adapted Screenplay for Donnie Brasco (1997)
+INSERT INTO tyler_given_to VALUES (848, 9, 359, 0, NULL); -- Quentin Tarantino for Best Adapted Screenplay for Jackie Brown (1997)
+INSERT INTO tyler_given_to VALUES (906, 9, 378, 1, NULL); -- Brian Helgeland for Best Adapted Screenplay for L.A. Confidential (1997)
+INSERT INTO tyler_given_to VALUES (906, 9, 1168, 1, NULL); -- Curtis Hanson for Best Adapted Screenplay for L.A. Confidential (1997)
+INSERT INTO tyler_given_to VALUES (1028, 9, 3122, 0, NULL); -- Scott McPherson for Best Adapted Screenplay for Marvin's Room (1997)
+INSERT INTO tyler_given_to VALUES (555, 7, 0, 0, NULL); -- Fast Cheap and Out of Control (1997) for Best Documentary
+INSERT INTO tyler_given_to VALUES (779, 7, 0, 0, NULL); -- Hype! (1997) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1065, 7, 0, 1, NULL); -- Microcosmos (1997) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1762, 7, 0, 0, NULL); -- When We Were Kings (1997) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1811, 7, 0, 0, NULL); -- The Year of the Horse (1997) for Best Documentary
+INSERT INTO tyler_given_to VALUES (92, 13, 0, 0, NULL); -- Anaconda (1997) for Worst Picture
+INSERT INTO tyler_given_to VALUES (382, 13, 0, 0, NULL); -- Crash (1997) for Worst Picture
+INSERT INTO tyler_given_to VALUES (980, 13, 0, 1, NULL); -- Lost Highway (1997) for Worst Picture
+INSERT INTO tyler_given_to VALUES (983, 13, 0, 0, NULL); -- The Lost World: Jurassic Park (1997) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1282, 13, 0, 0, NULL); -- Playing God (1997) for Worst Picture
+
+-- 1998
+INSERT INTO tyler_given_to VALUES (1262, 1, 0, 0, NULL); -- Pi (1998) for Best Picture
+INSERT INTO tyler_given_to VALUES (83, 1, 0, 0, NULL); -- American History X (1998) for Best Picture
+INSERT INTO tyler_given_to VALUES (1400, 1, 0, 0, NULL); -- Rushmore (1998) for Best Picture
+INSERT INTO tyler_given_to VALUES (1413, 1, 0, 1, NULL); -- Saving Private Ryan (1998) for Best Picture
+INSERT INTO tyler_given_to VALUES (1622, 1, 0, 0, NULL); -- The Thin Red Line (1998) for Best Picture
+INSERT INTO tyler_given_to VALUES (200, 2, 71, 0, NULL); -- Jeff Bridges for Best Actor for The Big Lebowski (1998)
+INSERT INTO tyler_given_to VALUES (1678, 2, 73, 0, NULL); -- Jim Carrey for Best Actor for The Truman Show (1998)
+INSERT INTO tyler_given_to VALUES (1413, 2, 4, 0, NULL); -- Tom Hanks for Best Actor for Saving Private Ryan (1998)
+INSERT INTO tyler_given_to VALUES (41, 2, 164, 0, NULL); -- Nick Nolte for Best Actor for Affliction (1998)
+INSERT INTO tyler_given_to VALUES (83, 2, 10, 1, NULL); -- Edward Norton for Best Actor for American History X (1998)
+INSERT INTO tyler_given_to VALUES (508, 3, 45, 0, NULL); -- Cate Blanchett for Best Actress for Elizabeth (1998)
+INSERT INTO tyler_given_to VALUES (969, 3, 1006, 0, NULL); -- Brenda Blethyn for Best Actress for Little Voice (1998)
+INSERT INTO tyler_given_to VALUES (304, 3, 949, 0, NULL); -- Judy Davis for Best Actress for Celebrity (1998)
+INSERT INTO tyler_given_to VALUES (969, 3, 3123, 0, NULL); -- Jane Horrocks for Best Actress for Little Voice (1998)
+INSERT INTO tyler_given_to VALUES (1455, 3, 106, 1, NULL); -- Gwyneth Paltrow for Best Actress for Shakespeare in Love (1998)
+INSERT INTO tyler_given_to VALUES (41, 4, 650, 0, NULL); -- James Coburn for Best Supporting Actor for Affliction (1998)
+INSERT INTO tyler_given_to VALUES (1413, 4, 2981, 1, NULL); -- Jeremy Davies for Best Supporting Actor for Saving Private Ryan (1998)
+INSERT INTO tyler_given_to VALUES (200, 4, 151, 0, NULL); -- John Goodman for Best Supporting Actor for The Big Lebowski (1998)
+INSERT INTO tyler_given_to VALUES (1725, 4, 5, 0, NULL); -- Dustin Hoffman for Best Supporting Actor for Wag the Dog (1998)
+INSERT INTO tyler_given_to VALUES (1400, 4, 88, 0, NULL); -- Bill Murray for Best Supporting Actor for Rushmore (1998)
+INSERT INTO tyler_given_to VALUES (1622, 4, 164, 0, NULL); -- Nick Nolte for Best Supporting Actor for The Thin Red Line (1998)
+INSERT INTO tyler_given_to VALUES (272, 5, 139, 1, NULL); -- Anjelica Huston for Best Supporting Actress for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (1678, 5, 1024, 0, NULL); -- Laura Linney for Best Supporting Actress for The Truman Show (1998)
+INSERT INTO tyler_given_to VALUES (650, 5, 860, 0, NULL); -- Lynn Redgrave for Best Supporting Actress for Gods and Monsters (1998)
+INSERT INTO tyler_given_to VALUES (272, 5, 2367, 0, NULL); -- Christina Ricci for Best Supporting Actress for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (41, 5, 918, 0, NULL); -- Sissy Spacek for Best Supporting Actress for Affliction (1998)
+INSERT INTO tyler_given_to VALUES (1400, 6, 248, 0, NULL); -- Wes Anderson for Best Director for Rushmore (1998)
+INSERT INTO tyler_given_to VALUES (1262, 6, 252, 0, NULL); -- Darren Aronofsky for Best Director for Pi (1998)
+INSERT INTO tyler_given_to VALUES (272, 6, 2802, 0, NULL); -- Vincent Gallo for Best Director for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (1622, 6, 323, 0, NULL); -- Terrence Malick for Best Director for The Thin Red Line (1998)
+INSERT INTO tyler_given_to VALUES (1413, 6, 357, 1, NULL); -- Steven Spielberg for Best Director for Saving Private Ryan (1998)
+INSERT INTO tyler_given_to VALUES (1678, 6, 367, 0, NULL); -- Peter Weir for Best Director for The Truman Show (1998)
+INSERT INTO tyler_given_to VALUES (1262, 8, 233, 0, NULL); -- Matthew Libatique for Best Cinematography for Pi (1998)
+INSERT INTO tyler_given_to VALUES (83, 8, 2314, 0, NULL); -- Tony Kaye for Best Cinematography for American History X (1998)
+INSERT INTO tyler_given_to VALUES (272, 8, 2650, 0, NULL); -- Lance Acord for Best Cinematography for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (1400, 8, 2764, 0, NULL); -- Robert D. Yeoman for Best Cinematography for Rushmore (1998)
+INSERT INTO tyler_given_to VALUES (1413, 8, 230, 1, NULL); -- Janusz Kaminski for Best Cinematography for Saving Private Ryan (1998)
+INSERT INTO tyler_given_to VALUES (1622, 8, 240, 0, NULL); -- John Toll for Best Cinematography for The Thin Red Line (1998)
+INSERT INTO tyler_given_to VALUES (1262, 10, 252, 0, NULL); -- Darren Aronofsky for Best Original Screenplay for Pi (1998)
+INSERT INTO tyler_given_to VALUES (272, 10, 2802, 0, NULL); -- Vincent Gallo for Best Original Screenplay for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (272, 10, 2803, 0, NULL); -- Alison Bagnall for Best Original Screenplay for Buffalo '66 (1998)
+INSERT INTO tyler_given_to VALUES (736, 10, 3124, 0, NULL); -- Hal Hartly for Best Original Screenplay for Henry Fool (1998)
+INSERT INTO tyler_given_to VALUES (1400, 10, 248, 1, NULL); -- Wes Anderson for Best Original Screenplay for Rushmore (1998)
+INSERT INTO tyler_given_to VALUES (1400, 10, 57, 1, NULL); -- Owen Wilson for Best Original Screenplay for Rushmore (1998)
+INSERT INTO tyler_given_to VALUES (1678, 10, 1976, 0, NULL); -- Andrew Niccol for Best Original Screenplay for The Truman Show (1998)
+INSERT INTO tyler_given_to VALUES (41, 9, 374, 0, NULL); -- Paul Schrader for Best Adapted Screenplay for Affliction (1998)
+INSERT INTO tyler_given_to VALUES (1299, 9, 1813, 0, NULL); -- Elaine May for Best Adapted Screenplay for Primary Colors (1998)
+INSERT INTO tyler_given_to VALUES (1486, 9, 1974, 0, NULL); -- Scott B. Smith for Best Adapted Screenplay for A Simple Plan (1998)
+INSERT INTO tyler_given_to VALUES (1622, 9, 323, 1, NULL); -- Terrence Malick for Best Adapted Screenplay for The Thin Red Line (1998)
+INSERT INTO tyler_given_to VALUES (1725, 9, 1968, 0, NULL); -- Hilary Henkin for Best Adapted Screenplay for Wag the Dog (1998)
+INSERT INTO tyler_given_to VALUES (1725, 9, 325, 0, NULL); -- David Mamet for Best Adapted Screenplay for Wag the Dog (1998)
+INSERT INTO tyler_given_to VALUES (303, 14, 0, 0, NULL); -- The Celebration (1998) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (307, 14, 0, 0, NULL); -- Central Station (1998) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (312, 14, 0, 0, NULL); -- Character (1998) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (952, 14, 0, 1, NULL); -- Life is Beautiful (1998) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (61, 13, 0, 0, NULL); -- Alien Resurrection (1998) for Worst Picture
+INSERT INTO tyler_given_to VALUES (560, 13, 0, 0, NULL); -- Fear and Loathing in Las Vegas (1998) for Worst Picture
+INSERT INTO tyler_given_to VALUES (651, 13, 0, 1, NULL); -- Godzilla (1998) for Worst Picture
+INSERT INTO tyler_given_to VALUES (708, 13, 0, 0, NULL); -- Happiness (1998) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1506, 13, 0, 0, NULL); -- Snake Eyes (1998) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1712, 13, 0, 0, NULL); -- Velvet Goldmine (1998) for Worst Picture
+
+-- 1999
+INSERT INTO tyler_given_to VALUES (320, 1, 0, 0, NULL); -- Children of Heaven (1999) for Best Picture
+INSERT INTO tyler_given_to VALUES (565, 1, 0, 0, NULL); -- Fight Club (1999) for Best Picture
+INSERT INTO tyler_given_to VALUES (999, 1, 0, 1, NULL); -- Magnolia (1999) for Best Picture
+INSERT INTO tyler_given_to VALUES (1307, 1, 0, 0, NULL); -- Princess Mononoke (1999) for Best Picture
+INSERT INTO tyler_given_to VALUES (1561, 1, 0, 0, NULL); -- The Straight Story (1999) for Best Picture
+INSERT INTO tyler_given_to VALUES (1007, 2, 73, 0, NULL); -- Jim Carrey for Best Actor for Man on the Moon (1999)
+INSERT INTO tyler_given_to VALUES (823, 2, 49, 0, NULL); -- Russell Crowe for Best Actor for The Insider (1999)
+INSERT INTO tyler_given_to VALUES (540, 2, 33, 0, NULL); -- Tom Cruise for Best Actor for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (623, 2, 52, 0, NULL); -- Brendon Gleeson for Best Actor for The General (1999)
+INSERT INTO tyler_given_to VALUES (1587, 2, 11, 0, NULL); -- Sean Penn for Best Actor for Sweet and Lowdown (1999)
+INSERT INTO tyler_given_to VALUES (78, 2, 174, 1, NULL); -- Kevin Spacey for Best Actor for American Beauty (1999)
+INSERT INTO tyler_given_to VALUES (78, 3, 140, 0, NULL); -- Annette Bening for Best Actress for American Beauty (1999)
+INSERT INTO tyler_given_to VALUES (565, 3, 124, 0, NULL); -- Helena Bonham Carter for Best Actress for Fight Club (1999)
+INSERT INTO tyler_given_to VALUES (540, 3, 171, 0, NULL); -- Nicole Kidman for Best Actress for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (1587, 3, 1021, 0, NULL); -- Samantha Morton for Best Actress for Sweet and Lowdown (1999)
+INSERT INTO tyler_given_to VALUES (246, 3, 1019, 1, NULL); -- Hilary Swank for Best Actress for Boys Don't Cry (1999)
+INSERT INTO tyler_given_to VALUES (999, 4, 33, 1, NULL); -- Tom Cruise for Best Supporting Actor for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (870, 4, 294, 0, NULL); -- Werner Herzog for Best Supporting Actor for Julien Donkey-Boy (1999)
+INSERT INTO tyler_given_to VALUES (686, 4, 3125, 0, NULL); -- Doug Hutchison for Best Supporting Actor for The Green Mile (1999)
+INSERT INTO tyler_given_to VALUES (178, 4, 7, 0, NULL); -- John Malkovich for Best Supporting Actor for Being John Malkovich (1999)
+INSERT INTO tyler_given_to VALUES (1490, 4, 651, 0, NULL); -- Haley Joel Osment for Best Supporting Actor for The Sixth Sense (1999)
+INSERT INTO tyler_given_to VALUES (999, 4, 93, 0, NULL); -- John C. Reilly for Best Supporting Actor for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (178, 5, 155, 0, NULL); -- Cameron Diaz for Best Supporting Actress for Being John Malkovich (1999)
+INSERT INTO tyler_given_to VALUES (178, 5, 153, 0, NULL); -- Catherine Keener for Best Supporting Actress for Being John Malkovich (1999)
+INSERT INTO tyler_given_to VALUES (373, 5, 1014, 0, NULL); -- Julianne Moore for Best Supporting Actress for Cookie's Fortune (1999)
+INSERT INTO tyler_given_to VALUES (999, 5, 1014, 0, NULL); -- Julianne Moore for Best Supporting Actress for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (1561, 5, 918, 1, NULL); -- Sissy Spacek for Best Supporting Actress for The Straight Story (1999)
+INSERT INTO tyler_given_to VALUES (999, 5, 2755, 0, NULL); -- Melora Walters for Best Supporting Actress for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (999, 6, 247, 1, NULL); -- Paul Thomas Anderson for Best Director for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (178, 6, 302, 0, NULL); -- Spike Jonze for Best Director for Being John Malkovich (1999)
+INSERT INTO tyler_given_to VALUES (540, 6, 309, 0, NULL); -- Stanley Kubrick for Best Director for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (1561, 6, 321, 0, NULL); -- David Lynch for Best Director for The Straight Story (1999)
+INSERT INTO tyler_given_to VALUES (320, 6, 322, 0, NULL); -- Majid Majidi for Best Director for Children of Heaven (1999)
+INSERT INTO tyler_given_to VALUES (1307, 6, 330, 0, NULL); -- Hayao Miyazaki for Best Director for Princess Mononoke (1999)
+INSERT INTO tyler_given_to VALUES (540, 8, 3126, 1, NULL); -- Larry Smith for Best Cinematography for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (565, 8, 2608, 0, NULL); -- Jeff Cronenweth for Best Cinematography for Fight Club (1999)
+INSERT INTO tyler_given_to VALUES (686, 8, 3127, 0, NULL); -- David Tattersall for Best Cinematography for The Green Mile (1999)
+INSERT INTO tyler_given_to VALUES (1307, 8, 3128, 0, NULL); -- Atsushi Okui for Best Cinematography for Princess Mononoke (1999)
+INSERT INTO tyler_given_to VALUES (1338, 8, 3129, 0, NULL); -- Alwin H. Kuchler for Best Cinematography for Ratcatcher (1999)
+INSERT INTO tyler_given_to VALUES (1350, 8, 3130, 0, NULL); -- Alain Dostie for Best Cinematography for The Red Violin (1999)
+INSERT INTO tyler_given_to VALUES (178, 10, 372, 0, NULL); -- Charlie Kaufman for Best Original Screenplay for Being John Malkovich (1999)
+INSERT INTO tyler_given_to VALUES (999, 10, 247, 1, NULL); -- Paul Thomas Anderson for Best Original Screenplay for Magnolia (1999)
+INSERT INTO tyler_given_to VALUES (1204, 10, 3131, 0, NULL); -- Mike Judge for Best Original Screenplay for Office Space (1999)
+INSERT INTO tyler_given_to VALUES (1398, 10, 363, 0, NULL); -- Tom Tykwer for Best Original Screenplay for Run Lola Run (1999)
+INSERT INTO tyler_given_to VALUES (1561, 10, 3132, 0, NULL); -- John Roach for Best Original Screenplay for The Straight Story (1999)
+INSERT INTO tyler_given_to VALUES (1561, 10, 3133, 0, NULL); -- Mary Sweeney for Best Original Screenplay for The Straight Story (1999)
+INSERT INTO tyler_given_to VALUES (1587, 10, 245, 0, NULL); -- Woody Allen for Best Original Screenplay for Sweet and Lowdown (1999)
+INSERT INTO tyler_given_to VALUES (262, 9, 374, 0, NULL); -- Paul Schrader for Best Adapted Screenplay for Bringing Out the Dead (1999)
+INSERT INTO tyler_given_to VALUES (540, 9, 309, 0, NULL); -- Stanley Kubrick for Best Adapted Screenplay for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (540, 9, 1714, 0, NULL); -- Frederic Raphael for Best Adapted Screenplay for Eyes Wide Shut (1999)
+INSERT INTO tyler_given_to VALUES (565, 9, 3134, 0, NULL); -- Jim Uhls for Best Adapted Screenplay for Fight Club (1999)
+INSERT INTO tyler_given_to VALUES (623, 9, 257, 0, NULL); -- John Boorman for Best Adapted Screenplay for The General (1999)
+INSERT INTO tyler_given_to VALUES (686, 9, 274, 0, NULL); -- Frank Darabont for Best Adapted Screenplay for The Green Mile (1999)
+INSERT INTO tyler_given_to VALUES (823, 9, 380, 0, NULL); -- Eric Roth for Best Adapted Screenplay for The Insider (1999)
+INSERT INTO tyler_given_to VALUES (823, 9, 327, 0, NULL); -- Michael Mann for Best Adapted Screenplay for The Insider (1999)
+INSERT INTO tyler_given_to VALUES (320, 14, 0, 1, NULL); -- Children of Heaven (1999) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (485, 14, 0, 0, NULL); -- The Dreamlife of Angels (1999) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1307, 14, 0, 0, NULL); -- Princess Mononoke (1999) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1350, 14, 0, 0, NULL); -- The Red Violin (1999) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1398, 14, 0, 0, NULL); -- Run Lola Run (1999) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (373, 13, 0, 0, NULL); -- Cookie's Fortune (1999) for Worst Picture
+INSERT INTO tyler_given_to VALUES (504, 13, 0, 0, NULL); -- Election (1999) for Worst Picture
+INSERT INTO tyler_given_to VALUES (579, 13, 0, 0, NULL); -- Flawless (1999) for Worst Picture
+INSERT INTO tyler_given_to VALUES (644, 13, 0, 1, NULL); -- Go (1999) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1595, 13, 0, 0, NULL); -- The Talented Mr. Ripley (1999) for Worst Picture
+
+-- 2000
+INSERT INTO tyler_given_to VALUES (87, 1, 0, 0, NULL); -- American Psycho (2000) for Best Picture
+INSERT INTO tyler_given_to VALUES (356, 1, 0, 0, NULL); -- The Color of Paradise (2000) for Best Picture
+INSERT INTO tyler_given_to VALUES (624, 1, 0, 1, NULL); -- George Washington (2000) for Best Picture
+INSERT INTO tyler_given_to VALUES (1360, 1, 0, 0, NULL); -- Requiem for a Dream (2000) for Best Picture
+INSERT INTO tyler_given_to VALUES (1694, 1, 0, 0, NULL); -- Unbreakable (2000) for Best Picture
+INSERT INTO tyler_given_to VALUES (87, 2, 1, 1, NULL); -- Christian Bale for Best Actor for American Psycho (2000)
+INSERT INTO tyler_given_to VALUES (861, 2, 15, 0, NULL); -- Billy Crudup for Best Actor for Jesus' Son (2000)
+INSERT INTO tyler_given_to VALUES (1795, 2, 79, 0, NULL); -- Michael Douglas for Best Actor for Wonder Boys (2000)
+INSERT INTO tyler_given_to VALUES (295, 2, 4, 0, NULL); -- Tom Hanks for Best Actor for Cast Away (2000)
+INSERT INTO tyler_given_to VALUES (1360, 2, 144, 0, NULL); -- Jared Leto for Best Actor for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1322, 2, 212, 0, NULL); -- Geoffrey Rush for Best Actor for Quills (2000)
+INSERT INTO tyler_given_to VALUES (369, 3, 1002, 0, NULL); -- Joan Allen for Best Actress for The Contender (2000)
+INSERT INTO tyler_given_to VALUES (1360, 3, 145, 1, NULL); -- Ellen Burstyn for Best Actress for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (73, 3, 1025, 0, NULL); -- Kate Hudson for Best Actress for Almost Famous (2000)
+INSERT INTO tyler_given_to VALUES (1815, 3, 1024, 0, NULL); -- Laura Linney for Best Actress for You Can Count on Me (2000)
+INSERT INTO tyler_given_to VALUES (389, 3, 3135, 1, NULL); -- Michelle Yeoh for Best Actress for Crouching Tiger Hidden Dragon (2000)
+INSERT INTO tyler_given_to VALUES (73, 4, 15, 0, NULL); -- Billy Crudup for Best Supporting Actor for Almost Famous (2000)
+INSERT INTO tyler_given_to VALUES (1659, 4, 27, 1, NULL); -- Benicio Del Toro for Best Supporting Actor for Traffic (2000)
+INSERT INTO tyler_given_to VALUES (1795, 4, 32, 0, NULL); -- Robert Downey Jr. for Best Supporting Actor for Wonder Boys (2000)
+INSERT INTO tyler_given_to VALUES (1795, 4, 3136, 0, NULL); -- Tobey Maguire for Best Supporting Actor for Wonder Boys (2000)
+INSERT INTO tyler_given_to VALUES (369, 4, 72, 0, NULL); -- Gary Oldman for Best Supporting Actor for The Contender (2000)
+INSERT INTO tyler_given_to VALUES (1360, 4, 3137, 0, NULL); -- Marlon Wayans for Best Supporting Actor for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1360, 5, 1028, 0, NULL); -- Jennifer Connelly for Best Supporting Actress for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1286, 5, 1026, 0, NULL); -- Marcia Gay Harden for Best Supporting Actress for Pollock (2000)
+INSERT INTO tyler_given_to VALUES (73, 5, 47, 1, NULL); -- Frances McDormand for Best Supporting Actress for Almost Famous (2000)
+INSERT INTO tyler_given_to VALUES (1504, 5, 1813, 0, NULL); -- Elaine May for Best Supporting Actress for Small Time Crooks (2000)
+INSERT INTO tyler_given_to VALUES (1659, 5, 109, 0, NULL); -- Catherine Zeta-Jones for Best Supporting Actress for Traffic (2000)
+INSERT INTO tyler_given_to VALUES (1360, 6, 252, 0, NULL); -- Darren Aronofsky for Best Director for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (624, 6, 292, 1, NULL); -- David Gordon Green for Best Director for George Washington (2000)
+INSERT INTO tyler_given_to VALUES (389, 6, 1170, 0, NULL); -- Ang Lee for Best Director for Crouching Tiger Hidden Dragon (2000)
+INSERT INTO tyler_given_to VALUES (356, 6, 322, 0, NULL); -- Majid Majidi for Best Director for The Color of Paradise (2000)
+INSERT INTO tyler_given_to VALUES (1694, 6, 354, 0, NULL); -- M. Night Shyamalan for Best Director for Unbreakable (2000)
+INSERT INTO tyler_given_to VALUES (1659, 6, 356, 0, NULL); -- Steven Soderbergh for Best Director for Traffic (2000)
+INSERT INTO tyler_given_to VALUES (389, 8, 1368, 0, NULL); -- Peter Pau for Best Cinematography for Crouching Tiger Hidden Dragon (2000)
+INSERT INTO tyler_given_to VALUES (624, 8, 243, 0, NULL); -- Tim Orr for Best Cinematography for George Washington (2000)
+INSERT INTO tyler_given_to VALUES (1199, 8, 235, 0, NULL); -- Roger Deakins for Best Cinematography for O Brother Where Art Thou? (2000)
+INSERT INTO tyler_given_to VALUES (1360, 8, 233, 1, NULL); -- Matthew Libatique for Best Cinematography for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1659, 8, 356, 0, NULL); -- Steven Soderbergh for Best Cinematography for Traffic (2000)
+INSERT INTO tyler_given_to VALUES (1694, 8, 1362, 0, NULL); -- Eduardo Serra for Best Cinematography for Unbreakable (2000)
+INSERT INTO tyler_given_to VALUES (73, 10, 273, 1, NULL); -- Cameron Crowe for Best Original Screenplay for Almost Famous (2000)
+INSERT INTO tyler_given_to VALUES (233, 10, 2743, 0, NULL); -- Ben Younger for Best Original Screenplay for Boiler Room (2000)
+INSERT INTO tyler_given_to VALUES (356, 10, 322, 0, NULL); -- Majid Majidi for Best Original Screenplay for The Color of Paradise (2000)
+INSERT INTO tyler_given_to VALUES (369, 10, 3138, 0, NULL); -- Rod Lurie for Best Original Screenplay for The Contender (2000)
+INSERT INTO tyler_given_to VALUES (624, 10, 292, 0, NULL); -- David Gordon Green for Best Original Screenplay for George Washington (2000)
+INSERT INTO tyler_given_to VALUES (1694, 10, 354, 0, NULL); -- M. Night Shyamalan for Best Original Screenplay for Unbreakable (2000)
+INSERT INTO tyler_given_to VALUES (87, 9, 2320, 1, NULL); -- Mary Harron for Best Adapted Screenplay for American Psycho (2000)
+INSERT INTO tyler_given_to VALUES (324, 9, 1987, 0, NULL); -- Robert Nelson Jacobs for Best Adapted Screenplay for Chocolat (2000)
+INSERT INTO tyler_given_to VALUES (1360, 9, 3139, 0, NULL); -- Hubert Selby Jr. for Best Adapted Screenplay for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1360, 9, 252, 0, NULL); -- Darren Aronofsky for Best Adapted Screenplay for Requiem for a Dream (2000)
+INSERT INTO tyler_given_to VALUES (1659, 9, 1988, 0, NULL); -- Stephen Gaghan for Best Adapted Screenplay for Traffic (2000)
+INSERT INTO tyler_given_to VALUES (1625, 9, 3140, 0, NULL); -- David Self for Best Adapted Screenplay for Thirteen Days (2000)
+INSERT INTO tyler_given_to VALUES (1795, 9, 1986, 0, NULL); -- Steve Kloves for Best Adapted Screenplay for Wonder Boys (2000)
+INSERT INTO tyler_given_to VALUES (567, 7, 0, 0, NULL); -- The Filth and the Fury (2000) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1133, 7, 0, 0, NULL); -- My Best Fiend (2000) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1236, 7, 0, 1, NULL); -- Paradise Lost 2: Revelations (2000) for Best Documentary
+INSERT INTO tyler_given_to VALUES (356, 14, 0, 1, NULL); -- The Color of Paradise (2000) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (389, 14, 0, 0, NULL); -- Crouching Tiger Hidden Dragon (2000) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1133, 14, 0, 0, NULL); -- My Best Fiend (2000) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (39, 13, 0, 0, NULL); -- The Adventures of God (2000) for Worst Picture
+INSERT INTO tyler_given_to VALUES (577, 13, 0, 0, NULL); -- The Five Senses (2000) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1376, 13, 0, 1, NULL); -- Road Trip (2000) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1715, 13, 0, 0, NULL); -- Vertical Limit (2000) for Worst Picture
+
+-- 2001
+INSERT INTO tyler_given_to VALUES (804, 1, 0, 0, NULL); -- In the Bedroom (2001) for Best Picture
+INSERT INTO tyler_given_to VALUES (1054, 1, 0, 1, NULL); -- Memento (2001) for Best Picture
+INSERT INTO tyler_given_to VALUES (1284, 1, 0, 0, NULL); -- The Pledge (2001) for Best Picture
+INSERT INTO tyler_given_to VALUES (1708, 1, 0, 0, NULL); -- Vanilla Sky (2001) for Best Picture
+INSERT INTO tyler_given_to VALUES (1728, 1, 0, 0, NULL); -- Waking Life (2001) for Best Picture
+INSERT INTO tyler_given_to VALUES (169, 2, 49, 0, NULL); -- Russell Crowe for Best Actor for A Beautiful Mind (2001)
+INSERT INTO tyler_given_to VALUES (1284, 2, 9, 0, NULL); -- Jack Nicholson for Best Actor for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (782, 2, 11, 1, NULL); -- Sean Penn for Best Actor for I Am Sam (2001)
+INSERT INTO tyler_given_to VALUES (1054, 2, 131, 0, NULL); -- Guy Pearce for Best Actor for Memento (2001)
+INSERT INTO tyler_given_to VALUES (154, 2, 211, 0, NULL); -- Billy Bob Thornton for Best Actor for Bandits (2001)
+INSERT INTO tyler_given_to VALUES (1011, 2, 211, 0, NULL); -- Billy Bob Thornton for Best Actor for The Man Who Wasn't There (2001)
+INSERT INTO tyler_given_to VALUES (1100, 2, 211, 0, NULL); -- Billy Bob Thornton for Best Actor for Monster's Ball (2001)
+INSERT INTO tyler_given_to VALUES (1660, 2, 35, 0, NULL); -- Denzel Washington for Best Actor for Training Day (2001)
+INSERT INTO tyler_given_to VALUES (1100, 3, 1027, 0, NULL); -- Halle Berry for Best Actress for Monster's Ball (2001)
+INSERT INTO tyler_given_to VALUES (169, 3, 1028, 0, NULL); -- Jennifer Connelly for Best Actress for A Beautiful Mind (2001)
+INSERT INTO tyler_given_to VALUES (1220, 3, 171, 0, NULL); -- Nicole Kidman for Best Actress for The Others (2001)
+INSERT INTO tyler_given_to VALUES (1110, 3, 171, 0, NULL); -- Nicole Kidman for Best Actress for Moulin Rouge (2001)
+INSERT INTO tyler_given_to VALUES (668, 3, 997, 0, NULL); -- Helen Mirren for Best Actress for Gosford Park (2001)
+INSERT INTO tyler_given_to VALUES (804, 3, 918, 1, NULL); -- Sissy Spacek for Best Actress for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (903, 4, 2155, 0, NULL); -- Paul Bettany for Best Supporting Actor for A Knight's Tale (2001)
+INSERT INTO tyler_given_to VALUES (835, 4, 653, 0, NULL); -- Jim Broadbent for Best Supporting Actor for Iris (2001)
+INSERT INTO tyler_given_to VALUES (1451, 4, 143, 0, NULL); -- Ben Kingsley for Best Supporting Actor for Sexy Beast (2001)
+INSERT INTO tyler_given_to VALUES (1507, 4, 13, 2, NULL); -- Brad Pitt for Best Supporting Actor for Snatch (2001)
+INSERT INTO tyler_given_to VALUES (804, 4, 2816, 2, NULL); -- Nick Stahl for Best Supporting Actor for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (1395, 4, 59, 0, NULL); -- Luke Wilson for Best Supporting Actor for The Royal Tenenbaums (2001)
+INSERT INTO tyler_given_to VALUES (1708, 5, 155, 0, NULL); -- Cameron Diaz for Best Supporting Actress for Vanilla Sky (2001)
+INSERT INTO tyler_given_to VALUES (1220, 5, 3141, 0, NULL); -- Alakina Mann for Best Supporting Actress for The Others (2001)
+INSERT INTO tyler_given_to VALUES (668, 5, 856, 0, NULL); -- Maggie Smith for Best Supporting Actress for Gosford Park (2001)
+INSERT INTO tyler_given_to VALUES (804, 5, 987, 1, NULL); -- Marisa Tomei for Best Supporting Actress for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (1284, 5, 156, 0, NULL); -- Robin Wright for Best Supporting Actress for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (668, 6, 246, 0, NULL); -- Robert Altman for Best Director for Gosford Park (2001)
+INSERT INTO tyler_given_to VALUES (1395, 6, 248, 0, NULL); -- Wes Anderson for Best Director for The Royal Tenenbaums (2001)
+INSERT INTO tyler_given_to VALUES (1708, 6, 273, Peter Jackson, '0'); -- Cameron Crowe for Best Director for Vanilla Sky (2001)
+INSERT INTO tyler_given_to VALUES (804, 6, 1997, 0, NULL); -- Todd Field for Best Director for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (1054, 6, 335, 1, NULL); -- Christopher Nolan for Best Director for Memento (2001)
+INSERT INTO tyler_given_to VALUES (1284, 6, 11, 0, NULL); -- Sean Penn for Best Director for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (27, 8, 230, 0, NULL); -- Janusz Kaminski for Best Cinematography for A.I. Artificial Intelligence (2001)
+INSERT INTO tyler_given_to VALUES (977, 8, 1370, 1, NULL); -- Andrew Lesnie for Best Cinematography for The Lord of the Rings: The Fellowship of the Ring (2001)
+INSERT INTO tyler_given_to VALUES (1011, 8, 235, 0, NULL); -- Roger Deakins for Best Cinematography for The Man Who Wasn't There (2001)
+INSERT INTO tyler_given_to VALUES (1110, 8, 1371, 0, NULL); -- Donald M. McAlpine for Best Cinematography for Moulin Rouge (2001)
+INSERT INTO tyler_given_to VALUES (1284, 8, 1331, 0, NULL); -- Chris Menges for Best Cinematography for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (1303, 8, 3142, 0, NULL); -- Frank Griebe for Best Cinematography for The Princess and the Warrior (2001)
+INSERT INTO tyler_given_to VALUES (77, 10, 2004, 0, NULL); -- Guillaume Laurant for Best Original Screenplay for Amelie (2001)
+INSERT INTO tyler_given_to VALUES (668, 10, 2007, 0, NULL); -- Julian Fellowes for Best Original Screenplay for Gosford Park (2001)
+INSERT INTO tyler_given_to VALUES (1011, 10, 268, 0, NULL); -- Joel and Ethan Coen for Best Original Screenplay for The Man Who Wasn't There (2001)
+INSERT INTO tyler_given_to VALUES (1395, 10, 248, 0, NULL); -- Wes Anderson for Best Original Screenplay for The Royal Tenenbaums (2001)
+INSERT INTO tyler_given_to VALUES (1395, 10, 57, 0, NULL); -- Owen Wilson for Best Original Screenplay for The Royal Tenenbaums (2001)
+INSERT INTO tyler_given_to VALUES (1728, 10, 318, 1, NULL); -- Richard Linklater for Best Original Screenplay for Waking Life (2001)
+INSERT INTO tyler_given_to VALUES (27, 9, 357, 0, NULL); -- Steven Spielberg for Best Adapted Screenplay for A.I. Artificial Intelligence (2001)
+INSERT INTO tyler_given_to VALUES (27, 9, 2243, 0, NULL); -- Ian Watson for Best Adapted Screenplay for A.I. Artificial Intelligence (2001)
+INSERT INTO tyler_given_to VALUES (804, 9, 1997, 0, NULL); -- Todd Field for Best Adapted Screenplay for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (804, 9, 3047, 0, NULL); -- Robert Festinger for Best Adapted Screenplay for In the Bedroom (2001)
+INSERT INTO tyler_given_to VALUES (1054, 9, 335, 1, NULL); -- Christopher Nolan for Best Adapted Screenplay for Memento (2001)
+INSERT INTO tyler_given_to VALUES (1284, 9, 3143, 0, NULL); -- Jerzy Kromolowski for Best Adapted Screenplay for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (1284, 9, 3144, 0, NULL); -- Mary Olson-Kromolowski for Best Adapted Screenplay for The Pledge (2001)
+INSERT INTO tyler_given_to VALUES (1708, 9, 273, 0, NULL); -- Cameron Crowe for Best Adapted Screenplay for Vanilla Sky (2001)
+INSERT INTO tyler_given_to VALUES (124, 11, 0, 0, NULL); -- Atlantis: The Lost Empire (2001) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (568, 11, 0, 0, NULL); -- Final Fantasy (2001) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (1102, 11, 0, 0, NULL); -- Monsters Inc. (2001) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (1728, 11, 0, 1, NULL); -- Waking Life (2001) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (464, 7, 0, 0, NULL); -- Dogtown and Z-Boys (2001) for Best Documentary
+INSERT INTO tyler_given_to VALUES (645, 7, 0, 0, NULL); -- Go Tigers! (2001) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1543, 7, 0, 0, NULL); -- Stanley Kubrick: A Life in Pictures (2001) for Best Documentary
+INSERT INTO tyler_given_to VALUES (1552, 7, 0, 1, NULL); -- Startup.com (2001) for Best Documentary
+INSERT INTO tyler_given_to VALUES (91, 14, 0, 0, NULL); -- Amores Perros (2001) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (77, 14, 0, 1, NULL); -- Amelie (2001) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1186, 14, 0, 0, NULL); -- No Man's Land (2001) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1303, 14, 0, 0, NULL); -- The Princess and the Warrior (2001) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1787, 14, 0, 0, NULL); -- With a Friend Like Harry (2001) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (278, 13, 0, 0, NULL); -- Bully (2001) for Worst Picture
+INSERT INTO tyler_given_to VALUES (641, 13, 0, 0, NULL); -- The Glass House (2001) for Worst Picture
+INSERT INTO tyler_given_to VALUES (951, 13, 0, 0, NULL); -- Life as a House (2001) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1250, 13, 0, 1, NULL); -- Pearl Harbor (2001) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1592, 13, 0, 0, NULL); -- Swordfish (2001) for Worst Picture
+
+-- 2002
+INSERT INTO tyler_given_to VALUES (594, 1, 0, 0, NULL); -- Frailty (2002) for Best Picture
+INSERT INTO tyler_given_to VALUES (625, 1, 0, 0, NULL); -- Gerry (2002) for Best Picture
+INSERT INTO tyler_given_to VALUES (1316, 1, 0, 1, NULL); -- Punch Drunk Love (2002) for Best Picture
+INSERT INTO tyler_given_to VALUES (1478, 1, 0, 0, NULL); -- Signs (2002) for Best Picture
+INSERT INTO tyler_given_to VALUES (1537, 1, 0, 0, NULL); -- Spirited Away (2002) for Best Picture
+INSERT INTO tyler_given_to VALUES (1263, 2, 217, 0, NULL); -- Adrien Brody for Best Actor for The Pianist (2002)
+INSERT INTO tyler_given_to VALUES (36, 2, 210, 0, NULL); -- Nicolas Cage for Best Actor for Adaptation (2002)
+INSERT INTO tyler_given_to VALUES (616, 2, 17, 1, NULL); -- Daniel Day-Lewis for Best Actor for Gangs of New York (2002)
+INSERT INTO tyler_given_to VALUES (180, 2, 31, 0, NULL); -- Ryan Gosling for Best Actor for The Believer (2002)
+INSERT INTO tyler_given_to VALUES (29, 2, 9, 0, NULL); -- Jack Nicholson for Best Actor for About Schmidt (2002)
+INSERT INTO tyler_given_to VALUES (1211, 2, 205, 0, NULL); -- Robin Williams for Best Actor for One Hour Photo (2002)
+INSERT INTO tyler_given_to VALUES (658, 3, 2801, 0, NULL); -- Jennifer Aniston for Best Actress for The Good Girl (2002)
+INSERT INTO tyler_given_to VALUES (634, 3, 45, 0, NULL); -- Cate Blanchett for Best Actress for The Gift (2002)
+INSERT INTO tyler_given_to VALUES (730, 3, 45, 0, NULL); -- Cate Blanchett for Best Actress for Heaven (2002)
+INSERT INTO tyler_given_to VALUES (761, 3, 171, 0, NULL); -- Nicole Kidman for Best Actress for The Hours (2002)
+INSERT INTO tyler_given_to VALUES (551, 3, 1014, 0, NULL); -- Julianne Moore for Best Actress for Far From Heaven (2002)
+INSERT INTO tyler_given_to VALUES (761, 3, 1014, 0, NULL); -- Julianne Moore for Best Actress for The Hours (2002)
+INSERT INTO tyler_given_to VALUES (316, 3, 111, 0, NULL); -- Renee Zellweger for Best Actress for Chicago (2002)
+INSERT INTO tyler_given_to VALUES (316, 3, 109, 1, NULL); -- Catherine Zeta-Jones for Best Actress for Chicago (2002)
+INSERT INTO tyler_given_to VALUES (36, 4, 655, 0, NULL); -- Chris Cooper for Best Supporting Actor for Adaptation (2002)
+INSERT INTO tyler_given_to VALUES (14, 4, 6, 0, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for 25th Hour (2002)
+INSERT INTO tyler_given_to VALUES (1347, 4, 6, 0, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for Red Dragon (2002)
+INSERT INTO tyler_given_to VALUES (1316, 4, 6, 0, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for Punch Drunk Love (2002)
+INSERT INTO tyler_given_to VALUES (1375, 4, 102, 1, NULL); -- Jude Law for Best Supporting Actor for Road to Perdition (2002)
+INSERT INTO tyler_given_to VALUES (634, 4, 125, 0, NULL); -- Giovanni Ribisi for Best Supporting Actor for The Gift (2002)
+INSERT INTO tyler_given_to VALUES (730, 4, 125, 0, NULL); -- Giovanni Ribisi for Best Supporting Actor for Heaven (2002)
+INSERT INTO tyler_given_to VALUES (978, 4, 2209, 0, NULL); -- Andy Serkis for Best Supporting Actor for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (824, 4, 205, 0, NULL); -- Robin Williams for Best Supporting Actor for Insomnia (2002)
+INSERT INTO tyler_given_to VALUES (68, 5, 2299, 0, NULL); -- Lesley Manville for Best Supporting Actress for All or Nothing (2002)
+INSERT INTO tyler_given_to VALUES (791, 5, 937, 1, NULL); -- Susan Sarandon for Best Supporting Actress for Igby Goes Down (2002)
+INSERT INTO tyler_given_to VALUES (761, 5, 12, 0, NULL); -- Meryl Streep for Best Supporting Actress for The Hours (2002)
+INSERT INTO tyler_given_to VALUES (634, 5, 1019, 0, NULL); -- Hilary Swank for Best Supporting Actress for The Gift (2002)
+INSERT INTO tyler_given_to VALUES (1347, 5, 1004, 0, NULL); -- Emily Watson for Best Supporting Actress for Red Dragon (2002)
+INSERT INTO tyler_given_to VALUES (1316, 6, 247, 1, NULL); -- Paul Thomas Anderson for Best Director for Punch Drunk Love (2002)
+INSERT INTO tyler_given_to VALUES (978, 6, 298, 0, NULL); -- Peter Jackson for Best Director for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (1537, 6, 330, 0, NULL); -- Hayao Miyazaki for Best Director for Spirited Away (2002)
+INSERT INTO tyler_given_to VALUES (594, 6, 2128, 0, NULL); -- Bill Paxton for Best Director for Frailty (2002)
+INSERT INTO tyler_given_to VALUES (1263, 6, 342, 0, NULL); -- Roman Polanski for Best Director for The Pianist (2002)
+INSERT INTO tyler_given_to VALUES (625, 6, 364, 0, NULL); -- Gus Van Sant for Best Director for Gerry (2002)
+INSERT INTO tyler_given_to VALUES (340, 8, 1378, 0, NULL); -- Cesar Charlone for Best Cinematography for City of God (2002)
+INSERT INTO tyler_given_to VALUES (551, 8, 1375, 0, NULL); -- Edward Lachman for Best Cinematography for Far From Heaven (2002)
+INSERT INTO tyler_given_to VALUES (978, 8, 1370, 0, NULL); -- Andrew Lesnie for Best Cinematography for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (1079, 8, 230, 0, NULL); -- Janusz Kaminski for Best Cinematography for Minority Report (2002)
+INSERT INTO tyler_given_to VALUES (1263, 8, 1376, 0, NULL); -- Pawel Edelman for Best Cinematography for The Pianist (2002)
+INSERT INTO tyler_given_to VALUES (1316, 8, 234, 0, NULL); -- Robert Elswit for Best Cinematography for Punch Drunk Love (2002)
+INSERT INTO tyler_given_to VALUES (8, 10, 2205, 0, NULL); -- Jill Sprecher for Best Original Screenplay for Thirteen Conversations About One Thing (2002)
+INSERT INTO tyler_given_to VALUES (8, 10, 2206, 0, NULL); -- Karen Sprecher for Best Original Screenplay for Thirteen Conversations About One Thing (2002)
+INSERT INTO tyler_given_to VALUES (310, 10, 3145, 0, NULL); -- Chap Taylor for Best Original Screenplay for Changing Lanes (2002)
+INSERT INTO tyler_given_to VALUES (310, 10, 1939, 0, NULL); -- Michael Tolkin for Best Original Screenplay for Changing Lanes (2002)
+INSERT INTO tyler_given_to VALUES (453, 10, 3146, 0, NULL); -- Rick Shaughnessy for Best Original Screenplay for Dinner Rush (2002)
+INSERT INTO tyler_given_to VALUES (453, 10, 3147, 0, NULL); -- Brian S. Kalata for Best Original Screenplay for Dinner Rush (2002)
+INSERT INTO tyler_given_to VALUES (594, 10, 3148, 0, NULL); -- Brent Hanley for Best Original Screenplay for Frailty (2002)
+INSERT INTO tyler_given_to VALUES (1316, 10, 247, 1, NULL); -- Paul Thomas Anderson for Best Original Screenplay for Punch Drunk Love (2002)
+INSERT INTO tyler_given_to VALUES (1478, 10, 354, 0, NULL); -- M. Night Shyamalan for Best Original Screenplay for Signs (2002)
+INSERT INTO tyler_given_to VALUES (28, 9, 2008, 0, NULL); -- Peter Hedges for Best Adapted Screenplay for About a Boy (2002)
+INSERT INTO tyler_given_to VALUES (28, 9, 2009, 0, NULL); -- Chris Weitz for Best Adapted Screenplay for About a Boy (2002)
+INSERT INTO tyler_given_to VALUES (28, 9, 2010, 0, NULL); -- Paul Weitz for Best Adapted Screenplay for About a Boy (2002)
+INSERT INTO tyler_given_to VALUES (36, 9, 372, 1, NULL); -- Charlie Kaufman for Best Adapted Screenplay for Adaptation (2002)
+INSERT INTO tyler_given_to VALUES (340, 9, 2015, 0, NULL); -- Braulio Mantovani for Best Adapted Screenplay for City of God (2002)
+INSERT INTO tyler_given_to VALUES (616, 9, 1943, 0, NULL); -- Jay Cocks for Best Adapted Screenplay for Gangs of New York (2002)
+INSERT INTO tyler_given_to VALUES (616, 9, 1989, 0, NULL); -- Kenneth Lonergan for Best Adapted Screenplay for Gangs of New York (2002)
+INSERT INTO tyler_given_to VALUES (616, 9, 1921, 0, NULL); -- Steven Zaillian for Best Adapted Screenplay for Gangs of New York (2002)
+INSERT INTO tyler_given_to VALUES (978, 9, 2003, 0, NULL); -- Philippa Boyens for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (978, 9, 298, 0, NULL); -- Peter Jackson for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (978, 9, 3149, 0, NULL); -- Stephen Sinclair for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (978, 9, 1953, 0, NULL); -- Fran Walsh for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (978, 9, 0, 0, NULL); --  for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
+INSERT INTO tyler_given_to VALUES (1079, 9, 1972, 0, NULL); -- Scott Frank for Best Adapted Screenplay for Minority Report (2002)
+INSERT INTO tyler_given_to VALUES (1079, 9, 3150, 0, NULL); -- Jon Cohen for Best Adapted Screenplay for Minority Report (2002)
+INSERT INTO tyler_given_to VALUES (786, 11, 0, 0, NULL); -- Ice Age (2002) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (864, 11, 0, 0, NULL); -- Jonah: A Veggie Tales Movie (2002) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (957, 11, 0, 0, NULL); -- Lilo & Stitch (2002) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (1537, 11, 0, 1, NULL); -- Spirited Away (2002) for Best Animated Feature
+INSERT INTO tyler_given_to VALUES (244, 7, 0, 1, NULL); -- Bowling for Columbine (2002) for Best Documentary
+INSERT INTO tyler_given_to VALUES (783, 7, 0, 0, NULL); -- I am Trying to Break Your Heart (2002) for Best Documentary
+INSERT INTO tyler_given_to VALUES (883, 7, 0, 0, NULL); -- The Kid Stays in the Picture (2002) for Best Documentary
+INSERT INTO tyler_given_to VALUES (981, 7, 0, 0, NULL); -- Lost in La Mancha (2002) for Best Documentary
+INSERT INTO tyler_given_to VALUES (156, 14, 0, 1, NULL); -- Baran (2002) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (340, 14, 0, 0, NULL); -- City of God (2002) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (1596, 14, 0, 0, NULL); -- Talk to Her (2002) for Best Foreign Language Film
+INSERT INTO tyler_given_to VALUES (302, 13, 0, 0, NULL); -- The Cat's Meow (2002) for Worst Picture
+INSERT INTO tyler_given_to VALUES (422, 13, 0, 0, NULL); -- Death to Smoochy (2002) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1365, 13, 0, 0, NULL); -- Return to Neverland (2002) for Worst Picture
+INSERT INTO tyler_given_to VALUES (1780, 13, 0, 1, NULL); -- Windtalkers (2002) for Worst Picture
+
 -- 2003
 INSERT INTO tyler_given_to VALUES (88, 1, 0, 0, NULL); -- American Splendor (2003) for Best Picture
 INSERT INTO tyler_given_to VALUES (505, 1, 0, 1, NULL); -- Elephant (2003) for Best Picture
@@ -298,15 +715,15 @@ INSERT INTO tyler_given_to VALUES (445, 9, 2980, 1, NULL); -- Aline Brosh McKenn
 INSERT INTO tyler_given_to VALUES (947, 9, 2050, 0, NULL); -- Iris Yamashita for Best Adapted Screenplay for Letters From Iwo Jima (2006)
 INSERT INTO tyler_given_to VALUES (1295, 9, 2324, 0, NULL); -- Jonathan Nolan for Best Adapted Screenplay for The Prestige (2006)
 INSERT INTO tyler_given_to VALUES (1295, 9, 335, 0, NULL); -- Christopher Nolan for Best Adapted Screenplay for The Prestige (2006)
-INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'You''re No Cop"'); -- The Departed (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (441, 12, 0, 1, 'The Botched Operation"'); -- The Departed (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'The Rat Persuing the Mole"'); -- The Departed (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'I''m Not the Rat"'); -- The Departed (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (445, 12, 0, 0, 'A Lesson in Blue"'); -- The Devil Wears Prada (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (701, 12, 0, 0, 'The Drug Deal by Teacher and Student"'); -- Half Nelson (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (1101, 12, 0, 0, 'Playing it Cool"'); -- Monster House (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (1231, 12, 0, 0, 'Pale Man Awakens"'); -- Pan's Labyrinth (2006) for Best Scene
-INSERT INTO tyler_given_to VALUES (1272, 12, 0, 0, 'Do You Fear Death?"'); -- Pirates of the Caribbean: Dead Man's Chest (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'You''re No Cop'); -- The Departed (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (441, 12, 0, 1, 'The Botched Operation'); -- The Departed (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'The Rat Persuing the Mole'); -- The Departed (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (441, 12, 0, 0, 'I''m Not the Rat'); -- The Departed (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (445, 12, 0, 0, 'A Lesson in Blue'); -- The Devil Wears Prada (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (701, 12, 0, 0, 'The Drug Deal by Teacher and Student'); -- Half Nelson (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (1101, 12, 0, 0, 'Playing it Cool'); -- Monster House (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (1231, 12, 0, 0, 'Pale Man Awakens'); -- Pan's Labyrinth (2006) for Best Scene
+INSERT INTO tyler_given_to VALUES (1272, 12, 0, 0, 'Do You Fear Death?'); -- Pirates of the Caribbean: Dead Man's Chest (2006) for Best Scene
 
 -- 2007
 INSERT INTO tyler_given_to VALUES (2, 1, 0, 0, NULL); -- 3:10 to Yuma (2007) for Best Picture
@@ -445,15 +862,15 @@ INSERT INTO tyler_given_to VALUES (396, 9, 380, 0, NULL); -- Eric Roth for Best 
 INSERT INTO tyler_given_to VALUES (475, 9, 1900, 0, NULL); -- John Patrick Shanley for Best Adapted Screenplay for Doubt (2008)
 INSERT INTO tyler_given_to VALUES (605, 9, 2048, 1, NULL); -- Peter Morgan for Best Adapted Screenplay for Frost/Nixon (2008)
 INSERT INTO tyler_given_to VALUES (1501, 9, 1970, 0, NULL); -- Simon Beaufoy for Best Adapted Screenplay for Slumdog Millionaire (2008)
-INSERT INTO tyler_given_to VALUES (114, 12, 0, 0, 'Morning Coffee on the Porch"'); -- Appaloosa (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (404, 12, 0, 0, 'Here''s My Card"'); -- The Dark Knight (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (475, 12, 0, 1, 'The Priest and the Principal"'); -- Doubt (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (513, 12, 0, 0, 'The Penguin"'); -- Encounters at the End of the World (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (3417, 12, 0, 0, 'Spit-up"'); -- Four Christmases (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (605, 12, 0, 0, 'The Confession"'); -- Frost/Nixon (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (853, 12, 0, 0, 'The Monologue"'); -- JCVD (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (1008, 12, 0, 0, 'Walking Across the Twin Towers"'); -- Man on Wire (2008) for Best Scene
-INSERT INTO tyler_given_to VALUES (1733, 12, 0, 0, 'WALL-E at Home"'); -- WALL-E (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (114, 12, 0, 0, 'Morning Coffee on the Porch'); -- Appaloosa (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (404, 12, 0, 0, 'Here''s My Card'); -- The Dark Knight (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (475, 12, 0, 1, 'The Priest and the Principal'); -- Doubt (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (513, 12, 0, 0, 'The Penguin'); -- Encounters at the End of the World (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (3417, 12, 0, 0, 'Spit-up'); -- Four Christmases (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (605, 12, 0, 0, 'The Confession'); -- Frost/Nixon (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (853, 12, 0, 0, 'The Monologue'); -- JCVD (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (1008, 12, 0, 0, 'Walking Across the Twin Towers'); -- Man on Wire (2008) for Best Scene
+INSERT INTO tyler_given_to VALUES (1733, 12, 0, 0, 'WALL-E at Home'); -- WALL-E (2008) for Best Scene
 INSERT INTO tyler_given_to VALUES (811, 13, 0, 0, NULL); -- The Incredible Hulk (2008) for Worst Picture
 INSERT INTO tyler_given_to VALUES (816, 13, 0, 0, NULL); -- Indiana Jones and the Kingdom of the Crystal Skull (2008) for Worst Picture
 INSERT INTO tyler_given_to VALUES (3393, 13, 0, 0, NULL); -- Mamma Mia! (2008) for Worst Picture
@@ -471,7 +888,7 @@ INSERT INTO tyler_given_to VALUES (817, 2, 20, 0, NULL); -- Matt Damon for Best 
 INSERT INTO tyler_given_to VALUES (832, 2, 64, 0, NULL); -- Morgan Freeman for Best Actor for Invictus (2009)
 INSERT INTO tyler_given_to VALUES (1616, 2, 668, 0, NULL); -- Hal Holbrook for Best Actor for That Evening Sun (2009)
 INSERT INTO tyler_given_to VALUES (678, 2, 7, 0, NULL); -- John Malkovich for Best Actor for The Great Buck Howard (2009)
-INSERT INTO tyler_given_to VALUES (1374, 2, 29, 0, NULL); -- Viggo Mortensen for Best Actor for The Road (2009)
+INSERT INTO tyler_given_to VALUES (1374, 2, 29, 0, NULL); -- Viggo Mortenson for Best Actor for The Road (2009)
 INSERT INTO tyler_given_to VALUES (776, 2, 2062, 0, NULL); -- Jeremy Renner for Best Actor for The Hurt Locker (2009)
 INSERT INTO tyler_given_to VALUES (1104, 2, 173, 1, NULL); -- Sam Rockwell for Best Actor for Moon (2009)
 INSERT INTO tyler_given_to VALUES (216, 3, 2723, 0, NULL); -- Sandra Bullock for Best Actress for The Blind Side (2009)
@@ -482,7 +899,7 @@ INSERT INTO tyler_given_to VALUES (832, 4, 20, 0, NULL); -- Matt Damon for Best 
 INSERT INTO tyler_given_to VALUES (10, 4, 2213, 0, NULL); -- Thomas Lennon for Best Supporting Actor for 17 Again (2009)
 INSERT INTO tyler_given_to VALUES (1616, 4, 2178, 0, NULL); -- Ray McKinnon for Best Supporting Actor for That Evening Sun (2009)
 INSERT INTO tyler_given_to VALUES (988, 4, 2096, 0, NULL); -- Stanley Tucci for Best Supporting Actor for The Lovely Bones (2009)
-INSERT INTO tyler_given_to VALUES (818, 4, 2529, 1, NULL); -- Christoph Waltz for Best Supporting Actor for Inglorious Basterds (2009)
+INSERT INTO tyler_given_to VALUES (818, 4, 2529, 1, NULL); -- Christoph Waltz for Best Supporting Actor for Inglourious Basterds (2009)
 INSERT INTO tyler_given_to VALUES (1769, 5, 3005, 0, NULL); -- Leonie Benesch for Best Supporting Actress for The White Ribbon (2009)
 INSERT INTO tyler_given_to VALUES (1293, 5, 2869, 0, NULL); -- Mariah Carey for Best Supporting Actress for Precious (2009)
 INSERT INTO tyler_given_to VALUES (1702, 5, 2490, 0, NULL); -- Anna Kendrick for Best Supporting Actress for Up in the Air (2009)
@@ -493,12 +910,12 @@ INSERT INTO tyler_given_to VALUES (550, 6, 248, 0, NULL); -- Wes Anderson for Be
 INSERT INTO tyler_given_to VALUES (1104, 6, 3007, 1, NULL); -- Duncan Jones for Best Director for Moon (2009)
 INSERT INTO tyler_given_to VALUES (1765, 6, 302, 0, NULL); -- Spike Jonze for Best Director for Where the Wild Things Are (2009)
 INSERT INTO tyler_given_to VALUES (1288, 6, 330, 0, NULL); -- Hayao Miyazaki for Best Director for Ponyo (2009)
-INSERT INTO tyler_given_to VALUES (818, 6, 359, 0, NULL); -- Quentin Tarantino for Best Director for Inglorious Basterds (2009)
+INSERT INTO tyler_given_to VALUES (818, 6, 359, 0, NULL); -- Quentin Tarantino for Best Director for Inglourious Basterds (2009)
 INSERT INTO tyler_given_to VALUES (133, 8, 3008, 1, NULL); -- Mauro Fiore for Best Cinematography for Avatar (2009)
 INSERT INTO tyler_given_to VALUES (327, 8, 2661, 0, NULL); -- Robert Presley for Best Cinematography for A Christmas Carol (2009)
 INSERT INTO tyler_given_to VALUES (550, 8, 3009, 0, NULL); -- Tristan Oliver for Best Cinematography for Fantastic Mr. Fox (2009)
 INSERT INTO tyler_given_to VALUES (722, 8, 1372, 0, NULL); -- Bruno Delbonnel for Best Cinematography for Harry Potter and the Half-Blood Prince (2009)
-INSERT INTO tyler_given_to VALUES (818, 8, 1340, 0, NULL); -- Robert Richardson for Best Cinematography for Inglorious Basterds (2009)
+INSERT INTO tyler_given_to VALUES (818, 8, 1340, 0, NULL); -- Robert Richardson for Best Cinematography for Inglourious Basterds (2009)
 INSERT INTO tyler_given_to VALUES (1104, 8, 3010, 0, NULL); -- Gary Shaw for Best Cinematography for Moon (2009)
 INSERT INTO tyler_given_to VALUES (1374, 8, 3011, 0, NULL); -- Javier Aguirresarobe for Best Cinematography for The Road (2009)
 INSERT INTO tyler_given_to VALUES (1765, 8, 2650, 0, NULL); -- Lance Acord for Best Cinematography for Where the Wild Things Are (2009)
@@ -506,7 +923,7 @@ INSERT INTO tyler_given_to VALUES (1769, 8, 3012, 0, NULL); -- Christian Berger 
 INSERT INTO tyler_given_to VALUES (665, 10, 2999, 0, NULL); -- Ramin Bahrani for Best Original Screenplay for Goodbye Solo (2009)
 INSERT INTO tyler_given_to VALUES (665, 10, 3013, 0, NULL); -- Bahareh Azimi for Best Original Screenplay for Goodbye Solo (2009)
 INSERT INTO tyler_given_to VALUES (776, 10, 3014, 0, NULL); -- Mark Boal for Best Original Screenplay for The Hurt Locker (2009)
-INSERT INTO tyler_given_to VALUES (818, 10, 359, 0, NULL); -- Quentin Tarantino for Best Original Screenplay for Inglorious Basterds (2009)
+INSERT INTO tyler_given_to VALUES (818, 10, 359, 0, NULL); -- Quentin Tarantino for Best Original Screenplay for Inglourious Basterds (2009)
 INSERT INTO tyler_given_to VALUES (1104, 10, 3015, 1, NULL); -- Nathan Parker for Best Original Screenplay for Moon (2009)
 INSERT INTO tyler_given_to VALUES (1702, 10, 1180, 0, NULL); -- Jason Reitman for Best Original Screenplay for Up in the Air (2009)
 INSERT INTO tyler_given_to VALUES (1702, 10, 3016, 0, NULL); -- Sheldon Turner for Best Original Screenplay for Up in the Air (2009)
@@ -520,7 +937,7 @@ INSERT INTO tyler_given_to VALUES (1765, 9, 3017, 0, NULL); -- Dave Eggers for B
 INSERT INTO tyler_given_to VALUES (550, 12, 0, 0, 'The Rules of Whack-Bat'); -- Fantastic Mr. Fox (2009) for Best Scene
 INSERT INTO tyler_given_to VALUES (550, 12, 0, 0, 'A Go-For-Broke Rescue Mission'); -- Fantastic Mr. Fox (2009) for Best Scene
 INSERT INTO tyler_given_to VALUES (776, 12, 0, 0, 'The Sniper Battle'); -- The Hurt Locker (2009) for Best Scene
-INSERT INTO tyler_given_to VALUES (818, 12, 0, 1, 'Chapter 1'); -- Inglorious Basterds (2009) for Best Scene
+INSERT INTO tyler_given_to VALUES (818, 12, 0, 1, 'Chapter 1'); -- Inglourious Basterds (2009) for Best Scene
 INSERT INTO tyler_given_to VALUES (988, 12, 0, 0, 'Inside Mr. Harvey''s House'); -- The Lovely Bones (2009) for Best Scene
 INSERT INTO tyler_given_to VALUES (1104, 12, 0, 0, 'Who Are You?'); -- Moon (2009) for Best Scene
 INSERT INTO tyler_given_to VALUES (1374, 12, 0, 0, 'Using a Bullet'); -- The Road (2009) for Best Scene
@@ -684,7 +1101,7 @@ INSERT INTO tyler_given_to VALUES (3532, 9, 3055, 0, NULL); -- Eskil Vogt for Be
 INSERT INTO tyler_given_to VALUES (3360, 12, 0, 0, 'The Motorbike Chase'); -- The Adventures of Tintin (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (3351, 12, 0, 0, 'Food Poisoning'); -- Bridesmaids (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (381, 12, 0, 0, 'Percy''s in Town'); -- Cowboys & Aliens (2011) for Best Scene
-INSERT INTO tyler_given_to VALUES (3339, 12, 0, 0, 'Crossroads in the Backyard"'); -- Crazy Stupid Love. (2011) for Best Scene
+INSERT INTO tyler_given_to VALUES (3339, 12, 0, 0, 'Crossroads in the Backyard'); -- Crazy Stupid Love. (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (487, 12, 0, 0, 'Opening Drive'); -- Drive (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (3385, 12, 0, 0, 'Can I Tell You My Story?'); -- Extremely Loud & Incredibly Close (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (724, 12, 0, 1, 'Conversing with Griphook'); -- Harry Potter and the Deathly Hollows Part 2 (2011) for Best Scene
@@ -694,3 +1111,75 @@ INSERT INTO tyler_given_to VALUES (3342, 12, 0, 0, 'Escape Through the Forrest')
 INSERT INTO tyler_given_to VALUES (1579, 12, 0, 0, 'Midnight Shoot at the Train Station'); -- Super 8 (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (3373, 12, 0, 0, 'Horse in No Man''s Land'); -- War Horse (2011) for Best Scene
 INSERT INTO tyler_given_to VALUES (3347, 12, 0, 0, 'Why?'); -- We Need to Talk About Kevin (2011) for Best Scene
+
+-- 2012
+INSERT INTO tyler_given_to VALUES (3460, 1, 0, 0, NULL); -- Cloud Atlas (2012) for Best Picture
+INSERT INTO tyler_given_to VALUES (3425, 1, 0, 0, NULL); -- Django Unchained (2012) for Best Picture
+INSERT INTO tyler_given_to VALUES (3419, 1, 0, 0, NULL); -- Les Miserables (2012) for Best Picture
+INSERT INTO tyler_given_to VALUES (3437, 1, 0, 0, NULL); -- Life of Pi (2012) for Best Picture
+INSERT INTO tyler_given_to VALUES (3402, 1, 0, 1, NULL); -- Samsara (2012) for Best Picture
+INSERT INTO tyler_given_to VALUES (3444, 2, 2060, 0, NULL); -- Bradley Cooper for Best Actor for Silver Linings Playbook (2012)
+INSERT INTO tyler_given_to VALUES (3420, 2, 17, 0, NULL); -- Daniel Day-Lewis for Best Actor for Lincoln (2012)
+INSERT INTO tyler_given_to VALUES (3433, 2, 3151, 0, NULL); -- Richard Gere for Best Actor for Arbitrage (2012)
+INSERT INTO tyler_given_to VALUES (3460, 2, 4, 0, NULL); -- Tom Hanks for Best Actor for Cloud Atlas (2012)
+INSERT INTO tyler_given_to VALUES (3419, 2, 2091, 0, NULL); -- Hugh Jackman for Best Actor for Les Miserables (2012)
+INSERT INTO tyler_given_to VALUES (3403, 2, 61, 1, NULL); -- Joaquin Phoenix for Best Actor for The Master (2012)
+INSERT INTO tyler_given_to VALUES (3410, 2, 35, 0, NULL); -- Denzel Washington for Best Actor for Flight (2012)
+INSERT INTO tyler_given_to VALUES (3432, 3, 2325, 0, NULL); -- Jessica Chastain for Best Actress for Zero Dark Thirty (2012)
+INSERT INTO tyler_given_to VALUES (3413, 3, 1040, 0, NULL); -- Keira Knightley for Best Actress for Anna Karenina (2012)
+INSERT INTO tyler_given_to VALUES (3444, 3, 2059, 1, NULL); -- Jennifer Lawrence for Best Actress for Silver Linings Playbook (2012)
+INSERT INTO tyler_given_to VALUES (3397, 3, 12, 0, NULL); -- Meryl Streep for Best Actress for Hope Springs (2012)
+INSERT INTO tyler_given_to VALUES (3431, 3, 3086, 0, NULL); -- Quvenzhane Wallis for Best Actress for Beasts of the Southern Wild (2012)
+INSERT INTO tyler_given_to VALUES (3444, 4, 3, 0, NULL); -- Robert De Niro for Best Supporting Actor for Silver Linings Playbook (2012)
+INSERT INTO tyler_given_to VALUES (3425, 4, 18, 0, NULL); -- Leonardo DiCaprio for Best Supporting Actor for Django Unchained (2012)
+INSERT INTO tyler_given_to VALUES (3380, 4, 2067, 0, NULL); -- Michael Fassbender for Best Supporting Actor for Prometheus (2012)
+INSERT INTO tyler_given_to VALUES (3403, 4, 6, 1, NULL); -- Philip Seymour Hoffman for Best Supporting Actor for The Master (2012)
+INSERT INTO tyler_given_to VALUES (3420, 4, 28, 0, NULL); -- Tommy Lee Jones for Best Supporting Actor for Lincoln (2012)
+INSERT INTO tyler_given_to VALUES (3425, 4, 2529, 0, NULL); -- Christoph Waltz for Best Supporting Actor for Django Unchained (2012)
+INSERT INTO tyler_given_to VALUES (3420, 5, 926, 0, NULL); -- Sally Field for Best Supporting Actress for Lincoln (2012)
+INSERT INTO tyler_given_to VALUES (3419, 5, 167, 1, NULL); -- Anne Hathaway for Best Supporting Actress for Les Miserables (2012)
+INSERT INTO tyler_given_to VALUES (3410, 5, 3152, 0, NULL); -- Kelly Reilly for Best Supporting Actress for Flight (2012)
+INSERT INTO tyler_given_to VALUES (3419, 6, 2239, 0, NULL); -- Tom Hooper for Best Director for Les Miserables (2012)
+INSERT INTO tyler_given_to VALUES (3437, 6, 1170, 1, NULL); -- Ang Lee for Best Director for Life of Pi (2012)
+INSERT INTO tyler_given_to VALUES (3425, 6, 359, 0, NULL); -- Quentin Tarantino for Best Director for Django Unchained (2012)
+INSERT INTO tyler_given_to VALUES (3413, 6, 2424, 0, NULL); -- Joe Wright for Best Director for Anna Karenina (2012)
+INSERT INTO tyler_given_to VALUES (3431, 6, 3087, 0, NULL); -- Benh Zeitlin for Best Director for Beasts of the Southern Wild (2012)
+INSERT INTO tyler_given_to VALUES (3431, 8, 3153, 0, NULL); -- Ben Richardson for Best Cinematography for Beasts of the Southern Wild (2012)
+INSERT INTO tyler_given_to VALUES (3460, 8, 3142, 0, NULL); -- Frank Griebe for Best Cinematography for Cloud Atlas (2012)
+INSERT INTO tyler_given_to VALUES (3460, 8, 240, 0, NULL); -- John Toll for Best Cinematography for Cloud Atlas (2012)
+INSERT INTO tyler_given_to VALUES (3394, 8, 1382, 0, NULL); -- Wally Pfister for Best Cinematography for The Dark Knight Rises (2012)
+INSERT INTO tyler_given_to VALUES (3425, 8, 1340, 0, NULL); -- Robert Richardson for Best Cinematography for Django Unchained (2012)
+INSERT INTO tyler_given_to VALUES (3419, 8, 3026, 0, NULL); -- Danny Cohen for Best Cinematography for Les Miserables (2012)
+INSERT INTO tyler_given_to VALUES (3437, 8, 1387, 0, NULL); -- Claudio Miranda for Best Cinematography for Life of Pi (2012)
+INSERT INTO tyler_given_to VALUES (3420, 8, 230, 0, NULL); -- Janusz Kaminski for Best Cinematography for Lincoln (2012)
+INSERT INTO tyler_given_to VALUES (3403, 8, 3154, 0, NULL); -- Mihai Malaimare Jr. for Best Cinematography for The Master (2012)
+INSERT INTO tyler_given_to VALUES (3387, 8, 2764, 0, NULL); -- Robert D. Yeoman for Best Cinematography for Moonrise Kingdom (2012)
+INSERT INTO tyler_given_to VALUES (3380, 8, 2986, 0, NULL); -- Dariusz Wolski for Best Cinematography for Prometheus (2012)
+INSERT INTO tyler_given_to VALUES (3402, 8, 3155, 1, NULL); -- Ron Fricke for Best Cinematography for Samsara (2012)
+INSERT INTO tyler_given_to VALUES (3438, 8, 235, 0, NULL); -- Roger Deakins for Best Cinematography for Skyfall (2012)
+INSERT INTO tyler_given_to VALUES (3433, 10, 3156, 0, NULL); -- Nicholas Jarecki for Best Original Screenplay for Arbitrage (2012)
+INSERT INTO tyler_given_to VALUES (3394, 10, 2324, 0, NULL); -- Jonathan Nolan for Best Original Screenplay for The Dark Knight Rises (2012)
+INSERT INTO tyler_given_to VALUES (3394, 10, 335, 0, NULL); -- Christopher Nolan for Best Original Screenplay for The Dark Knight Rises (2012)
+INSERT INTO tyler_given_to VALUES (3425, 10, 359, 0, NULL); -- Quentin Tarantino for Best Original Screenplay for Django Unchained (2012)
+INSERT INTO tyler_given_to VALUES (3397, 10, 3157, 1, NULL); -- Vanessa Taylor for Best Original Screenplay for Hope Springs (2012)
+INSERT INTO tyler_given_to VALUES (3387, 10, 248, 0, NULL); -- Wes Anderson for Best Original Screenplay for Moonrise Kingdom (2012)
+INSERT INTO tyler_given_to VALUES (3387, 10, 3091, 0, NULL); -- Roman Coppola for Best Original Screenplay for Moonrise Kingdom (2012)
+INSERT INTO tyler_given_to VALUES (3428, 10, 2880, 0, NULL); -- John Krasinski for Best Original Screenplay for Promised Land (2012)
+INSERT INTO tyler_given_to VALUES (3428, 10, 20, 0, NULL); -- Matt Damon for Best Original Screenplay for Promised Land (2012)
+INSERT INTO tyler_given_to VALUES (3436, 9, 3088, 0, NULL); -- Chris Terrio for Best Adapted Screenplay for Argo (2012)
+INSERT INTO tyler_given_to VALUES (3413, 9, 1878, 0, NULL); -- Tom Stoppard for Best Adapted Screenplay for Anna Karenina (2012)
+INSERT INTO tyler_given_to VALUES (3431, 9, 3089, 0, NULL); -- Lucy Alibar for Best Adapted Screenplay for Beasts of the Southern Wild (2012)
+INSERT INTO tyler_given_to VALUES (3431, 9, 3087, 0, NULL); -- Benh Zeitlin for Best Adapted Screenplay for Beasts of the Southern Wild (2012)
+INSERT INTO tyler_given_to VALUES (3460, 9, 2765, 0, NULL); -- Andy and Lana Wachowski for Best Adapted Screenplay for Cloud Atlas (2012)
+INSERT INTO tyler_given_to VALUES (3460, 9, 363, 0, NULL); -- Tom Tykwer for Best Adapted Screenplay for Cloud Atlas (2012)
+INSERT INTO tyler_given_to VALUES (3437, 9, 2024, 1, NULL); -- David Magee for Best Adapted Screenplay for Life of Pi (2012)
+INSERT INTO tyler_given_to VALUES (3444, 9, 348, 0, NULL); -- David O. Russell for Best Adapted Screenplay for Silver Linings Playbook (2012)
+INSERT INTO tyler_given_to VALUES (3403, 12, 0, 1, 'Processing'); -- The Master (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3410, 12, 0, 0, 'Flying Inverted'); -- Flight (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3420, 12, 0, 0, 'Thaddeus Stevens Has the Floor'); -- Lincoln (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3418, 12, 0, 0, 'Riddles'); -- The Hobbit: An Unexpected Journey (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3413, 12, 0, 0, 'The Dance'); -- Anna Karenina (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3419, 12, 0, 0, 'I Dreamed a Dream'); -- Les Miserables (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3425, 12, 0, 0, 'Dinner in Candyland'); -- Django Unchained (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3425, 12, 0, 0, 'Dr. Shultz Finds Django'); -- Django Unchained (2012) for Best Scene
+INSERT INTO tyler_given_to VALUES (3445, 12, 0, 0, 'At the Diner with Myself'); -- Looper (2012) for Best Scene

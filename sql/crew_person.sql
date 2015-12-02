@@ -663,8 +663,7 @@ INSERT INTO crew_person VALUES (661, 'Alda', 'Alan', DEFAULT, 'Alan Alda', 'Acto
 INSERT INTO crew_person VALUES (662, 'Howard', 'Terrence', DEFAULT, 'Terrence Howard', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (663, 'Gyllenhaal', 'Jake', DEFAULT, 'Jake Gyllenhaal', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (664, 'Haley', 'Jackie', 'Earle', 'Jackie Earle Haley', 'Actor');  -- Actor
-INSERT INTO crew_person VALUES (665, 'Murphy', 'Eddie', DEFAULT, 'Eddie Murphy', 'Actor');  -- Actor
--- there was a duplicate entry of Viggo Mortensen at id 666
+INSERT INTO crew_person VALUES (665, 'Murphy', 'Eddie', DEFAULT, 'Eddie Murphy', 'Actor');  -- Actor -- there was a duplicate entry of Viggo Mortensen at id 666, hence no 666 crew (convenient, huh?)
 INSERT INTO crew_person VALUES (667, 'Affleck', 'Casey', DEFAULT, 'Casey Affleck', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (668, 'Holbrook', 'Hal', DEFAULT, 'Hal Holbrook', 'Actor');  -- Actor
 INSERT INTO crew_person VALUES (669, 'Shannon', 'Michael', DEFAULT, 'Michael Shannon', 'Actor');  -- Actor
@@ -2762,7 +2761,7 @@ INSERT INTO crew_person VALUES (2761, 'Baldwin', 'Stephen', NULL, 'Stephen Baldw
 INSERT INTO crew_person VALUES (2762, 'Sedgwick', 'Kyra', NULL, 'Kyra Sedgwick', 'Actress');  -- Actress: Kyra Sedgwick
 INSERT INTO crew_person VALUES (2763, 'Fleischer', 'Richard', NULL, 'Richard Fleischer', 'Director');  -- Director: Richard Fleischer
 INSERT INTO crew_person VALUES (2764, 'Yeoman', 'Robert', 'D.', 'Robert D. Yeoman', 'Cinematographer');  -- Cinematographer: Robert D. Yeoman
-INSERT INTO crew_person VALUES (2765, 'Andy', NULL, NULL, 'Andy and Lana Wachowski', 'Director');  -- Director: Andy and Lana Wachowski
+INSERT INTO crew_person VALUES (2765, 'Wachowski', 'Andy and Lana', NULL, 'Andy and Lana Wachowski', 'Director');  -- Director: Andy and Lana Wachowski
 INSERT INTO crew_person VALUES (2766, 'Gershon', 'Gina', NULL, 'Gina Gershon', 'Actress');  -- Actress: Gina Gershon
 INSERT INTO crew_person VALUES (2767, 'Meloni', 'Christopher', NULL, 'Christopher Meloni', 'Actor');  -- Actor: Christopher Meloni
 INSERT INTO crew_person VALUES (2768, 'Liman', 'Doug', NULL, 'Doug Liman', 'Director');  -- Director: Doug Liman
@@ -3114,3 +3113,42 @@ INSERT INTO crew_person VALUES (3115, 'Harris', 'Naomie', NULL, 'Naomie Harris',
 INSERT INTO crew_person VALUES (3116, 'Singer', 'Josh', NULL, 'Josh Singer', 'Screenwriter');  -- Screenwriter: Josh Singer
 INSERT INTO crew_person VALUES (3117, 'Slattery', 'John', NULL, 'John Slattery', 'Actor');  -- Actor: John Slattery
 INSERT INTO crew_person VALUES (3118, 'James', 'Brian', 'd''Arcy', 'Brian d''Arcy James', 'Actor');  -- Actor: Brian d'Arcy James
+INSERT INTO crew_person VALUES (3119, 'Escoffier', 'Jean-Yves', NULL, 'Jean-Yves Escoffier', 'Cinematographer');  -- Cinematographer: Jean-Yves Escoffier
+INSERT INTO crew_person VALUES (3120, 'Brancato', 'John', 'D.', 'John D. Brancato', 'Screenwriter');  -- Screenwriter: John D. Brancato
+INSERT INTO crew_person VALUES (3121, 'Ferris', 'Michael', NULL, 'Michael Ferris', 'Screenwriter');  -- Screenwriter: Michael Ferris
+INSERT INTO crew_person VALUES (3122, 'McPherson', 'Scott', NULL, 'Scott McPherson', 'Screenwriter');  -- Screenwriter: Scott McPherson
+INSERT INTO crew_person VALUES (3123, 'Horrocks', 'Jane', NULL, 'Jane Horrocks', 'Actress');  -- Actress: Jane Horrocks
+INSERT INTO crew_person VALUES (3124, 'Hartly', 'Hal', NULL, 'Hal Hartly', 'Director');  -- Director: Hal Hartly
+INSERT INTO crew_person VALUES (3125, 'Hutchison', 'Doug', NULL, 'Doug Hutchison', 'Actor');  -- Actor: Doug Hutchison
+INSERT INTO crew_person VALUES (3126, 'Smith', 'Larry', NULL, 'Larry Smith', 'Cinematographer');  -- Cinematographer: Larry Smith
+INSERT INTO crew_person VALUES (3127, 'Tattersall', 'David', NULL, 'David Tattersall', 'Cinematographer');  -- Cinematographer: David Tattersall
+INSERT INTO crew_person VALUES (3128, 'Okui', 'Atsushi', NULL, 'Atsushi Okui', 'Cinematographer');  -- Cinematographer: Atsushi Okui
+INSERT INTO crew_person VALUES (3129, 'Kuchler', 'Alwin', 'H.', 'Alwin H. Kuchler', 'Cinematographer');  -- Cinematographer: Alwin H. Kuchler
+INSERT INTO crew_person VALUES (3130, 'Dostie', 'Alain', NULL, 'Alain Dostie', 'Cinematographer');  -- Cinematographer: Alain Dostie
+INSERT INTO crew_person VALUES (3131, 'Judge', 'Mike', NULL, 'Mike Judge', 'Screenwriter');  -- Screenwriter: Mike Judge
+INSERT INTO crew_person VALUES (3132, 'Roach', 'John', NULL, 'John Roach', 'Screenwriter');  -- Screenwriter: John Roach
+INSERT INTO crew_person VALUES (3133, 'Sweeney', 'Mary', NULL, 'Mary Sweeney', 'Screenwriter');  -- Screenwriter: Mary Sweeney
+INSERT INTO crew_person VALUES (3134, 'Uhls', 'Jim', NULL, 'Jim Uhls', 'Screenwriter');  -- Screenwriter: Jim Uhls
+INSERT INTO crew_person VALUES (3135, 'Yeoh', 'Michelle', NULL, 'Michelle Yeoh', 'Actress');  -- Actress: Michelle Yeoh
+INSERT INTO crew_person VALUES (3136, 'Maguire', 'Tobey', NULL, 'Tobey Maguire', 'Actor');  -- Actor: Tobey Maguire
+INSERT INTO crew_person VALUES (3137, 'Wayans', 'Marlon', NULL, 'Marlon Wayans', 'Actor');  -- Actor: Marlon Wayans
+INSERT INTO crew_person VALUES (3138, 'Lurie', 'Rod', NULL, 'Rod Lurie', 'Screenwriter');  -- Screenwriter: Rod Lurie
+INSERT INTO crew_person VALUES (3139, 'Jr.', 'Hubert', 'Selby', 'Hubert Selby Jr.', 'Screenwriter');  -- Screenwriter: Hubert Selby Jr.
+INSERT INTO crew_person VALUES (3140, 'Self', 'David', NULL, 'David Self', 'Screenwriter');  -- Screenwriter: David Self
+INSERT INTO crew_person VALUES (3141, 'Mann', 'Alakina', NULL, 'Alakina Mann', 'Actress');  -- Actress: Alakina Mann
+INSERT INTO crew_person VALUES (3142, 'Griebe', 'Frank', NULL, 'Frank Griebe', 'Cinematographer');  -- Cinematographer: Frank Griebe
+INSERT INTO crew_person VALUES (3143, 'Kromolowski', 'Jerzy', NULL, 'Jerzy Kromolowski', 'Screenwriter');  -- Screenwriter: Jerzy Kromolowski
+INSERT INTO crew_person VALUES (3144, 'Olson-Kromolowski', 'Mary', NULL, 'Mary Olson-Kromolowski', 'Screenwriter');  -- Screenwriter: Mary Olson-Kromolowski
+INSERT INTO crew_person VALUES (3145, 'Taylor', 'Chap', NULL, 'Chap Taylor', 'Screenwriter');  -- Screenwriter: Chap Taylor
+INSERT INTO crew_person VALUES (3146, 'Shaughnessy', 'Rick', NULL, 'Rick Shaughnessy', 'Screenwriter');  -- Screenwriter: Rick Shaughnessy
+INSERT INTO crew_person VALUES (3147, 'Kalata', 'Brian', 'S.', 'Brian S. Kalata', 'Screenwriter');  -- Screenwriter: Brian S. Kalata
+INSERT INTO crew_person VALUES (3148, 'Hanley', 'Brent', NULL, 'Brent Hanley', 'Screenwriter');  -- Screenwriter: Brent Hanley
+INSERT INTO crew_person VALUES (3149, 'Sinclair', 'Stephen', NULL, 'Stephen Sinclair', 'Screenwriter');  -- Screenwriter: Stephen Sinclair
+INSERT INTO crew_person VALUES (3150, 'Cohen', 'Jon', NULL, 'Jon Cohen', 'Screenwriter');  -- Screenwriter: Jon Cohen
+INSERT INTO crew_person VALUES (3151, 'Gere', 'Richard', NULL, 'Richard Gere', 'Actor');  -- Actor: Richard Gere
+INSERT INTO crew_person VALUES (3152, 'Reilly', 'Kelly', NULL, 'Kelly Reilly', 'Actress');  -- Actress: Kelly Reilly
+INSERT INTO crew_person VALUES (3153, 'Richardson', 'Ben', NULL, 'Ben Richardson', 'Cinematographer');  -- Cinematographer: Ben Richardson
+INSERT INTO crew_person VALUES (3154, 'Jr.', 'Mihai', 'Malaimare', 'Mihai Malaimare Jr.', 'Cinematographer');  -- Cinematographer: Mihai Malaimare Jr.
+INSERT INTO crew_person VALUES (3155, 'Fricke', 'Ron', NULL, 'Ron Fricke', 'Cinematographer');  -- Cinematographer: Ron Fricke
+INSERT INTO crew_person VALUES (3156, 'Jarecki', 'Nicholas', NULL, 'Nicholas Jarecki', 'Director');  -- Director: Nicholas Jarecki
+INSERT INTO crew_person VALUES (3157, 'Taylor', 'Vanessa', NULL, 'Vanessa Taylor', 'Screenwriter');  -- Screenwriter: Vanessa Taylor
