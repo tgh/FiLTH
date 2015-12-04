@@ -16,12 +16,12 @@ CREATE SCHEMA filth;
 -- --------------------
 
 -- a movie entity -------------------------------------------------------------
-CREATE SEQUENCE movie_mid_seq;
-CREATE TABLE movie (
+CREATE SEQUENCE filth.movie_mid_seq;
+CREATE TABLE filth.movie (
 mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
--- NULL year would indicate a reference movie--i.e. one that references a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
+-- NULL year would indicate a reference movie--i.e. one that REFERENCES filth.a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
 year smallint DEFAULT NULL,
 -- my star rating for the movie ("****", "NO STARS", "not seen", etc)
 star_rating text DEFAULT NULL,
@@ -43,7 +43,7 @@ theater_viewings smallint DEFAULT NULL);
 
 -- a country entity -----------------------------------------------------------
 -- (only used as an integrity constraint for movie.country)
-CREATE TABLE country (
+CREATE TABLE filth.country (
 country_name text NOT NULL);
 
 
@@ -63,7 +63,7 @@ country_name text NOT NULL);
 -- "***"
 -- "***½"
 -- "****"
-CREATE TABLE star_rating (
+CREATE TABLE filth.star_rating (
 rating text NOT NULL);
 
 
@@ -79,13 +79,13 @@ rating text NOT NULL);
 -- "R" (Restricted)
 -- "X" (no one under 17 admitted [prior to 1990])
 -- "NC-17" (no one under 17 admitted [after 1990 when X renamed to NC-17])
-CREATE TABLE mpaa (
+CREATE TABLE filth.mpaa (
 rating text NOT NULL);
 
 
 -- a crewperson entity --------------------------------------------------------
-CREATE SEQUENCE crew_person_cid_seq;
-CREATE TABLE crew_person (
+CREATE SEQUENCE filth.crew_person_cid_seq;
+CREATE TABLE filth.crew_person (
 cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
 last_name text NOT NULL,
 -- first and middle names can be NULL (in cases
@@ -102,11 +102,11 @@ known_as text DEFAULT NULL);  -- names will be considered last names)
 -- recipient (the value of cid cannot be NULL since it is a foreign key to a
 -- primary key).  Thus, the sequence is altered here so that 0 is a valid cid
 -- value, indicating no recipient.
-ALTER SEQUENCE crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
+ALTER SEQUENCE filth.crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
 
 
 -- crewperson <--> movie relationship -----------------------------------------
-CREATE TABLE worked_on (
+CREATE TABLE filth.worked_on (
 mid smallint NOT NULL,
 cid smallint NOT NULL,
 position text NOT NULL);
@@ -118,7 +118,7 @@ position text NOT NULL);
 -- since there are only about 5 positions I care about right now, but if I ever
 -- wanted to add a position (such as costume designer) this would make it much
 -- easier.
-CREATE TABLE position (
+CREATE TABLE filth.position (
 position_title text NOT NULL);
 
 
@@ -127,28 +127,28 @@ position_title text NOT NULL);
 -- Tags are used to, well, tag a movie.  Movies can be tagged with keywords or
 -- phrases (e.g. "New York", "Indie", "Unconventional").  This will probably be
 -- used mostly for marking a movie with one or more genres.
-CREATE SEQUENCE tag_tid_seq;
-CREATE TABLE tag (
+CREATE SEQUENCE filth.tag_tid_seq;
+CREATE TABLE filth.tag (
 tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
 tag_name text NOT NULL,
 parent_tid smallint);
 
 
 -- tag <--> movie relationship ------------------------------------------------
-CREATE TABLE tag_given_to (
+CREATE TABLE filth.tag_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL);
 
 
 -- an oscar entity ------------------------------------------------------------
-CREATE SEQUENCE oscar_oid_seq;
-CREATE TABLE oscar (
+CREATE SEQUENCE filth.oscar_oid_seq;
+CREATE TABLE filth.oscar (
 oid smallint DEFAULT nextval('oscar_oid_seq') NOT NULL,
 category text NOT NULL);
 
 
 -- oscar <--> movie relationship ----------------------------------------------
-CREATE TABLE oscar_given_to (
+CREATE TABLE filth.oscar_given_to (
 mid smallint NOT NULL,
 oid smallint NOT NULL,
 cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the oscar
@@ -161,15 +161,15 @@ sharing_with smallint DEFAULT NULL);
 
 
 -- a list entity --------------------------------------------------------------
-CREATE SEQUENCE list_lid_seq;
-CREATE TABLE list (
+CREATE SEQUENCE filth.list_lid_seq;
+CREATE TABLE filth.list (
 lid smallint DEFAULT nextval('list_lid_seq') NOT NULL,
 list_title text NOT NULL,
 list_author text DEFAULT NULL);
 
 
 -- list <--> movie relationship -----------------------------------------------
-CREATE TABLE list_contains (
+CREATE TABLE filth.list_contains (
 mid smallint NOT NULL,
 lid smallint NOT NULL,
 rank smallint DEFAULT NULL);
@@ -177,14 +177,14 @@ rank smallint DEFAULT NULL);
 
 -- a tyler entity -------------------------------------------------------------
 -- (like oscar, but for my annual awards)
-CREATE SEQUENCE tyler_tid_seq;
-CREATE TABLE tyler (
+CREATE SEQUENCE filth.tyler_tid_seq;
+CREATE TABLE filth.tyler (
 tid smallint DEFAULT nextval('tyler_tid_seq') NOT NULL,
 category text NOT NULL);
 
 
 -- tyler <--> movie relationship ----------------------------------------------
-CREATE TABLE tyler_given_to (
+CREATE TABLE filth.tyler_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL,
 cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the award
@@ -199,29 +199,29 @@ scene_title text DEFAULT NULL);
 -- Primary Key constraints --
 -- --------------------------
 
-ALTER TABLE movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
-ALTER TABLE star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
-ALTER TABLE mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
-ALTER TABLE country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
-ALTER TABLE crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
-ALTER TABLE worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
-ALTER TABLE position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
-ALTER TABLE tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
-ALTER TABLE tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
-ALTER TABLE oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
-ALTER TABLE list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
-ALTER TABLE list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
-ALTER TABLE tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
-ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
+ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
+ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
+ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
+ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
+ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
+ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
+ALTER TABLE filth.tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
+ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
+ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
+ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
+ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
+ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
 
 
 -- ---------------------
 -- Unique Constraints --
 -- ---------------------
 
-ALTER TABLE movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
-ALTER TABLE tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
+ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
+ALTER TABLE filth.tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
 
 
 -- --------------------------
@@ -229,93 +229,93 @@ ALTER TABLE tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
 -- --------------------------
 
 -- movie table country FK
-ALTER TABLE movie ADD CONSTRAINT movie_country_fkey
-FOREIGN KEY (country) REFERENCES country(country_name)
+ALTER TABLE filth.movie ADD CONSTRAINT movie_country_fkey
+FOREIGN KEY (country) REFERENCES filth.country(country_name)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- movie table star_rating FK
-ALTER TABLE movie ADD CONSTRAINT movie_star_rating_fkey
-FOREIGN KEY (star_rating) REFERENCES star_rating(rating)
+ALTER TABLE filth.movie ADD CONSTRAINT movie_star_rating_fkey
+FOREIGN KEY (star_rating) REFERENCES filth.star_rating(rating)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- movie table mpaa FK
-ALTER TABLE movie ADD CONSTRAINT movie_mpaa_fkey
-FOREIGN KEY (mpaa) REFERENCES mpaa(rating)
+ALTER TABLE filth.movie ADD CONSTRAINT movie_mpaa_fkey
+FOREIGN KEY (mpaa) REFERENCES filth.mpaa(rating)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- crew_person table known_as FK
-ALTER TABLE crew_person ADD CONSTRAINT crew_known_as_fkey
-FOREIGN KEY (known_as) REFERENCES position(position_title)
+ALTER TABLE filth.crew_person ADD CONSTRAINT crew_known_as_fkey
+FOREIGN KEY (known_as) REFERENCES filth.position(position_title)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- worked_on table movie FK
-ALTER TABLE worked_on ADD CONSTRAINT worked_mid_fkey
-FOREIGN KEY (mid) REFERENCES movie(mid)
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_mid_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- worked_on table crew FK
-ALTER TABLE worked_on ADD CONSTRAINT worked_cid_fkey
-FOREIGN KEY (cid) REFERENCES crew_person(cid)
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_cid_fkey
+FOREIGN KEY (cid) REFERENCES filth.crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- worked_on table position FK
-ALTER TABLE worked_on ADD CONSTRAINT worked_position_fkey
-FOREIGN KEY (position) REFERENCES position(position_title)
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_position_fkey
+FOREIGN KEY (position) REFERENCES filth.position(position_title)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 -- tag_given_to table movie FK
-ALTER TABLE tag_given_to ADD CONSTRAINT tag_mid_fkey
-FOREIGN KEY (mid) REFERENCES movie(mid)
+ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_mid_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tag_given_to table tag FK
-ALTER TABLE tag_given_to ADD CONSTRAINT tag_tid_fkey
-FOREIGN KEY (tid) REFERENCES tag(tid)
+ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_tid_fkey
+FOREIGN KEY (tid) REFERENCES filth.tag(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- oscar_given_to table movie FK
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_mid_fkey
-FOREIGN KEY (mid) REFERENCES movie(mid)
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_mid_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- oscar_given_to table crew FK
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_cid_fkey
-FOREIGN KEY (cid) REFERENCES crew_person(cid)
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_cid_fkey
+FOREIGN KEY (cid) REFERENCES filth.crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- oscar_given_to table oid FK
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_oid_fkey
-FOREIGN KEY (oid) REFERENCES oscar(oid)
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_oid_fkey
+FOREIGN KEY (oid) REFERENCES filth.oscar(oid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- list_contains table movie FK
-ALTER TABLE list_contains ADD CONSTRAINT list_contains_movie_fkey
-FOREIGN KEY (mid) REFERENCES movie(mid)
+ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_movie_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- list_contains table list FK
-ALTER TABLE list_contains ADD CONSTRAINT list_contains_lid_fkey
-FOREIGN KEY (lid) REFERENCES list(lid)
+ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_lid_fkey
+FOREIGN KEY (lid) REFERENCES filth.list(lid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tyler_given_to table movie FK
-ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_mid_fkey
-FOREIGN KEY (mid) REFERENCES movie(mid)
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_mid_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tyler_given_to table crew FK
-ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_cid_fkey
-FOREIGN KEY (cid) REFERENCES crew_person(cid)
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_cid_fkey
+FOREIGN KEY (cid) REFERENCES filth.crew_person(cid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tyler_given_to table tid FK
-ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_tid_fkey
-FOREIGN KEY (tid) REFERENCES tyler(tid)
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_tid_fkey
+FOREIGN KEY (tid) REFERENCES filth.tyler(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tag parent_tid FK
-ALTER TABLE tag ADD CONSTRAINT tag_parent_tid_fkey
-FOREIGN KEY (parent_tid) REFERENCES tag(tid)
+ALTER TABLE filth.tag ADD CONSTRAINT tag_parent_tid_fkey
+FOREIGN KEY (parent_tid) REFERENCES filth.tag(tid)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
 
@@ -333,7 +333,7 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 -- the name being declared for SQL use.
 -- http://developer.postgresql.org/pgdocs/postgres/xfunc-internal.html
 --
-CREATE FUNCTION to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
+CREATE FUNCTION filth.to_ascii(bytea, name) RETURNS text STRICT AS 'to_ascii_encname'
 LANGUAGE internal;
 
 
@@ -342,7 +342,7 @@ LANGUAGE internal;
 -- Sanity checks the year of a movie.  A movie year must be between 1900 and
 -- 2 years into the future (current year + 2) inclusive.
 --
-CREATE FUNCTION movie_year_ok(year smallint) RETURNS boolean AS $$
+CREATE FUNCTION filth.movie_year_ok(year smallint) RETURNS boolean AS $$
 BEGIN
   IF year < 1900 OR year > (SELECT extract(year FROM current_date) + 2) THEN
     RETURN false;
@@ -356,7 +356,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Returns the number of movies actually seen.
 --
-CREATE FUNCTION num_movies_seen() RETURNS integer AS $$
+CREATE FUNCTION filth.num_movies_seen() RETURNS integer AS $$
 DECLARE
   total integer;
 BEGIN
@@ -373,7 +373,7 @@ $$ LANGUAGE plpgsql;
 -- Inserts a movie into the database.  This is to ensure that the year of the
 -- movie is not more than 2 years after the current year.
 --
-CREATE FUNCTION insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text) RETURNS void AS $$
+CREATE FUNCTION filth.insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text) RETURNS void AS $$
 BEGIN
   -- check that the year makes sense (is not less than 1900 nor more than 2
   -- years into the future)
@@ -389,7 +389,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's unique id.
 --
-CREATE FUNCTION update_movie_year(movie_id integer, new_year smallint) RETURNS void AS $$
+CREATE FUNCTION filth.update_movie_year(movie_id integer, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
@@ -403,7 +403,7 @@ $$ LANGUAGE plpgsql;
 --
 -- Updates the year of a movie given the movie's title.
 --
-CREATE FUNCTION update_movie_year(movie_title text, new_year smallint) RETURNS void AS $$
+CREATE FUNCTION filth.update_movie_year(movie_title text, new_year smallint) RETURNS void AS $$
 BEGIN
   IF NOT movie_year_ok(new_year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
@@ -419,26 +419,26 @@ $$ LANGUAGE plpgsql;
 
 -- movie year (calls function movie_year_ok in order to check that the year is
 -- less than the current year + 3)
-ALTER TABLE movie ADD CONSTRAINT year_constraint
+ALTER TABLE filth.movie ADD CONSTRAINT year_constraint
 CHECK (movie_year_ok(year));
 
 -- list_contains rank
-ALTER TABLE list_contains ADD CONSTRAINT rank_constraint
+ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
 CHECK (rank > 0);
 
 -- oscar_given_to status
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_status_constraint
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_status_constraint
 CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie (I believe this has only happened once in oscar history)
 
 -- oscar_given_to sharing_with
-ALTER TABLE oscar_given_to ADD CONSTRAINT oscar_sharing_constraint
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_sharing_constraint
 CHECK (sharing_with >= 0);
 
 -- tyler_given_to status
-ALTER TABLE tyler_given_to ADD CONSTRAINT tyler_status_constraint
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_status_constraint
 CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
