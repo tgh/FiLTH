@@ -52,3 +52,7 @@ INSERT INTO country VALUES ('USSR');
 INSERT INTO country VALUES ('Ivory Coast');
 INSERT INTO country VALUES ('Wales');
 INSERT INTO country VALUES ('South Korea');
+INSERT INTO country VALUES ('Chile');
+INSERT INTO country VALUES ('Cambodia');
+INSERT INTO country VALUES ('Estonia');
+INSERT INTO country VALUES ('Mauritania');

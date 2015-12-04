@@ -69,7 +69,10 @@ def initMovies(lastProcessed):
     #skip movie haven't seen
     if vals[1] == "'not seen'":
       continue
-    movie['year'] = int(vals[0])
+    if vals[0] == 'NULL':
+        movie['year'] = vals[0]
+    else:
+        movie['year'] = int(vals[0])
     movies.append(movie)
   log('initMovies', '>> movie map initialized <<')
 

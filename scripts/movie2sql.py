@@ -18,7 +18,7 @@ TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL);\n";
+INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6}, {7});\n";
 
 _inserts = []   #list of INSERT statements for movies
 _updates = []   #list of UPDATE statements for movies
@@ -342,6 +342,8 @@ def isNewMovie(title, year, stars, mpaa, country):
       origYear = movie['year']
       movie['year'] = year
       updateValueList.append("year = " + str(year))
+  #end except
+
   #update what needs updating
   if movie['star_rating'] != stars:
     #replace "\xc2\xbd" (the representation of a '1/2' character) with the
@@ -370,8 +372,8 @@ def isNewMovie(title, year, stars, mpaa, country):
     country = "'" + country + "'"
   
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("'","''").replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
-  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("'","''").replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
+  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
+  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
   system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
@@ -410,6 +412,7 @@ def writeOutTagInserts(tagger):
   tgtf = open(TAG_GIVEN_TO_SQL_FILE, 'a')
   tagger.writeTagGivenToInsertsToFile(tgtf)
   tgtf.close()
+  tagger.close()
 
 
 #------------------------------------------------------------------------------
@@ -431,6 +434,30 @@ def writeOutCrewInserts(crewHandler):
   wof = open(WORKED_ON_SQL_FILE, 'a')
   crewHandler.writeWorkedOnInsertsToFile(wof)
   wof.close()
+  crewHandler.close()
+
+
+#------------------------------------------------------------------------------
+
+def promptUserForImdbId():
+  response = raw_input('\nIMDB id (\'s\' to skip): ')
+  if response == 's':
+    return 'NULL'
+  return "'" + response + "'"
+
+
+#------------------------------------------------------------------------------
+
+def promptUserIfSeenInTheater():
+  while True:
+    response = raw_input('\nSaw it in the theater? ').lower()
+    if response not in ['n', 'y']:
+      print "\n**Invalid entry: 'y' or 'n' please.\n"
+    else:
+      break
+  if response == 'y':
+    return '1'
+  return '0'
 
 
 
@@ -470,13 +497,17 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL', 'NULL'))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
         if isNew:
+          #ask user for imdb id
+          imdbId = promptUserForImdbId()
+          #ask user if seen in theater
+          seenInTheater = promptUserIfSeenInTheater()
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title.replace("'","''"), year, stars, mpaa, country))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, imdbId, seenInTheater))
           mid = _nextMid
 
         #ask user for tags for the movie
@@ -517,8 +548,28 @@ if __name__ == '__main__':
       writeOutCrewInserts(crewHandler)
 
   except QuitException:
-    _log('main', 'caught QuitException')
-  except Exception:
+    lg('main', 'caught QuitException')
+  except Exception as e:
+    lg('main', 'caught Exception: ' + str(e))
+    print '\t***ERROR: Exception caught'
+    if crewHandler and crewHandler.hasInserts():
+        while True:
+          response = raw_input('\nThere are still unwritten crew sql insert statements. Write them out? ').lower()
+          if response not in ['y','n']:
+            print "Only 'y'/'n'\n"
+            continue
+          if response == 'y':
+            writeOutCrewInserts(crewHandler)
+          break
+    if tagger and tagger.hasInserts():
+        while True:
+          response = raw_input('\nThere are still unwritten tag sql insert statements. Write them out? ').lower()
+          if response not in ['y','n']:
+            print "Only 'y'/'n'\n"
+            continue
+          if response == 'y':
+            writeOutTagInserts(tagger)
+          break
     traceback.print_exc(file=_log)
     traceback.print_exc(file=sys.stdout)
     retVal = 1

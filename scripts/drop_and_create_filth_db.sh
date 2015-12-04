@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script assumes:
+#  - a postgresql user "filth_admin" has been created (see the "SETTING UP ENVIRONMENT"
+#    section in /doc/NOTES about setting up the user
+
 source common.sh
 
 ERROR_FILE=$FILTH_TEMP_PATH/drop_filth_db_error.txt
@@ -8,26 +12,26 @@ ERROR_FILE=$FILTH_TEMP_PATH/drop_filth_db_error.txt
 function populate_db_table {
   echo "Populating $1..."
   sleep 0.5
-  psql -U postgres -d filth -f $FILTH_SQL_PATH/$1.sql > /dev/null 2>>$ERROR_FILE
+  psql -U filth_admin -d filth -f $FILTH_SQL_PATH/$1.sql > /dev/null 2>>$ERROR_FILE
 }
 
 
 #------------------------------------------------------------------------------
 
 
-#echo "Dropping filth database..."
-#sleep 0.5
-#psql -U postgres -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
+echo "Dropping filth database..."
+sleep 0.5
+psql -U filth_admin -d postgres -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
 
 
-#echo "Creating database filth..."
-#sleep 0.5
-#createdb -U postgres -O postgres filth > /dev/null 2>>$ERROR_FILE
+echo "Creating database filth..."
+sleep 0.5
+createdb -U filth_admin -O filth_admin filth > /dev/null 2>>$ERROR_FILE
 
 
 echo "Creating database schema..."
 sleep 0.5
-psql -U postgres -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$ERROR_FILE
+psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$ERROR_FILE
 
 
 #populate entity tables

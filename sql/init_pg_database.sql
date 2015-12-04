@@ -21,7 +21,8 @@ CREATE TABLE movie (
 mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
-year smallint NOT NULL,
+-- NULL year would indicate a reference movie--i.e. one that references a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
+year smallint DEFAULT NULL,
 -- my star rating for the movie ("****", "NO STARS", "not seen", etc)
 star_rating text DEFAULT NULL,
 -- mpaa rating ("PG", "R", etc)
@@ -33,7 +34,11 @@ mpaa text DEFAULT NULL,
 -- column referencing the country table.
 country text DEFAULT NULL,
 -- text field for comments/notes regarding the movie
-comments text DEFAULT NULL);
+comments text DEFAULT NULL,
+-- id for IMDB
+imdb_id text DEFAULT NULL,
+-- number of times seen in the theater
+theater_viewings smallint DEFAULT NULL);
 
 
 -- a country entity -----------------------------------------------------------
@@ -82,9 +87,12 @@ rating text NOT NULL);
 CREATE SEQUENCE crew_person_cid_seq;
 CREATE TABLE crew_person (
 cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
-l_name text NOT NULL,
-f_name text DEFAULT NULL,     -- first and middle names can be NULL (in cases
-m_name text DEFAULT NULL,     -- such as Madonna, Cher, Costa-Gavras, etc, their
+last_name text NOT NULL,
+-- first and middle names can be NULL (in cases
+-- such as Madonna, Cher, Costa-Gavras, etc, their
+first_name text DEFAULT NULL,
+middle_name text DEFAULT NULL,
+full_name text NOT NULL,
 known_as text DEFAULT NULL);  -- names will be considered last names)
 
 -- Sequences start with 1 by default.  Since the oscar_given_to and
@@ -179,7 +187,7 @@ category text NOT NULL);
 CREATE TABLE tyler_given_to (
 mid smallint NOT NULL,
 tid smallint NOT NULL,
-cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the oscar
+cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the award
 -- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
 status smallint NOT NULL,
 -- this attribute is only used for the Best Scene category for the title of the
@@ -306,7 +314,7 @@ FOREIGN KEY (tid) REFERENCES tyler(tid)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- tag parent_tid FK
-ALTER TABLE tag ADD CONTRAINT tag_parent_tid_fkey
+ALTER TABLE tag ADD CONSTRAINT tag_parent_tid_fkey
 FOREIGN KEY (parent_tid) REFERENCES tag(tid)
 ON UPDATE CASCADE ON DELETE SET NULL;
 

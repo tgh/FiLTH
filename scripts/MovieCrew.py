@@ -52,6 +52,9 @@ class MovieCrew(object):
     crewSqlFile.close()
     lastCid = 0
     for line in lines:
+      #ignore commented out lines
+      if line.startswith('--'):
+        continue
       matcher = re.search("(\d+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ([a-zA-Z' \-\.]+), ", line)
       cid = int(matcher.group(1))
       lastName = self._sanitizeName(matcher.group(2))
@@ -75,7 +78,7 @@ class MovieCrew(object):
   def _sanitizeName(self, name):
     if name in ['NULL', 'DEFAULT']:
       return ''
-    return name.strip("'")
+    return name.strip("'").replace("''", "'")
 
 
   #----------------------------------------------------------------------------
@@ -100,11 +103,15 @@ class MovieCrew(object):
     lines = f.readlines()
     f.close()
 
+    #remove the first line (the dummy record)
+    lines = lines[1:]
+
     positions = {}
     for line in lines:
-      cid = int(re.search('VALUES \\((\d+), ', line))
-      position = re.search("'(.*)'\\);", line)
+      cid = int(re.search('VALUES \\((\d+), ', line).group(1))
       if cid in cids:
+        positionString = line.split(',')[-1]
+        position = re.search("'(.*)'\\);", positionString).group(1)
         positions[cid] = position
 
     return positions
@@ -123,7 +130,7 @@ class MovieCrew(object):
         fullName (string): full name
         position (string) : the position name
     '''
-    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', {2}, {3}, '{4}');  -- {4}: {5}".format(str(self._nextCid), last, first, middle, position, fullName)
+    insertStatement = "INSERT INTO crew_person VALUES ({0}, '{1}', {2}, {3}, '{5}', '{4}');  -- {4}: {6}".format(str(self._nextCid), last, first, middle, position, fullName.replace("'","''"), fullName)
     self._log('_createInsertStatementForCrew', 'created SQL: ' + insertStatement)
     self._crewInserts.append(insertStatement)
 
@@ -201,8 +208,8 @@ class MovieCrew(object):
         #get positions that each of the crew members are known for
         knownForPositions = self._getKnownForPositionsForCids(cids)
         #output the positions
-        for cid, position in knownForPositions:
-          print '\t' + position + ' (' + cid + ')'
+        for cid, position in knownForPositions.iteritems():
+          print '\t' + position + ' (' + str(cid) + ')'
         #prompt user for which one is the one desired
         while True:
           response = raw_input('Which id? ')
@@ -245,20 +252,23 @@ class MovieCrew(object):
       first  = 'NULL'     #first name string for sql
       nameList = name.split(' ')
       if len(nameList) == 3:
-        last = nameList[2]
-        middle = "'" + nameList[1] + "'"
-        first = "'" + nameList[0] + "'"
+        last = nameList[2].replace("'","''")
+        middle = "'" + nameList[1].replace("'","''") + "'"
+        first = "'" + nameList[0].replace("'","''") + "'"
       elif len(nameList) == 2:
-        last = nameList[1]
-        first = "'" + nameList[0] + "'"
+        last = nameList[1].replace("'","''")
+        first = "'" + nameList[0].replace("'","''") + "'"
       else:
-        last = nameList[0]
+        last = nameList[0].replace("'","''")
       self._createInsertStatementForCrew(last, first, middle, name, self._positions[num-1])
       cid = self._nextCid
+
+      #XXX: why is this if statement here? this will never be true right?
       if name in self._crewMap.keys():
         self._crewMap[name].append(cid)
       else:
         self._crewMap[name] = [cid]
+
       self._log('_promptUserForCrewPersonHelper', 'new crew person has an id of ' + str(cid))
       self._nextCid += 1
     #end except KeyError
@@ -484,3 +494,5 @@ class MovieCrew(object):
   def close(self):
     self._workedOnInserts = []
     self._crewInserts = []
+    self._positions = []
+    self._crewMap = {}
