@@ -19,17 +19,7 @@ function populate_db_table {
 #------------------------------------------------------------------------------
 
 
-echo "Dropping filth database..."
-sleep 0.5
-psql -U filth_admin -d postgres -c "DROP DATABASE filth;" > /dev/null 2>$ERROR_FILE
-
-
-echo "Creating database filth..."
-sleep 0.5
-createdb -U filth_admin -O filth_admin filth > /dev/null 2>>$ERROR_FILE
-
-
-echo "Creating database schema..."
+echo "Creating database and schema..."
 sleep 0.5
 psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$ERROR_FILE
 
