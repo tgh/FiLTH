@@ -13620,3 +13620,5 @@ INSERT INTO tag_given_to VALUES(1366, 340);  -- Reversal of Fortune (1990) tagge
 INSERT INTO tag_given_to VALUES(1366, 236);  -- Reversal of Fortune (1990) tagged with 'social-classes'
 INSERT INTO tag_given_to VALUES(1366, 58);  -- Reversal of Fortune (1990) tagged with 'based-on-something'
 INSERT INTO tag_given_to VALUES(1366, 59);  -- Reversal of Fortune (1990) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(1510, 59);  -- Snow White and the Seven Dwarfs (1937) tagged with 'based-on-previously-written-material'
+INSERT INTO tag_given_to VALUES(1510, 58);  -- Snow White and the Seven Dwarfs (1937) tagged with 'based-on-something'

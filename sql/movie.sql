@@ -1009,7 +1009,7 @@ INSERT INTO movie VALUES (1008, 'Man on Wire', 2008, '***½', 'PG-13', 'USA', DE
 INSERT INTO movie VALUES (1009, 'Man Push Cart', 2006, '***', 'NR', 'USA', DEFAULT, 'tt0464105', 0);
 INSERT INTO movie VALUES (1010, 'The Man Who Knew Too Little', 1997, '**½', 'PG', 'USA', DEFAULT, 'tt0120483', 0);
 INSERT INTO movie VALUES (1011, 'The Man Who Wasn''t There', 2001, '***', 'R', 'USA', DEFAULT, 'tt0243133', 1);
-INSERT INTO movie VALUES (1012, 'The Man With a Movie Camera', 1929, '****', 'NR', 'USSR', DEFAULT, 'tt0019760', 0);
+INSERT INTO movie VALUES (1012, 'Man With a Movie Camera', 1929, '****', 'NR', 'USSR', DEFAULT, 'tt0019760', 0);
 INSERT INTO movie VALUES (1013, 'The Man with the Golden Arm', 1955, '***', 'NR', 'USA', DEFAULT, 'tt0048347', 0);
 INSERT INTO movie VALUES (1014, 'The Manchurian Candidate', 1962, '***½', 'NR', 'USA', DEFAULT, 'tt0056218', 0);
 INSERT INTO movie VALUES (1015, 'The Manchurian Candidate', 2004, '***½', 'R', 'USA', DEFAULT, 'tt0368008', 1);
@@ -1307,13 +1307,13 @@ INSERT INTO movie VALUES (1306, 'The Princess Diaries 2: Royal Engagement', 2004
 INSERT INTO movie VALUES (1307, 'Princess Mononoke', 1999, '****', 'PG-13', 'Japan', DEFAULT, 'tt0119698', 0);
 INSERT INTO movie VALUES (1308, 'Prizzi''s Honor', 1985, '**½', 'R', 'USA', DEFAULT, 'tt0089841', 0);
 INSERT INTO movie VALUES (1309, 'The Producers', 1968, '**½', 'PG', 'USA', DEFAULT, 'tt0063462', 0);
-INSERT INTO movie VALUES (1310, 'The Professional', 1994, '***', 'R', DEFAULT, DEFAULT, 'tt0110413', 0);
+INSERT INTO movie VALUES (1310, 'Leon: The Professional', 1994, '***', 'R', DEFAULT, DEFAULT, 'tt0110413', 0);
 INSERT INTO movie VALUES (1311, 'Project X', 1987, '***', 'PG', 'USA', DEFAULT, 'tt0093793', 0);
 INSERT INTO movie VALUES (1312, 'Psycho', 1960, '****', 'NR', 'USA', DEFAULT, 'tt0054215', 0);
 INSERT INTO movie VALUES (1313, 'Psycho', 1998, '***', 'R', 'USA', DEFAULT, 'tt0155975', 1);
 INSERT INTO movie VALUES (1314, 'Public Enemies', 2009, '***', 'R', 'USA', DEFAULT, 'tt1152836', 0);
 INSERT INTO movie VALUES (1315, 'Pulp Fiction', 1994, '****', 'R', 'USA', DEFAULT, 'tt0110912', 0);
-INSERT INTO movie VALUES (1316, 'Punch Drunk Love', 2002, '****', 'R', 'USA', DEFAULT, 'tt0272338', 1);
+INSERT INTO movie VALUES (1316, 'Punch-Drunk Love', 2002, '****', 'R', 'USA', DEFAULT, 'tt0272338', 1);
 INSERT INTO movie VALUES (1317, 'The Purple Rose of Cairo', 1985, '****', 'PG', 'USA', DEFAULT, 'tt0089853', 0);
 INSERT INTO movie VALUES (1318, 'The Pursuit of Happyness', 2006, '***', 'PG-13', 'USA', DEFAULT, 'tt0454921', 0);
 INSERT INTO movie VALUES (1319, 'The Queen', 2006, '***½', 'PG-13', 'England', DEFAULT, 'tt0436697', 0);
@@ -1362,7 +1362,7 @@ INSERT INTO movie VALUES (1361, 'Rescue Dawn', 2007, '***½', 'PG-13', 'USA', DE
 INSERT INTO movie VALUES (1362, 'Reservoir Dogs', 1992, '****', 'R', 'USA', DEFAULT, 'tt0105236', 0);
 INSERT INTO movie VALUES (1363, 'Restrepo', 2010, '****', 'R', 'USA', DEFAULT, 'tt1559549', 1);
 INSERT INTO movie VALUES (1364, 'Return to Me', 2000, '***', 'PG', 'USA', DEFAULT, 'tt0122459', 1);
-INSERT INTO movie VALUES (1365, 'Return to Neverland', 2002, '**', 'G', 'USA', DEFAULT, 'tt0280030', 1);
+INSERT INTO movie VALUES (1365, 'Return to Never Land', 2002, '**', 'G', 'USA', DEFAULT, 'tt0280030', 1);
 INSERT INTO movie VALUES (1366, 'Reversal of Fortune', 1990, '***½', 'R', 'USA', DEFAULT, 'tt0100486', 0);
 INSERT INTO movie VALUES (1367, 'Richard III', 1996, '**½', 'R', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (1368, 'The Right Stuff', 1983, '***½', 'PG', 'USA', DEFAULT, NULL, 0);
@@ -1507,7 +1507,7 @@ INSERT INTO movie VALUES (1506, 'Snake Eyes', 1998, '*', 'R', 'USA', DEFAULT, NU
 INSERT INTO movie VALUES (1507, 'Snatch', 2001, '***', 'R', 'England', DEFAULT, NULL, 1);
 INSERT INTO movie VALUES (1508, 'Sneakers', 1992, '***½', 'PG-13', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (1509, 'Sniper', 1993, '***', 'R', 'USA', DEFAULT, NULL, 0);
-INSERT INTO movie VALUES (1510, 'Snow White and the Seven Dwarves', 1937, '****', 'NR', 'USA', DEFAULT, NULL, 0);
+INSERT INTO movie VALUES (1510, 'Snow White and the Seven Dwarfs', 1937, '****', 'NR', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (1511, 'The Social Network', 2010, '***½', 'PG-13', 'USA', DEFAULT, NULL, 1);
 INSERT INTO movie VALUES (1512, 'Solaris', 1972, '***', 'PG', 'USSR', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (1513, 'Solaris', 2002, '***', 'PG-13', 'USA', DEFAULT, NULL, 1);

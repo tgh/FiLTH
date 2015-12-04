@@ -1175,6 +1175,7 @@ Legends of the Fall (1994) **½ [R] USA
 Lego Movie, The (2014) *** [PG] USA
 Lemony Snicket's A Series of Unfortunate Events (2004) **½ [PG] USA
 Lenny (1974) *** [X] USA
+Leon: The Professional (1994) *** [R]
 Les Miserables (2012) **** [PG-13] England
 Let It Be (1970) **** [G] England
 Let the Right One In (2008) *** [R] Sweden
@@ -1263,7 +1264,7 @@ Man Push Cart (2006) *** [NR] USA
 Man Who Knew Too Little, The (1997) **½ [PG] USA
 Man Who Shot Liberty Valance, The (1962) *** [NR] USA
 Man Who Wasn’t There, The (2001) *** [R] USA
-Man With a Movie Camera, The (1929) **** [NR] USSR
+Man With a Movie Camera (1929) **** [NR] USSR
 Man with the Golden Arm, The (1955) *** [NR] USA
 Manchurian Candidate, The (1962) ***½ [NR] USA
 Manchurian Candidate, The (2004) ***½ [R] USA
@@ -1628,7 +1629,6 @@ Princess Mononoke (1999) **** [PG-13] Japan
 Prisoners (2013) ***½ [R] USA
 Prizzi’s Honor (1985) **½ [R] USA
 Producers, The (1968) **½ [PG] USA
-Professional, The (1994) *** [R]
 Project X (1987) *** [PG] USA
 Prometheus (2012) **½ [R] USA
 Promised Land (2012) *** [R] USA
@@ -1636,7 +1636,7 @@ Psycho (1960) **** [NR] USA
 Psycho (1998) *** [R] USA
 Public Enemies (2009) *** [R] USA
 Pulp Fiction (1994) **** [R] USA
-Punch Drunk Love (2002) **** [R] USA
+Punch-Drunk Love (2002) **** [R] USA
 Purple Rose of Cairo, The (1985) **** [PG] USA
 Pursuit of Happyness, The (2006) *** [PG-13] USA
 Puss in Boots (2011) *** [PG] USA
@@ -1692,7 +1692,7 @@ Reservation Road (2007) *** [R] USA
 Reservoir Dogs (1992) **** [R] USA
 Restrepo (2010) **** [R] USA
 Return to Me (2000) *** [PG] USA
-Return to Neverland (2002) ** [G] USA
+Return to Never Land (2002) ** [G] USA
 Reversal of Fortune (1990) ***½ [R] USA
 Richard III (1996) **½ [R] USA
 Ricki and the Flash (2015) **½ [PG-13] USA
@@ -1862,7 +1862,7 @@ Snatch (2001) *** [R] England
 Sneakers (1992) ***½ [PG-13] USA
 Sniper (1993) *** [R] USA
 Snow White and the Huntsman (2012) **½ [PG-13] USA
-Snow White and the Seven Dwarves (1937) **** [NR] USA
+Snow White and the Seven Dwarfs (1937) **** [NR] USA
 Snowpiercer (2013) *** [R] South Korea
 Social Network, The (2010) ***½ [PG-13] USA
 Solaris (1972) *** [PG] USSR
