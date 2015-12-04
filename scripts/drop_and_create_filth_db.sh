@@ -25,20 +25,21 @@ psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null
 
 
 #populate entity tables
-#populate_db_table "country"
-#populate_db_table "oscar"
-#populate_db_table "tyler"
-#populate_db_table "mpaa"
-#populate_db_table "star_rating"
-#populate_db_table "position"
-#populate_db_table "crew_person"
-#populate_db_table "tag"
-#populate_db_table "movie"
+populate_db_table "country"
+populate_db_table "oscar"
+populate_db_table "tyler"
+populate_db_table "mpaa"
+populate_db_table "star_rating"
+populate_db_table "position"
+populate_db_table "crew_person"
+populate_db_table "tag"
+populate_db_table "movie"
 
 #populate relationship tables
-#populate_db_table "oscar_given_to"
-#populate_db_table "tag_given_to"
-#populate_db_table "worked_on"
+populate_db_table "oscar_given_to"
+populate_db_table "tag_given_to"
+populate_db_table "worked_on"
+populate_db_table "tyler_given_to"
 
 
 echo "Creating temp/previous_movie_ratings.txt..."
