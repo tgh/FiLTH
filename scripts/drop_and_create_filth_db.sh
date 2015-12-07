@@ -18,8 +18,19 @@ function populate_db_table {
 
 #------------------------------------------------------------------------------
 
+echo "Clearing error file: $ERROR_FILE ..."
+sleep 0.5
+> $ERROR_FILE
 
-echo "Creating database and schema..."
+echo "Dropping existing filth db..."
+sleep 0.5
+sudo -u postgres dropdb --if-exists filth
+
+echo "Creating database filth..."
+sleep 0.5
+sudo -u postgres createdb --owner=filth_admin filth
+
+echo "Creating schema..."
 sleep 0.5
 psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$ERROR_FILE
 

@@ -2,13 +2,11 @@
  * This sql script is for PostgreSQL.
  */
 
--- ----------------------
--- Create the database --
--- ----------------------
+-- --------------------
+-- Create the schema --
+-- --------------------
 
-DROP DATABASE IF EXISTS filth;
-CREATE DATABASE filth;
-CREATE SCHEMA filth;
+CREATE SCHEMA filth AUTHORIZATION filth_admin;
 
 
 -- --------------------
@@ -18,7 +16,7 @@ CREATE SCHEMA filth;
 -- a movie entity -------------------------------------------------------------
 CREATE SEQUENCE filth.movie_mid_seq;
 CREATE TABLE filth.movie (
-mid smallint DEFAULT nextval('movie_mid_seq') NOT NULL,
+mid smallint DEFAULT nextval('filth.movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
 -- NULL year would indicate a reference movie--i.e. one that REFERENCES filth.a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
@@ -86,7 +84,7 @@ rating text NOT NULL);
 -- a crewperson entity --------------------------------------------------------
 CREATE SEQUENCE filth.crew_person_cid_seq;
 CREATE TABLE filth.crew_person (
-cid smallint DEFAULT nextval('crew_person_cid_seq') NOT NULL,
+cid smallint DEFAULT nextval('filth.crew_person_cid_seq') NOT NULL,
 last_name text NOT NULL,
 -- first and middle names can be NULL (in cases
 -- such as Madonna, Cher, Costa-Gavras, etc, their
@@ -100,7 +98,7 @@ known_as text DEFAULT NULL);  -- names will be considered last names)
 -- crew_person's cid) is not needed (e.g. Best Picture, Best Documentary, etc.
 -- where no recipient is desired), there needs to be a value indicating no
 -- recipient (the value of cid cannot be NULL since it is a foreign key to a
--- primary key).  Thus, the sequence is altered here so that 0 is a valid cid
+-- primary key).  Thus, the SEQUENCE filth.is altered here so that 0 is a valid cid
 -- value, indicating no recipient.
 ALTER SEQUENCE filth.crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
 
@@ -129,7 +127,7 @@ position_title text NOT NULL);
 -- used mostly for marking a movie with one or more genres.
 CREATE SEQUENCE filth.tag_tid_seq;
 CREATE TABLE filth.tag (
-tid smallint DEFAULT nextval('tag_tid_seq') NOT NULL,
+tid smallint DEFAULT nextval('filth.tag_tid_seq') NOT NULL,
 tag_name text NOT NULL,
 parent_tid smallint);
 
@@ -143,7 +141,7 @@ tid smallint NOT NULL);
 -- an oscar entity ------------------------------------------------------------
 CREATE SEQUENCE filth.oscar_oid_seq;
 CREATE TABLE filth.oscar (
-oid smallint DEFAULT nextval('oscar_oid_seq') NOT NULL,
+oid smallint DEFAULT nextval('filth.oscar_oid_seq') NOT NULL,
 category text NOT NULL);
 
 
@@ -163,7 +161,7 @@ sharing_with smallint DEFAULT NULL);
 -- a list entity --------------------------------------------------------------
 CREATE SEQUENCE filth.list_lid_seq;
 CREATE TABLE filth.list (
-lid smallint DEFAULT nextval('list_lid_seq') NOT NULL,
+lid smallint DEFAULT nextval('filth.list_lid_seq') NOT NULL,
 list_title text NOT NULL,
 list_author text DEFAULT NULL);
 
@@ -179,7 +177,7 @@ rank smallint DEFAULT NULL);
 -- (like oscar, but for my annual awards)
 CREATE SEQUENCE filth.tyler_tid_seq;
 CREATE TABLE filth.tyler (
-tid smallint DEFAULT nextval('tyler_tid_seq') NOT NULL,
+tid smallint DEFAULT nextval('filth.tyler_tid_seq') NOT NULL,
 category text NOT NULL);
 
 
@@ -377,7 +375,7 @@ CREATE FUNCTION filth.insert_movie(title text, year smallint, stars smallint, mp
 BEGIN
   -- check that the year makes sense (is not less than 1900 nor more than 2
   -- years into the future)
-  IF NOT movie_year_ok(year) THEN
+  IF NOTfilth.movie_year_ok(year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
   END IF;
   INSERT INTO movie VALUES (DEFAULT, title, year, stars, mpaa, country, note);
@@ -391,7 +389,7 @@ $$ LANGUAGE plpgsql;
 --
 CREATE FUNCTION filth.update_movie_year(movie_id integer, new_year smallint) RETURNS void AS $$
 BEGIN
-  IF NOT movie_year_ok(new_year) THEN
+  IF NOTfilth.movie_year_ok(new_year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
   END IF;
   UPDATE movie SET year = new_year WHERE mid = movie_id;
@@ -405,7 +403,7 @@ $$ LANGUAGE plpgsql;
 --
 CREATE FUNCTION filth.update_movie_year(movie_title text, new_year smallint) RETURNS void AS $$
 BEGIN
-  IF NOT movie_year_ok(new_year) THEN
+  IF NOTfilth.movie_year_ok(new_year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
   END IF;
   UPDATE movie SET year = new_year WHERE title = movie_title;
@@ -417,10 +415,10 @@ $$ LANGUAGE plpgsql;
 -- Integrity constraints --
 -- ------------------------
 
--- movie year (calls function movie_year_ok in order to check that the year is
+-- movie year (calls functionfilth.movie_year_ok in order to check that the year is
 -- less than the current year + 3)
 ALTER TABLE filth.movie ADD CONSTRAINT year_constraint
-CHECK (movie_year_ok(year));
+CHECK (filth.movie_year_ok(year));
 
 -- list_contains rank
 ALTER TABLE filth.list_contains ADD CONSTRAINT rank_constraint
