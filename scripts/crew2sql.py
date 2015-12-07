@@ -31,7 +31,7 @@ if __name__ == '__main__':
   # value--a work around for not be able to use NULL.  The first inserted record
   # into crew_person represented by this print statement will have the cid
   # value of 0.
-  print "INSERT INTO crew_person VALUES (0, '', DEFAULT, DEFAULT, DEFAULT); -- dummy record"
+  print "INSERT INTO filth.crew_person VALUES (0, '', DEFAULT, DEFAULT, DEFAULT); -- dummy record"
 
   cid = 1
   #iterate over the lines retrieved from the file
@@ -40,9 +40,9 @@ if __name__ == '__main__':
       line = replace(line, "'", "''")
     words = line.split(',')
     if len(words) == 2:
-      print "INSERT INTO crew_person VALUES ({0}, '{1}', '{2}', DEFAULT, DEFAULT);".format(str(cid), str(words[0]), str(words[1].strip()))
+      print "INSERT INTO filth.crew_person VALUES ({0}, '{1}', '{2}', DEFAULT, DEFAULT);".format(str(cid), str(words[0]), str(words[1].strip()))
     elif len(words) == 3:
-      print "INSERT INTO crew_person VALUES ({0}, '{1}', '{2}', '{3}', DEFAULT);".format(str(cid), str(words[0]), str(words[1]), str(words[2].strip()))
+      print "INSERT INTO filth.crew_person VALUES ({0}, '{1}', '{2}', '{3}', DEFAULT);".format(str(cid), str(words[0]), str(words[1]), str(words[2].strip()))
     elif len(words) == 1:
-      print "INSERT INTO crew_person VALUES ({0}, '{1}', DEFAULT, DEFAULT, DEFAULT);".format(str(cid), str(words[0].strip()))
+      print "INSERT INTO filth.crew_person VALUES ({0}, '{1}', DEFAULT, DEFAULT, DEFAULT);".format(str(cid), str(words[0].strip()))
     cid = cid + 1

@@ -89,7 +89,7 @@ class MovieTagger(object):
         year (int) : the year of the movie
         tid (int) : the tag id
     '''
-    insertStatement = 'INSERT INTO tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');  -- ' + str(title) + ' (' + str(year) + ') tagged with \'' + self._tagMap[tid][0] + '\''
+    insertStatement = 'INSERT INTO filth.tag_given_to VALUES(' + str(mid) + ', ' + str(tid) + ');  -- ' + str(title) + ' (' + str(year) + ') tagged with \'' + self._tagMap[tid][0] + '\''
     self._log('_createTagGivenToSql', 'writing sql: ' + insertStatement)
     self._tagGivenToInserts.append(insertStatement)
 
@@ -103,7 +103,7 @@ class MovieTagger(object):
         tag (string) : the tag name
         parentId (string) : the id of the tag's parent tag (or 'NULL')
     '''
-    insertStatement = "INSERT INTO tag VALUES ({0}, '{1}', {2});".format(str(self._nextTid), tag, str(parentId))
+    insertStatement = "INSERT INTO filth.tag VALUES ({0}, '{1}', {2});".format(str(self._nextTid), tag, str(parentId))
     self._log('_addTag', 'writing sql: ' + insertStatement)
     self._tagInserts.append(insertStatement)
     #add the tag to the map

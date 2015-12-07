@@ -41,7 +41,7 @@ OSCAR_GIVEN_TO_FILE = FILTH_PATH + '/sql/oscar_given_to.sql'
 COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
 
                                                          # mid, oid, cid, year, status, sharing_with
-INSERT_FORMAT_STRING = "INSERT INTO oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
+INSERT_FORMAT_STRING = "INSERT INTO filth.oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
 
 _inserts = []
 _crewInserts = []
@@ -228,7 +228,7 @@ def getMid(title, year, country):
                     if country != 'DEFAULT' and country not in _countries:
                         _logFile.write('! Unknown country: ' + country + ' -- adding country\n')
                         _countries.append(country)
-                        countryInsert = "INSERT INTO country VALUES ('" + country + "');\n"
+                        countryInsert = "INSERT INTO filth.country VALUES ('" + country + "');\n"
                         _countryInserts.append(countryInsert)
                     country = "'" + country + "'"
 
@@ -236,7 +236,7 @@ def getMid(title, year, country):
                     _nextMid = str(int(_nextMid) + 1)
                     _movies[title + ' (' + year + ')'] = mid
 
-                    movieInsert = "INSERT INTO movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL);\n"
+                    movieInsert = "INSERT INTO filth.movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL);\n"
                     _movieInserts.append(movieInsert)
                     _logFile.write('\n::: Added movie: "' + title + '" (' + year + ') [' + rating + '] ' + country + '\n')
                 else:
@@ -258,7 +258,7 @@ def getCid(name, mid, title, year, category):
             _logFile.write('### No worked_on entry found for ' + name + ' for "' + title + '" (' + year + ')--adding INSERT to worked_on.sql\n')
             
             position = "'" + position + "'"        
-            woInsert = 'INSERT INTO worked_on VALUES(' + str(mid) + ', ' + str(cid) + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+            woInsert = 'INSERT INTO filth.worked_on VALUES(' + str(mid) + ', ' + str(cid) + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
             _workedOnInserts.append(woInsert)
     except KeyError:
         while True:
@@ -302,11 +302,11 @@ def getCid(name, mid, title, year, category):
         _nextCid = str(int(_nextCid) + 1)
         _crew[name] = cid
 
-        crewInsert = 'INSERT INTO crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
+        crewInsert = 'INSERT INTO filth.crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
         _crewInserts.append(crewInsert)
 
         woPosition = "'" + CATEGORY_POSITIONS[category] + "'"        
-        woInsert = 'INSERT INTO worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+        woInsert = 'INSERT INTO filth.worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
         _workedOnInserts.append(woInsert)
 
     return cid

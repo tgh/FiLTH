@@ -18,7 +18,7 @@ TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-INSERT_FORMAT_STRING = "INSERT INTO movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6}, {7});\n";
+INSERT_FORMAT_STRING = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6}, {7});\n";
 
 _inserts = []   #list of INSERT statements for movies
 _updates = []   #list of UPDATE statements for movies
@@ -363,7 +363,7 @@ def isNewMovie(title, year, stars, mpaa, country):
     updateValueList.append("country = '" + country + "'")
 
   #add UPDATE statement
-  updateStatement = 'UPDATE movie SET ' + ', '.join(updateValueList) + ' WHERE mid = ' + str(movie['mid']) + ';\n'
+  updateStatement = 'UPDATE filth.movie SET ' + ', '.join(updateValueList) + ' WHERE mid = ' + str(movie['mid']) + ';\n'
   _updates.append(updateStatement)
 
   if (origCountry != 'DEFAULT'):

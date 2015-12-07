@@ -25,7 +25,7 @@ TYLER_GIVEN_TO_FILE = FILTH_PATH + '/sql/tyler_given_to.sql'
 WORKED_ON_FILE = FILTH_PATH + '/sql/worked_on.sql'
 LOG_FILE = FILTH_PATH + '/logs/tyler_awards.log'
                                                         # mid, tid, cid, status, scene
-INSERT_FORMAT_STRING = "INSERT INTO tyler_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
+INSERT_FORMAT_STRING = "INSERT INTO filth.tyler_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
 
 _inserts = []
 _crewInserts = []
@@ -207,11 +207,11 @@ def getCid(name, mid, title, year, category):
         _nextCid = str(int(_nextCid) + 1)
         _crew[name] = cid
 
-        crewInsert = 'INSERT INTO crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
+        crewInsert = 'INSERT INTO filth.crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
         _crewInserts.append(crewInsert)
 
         woPosition = "'" + CATEGORY_POSITIONS[category] + "'"        
-        woInsert = 'INSERT INTO worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+        woInsert = 'INSERT INTO filth.worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
         _workedOnInserts.append(woInsert)
     return cid
 

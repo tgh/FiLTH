@@ -34,12 +34,14 @@ populate_db_table "position"
 populate_db_table "crew_person"
 populate_db_table "tag"
 populate_db_table "movie"
+populate_db_table "list"
 
 #populate relationship tables
 populate_db_table "oscar_given_to"
 populate_db_table "tag_given_to"
 populate_db_table "worked_on"
 populate_db_table "tyler_given_to"
+populate_db_table "list_contains"
 
 
 echo "Creating temp/previous_movie_ratings.txt..."
