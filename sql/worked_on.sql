@@ -6742,7 +6742,7 @@ INSERT INTO filth.worked_on VALUES(3748, 3101, 'Supporting Actor');  -- Mark Ryl
 INSERT INTO filth.worked_on VALUES(3748, 661, 'Supporting Actor');  -- Alan Alda for Bridge of Spies (2015)
 INSERT INTO filth.worked_on VALUES(3748, 1051, 'Supporting Actress');  -- Amy Ryan for Bridge of Spies (2015)
 INSERT INTO filth.worked_on VALUES(3748, 268, 'Screenwriter');  -- Joel and Ethan Coen for Bridge of Spies (2015)
-INSERT INTO filth.worked_on VALUES(3748, 3104, 'SCreenwriter');  -- Matt Charman for Bridge of Spies (2015)
+INSERT INTO filth.worked_on VALUES(3748, 3104, 'Screenwriter');  -- Matt Charman for Bridge of Spies (2015)
 INSERT INTO filth.worked_on VALUES(3749, 277, 'Director');  -- Guillermo Del Toro for Crimson Peak (2015)
 INSERT INTO filth.worked_on VALUES(3749, 277, 'Screenwriter');  -- Guillermo Del Toro for Crimson Peak (2015)
 INSERT INTO filth.worked_on VALUES(3749, 3102, 'Screenwriter');  -- Matthew Robbins for Crimson Peak (2015)

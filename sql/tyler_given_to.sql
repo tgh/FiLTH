@@ -287,7 +287,7 @@ INSERT INTO filth.tyler_given_to VALUES (804, 5, 987, 1, NULL); -- Marisa Tomei 
 INSERT INTO filth.tyler_given_to VALUES (1284, 5, 156, 0, NULL); -- Robin Wright for Best Supporting Actress for The Pledge (2001)
 INSERT INTO filth.tyler_given_to VALUES (668, 6, 246, 0, NULL); -- Robert Altman for Best Director for Gosford Park (2001)
 INSERT INTO filth.tyler_given_to VALUES (1395, 6, 248, 0, NULL); -- Wes Anderson for Best Director for The Royal Tenenbaums (2001)
-INSERT INTO filth.tyler_given_to VALUES (1708, 6, 273, Peter Jackson, '0'); -- Cameron Crowe for Best Director for Vanilla Sky (2001)
+INSERT INTO filth.tyler_given_to VALUES (1708, 6, 273, 0, NULL); -- Cameron Crowe for Best Director for Vanilla Sky (2001)
 INSERT INTO filth.tyler_given_to VALUES (804, 6, 1997, 0, NULL); -- Todd Field for Best Director for In the Bedroom (2001)
 INSERT INTO filth.tyler_given_to VALUES (1054, 6, 335, 1, NULL); -- Christopher Nolan for Best Director for Memento (2001)
 INSERT INTO filth.tyler_given_to VALUES (1284, 6, 11, 0, NULL); -- Sean Penn for Best Director for The Pledge (2001)

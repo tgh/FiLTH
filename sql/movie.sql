@@ -151,7 +151,7 @@ INSERT INTO filth.movie VALUES (150, 'The Balloonatic', 1923, '***', 'NR', 'USA'
 INSERT INTO filth.movie VALUES (151, 'Bamboozled', 2000, '***', 'R', 'USA', DEFAULT, NULL, 0);
 INSERT INTO filth.movie VALUES (152, 'Bananas', 1971, '***', 'PG-13', 'USA', DEFAULT, NULL, 0);
 INSERT INTO filth.movie VALUES (153, 'Band of Outsiders', 1964, '**½', 'NR', 'France', DEFAULT, NULL, 0);
-INSERT INTO filth.movie VALUES (154, 'Bandits', 2001, '***', 'PG-13', 'USA', DEFAULT, NULL2);
+INSERT INTO filth.movie VALUES (154, 'Bandits', 2001, '***', 'PG-13', 'USA', DEFAULT, NULL);
 INSERT INTO filth.movie VALUES (155, 'Bang the Drum Slowly', 1973, '***', 'PG', 'USA', DEFAULT, NULL, 0);
 INSERT INTO filth.movie VALUES (156, 'Baran', 2002, '***½', 'PG', 'Iran', DEFAULT, NULL, 1);
 INSERT INTO filth.movie VALUES (157, 'The Barbarian Invasions', 2003, '**½', 'R', 'Canada', DEFAULT, NULL, 0);
@@ -3717,7 +3717,7 @@ INSERT INTO filth.movie VALUES (3718, 'Monsieur Lazhar', 2011, 'not seen', 'PG-1
 INSERT INTO filth.movie VALUES (3719, 'Amour', 2012, 'not seen', 'PG-13', 'Austria', NULL, 'tt1602620', NULL);
 INSERT INTO filth.movie VALUES (3720, 'The Impossible', 2012, 'not seen', 'PG-13', 'Spain', NULL, 'tt1649419', NULL);
 INSERT INTO filth.movie VALUES (3721, 'The Sessions', 2012, 'not seen', 'R', 'USA', NULL, 'tt1866249', NULL);
-INSERT INTO filth.movie VALUES (3722, '5 Broken Cameras', 2012, 'not seen', 'NR', 'DEFAULT', NULL, 'tt2125423', NULL);
+INSERT INTO filth.movie VALUES (3722, '5 Broken Cameras', 2012, 'not seen', 'NR', DEFAULT, NULL, 'tt2125423', NULL);
 INSERT INTO filth.movie VALUES (3723, 'The Gatekeepers', 2012, 'not seen', 'PG-13', 'Israel', NULL, 'tt2309788', NULL);
 INSERT INTO filth.movie VALUES (3724, 'How to Survive a Plague', 2012, 'not seen', 'NR', 'USA', NULL, 'tt2124803', NULL);
 INSERT INTO filth.movie VALUES (3725, 'Kon-Tiki', 2012, 'not seen', 'PG-13', 'Norway', NULL, 'tt1613750', NULL);
