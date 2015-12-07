@@ -245,7 +245,7 @@ def processAwardFile(filename):
         tid = _tyler[fields[CATEGORY]]
         status = fields[STATUS]
         if fields[SCENE].strip() == '':
-            scene = 'NULL'
+            scene = 'DEFAULT'
         else:
             scene = "'" + fields[SCENE].strip().strip('"').replace("'", "''") + "'"
 

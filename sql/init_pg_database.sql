@@ -188,9 +188,11 @@ tid smallint NOT NULL,
 cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the award
 -- status of the award: 0, 1, or 2 (nominated, won, or tie, respectively)
 status smallint NOT NULL,
--- this attribute is only used for the Best Scene category for the title of the
--- scene--a waste, I know, but what else should I do?
-scene_title text DEFAULT NULL);
+-- this column is only used for the Best Scene category and is not NULLable
+-- in order to be included in the table's primary key so that a movie can be
+-- nominated in the Best Scene category for more than one scene (for awards
+-- of any category other than Best Scene an empty string is used by default)
+scene_title text DEFAULT '');
 
 
 -- --------------------------
@@ -211,7 +213,7 @@ ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(
 ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
-ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid);
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid, scene_title);
 
 
 -- ---------------------
