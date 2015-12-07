@@ -1989,7 +1989,7 @@ INSERT INTO movie VALUES (1988, 'Picnic', 1955, 'not seen', 'NR', 'USA', DEFAULT
 INSERT INTO movie VALUES (1989, 'The Rose Tattoo', 1955, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (1990, 'Mister Roberts', 1955, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (1991, 'The King and I', 1956, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
-INSERT INTO movie VALUES (1992, 'Around the World in 80 Days', 1956, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
+INSERT INTO movie VALUES (1992, 'Around the World in 80 Days', 1956, '**½', 'NR', 'USA', DEFAULT, 'tt0048960', NULL);
 INSERT INTO movie VALUES (1993, 'Friendly Persuasion', 1956, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
 INSERT INTO movie VALUES (1994, 'Witness for the Prosecution', 1957, '****', 'NR', 'USA', DEFAULT, NULL, 0);
 INSERT INTO movie VALUES (1995, 'Peyton Place', 1957, 'not seen', 'NR', 'USA', DEFAULT, NULL, NULL);
@@ -3857,3 +3857,6 @@ INSERT INTO movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, '
 INSERT INTO movie VALUES (3859, 'The Day the Earth Stood Still', 1951, '***', 'NR', 'USA', NULL, 'tt0043456', 0);
 INSERT INTO movie VALUES (3860, 'Spectre', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2379713', 1);
 INSERT INTO movie VALUES (3861, 'Spotlight', 2015, '****', 'R', 'USA', NULL, 'tt1895587', 1);
+INSERT INTO movie VALUES (3862, 'A Christmas Carol', 1938, '**½', 'NR', 'USA', NULL, 'tt0029992', 0);
+INSERT INTO movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1);
+INSERT INTO movie VALUES (3864, 'Slow West', 2015, '***', 'R', 'England', NULL, 'tt3205376', 0);
