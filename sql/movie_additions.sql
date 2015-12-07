@@ -7,3 +7,7 @@ UPDATE movie SET title = 'Man With a Movie Camera' WHERE mid = 1012;
 UPDATE movie SET title = 'Punch-Drunk Love' WHERE mid = 1316;
 UPDATE movie SET title = 'Return to Never Land' WHERE mid = 1365;
 UPDATE movie SET title = 'Snow White and the Seven Dwarfs' WHERE mid = 1510;
+INSERT INTO movie VALUES (3862, 'A Christmas Carol', 1938, '**½', 'NR', 'USA', NULL, 'tt0029992', 0);
+INSERT INTO movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1);
+INSERT INTO movie VALUES (3864, 'Slow West', 2015, '***', 'R', 'England', NULL, 'tt3205376', 0);
+UPDATE movie SET star_rating = '**½' WHERE mid = 1992;

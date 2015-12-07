@@ -3152,3 +3152,10 @@ INSERT INTO crew_person VALUES (3154, 'Jr.', 'Mihai', 'Malaimare', 'Mihai Malaim
 INSERT INTO crew_person VALUES (3155, 'Fricke', 'Ron', NULL, 'Ron Fricke', 'Cinematographer');  -- Cinematographer: Ron Fricke
 INSERT INTO crew_person VALUES (3156, 'Jarecki', 'Nicholas', NULL, 'Nicholas Jarecki', 'Director');  -- Director: Nicholas Jarecki
 INSERT INTO crew_person VALUES (3157, 'Taylor', 'Vanessa', NULL, 'Vanessa Taylor', 'Screenwriter');  -- Screenwriter: Vanessa Taylor
+INSERT INTO crew_person VALUES (3158, 'Cantinflas', NULL, NULL, 'Cantinflas', 'Actor');  -- Actor: Cantinflas
+INSERT INTO crew_person VALUES (3159, 'Owen', 'Reginald', NULL, 'Reginald Owen', 'Actor');  -- Actor: Reginald Owen
+INSERT INTO crew_person VALUES (3160, 'Butler', 'Hugo', NULL, 'Hugo Butler', 'Screenwriter');  -- Screenwriter: Hugo Butler
+INSERT INTO crew_person VALUES (3161, 'Sohn', 'Peter', NULL, 'Peter Sohn', 'Actor');  -- Actor: Peter Sohn
+INSERT INTO crew_person VALUES (3162, 'Smit-McPhee', 'Kodi', NULL, 'Kodi Smit-McPhee', 'Actor');  -- Actor: Kodi Smit-McPhee
+INSERT INTO crew_person VALUES (3163, 'Ryan', 'Robbie', NULL, 'Robbie Ryan', 'Cinematographer');  -- Cinematographer: Robbie Ryan
+INSERT INTO crew_person VALUES (3164, 'Maclean', 'John', NULL, 'John Maclean', 'Director');  -- Director: John Maclean
