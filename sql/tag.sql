@@ -371,3 +371,4 @@ INSERT INTO filth.tag VALUES (370, 'undercover-cop(s)', 134);
 INSERT INTO filth.tag VALUES (371, 'circus', 61);
 INSERT INTO filth.tag VALUES (372, 'rural', NULL);
 INSERT INTO filth.tag VALUES (373, 'assassination', NULL);
+INSERT INTO filth.tag VALUES (374, 'nazi(s)', NULL);
