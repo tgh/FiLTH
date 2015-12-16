@@ -3860,3 +3860,4 @@ INSERT INTO filth.movie VALUES (3861, 'Spotlight', 2015, '****', 'R', 'USA', NUL
 INSERT INTO filth.movie VALUES (3862, 'A Christmas Carol', 1938, '**½', 'NR', 'USA', NULL, 'tt0029992', 0);
 INSERT INTO filth.movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1);
 INSERT INTO filth.movie VALUES (3864, 'Slow West', 2015, '***', 'R', 'England', NULL, 'tt3205376', 0);
+INSERT INTO filth.movie VALUES (3865, 'Mad Max: Fury Road', 2015, '***', 'R', 'Australia', NULL, 'tt1392190', 0);

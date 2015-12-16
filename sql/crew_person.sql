@@ -3159,3 +3159,7 @@ INSERT INTO filth.crew_person VALUES (3161, 'Sohn', 'Peter', NULL, 'Peter Sohn',
 INSERT INTO filth.crew_person VALUES (3162, 'Smit-McPhee', 'Kodi', NULL, 'Kodi Smit-McPhee', 'Actor');  -- Actor: Kodi Smit-McPhee
 INSERT INTO filth.crew_person VALUES (3163, 'Ryan', 'Robbie', NULL, 'Robbie Ryan', 'Cinematographer');  -- Cinematographer: Robbie Ryan
 INSERT INTO filth.crew_person VALUES (3164, 'Maclean', 'John', NULL, 'John Maclean', 'Director');  -- Director: John Maclean
+INSERT INTO filth.crew_person VALUES (3165, 'McCarthy', 'Brendan', NULL, 'Brendan McCarthy', 'Screenwriter');  -- Screenwriter: Brendan McCarthy
+INSERT INTO filth.crew_person VALUES (3166, 'Lathouris', 'Nick', NULL, 'Nick Lathouris', 'Screenwriter');  -- Screenwriter: Nick Lathouris
+INSERT INTO filth.crew_person VALUES (3167, 'Hoult', 'Nicholas', NULL, 'Nicholas Hoult', 'Actor');  -- Actor: Nicholas Hoult
+INSERT INTO filth.crew_person VALUES (3168, 'Keays-Byrne', 'Hugh', NULL, 'Hugh Keays-Byrne', 'Actor');  -- Actor: Hugh Keays-Byrne
