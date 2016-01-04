@@ -3861,3 +3861,8 @@ INSERT INTO filth.movie VALUES (3862, 'A Christmas Carol', 1938, '**½', 'NR', '
 INSERT INTO filth.movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1); -- 12/5/2015
 INSERT INTO filth.movie VALUES (3864, 'Slow West', 2015, '***', 'R', 'England', NULL, 'tt3205376', 0);
 INSERT INTO filth.movie VALUES (3865, 'Mad Max: Fury Road', 2015, '***', 'R', 'Australia', NULL, 'tt1392190', 0); -- 12/15/15
+INSERT INTO filth.movie VALUES (3866, 'Frank', 2014, '**½', 'R', 'England', NULL, 'tt1605717', 0); -- 1/2/16
+INSERT INTO filth.movie VALUES (3867, 'Johnny English Reborn', 2011, '**', 'PG', 'USA', NULL, 'tt1634122', 0); -- 1/3/16
+INSERT INTO filth.movie VALUES (3868, 'Love & Mercy', 2015, '***', 'PG-13', 'USA', NULL, 'tt0903657', 0); -- 1/1/16
+INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1); -- 12/26/15
+INSERT INTO filth.movie VALUES (3870, 'True Story', 2015, '**½', 'R', 'USA', NULL, 'tt2273657', 0); -- 12/22/15

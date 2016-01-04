@@ -3163,3 +3163,16 @@ INSERT INTO filth.crew_person VALUES (3165, 'McCarthy', 'Brendan', NULL, 'Brenda
 INSERT INTO filth.crew_person VALUES (3166, 'Lathouris', 'Nick', NULL, 'Nick Lathouris', 'Screenwriter');  -- Screenwriter: Nick Lathouris
 INSERT INTO filth.crew_person VALUES (3167, 'Hoult', 'Nicholas', NULL, 'Nicholas Hoult', 'Actor');  -- Actor: Nicholas Hoult
 INSERT INTO filth.crew_person VALUES (3168, 'Keays-Byrne', 'Hugh', NULL, 'Hugh Keays-Byrne', 'Actor');  -- Actor: Hugh Keays-Byrne
+INSERT INTO filth.crew_person VALUES (3169, 'Abrahamson', 'Lenny', NULL, 'Lenny Abrahamson', 'Director');  -- Director: Lenny Abrahamson
+INSERT INTO filth.crew_person VALUES (3170, 'Ronson', 'Jon', NULL, 'Jon Ronson', 'Screenwriter');  -- Screenwriter: Jon Ronson
+INSERT INTO filth.crew_person VALUES (3171, 'Gleeson', 'Domhnall', NULL, 'Domhnall Gleeson', 'Actor');  -- Actor: Domhnall Gleeson
+INSERT INTO filth.crew_person VALUES (3172, 'Atkinson', 'Rowan', NULL, 'Rowan Atkinson', 'Actor');  -- Actor: Rowan Atkinson
+INSERT INTO filth.crew_person VALUES (3173, 'Anderson', 'Gillian', NULL, 'Gillian Anderson', 'Actress');  -- Actress: Gillian Anderson
+INSERT INTO filth.crew_person VALUES (3174, 'West', 'Dominic', NULL, 'Dominic West', 'Actor');  -- Actor: Dominic West
+INSERT INTO filth.crew_person VALUES (3175, 'Gorman', 'Burn', NULL, 'Burn Gorman', 'Actor');  -- Actor: Burn Gorman
+INSERT INTO filth.crew_person VALUES (3176, 'Pohlad', 'Bill', NULL, 'Bill Pohlad', 'Producer');  -- Producer: Bill Pohlad
+INSERT INTO filth.crew_person VALUES (3177, 'Lerner', 'Michael', 'A.', 'Michael A. Lerner', 'Screenwriter');  -- Screenwriter: Michael A. Lerner
+INSERT INTO filth.crew_person VALUES (3178, 'Driver', 'Adam', NULL, 'Adam Driver', 'Actor');  -- Actor: Adam Driver
+INSERT INTO filth.crew_person VALUES (3179, 'Ridley', 'Daisy', NULL, 'Daisy Ridley', 'Actress');  -- Actress: Daisy Ridley
+INSERT INTO filth.crew_person VALUES (3180, 'Boyega', 'John', NULL, 'John Boyega', 'Actor');  -- Actor: John Boyega
+INSERT INTO filth.crew_person VALUES (3181, 'Davis', 'Warwick', NULL, 'Warwick Davis', 'Actor');  -- Actor: Warwick Davis
