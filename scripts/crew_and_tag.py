@@ -134,7 +134,7 @@ if __name__ == '__main__':
     for movie in movies:
       movieTagger.promptUserForTag(movie['mid'], movie['title'], movie['year'])
       crewHandler.promptUserForCrewPerson(movie['mid'], movie['title'], movie['year'])
-      lastProcessed += 1
+      lastProcessed = movie['mid']
   except QuitException, KeyboardInterrupt:
     if movieTagger.hasInserts():
       while True:
