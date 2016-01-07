@@ -374,3 +374,4 @@ INSERT INTO filth.tag VALUES (373, 'assassination', NULL);
 INSERT INTO filth.tag VALUES (374, 'nazi(s)', NULL);
 INSERT INTO filth.tag VALUES (375, 'muteness', 156);
 INSERT INTO filth.tag VALUES (376, 'dystopia', NULL);
+INSERT INTO filth.tag VALUES (377, 'immigration/immigrant(s)', NULL);
