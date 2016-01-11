@@ -30,3 +30,11 @@ INSERT INTO filth.crew_person VALUES (3178, 'Driver', 'Adam', NULL, 'Adam Driver
 INSERT INTO filth.crew_person VALUES (3179, 'Ridley', 'Daisy', NULL, 'Daisy Ridley', 'Actress');  -- Actress: Daisy Ridley
 INSERT INTO filth.crew_person VALUES (3180, 'Boyega', 'John', NULL, 'John Boyega', 'Actor');  -- Actor: John Boyega
 INSERT INTO filth.crew_person VALUES (3181, 'Davis', 'Warwick', NULL, 'Warwick Davis', 'Actor');  -- Actor: Warwick Davis
+INSERT INTO filth.crew_person VALUES (3182, 'Campbell', 'Martin', NULL, 'Martin Campbell', 'Director');  -- Director: Martin Campbell
+INSERT INTO filth.crew_person VALUES (3183, 'Purvis', 'Neal', NULL, 'Neal Purvis', 'Screenwriter');  -- Screenwriter: Neal Purvis
+INSERT INTO filth.crew_person VALUES (3184, 'Wade', 'Robert', NULL, 'Robert Wade', 'Screenwriter');  -- Screenwriter: Robert Wade
+INSERT INTO filth.crew_person VALUES (3185, 'Green', 'Eva', NULL, 'Eva Green', 'Actress');  -- Actress: Eva Green
+INSERT INTO filth.crew_person VALUES (3186, 'Mikkelsen', 'Mads', NULL, 'Mads Mikkelsen', 'Actor');  -- Actor: Mads Mikkelsen
+INSERT INTO filth.crew_person VALUES (3187, 'Soechtig', 'Stephanie', NULL, 'Stephanie Soechtig', 'Director');  -- Director: Stephanie Soechtig
+INSERT INTO filth.crew_person VALUES (3188, 'Smith', 'Mark', 'L.', 'Mark L. Smith', 'Screenwriter');  -- Screenwriter: Mark L. Smith
+INSERT INTO filth.crew_person VALUES (3189, 'Poulter', 'Will', NULL, 'Will Poulter', 'Supporting Actor');  -- Supporting Actor: Will Poulter

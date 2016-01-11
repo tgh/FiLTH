@@ -17,3 +17,6 @@ INSERT INTO filth.movie VALUES (3867, 'Johnny English Reborn', 2011, '**', 'PG',
 INSERT INTO filth.movie VALUES (3868, 'Love & Mercy', 2015, '***', 'PG-13', 'USA', NULL, 'tt0903657', 0);
 INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1);
 INSERT INTO filth.movie VALUES (3870, 'True Story', 2015, '**½', 'R', 'USA', NULL, 'tt2273657', 0);
+INSERT INTO filth.movie VALUES (3871, 'Casino Royale', 2006, '***', 'PG-13', 'USA', NULL, 'tt0381061', 0);
+INSERT INTO filth.movie VALUES (3872, 'Fed Up', 2014, '***½', 'PG', 'USA', NULL, 'tt2381335', 0);
+INSERT INTO filth.movie VALUES (3873, 'The Revenant', 2015, '****', 'R', 'USA', NULL, 'tt1663202', 1);
