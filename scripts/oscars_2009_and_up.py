@@ -40,8 +40,8 @@ OSCAR_FILE = FILTH_PATH + '/sql/oscar.sql'
 OSCAR_GIVEN_TO_FILE = FILTH_PATH + '/sql/oscar_given_to.sql'
 COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
 
-                                                         # mid, oid, cid, year, status, sharing_with
-INSERT_FORMAT_STRING = "INSERT INTO filth.oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
+                                                              # mid, oid, cid, year, status, sharing_with
+INSERT_FORMAT_STRING = "INSERT INTO filth.oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4}, {5});";
 
 _inserts = []
 _crewInserts = []
@@ -334,6 +334,7 @@ def processOscarFile():
         status = fields[STATUS]
         title = fields[TITLE]
         country = fields[COUNTRY]
+        shareCount = 'NULL'
 
         if title == 'Food Inc.':
             mid = 3538
@@ -344,19 +345,21 @@ def processOscarFile():
 
         if '|' in fields[NOMINEES]:
             nominees = fields[NOMINEES].split('|')
+            shareCount = str(len(nominees)-1)
             for nominee in nominees:
                 cid = getCid(nominee, mid, title, year, category)
-                insert = INSERT_FORMAT_STRING.format(mid, oid, cid, year, status, 'DEFAULT')
+                insert = INSERT_FORMAT_STRING.format(mid, oid, cid, year, status, shareCount)
                 comment = ' -- ' + year + ' ' + category + ': ' + nominee + ' for "' + title + '"\n'
                 _inserts.append(insert + comment)
         else:
             if fields[NOMINEES] == '':
-                cid = '0'
+                cid = 'NULL'
                 comment = ' -- ' + year + ' ' + category + ': "' + title + '"\n'
             else:
                 cid = getCid(fields[NOMINEES], mid, title, year, category)
+                shareCount = '0'
                 comment = ' -- ' + year + ' ' + category + ': ' + fields[NOMINEES] + ' for "' + title + '"\n'
-            insert = INSERT_FORMAT_STRING.format(mid, oid, cid, year, status, 'DEFAULT')
+            insert = INSERT_FORMAT_STRING.format(mid, oid, cid, year, status, shareCount)
             _inserts.append(insert + comment)
 
 
