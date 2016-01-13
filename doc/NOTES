@@ -1,9 +1,16 @@
-WHERE LEFT OFF
----------------
+RECENT
+-------
 
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
 
+
+THE MOVIE DB (TMDB)
+--------------------
+- http://docs.themoviedb.apiary.io/
+- tmdb username: thayes (password in e-mail from myself)
+- my API key can be found by logging in to www.themoviedb.org and navigating to Account -> API -> Details
+- Example: curl --include --header "Accep44077613'ation/json" 'http://api.themoviedb.org/3/movie/278/images?api_key=[my api key]' this gets the images of movie whose id is 278 (Shawshank Redemption)
 
 HOW TO
 -------

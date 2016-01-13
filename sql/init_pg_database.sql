@@ -36,7 +36,9 @@ comments text DEFAULT NULL,
 -- id for IMDB
 imdb_id text DEFAULT NULL,
 -- number of times seen in the theater
-theater_viewings smallint DEFAULT NULL);
+theater_viewings smallint DEFAULT NULL,
+-- id for TMDB
+tmdb_id integer DEFAULT NULL);
 
 
 -- a country entity -----------------------------------------------------------
