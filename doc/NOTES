@@ -96,7 +96,7 @@ SETTING UP ENVIRONMENT
     - add tomcat.manager.password=s3cret to build.properties (maybe)
     
   - still haven't been able to run `ant list` successfully--getting 401 error
-    - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml
+    - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml (make sure CATALINA_BASE is not set to ia-tomcat-base -- just set it to nothing if it is)
   - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although it only displayed unknown characters :-/)
     - RESOLVED: switched to using tomcat6 ("appserver.home=${env.WORKSPACE}/tomcat6" in build.properties)
   
