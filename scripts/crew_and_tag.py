@@ -199,7 +199,7 @@ if __name__ == '__main__':
       movieTagger.promptUserForTag(movie['mid'], movie['title'], movie['year'])
       crewHandler.promptUserForCrewPerson(movie['mid'], movie['title'], movie['year'])
       lastProcessed = movie['mid']
-  except QuitException, KeyboardInterrupt:
+  finally:
     if movieTagger.hasInserts():
       while True:
         response = raw_input('\n**WARNING: There are still unwritten tag sql insert statements. Write them out? ').lower()
@@ -224,6 +224,5 @@ if __name__ == '__main__':
           crewHandler.writeCrewInsertsToFile(crewpersonAdditionsFile)
           crewHandler.writeWorkedOnInsertsToFile(workedOnAdditionsFile)
         break
-  finally:
     quit(lastProcessed)
     closeFiles()
