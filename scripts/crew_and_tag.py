@@ -109,7 +109,7 @@ def initMovies(lastProcessed):
     if int(movie['mid']) <= lastProcessed:
       continue
     #skip movies not seen
-    if movie['star_rating'] == 'not seen':
+    if movie['star_rating'] == "'not seen'":
       continue
 
     movies.append(movie)
@@ -199,6 +199,8 @@ if __name__ == '__main__':
       movieTagger.promptUserForTag(movie['mid'], movie['title'], movie['year'])
       crewHandler.promptUserForCrewPerson(movie['mid'], movie['title'], movie['year'])
       lastProcessed = movie['mid']
+  except QuitException, KeyboardInterrupt:
+    pass
   finally:
     if movieTagger.hasInserts():
       while True:
