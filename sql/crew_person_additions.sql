@@ -40,3 +40,6 @@ INSERT INTO filth.crew_person VALUES (3188, 'Smith', 'Mark', 'L.', 'Mark L. Smit
 INSERT INTO filth.crew_person VALUES (3189, 'Poulter', 'Will', NULL, 'Will Poulter', 'Supporting Actor');  -- Supporting Actor: Will Poulter
 INSERT INTO filth.crew_person VALUES (3190, 'Gordon', 'Robert', NULL, 'Robert Gordon', 'Director');  -- Director: Robert Gordon
 INSERT INTO filth.crew_person VALUES (3191, 'Ramirez', 'Edgar', NULL, 'Edgar Ramirez', 'Actor');  -- Actor: Edgar Ramirez
+INSERT INTO filth.crew_person VALUES (3192, 'Forster', 'Marc', NULL, 'Marc Forster', 'Director');  -- Director: Marc Forster
+INSERT INTO filth.crew_person VALUES (3193, 'Kurylenko', 'Olga', NULL, 'Olga Kurylenko', 'Actress');  -- Actress: Olga Kurylenko
+INSERT INTO filth.crew_person VALUES (3194, 'Amalric', 'Mathieu', NULL, 'Mathieu Amalric', 'Actor');  -- Actor: Mathieu Amalric

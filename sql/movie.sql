@@ -3871,3 +3871,5 @@ INSERT INTO filth.movie VALUES (3872, 'Fed Up', 2014, '***½', 'PG', 'USA', NULL
 INSERT INTO filth.movie VALUES (3873, 'The Revenant', 2015, '****', 'R', 'USA', '"The Man in the Wilderness" (1971) is also based on the true story of Hugh Glass', 'tt1663202', 1, NULL, 281957); -- 1/8/16
 INSERT INTO filth.movie VALUES (3874, 'Best of Enemies', 2015, '***½', 'R', 'USA', NULL, 'tt3518012', 0); -- 1/17/16
 INSERT INTO filth.movie VALUES (3875, 'Joy', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2446980', 1); -- 1/15/16
+INSERT INTO filth.movie VALUES (3876, 'Quantum of Solace', 2008, '***', 'PG-13', 'England', NULL, 'tt0830515', 0); -- 1/22/16
+INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Freedom', 2015, '***', 'NR', DEFAULT, NULL, 'tt4908644', 0); -- 1/24/16
