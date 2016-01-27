@@ -237,9 +237,6 @@ def processAwardFile(filename):
         if fields[YEAR] == 'YEAR':
             #this is the header row, skip it
             continue
-        if fields[CATEGORY] == 'Top Ten':
-            #this is Top Ten, skip it
-            continue
         
         year = fields[YEAR]
         tid = _tyler[fields[CATEGORY]]

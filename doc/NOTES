@@ -173,15 +173,24 @@ SETTING UP ENVIRONMENT
 - created postgres user filth_admin:
   - $ sudo su - postgres
   - # createuser -sr filth_admin
+    - might need to also use -P to add password (and maybe -E too?)
+- created postgres user filth:
+  - $ sudo su - postgres
+  - # createuser filth
+    - might need to also use -P to add password (and maybe -E too?)
 - edited /etc/postgresql/9.3/main/pg_hba.conf:
   - added a line below where the 'postgres' user in configured:
 
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
-    local   all             filth_admin                             trust
+    local   filth           filth_admin                             trust
+    local   filth           filth                                   trust
 - **may want to change 'trust' to 'ident' or 'md5' to force password
+- to query db as filth:
+  $ psql -U filth -d filth
 - to query db as filth_admin:
   $ psql -U filth_admin -d filth
+
 
 
 NEEDS
