@@ -3,6 +3,7 @@
 import re
 import traceback
 from os import getenv
+import sys
 
 YEAR = 0
 CATEGORY = 1
@@ -31,7 +32,6 @@ CATEGORY_POSITIONS = {'Best Actor':'Lead Actor',
                       'Best Original Screenplay':'Screenwriter'}
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
-OSCARS_CSV = FILTH_PATH + '/data/oscars_2009_and_up.csv'
 MOVIE_FILE = FILTH_PATH + '/sql/movie.sql'
 CREW_FILE = FILTH_PATH + '/sql/crew_person.sql'
 WORKED_ON_FILE = FILTH_PATH + '/sql/worked_on.sql'
@@ -61,6 +61,26 @@ _workedOnFile = None
 _logFile = None
 _nextCid = 0
 _nextMid = 0
+_oscarsCsv = None
+
+
+#-----------------------------------------------------------------------------
+
+def usage():
+    print '\n\toscars_2009_and_up.py <csv file>\n'
+
+
+#-----------------------------------------------------------------------------
+
+def processArgs():
+    global _oscarsCsv
+
+    if len(sys.argv[1:]) != 1:
+        print '**ERROR: missing arg or too many args'
+        usage()
+        sys.exit(1)
+
+    _oscarsCsv = sys.argv[1]
 
 
 #-----------------------------------------------------------------------------
@@ -317,9 +337,9 @@ def getCid(name, mid, title, year, category):
 def processOscarFile():
     global _inserts, _logFile
 
-    _logFile.write('\n--> Processing: ' + OSCARS_CSV + '\n')
+    _logFile.write('\n--> Processing: ' + _oscarsCsv + '\n')
 
-    f = open(OSCARS_CSV)
+    f = open(_oscarsCsv, 'r')
     lines = f.readlines()
     f.close()
 
@@ -418,6 +438,7 @@ def quit():
 #=============================================================================
 
 if __name__ == '__main__':
+    processArgs()
     init()
     try:
         processOscarFile()
