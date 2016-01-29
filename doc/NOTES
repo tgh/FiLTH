@@ -191,7 +191,12 @@ SETTING UP ENVIRONMENT
 - to query db as filth_admin:
   $ psql -U filth_admin -d filth
 
-
+- BEACON DB USERNAME/PASSWORD
+    - wgspring.db.username and wgspring.db.password properties in [app].properties
+    - there are data source beans defined in common-hibernate-context.xml that reference those properties
+    - ant targets setup the required PGPASS environment variable for command-line
+      database modification (migrations) and point to [app]/.pgpass which contains
+      host/username/password entries for specific environment hosts    
 
 NEEDS
 ------
