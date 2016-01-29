@@ -162,6 +162,41 @@ SETTING UP ENVIRONMENT
     then added <pathelement path="${resources.dir}"/> to <path id="master-classpath"> in build.xml
     (and <property name="resources.dir" value="src/main/resources"/> in build.xml as well)
 
+  - had to add the following to the deploy target to deploy HelloController.class to tomcat:
+    	<copy todir="${deploy.path}/${name}/WEB-INF/classes">
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+    	</copy>
+  - **need to figure out how Beacon apps do not need to deploy *.class files to tomcat
+
+  - used this instead for my filth-servlet.xml:
+
+    <context:component-scan base-package="com.filth.controller"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+  - in filth-servlet.xml, I had:
+        <property name="prefix" value="/web/view/" />
+    when it should have been:
+        <property name="prefix" value="/view/" />
+    since everything *under* /web is being deployed to tomcat, but not /web itself
+
+  - **had to manually copy the following jar files from /lib to /web/WEB-INF/lib:
+    - commons-logging-1.2.jar
+    - spring-beans-4.1.6.RELEASE.jar
+    - spring-expression-4.1.6.RELEASE.jar
+    - javax.servlet.jsp.jstl-api-1.2.1.jar
+    - spring-context-4.1.6.RELEASE.jar
+    - spring-web-4.1.6.RELEASE.jar
+    - spring-aop-4.1.6.RELEASE.jar
+    - spring-core-4.1.6.RELEASE.jar
+    - spring-webmvc-4.1.6.RELEASE.jar
+  - **need to update ivy.xml to also provide a copy of those jars to /web/WEB-INF/lib
+
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
   - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile

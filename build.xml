@@ -84,6 +84,11 @@
                 <include name="**/*.*"/>
             </fileset>
         </copy>
+    	<copy todir="${deploy.path}/${name}/WEB-INF/classes">
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+    	</copy>
     </target>
 
     <target name="deploywar" depends="build" description="Deploy application as a WAR file">
