@@ -197,6 +197,16 @@ SETTING UP ENVIRONMENT
     - spring-webmvc-4.1.6.RELEASE.jar
   - **need to update ivy.xml to also provide a copy of those jars to /web/WEB-INF/lib
 
+  - I commented out everything under <tomcat-users> in [tomcat]/conf/tomcat-users.xml
+    and filth/hello.html still worked (Beacon didn't edit that file either) so
+    **editing [tomcat]/conf/tomcat-users.xml is not needed** unless you want a tomcat manager user:
+
+    <role rolename="manager-gui"/>
+    <role rolename="manager"/>
+    <user username="tomcat" password="s3cret" roles="manager,manager-gui"/>
+
+    or something like that
+
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
   - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
