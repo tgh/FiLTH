@@ -196,7 +196,8 @@ SETTING UP ENVIRONMENT
     - there are data source beans defined in common-hibernate-context.xml that reference those properties
     - ant targets setup the required PGPASS environment variable for command-line
       database modification (migrations) and point to [app]/.pgpass which contains
-      host/username/password entries for specific environment hosts    
+      host/username/password entries for specific environment hosts  
+    - http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html  
 
 NEEDS
 ------
