@@ -18,7 +18,8 @@ TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-INSERT_FORMAT_STRING = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6}, {7});\n";
+                                                      #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb
+INSERT_FORMAT_STRING = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, NULL, {6}, {7}, {8});\n";
 
 _inserts = []   #list of INSERT statements for movies
 _updates = []   #list of UPDATE statements for movies
@@ -460,6 +461,15 @@ def promptUserIfSeenInTheater():
   return '0'
 
 
+#------------------------------------------------------------------------------
+
+def promptUserForTmdbId():
+  response = raw_input('\nTMDB id (\'s\' to skip): ')
+  if response == 's':
+    return 'NULL'
+  return response
+
+
 
 #------------------------------------------------------------------------------
 
@@ -497,7 +507,7 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL', 'NULL'))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL', 'NULL', 'NULL'))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
@@ -506,8 +516,10 @@ if __name__ == '__main__':
           imdbId = promptUserForImdbId()
           #ask user if seen in theater
           seenInTheater = promptUserIfSeenInTheater()
+          #ask user for tmdb id
+          tmdbId = promptUserForTmdbId()
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, imdbId, seenInTheater))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, imdbId, seenInTheater, tmdbId))
           mid = _nextMid
 
         #ask user for tags for the movie

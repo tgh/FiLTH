@@ -43,3 +43,11 @@ INSERT INTO filth.crew_person VALUES (3191, 'Ramirez', 'Edgar', NULL, 'Edgar Ram
 INSERT INTO filth.crew_person VALUES (3192, 'Forster', 'Marc', NULL, 'Marc Forster', 'Director');  -- Director: Marc Forster
 INSERT INTO filth.crew_person VALUES (3193, 'Kurylenko', 'Olga', NULL, 'Olga Kurylenko', 'Actress');  -- Actress: Olga Kurylenko
 INSERT INTO filth.crew_person VALUES (3194, 'Amalric', 'Mathieu', NULL, 'Mathieu Amalric', 'Actor');  -- Actor: Mathieu Amalric
+INSERT INTO filth.crew_person VALUES (3195, 'Almond', 'Paul', NULL, 'Paul Almond', 'Director');  -- Director: Paul Almond
+INSERT INTO filth.crew_person VALUES (3196, 'Dencik', 'David', NULL, 'David Dencik', 'Actor');  -- Actor: David Dencik
+INSERT INTO filth.crew_person VALUES (3197, 'Graham', 'Stephen', NULL, 'Stephen Graham', 'Actor');  -- Actor: Stephen Graham
+INSERT INTO filth.crew_person VALUES (3198, 'Alfredson', 'Tomas', NULL, 'Tomas Alfredson', 'Director');  -- Director: Tomas Alfredson
+INSERT INTO filth.crew_person VALUES (3199, 'Yonebayashi', 'Hiromasa', NULL, 'Hiromasa Yonebayashi', 'Director');  -- Director: Hiromasa Yonebayashi
+INSERT INTO filth.crew_person VALUES (3200, 'Niwa', 'Keiko', NULL, 'Keiko Niwa', 'Screenwriter');  -- Screenwriter: Keiko Niwa
+INSERT INTO filth.crew_person VALUES (3201, 'Ando', 'Masashi', NULL, 'Masashi Ando', 'Screenwriter');  -- Screenwriter: Masashi Ando
+INSERT INTO filth.crew_person VALUES (3202, 'Freedman', 'David', NULL, 'David Freedman', 'Screenwriter');  -- Screenwriter: David Freedman

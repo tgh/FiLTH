@@ -24,3 +24,6 @@ INSERT INTO filth.movie VALUES (3874, 'Best of Enemies', 2015, '***½', 'R', 'US
 INSERT INTO filth.movie VALUES (3875, 'Joy', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2446980', 1);
 INSERT INTO filth.movie VALUES (3876, 'Quantum of Solace', 2008, '***', 'PG-13', 'England', NULL, 'tt0830515', 0);
 INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Freedom', 2015, '***', 'NR', DEFAULT, NULL, 'tt4908644', 0);
+INSERT INTO filth.movie VALUES (3878, '56 Up', 2012, '***½', 'NR', 'England', NULL, 'tt2147134', 0);
+INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG', 'Japan', NULL, 'tt3398268', 0);
+UPDATE filth.movie SET star_rating = '***½' WHERE mid = 3353;
