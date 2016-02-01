@@ -1,11 +1,21 @@
-WHERE LEFT OFF
----------------
+RECENT
+-------
 
 - going through spring tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
     - at 1.12, but getting 404 for localhost:8080/filth/hello.html
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
 
+
+THE MOVIE DB (TMDB)
+--------------------
+- http://docs.themoviedb.apiary.io/
+- tmdb username: thayes (password in e-mail from myself)
+- my API key can be found by logging in to www.themoviedb.org and navigating to Account -> API -> Details
+- Example: curl --include --header "Accept:application/json" 'http://api.themoviedb.org/3/movie/278/images?api_key=[my api key]'
+    - this gets the images of movie whose id is 278 (Shawshank Redemption)
+- Example: http://api.themoviedb.org/3/movie/tt0057012?api_key=[api key]
+    - this gets data (in json) for a movie (in this case, Dr. Strangelove) using an IMDB id
 
 HOW TO
 -------
@@ -253,14 +263,31 @@ SETTING UP ENVIRONMENT
 - created postgres user filth_admin:
   - $ sudo su - postgres
   - # createuser -sr filth_admin
+    - might need to also use -P to add password (and maybe -E too?)
+- created postgres user filth:
+  - $ sudo su - postgres
+  - # createuser filth
+    - might need to also use -P to add password (and maybe -E too?)
 - edited /etc/postgresql/9.3/main/pg_hba.conf:
   - added a line below where the 'postgres' user in configured:
 
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
-    local   all             filth_admin                             trust
+    local   filth           filth_admin                             trust
+    local   filth           filth                                   trust
 - **may want to change 'trust' to 'ident' or 'md5' to force password
+- to query db as filth:
+  $ psql -U filth -d filth
+- to query db as filth_admin:
+  $ psql -U filth_admin -d filth
 
+- BEACON DB USERNAME/PASSWORD
+    - wgspring.db.username and wgspring.db.password properties in [app].properties
+    - there are data source beans defined in common-hibernate-context.xml that reference those properties
+    - ant targets setup the required PGPASS environment variable for command-line
+      database modification (migrations) and point to [app]/.pgpass which contains
+      host/username/password entries for specific environment hosts  
+    - http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html  
 
 NEEDS
 ------
@@ -480,7 +507,7 @@ REFERENCES
 
 TOOLS USED/TRIED OUT
 ---------------------
-* denotes possible requirements for end user
+* denotes possible requirements for dev
 - Dia (diagram tool--used for E-R diagram for database schema)
 - Git (for version control)
 - Postgres* (database)
