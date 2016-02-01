@@ -1,8 +1,6 @@
 RECENT
 -------
 
-- going through spring tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
-    - at 1.12, but getting 404 for localhost:8080/filth/hello.html
 - ALSO: look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
 
@@ -234,6 +232,7 @@ SETTING UP ENVIRONMENT
     - set CATALINA_HOME to the tomcat8 directory
     - (you may also need to make all *.sh files under [tomcat]/bin/ executable: http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat
     - set the "appserver.home" property in build.properties to this tomcat8 directory
+
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
