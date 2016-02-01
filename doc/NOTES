@@ -207,6 +207,24 @@ SETTING UP ENVIRONMENT
 
     or something like that
 
+  - downloaded Java 8 from http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    - at the time of this writing: Under "Java SE Development Kit 8u71" accept
+      Oracle license agreement and click the "Download" link for "Linux x64":
+      jdk-8u71-linux-x64.tar.gz
+    - move extracted tar contents to /usr/lib/jvm: sudo mv jdk<version> /usr/lib/jvm/
+    - install new java:
+      sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk<version>/bin/javac 1
+      sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk<version>/bin/java 1
+      sudo update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk<version>/bin/javaws 1
+      sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk<version>/bin/jar 1
+    - make sure JAVA_HOME is set to new dir under /usr/lib/jvm: export JAVA_HOME=/usr/lib/jvm/jdk<version>
+
+  - download and extract tomcat 8: https://tomcat.apache.org/download-80.cgi
+    - move exctracted contents (the tomcat8 directory) to where ever you want
+    - set CATALINA_HOME to the tomcat8 directory
+    - (you may also need to make all *.sh files under [tomcat]/bin/ executable: http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat
+    - set the "appserver.home" property in build.properties to this tomcat8 directory
+
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
   - need to do something with database.yml?  all I did was change "gem 'sqlite'" to "gem 'pg'" in Gemfile
