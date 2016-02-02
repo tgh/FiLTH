@@ -1,7 +1,34 @@
 <?xml version="1.0"?>
 
 <project name="filth" xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="usage">
+
+    <!-- ================================================================= -->
+    <!-- Properties and classpaths -->
+    <property environment="env"/>
     
+    <property file="build.properties"/>
+    
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test"/>
+    <property name="web.dir" value="web/"/>
+    <property name="build.dir" value="target"/>
+    <property name="name" value="filth"/>
+    <property name="resources.dir" value="src/main/resources"/>
+
+    <path id="master-classpath">
+        <fileset dir="lib">
+            <include name="**/*.jar"/>
+        </fileset>
+        <!-- include servlet API classes: -->
+        <fileset dir="${tomcat.lib.dir}">
+            <include name="servlet*.jar"/>
+        </fileset>
+        <pathelement path="${resources.dir}"/>
+        <pathelement path="${build.dir}"/>
+    </path>
+    
+    <!-- ================================================================= -->
+    <!-- Ivy -->
     <taskdef resource="net/sf/antcontrib/antlib.xml">
         <classpath>
             <pathelement path="${build.lib.dir}/ant-contrib.jar"/>
@@ -13,44 +40,45 @@
     <taskdef name="ivy-retrieve" classname="org.apache.ivy.ant.IvyRetrieve"/>
     <taskdef name="ivy-deliver" classname="org.apache.ivy.ant.IvyDeliver"/> 
     <taskdef name="ivy-publish" classname="org.apache.ivy.ant.IvyPublish"/>
-	
-	<target name="ivy-resolve">
+    
+    <target name="ivy-resolve" description="Get dependencies">
         <ivy:configure />
         
         <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
         
         <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
-		<echo message="ivy.dep.file: ${ivy.dep.file}"/>
-		<echo message="ivy.configurations: ${ivy.configurations}"/>
-		<echo message="ivy.retrieve.pattern: ${ivy.retrieve.pattern}"/>
+        <echo message="ivy.dep.file: ${ivy.dep.file}"/>
+        <echo message="ivy.configurations: ${ivy.configurations}"/>
+        <echo message="ivy.retrieve.pattern: ${ivy.retrieve.pattern}"/>
+    </target>
+
+    <!-- ================================================================= -->
+    <!-- Tomcat -->
+    <target name="tomcat-start" description="Start tomcat">
+        <exec executable="bash" failonerror="true">
+            <arg value="${tomcat.home.dir}/bin/catalina.sh"/>
+            <arg value="start"/>
+        </exec>
     </target>
     
-    <property environment="env"/>
+    <target name="tomcat-debug-start" description="Start tomcat with debugging turned on">
+        <exec executable="bash" failonerror="true">
+            <arg value="${tomcat.home.dir}/bin/catalina.sh"/>
+            <arg line="jpda start"/>
+            <env key="JPDA_ADDRESS" value="${tomcat.jpda.address}"/>
+            <!-- <env key="JAVA_OPTS" value="${tomcat.java.opts}"/> --><!-- uncomment if you want to use specific options for the jvm -->
+        </exec>
+    </target>
     
-    <property file="build.properties"/>
-    <property file="build.passwords.properties" />
+    <target name="tomcat-stop" description="Stop tomcat">
+        <exec executable="bash" failonerror="true">
+            <arg value="${tomcat.home.dir}/bin/catalina.sh"/>
+            <arg value="stop"/>
+        </exec>
+    </target>
 
-    <property name="src.dir" value="src/main/java"/>
-	<property name="test.dir" value="src/test"/>
-    <property name="web.dir" value="web/"/>
-    <property name="build.dir" value="target"/>
-    <property name="name" value="filth"/>
-	<property name="resources.dir" value="src/main/resources"/>
-
-    <path id="master-classpath">
-        <fileset dir="lib">
-            <include name="**/*.jar"/>
-        </fileset>
-        <!-- We need the servlet API classes: -->
-        <!--  * for Tomcat 5/6 use servlet-api.jar -->
-        <!--  * for other app servers - check the docs -->
-        <fileset dir="${appserver.lib}">
-            <include name="servlet*.jar"/>
-        </fileset>
-    	<pathelement path="${resources.dir}"/>
-        <pathelement path="${build.dir}"/>
-    </path>
-
+    <!-- ================================================================= -->
+    <!-- Build targets -->
     <target name="usage">
         <echo message=""/>
         <echo message="${name} build file"/>
@@ -71,24 +99,26 @@
 
     <target name="build" description="Compile main source tree java files">
         <mkdir dir="${build.dir}"/>
-        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
+        <javac destdir="${build.dir}" source="1.8" target="1.8" debug="true"
                deprecation="false" optimize="false" failonerror="true">
             <src path="${src.dir}"/>
             <classpath refid="master-classpath"/>
         </javac>
     </target>
 
+    <!-- ================================================================= -->
+    <!-- Deploy targets -->
     <target name="deploy" depends="build" description="Deploy application">
-        <copy todir="${deploy.path}/${name}" preservelastmodified="true">
+        <copy todir="${tomcat.deploy.dir}/${name}" preservelastmodified="true">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
         </copy>
-    	<copy todir="${deploy.path}/${name}/WEB-INF/classes">
+        <copy todir="${tomcat.deploy.dir}/${name}/WEB-INF/classes">
             <fileset dir="${build.dir}">
                 <include name="**/*.class"/>
             </fileset>
-    	</copy>
+        </copy>
     </target>
 
     <target name="deploywar" depends="build" description="Deploy application as a WAR file">
@@ -97,16 +127,18 @@
                 <include name="**/*.*"/>
             </fileset>
         </war>
-        <copy todir="${deploy.path}" preservelastmodified="true">
+        <copy todir="${tomcat.deploy.dir}" preservelastmodified="true">
             <fileset dir=".">
                 <include name="*.war"/>
             </fileset>
         </copy>
     </target>
-	
-	<target name="buildtests" description="Compile test tree java files">
+    
+    <!-- ================================================================= -->
+    <!-- Test targets -->
+    <target name="buildtests" description="Compile test tree java files">
         <mkdir dir="${build.dir}"/>
-        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
+        <javac destdir="${build.dir}" source="1.8" target="1.8" debug="true"
             deprecation="false" optimize="false" failonerror="true">
             <src path="${test.dir}"/>
             <classpath refid="master-classpath"/>
@@ -138,75 +170,5 @@
             ***********************************************************
         </fail>
     </target>
-    
-<!-- ============================================================== -->
-<!-- Tomcat tasks - remove these if you don't have Tomcat installed -->
-<!-- ============================================================== -->
-
-    <path id="catalina-ant-classpath">
-        <!-- We need the Catalina jars for Tomcat -->
-        <!--  * for other app servers - check the docs -->
-        <fileset dir="${appserver.lib}">
-           <include name="catalina-ant.jar"/>
-           <include name="tomcat-coyote.jar"/>
-           <include name="tomcat-util.jar"/>
-        </fileset>
-        <fileset dir="${appserver.home}/bin">
-           <include name="tomcat-juli.jar"/>
-        </fileset>
-    </path>
-
-    <taskdef name="install" classname="org.apache.catalina.ant.DeployTask">
-        <classpath refid="catalina-ant-classpath"/>
-    </taskdef>
-    <taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask">
-        <classpath refid="catalina-ant-classpath"/>
-    </taskdef>
-    <taskdef name="list" classname="org.apache.catalina.ant.ListTask">
-        <classpath refid="catalina-ant-classpath"/>
-    </taskdef>
-    <taskdef name="start" classname="org.apache.catalina.ant.StartTask">
-        <classpath refid="catalina-ant-classpath"/>
-    </taskdef>
-    <taskdef name="stop" classname="org.apache.catalina.ant.StopTask">
-        <classpath refid="catalina-ant-classpath"/>
-    </taskdef>
-
-    <target name="install" description="Install application in Tomcat">
-        <install url="${tomcat.manager.url}"
-                 username="${tomcat.manager.username}"
-                 password="${tomcat.manager.password}"
-                 path="/${name}"
-                 war="${name}"/>
-    </target>
-
-    <target name="reload" description="Reload application in Tomcat">
-        <reload url="${tomcat.manager.url}"
-                 username="${tomcat.manager.username}"
-                 password="${tomcat.manager.password}"
-                 path="/${name}"/>
-    </target>
-
-    <target name="start" description="Start Tomcat application">
-        <start url="${tomcat.manager.url}"
-                 username="${tomcat.manager.username}"
-                 password="${tomcat.manager.password}"
-                 path="/${name}"/>
-    </target>
-
-    <target name="stop" description="Stop Tomcat application">
-        <stop url="${tomcat.manager.url}"
-                 username="${tomcat.manager.username}"
-                 password="${tomcat.manager.password}"
-                 path="/${name}"/>
-    </target>
-
-    <target name="list" description="List Tomcat applications">
-        <list url="${tomcat.manager.url}"
-                 username="${tomcat.manager.username}"
-                 password="${tomcat.manager.password}"/>
-    </target>
-
-<!-- End Tomcat tasks -->
 
 </project>

@@ -257,7 +257,11 @@ SETTING UP ENVIRONMENT
          </property>
     </bean>
 
-    
+  - Beacon's JAVA_OPTS: -Doib.env.config.dir=/home/thayes/workspace/oib/conf
+                        -Doutcomes.env.config.dir=/home/thayes/workspace/outcomes/conf
+                        -Doa.env.config.dir=/home/thayes/workspace/oa/conf
+                        -Dharbor.env.config.dir=../harbor/conf
+                        -Xms128m -Xmx2048m -XX:MaxPermSize=256m -XX:-UseGCOverheadLimit
 
 
 - dabled in Rails briefly:
