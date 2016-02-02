@@ -25,7 +25,12 @@
             <include name="servlet*.jar"/>
         </fileset>
         <pathelement path="${resources.dir}"/>
-        <pathelement path="${build.dir}"/>
+        <pathelement path="${build.dir}/main"/>
+    </path>
+    
+    <path id="test-classpath">
+        <path refid="master-classpath"/>
+        <pathelement path="${build.dir}/test"/>
     </path>
     
     <!-- ================================================================= -->
@@ -46,7 +51,9 @@
         
         <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
         
+        <!-- resolve compile-time dependencies into a directory from which 'build' will use during compilation -->
         <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar" conf="compile"/>
+        <!-- resolve runtime dependencies into a directory from which 'deploy' will copy to tomcat -->
         <ivy:retrieve pattern="${web.dir}/WEB-INF/lib/[artifact]-[revision].[ext]" type="jar" conf="runtime"/>
         
         <echo message="ivy.dep.file: ${ivy.dep.file}"/>
@@ -86,8 +93,8 @@
     <!-- ================================================================= -->
     <!-- Build targets -->
     <target name="build" description="Compile main source tree java files">
-        <mkdir dir="${build.dir}"/>
-        <javac destdir="${build.dir}" source="1.8" target="1.8" debug="true"
+        <mkdir dir="${build.dir}/main"/>
+        <javac destdir="${build.dir}/main" source="1.8" target="1.8" debug="true"
                deprecation="false" optimize="false" failonerror="true">
             <src path="${src.dir}"/>
             <classpath refid="master-classpath"/>
@@ -103,7 +110,7 @@
             </fileset>
         </copy>
         <copy todir="${tomcat.deploy.dir}/${project.name}/WEB-INF/classes">
-            <fileset dir="${build.dir}">
+            <fileset dir="${build.dir}/main">
                 <include name="**/*.class"/>
             </fileset>
         </copy>
@@ -125,11 +132,11 @@
     <!-- ================================================================= -->
     <!-- Test targets -->
     <target name="buildtests" description="Compile test tree java files">
-        <mkdir dir="${build.dir}"/>
-        <javac destdir="${build.dir}" source="1.8" target="1.8" debug="true"
+        <mkdir dir="${build.dir}/test"/>
+        <javac destdir="${build.dir}/test" source="1.8" target="1.8" debug="true"
             deprecation="false" optimize="false" failonerror="true">
             <src path="${test.dir}"/>
-            <classpath refid="master-classpath"/>
+            <classpath refid="test-classpath"/>
         </javac>
     </target>
     
@@ -139,11 +146,11 @@
             haltonfailure="false"
             failureproperty="tests.failed"
             showoutput="true">
-            <classpath refid="master-classpath"/>
+            <classpath refid="test-classpath"/>
             <formatter type="brief" usefile="false"/>
             
             <batchtest>
-                <fileset dir="${build.dir}">
+                <fileset dir="${build.dir}/test">
                     <include name="**/*Test.*"/>
                 </fileset>
             </batchtest>
