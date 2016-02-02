@@ -56,6 +56,10 @@
 
     <!-- ================================================================= -->
     <!-- Tomcat -->
+    <target name="tomcat-clean" description="Removes the project from tomcat">
+        <delete dir="${tomcat.deploy.dir}/${project.name}" includeemptydirs="true" failonerror="true" />
+    </target>
+
     <target name="tomcat-start" description="Start tomcat">
         <exec executable="bash" failonerror="true">
             <arg value="${tomcat.home.dir}/bin/catalina.sh"/>
