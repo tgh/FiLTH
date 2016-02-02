@@ -8,9 +8,7 @@ temp/*
 .pydevproject
 *.pyc
 .setting*
-build.passwords.properties
-target
-doc/setup/*
+build/*
 logs/*
 !temp/previous_movie_ratings.txt
 !temp/crewTagTemp.txt
