@@ -203,6 +203,7 @@ SETTING UP ENVIRONMENT
     - spring-aop-4.1.6.RELEASE.jar
     - spring-core-4.1.6.RELEASE.jar
     - spring-webmvc-4.1.6.RELEASE.jar
+    - also freemarker-2.3.22.jar and spring-context-support-4.1.6.RELEASE.jar for Freemarker
   - **need to update ivy.xml to also provide a copy of those jars to /web/WEB-INF/lib
 
   - I commented out everything under <tomcat-users> in [tomcat]/conf/tomcat-users.xml
@@ -232,6 +233,31 @@ SETTING UP ENVIRONMENT
     - set CATALINA_HOME to the tomcat8 directory
     - (you may also need to make all *.sh files under [tomcat]/bin/ executable: http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat
     - set the "appserver.home" property in build.properties to this tomcat8 directory
+
+  - you can setup freemarker with specific setting such as auto-importing a
+    template for every page. Here is Beacon's as an example (to be put in [app]-servlet.xml):
+
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPaths">
+            <list>
+              <value>/WEB-INF/freemarker</value>
+              <value>classpath:freemarker</value>
+            </list>
+        </property>
+         <property name="freemarkerSettings">
+            <util:properties>
+               <prop key="auto_import">layouts.ftl as layout, /core/util.ftl as util, /spring.ftl as spring</prop>
+               <prop key="template_exception_handler">${wgspring.ui.freemarker.exception_handler:rethrow}</prop>
+               <!-- This avoids ints greater than '1000' from showing up with commas like '1,000' -->
+               <prop key="number_format">0.####</prop>
+               <prop key="object_wrapper">net.wgen.spring.common.ui.web.util.SanitizableBeanWrapper</prop>
+               <prop key="default_encoding">${wgspring.ui.freemarker.default_encoding:UTF-8}</prop>
+               <prop key="output_encoding">${wgspring.ui.freemarker.output_encoding:UTF-8}</prop>
+            </util:properties>
+         </property>
+    </bean>
+
+    
 
 
 - dabled in Rails briefly:
