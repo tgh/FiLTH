@@ -1,10 +1,23 @@
 <ivy-module version="2.0">
-    <info organisation="org.apache" module="hello-ivy"/>
+    <info organisation="${project.organization}" module="${project.name}"/>
+
+    <configurations>
+        <conf name="runtime" transitive="false"/>
+        <conf name="compile" transitive="false"/>
+    </configurations>
+    
     <dependencies>
-        <dependency org="org.springframework" name="spring-context" rev="4.1.6.RELEASE"/>
-        <dependency org="org.springframework" name="spring-webmvc" rev="4.1.6.RELEASE"/>
-        <dependency org="commons-logging" name="commons-logging" rev="1.2"/>
-        <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
-        <dependency org="junit" name="junit" rev="4.12"/>
+        <dependency org="org.springframework" name="spring-context" rev="4.1.6.RELEASE" conf="compile->default;runtime->default"/>
+        <dependency org="org.springframework" name="spring-webmvc" rev="4.1.6.RELEASE" conf="compile->default;runtime->default"/>
+        <dependency org="org.springframework" name="spring-web" rev="4.1.6.RELEASE" conf="compile->default;runtime->default"/>
+        <dependency org="org.springframework" name="spring-beans" rev="4.1.6.RELEASE" conf="runtime->default"/>
+        <dependency org="org.springframework" name="spring-core" rev="4.1.6.RELEASE" conf="runtime->default"/>
+        <dependency org="org.springframework" name="spring-aop" rev="4.1.6.RELEASE" conf="runtime->default"/>
+        <dependency org="org.springframework" name="spring-expression" rev="4.1.6.RELEASE" conf="runtime->default"/>
+        <dependency org="org.springframework" name="spring-context-support" rev="4.1.6.RELEASE" conf="runtime->default"/>
+        <dependency org="org.freemarker" name="freemarker" rev="2.3.22" conf="runtime->default"/>
+        <dependency org="commons-logging" name="commons-logging" rev="1.2" conf="compile->default;runtime->default"/>
+        <dependency org="javax.servlet" name="servlet-api" rev="2.5" conf="compile->default"/>
+        <dependency org="junit" name="junit" rev="4.12" conf="compile->default"/>
     </dependencies>
 </ivy-module>

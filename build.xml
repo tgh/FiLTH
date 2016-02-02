@@ -12,11 +12,12 @@
     <property name="test.dir" value="src/test"/>
     <property name="web.dir" value="web/"/>
     <property name="build.dir" value="build"/>
-    <property name="name" value="filth"/>
     <property name="resources.dir" value="src/main/resources"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="ivy.retrieve.pattern" value="${lib.dir}/[conf]/[artifact]-[revision].[ext]"/>
 
     <path id="master-classpath">
-        <fileset dir="lib">
+        <fileset dir="${lib.dir}">
             <include name="**/*.jar"/>
         </fileset>
         <!-- include servlet API classes: -->
@@ -31,22 +32,23 @@
     <!-- Ivy -->
     <taskdef resource="net/sf/antcontrib/antlib.xml">
         <classpath>
-            <pathelement path="${build.lib.dir}/ant-contrib.jar"/>
+            <pathelement path="${ant.home.dir}/lib/ant-contrib.jar"/>
         </classpath>
     </taskdef>
-
-    <taskdef name="ivy-configure" classname="org.apache.ivy.ant.IvyConfigure"/>
-    <taskdef name="ivy-resolve" classname="org.apache.ivy.ant.IvyResolve"/>
-    <taskdef name="ivy-retrieve" classname="org.apache.ivy.ant.IvyRetrieve"/>
-    <taskdef name="ivy-deliver" classname="org.apache.ivy.ant.IvyDeliver"/> 
-    <taskdef name="ivy-publish" classname="org.apache.ivy.ant.IvyPublish"/>
     
-    <target name="ivy-resolve" description="Get dependencies">
+    <target name="ivy-clean" description="Remove all dependencies retrieved from Ivy">
+        <delete dir="${lib.dir}" includeemptydirs="true" failonerror="true" />
+        <delete dir="${web.dir}/WEB-INF/lib" includeemptydirs="true" failonerror="true" />
+    </target>
+    
+    <target name="ivy-resolve" description="Get dependencies using Ivy">
         <ivy:configure />
         
         <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
         
-        <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
+        <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar" conf="compile"/>
+        <ivy:retrieve pattern="${web.dir}/WEB-INF/lib/[artifact]-[revision].[ext]" type="jar" conf="runtime"/>
+        
         <echo message="ivy.dep.file: ${ivy.dep.file}"/>
         <echo message="ivy.configurations: ${ivy.configurations}"/>
         <echo message="ivy.retrieve.pattern: ${ivy.retrieve.pattern}"/>
@@ -79,24 +81,6 @@
 
     <!-- ================================================================= -->
     <!-- Build targets -->
-    <target name="usage">
-        <echo message=""/>
-        <echo message="${name} build file"/>
-        <echo message="-----------------------------------"/>
-        <echo message=""/>
-        <echo message="Available targets are:"/>
-        <echo message=""/>
-        <echo message="build     --> Build the application"/>
-        <echo message="deploy    --> Deploy application as directory"/>
-        <echo message="deploywar --> Deploy application as a WAR file"/>
-        <echo message="install   --> Install application in Tomcat"/>
-        <echo message="reload    --> Reload application in Tomcat"/>
-        <echo message="start     --> Start Tomcat application"/>
-        <echo message="stop      --> Stop Tomcat application"/>
-        <echo message="list      --> List Tomcat applications"/>
-        <echo message=""/>
-    </target>
-
     <target name="build" description="Compile main source tree java files">
         <mkdir dir="${build.dir}"/>
         <javac destdir="${build.dir}" source="1.8" target="1.8" debug="true"
@@ -109,12 +93,12 @@
     <!-- ================================================================= -->
     <!-- Deploy targets -->
     <target name="deploy" depends="build" description="Deploy application">
-        <copy todir="${tomcat.deploy.dir}/${name}" preservelastmodified="true">
+        <copy todir="${tomcat.deploy.dir}/${project.name}" preservelastmodified="true">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
         </copy>
-        <copy todir="${tomcat.deploy.dir}/${name}/WEB-INF/classes">
+        <copy todir="${tomcat.deploy.dir}/${project.name}/WEB-INF/classes">
             <fileset dir="${build.dir}">
                 <include name="**/*.class"/>
             </fileset>
@@ -122,7 +106,7 @@
     </target>
 
     <target name="deploywar" depends="build" description="Deploy application as a WAR file">
-        <war destfile="${name}.war" webxml="${web.dir}/WEB-INF/web.xml">
+        <war destfile="${project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
@@ -169,6 +153,26 @@
             ***********************************************************
             ***********************************************************
         </fail>
+    </target>
+    
+    <!-- ================================================================= -->
+    <!-- Misc targets -->
+    <target name="usage">
+        <echo message=""/>
+        <echo message="${project.name} build file"/>
+        <echo message="-----------------------------------"/>
+        <echo message=""/>
+        <echo message="Available targets are:"/>
+        <echo message=""/>
+        <echo message="build     --> Build the application"/>
+        <echo message="deploy    --> Deploy application as directory"/>
+        <echo message="deploywar --> Deploy application as a WAR file"/>
+        <echo message="install   --> Install application in Tomcat"/>
+        <echo message="reload    --> Reload application in Tomcat"/>
+        <echo message="start     --> Start Tomcat application"/>
+        <echo message="stop      --> Stop Tomcat application"/>
+        <echo message="list      --> List Tomcat applications"/>
+        <echo message=""/>
     </target>
 
 </project>
