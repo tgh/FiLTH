@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="filth" xmlns:ivy="antlib:org.apache.ivy.ant" basedir="." default="usage">
+<project name="filth" xmlns:ivy="antlib:org.apache.ivy.ant" basedir=".">
 
     <!-- ================================================================= -->
     <!-- Properties and classpaths -->
@@ -14,7 +14,6 @@
     <property name="build.dir" value="build"/>
     <property name="resources.dir" value="src/main/resources"/>
     <property name="lib.dir" value="lib"/>
-    <property name="ivy.retrieve.pattern" value="${lib.dir}/[conf]/[artifact]-[revision].[ext]"/>
 
     <path id="master-classpath">
         <fileset dir="${lib.dir}">
@@ -55,10 +54,6 @@
         <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar" conf="compile"/>
         <!-- resolve runtime dependencies into a directory from which 'deploy' will copy to tomcat -->
         <ivy:retrieve pattern="${web.dir}/WEB-INF/lib/[artifact]-[revision].[ext]" type="jar" conf="runtime"/>
-        
-        <echo message="ivy.dep.file: ${ivy.dep.file}"/>
-        <echo message="ivy.configurations: ${ivy.configurations}"/>
-        <echo message="ivy.retrieve.pattern: ${ivy.retrieve.pattern}"/>
     </target>
 
     <!-- ================================================================= -->
@@ -168,22 +163,7 @@
     
     <!-- ================================================================= -->
     <!-- Misc targets -->
-    <target name="usage">
-        <echo message=""/>
-        <echo message="${project.name} build file"/>
-        <echo message="-----------------------------------"/>
-        <echo message=""/>
-        <echo message="Available targets are:"/>
-        <echo message=""/>
-        <echo message="build     --> Build the application"/>
-        <echo message="deploy    --> Deploy application as directory"/>
-        <echo message="deploywar --> Deploy application as a WAR file"/>
-        <echo message="install   --> Install application in Tomcat"/>
-        <echo message="reload    --> Reload application in Tomcat"/>
-        <echo message="start     --> Start Tomcat application"/>
-        <echo message="stop      --> Stop Tomcat application"/>
-        <echo message="list      --> List Tomcat applications"/>
-        <echo message=""/>
-    </target>
+    <target name="refresh" depends="ivy-clean, ivy-resolve, tomcat-clean, deploy"
+            description="Cleans dependencies and deployment, then rebuilds and deploys"/>
 
 </project>

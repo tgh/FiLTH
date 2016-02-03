@@ -13,3 +13,4 @@ logs/*
 !temp/previous_movie_ratings.txt
 !temp/crewTagTemp.txt
 lib/*
+web/WEB-INF/lib/*
