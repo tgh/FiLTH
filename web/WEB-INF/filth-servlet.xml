@@ -50,5 +50,39 @@
             </list>
         </property>
     </bean>
+    
+    <!-- Exception handler -->
+    <bean id="handlerExceptionResolver" class="com.filth.resolver.ExceptionResolver">
+        <!-- List exceptions here that should NOT be handled by the exception resolver
+        <property name="excludedExceptions">
+            <list>
+                <value>[fully qualified class name]</value>
+            </list>
+        </property>
+        -->
+        
+        <!-- This is where exceptions raised during request processing in the
+             controller layer get mapped to error templates. So, if a controller
+             (handler) raises an java.lang.Exception, Spring will render the template
+             "error/general_error" -->
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">error/general_error</prop>
+            </props>
+        </property>
+
+
+        <!-- This maps exceptions raised during controller processing (as above)
+             to HTTP status codes. So, if an java.lang.Exception is raised, the
+             template rendered will be error/general_error as described above,
+             and it will be served with HTTP status code 500 -->
+        <property name="exceptionStatusCodeMappings">
+            <props>
+                <!-- 500 Internal Server Error is the default response code for
+                     all other exceptions -->
+                <prop key="java.lang.Exception">500</prop>
+            </props>
+        </property>
+    </bean>
 
 </beans>

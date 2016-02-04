@@ -1,9 +1,5 @@
 package com.filth.controller;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -21,8 +17,7 @@ public class HelloController {
     private static final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     @RequestMapping(value="/hello.html", method = RequestMethod.GET)
-    public ModelAndView handleRequest()
-            throws ServletException, IOException {
+    public ModelAndView handleRequest() throws Exception {
 
         LOGGER.info("Information!");
         LOGGER.debug("Debug message!");
@@ -30,8 +25,10 @@ public class HelloController {
         
         ModelMap mm = new ModelMap();
         mm.put("message", "HELLO WORLD©");  //throw in a special character to verify UTF-8 settings
+        
+        throw new Exception("Exception!");
 
-        return new ModelAndView("hello", mm);
+        //return new ModelAndView("hello", mm);
     }
 
 }
