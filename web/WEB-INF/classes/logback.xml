@@ -20,15 +20,7 @@
         </rollingPolicy>
     </appender>
 
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS,America/New_York}][level=%p][tracekey=%X{tracekey}][user=%X{user}][uri=%X{uri}][logger=%logger]: %m%n%ex</pattern>
-            <charset>utf8</charset>
-        </encoder>
-    </appender>
-
     <root level="INFO">
-        <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>
 </configuration>
