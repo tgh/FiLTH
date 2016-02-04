@@ -2,25 +2,78 @@
 
 <configuration debug="false">
 
-    <property name="LOG_FILE" value="/home/thayes/workspace/tomcat8/logs/filth.log"/>
+    <property name="LOG_FILE_PATH" value="/home/thayes/workspace/tomcat8/logs"/>
+    <property name="INFO_LOG_FILE" value="${LOG_FILE_PATH}/filth.log"/>
+    <property name="ERROR_LOG_FILE" value="${LOG_FILE_PATH}/filth.error.log"/>
+    <property name="DEBUG_LOG_FILE" value="${LOG_FILE_PATH}/filth.debug.log"/>
+    <property name="pattern" value="[%d{yyyy-MM-dd HH:mm:ss.SSS,America/New_York}][level=%p][tracekey=%X{tracekey}][user=%X{user}][logger=%logger]: %m%n%ex"/>
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="INFO_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS,America/New_York}][level=%p][tracekey=%X{tracekey}][user=%X{user}][logger=%logger]: %m%n%ex</pattern>
+            <pattern>${pattern}</pattern>
         </encoder>
-        <file>${LOG_FILE}</file>
+        <file>${INFO_LOG_FILE}</file>
         
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily -->
-            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <fileNamePattern>${INFO_LOG_FILE}.%d{yyyy-MM-dd}.%i</fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 10MB -->
                 <maxFileSize>10MB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
+        
+        <!-- deny all events with a level below INFO, that is TRACE and DEBUG -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+    
+    <appender name="ERROR_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${pattern}</pattern>
+        </encoder>
+        <file>${ERROR_LOG_FILE}</file>
+        
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${ERROR_LOG_FILE}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 10MB -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        
+        <!-- deny all events that are not level ERROR -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+    </appender>
+    
+    <appender name="DEBUG_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${pattern}</pattern>
+        </encoder>
+        <file>${DEBUG_LOG_FILE}</file>
+        
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${DEBUG_LOG_FILE}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 10MB -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        
+        <!-- turned off by default: application should be implemented with the ability to turn on dynamically -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>OFF</level>
+        </filter>
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="FILE" />
+        <appender-ref ref="INFO_LOG" />
+        <appender-ref ref="ERROR_LOG" />
+        <appender-ref ref="DEBUG_LOG" />
     </root>
 </configuration>
