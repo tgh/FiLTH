@@ -6,7 +6,7 @@
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
-            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS,America/New_York}][level=%p][tracekey=%X{tracekey}][user=%X{user}][uri=%X{uri}][logger=%logger]: %m%n%ex</pattern>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS,America/New_York}][level=%p][tracekey=%X{tracekey}][user=%X{user}][logger=%logger]: %m%n%ex</pattern>
         </encoder>
         <file>${LOG_FILE}</file>
         
