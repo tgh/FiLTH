@@ -13,6 +13,17 @@
 
     <context:component-scan base-package="com.filth.controller"/>
     <context:component-scan base-package="com.filth.interceptor"/>
+    
+    <!-- Property configurer: a property resource configurer resolves placeholders
+         for properties (e.g: something like "${app.foo.property}"). It pulls values
+         from specified properties files. -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>file:./conf/filth.properties</value>
+            </list>
+        </property>
+    </bean>
 
     <!-- JSP
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -67,7 +78,7 @@
              "error/general_error" -->
         <property name="exceptionMappings">
             <props>
-                <prop key="java.lang.Exception">error/general_error</prop>
+                <prop key="java.lang.Exception">${general.error.template}</prop>
             </props>
         </property>
 
