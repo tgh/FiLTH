@@ -2,7 +2,7 @@
 
 <configuration debug="false">
 
-    <property name="LOG_FILE_PATH" value="/home/thayes/workspace/tomcat8/logs"/>
+    <property name="LOG_FILE_PATH" value="${CATALINA_HOME}/logs"/>
     <property name="INFO_LOG_FILE" value="${LOG_FILE_PATH}/filth.log"/>
     <property name="ERROR_LOG_FILE" value="${LOG_FILE_PATH}/filth.error.log"/>
     <property name="DEBUG_LOG_FILE" value="${LOG_FILE_PATH}/filth.debug.log"/>
