@@ -5680,3 +5680,6 @@ INSERT INTO filth.tag_given_to VALUES(3879, 328);  -- When Marnie Was There (201
 INSERT INTO filth.tag_given_to VALUES(3879, 263);  -- When Marnie Was There (2014) tagged with 'family'
 INSERT INTO filth.tag_given_to VALUES(3879, 143);  -- When Marnie Was There (2014) tagged with 'mental-illness/condition'
 INSERT INTO filth.tag_given_to VALUES(3879, 142);  -- When Marnie Was There (2014) tagged with 'illness/condition'
+INSERT INTO filth.tag_given_to VALUES(3879, 60);  -- When Marnie Was There (2014) tagged with 'based-on-book(s)'
+INSERT INTO filth.tag_given_to VALUES(3879, 59);  -- When Marnie Was There (2014) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(3879, 58);  -- When Marnie Was There (2014) tagged with 'based-on-something'
