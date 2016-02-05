@@ -262,6 +262,16 @@ SETTING UP ENVIRONMENT
                         -Doa.env.config.dir=/home/thayes/workspace/oa/conf
                         -Dharbor.env.config.dir=../harbor/conf
                         -Xms128m -Xmx2048m -XX:MaxPermSize=256m -XX:-UseGCOverheadLimit
+                        
+  - prereqs:
+    - java 8
+    - tomcat 8
+    - ant
+    - ant-contrib jar into ant's lib dir
+    - ivy jar into ant's lib dir
+    - CATALINA_HOME
+    - ANT_HOME
+    - WORKSPACE
 
 
 - dabled in Rails briefly:
