@@ -19,9 +19,9 @@ import com.filth.resolver.ExceptionResolver;
  * of to a buffer and then sending the buffer, there's no way to
  * intercept the error and display a different page instead. So
  * instead we let it bubble an exception up to the servlet container,
- * which will render an ugly stack trace page and 500, and use an
- * error mapping in web.xml to send the user here, where we'll just
- * render the same general error template that we'd render otherwise.
+ * and use an error mapping in web.xml to send the user here, where
+ * we'll just render the same general error template that we'd render
+ * otherwise.
  */
 @Controller
 public class ViewRenderingExceptionController {
@@ -31,12 +31,12 @@ public class ViewRenderingExceptionController {
     private String _template;
     
     @Resource
-    private ExceptionResolver _handlerExceptionResolver;
+    private ExceptionResolver _exceptionResolver;
         
     @RequestMapping(value = URL)
     public ModelAndView displayError(HttpServletRequest request) {
         Throwable exception = (Throwable) request.getAttribute("javax.servlet.error.exception");
-        ModelMap mm = _handlerExceptionResolver.getModelWithException(exception);
+        ModelMap mm = _exceptionResolver.getModelWithException(exception);
         ModelAndView modelAndView = new ModelAndView(_template, mm);
         
         return modelAndView;

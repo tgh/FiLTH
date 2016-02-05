@@ -45,6 +45,7 @@
             <util:properties>
                 <prop key="default_encoding">UTF-8</prop>
                 <prop key="output_encoding">UTF-8</prop>
+                <prop key="template_exception_handler">rethrow</prop>
             </util:properties>
          </property>
     </bean>
