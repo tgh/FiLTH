@@ -28,7 +28,7 @@ public class ExceptionResolver extends SimpleMappingExceptionResolver {
     public static final class ModelKeys {
         public static final String EXCEPTION = "exception";
         public static final String MESSAGE = "message";
-        public static final String STACK_TRACE = "stackTrace";
+        public static final String STACK_TRACE = "stacktrace";
     }
 
     private Map<String, Integer> _exceptionStatusCodeMappings;
