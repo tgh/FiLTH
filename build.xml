@@ -59,7 +59,8 @@
     <!-- ================================================================= -->
     <!-- Tomcat -->
     <target name="tomcat-clean" description="Removes the project from tomcat">
-        <delete dir="${tomcat.deploy.dir}/${project.name}" includeemptydirs="true" failonerror="true" />
+        <delete dir="${tomcat.deploy.dir}/${project.name}" includeemptydirs="true" />
+        <delete file="${tomcat.deploy.dir}/${project.name}.war" failonerror="false" />
     </target>
 
     <target name="tomcat-start" description="Start tomcat">
@@ -98,35 +99,25 @@
 
     <!-- ================================================================= -->
     <!-- Deploy targets -->
-    <target name="deploy" depends="build" description="Deploy application">
-        <copy todir="${tomcat.deploy.dir}/${project.name}" preservelastmodified="true">
-            <fileset dir="${web.dir}">
-                <include name="**/*.*"/>
-            </fileset>
-        </copy>
-        <copy todir="${tomcat.deploy.dir}/${project.name}/WEB-INF/classes">
-            <fileset dir="${build.dir}/main">
-                <include name="**/*.class"/>
-            </fileset>
-        </copy>
+    <target name="create-app-jar">
+        <jar
+            basedir="${build.dir}/main"
+            destfile="${web.dir}/WEB-INF/lib/${project.name}.jar"
+            update="false"
+        />
     </target>
 
-    <target name="deploywar" depends="build" description="Deploy application as a WAR file">
-        <war destfile="${project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
+    <target name="deploy-war" depends="build, create-app-jar" description="Deploy application as a WAR file">
+        <war destfile="${tomcat.deploy.dir}/${project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
             </fileset>
         </war>
-        <copy todir="${tomcat.deploy.dir}" preservelastmodified="true">
-            <fileset dir=".">
-                <include name="*.war"/>
-            </fileset>
-        </copy>
     </target>
     
     <!-- ================================================================= -->
     <!-- Test targets -->
-    <target name="buildtests" description="Compile test tree java files">
+    <target name="build-tests" description="Compile test tree java files">
         <mkdir dir="${build.dir}/test"/>
         <javac destdir="${build.dir}/test" source="1.8" target="1.8" debug="true"
             deprecation="false" optimize="false" failonerror="true">
@@ -135,7 +126,7 @@
         </javac>
     </target>
     
-    <target name="tests" depends="build, buildtests" description="Run tests">
+    <target name="tests" depends="build, build-tests" description="Run tests">
         <junit printsummary="on"
             fork="false"
             haltonfailure="false"
@@ -163,7 +154,7 @@
     
     <!-- ================================================================= -->
     <!-- Misc targets -->
-    <target name="refresh" depends="ivy-clean, ivy-resolve, tomcat-clean, deploy"
+    <target name="refresh" depends="ivy-clean, ivy-resolve, tomcat-clean, deploy-war"
             description="Cleans dependencies and deployment, then rebuilds and deploys"/>
 
 </project>
