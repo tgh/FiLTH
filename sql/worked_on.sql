@@ -7052,3 +7052,4 @@ INSERT INTO filth.worked_on VALUES(3432, 3205, 'Supporting Actor');  -- James Ga
 INSERT INTO filth.worked_on VALUES(3444, 3208, 'Supporting Actor');  -- John Ortiz for Silver Linings Playbook (2012)
 INSERT INTO filth.worked_on VALUES(3465, 3208, 'Small Part');  -- John Ortiz for Sgt. Bilko (1996)
 INSERT INTO filth.worked_on VALUES(3697, 3208, 'Small Part');  -- John Ortiz for Steve Jobs (2015)
+INSERT INTO filth.worked_on VALUES(3880, 2359, 'Supporting Actor');  -- James Frecheville for The Drop (2014)
