@@ -51,3 +51,14 @@ INSERT INTO filth.crew_person VALUES (3199, 'Yonebayashi', 'Hiromasa', NULL, 'Hi
 INSERT INTO filth.crew_person VALUES (3200, 'Niwa', 'Keiko', NULL, 'Keiko Niwa', 'Screenwriter');  -- Screenwriter: Keiko Niwa
 INSERT INTO filth.crew_person VALUES (3201, 'Ando', 'Masashi', NULL, 'Masashi Ando', 'Screenwriter');  -- Screenwriter: Masashi Ando
 INSERT INTO filth.crew_person VALUES (3202, 'Freedman', 'David', NULL, 'David Freedman', 'Screenwriter');  -- Screenwriter: David Freedman
+INSERT INTO filth.crew_person VALUES (3203, 'Roskam', 'Michael', 'R.', 'Michael R. Roskam', 'Director');  -- Director: Michael R. Roskam
+INSERT INTO filth.crew_person VALUES (3204, 'Lehane', 'Dennis', NULL, 'Dennis Lehane', 'Screenwriter');  -- Screenwriter: Dennis Lehane
+INSERT INTO filth.crew_person VALUES (3205, 'Gandolfini', 'James', NULL, 'James Gandolfini', 'Actor');  -- Actor: James Gandolfini
+INSERT INTO filth.crew_person VALUES (3206, 'Rapace', 'Noomi', NULL, 'Noomi Rapace', 'Actress');  -- Actress: Noomi Rapace
+INSERT INTO filth.crew_person VALUES (3207, 'Schoenaerts', 'Matthias', NULL, 'Matthias Schoenaerts', 'Actor');  -- Actor: Matthias Schoenaerts
+INSERT INTO filth.crew_person VALUES (3208, 'Ortiz', 'John', NULL, 'John Ortiz', 'Actor');  -- Actor: John Ortiz
+INSERT INTO filth.crew_person VALUES (3209, 'Lloyd', 'Jake', NULL, 'Jake Lloyd', 'Actor');  -- Actor: Jake Lloyd
+INSERT INTO filth.crew_person VALUES (3210, 'McDiarmid', 'Ian', NULL, 'Ian McDiarmid', 'Supporting Actor');  -- Supporting Actor: Ian McDiarmid
+INSERT INTO filth.crew_person VALUES (3211, 'Hales', 'Jonathan', NULL, 'Jonathan Hales', 'Screenwriter');  -- Screenwriter: Jonathan Hales
+INSERT INTO filth.crew_person VALUES (3212, 'Christensen', 'Hayden', NULL, 'Hayden Christensen', 'Actor');  -- Actor: Hayden Christensen
+INSERT INTO filth.crew_person VALUES (3213, 'Smits', 'Jimmy', NULL, 'Jimmy Smits', 'Actor');  -- Actor: Jimmy Smits
