@@ -12,7 +12,6 @@
     <property name="test.dir" value="src/test"/>
     <property name="web.dir" value="web/"/>
     <property name="build.dir" value="build"/>
-    <property name="resources.dir" value="src/main/resources"/>
     <property name="lib.dir" value="lib"/>
 
     <path id="master-classpath">
@@ -23,7 +22,6 @@
         <fileset dir="${tomcat.lib.dir}">
             <include name="servlet*.jar"/>
         </fileset>
-        <pathelement path="${resources.dir}"/>
         <pathelement path="${build.dir}/main"/>
     </path>
     
@@ -47,8 +45,6 @@
     
     <target name="ivy-resolve" description="Get dependencies using Ivy">
         <ivy:configure />
-        
-        <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
         
         <!-- resolve compile-time dependencies into a directory from which 'build' will use during compilation -->
         <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar" conf="compile"/>
@@ -99,7 +95,7 @@
 
     <!-- ================================================================= -->
     <!-- Deploy targets -->
-    <target name="create-app-jar">
+    <target name="create-app-jar" description="Creates a jar file containing this project's compiled java source to be included in the deployed .war file">
         <jar
             basedir="${build.dir}/main"
             destfile="${web.dir}/WEB-INF/lib/${project.name}.jar"
@@ -107,7 +103,7 @@
         />
     </target>
 
-    <target name="deploy-war" depends="build, create-app-jar" description="Deploy application as a WAR file">
+    <target name="deploy-war" depends="build, create-app-jar" description="Deploy application as a WAR (.war) file">
         <war destfile="${tomcat.deploy.dir}/${project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>

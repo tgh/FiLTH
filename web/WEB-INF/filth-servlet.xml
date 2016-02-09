@@ -76,7 +76,7 @@
         <!-- This is where exceptions raised during request processing in the
              controller layer get mapped to error templates. So, if a controller
              (handler) raises an java.lang.Exception, Spring will render the template
-             "error/general_error" -->
+             defined by ${general.error.template} -->
         <property name="exceptionMappings">
             <props>
                 <prop key="java.lang.Exception">${general.error.template}</prop>
