@@ -27,3 +27,7 @@ INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Free
 INSERT INTO filth.movie VALUES (3878, '56 Up', 2012, '***½', 'NR', 'England', NULL, 'tt2147134', 0);
 INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG', 'Japan', NULL, 'tt3398268', 0);
 UPDATE filth.movie SET star_rating = '***½' WHERE mid = 3353;
+INSERT INTO filth.movie VALUES (3880, 'The Drop', 2014, '***', 'R', 'USA', NULL, 'tt1600196', 0, 154400);
+UPDATE filth.movie SET star_rating = '***' WHERE mid = 1545;
+UPDATE filth.movie SET star_rating = '**½' WHERE mid = 1546;
+UPDATE filth.movie SET star_rating = '***' WHERE mid = 1547;
