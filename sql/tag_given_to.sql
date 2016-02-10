@@ -16876,7 +16876,6 @@ INSERT INTO filth.tag_given_to VALUES(3873, 230);  -- The Revenant (2015) tagged
 INSERT INTO filth.tag_given_to VALUES(3873, 225);  -- The Revenant (2015) tagged with 'nudity'
 INSERT INTO filth.tag_given_to VALUES(3873, 60);  -- The Revenant (2015) tagged with 'based-on-book(s)'
 INSERT INTO filth.tag_given_to VALUES(3873, 59);  -- The Revenant (2015) tagged with 'based-on-previously-written-material'
-INSERT INTO filth.tag_given_to VALUES(3873, 58);  -- The Revenant (2015) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(3874, 12);  -- Best of Enemies (2015) tagged with 'documentary'
 INSERT INTO filth.tag_given_to VALUES(3874, 24);  -- Best of Enemies (2015) tagged with 'political'
 INSERT INTO filth.tag_given_to VALUES(3875, 34);  -- Joy (2015) tagged with 'drama-comedy'

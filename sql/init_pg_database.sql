@@ -230,8 +230,8 @@ scene_title text DEFAULT '');
 -- --------------------------
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
-ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_pkey PRIMARY_KEY(base_mid, linked_mid);
-ALTER TABLE filth.movie_link_type ADD CONSTRAINT movie_link_type_pkey PRIMARY_KEY(link_type);
+ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_pkey PRIMARY KEY(base_mid, linked_mid);
+ALTER TABLE filth.movie_link_type ADD CONSTRAINT movie_link_type_pkey PRIMARY KEY(link_type);
 ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
