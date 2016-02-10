@@ -52,6 +52,7 @@ if [ $# -gt 0 ]
 
 
     #populate entity tables
+    populate_db_table "movie_link_type"
     populate_db_table "country"
     populate_db_table "oscar"
     populate_db_table "tyler"
@@ -64,6 +65,7 @@ if [ $# -gt 0 ]
     populate_db_table "list"
 
     #populate relationship tables
+    populate_db_table "movie_link"
     populate_db_table "oscar_given_to"
     populate_db_table "tag_given_to"
     populate_db_table "worked_on"

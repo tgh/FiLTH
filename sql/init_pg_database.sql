@@ -41,6 +41,33 @@ theater_viewings smallint DEFAULT NULL,
 tmdb_id integer DEFAULT NULL);
 
 
+-- movie <--> movie relationship ----------------------------------------------
+CREATE TABLE filth.movie_link (
+-- id of the movie being linked
+base_mid smallint NOT NULL,
+-- id of the linked movie
+linked_mid smallint NOT NULL,
+-- type of link
+link_type text NOT NULL,
+-- comments, such as if the type is "RELATED_TO", then comments may explain
+-- how they are related
+comments text DEFAULT NULL);
+
+
+-- a movie link type entity ---------------------------------------------------
+-- (only used as an integrity constraint for movie_link.link_type)
+--
+-- current values:
+-- PREDECESSOR_OF (e.g. "Rocky" is a predecessor of "Rocky II")
+-- SUCCESSOR_TO (e.g. "Rocky II" is a successor to "Rocky")
+-- CHILD_OF (e.g. "28 Up" is a child of "The 'Up' Documentaries")
+-- PARENT_TO (e.g. "The 'Up' Documentaries" is a parent to "28 Up")
+-- REMAKE_OF (e.g. "You've Got Mail" is a remake of "The Shop Around the Corner")
+-- RELATED_TO (e.g. "The Walk" is related to "Man on Wire")
+CREATE TABLE filth.movie_link_type (
+link_type text NOT NULL);
+
+
 -- a country entity -----------------------------------------------------------
 -- (only used as an integrity constraint for movie.country)
 CREATE TABLE filth.country (
@@ -90,10 +117,11 @@ cid smallint DEFAULT nextval('filth.crew_person_cid_seq') NOT NULL,
 last_name text NOT NULL,
 -- first and middle names can be NULL (in cases
 -- such as Madonna, Cher, Costa-Gavras, etc, their
+-- names will be considered last names)
 first_name text DEFAULT NULL,
 middle_name text DEFAULT NULL,
 full_name text NOT NULL,
-known_as text DEFAULT NULL);  -- names will be considered last names)
+known_as text DEFAULT NULL);
 
 -- Sequences start with 1 by default.  Since the oscar_given_to and
 -- tyler_given_to tables can contain records where cid (foreign key to
@@ -202,6 +230,8 @@ scene_title text DEFAULT '');
 -- --------------------------
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
+ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_pkey PRIMARY_KEY(base_mid, linked_mid);
+ALTER TABLE filth.movie_link_type ADD CONSTRAINT movie_link_type_pkey PRIMARY_KEY(link_type);
 ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
@@ -244,6 +274,21 @@ ON UPDATE CASCADE ON DELETE SET NULL;
 ALTER TABLE filth.movie ADD CONSTRAINT movie_mpaa_fkey
 FOREIGN KEY (mpaa) REFERENCES filth.mpaa(rating)
 ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie_link table base_mid FK
+ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_base_mid_fkey
+FOREIGN KEY (base_mid) REFERENCES filth.movie(mid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- movie_link table linked_mid FK
+ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_linked_mid_fkey
+FOREIGN KEY (linked_mid) REFERENCES filth.movie(mid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- movie_link table link_type FK
+ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_link_type_fkey
+FOREIGN KEY (link_type) REFERENCES filth.movie_link_type(link_type)
+ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- crew_person table known_as FK
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_known_as_fkey
