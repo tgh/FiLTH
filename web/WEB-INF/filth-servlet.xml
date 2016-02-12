@@ -25,15 +25,7 @@
         </property>
     </bean>
 
-    <!-- JSP
-        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	        <property name="prefix" value="/view/" />
-	        <property name="suffix" value=".jsp" />
-	        <property name="contentType" value="text/html;charset=UTF-8"/>
-	    </bean>
-	-->
-	
-	<!-- Freemarker -->
+    <!-- Freemarker -->
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=UTF-8"/>
@@ -43,6 +35,7 @@
         <property name="templateLoaderPath" value="/view"/>
         <property name="freemarkerSettings">
             <util:properties>
+                <prop key="auto_import">layouts.ftl as layout, util.ftl as util, spring.ftl as spring</prop>
                 <prop key="default_encoding">UTF-8</prop>
                 <prop key="output_encoding">UTF-8</prop>
                 <prop key="template_exception_handler">rethrow</prop>
