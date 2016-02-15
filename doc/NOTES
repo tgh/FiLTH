@@ -48,7 +48,9 @@ SETTING UP ENVIRONMENT
 	- in ~/apache: $ sudo make install
 	- add ~/Installed_Programs/apache_2.4/bin to $PATH
 		
-- for seting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
+- for setting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
+
+- may need to set CATALINA_HOME environment variable and point to tomcat base directory?
 
 - download Spring from http://www.springsource.org/download
 	- extract to workspace
@@ -67,7 +69,7 @@ SETTING UP ENVIRONMENT
   	
   		<taskdef name="install" classname="org.apache.catalina.ant.DeployTask">
   		
-  	because InstallTask was deprecated after Tomcat 6, and I'm using Tomcat 7
+  	because InstallTask was deprecated after Tomcat 6, and I'm using Tomcat 7 (not anymore--see RESOLVED note below)
   	
   - had to replace
   
@@ -102,8 +104,8 @@ SETTING UP ENVIRONMENT
     - add tomcat.manager.password=s3cret to build.properties (maybe)
     
   - still haven't been able to run `ant list` successfully--getting 401 error
-    - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml
-  - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although t=it only displayed unknown characters :-/)
+    - RESOLVED: turns out this was because I was using tomcat7 with the Assessment Studio's ia-tomcat-base/conf/tomcat-users.xml. I was editing workspace/tomcat7/tomcat-users.xml (make sure CATALINA_BASE is not set to ia-tomcat-base -- just set it to nothing if it is)
+  - http://localhost:8080/filth/index.jsp didn't work either, but http://localhost:8443/filth/index.jsp worked (although it only displayed unknown characters :-/)
     - RESOLVED: switched to using tomcat6 ("appserver.home=${env.WORKSPACE}/tomcat6" in build.properties)
   
   - to get Ivy with ant:
@@ -135,15 +137,142 @@ SETTING UP ENVIRONMENT
             </dependencies>
         </ivy-module>
         
-      - `ant ivy-resolve` seems to be working, but at the end "Target "ivy-resolve" does not exist in the project "filth"." is output. will probably replace <ivy:retrieve /> with:
+      - added ivy-resolve target to build.xml
       
-        <target name="resolve">
+        <target name="ivy-resolve">
             <ivy:configure />
             
             <ivy:resolve file="${ivy.dep.file}" conf="${ivy.configurations}" />
             
             <ivy:retrieve pattern="${ivy.retrieve.pattern}" conf="${ivy.configurations}" />
         </target>
+        
+  - added to ivy.xml:
+  
+        <dependency org="org.springframework" name="spring-webmvc" rev="4.1.6.RELEASE"/>
+        <dependency org="commons-logging" name="commons-logging" rev="1.2"/>
+        <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
+        <dependency org="junit" name="junit" rev="4.12"/>
+        
+  - changed src and target from 1.5 to 1.6 in build.xml (since I'm using java 6):
+  
+        <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
+  
+  - modified <path id="master-classpath"> with the following:
+  
+        <fileset dir="lib"> <!-- changed from "jar" -->
+            <include name="**/*.jar"/> <!-- changed from "*/*.jar" -->
+        </fileset>
+        
+  - had to add  <property name="test.dir" value="src/test"/>  to build.xml
+  - changed **/*Tests.* to **/*Test.* since I name my test (and any future tests) class HelloControllerTest.java
+  - had to add log4j.properties file in src/main/resources,
+    then added <pathelement path="${resources.dir}"/> to <path id="master-classpath"> in build.xml
+    (and <property name="resources.dir" value="src/main/resources"/> in build.xml as well)
+
+  - had to add the following to the deploy target to deploy HelloController.class to tomcat:
+    	<copy todir="${deploy.path}/${name}/WEB-INF/classes">
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+    	</copy>
+  - **need to figure out how Beacon apps do not need to deploy *.class files to tomcat
+
+  - used this instead for my filth-servlet.xml:
+
+    <context:component-scan base-package="com.filth.controller"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+  - in filth-servlet.xml, I had:
+        <property name="prefix" value="/web/view/" />
+    when it should have been:
+        <property name="prefix" value="/view/" />
+    since everything *under* /web is being deployed to tomcat, but not /web itself
+
+  - **had to manually copy the following jar files from /lib to /web/WEB-INF/lib:
+    - commons-logging-1.2.jar
+    - spring-beans-4.1.6.RELEASE.jar
+    - spring-expression-4.1.6.RELEASE.jar
+    - javax.servlet.jsp.jstl-api-1.2.1.jar
+    - spring-context-4.1.6.RELEASE.jar
+    - spring-web-4.1.6.RELEASE.jar
+    - spring-aop-4.1.6.RELEASE.jar
+    - spring-core-4.1.6.RELEASE.jar
+    - spring-webmvc-4.1.6.RELEASE.jar
+    - also freemarker-2.3.22.jar and spring-context-support-4.1.6.RELEASE.jar for Freemarker
+  - **need to update ivy.xml to also provide a copy of those jars to /web/WEB-INF/lib
+
+  - I commented out everything under <tomcat-users> in [tomcat]/conf/tomcat-users.xml
+    and filth/hello.html still worked (Beacon didn't edit that file either) so
+    **editing [tomcat]/conf/tomcat-users.xml is not needed** unless you want a tomcat manager user:
+
+    <role rolename="manager-gui"/>
+    <role rolename="manager"/>
+    <user username="tomcat" password="s3cret" roles="manager,manager-gui"/>
+
+    or something like that
+
+  - downloaded Java 8 from http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    - at the time of this writing: Under "Java SE Development Kit 8u71" accept
+      Oracle license agreement and click the "Download" link for "Linux x64":
+      jdk-8u71-linux-x64.tar.gz
+    - move extracted tar contents to /usr/lib/jvm: sudo mv jdk<version> /usr/lib/jvm/
+    - install new java:
+      sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk<version>/bin/javac 1
+      sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk<version>/bin/java 1
+      sudo update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk<version>/bin/javaws 1
+      sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk<version>/bin/jar 1
+    - make sure JAVA_HOME is set to new dir under /usr/lib/jvm: export JAVA_HOME=/usr/lib/jvm/jdk<version>
+
+  - download and extract tomcat 8: https://tomcat.apache.org/download-80.cgi
+    - move exctracted contents (the tomcat8 directory) to where ever you want
+    - set CATALINA_HOME to the tomcat8 directory
+    - (you may also need to make all *.sh files under [tomcat]/bin/ executable: http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat
+    - set the "appserver.home" property in build.properties to this tomcat8 directory
+
+  - you can setup freemarker with specific setting such as auto-importing a
+    template for every page. Here is Beacon's as an example (to be put in [app]-servlet.xml):
+
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPaths">
+            <list>
+              <value>/WEB-INF/freemarker</value>
+              <value>classpath:freemarker</value>
+            </list>
+        </property>
+         <property name="freemarkerSettings">
+            <util:properties>
+               <prop key="auto_import">layouts.ftl as layout, /core/util.ftl as util, /spring.ftl as spring</prop>
+               <prop key="template_exception_handler">${wgspring.ui.freemarker.exception_handler:rethrow}</prop>
+               <!-- This avoids ints greater than '1000' from showing up with commas like '1,000' -->
+               <prop key="number_format">0.####</prop>
+               <prop key="object_wrapper">net.wgen.spring.common.ui.web.util.SanitizableBeanWrapper</prop>
+               <prop key="default_encoding">${wgspring.ui.freemarker.default_encoding:UTF-8}</prop>
+               <prop key="output_encoding">${wgspring.ui.freemarker.output_encoding:UTF-8}</prop>
+            </util:properties>
+         </property>
+    </bean>
+
+  - Beacon's JAVA_OPTS: -Doib.env.config.dir=/home/thayes/workspace/oib/conf
+                        -Doutcomes.env.config.dir=/home/thayes/workspace/outcomes/conf
+                        -Doa.env.config.dir=/home/thayes/workspace/oa/conf
+                        -Dharbor.env.config.dir=../harbor/conf
+                        -Xms128m -Xmx2048m -XX:MaxPermSize=256m -XX:-UseGCOverheadLimit
+                        
+  - prereqs:
+    - java 8
+    - tomcat 8
+    - ant
+    - ant-contrib jar into ant's lib dir
+    - ivy jar into ant's lib dir
+    - CATALINA_HOME
+    - ANT_HOME
+    - WORKSPACE
+
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...
