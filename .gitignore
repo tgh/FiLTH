@@ -14,3 +14,4 @@ logs/*
 !temp/crewTagTemp.txt
 lib/*
 web/WEB-INF/lib/*
+ivy-report

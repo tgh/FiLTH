@@ -13,6 +13,7 @@
     <property name="web.dir" value="web/"/>
     <property name="build.dir" value="build"/>
     <property name="lib.dir" value="lib"/>
+    <property name="ivy.report.dir" value="ivy-report"/>
 
     <path id="master-classpath">
         <fileset dir="${lib.dir}">
@@ -47,9 +48,14 @@
         <ivy:configure />
         
         <!-- resolve compile-time dependencies into a directory from which 'build' will use during compilation -->
-        <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar" conf="compile"/>
+        <ivy:retrieve pattern="${lib.dir}/[artifact]-[revision].[ext]" type="jar,bundle" conf="compile"/>
         <!-- resolve runtime dependencies into a directory from which 'deploy' will copy to tomcat -->
-        <ivy:retrieve pattern="${web.dir}/WEB-INF/lib/[artifact]-[revision].[ext]" type="jar" conf="runtime"/>
+        <ivy:retrieve pattern="${web.dir}/WEB-INF/lib/[artifact]-[revision].[ext]" type="jar,bundle" conf="runtime"/>
+    </target>
+
+    <target name="ivy-report" depends="ivy-clean" description="Output a detailed html Ivy report to ${ivy.report.dir}">
+        <ivy:resolve />
+        <ivy:report todir="${ivy.report.dir}"/>
     </target>
 
     <!-- ================================================================= -->
@@ -85,6 +91,7 @@
     <!-- ================================================================= -->
     <!-- Build targets -->
     <target name="build" description="Compile main source tree java files">
+        <delete dir="${build.dir}/main"/>
         <mkdir dir="${build.dir}/main"/>
         <javac destdir="${build.dir}/main" source="1.8" target="1.8" debug="true"
                deprecation="false" optimize="false" failonerror="true">
