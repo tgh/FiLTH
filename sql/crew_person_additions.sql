@@ -62,3 +62,9 @@ INSERT INTO filth.crew_person VALUES (3210, 'McDiarmid', 'Ian', NULL, 'Ian McDia
 INSERT INTO filth.crew_person VALUES (3211, 'Hales', 'Jonathan', NULL, 'Jonathan Hales', 'Screenwriter');  -- Screenwriter: Jonathan Hales
 INSERT INTO filth.crew_person VALUES (3212, 'Christensen', 'Hayden', NULL, 'Hayden Christensen', 'Actor');  -- Actor: Hayden Christensen
 INSERT INTO filth.crew_person VALUES (3213, 'Smits', 'Jimmy', NULL, 'Jimmy Smits', 'Actor');  -- Actor: Jimmy Smits
+INSERT INTO filth.crew_person VALUES (3214, 'Ashfield', 'Kate', NULL, 'Kate Ashfield', 'Actress');  -- Actress: Kate Ashfield
+INSERT INTO filth.crew_person VALUES (3215, 'Moran', 'Dylan', NULL, 'Dylan Moran', 'Actor');  -- Actor: Dylan Moran
+INSERT INTO filth.crew_person VALUES (3216, 'Davis', 'Lucy', NULL, 'Lucy Davis', 'Actress');  -- Actress: Lucy Davis
+INSERT INTO filth.crew_person VALUES (3217, 'Burton', 'Mark', NULL, 'Mark Burton', 'Screenwriter');  -- Screenwriter: Mark Burton
+INSERT INTO filth.crew_person VALUES (3218, 'Starzak', 'Richard', NULL, 'Richard Starzak', 'Director');  -- Director: Richard Starzak
+INSERT INTO filth.crew_person VALUES (3219, 'Garbus', 'Liz', NULL, 'Liz Garbus', 'Director');  -- Director: Liz Garbus

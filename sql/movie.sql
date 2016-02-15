@@ -1456,7 +1456,7 @@ INSERT INTO filth.movie VALUES (1455, 'Shakespeare in Love', 1998, '***½', 'R',
 INSERT INTO filth.movie VALUES (1456, 'Shallow Hal', 2001, '***', 'PG-13', 'USA', NULL, 'tt0256380', NULL, 9889);
 INSERT INTO filth.movie VALUES (1457, 'Shane', 1953, '***', 'NR', 'USA', NULL, 'tt0046303', 0, 3110);
 INSERT INTO filth.movie VALUES (1458, 'Shark Tale', 2004, '***', 'PG', 'USA', NULL, 'tt0307453', 0, 10555);
-INSERT INTO filth.movie VALUES (1459, 'Shaun of the Dead', 2004, '**½', 'R', 'England', NULL, 'tt0365748', 0, 747);
+INSERT INTO filth.movie VALUES (1459, 'Shaun of the Dead', 2004, '***', 'R', 'England', NULL, 'tt0365748', 0, 747);
 INSERT INTO filth.movie VALUES (1460, 'The Shawshank Redemption', 1994, '****', 'R', 'USA', NULL, 'tt0111161', 0, 278);
 INSERT INTO filth.movie VALUES (1461, 'Sherlock Holmes', 2009, '***', 'PG-13', 'England', NULL, 'tt0988045', 0, 10528);
 INSERT INTO filth.movie VALUES (1462, 'Sherlock Jr.', 1924, '****', 'NR', 'USA', NULL, 'tt0015324', 0, 992);
@@ -3876,3 +3876,5 @@ INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Free
 INSERT INTO filth.movie VALUES (3878, '56 Up', 2012, '***½', 'NR', 'England', NULL, 'tt2147134', 0, 116167); -- 1/31/2016
 INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG', 'Japan', NULL, 'tt3398268', 0, 242828); -- 1/30/2016
 INSERT INTO filth.movie VALUES (3880, 'The Drop', 2014, '***', 'R', 'USA', NULL, 'tt1600196', 0, 154400); -- 2/6/2016
+INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'PG', 'England', NULL, 'tt2872750', 0, 263109); -- 2/12/2016
+INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044); -- 2/13/2016
