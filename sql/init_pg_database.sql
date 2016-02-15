@@ -8,6 +8,9 @@
 
 CREATE SCHEMA filth AUTHORIZATION filth_admin;
 
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth_admin;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth;
+
 
 -- --------------------
 -- Create the tables --
