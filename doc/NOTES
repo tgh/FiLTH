@@ -1,8 +1,10 @@
-RECENT
--------
+MISC
+-----
 
-- ALSO: look at shell scripts in Dropbox work directory (array usage, use of
+- look at shell scripts in Dropbox work directory (array usage, use of
   color for "usage" output, etc)
+
+- had to add allocationSize=1 to @SequenceGenerator in order for Hibernate to use the sequence correctly
 
 
 THE MOVIE DB (TMDB)
@@ -14,21 +16,6 @@ THE MOVIE DB (TMDB)
     - this gets the images of movie whose id is 278 (Shawshank Redemption)
 - Example: http://api.themoviedb.org/3/movie/tt0057012?api_key=[api key]
     - this gets data (in json) for a movie (in this case, Dr. Strangelove) using an IMDB id
-
-HOW TO
--------
-- to start/stop/restart apache:
-
-	$ sudo /etc/init.d/apache2 [start|stop|restart]
-
-- to start tomcat:
-
-	$ ~/workspace/tomcat/bin/catalina.sh start
-	
-- to check apache:
-	- go to url: localhost
-- to check tomcat:
-	- got to url: localhost:8080
 
 
 SETTING UP ENVIRONMENT

@@ -20,5 +20,26 @@ public class OscarService {
     public List<Oscar> getAllOscars() {
         return _oscarDAO.getAll();
     }
+    
+    @Transactional(readOnly=false)
+    public Oscar getOscarById(int id) {
+        return _oscarDAO.getById(id);
+    }
+    
+    @Transactional(readOnly=false)
+    public void saveOscar(Oscar oscar) {
+        _oscarDAO.save(oscar);
+    }
+    
+    @Transactional(readOnly=false)
+    public void deleteOscar(Oscar oscar) {
+        _oscarDAO.delete(oscar);
+    }
+    
+    @Transactional(readOnly=false)
+    public void deleteOscarById(int id) {
+        Oscar oscar = getOscarById(id);
+        _oscarDAO.delete(oscar);
+    }
 
 }

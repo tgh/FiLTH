@@ -15,5 +15,17 @@ public class OscarDAO extends HibernateDAO<Oscar> {
         List<Oscar> oscarList = extractTypedList(query);
         return oscarList;
     }
+    
+    public Oscar getById(int id) {
+        return (Oscar) getSession().get(Oscar.class.getName(), id);
+    }
+    
+    public void save(Oscar oscar) {
+        getSession().saveOrUpdate(oscar);
+    }
+    
+    public void delete(Oscar oscar) {
+        getSession().delete(oscar);
+    }
 
 }

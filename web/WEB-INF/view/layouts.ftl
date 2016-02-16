@@ -9,3 +9,4 @@
  -->
 
 <#include "layout/standard.ftl" />
+<#include "layout/admin.ftl" />

@@ -30,6 +30,7 @@
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="requestContextAttribute" value="rc"/>
     </bean>
     
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
@@ -104,6 +105,7 @@
             <props>
                 <prop key="hibernate.show_sql">false</prop>
                 <prop key="hibernate.default_schema">${filth.db.schema}</prop>
+                <prop key="hibernate.jdbc.use_get_generated_keys">true</prop>
             </props>
         </property>
         <property name="packagesToScan">
