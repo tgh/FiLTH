@@ -11,6 +11,11 @@
             <div id="rootContainer">
                 <#nested>
             </div>
+            
+            <@util.js "third-party/jquery-2.2.0.min" />
+            <@util.js "third-party/jquery.form.min" />
+            <@util.js "global_constants" />
+            <@util.js "global_functions" />
         </body>
     </html>
 </#macro>

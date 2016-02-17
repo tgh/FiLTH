@@ -1,0 +1,1 @@
+<p>Success. Oscar "${category}" has been deleted.</p>

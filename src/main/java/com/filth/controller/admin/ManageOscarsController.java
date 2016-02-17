@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.filth.model.Oscar;
 import com.filth.service.OscarService;
+import com.filth.util.ModelAndViewUtil;
 
 @Controller
 public class ManageOscarsController extends AdminController {
@@ -21,6 +22,8 @@ public class ManageOscarsController extends AdminController {
     
     @Resource
     private OscarService _oscarService;
+    @Resource
+    private ModelAndViewUtil _modelAndViewUtil;
     
     private static final class URL {
         public static final String OSCARS = ADMIN_URL_PREFIX + "/oscars";
@@ -38,6 +41,7 @@ public class ManageOscarsController extends AdminController {
     private static final class ModelKey {
         public static final String OSCARS = "oscars";
         public static final String OSCAR = "oscar";
+        public static final String CATEGORY = "category";
     }
 
     @RequestMapping(value=URL.OSCARS, method=RequestMethod.GET)
@@ -68,7 +72,7 @@ public class ManageOscarsController extends AdminController {
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveOscar(
             @RequestParam(value=URLParam.CATEGORY) String category,
-            @RequestParam(value=URLParam.ID, required=false) Integer id) {
+            @RequestParam(value=URLParam.ID, required=false) Integer id) throws Exception {
         Oscar oscar = null;
         if (null != id) {
             oscar = _oscarService.getOscarById(id);
@@ -82,16 +86,21 @@ public class ManageOscarsController extends AdminController {
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.OSCAR, oscar);
         
-        return new ModelAndView(OSCARS_VIEW_PREFIX + "/save_oscar_success", mm);
+        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
+                OSCARS_VIEW_PREFIX + "/save_oscar_success", mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteOscar(
-            @RequestParam(value=URLParam.ID) Integer id) {
+            @RequestParam(value=URLParam.ID) Integer id) throws Exception {
+        Oscar oscar = _oscarService.getOscarById(id);
+        ModelMap mm = new ModelMap();
+        mm.put(ModelKey.CATEGORY, oscar.getCategory());
+        
         _oscarService.deleteOscarById(id);
-        return new ModelAndView("redirect:" + URL.OSCARS);
+        
+        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
+                OSCARS_VIEW_PREFIX + "/delete_oscar_success", mm);
     }
-    
-    
         
 }

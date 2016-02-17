@@ -13,7 +13,7 @@
     padding: 4px 12px;
     vertical-align: middle;
     background-color: #f5f5f5;
-    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #b3b3b3;
     color: #515254;
@@ -26,10 +26,22 @@
     background-color: #f58e4d;
     background-image: linear-gradient(to bottom, #f7a16a, #f37321);
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 a {
     text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #c22;
+}
+
+.success {
+    color: #080;
 }

@@ -6,6 +6,9 @@ MISC
 
 - had to add allocationSize=1 to @SequenceGenerator in order for Hibernate to use the sequence correctly
 
+- to have a controller handler redirect to another controller handler, simply use
+  "redirect:[relative url]" as the ModelAndView's view name (e.g. "redirect:/admin/oscars")
+
 
 THE MOVIE DB (TMDB)
 --------------------
