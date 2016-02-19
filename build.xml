@@ -110,7 +110,7 @@
         />
     </target>
 
-    <target name="deploy-war" depends="build, create-app-jar" description="Deploy application as a WAR (.war) file">
+    <target name="deploy" depends="build, create-app-jar" description="Deploy application as a WAR (.war) file">
         <war destfile="${tomcat.deploy.dir}/${project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
