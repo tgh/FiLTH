@@ -157,7 +157,7 @@
     
     <!-- ================================================================= -->
     <!-- Misc targets -->
-    <target name="refresh" depends="ivy-clean, ivy-resolve, tomcat-clean, deploy-war"
+    <target name="refresh" depends="ivy-clean, ivy-resolve, tomcat-clean, deploy"
             description="Cleans dependencies and deployment, then rebuilds and deploys"/>
 
 </project>
