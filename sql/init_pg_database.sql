@@ -259,6 +259,8 @@ ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
 ALTER TABLE filth.tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
+ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
+ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
 
 
 -- --------------------------
