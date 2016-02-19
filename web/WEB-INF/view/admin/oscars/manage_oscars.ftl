@@ -12,10 +12,10 @@
                 <td>${oscar.id}</td>
                 <td>${oscar.category}</td>
                 <td>
-                    <a href="${rc.contextPath}/admin/oscars/edit?id=${oscar.id}" class="button">Edit</a>
+                    <a href="${links.getLinkToEditOscar(oscar.id)}" class="button">Edit</a>
                 </td>
                 <td>
-                    <a href="javascript: deleteOscar('${rc.contextPath}/admin/oscars/delete?id=${oscar.id}', ${oscar.id});" class="button">Delete</a>
+                    <a href="javascript: deleteOscar('${links.getLinkToDeleteOscar(oscar.id)}', ${oscar.id});" class="button">Delete</a>
                 </td>
             </tr>
         </#foreach>
@@ -23,7 +23,7 @@
         
     <div id="saveResult" class="hidden"></div>
     
-    <a href="${rc.contextPath}/admin/oscars/create" class="button buttonPrimary">New</a>
+    <a href="${links.getLinkToCreateOscar()}" class="button buttonPrimary">New</a>
 
     <@util.js "admin/manage_oscars" />
 </@layout.admin>

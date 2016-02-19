@@ -24,7 +24,7 @@ CREATE TABLE filth.movie (
 mid smallint DEFAULT nextval('filth.movie_mid_seq') NOT NULL,
 title text NOT NULL,
 -- smallint is 2 bytes in Postgres, plenty of bits for a year
--- NULL year would indicate a reference movie--i.e. one that REFERENCES filth.a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
+-- NULL year would indicate a reference movie--i.e. one that REFERENCES a collection of movies--for example 'The Apu Trilogy', or 'The Up Documentaries'
 year smallint DEFAULT NULL,
 -- my star rating for the movie ("****", "NO STARS", "not seen", etc)
 star_rating text DEFAULT NULL,

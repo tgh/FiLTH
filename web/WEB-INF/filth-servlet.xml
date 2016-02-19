@@ -54,6 +54,7 @@
         <property name="interceptors">
             <list>
                 <ref bean="requestLoggingInterceptor" />
+                <ref bean="modelAndViewInterceptor" />
             </list>
         </property>
     </bean>
@@ -131,5 +132,10 @@
         <property name="jsonWriter"><ref bean="sanitizableJsonWriter"/></property>
     </bean>
     <bean name="sanitizableJsonWriter" class="org.springframework.web.servlet.view.json.writer.sojo.SojoJsonStringWriter"/>
+    
+    <!-- Link Generation -->
+    <bean id="linkGenerator" class="com.filth.link.LinkGeneratorFactory">
+        <constructor-arg value="com.filth.link.LinkGenerator" />
+    </bean>
 
 </beans>

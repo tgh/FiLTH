@@ -1,0 +1,12 @@
+<ivysettings>
+    <settings defaultResolver="chain"/>
+    <resolvers>
+        <chain name="chain" returnFirst="true">
+            <ibiblio name="central" m2compatible="true"/>
+            <!-- have to use this url for sojo-optional-0.5.0 since it doesn't exist in Maven central (see ivy.xml) -->
+            <url name="sojo">
+                <artifact pattern="http://spring-json.sourceforge.net/repository/sojo/[artifact]/[revision]/[artifact]-[revision].[ext]" />
+            </url>
+        </chain>
+    </resolvers>
+</ivysettings>

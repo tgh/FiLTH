@@ -19,8 +19,6 @@
         <dependency org="org.springframework" name="spring-context-support" rev="4.2.4.RELEASE" conf="compile->default;runtime->default"/>
         <dependency org="org.springframework" name="spring-tx" rev="4.2.4.RELEASE" conf="compile->default;runtime->default"/>
         <dependency org="org.springframework" name="spring-orm" rev="4.2.4.RELEASE" conf="runtime->default"/>
-        <dependency org="net.sf.spring-json" name="spring-json" rev="1.3.1" conf="compile->default;runtime->default" transitive="false"/>
-        <dependency org="net.sf.sojo" name="sojo" rev="1.0.8" conf="runtime->default" transitive="false"/>
         <dependency org="org.freemarker" name="freemarker" rev="2.3.22" conf="compile->default;runtime->default"/>
         <dependency org="ch.qos.logback" name="logback-classic" rev="1.1.3" conf="runtime->default"/>
         <dependency org="ch.qos.logback" name="logback-core" rev="1.1.3" conf="runtime->default"/>
@@ -38,6 +36,17 @@
         <dependency org="org.hibernate" name="hibernate-core" rev="5.0.5.Final" conf="compile->default;runtime->default"/>
         <dependency org="org.apache.commons" name="commons-dbcp2" rev="2.1.1" conf="runtime->default"/>
         <dependency org="javax.transaction" name="jta" rev="1.1" conf="runtime->default"/>
+<!--         <dependency org="org.liquibase" name="liquibase-core" rev="3.4.2" conf="runtime->default"/> -->
+        <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.1" conf="compile->default;runtime->default"/>
+        
+        <!-- This dependency is necessary for JsonView. However, one of it's dependencies (sojo-optional-0.5.0)
+             does not exist in Maven central, hence transitivity is turned off and the sojo-optional is
+             explicitly listed below. -->
+        <dependency org="net.sf.spring-json" name="spring-json" rev="1.3.1" conf="compile->default;runtime->default" transitive="false"/>
+        <!-- Since this dependency is needed by spring-json, but does not exist in Maven central,
+             an explicit url is used for downloading (see ivysettings.xml).
+             Let's hope that url continues to exist! :-/ -->
+        <dependency org="sojo" name="sojo-optional" rev="0.5.0" conf="runtime->default" transitive="false"/>
     </dependencies>
     
 </ivy-module>

@@ -4,12 +4,17 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Component;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import org.springframework.web.servlet.view.json.JsonView;
+
+import com.filth.link.LinkGenerator;
 
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -25,12 +30,30 @@ public final class ModelAndViewUtil {
         public static final String SUCCESS = "success";
         public static final String ERROR_MESSAGE = "errorMessage";
         public static final String HTML_CONTENT = "html";
+        public static final String LINK_GENERATOR = "links";
     }
 
     @Resource
     private FreeMarkerConfigurer _freeMarkerConfigurer;
     @Resource
     private JsonView _jsonView;
+    @Resource
+    private LinkGenerator _linkGenerator;
+
+
+    public void addGlobalModelObjects(ModelAndView modelAndView, HttpServletRequest request) {
+        addGlobalModelObjects(modelAndView.getModelMap(), request);
+    }
+
+    public void addGlobalModelObjects(ModelMap modelMap) {
+        HttpServletRequest request =
+                ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+        addGlobalModelObjects(modelMap, request);
+    }
+    
+    public void addGlobalModelObjects(ModelMap mm, HttpServletRequest request) {
+        mm.put(ModelKey.LINK_GENERATOR, _linkGenerator);
+    }
     
     public ModelAndView createErrorJsonModelAndView(String message) {
         return createErrorJsonModelAndView(message, new ModelMap());
@@ -71,7 +94,7 @@ public final class ModelAndViewUtil {
         return new ModelAndView(_jsonView, jsonModel);
     }
 
-    public String renderViewAsString(ModelMap mm, String view) throws TemplateException, IOException {
+    private String renderViewAsString(ModelMap mm, String view) throws TemplateException, IOException {
         StringWriter sw = new StringWriter();
         
         Template template = _freeMarkerConfigurer.getConfiguration().getTemplate(view + ".ftl");

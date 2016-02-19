@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.link.Link;
+import com.filth.link.ManageOscarsLinkGenerator;
 import com.filth.model.Oscar;
 import com.filth.service.OscarService;
 import com.filth.util.ModelAndViewUtil;
 
 @Controller
-public class ManageOscarsController extends AdminController {
+public class ManageOscarsController extends AdminController implements ManageOscarsLinkGenerator {
     
     private static final String OSCARS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/oscars";
     
@@ -42,6 +44,31 @@ public class ManageOscarsController extends AdminController {
         public static final String OSCARS = "oscars";
         public static final String OSCAR = "oscar";
         public static final String CATEGORY = "category";
+    }
+
+    @Override
+    public Link getLinkToManageOscars() {
+        return new Link(URL.OSCARS);
+    }
+
+    @Override
+    public Link getLinkToDeleteOscar(int id) {
+        return new Link(URL.DELETE).setParam(URLParam.ID, String.valueOf(id));
+    }
+
+    @Override
+    public Link getLinkToEditOscar(int id) {
+        return new Link(URL.EDIT).setParam(URLParam.ID, String.valueOf(id));
+    }
+
+    @Override
+    public Link getLinkToCreateOscar() {
+        return new Link(URL.CREATE);
+    }
+    
+    @Override
+    public Link getLinkToSaveOscar() {
+        return new Link(URL.SAVE);
     }
 
     @RequestMapping(value=URL.OSCARS, method=RequestMethod.GET)

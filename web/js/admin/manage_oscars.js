@@ -4,8 +4,12 @@ function saveOscar() {
     
     $('#saveOscarForm').ajaxSubmit({
        success: ajaxSuccessHandler,
-       error: function() {
-           showSaveResultError(saveResult, 'Sorry, a problem occurred during save.');
+       error: function(data) {
+           if (data && typeof data !== 'undefined') {
+               showSaveResultError(saveResult, data.responseText);
+           } else {
+               showSaveResultError(saveResult, 'Sorry, a problem occurred during save.');
+           }
        }
     });
 }
@@ -28,8 +32,12 @@ function deleteOscar(deleteUrl, oscarId) {
                 showSaveResultError(saveResult, json[JSON_KEY_ERROR]);
             }
         },
-        error: function() {
-            showSaveResultError(saveResult, 'Sorry, a problem occurred during delete.');
+        error: function(data) {
+            if (data && typeof data !== 'undefined') {
+                showSaveResultError(saveResult, data.responseText);
+            } else {
+                showSaveResultError(saveResult, 'Sorry, a problem occurred during delete.');
+            }
         }
     })
 }
