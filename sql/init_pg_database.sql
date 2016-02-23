@@ -205,7 +205,11 @@ list_author text DEFAULT NULL);
 CREATE TABLE filth.list_contains (
 mid smallint NOT NULL,
 lid smallint NOT NULL,
-rank smallint DEFAULT NULL);
+-- most of the time this will be used as a numeric ordering of the list, but
+-- could also be a numerical scaling figure--for example, from 1-10 how bad I
+-- want to see the movie if it's a list of movies to see
+rank smallint DEFAULT NULL,
+comments text DEFAULT NULL);
 
 
 -- a tyler entity -------------------------------------------------------------
