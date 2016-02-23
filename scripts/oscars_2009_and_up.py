@@ -238,6 +238,7 @@ def getMid(title, year, country):
                 if response == 'y':
                     rating = raw_input('\nMPAA rating? ')
                     imdbId = raw_input('\nIMDB id? ')
+                    tmdbId = raw_input('\nTMDB id? ')
                     if country == '' or country == '\n':
                         country = raw_input('Country (leave blank if unknown)? ')
                         if country == '':
@@ -256,7 +257,7 @@ def getMid(title, year, country):
                     _nextMid = str(int(_nextMid) + 1)
                     _movies[title + ' (' + year + ')'] = mid
 
-                    movieInsert = "INSERT INTO filth.movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL);\n"
+                    movieInsert = "INSERT INTO filth.movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL, " + tmbdId + ");\n"
                     _movieInserts.append(movieInsert)
                     _logFile.write('\n::: Added movie: "' + title + '" (' + year + ') [' + rating + '] ' + country + '\n')
                 else:
@@ -346,7 +347,7 @@ def processOscarFile():
     for line in lines:
         _logFile.write('Line: ' + line)
 
-        fields = line.split(',')
+        fields = line.split(';')
         
         year = fields[YEAR]
         category = fields[CATEGORY]
