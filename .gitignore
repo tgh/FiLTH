@@ -5,7 +5,6 @@ temp/*
 *bin/tylerhayes/*
 .classpath
 .project
-.pydevproject
 *.pyc
 .setting*
 build/*
