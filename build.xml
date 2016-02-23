@@ -123,6 +123,25 @@
             <fileset dir="${web.dir}/WEB-INF/view"/>
         </sync>
     </target>
+  
+    <target name="js-hot-deploy" description="Hot-deploy javascript files (deploy while tomcat is running)">
+        <sync todir="${tomcat.deploy.dir}/${project.name}/js" granularity="0" verbose="true">
+            <fileset dir="${web.dir}/js"/>
+        </sync>
+    </target>
+  
+    <target name="css-hot-deploy" description="Hot-deploy css files (deploy while tomcat is running)">
+        <sync todir="${tomcat.deploy.dir}/${project.name}/css" granularity="0" verbose="true">
+            <fileset dir="${web.dir}/css"/>
+        </sync>
+    </target>
+  
+    <target name="front-end-hot-deploy" depends="ftl-hot-deploy, js-hot-deploy, css-hot-deploy"
+            description="Hot-deploy ftl, js, and css files (deploy while tomcat is running)">
+        <sync todir="${tomcat.deploy.dir}/${project.name}/css" granularity="0" verbose="true">
+            <fileset dir="${web.dir}/css"/>
+        </sync>
+    </target>
     
     <!-- ================================================================= -->
     <!-- Test targets -->
