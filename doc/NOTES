@@ -262,6 +262,7 @@ SETTING UP ENVIRONMENT
     - CATALINA_HOME
     - ANT_HOME
     - WORKSPACE
+    - JAVA_HOME
 
 
 - dabled in Rails briefly:

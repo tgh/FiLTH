@@ -6,12 +6,7 @@
 -- Create the schema --
 -- --------------------
 
-CREATE SCHEMA filth AUTHORIZATION filth_admin;
-
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth_admin;
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA filth TO filth_admin;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA filth TO filth;
+CREATE SCHEMA filth;
 
 
 -- --------------------
@@ -431,14 +426,14 @@ $$ LANGUAGE plpgsql;
 -- Inserts a movie into the database.  This is to ensure that the year of the
 -- movie is not more than 2 years after the current year.
 --
-CREATE FUNCTION filth.insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text) RETURNS void AS $$
+CREATE FUNCTION filth.insert_movie(title text, year smallint, stars smallint, mpaa smallint, country text, comments text, imdb text, theatre_viewings smallint, tmdb integer) RETURNS void AS $$
 BEGIN
   -- check that the year makes sense (is not less than 1900 nor more than 2
   -- years into the future)
   IF NOTfilth.movie_year_ok(year) THEN
     RAISE EXCEPTION 'Movie year cannot be before 1900 nor more than 2 years into the future.';
   END IF;
-  INSERT INTO movie VALUES (DEFAULT, title, year, stars, mpaa, country, note);
+  INSERT INTO movie VALUES (DEFAULT, title, year, stars, mpaa, country, comments, imdb, theatre_viewings, tmdb);
 END;
 $$ LANGUAGE plpgsql;
 
@@ -501,3 +496,15 @@ CHECK (status >= 0 AND status <= 2);
 -- 0 = nominated
 -- 1 = won
 -- 2 = tie
+
+
+-- --------------
+-- Permissions --
+-- --------------
+
+GRANT USAGE ON SCHEMA filth TO filth_admin;
+GRANT USAGE ON SCHEMA filth TO filth;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth_admin;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA filth TO filth;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA filth TO filth_admin;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA filth TO filth;
