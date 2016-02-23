@@ -1,5 +1,8 @@
 <ivysettings>
+    <property name="spring.version" value="4.2.4.RELEASE"/>
+    
     <settings defaultResolver="chain"/>
+    
     <resolvers>
         <chain name="chain" returnFirst="true">
             <ibiblio name="central" m2compatible="true"/>
