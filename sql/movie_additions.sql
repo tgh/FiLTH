@@ -34,3 +34,5 @@ UPDATE filth.movie SET star_rating = '***' WHERE mid = 1547;
 INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'PG', 'England', NULL, 'tt2872750', 0, 263109);
 INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044);
 UPDATE filth.movie SET star_rating = '***' WHERE mid = 1459;
+INSERT INTO filth.movie VALUES (3883, 'Amy', 2015, '***', 'R', 'England', NULL, 'tt2870648', 0, 331781);
+INSERT INTO filth.movie VALUES (3884, 'Meet the Fockers', 2004, '*½', 'PG-13', 'USA', NULL, 'tt0290002', 0, 693);

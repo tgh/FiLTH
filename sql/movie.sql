@@ -3878,3 +3878,5 @@ INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG
 INSERT INTO filth.movie VALUES (3880, 'The Drop', 2014, '***', 'R', 'USA', NULL, 'tt1600196', 0, 154400); -- 2/6/2016
 INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'PG', 'England', NULL, 'tt2872750', 0, 263109); -- 2/12/2016
 INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044); -- 2/13/2016
+INSERT INTO filth.movie VALUES (3883, 'Amy', 2015, '***', 'R', 'England', NULL, 'tt2870648', 0, 331781);
+INSERT INTO filth.movie VALUES (3884, 'Meet the Fockers', 2004, '*½', 'PG-13', 'USA', NULL, 'tt0290002', 0, 693);

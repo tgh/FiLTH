@@ -68,3 +68,7 @@ INSERT INTO filth.crew_person VALUES (3216, 'Davis', 'Lucy', NULL, 'Lucy Davis',
 INSERT INTO filth.crew_person VALUES (3217, 'Burton', 'Mark', NULL, 'Mark Burton', 'Screenwriter');  -- Screenwriter: Mark Burton
 INSERT INTO filth.crew_person VALUES (3218, 'Starzak', 'Richard', NULL, 'Richard Starzak', 'Director');  -- Director: Richard Starzak
 INSERT INTO filth.crew_person VALUES (3219, 'Garbus', 'Liz', NULL, 'Liz Garbus', 'Director');  -- Director: Liz Garbus
+INSERT INTO filth.crew_person VALUES (3220, 'Kapadia', 'Asif', NULL, 'Asif Kapadia', 'Director');  -- Director: Asif Kapadia
+INSERT INTO filth.crew_person VALUES (3221, 'Danner', 'Blythe', NULL, 'Blythe Danner', 'Actress');  -- Actress: Blythe Danner
+INSERT INTO filth.crew_person VALUES (3222, 'Polo', 'Teri', NULL, 'Teri Polo', 'Actress');  -- Actress: Teri Polo
+INSERT INTO filth.crew_person VALUES (3223, 'Nelson', 'Tim', 'Blake', 'Tim Blake Nelson', 'Actor');  -- Actor: Tim Blake Nelson

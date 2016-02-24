@@ -1,5 +1,3 @@
-
--- 1997
 INSERT INTO filth.tyler_given_to VALUES (113, 1, 0, 0, ''); -- The Apostle (1997) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (119, 1, 0, 0, ''); -- As Good as it Gets (1997) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (662, 1, 0, 1, ''); -- Good Will Hunting (1997) for Best Picture
@@ -59,8 +57,6 @@ INSERT INTO filth.tyler_given_to VALUES (382, 13, 0, 0, ''); -- Crash (1997) for
 INSERT INTO filth.tyler_given_to VALUES (980, 13, 0, 1, ''); -- Lost Highway (1997) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (983, 13, 0, 0, ''); -- The Lost World: Jurassic Park (1997) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1282, 13, 0, 0, ''); -- Playing God (1997) for Worst Picture
-
--- 1998
 INSERT INTO filth.tyler_given_to VALUES (1262, 1, 0, 0, ''); -- Pi (1998) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (83, 1, 0, 0, ''); -- American History X (1998) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1400, 1, 0, 0, ''); -- Rushmore (1998) for Best Picture
@@ -122,8 +118,6 @@ INSERT INTO filth.tyler_given_to VALUES (651, 13, 0, 1, ''); -- Godzilla (1998) 
 INSERT INTO filth.tyler_given_to VALUES (708, 13, 0, 0, ''); -- Happiness (1998) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1506, 13, 0, 0, ''); -- Snake Eyes (1998) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1712, 13, 0, 0, ''); -- Velvet Goldmine (1998) for Worst Picture
-
--- 1999
 INSERT INTO filth.tyler_given_to VALUES (320, 1, 0, 0, ''); -- Children of Heaven (1999) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (565, 1, 0, 0, ''); -- Fight Club (1999) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (999, 1, 0, 1, ''); -- Magnolia (1999) for Best Picture
@@ -189,8 +183,6 @@ INSERT INTO filth.tyler_given_to VALUES (504, 13, 0, 0, ''); -- Election (1999) 
 INSERT INTO filth.tyler_given_to VALUES (579, 13, 0, 0, ''); -- Flawless (1999) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (644, 13, 0, 1, ''); -- Go (1999) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1595, 13, 0, 0, ''); -- The Talented Mr. Ripley (1999) for Worst Picture
-
--- 2000
 INSERT INTO filth.tyler_given_to VALUES (87, 1, 0, 0, ''); -- American Psycho (2000) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (356, 1, 0, 0, ''); -- The Color of Paradise (2000) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (624, 1, 0, 1, ''); -- George Washington (2000) for Best Picture
@@ -253,8 +245,6 @@ INSERT INTO filth.tyler_given_to VALUES (39, 13, 0, 0, ''); -- The Adventures of
 INSERT INTO filth.tyler_given_to VALUES (577, 13, 0, 0, ''); -- The Five Senses (2000) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1376, 13, 0, 1, ''); -- Road Trip (2000) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1715, 13, 0, 0, ''); -- Vertical Limit (2000) for Worst Picture
-
--- 2001
 INSERT INTO filth.tyler_given_to VALUES (804, 1, 0, 0, ''); -- In the Bedroom (2001) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1054, 1, 0, 1, ''); -- Memento (2001) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1284, 1, 0, 0, ''); -- The Pledge (2001) for Best Picture
@@ -329,8 +319,6 @@ INSERT INTO filth.tyler_given_to VALUES (641, 13, 0, 0, ''); -- The Glass House 
 INSERT INTO filth.tyler_given_to VALUES (951, 13, 0, 0, ''); -- Life as a House (2001) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1250, 13, 0, 1, ''); -- Pearl Harbor (2001) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1592, 13, 0, 0, ''); -- Swordfish (2001) for Worst Picture
-
--- 2002
 INSERT INTO filth.tyler_given_to VALUES (594, 1, 0, 0, ''); -- Frailty (2002) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (625, 1, 0, 0, ''); -- Gerry (2002) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1316, 1, 0, 1, ''); -- Punch Drunk Love (2002) for Best Picture
@@ -415,8 +403,6 @@ INSERT INTO filth.tyler_given_to VALUES (302, 13, 0, 0, ''); -- The Cat's Meow (
 INSERT INTO filth.tyler_given_to VALUES (422, 13, 0, 0, ''); -- Death to Smoochy (2002) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1365, 13, 0, 0, ''); -- Return to Neverland (2002) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1780, 13, 0, 1, ''); -- Windtalkers (2002) for Worst Picture
-
--- 2003
 INSERT INTO filth.tyler_given_to VALUES (88, 1, 0, 0, ''); -- American Splendor (2003) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (505, 1, 0, 1, ''); -- Elephant (2003) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (979, 1, 0, 0, ''); -- The Lord of the Rings: The Return of the King (2003) for Best Picture
@@ -515,8 +501,6 @@ INSERT INTO filth.tyler_given_to VALUES (1099, 12, 0, 0, 'Aileen''s Last John');
 INSERT INTO filth.tyler_given_to VALUES (100, 12, 0, 0, 'I Am Calm'); -- Anger Management (2003) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (531, 12, 0, 0, 'Belly Twister'); -- Evil Alien Conquerors (2003) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1040, 12, 0, 1, 'The Architect'); -- The Matrix Reloaded (2003) for Best Scene
-
--- 2004
 INSERT INTO filth.tyler_given_to VALUES (134, 1, 0, 0, ''); -- The Aviator (2004) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (760, 1, 0, 0, ''); -- Hotel Rwanda (2004) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1243, 1, 0, 1, ''); -- The Passion of the Christ (2004) for Best Picture
@@ -598,8 +582,6 @@ INSERT INTO filth.tyler_given_to VALUES (1243, 12, 0, 0, 'The Flogging'); -- The
 INSERT INTO filth.tyler_given_to VALUES (1285, 12, 0, 0, 'The Journey of the Train Ticket'); -- The Polar Express (2004) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1767, 12, 0, 0, 'The Birds of the Waterfall'); -- The White Diamond (2004) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1718, 12, 0, 0, 'The Creatures Come Out'); -- The Village (2004) for Best Scene
-
--- 2005
 INSERT INTO filth.tyler_given_to VALUES (283, 1, 0, 1, ''); -- Cache (2005) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (383, 1, 0, 0, ''); -- Crash (2005) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (659, 1, 0, 0, ''); -- Good Night and Good Luck. (2005) for Best Picture
@@ -655,8 +637,6 @@ INSERT INTO filth.tyler_given_to VALUES (329, 12, 0, 0, 'The Sacrifice of Aslan'
 INSERT INTO filth.tyler_given_to VALUES (1547, 12, 0, 0, 'Conspiring at the Opera'); -- Star Wars: Episode III - Revenge of the Sith (2005) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1547, 12, 0, 0, 'Opening Aerial Battle'); -- Star Wars: Episode III - Revenge of the Sith (2005) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1547, 12, 0, 0, 'Anakin Left for Dead'); -- Star Wars: Episode III - Revenge of the Sith (2005) for Best Scene
-
--- 2006
 INSERT INTO filth.tyler_given_to VALUES (441, 1, 0, 1, ''); -- The Departed (2006) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (444, 1, 0, 0, ''); -- The Devil and Daniel Johnston (2006) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (947, 1, 0, 0, ''); -- Letters From Iwo Jima (2006) for Best Picture
@@ -724,8 +704,6 @@ INSERT INTO filth.tyler_given_to VALUES (701, 12, 0, 0, 'The Drug Deal by Teache
 INSERT INTO filth.tyler_given_to VALUES (1101, 12, 0, 0, 'Playing it Cool'); -- Monster House (2006) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1231, 12, 0, 0, 'Pale Man Awakens'); -- Pan's Labyrinth (2006) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1272, 12, 0, 0, 'Do You Fear Death?'); -- Pirates of the Caribbean: Dead Man's Chest (2006) for Best Scene
-
--- 2007
 INSERT INTO filth.tyler_given_to VALUES (2, 1, 0, 0, ''); -- 3:10 to Yuma (2007) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1185, 1, 0, 1, ''); -- No Country for Old Men (2007) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (2875, 1, 0, 0, ''); -- Lars and the Real Girl (2007) for Best Picture
@@ -808,8 +786,6 @@ INSERT INTO filth.tyler_given_to VALUES (781, 13, 0, 0, ''); -- I Am Legend (200
 INSERT INTO filth.tyler_given_to VALUES (1051, 13, 0, 0, ''); -- Meet the Robinsons (2007) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1196, 13, 0, 1, ''); -- The Number 23 (2007) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1663, 13, 0, 0, ''); -- Transformers (2007) for Worst Picture
-
--- 2008
 INSERT INTO filth.tyler_given_to VALUES (325, 1, 0, 0, ''); -- Chop Shop (2008) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (404, 1, 0, 1, ''); -- The Dark Knight (2008) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (475, 1, 0, 0, ''); -- Doubt (2008) for Best Picture
@@ -876,8 +852,6 @@ INSERT INTO filth.tyler_given_to VALUES (816, 13, 0, 0, ''); -- Indiana Jones an
 INSERT INTO filth.tyler_given_to VALUES (3393, 13, 0, 0, ''); -- Mamma Mia! (2008) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1524, 13, 0, 1, ''); -- Space Chimps (2008) for Worst Picture
 INSERT INTO filth.tyler_given_to VALUES (1737, 13, 0, 0, ''); -- Wanted (2008) for Worst Picture
-
--- 2009
 INSERT INTO filth.tyler_given_to VALUES (550, 1, 0, 0, ''); -- Fantastic Mr. Fox (2009) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (776, 1, 0, 0, ''); -- The Hurt Locker (2009) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1104, 1, 0, 1, ''); -- Moon (2009) for Best Picture
@@ -942,8 +916,6 @@ INSERT INTO filth.tyler_given_to VALUES (988, 12, 0, 0, 'Inside Mr. Harvey''s Ho
 INSERT INTO filth.tyler_given_to VALUES (1104, 12, 0, 0, 'Who Are You?'); -- Moon (2009) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1374, 12, 0, 0, 'Using a Bullet'); -- The Road (2009) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1765, 12, 0, 0, 'The Dirt Clod Fight'); -- Where the Wild Things Are (2009) for Best Scene
-
--- 2010
 INSERT INTO filth.tyler_given_to VALUES (534, 1, 0, 0, ''); -- Exit Through the Gift Shop (2010) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (809, 1, 0, 0, ''); -- Inception (2010) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (899, 1, 0, 0, ''); -- The King's Speech (2010) for Best Picture
@@ -1016,8 +988,6 @@ INSERT INTO filth.tyler_given_to VALUES (1474, 12, 0, 1, 'Questioning the Inmate
 INSERT INTO filth.tyler_given_to VALUES (1511, 12, 0, 0, 'The Ambush'); -- The Social Network (2010) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1511, 12, 0, 0, 'Opening Conversation'); -- The Social Network (2010) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1676, 12, 0, 0, 'Bargaining'); -- True Grit (2010) for Best Scene
-
--- 2011
 INSERT INTO filth.tyler_given_to VALUES (3360, 1, 0, 0, ''); -- The Adventures of Tintin (2011) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (3340, 1, 0, 1, ''); -- The Artist (2011) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (1096, 1, 0, 0, ''); -- Moneyball (2011) for Best Picture
@@ -1111,8 +1081,6 @@ INSERT INTO filth.tyler_given_to VALUES (3342, 12, 0, 0, 'Escape Through the For
 INSERT INTO filth.tyler_given_to VALUES (1579, 12, 0, 0, 'Midnight Shoot at the Train Station'); -- Super 8 (2011) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (3373, 12, 0, 0, 'Horse in No Man''s Land'); -- War Horse (2011) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (3347, 12, 0, 0, 'Why?'); -- We Need to Talk About Kevin (2011) for Best Scene
-
--- 2012
 INSERT INTO filth.tyler_given_to VALUES (3460, 1, 0, 0, ''); -- Cloud Atlas (2012) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (3425, 1, 0, 0, ''); -- Django Unchained (2012) for Best Picture
 INSERT INTO filth.tyler_given_to VALUES (3419, 1, 0, 0, ''); -- Les Miserables (2012) for Best Picture
