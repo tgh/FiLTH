@@ -13,7 +13,6 @@ from getopt import getopt
 from getopt import GetoptError
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
-MOVIE_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/movie_additions.sql'
 TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
@@ -479,7 +478,7 @@ def promptUserForTmdbId():
 if __name__ == '__main__':
   inputFile   = None    #the path of the input file to read from (from command line arg)
   isUpdate    = False   #boolean flag for whether or not we are updating
-                        # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql and movie_additions.sql)
+                        # (i.e. false == creating movie.sql from scratch, true == modifying movie.sql)
   retVal      = 0       #value to return to shell
   tagger      = None    #MovieTagger object
   crewHandler = None    #MovieCrew object
@@ -543,15 +542,6 @@ if __name__ == '__main__':
     for insertStatement in _inserts:
       f.write(insertStatement)
     f.close()
-
-    if isUpdate:
-      lg('main', 'writing to ' + MOVIE_ADDITIONS_SQL_FILE)
-      f = open(MOVIE_ADDITIONS_SQL_FILE, 'a')
-      for insertStatement in _inserts:
-        f.write(insertStatement)
-      for updateStatement in _updates:
-        f.write(updateStatement)
-      f.close()
 
     if tagger:
       writeOutTagInserts(tagger)

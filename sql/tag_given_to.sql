@@ -36,7 +36,6 @@ INSERT INTO filth.tag_given_to VALUES(129, 76);  -- Austin Powers: The Spy Who S
 INSERT INTO filth.tag_given_to VALUES(130, 76);  -- Austin Powers: Goldmember tagged with 'Espionage'
 INSERT INTO filth.tag_given_to VALUES(93, 77);  -- Analyze This tagged with 'Mafia'
 INSERT INTO filth.tag_given_to VALUES(210, 71);  -- The Birth of a Nation tagged with 'Epic'
-
 INSERT INTO filth.tag_given_to VALUES(1, 1);
 INSERT INTO filth.tag_given_to VALUES(2, 16);
 INSERT INTO filth.tag_given_to VALUES(2, 1);

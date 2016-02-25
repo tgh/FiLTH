@@ -20,14 +20,10 @@ from getopt import GetoptError
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-CREW_PERSON_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/crew_person_additions.sql'
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
-TAG_GIVEN_TO_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/tag_given_to_additions.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
-TAG_SQL_ADDITIONS_FILE = FILTH_PATH + '/sql/tag_additions.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
-WORKED_ON_ADDITIONS_SQL_FILE = FILTH_PATH + '/sql/worked_on_additions.sql'
 LOG_FILENAME = FILTH_PATH + '/logs/crew_and_tag.log'
 TEMP_FILENAME = FILTH_PATH + '/temp/crewTagTemp.txt'
 
@@ -163,16 +159,12 @@ def quit(mid):
 if __name__ == '__main__':
   try:
     tagGivenToFile = open(TAG_GIVEN_TO_SQL_FILE, 'a')
-    tagGivenToAdditionsFile = open(TAG_GIVEN_TO_ADDITIONS_SQL_FILE, 'a')
     tagFile = open(TAG_SQL_FILE, 'a')
-    tagAdditionsFile = open(TAG_SQL_ADDITIONS_FILE, 'a')
     logger = open(LOG_FILENAME, 'w')
     tempFile = open(TEMP_FILENAME, 'r+')
     movieFile = open(MOVIE_SQL_FILE, 'r')
     crewpersonFile = open(CREW_PERSON_SQL_FILE, 'a')
-    crewpersonAdditionsFile = open(CREW_PERSON_ADDITIONS_SQL_FILE, 'a')
-    workedOnAdditionsFile = open(WORKED_ON_SQL_FILE, 'a')
-    workedOnFile = open(WORKED_ON_ADDITIONS_SQL_FILE, 'a')
+    workedOnFile = open(WORKED_ON_SQL_FILE, 'a')
   except IOError as e:
     sys.stderr.write("**ERROR: opening file: " + str(e) + ".\n")
     sys.exit()
@@ -211,8 +203,6 @@ if __name__ == '__main__':
         if response == 'y':
           movieTagger.writeTagInsertsToFile(tagFile)
           movieTagger.writeTagGivenToInsertsToFile(tagGivenToFile)
-          movieTagger.writeTagInsertsToFile(tagAdditionsFile)
-          movieTagger.writeTagGivenToInsertsToFile(tagGivenToAdditionsFile)
         break
     if crewHandler.hasInserts():
       while True:
@@ -223,8 +213,6 @@ if __name__ == '__main__':
         if response == 'y':
           crewHandler.writeCrewInsertsToFile(crewpersonFile)
           crewHandler.writeWorkedOnInsertsToFile(workedOnFile)
-          crewHandler.writeCrewInsertsToFile(crewpersonAdditionsFile)
-          crewHandler.writeWorkedOnInsertsToFile(workedOnAdditionsFile)
         break
     quit(lastProcessed)
     closeFiles()

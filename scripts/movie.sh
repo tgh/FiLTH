@@ -120,11 +120,9 @@ function run_movie2sql() {
     # make copies of sql files so we can revert them in the event of an error later
     backup_movie_sql_file
 
-    # movie2sql.py with the -u option creates/overwrites movie_additions.sql,
-    # which is a file of sql inserts for just the new movies being added
-    # (the -u option also checks for, and applies, updates to movies already in
-    # the db)
-    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file -t $tag_additions_sql_file -g $tgt_additions_sql_file -c $cp_additions_sql_file -w $wo_additions_sql_file
+    # movie2sql.py with the -u option appends/modifies movie.sql
+    # and pronpts user for tags and crew of any new movies
+    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file -t $tag_sql_file -g $tgt_sql_file -c $cp_sql_file -w $wo_sql_file
   fi
 
   # did movie2sql.py fail?
