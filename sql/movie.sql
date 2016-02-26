@@ -3880,3 +3880,5 @@ INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'P
 INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044); -- 2/13/2016
 INSERT INTO filth.movie VALUES (3883, 'Amy', 2015, '***', 'R', 'England', NULL, 'tt2870648', 0, 331781);
 INSERT INTO filth.movie VALUES (3884, 'Meet the Fockers', 2004, '*½', 'PG-13', 'USA', NULL, 'tt0290002', 0, 693);
+INSERT INTO filth.movie VALUES (3885, 'The Lion King', 1994, '**½', 'G', 'USA', NULL, 'tt0110357', 0, 8587);
+INSERT INTO filth.movie VALUES (3886, 'Nick of Time', 1995, '***', 'R', 'USA', NULL, 'tt0113972', 0, 2086);

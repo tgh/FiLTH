@@ -3218,3 +3218,7 @@ INSERT INTO filth.crew_person VALUES (3220, 'Kapadia', 'Asif', NULL, 'Asif Kapad
 INSERT INTO filth.crew_person VALUES (3221, 'Danner', 'Blythe', NULL, 'Blythe Danner', 'Actress');  -- Actress: Blythe Danner
 INSERT INTO filth.crew_person VALUES (3222, 'Polo', 'Teri', NULL, 'Teri Polo', 'Actress');  -- Actress: Teri Polo
 INSERT INTO filth.crew_person VALUES (3223, 'Nelson', 'Tim', 'Blake', 'Tim Blake Nelson', 'Actor');  -- Actor: Tim Blake Nelson
+INSERT INTO filth.crew_person VALUES (3224, 'Badham', 'John', NULL, 'John Badham', 'Director');  -- Director: John Badham
+INSERT INTO filth.crew_person VALUES (3225, 'Duncan', 'Patrick', 'Sheane', 'Patrick Sheane Duncan', 'Screenwriter');  -- Screenwriter: Patrick Sheane Duncan
+INSERT INTO filth.crew_person VALUES (3224, 'Badham', 'John', NULL, 'John Badham', 'Director');  -- Director: John Badham
+INSERT INTO filth.crew_person VALUES (3225, 'Duncan', 'Patrick', 'Sheane', 'Patrick Sheane Duncan', 'Screenwriter');  -- Screenwriter: Patrick Sheane Duncan
