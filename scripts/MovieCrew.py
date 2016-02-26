@@ -60,7 +60,7 @@ class MovieCrew(object):
       lastName = self._sanitizeName(matcher.group(2))
       firstName = self._sanitizeName(matcher.group(3))
       middleName = self._sanitizeName(matcher.group(4))
-      fullName = " ".join([firstName, middleName, lastName]).replace('  ', ' ').rstrip()
+      fullName = " ".join([firstName, middleName, lastName]).replace('  ', ' ').strip()
 
       #handle when crew has the same full name as someone else
       if fullName in self._crewMap.keys():
