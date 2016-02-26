@@ -264,6 +264,12 @@ SETTING UP ENVIRONMENT
     - WORKSPACE
     - JAVA_HOME
 
+  - favicon:
+    - how to: http://blog.teamtreehouse.com/how-to-make-a-favicon
+    - site to create .ico file: http://www.xiconeditor.com/
+    - had to add <link rel="shortcut icon" href="${rc.contextPath}/favicon.ico" type="image/x-icon" /> to pages
+    - had to add <mvc:default-servlet-handler /> to filth-servlet.xml
+
 
 - dabled in Rails briefly:
   - uses DATABASE_URL--which is set to BeaconBot... :/  haven't fixed yet...

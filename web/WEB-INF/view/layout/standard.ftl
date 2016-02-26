@@ -4,6 +4,8 @@
         <head>
             <title>${pageTitle}</title>
             
+            <link rel="shortcut icon" href="${rc.contextPath}/favicon.ico" type="image/x-icon" />
+            
             <@util.css "standard" />
         </head>
         
