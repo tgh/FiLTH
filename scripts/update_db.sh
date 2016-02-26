@@ -51,7 +51,7 @@ function updateSequence() {
 }
 
 function updateTable() {
-    echo "Processing $1..."
+    echo "Processing $1..."; sleep 0.5;
     echo -e "\n$1" >> $LOG_FILE
 
     doesTableNeedSequenceUpdated $1
@@ -63,7 +63,7 @@ function updateTable() {
 
         if [ "$lastFileId" -gt "$lastDbId" ]
         then
-            echo "Updating $1..."
+            echo "Updating $1..."; sleep 0.5;
             difference=`expr $lastFileId - $lastDbId`
             echo -e ">>> New data detected for $1: lastFileId - lastDbid = $difference" >> $LOG_FILE
 
@@ -81,18 +81,19 @@ function updateTable() {
             done
             i=$((i - 1))
             echo -e "--- Last $i lines from $FILTH_SQL_PATH/$1.sql:" >> $LOG_FILE
-            tail -n $i $FILTH_SQL_PATH/$1.sql >> $LOG_FILE
+            echo "SQL to be executed:"
+            tail -n $i $FILTH_SQL_PATH/$1.sql | tee -a $LOG_FILE
 
             tail -n $i $FILTH_SQL_PATH/$1.sql > $TEMP_SQL_FILE
             echo -e "... Executing last $i lines from $FILTH_SQL_PATH/$1.sql in db" >> $LOG_FILE
             psql -U filth -d filth -f $TEMP_SQL_FILE > /dev/null 2>>$LOG_FILE
 
-            echo "Added $i rows to $1."
+            echo "Added $i rows to $1."; sleep 0.5;
 
             updateSequence $1 $2 $lastFileId
-            echo "Updated id sequence for $1."
+            echo "Updated id sequence for $1."; sleep 0.5;
         else
-            echo "No update necessary for $1."
+            echo "No update necessary for $1."; sleep 0.5;
             echo -e ">>> Nothing new for $1, skipping" >> $LOG_FILE
         fi
     else
@@ -101,20 +102,22 @@ function updateTable() {
 
         if [ "$fileLineCount" -gt "$tableRowCount" ]
         then
-            echo "Updating $1..."
+            echo "Updating $1..."; sleep 0.5;
             numLines=`expr $fileLineCount - $tableRowCount`
 
             echo -e ">>> New data detected for $1: fileLineCount - tableRowCount = $numLines" >> $LOG_FILE
             echo -e "--- Last $numLines lines from $FILTH_SQL_PATH/$1.sql:" >> $LOG_FILE
-            tail -n $numLines $FILTH_SQL_PATH/$1.sql >> $LOG_FILE
+
+            echo "SQL to be executed:"
+            tail -n $numLines $FILTH_SQL_PATH/$1.sql | tee -a $LOG_FILE
 
             tail -n $numLines $FILTH_SQL_PATH/$1.sql > $TEMP_SQL_FILE
             echo -e "... Executing last $numLines lines from $FILTH_SQL_PATH/$1.sql in db" >> $LOG_FILE
             psql -U filth -d filth -f $TEMP_SQL_FILE > /dev/null 2>>$LOG_FILE
 
-            echo "Added $numLines rows to $1."
+            echo "Added $numLines rows to $1."; sleep 0.5;
         else
-            echo "No update necessary for $1."
+            echo "No update necessary for $1."; sleep 0.5;
             echo -e ">>> nothing new for $1, skipping" >> $LOG_FILE
         fi
     fi

@@ -121,8 +121,8 @@ function run_movie2sql() {
     backup_movie_sql_file
 
     # movie2sql.py with the -u option appends/modifies movie.sql
-    # and pronpts user for tags and crew of any new movies
-    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file -t $tag_sql_file -g $tgt_sql_file -c $cp_sql_file -w $wo_sql_file
+    # and prompts user for tags and crew of any new movies
+    $FILTH_SCRIPTS_PATH/movie2sql.py -u -i $1 -m $movie_sql_file
   fi
 
   # did movie2sql.py fail?

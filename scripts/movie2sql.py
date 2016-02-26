@@ -25,10 +25,6 @@ _updates = []   #list of UPDATE statements for movies
 _logFile = FILTH_PATH + '/logs/movie2sql.log'
 #XXX: why is this not a constant? (FILTH_PATH + '/sql/movie.sql')
 _movieSqlFile = None
-_crewPersonSqlFile = None
-_workedOnSqlFile = None
-_tagGivenToSqlFile = None
-_tagSqlFile = None
 _log = None
 _nextMid = 0
 
@@ -66,13 +62,13 @@ def checkForMissingFileArg(arg):
 
 def processArgs():
   """Sanity checks the command-line arguments."""
-  global _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile
+  global _movieSqlFile
 
   inputFile = None
   isUpdate = False #TODO: rename this option ('update' is overloaded in this file and is confusing)
 
   try:
-    opts, args = getopt(sys.argv[1:], 'ui:m:t:g:c:w:')
+    opts, args = getopt(sys.argv[1:], 'ui:m:')
   except GetoptError as goe:
     sys.stderr.write(str(goe) + '\n\n')
     usage()
@@ -85,19 +81,8 @@ def processArgs():
       inputFile = a
     elif o == '-m':
       _movieSqlFile = a
-    elif o == '-t':
-      _tagSqlFile = a
-    elif o == '-g':
-      _tagGivenToSqlFile = a
-    elif o == '-c':
-      _crewPersonSqlFile = a
-    elif o == '-w':
-      _workedOnSqlFile = a
 
-  if isUpdate:
-    map(checkForMissingFileArg, [inputFile, _movieSqlFile, _tagSqlFile, _tagGivenToSqlFile, _crewPersonSqlFile, _workedOnSqlFile])
-  else:
-    map(checkForMissingFileArg, [inputFile, _movieSqlFile])
+  map(checkForMissingFileArg, [inputFile, _movieSqlFile])
 
   return inputFile, isUpdate
   
@@ -396,18 +381,10 @@ def isNewMovie(title, year, stars, mpaa, country):
 #------------------------------------------------------------------------------
 
 def writeOutTagInserts(tagger):
-  lg('writeOutTagInserts', 'writing to ' + _tagSqlFile)
-  tagf = open(_tagSqlFile, 'a')
-  tagger.writeTagInsertsToFile(tagf)
-  tagf.close()
   lg('writeOutTagInserts', 'writing to ' + TAG_SQL_FILE)
   tagf = open(TAG_SQL_FILE, 'a')
   tagger.writeTagInsertsToFile(tagf)
   tagf.close()
-  lg('writeOutTagInserts', 'writing to ' + _tagGivenToSqlFile)
-  tgtf = open(_tagGivenToSqlFile, 'a')
-  tagger.writeTagGivenToInsertsToFile(tgtf)
-  tgtf.close()
   lg('writeOutTagInserts', 'writing to ' + TAG_GIVEN_TO_SQL_FILE)
   tgtf = open(TAG_GIVEN_TO_SQL_FILE, 'a')
   tagger.writeTagGivenToInsertsToFile(tgtf)
@@ -418,18 +395,10 @@ def writeOutTagInserts(tagger):
 #------------------------------------------------------------------------------
 
 def writeOutCrewInserts(crewHandler):
-  lg('writeOutCrewInserts', 'writing to ' + _crewPersonSqlFile)
-  cf  = open(_crewPersonSqlFile, 'a')
-  crewHandler.writeCrewInsertsToFile(cf)
-  cf.close()
   lg('writeOutCrewInserts', 'writing to ' + CREW_PERSON_SQL_FILE)
   cf  = open(CREW_PERSON_SQL_FILE, 'a')
   crewHandler.writeCrewInsertsToFile(cf)
   cf.close()
-  lg('writeOutCrewInserts', 'writing to ' + _workedOnSqlFile)
-  wof = open(_workedOnSqlFile, 'a')
-  crewHandler.writeWorkedOnInsertsToFile(wof)
-  wof.close()
   lg('writeOutCrewInserts', 'writing to ' + WORKED_ON_SQL_FILE)
   wof = open(WORKED_ON_SQL_FILE, 'a')
   crewHandler.writeWorkedOnInsertsToFile(wof)
