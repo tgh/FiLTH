@@ -3220,3 +3220,9 @@ INSERT INTO filth.crew_person VALUES (3222, 'Polo', 'Teri', NULL, 'Teri Polo', '
 INSERT INTO filth.crew_person VALUES (3223, 'Nelson', 'Tim', 'Blake', 'Tim Blake Nelson', 'Actor');  -- Actor: Tim Blake Nelson
 INSERT INTO filth.crew_person VALUES (3224, 'Badham', 'John', NULL, 'John Badham', 'Director');  -- Director: John Badham
 INSERT INTO filth.crew_person VALUES (3225, 'Duncan', 'Patrick', 'Sheane', 'Patrick Sheane Duncan', 'Screenwriter');  -- Screenwriter: Patrick Sheane Duncan
+INSERT INTO filth.crew_person VALUES (3226, 'Heineman', 'Matthew', NULL, 'Matthew Heineman', 'Director');  -- Director: Matthew Heineman
+INSERT INTO filth.crew_person VALUES (3227, 'Oxenbould', 'Ed', NULL, 'Ed Oxenbould', 'Actor');  -- Actor: Ed Oxenbould
+INSERT INTO filth.crew_person VALUES (3228, 'DeJonge', 'Olivia', NULL, 'Olivia DeJonge', 'Actress');  -- Actress: Olivia DeJonge
+INSERT INTO filth.crew_person VALUES (3229, 'Dunagan', 'Deanna', NULL, 'Deanna Dunagan', 'Actress');  -- Actress: Deanna Dunagan
+INSERT INTO filth.crew_person VALUES (3230, 'McRobbie', 'Peter', NULL, 'Peter McRobbie', 'Actor');  -- Actor: Peter McRobbie
+INSERT INTO filth.crew_person VALUES (3231, 'Hahn', 'Kathryn', NULL, 'Kathryn Hahn', 'Actress');  -- Actress: Kathryn Hahn
