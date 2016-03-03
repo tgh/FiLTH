@@ -1,8 +1,44 @@
-#rootContainer {
+body {
+    margin: 0;
+    min-width: 700px;
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.filth-background-default {
+    background-color: #ccc;
+}
+
+.filth-background-0 {
+    background: url("../images/backgrounds/310-1.jpg") no-repeat scroll center center;
+}
+
+.filth-background-1 {
+    background: url("../images/backgrounds/310-2.jpg") no-repeat scroll center center;
+}
+
+.filth-background-2 {
+    background: url("../images/backgrounds/400-1.jpg") no-repeat scroll center center;
+}
+
+.filth-background-3 {
+    background: url("../images/backgrounds/2001-3.jpg") no-repeat scroll center center;
+}
+
+.filth-background-4 {
+    background: url("../images/backgrounds/ag-1.jpg") no-repeat scroll center center;
+}
+
+#rootContentContainer {
     border-radius: 10px;
     border: 1px solid #ccc;
     margin: 20px;
     padding: 10px;
+    background-color: #eee;
+    opacity: 0.9;
 }
 
 .button {

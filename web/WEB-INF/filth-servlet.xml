@@ -62,6 +62,7 @@
             <list>
                 <ref bean="requestLoggingInterceptor" />
                 <ref bean="modelAndViewInterceptor" />
+                <ref bean="backgroundImageInterceptor" />
             </list>
         </property>
     </bean>

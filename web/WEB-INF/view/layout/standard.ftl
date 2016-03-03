@@ -9,8 +9,8 @@
             <@util.css "standard" />
         </head>
         
-        <body>
-            <div id="rootContainer">
+        <body class="${backgroundImageCssClass}">
+            <div id="rootContentContainer">
                 <#nested>
             </div>
             

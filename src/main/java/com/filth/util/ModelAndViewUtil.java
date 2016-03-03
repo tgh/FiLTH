@@ -31,6 +31,7 @@ public final class ModelAndViewUtil {
         public static final String ERROR_MESSAGE = "errorMessage";
         public static final String HTML_CONTENT = "html";
         public static final String LINK_GENERATOR = "links";
+        public static final String BG_IMAGE_CSS_CLASS = "backgroundImageCssClass";
     }
 
     @Resource
@@ -53,6 +54,10 @@ public final class ModelAndViewUtil {
     
     public void addGlobalModelObjects(ModelMap mm, HttpServletRequest request) {
         mm.put(ModelKey.LINK_GENERATOR, _linkGenerator);
+    }
+    
+    public void addBackgroundImageCssClass(ModelMap mm, String cssClass) {
+        mm.put(ModelKey.BG_IMAGE_CSS_CLASS, cssClass);
     }
     
     public ModelAndView createErrorJsonModelAndView(String message) {
