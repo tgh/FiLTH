@@ -7,6 +7,7 @@
             <link rel="shortcut icon" href="${rc.contextPath}/favicon.ico" type="image/x-icon" />
             
             <@util.css "standard" />
+            <@util.css "background-images" />
         </head>
         
         <body class="${backgroundImageCssClass}">
