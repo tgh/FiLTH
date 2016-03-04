@@ -23,8 +23,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(BackgroundImageInterceptor.class);
     
-    private static final String BACKGROUND_CSS_CLASS_PREFIX = "filth-background-";
-    private static final String DEFAULT_BACKGROUND_CSS_CLASS = BACKGROUND_CSS_CLASS_PREFIX + "default";
+    private static final String DEFAULT_BACKGROUND_IMAGE = "tol1.jpg";
     
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
@@ -33,7 +32,8 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
             ModelAndView modelAndView) {
         if (modelAndView != null) {
-            String cssClass = DEFAULT_BACKGROUND_CSS_CLASS;
+            String bgImageFilename = DEFAULT_BACKGROUND_IMAGE;
+            
             try {
                 File backgroundsFolder = new File(request.getSession().getServletContext().getRealPath("/images/backgrounds"));
                 File[] backgrounds = backgroundsFolder.listFiles();
@@ -41,13 +41,13 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
 
                 Random random = new Random();
                 int n = random.nextInt(numBackgrounds);
-                cssClass = BACKGROUND_CSS_CLASS_PREFIX + String.valueOf(n);
+                bgImageFilename = backgrounds[n].getName();
             } catch (Exception e) {
-                LOGGER.error("Error determining css class for background image--"
-                             + "falling back to the default: " + DEFAULT_BACKGROUND_CSS_CLASS, e);
+                LOGGER.error("Error during background image selection--"
+                             + "falling back to the default: " + DEFAULT_BACKGROUND_IMAGE, e);
             }
             
-            _modelAndViewUtil.addBackgroundImageCssClass(modelAndView.getModelMap(), cssClass);
+            _modelAndViewUtil.addBackgroundImageFile(modelAndView.getModelMap(), bgImageFilename);
         }
     }
 }

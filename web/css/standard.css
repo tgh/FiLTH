@@ -1,3 +1,10 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #rootContentContainer {
     border-radius: 10px;
     border: 1px solid #ccc;
