@@ -12,7 +12,12 @@
             <th>Comments</th>
         </tr>
         <#foreach movie in movies>
-            <tr data-movie-id="${movie.id}">
+            <#assign rowCssClass = "odd" />
+            <#if movie_index % 2 == 0>
+                <#assign rowCssClass = "even" />
+            </#if>
+            
+            <tr data-movie-id="${movie.id}" class="${rowCssClass}">
                 <td>${movie.title}</td>
                 <td>
                     <#if movie.year??>

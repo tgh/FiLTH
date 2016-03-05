@@ -54,3 +54,7 @@ a {
 .success {
     color: #080;
 }
+
+.even {
+    background-color: #ddd;
+}
