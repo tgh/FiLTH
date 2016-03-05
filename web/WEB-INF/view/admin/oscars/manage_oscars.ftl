@@ -8,7 +8,12 @@
             <th></th>
         </tr>
         <#foreach oscar in oscars>
-            <tr data-oscar-id="${oscar.id}">
+            <#assign rowCssClass = "odd" />
+            <#if oscar_index % 2 == 0>
+                <#assign rowCssClass = "even" />
+            </#if>
+            
+            <tr data-oscar-id="${oscar.id}" class="${rowCssClass}">
                 <td>${oscar.id}</td>
                 <td>${oscar.category}</td>
                 <td>
