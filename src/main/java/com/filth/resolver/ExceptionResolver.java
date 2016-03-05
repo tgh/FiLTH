@@ -17,6 +17,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
+import com.filth.interceptor.BackgroundImageInterceptor;
+import com.filth.util.ModelAndViewUtil;
+
 /**
  * Handles uncaught exceptions thrown during app execution.
  */
@@ -33,6 +36,8 @@ public class ExceptionResolver extends SimpleMappingExceptionResolver {
 
     private Map<String, Integer> _exceptionStatusCodeMappings;
 
+    @Resource
+    private ModelAndViewUtil _modelAndViewUtil;
 
     @Resource
     public void setExceptionStatusCodeMappings(Properties exceptionStatusCodeMappings) {
@@ -67,6 +72,10 @@ public class ExceptionResolver extends SimpleMappingExceptionResolver {
         
         if (modelView != null) {
             modelView.addAllObjects(getModelWithException(ex));
+            
+            //add default background image (TODO: could designate an image exclusively for errors)
+            _modelAndViewUtil.addBackgroundImageFile(modelView.getModelMap(),
+                    BackgroundImageInterceptor.DEFAULT_BACKGROUND_IMAGE);
     
             int statusCode;
             String exceptionName = ex.getClass().getCanonicalName();

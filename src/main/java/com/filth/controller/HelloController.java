@@ -16,7 +16,7 @@ import com.filth.model.Oscar;
 import com.filth.service.OscarService;
 
 /**
- * Controller for the "Hello" page
+ * Hello World Controller
  */
 @Controller
 public class HelloController {

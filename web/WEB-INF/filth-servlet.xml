@@ -48,6 +48,8 @@
                 <prop key="default_encoding">UTF-8</prop>
                 <prop key="output_encoding">UTF-8</prop>
                 <prop key="template_exception_handler">rethrow</prop>
+                <!-- This avoids ints greater than '1000' from showing up with commas like '1,000' -->
+                <prop key="number_format">0.####</prop>
             </util:properties>
          </property>
     </bean>

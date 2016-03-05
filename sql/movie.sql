@@ -151,7 +151,7 @@ INSERT INTO filth.movie VALUES (150, 'The Balloonatic', 1923, '***', 'NR', 'USA'
 INSERT INTO filth.movie VALUES (151, 'Bamboozled', 2000, '***', 'R', 'USA', NULL, 'tt0215545', 0, 24664);
 INSERT INTO filth.movie VALUES (152, 'Bananas', 1971, '***', 'PG-13', 'USA', NULL, 'tt0066808', 0, 11302);
 INSERT INTO filth.movie VALUES (153, 'Band of Outsiders', 1964, '**½', 'NR', 'France', NULL, 'tt0057869', 0, 8073);
-INSERT INTO filth.movie VALUES (154, 'Bandits', 2001, '***', 'PG-13', 'USA', 'tt0219965', NULL, 3172);
+INSERT INTO filth.movie VALUES (154, 'Bandits', 2001, '***', 'PG-13', 'USA', NULL, 'tt0219965', 2, 3172);
 INSERT INTO filth.movie VALUES (155, 'Bang the Drum Slowly', 1973, '***', 'PG', 'USA', NULL, 'tt0069765', 0, 42459);
 INSERT INTO filth.movie VALUES (156, 'Baran', 2002, '***½', 'PG', 'Iran', NULL, 'tt0233841', 1, 43774);
 INSERT INTO filth.movie VALUES (157, 'The Barbarian Invasions', 2003, '**½', 'R', 'Canada', NULL, 'tt0338135', 0, 11042);
@@ -1442,7 +1442,7 @@ INSERT INTO filth.movie VALUES (1441, 'A Serious Man', 2009, '***', 'R', 'USA', 
 INSERT INTO filth.movie VALUES (1442, 'Seven', 1995, '***½', 'R', 'USA', NULL, 'tt0114369', 0, 807);
 INSERT INTO filth.movie VALUES (1443, 'Seven Beauties', 1976, '***', 'R', 'Italy', NULL, 'tt0075040', 0, 37550);
 INSERT INTO filth.movie VALUES (1444, 'Seven Chances', 1925, '****', 'NR', 'USA', NULL, 'tt0016332', 0, 32600);
-INSERT INTO filth.movie VALUES (1445, '7 Plus Seven', 1970, '****', 'NR', 'England', 'tt0066356', NULL, 0, 50754);
+INSERT INTO filth.movie VALUES (1445, '7 Plus Seven', 1970, '****', 'NR', 'England', NULL, 'tt0066356', NULL, 0, 50754);
 INSERT INTO filth.movie VALUES (1446, 'Seven Samurai', 1954, '***½', 'NR', 'Japan', NULL, 'tt0047478', 0, 346);
 INSERT INTO filth.movie VALUES (1447, 'Seven Up', 1963, '****', 'NR', 'England', NULL, 'tt0058578', 0, 51863);
 INSERT INTO filth.movie VALUES (1448, 'Seven Years in Tibet', 1997, '***½', 'PG-13', 'USA', NULL, 'tt0120102', 0, 978);

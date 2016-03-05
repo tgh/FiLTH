@@ -23,7 +23,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(BackgroundImageInterceptor.class);
     
-    private static final String DEFAULT_BACKGROUND_IMAGE = "tol1.jpg";
+    public static final String DEFAULT_BACKGROUND_IMAGE = "tol1.jpg";
     
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
