@@ -271,7 +271,7 @@ SETTING UP ENVIRONMENT
     - had to add <mvc:default-servlet-handler /> to filth-servlet.xml
 
   - background images
-    - bluescreens.net
+    - bluscreens.net
     - these images seem to work:
       - jpg with quality set to 85 (in Gimp)
       - resolution 72
