@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
+
 #rootContentContainer {
     border-radius: 10px;
     border: 1px solid #ccc;
-    margin: 20px;
+    margin: 40px;
     padding: 10px;
     background-color: #eee;
     opacity: 0.9;
@@ -50,4 +54,16 @@ a {
 
 .even {
     background-color: #ddd;
+}
+
+#footer {
+    text-align: center;
+    opacity: 0.9;
+    color: #eee;
+    text-shadow: 1px 1px #555;
+}
+
+#footer a {
+    color: #add8e6;
+    font-weight: bold;
 }
