@@ -21,34 +21,6 @@ and/or a web app.
 Files
 ------
 
-/bin (binary files)
-
-  tylerhayes/tools/
-    
-    Contains compiled java code from tylerhayes.tools.jar from my JavaTools
-    project.  Used for logging in java programs such as /bin/OscarParser, as
-    well as its database "virtual console".
-
-  nameFormatter
-
-    Takes a text file containing a list of names (such as /data/crew_person.txt)
-    and outputs those names in a (lastname, firstname) format.  Takes the name
-    of the file to parse (/data/crew_person.txt) as its only argument.  Used in
-    /scripts/crew_person.sh which redirects the output to a temp file (in
-    /temp), which is then used as an argument to /scripts/crew2sql.py.  Compiled
-    from /src/nameFormatter.hs Haskell source file.
-
-  OscarParser.class
-
-    Parses the /data/oscarsOfCategory.csv file (that is produced by
-    /scripts/oscarGivenTo.sh), and produces the /sql/oscar_given_to.sql file.
-    Takes two arguments: name of Postgres database, and password of database.
-    Used in the /scripts/oscarGivenTo.sh shell script.  The purpose of this
-    program is to produce sql insert statements to populate the oscar_given_to
-    table in the database as much as possible based on the oscar data in the
-    /data/oscarsOfCategory.csv file.  These statements are written to the
-    /sql/oscar_given_to.sql file.
-
 /data (data files in various formats used to populate the database)
 
   2003.csv, 2004.csv, etc.
@@ -66,21 +38,6 @@ Files
     "Best of" lists for the 2000's.  Will probably be used to create lists in
     the database (there are tables called "list" and "list_contains" that model
     a list pertaining to movies).
-
-  crew_person.txt
-
-    A list of as many actors, directors, cinematographers, and writers as I
-    could think of that I care about or think I would need in some way.  This
-    file is to be used with the scripts/crew2sql.py Python script as a
-    command-line argument--the result of which is sql insert statements to
-    populate the crew_person table of the database.  The sql output of the
-    Python script has been redirected to produce the /sql/crew_person.sql file.
-
-  crewperson_accented.txt
-
-    The same as the file above but with special characters for accented letters
-    such as would be in Penélope Cruz.  It is still undecided as to whether the
-    database will contain accented characters or not (ticket #47).
 
   ebert_top_ten.txt
 
@@ -197,55 +154,6 @@ Files
 
     This file.
 
-  tickets.ods
-
-    An OpenOffice spreadsheet containing the status of all open (and closed)
-    tickets for the FiLTH project.
-
-/jar (any necessary .jar (JavaARchive) files go here)
-
-  /csv
-  
-    javacsv.jar
-  
-      Small Java library for reading/writing CSV files.  This API is used in
-      /src/OscarParser.java and is required to compile and run /bin/OscarParser.
-      (see /scripts/cop.sh and /scripts/runop.sh for compiling and running
-      /bin/OscarParser)
-
-  /freemarker
-  
-    freemarker.jar
-
-      Jar file for Freemarker, a view templating language.
-      
-  /hibernate
-  
-    All necessary jar files for Hiberante, an ORM library.
-  
-  /postgres
-  
-    postgresql-8.4-701.jdbc4.jar
-  
-      API for connecting to a PostgreSQL database in Java.  This is used in
-      /src/OscarParser.java and is required to compile and run /bin/OscarParser.
-      
-  /spring
-  
-    All necessary jar files Spring.
-
-  /tylerhayes.tools
-  
-    tylerhayes.tools.jar
-  
-      A small collection of Java code that I have written and maintain.  It is
-      mostly used for the Log API for logging events/data during the execution of
-      a program (useful for debugging, for example).  The code is kept under
-      another Git repository on gitHub.com (tgh/JavaTools).  Whenever code has
-      been added/removed/changed in JavaTools, scripts/update_jar.sh is run to
-      update this file.  When cop.sh is run, this code is also (unintentionally)
-      compiled into /bin/tylerhayes/tools.
-
 /pdf (pdf files)
 
   movie_ratings.pdf
@@ -298,14 +206,6 @@ Files
     re-creates it (the schema) with /sql/init_pg_database.sql, then populates
     the data tables with the other respective sql files in /sql (movie.sql,
     oscar.sql, etc).
-
-  drop_and_create_test_db.sh
-
-    Same as the above script (drop_and_create_filth_db.sh), but for the 'test'
-    postgres database.  The test database is probably unnecessary, but it makes
-    me feel better if I am about to make big changes or something--I first try
-    it out with the test database before applying the changes to the 'real'
-    database (filth).
 
   movie.sh
 
@@ -414,183 +314,11 @@ Files
     through all of the movies seen in the database and asks for tags for each
     movie.  This scripts appends to /sql/tag.sql and /sql/tag_given_to.sql.
 
-  update_jar.sh
-
-    This shell script simply copies the current version of tylerhayes.tools.jar
-    found in its project directory and overwrites /jar/tylerhayes.tools.jar.
-
-  update_movie_table.sh
-
-    This shell script recreates the entire /sql/movie.sql file (unlike
-    /scripts/movie.sh, which attempts to only append movie additions to
-    /data/Movie_Ratings.doc), and updates the movie table in the databse as
-    well by removing every tuple in the table, reseting the mid primary key
-    sequence to 0, and executing all of the sql insert statements in
-    /sql/movie.sql. 
-
 /sql (.sql files)
-
-  country.sql
-
-    SQL insert statements for populating the country table.
-
-  crew_person.sql
-
-    SQL insert statements for populating the crew_person table.  Created using
-    /scripts/crew_person.sh using /data/crew_person.txt.  More statements were
-    appended with /bin/OscarParser (which is run by /scripts/runop.sh).
-
-  init_pg_database.sql
-
-    SQL DDL (data definition language) for creating the filth database
-    (tables, primary keys, foreign keys, integrity constraints, funcitons) for
-    PostgreSQL.
-
-  movie.sql
-
-    SQL insert statements for populating the movie table.  Created by
-    /scripts/movie.sh.
-
-  mpaa.sql
-
-    SQL insert statements for populating the mpaa table.  Created by hand since
-    it's so small.
-
-  oscar.sql
-
-    SQL insert statements for populating the oscar table.  Created by
-    /bin/oscar2sql using data.oscar.txt.
-
-  oscar_given_to.sql
-
-    SQL insert statements for populating the oscar_given_to table.  Created by
-    /bin/OscarParser (which is run by /scripts/runop.sh).
-
-  position.sql
-
-    SQL insert statements for populating the position table.  Created by hand
-    since it's so small.
-
-  star_rating.sql
-
-    SQL insert statements for populating the star_rating table.  Created by hand
-    since it's so small.
-    
-  tag.sql
-  
-    SQL insert statements for poulating the tag table.  Created with help from
-    /scripts/tag.py.
-    
-  tag_given_to.sql
-  
-    SQL insert statements for populating the tag_given_to table.  Created with
-    help from /scipts/tag.py.
-
-  tyler.sql
-
-    SQL insert statements for populating the tyler table.
-
-  worked_on.sql
-
-    SQL insert statements for populating the worked_on table.  Created by
-    /bin/OscarParser (which is run by /scripts/runop.sh).  More statements will
-    be appended once scripts are written to parse filmographies...
 
 /src (source code files)
 
-  /data (source files for gathering/generating data for the db) 
-  
-    nameFormatter.hs
-  
-      Haskell source code for /bin/nameFormatter. (see /bin/nameFormatter)
-  
-    OscarParser.java
-  
-      Java source code for /bin/OscarParser.class. (see /bin/OscarParser.class)
-        
-  /python (Python files)
-  
-    models.py
-  
-      Python source using SQLAlchemy to map the database to Python objects and to
-      connect directly to the database via the objects.
-      
-/target*
-
-  Compiled Java source for the webapp.
-
-/temp (temporary files--throwaway files generated by scipts and programs, or
-       just temp files created manually during experimentation)
-
-  drop_filth_db_error.txt and drop_test_db_error.txt
-
-    These text files are created by the /scripts/drop_and_create... shell
-    scripts if and when there are errors that occur (output sent to stderr)
-    during the running of those scripts.  The stderr output is redirected to
-    temporary files so that I can easily go bask and look at the output later or
-    if the output is so large to overflow the terminal display buffer (or
-    whatever it's called).
-
-  example_oscar_query.sql
-
-    Just an example query for getting oscar data.
-
-  movie_additions.sql
-   
-    This file is created by /scripts/movie.sh.  The contents are sql insert
-    statements for movies added to /data/Movie_Ratings.doc since the last time
-    /scripts/movie.sh was run.  This file is then used with psql to actually
-    insert those new movies into the database--they are also appended to
-    /sql/movie.sql.
-    
-  movie2sql.log
-  
-    Logging output of events/errors when executing /scripts/movie2sql.py.
-
-  oscarParser.log
-
-    A log of what happened during the most recent execution of /bin/OscarParser.
-
-  previous_movie_ratings.txt
-
-    This is created and used by the /scripts/movie.sh script.  It is used to
-    determine what movie(s) was(were) added to /data/Movie_Ratings.doc.  If this
-    gets deleted, all of the movies will be added (again) to the database.  If
-    this file is manipulated in anyway other than running the movie.sh script...
-    bad things will happen.  So don't mess with it.
-    
-  previous_movie_ratings.txt.backup
-  
-    This is used to reset /temp/previous_movie_ratings.txt whenever
-    /scripts/movie.sh encounters a fatal error.
-
-  recompile_OscarParser
-
-    This file is created when the /sctipts/update_jar.sh script is run.  The
-    /scripts/runop.sh script first checks for this file, and if it is present,
-    the script will not execute since the OscarParser program must be recompiled
-    with the updated jar file before being executed.  The /scripts/cop.sh script
-    removes this file (since that script compiles OscarParser).
-
-  temp and temp2
-
-    Also created by /scripts/movie.sh.  Although deleting these or changing them
-    in anyway doesn't matter--they're only used during the execution of
-    movie.sh.
-
 /workspace (directory to mess around, experiment, and test)
-
-  FiLTH-gui/
-
-    A directory tree created by NetBeans when trying out NetBean's GUI builder.
-    I don't know what all of these files are really--most were auto-generated by
-    NetBeans.
-
-  base.py
-
-    Another auto-generated file.  This one by wxGlade?  I don't remember.
-    Anyway, it looks like a GUI-related Python source file when trying to learn
-    and test out some Python GUI builder.
 
   years_best_template.tex and years_best_template.pdf
 
