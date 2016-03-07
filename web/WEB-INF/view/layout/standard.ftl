@@ -9,7 +9,7 @@
             <@util.css "standard" />
         </head>
         
-        <body style="background-image: url(images/backgrounds/${backgroundImageFilename});">
+        <body style="background: url(images/backgrounds/${backgroundImageFilename}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
             <div id="rootContentContainer">
                 <#nested>
             </div>

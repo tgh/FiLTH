@@ -117,7 +117,7 @@
             </fileset>
         </war>
     </target>
-	
+    
     <target name="ftl-hot-deploy" description="Hot-deploy freemarker templates (deploy while tomcat is running)">
         <sync todir="${tomcat.deploy.dir}/${project.name}/WEB-INF/view" granularity="0" verbose="true">
             <fileset dir="${web.dir}/WEB-INF/view"/>
@@ -135,8 +135,14 @@
             <fileset dir="${web.dir}/css"/>
         </sync>
     </target>
+    
+    <target name="image-hot-deploy" description="Hot-deploy image files (deploy while tomcat is running)">
+        <sync todir="${tomcat.deploy.dir}/${project.name}/images" granularity="0" verbose="true">
+            <fileset dir="${web.dir}/images"/>
+        </sync>
+    </target>
   
-    <target name="front-end-hot-deploy" depends="ftl-hot-deploy, js-hot-deploy, css-hot-deploy"
+    <target name="front-end-hot-deploy" depends="ftl-hot-deploy, js-hot-deploy, css-hot-deploy, image-hot-deploy"
             description="Hot-deploy ftl, js, and css files (deploy while tomcat is running)">
         <sync todir="${tomcat.deploy.dir}/${project.name}/css" granularity="0" verbose="true">
             <fileset dir="${web.dir}/css"/>
