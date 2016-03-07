@@ -1,11 +1,8 @@
 body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-size: 100% auto;
 }
 
-#rootContainer {
+#rootContentContainer {
     border-radius: 10px;
     border: 1px solid #ccc;
     margin: 20px;

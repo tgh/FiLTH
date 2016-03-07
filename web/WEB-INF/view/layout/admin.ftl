@@ -10,8 +10,8 @@
             <@util.css "admin" />
         </head>
         
-        <body style="background: url(../images/backgrounds/${backgroundImageFilename}) no-repeat center center fixed;">
-            <div id="rootContainer">
+        <body style="background: url(../images/backgrounds/${backgroundImageFilename});">
+            <div id="rootContentContainer">
                 <#nested>
             </div>
             

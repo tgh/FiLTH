@@ -271,12 +271,12 @@ SETTING UP ENVIRONMENT
     - had to add <mvc:default-servlet-handler /> to filth-servlet.xml
 
   - background images
-    - bluscreens.net
     - these images seem to work:
       - jpg with quality set to 85 (in Gimp)
       - resolution 72
-      - 2000 x 1213 (roughly around 1200 I think--most monitors these days have bigger aspect ratios)
-      - but in case of lower aspect ratios, give plenty of head/base room in the pic above/below the subject(s) 
+      - background-image: url([path-to-image]);
+      - background-size: 100% auto;
+      - get images with at least ~2400 pixels wide resoltuion
 
 
 - dabled in Rails briefly:
