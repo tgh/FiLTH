@@ -31,7 +31,10 @@ public final class ModelAndViewUtil {
         public static final String ERROR_MESSAGE = "errorMessage";
         public static final String HTML_CONTENT = "html";
         public static final String LINK_GENERATOR = "links";
-        public static final String BG_IMAGE_FILE = "backgroundImageFilename";
+        public static final String BG_IMAGE_PATH = "bgImagesPath";
+        public static final String BG_IMAGE_FILE = "bgImageFilename";
+        public static final String BG_IMAGE_MOVIE_TITLE = "bgImageMovieTitle";
+        public static final String BG_IMAGE_MOVIE_YEAR = "bgImageMovieYear";
     }
 
     @Resource
@@ -56,8 +59,12 @@ public final class ModelAndViewUtil {
         mm.put(ModelKey.LINK_GENERATOR, _linkGenerator);
     }
     
-    public void addBackgroundImageFile(ModelMap mm, String imageFilename) {
+    public void addBackgroundImageData(ModelMap mm, String backgroundsPath, String imageFilename,
+            String movieTitle, Integer movieYear) {
+        mm.put(ModelKey.BG_IMAGE_PATH, backgroundsPath);
         mm.put(ModelKey.BG_IMAGE_FILE, imageFilename);
+        mm.put(ModelKey.BG_IMAGE_MOVIE_TITLE, movieTitle);
+        mm.put(ModelKey.BG_IMAGE_MOVIE_YEAR, movieYear);
     }
     
     public ModelAndView createErrorJsonModelAndView(String message) {

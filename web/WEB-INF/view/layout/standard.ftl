@@ -10,13 +10,15 @@
             <@util.css "lightbox" />
         </head>
         
-        <body style="background: url(images/backgrounds/${backgroundImageFilename}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
+        <body style="background: url(${rc.contextPath}/${bgImagesPath}/${bgImageFilename}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
             <div id="rootContentContainer">
                 <#nested>
             </div>
             
             <div id="footer">
-                <p>Copyright 2009-2016 Film Library of Tyler Hayes | <span id="bgImageMovieTitle"></span> (<span id="bgImageMovieYear"></span>) | <a data-lightbox="background" href="images/backgrounds/${backgroundImageFilename}">View background image</a></p>
+                <span id="copyrightText">Copyright 2009-2016 Film Library of Tyler Hayes</span> |
+                Background image: <span id="bgImageMovie">${bgImageMovieTitle} (${bgImageMovieYear})</span> |
+                <a data-lightbox="background" href="${rc.contextPath}/${bgImagesPath}/${bgImageFilename}">View background image</a>
             </div>
             
             <@util.js "third-party/jquery-2.2.0.min" />

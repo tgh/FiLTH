@@ -74,8 +74,11 @@ public class ExceptionResolver extends SimpleMappingExceptionResolver {
             modelView.addAllObjects(getModelWithException(ex));
             
             //add default background image (TODO: could designate an image exclusively for errors)
-            _modelAndViewUtil.addBackgroundImageFile(modelView.getModelMap(),
-                    BackgroundImageInterceptor.DEFAULT_BACKGROUND_IMAGE);
+            _modelAndViewUtil.addBackgroundImageData(modelView.getModelMap(),
+                    BackgroundImageInterceptor.BG_IMAGES_PATH,
+                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE,
+                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_TITLE,
+                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_YEAR);
     
             int statusCode;
             String exceptionName = ex.getClass().getCanonicalName();
