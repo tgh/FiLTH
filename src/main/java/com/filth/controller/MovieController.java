@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.filth.model.Movie;
@@ -26,6 +27,7 @@ public class MovieController {
     
     private static final class URL {
         public static final String MOVIE = "/movie";
+        public static final String MOVIES = "/movies";
     }
     
     private static final class URLParam {
@@ -37,7 +39,7 @@ public class MovieController {
         public static final String MOVIES = "movies";
     }
     
-    @RequestMapping(value=URL.MOVIE, method=RequestMethod.GET)
+    @RequestMapping(value=URL.MOVIES, method=RequestMethod.GET)
     public ModelAndView movies() {
         List<Movie> movies = _movieService.getAllMovies();
         
@@ -46,5 +48,15 @@ public class MovieController {
 
         return new ModelAndView(MOVIES_VIEW_PREFIX + "/movies", mm);
     }
+    
+    @RequestMapping(value=URL.MOVIE, method=RequestMethod.GET)
+    public ModelAndView viewMovie(
+            @RequestParam(value=URLParam.ID) Integer movieId) {
+        Movie movie = _movieService.getMovieById(movieId);
+        
+        ModelMap mm = new ModelMap();
+        mm.put(ModelKey.MOVIE, movie);
 
+        return new ModelAndView(MOVIES_VIEW_PREFIX + "/viewMovie", mm);
+    }
 }

@@ -35,6 +35,7 @@ public final class ModelAndViewUtil {
         public static final String BG_IMAGE_FILE = "bgImageFilename";
         public static final String BG_IMAGE_MOVIE_TITLE = "bgImageMovieTitle";
         public static final String BG_IMAGE_MOVIE_YEAR = "bgImageMovieYear";
+        public static final String BG_IMAGE_MOVIE_ID = "bgImageMovieId";
     }
 
     @Resource
@@ -60,11 +61,12 @@ public final class ModelAndViewUtil {
     }
     
     public void addBackgroundImageData(ModelMap mm, String backgroundsPath, String imageFilename,
-            String movieTitle, Integer movieYear) {
+            String bgImageMovieTitle, Integer bgImageMovieYear, Integer bgImageMovieId) {
         mm.put(ModelKey.BG_IMAGE_PATH, backgroundsPath);
         mm.put(ModelKey.BG_IMAGE_FILE, imageFilename);
-        mm.put(ModelKey.BG_IMAGE_MOVIE_TITLE, movieTitle);
-        mm.put(ModelKey.BG_IMAGE_MOVIE_YEAR, movieYear);
+        mm.put(ModelKey.BG_IMAGE_MOVIE_TITLE, bgImageMovieTitle);
+        mm.put(ModelKey.BG_IMAGE_MOVIE_YEAR, bgImageMovieYear);
+        mm.put(ModelKey.BG_IMAGE_MOVIE_ID, bgImageMovieId);
     }
     
     public ModelAndView createErrorJsonModelAndView(String message) {

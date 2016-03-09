@@ -78,7 +78,8 @@ public class ExceptionResolver extends SimpleMappingExceptionResolver {
                     BackgroundImageInterceptor.BG_IMAGES_PATH,
                     BackgroundImageInterceptor.DEFAULT_BG_IMAGE,
                     BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_TITLE,
-                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_YEAR);
+                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_YEAR,
+                    BackgroundImageInterceptor.DEFAULT_BG_IMAGE_MOVIE_ID);
     
             int statusCode;
             String exceptionName = ex.getClass().getCanonicalName();

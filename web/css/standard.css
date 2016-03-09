@@ -71,4 +71,5 @@ a {
 #bgImageMovie {
     font-style: italic;
     font-weight: bold;
+    cursor: pointer;
 }
