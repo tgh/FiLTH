@@ -31,6 +31,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     public static final String DEFAULT_BG_IMAGE = "1666.1.jpg";
     public static final String DEFAULT_BG_IMAGE_MOVIE_TITLE = "The Tree of Life";
     public static final Integer DEFAULT_BG_IMAGE_MOVIE_YEAR = 2011;
+    public static final Integer DEFAULT_BG_IMAGE_MOVIE_ID = 1666;
     
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
@@ -44,6 +45,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
             String bgImageFilename = DEFAULT_BG_IMAGE;
             String bgImageMovieTitle = DEFAULT_BG_IMAGE_MOVIE_TITLE;
             Integer bgImageMovieYear = DEFAULT_BG_IMAGE_MOVIE_YEAR;
+            Integer bgImageMovieId = DEFAULT_BG_IMAGE_MOVIE_ID;
             
             try {
                 //get list of all bg images
@@ -64,7 +66,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
                 Movie movie = _movieService.getMovieById(mid);
                 bgImageMovieTitle = movie.getTitle();
                 bgImageMovieYear = movie.getYear();
-                
+                bgImageMovieId = movie.getId();
             } catch (Exception e) {
                 LOGGER.error("Error during background image selection--falling back to the default: " +
                               DEFAULT_BG_IMAGE + " -- \"" + DEFAULT_BG_IMAGE_MOVIE_TITLE + "\" (" +
@@ -72,7 +74,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
             }
             
             _modelAndViewUtil.addBackgroundImageData(modelAndView.getModelMap(), BG_IMAGES_PATH, bgImageFilename,
-                    bgImageMovieTitle, bgImageMovieYear);
+                    bgImageMovieTitle, bgImageMovieYear, bgImageMovieId);
         }
     }
 }

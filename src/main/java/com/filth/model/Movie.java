@@ -11,6 +11,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="movie")
 public class Movie {
+    
+    private static final String STAR_HTML_CODE = "&starf;";
+    private static final String HALF_HTML_CODE = "&frac12;";
 
     @Id
     @Column(name="mid")
@@ -123,6 +126,27 @@ public class Movie {
   
     public void setTmdbId(Long tmdbId) {
         _tmdbId = tmdbId;
+    }
+    
+    public String getStarRatingForDisplay() throws Exception {
+        if (_starRating.equals("N/A") || _starRating.equals("NO STARS")) {
+            return _starRating;
+        }
+        
+        StringBuilder starRatingBuilder = new StringBuilder();
+        char[] chars = _starRating.toCharArray();
+        for (char c : chars) {
+            if (c == '*') {
+                starRatingBuilder.append(STAR_HTML_CODE);
+            } else if (c == '½') {
+                starRatingBuilder.append(HALF_HTML_CODE);
+            } else {
+                throw new Exception("Unknown character in star rating for movie " + _id +
+                                    "(" + _title + " (" + _year + ")): '" + c + "'");
+            }
+        }
+        
+        return starRatingBuilder.toString();
     }
   
     @Override
