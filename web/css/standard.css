@@ -73,3 +73,8 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
+
+.remodal {
+    border-radius: 10px;
+    background-color: #eee;
+}

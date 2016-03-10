@@ -57,6 +57,6 @@ public class MovieController {
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.MOVIE, movie);
 
-        return new ModelAndView(MOVIES_VIEW_PREFIX + "/viewMovie", mm);
+        return new ModelAndView(MOVIES_VIEW_PREFIX + "/movieModal", mm);
     }
 }
