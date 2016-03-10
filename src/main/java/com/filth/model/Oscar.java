@@ -39,6 +39,6 @@ public class Oscar {
     
     @Override
     public String toString() {
-        return "Oscar (" + _id + "," + _category + ")";
+        return "Oscar (" + _id + ", " + _category + ")";
     }
 }

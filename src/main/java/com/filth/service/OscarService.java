@@ -21,7 +21,7 @@ public class OscarService {
         return _oscarDAO.getAll();
     }
     
-    @Transactional(readOnly=false)
+    @Transactional(readOnly=true)
     public Oscar getOscarById(int id) {
         return _oscarDAO.getById(id);
     }

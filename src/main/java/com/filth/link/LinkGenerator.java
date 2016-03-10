@@ -6,5 +6,6 @@ package com.filth.link;
  */
 public interface LinkGenerator
     extends
-        ManageOscarsLinkGenerator
+        ManageOscarsLinkGenerator,
+        ManageTagsLinkGenerator
 { }

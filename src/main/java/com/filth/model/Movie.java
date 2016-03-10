@@ -151,6 +151,6 @@ public class Movie {
   
     @Override
     public String toString() {
-        return "Movie (" + _id + "," + _title + "(" + _year + "))";
+        return "Movie (" + _id + ", " + _title + " (" + _year + "))";
     }
 }

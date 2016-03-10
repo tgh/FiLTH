@@ -1,7 +1,10 @@
 package com.filth.dao;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -28,5 +31,36 @@ public abstract class HibernateDAO<T> {
     @SuppressWarnings("unchecked")
     protected List<T> extractTypedList(Query q) {
         return q.list();
+    }
+    
+    /**
+     * Convenience method to remove constant use of SuppressWarnings("unchecked")
+     * from child classes.
+     * 
+     * @param <T> the type of object being listed
+     * @param c a {@link Criteria} that can have list() called on it to produce a list of the given type
+     * @return simply calls c.list() and returns the result--this method only exists for
+     * compile-time convenience
+     */
+    @SuppressWarnings("unchecked")
+    protected List<T> extractTypedList(Criteria c) {
+        return c.list();
+    }
+
+    /**
+     * Extract a list without duplicate entries (useful for entities with a greedy
+     * one-to-many relationship).
+     */
+    protected List<T> extractDistinctList(Criteria c) {
+        c.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
+        return extractTypedList(c);
+    }
+
+    /**
+     * Extract an unordered set from the criteria (requires a functioning equals() method, clearly).
+     */
+    protected Set<T> extractSet(Criteria c) {
+        List<T> entityList = extractDistinctList(c);
+        return new HashSet<T>(entityList);
     }
 }

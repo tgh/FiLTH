@@ -21,7 +21,7 @@ public class MovieService {
         return _movieDAO.getAll();
     }
     
-    @Transactional(readOnly=false)
+    @Transactional(readOnly=true)
     public Movie getMovieById(int id) {
         return _movieDAO.getById(id);
     }
