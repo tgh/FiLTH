@@ -10,6 +10,17 @@
             <@util.css "third-party/lightbox/lightbox" />
             <@util.css "third-party/remodal/remodal" />
             <@util.css "third-party/remodal/remodal-default-theme" />
+            
+            <@util.js "third-party/jquery/jquery-2.2.0.min" />
+            <@util.js "third-party/jquery/jquery.form.min" />
+            <@util.js "global_constants" />
+            <@util.js "global_functions" />
+            <@util.js "third-party/remodal/remodal.min" />
+            
+            <#-- Set a global variable of the app's context path for urls used in javascript -->
+            <script type="text/javascript">
+                var contextPath = '${rc.contextPath}';
+            </script>
         </head>
         
         <body style="background: url(${rc.contextPath}/${bgImagesPath}/${bgImageFilename}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
@@ -27,17 +38,8 @@
                 </div>
             </div>
             
-            <@util.js "third-party/jquery/jquery-2.2.0.min" />
-            <@util.js "third-party/jquery/jquery.form.min" />
-            <@util.js "global_constants" />
-            <@util.js "global_functions" />
-            <@util.js "third-party/remodal/remodal.min" />
+            <#-- lightbox js needs to be here as per its documentation -->
             <@util.js "third-party/lightbox/lightbox.min" />
-            
-            <#-- Set a global variable of the app's context path for urls used in javascript -->
-            <script type="text/javascript">
-                var contextPath = '${rc.contextPath}';
-            </script>
         </body>
     </html>
 </#macro>

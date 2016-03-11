@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,9 @@ import com.filth.util.ModelAndViewUtil;
 @Controller
 public class ManageTagsController extends AdminController implements ManageTagsLinkGenerator {
     
-private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
+    private static final Logger LOGGER = LoggerFactory.getLogger(ManageTagsController.class);
+    
+    private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
     
     @Resource
     private TagService _tagService;
@@ -73,7 +77,7 @@ private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
 
     @RequestMapping(value=URL.TAGS, method=RequestMethod.GET)
     public ModelAndView manageTags() {
-        List<Tag> tags = _tagService.getAllRootTags();
+        List<Tag> tags = _tagService.getAllTags();
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.TAGS, tags);
