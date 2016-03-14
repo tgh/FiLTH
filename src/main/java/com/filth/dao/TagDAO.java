@@ -3,7 +3,6 @@ package com.filth.dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
-import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -15,7 +14,7 @@ import com.filth.model.Tag;
 public class TagDAO extends HibernateDAO<Tag> {
     
     public List<Tag> getAll() {
-        Query query = getSession().createQuery("from Tag");
+        Query query = getSession().createQuery("from Tag order by tid asc"); //FIXME: order by shouldn't be necessary
         List<Tag> tagList = extractTypedList(query);
         return tagList;
     }
@@ -23,7 +22,7 @@ public class TagDAO extends HibernateDAO<Tag> {
     public List<Tag> getAllRootTags() {
         Criteria criteria = getSession().createCriteria(Tag.class)
                                         .add(Restrictions.isNull("_parent"))
-                                        .addOrder(Order.asc("_id"));
+                                        .addOrder(Order.asc("_id")); //FIXME: order by shouldn't be necessary
         List<Tag> tags = extractDistinctList(criteria);
         return tags;
     }

@@ -114,7 +114,7 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         }
         
         if (null != parentId) {
-            Tag parent = _tagService.getTagById(parentId.intValue());
+            Tag parent = _tagService.getTagById(parentId.intValue());   //FIXME: intValue() shouldn't be necessary
             tag.setParent(parent);
         }
         
