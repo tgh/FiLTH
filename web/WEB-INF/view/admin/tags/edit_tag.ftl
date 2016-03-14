@@ -3,7 +3,8 @@
     
     <form id="saveTagForm" action="${links.getLinkToSaveTag()}" method="POST">
         <input type="hidden" name="id" value="${tag.id}">
-        <input type="text" name="name" value="${tag.name}">
+        Name: <input type="text" name="name" value="${tag.name}">
+        Parent ID (if applicable): <input type="test" name="parent" value="${tag.parent.id}">
     </form>
     
     <div id="saveResult" class="hidden"></div>

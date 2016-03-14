@@ -2,7 +2,7 @@
     <h1>Create Oscar</h1>
     
     <form id="saveOscarForm" action="${links.getLinkToSaveOscar()}" method="POST">
-        <input type="text" name="category">
+        Category: <input type="text" name="category">
     </form>
     
     <div id="saveResult" class="hidden"></div>

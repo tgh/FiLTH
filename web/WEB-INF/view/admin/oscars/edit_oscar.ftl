@@ -3,7 +3,7 @@
     
     <form id="saveOscarForm" action="${links.getLinkToSaveOscar()}" method="POST">
         <input type="hidden" name="id" value="${oscar.id}">
-        <input type="text" name="category" value="${oscar.category}">
+        Category: <input type="text" name="category" value="${oscar.category}">
     </form>
     
     <div id="saveResult" class="hidden"></div>

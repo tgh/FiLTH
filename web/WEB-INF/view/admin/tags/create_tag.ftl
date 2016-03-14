@@ -2,7 +2,8 @@
     <h1>Create Tag</h1>
     
     <form id="saveTagForm" action="${links.getLinkToSaveTag()}" method="POST">
-        <input type="text" name="name">
+        Name: <input type="text" name="name">
+        Parent ID (if applicable): <input type="test" name="parent">
     </form>
     
     <div id="saveResult" class="hidden"></div>

@@ -42,6 +42,7 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     private static final class URLParam {
         public static final String ID = "id";
         public static final String NAME = "name";
+        public static final String PARENT = "parent";
     }
     
     private static final class ModelKey {
@@ -103,12 +104,18 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveTag(
             @RequestParam(value=URLParam.NAME) String name,
+            @RequestParam(value=URLParam.PARENT, required=false) Integer parentId, 
             @RequestParam(value=URLParam.ID, required=false) Integer id) throws Exception {
         Tag tag = null;
         if (null != id) {
             tag = _tagService.getTagById(id);
         } else {
             tag = new Tag();
+        }
+        
+        if (null != parentId) {
+            Tag parent = _tagService.getTagById(parentId.intValue());
+            tag.setParent(parent);
         }
         
         tag.setName(name);
