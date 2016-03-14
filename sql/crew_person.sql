@@ -3226,3 +3226,16 @@ INSERT INTO filth.crew_person VALUES (3228, 'DeJonge', 'Olivia', NULL, 'Olivia D
 INSERT INTO filth.crew_person VALUES (3229, 'Dunagan', 'Deanna', NULL, 'Deanna Dunagan', 'Actress');  -- Actress: Deanna Dunagan
 INSERT INTO filth.crew_person VALUES (3230, 'McRobbie', 'Peter', NULL, 'Peter McRobbie', 'Actor');  -- Actor: Peter McRobbie
 INSERT INTO filth.crew_person VALUES (3231, 'Hahn', 'Kathryn', NULL, 'Kathryn Hahn', 'Actress');  -- Actress: Kathryn Hahn
+INSERT INTO filth.crew_person VALUES (3232, 'Larson', 'Brie', NULL, 'Brie Larson', 'Actress');  -- Actress: Brie Larson
+INSERT INTO filth.crew_person VALUES (3233, 'Leigh', 'Jennifer', 'Jason', 'Jennifer Jason Leigh', 'Actress');  -- Actress: Jennifer Jason Leigh
+INSERT INTO filth.crew_person VALUES (3234, 'Vikander', 'Alicia', NULL, 'Alicia Vikander', 'Actress');  -- Actress: Alicia Vikander
+INSERT INTO filth.crew_person VALUES (3235, 'Lachman', 'Ed', NULL, 'Ed Lachman', 'Cinematographer');  -- Cinematographer: Ed Lachman
+INSERT INTO filth.crew_person VALUES (3236, 'Randolph', 'Charles', NULL, 'Charles Randolph', 'Screenwriter');  -- Screenwriter: Charles Randolph
+INSERT INTO filth.crew_person VALUES (3237, 'Nagy', 'Phyllis', NULL, 'Phyllis Nagy', 'Screenwriter');  -- Screenwriter: Phyllis Nagy
+INSERT INTO filth.crew_person VALUES (3238, 'Goddard', 'Drew', NULL, 'Drew Goddard', 'Screenwriter');  -- Screenwriter: Drew Goddard
+INSERT INTO filth.crew_person VALUES (3239, 'Donoghue', 'Emma', NULL, 'Emma Donoghue', 'Screenwriter');  -- Screenwriter: Emma Donoghue
+INSERT INTO filth.crew_person VALUES (3240, 'Carmen', 'Ronnie', 'del', 'Ronnie del Carmen', 'Screenwriter');  -- Screenwriter: Ronnie del Carmen
+INSERT INTO filth.crew_person VALUES (3241, 'Herman', 'Jonathan', NULL, 'Jonathan Herman', 'Screenwriter');  -- Screenwriter: Jonathan Herman
+INSERT INTO filth.crew_person VALUES (3242, 'Berloff', 'Andrea', NULL, 'Andrea Berloff', 'Screenwriter');  -- Screenwriter: Andrea Berloff
+INSERT INTO filth.crew_person VALUES (3243, 'Savidge', 'S.', 'Leigh', 'S. Leigh Savidge', 'Screenwriter');  -- Screenwriter: S. Leigh Savidge
+INSERT INTO filth.crew_person VALUES (3244, 'Wenkus', 'Alan', NULL, 'Alan Wenkus', 'Screenwriter');  -- Screenwriter: Alan Wenkus

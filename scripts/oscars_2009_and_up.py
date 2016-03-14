@@ -257,7 +257,7 @@ def getMid(title, year, country):
                     _nextMid = str(int(_nextMid) + 1)
                     _movies[title + ' (' + year + ')'] = mid
 
-                    movieInsert = "INSERT INTO filth.movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL, " + tmbdId + ");\n"
+                    movieInsert = "INSERT INTO filth.movie VALUES (" + mid + ", '" + title + "', " + year + ", 'not seen', '" + rating + "', " + country + ", NULL, '" + imdbId + "', NULL, " + tmdbId + ");\n"
                     _movieInserts.append(movieInsert)
                     _logFile.write('\n::: Added movie: "' + title + '" (' + year + ') [' + rating + '] ' + country + '\n')
                 else:

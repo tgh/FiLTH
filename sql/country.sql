@@ -57,3 +57,5 @@ INSERT INTO filth.country VALUES ('Cambodia');
 INSERT INTO filth.country VALUES ('Estonia');
 INSERT INTO filth.country VALUES ('Mauritania');
 INSERT INTO filth.country VALUES ('Peru');
+INSERT INTO filth.country VALUES ('Colombia');
+INSERT INTO filth.country VALUES ('Jordan');
