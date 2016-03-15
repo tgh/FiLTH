@@ -319,6 +319,8 @@ SETTING UP ENVIRONMENT
 
     local   filth           filth_admin                             trust
     local   filth           filth                                   trust
+    local   filth-test      filth_admin                             trust
+    local   filth-test      filth                                   trust
 - **may want to change 'trust' to 'ident' or 'md5' to force password
 - to query db as filth:
   $ psql -U filth -d filth

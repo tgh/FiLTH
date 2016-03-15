@@ -1,0 +1,11 @@
+INSERT INTO filth.star_rating VALUES('not seen');
+INSERT INTO filth.star_rating VALUES('N/A');
+INSERT INTO filth.star_rating VALUES('NO STARS');
+INSERT INTO filth.star_rating VALUES('½*');
+INSERT INTO filth.star_rating VALUES('*');
+INSERT INTO filth.star_rating VALUES('*½');
+INSERT INTO filth.star_rating VALUES('**');
+INSERT INTO filth.star_rating VALUES('**½');
+INSERT INTO filth.star_rating VALUES('***');
+INSERT INTO filth.star_rating VALUES('***½');
+INSERT INTO filth.star_rating VALUES('****');

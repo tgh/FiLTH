@@ -7,7 +7,7 @@
 
     <!--                                                                            -->
     <!-- This is an extension of the base-context configuration; it defines its own -->
-    <!-- dataSource bean, which is setup to point to the real application database. -->
+    <!-- dataSource bean, which is setup to point to a database of test data.       -->
     <!--                                                                            -->
     
     <import resource="base-context.xml"></import>
@@ -15,8 +15,8 @@
     <!-- Database connectivity via Hibernate -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${db.driver}" />
-        <property name="url" value="${app.db.url}" />
-        <property name="username" value="${app.db.username}" />
+        <property name="url" value="${test.db.url}" />
+        <property name="username" value="${test.db.username}" />
     </bean>
 
 </beans>

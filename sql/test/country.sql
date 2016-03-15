@@ -1,0 +1,10 @@
+INSERT INTO filth.country VALUES ('USA');
+INSERT INTO filth.country VALUES ('France');
+INSERT INTO filth.country VALUES ('England');
+INSERT INTO filth.country VALUES ('China');
+INSERT INTO filth.country VALUES ('Germany');
+INSERT INTO filth.country VALUES ('Spain');
+INSERT INTO filth.country VALUES ('Mexico');
+INSERT INTO filth.country VALUES ('Italy');
+INSERT INTO filth.country VALUES ('Sweden');
+INSERT INTO filth.country VALUES ('Japan');

@@ -7,13 +7,15 @@
     <property environment="env"/>
     
     <property file="build.properties"/>
+    <property file="conf/${project.name}.properties"/>
     
     <property name="src.dir" value="src/main/java"/>
     <property name="test.dir" value="src/test"/>
-    <property name="web.dir" value="web/"/>
+    <property name="web.dir" value="web"/>
     <property name="build.dir" value="build"/>
     <property name="lib.dir" value="lib"/>
     <property name="ivy.report.dir" value="ivy-report"/>
+    <property name="scripts.dir" value="scripts"/>
 
     <path id="master-classpath">
         <fileset dir="${lib.dir}">
@@ -184,6 +186,18 @@
             ***********************************************************
             ***********************************************************
         </fail>
+    </target>
+    
+    <target name="load-test-data" description="Drops and creates the test database, and loads test data.">
+        <exec executable="${scripts.dir}/drop_and_create_filth_test_db.sh" />
+    </target>
+    
+    <target name="test-deploy" depends="build, create-app-jar" description="Deploy application as a WAR (.war) file for TESTING (i.e. pointing to a database with test data)">
+        <war destfile="${tomcat.deploy.dir}/${project.name}.war" webxml="${web.dir}/WEB-INF/web-test.xml">
+            <fileset dir="${web.dir}" excludes="**/web.xml, **/filth-servlet.xml, **/web-test.xml">
+                <include name="**/*.*"/>
+            </fileset>
+        </war>
     </target>
     
     <!-- ================================================================= -->

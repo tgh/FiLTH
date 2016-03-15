@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+    <!--                                                                     -->
+    <!-- The application context definition for the filth DispatcherServlet. -->
+    <!--                                                                     -->
+    <!-- This is the base servlet context file. Other servlet configurations -->
+    <!-- extend from this (e.g. filth-servlet.xml, filth-test-servlet.xml).  -->
+    <!--                                                                     -->
+    
+    <mvc:default-servlet-handler /> <!-- needed this in order to get favicon working: -->
+                                    <!-- http://stackoverflow.com/questions/17178658/favicon-ico-not-displaying-in-spring-mvc-3-2-2-per-tomcat-7-0 -->
+    
+    <context:component-scan base-package="com.filth"/>
+    
+    <!-- Property configurer: a property resource configurer resolves placeholders
+         for properties (e.g: something like "${app.foo.property}"). It pulls values
+         from specified properties files. -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>file:./conf/filth.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- Freemarker -->
+    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="suffix" value=".ftl" />
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="requestContextAttribute" value="rc"/>
+    </bean>
+    
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/view"/>
+        <property name="freemarkerSettings">
+            <util:properties>
+                <prop key="auto_import">layouts.ftl as layout, util.ftl as util, spring.ftl as spring</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="output_encoding">UTF-8</prop>
+                <prop key="template_exception_handler">rethrow</prop>
+                <!-- This avoids ints greater than '1000' from showing up with commas like '1,000' -->
+                <prop key="number_format">0.####</prop>
+            </util:properties>
+         </property>
+    </bean>
+    
+    <!-- Interceptors -->
+    <bean id="annotationHandler" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <bean id="annotationMapper" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+        <property name="order">
+            <value>1</value>
+        </property>
+        <property name="interceptors">
+            <list>
+                <ref bean="requestLoggingInterceptor" />
+                <ref bean="modelAndViewInterceptor" />
+                <ref bean="backgroundImageInterceptor" />
+            </list>
+        </property>
+    </bean>
+    
+    <!-- Exception handler -->
+    <bean id="handlerExceptionResolver" class="com.filth.resolver.ExceptionResolver">
+        <!-- List exceptions here that should NOT be handled by the exception resolver
+        <property name="excludedExceptions">
+            <list>
+                <value>[fully qualified class name]</value>
+            </list>
+        </property>
+        -->
+        
+        <!-- This is where exceptions raised during request processing in the
+             controller layer get mapped to error templates. So, if a controller
+             (handler) raises an java.lang.Exception, Spring will render the template
+             defined by ${general.error.template} -->
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">${general.error.template}</prop>
+            </props>
+        </property>
+
+
+        <!-- This maps exceptions raised during controller processing (as above)
+             to HTTP status codes. So, if an java.lang.Exception is raised, the
+             template rendered will be error/general_error as described above,
+             and it will be served with HTTP status code 500 -->
+        <property name="exceptionStatusCodeMappings">
+            <props>
+                <!-- 500 Internal Server Error is the default response code for
+                     all other exceptions -->
+                <prop key="java.lang.Exception">500</prop>
+            </props>
+        </property>
+    </bean>
+    
+    <!--                                                                                            -->
+    <!-- Database connectivity via Hibernate                                                        -->
+    <!--                                                                                            -->
+    <!-- Context configurations extending from this one are to define their own "dataSource" beans. -->
+    <!--                                                                                            -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.default_schema">${filth.db.schema}</prop>
+                <prop key="hibernate.jdbc.use_get_generated_keys">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+            </props>
+        </property>
+        <property name="packagesToScan">
+            <list>
+                <value>com.filth.model</value>
+            </list>
+        </property>
+        <property name="annotatedPackages" >
+            <list>
+                <value>com.filth.model</value>
+            </list>
+        </property>
+    </bean>
+    
+    <tx:annotation-driven transaction-manager="txManager" />
+    
+    <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    
+    <!-- JSON view support -->
+    <bean name="jsonView" class="org.springframework.web.servlet.view.json.JsonView">
+        <property name="jsonWriter"><ref bean="sanitizableJsonWriter"/></property>
+    </bean>
+    <bean name="sanitizableJsonWriter" class="org.springframework.web.servlet.view.json.writer.sojo.SojoJsonStringWriter"/>
+    
+    <!-- Link Generation -->
+    <bean id="linkGenerator" class="com.filth.link.LinkGeneratorFactory">
+        <constructor-arg value="com.filth.link.LinkGenerator" />
+    </bean>
+
+</beans>
