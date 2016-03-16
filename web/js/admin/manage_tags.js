@@ -64,3 +64,7 @@ function clearSaveResult(saveResult) {
     saveResult.removeClass(SUCCESS_CLASS);
     hide(saveResult);
 }
+
+$(document).ready(function() {
+    initDataTable('#tagsTable');
+});

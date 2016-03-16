@@ -1,35 +1,42 @@
 <@layout.admin "Manage Tags">
+    <@util.include_datatables_css />
+    
     <h1>Manage Tags</h1>
     
     <table id="tagsTable">
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Parent Id</th>
-            <th></th>
-        </tr>
-        <#foreach tag in tags>
-            <#assign rowCssClass = "odd" />
-            <#if tag_index % 2 == 0>
-                <#assign rowCssClass = "even" />
-            </#if>
-        
-            <tr class="${rowCssClass}" data-tag-id="${tag.id}">
-                <td>${tag.id}</td>
-                <td>${tag.name}</td>
-                <#if tag.parent??>
-                    <td>${tag.parent.id}</td>
-                <#else>
-                    <td></td>
-                </#if>
-                <td>
-                    <a href="${links.getLinkToEditTag(tag.id)}" class="button">Edit</a>
-                </td>
-                <td>
-                    <a href="javascript: deleteTag('${links.getLinkToDeleteTag(tag.id)}', ${tag.id});" class="button">Delete</a>
-                </td>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Parent Id</th>
+                <th></th>
+                <th></th>
             </tr>
-        </#foreach>
+        </thead>
+        <tbody>
+            <#foreach tag in tags>
+                <#assign rowCssClass = "odd" />
+                <#if tag_index % 2 == 0>
+                    <#assign rowCssClass = "even" />
+                </#if>
+            
+                <tr class="${rowCssClass}" data-tag-id="${tag.id}">
+                    <td>${tag.id}</td>
+                    <td>${tag.name}</td>
+                    <#if tag.parent??>
+                        <td>${tag.parent.id}</td>
+                    <#else>
+                        <td></td>
+                    </#if>
+                    <td>
+                        <a href="${links.getLinkToEditTag(tag.id)}" class="button">Edit</a>
+                    </td>
+                    <td>
+                        <a href="javascript: deleteTag('${links.getLinkToDeleteTag(tag.id)}', ${tag.id});" class="button">Delete</a>
+                    </td>
+                </tr>
+            </#foreach>
+        </tbody>
     </table>
         
     <div id="saveResult" class="hidden"></div>
@@ -37,6 +44,7 @@
     <a href="${links.getLinkToCreateTag()}" class="button buttonPrimary">New</a>
 
     <@util.js "admin/manage_tags" />
+    <@util.include_datatables_js />
 </@layout.admin>
 
 <#macro renderTagHierarchy tag indents>
