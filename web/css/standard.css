@@ -52,8 +52,9 @@ a {
     color: #080;
 }
 
-.even {
-    background-color: #ddd;
+.even,
+table.dataTable tbody tr.even {
+    background-color: #eee;
 }
 
 #footer {
