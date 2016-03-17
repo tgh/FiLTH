@@ -57,11 +57,11 @@ if [ $# -gt 0 ]
     done
   #drop and create the entire database
   else
-    echo "Dropping existing filth db..."
+    echo "Dropping existing filth-test db..."
     sleep 0.5
     sudo -u postgres dropdb --if-exists filth-test
 
-    echo "Creating database filth..."
+    echo "Creating database filth-test..."
     sleep 0.5
     sudo -u postgres createdb --owner=filth_admin filth-test
 
