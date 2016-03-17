@@ -28,7 +28,7 @@ public final class ModelAndViewUtil {
     
     private static class ModelKey {
         public static final String SUCCESS = "success";
-        public static final String ERROR_MESSAGE = "errorMessage";
+        public static final String MESSAGE = "message";
         public static final String HTML_CONTENT = "html";
         public static final String LINK_GENERATOR = "links";
         public static final String BG_IMAGE_PATH = "bgImagesPath";
@@ -75,7 +75,7 @@ public final class ModelAndViewUtil {
 
     public ModelAndView createErrorJsonModelAndView(String message, ModelMap mm) {
         mm.addAttribute(ModelKey.SUCCESS, false);
-        mm.addAttribute(ModelKey.ERROR_MESSAGE, message);
+        mm.addAttribute(ModelKey.MESSAGE, message);
         return new ModelAndView(_jsonView, mm);
     }
 
@@ -85,6 +85,12 @@ public final class ModelAndViewUtil {
 
     public ModelAndView createSuccessJsonModelAndView(ModelMap mm) {
         mm.addAttribute(ModelKey.SUCCESS, true);
+        return new ModelAndView(_jsonView, mm);
+    }
+    
+    public ModelAndView createSuccessJsonModelAndView(String message, ModelMap mm) {
+        mm.addAttribute(ModelKey.SUCCESS, true);
+        mm.addAttribute(ModelKey.MESSAGE, message);
         return new ModelAndView(_jsonView, mm);
     }
 

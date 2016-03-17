@@ -1,5 +1,7 @@
 <@layout.admin "Manage Tags">
     <@util.include_datatables_css />
+    <@util.css "third-party/alertify/alertify.core" />
+    <@util.css "third-party/alertify/alertify.default" />
     
     <h1>Manage Tags</h1>
     
@@ -39,12 +41,13 @@
         </tbody>
     </table>
         
-    <div id="saveResult" class="hidden"></div>
+    <div id="stackTraceContainer" class="hidden error"></div>
     
     <a href="${links.getLinkToCreateTag()}" class="button buttonPrimary">New</a>
 
     <@util.js "admin/manage_tags" />
     <@util.include_datatables_js />
+    <@util.js "third-party/alertify/alertify.min" />
 </@layout.admin>
 
 <#macro renderTagHierarchy tag indents>

@@ -1,1 +1,0 @@
-<p>Success. Tag "${name}" has been deleted.</p>

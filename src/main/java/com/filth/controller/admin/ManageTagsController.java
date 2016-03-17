@@ -25,6 +25,8 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageTagsController.class);
     
     private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
+    private static final String DELETE_SUCCESS_MESSAGE_FORMAT = "Tag \"%s\" has been deleted.";
+    private static final String DELETE_ERROR_MESSAGE_FORMAT = "An error occurred deleting tag \"%s\".";
     
     @Resource
     private TagService _tagService;
@@ -135,10 +137,16 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.NAME, tag.getName());
         
-        _tagService.deleteTagById(id);
+        try {
+            _tagService.deleteTagById(id);
+        } catch (Exception e) {
+            LOGGER.error("An error occurred attempting to delete tag '" + tag.getName() + "'", e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, tag.getName()), mm);
+        }
         
-        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
-                TAGS_VIEW_PREFIX + "/delete_tag_success", mm);
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, tag.getName()), mm);
     }
 
 }

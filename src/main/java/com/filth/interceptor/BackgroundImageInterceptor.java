@@ -64,9 +64,14 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
                 
                 //get the Movie corresponding to the bg image
                 Movie movie = _movieService.getMovieById(mid);
-                bgImageMovieTitle = movie.getTitle();
-                bgImageMovieYear = movie.getYear();
-                bgImageMovieId = movie.getId();
+                if (null != movie) {
+                    bgImageMovieTitle = movie.getTitle();
+                    bgImageMovieYear = movie.getYear();
+                    bgImageMovieId = movie.getId();
+                } else {
+                    //movie not found (for example, when running the app with test data), so use default
+                    bgImageFilename = DEFAULT_BG_IMAGE;
+                }
             } catch (Exception e) {
                 LOGGER.error("Error during background image selection--falling back to the default: " +
                               DEFAULT_BG_IMAGE + " -- \"" + DEFAULT_BG_IMAGE_MOVIE_TITLE + "\" (" +

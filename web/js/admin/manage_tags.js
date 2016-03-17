@@ -1,68 +1,63 @@
 function saveTag() {
-    saveResult = $('#saveResult');
-    clearSaveResult(saveResult);
+    clearStackTraceContainer();
     
     $('#saveTagForm').ajaxSubmit({
        success: ajaxSuccessHandler,
        error: function(data) {
-           if (data && typeof data !== 'undefined') {
-               showSaveResultError(saveResult, data.responseText);
-           } else {
-               showSaveResultError(saveResult, 'Sorry, a problem occurred during save.');
-           }
+           ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
        }
     });
 }
 
 function deleteTag(deleteUrl, tagId) {
-    saveResult = $('#saveResult');
-    clearSaveResult(saveResult);
+    clearStackTraceContainer();
     
     $.ajax({
         url: deleteUrl,
         type: 'POST',
         success: function(json) {
-            if (json[JSON_KEY_SUCCESS]) {
-                saveResult.html(json[JSON_KEY_HTML]);
-                saveResult.addClass(SUCCESS_CLASS);
-                show(saveResult);
+            if (TRUE === json[JSON_KEY_SUCCESS]) {
+                alertify.success(json[JSON_KEY_MESSAGE]);
                 
-                $('tr[data-tag-id="' + tagId + '"]').remove();
+                //remove row from the table
+                table = $('#tagsTable').DataTable();
+                table.row($('tr[data-tag-id="' + tagId + '"]')).remove().draw('full-hold');
             } else {
-                showSaveResultError(saveResult, json[JSON_KEY_ERROR]);
+                alertify.error(json[JSON_KEY_MESSAGE]);
             }
         },
         error: function(data) {
-            if (data && typeof data !== 'undefined') {
-                showSaveResultError(saveResult, data.responseText);
-            } else {
-                showSaveResultError(saveResult, 'Sorry, a problem occurred during delete.');
-            }
+            ajaxErrorHandler(data, 'Sorry, a problem occurred during delete and no info was given.');
         }
     })
 }
 
 function ajaxSuccessHandler(json) {
-    if (json[JSON_KEY_SUCCESS]) {
-        saveResult.html(json[JSON_KEY_HTML]);
-        saveResult.addClass(SUCCESS_CLASS);
-        show(saveResult);
+    if (TRUE === json[JSON_KEY_SUCCESS]) {
+        alertify.success(json[JSON_KEY_MESSAGE]);
     } else {
-        showSaveResultError(saveResult, json[JSON_KEY_ERROR]);
+        alertify.error(json[JSON_KEY_MESSAGE]);
     }
 }
 
-function showSaveResultError(saveResult, message) {
-    saveResult.html(message);
-    saveResult.addClass(ERROR_CLASS);
-    show(saveResult);
+function ajaxErrorHandler(data, defaultMessage) {
+    if (data && typeof data !== 'undefined') {
+        showStackTrace(data.responseText);
+    } else {
+        alertify.error(defaultMessage);
+    }
 }
 
-function clearSaveResult(saveResult) {
-    saveResult.html('');
-    saveResult.removeClass(ERROR_CLASS);
-    saveResult.removeClass(SUCCESS_CLASS);
-    hide(saveResult);
+function showStackTrace(message) {
+    stackTraceContainer = $('#stackTraceContainer');
+    stackTraceContainer.html(message);
+    show(stackTraceContainer);
+}
+
+function clearStackTraceContainer() {
+    stackTraceContainer = $('#stackTraceContainer');
+    stackTraceContainer.html('');
+    hide(stackTraceContainer);
 }
 
 $(document).ready(function() {
