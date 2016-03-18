@@ -38,8 +38,6 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     private static final class URL {
         public static final String TAGS = ADMIN_URL_PREFIX + "/tags";
         public static final String DELETE = TAGS + "/delete";
-        public static final String EDIT = TAGS + "/edit";
-        public static final String CREATE = TAGS + "/create";
         public static final String SAVE = TAGS + "/save";
     }
     
@@ -66,16 +64,6 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     }
 
     @Override
-    public Link getLinkToEditTag(int id) {
-        return new Link(URL.EDIT).setParam(URLParam.ID, String.valueOf(id));
-    }
-
-    @Override
-    public Link getLinkToCreateTag() {
-        return new Link(URL.CREATE);
-    }
-    
-    @Override
     public Link getLinkToSaveTag() {
         return new Link(URL.SAVE);
     }
@@ -88,21 +76,6 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         mm.put(ModelKey.TAGS, tags);
 
         return new ModelAndView(TAGS_VIEW_PREFIX + "/manage_tags", mm);
-    }
-    
-    @RequestMapping(value=URL.EDIT, method=RequestMethod.GET)
-    public ModelAndView editTag(
-            @RequestParam(value=URLParam.ID) Integer id) {
-        Tag tag = _tagService.getTagById(id);
-        ModelMap mm = new ModelMap();
-        mm.put(ModelKey.TAG, tag);
-        
-        return new ModelAndView(TAGS_VIEW_PREFIX + "/edit_tag", mm);
-    }
-    
-    @RequestMapping(value=URL.CREATE, method=RequestMethod.GET)
-    public ModelAndView createTag() {
-        return new ModelAndView(TAGS_VIEW_PREFIX + "/create_tag");
     }
     
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)

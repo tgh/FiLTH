@@ -1,7 +1,7 @@
-function saveTag(successCallback) {
+function saveTag(form, successCallback) {
     clearStackTraceContainer();
     
-    $('#saveTagForm').ajaxSubmit({
+    form.ajaxSubmit({
        success: function(json) {
            ajaxSuccessHandler(json);
            successCallback(json);
@@ -16,9 +16,9 @@ function saveTag(successCallback) {
 }
 
 function addTag() {
-    saveTag(addTagRow);
+    saveTag($('#addTagForm'), addTagRow);
     //clear modal inputs
-    $('#addTagContainer input').val('');
+    $('#addTagModal input').val('');
 }
 
 function addTagRow(json) {
@@ -31,6 +31,45 @@ function addTagRow(json) {
     //add row into table
     table = $('#tagsTable').DataTable();
     table.row.add([
+        json.tag.id,
+        json.tag.name,
+        parentId,
+        '',
+        ''
+    ]).draw('full-hold');
+}
+
+function editButtonClickHandler(event) {
+    tagId = event.target.dataset.tagId;
+    
+    //get values from tag row
+    tagName = $('tr[data-tag-id="' + tagId + '"] td.tagName').text();
+    tagParentId = $('tr[data-tag-id="' + tagId + '"] td.parentId').text();
+    //set input values
+    $('#editTagModal input[name="id"]').val(tagId);
+    $('#editTagModal input[name="name"]').val(tagName);
+    $('#editTagModal input[name="parent"]').val(tagParentId);
+}
+
+function editTag() {
+    saveTag($('#editTagForm'), updateTagRow);
+    //clear modal inputs
+    $('#editTagModal input').val('');
+}
+
+function updateTagRow(json) {
+    if (typeof json.tag.parent === 'undefined') {
+        parentId = '';
+    } else {
+        parentId = json.tag.parent.id;
+    }
+    
+    //get row
+    row = $('tr[data-tag-id="' + json.tag.id + '"]');
+        
+    //update row in table
+    table = $('#tagsTable').DataTable();
+    table.row(row).data([
         json.tag.id,
         json.tag.name,
         parentId,
@@ -90,6 +129,11 @@ function clearStackTraceContainer() {
     hide(stackTraceContainer);
 }
 
+function addEventHandlers() {
+    $(document).on('click', '.editButton', editButtonClickHandler);
+}
+
 $(document).ready(function() {
     initDataTable('#tagsTable');
+    addEventHandlers();
 });
