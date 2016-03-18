@@ -1,1 +1,0 @@
-<p>Success. Tag "${tag.name}" has been saved.</p>
