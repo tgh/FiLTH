@@ -1,0 +1,25 @@
+.modalButtons {
+    margin-top: 20px;
+}
+
+.modalButtonContainer {
+    padding: 0 10px;
+}
+
+.label {
+    text-align: right;
+}
+
+.inputModal input {
+    margin: 5px 0;  
+}
+
+.inputModal.modal {
+    width: auto;
+}
+
+.modalInputContainer {
+    background-color: #cdc;
+    padding: 15px;
+    border-radius: 5px;
+}

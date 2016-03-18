@@ -28,10 +28,10 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     
     /** these are public so that {@link ExceptionResolver} can use them */
     public static final String BG_IMAGES_PATH = "/images/backgrounds";
-    public static final String DEFAULT_BG_IMAGE = "1666.1.jpg";
-    public static final String DEFAULT_BG_IMAGE_MOVIE_TITLE = "The Tree of Life";
-    public static final Integer DEFAULT_BG_IMAGE_MOVIE_YEAR = 2011;
-    public static final Integer DEFAULT_BG_IMAGE_MOVIE_ID = 1666;
+    public static final String DEFAULT_BG_IMAGE = "1548.1.jpg";
+    public static final String DEFAULT_BG_IMAGE_MOVIE_TITLE = "Star Wars";
+    public static final Integer DEFAULT_BG_IMAGE_MOVIE_YEAR = 1977;
+    public static final Integer DEFAULT_BG_IMAGE_MOVIE_ID = 1548;
     
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;

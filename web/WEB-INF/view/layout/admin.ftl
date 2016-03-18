@@ -30,11 +30,11 @@
                     <#nested>
                 </div>
                 
-                <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false"></div>
+                <div class="remodal modal" data-remodal-id="movieModal" data-remodal-options="hashTracking: false"></div>
                 
                 <div id="footer">
                     <span id="copyrightText">Copyright 2009-2016 Film Library of Tyler Hayes</span> |
-                    Background image: <a id="bgImageMovie" data-remodal-target="modal" data-movie-id="${bgImageMovieId}">${bgImageMovieTitle} (${bgImageMovieYear})</a> |
+                    Background image: <a id="bgImageMovie" data-remodal-target="movieModal" data-movie-id="${bgImageMovieId}">${bgImageMovieTitle} (${bgImageMovieYear})</a> |
                     <a data-lightbox="background" href="${rc.contextPath}/${bgImagesPath}/${bgImageFilename}">View background image</a>
                 </div>
             </div>

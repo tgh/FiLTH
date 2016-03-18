@@ -27,6 +27,8 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
     private static final String DELETE_SUCCESS_MESSAGE_FORMAT = "Tag \"%s\" has been deleted.";
     private static final String DELETE_ERROR_MESSAGE_FORMAT = "An error occurred deleting tag \"%s\".";
+    private static final String SAVE_SUCCESS_MESSAGE_FORMAT = "Tag \"%s\" saved.";
+    private static final String SAVE_ERROR_MESSAGE_FORMAT = "An error occurred saving tag \"%s\".";
     
     @Resource
     private TagService _tagService;
@@ -109,25 +111,32 @@ public class ManageTagsController extends AdminController implements ManageTagsL
             @RequestParam(value=URLParam.PARENT, required=false) Integer parentId, 
             @RequestParam(value=URLParam.ID, required=false) Integer id) throws Exception {
         Tag tag = null;
-        if (null != id) {
-            tag = _tagService.getTagById(id);
-        } else {
-            tag = new Tag();
-        }
         
-        if (null != parentId) {
-            Tag parent = _tagService.getTagById(parentId.intValue());   //FIXME: intValue() shouldn't be necessary
-            tag.setParent(parent);
+        try {
+            if (null != id) {
+                tag = _tagService.getTagById(id);
+            } else {
+                tag = new Tag();
+            }
+            
+            if (null != parentId) {
+                Tag parent = _tagService.getTagById(parentId.intValue());   //FIXME: intValue() shouldn't be necessary
+                tag.setParent(parent);
+            }
+            
+            tag.setName(name);
+            _tagService.saveTag(tag);
+        } catch (Exception e) {
+            LOGGER.error("An error occurred attempting to save tag '" + tag.getName() + "'", e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, tag.getName()), new ModelMap());
         }
-        
-        tag.setName(name);
-        _tagService.saveTag(tag);
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.TAG, tag);
         
-        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
-                TAGS_VIEW_PREFIX + "/save_tag_success", mm);
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, name), mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)

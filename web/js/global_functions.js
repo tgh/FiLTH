@@ -11,11 +11,11 @@ function initDataTable(tableId) {
 }
 
 $(document).ready(function() {
-    $(document).on('opening', '.remodal', function () {
+    $(document).on('opening', '.remodal[data-remodal-id="movieModal"]', function () {
         movieId = $('#bgImageMovie').attr('data-movie-id');
         $.ajax(contextPath + '/movie?id=' + movieId, {
             success: function(data) {
-                $('.remodal').html(data);
+                $('.remodal[data-remodal-id="movieModal"]').html(data);
             }
         });
     });

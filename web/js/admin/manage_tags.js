@@ -1,12 +1,42 @@
-function saveTag() {
+function saveTag(successCallback) {
     clearStackTraceContainer();
     
     $('#saveTagForm').ajaxSubmit({
-       success: ajaxSuccessHandler,
+       success: function(json) {
+           ajaxSuccessHandler(json);
+           successCallback(json);
+       },
        error: function(data) {
            ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
        }
     });
+    
+    //close the modal
+    $('.modalCancelButton').trigger('click');
+}
+
+function addTag() {
+    saveTag(addTagRow);
+    //clear modal inputs
+    $('#addTagContainer input').val('');
+}
+
+function addTagRow(json) {
+    if (typeof json.tag.parent === 'undefined') {
+        parentId = '';
+    } else {
+        parentId = json.tag.parent.id;
+    }
+    
+    //add row into table
+    table = $('#tagsTable').DataTable();
+    table.row.add([
+        json.tag.id,
+        json.tag.name,
+        parentId,
+        '',
+        ''
+    ]).draw('full-hold');
 }
 
 function deleteTag(deleteUrl, tagId) {
