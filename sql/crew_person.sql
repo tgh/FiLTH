@@ -3245,3 +3245,10 @@ INSERT INTO filth.crew_person VALUES (3247, 'Stan', 'Sebastian', NULL, 'Sebastia
 INSERT INTO filth.crew_person VALUES (3248, 'Shandling', 'Garry', NULL, 'Garry Shandling', 'Actor');  -- Actor: Garry Shandling
 INSERT INTO filth.crew_person VALUES (3249, 'Russo', 'Anthony', NULL, 'Anthony Russo', 'Director');  -- Director: Anthony Russo
 INSERT INTO filth.crew_person VALUES (3250, 'Russo', 'Joe', NULL, 'Joe Russo', 'Director');  -- Director: Joe Russo
+INSERT INTO filth.crew_person VALUES (3251, 'Cardellini', 'Linda', NULL, 'Linda Cardellini', 'Actress');  -- Actress: Linda Cardellini
+INSERT INTO filth.crew_person VALUES (3252, 'Cannavale', 'Bobby', NULL, 'Bobby Cannavale', 'Actor');  -- Actor: Bobby Cannavale
+INSERT INTO filth.crew_person VALUES (3253, 'Burr', 'Bill', NULL, 'Bill Burr', 'Actor');  -- Small Part: Bill Burr
+INSERT INTO filth.crew_person VALUES (3254, 'Buress', 'Hannibal', NULL, 'Hannibal Buress', 'Actor');  -- Actor: Hannibal Buress
+INSERT INTO filth.crew_person VALUES (3255, 'Tremblay', 'Jacob', NULL, 'Jacob Tremblay', 'Actor');  -- Actor: Jacob Tremblay
+INSERT INTO filth.crew_person VALUES (3256, 'Bridgers', 'Sean', NULL, 'Sean Bridgers', 'Actor');  -- Actor: Sean Bridgers
+INSERT INTO filth.crew_person VALUES (3257, 'McCamus', 'Tom', NULL, 'Tom McCamus', 'Actor');  -- Actor: Tom McCamus

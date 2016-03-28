@@ -576,10 +576,10 @@ Richard Roeper
 * 10. Guardians of the Galaxy
 
 2015
-  01. Room
+* 01. Room
 * 02. Inside Out
 * 03. The Revenant
-  04. The Big Short
+* 04. The Big Short
 * 05. Mad Max: Fury Road
   06. The Hateful Eight
 * 07. Sicario
