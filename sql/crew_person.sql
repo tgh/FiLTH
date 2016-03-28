@@ -3239,3 +3239,9 @@ INSERT INTO filth.crew_person VALUES (3241, 'Herman', 'Jonathan', NULL, 'Jonatha
 INSERT INTO filth.crew_person VALUES (3242, 'Berloff', 'Andrea', NULL, 'Andrea Berloff', 'Screenwriter');  -- Screenwriter: Andrea Berloff
 INSERT INTO filth.crew_person VALUES (3243, 'Savidge', 'S.', 'Leigh', 'S. Leigh Savidge', 'Screenwriter');  -- Screenwriter: S. Leigh Savidge
 INSERT INTO filth.crew_person VALUES (3244, 'Wenkus', 'Alan', NULL, 'Alan Wenkus', 'Screenwriter');  -- Screenwriter: Alan Wenkus
+INSERT INTO filth.crew_person VALUES (3245, 'Magaro', 'John', NULL, 'John Magaro', 'Actor');  -- Actor: John Magaro
+INSERT INTO filth.crew_person VALUES (3246, 'Wittrock', 'Finn', NULL, 'Finn Wittrock', 'Actor');  -- Actor: Finn Wittrock
+INSERT INTO filth.crew_person VALUES (3247, 'Stan', 'Sebastian', NULL, 'Sebastian Stan', 'Actor');  -- Actor: Sebastian Stan
+INSERT INTO filth.crew_person VALUES (3248, 'Shandling', 'Garry', NULL, 'Garry Shandling', 'Actor');  -- Actor: Garry Shandling
+INSERT INTO filth.crew_person VALUES (3249, 'Russo', 'Anthony', NULL, 'Anthony Russo', 'Director');  -- Director: Anthony Russo
+INSERT INTO filth.crew_person VALUES (3250, 'Russo', 'Joe', NULL, 'Joe Russo', 'Director');  -- Director: Joe Russo
