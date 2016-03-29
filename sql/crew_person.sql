@@ -3252,3 +3252,9 @@ INSERT INTO filth.crew_person VALUES (3254, 'Buress', 'Hannibal', NULL, 'Hanniba
 INSERT INTO filth.crew_person VALUES (3255, 'Tremblay', 'Jacob', NULL, 'Jacob Tremblay', 'Actor');  -- Actor: Jacob Tremblay
 INSERT INTO filth.crew_person VALUES (3256, 'Bridgers', 'Sean', NULL, 'Sean Bridgers', 'Actor');  -- Actor: Sean Bridgers
 INSERT INTO filth.crew_person VALUES (3257, 'McCamus', 'Tom', NULL, 'Tom McCamus', 'Actor');  -- Actor: Tom McCamus
+INSERT INTO filth.crew_person VALUES (3258, 'Naderi', 'Amir', NULL, 'Amir Naderi', 'Screenwriter');  -- Screenwriter: Amir Naderi
+INSERT INTO filth.crew_person VALUES (3259, 'Bukowski', 'Bobby', NULL, 'Bobby Bukowski', 'Cinematographer');  -- Cinematographer: Bobby Bukowski
+INSERT INTO filth.crew_person VALUES (3260, 'Maguire', 'Sharon', NULL, 'Sharon Maguire', 'Director');  -- Director: Sharon Maguire
+INSERT INTO filth.crew_person VALUES (3261, 'Jones', 'Gemma', NULL, 'Gemma Jones', 'Actress');  -- Actress: Gemma Jones
+INSERT INTO filth.crew_person VALUES (3262, 'Henson', 'Elden', NULL, 'Elden Henson', 'Actor');  -- Actor: Elden Henson
+INSERT INTO filth.crew_person VALUES (3263, 'Claflin', 'Sam', NULL, 'Sam Claflin', 'Actor');  -- Actor: Sam Claflin

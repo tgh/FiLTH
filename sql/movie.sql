@@ -256,7 +256,7 @@ INSERT INTO filth.movie VALUES (255, 'Breathless', 1961, '**', 'NR', 'France', N
 INSERT INTO filth.movie VALUES (256, 'The Bride of Frankenstein', 1935, '***', 'NR', 'USA', NULL, 'tt0026138', 0, 229);
 INSERT INTO filth.movie VALUES (257, 'The Bridge on the River Kwai', 1957, '****', 'NR', 'England', NULL, 'tt0050212', 0, 826);
 INSERT INTO filth.movie VALUES (258, 'Bride Wars', 2009, '**½', 'PG', 'USA', NULL, 'tt0901476', 0, 10521);
-INSERT INTO filth.movie VALUES (259, 'Bridget Jones''s Diary', 2001, '***', 'R', 'England', NULL, 'tt0243155', 0, 634);
+INSERT INTO filth.movie VALUES (259, 'Bridget Jones''s Diary', 2001, '**½', 'R', 'England', NULL, 'tt0243155', 0, 634);
 INSERT INTO filth.movie VALUES (260, 'A Brief History of Time', 1991, '**½', 'G', 'USA', NULL, 'tt0103882', 0, 1358);
 INSERT INTO filth.movie VALUES (261, 'Bright Lights, Big City', 1988, '***', 'R', 'USA', NULL, 'tt0094799', 0, 17170);
 INSERT INTO filth.movie VALUES (262, 'Bringing Out the Dead', 1999, '***½', 'R', 'USA', NULL, 'tt0163988', 0, 8649);
@@ -3903,3 +3903,5 @@ INSERT INTO filth.movie VALUES (3904, 'Ex Machina', 2015, 'not seen', 'R', 'Engl
 INSERT INTO filth.movie VALUES (3905, 'Straight Outta Compton', 2015, 'not seen', 'R', 'USA', NULL, 'tt1398426', NULL, 277216);
 INSERT INTO filth.movie VALUES (3906, 'Captain America: Winter Soldier', 2014, '**½', 'PG-13', 'USA', NULL, 'tt1843866', 0, 100402);
 INSERT INTO filth.movie VALUES (3907, 'Daddy''s Home', 2015, '**½', 'PG-13', 'USA', NULL, 'tt1528854', 0, 274167);
+INSERT INTO filth.movie VALUES (3908, '99 Homes', 2015, '***½', 'R', 'USA', NULL, 'tt2891174', 0, 283235);
+INSERT INTO filth.movie VALUES (3909, 'The Hunger Games: Mockingjay – Part 2', 2015, '**½', 'PG-13', 'USA', NULL, 'tt1951266', 0, 131634);
