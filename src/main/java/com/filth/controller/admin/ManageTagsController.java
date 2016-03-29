@@ -57,6 +57,11 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     public Link getLinkToManageTags() {
         return new Link(URL.TAGS);
     }
+    
+    @Override
+    public Link getLinkToDeleteTag() {
+        return new Link(URL.DELETE);
+    }
 
     @Override
     public Link getLinkToDeleteTag(int id) {

@@ -100,6 +100,12 @@
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
+    
+    <#-- pass along delete url to javascript (in order to setup appropriate Delete buttons when adding/editing tags) -->
+    <script type="text/javascript">
+        var deleteUrl = '${links.getLinkToDeleteTag()}';
+    </script>
+    
 
     <@util.js "admin/manage_tags" />
     <@util.include_datatables_js />

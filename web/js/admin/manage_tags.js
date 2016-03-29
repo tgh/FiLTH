@@ -39,13 +39,22 @@ function addTagRow(json) {
     
     //add row into table
     table = $('#tagsTable').DataTable();
-    table.row.add([
+    newRow = table.row.add([
         json.tag.id,
         json.tag.name,
         parentId,
-        '',
-        ''
-    ]).draw('full-hold');
+        '<a href="javascript: editTag(' + json.tag.id + ');" data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
+        '<a href="javascript: deleteTag(\'' + deleteUrl + '?id=' + json.tag.id + '\', ' + json.tag.id + ');" class="button deleteButton">Delete</a>'
+    ]).draw('full-hold')
+      .nodes()
+      .to$();
+    
+    //add data-tag-id
+    newRow.attr('data-tag-id', json.tag.id);
+    //add classes to row
+    $(newRow.find('td')[0]).addClass('tagId');
+    $(newRow.find('td')[1]).addClass('tagName');
+    $(newRow.find('td')[2]).addClass('parentId');
 }
 
 function editButtonClickHandler(event) {
@@ -89,8 +98,8 @@ function updateTagRow(json) {
         json.tag.id,
         json.tag.name,
         parentId,
-        '',
-        ''
+        '<a href="javascript: editTag(' + json.tag.id + ');" data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
+        '<a href="javascript: deleteTag(\'' + deleteUrl + '?id=' + json.tag.id + '\', ' + json.tag.id + ');" class="button deleteButton">Delete</a>'
     ]).draw('full-hold');
 }
 
