@@ -79,3 +79,8 @@ table.dataTable tbody tr.even {
     border-radius: 10px;
     background-color: #eee;
 }
+
+/* force alertify messages up front */
+section#alertify-logs {
+    z-index: 999999999;
+}

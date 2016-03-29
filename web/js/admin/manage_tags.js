@@ -3,8 +3,10 @@ function saveTag(form, successCallback) {
     
     form.ajaxSubmit({
        success: function(json) {
-           ajaxSuccessHandler(json);
-           successCallback(json);
+           success = ajaxSuccessHandler(json);
+           if (success) {
+               successCallback(json);
+           }
        },
        error: function(data) {
            ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
@@ -16,9 +18,16 @@ function saveTag(form, successCallback) {
 }
 
 function addTag() {
-    saveTag($('#addTagForm'), addTagRow);
-    //clear modal inputs
-    $('#addTagModal input').val('');
+    //validate() returns an object if validation fails, hence the 'true !== ...'
+    if (true !== $('#addTagNameInput').parsley().validate()) {
+        alertify.error('"Name" cannot be blank.')
+    } else if (true !== $('#addTagParentInput').parsley().validate()) {
+        alertify.error('"Parent Id" must be a valid integer.')
+    } else {
+        saveTag($('#addTagForm'), addTagRow);
+        //clear modal inputs
+        $('#addTagModal input').val('');
+    }
 }
 
 function addTagRow(json) {
@@ -52,9 +61,16 @@ function editButtonClickHandler(event) {
 }
 
 function editTag() {
-    saveTag($('#editTagForm'), updateTagRow);
-    //clear modal inputs
-    $('#editTagModal input').val('');
+    //validate() returns an object if validation fails, hence the 'true !== ...'
+    if (true !== $('#editTagNameInput').parsley().validate()) {
+        alertify.error('"Name" cannot be blank.')
+    } else if (true !== $('#editTagParentInput').parsley().validate()) {
+        alertify.error('"Parent Id" must be a valid integer.')
+    } else {
+        saveTag($('#editTagForm'), updateTagRow);
+        //clear modal inputs
+        $('#editTagModal input').val('');
+    }
 }
 
 function updateTagRow(json) {
@@ -104,8 +120,10 @@ function deleteTag(deleteUrl, tagId) {
 function ajaxSuccessHandler(json) {
     if (TRUE === json[JSON_KEY_SUCCESS]) {
         alertify.success(json[JSON_KEY_MESSAGE]);
+        return true;
     } else {
         alertify.error(json[JSON_KEY_MESSAGE]);
+        return false;
     }
 }
 
@@ -133,7 +151,7 @@ function addEventHandlers() {
     $(document).on('click', '.editButton', editButtonClickHandler);
 }
 
-$(document).ready(function() {
+function initTagTable() {
     $('#tagsTable').DataTable({
         'aoColumnDefs': [
             //do not allow sorting on the columns containing the 'Edit' and 'Delete' buttons
@@ -141,5 +159,9 @@ $(document).ready(function() {
             {'bSortable': false, 'aTargets': [-2]}
         ]}
     );
+}
+
+$(document).ready(function() {
+    initTagTable();
     addEventHandlers();
 });

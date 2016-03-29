@@ -3,6 +3,7 @@
     <@util.include_datatables_css />
     <@util.css "third-party/alertify/alertify.core" />
     <@util.css "third-party/alertify/alertify.default" />
+    <@util.css "third-party/parsley/parsley" />
     
     <h1>Manage Tags</h1>
     
@@ -58,11 +59,11 @@
                 <table>
                     <tr>
                         <td class="label">Name: </td>
-                        <td><input type="text" name="name"></td>
+                        <td><input id="addTagNameInput" type="text" name="name" data-parsley-required data-parsley-errors-messages-disabled></td>
                     </tr>
                     <tr>
                         <td class="label">Parent ID (if applicable): </td>
-                        <td><input type="text" name="parent"></td>
+                        <td><input id="addTagParentInput" type="text" name="parent" data-parsley-type="integer" data-parsley-errors-messages-disabled></td>
                     </tr>
                 </table>
             </form>
@@ -84,11 +85,11 @@
                 <table>
                     <tr>
                         <td class="label">Name: </td>
-                        <td><input type="text" name="name"></td>
+                        <td><input id="editTagNameInput" type="text" name="name" data-parsley-required data-parsley-errors-messages-disabled></td>
                     </tr>
                     <tr>
                         <td class="label">Parent ID (if applicable): </td>
-                        <td><input type="text" name="parent"></td>
+                        <td><input id="editTagParentInput" type="text" name="parent" data-parsley-type="integer" data-parsley-errors-messages-disabled></td>
                     </tr>
                 </table>
             </form>
@@ -103,4 +104,5 @@
     <@util.js "admin/manage_tags" />
     <@util.include_datatables_js />
     <@util.js "third-party/alertify/alertify.min" />
+    <@util.js "third-party/parsley/parsley.min" />
 </@layout.admin>
