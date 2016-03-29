@@ -14,8 +14,8 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Parent Id</th>
-                <th></th>
-                <th></th>
+                <th class="editColumn"></th>
+                <th class="deleteColumn"></th>
             </tr>
         </thead>
         <tbody>
@@ -45,7 +45,7 @@
     </table>
     
     <#-- Add tag button-->
-    <a data-remodal-target="addTagModal" class="button buttonPrimary" title="Add tag">+</a>
+    <a data-remodal-target="addTagModal" class="button buttonPrimary">New tag</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
