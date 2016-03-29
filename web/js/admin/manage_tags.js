@@ -134,6 +134,12 @@ function addEventHandlers() {
 }
 
 $(document).ready(function() {
-    initDataTable('#tagsTable');
+    $('#tagsTable').DataTable({
+        'aoColumnDefs': [
+            //do not allow sorting on the columns containing the 'Edit' and 'Delete' buttons
+            {'bSortable': false, 'aTargets': [-1]},
+            {'bSortable': false, 'aTargets': [-2]}
+        ]}
+    );
     addEventHandlers();
 });
