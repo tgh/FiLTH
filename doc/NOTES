@@ -333,11 +333,14 @@ SETTING UP ENVIRONMENT
     - ant targets setup the required PGPASS environment variable for command-line
       database modification (migrations) and point to [app]/.pgpass which contains
       host/username/password entries for specific environment hosts  
-    - http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html  
+    - http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html
 
-NEEDS
-------
-- all entity tables need to be inserted before any relationship tables
+
+THIRD-PARTY
+------------
+- DataTables:
+    - There is a Download Builder: http://www.datatables.net/download/, which is great for getting all you want in one minified js--the base DataTables and whatever extensions you want and whatever css you want, for example.
+    - Looks like there's custom ordering: http://www.datatables.net/plug-ins/sorting/ (for star rating and mpaa rating ordering)
 
 
 IDEAS/THOUGHTS

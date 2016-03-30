@@ -6,9 +6,8 @@ package com.filth.link;
 public interface ManageOscarsLinkGenerator {
 
     public Link getLinkToManageOscars();
+    public Link getLinkToDeleteOscar();
     public Link getLinkToDeleteOscar(int id);
-    public Link getLinkToEditOscar(int id);
-    public Link getLinkToCreateOscar();
     public Link getLinkToSaveOscar();
     
 }

@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,13 @@ import com.filth.util.ModelAndViewUtil;
 @Controller
 public class ManageOscarsController extends AdminController implements ManageOscarsLinkGenerator {
     
+    private static final Logger LOGGER = LoggerFactory.getLogger(ManageOscarsController.class);
+    
     private static final String OSCARS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/oscars";
+    private static final String DELETE_SUCCESS_MESSAGE_FORMAT = "Oscar \"%s\" has been deleted.";
+    private static final String DELETE_ERROR_MESSAGE_FORMAT = "An error occurred deleting oscar \"%s\".";
+    private static final String SAVE_SUCCESS_MESSAGE_FORMAT = "Oscar \"%s\" saved.";
+    private static final String SAVE_ERROR_MESSAGE_FORMAT = "An error occurred saving oscar \"%s\".";
     
     @Resource
     private OscarService _oscarService;
@@ -30,8 +38,6 @@ public class ManageOscarsController extends AdminController implements ManageOsc
     private static final class URL {
         public static final String OSCARS = ADMIN_URL_PREFIX + "/oscars";
         public static final String DELETE = OSCARS + "/delete";
-        public static final String EDIT = OSCARS + "/edit";
-        public static final String CREATE = OSCARS + "/create";
         public static final String SAVE = OSCARS + "/save";
     }
     
@@ -52,18 +58,13 @@ public class ManageOscarsController extends AdminController implements ManageOsc
     }
 
     @Override
+    public Link getLinkToDeleteOscar() {
+        return new Link(URL.DELETE);
+    }
+
+    @Override
     public Link getLinkToDeleteOscar(int id) {
         return new Link(URL.DELETE).setParam(URLParam.ID, String.valueOf(id));
-    }
-
-    @Override
-    public Link getLinkToEditOscar(int id) {
-        return new Link(URL.EDIT).setParam(URLParam.ID, String.valueOf(id));
-    }
-
-    @Override
-    public Link getLinkToCreateOscar() {
-        return new Link(URL.CREATE);
     }
     
     @Override
@@ -81,53 +82,58 @@ public class ManageOscarsController extends AdminController implements ManageOsc
         return new ModelAndView(OSCARS_VIEW_PREFIX + "/manage_oscars", mm);
     }
     
-    @RequestMapping(value=URL.EDIT, method=RequestMethod.GET)
-    public ModelAndView editOscar(
-            @RequestParam(value=URLParam.ID) Integer id) {
-        Oscar oscar = _oscarService.getOscarById(id);
-        ModelMap mm = new ModelMap();
-        mm.put(ModelKey.OSCAR, oscar);
-        
-        return new ModelAndView(OSCARS_VIEW_PREFIX + "/edit_oscar", mm);
-    }
-    
-    @RequestMapping(value=URL.CREATE, method=RequestMethod.GET)
-    public ModelAndView createOscar() {
-        return new ModelAndView(OSCARS_VIEW_PREFIX + "/create_oscar");
-    }
-    
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveOscar(
             @RequestParam(value=URLParam.CATEGORY) String category,
             @RequestParam(value=URLParam.ID, required=false) Integer id) throws Exception {
         Oscar oscar = null;
-        if (null != id) {
-            oscar = _oscarService.getOscarById(id);
-        } else {
-            oscar = new Oscar();
-        }
         
-        oscar.setCategory(category);
-        _oscarService.saveOscar(oscar);
+        try {
+            if (null != id) {
+                oscar = _oscarService.getOscarById(id);
+            } else {
+                oscar = new Oscar();
+            }
+            
+            oscar.setCategory(category);
+            _oscarService.saveOscar(oscar);
+        } catch (Exception e) {
+            LOGGER.error("An error occurred attempting to save oscar '" + category + "'", e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, category), new ModelMap());
+        }
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.OSCAR, oscar);
         
-        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
-                OSCARS_VIEW_PREFIX + "/save_oscar_success", mm);
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, category), mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteOscar(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {
-        Oscar oscar = _oscarService.getOscarById(id);
         ModelMap mm = new ModelMap();
+        Oscar oscar = _oscarService.getOscarById(id);
+        
+        if (null == oscar) {
+            LOGGER.error("Did not find oscar with id " + id);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, id), mm);
+        }
+        
         mm.put(ModelKey.CATEGORY, oscar.getCategory());
         
-        _oscarService.deleteOscarById(id);
+        try {
+            _oscarService.deleteOscarById(id);
+        } catch (Exception e) {
+            LOGGER.error("An error occurred attempting to delete oscar '" + oscar.getCategory() + "'", e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, oscar.getCategory()), mm);
+        }
         
-        return _modelAndViewUtil.createSuccessJsonModelAndViewWithHtml(
-                OSCARS_VIEW_PREFIX + "/delete_oscar_success", mm);
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, oscar.getCategory()), mm);
     }
         
 }

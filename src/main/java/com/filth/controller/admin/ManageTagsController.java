@@ -105,9 +105,9 @@ public class ManageTagsController extends AdminController implements ManageTagsL
             tag.setName(name);
             _tagService.saveTag(tag);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save tag '" + tag.getName() + "'", e);
+            LOGGER.error("An error occurred attempting to save tag '" + name + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(SAVE_ERROR_MESSAGE_FORMAT, tag.getName()), new ModelMap());
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, name), new ModelMap());
         }
         
         ModelMap mm = new ModelMap();
@@ -120,8 +120,15 @@ public class ManageTagsController extends AdminController implements ManageTagsL
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteTag(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {
-        Tag tag = _tagService.getTagById(id);
         ModelMap mm = new ModelMap();
+        Tag tag = _tagService.getTagById(id);
+        
+        if (null == tag) {
+            LOGGER.error("Did not find tag with id " + id);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, id), mm);
+        }
+        
         mm.put(ModelKey.NAME, tag.getName());
         
         try {
