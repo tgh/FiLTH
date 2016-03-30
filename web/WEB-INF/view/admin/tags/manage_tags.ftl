@@ -34,7 +34,7 @@
                         <td class="parentId"></td>
                     </#if>
                     <td>
-                        <a href="javascript: editTag(${tag.id})" data-remodal-target="editTagModal" data-tag-id="${tag.id}" class="button editButton">Edit</a>
+                        <a data-remodal-target="editTagModal" data-tag-id="${tag.id}" class="button editButton">Edit</a>
                     </td>
                     <td>
                         <a href="javascript: deleteTag('${links.getLinkToDeleteTag(tag.id)}', ${tag.id});" class="button deleteButton">Delete</a>
@@ -45,7 +45,7 @@
     </table>
     
     <#-- Add tag button-->
-    <a data-remodal-target="addTagModal" class="button buttonPrimary">New tag</a>
+    <a id="addTagButton" data-remodal-target="addTagModal" class="button buttonPrimary">Add tag</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>

@@ -17,12 +17,20 @@ function saveTag(form, successCallback) {
     $('.modalCancelButton').trigger('click');
 }
 
+function addTagButtonClickHandler() {
+    //clear the add tag form validation UI
+    $('#addTagForm').parsley().reset();
+}
+
 function addTag() {
-    //validate() returns an object if validation fails, hence the 'true !== ...'
-    if (true !== $('#addTagNameInput').parsley().validate()) {
-        alertify.error('"Name" cannot be blank.')
-    } else if (true !== $('#addTagParentInput').parsley().validate()) {
-        alertify.error('"Parent Id" must be a valid integer.')
+    if (false == $('#addTagForm').parsley().isValid()) {
+        //validate() returns an object if validation fails, hence the 'true !== ...'
+        if (true !== $('#addTagNameInput').parsley().validate()) {
+            alertify.error('"Name" cannot be blank.')
+        }
+        if (true !== $('#addTagParentInput').parsley().validate()) {
+            alertify.error('"Parent Id" must be a valid integer.')
+        }
     } else {
         saveTag($('#addTagForm'), addTagRow);
         //clear modal inputs
@@ -43,7 +51,7 @@ function addTagRow(json) {
         json.tag.id,
         json.tag.name,
         parentId,
-        '<a href="javascript: editTag(' + json.tag.id + ');" data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
+        '<a data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
         '<a href="javascript: deleteTag(\'' + deleteUrl + '?id=' + json.tag.id + '\', ' + json.tag.id + ');" class="button deleteButton">Delete</a>'
     ]).draw('full-hold')
       .nodes()
@@ -60,6 +68,9 @@ function addTagRow(json) {
 function editButtonClickHandler(event) {
     tagId = event.target.dataset.tagId;
     
+    //clear form input validation UI
+    $('#editTagForm').parsley().reset();
+    
     //get values from tag row
     tagName = $('tr[data-tag-id="' + tagId + '"] td.tagName').text();
     tagParentId = $('tr[data-tag-id="' + tagId + '"] td.parentId').text();
@@ -70,11 +81,14 @@ function editButtonClickHandler(event) {
 }
 
 function editTag() {
-    //validate() returns an object if validation fails, hence the 'true !== ...'
-    if (true !== $('#editTagNameInput').parsley().validate()) {
-        alertify.error('"Name" cannot be blank.')
-    } else if (true !== $('#editTagParentInput').parsley().validate()) {
-        alertify.error('"Parent Id" must be a valid integer.')
+    if (false == $('#editTagForm').parsley().isValid()) {
+        //validate() returns an object if validation fails, hence the 'true !== ...'
+        if (true !== $('#editTagNameInput').parsley().validate()) {
+            alertify.error('"Name" cannot be blank.')
+        }
+        if (true !== $('#editTagParentInput').parsley().validate()) {
+            alertify.error('"Parent Id" must be a valid integer.')
+        }
     } else {
         saveTag($('#editTagForm'), updateTagRow);
         //clear modal inputs
@@ -98,7 +112,7 @@ function updateTagRow(json) {
         json.tag.id,
         json.tag.name,
         parentId,
-        '<a href="javascript: editTag(' + json.tag.id + ');" data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
+        '<a data-remodal-target="editTagModal" data-tag-id="' + json.tag.id + '" class="button editButton">Edit</a>',
         '<a href="javascript: deleteTag(\'' + deleteUrl + '?id=' + json.tag.id + '\', ' + json.tag.id + ');" class="button deleteButton">Delete</a>'
     ]).draw('full-hold');
 }
@@ -158,6 +172,7 @@ function clearStackTraceContainer() {
 
 function addEventHandlers() {
     $(document).on('click', '.editButton', editButtonClickHandler);
+    $('#addTagButton').click(addTagButtonClickHandler);
 }
 
 function initTagTable() {
