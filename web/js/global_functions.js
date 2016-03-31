@@ -10,6 +10,10 @@ function initDataTable(tableId) {
     $(tableId).DataTable();
 }
 
+String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 $(document).ready(function() {
     $(document).on('opening', '.remodal[data-remodal-id="movieModal"]', function () {
         movieId = $('#bgImageMovie').attr('data-movie-id');

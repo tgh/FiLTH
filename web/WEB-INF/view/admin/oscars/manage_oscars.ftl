@@ -8,7 +8,7 @@
     <h1>Manage Oscars</h1>
     
     <#-- Oscars table -->
-    <table id="oscarsTable">
+    <table id="oscarTable">
         <thead>
             <tr>
                 <th>Id</th>
@@ -31,7 +31,7 @@
                         <a data-remodal-target="editOscarModal" data-oscar-id="${oscar.id}" class="button editButton">Edit</a>
                     </td>
                     <td>
-                        <a href="javascript: deleteOscar('${links.getLinkToDeleteOscar(oscar.id)}', ${oscar.id});" class="button deleteButton">Delete</a>
+                        <a href="javascript: oscarManager.deleteEntity('${links.getLinkToDeleteOscar(oscar.id)}', ${oscar.id});" class="button deleteButton">Delete</a>
                     </td>
                 </tr>
             </#foreach>
@@ -39,7 +39,7 @@
     </table>
     
     <#-- Add oscar button-->
-    <a id="addOscarButton" data-remodal-target="addOscarModal" class="button buttonPrimary">Add Oscar</a>
+    <a data-remodal-target="addOscarModal" class="addButton button buttonPrimary">Add Oscar</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
@@ -60,7 +60,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: addOscar();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: oscarManager.addOscar();" class="button buttonPrimary modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
@@ -82,7 +82,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: editOscar();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: oscarManager.editOscar();" class="button buttonPrimary modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
@@ -93,7 +93,8 @@
     </script>
     
 
-    <@util.js "admin/manage_oscars" />
+    <@util.js "admin/EntityManager" />
+    <@util.js "admin/OscarManager" />
     <@util.include_datatables_js />
     <@util.js "third-party/alertify/alertify.min" />
     <@util.js "third-party/parsley/parsley.min" />

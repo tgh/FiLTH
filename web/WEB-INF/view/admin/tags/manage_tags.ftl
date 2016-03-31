@@ -8,7 +8,7 @@
     <h1>Manage Tags</h1>
     
     <#-- Tag table -->
-    <table id="tagsTable">
+    <table id="tagTable">
         <thead>
             <tr>
                 <th>Id</th>
@@ -37,7 +37,7 @@
                         <a data-remodal-target="editTagModal" data-tag-id="${tag.id}" class="button editButton">Edit</a>
                     </td>
                     <td>
-                        <a href="javascript: deleteTag('${links.getLinkToDeleteTag(tag.id)}', ${tag.id});" class="button deleteButton">Delete</a>
+                        <a href="javascript: tagManager.deleteEntity('${links.getLinkToDeleteTag(tag.id)}', ${tag.id});" class="button deleteButton">Delete</a>
                     </td>
                 </tr>
             </#foreach>
@@ -45,7 +45,7 @@
     </table>
     
     <#-- Add tag button-->
-    <a id="addTagButton" data-remodal-target="addTagModal" class="button buttonPrimary">Add tag</a>
+    <a data-remodal-target="addTagModal" class="addButton button buttonPrimary">Add tag</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
@@ -70,7 +70,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: addTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: tagManager.addTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
@@ -96,7 +96,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: editTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: tagManager.editTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
@@ -107,7 +107,8 @@
     </script>
     
 
-    <@util.js "admin/manage_tags" />
+    <@util.js "admin/EntityManager" />
+    <@util.js "admin/TagManager" />
     <@util.include_datatables_js />
     <@util.js "third-party/alertify/alertify.min" />
     <@util.js "third-party/parsley/parsley.min" />
