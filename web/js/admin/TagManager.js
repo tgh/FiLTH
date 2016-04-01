@@ -3,6 +3,17 @@
  */
 function TagManager() {
     EntityManager.call(this, 'tag');
+    
+    //add tag-specific dom keys
+    this.DOM_KEYS['addTagNameInput'] = '#addTagNameInput';
+    this.DOM_KEYS['addTagParentInput'] = '#addTagParentInput';
+    this.DOM_KEYS['editTagIdInput'] = '#editTagIdInput';
+    this.DOM_KEYS['editTagNameInput'] = '#editTagNameInput';
+    this.DOM_KEYS['editTagParentInput'] = '#editTagParentInput';
+    
+    //add tag-specific messages
+    this.MESSAGES['noName'] = '"Name" cannot be blank.';
+    this.MESSAGES['parentNotInteger'] = '"Parent Id" must be a valid integer.';
 }
 TagManager.prototype = Object.create(EntityManager.prototype);
 TagManager.prototype.constructor = TagManager;
@@ -13,16 +24,16 @@ TagManager.prototype.constructor = TagManager;
 TagManager.prototype.addTag = function() {
     if (false == $(this.DOM_KEYS.addForm).parsley().isValid()) {
         //validate() returns an object if validation fails, hence the 'true !== ...'
-        if (true !== $('#addTagNameInput').parsley().validate()) {
-            alertify.error('"Name" cannot be blank.')
+        if (true !== $(this.DOM_KEYS.addTagNameInput).parsley().validate()) {
+            alertify.error(this.MESSAGES.noName)
         }
-        if (true !== $('#addTagParentInput').parsley().validate()) {
-            alertify.error('"Parent Id" must be a valid integer.')
+        if (true !== $(this.DOM_KEYS.addTagParentInput).parsley().validate()) {
+            alertify.error(this.MESSAGES.parentNotInteger)
         }
     } else {
-        this.saveEntity($('#addTagForm'), this.addTagRow);
+        this.saveEntity($(this.DOM_KEYS.addForm), this.addTagRow.bind(this));
         //clear modal inputs
-        $('#addTagModal input').val('');
+        $(this.DOM_KEYS.addModalInputs).val('');
     }
 }
 
@@ -34,7 +45,7 @@ TagManager.prototype.addTagRow = function(json) {
     }
     
     //add row into table
-    table = $('#tagTable').DataTable();
+    table = $(this.DOM_KEYS.table).DataTable();
     newRow = table.row.add([
         json.tag.id,
         json.tag.name,
@@ -57,30 +68,30 @@ TagManager.prototype.editButtonClickHandler = function(event) {
     tagId = event.target.dataset.tagId;
     
     //clear form input validation UI
-    $('#editTagForm').parsley().reset();
+    $(this.DOM_KEYS.editForm).parsley().reset();
     
     //get values from tag row
     tagName = $('tr[data-tag-id="' + tagId + '"] td.tagName').text();
     tagParentId = $('tr[data-tag-id="' + tagId + '"] td.parentId').text();
     //set input values
-    $('#editTagModal input[name="id"]').val(tagId);
-    $('#editTagModal input[name="name"]').val(tagName);
-    $('#editTagModal input[name="parent"]').val(tagParentId);
+    $(this.DOM_KEYS.editTagIdInput).val(tagId);
+    $(this.DOM_KEYS.editTagNameInput).val(tagName);
+    $(this.DOM_KEYS.editTagParentInput).val(tagParentId);
 }
 
 TagManager.prototype.editTag = function() {
-    if (false == $('#editTagForm').parsley().isValid()) {
+    if (false == $(this.DOM_KEYS.editForm).parsley().isValid()) {
         //validate() returns an object if validation fails, hence the 'true !== ...'
-        if (true !== $('#editTagNameInput').parsley().validate()) {
-            alertify.error('"Name" cannot be blank.')
+        if (true !== $(this.DOM_KEYS.editTagNameInput).parsley().validate()) {
+            alertify.error(this.MESSAGES.noName)
         }
-        if (true !== $('#editTagParentInput').parsley().validate()) {
-            alertify.error('"Parent Id" must be a valid integer.')
+        if (true !== $(this.DOM_KEYS.editTagParentInput).parsley().validate()) {
+            alertify.error(this.MESSAGES.parentNotInteger)
         }
     } else {
-        this.saveEntity($('#editTagForm'), this.updateTagRow);
+        this.saveEntity($(this.DOM_KEYS.editForm), this.updateTagRow.bind(this));
         //clear modal inputs
-        $('#editTagModal input').val('');
+        $(this.DOM_KEYS.editModalInputs).val('');
     }
 }
 
@@ -95,7 +106,7 @@ TagManager.prototype.updateTagRow = function(json) {
     row = $('tr[data-tag-id="' + json.tag.id + '"]');
         
     //update row in table
-    table = $('#tagTable').DataTable();
+    table = $(this.DOM_KEYS.table).DataTable();
     table.row(row).data([
         json.tag.id,
         json.tag.name,

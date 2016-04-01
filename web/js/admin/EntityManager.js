@@ -1,12 +1,22 @@
 EntityManager = function(entityName) {
     this.entityName = entityName;
+    
     this.DOM_KEYS = {
         table: '#' + entityName + 'Table',
         addForm: '#add' + entityName.capitalizeFirstLetter() + 'Form',
+        editForm: '#edit' + entityName.capitalizeFirstLetter() + 'Form',
         stackTraceContainer: '#stackTraceContainer',
         editButton: '.editButton',
-        addButton: '.addButton'
+        addButton: '.addButton',
+        modalCancelButton: '.modalCancelButton',
+        addModalInputs: '#add' + entityName.capitalizeFirstLetter() + 'Modal input',
+        editModalInputs: '#edit' + entityName.capitalizeFirstLetter() + 'Modal input'
     };
+    
+    this.MESSAGES = {
+        saveError: 'Sorry, a problem occurred during save and no info was given.',
+        deleteError: 'Sorry, a problem occurred during delete and no info was given.'
+    }
     
     this.initTable(this.DOM_KEYS.table);
     this.addEventHandlers();
@@ -24,7 +34,7 @@ EntityManager.prototype.initTable = function(table) {
 
 EntityManager.prototype.addEventHandlers = function() {
     //(these handler functions are defined in objects extending from EntityManager)
-    $(document).on('click', this.DOM_KEYS.editButton, this.editButtonClickHandler);
+    $(document).on('click', this.DOM_KEYS.editButton, this.editButtonClickHandler.bind(this));
     $(this.DOM_KEYS.addButton).click(this.addButtonClickHandler.bind(this));
 }
 
@@ -75,12 +85,12 @@ EntityManager.prototype.saveEntity = function(form, successCallback) {
            }
        },
        error: function(data) {
-           self.ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
+           self.ajaxErrorHandler(data, self.MESSAGES.saveError);
        }
     });
     
     //close the modal
-    $('.modalCancelButton').trigger('click');
+    $(this.DOM_KEYS.modalCancelButton).trigger('click');
 };
 
 EntityManager.prototype.deleteEntity = function(deleteUrl, entityId) {
@@ -102,7 +112,7 @@ EntityManager.prototype.deleteEntity = function(deleteUrl, entityId) {
             }
         },
         error: function(data) {
-            self.ajaxErrorHandler(data, 'Sorry, a problem occurred during delete and no info was given.');
+            self.ajaxErrorHandler(data, self.MESSAGES.deleteError);
         }
     })
 }

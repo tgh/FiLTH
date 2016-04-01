@@ -81,7 +81,7 @@
         
         <div class="modalInputContainer">
             <form id="editTagForm" action="${links.getLinkToSaveTag()}" method="POST">
-                <input type="hidden" name="id">
+                <input id="editTagIdInput" type="hidden" name="id">
                 <table>
                     <tr>
                         <td class="label">Name: </td>

@@ -71,7 +71,7 @@
         
         <div class="modalInputContainer">
             <form id="editOscarForm" action="${links.getLinkToSaveOscar()}" method="POST">
-                <input type="hidden" name="id">
+                <input id="editOscarIdInput" type="hidden" name="id">
                 <table>
                     <tr>
                         <td class="label">Category: </td>
