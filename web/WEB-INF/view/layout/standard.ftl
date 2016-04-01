@@ -4,6 +4,7 @@
         <head>
             <title>${pageTitle}</title>
             
+            <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' rel='stylesheet' type='text/css'>
             <link rel="shortcut icon" href="${rc.contextPath}/favicon.ico" type="image/x-icon" />
             
             <@util.css "standard" />
