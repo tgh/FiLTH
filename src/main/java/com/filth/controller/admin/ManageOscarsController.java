@@ -20,15 +20,12 @@ import com.filth.service.OscarService;
 import com.filth.util.ModelAndViewUtil;
 
 @Controller
-public class ManageOscarsController extends AdminController implements ManageOscarsLinkGenerator {
+public class ManageOscarsController extends ManageEntityController implements ManageOscarsLinkGenerator {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageOscarsController.class);
     
+    private static final String ENTITY_NAME = "Oscar";
     private static final String OSCARS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/oscars";
-    private static final String DELETE_SUCCESS_MESSAGE_FORMAT = "Oscar \"%s\" has been deleted.";
-    private static final String DELETE_ERROR_MESSAGE_FORMAT = "An error occurred deleting oscar \"%s\".";
-    private static final String SAVE_SUCCESS_MESSAGE_FORMAT = "Oscar \"%s\" saved.";
-    private static final String SAVE_ERROR_MESSAGE_FORMAT = "An error occurred saving oscar \"%s\".";
     
     @Resource
     private OscarService _oscarService;
@@ -100,14 +97,14 @@ public class ManageOscarsController extends AdminController implements ManageOsc
         } catch (Exception e) {
             LOGGER.error("An error occurred attempting to save oscar '" + category + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(SAVE_ERROR_MESSAGE_FORMAT, category), new ModelMap());
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, category), new ModelMap());
         }
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.OSCAR, oscar);
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
-                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, category), mm);
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, category), mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
@@ -119,7 +116,7 @@ public class ManageOscarsController extends AdminController implements ManageOsc
         if (null == oscar) {
             LOGGER.error("Did not find oscar with id " + id);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(DELETE_ERROR_MESSAGE_FORMAT, id), mm);
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
         
         mm.put(ModelKey.CATEGORY, oscar.getCategory());
@@ -129,11 +126,11 @@ public class ManageOscarsController extends AdminController implements ManageOsc
         } catch (Exception e) {
             LOGGER.error("An error occurred attempting to delete oscar '" + oscar.getCategory() + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(DELETE_ERROR_MESSAGE_FORMAT, oscar.getCategory()), mm);
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), mm);
         }
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
-                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, oscar.getCategory()), mm);
+                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), mm);
     }
         
 }

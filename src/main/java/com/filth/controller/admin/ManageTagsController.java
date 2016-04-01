@@ -20,15 +20,12 @@ import com.filth.service.TagService;
 import com.filth.util.ModelAndViewUtil;
 
 @Controller
-public class ManageTagsController extends AdminController implements ManageTagsLinkGenerator {
+public class ManageTagsController extends ManageEntityController implements ManageTagsLinkGenerator {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageTagsController.class);
     
+    private static final String ENTITY_NAME = "Tag";
     private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
-    private static final String DELETE_SUCCESS_MESSAGE_FORMAT = "Tag \"%s\" has been deleted.";
-    private static final String DELETE_ERROR_MESSAGE_FORMAT = "An error occurred deleting tag \"%s\".";
-    private static final String SAVE_SUCCESS_MESSAGE_FORMAT = "Tag \"%s\" saved.";
-    private static final String SAVE_ERROR_MESSAGE_FORMAT = "An error occurred saving tag \"%s\".";
     
     @Resource
     private TagService _tagService;
@@ -107,14 +104,14 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         } catch (Exception e) {
             LOGGER.error("An error occurred attempting to save tag '" + name + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(SAVE_ERROR_MESSAGE_FORMAT, name), new ModelMap());
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, name), new ModelMap());
         }
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.TAG, tag);
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
-                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, name), mm);
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, name), mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
@@ -126,7 +123,7 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         if (null == tag) {
             LOGGER.error("Did not find tag with id " + id);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(DELETE_ERROR_MESSAGE_FORMAT, id), mm);
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
         
         mm.put(ModelKey.NAME, tag.getName());
@@ -136,11 +133,11 @@ public class ManageTagsController extends AdminController implements ManageTagsL
         } catch (Exception e) {
             LOGGER.error("An error occurred attempting to delete tag '" + tag.getName() + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(DELETE_ERROR_MESSAGE_FORMAT, tag.getName()), mm);
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, tag.getName()), mm);
         }
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
-                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, tag.getName()), mm);
+                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, tag.getName()), mm);
     }
 
 }
