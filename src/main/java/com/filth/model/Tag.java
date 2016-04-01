@@ -2,7 +2,6 @@ package com.filth.model;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -29,7 +28,7 @@ public class Tag {
     @Column(name="tag_name")
     private String _name;
     
-    @ManyToOne(cascade={CascadeType.ALL})
+    @ManyToOne()
     @JoinColumn(name="parent_tid")
     private Tag _parent;
     
