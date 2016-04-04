@@ -14,25 +14,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.filth.link.Link;
-import com.filth.link.ManageOscarsLinkGenerator;
-import com.filth.model.Oscar;
-import com.filth.service.OscarService;
+import com.filth.link.ManageTylersLinkGenerator;
+import com.filth.model.Tyler;
+import com.filth.service.TylerService;
 import com.filth.util.ModelAndViewUtil;
 
 @Controller
-public class ManageOscarsController extends ManageEntityController implements ManageOscarsLinkGenerator {
+public class ManageTylersController extends ManageEntityController implements ManageTylersLinkGenerator {
     
-    private static final Logger LOGGER = LoggerFactory.getLogger(ManageOscarsController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ManageTylersController.class);
     
-    private static final String ENTITY_NAME = "Oscar";
+    private static final String ENTITY_NAME = "Tyler";
     
     @Resource
-    private OscarService _oscarService;
+    private TylerService _tylerService;
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
     
     private static final class URL {
-        public static final String OSCARS = ADMIN_URL_PREFIX + "/oscars";
+        public static final String OSCARS = ADMIN_URL_PREFIX + "/tylers";
         public static final String DELETE = OSCARS + "/delete";
         public static final String SAVE = OSCARS + "/save";
     }
@@ -43,90 +43,90 @@ public class ManageOscarsController extends ManageEntityController implements Ma
     }
     
     private static final class ModelKey {
-        public static final String OSCARS = "oscars";
-        public static final String OSCAR = "oscar";
+        public static final String OSCARS = "tylers";
+        public static final String OSCAR = "tyler";
     }
 
     @Override
-    public Link getLinkToManageOscars() {
+    public Link getLinkToManageTylers() {
         return new Link(URL.OSCARS);
     }
 
     @Override
-    public Link getLinkToDeleteOscar() {
+    public Link getLinkToDeleteTyler() {
         return new Link(URL.DELETE);
     }
 
     @Override
-    public Link getLinkToDeleteOscar(int id) {
+    public Link getLinkToDeleteTyler(int id) {
         return new Link(URL.DELETE).setParam(URLParam.ID, String.valueOf(id));
     }
     
     @Override
-    public Link getLinkToSaveOscar() {
+    public Link getLinkToSaveTyler() {
         return new Link(URL.SAVE);
     }
 
     @RequestMapping(value=URL.OSCARS, method=RequestMethod.GET)
-    public ModelAndView manageOscars() {
-        List<Oscar> oscars = _oscarService.getAllOscars();
+    public ModelAndView manageTylers() {
+        List<Tyler> tylers = _tylerService.getAllTylers();
         
         ModelMap mm = new ModelMap();
-        mm.put(ModelKey.OSCARS, oscars);
+        mm.put(ModelKey.OSCARS, tylers);
 
-        return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_oscars", mm);
+        return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_tylers", mm);
     }
     
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
-    public ModelAndView saveOscar(
+    public ModelAndView saveTyler(
             @RequestParam(value=URLParam.CATEGORY) String category,
             @RequestParam(value=URLParam.ID, required=false) Integer id) throws Exception {
-        Oscar oscar = null;
+        Tyler tyler = null;
         
         try {
             if (null != id) {
-                oscar = _oscarService.getOscarById(id);
+                tyler = _tylerService.getTylerById(id);
             } else {
-                oscar = new Oscar();
+                tyler = new Tyler();
             }
             
-            oscar.setCategory(category);
-            _oscarService.saveOscar(oscar);
+            tyler.setCategory(category);
+            _tylerService.saveTyler(tyler);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save oscar '" + category + "'", e);
+            LOGGER.error("An error occurred attempting to save tyler '" + category + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, category), new ModelMap());
         }
         
         ModelMap mm = new ModelMap();
-        mm.put(ModelKey.OSCAR, oscar);
+        mm.put(ModelKey.OSCAR, tyler);
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, category), mm);
     }
     
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
-    public ModelAndView deleteOscar(
+    public ModelAndView deleteTyler(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {
         ModelMap mm = new ModelMap();
-        Oscar oscar = _oscarService.getOscarById(id);
+        Tyler tyler = _tylerService.getTylerById(id);
         
-        if (null == oscar) {
-            LOGGER.error("Did not find oscar with id " + id);
+        if (null == tyler) {
+            LOGGER.error("Did not find tyler with id " + id);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
         
         try {
-            _oscarService.deleteOscarById(id);
+            _tylerService.deleteTylerById(id);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to delete oscar '" + oscar.getCategory() + "'", e);
+            LOGGER.error("An error occurred attempting to delete tyler '" + tyler.getCategory() + "'", e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
-                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), mm);
+                    String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, tyler.getCategory()), mm);
         }
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
-                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), mm);
+                String.format(DELETE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, tyler.getCategory()), mm);
     }
         
 }

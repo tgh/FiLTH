@@ -8,5 +8,6 @@ public interface LinkGenerator
     extends
         ManageOscarsLinkGenerator,
         ManageTagsLinkGenerator,
-        ManageListsLinkGenerator
+        ManageListsLinkGenerator,
+        ManageTylersLinkGenerator
 { }
