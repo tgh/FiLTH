@@ -45,7 +45,7 @@
     </table>
     
     <#-- Add tag button-->
-    <a data-remodal-target="addTagModal" class="addButton button buttonPrimary">Add tag</a>
+    <a data-remodal-target="addTagModal" class="addButton button">Add tag</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>

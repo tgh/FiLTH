@@ -39,7 +39,7 @@
     </table>
     
     <#-- Add oscar button-->
-    <a data-remodal-target="addOscarModal" class="addButton button buttonPrimary">Add Oscar</a>
+    <a data-remodal-target="addOscarModal" class="addButton button">Add Oscar</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
