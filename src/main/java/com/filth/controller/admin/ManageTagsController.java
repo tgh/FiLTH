@@ -25,7 +25,6 @@ public class ManageTagsController extends ManageEntityController implements Mana
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageTagsController.class);
     
     private static final String ENTITY_NAME = "Tag";
-    private static final String TAGS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/tags";
     
     @Resource
     private TagService _tagService;
@@ -77,7 +76,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.TAGS, tags);
 
-        return new ModelAndView(TAGS_VIEW_PREFIX + "/manage_tags", mm);
+        return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_tags", mm);
     }
     
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
@@ -125,8 +124,6 @@ public class ManageTagsController extends ManageEntityController implements Mana
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
-        
-        mm.put(ModelKey.NAME, tag.getName());
         
         try {
             _tagService.deleteTagById(id);

@@ -25,7 +25,6 @@ public class ManageOscarsController extends ManageEntityController implements Ma
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageOscarsController.class);
     
     private static final String ENTITY_NAME = "Oscar";
-    private static final String OSCARS_VIEW_PREFIX = ADMIN_VIEW_PREFIX + "/oscars";
     
     @Resource
     private OscarService _oscarService;
@@ -76,7 +75,7 @@ public class ManageOscarsController extends ManageEntityController implements Ma
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.OSCARS, oscars);
 
-        return new ModelAndView(OSCARS_VIEW_PREFIX + "/manage_oscars", mm);
+        return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_oscars", mm);
     }
     
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
@@ -118,8 +117,6 @@ public class ManageOscarsController extends ManageEntityController implements Ma
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
-        
-        mm.put(ModelKey.CATEGORY, oscar.getCategory());
         
         try {
             _oscarService.deleteOscarById(id);
