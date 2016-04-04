@@ -54,11 +54,13 @@ body {
 }
 
 .button.greenButton,
-.button.addButton {
+.button.addButton,
+.button.modalSaveButton {
     background-color: #9c9;
 }
 .button.greenButton:hover,
-.button.addButton:hover {
+.button.addButton:hover,
+.button.modalSaveButton:hover {
     background-color: #beb;
 }
 
