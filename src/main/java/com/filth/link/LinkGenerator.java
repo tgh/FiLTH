@@ -9,5 +9,6 @@ public interface LinkGenerator
         ManageOscarsLinkGenerator,
         ManageTagsLinkGenerator,
         ManageListsLinkGenerator,
-        ManageTylersLinkGenerator
+        ManageTylersLinkGenerator,
+        ManageCrewPersonsLinkGenerator
 { }

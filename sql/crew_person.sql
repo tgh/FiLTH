@@ -2626,7 +2626,7 @@ INSERT INTO filth.crew_person VALUES (2626, 'Edwards', 'A.J.', NULL, 'A.J. Edwar
 INSERT INTO filth.crew_person VALUES (2627, 'Kruger', 'Diane', NULL, 'Diane Kruger', 'Actress');  -- Actress: Diane Kruger
 INSERT INTO filth.crew_person VALUES (2628, 'Denney', 'Braydon', NULL, 'Braydon Denney', 'Actor');  -- Actor: Braydon Denney
 INSERT INTO filth.crew_person VALUES (2629, 'Patinkin', 'Mandy', NULL, 'Mandy Patinkin', 'Actor');  -- Actor: Mandy Patinkin
-INSERT INTO filth.crew_person VALUES (2630, 'James', NULL, NULL, 'James Van Der Beek', 'Actor');  -- Actor: James Van Der Beek
+INSERT INTO filth.crew_person VALUES (2630, 'Van Der Beek', 'James', NULL, 'James Van Der Beek', 'Actor');  -- Actor: James Van Der Beek
 INSERT INTO filth.crew_person VALUES (2631, 'Liu', 'Lucy', NULL, 'Lucy Liu', 'Actress');  -- Actress: Lucy Liu
 INSERT INTO filth.crew_person VALUES (2632, 'Bridges', 'Beau', NULL, 'Beau Bridges', 'Actor');  -- Actor: Beau Bridges
 INSERT INTO filth.crew_person VALUES (2633, 'Platt', 'Oliver', NULL, 'Oliver Platt', 'Actor');  -- Actor: Oliver Platt

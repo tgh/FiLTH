@@ -70,7 +70,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: tagManager.addTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: tagManager.addTag();" class="button modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
@@ -96,7 +96,7 @@
         </div>
         
         <div class="modalButtons">
-            <span class="modalButtonContainer"><a href="javascript: tagManager.editTag();" class="button buttonPrimary modalSaveButton">Save</a></span>
+            <span class="modalButtonContainer"><a href="javascript: tagManager.editTag();" class="button modalSaveButton">Save</a></span>
             <span class="modalButtonContainer"><a data-remodal-action="cancel" class="button modalCancelButton">Cancel</a></span>
         </div>
     </div>
