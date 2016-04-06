@@ -106,7 +106,9 @@ rating text NOT NULL);
 -- "R" (Restricted)
 -- "X" (no one under 17 admitted [prior to 1990])
 -- "NC-17" (no one under 17 admitted [after 1990 when X renamed to NC-17])
+CREATE SEQUENCE filth.mpaa_mid_seq;
 CREATE TABLE filth.mpaa (
+mid smallint DEFAULT nextval('filth.mpaa_mid_seq') NOT NULL,
 rating text NOT NULL);
 
 
@@ -237,7 +239,7 @@ ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_pkey PRIMARY KEY(base_mid, linked_mid);
 ALTER TABLE filth.movie_link_type ADD CONSTRAINT movie_link_type_pkey PRIMARY KEY(link_type);
 ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(rating);
-ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(rating);
+ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(country_name);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
@@ -256,8 +258,9 @@ ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(
 -- Unique Constraints --
 -- ---------------------
 
-ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_constraint UNIQUE(title, year);
-ALTER TABLE filth.tag ADD CONSTRAINT tag_unique_constraint UNIQUE(tag_name);
+ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_unique_constraint UNIQUE(title, year);
+ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_rating_unique_constraint UNIQUE(rating);
+ALTER TABLE filth.tag ADD CONSTRAINT tag_name_unique_constraint UNIQUE(tag_name);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
 

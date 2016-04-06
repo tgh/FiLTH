@@ -100,6 +100,7 @@ if [ $# -gt 0 ]
     update_sequence "oscar"
     update_sequence "tag"
     update_sequence "tyler"
+    update_sequence "mpaa"
 
     echo "Done."
 fi

@@ -50,45 +50,45 @@ if [ $# -gt 0 ]
     for i in $@
     do
       clear_db_table $1
-  ### populate_db_table $1
+      populate_db_table $1
     done
   #drop and create the entire database
   else
-### echo "Dropping existing filth db..."
-### sleep 0.5
-### sudo -u postgres dropdb --if-exists filth
+    echo "Dropping existing filth db..."
+    sleep 0.5
+    sudo -u postgres dropdb --if-exists filth
 
-### echo "Creating database filth..."
-### sleep 0.5
-### sudo -u postgres createdb --owner=filth_admin filth
+    echo "Creating database filth..."
+    sleep 0.5
+    sudo -u postgres createdb --owner=filth_admin filth
 
-### echo "Creating schema..."
-### sleep 0.5
-### psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$LOG_FILE
+    echo "Creating schema..."
+    sleep 0.5
+    psql -U filth_admin -d filth -f $FILTH_SQL_PATH/init_pg_database.sql > /dev/null 2>>$LOG_FILE
 
 
     #populate integrity tables
-### populate_db_table "country"
-### populate_db_table "movie_link_type"
-### populate_db_table "mpaa"
-### populate_db_table "position"
-### populate_db_table "star_rating"
+    populate_db_table "country"
+    populate_db_table "movie_link_type"
+    populate_db_table "mpaa"
+    populate_db_table "position"
+    populate_db_table "star_rating"
 
     #populate entity tables
-### populate_db_table "crew_person"
-### populate_db_table "list"
-### populate_db_table "movie"
-### populate_db_table "oscar"
-### populate_db_table "tag"
-### populate_db_table "tyler"
+    populate_db_table "crew_person"
+    populate_db_table "list"
+    populate_db_table "movie"
+    populate_db_table "oscar"
+    populate_db_table "tag"
+    populate_db_table "tyler"
 
     #populate relationship tables
-### populate_db_table "list_contains"
-### populate_db_table "movie_link"
-### populate_db_table "oscar_given_to"
-### populate_db_table "tag_given_to"
-### populate_db_table "tyler_given_to"
-### populate_db_table "worked_on"
+    populate_db_table "list_contains"
+    populate_db_table "movie_link"
+    populate_db_table "oscar_given_to"
+    populate_db_table "tag_given_to"
+    populate_db_table "tyler_given_to"
+    populate_db_table "worked_on"
 
     #update sequences
     update_sequence "crew_person"
@@ -97,8 +97,9 @@ if [ $# -gt 0 ]
     update_sequence "oscar"
     update_sequence "tag"
     update_sequence "tyler"
+    update_sequence "mpaa"
 
-### echo "Creating temp/previous_movie_ratings.txt..."
-### sleep 0.5
-### antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $FILTH_TEMP_PATH/previous_movie_ratings.txt
+    echo "Creating temp/previous_movie_ratings.txt..."
+    sleep 0.5
+    antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $FILTH_TEMP_PATH/previous_movie_ratings.txt
 fi

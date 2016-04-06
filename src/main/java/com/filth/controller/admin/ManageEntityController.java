@@ -10,4 +10,5 @@ public abstract class ManageEntityController extends AdminController {
     protected static final String SAVE_SUCCESS_MESSAGE_FORMAT = "%s \"%s\" saved.";
     /** An error occurred saving [entity] "[entity name or id]". */
     protected static final String SAVE_ERROR_MESSAGE_FORMAT = "An error occurred saving %s \"%s\".";
+    
 }

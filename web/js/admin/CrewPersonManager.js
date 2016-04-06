@@ -29,7 +29,7 @@ CrewPersonManager.prototype.constructor = CrewPersonManager;
 CrewPersonManager.prototype.initTable = function(table) {
     $(table).DataTable({
         'aoColumnDefs': [
-            //do not allow sorting on the columns containing the 'Edit' button
+            //do not allow sorting on the column containing the 'Edit' button
             {'bSortable': false, 'aTargets': ['editColumn']}
         ]}
     );
