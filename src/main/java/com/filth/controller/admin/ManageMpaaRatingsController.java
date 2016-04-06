@@ -82,7 +82,7 @@ public class ManageMpaaRatingsController extends ManageEntityController implemen
             mpaaRating.setRatingCode(ratingCode);
             _mpaaService.saveMpaaRating(mpaaRating);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save " + ENTITY_NAME + "'" + ratingCode + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, ratingCode), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, ratingCode), new ModelMap());
         }

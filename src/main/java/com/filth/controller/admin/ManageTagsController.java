@@ -46,7 +46,6 @@ public class ManageTagsController extends ManageEntityController implements Mana
     private static final class ModelKey {
         public static final String TAGS = "tags";
         public static final String TAG = "tag";
-        public static final String NAME = "name";
     }
 
     @Override
@@ -101,7 +100,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
             tag.setName(name);
             _tagService.saveTag(tag);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save tag '" + name + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, name), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, name), new ModelMap());
         }
@@ -120,7 +119,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
         Tag tag = _tagService.getTagById(id);
         
         if (null == tag) {
-            LOGGER.error("Did not find tag with id " + id);
+            LOGGER.error(String.format(UNKNOWN_ENTITY_LOG_MESSAGE_FORMAT, id));
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
@@ -128,7 +127,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
         try {
             _tagService.deleteTagById(id);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to delete tag '" + tag.getName() + "'", e);
+            LOGGER.error(String.format(DELETE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, tag.getName()), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, tag.getName()), mm);
         }

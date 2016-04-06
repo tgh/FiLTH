@@ -82,7 +82,7 @@ public class ManageCountriesController extends ManageEntityController implements
             country.setName(name);
             _countryService.saveCountry(country);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save " + ENTITY_NAME + "'" + name + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, name), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, name), new ModelMap());
         }

@@ -93,7 +93,7 @@ public class ManageOscarsController extends ManageEntityController implements Ma
             oscar.setCategory(category);
             _oscarService.saveOscar(oscar);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save oscar '" + category + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, category), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, category), new ModelMap());
         }
@@ -112,7 +112,7 @@ public class ManageOscarsController extends ManageEntityController implements Ma
         Oscar oscar = _oscarService.getOscarById(id);
         
         if (null == oscar) {
-            LOGGER.error("Did not find oscar with id " + id);
+            LOGGER.error(String.format(UNKNOWN_ENTITY_LOG_MESSAGE_FORMAT, ENTITY_NAME, id));
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
@@ -120,7 +120,7 @@ public class ManageOscarsController extends ManageEntityController implements Ma
         try {
             _oscarService.deleteOscarById(id);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to delete oscar '" + oscar.getCategory() + "'", e);
+            LOGGER.error(String.format(DELETE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, oscar.getCategory()), mm);
         }

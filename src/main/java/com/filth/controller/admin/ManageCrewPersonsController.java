@@ -110,7 +110,7 @@ public class ManageCrewPersonsController extends ManageEntityController implemen
             
             _crewPersonService.saveCrewPerson(crewPerson);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save crewPerson '" + fullName + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, fullName), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, fullName), new ModelMap());
         }

@@ -93,7 +93,7 @@ public class ManageTylersController extends ManageEntityController implements Ma
             tyler.setCategory(category);
             _tylerService.saveTyler(tyler);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save tyler '" + category + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, category), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, category), new ModelMap());
         }
@@ -112,7 +112,7 @@ public class ManageTylersController extends ManageEntityController implements Ma
         Tyler tyler = _tylerService.getTylerById(id);
         
         if (null == tyler) {
-            LOGGER.error("Did not find tyler with id " + id);
+            LOGGER.error(String.format(UNKNOWN_ENTITY_LOG_MESSAGE_FORMAT, ENTITY_NAME, id));
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
@@ -120,7 +120,7 @@ public class ManageTylersController extends ManageEntityController implements Ma
         try {
             _tylerService.deleteTylerById(id);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to delete tyler '" + tyler.getCategory() + "'", e);
+            LOGGER.error(String.format(DELETE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, tyler.getCategory()), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, tyler.getCategory()), mm);
         }

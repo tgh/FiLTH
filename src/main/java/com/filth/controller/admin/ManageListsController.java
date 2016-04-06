@@ -99,7 +99,7 @@ public class ManageListsController extends ManageEntityController implements Man
             
             _listService.saveList(list);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to save list '" + title + "'", e);
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, title), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, title), new ModelMap());
         }
@@ -118,7 +118,7 @@ public class ManageListsController extends ManageEntityController implements Man
         com.filth.model.List list = _listService.getListById(id);
         
         if (null == list) {
-            LOGGER.error("Did not find list with id " + id);
+            LOGGER.error(String.format(UNKNOWN_ENTITY_LOG_MESSAGE_FORMAT, ENTITY_NAME, id));
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, id), mm);
         }
@@ -126,7 +126,7 @@ public class ManageListsController extends ManageEntityController implements Man
         try {
             _listService.deleteListById(id);
         } catch (Exception e) {
-            LOGGER.error("An error occurred attempting to delete list '" + list.getTitle() + "'", e);
+            LOGGER.error(String.format(DELETE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, list.getTitle()), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
                     String.format(DELETE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, list.getTitle()), mm);
         }
