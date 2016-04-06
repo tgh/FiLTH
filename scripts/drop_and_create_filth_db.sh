@@ -98,6 +98,7 @@ if [ $# -gt 0 ]
     update_sequence "tag"
     update_sequence "tyler"
     update_sequence "mpaa"
+    update_sequence "counry"
 
     echo "Creating temp/previous_movie_ratings.txt..."
     sleep 0.5

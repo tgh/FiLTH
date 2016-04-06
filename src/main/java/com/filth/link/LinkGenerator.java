@@ -11,5 +11,6 @@ public interface LinkGenerator
         ManageListsLinkGenerator,
         ManageTylersLinkGenerator,
         ManageCrewPersonsLinkGenerator,
-        ManageMpaaRatingsLinkGenerator
+        ManageMpaaRatingsLinkGenerator,
+        ManageCountriesLinkGenerator
 { }

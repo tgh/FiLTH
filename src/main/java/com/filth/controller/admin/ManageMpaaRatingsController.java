@@ -44,7 +44,6 @@ public class ManageMpaaRatingsController extends ManageEntityController implemen
     private static final class ModelKey {
         public static final String RATINGS = "mpaaRatings";
         public static final String RATING = "mpaaRating";
-        public static final String OLD_RATING_CODE = "oldRatingCode";
     }
 
     @Override
@@ -90,10 +89,6 @@ public class ManageMpaaRatingsController extends ManageEntityController implemen
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.RATING, mpaaRating);
-        
-        if (null != id) {
-            mm.put(ModelKey.OLD_RATING_CODE, id);
-        }
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, ratingCode), mm);

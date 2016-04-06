@@ -101,6 +101,7 @@ if [ $# -gt 0 ]
     update_sequence "tag"
     update_sequence "tyler"
     update_sequence "mpaa"
+    update_sequence "country"
 
     echo "Done."
 fi
