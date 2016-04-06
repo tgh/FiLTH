@@ -1,4 +1,4 @@
-INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
+INSERT INTO filth.crew_person VALUES (0, '', NULL, NULL, '', NULL); -- dummy record
 INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (142, 'Neeson', 'Liam', NULL, 'Liam Neeson', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (8, 'McGregor', 'Ewan', NULL, 'Ewan McGregor', 'Actor');  -- Actor
@@ -12,19 +12,11 @@ INSERT INTO filth.crew_person VALUES (3174, 'West', 'Dominic', NULL, 'Dominic We
 INSERT INTO filth.crew_person VALUES (271, 'Coppola', 'Sofia', NULL, 'Sofia Coppola', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (1040, 'Knightley', 'Keira', NULL, 'Keira Knightley', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (2836, 'Serafinowicz', 'Peter', NULL, 'Peter Serafinowicz', 'Actor');  -- Actor: Peter Serafinowicz
-INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (3211, 'Hales', 'Jonathan', NULL, 'Jonathan Hales', 'Screenwriter');  -- Screenwriter: Jonathan Hales
-INSERT INTO filth.crew_person VALUES (8, 'McGregor', 'Ewan', NULL, 'Ewan McGregor', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (3212, 'Christensen', 'Hayden', NULL, 'Hayden Christensen', 'Actor');  -- Actor: Hayden Christensen
-INSERT INTO filth.crew_person VALUES (101, 'Portman', 'Natalie', NULL, 'Natalie Portman', 'Actress');  -- Actress
-INSERT INTO filth.crew_person VALUES (54, 'Jackson', 'Samuel', 'L.', 'Samuel L. Jackson', 'Actor');  -- Actor
-INSERT INTO filth.crew_person VALUES (3210, 'McDiarmid', 'Ian', NULL, 'Ian McDiarmid', 'Actor');  -- Actor: Ian McDiarmid
 INSERT INTO filth.crew_person VALUES (2228, 'Lee', 'Christopher', NULL, 'Christopher Lee', 'Actor');  -- Actor: Christopher Lee
 INSERT INTO filth.crew_person VALUES (2834, 'Byrne', 'Rose', NULL, 'Rose Byrne', 'Actress');  -- Actress: Rose Byrne
 INSERT INTO filth.crew_person VALUES (2360, 'Edgerton', 'Joel', NULL, 'Joel Edgerton', 'Actor');  -- Actor: Joel Edgerton
-INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (319, 'Lucas', 'George', NULL, 'George Lucas', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (2133, 'Abrams', 'J.J.', NULL, 'J.J. Abrams', 'Director');  -- Director: J.J. Abrams
 INSERT INTO filth.crew_person VALUES (304, 'Kasdan', 'Lawrence', NULL, 'Lawrence Kasdan', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (2047, 'Arndt', 'Michael', NULL, 'Michael Arndt', 'Screenwriter');  -- Screenwriter
@@ -40,7 +32,6 @@ INSERT INTO filth.crew_person VALUES (2209, 'Serkis', 'Andy', NULL, 'Andy Serkis
 INSERT INTO filth.crew_person VALUES (3171, 'Gleeson', 'Domhnall', NULL, 'Domhnall Gleeson', 'Actor');  -- Actor: Domhnall Gleeson
 INSERT INTO filth.crew_person VALUES (625, 'Sydow', 'Max', 'Von', 'Max Von Sydow', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (2830, 'Pegg', 'Simon', NULL, 'Simon Pegg', 'Actor');  -- Actor: Simon Pegg
-INSERT INTO filth.crew_person VALUES (3181, 'Davis', 'Warwick', NULL, 'Warwick Davis', 'Actor');  -- Actor: Warwick Davis
 INSERT INTO filth.crew_person VALUES (2327, 'Friedlander', 'Judah', NULL, 'Judah Friedlander', 'Actor');  -- Actor: Judah Friedlander
 INSERT INTO filth.crew_person VALUES (282, 'Fellini', 'Federico', NULL, 'Federico Fellini', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (1637, 'Flaiano', 'Ennio', NULL, 'Ennio Flaiano', 'Screenwriter');  -- Screenwriter
@@ -51,7 +42,6 @@ INSERT INTO filth.crew_person VALUES (2180, 'Cardinale', 'Claudia', NULL, 'Claud
 INSERT INTO filth.crew_person VALUES (2207, 'Winick', 'Gary', NULL, 'Gary Winick', 'Producer');  -- Producer: Gary Winick
 INSERT INTO filth.crew_person VALUES (2152, 'Ruffalo', 'Mark', NULL, 'Mark Ruffalo', 'Actor');  -- Actor: Mark Ruffalo
 INSERT INTO filth.crew_person VALUES (2208, 'Garner', 'Jennifer', NULL, 'Jennifer Garner', 'Actress');  -- Actress: Jennifer Garner
-INSERT INTO filth.crew_person VALUES (2209, 'Serkis', 'Andy', NULL, 'Andy Serkis', 'Actor');  -- Actor: Andy Serkis
 INSERT INTO filth.crew_person VALUES (314, 'Lee', 'Spike', NULL, 'Spike Lee', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (10, 'Norton', 'Edward', NULL, 'Edward Norton', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (2122, 'Pepper', 'Barry', NULL, 'Barry Pepper', 'Actor');  -- Actor: Barry Pepper
@@ -72,18 +62,14 @@ INSERT INTO filth.crew_person VALUES (2815, 'Renfro', 'Brad', NULL, 'Brad Renfro
 INSERT INTO filth.crew_person VALUES (2816, 'Stahl', 'Nick', NULL, 'Nick Stahl', 'Actor');  -- Actor: Nick Stahl
 INSERT INTO filth.crew_person VALUES (2817, 'Pitt', 'Michael', NULL, 'Michael Pitt', 'Actor');  -- Actor: Michael Pitt
 INSERT INTO filth.crew_person VALUES (309, 'Kubrick', 'Stanley', NULL, 'Stanley Kubrick', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (309, 'Kubrick', 'Stanley', NULL, 'Stanley Kubrick', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (19, 'Welles', 'Orson', NULL, 'Orson Welles', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (19, 'Welles', 'Orson', NULL, 'Orson Welles', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (244, 'Toland', 'Gregg', NULL, 'Gregg Toland', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (383, 'Mankiewicz', 'Herman', 'J.', 'Herman J. Mankiewicz', 'Screenwriter');  -- Screenwriter
-INSERT INTO filth.crew_person VALUES (19, 'Welles', 'Orson', NULL, 'Orson Welles', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (213, 'Fiennes', 'Ralph', NULL, 'Ralph Fiennes', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (1005, 'Thomas', 'Kristin', 'Scott', 'Kristin Scott Thomas', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (1008, 'Binoche', 'Juliette', NULL, 'Juliette Binoche', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (1164, 'Minghella', 'Anthony', NULL, 'Anthony Minghella', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (1334, 'Seale', 'John', NULL, 'John Seale', 'Cinematographer');  -- Cinematographer
-INSERT INTO filth.crew_person VALUES (1164, 'Minghella', 'Anthony', NULL, 'Anthony Minghella', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (415, 'Montgomery', 'Robert', NULL, 'Robert Montgomery', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (438, 'Gleason', 'James', NULL, 'James Gleason', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (1085, 'Hall', 'Alexander', NULL, 'Alexander Hall', 'Director');  -- Director
@@ -95,11 +81,9 @@ INSERT INTO filth.crew_person VALUES (800, 'Pavan', 'Marisa', NULL, 'Marisa Pava
 INSERT INTO filth.crew_person VALUES (1214, 'Howe', 'James', 'Wong', 'James Wong Howe', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (389, 'Muni', 'Paul', NULL, 'Paul Muni', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (1177, 'Inarritu', 'Alejandro', 'Gonzalez', 'Alejandro Gonzalez Inarritu', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (1177, 'Inarritu', 'Alejandro', 'Gonzalez', 'Alejandro Gonzalez Inarritu', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (3188, 'Smith', 'Mark', 'L.', 'Mark L. Smith', 'Screenwriter');  -- Screenwriter: Mark L. Smith
 INSERT INTO filth.crew_person VALUES (18, 'DiCaprio', 'Leonardo', NULL, 'Leonardo DiCaprio', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (2428, 'Hardy', 'Tom', NULL, 'Tom Hardy', 'Actor');  -- Actor: Tom Hardy
-INSERT INTO filth.crew_person VALUES (3171, 'Gleeson', 'Domhnall', NULL, 'Domhnall Gleeson', 'Actor');  -- Actor: Domhnall Gleeson
 INSERT INTO filth.crew_person VALUES (3189, 'Poulter', 'Will', NULL, 'Will Poulter', 'Actor');  -- Actor: Will Poulter
 INSERT INTO filth.crew_person VALUES (1357, 'Lubezki', 'Emmanuel', NULL, 'Emmanuel Lubezki', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (351, 'Scorsese', 'Martin', NULL, 'Martin Scorsese', 'Director');  -- Director
@@ -109,20 +93,15 @@ INSERT INTO filth.crew_person VALUES (2649, 'Place', 'Mary', 'Kay', 'Mary Kay Pl
 INSERT INTO filth.crew_person VALUES (2871, 'Kovacs', 'Laszlo', NULL, 'Laszlo Kovacs', 'Cinematographer');  -- Cinematographer: Laszlo Kovacs
 INSERT INTO filth.crew_person VALUES (290, 'Godard', 'Jean-Luc', NULL, 'Jean-Luc Godard', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (1172, 'Almodovar', 'Pedro', NULL, 'Pedro Almodovar', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (1172, 'Almodovar', 'Pedro', NULL, 'Pedro Almodovar', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (1172, 'Almodovar', 'Pedro', NULL, 'Pedro Almodovar', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (2330, 'Bernal', 'Gael', 'Garcia', 'Gael Garcia Bernal', 'Actor');  -- Actor: Gael Garcia Bernal
 INSERT INTO filth.crew_person VALUES (2558, 'Martinez', 'Fele', NULL, 'Fele Martinez', 'Actor');  -- Actor: Fele Martinez
 INSERT INTO filth.crew_person VALUES (2961, 'Auteuil', 'Daniel', NULL, 'Daniel Auteuil', 'Actor');  -- Actor: Daniel Auteuil
 INSERT INTO filth.crew_person VALUES (2966, 'Haneke', 'Michael', NULL, 'Michael Haneke', 'Director');  -- Director: Michael Haneke
 INSERT INTO filth.crew_person VALUES (253, 'Bergman', 'Ingmar', NULL, 'Ingmar Bergman', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (253, 'Bergman', 'Ingmar', NULL, 'Ingmar Bergman', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (238, 'Nykvist', 'Sven', NULL, 'Sven Nykvist', 'Cinematographer');  -- Cinematographer
-INSERT INTO filth.crew_person VALUES (625, 'Sydow', 'Max', 'Von', 'Max Von Sydow', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (895, 'Ullmann', 'Liv', NULL, 'Liv Ullmann', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (2867, 'Andersson', 'Bibi', NULL, 'Bibi Andersson', 'Actress');  -- Actress: Bibi Andersson
 INSERT INTO filth.crew_person VALUES (2446, 'Josephson', 'Erland', NULL, 'Erland Josephson', 'Actor');  -- Actor: Erland Josephson
-INSERT INTO filth.crew_person VALUES (253, 'Bergman', 'Ingmar', NULL, 'Ingmar Bergman', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (41, 'Newman', 'Paul', NULL, 'Paul Newman', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (239, 'Hall', 'Conrad', NULL, 'Conrad Hall', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (3182, 'Campbell', 'Martin', NULL, 'Martin Campbell', 'Director');  -- Director: Martin Campbell
@@ -139,21 +118,17 @@ INSERT INTO filth.crew_person VALUES (250, 'Apted', 'Michael', NULL, 'Michael Ap
 INSERT INTO filth.crew_person VALUES (3195, 'Almond', 'Paul', NULL, 'Paul Almond', 'Director');  -- Director: Paul Almond
 INSERT INTO filth.crew_person VALUES (3203, 'Roskam', 'Michael', 'R.', 'Michael R. Roskam', 'Director');  -- Director: Michael R. Roskam
 INSERT INTO filth.crew_person VALUES (3204, 'Lehane', 'Dennis', NULL, 'Dennis Lehane', 'Screenwriter');  -- Screenwriter: Dennis Lehane
-INSERT INTO filth.crew_person VALUES (2428, 'Hardy', 'Tom', NULL, 'Tom Hardy', 'Actor');  -- Actor: Tom Hardy
 INSERT INTO filth.crew_person VALUES (3205, 'Gandolfini', 'James', NULL, 'James Gandolfini', 'Actor');  -- Actor: James Gandolfini
 INSERT INTO filth.crew_person VALUES (3206, 'Rapace', 'Noomi', NULL, 'Noomi Rapace', 'Actress');  -- Actress: Noomi Rapace
 INSERT INTO filth.crew_person VALUES (3207, 'Schoenaerts', 'Matthias', NULL, 'Matthias Schoenaerts', 'Actor');  -- Actor: Matthias Schoenaerts
 INSERT INTO filth.crew_person VALUES (3208, 'Ortiz', 'John', NULL, 'John Ortiz', 'Actor');  -- Actor: John Ortiz
 INSERT INTO filth.crew_person VALUES (2359, 'Frecheville', 'James', NULL, 'James Frecheville', 'Actor');  -- Actor: James Frecheville
 INSERT INTO filth.crew_person VALUES (245, 'Allen', 'Woody', NULL, 'Woody Allen', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (245, 'Allen', 'Woody', NULL, 'Woody Allen', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (61, 'Phoenix', 'Joaquin', NULL, 'Joaquin Phoenix', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (2077, 'Stone', 'Emma', NULL, 'Emma Stone', 'Actress');  -- Actress: Emma Stone
 INSERT INTO filth.crew_person VALUES (2663, 'Posey', 'Parker', NULL, 'Parker Posey', 'Actress');  -- Actress: Parker Posey
 INSERT INTO filth.crew_person VALUES (1360, 'Khondji', 'Darius', NULL, 'Darius Khondji', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (2100, 'Chandor', 'J.C.', NULL, 'J.C. Chandor', 'Director');  -- Director: J.C. Chandor
-INSERT INTO filth.crew_person VALUES (2100, 'Chandor', 'J.C.', NULL, 'J.C. Chandor', 'Director');  -- Director: J.C. Chandor
-INSERT INTO filth.crew_person VALUES (2098, 'Isaac', 'Oscar', NULL, 'Oscar Isaac', 'Actor');  -- Actor: Oscar Isaac
 INSERT INTO filth.crew_person VALUES (2325, 'Chastain', 'Jessica', NULL, 'Jessica Chastain', 'Actress');  -- Actress: Jessica Chastain
 INSERT INTO filth.crew_person VALUES (623, 'Brooks', 'Albert', NULL, 'Albert Brooks', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (2504, 'Oyelowo', 'David', NULL, 'David Oyelowo', 'Actor');  -- Actor: David Oyelowo
@@ -166,9 +141,6 @@ INSERT INTO filth.crew_person VALUES (2104, 'Roberts', 'Dallas', NULL, 'Dallas R
 INSERT INTO filth.crew_person VALUES (2199, 'Foster', 'Ben', NULL, 'Ben Foster', 'Actor');  -- Actor: Ben Foster
 INSERT INTO filth.crew_person VALUES (326, 'Mangold', 'James', NULL, 'James Mangold', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (330, 'Miyazaki', 'Hayao', NULL, 'Hayao Miyazaki', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (330, 'Miyazaki', 'Hayao', NULL, 'Hayao Miyazaki', 'Director');  -- Director
-INSERT INTO filth.crew_person VALUES (991, 'Paquin', 'Anna', NULL, 'Anna Paquin', 'Actress');  -- Actress
-INSERT INTO filth.crew_person VALUES (2619, 'Hamill', 'Mark', NULL, 'Mark Hamill', 'Actor');  -- Actor: Mark Hamill
 INSERT INTO filth.crew_person VALUES (891, 'Leachman', 'Cloris', NULL, 'Cloris Leachman', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (2629, 'Patinkin', 'Mandy', NULL, 'Mandy Patinkin', 'Actor');  -- Actor: Mandy Patinkin
 INSERT INTO filth.crew_person VALUES (2630, 'Van Der Beek', 'James', NULL, 'James Van Der Beek', 'Actor');  -- Actor: James Van Der Beek
@@ -177,7 +149,6 @@ INSERT INTO filth.crew_person VALUES (120, 'O''Toole', 'Peter', NULL, 'Peter OTo
 INSERT INTO filth.crew_person VALUES (112, 'Hepburn', 'Audrey', NULL, 'Audrey Hepburn', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Supporting Actor');  -- Supporting Actor: Eli Wallach
 INSERT INTO filth.crew_person VALUES (1196, 'Lang', 'Charles', NULL, 'Charles Lang', 'Cinematographer');  -- Cinematographer
-INSERT INTO filth.crew_person VALUES (378, 'Helgeland', 'Brian', NULL, 'Brian Helgeland', 'Screenwriter');  -- Screenwriter
 INSERT INTO filth.crew_person VALUES (378, 'Helgeland', 'Brian', NULL, 'Brian Helgeland', 'Screenwriter');  -- Screenwriter
 INSERT INTO filth.crew_person VALUES (2841, 'Hayes', 'Terry', NULL, 'Terry Hayes', 'Screenwriter');  -- Screenwriter: Terry Hayes
 INSERT INTO filth.crew_person VALUES (86, 'Gibson', 'Mel', NULL, 'Mel Gibson', 'Actor');  -- Actor
@@ -200,4 +171,9 @@ INSERT INTO filth.crew_person VALUES (1105, 'Mann', 'Delbert', NULL, 'Delbert Ma
 INSERT INTO filth.crew_person VALUES (1243, 'LaShelle', 'Joseph', NULL, 'Joseph LaShelle', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1616, 'Chayefsky', 'Paddy', NULL, 'Paddy Chayefsky', 'Screenwriter');  -- Screenwriter
 INSERT INTO filth.crew_person VALUES (175, 'Cher', NULL, NULL, 'Cher', 'Actress');  -- Actress
+INSERT INTO filth.crew_person VALUES (121, 'Guinness', 'Alec', NULL, 'Alec Guinness', 'Actor');  -- Actor
+INSERT INTO filth.crew_person VALUES (252, 'Aronofsky', 'Darren', NULL, 'Darren Aronofsky', 'Director');  -- Director
+INSERT INTO filth.crew_person VALUES (233, 'Libatique', 'Matthew', NULL, 'Matthew Libatique', 'Cinematographer');  -- Cinematographer
+INSERT INTO filth.crew_person VALUES (102, 'Law', 'Jude', NULL, 'Jude Law', 'Actor');  -- Actor
+INSERT INTO filth.crew_person VALUES (1033, 'Castle-Hughes', 'Keisha', NULL, 'Keisha Castle-Hughes', 'Actress');  -- Actress
 INSERT INTO filth.crew_person VALUES (3213, 'Smits', 'Jimmy', NULL, 'Jimmy Smits', 'Actor');  -- Actor: Jimmy Smits
