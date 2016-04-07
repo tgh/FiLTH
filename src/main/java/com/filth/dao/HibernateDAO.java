@@ -15,6 +15,26 @@ public abstract class HibernateDAO<T> {
     @Autowired
     protected SessionFactory _sessionFactory;
     
+    protected abstract Class<T> getEntityClass();
+    
+    @SuppressWarnings("unchecked")
+    public T getById(int id) {
+        return (T) getSession().get(getEntityClass().getName(), id);
+    }
+    
+    public List<T> getAll() {
+        Criteria criteria = getSession().createCriteria(getEntityClass());
+        return extractTypedList(criteria);
+    }
+    
+    public void save(T entity) {
+        getSession().saveOrUpdate(entity);
+    }
+    
+    public void delete(T entity) {
+        getSession().delete(entity);
+    }
+    
     protected Session getSession() {
         return _sessionFactory.getCurrentSession();
     }
@@ -63,4 +83,5 @@ public abstract class HibernateDAO<T> {
         List<T> entityList = extractDistinctList(c);
         return new HashSet<T>(entityList);
     }
+    
 }

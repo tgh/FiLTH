@@ -13,6 +13,12 @@ import com.filth.model.Tag;
 @Repository
 public class TagDAO extends HibernateDAO<Tag> {
     
+    @Override
+    protected Class<Tag> getEntityClass() {
+        return Tag.class;
+    }
+    
+    @Override
     public List<Tag> getAll() {
         Query query = getSession().createQuery("from Tag order by tid asc"); //FIXME: order by shouldn't be necessary
         List<Tag> tagList = extractTypedList(query);
@@ -25,18 +31,6 @@ public class TagDAO extends HibernateDAO<Tag> {
                                         .addOrder(Order.asc("_id")); //FIXME: order by shouldn't be necessary
         List<Tag> tags = extractDistinctList(criteria);
         return tags;
-    }
-    
-    public Tag getById(int id) {
-        return (Tag) getSession().get(Tag.class.getName(), id);
-    }
-    
-    public void save(Tag tag) {
-        getSession().saveOrUpdate(tag);
-    }
-    
-    public void delete(Tag tag) {
-        getSession().delete(tag);
     }
 
 }
