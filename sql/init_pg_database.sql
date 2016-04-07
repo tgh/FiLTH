@@ -150,7 +150,9 @@ position text NOT NULL);
 -- since there are only about 5 positions I care about right now, but if I ever
 -- wanted to add a position (such as costume designer) this would make it much
 -- easier.
+CREATE SEQUENCE filth.position_pid_seq;
 CREATE TABLE filth.position (
+pid smallint DEFAULT nextval('filth.position_pid_seq') NOT NULL,
 position_title text NOT NULL);
 
 
@@ -245,7 +247,7 @@ ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
-ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(position_title);
+ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(pid);
 ALTER TABLE filth.tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
 ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
@@ -263,6 +265,7 @@ ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(
 ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_unique_constraint UNIQUE(title, year);
 ALTER TABLE filth.country ADD CONSTRAINT country_name_unique_constraint UNIQUE(country_name);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_rating_unique_constraint UNIQUE(rating);
+ALTER TABLE filth.position ADD CONSTRAINT position_title_unique_constraint UNIQUE(position_title);
 ALTER TABLE filth.tag ADD CONSTRAINT tag_name_unique_constraint UNIQUE(tag_name);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);

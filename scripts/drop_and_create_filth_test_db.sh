@@ -102,6 +102,7 @@ if [ $# -gt 0 ]
     update_sequence "tyler"
     update_sequence "mpaa"
     update_sequence "country"
+    update_sequence "position"
 
     echo "Done."
 fi
