@@ -44,7 +44,7 @@ StarRatingManager.prototype.addStarRatingRow = function(json) {
     table = $(this.DOM_KEYS.table).DataTable();
     newRow = table.row.add([
         json.starRating.id,
-        json.starRatingForDisplay,
+        json.starRating.rating,
         '<a data-remodal-target="editStarRatingModal" data-starRating-id="' + json.starRating.id + '" class="button editButton">Edit</a>'
     ]).draw('full-hold')
       .nodes()
@@ -89,7 +89,7 @@ StarRatingManager.prototype.updateStarRatingRow = function(json) {
     table = $(this.DOM_KEYS.table).DataTable();
     table.row(row).data([
         json.starRating.id,
-        json.starRatingForDisplay,
+        json.starRating.rating,
         '<a data-remodal-target="editStarRatingModal" data-starRating-id="' + json.starRating.id + '" class="button editButton">Edit</a>'
     ]).draw('full-hold');
 }

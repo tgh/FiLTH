@@ -25,7 +25,7 @@
                 
                 <tr class="${rowCssClass}" data-starRating-id="${starRating.id}">
                     <td class="starRatingId">${starRating.id}</td>
-                    <td class="starRating">${starRating.starRatingForDisplay}</td>
+                    <td class="starRating">${starRating.rating}</td>
                     <td>
                         <a data-remodal-target="editStarRatingModal" data-starRating-id="${starRating.id}" class="button editButton">Edit</a>
                     </td>
