@@ -32,7 +32,7 @@
                     </td>
                     <td>
                         <#if movie.starRating??>
-                            ${movie.starRating}
+                            ${movie.starRatingForDisplay}
                         </#if>
                     </td>
                     <td>

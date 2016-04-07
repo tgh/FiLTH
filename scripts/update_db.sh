@@ -19,7 +19,7 @@ function getFileLineCount() {
 }
 
 function doesTableNeedSequenceUpdated() {
-    if [ "$1" == "crew_person" -o "$1" == "list" -o "$1" == "movie" -o "$1" == "oscar" -o "$1" == "tag" -o "$1" == "tyler" -o "$1" == "mpaa" -o "$1" == "country" -o "$1" == "position" ]
+    if [ "$1" == "crew_person" -o "$1" == "list" -o "$1" == "movie" -o "$1" == "oscar" -o "$1" == "tag" -o "$1" == "tyler" -o "$1" == "mpaa" -o "$1" == "country" -o "$1" == "position" -o "$1" == "star_rating" ]
     then
         updateSequence=$TRUE
     else

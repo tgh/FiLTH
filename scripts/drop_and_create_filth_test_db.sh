@@ -103,6 +103,7 @@ if [ $# -gt 0 ]
     update_sequence "mpaa"
     update_sequence "country"
     update_sequence "position"
+    update_sequence "star_rating"
 
     echo "Done."
 fi
