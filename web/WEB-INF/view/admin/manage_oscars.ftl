@@ -1,4 +1,5 @@
-<@layout.admin "Manage Oscars">
+<@layout.standard "FiLTH Admin: Manage Oscars">
+    <@util.css "admin" />
     <@util.css "modal" />
     <@util.include_datatables_css />
     <@util.css "third-party/alertify/alertify.core" />
@@ -98,4 +99,4 @@
     <@util.include_datatables_js />
     <@util.js "third-party/alertify/alertify.min" />
     <@util.js "third-party/parsley/parsley.min" />
-</@layout.admin>
+</@layout.standard>

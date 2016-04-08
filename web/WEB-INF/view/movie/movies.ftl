@@ -1,4 +1,4 @@
-<@layout.standard "Movies">
+<@layout.standard "FiLTH: Movies">
     <#-- css for datatables AND its Select extension-->
     <@util.external_css "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.css" />
     
