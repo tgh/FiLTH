@@ -1827,11 +1827,11 @@ INSERT INTO filth.movie VALUES (1826, 'Zoolander', 2001, '**½', 'PG-13', 'USA',
 INSERT INTO filth.movie VALUES (1827, 'The Illusionist', 2010, '***½', 'PG', 'France', NULL, 'tt0775489', 0, 41201);
 INSERT INTO filth.movie VALUES (1828, 'Cabaret', 1972, '**½', 'PG', 'USA', NULL, 'tt0068327', 0, 10784);
 INSERT INTO filth.movie VALUES (1829, 'Margin Call', 2011, '***½', 'R', 'USA', NULL, 'tt1615147', 1, 50839);
-INSERT INTO filth.movie VALUES (1830, 'The Racket', 1928, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1831, '7th Heaven', 1928, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1832, 'Alibi', 1929, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1833, 'The Broadway Melody', 1929, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1834, 'In Old Arizona', 1929, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (1830, 'The Racket', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0019304', NULL, NULL);
+INSERT INTO filth.movie VALUES (1831, '7th Heaven', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0018379', NULL, NULL);
+INSERT INTO filth.movie VALUES (1832, 'Alibi', 1929, 'not seen', 'NR', 'USA', NULL, 'tt0019630', NULL, NULL);
+INSERT INTO filth.movie VALUES (1833, 'The Broadway Melody', 1929, 'not seen', 'NR', 'USA', NULL, 'tt0019729', NULL, NULL);
+INSERT INTO filth.movie VALUES (1834, 'In Old Arizona', 1929, 'not seen', 'NR', 'USA', NULL, 'tt0020018', NULL, NULL);
 INSERT INTO filth.movie VALUES (1835, 'Hollywood Revue', 1929, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (1836, 'The Patriot', 1929, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (1837, 'The Love Parade', 1930, 'not seen', 'NR', 'USA', NULL, NULL, NULL, NULL);
