@@ -83,7 +83,7 @@ def promptForMovieImdbId(movie):
     linesplit = line.split(',')
     linesplit[7] = ' \'' + imdbId + '\''
     newline = ','.join(linesplit)
-    log('promptForMovieImdbId', 'replacing:\n\t' + line + 'with:\n\t' + newline)
+    log('promptForMovieImdbId', 'replacing:\n\t\t' + line + '\n\twith:\n\t\t' + newline)
     log('promptForMovieImdbId', 'sed command: ' + "sed -i \"s/{0}/{1}/g\" {2}".format(line, newline, MOVIE_SQL_FILE))
     system("sed -i \"s/{0}/{1}/g\" {2}".format(line, newline, MOVIE_SQL_FILE))
 
