@@ -3889,7 +3889,7 @@ INSERT INTO filth.movie VALUES (3890, 'The Danish Girl', 2015, 'not seen', 'R', 
 INSERT INTO filth.movie VALUES (3891, 'Carol', 2015, 'not seen', 'R', 'USA', NULL, 'tt2402927', NULL, 258480);
 INSERT INTO filth.movie VALUES (3892, 'Room', 2015, '****', 'R', 'Ireland', NULL, 'tt3170832', NULL, 264644);
 INSERT INTO filth.movie VALUES (3893, '45 Years', 2015, 'not seen', 'R', 'England', NULL, 'tt3544082', NULL, 311291);
-INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, 'not seen', 'PG-13', 'Ireland', NULL, 'tt2381111', NULL, 167073);
+INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, '**½', 'PG-13', 'England', NULL, 'tt2381111', NULL, 167073);
 INSERT INTO filth.movie VALUES (3895, 'The Big Short', 2015, '****', 'R', 'USA', NULL, 'tt1596363', NULL, 318846);
 INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, 'not seen', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221);
 INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, 'not seen', 'R', 'USA', NULL, 'tt3460252', NULL, 273248);
@@ -3905,3 +3905,5 @@ INSERT INTO filth.movie VALUES (3906, 'Captain America: Winter Soldier', 2014, '
 INSERT INTO filth.movie VALUES (3907, 'Daddy''s Home', 2015, '**½', 'PG-13', 'USA', NULL, 'tt1528854', 0, 274167);
 INSERT INTO filth.movie VALUES (3908, '99 Homes', 2015, '***½', 'R', 'USA', NULL, 'tt2891174', 0, 283235);
 INSERT INTO filth.movie VALUES (3909, 'The Hunger Games: Mockingjay – Part 2', 2015, '**½', 'PG-13', 'USA', NULL, 'tt1951266', 0, 131634);
+INSERT INTO filth.movie VALUES (3910, 'Concussion', 2015, '***½', 'PG-13', 'USA', NULL, 'tt3322364', 0, 321741);
+INSERT INTO filth.movie VALUES (3911, 'Secret in Their Eyes', 2015, '**½', 'R', 'USA', NULL, 'tt1741273', 0, 290751);

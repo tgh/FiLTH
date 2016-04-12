@@ -3258,3 +3258,10 @@ INSERT INTO filth.crew_person VALUES (3260, 'Maguire', 'Sharon', NULL, 'Sharon M
 INSERT INTO filth.crew_person VALUES (3261, 'Jones', 'Gemma', NULL, 'Gemma Jones', 'Actress');  -- Actress: Gemma Jones
 INSERT INTO filth.crew_person VALUES (3262, 'Henson', 'Elden', NULL, 'Elden Henson', 'Actor');  -- Actor: Elden Henson
 INSERT INTO filth.crew_person VALUES (3263, 'Claflin', 'Sam', NULL, 'Sam Claflin', 'Actor');  -- Actor: Sam Claflin
+INSERT INTO filth.crew_person VALUES (3264, 'Landesman', 'Peter', NULL, 'Peter Landesman', 'Director');  -- Director: Peter Landesman
+INSERT INTO filth.crew_person VALUES (3265, 'Howard', 'Arliss', NULL, 'Arliss Howard', 'Actor');  -- Actor: Arliss Howard
+INSERT INTO filth.crew_person VALUES (3266, 'Mbatha-Raw', 'Gugu', NULL, 'Gugu Mbatha-Raw', 'Actress');  -- Actress: Gugu Mbatha-Raw
+INSERT INTO filth.crew_person VALUES (3267, 'Norris', 'Dean', NULL, 'Dean Norris', 'Actor');  -- Actor: Dean Norris
+INSERT INTO filth.crew_person VALUES (3268, 'Molina', 'Alfred', NULL, 'Alfred Molina', 'Actor');  -- Actor: Alfred Molina
+INSERT INTO filth.crew_person VALUES (3269, 'Crowley', 'John', NULL, 'John Crowley', 'Director');  -- Director: John Crowley
+INSERT INTO filth.crew_person VALUES (3270, 'Cohen', 'Emory', NULL, 'Emory Cohen', 'Actor');  -- Actor: Emory Cohen
