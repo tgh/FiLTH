@@ -11,10 +11,10 @@ import org.springframework.test.context.ContextConfiguration;
  * Abstract class for all *ServiceTests
  */
 @RunWith(ServiceTestRunner.class)
-@ContextConfiguration(locations = {"classpath*:/service-test-context.xml"})
-public abstract class ServiceTest {
+@ContextConfiguration(locations = {"file:build/test/com/filth/service/service-test-context.xml"})
+public abstract class ServiceTestAbstract {
     
-    private static final Logger LOGGER = LoggerFactory.getLogger(ServiceTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ServiceTestAbstract.class);
 
     /**
      * Gets called by ServiceTestRunner before every test method.

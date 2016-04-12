@@ -18,11 +18,11 @@ public class ServiceTestRunner extends SpringJUnit4ClassRunner {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(ServiceTestRunner.class);
     
-    private ServiceTest _test;
+    private ServiceTestAbstract _test;
 
     public ServiceTestRunner(Class<?> clazz) throws Exception {
         super(clazz);
-        _test = (ServiceTest) createTest();
+        _test = (ServiceTestAbstract) createTest();
     }
     
     private boolean isTestRunnable(Method method) {
