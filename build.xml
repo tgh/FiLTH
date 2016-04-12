@@ -31,6 +31,14 @@
     <path id="test-classpath">
         <path refid="master-classpath"/>
         <pathelement path="${build.dir}/test"/>
+        <!-- TD: service tests need, for example spring-orm's LocalSessionFactorBean at runtime, -->
+        <!-- but we probably should include *all* runtime jars -->
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="**/*.jar"/>
+        </fileset>
+        <!-- Need to include the logging configuration for running tests -->
+        <!-- (otherwise running tests will result in *a ton* of DEBUG output) --> 
+        <pathelement path="${test.dir}/resources"/> 
     </path>
     
     <!-- ================================================================= -->
@@ -153,27 +161,31 @@
     
     <!-- ================================================================= -->
     <!-- Test targets -->
-    <target name="build-tests" description="Compile test tree java files">
+    <target name="build-tests" description="Compile Java tests">
+        <delete dir="${build.dir}/test"/>
         <mkdir dir="${build.dir}/test"/>
         <javac destdir="${build.dir}/test" source="1.8" target="1.8" debug="true"
             deprecation="false" optimize="false" failonerror="true">
             <src path="${test.dir}"/>
             <classpath refid="test-classpath"/>
         </javac>
+        <!-- copy spring context to service test classes dir -->
+        <copy file="${web.dir}/WEB-INF/service-test-context.xml" tofile="${build.dir}/test/com/filth/service/service-test-context.xml"/>
     </target>
     
     <target name="tests" depends="build, build-tests" description="Run tests">
         <junit printsummary="on"
-            fork="false"
-            haltonfailure="false"
-            failureproperty="tests.failed"
-            showoutput="true">
+               fork="yes"
+               forkmode="perBatch"
+               haltonfailure="false"
+               failureproperty="tests.failed"
+               showoutput="true">
             <classpath refid="test-classpath"/>
             <formatter type="brief" usefile="false"/>
             
             <batchtest>
                 <fileset dir="${build.dir}/test">
-                    <include name="**/*Test.*"/>
+                    <include name="**/*Test.class"/>
                 </fileset>
             </batchtest>
         </junit>
