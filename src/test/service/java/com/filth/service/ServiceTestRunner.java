@@ -26,7 +26,7 @@ public class ServiceTestRunner extends SpringJUnit4ClassRunner {
     }
     
     private boolean isTestRunnable(Method method) {
-        String methodToRun = System.getProperty("test.method"); //property set in build.xml: junit-explicit macro
+        String methodToRun = System.getProperty("test.method"); //property set in build.xml's junit-explicit macro
         
         if(StringUtils.isBlank(methodToRun)) {
             // if a specific method isn't requested, every method is runnable.

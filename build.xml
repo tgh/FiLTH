@@ -9,6 +9,11 @@
     <property file="build.properties"/>
     <property file="conf/${project.name}.properties"/>
     
+    <!-- If the "method" property is not set (-Dmethod) for the test-one target, initialize to empty -->
+    <!-- (if we don't, junit-explicit will see the value '${method}' (intead of the expected "") -->
+    <!-- for that parameter, resulting in no tests run) -->
+    <property name="method" value="" />
+    
     <!-- paths -->
     <property name="src.main.dir" value="src/main/java"/>
     <property name="src.test.dir" value="src/test"/>
@@ -197,7 +202,7 @@
             >
                 <!-- The specific test method to run -->
                 <sysproperty key="test.method" value="@{method}" />
-                <!--Disable ehCache for batch testing! -->
+                <!-- Disable ehCache for batch testing! -->
                 <sysproperty key="net.sf.ehcache.disabled" value="@{disable-cache}" />
                 <formatter type="brief" />
                 <formatter type="xml" />
@@ -322,7 +327,10 @@
     
     <target name="test-one" depends="build, build-tests"
             description="Run a single test--i.e. one java *Test class. Required arg: -Dtest=[java test class]; optional args: -Dmethod=[method name] to run a specific method in the test class, -Ddebug=true to turn on remote debugging">
-        
+        <junit-explicit label="Cherry-picked tests" classpathref="test.classpath" disable-cache="true" method="${method}">
+            <fileset dir="${unit.test.classes.dir}" includes="**/${test}.class" />
+            <fileset dir="${service.test.classes.dir}" includes="**/${test}.class" />
+        </junit-explicit>
     </target>
     
     <target name="load-test-data" description="Drops and creates the test database, and loads test data.">
