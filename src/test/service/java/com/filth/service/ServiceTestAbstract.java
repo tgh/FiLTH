@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
  * Abstract class for all *ServiceTests
  */
 @RunWith(ServiceTestRunner.class)
-@ContextConfiguration(locations = {"file:build/test/com/filth/service/service-test-context.xml"})
+@ContextConfiguration(locations = {"file:build/test/service/service-test-context.xml"})
 public abstract class ServiceTestAbstract {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(ServiceTestAbstract.class);

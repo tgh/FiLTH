@@ -14,3 +14,4 @@ logs/*
 lib/*
 web/WEB-INF/lib/*
 ivy-report
+test-results/*

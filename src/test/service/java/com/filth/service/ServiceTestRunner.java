@@ -26,13 +26,15 @@ public class ServiceTestRunner extends SpringJUnit4ClassRunner {
     }
     
     private boolean isTestRunnable(Method method) {
-        String methodToRun = System.getProperty("net.wgen.spring.common.test.method");
-        LOGGER.debug("Method to run: " + methodToRun);
+        String methodToRun = System.getProperty("test.method"); //property set in build.xml: junit-explicit macro
+        
         if(StringUtils.isBlank(methodToRun)) {
             // if a specific method isn't requested, every method is runnable.
             return true;    
         }
+        
         // if a specific method is requested, run only the requested method
+        LOGGER.info("Test method requested: " + methodToRun);
         return method.getName().equals(methodToRun);
     }
     

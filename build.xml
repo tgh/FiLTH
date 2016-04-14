@@ -9,15 +9,24 @@
     <property file="build.properties"/>
     <property file="conf/${project.name}.properties"/>
     
-    <property name="src.dir" value="src/main/java"/>
-    <property name="test.dir" value="src/test"/>
+    <!-- paths -->
+    <property name="src.main.dir" value="src/main/java"/>
+    <property name="src.test.dir" value="src/test"/>
+    <property name="test.resources.dir" value="${src.test.dir}/resources"/>
+    <property name="test.results.dir" value="test-results"/>
     <property name="web.dir" value="web"/>
-    <property name="build.dir" value="build"/>
+    <property name="build.main.dir" value="build/main"/>
+    <property name="build.test.dir" value="build/test"/>
+    <property name="unit.test.classes.dir" value="${build.test.dir}/unit"/>
+    <property name="service.test.classes.dir" value="${build.test.dir}/service"/>
+    <property name="build.test.dir" value="build/test"/>
     <property name="lib.dir" value="lib"/>
     <property name="ivy.report.dir" value="ivy-report"/>
     <property name="scripts.dir" value="scripts"/>
+    
+    <property name="tests.include" value="**/*Test.class"/>
 
-    <path id="master-classpath">
+    <path id="master.classpath">
         <fileset dir="${lib.dir}">
             <include name="**/*.jar"/>
         </fileset>
@@ -25,20 +34,23 @@
         <fileset dir="${tomcat.lib.dir}">
             <include name="servlet*.jar"/>
         </fileset>
-        <pathelement path="${build.dir}/main"/>
     </path>
     
-    <path id="test-classpath">
-        <path refid="master-classpath"/>
-        <pathelement path="${build.dir}/test"/>
+    <path id="test.classpath">
+        <path refid="master.classpath"/>
+        <pathelement path="${build.main.dir}"/>
+        <pathelement path="${build.test.dir}"/>
         <!-- TD: service tests need, for example spring-orm's LocalSessionFactorBean at runtime, -->
-        <!-- but we probably should include *all* runtime jars -->
+        <!-- but we probably should include *all* runtime jars? -->
         <fileset dir="${web.dir}/WEB-INF/lib">
             <include name="**/*.jar"/>
         </fileset>
         <!-- Need to include the logging configuration for running tests -->
         <!-- (otherwise running tests will result in *a ton* of DEBUG output) --> 
-        <pathelement path="${test.dir}/resources"/> 
+        <pathelement path="${test.resources.dir}"/>
+        <!-- TD: extend test.classpath to test.unit.classpath and test.service.classpath and place each if these in their respective classpath -->
+        <pathelement path="${service.test.classes.dir}"/>
+        <pathelement path="${unit.test.classes.dir}"/>
     </path>
     
     <!-- ================================================================= -->
@@ -101,12 +113,12 @@
     <!-- ================================================================= -->
     <!-- Build targets -->
     <target name="build" description="Compile main source tree java files">
-        <delete dir="${build.dir}/main"/>
-        <mkdir dir="${build.dir}/main"/>
-        <javac destdir="${build.dir}/main" source="1.8" target="1.8" debug="true"
+        <delete dir="${build.main.dir}"/>
+        <mkdir dir="${build.main.dir}"/>
+        <javac destdir="${build.main.dir}" source="1.8" target="1.8" debug="true"
                deprecation="false" optimize="false" failonerror="true">
-            <src path="${src.dir}"/>
-            <classpath refid="master-classpath"/>
+            <src path="${src.main.dir}"/>
+            <classpath refid="master.classpath"/>
         </javac>
     </target>
 
@@ -114,7 +126,7 @@
     <!-- Deploy targets -->
     <target name="create-app-jar" description="Creates a jar file containing this project's compiled java source to be included in the deployed .war file">
         <jar
-            basedir="${build.dir}/main"
+            basedir="${build.main.dir}"
             destfile="${web.dir}/WEB-INF/lib/${project.name}.jar"
             update="false"
         />
@@ -160,44 +172,157 @@
     </target>
     
     <!-- ================================================================= -->
-    <!-- Test targets -->
-    <target name="build-tests" description="Compile Java tests">
-        <delete dir="${build.dir}/test"/>
-        <mkdir dir="${build.dir}/test"/>
-        <javac destdir="${build.dir}/test" source="1.8" target="1.8" debug="true"
-            deprecation="false" optimize="false" failonerror="true">
-            <src path="${test.dir}"/>
-            <classpath refid="test-classpath"/>
-        </javac>
-        <!-- copy spring context to service test classes dir -->
-        <copy file="${web.dir}/WEB-INF/service-test-context.xml" tofile="${build.dir}/test/com/filth/service/service-test-context.xml"/>
+    <!-- Test targets and macros -->
+    <macrodef name="junit-explicit">
+        <attribute name="label" />
+        <attribute name="classpathref" />
+        <attribute name="disable-cache" default="false" />
+        <attribute name="method" default="" />
+        <!-- these are the <filesets> nested in calls of this macro -->
+        <element name="junit-filesets" implicit="true" optional="false" />
+        <sequential>
+            <condition property="remoteDebugJvmArgs"
+                value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=${tomcat.jpda.address}"
+                else="-ea">
+                <istrue value="${debug}"/>
+            </condition>
+
+            <junit fork="yes"
+                   forkmode="perBatch"
+                   haltonfailure="false"
+                   haltonerror="false"
+                   printsummary="on"
+                   showoutput="yes"
+                   failureproperty="junit.failed"
+            >
+                <!-- The specific test method to run -->
+                <sysproperty key="test.method" value="@{method}" />
+                <!--Disable ehCache for batch testing! -->
+                <sysproperty key="net.sf.ehcache.disabled" value="@{disable-cache}" />
+                <formatter type="brief" />
+                <formatter type="xml" />
+
+                <classpath refid="@{classpathref}" />
+                <jvmarg value="${remoteDebugJvmArgs}"/>
+                <jvmarg value="-Xmx768m" />
+                <jvmarg value="-Dfile.encoding=utf8" />
+                <jvmarg value="-XX:MaxPermSize=256m" />
+                <jvmarg value="-XX:-UseGCOverheadLimit" />
+                <batchtest todir="${test.results.dir}">
+                    <junit-filesets />
+                </batchtest>
+            </junit>
+            
+            <if>
+                <istrue value="${junit.failed}" />
+                <then>
+                    <concat>
+                        <header filtering="no" trimleading="yes">
+                              TEST FAILURES
+                              =============
+                        </header>
+                        <fileset dir="${test.results.dir}" includes="TEST-*.txt" />
+                        <filterchain>
+                            <linecontainsregexp>
+                                <regexp pattern="Testcase.*(ERROR|FAILED)" />
+                            </linecontainsregexp>
+                        </filterchain>
+                    </concat>
+                   <fail message="@{label} failed" />
+               </then>
+            </if>
+        </sequential>
+    </macrodef>
+    
+    <macrodef name="junit-standard">
+        <attribute name="label" />
+        <attribute name="classpathref" />
+        <attribute name="testdir" />
+        <attribute name="disable-cache" default="false"/>
+        <sequential>
+            <junit-explicit
+                label="@{label}"
+                classpathref="@{classpathref}"
+                disable-cache="@{disable-cache}"
+            >
+                <fileset
+                    dir="@{testdir}"
+                    includes="${tests.include}"
+                />
+            </junit-explicit>
+        </sequential>
+    </macrodef>
+    
+    <target name="test-clean" description="Delete all test classes and result files">
+        <delete dir="${build.test.dir}"/>
+        <delete dir="${test.results.dir}"/>
     </target>
     
-    <target name="tests" depends="build, build-tests" description="Run tests">
-        <junit printsummary="on"
-               fork="yes"
-               forkmode="perBatch"
-               haltonfailure="false"
-               failureproperty="tests.failed"
-               showoutput="true">
-            <classpath refid="test-classpath"/>
-            <formatter type="brief" usefile="false"/>
-            
-            <batchtest>
-                <fileset dir="${build.dir}/test">
-                    <include name="**/*Test.class"/>
-                </fileset>
-            </batchtest>
-        </junit>
+    <target name="compile-tests" depends="test-clean" description="Compile all Java test files">
+        <mkdir dir="${build.test.dir}"/>
+        <mkdir dir="${unit.test.classes.dir}"/>
+        <mkdir dir="${service.test.classes.dir}"/>
+        <mkdir dir="${test.results.dir}"/>
+
+        <macrodef name="javac-tests">
+            <attribute name="srcdir" />
+            <attribute name="destdir" />
+            <sequential>
+                <if>
+                    <available file="@{srcdir}" />
+                    <then>
+                        <javac
+                            srcdir="@{srcdir}"
+                            destdir="@{destdir}"
+                            classpathref="test.classpath"
+                            deprecation="off"
+                            debug="true"
+                            optimize="false"
+                            source="1.8"
+                            target="1.8"
+                            encoding="UTF-8"
+                            includeantruntime="no"
+                        >
+                        </javac>
+                    </then>
+                </if>
+            </sequential>
+        </macrodef>
+
+        <!-- Compile the unit tests -->
+        <javac-tests srcdir="${src.test.dir}/unit" destdir="${unit.test.classes.dir}" />
+        <!-- Compile the service tests -->
+        <javac-tests  srcdir="${src.test.dir}/service" destdir="${service.test.classes.dir}" />
+    </target>
+
+    <target name="build-tests" depends="test-clean, compile-tests" description="Setup required files for testing">
+        <!-- Copy spring context to service test classes dir -->
+        <copy file="${web.dir}/WEB-INF/service-test-context.xml" tofile="${service.test.classes.dir}/service-test-context.xml"/>
+    </target>
+    
+    <target name="all-tests" depends="unit-tests, service-tests" description="Run all tests" />
+    
+    <target name="unit-tests" depends="build, build-tests" description="Runs all unit tests">
+        <junit-standard
+            label="Unit tests"
+            testdir="${unit.test.classes.dir}"
+            classpathref="test.classpath"
+            disable-cache="true"
+        />
+    </target>
+    
+    <target name="service-tests" depends="build, build-tests" description="Runs all service tests">
+        <junit-standard
+            label="Service tests"
+            testdir="${service.test.classes.dir}"
+            classpathref="test.classpath"
+            disable-cache="true"
+        />
+    </target>
+    
+    <target name="test-one" depends="build, build-tests"
+            description="Run a single test--i.e. one java *Test class. Required arg: -Dtest=[java test class]; optional args: -Dmethod=[method name] to run a specific method in the test class, -Ddebug=true to turn on remote debugging">
         
-        <fail if="tests.failed">
-            tests.failed=${tests.failed}
-            ***********************************************************
-            ***********************************************************
-            ****  One or more tests failed!  Check the output ...  ****
-            ***********************************************************
-            ***********************************************************
-        </fail>
     </target>
     
     <target name="load-test-data" description="Drops and creates the test database, and loads test data.">
