@@ -39,7 +39,7 @@ class MovieCrew(object):
     lines = positionSqlFile.readlines()
     positionSqlFile.close()
     for line in lines:
-      position = re.search("VALUES\\('([a-zA-Z ]+)'", line).group(1)
+      position = re.search("VALUES\\(\\d+, '([a-zA-Z ]+)'", line).group(1)
       self._positions.append(position)
 
 
