@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OrderBy;
@@ -35,6 +36,10 @@ public class Tag {
     @OneToMany(mappedBy="_parent", fetch=FetchType.EAGER)
     @OrderBy("_id")
     private Set<Tag> _children;
+    
+    @ManyToMany(mappedBy="_tags", fetch=FetchType.EAGER)
+    private Set<Movie> _movies;
+    
 
     public int getId() {
         return _id;
@@ -66,6 +71,14 @@ public class Tag {
     
     public void setChildren(Set<Tag> children) {
         _children = children;
+    }
+    
+    public Set<Movie> getMovies() {
+        return _movies;
+    }
+    
+    public void setMovies(Set<Movie> movies) {
+        _movies = movies;
     }
     
     @Override

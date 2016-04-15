@@ -14,19 +14,17 @@ import org.junit.Test;
 import com.filth.model.Movie;
 import com.filth.model.Tag;
 
-public class MovieServiceTest extends ServiceTestAbstract {
-    
+public class TagServiceTest extends ServiceTestAbstract {
+
     @Resource
-    private MovieService _movieService;
-    
+    private TagService _tagService;
     
     @Test
-    public void getTags() {
-        Movie movie = _movieService.getMovieById(3873); //The Revenant
-        assertNotNull(movie);
-        Set<Tag> tags = movie.getTags();
-        assertTrue(CollectionUtils.isNotEmpty(tags));
-        assertEquals(17, tags.size());
+    public void getMovies() {
+        Tag tag = _tagService.getTagById(38);   //new-york-city
+        assertNotNull(tag);
+        Set<Movie> movies = tag.getMovies();
+        assertTrue(CollectionUtils.isNotEmpty(movies));
+        assertEquals(6, movies.size());
     }
-
 }

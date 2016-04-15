@@ -1,10 +1,16 @@
 package com.filth.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -44,6 +50,14 @@ public class Movie {
   
     @Column(name="tmdb_id")
     private Long _tmdbId;
+    
+    @ManyToMany(fetch=FetchType.EAGER)
+    @JoinTable(
+            name = "tag_given_to",
+            joinColumns = {@JoinColumn(name = "mid")},
+            inverseJoinColumns = {@JoinColumn(name = "tid")}
+    )
+    private Set<Tag> _tags;
 
     public int getId() {
         return _id;
@@ -123,6 +137,14 @@ public class Movie {
   
     public void setTmdbId(Long tmdbId) {
         _tmdbId = tmdbId;
+    }
+    
+    public Set<Tag> getTags() {
+        return _tags;
+    }
+    
+    public void setTags(Set<Tag> tags) {
+        _tags = tags;
     }
     
     public String getStarRatingForDisplay() throws Exception {
