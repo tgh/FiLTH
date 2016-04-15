@@ -61,6 +61,7 @@ _workedOnFile = None
 _logFile = None
 _nextCid = 0
 _nextMid = 0
+_nextWid = 0
 _oscarsCsv = None
 
 
@@ -181,22 +182,26 @@ def initOscarMap():
 #-----------------------------------------------------------------------------
 
 def initWorkedOnCache():
-    global _woCache, _logFile
+    global _woCache, _logFile, _nextWid
 
     _logFile.write('\n\n>>> Initializing worked_on map <<<\n\n')
     _workedOnFile = open(WORKED_ON_FILE, 'r')
     lines = _workedOnFile.readlines()
     _workedOnFile.close()
 
+    wid = 0
     for line in lines:
         vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
 
-        mid = vals[0]
-        cid = vals[1].strip()
-        pos = vals[2].strip().strip("'")
+        wid = vals[0]
+        mid = vals[1]
+        cid = vals[2].strip()
+        pos = vals[3].strip().strip("'")
 
         _woCache.append((mid,cid,pos))
         _logFile.write('    (' + mid + ', ' + cid + ', ' + pos + ')\n')
+
+    _nextWid = str(int(wid) + 1)
 
 
 #-----------------------------------------------------------------------------
@@ -326,8 +331,11 @@ def getCid(name, mid, title, year, category):
         crewInsert = 'INSERT INTO filth.crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
         _crewInserts.append(crewInsert)
 
-        woPosition = "'" + CATEGORY_POSITIONS[category] + "'"        
-        woInsert = 'INSERT INTO filth.worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+        wid = _nextWid
+        _nextWid = str(int(_nextWid) + 1)
+        woPosition = "'" + CATEGORY_POSITIONS[category] + "'"
+     
+        woInsert = 'INSERT INTO filth.worked_on VALUES(' + wid + ', ' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
         _workedOnInserts.append(woInsert)
 
     return cid

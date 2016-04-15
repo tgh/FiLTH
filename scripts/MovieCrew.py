@@ -29,7 +29,10 @@ class MovieCrew(object):
     self._crewMap = {}            # full name (string) -> [cid (int)]
     #initialize crew map and get next cid
     self._nextCid = self._initCrewMap() + 1
+    self._nextWid = 0
+    self._initNextWid()
     self._log('__init__', 'Next cid: ' + str(self._nextCid))
+    self._log('__init__', 'Next wid: ' + str(self._nextWid))
 
 
   #----------------------------------------------------------------------------
@@ -71,6 +74,19 @@ class MovieCrew(object):
       self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
       lastCid = cid
     return lastCid
+
+
+  #----------------------------------------------------------------------------
+
+  def _initNextWid(self):
+    f = open(self._workedOnSqlFilePath, 'r')
+    lines = f.readlines()
+    f.close()
+
+    lastLine = lines[len(lines)-1]
+    vals = re.search('VALUES \\((\d+)\\);', line).group(1).split(',')
+    wid = vals[0]
+    self._nextWid = int(wid) + 1
 
 
   #----------------------------------------------------------------------------
@@ -137,10 +153,11 @@ class MovieCrew(object):
 
   #----------------------------------------------------------------------------
 
-  def _createInsertStatementForWorkedOn(self, mid, cid, position, name, title, year):
+  def _createInsertStatementForWorkedOn(self, wid, mid, cid, position, name, title, year):
     ''' Creates a SQL INSERT statement for the worked_on db table with the given
         values and appends to the list of worked_on INSERT statements.
 
+        wid (int) : primary key for this new row in the worked_on table
         mid (int) : the database primary key value of the movie
         cid (int) : crew person id
         position (string) : the name of the position the crew person worked as on the movie
@@ -148,7 +165,7 @@ class MovieCrew(object):
         title (string) : title of the movie
         year (int) : year of the movie
     '''
-    insertStatement = "INSERT INTO filth.worked_on VALUES({0}, {1}, '{2}');  -- {3} for {4} ({5})".format(str(mid),\
+    insertStatement = "INSERT INTO filth.worked_on VALUES({0}, {1}, {2}, '{3}');  -- {4} for {5} ({6})".format(str(wid), str(mid),\
                       str(cid), position, name, title, str(year))
     insertStatement = insertStatement.replace('NULL ', '')
     self._log('_createInsertStatementForWorkedOn', 'created SQL: ' + insertStatement)
@@ -278,7 +295,8 @@ class MovieCrew(object):
 
     #create an SQL INSERT statement for each of those positions
     for pid in pids:
-      self._createInsertStatementForWorkedOn(mid, cid, self._positions[pid-1], name, title, year)
+      self._createInsertStatementForWorkedOn(self._nextWid, mid, cid, self._positions[pid-1], name, title, year)
+      self._nextWid += 1
     #end for
 
     return  True
@@ -386,9 +404,9 @@ class MovieCrew(object):
     cidsAndPositions = {}
 
     for line in lines:
-      currentMid = int(re.search('VALUES\\((\d+),', line).group(1))
+      currentMid = int(re.search('VALUES\\(\d+, (\d+),', line).group(1))
       if mid == currentMid:
-        matcher = re.search('VALUES\\(\d+, (\d+), \'([a-zA-Z ]+)\'', line)
+        matcher = re.search('VALUES\\(\d+, \d+, (\d+), \'([a-zA-Z ]+)\'', line)
         cid = int(matcher.group(1))
         position = matcher.group(2)
 

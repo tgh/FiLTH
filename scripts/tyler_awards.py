@@ -40,6 +40,8 @@ _tylerGivenToFile = None
 _workedOnFile = None
 _logFile = None
 _nextCid = 0
+_nextWid = 0
+
 
 
 #-----------------------------------------------------------------------------
@@ -51,6 +53,7 @@ def init():
     initMoviesMap()
     initCrewMap()
     initTylerMap()
+    initNextWid()
 
 
 #-----------------------------------------------------------------------------
@@ -147,6 +150,21 @@ def initTylerMap():
 
 #-----------------------------------------------------------------------------
 
+def initNextWid():
+    global _nextWid
+
+    f = open(WORKED_ON_FILE, 'r')
+    lines = f.readlines()
+    f.close()
+
+    lastLine = lines[len(lines)-1]
+    vals = re.search('VALUES \\((\d+)\\);', line).group(1).split(',')
+    wid = vals[0]
+    _nextWid = str(int(wid) + 1)
+
+
+#-----------------------------------------------------------------------------
+
 def getMid(title, year):
     try:
         mid = _movies[title + ' (' + year + ')']
@@ -210,8 +228,11 @@ def getCid(name, mid, title, year, category):
         crewInsert = 'INSERT INTO filth.crew_person VALUES (' + cid + ', ' + last + ', ' + first + ', ' + middle + ', \'' + name + '\', \'' + position + '\');  -- ' + position + ': ' + name + '\n'
         _crewInserts.append(crewInsert)
 
-        woPosition = "'" + CATEGORY_POSITIONS[category] + "'"        
-        woInsert = 'INSERT INTO filth.worked_on VALUES(' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+        wid = _nextWid
+        _nextWid = str(int(_nextWid) + 1)
+        woPosition = "'" + CATEGORY_POSITIONS[category] + "'"
+
+        woInsert = 'INSERT INTO filth.worked_on VALUES(' + wid + ', ' + mid + ', ' + cid + ', ' + woPosition + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
         _workedOnInserts.append(woInsert)
     return cid
 
