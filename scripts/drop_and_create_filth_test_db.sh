@@ -104,6 +104,7 @@ if [ $# -gt 0 ]
     update_sequence "country"
     update_sequence "position"
     update_sequence "star_rating"
+    update_sequence "worked_on"
 
     echo "Done."
 fi

@@ -140,7 +140,9 @@ ALTER SEQUENCE filth.crew_person_cid_seq MINVALUE 0 RESTART WITH 0;
 
 
 -- crewperson <--> movie relationship -----------------------------------------
+CREATE SEQUENCE filth.worked_on_wid_seq;
 CREATE TABLE filth.worked_on (
+wid smallint DEFAULT nextval('filth.worked_on_wid_seq') NOT NULL,
 mid smallint NOT NULL,
 cid smallint NOT NULL,
 position text NOT NULL);
@@ -248,7 +250,7 @@ ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(sid);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(cid);
 ALTER TABLE filth.crew_person ADD CONSTRAINT crew_pkey PRIMARY KEY(cid);
-ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(mid, cid, position);
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_pkey PRIMARY KEY(wid);
 ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(pid);
 ALTER TABLE filth.tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
 ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
@@ -272,6 +274,7 @@ ALTER TABLE filth.position ADD CONSTRAINT position_title_unique_constraint UNIQU
 ALTER TABLE filth.tag ADD CONSTRAINT tag_name_unique_constraint UNIQUE(tag_name);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constrainst UNIQUE(mid, cid, position);
 
 
 -- --------------------------
