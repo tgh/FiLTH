@@ -1,7 +1,7 @@
 package com.filth.service;
 
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Set;
@@ -13,6 +13,7 @@ import org.junit.Test;
 
 import com.filth.model.Movie;
 import com.filth.model.MovieCrewPerson;
+import com.filth.model.MovieOscar;
 import com.filth.model.Tag;
 
 public class MovieServiceTest extends ServiceTestAbstract {
@@ -37,6 +38,15 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieCrewPerson> movieCrewPersons = movie.getMovieCrewPersons();
         assertTrue(CollectionUtils.isNotEmpty(movieCrewPersons));
         assertEquals(3, movieCrewPersons.size());
+    }
+    
+    @Test
+    public void getMovieOscars() {
+        Movie movie = _movieService.getMovieById(338); //Citizen Kane
+        assertNotNull(movie);
+        Set<MovieOscar> movieOscars = movie.getMovieOscars();
+        assertTrue(CollectionUtils.isNotEmpty(movieOscars));
+        assertEquals(6, movieOscars.size());
     }
 
 }

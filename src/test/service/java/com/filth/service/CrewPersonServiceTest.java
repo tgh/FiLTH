@@ -13,6 +13,7 @@ import org.junit.Test;
 
 import com.filth.model.CrewPerson;
 import com.filth.model.MovieCrewPerson;
+import com.filth.model.MovieOscar;
 
 public class CrewPersonServiceTest extends ServiceTestAbstract {
     
@@ -26,6 +27,15 @@ public class CrewPersonServiceTest extends ServiceTestAbstract {
         Set<MovieCrewPerson> movieCrewPersons = crewPerson.getMovieCrewPersons();
         assertTrue(CollectionUtils.isNotEmpty(movieCrewPersons));
         assertEquals(8, movieCrewPersons.size());
+    }
+
+    @Test
+    public void getMovieOscars() {
+        CrewPerson crewPerson = _crewPersonService.getCrewPersonById(309); //Stanley Kubrick
+        assertNotNull(crewPerson);
+        Set<MovieOscar> movieOscars = crewPerson.getMovieOscars();
+        assertTrue(CollectionUtils.isNotEmpty(movieOscars));
+        assertEquals(2, movieOscars.size());
     }
     
 }

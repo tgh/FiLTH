@@ -13,13 +13,13 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="worked_on")
-public class MovieCrewPerson {
+@Table(name="oscar_given_to")
+public class MovieOscar {
 
     @Id
-    @Column(name="wid")
-    @SequenceGenerator(name="worked_on_seq", sequenceName="worked_on_wid_seq", allocationSize=1)
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="worked_on_seq")
+    @Column(name="id")
+    @SequenceGenerator(name="oscar_given_to_seq", sequenceName="oscar_given_to_id_seq", allocationSize=1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="oscar_given_to_seq")
     private int _id;
     
     @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
@@ -27,11 +27,21 @@ public class MovieCrewPerson {
     private Movie _movie;
     
     @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+    @JoinColumn(name="oid")
+    private Oscar _oscar;
+    
+    @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
     @JoinColumn(name="cid")
     private CrewPerson _crewPerson;
     
-    @Column(name="position")
-    private String _position;
+    @Column(name="year")
+    private int _year;
+    
+    @Column(name="status")
+    private int _status;
+    
+    @Column(name="sharing_with")
+    private Integer _sharingWith;
     
     public int getId() {
         return _id;
@@ -49,6 +59,14 @@ public class MovieCrewPerson {
         _movie = movie;
     }
     
+    public Oscar getOscar() {
+        return _oscar;
+    }
+    
+    public void setOscar(Oscar oscar) {
+        _oscar = oscar;
+    }
+    
     public CrewPerson getCrewPerson() {
         return _crewPerson;
     }
@@ -57,22 +75,42 @@ public class MovieCrewPerson {
         _crewPerson = crewPerson;
     }
     
-    public String getPosition() {
-        return _position;
+    public int getYear() {
+        return _year;
     }
     
-    public void setPosition(String position) {
-        _position = position;
+    public void setYear(int year) {
+        _year = year;
+    }
+    
+    public int getStatus() {
+        return _status;
+    }
+    
+    public void setStatus(int status) {
+        _status = status;
+    }
+    
+    public Integer getSharingWith() {
+        return _sharingWith;
+    }
+    
+    public void setSharingWith(Integer sharingWith) {
+        _sharingWith = sharingWith;
     }
     
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("MovieCrewPerson (");
+        StringBuilder sb = new StringBuilder("MovieOscar (");
         sb.append(_id + ", ");
         sb.append(_movie.getTitle());
         sb.append(" (" + _movie.getYear() + "), ");
-        sb.append(_crewPerson.getFullName() + ", ");
-        sb.append(_position);
+        sb.append(_oscar.getCategory());
+        sb.append(" (" + _status + "), ");
+        sb.append(_year);
+        if (_crewPerson.getId() != 0) {
+            sb.append(", " + _crewPerson.getFullName());
+        }
         sb.append(")");
         return sb.toString();
     }

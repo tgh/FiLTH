@@ -40,6 +40,9 @@ public class CrewPerson {
     @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
     private Set<MovieCrewPerson> _movieCrewPersons;
     
+    @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
+    private Set<MovieOscar> _movieOscars;
+    
     public int getId() {
         return _id;
     }
@@ -94,6 +97,14 @@ public class CrewPerson {
     
     public void setMovieCrewPersons(Set<MovieCrewPerson> movieCrewPersons) {
         _movieCrewPersons = movieCrewPersons;
+    }
+    
+    public Set<MovieOscar> getMovieOscars() {
+        return _movieOscars;
+    }
+    
+    public void setMovieOscars(Set<MovieOscar> movieOscars) {
+        _movieOscars = movieOscars;
     }
 
     @Override

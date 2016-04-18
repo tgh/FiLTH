@@ -277,7 +277,7 @@ ALTER TABLE filth.tag ADD CONSTRAINT tag_name_unique_constraint UNIQUE(tag_name)
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constraint UNIQUE(mid, cid, position);
-ALTER TABLE filth.worked_on ADD CONSTRAINT oscar_given_to_unique_constraint UNIQUE(mid, oid, cid);
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_unique_constraint UNIQUE(mid, oid, cid);
 
 
 -- --------------------------
