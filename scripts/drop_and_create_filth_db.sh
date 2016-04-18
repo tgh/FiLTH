@@ -19,7 +19,14 @@ function update_sequence {
   sleep 0.5
   getLastFileId $1
   table=$1
-  tableId="$(echo $table | head -c 1)id" # take the first letter of the table name and append "id"
+
+  if [ "$1" == "oscar_given_to" ]
+  then
+    tableId="id"
+  else
+    tableId="$(echo $table | head -c 1)id" # take the first letter of the table name and append "id"
+  fi
+
   sequenceValue=$lastFileId
   sequence=${table}_${tableId}_seq
   psql -U filth_admin -d filth -c "SELECT setval('filth.$sequence', $sequenceValue);" > /dev/null 2>>$LOG_FILE
@@ -102,6 +109,7 @@ if [ $# -gt 0 ]
     update_sequence "position"
     update_sequence "star_rating"
     update_sequence "worked_on"
+    update_sequence "oscar_given_to"
 
     echo "Creating temp/previous_movie_ratings.txt..."
     sleep 0.5

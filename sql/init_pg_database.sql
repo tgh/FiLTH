@@ -186,7 +186,9 @@ category text NOT NULL);
 
 
 -- oscar <--> movie relationship ----------------------------------------------
+CREATE SEQUENCE filth.oscar_given_to_id_seq;
 CREATE TABLE filth.oscar_given_to (
+id smallint DEFAULT nextval('filth.oscar_given_to_id_seq') NOT NULL,
 mid smallint NOT NULL,
 oid smallint NOT NULL,
 cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the oscar
@@ -255,7 +257,7 @@ ALTER TABLE filth.position ADD CONSTRAINT position_pkey PRIMARY KEY(pid);
 ALTER TABLE filth.tag ADD CONSTRAINT tag_pkey PRIMARY KEY(tid);
 ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid, tid);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
-ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(mid, oid, cid);
+ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(id);
 ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
@@ -274,7 +276,8 @@ ALTER TABLE filth.position ADD CONSTRAINT position_title_unique_constraint UNIQU
 ALTER TABLE filth.tag ADD CONSTRAINT tag_name_unique_constraint UNIQUE(tag_name);
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
-ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constrainst UNIQUE(mid, cid, position);
+ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constraint UNIQUE(mid, cid, position);
+ALTER TABLE filth.worked_on ADD CONSTRAINT oscar_given_to_unique_constraint UNIQUE(mid, oid, cid);
 
 
 -- --------------------------
