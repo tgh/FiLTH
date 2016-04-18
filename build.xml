@@ -211,7 +211,6 @@
                 <jvmarg value="${remoteDebugJvmArgs}"/>
                 <jvmarg value="-Xmx768m" />
                 <jvmarg value="-Dfile.encoding=utf8" />
-                <jvmarg value="-XX:MaxPermSize=256m" />
                 <jvmarg value="-XX:-UseGCOverheadLimit" />
                 <batchtest todir="${test.results.dir}">
                     <junit-filesets />
