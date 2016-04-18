@@ -12,6 +12,7 @@ import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 
 import com.filth.model.Movie;
+import com.filth.model.MovieCrewPerson;
 import com.filth.model.Tag;
 
 public class MovieServiceTest extends ServiceTestAbstract {
@@ -27,6 +28,15 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<Tag> tags = movie.getTags();
         assertTrue(CollectionUtils.isNotEmpty(tags));
         assertEquals(17, tags.size());
+    }
+    
+    @Test
+    public void getMovieCrewPersons() {
+        Movie movie = _movieService.getMovieById(1548); //Star Wars
+        assertNotNull(movie);
+        Set<MovieCrewPerson> movieCrewPersons = movie.getMovieCrewPersons();
+        assertTrue(CollectionUtils.isNotEmpty(movieCrewPersons));
+        assertEquals(3, movieCrewPersons.size());
     }
 
 }

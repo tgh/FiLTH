@@ -1,10 +1,14 @@
 package com.filth.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -32,6 +36,9 @@ public class CrewPerson {
     
     @Column(name="known_as")
     private String _positionKnownAs;
+    
+    @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
+    private Set<MovieCrewPerson> _movieCrewPersons;
     
     public int getId() {
         return _id;
@@ -79,6 +86,14 @@ public class CrewPerson {
 
     public void setPositionKnownAs(String positionKnownAs) {
         _positionKnownAs = positionKnownAs;
+    }
+    
+    public Set<MovieCrewPerson> getMovieCrewPersons() {
+        return _movieCrewPersons;
+    }
+    
+    public void setMovieCrewPersons(Set<MovieCrewPerson> movieCrewPersons) {
+        _movieCrewPersons = movieCrewPersons;
     }
 
     @Override

@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -58,6 +59,9 @@ public class Movie {
             inverseJoinColumns = {@JoinColumn(name = "tid")}
     )
     private Set<Tag> _tags;
+    
+    @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
+    private Set<MovieCrewPerson> _movieCrewPersons;
 
     public int getId() {
         return _id;
@@ -145,6 +149,14 @@ public class Movie {
     
     public void setTags(Set<Tag> tags) {
         _tags = tags;
+    }
+    
+    public Set<MovieCrewPerson> getMovieCrewPersons() {
+        return _movieCrewPersons;
+    }
+    
+    public void setMovieCrewPersons(Set<MovieCrewPerson> movieCrewPersons) {
+        _movieCrewPersons = movieCrewPersons;
     }
     
     public String getStarRatingForDisplay() throws Exception {
