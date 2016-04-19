@@ -520,7 +520,7 @@ INSERT INTO filth.movie VALUES (519, 'Enemy Mine', 1985, '***', 'PG-13', 'USA', 
 INSERT INTO filth.movie VALUES (520, 'The English Patient', 1996, '**½', 'R', NULL, NULL, 'tt0116209', 0, 409);
 INSERT INTO filth.movie VALUES (521, 'Equilibrium', 2003, '***½', 'R', 'USA', NULL, 'tt0238380', 0, 7299);
 INSERT INTO filth.movie VALUES (522, 'Eraserhead', 1977, '***', 'NR', 'USA', NULL, 'tt0074486', 0, 985);
-INSERT INTO filth.movie VALUES (523, 'Erin Brockovich', 2000, '**½', 'R', 'USA', NULL, 'tt0195685', 0, 462);
+INSERT INTO filth.movie VALUES (523, 'Erin Brockovich', 2000, '***½', 'R', 'USA', NULL, 'tt0195685', 0, 462);
 INSERT INTO filth.movie VALUES (524, 'Eternal Sunshine of the Spotless Mind', 2004, '***½', 'R', 'USA', NULL, 'tt0338013', 1, 38);
 INSERT INTO filth.movie VALUES (525, 'Event Horizon', 1997, '**½', 'R', 'USA', NULL, 'tt0119081', 0, 8413);
 INSERT INTO filth.movie VALUES (526, 'Everyone Says I Love You', 1997, '***½', 'R', 'USA', NULL, 'tt0116242', 0, 9716);
@@ -3551,7 +3551,7 @@ INSERT INTO filth.movie VALUES (3550, 'Despicable Me 2', 2013, '*½', 'PG', 'USA
 INSERT INTO filth.movie VALUES (3551, 'Evidence of Blood', 1998, '***', 'PG-13', 'USA', NULL, 'tt0154467', 0, 278822);
 INSERT INTO filth.movie VALUES (3552, 'The Birdcage', 1996, '***', 'R', 'USA', NULL, 'tt0115685', 0, 11000);
 INSERT INTO filth.movie VALUES (3553, 'Magic in the Moonlight', 2014, '**½', 'PG-13', 'USA', NULL, 'tt2870756', 1, 229297);
-INSERT INTO filth.movie VALUES (3554, 'Ernest & Celestine', 2012, '***½', 'PG', 'France', NULL, 'tt1816518', 0, 126319);
+INSERT INTO filth.movie VALUES (3554, 'Ernest & Celestine', 2012, '***', 'PG', 'France', NULL, 'tt1816518', 0, 126319);
 INSERT INTO filth.movie VALUES (3556, 'Ip Man', 2008, '***', 'R', 'China', NULL, 'tt1220719', 0, 14756);
 INSERT INTO filth.movie VALUES (3557, 'Ip Man 2: Legend of the Grandmaster', 2010, '**½', 'R', 'China', NULL, 'tt1386932', 0, 37472);
 INSERT INTO filth.movie VALUES (3558, 'Mud', 2013, '****', 'R', 'USA', NULL, 'tt1935179', 0, 103731);

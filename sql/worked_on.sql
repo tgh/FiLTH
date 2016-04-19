@@ -7216,3 +7216,6 @@ INSERT INTO filth.worked_on VALUES(7215, 3912, 2749, 'Supporting Actor');  -- Ja
 INSERT INTO filth.worked_on VALUES(7216, 3912, 525, 'Supporting Actor');  -- Terence Stamp for Bowfinger (1999)
 INSERT INTO filth.worked_on VALUES(7217, 3912, 32, 'Small Part');  -- Robert Downey Jr. for Bowfinger (1999)
 INSERT INTO filth.worked_on VALUES(7218, 3912, 3272, 'Small Part');  -- John Cho for Bowfinger (1999)
+INSERT INTO filth.worked_on VALUES(7219, 523, 110, 'Supporting Actor');  -- Aaron Eckhart for Erin Brockovich (2000)
+INSERT INTO filth.worked_on VALUES(7220, 523, 3273, 'Supporting Actor');  -- Peter Coyote for Erin Brockovich (2000)
+INSERT INTO filth.worked_on VALUES(7221, 523, 1375, 'Cinematographer');  -- Edward Lachman for Erin Brockovich (2000)

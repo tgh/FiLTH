@@ -17933,3 +17933,5 @@ INSERT INTO filth.tag_given_to VALUES(3912, 2);  -- Bowfinger (1999) tagged with
 INSERT INTO filth.tag_given_to VALUES(3912, 365);  -- Bowfinger (1999) tagged with 'actor(s)-playing-multiple-roles'
 INSERT INTO filth.tag_given_to VALUES(3912, 209);  -- Bowfinger (1999) tagged with 'filmmaking'
 INSERT INTO filth.tag_given_to VALUES(3912, 61);  -- Bowfinger (1999) tagged with 'arts/entertainment'
+INSERT INTO filth.tag_given_to VALUES(523, 287);  -- Erin Brockovich (2000) tagged with 'social-injustice'
+INSERT INTO filth.tag_given_to VALUES(523, 288);  -- Erin Brockovich (2000) tagged with 'upsetting'
