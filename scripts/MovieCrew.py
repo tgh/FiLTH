@@ -84,7 +84,7 @@ class MovieCrew(object):
     f.close()
 
     lastLine = lines[len(lines)-1]
-    vals = re.search('VALUES \\((\d+)\\);', line).group(1).split(',')
+    vals = re.search('VALUES\\((.*)\\);', lastLine).group(1).split(',')
     wid = vals[0]
     self._nextWid = int(wid) + 1
 
