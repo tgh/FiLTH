@@ -55,6 +55,7 @@ def init():
     initCrewMap()
     initTylerMap()
     initNextWid()
+    initNextTgtId()
 
 
 #-----------------------------------------------------------------------------
@@ -174,7 +175,7 @@ def initNextTgtId():
     f.close()
 
     lastLine = lines[len(lines)-1]
-    vals = re.search('VALUES \\((\d+)\\);', line).group(1).split(',')
+    vals = re.search('VALUES \\((\d+)\\);', lastLine).group(1).split(',')
     tgtid = vals[0]
     _nextTgtId = str(int(tgtid) + 1)
 

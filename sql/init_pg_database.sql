@@ -209,7 +209,9 @@ list_author text DEFAULT NULL);
 
 
 -- list <--> movie relationship -----------------------------------------------
+CREATE SEQUENCE filth.list_contains_id_seq;
 CREATE TABLE filth.list_contains (
+id smallint DEFAULT nextval('filth.list_contains_id_seq') NOT NULL,
 mid smallint NOT NULL,
 lid smallint NOT NULL,
 -- most of the time this will be used as a numeric ordering of the list, but
@@ -261,7 +263,7 @@ ALTER TABLE filth.tag_given_to ADD CONSTRAINT tag_given_to_pkey PRIMARY KEY(mid,
 ALTER TABLE filth.oscar ADD CONSTRAINT oscar_pkey PRIMARY KEY(oid);
 ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(id);
 ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
-ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
+ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(id);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
 ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(id);
 
@@ -281,6 +283,7 @@ ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(c
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constraint UNIQUE(mid, cid, position);
 ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_unique_constraint UNIQUE(mid, oid, cid);
 ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_unique_constraint UNIQUE(mid, tid, cid, scene_title);
+ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_unique_constraint UNIQUE(mid, lid);
 
 
 -- --------------------------

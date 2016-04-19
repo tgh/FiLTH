@@ -11,6 +11,7 @@ import javax.annotation.Resource;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 
+import com.filth.model.ListMovie;
 import com.filth.model.Movie;
 import com.filth.model.MovieCrewPerson;
 import com.filth.model.MovieOscar;
@@ -57,6 +58,15 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieTyler> movieTylers = movie.getMovieTylers();
         assertTrue(CollectionUtils.isNotEmpty(movieTylers));
         assertEquals(6, movieTylers.size());
+    }
+    
+    @Test
+    public void getListMovies() {
+        Movie movie = _movieService.getMovieById(339); //City Lights
+        assertNotNull(movie);
+        Set<ListMovie> listMovies = movie.getListMovies();
+        assertTrue(CollectionUtils.isNotEmpty(listMovies));
+        assertEquals(1, listMovies.size());
     }
 
 }

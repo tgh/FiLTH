@@ -19,7 +19,7 @@ function getFileLineCount() {
 }
 
 function doesTableNeedSequenceUpdated() {
-    if [ "$1" == "crew_person" -o "$1" == "list" -o "$1" == "movie" -o "$1" == "oscar" -o "$1" == "tag" -o "$1" == "tyler" -o "$1" == "mpaa" -o "$1" == "country" -o "$1" == "position" -o "$1" == "star_rating" -o "$1" == "worked_on" -o "$1" == "oscar_given_to"  -o "$1" == "tyler_given_to" ]
+    if [ "$1" == "crew_person" -o "$1" == "list" -o "$1" == "movie" -o "$1" == "oscar" -o "$1" == "tag" -o "$1" == "tyler" -o "$1" == "mpaa" -o "$1" == "country" -o "$1" == "position" -o "$1" == "star_rating" -o "$1" == "worked_on" -o "$1" == "oscar_given_to"  -o "$1" == "tyler_given_to" -o "$1" == "list_contains" ]
     then
         updateSequence=$TRUE
     else
@@ -139,7 +139,7 @@ updateTable "oscar" "oid"
 updateTable "tag" "tid"
 updateTable "tyler" "tid"
 # relationship tables
-updateTable "list_contains"
+updateTable "list_contains" "id"
 updateTable "movie_link"
 updateTable "oscar_given_to" "id"
 updateTable "tag_given_to"

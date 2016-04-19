@@ -1,10 +1,14 @@
 package com.filth.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -23,6 +27,9 @@ public class List {
     
     @Column(name="list_author")
     private String _author;
+    
+    @OneToMany(mappedBy="_list", fetch=FetchType.EAGER)
+    private Set<ListMovie> _listMovies;
 
     public int getId() {
         return _id;
@@ -46,6 +53,14 @@ public class List {
     
     public void setAuthor(String author) {
         _author = author;
+    }
+    
+    public Set<ListMovie> getListMovies() {
+        return _listMovies;
+    }
+    
+    public void setListMovies(Set<ListMovie> listMovies) {
+        _listMovies = listMovies;
     }
     
     @Override

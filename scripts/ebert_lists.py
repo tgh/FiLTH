@@ -13,8 +13,8 @@ COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
 LOG_FILE = FILTH_PATH + '/logs/ebert_lists.log'
                                              # lid, title, author
 LIST_INSERT_FORMAT = "INSERT INTO filth.list VALUES ({0}, '{1}', '{2}');\n";
-                                                               # mid, lid, rank    title          list    author
-LIST_CONTAINS_INSERT_FORMAT = 'INSERT INTO filth.list_contains VALUES ({0}, {1}, {2}); -- "{3}" in list "{4}" by {5}"\n'
+                                                                      # id, mid, lid, rank    title          list    author
+LIST_CONTAINS_INSERT_FORMAT = 'INSERT INTO filth.list_contains VALUES ({0}, {1}, {2}, {3}); -- "{4}" in list "{5}" by {6}"\n'
                                                # mid, title, year, star_rating, mpaa, country, comments, imdb_id, theatre_viewings
 MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8});\n";
 
@@ -29,6 +29,7 @@ _movieFile = None
 _logFile = None
 _nextLid = 0
 _nextMid = 0
+_nextLcId = 0
 
 
 #-----------------------------------------------------------------------------
@@ -105,6 +106,21 @@ def initNextLid():
     lines = f.readlines()
     f.close()
     _nextLid = str(len(lines) + 1)
+
+
+#-----------------------------------------------------------------------------
+
+def initNextLcId():
+    global _nextLcId
+
+    f = open(LIST_CONTAINS_FILE, 'r')
+    lines = f.readlines()
+    f.close()
+
+    lastLine = lines[len(lines)-1]
+    vals = re.search('VALUES \\((.*)\\);', lastLine).group(1).split(',')
+    lcid = vals[0]
+    _nextLcId = str(int(lcid) + 1)
 
 
 #-----------------------------------------------------------------------------
@@ -247,7 +263,10 @@ def processInputFileLines():
         title = line.strip().strip('*')
         mid = getMid(title)
 
-        listContainsInsert = LIST_CONTAINS_INSERT_FORMAT.format(mid, _nextLid, 'NULL', title, listTitle, listAuthor)
+        lcid = _nextLcId
+        _nextLcId = str(int(_nextLcId) + 1)
+
+        listContainsInsert = LIST_CONTAINS_INSERT_FORMAT.format(lcid, mid, _nextLid, 'NULL', title, listTitle, listAuthor)
         _listContainsInserts.append(listContainsInsert)
 
 
