@@ -3265,3 +3265,5 @@ INSERT INTO filth.crew_person VALUES (3267, 'Norris', 'Dean', NULL, 'Dean Norris
 INSERT INTO filth.crew_person VALUES (3268, 'Molina', 'Alfred', NULL, 'Alfred Molina', 'Actor');  -- Actor: Alfred Molina
 INSERT INTO filth.crew_person VALUES (3269, 'Crowley', 'John', NULL, 'John Crowley', 'Director');  -- Director: John Crowley
 INSERT INTO filth.crew_person VALUES (3270, 'Cohen', 'Emory', NULL, 'Emory Cohen', 'Actor');  -- Actor: Emory Cohen
+INSERT INTO filth.crew_person VALUES (3271, 'Baranski', 'Christine', NULL, 'Christine Baranski', 'Actress');  -- Actress: Christine Baranski
+INSERT INTO filth.crew_person VALUES (3272, 'Cho', 'John', NULL, 'John Cho', 'Actor');  -- Actor: John Cho

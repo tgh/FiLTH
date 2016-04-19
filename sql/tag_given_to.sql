@@ -17929,3 +17929,7 @@ INSERT INTO filth.tag_given_to VALUES(3894, 59);  -- Brooklyn (2015) tagged with
 INSERT INTO filth.tag_given_to VALUES(3894, 58);  -- Brooklyn (2015) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(3894, 118);  -- Brooklyn (2015) tagged with '20th-century'
 INSERT INTO filth.tag_given_to VALUES(3894, 21);  -- Brooklyn (2015) tagged with 'period'
+INSERT INTO filth.tag_given_to VALUES(3912, 2);  -- Bowfinger (1999) tagged with 'comedy'
+INSERT INTO filth.tag_given_to VALUES(3912, 365);  -- Bowfinger (1999) tagged with 'actor(s)-playing-multiple-roles'
+INSERT INTO filth.tag_given_to VALUES(3912, 209);  -- Bowfinger (1999) tagged with 'filmmaking'
+INSERT INTO filth.tag_given_to VALUES(3912, 61);  -- Bowfinger (1999) tagged with 'arts/entertainment'
