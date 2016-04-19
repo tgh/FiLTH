@@ -3268,3 +3268,6 @@ INSERT INTO filth.crew_person VALUES (3270, 'Cohen', 'Emory', NULL, 'Emory Cohen
 INSERT INTO filth.crew_person VALUES (3271, 'Baranski', 'Christine', NULL, 'Christine Baranski', 'Actress');  -- Actress: Christine Baranski
 INSERT INTO filth.crew_person VALUES (3272, 'Cho', 'John', NULL, 'John Cho', 'Actor');  -- Actor: John Cho
 INSERT INTO filth.crew_person VALUES (3273, 'Coyote', 'Peter', NULL, 'Peter Coyote', 'Actor');  -- Actor: Peter Coyote
+INSERT INTO filth.crew_person VALUES (3274, 'Gavron', 'Sarah', NULL, 'Sarah Gavron', 'Director');  -- Director: Sarah Gavron
+INSERT INTO filth.crew_person VALUES (3275, 'Morgan', 'Abi', NULL, 'Abi Morgan', 'Screenwriter');  -- Screenwriter: Abi Morgan
+INSERT INTO filth.crew_person VALUES (3276, 'Duff', 'Anne-Marie', NULL, 'Anne-Marie Duff', 'Actress');  -- Actress: Anne-Marie Duff
