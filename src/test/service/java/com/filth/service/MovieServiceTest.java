@@ -14,6 +14,7 @@ import org.junit.Test;
 import com.filth.model.Movie;
 import com.filth.model.MovieCrewPerson;
 import com.filth.model.MovieOscar;
+import com.filth.model.MovieTyler;
 import com.filth.model.Tag;
 
 public class MovieServiceTest extends ServiceTestAbstract {
@@ -47,6 +48,15 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieOscar> movieOscars = movie.getMovieOscars();
         assertTrue(CollectionUtils.isNotEmpty(movieOscars));
         assertEquals(6, movieOscars.size());
+    }
+    
+    @Test
+    public void getMovieTylers() {
+        Movie movie = _movieService.getMovieById(283); //Cache
+        assertNotNull(movie);
+        Set<MovieTyler> movieTylers = movie.getMovieTylers();
+        assertTrue(CollectionUtils.isNotEmpty(movieTylers));
+        assertEquals(6, movieTylers.size());
     }
 
 }

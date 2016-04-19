@@ -23,7 +23,7 @@ function update_sequence {
   getLastFileId $1
   table=$1
 
-  if [ "$1" == "oscar_given_to" ]
+  if [ "$1" == "oscar_given_to" -o "$1" == "tyler_given_to" ]
   then
     tableId="id"
   else
@@ -114,6 +114,7 @@ if [ $# -gt 0 ]
     update_sequence "star_rating"
     update_sequence "worked_on"
     update_sequence "oscar_given_to"
+    update_sequence "tyler_given_to"
 
     echo "Done."
 fi

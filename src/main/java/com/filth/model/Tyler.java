@@ -1,10 +1,14 @@
 package com.filth.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -20,6 +24,9 @@ public class Tyler {
     
     @Column(name="category")
     private String _category;
+    
+    @OneToMany(mappedBy="_tyler", fetch=FetchType.EAGER)
+    private Set<MovieTyler> _movieTylers;
 
     public int getId() {
         return _id;
@@ -35,6 +42,14 @@ public class Tyler {
 
     public void setCategory(String category) {
         _category = category;
+    }
+    
+    public Set<MovieTyler> getMovieTylers() {
+        return _movieTylers;
+    }
+    
+    public void setMovieTylers(Set<MovieTyler> movieTylers) {
+        _movieTylers = movieTylers;
     }
     
     @Override

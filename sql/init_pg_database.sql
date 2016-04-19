@@ -228,7 +228,9 @@ category text NOT NULL);
 
 
 -- tyler <--> movie relationship ----------------------------------------------
+CREATE SEQUENCE filth.tyler_given_to_id_seq;
 CREATE TABLE filth.tyler_given_to (
+id smallint DEFAULT nextval('filth.tyler_given_to_id_seq') NOT NULL,
 mid smallint NOT NULL,
 tid smallint NOT NULL,
 cid smallint DEFAULT 0,  -- value of 0 indicates no recipient for the award
@@ -261,7 +263,7 @@ ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_pkey PRIMARY KEY(
 ALTER TABLE filth.list ADD CONSTRAINT list_pkey PRIMARY KEY(lid);
 ALTER TABLE filth.list_contains ADD CONSTRAINT list_contains_pkey PRIMARY KEY(mid, lid);
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_pkey PRIMARY KEY(tid);
-ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(mid, tid, cid, scene_title);
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(id);
 
 
 -- ---------------------
@@ -278,6 +280,7 @@ ALTER TABLE filth.oscar ADD CONSTRAINT oscar_category_unique_constraint UNIQUE(c
 ALTER TABLE filth.tyler ADD CONSTRAINT tyler_category_unique_constraint UNIQUE(category);
 ALTER TABLE filth.worked_on ADD CONSTRAINT worked_on_unique_constraint UNIQUE(mid, cid, position);
 ALTER TABLE filth.oscar_given_to ADD CONSTRAINT oscar_given_to_unique_constraint UNIQUE(mid, oid, cid);
+ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_unique_constraint UNIQUE(mid, tid, cid, scene_title);
 
 
 -- --------------------------

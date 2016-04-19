@@ -14,6 +14,7 @@ import org.junit.Test;
 import com.filth.model.CrewPerson;
 import com.filth.model.MovieCrewPerson;
 import com.filth.model.MovieOscar;
+import com.filth.model.MovieTyler;
 
 public class CrewPersonServiceTest extends ServiceTestAbstract {
     
@@ -36,6 +37,15 @@ public class CrewPersonServiceTest extends ServiceTestAbstract {
         Set<MovieOscar> movieOscars = crewPerson.getMovieOscars();
         assertTrue(CollectionUtils.isNotEmpty(movieOscars));
         assertEquals(2, movieOscars.size());
+    }
+
+    @Test
+    public void getMovieTylers() {
+        CrewPerson crewPerson = _crewPersonService.getCrewPersonById(252); //Darren Aronofsky
+        assertNotNull(crewPerson);
+        Set<MovieTyler> movieTylers = crewPerson.getMovieTylers();
+        assertTrue(CollectionUtils.isNotEmpty(movieTylers));
+        assertEquals(2, movieTylers.size());
     }
     
 }

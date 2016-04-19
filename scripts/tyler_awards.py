@@ -24,8 +24,8 @@ TYLER_FILE = FILTH_PATH + '/sql/tyler.sql'
 TYLER_GIVEN_TO_FILE = FILTH_PATH + '/sql/tyler_given_to.sql'
 WORKED_ON_FILE = FILTH_PATH + '/sql/worked_on.sql'
 LOG_FILE = FILTH_PATH + '/logs/tyler_awards.log'
-                                                        # mid, tid, cid, status, scene
-INSERT_FORMAT_STRING = "INSERT INTO filth.tyler_given_to VALUES ({0}, {1}, {2}, {3}, {4});";
+                                                               # id, mid, tid, cid, status, scene
+INSERT_FORMAT_STRING = "INSERT INTO filth.tyler_given_to VALUES ({0}, {1}, {2}, {3}, {4}, {5});";
 
 _inserts = []
 _crewInserts = []
@@ -41,6 +41,7 @@ _workedOnFile = None
 _logFile = None
 _nextCid = 0
 _nextWid = 0
+_nextTgtId = 0
 
 
 
@@ -165,6 +166,21 @@ def initNextWid():
 
 #-----------------------------------------------------------------------------
 
+def initNextTgtId():
+    global _nextTgtId
+
+    f = open(TYLER_GIVEN_TO_FILE, 'r')
+    lines = f.readlines()
+    f.close()
+
+    lastLine = lines[len(lines)-1]
+    vals = re.search('VALUES \\((\d+)\\);', line).group(1).split(',')
+    tgtid = vals[0]
+    _nextTgtId = str(int(tgtid) + 1)
+
+
+#-----------------------------------------------------------------------------
+
 def getMid(title, year):
     try:
         mid = _movies[title + ' (' + year + ')']
@@ -272,7 +288,9 @@ def processAwardFile(filename):
             for movie in movies:
                 mid = getMid(movie, year)
                 cid = getCid(fields[NOMINEES], mid, movie, year, fields[CATEGORY])
-                insert = INSERT_FORMAT_STRING.format(mid, tid, cid, status, scene)
+                tgtid = _nextTgtId
+                _nextTgtId = str(int(_nextTgtId) + 1)
+                insert = INSERT_FORMAT_STRING.format(tgtid, mid, tid, cid, status, scene)
                 comment = ' -- ' + fields[NOMINEES] + ' for ' + fields[CATEGORY] + ' for ' + movie + ' (' + year + ')\n'
                 _inserts.append(insert + comment)
             continue
@@ -283,7 +301,9 @@ def processAwardFile(filename):
             nominees = fields[NOMINEES].split('|')
             for nominee in nominees:
                 cid = getCid(nominee, mid, fields[TITLE], year, fields[CATEGORY])
-                insert = INSERT_FORMAT_STRING.format(mid, tid, cid, status, scene)
+                tgtid = _nextTgtId
+                _nextTgtId = str(int(_nextTgtId) + 1)
+                insert = INSERT_FORMAT_STRING.format(tgtid, mid, tid, cid, status, scene)
                 comment = ' -- ' + nominee + ' for ' + fields[CATEGORY] + ' for ' + fields[TITLE] + ' (' + year + ')\n'
                 _inserts.append(insert + comment)
         else:
@@ -293,7 +313,9 @@ def processAwardFile(filename):
             else:
                 cid = getCid(fields[NOMINEES], mid, fields[TITLE], year, fields[CATEGORY])
                 comment = ' -- ' + fields[NOMINEES] + ' for ' + fields[CATEGORY] + ' for ' + fields[TITLE] + ' (' + year + ')\n'
-            insert = INSERT_FORMAT_STRING.format(mid, tid, cid, status, scene)
+            tgtid = _nextTgtId
+            _nextTgtId = str(int(_nextTgtId) + 1)
+            insert = INSERT_FORMAT_STRING.format(tgtid, mid, tid, cid, status, scene)
             _inserts.append(insert + comment)
 
 
