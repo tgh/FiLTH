@@ -14,6 +14,7 @@ import org.junit.Test;
 import com.filth.model.ListMovie;
 import com.filth.model.Movie;
 import com.filth.model.MovieCrewPerson;
+import com.filth.model.MovieLink;
 import com.filth.model.MovieOscar;
 import com.filth.model.MovieTyler;
 import com.filth.model.Tag;
@@ -67,6 +68,26 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<ListMovie> listMovies = movie.getListMovies();
         assertTrue(CollectionUtils.isNotEmpty(listMovies));
         assertEquals(1, listMovies.size());
+    }
+    
+    @Test
+    public void getMovieLinksFromThisMovie() {
+        Movie movie = _movieService.getMovieById(1548); //Star Wars
+        assertNotNull(movie);
+        Set<MovieLink> movieLinks = movie.getMovieLinksFromThisMovie();
+        assertTrue(CollectionUtils.isNotEmpty(movieLinks));
+        assertEquals(2, movieLinks.size());
+        System.out.println(movieLinks);
+    }
+    
+    @Test
+    public void getMovieLinksToThisMovie() {
+        Movie movie = _movieService.getMovieById(1548); //Star Wars
+        assertNotNull(movie);
+        Set<MovieLink> movieLinks = movie.getMovieLinksToThisMovie();
+        assertTrue(CollectionUtils.isNotEmpty(movieLinks));
+        assertEquals(2, movieLinks.size());
+        System.out.println(movieLinks);
     }
 
 }

@@ -19,11 +19,11 @@ function getFileLineCount() {
 }
 
 function doesTableNeedSequenceUpdated() {
-    if [ "$1" == "crew_person" -o "$1" == "list" -o "$1" == "movie" -o "$1" == "oscar" -o "$1" == "tag" -o "$1" == "tyler" -o "$1" == "mpaa" -o "$1" == "country" -o "$1" == "position" -o "$1" == "star_rating" -o "$1" == "worked_on" -o "$1" == "oscar_given_to"  -o "$1" == "tyler_given_to" -o "$1" == "list_contains" ]
+    if [ "$1" == "movie_link_type" -o "$1" == "tag_given_to" ]
     then
-        updateSequence=$TRUE
-    else
         updateSequence=$FALSE
+    else
+        updateSequence=$TRUE
     fi
 }
 
@@ -126,11 +126,11 @@ function updateTable() {
 > $LOG_FILE # clear the log file
 
 # integrity tables
-updateTable "country"
+updateTable "country" "cid"
 updateTable "movie_link_type"
-updateTable "mpaa"
-updateTable "position"
-updateTable "star_rating"
+updateTable "mpaa" "mid"
+updateTable "position" "pid"
+updateTable "star_rating" "sid"
 # entity tables
 updateTable "crew_person" "cid"
 updateTable "list" "lid"
@@ -140,8 +140,8 @@ updateTable "tag" "tid"
 updateTable "tyler" "tid"
 # relationship tables
 updateTable "list_contains" "id"
-updateTable "movie_link"
+updateTable "movie_link" "id"
 updateTable "oscar_given_to" "id"
 updateTable "tag_given_to"
 updateTable "tyler_given_to" "id"
-updateTable "worked_on"
+updateTable "worked_on" "wid"

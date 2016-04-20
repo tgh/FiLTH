@@ -29,7 +29,7 @@ public class Tag {
     @Column(name="tag_name")
     private String _name;
     
-    @ManyToOne()
+    @ManyToOne
     @JoinColumn(name="parent_tid")
     private Tag _parent;
     

@@ -71,6 +71,12 @@ public class Movie {
     
     @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
     private Set<ListMovie> _listMovies;
+    
+    @OneToMany(mappedBy="_baseMovie", fetch=FetchType.EAGER)
+    private Set<MovieLink> _movieLinksFromThisMovie;
+    
+    @OneToMany(mappedBy="_linkedMovie", fetch=FetchType.EAGER)
+    private Set<MovieLink> _movieLinksToThisMovie;
 
     public int getId() {
         return _id;
@@ -190,6 +196,22 @@ public class Movie {
     
     public void setListMovies(Set<ListMovie> listMovies) {
         _listMovies = listMovies;
+    }
+    
+    public Set<MovieLink> getMovieLinksFromThisMovie() {
+        return _movieLinksFromThisMovie;
+    }
+    
+    public void setMovieLinksFromThisMovie(Set<MovieLink> movieLinks) {
+        _movieLinksFromThisMovie = movieLinks;
+    }
+    
+    public Set<MovieLink> getMovieLinksToThisMovie() {
+        return _movieLinksToThisMovie;
+    }
+    
+    public void setMovieLinksToThisMovie(Set<MovieLink> movieLinks) {
+        _movieLinksToThisMovie = movieLinks;
     }
     
     public String getStarRatingForDisplay() throws Exception {

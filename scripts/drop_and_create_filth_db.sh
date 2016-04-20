@@ -20,7 +20,7 @@ function update_sequence {
   getLastFileId $1
   table=$1
 
-  if [ "$1" == "oscar_given_to" -o "$1" == "tyler_given_to" -o "$1" == "list_contains" ]
+  if [ "$1" == "oscar_given_to" -o "$1" == "tyler_given_to" -o "$1" == "list_contains" -o "$1" == "movie_link" ]
   then
     tableId="id"
   else
@@ -112,6 +112,7 @@ if [ $# -gt 0 ]
     update_sequence "oscar_given_to"
     update_sequence "tyler_given_to"
     update_sequence "list_contains"
+    update_sequence "movie_link"
 
     echo "Creating temp/previous_movie_ratings.txt..."
     sleep 0.5
