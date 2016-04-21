@@ -1,5 +1,8 @@
 package com.filth.model;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -14,6 +17,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.apache.commons.collections.CollectionUtils;
 
 @Entity
 @Table(name="movie")
@@ -217,9 +223,97 @@ public class Movie {
     public String getStarRatingForDisplay() throws Exception {
         return StarRating.encodeToHTML(_starRating);
     }
+    
+    /**
+     * Gets the director of this movie. However, a Set is returned due to there
+     * being movies with multiple directors. It is the caller's responsibility
+     * to handle the single-director case.
+     * 
+     * @return Set of {@link CrewPerson} objects (usually a set of one), or an empty
+     * set if none found.
+     */
+    @Transient
+    public Set<CrewPerson> getDirector() {
+        return getCrewForPosition("Director");
+    }
+    
+    /**
+     * Gets the screen-writers of this movie.
+     * 
+     * @return Set of {@link CrewPerson} objects, or an empty set if none found.
+     */
+    @Transient
+    public Set<CrewPerson> getScreenWriters() {
+        return getCrewForPosition("Screenwriter");
+    }
+    
+    /**
+     * Gets the cinematographer of this movie. However, a Set is returned due the
+     * rare cases of movies with multiple cinematographers. It is the caller's
+     * responsibility to handle the single-cinematographer case.
+     * 
+     * @return Set of {@link CrewPerson} objects (usually a set of one), or an empty
+     * set if none found.
+     */
+    @Transient
+    public Set<CrewPerson> getCinematographer() {
+        return getCrewForPosition("Cinematographer");
+    }
+    
+    /**
+     * Gets the acting crew members of this movie.
+     * 
+     * @return A String (full name) -> String (position) map, or an empty map
+     * if none found.
+     */
+    @Transient
+    public Map<String, String> getActors() {
+        Map<String, String> actorToPositionMap = new HashMap<>();
+        
+        if (CollectionUtils.isEmpty(_movieCrewPersons)) {
+            return actorToPositionMap;
+        }
+        
+        for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
+            String position = movieCrewPerson.getPosition();
+            CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
+            
+            switch(position) {
+                case "Lead Actor":
+                case "Supporting Actor":
+                case "Lead Actress":
+                case "Supporting Actress":
+                case "Character Voice":
+                case "Small Part":
+                case "Cameo":
+                    actorToPositionMap.put(crewPerson.getFullName(), position);
+                default:
+                    continue;
+            }
+        }
+        
+        return actorToPositionMap;
+    }
   
     @Override
     public String toString() {
         return "Movie (" + _id + ", " + _title + " (" + _year + "))";
+    }
+    
+    private Set<CrewPerson> getCrewForPosition(String position) {
+        Set<CrewPerson> crew = new HashSet<>();
+        
+        if (CollectionUtils.isEmpty(_movieCrewPersons)) {
+            return crew;
+        }
+        
+        for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
+            if (movieCrewPerson.getPosition().equals(position)) {
+                CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
+                crew.add(crewPerson);
+            }
+        }
+        
+        return crew;
     }
 }

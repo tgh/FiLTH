@@ -94,7 +94,8 @@ table.dataTable tbody tr.even {
     text-shadow: 1px 1px #555;
 }
 
-#footer a {
+#footer a,
+.modal a {
     color: #add8e6;
     font-weight: bold;
 }
