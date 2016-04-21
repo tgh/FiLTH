@@ -23,7 +23,9 @@ public abstract class HibernateDAO<T> {
     }
     
     public List<T> getAll() {
-        Criteria criteria = getSession().createCriteria(getEntityClass());
+        Criteria criteria = getSession().createCriteria(getEntityClass())
+                                        //prevent duplicates
+                                        .setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
         return extractTypedList(criteria);
     }
     

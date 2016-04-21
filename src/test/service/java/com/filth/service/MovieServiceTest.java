@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.util.List;
 import java.util.Set;
 
 import javax.annotation.Resource;
@@ -25,6 +26,13 @@ public class MovieServiceTest extends ServiceTestAbstract {
     @Resource
     private MovieService _movieService;
     
+    
+    @Test
+    public void getAllMovies() {
+        List<Movie> movies = _movieService.getAllMovies();
+        assertTrue(CollectionUtils.isNotEmpty(movies));
+        assertEquals(51, movies.size());
+    }
     
     @Test
     public void getTags() {
