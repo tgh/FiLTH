@@ -3,6 +3,8 @@ package com.filth.model;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -37,7 +39,8 @@ public class MovieTyler {
     private CrewPerson _crewPerson;
     
     @Column(name="status")
-    private int _status;
+    @Enumerated(EnumType.ORDINAL)
+    private Status _status;
     
     @Column(name="scene_title")
     private String _sceneTitle;
@@ -74,11 +77,11 @@ public class MovieTyler {
         _crewPerson = crewPerson;
     }
     
-    public int getStatus() {
+    public Status getStatus() {
         return _status;
     }
     
-    public void setStatus(int status) {
+    public void setStatus(Status status) {
         _status = status;
     }
     

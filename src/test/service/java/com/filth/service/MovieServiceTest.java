@@ -17,6 +17,7 @@ import com.filth.model.MovieCrewPerson;
 import com.filth.model.MovieLink;
 import com.filth.model.MovieOscar;
 import com.filth.model.MovieTyler;
+import com.filth.model.Status;
 import com.filth.model.Tag;
 
 public class MovieServiceTest extends ServiceTestAbstract {
@@ -50,6 +51,9 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieOscar> movieOscars = movie.getMovieOscars();
         assertTrue(CollectionUtils.isNotEmpty(movieOscars));
         assertEquals(6, movieOscars.size());
+        MovieOscar movieOscar = movieOscars.iterator().next();
+        Status status = movieOscar.getStatus();
+        assertNotNull(status);
     }
     
     @Test
@@ -59,6 +63,9 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieTyler> movieTylers = movie.getMovieTylers();
         assertTrue(CollectionUtils.isNotEmpty(movieTylers));
         assertEquals(6, movieTylers.size());
+        MovieTyler movieTyler = movieTylers.iterator().next();
+        Status status = movieTyler.getStatus();
+        assertNotNull(status);
     }
     
     @Test
@@ -77,7 +84,6 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieLink> movieLinks = movie.getMovieLinksFromThisMovie();
         assertTrue(CollectionUtils.isNotEmpty(movieLinks));
         assertEquals(2, movieLinks.size());
-        System.out.println(movieLinks);
     }
     
     @Test
@@ -87,7 +93,6 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<MovieLink> movieLinks = movie.getMovieLinksToThisMovie();
         assertTrue(CollectionUtils.isNotEmpty(movieLinks));
         assertEquals(2, movieLinks.size());
-        System.out.println(movieLinks);
     }
 
 }
