@@ -15,6 +15,7 @@ String.prototype.capitalizeFirstLetter = function() {
 }
 
 $(document).ready(function() {
+    //add event handler for movie modal (load movie data when opening movie modal for background image)
     $(document).on('opening', '.remodal[data-remodal-id="movieModal"]', function () {
         movieId = $('#bgImageMovie').attr('data-movie-id');
         $.ajax(contextPath + '/movie?id=' + movieId, {
@@ -22,5 +23,13 @@ $(document).ready(function() {
                 $('.remodal[data-remodal-id="movieModal"]').html(data);
             }
         });
+    });
+    
+    //prevent form submission when hitting the 'enter' key
+    $(document).keydown(function(event) {
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+        }
     });
 });
