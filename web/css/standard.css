@@ -100,6 +100,12 @@ table.dataTable tbody tr.even {
     font-weight: bold;
 }
 
+a.movieTitle {
+    color: #78e;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 #bgImageMovie {
     font-style: italic;
     font-weight: bold;

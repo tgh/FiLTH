@@ -4,6 +4,8 @@
     
     <h1>Movies</h1>
     
+    <div class="remodal modal" data-remodal-id="movieModal" data-remodal-options="hashTracking: false"></div>
+    
     <table id="moviesTable">
         <thead>
             <tr>
@@ -12,7 +14,7 @@
                 <th>Star Rating</th>
                 <th>MPAA Rating</th>
                 <th>Country</th>
-                <th>Times seen in theatre</th>
+                <th>Times seen in theater</th>
                 <th>Comments</th>
             </tr>
         </thead>
@@ -24,7 +26,7 @@
                 </#if>
                 
                 <tr data-movie-id="${movie.id}" class="${rowCssClass}">
-                    <td>${movie.title}</td>
+                    <td><a class="movieTitle" data-remodal-target="movieModal">${movie.title}</a></td>
                     <td>
                         <#if movie.year??>
                             ${movie.year}
@@ -62,6 +64,7 @@
     
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
+    <@util.js "movie/movies" />
     <script type="text/javascript">
         $(document).ready(function() {
             $('#moviesTable').DataTable({

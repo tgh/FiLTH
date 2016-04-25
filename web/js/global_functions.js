@@ -16,11 +16,11 @@ String.prototype.capitalizeFirstLetter = function() {
 
 $(document).ready(function() {
     //add event handler for movie modal (load movie data when opening movie modal for background image)
-    $(document).on('opening', '.remodal[data-remodal-id="movieModal"]', function () {
+    $(document).on('opening', '.remodal[data-remodal-id="bgMovieModal"]', function () {
         movieId = $('#bgImageMovie').attr('data-movie-id');
         $.ajax(contextPath + '/movie?id=' + movieId, {
             success: function(data) {
-                $('.remodal[data-remodal-id="movieModal"]').html(data);
+                $('.remodal[data-remodal-id="bgMovieModal"]').html(data);
             }
         });
     });

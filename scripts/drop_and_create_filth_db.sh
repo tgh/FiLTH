@@ -105,7 +105,7 @@ if [ $# -gt 0 ]
     update_sequence "tag"
     update_sequence "tyler"
     update_sequence "mpaa"
-    update_sequence "counry"
+    update_sequence "country"
     update_sequence "position"
     update_sequence "star_rating"
     update_sequence "worked_on"

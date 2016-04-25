@@ -13,8 +13,8 @@ public enum Status {
     
     private String _displayText;
     
-    private Status(String displayName) {
-        _displayText = displayName;
+    private Status(String displayText) {
+        _displayText = displayText;
     }
     
     public String getDisplayText() {
