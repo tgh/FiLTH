@@ -3909,3 +3909,4 @@ INSERT INTO filth.movie VALUES (3910, 'Concussion', 2015, '***½', 'PG-13', 'USA
 INSERT INTO filth.movie VALUES (3911, 'Secret in Their Eyes', 2015, '**½', 'R', 'USA', NULL, 'tt1741273', 0, 290751);
 INSERT INTO filth.movie VALUES (3912, 'Bowfinger', 1999, '**½', 'PG-13', 'USA', NULL, 'tt0131325', 0, 11353);
 INSERT INTO filth.movie VALUES (3913, 'Suffragette', 2015, '***', 'PG-13', 'England', NULL, 'tt3077214', 0, 245168);
+INSERT INTO filth.movie VALUES (3914, 'Pawn Sacrifice', 2015, '***', 'PG-13', 'USA', NULL, 'tt1596345', 0, 245698);
