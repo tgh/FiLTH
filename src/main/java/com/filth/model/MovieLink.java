@@ -3,6 +3,8 @@ package com.filth.model;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,7 +35,8 @@ public class MovieLink {
     private Movie _linkedMovie;
     
     @Column(name="link_type")
-    private String _linkType;
+    @Enumerated(EnumType.STRING)
+    private MovieLinkType _linkType;
     
     @Column(name="comments")
     private String _comments;
@@ -62,11 +65,11 @@ public class MovieLink {
         _linkedMovie = movie;
     }
     
-    public String getLinkType() {
+    public MovieLinkType getLinkType() {
         return _linkType;
     }
     
-    public void setLinkType(String linkType) {
+    public void setLinkType(MovieLinkType linkType) {
         _linkType = linkType;
     }
     
@@ -86,7 +89,7 @@ public class MovieLink {
         sb.append(" (" + _baseMovie.getYear() + "), ");
         sb.append("Linked: " + _linkedMovie.getTitle());
         sb.append(" (" + _linkedMovie.getYear() + "), ");
-        sb.append(_linkType);
+        sb.append(_linkType.name());
         if (StringUtils.isNotEmpty(_comments)) {
             sb.append(", \"" + _comments + "\"");
         }

@@ -6,6 +6,7 @@ package com.filth.model;
  * "No Country For Old Men" Best Picture category would be WON.
  */
 public enum Status {
+    
     NOMINATED("Nominated"),
     WON("Won"),
     TIED("Tied");
