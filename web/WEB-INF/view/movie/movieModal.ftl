@@ -1,5 +1,9 @@
 <button data-remodal-action="close" class="remodal-close"></button>
 
+<#if movie.imageUrl??>
+    <img src="${movie.imageUrl}"/>
+</#if>
+
 <#if movie.year??>
     <h3>${movie.title} (${movie.year})</h3>
 <#else>

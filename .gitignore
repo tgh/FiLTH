@@ -15,3 +15,4 @@ lib/*
 web/WEB-INF/lib/*
 ivy-report
 test-results/*
+conf/tmdb.properties

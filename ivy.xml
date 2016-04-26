@@ -48,6 +48,8 @@
              an explicit url is used for downloading (see ivysettings.xml).
              Let's hope that url continues to exist! :-/ -->
         <dependency org="sojo" name="sojo-optional" rev="0.5.0" conf="runtime->default" transitive="false"/>
+        <!-- The Movie Database Java library -->
+        <dependency org="info.movito" name="themoviedbapi" rev="1.3" conf="compile->default;runtime->default"/>
     </dependencies>
     
 </ivy-module>

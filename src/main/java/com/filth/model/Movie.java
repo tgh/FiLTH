@@ -1,7 +1,13 @@
 package com.filth.model;
 
+import info.movito.themoviedbapi.TmdbApi;
+import info.movito.themoviedbapi.TmdbMovies;
+import info.movito.themoviedbapi.model.Artwork;
+import info.movito.themoviedbapi.model.MovieImages;
+
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -21,9 +27,13 @@ import javax.persistence.Transient;
 
 import org.apache.commons.collections.CollectionUtils;
 
+import com.filth.util.TmdbUtil;
+
 @Entity
 @Table(name="movie")
 public class Movie {
+    
+    private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w396/%s";
 
     @Id
     @Column(name="mid")
@@ -221,6 +231,9 @@ public class Movie {
     }
     
     public String getStarRatingForDisplay() throws Exception {
+        if (null == _starRating) {
+            return null;
+        }
         return StarRating.encodeToHTML(_starRating);
     }
     
@@ -293,6 +306,28 @@ public class Movie {
         }
         
         return actorToPositionMap;
+    }
+    
+    /**
+     * Gets TMDB url for a poster image of this movie.
+     * <p>
+     * TMDB api returns a list of poster images, so we are arbitrarily taking the first one.
+     */
+    @Transient
+    public String getImageUrl() {
+        String apiKey = TmdbUtil.getTmdbApiKey();
+        TmdbApi api = new TmdbApi(apiKey);
+        TmdbMovies movies = api.getMovies();
+        MovieImages images = movies.getImages(Math.toIntExact(getTmdbId()), "en");
+        List<Artwork> posters = images.getPosters();
+        if (CollectionUtils.isEmpty(posters)) {
+            return null;
+        }
+        
+        //arbitrarily take the first one
+        String filePath = posters.get(0).getFilePath();
+        
+        return String.format(TMDB_IMAGE_URL_FORMAT, filePath);
     }
   
     @Override

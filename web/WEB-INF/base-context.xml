@@ -32,6 +32,7 @@
         <property name="locations">
             <list>
                 <value>file:./conf/filth.properties</value>
+                <value>file:./conf/tmdb.properties</value>
             </list>
         </property>
     </bean>
@@ -148,6 +149,11 @@
     <!-- Link Generation -->
     <bean id="linkGenerator" class="com.filth.link.LinkGeneratorFactory">
         <constructor-arg value="com.filth.link.LinkGenerator" />
+    </bean>
+    
+    <!-- TMDB Util (getting TMDB API key from properties file)-->
+    <bean id="tmdbUtil" class="com.filth.util.TmdbUtil">
+        <property name="tmdbApiKey" value="${tmdb.api.key}" />
     </bean>
 
 </beans>

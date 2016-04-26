@@ -10,6 +10,9 @@
             <url name="sojo">
                 <artifact pattern="http://spring-json.sourceforge.net/repository/sojo/[artifact]/[revision]/[artifact]-[revision].[ext]" />
             </url>
+            <!-- repo that contains java library that wraps around The Movie Database's API (https://bintray.com/bintray/jcenter) -->
+            <!-- see http://ant.apache.org/ivy/history/trunk/resolver/bintray.html -->
+            <bintray />
         </chain>
     </resolvers>
 </ivysettings>
