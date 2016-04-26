@@ -16,11 +16,12 @@ String.prototype.capitalizeFirstLetter = function() {
 
 $(document).ready(function() {
     //add event handler for movie modal (load movie data when opening movie modal for background image)
-    $(document).on('opening', '.remodal[data-remodal-id="bgMovieModal"]', function () {
+    $('#bgImageMovie').click(function () {
         movieId = $('#bgImageMovie').attr('data-movie-id');
         $.ajax(contextPath + '/movie?id=' + movieId, {
             success: function(data) {
-                $('.remodal[data-remodal-id="bgMovieModal"]').html(data);
+                //the '.mCSB_container *must* be present here (see http://manos.malihu.gr/jquery-custom-content-scroller/4/#faq-4)
+                $('#movieModal .mCSB_container').html(data);
             }
         });
     });
@@ -31,5 +32,10 @@ $(document).ready(function() {
             event.preventDefault();
             return false;
         }
+    });
+    
+    //init custom scrollbar for movie modal
+    $('#movieModal').mCustomScrollbar({
+        theme: "minimal-dark"
     });
 });

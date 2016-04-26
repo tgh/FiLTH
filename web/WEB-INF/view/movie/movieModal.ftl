@@ -30,6 +30,14 @@
     <p>Comments: ${movie.comments}</p>
 </#if>
 
+<#if movie.tags??>
+    <p>Tags:
+    <#list movie.tags as tag>
+        ${tag.name}<#if tag_has_next>,</#if>
+    </#list>
+    </p>
+</#if>
+
 <#if movie.listMovies??>
     <#list movie.listMovies as listMovie>
         <p>
@@ -62,6 +70,20 @@
     </p>
 </#if>
 
+<#if (movie.movieLinksToThisMovie?? && movie.movieLinksToThisMovie?size > 0)>
+    <p>Movies linked to this movie: 
+    <#list movie.movieLinksToThisMovie as movieLink>
+        ${movieLink.baseMovie.title} (${movieLink.baseMovie.year})<#if movieLink_has_next>,</#if>
+    </#list>
+</#if>
+
+<#if (movie.movieLinksFromThisMovie?? && movie.movieLinksFromThisMovie?size > 0)>
+    <p>Movies linked from this movie: 
+    <#list movie.movieLinksFromThisMovie as movieLink>
+        ${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})<#if movieLink_has_next>,</#if>
+    </#list>
+</#if>
+
 <@renderCrew />
 
 <#if movie.imdbId??>
@@ -69,6 +91,8 @@
         <a href="http://www.imdb.com/title/${movie.imdbId}/?ref_=fn_al_tt_1" target="_blank">View in IMDB.com</a>
     </p>
 </#if>
+
+<#-- macros -->
 
 <#macro renderCrew>
     <#if movie.movieCrewPersons??>

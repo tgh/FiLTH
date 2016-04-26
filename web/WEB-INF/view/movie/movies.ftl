@@ -1,10 +1,9 @@
 <@layout.standard "FiLTH: Movies">
     <#-- css for datatables AND its Select extension-->
     <@util.external_css "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.css" />
+    <@util.css "movie/movies" />
     
     <h1>Movies</h1>
-    
-    <div class="remodal modal" data-remodal-id="movieModal" data-remodal-options="hashTracking: false"></div>
     
     <table id="moviesTable">
         <thead>
