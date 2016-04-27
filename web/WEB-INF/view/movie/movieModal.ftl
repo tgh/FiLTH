@@ -1,102 +1,110 @@
-<button data-remodal-action="close" class="remodal-close"></button>
-
-<#if movie.imageUrl??>
-    <img id="modalMovieImage" src="${movie.imageUrl}"/>
-</#if>
-
-<#if movie.year??>
-    <p id="modalMovieTitle">${movie.title} (${movie.year})</p>
-<#else>
-    <p id="modalMovieTitle">${movie.title}</p>
-</#if>
-
-<#if movie.starRatingForDisplay??>
-    <p id="modalMovieStarRating">${movie.starRatingForDisplay}</p>
-</#if>
-
-<#if movie.mpaaRating??>
-    <p id="modalMovieMpaa"><span class="modalLabel">MPAA Rating:</span> ${movie.mpaaRating}</p>
-</#if>
-
-<#if movie.country??>
-    <p id="modalMovieCountry"><span class="modalLabel">Country:</span> ${movie.country}</p>
-</#if>
-
-<#if movie.theaterViewings??>
-    <p id="modalMovieTheaterViewings"><span class="modalLabel">How many times seen in the theater:</span> ${movie.theaterViewings}<p>
-</#if>
-
-<#if movie.comments??>
-    <p id="modalMovieComments"><span class="modalLabel">Comments:</span> ${movie.comments}</p>
-</#if>
-
-<#if movie.tags??>
-    <p><span class="modalLabel">Tags:</span>
-    <#list movie.tags as tag>
-        ${tag.name}<#if tag_has_next>,</#if>
-    </#list>
-    </p>
-</#if>
-
-<#if movie.listMovies??>
-    <#list movie.listMovies as listMovie>
-        <p>
-        <#if listMovie.rank??>
-            #${listMovie.rank} in 
-        <#else>
-            In 
+<div id="modalBody">
+    <div id="modalLeft">
+        <#if movie.imageUrl??>
+            <div id="modalMovieImageContainer">
+                <img id="modalMovieImage" src="${movie.imageUrl}"/>
+            </div>
         </#if>
-        <i>"${listMovie.list.title}"</i>
-        <#if listMovie.list.author??>
-            by ${listMovie.list.author}
+        
+        <#if (movie.movieOscars?? && movie.movieOscars?size > 0)>
+            <p>
+                <span class="modalLabel">Oscars:</span>
+                <#list movie.movieOscars as movieOscar>
+                    ${movieOscar.status.displayText} for ${movieOscar.oscar.category}</br>
+                </#list>
+            </p>
         </#if>
-        </p>
-    </#list>
-</#if>
-
-<#if (movie.movieOscars?? && movie.movieOscars?size > 0)>
-    <p>
-        <span class="modalLabel">Oscars:</span>
-        <#list movie.movieOscars as movieOscar>
-            ${movieOscar.status.displayText} for ${movieOscar.oscar.category}</br>
-        </#list>
-    </p>
-</#if>
-
-<#if (movie.movieTylers?? && movie.movieTylers?size > 0)>
-    <p>
-        <span class="modalLabel">Tyler awards:</span>
-        <#list movie.movieTylers as movieTyler>
-            ${movieTyler.status.displayText} for ${movieTyler.tyler.category}</br>
-        </#list>
-    </p>
-</#if>
-
-<#if (movie.movieLinksToThisMovie?? && movie.movieLinksToThisMovie?size > 0)>
-    <p>
-        <span class="modalLabel">Movies linked to this movie:</span>
-        <#list movie.movieLinksToThisMovie as movieLink>
-            ${movieLink.baseMovie.title} (${movieLink.baseMovie.year})<#if movieLink_has_next>,</#if>
-        </#list>
-    </p>
-</#if>
-
-<#if (movie.movieLinksFromThisMovie?? && movie.movieLinksFromThisMovie?size > 0)>
-    <p>
-        <span class="modalLabel">Movies linked from this movie:</span>
-        <#list movie.movieLinksFromThisMovie as movieLink>
-            ${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})<#if movieLink_has_next>,</#if>
-        </#list>
-    </p>
-</#if>
-
-<@renderCrew />
-
-<#if movie.imdbId??>
-    <div id="modalMovieImdb">
-        <a id="modalMovieImdbLink" href="http://www.imdb.com/title/${movie.imdbId}/?ref_=fn_al_tt_1" target="_blank">View in IMDB.com</a>
+        
+        <@renderCrew />
     </div>
-</#if>
+    
+    <div id="modalRight">
+        <#if movie.year??>
+            <div id="modalMovieTitle">${movie.title} (${movie.year})</div>
+        <#else>
+            <div id="modalMovieTitle">${movie.title}</div>
+        </#if>
+        
+        <#if movie.starRatingForDisplay??>
+            <div id="modalMovieStarRating">${movie.starRatingForDisplay}</div>
+        </#if>
+        
+        <#if movie.mpaaRating??>
+            <p id="modalMovieMpaa"><span class="modalLabel">MPAA Rating:</span> ${movie.mpaaRating}</p>
+        </#if>
+        
+        <#if movie.country??>
+            <p id="modalMovieCountry"><span class="modalLabel">Country:</span> ${movie.country}</p>
+        </#if>
+        
+        <#if movie.theaterViewings??>
+            <p id="modalMovieTheaterViewings"><span class="modalLabel">How many times seen in the theater:</span> ${movie.theaterViewings}<p>
+        </#if>
+        
+        <#if movie.comments??>
+            <p id="modalMovieComments"><span class="modalLabel">Comments:</span> ${movie.comments}</p>
+        </#if>
+        
+        <#if movie.tags??>
+            <p><span class="modalLabel">Tags:</span>
+            <#list movie.tags as tag>
+                ${tag.name}<#if tag_has_next>,</#if>
+            </#list>
+            </p>
+        </#if>
+        
+        <#if movie.listMovies??>
+            <#list movie.listMovies as listMovie>
+                <p>
+                <#if listMovie.rank??>
+                    #${listMovie.rank} in 
+                <#else>
+                    In 
+                </#if>
+                <i>"${listMovie.list.title}"</i>
+                <#if listMovie.list.author??>
+                    by ${listMovie.list.author}
+                </#if>
+                </p>
+            </#list>
+        </#if>
+        
+        <#if (movie.movieTylers?? && movie.movieTylers?size > 0)>
+            <p>
+                <span class="modalLabel">Tyler awards:</span>
+                <#list movie.movieTylers as movieTyler>
+                    ${movieTyler.status.displayText} for ${movieTyler.tyler.category}</br>
+                </#list>
+            </p>
+        </#if>
+        
+        <#if (movie.movieLinksToThisMovie?? && movie.movieLinksToThisMovie?size > 0)>
+            <p>
+                <span class="modalLabel">Movies linked to this movie:</span>
+                <#list movie.movieLinksToThisMovie as movieLink>
+                    ${movieLink.baseMovie.title} (${movieLink.baseMovie.year})<#if movieLink_has_next>,</#if>
+                </#list>
+            </p>
+        </#if>
+        
+        <#if (movie.movieLinksFromThisMovie?? && movie.movieLinksFromThisMovie?size > 0)>
+            <p>
+                <span class="modalLabel">Movies linked from this movie:</span>
+                <#list movie.movieLinksFromThisMovie as movieLink>
+                    ${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})<#if movieLink_has_next>,</#if>
+                </#list>
+            </p>
+        </#if>
+    </div>
+</div>
+
+<div id="modalFooter">
+    <#if movie.imdbId??>
+        <div id="modalMovieImdb">
+            <a id="modalMovieImdbLink" href="http://www.imdb.com/title/${movie.imdbId}/?ref_=fn_al_tt_1" target="_blank">View in IMDB.com</a>
+        </div>
+    </#if>
+</div>
 
 <#-- macros -->
 

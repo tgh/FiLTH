@@ -132,19 +132,26 @@ section#alertify-logs {
     max-width: 55%;
     background-color: rgba(255,255,255,0.33);
     color: #fff;
+    font-size: 0.9rem;
+}
+
+#modalMovieImageContainer {
+    text-align: center;
 }
 
 #modalMovieImage {
     height: 50vh;
-    float: left;
     margin: 20px;
-    font-size: 0.75rem;
+    display: inline-block;
 }
 
 #modalMovieTitle,
 #modalMovieStarRating {
-    text-align: center;
     font-size: 2rem;
+}
+
+#modalMovieStarRating {
+    margin-bottom: 30px;;
 }
 
 .modalLabel {
@@ -152,5 +159,22 @@ section#alertify-logs {
 }
 
 #modalMovieImdb {
+    border-top: 1px solid #aaa;
+    padding-top: 15px;
     text-align: center;
+}
+
+#modalLeft {
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #aaa;
+}
+
+#modalRight {
+    margin-left: 10px;
+}
+
+#modalBody {
+    overflow: auto;
 }
