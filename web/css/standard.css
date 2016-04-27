@@ -114,7 +114,6 @@ a.movieTitle {
 
 .remodal.modal {
     border-radius: 10px;
-    background-color: #eee;
 }
 
 /* force alertify messages up front */
@@ -124,4 +123,34 @@ section#alertify-logs {
 
 .alignLeft {
     text-align: left;
+}
+
+#movieModal {
+    height: 65vh;
+    overflow: auto;
+    text-align: left;
+    max-width: 55%;
+    background-color: rgba(255,255,255,0.33);
+    color: #fff;
+}
+
+#modalMovieImage {
+    height: 50vh;
+    float: left;
+    margin: 20px;
+    font-size: 0.75rem;
+}
+
+#modalMovieTitle,
+#modalMovieStarRating {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modalLabel {
+    font-weight: bold;
+}
+
+#modalMovieImdb {
+    text-align: center;
 }

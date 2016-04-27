@@ -26,6 +26,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import org.apache.commons.collections.CollectionUtils;
+import org.springframework.util.StringUtils;
 
 import com.filth.util.TmdbUtil;
 
@@ -309,12 +310,18 @@ public class Movie {
     }
     
     /**
-     * Gets TMDB url for a poster image of this movie.
+     * Gets TMDB url for a poster image of this movie. If this movie does not have a TMDB
+     * id, then null is returned. If TMDB does not return any images for this movie,
+     * null is also returned.
      * <p>
      * TMDB api returns a list of poster images, so we are arbitrarily taking the first one.
      */
     @Transient
     public String getImageUrl() {
+        if (StringUtils.isEmpty(getTmdbId())) {
+            return null;
+        }
+        
         String apiKey = TmdbUtil.getTmdbApiKey();
         TmdbApi api = new TmdbApi(apiKey);
         TmdbMovies movies = api.getMovies();

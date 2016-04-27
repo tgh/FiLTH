@@ -9,3 +9,4 @@ INSERT INTO filth.movie_link VALUES(8, 1547, 1546, 'SUCCESSOR_TO', NULL); -- Sta
 INSERT INTO filth.movie_link VALUES(9, 1546, 1547, 'PREDECESSOR_OF', NULL); -- Star Wars: Episode II - Attack of the Clones (2002) -> Star Wars: Episode III - Revenge of the Sith (2005)
 INSERT INTO filth.movie_link VALUES(10, 1546, 1545, 'SUCCESSOR_TO', NULL); -- Star Wars: Episode II - Attack of the Clones (2002) -> Star Wars: Episode I - The Phantom Menace (1999)
 INSERT INTO filth.movie_link VALUES(11, 1545, 1546, 'PREDECESSOR_OF', NULL); -- Star Wars: Episode I - The Phantom Menace (1999) -> Star Wars: Episode II - Attack of the Clones (2002)
+INSERT INTO filth.movie_link VALUES(12, 1550, 3869, 'PREDECESSOR_OF', NULL); -- Star Wars: Episode VI - Return of the Jedi (1983) -> Star Wars: Episode VII – the Force Awakens (2015)
