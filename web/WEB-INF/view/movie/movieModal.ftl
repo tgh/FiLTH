@@ -6,13 +6,23 @@
             </div>
         </#if>
         
-        <#if (movie.movieOscars?? && movie.movieOscars?size > 0)>
+        <#assign oscarMap = movie.oscarToMovieOscarsMap />
+        <#if (oscarMap?? && oscarMap?size > 0)>
             <p>
                 <span class="modalLabel">Oscars:</span>
-                <#list movie.movieOscars as movieOscar>
-                    ${movieOscar.status.displayText} for ${movieOscar.oscar.category}</br>
-                </#list>
             </p>
+            <ul>
+                <#list oscarMap?keys as category>
+                    <li>${oscarMap[category][0].status.displayText} for ${category}
+                    
+                    <#-- Show recipients if applicable -->
+                    <#if false == oscarMap[category][0].crewPerson.isDummy()>
+                        <i>(<#list oscarMap[category] as movieOscar>${movieOscar.crewPerson.fullName}<#if movieOscar_has_next>,</#if></#list>)</i>
+                    </#if>
+                    
+                    </li>
+                </#list>
+            </ul>
         </#if>
         
         <@renderCrew />
@@ -46,11 +56,15 @@
         </#if>
         
         <#if movie.tags??>
-            <p><span class="modalLabel">Tags:</span>
-            <#list movie.tags as tag>
-                ${tag.name}<#if tag_has_next>,</#if>
-            </#list>
-            </p>
+            <div id="modalMovieTags">
+                <p>
+                    <span class="modalLabel">Tags:</span>
+                    
+                    <#list movie.tags as tag>
+                        ${tag.name}<#if tag_has_next>,</#if>
+                    </#list>
+                </p>
+            </div>
         </#if>
         
         <#if movie.listMovies??>
@@ -72,10 +86,12 @@
         <#if (movie.movieTylers?? && movie.movieTylers?size > 0)>
             <p>
                 <span class="modalLabel">Tyler awards:</span>
-                <#list movie.movieTylers as movieTyler>
-                    ${movieTyler.status.displayText} for ${movieTyler.tyler.category}</br>
-                </#list>
             </p>
+            <ul>
+                <#list movie.movieTylers as movieTyler>
+                    <li>${movieTyler.status.displayText} for ${movieTyler.tyler.category}</li>
+                </#list>
+            </ul>
         </#if>
         
         <#if (movie.movieLinksToThisMovie?? && movie.movieLinksToThisMovie?size > 0)>
@@ -110,56 +126,62 @@
 
 <#macro renderCrew>
     <#if movie.movieCrewPersons??>
-        <#local directors = movie.director />
-        <#if (directors?size > 0)>
-            <p>
-            <#if directors?size == 1>
-                <span class="modalLabel">Director:</span> ${directors[0].fullName}
-            <#else>
-                <span class="modalLabel">Directors:</span>
-                <#list directors as director>
-                    ${director.fullName}<#if director_has_next>,</#if>
-                </#list>
+        <div id="modalMovieCrew">
+            <#local directors = movie.director />
+            <#if (directors?size > 0)>
+                <p>
+                <#if directors?size == 1>
+                    <span class="modalLabel">Director:</span> ${directors[0].fullName}
+                <#else>
+                    <span class="modalLabel">Directors:</span>
+                    <#list directors as director>
+                        ${director.fullName}<#if director_has_next>,</#if>
+                    </#list>
+                </#if>
+                </p>
             </#if>
-            </p>
-        </#if>
-        
-        <#local screenWriters = movie.screenWriters />
-        <#if (screenWriters?size > 0)>
-            <p>
-            <#if screenWriters?size == 1>
-                <span class="modalLabel">Screen Writer:</span> ${screenWriters[0].fullName}
-            <#else>
-                <span class="modalLabel">Screen Writers:</span>
-                <#list screenWriters as screenWriter>
-                    ${screenWriter.fullName}<#if screenWriter_has_next>,</#if>
-                </#list>
+            
+            <#local screenWriters = movie.screenWriters />
+            <#if (screenWriters?size > 0)>
+                <p>
+                <#if screenWriters?size == 1>
+                    <span class="modalLabel">Screen Writer:</span> ${screenWriters[0].fullName}
+                <#else>
+                    <span class="modalLabel">Screen Writers:</span>
+                    <#list screenWriters as screenWriter>
+                        ${screenWriter.fullName}<#if screenWriter_has_next>,</#if>
+                    </#list>
+                </#if>
+                </p>
             </#if>
-            </p>
-        </#if>
-        
-        <#local cinematographers = movie.cinematographer />
-        <#if (cinematographers?size > 0)>
-            <p>
-            <#if cinematographers?size == 1>
-                <span class="modalLabel">Cinematographer:</span> ${cinematographers[0].fullName}
-            <#else>
-                <span class="modalLabel">Cinematographers:</span>
-                <#list cinematographers as cinematographer>
-                    ${cinematographer.fullName}<#if cinematographer_has_next>,</#if>
-                </#list>
+            
+            <#local cinematographers = movie.cinematographer />
+            <#if (cinematographers?size > 0)>
+                <p>
+                <#if cinematographers?size == 1>
+                    <span class="modalLabel">Cinematographer:</span> ${cinematographers[0].fullName}
+                <#else>
+                    <span class="modalLabel">Cinematographers:</span>
+                    <#list cinematographers as cinematographer>
+                        ${cinematographer.fullName}<#if cinematographer_has_next>,</#if>
+                    </#list>
+                </#if>
+                </p>
             </#if>
-            </p>
-        </#if>
-        
-        <#local actors = movie.actors />
-        <#if (actors?size > 0)>
-            <p>
-                <span class="modalLabel">Acting crew:</span>
-                <#list actors?keys as key>
-                    <p>${key} (${actors[key]})</p>
-                </#list>
-            </p>
-        </#if>
+            
+            <#local actors = movie.actors />
+            <#if (actors?size > 0)>
+                <div id="modalMovieActingCrew">
+                    <p>
+                        <span class="modalLabel">Acting crew:</span>
+                    </p>
+                    <ul>
+                        <#list actors?keys as fullName>
+                            <li>${fullName} (${actors[fullName]})</li>
+                        </#list>
+                    </ul>
+                </div>
+            </#if>
+        </div>
     </#if>
 </#macro>

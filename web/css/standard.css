@@ -169,12 +169,19 @@ section#alertify-logs {
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid #aaa;
+    max-width: 45%;
 }
 
 #modalRight {
     margin-left: 10px;
+    display: inline-block;
+    max-width: 45%;
 }
 
 #modalBody {
     overflow: auto;
+}
+
+#modalMovieCrew {
+    padding-bottom: 20px;
 }

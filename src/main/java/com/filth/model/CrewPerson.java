@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name="crew_person")
@@ -116,6 +117,15 @@ public class CrewPerson {
     
     public void setMovieTylers(Set<MovieTyler> movieTylers) {
         _movieTylers = movieTylers;
+    }
+    
+    /**
+     * @return True iff this CrewPerson's id is 0 (representing a dummy crew person--used
+     * for nominations of movies without crew recipients, e.g. Best Picture).
+     */
+    @Transient
+    public boolean isDummy() {
+        return _id == 0;
     }
 
     @Override

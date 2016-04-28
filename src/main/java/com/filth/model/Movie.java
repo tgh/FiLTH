@@ -284,25 +284,23 @@ public class Movie {
     public Map<String, String> getActors() {
         Map<String, String> actorToPositionMap = new HashMap<>();
         
-        if (CollectionUtils.isEmpty(_movieCrewPersons)) {
-            return actorToPositionMap;
-        }
-        
-        for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
-            String position = movieCrewPerson.getPosition();
-            CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
-            
-            switch(position) {
-                case "Lead Actor":
-                case "Supporting Actor":
-                case "Lead Actress":
-                case "Supporting Actress":
-                case "Character Voice":
-                case "Small Part":
-                case "Cameo":
-                    actorToPositionMap.put(crewPerson.getFullName(), position);
-                default:
-                    continue;
+        if (CollectionUtils.isNotEmpty(_movieCrewPersons)) {
+            for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
+                String position = movieCrewPerson.getPosition();
+                CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
+                
+                switch(position) {
+                    case "Lead Actor":
+                    case "Supporting Actor":
+                    case "Lead Actress":
+                    case "Supporting Actress":
+                    case "Character Voice":
+                    case "Small Part":
+                    case "Cameo":
+                        actorToPositionMap.put(crewPerson.getFullName(), position);
+                    default:
+                        continue;
+                }
             }
         }
         
@@ -335,6 +333,30 @@ public class Movie {
         String filePath = posters.get(0).getFilePath();
         
         return String.format(TMDB_IMAGE_URL_FORMAT, filePath);
+    }
+    
+    /**
+     * Gets a String (oscar category) -> Set<MovieOscar> map for all oscars
+     * this movie was nominated for. Simply calling getMovieOscars would include
+     * multiple MovieOscar objects for the same oscar nomination when the nomination
+     * involves multiple recipients. Hence, this method maps the categories to their
+     * corresponding sets of MovieOscar objects.
+     */
+    @Transient
+    public Map<String, Set<MovieOscar>> getOscarToMovieOscarsMap() {
+        Map<String, Set<MovieOscar>> oscarMap = new HashMap<>();
+        if (null != _movieOscars) {
+            for (MovieOscar movieOscar : _movieOscars) {
+                String category = movieOscar.getOscar().getCategory();
+                Set<MovieOscar> movieOscars = oscarMap.get(category);
+                if (null == movieOscars) {
+                    movieOscars = new HashSet<>();
+                    oscarMap.put(category, movieOscars);
+                }
+                movieOscars.add(movieOscar);
+            }
+        }
+        return oscarMap;
     }
   
     @Override
