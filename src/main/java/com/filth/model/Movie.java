@@ -13,7 +13,6 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -69,7 +68,7 @@ public class Movie {
     @Column(name="tmdb_id")
     private Long _tmdbId;
     
-    @ManyToMany(fetch=FetchType.EAGER)
+    @ManyToMany
     @JoinTable(
             name = "tag_given_to",
             joinColumns = {@JoinColumn(name = "mid")},
@@ -77,22 +76,22 @@ public class Movie {
     )
     private Set<Tag> _tags;
     
-    @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_movie")
     private Set<MovieCrewPerson> _movieCrewPersons;
     
-    @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_movie")
     private Set<MovieOscar> _movieOscars;
     
-    @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_movie")
     private Set<MovieTyler> _movieTylers;
     
-    @OneToMany(mappedBy="_movie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_movie")
     private Set<ListMovie> _listMovies;
     
-    @OneToMany(mappedBy="_baseMovie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_baseMovie")
     private Set<MovieLink> _movieLinksFromThisMovie;
     
-    @OneToMany(mappedBy="_linkedMovie", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_linkedMovie")
     private Set<MovieLink> _movieLinksToThisMovie;
 
     public int getId() {

@@ -25,5 +25,16 @@ public class MovieService {
     public Movie getMovieById(int id) {
         return _movieDAO.getById(id);
     }
+    
+    /**
+     * Get the movie that has the given id, but without it's join properties
+     * initialized by Hibernate. Essentially a bare-bones {@link Movie} object
+     * with only those properties in the movie table--no joined entities
+     * attached.
+     */
+    @Transactional(readOnly=true)
+    public Movie getMovieByIdUninitialized(int id) {
+        return _movieDAO.getByIdUninitialized(id);
+    }
 
 }

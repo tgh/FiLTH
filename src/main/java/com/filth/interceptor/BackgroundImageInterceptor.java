@@ -63,7 +63,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
                 int mid = Integer.parseInt(bgImageMidString);
                 
                 //get the Movie corresponding to the bg image
-                Movie movie = _movieService.getMovieById(mid);
+                Movie movie = _movieService.getMovieByIdUninitialized(mid);
                 if (null != movie) {
                     bgImageMovieTitle = movie.getTitle();
                     bgImageMovieYear = movie.getYear();

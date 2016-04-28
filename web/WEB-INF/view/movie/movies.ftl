@@ -66,9 +66,16 @@
     <@util.js "movie/movies" />
     <script type="text/javascript">
         $(document).ready(function() {
+            start = Math.floor(Date.now() / 1000);
+            console.log('Initializing data table');
             $('#moviesTable').DataTable({
-                select: true
+                //allow selection of table rows
+                select: true,
+                //do not load all content at once--only when displaying on the page
+                deferRender: true
             });
+            end = Math.floor(Date.now() / 1000);
+            console.log('DONE initializing data table in ' + (end - start) + ' seconds');
         });
     </script>
 </@layout.standard>
