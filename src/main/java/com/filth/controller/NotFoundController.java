@@ -23,7 +23,7 @@ public class NotFoundController {
     @RequestMapping(value=URL, method=RequestMethod.GET)
     public ModelAndView handle404(HttpServletRequest request) {
         String servletURI = (String) request.getAttribute("javax.servlet.error.message");
-        LOGGER.error("404");
+        LOGGER.error("404: " + servletURI);
         ModelMap mm = new ModelMap();
         mm.put("servletURI", servletURI);
         return new ModelAndView("error/not_found", mm);
