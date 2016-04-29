@@ -1,6 +1,6 @@
 package com.filth.dao;
 
-import org.hibernate.Hibernate;
+import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 import com.filth.model.Movie;
@@ -15,33 +15,19 @@ public class MovieDAO extends HibernateDAO<Movie> {
     
     @Override
     public Movie getById(int id) {
-        Movie movie = super.getById(id);
-        
-        if (null != movie) {
-            if (false == Hibernate.isInitialized(movie.getTags())) {
-                Hibernate.initialize(movie.getTags());
-            }
-            if (false == Hibernate.isInitialized(movie.getMovieCrewPersons())) {
-                Hibernate.initialize(movie.getMovieCrewPersons());
-            }
-            if (false == Hibernate.isInitialized(movie.getMovieOscars())) {
-                Hibernate.initialize(movie.getMovieOscars());
-            }
-            if (false == Hibernate.isInitialized(movie.getMovieTylers())) {
-                Hibernate.initialize(movie.getMovieTylers());
-            }
-            if (false == Hibernate.isInitialized(movie.getMovieLinksFromThisMovie())) {
-                Hibernate.initialize(movie.getMovieLinksFromThisMovie());
-            }
-            if (false == Hibernate.isInitialized(movie.getMovieLinksToThisMovie())) {
-                Hibernate.initialize(movie.getMovieLinksToThisMovie());
-            }
-            if (false == Hibernate.isInitialized(movie.getListMovies())) {
-                Hibernate.initialize(movie.getListMovies());
-            }
-        }
-        
-        return movie;
+        Query query = getSession().createQuery(
+                "SELECT m FROM Movie m " +
+                "LEFT JOIN FETCH m._tags " +
+                "LEFT JOIN FETCH m._movieCrewPersons " +
+                "LEFT JOIN FETCH m._movieOscars " +
+                "LEFT JOIN FETCH m._movieTylers " +
+                "LEFT JOIN FETCH m._listMovies " +
+                "LEFT JOIN FETCH m._movieLinksFromThisMovie " +
+                "LEFT JOIN FETCH m._movieLinksToThisMovie " +
+                "WHERE m.id = :id"
+        );
+        query.setParameter("id", id);
+        return (Movie) query.uniqueResult();
     }
     
     /**

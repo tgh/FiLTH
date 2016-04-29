@@ -35,6 +35,31 @@ public class MovieServiceTest extends ServiceTestAbstract {
     }
     
     @Test
+    public void getById() {
+        Movie movie = _movieService.getMovieById(1548); //Star Wars
+        Set<Tag> tags = movie.getTags();
+        assertNotNull("Tag set is unexpectedly null", tags);
+        assertEquals("Number of tags", 5, tags.size());
+        Set<MovieCrewPerson> movieCrewPersons = movie.getMovieCrewPersons();
+        assertNotNull("MovieCrewPerson set is unexpectedly null", movieCrewPersons);
+        assertEquals("Number of crew persons", 3, movieCrewPersons.size());
+        Set<MovieOscar> movieOscars = movie.getMovieOscars();
+        assertNotNull("MovieOscar set is unexpectedly null", movieOscars);
+        assertEquals("Number of oscars", 4, movieOscars.size());
+        Set<MovieTyler> movieTylers = movie.getMovieTylers();
+        assertTrue("MovieTyler set unexpectedly not empty", CollectionUtils.isEmpty(movieTylers));
+        Set<ListMovie> listMovies = movie.getListMovies();
+        assertNotNull("ListMovie set unexpectedly null", listMovies);
+        assertEquals("Number of lists", 1, listMovies.size());
+        Set<MovieLink> movieLinks = movie.getMovieLinksFromThisMovie();
+        assertNotNull("Movie-links-from set unexpectedly null", movieLinks);
+        assertEquals("Number of links from", 2, movieLinks.size());
+        movieLinks = movie.getMovieLinksToThisMovie();
+        assertNotNull("Movie-links-to set unexpectedly null", movieLinks);
+        assertEquals("Number of links to", 2, movieLinks.size());
+    }
+    
+    @Test
     public void getTags() {
         Movie movie = _movieService.getMovieById(3873); //The Revenant
         assertNotNull(movie);

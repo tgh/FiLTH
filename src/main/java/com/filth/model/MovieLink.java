@@ -5,7 +5,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,11 +25,11 @@ public class MovieLink {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="movie_link_seq")
     private int _id;
     
-    @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name="base_mid")
     private Movie _baseMovie;
     
-    @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name="linked_mid")
     private Movie _linkedMovie;
     

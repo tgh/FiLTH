@@ -4,7 +4,6 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,7 +27,7 @@ public class List {
     @Column(name="list_author")
     private String _author;
     
-    @OneToMany(mappedBy="_list", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_list")
     private Set<ListMovie> _listMovies;
 
     public int getId() {

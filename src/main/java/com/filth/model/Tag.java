@@ -4,7 +4,6 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -33,11 +32,11 @@ public class Tag {
     @JoinColumn(name="parent_tid")
     private Tag _parent;
     
-    @OneToMany(mappedBy="_parent", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_parent")
     @OrderBy("_id")
     private Set<Tag> _children;
     
-    @ManyToMany(mappedBy="_tags", fetch=FetchType.EAGER)
+    @ManyToMany(mappedBy="_tags")
     private Set<Movie> _movies;
     
 

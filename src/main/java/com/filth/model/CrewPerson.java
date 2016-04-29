@@ -4,7 +4,6 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -38,13 +37,13 @@ public class CrewPerson {
     @Column(name="known_as")
     private String _positionKnownAs;
     
-    @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_crewPerson")
     private Set<MovieCrewPerson> _movieCrewPersons;
     
-    @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_crewPerson")
     private Set<MovieOscar> _movieOscars;
     
-    @OneToMany(mappedBy="_crewPerson", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy="_crewPerson")
     private Set<MovieTyler> _movieTylers;
     
     public int getId() {
