@@ -95,7 +95,7 @@ table.dataTable tbody tr.even {
 }
 
 #footer a,
-.modal a {
+#movieModal a {
     color: #add8e6;
     font-weight: bold;
 }
