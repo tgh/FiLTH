@@ -25,15 +25,15 @@ public class MovieTyler {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="tyler_given_to_seq")
     private int _id;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="mid")
     private Movie _movie;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="tid")
     private Tyler _tyler;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="cid")
     private CrewPerson _crewPerson;
     

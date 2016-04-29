@@ -2,6 +2,7 @@ package com.filth.model;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,7 +28,7 @@ public class List {
     @Column(name="list_author")
     private String _author;
     
-    @OneToMany(mappedBy="_list")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_list")
     private Set<ListMovie> _listMovies;
 
     public int getId() {

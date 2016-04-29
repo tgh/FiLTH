@@ -25,11 +25,11 @@ public class MovieLink {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="movie_link_seq")
     private int _id;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="base_mid")
     private Movie _baseMovie;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="linked_mid")
     private Movie _linkedMovie;
     

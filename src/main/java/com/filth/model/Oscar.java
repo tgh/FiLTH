@@ -2,6 +2,7 @@ package com.filth.model;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,7 +25,7 @@ public class Oscar {
     @Column(name="category")
     private String _category;
     
-    @OneToMany(mappedBy="_oscar")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_oscar")
     private Set<MovieOscar> _movieOscars;
 
     public int getId() {

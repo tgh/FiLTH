@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -68,7 +69,8 @@ public class Movie {
     @Column(name="tmdb_id")
     private Long _tmdbId;
     
-    @ManyToMany
+    //do not cascade on REMOVE (don't want to delete all of the tags if the movie is deleted)
+    @ManyToMany(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinTable(
             name = "tag_given_to",
             joinColumns = {@JoinColumn(name = "mid")},
@@ -76,22 +78,22 @@ public class Movie {
     )
     private Set<Tag> _tags;
     
-    @OneToMany(mappedBy="_movie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_movie")
     private Set<MovieCrewPerson> _movieCrewPersons;
     
-    @OneToMany(mappedBy="_movie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_movie")
     private Set<MovieOscar> _movieOscars;
     
-    @OneToMany(mappedBy="_movie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_movie")
     private Set<MovieTyler> _movieTylers;
     
-    @OneToMany(mappedBy="_movie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_movie")
     private Set<ListMovie> _listMovies;
     
-    @OneToMany(mappedBy="_baseMovie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_baseMovie")
     private Set<MovieLink> _movieLinksFromThisMovie;
     
-    @OneToMany(mappedBy="_linkedMovie")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_linkedMovie")
     private Set<MovieLink> _movieLinksToThisMovie;
 
     public int getId() {

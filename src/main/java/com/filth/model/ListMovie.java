@@ -21,11 +21,11 @@ public class ListMovie {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="list_cotnains_seq")
     private int _id;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="mid")
     private Movie _movie;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="lid")
     private List _list;
     

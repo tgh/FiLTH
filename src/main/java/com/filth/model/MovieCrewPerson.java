@@ -21,11 +21,11 @@ public class MovieCrewPerson {
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="worked_on_seq")
     private int _id;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="mid")
     private Movie _movie;
     
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="cid")
     private CrewPerson _crewPerson;
     

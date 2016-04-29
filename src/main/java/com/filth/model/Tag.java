@@ -2,6 +2,7 @@ package com.filth.model;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,15 +29,16 @@ public class Tag {
     @Column(name="tag_name")
     private String _name;
     
-    @ManyToOne
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="parent_tid")
     private Tag _parent;
     
-    @OneToMany(mappedBy="_parent")
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_parent")
     @OrderBy("_id")
     private Set<Tag> _children;
     
-    @ManyToMany(mappedBy="_tags")
+    @ManyToMany(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH},
+                mappedBy="_tags")
     private Set<Movie> _movies;
     
 
