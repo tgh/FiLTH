@@ -83,13 +83,23 @@
             </#list>
         </#if>
         
-        <#if (movie.movieTylers?? && movie.movieTylers?size > 0)>
+        <#assign tylerMap = movie.tylerToMovieTylersMap />
+        <#if (tylerMap?? && tylerMap?size > 0)>
             <p>
                 <span class="modalLabel">Tyler awards:</span>
             </p>
             <ul>
-                <#list movie.movieTylers as movieTyler>
-                    <li>${movieTyler.status.displayText} for ${movieTyler.tyler.category}</li>
+                <#list tylerMap?keys as category>
+                    <li>${tylerMap[category][0].status.displayText} for ${category}
+                    
+                    <#-- Show recipients if applicable -->
+                    <#if false == tylerMap[category][0].crewPerson.isDummy()>
+                        <i>(<#list tylerMap[category] as movieTyler>${movieTyler.crewPerson.fullName}<#if movieTyler_has_next>,</#if></#list>)</i>
+                    <#elseif category == 'Best Scene'>
+                        <i>(<#list tylerMap[category] as movieTyler>"${movieTyler.sceneTitle}"<#if movieTyler_has_next>,</#if></#list>)</i>
+                    </#if>
+                    
+                    </li>
                 </#list>
             </ul>
         </#if>

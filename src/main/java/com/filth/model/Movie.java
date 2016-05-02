@@ -359,7 +359,31 @@ public class Movie {
         }
         return oscarMap;
     }
-  
+    
+    /**
+     * Gets a String (tyler category) -> Set<MovieTyler> map for all tyler awards
+     * this movie was nominated for. Simply calling getMovieTylers would include
+     * multiple MovieTyler objects for the same tyler nomination when the nomination
+     * involves multiple recipients. Hence, this method maps the categories to their
+     * corresponding sets of MovieTyler objects.
+     */
+    @Transient
+    public Map<String, Set<MovieTyler>> getTylerToMovieTylersMap() {
+        Map<String, Set<MovieTyler>> tylerMap = new HashMap<>();
+        if (null != _movieTylers) {
+            for (MovieTyler movieTyler : _movieTylers) {
+                String category = movieTyler.getTyler().getCategory();
+                Set<MovieTyler> movieTylers = tylerMap.get(category);
+                if (null == movieTylers) {
+                    movieTylers = new HashSet<>();
+                    tylerMap.put(category, movieTylers);
+                }
+                movieTylers.add(movieTyler);
+            }
+        }
+        return tylerMap;
+    }
+
     @Override
     public String toString() {
         return "Movie (" + _id + ", " + _title + " (" + _year + "))";
