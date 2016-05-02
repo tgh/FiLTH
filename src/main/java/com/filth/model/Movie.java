@@ -26,6 +26,8 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import org.apache.commons.collections.CollectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import com.filth.util.TmdbUtil;
@@ -33,6 +35,8 @@ import com.filth.util.TmdbUtil;
 @Entity
 @Table(name="movie")
 public class Movie {
+    
+    private static final Logger LOGGER = LoggerFactory.getLogger(Movie.class);
     
     private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w396/%s";
 
@@ -318,6 +322,7 @@ public class Movie {
     @Transient
     public String getImageUrl() {
         if (StringUtils.isEmpty(getTmdbId())) {
+            LOGGER.warn("No TMDB id for " + this.toString());
             return null;
         }
         
@@ -327,6 +332,7 @@ public class Movie {
         MovieImages images = movies.getImages(Math.toIntExact(getTmdbId()), "en");
         List<Artwork> posters = images.getPosters();
         if (CollectionUtils.isEmpty(posters)) {
+            LOGGER.warn("No TMDB image found for " + this.toString() + "--TMDB id: " + getTmdbId());
             return null;
         }
         
