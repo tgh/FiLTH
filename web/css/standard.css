@@ -185,3 +185,20 @@ section#alertify-logs {
 #modalMovieCrew {
     padding-bottom: 20px;
 }
+
+#spinner {
+    position: fixed; /* forces the element to stay fixed in relation to the viewport */
+    top: 50%; /* sets the top of the image 50% of the page height */
+    left: 50%; /* sets the left side of the image 50% across the page */
+    margin-left: -99px; /* moves the image half of its own width to the left-side of the page */
+    margin-top: -99px; /* moves the image half its height 'up' the page */
+}
+
+#loadingText {
+    margin-left: -75px;
+    margin-top: -50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}

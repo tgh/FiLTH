@@ -5,7 +5,10 @@
     
     <h1>Movies</h1>
     
-    <table id="moviesTable">
+    <#--<img id="spinner" src="${rc.contextPath}/images/spinner.svg"/>-->
+    <div id="loadingText"><h1>Loading...</h1></div>
+    
+    <table id="moviesTable" class="hidden">
         <thead>
             <tr>
                 <th>Title</th>
@@ -72,7 +75,13 @@
                 //allow selection of table rows
                 select: true,
                 //do not load all content at once--only when displaying on the page
-                deferRender: true
+                deferRender: true,
+                initComplete: function() {
+                    hide($('#loadingText'));
+                    //hack: without this width resize, the movies table renders with a width of 0 for some reason :-/
+                    $('#moviesTable').css('width', '100%');
+                    show($('#moviesTable'));
+                }
             });
             end = Math.floor(Date.now() / 1000);
             console.log('DONE initializing data table in ' + (end - start) + ' seconds');
