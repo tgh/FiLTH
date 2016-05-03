@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.link.Link;
 import com.filth.link.ManageTylersLinkGenerator;
 import com.filth.model.Tyler;
@@ -77,6 +79,7 @@ public class ManageTylersController extends ManageEntityController implements Ma
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_tylers", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveTyler(
             @RequestParam(value=URLParam.CATEGORY) String category,
@@ -105,6 +108,7 @@ public class ManageTylersController extends ManageEntityController implements Ma
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, category), mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteTyler(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.link.Link;
 import com.filth.link.ManageMpaaRatingsLinkGenerator;
 import com.filth.model.MpaaRating;
@@ -66,6 +68,7 @@ public class ManageMpaaRatingsController extends ManageEntityController implemen
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_mpaa_ratings", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveMpaaRating(
             @RequestParam(value=URLParam.ID, required=false) Integer id,

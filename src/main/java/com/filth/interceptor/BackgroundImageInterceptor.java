@@ -11,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import com.filth.model.Movie;
 import com.filth.resolver.ExceptionResolver;
@@ -22,7 +21,7 @@ import com.filth.util.ModelAndViewUtil;
  * Interceptor to randomly choose a background image for the page.
  */
 @Component
-public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
+public class BackgroundImageInterceptor extends SkippableInterceptor {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(BackgroundImageInterceptor.class);
     
@@ -39,7 +38,7 @@ public class BackgroundImageInterceptor extends HandlerInterceptorAdapter {
     private MovieService _movieService;
 
     @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
+    public void postHandleIfApplies(HttpServletRequest request, HttpServletResponse response, Object handler,
             ModelAndView modelAndView) {
         if (modelAndView != null) {
             String bgImageFilename = DEFAULT_BG_IMAGE;

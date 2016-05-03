@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.model.Movie;
 import com.filth.service.MovieService;
 import com.filth.util.ModelAndViewUtil;
@@ -49,6 +51,7 @@ public class MovieController {
         return new ModelAndView(MOVIES_VIEW_PREFIX + "/movies", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.MOVIE, method=RequestMethod.GET)
     public ModelAndView viewMovie(
             @RequestParam(value=URLParam.ID) Integer movieId) {

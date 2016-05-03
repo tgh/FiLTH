@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.link.Link;
 import com.filth.link.ManageTagsLinkGenerator;
 import com.filth.model.Tag;
@@ -78,6 +80,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_tags", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveTag(
             @RequestParam(value=URLParam.NAME) String name,
@@ -112,6 +115,7 @@ public class ManageTagsController extends ManageEntityController implements Mana
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, name), mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteTag(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {

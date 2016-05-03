@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.link.Link;
 import com.filth.link.ManageListsLinkGenerator;
 import com.filth.service.ListService;
@@ -77,6 +79,7 @@ public class ManageListsController extends ManageEntityController implements Man
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_lists", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveList(
             @RequestParam(value=URLParam.TITLE) String title,
@@ -111,6 +114,7 @@ public class ManageListsController extends ManageEntityController implements Man
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.DELETE, method=RequestMethod.POST)
     public ModelAndView deleteList(
             @RequestParam(value=URLParam.ID) Integer id) throws Exception {

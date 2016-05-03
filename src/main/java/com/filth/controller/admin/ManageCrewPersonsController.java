@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.filth.annotation.SkipInterceptor;
+import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.link.Link;
 import com.filth.link.ManageCrewPersonsLinkGenerator;
 import com.filth.model.CrewPerson;
@@ -72,6 +74,7 @@ public class ManageCrewPersonsController extends ManageEntityController implemen
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_crew_persons", mm);
     }
     
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
     public ModelAndView saveCrewPerson(
             @RequestParam(value=URLParam.LAST_NAME) String lastName,
