@@ -81,8 +81,14 @@
                         <td><input id="addCrewPersonLastNameInput" type="text" name="lastName" data-parsley-required data-parsley-errors-messages-disabled></td>
                     </tr>
                     <tr>
-                        <td class="label">Postition: </td>
-                        <td><input id="addCrewPersonPositionInput" type="text" name="positionKnownAs" data-parsley-required data-parsley-errors-messages-disabled></td>
+                        <td class="label">Position: </td>
+                        <td>
+                            <select id="addCrewPersonPositionInput" name="positionKnownAs" data-parsley-required data-parsley-errors-messages-disabled>
+                                <#list positions as position>
+                                    <option value="${position.title}">${position.title}</option>
+                                </#list>
+                            </select>
+                        </td>
                     </tr>
                 </table>
             </form>
@@ -120,7 +126,13 @@
                     </tr>
                     <tr>
                         <td class="label">Postition: </td>
-                        <td><input id="editCrewPersonPositionInput" type="text" name="positionKnownAs" data-parsley-required data-parsley-errors-messages-disabled></td>
+                        <td>
+                            <select id="editCrewPersonPositionInput" name="positionKnownAs" data-parsley-required data-parsley-errors-messages-disabled>
+                                <#list positions as position>
+                                    <option value="${position.title}">${position.title}</option>
+                                </#list>
+                            </select>
+                        </td>
                     </tr>
                 </table>
             </form>

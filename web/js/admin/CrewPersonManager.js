@@ -105,7 +105,7 @@ CrewPersonManager.prototype.editButtonClickHandler = function(event) {
     $(this.DOM_KEYS.editCrewPersonLastNameInput).val(crewPersonLastName);
     $(this.DOM_KEYS.editCrewPersonFirstNameInput).val(crewPersonFirstName);
     $(this.DOM_KEYS.editCrewPersonMiddleNameInput).val(crewPersonMiddleName);
-    $(this.DOM_KEYS.editCrewPersonPositionInput).val(crewPersonPosition);
+    $(this.DOM_KEYS.editCrewPersonPositionInput + ' option[value="' + crewPersonPosition + '"]').attr('selected','selected');
 }
 
 CrewPersonManager.prototype.editCrewPerson = function() {

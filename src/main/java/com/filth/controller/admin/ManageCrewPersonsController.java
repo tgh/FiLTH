@@ -20,6 +20,7 @@ import com.filth.link.Link;
 import com.filth.link.ManageCrewPersonsLinkGenerator;
 import com.filth.model.CrewPerson;
 import com.filth.service.CrewPersonService;
+import com.filth.service.PositionService;
 import com.filth.util.GeneralUtil;
 import com.filth.util.ModelAndViewUtil;
 
@@ -32,6 +33,8 @@ public class ManageCrewPersonsController extends ManageEntityController implemen
     
     @Resource
     private CrewPersonService _crewPersonService;
+    @Resource
+    private PositionService _positionService;
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
     
@@ -52,6 +55,7 @@ public class ManageCrewPersonsController extends ManageEntityController implemen
     private static final class ModelKey {
         public static final String CREW_PERSONS = "crewPersons";
         public static final String CREW_PERSON = "crewPerson";
+        public static final String POSITIONS = "positions";
     }
 
     @Override
@@ -70,6 +74,7 @@ public class ManageCrewPersonsController extends ManageEntityController implemen
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.CREW_PERSONS, crewPersons);
+        mm.put(ModelKey.POSITIONS, _positionService.getAllPositions());
 
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/manage_crew_persons", mm);
     }

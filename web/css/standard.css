@@ -30,6 +30,7 @@ body {
     -webkit-transition:.5s;
     transition:.5s;
 }
+
 .button:hover {
     /* default hover color */
     background-color: #eee;
