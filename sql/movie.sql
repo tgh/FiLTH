@@ -3892,7 +3892,7 @@ INSERT INTO filth.movie VALUES (3893, '45 Years', 2015, 'not seen', 'R', 'Englan
 INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, '**½', 'PG-13', 'England', NULL, 'tt2381111', NULL, 167073);
 INSERT INTO filth.movie VALUES (3895, 'The Big Short', 2015, '****', 'R', 'USA', NULL, 'tt1596363', NULL, 318846);
 INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, 'not seen', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221);
-INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, 'not seen', 'R', 'USA', NULL, 'tt3460252', NULL, 273248);
+INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, '**', 'R', 'USA', NULL, 'tt3460252', NULL, 273248); -- 4/30/2016
 INSERT INTO filth.movie VALUES (3898, 'The Look of Silence', 2015, '****', 'PG-13', 'DEFAULT', NULL, 'tt3521134', NULL, 267480);
 INSERT INTO filth.movie VALUES (3899, 'Embrace of the Serpent', 2015, 'not seen', 'NR', 'Colombia', NULL, 'tt4285496', NULL, 336808);
 INSERT INTO filth.movie VALUES (3900, 'Mustang', 2015, 'not seen', 'PG-13', 'France', NULL, 'tt3966404', NULL, 336804);
@@ -3910,3 +3910,4 @@ INSERT INTO filth.movie VALUES (3911, 'Secret in Their Eyes', 2015, '**½', 'R',
 INSERT INTO filth.movie VALUES (3912, 'Bowfinger', 1999, '**½', 'PG-13', 'USA', NULL, 'tt0131325', 0, 11353);
 INSERT INTO filth.movie VALUES (3913, 'Suffragette', 2015, '***', 'PG-13', 'England', NULL, 'tt3077214', 0, 245168);
 INSERT INTO filth.movie VALUES (3914, 'Pawn Sacrifice', 2015, '***', 'PG-13', 'USA', NULL, 'tt1596345', 0, 245698);
+INSERT INTO filth.movie VALUES (3915, 'The Jungle Book', 2016, '****', 'PG', 'USA', NULL, 'tt3040964', 1, 278927); -- 4/29/2016

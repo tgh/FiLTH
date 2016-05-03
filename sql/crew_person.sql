@@ -3272,3 +3272,7 @@ INSERT INTO filth.crew_person VALUES (3274, 'Gavron', 'Sarah', NULL, 'Sarah Gavr
 INSERT INTO filth.crew_person VALUES (3275, 'Morgan', 'Abi', NULL, 'Abi Morgan', 'Screenwriter');  -- Screenwriter: Abi Morgan
 INSERT INTO filth.crew_person VALUES (3276, 'Duff', 'Anne-Marie', NULL, 'Anne-Marie Duff', 'Actress');  -- Actress: Anne-Marie Duff
 INSERT INTO filth.crew_person VALUES (3277, 'Wilkinson', 'Christpher', NULL, 'Christpher Wilkinson', 'Screenwriter');  -- Screenwriter: Christpher Wilkinson
+INSERT INTO filth.crew_person VALUES (3278, 'Madsen', 'Michael', NULL, 'Michael Madsen', 'Actor');  -- Actor: Michael Madsen
+INSERT INTO filth.crew_person VALUES (3279, 'Favreau', 'Jon', NULL, 'Jon Favreau', 'Actor');  -- Actor: Jon Favreau
+INSERT INTO filth.crew_person VALUES (3280, 'Sethi', 'Neel', NULL, 'Neel Sethi', 'Actor');  -- Actor: Neel Sethi
+INSERT INTO filth.crew_person VALUES (3281, 'Elba', 'Idris', NULL, 'Idris Elba', 'Actor');  -- Actor: Idris Elba
