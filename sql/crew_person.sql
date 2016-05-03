@@ -2709,7 +2709,7 @@ INSERT INTO filth.crew_person VALUES (2709, 'Sizemore', 'Tom', NULL, 'Tom Sizemo
 INSERT INTO filth.crew_person VALUES (2710, 'Isaacs', 'Jason', NULL, 'Jason Isaacs', 'Actor');  -- Actor: Jason Isaacs
 INSERT INTO filth.crew_person VALUES (2711, 'Kunis', 'Mila', NULL, 'Mila Kunis', 'Actress');  -- Actress: Mila Kunis
 INSERT INTO filth.crew_person VALUES (2712, 'Cassel', 'Vincent', NULL, 'Vincent Cassel', 'Actor');  -- Actor: Vincent Cassel
-INSERT INTO filth.crew_person VALUES (2713, 'Walsh', 'M.', 'Emmet', 'M. Emmet Walsh', 'Supporting Actor');  -- Supporting Actor: M. Emmet Walsh
+INSERT INTO filth.crew_person VALUES (2713, 'Walsh', 'M.', 'Emmet', 'M. Emmet Walsh', 'Actor');  -- Actor: M. Emmet Walsh
 INSERT INTO filth.crew_person VALUES (2714, 'Fancher', 'Hampton', NULL, 'Hampton Fancher', 'Screenwriter');  -- Screenwriter: Hampton Fancher
 INSERT INTO filth.crew_person VALUES (2715, 'Hannah', 'Daryl', NULL, 'Daryl Hannah', 'Actress');  -- Actress: Daryl Hannah
 INSERT INTO filth.crew_person VALUES (2716, 'Poehler', 'Amy', NULL, 'Amy Poehler', 'Actress');  -- Actress: Amy Poehler
@@ -2821,7 +2821,7 @@ INSERT INTO filth.crew_person VALUES (2821, 'Wright', 'Jeffrey', NULL, 'Jeffrey 
 INSERT INTO filth.crew_person VALUES (2822, 'Olsen', 'Elizabeth', NULL, 'Elizabeth Olsen', 'Actress');  -- Actress: Elizabeth Olsen
 INSERT INTO filth.crew_person VALUES (2823, 'Taylor-Johnson', 'Aaron', NULL, 'Aaron Taylor-Johnson', 'Actor');  -- Actor: Aaron Taylor-Johnson
 INSERT INTO filth.crew_person VALUES (2824, 'Spader', 'James', NULL, 'James Spader', 'Actor');  -- Actor: James Spader
-INSERT INTO filth.crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Supporting Actor');  -- Supporting Actor: Eli Wallach
+INSERT INTO filth.crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Actor');  -- Actor: Eli Wallach
 INSERT INTO filth.crew_person VALUES (2826, 'Scott', 'Andrew', NULL, 'Andrew Scott', 'Actor');  -- Actor: Andrew Scott
 INSERT INTO filth.crew_person VALUES (2827, 'Wilson', 'Ruth', NULL, 'Ruth Wilson', 'Actress');  -- Actress: Ruth Wilson
 INSERT INTO filth.crew_person VALUES (2828, 'Morgan', 'Tracy', NULL, 'Tracy Morgan', 'Actor');  -- Actor: Tracy Morgan

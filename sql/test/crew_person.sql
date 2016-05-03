@@ -147,7 +147,7 @@ INSERT INTO filth.crew_person VALUES (2630, 'Van Der Beek', 'James', NULL, 'Jame
 INSERT INTO filth.crew_person VALUES (1077, 'Wyler', 'William', NULL, 'William Wyler', 'Director');  -- Director
 INSERT INTO filth.crew_person VALUES (120, 'O''Toole', 'Peter', NULL, 'Peter OToole', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (112, 'Hepburn', 'Audrey', NULL, 'Audrey Hepburn', 'Actress');  -- Actress
-INSERT INTO filth.crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Supporting Actor');  -- Supporting Actor: Eli Wallach
+INSERT INTO filth.crew_person VALUES (2825, 'Wallach', 'Eli', NULL, 'Eli Wallach', 'Actor');  -- Actor: Eli Wallach
 INSERT INTO filth.crew_person VALUES (1196, 'Lang', 'Charles', NULL, 'Charles Lang', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (378, 'Helgeland', 'Brian', NULL, 'Brian Helgeland', 'Screenwriter');  -- Screenwriter
 INSERT INTO filth.crew_person VALUES (2841, 'Hayes', 'Terry', NULL, 'Terry Hayes', 'Screenwriter');  -- Screenwriter: Terry Hayes
