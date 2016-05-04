@@ -6989,6 +6989,7 @@ INSERT INTO filth.tag_given_to VALUES(82, 124);  -- American Graffiti (1973) tag
 INSERT INTO filth.tag_given_to VALUES(82, 249);  -- American Graffiti (1973) tagged with 'coming-of-age/childhood'
 INSERT INTO filth.tag_given_to VALUES(82, 118);  -- American Graffiti (1973) tagged with '20th-century'
 INSERT INTO filth.tag_given_to VALUES(82, 21);  -- American Graffiti (1973) tagged with 'period'
+INSERT INTO filth.tag_given_to VALUES(82, 326);  -- American Graffiti (1973) tagged with 'teenager(s)'
 INSERT INTO filth.tag_given_to VALUES(83, 282);  -- American History X (1998) tagged with 'racism'
 INSERT INTO filth.tag_given_to VALUES(83, 167);  -- American History X (1998) tagged with 'murder'
 INSERT INTO filth.tag_given_to VALUES(83, 176);  -- American History X (1998) tagged with 'gangs'
