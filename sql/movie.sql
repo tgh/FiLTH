@@ -1442,7 +1442,7 @@ INSERT INTO filth.movie VALUES (1441, 'A Serious Man', 2009, '***', 'R', 'USA', 
 INSERT INTO filth.movie VALUES (1442, 'Seven', 1995, '***½', 'R', 'USA', NULL, 'tt0114369', 0, 807);
 INSERT INTO filth.movie VALUES (1443, 'Seven Beauties', 1976, '***', 'R', 'Italy', NULL, 'tt0075040', 0, 37550);
 INSERT INTO filth.movie VALUES (1444, 'Seven Chances', 1925, '****', 'NR', 'USA', NULL, 'tt0016332', 0, 32600);
-INSERT INTO filth.movie VALUES (1445, '7 Plus Seven', 1970, '****', 'NR', 'England', NULL, 'tt0066356', NULL, 0, 50754);
+INSERT INTO filth.movie VALUES (1445, '7 Plus Seven', 1970, '****', 'NR', 'England', NULL, 'tt0066356', 0, 50754);
 INSERT INTO filth.movie VALUES (1446, 'Seven Samurai', 1954, '***½', 'NR', 'Japan', NULL, 'tt0047478', 0, 346);
 INSERT INTO filth.movie VALUES (1447, 'Seven Up', 1963, '****', 'NR', 'England', NULL, 'tt0058578', 0, 51863);
 INSERT INTO filth.movie VALUES (1448, 'Seven Years in Tibet', 1997, '***½', 'PG-13', 'USA', NULL, 'tt0120102', 0, 978);
@@ -3893,7 +3893,7 @@ INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, '**½', 'PG-13', 'Englan
 INSERT INTO filth.movie VALUES (3895, 'The Big Short', 2015, '****', 'R', 'USA', NULL, 'tt1596363', NULL, 318846);
 INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, 'not seen', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221);
 INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, '**', 'R', 'USA', NULL, 'tt3460252', NULL, 273248); -- 4/30/2016
-INSERT INTO filth.movie VALUES (3898, 'The Look of Silence', 2015, '****', 'PG-13', 'DEFAULT', NULL, 'tt3521134', NULL, 267480);
+INSERT INTO filth.movie VALUES (3898, 'The Look of Silence', 2015, '****', 'PG-13', DEFAULT, NULL, 'tt3521134', NULL, 267480);
 INSERT INTO filth.movie VALUES (3899, 'Embrace of the Serpent', 2015, 'not seen', 'NR', 'Colombia', NULL, 'tt4285496', NULL, 336808);
 INSERT INTO filth.movie VALUES (3900, 'Mustang', 2015, 'not seen', 'PG-13', 'France', NULL, 'tt3966404', NULL, 336804);
 INSERT INTO filth.movie VALUES (3901, 'Son of Saul', 2015, 'not seen', 'R', 'Hungary', NULL, 'tt3808342', NULL, 336050);

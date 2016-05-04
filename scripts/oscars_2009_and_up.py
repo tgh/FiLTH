@@ -41,7 +41,7 @@ OSCAR_GIVEN_TO_FILE = FILTH_PATH + '/sql/oscar_given_to.sql'
 COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
 
                                                                # id, mid, oid, cid, year, status, sharing_with
-INSERT_FORMAT_STRING = "INSERT INTO filth.oscar_given_to VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6});";
+INSERT_FORMAT_STRING = "INSERT INTO filth.oscar_given_to VALUES({0}, {1}, {2}, {3}, {4}, {5}, {6});";
 
 _inserts = []
 _crewInserts = []
@@ -268,12 +268,13 @@ def getMid(title, year, country):
                     else:
                         country = country.strip()
 
-                    if country != 'DEFAULT' and country not in _countries:
-                        _logFile.write('! Unknown country: ' + country + ' -- adding country\n')
-                        _countries.append(country)
-                        countryInsert = "INSERT INTO filth.country VALUES ('" + country + "');\n"
-                        _countryInserts.append(countryInsert)
-                    country = "'" + country + "'"
+                    if country != 'DEFAULT':
+                        if country not in _countries:
+                            _logFile.write('! Unknown country: ' + country + ' -- adding country\n')
+                            _countries.append(country)
+                            countryInsert = "INSERT INTO filth.country VALUES ('" + country + "');\n"
+                            _countryInserts.append(countryInsert)
+                        country = "'" + country + "'"
 
                     mid = _nextMid
                     _nextMid = str(int(_nextMid) + 1)
@@ -401,7 +402,7 @@ def processOscarFile():
                 _inserts.append(insert + comment)
         else:
             if fields[NOMINEES] == '':
-                cid = 'NULL'
+                cid = '0'
                 comment = ' -- ' + year + ' ' + category + ': "' + title + '"\n'
             else:
                 cid = getCid(fields[NOMINEES], mid, title, year, category)
