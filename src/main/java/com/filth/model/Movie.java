@@ -5,8 +5,12 @@ import info.movito.themoviedbapi.TmdbMovies;
 import info.movito.themoviedbapi.model.Artwork;
 import info.movito.themoviedbapi.model.MovieImages;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -30,6 +34,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
+import com.filth.util.CrewPersonLastNameComparator;
 import com.filth.util.TmdbUtil;
 
 @Entity
@@ -39,6 +44,17 @@ public class Movie {
     private static final Logger LOGGER = LoggerFactory.getLogger(Movie.class);
     
     private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w396/%s";
+    
+    private static final List<String> ACTING_POSITION_ORDER = Arrays.asList(new String[]{
+            "Lead Actor",
+            "Lead Actress",
+            "Supporting Actor",
+            "Supporting Actress",
+            "Character Voice",
+            "Small Part",
+            "Narrator",
+            "Cameo"
+    });
 
     @Id
     @Column(name="mid")
@@ -280,31 +296,44 @@ public class Movie {
     }
     
     /**
-     * Gets the acting crew members of this movie.
+     * Gets the acting crew members of this movie. 
      * 
      * @return A String (full name) -> String (position) map, or an empty map
-     * if none found.
+     * if none found. The map is ordered as thus:<br>
+     * <ol>
+     *     <li>Lead Actor</li>
+     *     <li>Lead Actress</li>
+     *     <li>Supporting Actor</li>
+     *     <li>Supporting Actress</li>
+     *     <li>Character Voice</li>
+     *     <li>Small Part</li>
+     *     <li>Narrator</li>
+     *     <li>Cameo</li>
+     * </ol><br>
+     * where each category is ordered by crew person last name.
      */
     @Transient
     public Map<String, String> getActors() {
-        Map<String, String> actorToPositionMap = new HashMap<>();
+        Map<String, String> actorToPositionMap = new LinkedHashMap<>();
         
         if (CollectionUtils.isNotEmpty(_movieCrewPersons)) {
-            for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
-                String position = movieCrewPerson.getPosition();
-                CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
+            for (String position : ACTING_POSITION_ORDER) {
+                List<CrewPerson> positionCrewPersons = new ArrayList<>();
                 
-                switch(position) {
-                    case "Lead Actor":
-                    case "Supporting Actor":
-                    case "Lead Actress":
-                    case "Supporting Actress":
-                    case "Character Voice":
-                    case "Small Part":
-                    case "Cameo":
-                        actorToPositionMap.put(crewPerson.getFullName(), position);
-                    default:
-                        continue;
+                for (MovieCrewPerson movieCrewPerson : _movieCrewPersons) {
+                    String positionOfCrewPerson = movieCrewPerson.getPosition();
+                    
+                    if (position.equals(positionOfCrewPerson)) {
+                        CrewPerson crewPerson = movieCrewPerson.getCrewPerson();
+                        positionCrewPersons.add(crewPerson);
+                    }
+                }
+                
+                //order crew by last name
+                Collections.sort(positionCrewPersons, new CrewPersonLastNameComparator());
+                
+                for (CrewPerson crewPerson : positionCrewPersons) {
+                    actorToPositionMap.put(crewPerson.getFullName(), position);
                 }
             }
         }
