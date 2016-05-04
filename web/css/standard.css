@@ -195,6 +195,7 @@ section#alertify-logs {
     margin-top: -99px; /* moves the image half its height 'up' the page */
 }
 
+#modalLoadingText,
 #loadingText {
     margin-left: -75px;
     margin-top: -50px;

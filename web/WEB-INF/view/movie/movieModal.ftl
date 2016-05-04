@@ -1,3 +1,5 @@
+<div id="modalLoadingText" class="hidden"><h1>Loading...</h1></div>
+
 <div id="modalBody">
     <div id="modalLeft">
         <#if movie.imageUrl??>

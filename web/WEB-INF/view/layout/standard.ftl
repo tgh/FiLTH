@@ -32,7 +32,9 @@
                     <#nested>
                 </div>
                 
-                <div id="movieModal" class="remodal modal" data-remodal-id="movieModal" data-remodal-options="hashTracking: false"></div>
+                <div id="movieModal" class="remodal modal" data-remodal-id="movieModal" data-remodal-options="hashTracking: false">
+                    <div id="modalLoadingText"><h1>Loading...</h1></div>
+                </div>
                 
                 <div id="footer">
                     <span id="copyrightText">Copyright 2009-2016 Film Library of Tyler Hayes</span> |
