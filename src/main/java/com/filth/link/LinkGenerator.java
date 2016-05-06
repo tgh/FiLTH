@@ -14,5 +14,6 @@ public interface LinkGenerator
         ManageMpaaRatingsLinkGenerator,
         ManageCountriesLinkGenerator,
         ManagePositionsLinkGenerator,
-        ManageStarRatingsLinkGenerator
+        ManageStarRatingsLinkGenerator,
+        ManageMovieSequencesLinkGenerator
 { }

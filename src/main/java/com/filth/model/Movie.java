@@ -24,6 +24,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -115,6 +116,23 @@ public class Movie {
     
     @OneToMany(cascade=CascadeType.ALL, mappedBy="_linkedMovie")
     private Set<MovieLink> _movieLinksToThisMovie;
+    
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="_movie")
+    private Set<MovieSequenceMovie> _movieSequenceMovies;
+    
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "parent_mid")
+    private Movie _parentMovie;
+    
+    @OneToMany(mappedBy="_parentMovie")
+    private Set<Movie> _childMovies;
+    
+    @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name = "remake_of_mid")
+    private Movie _remakeOfMovie;
+    
+    @OneToMany(mappedBy="_remakeOfMovie")
+    private Set<Movie> _remadeByMovies;
 
     public int getId() {
         return _id;
@@ -236,27 +254,73 @@ public class Movie {
         _listMovies = listMovies;
     }
     
-    public Set<MovieLink> getMovieLinksFromThisMovie() {
-        return _movieLinksFromThisMovie;
-    }
-    
     public void setMovieLinksFromThisMovie(Set<MovieLink> movieLinks) {
         _movieLinksFromThisMovie = movieLinks;
-    }
-    
-    public Set<MovieLink> getMovieLinksToThisMovie() {
-        return _movieLinksToThisMovie;
     }
     
     public void setMovieLinksToThisMovie(Set<MovieLink> movieLinks) {
         _movieLinksToThisMovie = movieLinks;
     }
     
+    public Set<MovieSequenceMovie> getMovieSequenceMovies() {
+        return _movieSequenceMovies;
+    }
+    
+    public void setMovieSequenceMovies(Set<MovieSequenceMovie> movieSequenceMovies) {
+        _movieSequenceMovies = movieSequenceMovies;
+    }
+    
+    public Movie getParent() {
+        return _parentMovie;
+    }
+    
+    public void setParent(Movie movie) {
+        _parentMovie = movie;
+    }
+    
+    public Set<Movie> getChildren() {
+        return _childMovies;
+    }
+    
+    public void setChildren(Set<Movie> movies) {
+        _childMovies = movies;
+    }
+    
+    /**
+     * @return the movie that this movie is a remake of, or null
+     */
+    public Movie getRemakeOfMovie() {
+        return _remakeOfMovie;
+    }
+    
+    public void setRemakeOfMovie(Movie movie) {
+        _remakeOfMovie = movie;
+    }
+    
+    /**
+     * @return the set of movies that are a remake of this movie, or null
+     */
+    public Set<Movie> getRemadeByMovies() {
+        return _remadeByMovies;
+    }
+    
+    public void setRemadeByMovies(Set<Movie> movies) {
+        _remadeByMovies = movies;
+    }
+    
+    @Transient
     public String getStarRatingForDisplay() throws Exception {
         if (null == _starRating) {
             return null;
         }
         return StarRating.encodeToHTML(_starRating);
+    }
+    
+    @Transient
+    public Set<MovieLink> getMovieLinks() {
+        Set<MovieLink> union = new HashSet<>(_movieLinksFromThisMovie);
+        union.addAll(_movieLinksToThisMovie);
+        return union;
     }
     
     /**

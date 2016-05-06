@@ -23,14 +23,13 @@ function update_sequence {
   getLastFileId $1
   table=$1
 
-  if [ "$1" == "oscar_given_to" -o "$1" == "tyler_given_to" -o "$1" == "list_contains" -o "$1" == "movie_link" ]
+  if [ "$1" == "oscar_given_to" -o "$1" == "tyler_given_to" -o "$1" == "list_contains" -o "$1" == "movie_link" -o "$1" == "movie_sequence_movie" -o "$1" == "movie_sequence" -o "$1" == "movie_sequence_type" ]
   then
     tableId="id"
   else
     tableId="$(echo $table | head -c 1)id" # take the first letter of the table name and append "id"
   fi
 
-  tableId="$(echo $table | head -c 1)id" # take the first letter of the table name and append "id"
   sequenceValue=$lastFileId
   sequence=${table}_${tableId}_seq
   psql -U filth_admin -d filth-test -c "SELECT setval('filth.$sequence', $sequenceValue);" > /dev/null 2>>$LOG_FILE
@@ -80,10 +79,10 @@ if [ $# -gt 0 ]
 
     #populate integrity tables
     populate_db_table "country"
-    populate_db_table "movie_link_type"
     populate_db_table "mpaa"
     populate_db_table "position"
     populate_db_table "star_rating"
+    populate_db_table "movie_sequence_type"
 
     #populate entity tables
     populate_db_table "crew_person"
@@ -92,6 +91,7 @@ if [ $# -gt 0 ]
     populate_db_table "oscar"
     populate_db_table "tag"
     populate_db_table "tyler"
+    populate_db_table "movie_sequence"
 
     #populate relationship tables
     populate_db_table "list_contains"
@@ -100,6 +100,7 @@ if [ $# -gt 0 ]
     populate_db_table "tag_given_to"
     populate_db_table "tyler_given_to"
     populate_db_table "worked_on"
+    populate_db_table "movie_sequence_movie"
 
     #update sequences
     update_sequence "crew_person"
@@ -117,6 +118,9 @@ if [ $# -gt 0 ]
     update_sequence "tyler_given_to"
     update_sequence "list_contains"
     update_sequence "movie_link"
+    update_sequence "movie_sequence"
+    update_sequence "movie_sequence_movie"
+    update_sequence "movie_sequence_type"
 
     echo "Done."
 fi

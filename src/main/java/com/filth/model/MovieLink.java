@@ -3,8 +3,6 @@ package com.filth.model;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -33,12 +31,8 @@ public class MovieLink {
     @JoinColumn(name="linked_mid")
     private Movie _linkedMovie;
     
-    @Column(name="link_type")
-    @Enumerated(EnumType.STRING)
-    private MovieLinkType _linkType;
-    
-    @Column(name="comments")
-    private String _comments;
+    @Column(name="description")
+    private String _description;
     
     public int getId() {
         return _id;
@@ -64,20 +58,12 @@ public class MovieLink {
         _linkedMovie = movie;
     }
     
-    public MovieLinkType getLinkType() {
-        return _linkType;
+    public String getDescription() {
+        return _description;
     }
     
-    public void setLinkType(MovieLinkType linkType) {
-        _linkType = linkType;
-    }
-    
-    public String getComments() {
-        return _comments;
-    }
-    
-    public void setComments(String comments) {
-        _comments = comments;
+    public void setDescription(String description) {
+        _description = description;
     }
     
     @Override
@@ -87,10 +73,9 @@ public class MovieLink {
         sb.append("Base: " + _baseMovie.getTitle());
         sb.append(" (" + _baseMovie.getYear() + "), ");
         sb.append("Linked: " + _linkedMovie.getTitle());
-        sb.append(" (" + _linkedMovie.getYear() + "), ");
-        sb.append(_linkType.name());
-        if (StringUtils.isNotEmpty(_comments)) {
-            sb.append(", \"" + _comments + "\"");
+        sb.append(" (" + _linkedMovie.getYear() + ")");
+        if (StringUtils.isNotEmpty(_description)) {
+            sb.append(", \"" + _description + "\"");
         }
         sb.append(")");
         return sb.toString();

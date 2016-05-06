@@ -214,3 +214,16 @@ INSERT INTO filth.worked_on VALUES(213, 1027, 801, 'Supporting Actress');  -- Be
 INSERT INTO filth.worked_on VALUES(214, 1027, 1105, 'Director');  -- Delbert Mann worked on Marty as Director
 INSERT INTO filth.worked_on VALUES(215, 1027, 1243, 'Cinematographer');  -- Joseph LaShelle worked on Marty as Cinematographer
 INSERT INTO filth.worked_on VALUES(216, 1027, 1616, 'Screenwriter');  -- Paddy Chayefsky worked on Marty as Screenwriter
+INSERT INTO filth.worked_on VALUES(217, 2340, 112, 'Lead Actress');  -- Audrey Hepburn worked on Sabrina as Lead Actress
+INSERT INTO filth.worked_on VALUES(218, 2340, 369, 'Director');  -- Billy Wilder worked on Sabrina as Director
+INSERT INTO filth.worked_on VALUES(219, 2340, 1196, 'Cinematographer');  -- Charles Lang worked on Sabrina as Cinematographer
+INSERT INTO filth.worked_on VALUES(220, 2340, 369, 'Screenwriter');  -- Billy Wilder worked on Sabrina as Screenwriter
+INSERT INTO filth.worked_on VALUES(221, 2340, 1607, 'Screenwriter');  -- Samuel Taylor worked on Sabrina as Screenwriter
+INSERT INTO filth.worked_on VALUES(222, 2340, 1608, 'Screenwriter');  -- Ernest Lehman worked on Sabrina as Screenwriter
+INSERT INTO filth.worked_on VALUES(223, 2340, 22, 'Lead Actor');  -- Humphrey Bogart for Sabrina (1954)
+INSERT INTO filth.worked_on VALUES(224, 2340, 182, 'Supporting Actor');  -- William Holden for Sabrina (1954)
+INSERT INTO filth.worked_on VALUES(225, 3560, 26, 'Lead Actor');  -- Harrison Ford for Sabrina (1995)
+INSERT INTO filth.worked_on VALUES(226, 3560, 649, 'Supporting Actor');  -- Greg Kinnear for Sabrina (1995)
+INSERT INTO filth.worked_on VALUES(227, 3560, 1133, 'Director');  -- Sydney Pollack for Sabrina (1995)
+INSERT INTO filth.worked_on VALUES(228, 3560, 2158, 'Lead Actress');  -- Julia Ormond for Sabrina (1995)
+INSERT INTO filth.worked_on VALUES(229, 3560, 108, 'Small Part');  -- Paul Giamatti for Sabrina (1995)

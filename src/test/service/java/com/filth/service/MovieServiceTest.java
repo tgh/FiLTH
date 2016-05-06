@@ -2,6 +2,7 @@ package com.filth.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import com.filth.model.Movie;
 import com.filth.model.MovieCrewPerson;
 import com.filth.model.MovieLink;
 import com.filth.model.MovieOscar;
+import com.filth.model.MovieSequenceMovie;
 import com.filth.model.MovieTyler;
 import com.filth.model.Status;
 import com.filth.model.Tag;
@@ -31,11 +33,11 @@ public class MovieServiceTest extends ServiceTestAbstract {
     public void getAllMovies() {
         List<Movie> movies = _movieService.getAllMovies();
         assertTrue(CollectionUtils.isNotEmpty(movies));
-        assertEquals(51, movies.size());
+        assertEquals(61, movies.size());
     }
     
     @Test
-    public void getById() {
+    public void getMovieById() {
         Movie movie = _movieService.getMovieById(1548); //Star Wars
         Set<Tag> tags = movie.getTags();
         assertNotNull("Tag set is unexpectedly null", tags);
@@ -51,12 +53,15 @@ public class MovieServiceTest extends ServiceTestAbstract {
         Set<ListMovie> listMovies = movie.getListMovies();
         assertNotNull("ListMovie set unexpectedly null", listMovies);
         assertEquals("Number of lists", 1, listMovies.size());
-        Set<MovieLink> movieLinks = movie.getMovieLinksFromThisMovie();
-        assertNotNull("Movie-links-from set unexpectedly null", movieLinks);
-        assertEquals("Number of links from", 2, movieLinks.size());
-        movieLinks = movie.getMovieLinksToThisMovie();
-        assertNotNull("Movie-links-to set unexpectedly null", movieLinks);
-        assertEquals("Number of links to", 2, movieLinks.size());
+        Set<MovieLink> movieLinks = movie.getMovieLinks();
+        assertTrue("Movie-links-from set unexpectedly not empty", CollectionUtils.isEmpty(movieLinks));
+        Set<MovieSequenceMovie> sequenceMovies = movie.getMovieSequenceMovies();
+        assertNotNull("MovieSequenceMovie set is unexpectedly null", sequenceMovies);
+        assertEquals("Number of sequences", 2, sequenceMovies.size());
+        Movie parent = movie.getParent();
+        assertNull("Parent movie unexpectedly not null", parent);
+        Set<Movie> children = movie.getChildren();
+        assertTrue("Child movies set unexpectedly not empty", CollectionUtils.isEmpty(children));
     }
     
     @Test
@@ -111,21 +116,72 @@ public class MovieServiceTest extends ServiceTestAbstract {
     }
     
     @Test
-    public void getMovieLinksFromThisMovie() {
-        Movie movie = _movieService.getMovieById(1548); //Star Wars
+    public void getMovieLinks() {
+        Movie movie = _movieService.getMovieById(3873); //The Revenant
         assertNotNull(movie);
-        Set<MovieLink> movieLinks = movie.getMovieLinksFromThisMovie();
+        Set<MovieLink> movieLinks = movie.getMovieLinks();
         assertTrue(CollectionUtils.isNotEmpty(movieLinks));
-        assertEquals(2, movieLinks.size());
+        assertEquals(1, movieLinks.size());
+        
+        movie = _movieService.getMovieById(3916); //The Man in the Wilderness
+        assertNotNull(movie);
+        movieLinks = movie.getMovieLinks();
+        assertTrue(CollectionUtils.isNotEmpty(movieLinks));
+        assertEquals(1, movieLinks.size());
     }
     
     @Test
-    public void getMovieLinksToThisMovie() {
-        Movie movie = _movieService.getMovieById(1548); //Star Wars
+    public void getParent() {
+        Movie movie = _movieService.getMovieById(20); //42 Up
         assertNotNull(movie);
-        Set<MovieLink> movieLinks = movie.getMovieLinksToThisMovie();
-        assertTrue(CollectionUtils.isNotEmpty(movieLinks));
-        assertEquals(2, movieLinks.size());
+        Movie parent = movie.getParent();
+        assertNotNull(parent);
+        assertEquals("The Up Documentaries", parent.getTitle());
+    }
+    
+    @Test
+    public void getChildren() {
+        Movie movie = _movieService.getMovieById(3762); //The Up Documentaries
+        assertNotNull(movie);
+        Set<Movie> children = movie.getChildren();
+        assertTrue(CollectionUtils.isNotEmpty(children));
+        assertEquals(8, children.size());
+    }
+    
+    @Test
+    public void getRemakeOfMovie() {
+        Movie movie = _movieService.getMovieById(3560); //Sabrina (1995)
+        assertNotNull(movie);
+        Movie original = movie.getRemakeOfMovie();
+        assertNotNull(original);
+        assertTrue(original.getTitle().equals("Sabrina") && original.getYear() == 1954);
+    }
+    
+    @Test
+    public void getRemadeByMovies() {
+        Movie movie = _movieService.getMovieById(2340); //Sabrina (1954)
+        assertNotNull(movie);
+        Set<Movie> remakes = movie.getRemadeByMovies();
+        assertTrue(CollectionUtils.isNotEmpty(remakes));
+        assertEquals(1, remakes.size());
+        //since we know there is only 1 at this point
+        for (Movie remake : remakes) {
+            assertTrue(remake.getTitle().equals("Sabrina") && remake.getYear() == 1995);
+        }
+    }
+    
+    @Test
+    public void getMovieSequenceMovies() {
+        Movie movie = _movieService.getMovieById(17); //28 Up
+        assertNotNull(movie);
+        Set<MovieSequenceMovie> sequenceMovies = movie.getMovieSequenceMovies();
+        assertTrue(CollectionUtils.isNotEmpty(sequenceMovies));
+        assertEquals(1, sequenceMovies.size());
+        //since we know there is only 1 at this point
+        for (MovieSequenceMovie sequenceMovie : sequenceMovies) {
+            assertEquals("The 'Up' Documentaries", sequenceMovie.getSequence().getName());
+            assertEquals(4, sequenceMovie.getOrderIndex());
+        }
     }
 
 }

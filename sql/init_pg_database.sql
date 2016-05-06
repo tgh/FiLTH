@@ -38,10 +38,15 @@ imdb_id text DEFAULT NULL,
 -- number of times seen in the theater
 theater_viewings smallint DEFAULT NULL,
 -- id for TMDB
-tmdb_id integer DEFAULT NULL);
+tmdb_id integer DEFAULT NULL,
+-- movie id of parent movie--movie entries that are collection references rather
+-- than actual movies (e.g. "The Up Documentaries", "The Matrix Trilogy", etc)
+parent_mid smallint DEFAULT NULL,
+-- movie id of original movie if this movie is a remake
+remake_of_mid smallint DEFAULT NULL);
 
 
--- movie <--> movie relationship ----------------------------------------------
+-- movie <--> movie (many-to-one) relationship --------------------------------
 CREATE SEQUENCE filth.movie_link_id_seq;
 CREATE TABLE filth.movie_link (
 id smallint DEFAULT nextval('filth.movie_link_id_seq') NOT NULL,
@@ -49,25 +54,43 @@ id smallint DEFAULT nextval('filth.movie_link_id_seq') NOT NULL,
 base_mid smallint NOT NULL,
 -- id of the linked movie
 linked_mid smallint NOT NULL,
--- type of link
-link_type text NOT NULL,
--- comments, such as if the type is "RELATED_TO", then comments may explain
--- how they are related
-comments text DEFAULT NULL);
+-- description of the link, i.e. reason for why these movies are linked
+description text DEFAULT NULL);
 
 
--- a movie link type entity ---------------------------------------------------
--- (only used as an integrity constraint for movie_link.link_type)
+-- a movie sequence entity ----------------------------------------------------
+CREATE SEQUENCE filth.movie_sequence_id_seq;
+CREATE TABLE filth.movie_sequence (
+id smallint DEFAULT nextval('filth.movie_sequence_id_seq') NOT NULL,
+-- name of the sequence
+name text NOT NULL,
+-- type of sequence (FK to movie_sequence_type)
+sequence_type text DEFAULT NULL);
+
+
+-- movie sequence <--> movie relationship -------------------------------------
+CREATE SEQUENCE filth.movie_sequence_movie_id_seq;
+CREATE TABLE filth.movie_sequence_movie (
+id smallint DEFAULT nextval('filth.movie_sequence_movie_id_seq') NOT NULL,
+-- sequence id
+sid smallint NOT NULL,
+-- movie id
+mid smallint NOT NULL,
+-- order in the sequence (e.g. 1, 2, 3, etc)
+sequence_order smallint NOT NULL);
+
+
+-- a movie sequence type entity -----------------------------------------------
+-- (only used as an integrity constraint for movie_sequence.sequence_type)
 --
 -- current values:
--- PREDECESSOR_OF (e.g. "Rocky" is a predecessor of "Rocky II")
--- SUCCESSOR_TO (e.g. "Rocky II" is a successor to "Rocky")
--- CHILD_OF (e.g. "28 Up" is a child of "The 'Up' Documentaries")
--- PARENT_TO (e.g. "The 'Up' Documentaries" is a parent to "28 Up")
--- REMAKE_OF (e.g. "You've Got Mail" is a remake of "The Shop Around the Corner")
--- RELATED_TO (e.g. "The Walk" is related to "Man on Wire")
-CREATE TABLE filth.movie_link_type (
-link_type text NOT NULL);
+-- SAGA (e.g. Star Wars)
+-- SERIES (e.g. The 'Up' Documentaries, Harry Potter, etc)
+-- TRILOGY (e.g. The Matrix Trilogy)
+CREATE SEQUENCE filth.movie_sequence_type_id_seq;
+CREATE TABLE filth.movie_sequence_type (
+id smallint DEFAULT nextval('filth.movie_sequence_type_id_seq') NOT NULL,
+sequence_type text NOT NULL);
 
 
 -- a country entity -----------------------------------------------------------
@@ -253,7 +276,9 @@ scene_title text DEFAULT '');
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_pkey PRIMARY KEY(id);
-ALTER TABLE filth.movie_link_type ADD CONSTRAINT movie_link_type_pkey PRIMARY KEY(link_type);
+ALTER TABLE filth.movie_sequence ADD CONSTRAINT movie_sequence_pkey PRIMARY KEY(id);
+ALTER TABLE filth.movie_sequence_movie ADD CONSTRAINT movie_sequence_movie_pkey PRIMARY KEY(id);
+ALTER TABLE filth.movie_sequence_type ADD CONSTRAINT movie_sequence_type_pkey PRIMARY KEY(id);
 ALTER TABLE filth.star_rating ADD CONSTRAINT star_rating_pkey PRIMARY KEY(sid);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_pkey PRIMARY KEY(mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_pkey PRIMARY KEY(cid);
@@ -275,6 +300,9 @@ ALTER TABLE filth.tyler_given_to ADD CONSTRAINT tyler_given_to_pkey PRIMARY KEY(
 -- ---------------------
 
 ALTER TABLE filth.movie ADD CONSTRAINT movie_title_year_unique_constraint UNIQUE(title, year);
+ALTER TABLE filth.movie_sequence ADD CONSTRAINT movie_sequence_name_unique_constraint UNIQUE(name);
+ALTER TABLE filth.movie_sequence_movie ADD CONSTRAINT movie_sequence_movie_unique_constraint UNIQUE(sid, mid);
+ALTER TABLE filth.movie_sequence_type ADD CONSTRAINT movie_sequence_type_unique_constraint UNIQUE(sequence_type);
 ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_unique_constraint UNIQUE(base_mid, linked_mid);
 ALTER TABLE filth.country ADD CONSTRAINT country_name_unique_constraint UNIQUE(country_name);
 ALTER TABLE filth.mpaa ADD CONSTRAINT mpaa_rating_unique_constraint UNIQUE(rating);
@@ -308,6 +336,31 @@ ALTER TABLE filth.movie ADD CONSTRAINT movie_mpaa_fkey
 FOREIGN KEY (mpaa) REFERENCES filth.mpaa(rating)
 ON UPDATE CASCADE ON DELETE SET NULL;
 
+-- movie table parent_mid FK
+ALTER TABLE filth.movie ADD CONSTRAINT movie_parent_mid_fkey
+FOREIGN KEY (parent_mid) REFERENCES filth.movie(mid)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie table remake_of_mid FK
+ALTER TABLE filth.movie ADD CONSTRAINT movie_remake_of_mid_fkey
+FOREIGN KEY (remake_of_mid) REFERENCES filth.movie(mid)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie_sequence table sequence_type FK
+ALTER TABLE filth.movie_sequence ADD CONSTRAINT movie_sequence_sequence_type_fkey
+FOREIGN KEY (sequence_type) REFERENCES filth.movie_sequence_type(sequence_type)
+ON UPDATE CASCADE ON DELETE SET NULL;
+
+-- movie_sequence_movie table sid FK
+ALTER TABLE filth.movie_sequence_movie ADD CONSTRAINT movie_sequence_movie_sid_fkey
+FOREIGN KEY (sid) REFERENCES filth.movie_sequence(id)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
+-- movie_sequence_movie table mid FK
+ALTER TABLE filth.movie_sequence_movie ADD CONSTRAINT movie_sequence_movie_mid_fkey
+FOREIGN KEY (mid) REFERENCES filth.movie(mid)
+ON UPDATE CASCADE ON DELETE CASCADE;
+
 -- movie_link table base_mid FK
 ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_base_mid_fkey
 FOREIGN KEY (base_mid) REFERENCES filth.movie(mid)
@@ -316,11 +369,6 @@ ON UPDATE CASCADE ON DELETE CASCADE;
 -- movie_link table linked_mid FK
 ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_linked_mid_fkey
 FOREIGN KEY (linked_mid) REFERENCES filth.movie(mid)
-ON UPDATE CASCADE ON DELETE CASCADE;
-
--- movie_link table link_type FK
-ALTER TABLE filth.movie_link ADD CONSTRAINT movie_link_link_type_fkey
-FOREIGN KEY (link_type) REFERENCES filth.movie_link_type(link_type)
 ON UPDATE CASCADE ON DELETE CASCADE;
 
 -- crew_person table known_as FK

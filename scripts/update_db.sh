@@ -127,10 +127,10 @@ function updateTable() {
 
 # integrity tables
 updateTable "country" "cid"
-updateTable "movie_link_type"
 updateTable "mpaa" "mid"
 updateTable "position" "pid"
 updateTable "star_rating" "sid"
+updateTable "movie_sequence_type" "id"
 # entity tables
 updateTable "crew_person" "cid"
 updateTable "list" "lid"
@@ -138,6 +138,7 @@ updateTable "movie" "mid"
 updateTable "oscar" "oid"
 updateTable "tag" "tid"
 updateTable "tyler" "tid"
+updateTable "movie_sequence" "id"
 # relationship tables
 updateTable "list_contains" "id"
 updateTable "movie_link" "id"
@@ -145,3 +146,4 @@ updateTable "oscar_given_to" "id"
 updateTable "tag_given_to"
 updateTable "tyler_given_to" "id"
 updateTable "worked_on" "wid"
+updateTable "movie_sequence_movie" "id"

@@ -24,6 +24,9 @@ public class MovieDAO extends HibernateDAO<Movie> {
                 "LEFT JOIN FETCH m._listMovies " +
                 "LEFT JOIN FETCH m._movieLinksFromThisMovie " +
                 "LEFT JOIN FETCH m._movieLinksToThisMovie " +
+                "LEFT JOIN FETCH m._childMovies " +
+                "LEFT JOIN FETCH m._remadeByMovies " +
+                "LEFT JOIN FETCH m._movieSequenceMovies " +
                 "WHERE m.id = :id"
         );
         query.setParameter("id", id);

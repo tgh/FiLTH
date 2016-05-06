@@ -176,4 +176,14 @@ INSERT INTO filth.crew_person VALUES (252, 'Aronofsky', 'Darren', NULL, 'Darren 
 INSERT INTO filth.crew_person VALUES (233, 'Libatique', 'Matthew', NULL, 'Matthew Libatique', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (102, 'Law', 'Jude', NULL, 'Jude Law', 'Actor');  -- Actor
 INSERT INTO filth.crew_person VALUES (1033, 'Castle-Hughes', 'Keisha', NULL, 'Keisha Castle-Hughes', 'Actress');  -- Actress
+INSERT INTO filth.crew_person VALUES (369, 'Wilder', 'Billy', NULL, 'Billy Wilder', 'Director');  -- Director
+INSERT INTO filth.crew_person VALUES (1607, 'Taylor', 'Samuel', NULL, 'Samuel Taylor', 'Screenwriter');  -- Screenwriter
+INSERT INTO filth.crew_person VALUES (1608, 'Lehman', 'Ernest', NULL, 'Ernest Lehman', 'Screenwriter');  -- Screenwriter
+INSERT INTO filth.crew_person VALUES (22, 'Bogart', 'Humphrey', NULL, 'Humphrey Bogart', 'Actor');  -- Actor
+INSERT INTO filth.crew_person VALUES (182, 'Holden', 'William', NULL, 'William Holden', 'Actor');  -- Actor
+INSERT INTO filth.crew_person VALUES (649, 'Kinnear', 'Greg', NULL, 'Greg Kinnear', 'Actor');  -- Actor
+INSERT INTO filth.crew_person VALUES (1133, 'Pollack', 'Sydney', NULL, 'Sydney Pollack', 'Director');  -- Director
+INSERT INTO filth.crew_person VALUES (2158, 'Ormond', 'Julia', NULL, 'Julia Ormond', 'Actress');  -- Actress: Julia Ormond
+INSERT INTO filth.crew_person VALUES (108, 'Giamatti', 'Paul', NULL, 'Paul Giamatti', 'Actor');  -- Actor
+-- highest id
 INSERT INTO filth.crew_person VALUES (3213, 'Smits', 'Jimmy', NULL, 'Jimmy Smits', 'Actor');  -- Actor: Jimmy Smits
