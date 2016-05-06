@@ -1,3 +1,5 @@
+<#import "/util.ftl" as util />
+
 <div id="modalLoadingText" class="hidden"><h1>Loading...</h1></div>
 
 <div id="modalBody">
@@ -119,6 +121,15 @@
                     </ul>
                 </#list>
             </p>
+        </#if>
+        
+        <#assign sequenceMovies = movie.movieSequenceMovies />
+        <#if (sequenceMovies?? && sequenceMovies?size > 0)>
+            <#list sequenceMovies as sequenceMovie>
+                <p>
+                    <span class="modalLabel">The ${util.number_suffix(sequenceMovie.orderIndex)} film in ${sequenceMovie.sequence.name}</span>
+                </p>
+            </#list>
         </#if>
     </div>
 </div>
