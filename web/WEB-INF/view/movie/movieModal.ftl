@@ -106,20 +106,17 @@
             </ul>
         </#if>
         
-        <#if (movie.movieLinksToThisMovie?? && movie.movieLinksToThisMovie?size > 0)>
+        <#if (movie.movieLinks?size > 0)>
             <p>
-                <span class="modalLabel">Movies linked to this movie:</span>
-                <#list movie.movieLinksToThisMovie as movieLink>
-                    ${movieLink.baseMovie.title} (${movieLink.baseMovie.year})<#if movieLink_has_next>,</#if>
-                </#list>
-            </p>
-        </#if>
-        
-        <#if (movie.movieLinksFromThisMovie?? && movie.movieLinksFromThisMovie?size > 0)>
-            <p>
-                <span class="modalLabel">Movies linked from this movie:</span>
-                <#list movie.movieLinksFromThisMovie as movieLink>
-                    ${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})<#if movieLink_has_next>,</#if>
+                <span class="modalLabel">Movies related to this movie:</span>
+                <#list movie.movieLinks as movieLink>
+                    <ul>
+                        <#if movie.id == movieLink.baseMovie.id>
+                            <li><b>"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</b>: ${movieLink.description}</li>
+                        <#else>
+                            <li><b>"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</b>: ${movieLink.description}</li>
+                        </#if>
+                    </ul>
                 </#list>
             </p>
         </#if>
