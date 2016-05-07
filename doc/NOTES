@@ -25,6 +25,7 @@ SETTING UP ENVIRONMENT
 -----------------------
 - need CATALINA_HOME and FILTH_PATH env variables
 - need to add conf/tmdb.properties file with property "tmdb.api.key" (e.g. tmdb.api.key=[api key]) (this file is not managed by git--it is ignored via .gitignore)
+- requires ivy 2.4.0+ (to use the bintray resolver for TMDB java api)
 
 - I installed ant like this at first:
 	- download tarball from http://httpd.apache.org/download.cgi#apache24
