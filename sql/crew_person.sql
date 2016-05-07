@@ -3276,3 +3276,4 @@ INSERT INTO filth.crew_person VALUES (3278, 'Madsen', 'Michael', NULL, 'Michael 
 INSERT INTO filth.crew_person VALUES (3279, 'Favreau', 'Jon', NULL, 'Jon Favreau', 'Actor');  -- Actor: Jon Favreau
 INSERT INTO filth.crew_person VALUES (3280, 'Sethi', 'Neel', NULL, 'Neel Sethi', 'Actor');  -- Actor: Neel Sethi
 INSERT INTO filth.crew_person VALUES (3281, 'Elba', 'Idris', NULL, 'Idris Elba', 'Actor');  -- Actor: Idris Elba
+INSERT INTO filth.crew_person VALUES (3282, 'Reitherman', 'Wolfgang', NULL, 'Wolfgang Reitherman', 'Director');  -- Director: Wolfgang Reitherman
