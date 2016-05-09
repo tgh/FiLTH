@@ -1,5 +1,8 @@
 package com.filth.model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -11,6 +14,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import com.filth.util.MovieSequenceMovieOrderIndexComparator;
 
 @Entity
 @Table(name="movie_sequence")
@@ -61,6 +67,38 @@ public class MovieSequence {
     
     public void setMovieSequenceMovies(Set<MovieSequenceMovie> movieSequenceMovies) {
         _movieSequenceMovies = movieSequenceMovies;
+    }
+    
+    /**
+     * @return A List of Movie objects that belong to this MovieSequence (in order)
+     */
+    @Transient
+    public List<Movie> getMoviesInOrder() {
+        List<Movie> sequenceMovies = new ArrayList<>();
+        List<MovieSequenceMovie> movieSequenceMovies = new ArrayList<>(_movieSequenceMovies);
+        Collections.sort(movieSequenceMovies, new MovieSequenceMovieOrderIndexComparator());
+        for (MovieSequenceMovie msm : movieSequenceMovies) {
+            sequenceMovies.add(msm.getMovie());
+        }
+        return sequenceMovies;
+    }
+    
+    /**
+     * @param orderIndex The order index of the sequence (1-indexed)
+     * @return The <i>N</i>th movie in this sequence where <i>N</i> is a non-zero positive integer.
+     */
+    @Transient
+    public Movie getMovieBySequenceOrderIndex(int orderIndex) {
+        Set<MovieSequenceMovie> movieSequenceMovies = getMovieSequenceMovies();
+        for (MovieSequenceMovie msm : movieSequenceMovies) {
+            if (msm.getOrderIndex() == orderIndex) {
+                return msm.getMovie();
+            }
+        }
+        
+        //FIXME: should throw an exception here instead, probably,
+        //and/or check the index for out-of-bounds at start of method
+        return null;
     }
     
     @Override

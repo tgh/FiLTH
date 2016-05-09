@@ -205,3 +205,16 @@ section#alertify-logs {
     left: 50%;
     text-align: center;
 }
+
+.modalMovieImageSmall {
+    margin: 5px;
+    width: 25%;
+}
+
+.imageHighlight {
+    box-shadow: 0px 0px 15px 4px #FDFF80;
+}
+
+.modalSequence {
+    padding-left: 30px;
+}

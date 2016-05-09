@@ -127,7 +127,22 @@
         <#if (sequenceMovies?? && sequenceMovies?size > 0)>
             <#list sequenceMovies as sequenceMovie>
                 <p>
-                    <span class="modalLabel">The ${util.number_suffix(sequenceMovie.orderIndex)} film in ${sequenceMovie.sequence.name}</span>
+                    <span class="modalLabel">The ${util.number_suffix(sequenceMovie.orderIndex)} film in ${sequenceMovie.sequence.name}:</span>
+                </p>
+                <p class="modalSequence">
+                    <#list sequenceMovie.sequence.getMoviesInOrder() as sm>
+                        <#if sm.imageUrl??>
+                            <#if sm.id == movie.id>
+                                <img class="modalMovieImageSmall imageHighlight" src="${sm.imageUrl}"/>
+                            <#else>
+                                <img class="modalMovieImageSmall" src="${sm.imageUrl}"/>
+                            </#if>
+                        <#else>
+                            ${sm.title} (No image)
+                        </#if>
+                    <#--<img class="modalMovieImageSmall" src="${sequenceMovie.sequence.getMovieBySequenceOrderIndex(sequenceMovie.orderIndex-1).imageUrl}"/>-->
+                    <#--<img class="modalMovieImageSmall" src="${sequenceMovie.sequence.getMovieBySequenceOrderIndex(sequenceMovie.orderIndex+1).imageUrl}"/>-->
+                    </#list>
                 </p>
             </#list>
         </#if>

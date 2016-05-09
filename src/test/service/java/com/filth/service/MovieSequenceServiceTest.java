@@ -36,5 +36,11 @@ public class MovieSequenceServiceTest extends ServiceTestAbstract {
         Set<MovieSequenceMovie> sequenceMovies = sequence.getMovieSequenceMovies();
         assertTrue(CollectionUtils.isNotEmpty(sequenceMovies));
         assertEquals(8, sequenceMovies.size());
+        //assert they are in order
+        int i=1;
+        for (MovieSequenceMovie sequenceMovie : sequenceMovies) {
+            assertEquals(i, sequenceMovie.getOrderIndex());
+            ++i;
+        }
     }
 }
