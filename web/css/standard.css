@@ -101,16 +101,17 @@ table.dataTable tbody tr.even {
     font-weight: bold;
 }
 
-a.movieTitle {
-    color: #78e;
+.movieLink {
     cursor: pointer;
     font-weight: bold;
 }
 
+a.movieTitle {
+    color: #78e;
+}
+
 #bgImageMovie {
     font-style: italic;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .remodal.modal {

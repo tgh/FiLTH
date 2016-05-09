@@ -1,9 +1,5 @@
-function movieTitleClickHandler(event) {
-    viewMovie($(event.target).parents('tr'));   //global_function.js
-}
-
 function addListeners() {
-    $('.movieTitle').click(movieTitleClickHandler);
+    $('.movieTitle').click(movieLinkClickHandler);  //global_functions.js
 }
 
 $(document).ready(function() {

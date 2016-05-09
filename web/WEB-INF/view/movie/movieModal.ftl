@@ -114,9 +114,9 @@
                 <#list movie.movieLinks as movieLink>
                     <ul>
                         <#if movie.id == movieLink.baseMovie.id>
-                            <li><b>"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</b>: ${movieLink.description}</li>
+                            <li><a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}</li>
                         <#else>
-                            <li><b>"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</b>: ${movieLink.description}</li>
+                            <li><a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}</li>
                         </#if>
                     </ul>
                 </#list>

@@ -28,7 +28,7 @@
                 </#if>
                 
                 <tr data-movie-id="${movie.id}" class="${rowCssClass}">
-                    <td><a class="movieTitle" data-remodal-target="movieModal">${movie.title}</a></td>
+                    <td><a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title}</a></td>
                     <td>
                         <#if movie.year??>
                             ${movie.year}
