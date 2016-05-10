@@ -112,7 +112,7 @@
             <div id="modalRelatedMovies">
                 <span class="modalLabel">Movies related to this movie:</span>
                 <#list movie.movieLinks as movieLink>
-                    <table id="modalRelatedMoviesTable">
+                    <table>
                         <#if movie.id == movieLink.baseMovie.id>
                             <tr>
                                 <#if movieLink.linkedMovie.imageUrl??>
@@ -120,7 +120,7 @@
                                 <#else>
                                     <td><@util.noImage "modalMovieTableImage" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" /></td>
                                 </#if>
-                                <td class="modalRelatedMovieDiscription">
+                                <td class="movieModalTableText">
                                     <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}
                                 </td>
                             </tr>
@@ -131,7 +131,7 @@
                                 <#else>
                                     <td><@util.noImage "modalMovieTableImage" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" /></td>
                                 </#if>
-                                <td class="modalRelatedMovieDiscription">
+                                <td class="movieModalTableText">
                                     <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}
                                 </td>
                             </tr>
@@ -163,6 +163,57 @@
                     </#list>
                 </p>
             </#list>
+        </#if>
+            
+        <#if movie.remakeOfMovie??>
+            <div class="horizontalDivider"></div>
+        
+            <div>
+                <span class="modalLabel">Remake of:</span>
+                
+                <table>
+                    <tr>
+                        <td>
+                            <#if movie.remakeOfMovie.imageUrl??>
+                                <img class="modalMovieTableImage" src="${movie.remakeOfMovie.imageUrl}"/>
+                            <#else>
+                                <@util.noImage "modalMovieTableImage" "${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})" />
+                            </#if>
+                        </td>
+                    
+                        <td class="movieModalTableText">
+                            <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movie.remakeOfMovie.id}">${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </#if>
+        
+        <#assign remadeByMovies = movie.remadeByMovies />
+        <#if (remadeByMovies?? && remadeByMovies?size > 0)>
+            <div class="horizontalDivider"></div>
+        
+            <div>
+                <span class="modalLabel">Remade by:</span>
+                
+                <table>
+                    <#list remadeByMovies as remadeByMovie>
+                        <tr>
+                            <td>
+                                <#if remadeByMovie.imageUrl??>
+                                    <img class="modalMovieTableImage" src="${remadeByMovie.imageUrl}"/>
+                                <#else>
+                                    <@util.noImage "modalMovieTableImage" "${remadeByMovie.title} (${remadeByMovie.year})" />
+                                </#if>
+                            </td>
+                        
+                            <td class="movieModalTableText">
+                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${remadeByMovie.id}">${remadeByMovie.title} (${remadeByMovie.year})</a>
+                            </td>
+                        </tr>
+                    </#list>
+                </table>
+            </div>
         </#if>
     </div>
 </div>

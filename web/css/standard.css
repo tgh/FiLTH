@@ -223,11 +223,11 @@ section#alertify-logs {
     width: 100%;
 }
 
-#modalRelatedMoviesTable {
+#movieModal table {
     border-spacing: 10px;
 }
 
-#modalRelatedMoviesTable td.modalRelatedMovieDiscription {
+#movieModal td.movieModalTableText {
     width: 80%;
 }
 
