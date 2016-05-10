@@ -58,5 +58,7 @@ INSERT INTO filth.movie VALUES (19, '35 Up', 1991, '****', 'NR', 'England', NULL
 INSERT INTO filth.movie VALUES (20, '42 Up', 1998, '****', 'NR', 'England', NULL, 'tt0164312', 0, 20565, 3762, NULL);
 INSERT INTO filth.movie VALUES (3480, '49 Up', 2005, '****', 'NR', 'England', NULL, 'tt0473434', 0, 13365, 3762, NULL);
 INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1, 140607, NULL, NULL);
+INSERT INTO filth.movie VALUES (1305, 'The Princess Diaries', 2001, '***', 'G', 'USA', NULL, 'tt0247638', 0, 9880, NULL, NULL);
+INSERT INTO filth.movie VALUES (1306, 'The Princess Diaries 2: Royal Engagement', 2004, '***', 'G', 'USA', NULL, 'tt0368933', 0, 11130, NULL, NULL);
 --highest id
 INSERT INTO filth.movie VALUES (3916, 'The Man in the Wilderness', 1971, 'not seen', 'PG', 'USA', NULL, 'tt0067388', NULL, 46845, NULL, NULL);
