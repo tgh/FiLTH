@@ -1,5 +1,6 @@
 <#assign cssRoot="/css">
 <#assign jsRoot="/js">
+<#assign imagesRoot="/images">
 
 <#macro css cssPath>
     <link rel="stylesheet" type="text/css" href="<@spring.url '${cssRoot}/${cssPath}'/>.css" />
@@ -15,6 +16,14 @@
 
 <#macro external_js url charset="utf8">
     <script type="text/javascript" charset="${charset}" src="${url}"></script>
+</#macro>
+
+<#macro image imagePath cssClass title>
+    <img class="${cssClass}" src="<@spring.url '${imagesRoot}/${imagePath}' />" title="${title}" />
+</#macro>
+
+<#macro noImage cssClass title>
+    <img class="${cssClass}" src="<@spring.url '${imagesRoot}/no-image-old.jpg' />" title="${title}" />
 </#macro>
 
 <#macro include_datatables_css>

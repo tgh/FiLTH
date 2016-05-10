@@ -114,9 +114,23 @@
                 <#list movie.movieLinks as movieLink>
                     <ul>
                         <#if movie.id == movieLink.baseMovie.id>
-                            <li><a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}</li>
+                            <li>
+                                <#if movieLink.linkedMovie.imageUrl??>
+                                    <img class="modalMovieImageSmall" src="${movieLink.linkedMovie.imageUrl}"/>
+                                <#else>
+                                    <@util.noImage "modalMovieImageSmall" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" />
+                                </#if>
+                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}
+                            </li>
                         <#else>
-                            <li><a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}</li>
+                            <li>
+                                <#if movieLink.baseMovie.imageUrl??>
+                                    <img class="modalMovieImageSmall" src="${movieLink.baseMovie.imageUrl}"/>
+                                <#else>
+                                    <@util.noImage "modalMovieImageSmall" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" />
+                                </#if>
+                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}
+                            </li>
                         </#if>
                     </ul>
                 </#list>
@@ -138,10 +152,8 @@
                                 <img class="modalMovieImageSmall" src="${sm.imageUrl}"/>
                             </#if>
                         <#else>
-                            ${sm.title} (No image)
+                            <@util.noImage "modalMovieImageSmall" "${sm.title} (${sm.year})" />
                         </#if>
-                    <#--<img class="modalMovieImageSmall" src="${sequenceMovie.sequence.getMovieBySequenceOrderIndex(sequenceMovie.orderIndex-1).imageUrl}"/>-->
-                    <#--<img class="modalMovieImageSmall" src="${sequenceMovie.sequence.getMovieBySequenceOrderIndex(sequenceMovie.orderIndex+1).imageUrl}"/>-->
                     </#list>
                 </p>
             </#list>
