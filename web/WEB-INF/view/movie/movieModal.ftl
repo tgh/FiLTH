@@ -61,13 +61,11 @@
         
         <#if movie.tags??>
             <div id="modalMovieTags">
-                <p>
-                    <span class="modalLabel">Tags:</span>
-                    
-                    <#list movie.tags as tag>
-                        ${tag.name}<#if tag_has_next>,</#if>
-                    </#list>
-                </p>
+                <span class="modalLabel">Tags:</span>
+                
+                <#list movie.tags as tag>
+                    ${tag.name}<#if tag_has_next>,</#if>
+                </#list>
             </div>
         </#if>
         
@@ -109,36 +107,44 @@
         </#if>
         
         <#if (movie.movieLinks?size > 0)>
-            <p>
+            <div class="horizontalDivider"></div>
+        
+            <div id="modalRelatedMovies">
                 <span class="modalLabel">Movies related to this movie:</span>
                 <#list movie.movieLinks as movieLink>
-                    <ul>
+                    <table id="modalRelatedMoviesTable">
                         <#if movie.id == movieLink.baseMovie.id>
-                            <li>
+                            <tr>
                                 <#if movieLink.linkedMovie.imageUrl??>
-                                    <img class="modalMovieImageSmall" src="${movieLink.linkedMovie.imageUrl}"/>
+                                    <td><img class="modalMovieTableImage" src="${movieLink.linkedMovie.imageUrl}"/></td>
                                 <#else>
-                                    <@util.noImage "modalMovieImageSmall" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" />
+                                    <td><@util.noImage "modalMovieTableImage" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" /></td>
                                 </#if>
-                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}
-                            </li>
+                                <td class="modalRelatedMovieDiscription">
+                                    <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}
+                                </td>
+                            </tr>
                         <#else>
-                            <li>
+                            <tr>
                                 <#if movieLink.baseMovie.imageUrl??>
-                                    <img class="modalMovieImageSmall" src="${movieLink.baseMovie.imageUrl}"/>
+                                    <td><img class="modalMovieTableImage" src="${movieLink.baseMovie.imageUrl}"/></td>
                                 <#else>
-                                    <@util.noImage "modalMovieImageSmall" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" />
+                                    <td><@util.noImage "modalMovieTableImage" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" /></td>
                                 </#if>
-                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}
-                            </li>
+                                <td class="modalRelatedMovieDiscription">
+                                    <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}
+                                </td>
+                            </tr>
                         </#if>
-                    </ul>
+                    </table>
                 </#list>
-            </p>
+            </div>
         </#if>
         
         <#assign sequenceMovies = movie.movieSequenceMovies />
         <#if (sequenceMovies?? && sequenceMovies?size > 0)>
+            <div class="horizontalDivider"></div>
+            
             <#list sequenceMovies as sequenceMovie>
                 <p>
                     <span class="modalLabel">The ${util.number_suffix(sequenceMovie.orderIndex)} film in ${sequenceMovie.sequence.name}:</span>

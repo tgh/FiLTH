@@ -142,7 +142,7 @@ section#alertify-logs {
 }
 
 #modalMovieImage {
-    height: 50vh;
+    height: 55vh;
     margin: 20px;
     display: inline-block;
 }
@@ -168,16 +168,16 @@ section#alertify-logs {
 
 #modalLeft {
     float: left;
-    margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid #aaa;
-    max-width: 45%;
+    max-width: 48%;
 }
 
 #modalRight {
-    margin-left: 10px;
     display: inline-block;
-    max-width: 45%;
+    max-width: 48%;
+    border-left: 1px solid #aaa;
+    margin-left: -1px; /* to overlap the 2 borders between modalLeft and modalRight */
 }
 
 #modalBody {
@@ -217,4 +217,26 @@ section#alertify-logs {
 
 .modalSequence {
     padding-left: 30px;
+}
+
+.modalMovieTableImage {
+    width: 100%;
+}
+
+#modalRelatedMoviesTable {
+    border-spacing: 10px;
+}
+
+#modalRelatedMoviesTable td.modalRelatedMovieDiscription {
+    width: 80%;
+}
+
+.horizontalDivider {
+    border-top: 1px solid #aaa;
+    margin: 10px 0px;
+}
+
+#modalRight div:not(.horizontalDivider),
+#modalRight p {
+    padding-left: 20px;
 }
