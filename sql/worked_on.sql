@@ -6598,7 +6598,6 @@ INSERT INTO filth.worked_on VALUES(6597, 3368, 1043, 'Lead Actress');  -- Michel
 INSERT INTO filth.worked_on VALUES(6598, 566, 168, 'Supporting Actress');  -- Amy Adams for The Fighter (2010)
 INSERT INTO filth.worked_on VALUES(6599, 899, 124, 'Supporting Actress');  -- Helena Bonham Carter for The King's Speech (2010)
 INSERT INTO filth.worked_on VALUES(6600, 566, 1053, 'Supporting Actress');  -- Melissa Leo for The Fighter (2010)
-INSERT INTO filth.worked_on VALUES(6601, 1676, 3019, 'Supporting Actress');  -- Hailee Steinfeld for True Grit (2010)
 INSERT INTO filth.worked_on VALUES(6602, 809, 1382, 'Cinematographer');  -- Wally Pfister for Inception (2010)
 INSERT INTO filth.worked_on VALUES(6603, 1511, 2608, 'Cinematographer');  -- Jeff Cronenweth for The Social Network (2010)
 INSERT INTO filth.worked_on VALUES(6604, 1676, 235, 'Cinematographer');  -- Roger Deakins for True Grit (2010)
