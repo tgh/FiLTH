@@ -46,13 +46,6 @@ SETTING UP ENVIRONMENT
 
 - may need to set CATALINA_HOME environment variable and point to tomcat base directory?
 
-- download Spring from http://www.springsource.org/download
-	- extract to workspace
-- download Hibernate from http://www.hibernate.org/downloads
-	- extract to workspace
-- download Freemkarker from http://freemarker.sourceforge.net/freemarkerdownload.html
-	- extract freemarker.jar from /lib
-
 - Used tutorial: http://static.springsource.org/docs/Spring-MVC-step-by-step/part1.html
   for some of the setup (this is where the build.xml file came from)
   - had to replace
@@ -267,6 +260,7 @@ SETTING UP ENVIRONMENT
     - ANT_HOME
     - WORKSPACE
     - JAVA_HOME
+    - FILTH_PATH
 
   - favicon:
     - how to: http://blog.teamtreehouse.com/how-to-make-a-favicon
