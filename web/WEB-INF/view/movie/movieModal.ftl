@@ -3,13 +3,18 @@
 <div id="modalLoadingText" class="hidden"><h1>Loading...</h1></div>
 
 <div id="modalBody">
+    <#-- LEFT CONTAINER -->
     <div id="modalLeft">
-        <#if movie.imageUrl??>
-            <div id="modalMovieImageContainer">
-                <img id="modalMovieImage" src="${movie.imageUrl}"/>
-            </div>
-        </#if>
+        <#-- Main image -->
+        <div id="modalMovieImageContainer">
+            <#if movie.imageUrl??>
+                <img class="modalMovieImage" src="${movie.imageUrl}"/>
+            <#else>
+                <@util.noImage "modalMovieImage" />
+            </#if>
+        </div>
         
+        <#-- Oscars -->
         <#assign oscarMap = movie.oscarToMovieOscarsMap />
         <#if (oscarMap?? && oscarMap?size > 0)>
             <p>
@@ -29,36 +34,45 @@
             </ul>
         </#if>
         
+        <#-- Crew -->
         <@renderCrew />
     </div>
     
+    <#-- RIGHT CONTAINER -->
     <div id="modalRight">
+        <#-- Title and year -->
         <#if movie.year??>
             <div id="modalMovieTitle">${movie.title} (${movie.year})</div>
         <#else>
             <div id="modalMovieTitle">${movie.title}</div>
         </#if>
         
+        <#-- Star rating -->
         <#if movie.starRatingForDisplay??>
             <div id="modalMovieStarRating">${movie.starRatingForDisplay}</div>
         </#if>
         
+        <#-- Mpaa -->
         <#if movie.mpaaRating??>
             <p id="modalMovieMpaa"><span class="modalLabel">MPAA Rating:</span> ${movie.mpaaRating}</p>
         </#if>
         
+        <#-- Country -->
         <#if movie.country??>
             <p id="modalMovieCountry"><span class="modalLabel">Country:</span> ${movie.country}</p>
         </#if>
         
+        <#-- Theater viewings -->
         <#if movie.theaterViewings??>
-            <p id="modalMovieTheaterViewings"><span class="modalLabel">How many times seen in the theater:</span> ${movie.theaterViewings}<p>
+            <p id="modalMovieTheaterViewings"><span class="modalLabel">How many times seen in the theater:</span> ${movie.theaterViewings}</p>
         </#if>
         
+        <#-- Comments -->
         <#if movie.comments??>
             <p id="modalMovieComments"><span class="modalLabel">Comments:</span> ${movie.comments}</p>
         </#if>
         
+        <#-- Tags -->
         <#if movie.tags??>
             <div id="modalMovieTags">
                 <span class="modalLabel">Tags:</span>
@@ -69,6 +83,7 @@
             </div>
         </#if>
         
+        <#-- Lists -->
         <#if movie.listMovies??>
             <#list movie.listMovies as listMovie>
                 <p>
@@ -85,6 +100,7 @@
             </#list>
         </#if>
         
+        <#-- Tyler awards -->
         <#assign tylerMap = movie.tylerToMovieTylersMap />
         <#if (tylerMap?? && tylerMap?size > 0)>
             <p>
@@ -106,6 +122,7 @@
             </ul>
         </#if>
         
+        <#-- Related movies -->
         <#if (movie.movieLinks?size > 0)>
             <div class="horizontalDivider"></div>
         
@@ -116,23 +133,27 @@
                         <#if movie.id == movieLink.baseMovie.id>
                             <tr>
                                 <#if movieLink.linkedMovie.imageUrl??>
-                                    <td><img class="modalMovieTableImage" src="${movieLink.linkedMovie.imageUrl}"/></td>
+                                    <td><img class="modalMovieImageSmall" src="${movieLink.linkedMovie.imageUrl}"/></td>
                                 <#else>
-                                    <td><@util.noImage "modalMovieTableImage" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" /></td>
+                                    <td><@util.noImage "modalMovieImageSmall" "${movieLink.linkedMovie.title} (${movieLink.linkedMovie.year})" /></td>
                                 </#if>
                                 <td class="movieModalTableText">
-                                    <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.linkedMovie.id}">"${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})</a>: ${movieLink.description}
+                                    <@movieModalLink movieLink.linkedMovie.id>
+                                        "${movieLink.linkedMovie.title}" (${movieLink.linkedMovie.year})
+                                    </@movieModalLink>: ${movieLink.description}
                                 </td>
                             </tr>
                         <#else>
                             <tr>
                                 <#if movieLink.baseMovie.imageUrl??>
-                                    <td><img class="modalMovieTableImage" src="${movieLink.baseMovie.imageUrl}"/></td>
+                                    <td><img class="modalMovieImageSmall" src="${movieLink.baseMovie.imageUrl}"/></td>
                                 <#else>
-                                    <td><@util.noImage "modalMovieTableImage" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" /></td>
+                                    <td><@util.noImage "modalMovieImageSmall" "${movieLink.baseMovie.title} (${movieLink.baseMovie.year})" /></td>
                                 </#if>
                                 <td class="movieModalTableText">
-                                    <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieLink.baseMovie.id}">"${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})</a>: ${movieLink.description}
+                                    <@movieModalLink movieLink.baseMovie.id>
+                                        "${movieLink.baseMovie.title}" (${movieLink.baseMovie.year})
+                                    </@movieModalLink>: ${movieLink.description}
                                 </td>
                             </tr>
                         </#if>
@@ -141,30 +162,38 @@
             </div>
         </#if>
         
+        <#-- Sequences -->
         <#assign sequenceMovies = movie.movieSequenceMovies />
         <#if (sequenceMovies?? && sequenceMovies?size > 0)>
-            <div class="horizontalDivider"></div>
             
             <#list sequenceMovies as sequenceMovie>
-                <p>
+                <div class="horizontalDivider"></div>
+                
+                <div>
                     <span class="modalLabel">The ${util.number_suffix(sequenceMovie.orderIndex)} film in ${sequenceMovie.sequence.name}:</span>
-                </p>
-                <p class="modalSequence">
+                </div>
+                
+                <div class="modalSequence">
                     <#list sequenceMovie.sequence.getMoviesInOrder() as sm>
                         <#if sm.imageUrl??>
                             <#if sm.id == movie.id>
-                                <img class="modalMovieImageSmall imageHighlight" src="${sm.imageUrl}"/>
+                                <img class="modalMovieImageSmall imageHighlight" src="${sm.imageUrl}" />
                             <#else>
-                                <img class="modalMovieImageSmall" src="${sm.imageUrl}"/>
+                                <@movieModalLink sm.id>
+                                    <img class="modalMovieImageSmall" src="${sm.imageUrl}" title="${sm.title} (${sm.year})" />
+                                </@movieModalLink>
                             </#if>
                         <#else>
-                            <@util.noImage "modalMovieImageSmall" "${sm.title} (${sm.year})" />
+                            <@movieModalLink sm.id>
+                                <@util.noImage "modalMovieImageSmall" "${sm.title} (${sm.year})" />
+                            </@movieModalLink>
                         </#if>
                     </#list>
-                </p>
+                </div>
             </#list>
         </#if>
-            
+        
+        <#-- Remake of -->
         <#if movie.remakeOfMovie??>
             <div class="horizontalDivider"></div>
         
@@ -175,20 +204,23 @@
                     <tr>
                         <td>
                             <#if movie.remakeOfMovie.imageUrl??>
-                                <img class="modalMovieTableImage" src="${movie.remakeOfMovie.imageUrl}"/>
+                                <img class="modalMovieImageSmall" src="${movie.remakeOfMovie.imageUrl}"/>
                             <#else>
-                                <@util.noImage "modalMovieTableImage" "${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})" />
+                                <@util.noImage "modalMovieImageSmall" "${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})" />
                             </#if>
                         </td>
                     
                         <td class="movieModalTableText">
-                            <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movie.remakeOfMovie.id}">${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})</a>
+                            <@movieModalLink movie.remakeOfMovie.id>
+                                ${movie.remakeOfMovie.title} (${movie.remakeOfMovie.year})
+                            </@movieModalLink>
                         </td>
                     </tr>
                 </table>
             </div>
         </#if>
         
+        <#-- Remade by -->
         <#assign remadeByMovies = movie.remadeByMovies />
         <#if (remadeByMovies?? && remadeByMovies?size > 0)>
             <div class="horizontalDivider"></div>
@@ -201,14 +233,16 @@
                         <tr>
                             <td>
                                 <#if remadeByMovie.imageUrl??>
-                                    <img class="modalMovieTableImage" src="${remadeByMovie.imageUrl}"/>
+                                    <img class="modalMovieImageSmall" src="${remadeByMovie.imageUrl}"/>
                                 <#else>
-                                    <@util.noImage "modalMovieTableImage" "${remadeByMovie.title} (${remadeByMovie.year})" />
+                                    <@util.noImage "modalMovieImageSmall" "${remadeByMovie.title} (${remadeByMovie.year})" />
                                 </#if>
                             </td>
                         
                             <td class="movieModalTableText">
-                                <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${remadeByMovie.id}">${remadeByMovie.title} (${remadeByMovie.year})</a>
+                                <@movieModalLink remadeByMovie.id>
+                                    ${remadeByMovie.title} (${remadeByMovie.year})
+                                </@movieModalLink>
                             </td>
                         </tr>
                     </#list>
@@ -218,6 +252,7 @@
     </div>
 </div>
 
+<#-- FOOTER -->
 <div id="modalFooter">
     <#if movie.imdbId??>
         <div id="modalMovieImdb">
@@ -226,7 +261,10 @@
     </#if>
 </div>
 
+
+<#-- --------->
 <#-- macros -->
+<#-- --------->
 
 <#macro renderCrew>
     <#if movie.movieCrewPersons??>
@@ -288,4 +326,10 @@
             </#if>
         </div>
     </#if>
+</#macro>
+
+<#macro movieModalLink movieId>
+    <a class="movieLink" data-remodal-target="movieModal" data-movie-id="${movieId}">
+        <#nested>
+    </a>
 </#macro>

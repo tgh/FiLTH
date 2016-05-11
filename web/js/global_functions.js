@@ -14,13 +14,13 @@ String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
-/*
- * Any <a> (or other clickable) element that has this handler attached to it
- * must have a data set entry of the movie id in it (e.g. data-movie-id="[id]")
- * or else it will not work.
- */
 function movieLinkClickHandler(event) {
-    viewMovie(event.target.dataset.movieId);
+    movieId = event.target.dataset.movieId;
+    //if the target doesn't have the movie id, check the ancestor elements for one
+    if (typeof(movieId) === 'undefined') {
+        movieId = $(event.target).parents('[data-movie-id]')[0].dataset.movieId;
+    }
+    viewMovie(movieId);
 }
 
 function viewMovie(movieId) {

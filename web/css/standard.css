@@ -128,10 +128,10 @@ section#alertify-logs {
 }
 
 #movieModal {
-    height: 65vh;
+    height: 520px;
     overflow: auto;
     text-align: left;
-    max-width: 55%;
+    max-width: 800px;
     background-color: rgba(255,255,255,0.33);
     color: #fff;
     font-size: 0.9rem;
@@ -141,10 +141,10 @@ section#alertify-logs {
     text-align: center;
 }
 
-#modalMovieImage {
-    height: 55vh;
+.modalMovieImage {
     margin: 20px;
     display: inline-block;
+    width: 275px;
 }
 
 #modalMovieTitle,
@@ -170,14 +170,13 @@ section#alertify-logs {
     float: left;
     padding-right: 10px;
     border-right: 1px solid #aaa;
-    max-width: 48%;
+    width: 310px;
 }
 
 #modalRight {
-    display: inline-block;
-    max-width: 48%;
     border-left: 1px solid #aaa;
-    margin-left: -1px; /* to overlap the 2 borders between modalLeft and modalRight */
+    margin-left: 320px;
+    width: 400px;
 }
 
 #modalBody {
@@ -208,7 +207,7 @@ section#alertify-logs {
 
 .modalMovieImageSmall {
     margin: 5px;
-    width: 25%;
+    width: 75px;
 }
 
 .imageHighlight {
@@ -217,10 +216,6 @@ section#alertify-logs {
 
 .modalSequence {
     padding-left: 30px;
-}
-
-.modalMovieTableImage {
-    width: 100%;
 }
 
 #movieModal table {
@@ -239,4 +234,10 @@ section#alertify-logs {
 #modalRight div:not(.horizontalDivider),
 #modalRight p {
     padding-left: 20px;
+}
+
+.modalSequence {
+    width: 380px;
+    overflow: auto;
+/*     white-space: nowrap; */ /* for horizontal scrolling div */
 }

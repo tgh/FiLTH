@@ -18,11 +18,11 @@
     <script type="text/javascript" charset="${charset}" src="${url}"></script>
 </#macro>
 
-<#macro image imagePath cssClass title>
+<#macro image imagePath cssClass="" title="">
     <img class="${cssClass}" src="<@spring.url '${imagesRoot}/${imagePath}' />" title="${title}" />
 </#macro>
 
-<#macro noImage cssClass title>
+<#macro noImage cssClass="" title="">
     <img class="${cssClass}" src="<@spring.url '${imagesRoot}/no-image-old.jpg' />" title="${title}" />
 </#macro>
 
