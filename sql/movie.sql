@@ -2171,7 +2171,7 @@ INSERT INTO filth.movie VALUES (2170, 'The Fixer', 1968, 'not seen', 'PG-13', 'E
 INSERT INTO filth.movie VALUES (2171, 'The Subject Was Roses', 1968, 'not seen', 'G', 'USA', NULL, 'tt0063654', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (2172, 'Star!', 1968, 'not seen', 'G', 'USA', NULL, 'tt0063642', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (2173, 'Goodbye, Mr. Chips', 1969, 'not seen', 'G', 'USA', 'tt0064382', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (2174, 'Bob INSERT INTO filth.movie VALUES (2174, 'Bob & Carol & Ted & Alice', 1969, 'not seen', 'R', 'USA', NULL, NULL, NULL, NULL, NULL, NULL); Carol INSERT INTO filth.movie VALUES (2174, 'Bob & Carol & Ted & Alice', 1969, 'not seen', 'R', 'USA', NULL, NULL, NULL, NULL, NULL, NULL); Ted INSERT INTO filth.movie VALUES (2174, 'Bob & Carol & Ted & Alice', 1969, 'not seen', 'R', 'USA', NULL, NULL, NULL, NULL, NULL, NULL); Alice', 1969, 'not seen', 'R', 'USA', NULL, 'tt0064100', NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (2174, 'Bob & Carol & Ted & Alice', 1969, 'not seen', 'R', 'USA', NULL, 'tt0064100', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (2175, 'They Shoot Horses, Don''t They?', 1969, 'not seen', 'PG-13', 'USA', 'tt0065088', NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (2176, 'The Reivers', 1969, 'not seen', 'PG-13', 'USA', NULL, 'tt0064886', NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (2177, 'The Great White Hope', 1970, 'not seen', 'PG-13', 'USA', NULL, 'tt0065797', NULL, NULL, NULL, NULL);
