@@ -35,7 +35,7 @@ def createMovie(vals, movieLine):
     movie['mid'] = mid
     titleStartIndex = vals.find("'") + 1
     titleEndIndex = vals.find("', ")
-    movie['title'] = vals[titleStartIndex:titleEndIndex]
+    movie['title'] = vals[titleStartIndex:titleEndIndex].replace("''", "'")
     vals = vals[(titleEndIndex + 3):]
     vals = vals.split(', ')
     movie['star_rating'] = vals[1]
@@ -58,7 +58,6 @@ def initMovies(lastProcessed):
     f.close()
 
     for movieline in movielines:
-        movieline = movieline.replace("''", "'")
         vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
         movie = createMovie(vals, movieline)
 
@@ -67,6 +66,9 @@ def initMovies(lastProcessed):
             continue
         #skip movies seen
         if movie['star_rating'] != "'not seen'":
+            continue
+        #skip movies that already have IMDB ids
+        if ", 'tt" in movieline:
             continue
 
         _movies.append(movie)
