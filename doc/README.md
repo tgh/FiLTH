@@ -13,7 +13,7 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
     - **FILTH_PATH** ($WORKSPACE/FiLTH)
 
-1. Install **Java 8** if you don't have it already:
+1. Install **Java 8**
 
     - Download [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
@@ -44,7 +44,7 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
       and update the **JAVA_HOME** environment variable as you need
 
-1. Install **ant** if you don't already have it:
+1. Install **ant**
 
     - `sudo apt-get install ant`
 
@@ -52,9 +52,11 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
     - Add an environment variable for ant's home directory (probably /usr/share/ant): **ANT_HOME**
 
-1. Install [Ivy](http://ant.apache.org/ivy/) (for dependency management):
+1. Install [Ivy](http://ant.apache.org/ivy/) (for dependency management)
 
     - Download the latest binary package **_(2.4 or higher is required)_** [here](http://ant.apache.org/ivy/download.cgi) and extract the contents. Copy the ivy-\[version\].jar jar file to /usr/share/ant/lib/ (or, $HOME/.ant/lib if you put the ant-contrib jar there). You can delete everything else.
+
+    \* _2.4 or higher is required because the `<bintray/>` ivy resolver used in ivysettings.xml doesn't work with versions prior to 2.4_
 
 1. **CHECKPOINT**
 
@@ -64,7 +66,7 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
      it should complete successfully
 
-1. Install **Tomcat 8**:
+1. Install **Tomcat 8**
 
     - Download [here](https://tomcat.apache.org/download-80.cgi)
 
@@ -74,4 +76,8 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
     - (you may also need to make all *.sh files under \[tomcat8\]/bin/ executable (see http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat)
 
-1. Install **PostgreSQL**:
+1. Install **PostgreSQL**
+
+1. Setup database
+
+1. Install LaTeX
