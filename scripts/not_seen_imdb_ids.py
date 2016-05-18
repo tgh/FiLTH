@@ -5,6 +5,7 @@
 # INSERT statement in movie.sql via a `sed` command.
 
 import re
+import pyperclip
 from os import getenv
 from os import system
 from QuitException import QuitException
@@ -78,6 +79,9 @@ def initMovies(lastProcessed):
 def promptForMovieImdbId(movie):
     log('promptForMovieImdbId', 'Movie: [' + str(movie['mid']) + '] ' + movie['title'] + ' (' + str(movie['year']) + ')')
     print '\n[' + str(movie['mid']) + '] ' + movie['title'] + ' (' + str(movie['year']) + ')'
+    #copy the title to the clipboard
+    pyperclip.copy(movie['title'])
+
     imdbId = raw_input('IMDB id (or \'q\' to quit): ').lower()
     if imdbId == 'q':
         raise QuitException('quitting')

@@ -27,6 +27,8 @@ SETTING UP ENVIRONMENT
 - need to add conf/tmdb.properties file with property "tmdb.api.key" (e.g. tmdb.api.key=[api key]) (this file is not managed by git--it is ignored via .gitignore)
 - requires ivy 2.4.0+ (to use the bintray resolver for TMDB java api)
 
+- 5/18/2016 - installed python package pyperclip to copy strings into system clipboard: `sudo pip install pyperclip` 
+
 - I installed ant like this at first:
 	- download tarball from http://httpd.apache.org/download.cgi#apache24
 	- extract tarball to ~/apache
