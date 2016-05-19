@@ -86,6 +86,7 @@ def promptForMovieImdbId(movie):
     if imdbId == 'q':
         raise QuitException('quitting')
     line = _movieLineMap[movie['mid']]
+    # FIXME: this places the tmdb id in the wrong position if the title has a comma in it
     linesplit = line.split(',')
     linesplit[7] = ' \'' + imdbId + '\''
     newline = ','.join(linesplit)
