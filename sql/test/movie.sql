@@ -16,10 +16,10 @@ INSERT INTO filth.movie VALUES (347, 'A Clockwork Orange', 1971, '****', 'X', 'E
 INSERT INTO filth.movie VALUES (338, 'Citizen Kane', 1941, '****', 'NR', 'USA', NULL, 'tt0033467', 0, 15, NULL, NULL);
 INSERT INTO filth.movie VALUES (339, 'City Lights', 1931, '****', 'NR', 'USA', NULL, 'tt0021749', 0, 901, NULL, NULL);
 INSERT INTO filth.movie VALUES (520, 'The English Patient', 1996, '**½', 'R', NULL, NULL, 'tt0116209', 0, 409, NULL, NULL);
-INSERT INTO filth.movie VALUES (1830, 'The Racket', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0019304', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1925, 'Here Comes Mr. Jordan', 1941, 'not seen', 'NR', 'USA', NULL, 'tt0033712', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (1989, 'The Rose Tattoo', 1955, 'not seen', 'NR', 'USA', NULL, 'tt0048563', NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (2058, 'Black Fury', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026121', NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (1830, 'The Racket', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0019304', NULL, 27777, NULL, NULL);
+INSERT INTO filth.movie VALUES (1925, 'Here Comes Mr. Jordan', 1941, 'not seen', 'NR', 'USA', NULL, 'tt0033712', NULL, 38914, NULL, NULL);
+INSERT INTO filth.movie VALUES (1989, 'The Rose Tattoo', 1955, 'not seen', 'NR', 'USA', NULL, 'tt0048563', NULL, 65550, NULL, NULL);
+INSERT INTO filth.movie VALUES (2058, 'Black Fury', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026121', NULL, 92667, NULL, NULL);
 INSERT INTO filth.movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (3769, 'Buster Keaton films', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (3772, 'Kieslowski''s Three Colors Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
