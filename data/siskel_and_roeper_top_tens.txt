@@ -217,16 +217,17 @@ Gene Siskel
   10. The Fly (David Cronenberg)
 
 1987
-*  01. The Last Emperor (Bernardo Bertolucci)
-*  02. Full Metal Jacket (Stanley Kubrick)
-*  03. House of Games (David Mamet)
-** 04. Jean de Florette and Manon of the Spring (Claude Berri)
-*  05. Broadcast News (James L. Brooks)
-*  06. Radio Days (Woody Allen)
-   07. River's Edge (Tim Hunter)
-*  08. Prick Up Your Ears (Stephen Frears)
-*  09. Roxanne (Fred Schepisi)
-*  10. The Big Easy (Jim McBride)
+* 01. The Last Emperor (Bernardo Bertolucci)
+* 02. Full Metal Jacket (Stanley Kubrick)
+* 03. House of Games (David Mamet)
+* 04a. Jean de Florette
+* 04b. Manon of the Spring (Claude Berri)
+* 05. Broadcast News (James L. Brooks)
+* 06. Radio Days (Woody Allen)
+  07. River's Edge (Tim Hunter)
+* 08. Prick Up Your Ears (Stephen Frears)
+* 09. Roxanne (Fred Schepisi)
+* 10. The Big Easy (Jim McBride)
 
 1988
 * 01. The Last Temptation of Christ (Martin Scorsese)
@@ -253,16 +254,16 @@ Gene Siskel
 * 10. The War of the Roses (Danny DeVito)
 
 Best Films of the 1980s
-* 01. Raging Bull (Martin Scorsese)
-  02. Shoah (Claude Lanzmann)
-* 03. The Right Stuff (Philip Kaufman)
-* 04. My Dinner With Andre (Louis Malle)
-* 05. Who Framed Roger Rabbit (Robert Zemeckis)
-* 06. Do the Right Thing (Spike Lee)
-  07. Once Upon a Time in America (Sergio Leone)
-  08. Moonlighting (Jerzy Skolimowski)
-* 09. Sid and Nancy (Alex Cox)
-  10. Kagemusha (Akira Kurosawa)
+* 01. Raging Bull (Martin Scorsese, 1980)
+  02. Shoah (Claude Lanzmann, 1986)
+* 03. The Right Stuff (Philip Kaufman, 1983)
+* 04. My Dinner With Andre (Louis Malle, 1981)
+* 05. Who Framed Roger Rabbit (Robert Zemeckis, 1988)
+* 06. Do the Right Thing (Spike Lee, 1989)
+  07. Once Upon a Time in America (Sergio Leone, 1984)
+  08. Moonlighting (Jerzy Skolimowski, 1982)
+* 09. Sid and Nancy (Alex Cox, 1986)
+  10. Kagemusha (Akira Kurosawa, 1980)
 
 1990
 * 01. Goodfellas (Martin Scorsese)
@@ -449,39 +450,40 @@ Richard Roeper
   10. The 40-Year-Old Virgin
 
 2006
-*  1. The Departed
-*  2. The Queen
-** 3. Letters from Iwo Jima/ Flags of Our Fathers
-*  4. United 93
-   5. The Lives of Others
-*  6. Babel
-   7. Notes on a Scandal
-   8. The Good Shepherd
-*  9. Little Miss Sunshine
+*  01. The Departed
+*  02. The Queen
+*  03a. Letters from Iwo Jima
+*  03b. Flags of Our Fathers
+*  04. United 93
+   05. The Lives of Others
+*  06. Babel
+   07. Notes on a Scandal
+   08. The Good Shepherd
+*  09. Little Miss Sunshine
 *  10. Blood Diamond
 
 2007
-*  1. Michael Clayton
-*  2. No Country For Old Men
-   3. The Lookout
-*  4. Juno
-   5. American Gangster
-*  6. Gone Baby Gone
-*  7. Zodiac
-   8. Superbad
-*  9. Once
+*  01. Michael Clayton
+*  02. No Country For Old Men
+   03. The Lookout
+*  04. Juno
+   05. American Gangster
+*  06. Gone Baby Gone
+*  07. Zodiac
+   08. Superbad
+*  09. Once
 *  10. Paris, Je T'aime
 
 2008 - (top 25)
-*  1. Slumdog Millionaire
-*  2. The Dark Knight
-   3. The Wrestler
-*  4. In Bruges
-   5. I've Loved You So Long
-*  6. Gran Torino
-   7. Milk
-*  8. The Visitor
-   9. Forgetting Sarah Marshall
+* 01. Slumdog Millionaire
+* 02. The Dark Knight
+  03. The Wrestler
+* 04. In Bruges
+  05. I've Loved You So Long
+* 06. Gran Torino
+  07. Milk
+* 08. The Visitor
+  09. Forgetting Sarah Marshall
 * 10. Frozen River
 * 11. Doubt
   12. Snow Angels
@@ -581,7 +583,7 @@ Richard Roeper
 * 03. The Revenant
 * 04. The Big Short
 * 05. Mad Max: Fury Road
-  06. The Hateful Eight
+* 06. The Hateful Eight
 * 07. Sicario
 * 08. Spotlight
 * 09. Star Wars: The Force Awakens
