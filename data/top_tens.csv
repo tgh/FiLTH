@@ -484,16 +484,16 @@
 "Top Ten Movies of 1989","Roger Ebert",1989,"Crimes and Misdemeanors",8
 "Top Ten Movies of 1989","Roger Ebert",1989,"Driving Miss Daisy",9
 "Top Ten Movies of 1989","Roger Ebert",1989,"Say Anything",10
-"Best Films of the 1980s","Roger Ebert",1980,"Raging Bull",1
-"Best Films of the 1980s","Roger Ebert",1983,"The Right Stuff",2
-"Best Films of the 1980s","Roger Ebert",1982,"E.T.",3
-"Best Films of the 1980s","Roger Ebert",1989,"Do the Right Thing",4
-"Best Films of the 1980s","Roger Ebert",1981,"My Dinner With Andre",5
-"Best Films of the 1980s","Roger Ebert",1981,"Raiders of the Lost Ark",6
-"Best Films of the 1980s","Roger Ebert",1985,"Ran",7
-"Best Films of the 1980s","Roger Ebert",1988,"Missippi Burning",8
-"Best Films of the 1980s","Roger Ebert",1986,"Platoon",9
-"Best Films of the 1980s","Roger Ebert",1987,"House of Games",10
+"Top Ten Movies of the 1980s","Roger Ebert",1980,"Raging Bull",1
+"Top Ten Movies of the 1980s","Roger Ebert",1983,"The Right Stuff",2
+"Top Ten Movies of the 1980s","Roger Ebert",1982,"E.T.",3
+"Top Ten Movies of the 1980s","Roger Ebert",1989,"Do the Right Thing",4
+"Top Ten Movies of the 1980s","Roger Ebert",1981,"My Dinner With Andre",5
+"Top Ten Movies of the 1980s","Roger Ebert",1981,"Raiders of the Lost Ark",6
+"Top Ten Movies of the 1980s","Roger Ebert",1985,"Ran",7
+"Top Ten Movies of the 1980s","Roger Ebert",1988,"Missippi Burning",8
+"Top Ten Movies of the 1980s","Roger Ebert",1986,"Platoon",9
+"Top Ten Movies of the 1980s","Roger Ebert",1987,"House of Games",10
 "Top Ten Movies of 1990","Roger Ebert",1990,"Goodfellas",1
 "Top Ten Movies of 1990","Roger Ebert",1990,"Monsieur Hire",2
 "Top Ten Movies of 1990","Roger Ebert",1990,"Dances With Wolves",3
@@ -595,16 +595,16 @@
 "Top Ten Movies of 1999","Roger Ebert",1999,"American Beauty",8
 "Top Ten Movies of 1999","Roger Ebert",1999,"Topsy-Turvy",9
 "Top Ten Movies of 1999","Roger Ebert",1999,"The Insider",10
-"Best Films of the 1990s","Roger Ebert",1994,"Hoop Dreams",1
-"Best Films of the 1990s","Roger Ebert",1994,"Pulp Fiction",2
-"Best Films of the 1990s","Roger Ebert",1990,"GoodFellas",3
-"Best Films of the 1990s","Roger Ebert",1996,"Fargo",4
-"Best Films of the 1990s","Roger Ebert",1994,"Kieslowski's Three Colors Trilogy",5
-"Best Films of the 1990s","Roger Ebert",1993,"Schindler's List",6
-"Best Films of the 1990s","Roger Ebert",1996,"Breaking the Waves",7
-"Best Films of the 1990s","Roger Ebert",1995,"Leaving Las Vegas",8
-"Best Films of the 1990s","Roger Ebert",1992,"Malcolm X",9
-"Best Films of the 1990s","Roger Ebert",1991,"JFK",10
+"Top Ten Movies of the 1990s","Roger Ebert",1994,"Hoop Dreams",1
+"Top Ten Movies of the 1990s","Roger Ebert",1994,"Pulp Fiction",2
+"Top Ten Movies of the 1990s","Roger Ebert",1990,"GoodFellas",3
+"Top Ten Movies of the 1990s","Roger Ebert",1996,"Fargo",4
+"Top Ten Movies of the 1990s","Roger Ebert",1994,"Kieslowski's Three Colors Trilogy",5
+"Top Ten Movies of the 1990s","Roger Ebert",1993,"Schindler's List",6
+"Top Ten Movies of the 1990s","Roger Ebert",1996,"Breaking the Waves",7
+"Top Ten Movies of the 1990s","Roger Ebert",1995,"Leaving Las Vegas",8
+"Top Ten Movies of the 1990s","Roger Ebert",1992,"Malcolm X",9
+"Top Ten Movies of the 1990s","Roger Ebert",1991,"JFK",10
 "Top Ten Movies of 2000","Roger Ebert",2000,"Almost Famous",1
 "Top Ten Movies of 2000","Roger Ebert",2000,"Wonder Boys",2
 "Top Ten Movies of 2000","Roger Ebert",2000,"You Can Count on Me",3
@@ -665,6 +665,22 @@
 "Top Ten Movies of 2005","Roger Ebert",2005,"King Kong",8
 "Top Ten Movies of 2005","Roger Ebert",2005,"Yes",9
 "Top Ten Movies of 2005","Roger Ebert",2005,"Millions",10
+"Best Movies of 2006","Roger Ebert",2006,"Akeelah and the Bee",
+"Best Movies of 2006","Roger Ebert",2006,"Bubble",
+"Best Movies of 2006","Roger Ebert",2006,"The Death of Mr. Lazarescu",
+"Best Movies of 2006","Roger Ebert",2006,"49 Up",
+"Best Movies of 2006","Roger Ebert",2006,"An Inconvenient Truth",
+"Best Movies of 2006","Roger Ebert",2006,"L'Enfant",
+"Best Movies of 2006","Roger Ebert",2006,"Man Push Cart",
+"Best Movies of 2006","Roger Ebert",2006,"Marie Antoinette",
+"Best Movies of 2006","Roger Ebert",2006,"Perfume",
+"Best Movies of 2006","Roger Ebert",2006,"A Prairie Home Companion",
+"Best Movies of 2006","Roger Ebert",2006,"The Queen",
+"Best Movies of 2006","Roger Ebert",2006,"Three Times",
+"Best Movies of 2006","Roger Ebert",2006,"Tristam Shandy: A Cock & Bull Story",
+"Best Movies of 2006","Roger Ebert",2006,"Tsotsi",
+"Best Movies of 2006","Roger Ebert",2006,"United 93",
+"Best Movies of 2006","Roger Ebert",2006,"Volver",
 "Top Ten Movies of 2007","Roger Ebert",2007,"Juno",1
 "Top Ten Movies of 2007","Roger Ebert",2007,"No Country For Old Men",2
 "Top Ten Movies of 2007","Roger Ebert",2007,"Before the Devil Knows Your Dead",3
@@ -675,6 +691,96 @@
 "Top Ten Movies of 2007","Roger Ebert",2007,"La Vie En Rose",8
 "Top Ten Movies of 2007","Roger Ebert",2007,"The Great Debaters",9
 "Top Ten Movies of 2007","Roger Ebert",2007,"Into the Wild",10
+"Best Movies of 2008","Roger Ebert",2008,"Ballast",
+"Best Movies of 2008","Roger Ebert",2008,"The Band's Visit",
+"Best Movies of 2008","Roger Ebert",2008,"Che",
+"Best Movies of 2008","Roger Ebert",2008,"Chop Shop",
+"Best Movies of 2008","Roger Ebert",2008,"The Dark Knight",
+"Best Movies of 2008","Roger Ebert",2008,"Doubt",
+"Best Movies of 2008","Roger Ebert",2008,"The Fall",
+"Best Movies of 2008","Roger Ebert",2008,"Frost/Nixon",
+"Best Movies of 2008","Roger Ebert",2008,"Frozen River",
+"Best Movies of 2008","Roger Ebert",2008,"Happy-Go-Lucky",
+"Best Movies of 2008","Roger Ebert",2008,"Iron Man",
+"Best Movies of 2008","Roger Ebert",2008,"Milk",
+"Best Movies of 2008","Roger Ebert",2008,"Rachel Getting Married",
+"Best Movies of 2008","Roger Ebert",2008,"The Reader",
+"Best Movies of 2008","Roger Ebert",2008,"Revolutionary Road",
+"Best Movies of 2008","Roger Ebert",2008,"Shotgun Stories",
+"Best Movies of 2008","Roger Ebert",2008,"Slumdog Millionaire",
+"Best Movies of 2008","Roger Ebert",2008,"Synecdoche, New York",
+"Best Movies of 2008","Roger Ebert",2008,"W.",
+"Best Movies of 2008","Roger Ebert",2008,"Wall-E",
+"Best Documentaries of 2008","Roger Ebert",2008,"Encounters at the End of the World",
+"Best Documentaries of 2008","Roger Ebert",2008,"I.O.U.S.A.",
+"Best Documentaries of 2008","Roger Ebert",2008,"Man on Wire",
+"Best Documentaries of 2008","Roger Ebert",2008,"Standard Operating Procedure",
+"Best Documentaries of 2008","Roger Ebert",2008,"Trouble the Water",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Bad Lieutenant: Port of Call New Orleans",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Crazy Heart",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"An Education",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"The Hurt Locker",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Inglorious Basterds",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Knowing",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Precious",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"A Serious Man",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"Up in the Air",
+"Best Mainstream Movies of 2009","Roger Ebert",2009,"The White Ribbon",
+"Best Independent Films of 2009","Roger Ebert",2009,"Departures",
+"Best Independent Films of 2009","Roger Ebert",2009,"Disgrace",
+"Best Independent Films of 2009","Roger Ebert",2009,"Everlasting Moments",
+"Best Independent Films of 2009","Roger Ebert",2009,"Goodbye Solo",
+"Best Independent Films of 2009","Roger Ebert",2009,"Julia",
+"Best Independent Films of 2009","Roger Ebert",2009,"Silent Light",
+"Best Independent Films of 2009","Roger Ebert",2009,"Sin Nombre",
+"Best Independent Films of 2009","Roger Ebert",2009,"Skin",
+"Best Independent Films of 2009","Roger Ebert",2009,"Trucker",
+"Best Independent Films of 2009","Roger Ebert",2009,"You, The Living",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Broken Embraces",
+"Best Foreign Films of 2009","Roger Ebert",2009,"The Class",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Coco Before Chanel",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Gomorrah",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Lorna's Silence",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Munyurangabo",
+"Best Foreign Films of 2009","Roger Ebert",2009,"O'Horton",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Paris",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Police, Adjective",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Revanche",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Seraphine",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Still Walking",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Summer Hours",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Tokyo Sonata",
+"Best Foreign Films of 2009","Roger Ebert",2009,"Tulpan",
+"Best Documentaries of 2009","Roger Ebert",2009,"Anvil! The Story of Anvil",
+"Best Documentaries of 2009","Roger Ebert",2009,"Beaches of Agnes",
+"Best Documentaries of 2009","Roger Ebert",2009,"Collapse",
+"Best Documentaries of 2009","Roger Ebert",2009,"Food, Inc.",
+"Best Documentaries of 2009","Roger Ebert",2009,"Must Read After My Death",
+"Best Documentaries of 2009","Roger Ebert",2009,"Of Time and the City",
+"Best Documentaries of 2009","Roger Ebert",2009,"The September Issue",
+"Best Documentaries of 2009","Roger Ebert",2009,"Tyson",
+"Best Documentaries of 2009","Roger Ebert",2009,"We Live In Public",
+"Best Documentaries of 2009","Roger Ebert",2009,"What's the Matter With Kansas?",
+"Best Animated Movies of 2009","Roger Ebert",2009,"A Christmas Carol",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Coraline",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Fantastic Mr. Fox",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Sita Sings the Blues",
+"Best Animated Movies of 2009","Roger Ebert",2009,"9",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Ice Age 3: Dawn of the Dinosaurs",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Ponyo",
+"Best Animated Movies of 2009","Roger Ebert",2009,"The Princess and the Frog",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Up",
+"Best Animated Movies of 2009","Roger Ebert",2009,"Waltz with Bashir",
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2008,"Synecdoche, New York",1
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2009,"The Hurt Locker",2
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2004,"Moster",3
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2007,"Juno",4
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2005,"Me and You and Everyone We Know",5
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2008,"Chop Shop",6
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2002,"The Son",7
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2003,"25th Hour",8
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2000,"Almost Famous",9
+"Top Ten Movies of the Decade: 2000-2009","Roger Ebert",2008,"My Winnipeg",10
 "Top Ten Movies of 2010","Roger Ebert",2010,"The Social Network",1
 "Top Ten Movies of 2010","Roger Ebert",2010,"The King's Speech",2
 "Top Ten Movies of 2010","Roger Ebert",2010,"Black Swan",3
@@ -685,26 +791,46 @@
 "Top Ten Movies of 2010","Roger Ebert",2010,"The American",8
 "Top Ten Movies of 2010","Roger Ebert",2010,"The Kids Are All Right",9
 "Top Ten Movies of 2010","Roger Ebert",2010,"The Ghost Writer",10
-"Top Ten Movies of 2011","Roger Ebert",2011,"A Separation",1
-"Top Ten Movies of 2011","Roger Ebert",2011,"Shame",2
-"Top Ten Movies of 2011","Roger Ebert",2011,"The Tree of Life",3
-"Top Ten Movies of 2011","Roger Ebert",2011,"Hugo",4
-"Top Ten Movies of 2011","Roger Ebert",2011,"Take Shelter",5
-"Top Ten Movies of 2011","Roger Ebert",2011,"Kinyarwanda",6
-"Top Ten Movies of 2011","Roger Ebert",2011,"Drive",7
-"Top Ten Movies of 2011","Roger Ebert",2011,"Midnight in Paris",8
-"Top Ten Movies of 2011","Roger Ebert",2011,"Le Havre",9
-"Top Ten Movies of 2011","Roger Ebert",2011,"The Artist",10
-"Top Ten Movies of 2011","Roger Ebert",2011,"Melancholia",11
-"Top Ten Movies of 2011","Roger Ebert",2011,"Terri",12
-"Top Ten Movies of 2011","Roger Ebert",2011,"The Descendents",13
-"Top Ten Movies of 2011","Roger Ebert",2011,"Margaret",14
-"Top Ten Movies of 2011","Roger Ebert",2011,"Martha Marcy May Marlene",15
-"Top Ten Movies of 2011","Roger Ebert",2011,"Harry Potter and the Deathly Hollows Part 2",16
-"Top Ten Movies of 2011","Roger Ebert",2011,"Trust",17
-"Top Ten Movies of 2011","Roger Ebert",2011,"Life, Above All",18
-"Top Ten Movies of 2011","Roger Ebert",2011,"The Mill and the Cross",19
-"Top Ten Movies of 2011","Roger Ebert",2011,"Another Earth",20
+"Top 20 Movies of 2011","Roger Ebert",2011,"A Separation",1
+"Top 20 Movies of 2011","Roger Ebert",2011,"Shame",2
+"Top 20 Movies of 2011","Roger Ebert",2011,"The Tree of Life",3
+"Top 20 Movies of 2011","Roger Ebert",2011,"Hugo",4
+"Top 20 Movies of 2011","Roger Ebert",2011,"Take Shelter",5
+"Top 20 Movies of 2011","Roger Ebert",2011,"Kinyarwanda",6
+"Top 20 Movies of 2011","Roger Ebert",2011,"Drive",7
+"Top 20 Movies of 2011","Roger Ebert",2011,"Midnight in Paris",8
+"Top 20 Movies of 2011","Roger Ebert",2011,"Le Havre",9
+"Top 20 Movies of 2011","Roger Ebert",2011,"The Artist",10
+"Top 20 Movies of 2011","Roger Ebert",2011,"Melancholia",11
+"Top 20 Movies of 2011","Roger Ebert",2011,"Terri",12
+"Top 20 Movies of 2011","Roger Ebert",2011,"The Descendents",13
+"Top 20 Movies of 2011","Roger Ebert",2011,"Margaret",14
+"Top 20 Movies of 2011","Roger Ebert",2011,"Martha Marcy May Marlene",15
+"Top 20 Movies of 2011","Roger Ebert",2011,"Harry Potter and the Deathly Hollows Part 2",16
+"Top 20 Movies of 2011","Roger Ebert",2011,"Trust",17
+"Top 20 Movies of 2011","Roger Ebert",2011,"Life, Above All",18
+"Top 20 Movies of 2011","Roger Ebert",2011,"The Mill and the Cross",19
+"Top 20 Movies of 2011","Roger Ebert",2011,"Another Earth",20
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"The Interrupters",1
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Bill Cunningham New York",2
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Into the Abyss: A Tale of Death, A Tale of Life",3
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Tabloid",4
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Resurrect Dead: The Mystery of the Toynbee Tiles",5
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Cave of Forgotten Dreams",6
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Pina",7
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Garbo the Spy",8
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"The Last Mountain",9
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Louder than a Bomb",10
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Page One: Inside the New York Times",11
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"One Lucky Elephant",12
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Buck",13
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Conan O'Brian Can't Stop",14
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Strongman",15
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Project Nim",16
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Waste Land",17
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Phunny Business: A Black Comedy",18
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Make Believe",19
+"Top 20 Documentaries of 2011","Roger Ebert",2011,"Being Elmo: A Puppeteer’s Journey",20
 "Top Ten Movies of 2012","Roger Ebert",2012,"Argo",1
 "Top Ten Movies of 2012","Roger Ebert",2012,"Life of Pi",2
 "Top Ten Movies of 2012","Roger Ebert",2012,"Lincoln",3
@@ -926,16 +1052,16 @@
 "Top Ten Movies of 1989","Gene Siskel",1989,"The Fabulous Baker Boys",8
 "Top Ten Movies of 1989","Gene Siskel",1989,"Say Anything",9
 "Top Ten Movies of 1989","Gene Siskel",1989,"The War of the Roses",10
-"Best Films of the 1980s","Gene Siskel",1980,"Raging Bull",1
-"Best Films of the 1980s","Gene Siskel",1986,"Shoah",2
-"Best Films of the 1980s","Gene Siskel",1983,"The Right Stuff",3
-"Best Films of the 1980s","Gene Siskel",1981,"My Dinner With Andre",4
-"Best Films of the 1980s","Gene Siskel",1988,"Who Framed Roger Rabbit",5
-"Best Films of the 1980s","Gene Siskel",1989,"Do the Right Thing",6
-"Best Films of the 1980s","Gene Siskel",1984,"Once Upon a Time in America",7
-"Best Films of the 1980s","Gene Siskel",1982,"Moonlighting",8
-"Best Films of the 1980s","Gene Siskel",1986,"Sid and Nancy",9
-"Best Films of the 1980s","Gene Siskel",1980,"Kagemusha",10
+"Top Ten Movies of the 1980s","Gene Siskel",1980,"Raging Bull",1
+"Top Ten Movies of the 1980s","Gene Siskel",1986,"Shoah",2
+"Top Ten Movies of the 1980s","Gene Siskel",1983,"The Right Stuff",3
+"Top Ten Movies of the 1980s","Gene Siskel",1981,"My Dinner With Andre",4
+"Top Ten Movies of the 1980s","Gene Siskel",1988,"Who Framed Roger Rabbit",5
+"Top Ten Movies of the 1980s","Gene Siskel",1989,"Do the Right Thing",6
+"Top Ten Movies of the 1980s","Gene Siskel",1984,"Once Upon a Time in America",7
+"Top Ten Movies of the 1980s","Gene Siskel",1982,"Moonlighting",8
+"Top Ten Movies of the 1980s","Gene Siskel",1986,"Sid and Nancy",9
+"Top Ten Movies of the 1980s","Gene Siskel",1980,"Kagemusha",10
 "Top Ten Movies of 1990","Gene Siskel",1990,"Goodfellas",1
 "Top Ten Movies of 1990","Gene Siskel",1990,"After Dark, My Sweet",2
 "Top Ten Movies of 1990","Gene Siskel",1990,"Avalon",3
@@ -1108,31 +1234,31 @@
 "Top Ten Movies of 2007","Richard Roeper",2007,"Superbad",8
 "Top Ten Movies of 2007","Richard Roeper",2007,"Once",9
 "Top Ten Movies of 2007","Richard Roeper",2007,"Paris, Je T'aime",10
-"Best Movies of 2008","Richard Roeper",2008,"Slumdog Millionaire",1
-"Best Movies of 2008","Richard Roeper",2008,"The Dark Knight",2
-"Best Movies of 2008","Richard Roeper",2008,"The Wrestler",3
-"Best Movies of 2008","Richard Roeper",2008,"In Bruges",4
-"Best Movies of 2008","Richard Roeper",2008,"I've Loved You So Long",5
-"Best Movies of 2008","Richard Roeper",2008,"Gran Torino",6
-"Best Movies of 2008","Richard Roeper",2008,"Milk",7
-"Best Movies of 2008","Richard Roeper",2008,"The Visitor",8
-"Best Movies of 2008","Richard Roeper",2008,"Forgetting Sarah Marshall",9
-"Best Movies of 2008","Richard Roeper",2008,"Frozen River",10
-"Best Movies of 2008","Richard Roeper",2008,"Doubt",11
-"Best Movies of 2008","Richard Roeper",2008,"Snow Angels",12
-"Best Movies of 2008","Richard Roeper",2008,"Frost/Nixon",13
-"Best Movies of 2008","Richard Roeper",2008,"The Reader",14
-"Best Movies of 2008","Richard Roeper",2008,"Seven Pounds",15
-"Best Movies of 2008","Richard Roeper",2008,"Iron Man",16
-"Best Movies of 2008","Richard Roeper",2008,"Vicky Cristina Barcelona",17
-"Best Movies of 2008","Richard Roeper",2008,"W.",18
-"Best Movies of 2008","Richard Roeper",2008,"Henry Poole Is Here",19
-"Best Movies of 2008","Richard Roeper",2008,"Burn After Reading",20
-"Best Movies of 2008","Richard Roeper",2008,"The Curious Case of Benjamin Button",21
-"Best Movies of 2008","Richard Roeper",2008,"WALL-E",22
-"Best Movies of 2008","Richard Roeper",2008,"The Bank Job",23
-"Best Movies of 2008","Richard Roeper",2008,"Tropic Thunder",24
-"Best Movies of 2008","Richard Roeper",2008,"Che",25
+"Top 25 Movies of 2008","Richard Roeper",2008,"Slumdog Millionaire",1
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Dark Knight",2
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Wrestler",3
+"Top 25 Movies of 2008","Richard Roeper",2008,"In Bruges",4
+"Top 25 Movies of 2008","Richard Roeper",2008,"I've Loved You So Long",5
+"Top 25 Movies of 2008","Richard Roeper",2008,"Gran Torino",6
+"Top 25 Movies of 2008","Richard Roeper",2008,"Milk",7
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Visitor",8
+"Top 25 Movies of 2008","Richard Roeper",2008,"Forgetting Sarah Marshall",9
+"Top 25 Movies of 2008","Richard Roeper",2008,"Frozen River",10
+"Top 25 Movies of 2008","Richard Roeper",2008,"Doubt",11
+"Top 25 Movies of 2008","Richard Roeper",2008,"Snow Angels",12
+"Top 25 Movies of 2008","Richard Roeper",2008,"Frost/Nixon",13
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Reader",14
+"Top 25 Movies of 2008","Richard Roeper",2008,"Seven Pounds",15
+"Top 25 Movies of 2008","Richard Roeper",2008,"Iron Man",16
+"Top 25 Movies of 2008","Richard Roeper",2008,"Vicky Cristina Barcelona",17
+"Top 25 Movies of 2008","Richard Roeper",2008,"W.",18
+"Top 25 Movies of 2008","Richard Roeper",2008,"Henry Poole Is Here",19
+"Top 25 Movies of 2008","Richard Roeper",2008,"Burn After Reading",20
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Curious Case of Benjamin Button",21
+"Top 25 Movies of 2008","Richard Roeper",2008,"WALL-E",22
+"Top 25 Movies of 2008","Richard Roeper",2008,"The Bank Job",23
+"Top 25 Movies of 2008","Richard Roeper",2008,"Tropic Thunder",24
+"Top 25 Movies of 2008","Richard Roeper",2008,"Che",25
 "Top Ten Movies of 2009","Richard Roeper",2009,"Brothers",1
 "Top Ten Movies of 2009","Richard Roeper",2009,"Up in the Air",2
 "Top Ten Movies of 2009","Richard Roeper",2009,"The Hurt Locker",3
@@ -1207,3 +1333,203 @@
 "Top Ten Movies of 2015","Richard Roeper",2015,"Spotlight",8
 "Top Ten Movies of 2015","Richard Roeper",2015,"Star Wars: The Force Awakens",9
 "Top Ten Movies of 2015","Richard Roeper",2015,"Straight Outta Compton",10
+"AFI's 100 Years...100 Movies","American Film Institute",1941,"CITIZEN KANE",1
+"AFI's 100 Years...100 Movies","American Film Institute",1942,"CASABLANCA",2
+"AFI's 100 Years...100 Movies","American Film Institute",1972,"THE GODFATHER",3
+"AFI's 100 Years...100 Movies","American Film Institute",1939,"GONE WITH THE WIND",4
+"AFI's 100 Years...100 Movies","American Film Institute",1962,"LAWRENCE OF ARABIA",5
+"AFI's 100 Years...100 Movies","American Film Institute",1939,"THE WIZARD OF OZ",6
+"AFI's 100 Years...100 Movies","American Film Institute",1967,"THE GRADUATE",7
+"AFI's 100 Years...100 Movies","American Film Institute",1954,"ON THE WATERFRONT",8
+"AFI's 100 Years...100 Movies","American Film Institute",1993,"SCHINDLER'S LIST",9
+"AFI's 100 Years...100 Movies","American Film Institute",1952,"SINGIN' IN THE RAIN",10
+"AFI's 100 Years...100 Movies","American Film Institute",1946,"IT'S A WONDERFUL LIFE",11
+"AFI's 100 Years...100 Movies","American Film Institute",1950,"SUNSET BLVD.",12
+"AFI's 100 Years...100 Movies","American Film Institute",1957,"THE BRIDGE ON THE RIVER KWAI",13
+"AFI's 100 Years...100 Movies","American Film Institute",1959,"SOME LIKE IT HOT",14
+"AFI's 100 Years...100 Movies","American Film Institute",1977,"STAR WARS",15
+"AFI's 100 Years...100 Movies","American Film Institute",1950,"ALL ABOUT EVE",16
+"AFI's 100 Years...100 Movies","American Film Institute",1951,"THE AFRICAN QUEEN",17
+"AFI's 100 Years...100 Movies","American Film Institute",1960,"PSYCHO",18
+"AFI's 100 Years...100 Movies","American Film Institute",1974,"CHINATOWN",19
+"AFI's 100 Years...100 Movies","American Film Institute",1975,"ONE FLEW OVER THE CUCKOO'S NEST",20
+"AFI's 100 Years...100 Movies","American Film Institute",1940,"THE GRAPES OF WRATH",21
+"AFI's 100 Years...100 Movies","American Film Institute",1968,"2001: A SPACE ODYSSEY",22
+"AFI's 100 Years...100 Movies","American Film Institute",1941,"THE MALTESE FALCON",23
+"AFI's 100 Years...100 Movies","American Film Institute",1980,"RAGING BULL",24
+"AFI's 100 Years...100 Movies","American Film Institute",1982,"E.T. THE EXTRA-TERRESTRIAL",25
+"AFI's 100 Years...100 Movies","American Film Institute",1964,"DR. STRANGELOVE",26
+"AFI's 100 Years...100 Movies","American Film Institute",1967,"BONNIE AND CLYDE",27
+"AFI's 100 Years...100 Movies","American Film Institute",1979,"APOCALYPSE NOW",28
+"AFI's 100 Years...100 Movies","American Film Institute",1939,"MR. SMITH GOES TO WASHINGTON",29
+"AFI's 100 Years...100 Movies","American Film Institute",1948,"THE TREASURE OF THE SIERRA MADRE",30
+"AFI's 100 Years...100 Movies","American Film Institute",1977,"ANNIE HALL",31
+"AFI's 100 Years...100 Movies","American Film Institute",1974,"THE GODFATHER PART II",32
+"AFI's 100 Years...100 Movies","American Film Institute",1952,"HIGH NOON",33
+"AFI's 100 Years...100 Movies","American Film Institute",1962,"TO KILL A MOCKINGBIRD",34
+"AFI's 100 Years...100 Movies","American Film Institute",1934,"IT HAPPENED ONE NIGHT",35
+"AFI's 100 Years...100 Movies","American Film Institute",1969,"MIDNIGHT COWBOY",36
+"AFI's 100 Years...100 Movies","American Film Institute",1946,"THE BEST YEARS OF OUR LIVES",37
+"AFI's 100 Years...100 Movies","American Film Institute",1944,"DOUBLE INDEMNITY",38
+"AFI's 100 Years...100 Movies","American Film Institute",1965,"DOCTOR ZHIVAGO",39
+"AFI's 100 Years...100 Movies","American Film Institute",1959,"NORTH BY NORTHWEST",40
+"AFI's 100 Years...100 Movies","American Film Institute",1961,"WEST SIDE STORY",41
+"AFI's 100 Years...100 Movies","American Film Institute",1954,"REAR WINDOW",42
+"AFI's 100 Years...100 Movies","American Film Institute",1933,"KING KONG",43
+"AFI's 100 Years...100 Movies","American Film Institute",1915,"THE BIRTH OF A NATION",44
+"AFI's 100 Years...100 Movies","American Film Institute",1951,"A STREETCAR NAMED DESIRE",45
+"AFI's 100 Years...100 Movies","American Film Institute",1971,"A CLOCKWORK ORANGE",46
+"AFI's 100 Years...100 Movies","American Film Institute",1976,"TAXI DRIVER",47
+"AFI's 100 Years...100 Movies","American Film Institute",1975,"JAWS",48
+"AFI's 100 Years...100 Movies","American Film Institute",1937,"SNOW WHITE AND THE SEVEN DWARFS",49
+"AFI's 100 Years...100 Movies","American Film Institute",1969,"BUTCH CASSIDY AND THE SUNDANCE KID",50
+"AFI's 100 Years...100 Movies","American Film Institute",1940,"THE PHILADELPHIA STORY",51
+"AFI's 100 Years...100 Movies","American Film Institute",1953,"FROM HERE TO ETERNITY",52
+"AFI's 100 Years...100 Movies","American Film Institute",1984,"AMADEUS",53
+"AFI's 100 Years...100 Movies","American Film Institute",1930,"ALL QUIET ON THE WESTERN FRONT",54
+"AFI's 100 Years...100 Movies","American Film Institute",1965,"THE SOUND OF MUSIC",55
+"AFI's 100 Years...100 Movies","American Film Institute",1970,"M*A*S*H",56
+"AFI's 100 Years...100 Movies","American Film Institute",1949,"THE THIRD MAN",57
+"AFI's 100 Years...100 Movies","American Film Institute",1940,"FANTASIA",58
+"AFI's 100 Years...100 Movies","American Film Institute",1955,"REBEL WITHOUT A CAUSE",59
+"AFI's 100 Years...100 Movies","American Film Institute",1981,"RAIDERS OF THE LOST ARK",60
+"AFI's 100 Years...100 Movies","American Film Institute",1958,"VERTIGO",61
+"AFI's 100 Years...100 Movies","American Film Institute",1982,"TOOTSIE",62
+"AFI's 100 Years...100 Movies","American Film Institute",1939,"STAGECOACH",63
+"AFI's 100 Years...100 Movies","American Film Institute",1977,"CLOSE ENCOUNTERS OF THE THIRD KIND",64
+"AFI's 100 Years...100 Movies","American Film Institute",1991,"THE SILENCE OF THE LAMBS",65
+"AFI's 100 Years...100 Movies","American Film Institute",1976,"NETWORK",66
+"AFI's 100 Years...100 Movies","American Film Institute",1962,"THE MANCHURIAN CANDIDATE",67
+"AFI's 100 Years...100 Movies","American Film Institute",1951,"AN AMERICAN IN PARIS",68
+"AFI's 100 Years...100 Movies","American Film Institute",1953,"SHANE",69
+"AFI's 100 Years...100 Movies","American Film Institute",1971,"THE FRENCH CONNECTION",70
+"AFI's 100 Years...100 Movies","American Film Institute",1994,"FORREST GUMP",71
+"AFI's 100 Years...100 Movies","American Film Institute",1959,"BEN-HUR",72
+"AFI's 100 Years...100 Movies","American Film Institute",1939,"WUTHERING HEIGHTS",73
+"AFI's 100 Years...100 Movies","American Film Institute",1925,"THE GOLD RUSH",74
+"AFI's 100 Years...100 Movies","American Film Institute",1990,"DANCES WITH WOLVES",75
+"AFI's 100 Years...100 Movies","American Film Institute",1931,"CITY LIGHTS",76
+"AFI's 100 Years...100 Movies","American Film Institute",1973,"AMERICAN GRAFFITI",77
+"AFI's 100 Years...100 Movies","American Film Institute",1976,"ROCKY",78
+"AFI's 100 Years...100 Movies","American Film Institute",1978,"THE DEER HUNTER",79
+"AFI's 100 Years...100 Movies","American Film Institute",1969,"THE WILD BUNCH",80
+"AFI's 100 Years...100 Movies","American Film Institute",1936,"MODERN TIMES",81
+"AFI's 100 Years...100 Movies","American Film Institute",1956,"GIANT",82
+"AFI's 100 Years...100 Movies","American Film Institute",1986,"PLATOON",83
+"AFI's 100 Years...100 Movies","American Film Institute",1996,"FARGO",84
+"AFI's 100 Years...100 Movies","American Film Institute",1933,"DUCK SOUP",85
+"AFI's 100 Years...100 Movies","American Film Institute",1935,"MUTINY ON THE BOUNTY",86
+"AFI's 100 Years...100 Movies","American Film Institute",1931,"FRANKENSTEIN",87
+"AFI's 100 Years...100 Movies","American Film Institute",1969,"EASY RIDER",88
+"AFI's 100 Years...100 Movies","American Film Institute",1970,"PATTON",89
+"AFI's 100 Years...100 Movies","American Film Institute",1927,"THE JAZZ SINGER",90
+"AFI's 100 Years...100 Movies","American Film Institute",1964,"MY FAIR LADY",91
+"AFI's 100 Years...100 Movies","American Film Institute",1951,"A PLACE IN THE SUN",92
+"AFI's 100 Years...100 Movies","American Film Institute",1960,"THE APARTMENT",93
+"AFI's 100 Years...100 Movies","American Film Institute",1990,"GOODFELLAS",94
+"AFI's 100 Years...100 Movies","American Film Institute",1994,"PULP FICTION",95
+"AFI's 100 Years...100 Movies","American Film Institute",1956,"THE SEARCHERS",96
+"AFI's 100 Years...100 Movies","American Film Institute",1938,"BRINGING UP BABY",97
+"AFI's 100 Years...100 Movies","American Film Institute",1992,"UNFORGIVEN",98
+"AFI's 100 Years...100 Movies","American Film Institute",1967,"GUESS WHO'S COMING TO DINNER",99
+"AFI's 100 Years...100 Movies","American Film Institute",1942,"YANKEE DOODLE DANDY",100
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1941,"CITIZEN KANE",1
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1972,"THE GODFATHER",2
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1942,"CASABLANCA",3
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1980,"RAGING BULL",4
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1952,"SINGIN' IN THE RAIN",5
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1939,"GONE WITH THE WIND",6
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1962,"LAWRENCE OF ARABIA",7
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1993,"SCHINDLER'S LIST",8
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1958,"VERTIGO",9
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1939,"THE WIZARD OF OZ",10
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1931,"CITY LIGHTS",11
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1956,"THE SEARCHERS",12
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1977,"STAR WARS",13
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1960,"PSYCHO",14
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1968,"2001: A SPACE ODYSSEY",15
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1950,"SUNSET BLVD.",16
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1967,"THE GRADUATE",17
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1927,"THE GENERAL",18
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1954,"ON THE WATERFRONT",19
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1946,"IT'S A WONDERFUL LIFE",20
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1974,"CHINATOWN",21
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1959,"SOME LIKE IT HOT",22
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1940,"THE GRAPES OF WRATH",23
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1982,"E.T. THE EXTRA-TERRESTRIAL",24
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1962,"TO KILL A MOCKINGBIRD",25
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1939,"MR. SMITH GOES TO WASHINGTON",26
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1952,"HIGH NOON",27
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1950,"ALL ABOUT EVE",28
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1944,"DOUBLE INDEMNITY",29
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1979,"APOCALYPSE NOW",30
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1941,"THE MALTESE FALCON",31
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1974,"THE GODFATHER PART II",32
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1975,"ONE FLEW OVER THE CUCKOO'S NEST",33
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1937,"SNOW WHITE AND THE SEVEN DWARFS",34
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1977,"ANNIE HALL",35
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1957,"THE BRIDGE ON THE RIVER KWAI",36
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1946,"THE BEST YEARS OF OUR LIVES",37
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1948,"THE TREASURE OF THE SIERRA MADRE",38
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1964,"DR. STRANGELOVE",39
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1965,"THE SOUND OF MUSIC",40
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1933,"KING KONG",41
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1967,"BONNIE AND CLYDE",42
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1969,"MIDNIGHT COWBOY",43
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1940,"THE PHILADELPHIA STORY",44
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1953,"SHANE",45
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1934,"IT HAPPENED ONE NIGHT",46
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1951,"A STREETCAR NAMED DESIRE",47
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1954,"REAR WINDOW",48
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1916,"INTOLERANCE",49
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",2001,"THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING",50
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1961,"WEST SIDE STORY",51
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1976,"TAXI DRIVER",52
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1978,"THE DEER HUNTER",53
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1970,"M*A*S*H",54
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1959,"NORTH BY NORTHWEST",55
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1975,"JAWS",56
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1976,"ROCKY",57
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1925,"THE GOLD RUSH",58
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1975,"NASHVILLE",59
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1933,"DUCK SOUP",60
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1941,"SULLIVAN'S TRAVELS",61
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1973,"AMERICAN GRAFFITI",62
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1972,"CABARET",63
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1976,"NETWORK",64
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1951,"THE AFRICAN QUEEN",65
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1981,"RAIDERS OF THE LOST ARK",66
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1966,"WHO'S AFRAID OF VIRGINIA WOOLF?",67
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1992,"UNFORGIVEN",68
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1982,"TOOTSIE",69
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1971,"A CLOCKWORK ORANGE",70
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1998,"SAVING PRIVATE RYAN",71
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1994,"THE SHAWSHANK REDEMPTION",72
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1969,"BUTCH CASSIDY AND THE SUNDANCE KID",73
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1991,"THE SILENCE OF THE LAMBS",74
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1967,"IN THE HEAT OF THE NIGHT",75
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1994,"FORREST GUMP",76
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1976,"ALL THE PRESIDENT'S MEN",77
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1936,"MODERN TIMES",78
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1969,"THE WILD BUNCH",79
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1960,"THE APARTMENT",80
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1960,"SPARTACUS",81
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1927,"SUNRISE",82
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1997,"TITANIC",83
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1969,"EASY RIDER",84
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1935,"A NIGHT AT THE OPERA",85
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1986,"PLATOON",86
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1957,"12 ANGRY MEN",87
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1938,"BRINGING UP BABY",88
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1999,"THE SIXTH SENSE",89
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1936,"SWING TIME",90
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1982,"SOPHIE'S CHOICE",91
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1990,"GOODFELLAS",92
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1971,"THE FRENCH CONNECTION",93
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1994,"PULP FICTION",94
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1971,"THE LAST PICTURE SHOW",95
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1989,"DO THE RIGHT THING",96
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1982,"BLADE RUNNER",97
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1942,"YANKEE DOODLE DANDY",98
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1995,"TOY STORY",99
+"AFI's 100 Years...100 Movies -- 10th Anniversary Edition","American Film Institute",1959,"BEN-HUR",100
