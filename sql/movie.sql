@@ -1,3 +1,4 @@
+INSERT INTO filth.movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (1, '3 Women', 1977, '***', 'PG', 'USA', NULL, 'tt0075612', 0, 41662, NULL, NULL);
 INSERT INTO filth.movie VALUES (2, '3:10 to Yuma', 2007, '****', 'R', 'USA', NULL, 'tt0381849', 1, 5176, NULL, NULL);
 INSERT INTO filth.movie VALUES (3, '4 Little Girls', 1997, '***', 'NR', 'USA', NULL, 'tt0118540', 0, 26580, NULL, NULL);
@@ -3757,7 +3758,6 @@ INSERT INTO filth.movie VALUES (3758, 'The Passion of Joan of Arc', 1928, 'not s
 INSERT INTO filth.movie VALUES (3759, 'Peeping Tom', 1960, 'not seen', 'NR', 'England', NULL, 'tt0054167', NULL, 11167, NULL, NULL);
 INSERT INTO filth.movie VALUES (3760, 'Swing Time', 1936, 'not seen', 'NR', 'USA', NULL, 'tt0028333', NULL, 20325, NULL, NULL);
 INSERT INTO filth.movie VALUES (3761, 'Trouble in Paradise', 1932, 'not seen', 'NR', 'USA', NULL, 'tt0023622', NULL, 195, NULL, NULL);
-INSERT INTO filth.movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (3763, 'Vertigo', 1958, '***½', 'NR', 'USA', NULL, 'tt0052357', 0, 426, NULL, NULL);
 INSERT INTO filth.movie VALUES (3764, 'The Bank Dick', 1940, 'not seen', 'NR', 'USA', NULL, 'tt0032234', NULL, 911, NULL, NULL);
 INSERT INTO filth.movie VALUES (3765, 'Beat the Devil', 1953, 'not seen', 'NR', 'USA', NULL, 'tt0046414', NULL, 22733, NULL, NULL);
