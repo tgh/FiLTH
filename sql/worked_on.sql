@@ -7256,3 +7256,4 @@ INSERT INTO filth.worked_on VALUES(7256, 3915, 592, 'Character Voice');  -- Chri
 INSERT INTO filth.worked_on VALUES(7257, 3915, 3248, 'Character Voice');  -- Garry Shandling for The Jungle Book (2016)
 INSERT INTO filth.worked_on VALUES(7258, 3915, 3279, 'Character Voice');  -- Jon Favreau for The Jungle Book (2016)
 INSERT INTO filth.worked_on VALUES(7259, 3917, 3282, 'Director');  -- Wolfgang Reitherman for The Jungle Book (1967)
+INSERT INTO filth.worked_on VALUES(7260, 3918, 3283, 'Director');  -- R.J. Cutler for The September Issue (2009)

@@ -3913,3 +3913,4 @@ INSERT INTO filth.movie VALUES (3914, 'Pawn Sacrifice', 2015, '***', 'PG-13', 'U
 INSERT INTO filth.movie VALUES (3915, 'The Jungle Book', 2016, '****', 'PG', 'USA', NULL, 'tt3040964', 1, 278927, NULL, NULL); -- 4/29/2016
 INSERT INTO filth.movie VALUES (3916, 'The Man in the Wilderness', 1971, 'not seen', 'PG', 'USA', NULL, 'tt0067388', NULL, 46845, NULL, NULL);
 INSERT INTO filth.movie VALUES (3917, 'The Jungle Book', 1967, '**', 'G', 'USA', NULL, 'tt0061852', 0, 9325, NULL, NULL);
+INSERT INTO filth.movie VALUES (3918, 'The September Issue', 2009, '***½', 'PG-13', 'USA', NULL, 'tt1331025', 1, 23044, NULL, NULL);

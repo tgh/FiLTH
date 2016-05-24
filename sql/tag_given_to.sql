@@ -17994,3 +17994,7 @@ INSERT INTO filth.tag_given_to VALUES(3917, 60);  -- The Jungle Book (1967) tagg
 INSERT INTO filth.tag_given_to VALUES(3917, 339);  -- The Jungle Book (1967) tagged with 'orphan(s)/orphanage'
 INSERT INTO filth.tag_given_to VALUES(3917, 59);  -- The Jungle Book (1967) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(3917, 58);  -- The Jungle Book (1967) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(3918, 12);  -- The September Issue (2009) tagged with 'documentary'
+INSERT INTO filth.tag_given_to VALUES(3918, 392);  -- The September Issue (2009) tagged with 'feminine'
+INSERT INTO filth.tag_given_to VALUES(3918, 275);  -- The September Issue (2009) tagged with 'fashion'
+INSERT INTO filth.tag_given_to VALUES(3918, 38);  -- The September Issue (2009) tagged with 'new-york-city'
