@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 
 from os import getenv
+from Movies import Movies
+from Lists import Lists
+from QuitException import QuitException
+import traceback
+import sys
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 LIST_CSV_FILE = FILTH_PATH + '/data/lists.csv'
-LOG_FILENAME = FILTH_PATH + '/logs/crew_and_tag.log'
+LOG_FILENAME = FILTH_PATH + '/logs/lists.log'
 
 LIST   = 0
 AUTHOR = 1
@@ -13,73 +18,101 @@ YEAR   = 2
 MOVIE  = 3
 ORDER  = 4
 
-movies = {}
 logger = None
+movies = None
+lists  = None
 
-def log(func, message):
-  try:
+
+def log(func, message, writeToStdout):
     logger.write('[' + func + '] - ' + message + '\n')
-  except UnicodeEncodeError:
-    logger.write('[' + func + '] - MOVIE: 8 1/2 (1963)\n')
-
-
-def createMovie(vals):
-    movie = {}
-    movie['mid'] = int(re.search('(\d+)', vals).group(1))
-    titleStartIndex = vals.find("'") + 1
-    titleEndIndex = vals.find("', ")
-    movie['title'] = vals[titleStartIndex:titleEndIndex]
-    vals = vals[(titleEndIndex + 3):]
-    vals = vals.split(', ')
-    movie['star_rating'] = vals[1]
-    if vals[0] == 'NULL':
-        movie['year'] = vals[0]
-    else:
-        movie['year'] = int(vals[0])
-    return movie
-
-
-def initMovies(lastProcessed):
-  global movies
-
-  log('initMovies', '>> Initializing movie map <<')
-  movieFile = open(MOVIE_SQL_FILE, 'r')
-  movielines = movieFile.readlines()
-  movieFile.close()
-  for movieline in movielines:
-    movieline = movieline.replace("''", "'")
-    vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
-    movie = createMovie(vals)
-
-    #skip movie if already tagged
-    if int(movie['mid']) <= lastProcessed:
-      continue
-    #skip movies not seen
-    if movie['star_rating'] == "'not seen'":
-      continue
-
-    movies.append(movie)
-  log('initMovies', '>> movie map initialized <<')
+    if writeToStdout:
+        print '[' + func + '] - ' + message
 
 
 def quit():
-  if logger:
-    logger.close()
+    if logger:
+        logger.close()
+
+
+def processLine(line):
+    line = line.strip()
+    vals = line.split('|')
+    log('processLine', 'Line vals: ' + str(vals), False)
+
+    listTitle = vals[LIST]
+    author = vals[AUTHOR]
+    year = vals[YEAR]
+    movieTitle = vals[MOVIE]
+    order = vals[ORDER]
+    
+    #check for list
+    mlist = lists.getListByTitleAndAuthor(listTitle, author)
+    if mlist is None:
+        log('processLine', 'Adding list: "' + listTitle + '" by ' + str(author), True)
+        #create list
+        mlist = lists.addList(listTitle, author)
+    #check for movie
+    movie = movies.getMovieByTitleAndYear(movieTitle, year)
+    if movie is None:
+        log('processLine', 'Unknown movie: "' + movieTitle + '" (' + str(year) + ')', True)
+        while True:
+            response = raw_input('Is this a new movie? ').lower()
+            if response not in ['y','n','q']:
+                print 'Only \'y\', \'n\', or \'q\' responses.'
+                continue
+            if response == 'q':
+                raise QuitException
+            if response == 'n':
+                movie = {}
+                movie['mid'] = int(raw_input('Mid: '))
+            else:
+                #create movie
+                mpaa = movies.promptUserForMpaa()
+                country = movies.promptUserForCountry()
+                imdbId = movies.promptUserForImdbId()
+                tmdbId = movies.promptUserForTmdbId()
+                parentId = movies.promptUserForParentId()
+                remakeOfId = movies.promptUserForRemakeOfId()
+                movie = movies.addMovie(movieTitle, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId)
+            break
+    #add movie to list
+    lists.addMovieToList(movie['mid'], mlist['lid'], order, None, movieTitle, listTitle, author)
 
 
 if __name__ == '__main__':
     logger = open(LOG_FILENAME, 'w')
+    movies = Movies(logger)
+    lists  = Lists(logger)
 
     try:
-      f = open(LIST_CSV_FILE, 'r')
-      lines = map(str.strip, f.readlines())
-      f.close()
+        f = open(LIST_CSV_FILE, 'r')
+        lines = f.readlines()
+        f.close()
 
-      for line in lines:
-        vals = line.split('|')
-        print vals
-        break
-    except Exception:
-      pass
-    finally
-      quit()
+        for line in lines:
+            processLine(line)
+    except QuitException:
+        pass
+    except Exception as e:
+        traceback.print_exc(file=logger)
+        traceback.print_exc(file=sys.stdout)
+    finally:
+        if movies and movies.hasInserts():
+            while True:
+                response = raw_input('\n**WARNING: There are still unwritten movie sql insert statements. Write them out? ').lower()
+                if response not in ['y','n']:
+                    print "Only 'y'/'n'\n"
+                    continue
+                if response == 'y':
+                    movies.writeAllInsertsToFiles()
+                break
+        if lists and lists.hasInserts():
+            while True:
+                response = raw_input('\n**WARNING: There are still unwritten list sql insert statements. Write them out? ').lower()
+                if response not in ['y','n']:
+                    print "Only 'y'/'n'\n"
+                    continue
+                if response == 'y':
+                    lists.writeAllInsertsToFiles()
+                break
+        quit()
