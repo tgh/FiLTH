@@ -3278,3 +3278,9 @@ INSERT INTO filth.crew_person VALUES (3280, 'Sethi', 'Neel', NULL, 'Neel Sethi',
 INSERT INTO filth.crew_person VALUES (3281, 'Elba', 'Idris', NULL, 'Idris Elba', 'Actor');  -- Actor: Idris Elba
 INSERT INTO filth.crew_person VALUES (3282, 'Reitherman', 'Wolfgang', NULL, 'Wolfgang Reitherman', 'Director');  -- Director: Wolfgang Reitherman
 INSERT INTO filth.crew_person VALUES (3283, 'Cutler', 'R.J.', NULL, 'R.J. Cutler', 'Director');  -- Director: R.J. Cutler
+INSERT INTO filth.crew_person VALUES (3284, 'Ponsoldt', 'James', NULL, 'James Ponsoldt', 'Director');  -- Director: James Ponsoldt
+INSERT INTO filth.crew_person VALUES (3285, 'Livingston', 'Ron', NULL, 'Ron Livingston', 'Actor');  -- Actor: Ron Livingston
+INSERT INTO filth.crew_person VALUES (3286, 'Clements', 'Ron', NULL, 'Ron Clements', 'Director');  -- Director: Ron Clements
+INSERT INTO filth.crew_person VALUES (3287, 'Musker', 'John', NULL, 'John Musker', 'Director');  -- Director: John Musker
+INSERT INTO filth.crew_person VALUES (3288, 'Edwards', 'Rob', NULL, 'Rob Edwards', 'Screenwriter');  -- Screenwriter: Rob Edwards
+INSERT INTO filth.crew_person VALUES (3289, 'Rose', 'Anika', 'Noni', 'Anika Noni Rose', 'Actress');  -- Actress: Anika Noni Rose

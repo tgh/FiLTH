@@ -1530,7 +1530,7 @@ INSERT INTO filth.movie VALUES (1528, 'Spartacus', 1960, '***', 'NR', 'USA', NUL
 INSERT INTO filth.movie VALUES (1529, 'Spartan', 2004, '***½', 'R', 'USA', NULL, 'tt0360009', 0, 11169, NULL, NULL);
 INSERT INTO filth.movie VALUES (1530, 'Speed', 1994, '***½', 'R', 'USA', NULL, 'tt0111257', 2, 1637, NULL, NULL);
 INSERT INTO filth.movie VALUES (1531, 'Spellbound', 1945, '**½', 'NR', 'USA', NULL, 'tt0038109', 0, 4174, NULL, NULL);
-INSERT INTO filth.movie VALUES (1532, 'Spellbound', 2002, '****', 'G', 'USA', NULL, 'tt0334405', 1, 16636, NULL, NULL);
+INSERT INTO filth.movie VALUES (1532, 'Spellbound', 2003, '****', 'G', 'USA', NULL, 'tt0334405', 1, 16636, NULL, NULL);
 INSERT INTO filth.movie VALUES (1533, 'Spider', 2003, '***', 'R', NULL, NULL, 'tt0278731', 0, 9613, NULL, NULL);
 INSERT INTO filth.movie VALUES (1534, 'Spider-Man', 2002, '**½', 'PG-13', 'USA', NULL, 'tt0145487', 1, 557, NULL, NULL);
 INSERT INTO filth.movie VALUES (1535, 'Spider-Man 2', 2004, '**½', 'PG-13', 'USA', NULL, 'tt0316654', 1, 558, NULL, NULL);
@@ -3914,3 +3914,5 @@ INSERT INTO filth.movie VALUES (3915, 'The Jungle Book', 2016, '****', 'PG', 'US
 INSERT INTO filth.movie VALUES (3916, 'The Man in the Wilderness', 1971, 'not seen', 'PG', 'USA', NULL, 'tt0067388', NULL, 46845, NULL, NULL);
 INSERT INTO filth.movie VALUES (3917, 'The Jungle Book', 1967, '**', 'G', 'USA', NULL, 'tt0061852', 0, 9325, NULL, NULL);
 INSERT INTO filth.movie VALUES (3918, 'The September Issue', 2009, '***½', 'PG-13', 'USA', NULL, 'tt1331025', 1, 23044, NULL, NULL);
+INSERT INTO filth.movie VALUES (3919, 'The End of the Tour', 2015, '***½', 'R', 'USA', NULL, 'tt3416744', 0, 249688, NULL, NULL);
+INSERT INTO filth.movie VALUES (3920, 'The Princess and the Frog', 2009, '**', 'G', 'USA', NULL, 'tt0780521', 0, 10198, NULL, NULL);
