@@ -22,3 +22,5 @@ INSERT INTO filth.list VALUES (21, 'Top Ten Movies of 2013', 'Tyler Hayes');
 INSERT INTO filth.list VALUES (22, 'Top Ten Movies of 2014', 'Tyler Hayes');
 INSERT INTO filth.list VALUES (23, 'Top Ten Movies of 2015', 'Tyler Hayes');
 INSERT INTO filth.list VALUES (24, 'Top Ten Movies of 1967', 'Roger Ebert');
+INSERT INTO filth.list VALUES (25, 'Top Ten Movies of 1968', 'Roger Ebert');
+INSERT INTO filth.list VALUES (26, 'Top Ten Movies of 1969', 'Roger Ebert');

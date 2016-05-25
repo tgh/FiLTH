@@ -441,10 +441,10 @@ INSERT INTO filth.list_contains VALUES (440, 36, 10, 8, NULL); -- "Adaptation" i
 INSERT INTO filth.list_contains VALUES (441, 316, 10, 9, NULL); -- "Chicago" in list "Top Ten Movies of 2002" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (442, 1079, 10, 10, NULL); -- "Minority Report" in list "Top Ten Movies of 2002" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (443, 689, 10, 11, NULL); -- "The Grey Zone" in list "Top Ten Movies of 2002" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (444, 783, 10, 12, NULL); -- "I Am Trying to Break Your Heart" in list "Top Ten Movies of 2002" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (445, 28, 10, 13, NULL); -- "About a Boy" in list "Top Ten Movies of 2002" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (446, 156, 10, 14, NULL); -- "Baran" in list "Top Ten Movies of 2002" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (447, 1211, 10, 15, NULL); -- "One Hour Photo" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (444, 1537, 10, 12, NULL); -- "Spirited Away" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (445, 783, 10, 13, NULL); -- "I Am Trying to Break Your Heart" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (446, 28, 10, 14, NULL); -- "About a Boy" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (447, 156, 10, 15, NULL); -- "Baran" in list "Top Ten Movies of 2002" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (448, 505, 11, 1, NULL); -- "Elephant" in list "Top Ten Movies of 2003" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (449, 979, 11, 2, NULL); -- "The Lord of the Rings: The Return of the King" in list "Top Ten Movies of 2003" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (450, 1420, 11, 3, NULL); -- "School of Rock" in list "Top Ten Movies of 2003" by Tyler Hayes
@@ -621,4 +621,26 @@ INSERT INTO filth.list_contains VALUES (620, 2827, 24, 2, NULL); -- "Ulysses" in
 INSERT INTO filth.list_contains VALUES (621, 225, 24, 3, NULL); -- "Blow-Up" in list "Top Ten Movies of 1967" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (622, 672, 24, 4, NULL); -- "The Graduate" in list "Top Ten Movies of 1967" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (623, 2021, 24, 5, NULL); -- "A Man for All Seasons" in list "Top Ten Movies of 1967" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (624, 3921, 24, 6, NULL); -- "The War Game" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (624, 3139, 24, 6, NULL); -- "The War Game" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (625, 3921, 24, 7, NULL); -- "Reflections in a Golden Eye" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (626, 371, 24, 8, NULL); -- "Cool Hand Luke" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (627, 3922, 24, 9, NULL); -- "Elvira Madigan" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (628, 806, 24, 10, NULL); -- "In the Heat of the Night" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (639, 165, 25, 1, NULL); -- "The Battle of Algiers" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (630, 25, 25, 2, NULL); -- "2001: A Space Odyssey" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (631, 3789, 25, 3, NULL); -- "Falstaff" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (632, 542, 25, 4, NULL); -- "Faces" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (633, 3923, 25, 5, NULL); -- "The Two of Us" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (634, 1309, 25, 6, NULL); -- "The Producers" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (635, 2023, 25, 7, NULL); -- "Oliver!" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (636, 3924, 25, 8, NULL); -- "...and the Fifth Horseman Is Fear" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (637, 2026, 25, 9, NULL); -- "Rachel, Rachel" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (638, 1385, 25, 10, NULL); -- "Romeo and Juliet" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (639, 2028, 26, 1, NULL); -- "Z" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (640, 3925, 26, 2, NULL); -- "Medium Cool" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (641, 3926, 26, 3, NULL); -- "Weekend" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (642, 790, 26, 4, NULL); -- "If...." in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (643, 2400, 26, 5, NULL); -- "Last Summer" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (644, 1773, 26, 6, NULL); -- "The Wild Bunch" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (645, 498, 26, 7, NULL); -- "Easy Rider" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (646, 1675, 26, 8, NULL); -- "True Grit" in list "Top Ten Movies of 1969" by Roger Ebert

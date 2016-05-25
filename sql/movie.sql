@@ -788,7 +788,7 @@ INSERT INTO filth.movie VALUES (786, 'Ice Age', 2002, '***', 'PG', 'USA', NULL, 
 INSERT INTO filth.movie VALUES (787, 'The Ice Storm', 1997, '**½', 'R', 'USA', NULL, 'tt0119349', 0, 68924, NULL, NULL);
 INSERT INTO filth.movie VALUES (788, 'Identity', 2003, '***', 'R', 'USA', NULL, 'tt0309698', NULL, 2832, NULL, NULL);
 INSERT INTO filth.movie VALUES (789, 'The Idle Class', 1921, '***½', 'NR', 'USA', NULL, 'tt0012304', 0, 42510, NULL, NULL);
-INSERT INTO filth.movie VALUES (790, 'If...', 1968, '***', 'X', 'England', NULL, 'tt0063850', 0, 14794, NULL, NULL);
+INSERT INTO filth.movie VALUES (790, 'If....', 1968, '***', 'X', 'England', NULL, 'tt0063850', 0, 14794, NULL, NULL);
 INSERT INTO filth.movie VALUES (791, 'Igby Goes Down', 2002, '***½', 'R', 'USA', NULL, 'tt0280760', 1, 9685, NULL, NULL);
 INSERT INTO filth.movie VALUES (792, 'Il Postino', 1995, '***½', 'PG', 'Italy', NULL, 'tt0110877', 0, 11010, NULL, NULL);
 INSERT INTO filth.movie VALUES (793, 'I''ll Sleep When I''m Dead', 2004, '***', 'R', 'England', NULL, 'tt0319531', 0, 3515, NULL, NULL);
@@ -3784,7 +3784,7 @@ INSERT INTO filth.movie VALUES (3785, 'Baraka', 1992, 'not seen', 'NR', 'USA', N
 INSERT INTO filth.movie VALUES (3786, 'Blade Runner: The Final Cut', 1982, 'not seen', 'R', 'USA', NULL, 'tt0083658', NULL, 78, NULL, NULL);
 INSERT INTO filth.movie VALUES (3787, 'Cabiria', 1914, 'not seen', 'NR', 'Italy', NULL, 'tt0003740', NULL, 5153, NULL, NULL);
 INSERT INTO filth.movie VALUES (3788, 'Cat People', 1942, 'not seen', 'NR', 'USA', NULL, 'tt0034587', NULL, 25508, NULL, NULL);
-INSERT INTO filth.movie VALUES (3789, 'Chimes at Midnight', 1965, 'not seen', 'NR', 'USA', NULL, 'tt0059012', NULL, 986, NULL, NULL);
+INSERT INTO filth.movie VALUES (3789, 'Chimes at Midnight', 1966, 'not seen', 'NR', 'USA', NULL, 'tt0059012', NULL, 986, NULL, NULL);
 INSERT INTO filth.movie VALUES (3790, 'Chuck Jones: Three Cartoons', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (3791, 'Diva', 1981, 'not seen', 'R', 'France', NULL, 'tt0082269', NULL, 4485, NULL, NULL);
 INSERT INTO filth.movie VALUES (3792, 'El Topo', 1970, 'not seen', 'NR', 'Mexico', NULL, 'tt0067866', NULL, 13041, NULL, NULL);
@@ -3916,4 +3916,9 @@ INSERT INTO filth.movie VALUES (3917, 'The Jungle Book', 1967, '**', 'G', 'USA',
 INSERT INTO filth.movie VALUES (3918, 'The September Issue', 2009, '***½', 'PG-13', 'USA', NULL, 'tt1331025', 1, 23044, NULL, NULL);
 INSERT INTO filth.movie VALUES (3919, 'The End of the Tour', 2015, '***½', 'R', 'USA', NULL, 'tt3416744', 0, 249688, NULL, NULL);
 INSERT INTO filth.movie VALUES (3920, 'The Princess and the Frog', 2009, '**', 'G', 'USA', NULL, 'tt0780521', 0, 10198, NULL, NULL);
-INSERT INTO filth.movie VALUES (3921, 'The War Game', 1965, 'not seen', 'NR', 'England', NULL, 'tt0059894', NULL, 26508, NULL, NULL);
+INSERT INTO filth.movie VALUES (3921, 'Reflections in a Golden Eye', 1967, 'not seen', 'NR', 'USA', NULL, 'tt0062185', NULL, 3547, NULL, NULL);
+INSERT INTO filth.movie VALUES (3922, 'Elvira Madigan', 1967, 'not seen', 'PG', 'Sweden', NULL, 'tt0061620', NULL, 42692, NULL, NULL);
+INSERT INTO filth.movie VALUES (3923, 'The Two of Us', 1967, 'not seen', 'NR', 'France', NULL, 'tt0063771', NULL, 62570, NULL, NULL);
+INSERT INTO filth.movie VALUES (3924, '...and the Fifth Horseman Is Fear', 1965, 'not seen', 'NR', 'Czechoslovakia', NULL, 'tt0123368', NULL, 109380, NULL, NULL);
+INSERT INTO filth.movie VALUES (3925, 'Medium Cool', 1969, 'not seen', 'R', 'USA', NULL, 'tt0064652', NULL, 42612, NULL, NULL);
+INSERT INTO filth.movie VALUES (3926, 'Weekend', 1967, 'not seen', 'NR', 'France', NULL, 'tt0062480', NULL, 8075, NULL, NULL);
