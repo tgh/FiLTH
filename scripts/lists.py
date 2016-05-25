@@ -6,6 +6,7 @@ from Lists import Lists
 from QuitException import QuitException
 import traceback
 import sys
+import pyperclip
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
@@ -56,17 +57,24 @@ def processLine(line):
     if movie is None:
         log('processLine', 'Unknown movie: "' + movieTitle + '" (' + str(year) + ')', True)
         while True:
-            response = raw_input('Is this a new movie? ').lower()
+            response = raw_input('Is this a new movie (\'y\', \'n\', \'q\')? ').lower()
             if response not in ['y','n','q']:
                 print 'Only \'y\', \'n\', or \'q\' responses.'
                 continue
             if response == 'q':
-                raise QuitException
+                raise QuitException('quitting')
             if response == 'n':
                 movie = {}
                 movie['mid'] = int(raw_input('Mid: '))
             else:
+                #copy title to clipboard
+                pyperclip.copy(movieTitle)
                 #create movie
+                titleResponse = movies.promptUserForTitle()
+                #check for 'k' for "keep" (use the title in the csv row)
+                if titleResponse != 'k':
+                    movieTitle = titleResponse
+                year = movies.promptUserForYear()
                 mpaa = movies.promptUserForMpaa()
                 country = movies.promptUserForCountry()
                 imdbId = movies.promptUserForImdbId()

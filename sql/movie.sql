@@ -3916,3 +3916,4 @@ INSERT INTO filth.movie VALUES (3917, 'The Jungle Book', 1967, '**', 'G', 'USA',
 INSERT INTO filth.movie VALUES (3918, 'The September Issue', 2009, '***½', 'PG-13', 'USA', NULL, 'tt1331025', 1, 23044, NULL, NULL);
 INSERT INTO filth.movie VALUES (3919, 'The End of the Tour', 2015, '***½', 'R', 'USA', NULL, 'tt3416744', 0, 249688, NULL, NULL);
 INSERT INTO filth.movie VALUES (3920, 'The Princess and the Frog', 2009, '**', 'G', 'USA', NULL, 'tt0780521', 0, 10198, NULL, NULL);
+INSERT INTO filth.movie VALUES (3921, 'The War Game', 1965, 'not seen', 'NR', 'England', NULL, 'tt0059894', NULL, 26508, NULL, NULL);

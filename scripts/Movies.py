@@ -11,8 +11,8 @@ MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 MPAA_SQL_FILE = FILTH_PATH + '/sql/mpaa.sql'
 COUNTRY_SQL_FILE = FILTH_PATH + '/sql/country.sql'
                                                        #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid
-MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11});\n";
-COUNRY_INSERT_FORMAT = "INSERT INTO filth.country VALUES ({0}, '{1}');\n"
+MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11});";
+COUNRY_INSERT_FORMAT = "INSERT INTO filth.country VALUES ({0}, '{1}');"
 
 
 class Movies(object):
@@ -64,7 +64,11 @@ class Movies(object):
         lastMid = 0
         for movieline in movielines:
             movieline = movieline.replace("''", "'")
-            vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
+            try:
+                vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
+            except AttributeError as e:
+                self._log('_initMovies', '***Line in movie.sql did not match regex: ' + movieline)
+                raise e
             movie = self._createMovie(vals)
             self._movies.append(movie)
             lastMid = movie['mid']
@@ -156,7 +160,7 @@ class Movies(object):
 
         if imdbId is None:
             imdbId = 'NULL'
-        elif imdb != 'NULL':
+        elif imdbId != 'NULL':
             imdbId = "'" + imdbId + "'"
 
         if tmdbId is None:
@@ -168,7 +172,7 @@ class Movies(object):
         if remakeOfId is None:
             remakeOfId = 'NULL'
 
-        insertStatement = MOVIE_INSERT_FORMAT.format(str(self._nextMid), title, str(year), 'not seen', mpaa, country, 'NULL', imdbId, 'NULL', str(tmdbId), str(parentId), str(remakeOdId))
+        insertStatement = MOVIE_INSERT_FORMAT.format(str(self._nextMid), title, str(year), "'not seen'", mpaa, country, 'NULL', imdbId, 'NULL', str(tmdbId), str(parentId), str(remakeOfId))
         self._log('_createInsertStatementForMovie', 'created SQL: ' + insertStatement)
         self._movieInserts.append(insertStatement)
         self._nextMid += 1
@@ -251,7 +255,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the TITLE of this new movie? (\'q\' to quit) ')
+            response = raw_input('What is the TITLE of this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForTitle')
             return response
 
@@ -266,7 +270,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the YEAR for this new movie? (\'q\' to quit) ')
+            response = raw_input('What is the YEAR for this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForTitle')
             try:
                 year = int(response)
@@ -288,7 +292,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the MPAA rating for this new movie? (\'q\' to quit) ')
+            response = raw_input('What is the MPAA rating for this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForMpaa')
             if response not in self._validMpaaRatings:
                 print '**"' + response + '" is not a valid MPAA rating. Should be one of: ' + self._validMpaaRatings
@@ -308,7 +312,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the COUNTRY for this new movie? (\'q\' to quit, or \'s\' to skip) ')
+            response = raw_input('What is the COUNTRY for this new movie? (\'q\' to quit, or \'s\' to skip) ')
             self._checkForQuit(response, 'promptUserForMpaa')
             if response == 's':
                 return None
@@ -337,7 +341,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the IMDB id of this new movie? (\'q\' to quit) ')
+            response = raw_input('What is the IMDB id of this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForImdbId')
             if not response.startswith('tt'):
                 print '**Invalid IMDB id. IMDB ids start with "tt"'
@@ -355,7 +359,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the TMDB id of this new movie? (\'q\' to quit) ')
+            response = raw_input('What is the TMDB id of this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForTmdbId')
             try:
                 tmdbId = int(response)
@@ -377,7 +381,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the PARENT MID of this new movie? (\'q\' to quit, or \'s\' to skip) ')
+            response = raw_input('What is the PARENT MID of this new movie? (\'q\' to quit, or \'s\' to skip) ')
             self._checkForQuit(response, 'promptUserForParentId')
             if response.lower() == 's':
                 return None
@@ -402,7 +406,7 @@ class Movies(object):
             Raises : QuitException when user quits
         '''
         while True:
-            response = raw_input('\nWhat is the REMAKE MID of this new movie? (\'q\' to quit, or \'s\' to skip) ')
+            response = raw_input('What is the REMAKE MID of this new movie? (\'q\' to quit, or \'s\' to skip) ')
             self._checkForQuit(response, 'promptUserForRemakeOfId')
             if response.lower() == 's':
                 return None

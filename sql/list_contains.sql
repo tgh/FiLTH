@@ -360,3 +360,265 @@ INSERT INTO filth.list_contains VALUES (359, 3853, 4, NULL, NULL); -- "Superman"
 INSERT INTO filth.list_contains VALUES (360, 1607, 4, NULL, NULL); -- "Tender Mercies" in list "Greatest Movies #4" by Roger Ebert"
 INSERT INTO filth.list_contains VALUES (361, 3854, 4, NULL, NULL); -- "Veronika Voss" in list "Greatest Movies #4" by Roger Ebert"
 INSERT INTO filth.list_contains VALUES (362, 3855, 4, NULL, NULL); -- "Viridiana" in list "Greatest Movies #4" by Roger Ebert"
+INSERT INTO filth.list_contains VALUES (363, 662, 5, 1, NULL); -- "Good Will Hunting" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (364, 113, 5, 2, NULL); -- "The Apostle" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (365, 1726, 5, 3, NULL); -- "Waiting for Guffman" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (366, 119, 5, 4, NULL); -- "As Good as it Gets" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (367, 906, 5, 5, NULL); -- "L.A. Confidential" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (368, 805, 5, 6, NULL); -- "In the Company of Men" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (369, 1725, 5, 7, NULL); -- "Wag the Dog" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (370, 1065, 5, 8, NULL); -- "Microcosmos" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (371, 526, 5, 9, NULL); -- "Everyone Says I Love You" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (372, 468, 5, 10, NULL); -- "Donnie Brasco" in list "Top Ten Movies of 1997" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (373, 1413, 6, 1, NULL); -- "Saving Private Ryan" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (374, 1622, 6, 2, NULL); -- "The Thin Red Line" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (375, 1400, 6, 3, NULL); -- "Rushmore" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (376, 1262, 6, 4, NULL); -- "Pi" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (377, 83, 6, 5, NULL); -- "American History X" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (378, 200, 6, 6, NULL); -- "The Big Lebowski" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (379, 1678, 6, 7, NULL); -- "The Truman Show" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (380, 41, 6, 8, NULL); -- "Affliction" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (381, 312, 6, 9, NULL); -- "Character" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (382, 274, 6, 10, NULL); -- "A Bug's Life" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (383, 272, 6, 11, NULL); -- "Buffalo '66" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (384, 952, 6, 12, NULL); -- "Life is Beautiful" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (385, 20, 6, 13, NULL); -- "42 Up" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (386, 1729, 6, 14, NULL); -- "Waking Ned Devine" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (387, 1620, 6, 15, NULL); -- "There's Something About Mary" in list "Top Ten Movies of 1998" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (388, 999, 7, 1, NULL); -- "Magnolia" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (389, 320, 7, 2, NULL); -- "Children of Heaven" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (390, 1561, 7, 3, NULL); -- "The Straight Story" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (391, 1307, 7, 4, NULL); -- "Princess Mononoke" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (392, 565, 7, 5, NULL); -- "Fight Club" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (393, 178, 7, 6, NULL); -- "Being John Malkovich" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (394, 215, 7, 7, NULL); -- "The Blair Witch Project" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (395, 85, 7, 8, NULL); -- "American Movie" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (396, 686, 7, 9, NULL); -- "The Green Mile" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (397, 540, 7, 10, NULL); -- "Eyes Wide Shut" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (398, 1350, 7, 11, NULL); -- "The Red Violin" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (399, 1398, 7, 12, NULL); -- "Run Lola Run" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (400, 623, 7, 13, NULL); -- "The General" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (401, 1629, 7, 14, NULL); -- "Three Kings" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (402, 1587, 7, 15, NULL); -- "Sweet and Lowdown" in list "Top Ten Movies of 1999" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (403, 624, 8, 1, NULL); -- "George Washington" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (404, 1360, 8, 2, NULL); -- "Requiem for a Dream" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (405, 1694, 8, 3, NULL); -- "Unbreakable" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (406, 356, 8, 4, NULL); -- "The Color of Paradise" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (407, 87, 8, 5, NULL); -- "American Psycho" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (408, 1659, 8, 6, NULL); -- "Traffic" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (409, 1236, 8, 7, NULL); -- "Paradise Lost 2: Revelations" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (410, 73, 8, 8, NULL); -- "Almost Famous" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (411, 233, 8, 9, NULL); -- "Boiler Room" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (412, 1795, 8, 10, NULL); -- "Wonder Boys" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (413, 295, 8, 11, NULL); -- "Cast Away" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (414, 369, 8, 12, NULL); -- "The Contender" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (415, 549, 8, 13, NULL); -- "Fantasia 2000" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (416, 389, 8, 14, NULL); -- "Crouching Tiger, Hidden Dragon" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (417, 1625, 8, 15, NULL); -- "Thirteen Days" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (418, 1054, 8, 1, NULL); -- "Memento" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (419, 1728, 9, 2, NULL); -- "Waking Life" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (420, 1284, 9, 3, NULL); -- "The Pledge" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (421, 1708, 9, 4, NULL); -- "Vanilla Sky" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (422, 804, 9, 5, NULL); -- "In the Bedroom" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (423, 1102, 9, 6, NULL); -- "Monsters Inc." in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (424, 668, 9, 7, NULL); -- "Gosford Park" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (425, 1552, 9, 8, NULL); -- "Startup.com" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (426, 27, 9, 9, NULL); -- "A.I. Artificial Intelligence" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (427, 77, 9, 10, NULL); -- "Amelie" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (428, 1787, 9, 11, NULL); -- "With a Friend Like Harry" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (429, 1395, 9, 12, NULL); -- "The Royal Tenenbaums" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (430, 1186, 9, 13, NULL); -- "No Man's Land" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (431, 977, 9, 14, NULL); -- "The Lord of the Rings: The Fellowship of the Ring" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (432, 948, 9, 15, NULL); -- "Liam" in list "Top Ten Movies of 2001" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (433, 1316, 10, 1, NULL); -- "Punch-Drunk Love" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (434, 625, 10, 2, NULL); -- "Gerry" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (435, 594, 10, 3, NULL); -- "Frailty" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (436, 1478, 10, 4, NULL); -- "Signs" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (437, 1263, 10, 5, NULL); -- "The Pianist" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (438, 978, 10, 6, NULL); -- "The Lord of the Rings: The Two Towers" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (439, 244, 10, 7, NULL); -- "Bowling For Columbine" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (440, 36, 10, 8, NULL); -- "Adaptation" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (441, 316, 10, 9, NULL); -- "Chicago" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (442, 1079, 10, 10, NULL); -- "Minority Report" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (443, 689, 10, 11, NULL); -- "The Grey Zone" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (444, 783, 10, 12, NULL); -- "I Am Trying to Break Your Heart" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (445, 28, 10, 13, NULL); -- "About a Boy" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (446, 156, 10, 14, NULL); -- "Baran" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (447, 1211, 10, 15, NULL); -- "One Hour Photo" in list "Top Ten Movies of 2002" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (448, 505, 11, 1, NULL); -- "Elephant" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (449, 979, 11, 2, NULL); -- "The Lord of the Rings: The Return of the King" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (450, 1420, 11, 3, NULL); -- "School of Rock" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (451, 1154, 11, 4, NULL); -- "Mystic River" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (452, 88, 11, 5, NULL); -- "American Splendor" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (453, 570, 11, 6, NULL); -- "Finding Nemo" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (454, 289, 11, 7, NULL); -- "Capturing the Friedmans" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (455, 1532, 11, 8, NULL); -- "Spellbound" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (456, 72, 11, 9, NULL); -- "All the Real Girls" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (457, 1821, 11, 10, NULL); -- "Zero Day" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (458, 16, 11, 11, NULL); -- "28 Days Later" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (459, 1034, 11, 12, NULL); -- "Master and Commander: The Far Side of the World" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (460, 1555, 11, 13, NULL); -- "The Station Agent" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (461, 1751, 11, 14, NULL); -- "Whale Rider" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (462, 1668, 11, 15, NULL); -- "The Triplets of Belleville" in list "Top Ten Movies of 2003" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (463, 1243, 12, 1, NULL); -- "The Passion of the Christ" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (464, 134, 12, 2, NULL); -- "The Aviator" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (465, 1158, 12, 3, NULL); -- "Napoleon Dynamite" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (466, 760, 12, 4, NULL); -- "Hotel Rwanda" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (467, 1650, 12, 5, NULL); -- "Touching the Void" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (468, 524, 12, 6, NULL); -- "Eternal Sunshine of the Spotless Mind" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (469, 1718, 12, 7, NULL); -- "The Village" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (470, 780, 12, 8, NULL); -- "I Heart Huckabees" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (471, 1713, 12, 9, NULL); -- "Vera Drake" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (472, 121, 12, 10, NULL); -- "The Assassination of Richard Nixon" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (473, 812, 12, 11, NULL); -- "The Incredibles" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (474, 719, 12, 12, NULL); -- "Harry Potter and the Prisoner of Azkaban" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (475, 887, 12, 13, NULL); -- "Kill Bill Vol. 2" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (476, 1529, 12, 14, NULL); -- "Spartan" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (477, 795, 12, 15, NULL); -- "I'm Not Scared" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (478, 283, 13, 1, NULL); -- "Cache" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (479, 659, 13, 2, NULL); -- "Good Night, and Good Luck." in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (480, 1191, 13, 3, NULL); -- "North Country" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (481, 1297, 13, 4, NULL); -- "Pride & Prejudice" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (482, 383, 13, 5, NULL); -- "Crash" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (483, 1169, 13, 6, NULL); -- "The New World" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (484, 1547, 13, 7, NULL); -- "Star Wars: Episode III - Revenge of the Sith" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (485, 993, 13, 8, NULL); -- "Madagascar" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (486, 1731, 13, 9, NULL); -- "Walk the Line" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (487, 1035, 13, 10, NULL); -- "Match Point" in list "Top Ten Movies of 2005" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (488, 441, 14, 1, NULL); -- "The Departed" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (489, 1698, 14, 2, NULL); -- "United 93" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (490, 947, 14, 3, NULL); -- "Letters From Iwo Jima" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (491, 444, 14, 4, NULL); -- "The Devil and Daniel Johnston" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (492, 1319, 14, 5, NULL); -- "The Queen" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (493, 964, 14, 6, NULL); -- "Little Miss Sunshine" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (494, 1295, 14, 7, NULL); -- "The Prestige" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (495, 290, 14, 8, NULL); -- "Cars" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (496, 271, 14, 9, NULL); -- "Bubble" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (497, 445, 14, 10, NULL); -- "The Devil Wears Prada" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (498, 218, 14, 11, NULL); -- "Blood Diamond" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (499, 1101, 14, 12, NULL); -- "Monster House" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (500, 1231, 14, 13, NULL); -- "Pan's Labyrinth" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (501, 589, 14, 14, NULL); -- "The Fountain" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (502, 1491, 14, 15, NULL); -- "Sketches of Frank Gehry" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (503, 1185, 15, 1, NULL); -- "No Country For Old Men" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (504, 1619, 15, 2, NULL); -- "There Will Be Blood" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (505, 2, 15, 3, NULL); -- "3:10 to Yuma" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (506, 2875, 15, 4, NULL); -- "Lars and the Real Girl" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (507, 1063, 15, 5, NULL); -- "Michael Clayton" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (508, 1585, 15, 6, NULL); -- "Sweeney Todd: The Demon Barber of Fleet Street" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (509, 656, 15, 7, NULL); -- "Gone Baby Gone" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (510, 1824, 15, 8, NULL); -- "Zodiac" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (511, 1090, 15, 9, NULL); -- "The Mist" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (512, 379, 15, 10, NULL); -- "The Counterfeiters" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (513, 901, 15, 11, NULL); -- "The Kite Runner" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (514, 1361, 15, 12, NULL); -- "Rescue Dawn" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (515, 125, 15, 13, NULL); -- "Atonement" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (516, 294, 15, 14, NULL); -- "Cassandra's Dream" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (517, 120, 15, 15, NULL); -- "The Assassination of Jesse James by the Coward Robert Ford" in list "Top Ten Movies of 2007" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (518, 404, 16, 1, NULL); -- "The Dark Knight" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (519, 1733, 16, 2, NULL); -- "WALL-E" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (520, 475, 16, 3, NULL); -- "Doubt" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (521, 605, 16, 4, NULL); -- "Frost/Nixon" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (522, 325, 16, 5, NULL); -- "Chop Shop" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (523, 396, 16, 6, NULL); -- "The Curious Case of Benjamin Button" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (524, 673, 16, 7, NULL); -- "Gran Torino" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (525, 837, 16, 8, NULL); -- "Iron Man" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (526, 1008, 16, 9, NULL); -- "Man on Wire" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (527, 513, 16, 9, NULL); -- "Encounters at the End of the World" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (528, 1501, 16, 10, NULL); -- "Slumdog Millionaire" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (529, 317, 16, 11, NULL); -- "Chicago 10" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (530, 232, 16, 12, NULL); -- "Body of Lies" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (531, 3426, 16, 13, NULL); -- "I.O.U.S.A." in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (532, 3326, 16, 14, NULL); -- "Trouble the Water" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (533, 606, 16, 15, NULL); -- "Frozen River" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (534, 1104, 17, 1, NULL); -- "Moon" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (535, 776, 17, 2, NULL); -- "The Hurt Locker" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (536, 550, 17, 3, NULL); -- "Fantastic Mr. Fox" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (537, 1765, 17, 4, NULL); -- "Where the Wild Things Are" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (538, 1701, 17, 5, NULL); -- "Up" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (539, 1288, 17, 6, NULL); -- "Ponyo" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (540, 818, 17, 7, NULL); -- "Inglourious Basterds" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (541, 817, 17, 8, NULL); -- "The Informant!" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (542, 3918, 17, 9, NULL); -- "The September Issue" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (543, 1702, 17, 10, NULL); -- "Up in the Air" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (544, 3331, 17, 11, NULL); -- "The Cove" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (545, 327, 17, 12, NULL); -- "A Christmas Carol" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (546, 665, 17, 13, NULL); -- "Goodbye Solo" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (547, 133, 17, 14, NULL); -- "Avatar" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (548, 1374, 17, 15, NULL); -- "The Road" in list "Top Ten Movies of 2009" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (549, 1474, 18, 1, NULL); -- "Shutter Island" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (550, 899, 18, 2, NULL); -- "The King's Speech" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (551, 534, 18, 3, NULL); -- "Exit Through the Gift Shop" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (552, 809, 18, 4, NULL); -- "Inception" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (553, 1363, 18, 5, NULL); -- "Restrepo" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (554, 301, 18, 6, NULL); -- "Catfish" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (555, 1511, 18, 7, NULL); -- "The Social Network" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (556, 1636, 18, 8, NULL); -- "The Tillman Story" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (557, 632, 18, 9, NULL); -- "The Ghost Writer" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (558, 566, 18, 10, NULL); -- "The Fighter" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (559, 821, 18, 11, NULL); -- "Inside Job" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (560, 928, 18, 12, NULL); -- "Last Train Home" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (561, 1727, 18, 13, NULL); -- "Waiting for Superman" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (562, 1676, 18, 14, NULL); -- "True Grit" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (563, 21, 18, 15, NULL); -- "127 Hours" in list "Top Ten Movies of 2010" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (564, 3340, 19, 1, NULL); -- "The Artist" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (565, 1666, 19, 2, NULL); -- "The Tree of Life" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (566, 1096, 19, 3, NULL); -- "Moneyball" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (567, 3400, 19, 4, NULL); -- "A Separation" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (568, 3360, 19, 5, NULL); -- "The Adventures of Tintin" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (569, 3412, 19, 6, NULL); -- "Paradise Lost 3: Purgatory" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (570, 1068, 19, 7, NULL); -- "Midnight in Paris" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (571, 3345, 19, 9, NULL); -- "The Descendants" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (572, 3332, 19, 8, NULL); -- "Take Shelter" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (573, 1829, 19, 10, NULL); -- "Margin Call" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (574, 3479, 19, 11, NULL); -- "Undefeated" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (575, 3353, 19, 12, NULL); -- "Tinker Tailor Soldier Spy" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (576, 3338, 19, 13, NULL); -- "Hugo" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (577, 1335, 19, 14, NULL); -- "Rango" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (578, 207, 19, 15, NULL); -- "Bill Cunningham New York" in list "Top Ten Movies of 2011" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (579, 3402, 20, 1, NULL); -- "Samsara" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (580, 3437, 20, 2, NULL); -- "Life of Pi" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (581, 3425, 20, 3, NULL); -- "Django Unchained" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (582, 3419, 20, 4, NULL); -- "Les Miserables" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (583, 3460, 20, 5, NULL); -- "Cloud Atlas" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (584, 3444, 20, 6, NULL); -- "Silver Linings Playbook" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (585, 3413, 20, 7, NULL); -- "Anna Karenina" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (586, 3387, 20, 9, NULL); -- "Moonrise Kingdom" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (587, 3435, 20, 8, NULL); -- "Searching for Sugar Man" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (588, 3394, 20, 10, NULL); -- "The Dark Knight Rises" in list "Top Ten Movies of 2012" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (589, 3443, 21, 1, NULL); -- "The Place Beyond the Pines" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (590, 3484, 21, 2, NULL); -- "West of Memphis" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (591, 3486, 21, 3, NULL); -- "August: Osage County" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (592, 3494, 21, 4, NULL); -- "American Hustle" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (593, 3558, 21, 5, NULL); -- "Mud" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (594, 3497, 21, 6, NULL); -- "12 Years a Slave" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (595, 3506, 21, 7, NULL); -- "Prisoners" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (596, 3498, 21, 8, NULL); -- "Captain Phillips" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (597, 3502, 21, 9, NULL); -- "Nebraska" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (598, 3512, 21, 10, NULL); -- "Philomena" in list "Top Ten Movies of 2013" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (599, 3613, 22, 1, NULL); -- "Selma" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (600, 3620, 22, 2, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (601, 3602, 22, 3, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (602, 3544, 22, 4, NULL); -- "The Grand Budapest Hotel" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (603, 3583, 22, 5, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (604, 3622, 22, 6, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (605, 3627, 22, 7, NULL); -- "Gone Girl" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (606, 3671, 22, 8, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (607, 3601, 22, 9, NULL); -- "American Sniper" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (608, 3636, 22, 10, NULL); -- "Nightcrawler" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (609, 3661, 23, 1, NULL); -- "Inside Out" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (610, 3873, 23, 2, NULL); -- "The Revenant" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (611, 3861, 23, 3, NULL); -- "Spotlight" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (612, 3895, 23, 4, NULL); -- "The Big Short" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (613, 3697, 23, 5, NULL); -- "Steve Jobs" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (614, 3892, 23, 6, NULL); -- "Room" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (615, 3898, 23, 7, NULL); -- "The Look of Silence" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (616, 3689, 23, 8, NULL); -- "Sicario" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (617, 3908, 23, 9, NULL); -- "99 Homes" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (618, 3919, 23, 10, NULL); -- "The End of the Tour" in list "Top Ten Movies of 2015" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (619, 234, 24, 1, NULL); -- "Bonnie and Clyde" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (620, 2827, 24, 2, NULL); -- "Ulysses" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (621, 225, 24, 3, NULL); -- "Blow-Up" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (622, 672, 24, 4, NULL); -- "The Graduate" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (623, 2021, 24, 5, NULL); -- "A Man for All Seasons" in list "Top Ten Movies of 1967" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (624, 3921, 24, 6, NULL); -- "The War Game" in list "Top Ten Movies of 1967" by Roger Ebert

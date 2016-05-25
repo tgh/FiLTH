@@ -52,9 +52,10 @@ class Lists(object):
             mlist = {}
             mlist['lid'] = int(matcher.group(1))
             mlist['title'] = matcher.group(2)
-            mlist['author'] = matcher.group(3)
+            mlist['author'] = matcher.group(3).strip("'")
             self._lists.append(mlist)
             lid = mlist['lid']
+            self._log('_initLists', 'List: "' + mlist['title'] + '" by ' + mlist['author'])
         self._log('_initLists', '>> Lists initialized <<')
         return lid
 
@@ -75,7 +76,7 @@ class Lists(object):
                 mids = self._listContainsMap[lid]
             except KeyError:
                 mids = []
-                self._listContains[lid] = mids
+                self._listContainsMap[lid] = mids
             mids.append(mid)
                 
         self._log('_initListContainsMap', '>> ListContains map initialized <<')
@@ -212,7 +213,7 @@ class Lists(object):
     #
     def writeListContainsInsertsToFile(self):
         f = open(LIST_CONTAINS_SQL_FILE, 'a')
-        for statement in self._movieInserts:
+        for statement in self._listContainsInserts:
             f.write(statement + '\n')
         f.close()
 
