@@ -57,6 +57,8 @@ def processLine(line):
     if movie is None:
         log('processLine', 'Unknown movie: "' + movieTitle + '" (' + str(year) + ')', True)
         while True:
+            #copy title to clipboard
+            pyperclip.copy(movieTitle)
             response = raw_input('Is this a new movie (\'y\', \'n\', \'q\')? ').lower()
             if response not in ['y','n','q']:
                 print 'Only \'y\', \'n\', or \'q\' responses.'
@@ -67,8 +69,6 @@ def processLine(line):
                 movie = {}
                 movie['mid'] = int(raw_input('Mid: '))
             else:
-                #copy title to clipboard
-                pyperclip.copy(movieTitle)
                 #create movie
                 titleResponse = movies.promptUserForTitle()
                 #check for 'k' for "keep" (use the title in the csv row)
