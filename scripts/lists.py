@@ -55,6 +55,9 @@ def processLine(line):
     #check for movie
     movie = movies.getMovieByTitleAndYear(movieTitle, year)
     if movie is None:
+        #try again without the year
+        movie = movies.getMovieByTitle(movieTitle)
+    if movie is None:
         log('processLine', 'Unknown movie: "' + movieTitle + '" (' + str(year) + ')', True)
         while True:
             #copy title to clipboard

@@ -644,3 +644,134 @@ INSERT INTO filth.list_contains VALUES (643, 2400, 26, 5, NULL); -- "Last Summer
 INSERT INTO filth.list_contains VALUES (644, 1773, 26, 6, NULL); -- "The Wild Bunch" in list "Top Ten Movies of 1969" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (645, 498, 26, 7, NULL); -- "Easy Rider" in list "Top Ten Movies of 1969" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (646, 1675, 26, 8, NULL); -- "True Grit" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (647, 3927, 26, 9, NULL); -- "Downhill Racer" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (648, 2926, 26, 10, NULL); -- "War and Peace" in list "Top Ten Movies of 1969" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (649, 576, 27, 1, NULL); -- "Five Easy Pieces" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (650, 1031, 27, 2, NULL); -- "M*A*S*H" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (651, 3928, 27, 3, NULL); -- "The Revolutionary" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (652, 1247, 27, 4, NULL); -- "Patton" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (653, 3157, 27, 5, NULL); -- "Woodstock" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (654, 2836, 27, 6, NULL); -- "My Night at Maud's" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (655, 2930, 27, 7, NULL); -- "Adalen 31" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (656, 1242, 27, 8, NULL); -- "The Passion of Anna" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (657, 3929, 27, 9, NULL); -- "The Wild Child" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (658, 561, 27, 10, NULL); -- "Fellini Satyricon" in list "Top Ten Movies of 1970" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (659, 922, 28, 1, NULL); -- "The Last Picture Show" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (660, 1044, 28, 2, NULL); -- "McCabe and Mrs. Miller" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (661, 3930, 28, 3, NULL); -- "Claire's Knee" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (662, 598, 28, 4, NULL); -- "The French Connection" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (663, 1572, 28, 5, NULL); -- "Sunday, Bloody Sunday" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (664, 3931, 28, 6, NULL); -- "Taking Off" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (665, 2407, 28, 7, NULL); -- "Carnal Knowledge" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (666, 1669, 28, 8, NULL); -- "Tristana" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (667, 3932, 28, 9, NULL); -- "Goin' Down the Road" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (668, 3933, 28, 10, NULL); -- "Bed and Board" in list "Top Ten Movies of 1971" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (669, 647, 29, 1, NULL); -- "The Godfather" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (670, 3934, 29, 2, NULL); -- "Chloe in the Afternoon" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (671, 936, 29, 3, NULL); -- "Le Boucher" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (672, 2839, 29, 4, NULL); -- "Murmur of the Heart" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (673, 3935, 29, 5, NULL); -- "The Green Wall" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (674, 3160, 29, 6, NULL); -- "The Sorrow and the Pity" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (675, 618, 29, 7, NULL); -- "The Garden of Finzi-Continis" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (676, 3936, 29, 8, NULL); -- "Minnie and Moskowitz" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (677, 2032, 29, 9, NULL); -- "Sounder" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (678, 3937, 29, 10, NULL); -- "The Great Northfield, Minnesota Raid" in list "Top Ten Movies of 1972" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (679, 385, 30, 1, NULL); -- "Cries and Whispers" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (680, 926, 30, 2, NULL); -- "Last Tango in Paris" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (681, 2033, 30, 3, NULL); -- "The Emigrants and The New Land" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (682, 3938, 30, 4, NULL); -- "Blume in Love" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (683, 3939, 30, 5, NULL); -- "The Iceman Cometh" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (684, 2034, 30, 6, NULL); -- "The Exorcist" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (685, 3940, 30, 7, NULL); -- "The Day of the Jackal" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (686, 82, 30, 8, NULL); -- "American Graffiti" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (687, 1383, 30, 9, NULL); -- "Fellini's Roma" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (688, 3941, 30, 10, NULL); -- "The Friends of Eddie Coyle" in list "Top Ten Movies of 1973" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (689, 1417, 31, 1, NULL); -- "Scenes from a Marriage" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (690, 323, 31, 2, NULL); -- "Chinatown" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (691, 3942, 31, 3, NULL); -- "The Mother and the Whore" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (692, 76, 31, 4, NULL); -- "Amarcord" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (693, 918, 31, 5, NULL); -- "The Last Detail" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (694, 3943, 31, 6, NULL); -- "Mirage" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (695, 412, 31, 7, NULL); -- "Day for Night" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (696, 1049, 31, 8, NULL); -- "Mean Streets" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (697, 3802, 31, 9, NULL); -- "My Uncle Antoine" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (698, 370, 31, 10, NULL); -- "The Conversation" in list "Top Ten Movies of 1974" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (699, 1159, 32, 1, NULL); -- "Nashville" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (700, 3944, 32, 2, NULL); -- "Night Moves" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (701, 56, 32, 3, NULL); -- "Alice Doesn't Live Here Anymore" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (702, 2425, 32, 4, NULL); -- "Farewell, My Lovely" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (703, 3945, 32, 5, NULL); -- "The Phantom of Liberty" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (704, 3946, 32, 6, NULL); -- "A Brief Vacation" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (705, 2877, 32, 7, NULL); -- "And Now My Love" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (706, 1792, 32, 8, NULL); -- "A Woman Under the Influence" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (707, 3947, 32, 9, NULL); -- "In Celebration" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (708, 461, 32, 10, NULL); -- "Dog Day Afternoon" in list "Top Ten Movies of 1975" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (709, 1502, 33, 1, NULL); -- "Small Change" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (710, 1602, 33, 2, NULL); -- "Taxi Driver" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (711, 997, 33, 3, NULL); -- "The Magic Flute" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (712, 3948, 33, 4, NULL); -- "The Clockmaker" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (713, 1166, 33, 5, NULL); -- "Network" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (714, 1589, 33, 6, NULL); -- "Swept Away... by an unusual destiny in the blue sea of August" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (715, 1380, 33, 7, NULL); -- "Rocky" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (716, 71, 33, 8, NULL); -- "All the President's Men" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (717, 3949, 33, 9, NULL); -- "Silent Movie" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (718, 3950, 33, 10, NULL); -- "The Shootist" in list "Top Ten Movies of 1976" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (719, 1, 34, 1, NULL); -- "3 Women" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (720, 3951, 34, 2, NULL); -- "Providence" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (721, 2848, 34, 3, NULL); -- "The Late Show" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (722, 3952, 34, 4, NULL); -- "A Woman's Decision" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (723, 3953, 34, 5, NULL); -- "Jail Bait" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (724, 348, 34, 6, NULL); -- "Close Encounters of the Third Kind" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (725, 46, 34, 7, NULL); -- "Aguirre, Wrath of God" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (726, 102, 34, 8, NULL); -- "Annie Hall" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (727, 3954, 34, 9, NULL); -- "Sorcerer" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (728, 1548, 34, 10, NULL); -- "Star Wars" in list "Top Ten Movies of 1977" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (729, 2036, 35, 1, NULL); -- "An Unmarried Woman" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (730, 413, 35, 2, NULL); -- "Days of Heaven" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (731, 3829, 35, 3, NULL); -- "Heart of Glass" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (732, 1568, 35, 4, NULL); -- "Stroszek" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (733, 131, 35, 5, NULL); -- "Autumn Sonata" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (734, 825, 35, 6, NULL); -- "Interiors" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (735, 3955, 35, 7, NULL); -- "Halloween" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (736, 3956, 35, 8, NULL); -- "Animal House" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (737, 3957, 35, 9, NULL); -- "Kings of the Road" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (738, 3853, 35, 10, NULL); -- "Superman" in list "Top Ten Movies of 1978" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (739, 109, 36, 1, NULL); -- "Apocalypse Now" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (740, 253, 36, 2, NULL); -- "Breaking Away" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (741, 438, 36, 3, NULL); -- "The Deer Hunter" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (742, 3800, 36, 4, NULL); -- "The Marriage of Maria Braun" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (743, 3958, 36, 5, NULL); -- "Hair" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (744, 3959, 36, 6, NULL); -- "Saint Jack" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (745, 904, 36, 7, NULL); -- "Kramer vs. Kramer" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (746, 322, 36, 8, NULL); -- "The China Syndrome" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (747, 3840, 36, 9, NULL); -- "Nosferatu the Vampyre" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (748, 3961, 36, 10, NULL); -- "10" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (749, 2203, 37, 1, NULL); -- "The Black Stallion" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (750, 1329, 37, 2, NULL); -- "Raging Bull" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (751, 2970, 37, 3, NULL); -- "Kagemusha" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (752, 179, 37, 4, NULL); -- "Being There" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (753, 1215, 37, 5, NULL); -- "Ordinary People" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (754, 2205, 37, 6, NULL); -- "The Great Santini" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (755, 1549, 37, 7, NULL); -- "The Empire Strikes Back" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (756, 351, 37, 8, NULL); -- "Coal Miner's Daughter" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (757, 3960, 36, 10, NULL); -- "10" in list "Top Ten Movies of 1979" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (758, 3961, 37, 9, NULL); -- "American Gigolo" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (759, 186, 37, 10, NULL); -- "Best Boy" in list "Top Ten Movies of 1980" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (760, 1137, 38, 1, NULL); -- "My Dinner With Andre" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (761, 313, 38, 2, NULL); -- "Chariots of Fire" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (762, 620, 38, 3, NULL); -- "Gates of Heaven" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (763, 1330, 38, 4, NULL); -- "Raiders of the Lost Ark" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (764, 3962, 38, 5, NULL); -- "Heartland" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (765, 123, 38, 6, NULL); -- "Atlantic City" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (766, 3963, 38, 7, NULL); -- "Thief" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (767, 231, 38, 8, NULL); -- "Body Heat" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (768, 1615, 38, 9, NULL); -- "Tess" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (769, 1351, 38, 10, NULL); -- "Reds" in list "Top Ten Movies of 1981" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (770, 1520, 39, 1, NULL); -- "Sophie's Choice" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (771, 3791, 39, 2, NULL); -- "Diva" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (772, 495, 39, 3, NULL); -- "E.T. the Extra-Terrestrial" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (773, 575, 39, 4, NULL); -- "Fitzcarraldo" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (774, 3964, 39, 4, NULL); -- "Burden of Dreams" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (775, 3965, 39, 5, NULL); -- "Personal Best" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (776, 2524, 39, 6, NULL); -- "Das Boot" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (777, 2978, 39, 7, NULL); -- "Mephisto" in list "Top Ten Movies of 1982" by Roger Ebert

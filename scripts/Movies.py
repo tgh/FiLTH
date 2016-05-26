@@ -214,6 +214,39 @@ class Movies(object):
     #--------------------------------------------------------------------------
     #PUBLIC
     #
+    def getMovieByTitle(self, title):
+        ''' Gets a movie object using the given title.
+
+            title (string) : a movie title
+
+            Returns: A movie object matching the given title, or None if not found
+        '''
+        moviesFound = []
+        for movie in self._movies:
+            if movie['title'].lower() == title.lower():
+                moviesFound.append(movie)
+        if len(moviesFound) == 0:
+            self._log('getMovieByTitle', 'movie not found: "' + title + '"')
+            return None
+        if len(moviesFound) == 1:
+            return moviesFound[0]
+        print '! Multiple movies found for "' + title + '"'
+        midToMovieMap = {}
+        for movie in moviesFound:
+            print '\t' + str(movie['mid']) + ': "' + movie['title'] + '" (' + str(movie['year']) + ')'
+            midToMovieMap[str(movie['mid'])] = movie
+        while True:
+            response = raw_input('Enter the id of the correct movie: ')
+            if response not in midToMovieMap.keys():
+                print 'That is not one of the ids listed. Try again.'
+                continue
+            break
+        return midToMovieMap[response]
+
+
+    #--------------------------------------------------------------------------
+    #PUBLIC
+    #
     def getMovieByTitleAndYear(self, title, year):
         ''' Gets a movie object using the given title and year.
 
@@ -225,12 +258,10 @@ class Movies(object):
         moviesFound = []
         for movie in self._movies:
             if movie['title'].lower() == title.lower():
-                #+/- 2 year margin of error
+                #+/- 1 year margin of error
                 if (movie['year'] == int(year) or
                     movie['year'] == (int(year)-1) or
-                    movie['year'] == (int(year)+1) or
-                    movie['year'] == (int(year)-2) or
-                    movie['year'] == (int(year)+2)):
+                    movie['year'] == (int(year)+1)):
                     moviesFound.append(movie)
         if len(moviesFound) == 0:
             self._log('getMovieByTitleAndYear', 'movie not found: "' + title + '" (' + str(year) + ')')
