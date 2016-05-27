@@ -804,3 +804,254 @@ INSERT INTO filth.list_contains VALUES (803, 545, 42, 3, NULL); -- "The Falcon a
 INSERT INTO filth.list_contains VALUES (804, 1308, 42, 4, NULL); -- "Prizzi's Honor" in list "Top Ten Movies of 1985" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (805, 1334, 42, 5, NULL); -- "Ran" in list "Top Ten Movies of 1985" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (806, 1788, 42, 6, NULL); -- "Witness" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (807, 3973, 42, 7, NULL); -- "Mad Max Beyond Thunderdome" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (808, 3974, 42, 8, NULL); -- "Lost in America" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (809, 1567, 42, 9, NULL); -- "Streetwise" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (810, 220, 42, 10, NULL); -- "Blood Simple" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (811, 1279, 43, 1, NULL); -- "Platoon" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (812, 1392, 43, 2, NULL); -- "Round Midnight" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (813, 705, 43, 3, NULL); -- "Hannah and Her Sisters" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (814, 1476, 43, 4, NULL); -- "Sid & Nancy" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (815, 990, 43, 5, NULL); -- "Lucas" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (816, 1711, 43, 6, NULL); -- "Vagabond" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (817, 1673, 43, 7, NULL); -- "Trouble in Mind" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (818, 476, 43, 8, NULL); -- "Down and Out in Beverly Hills" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (819, 1253, 43, 9, NULL); -- "Peggy Sue Got Married" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (820, 3975, 43, 10, NULL); -- "Hard Choices" in list "Top Ten Movies of 1986" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (821, 763, 44, 1, NULL); -- "House of Games" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (822, 197, 44, 2, NULL); -- "The Big Easy" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (823, 159, 44, 3, NULL); -- "Barfly" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (824, 919, 44, 4, NULL); -- "The Last Emperor" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (825, 1106, 44, 5, NULL); -- "Moonstruck" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (826, 1296, 44, 6, NULL); -- "Prick Up Your Ears" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (827, 1328, 44, 7, NULL); -- "Radio Days" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (828, 264, 44, 8, NULL); -- "Broadcast News" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (829, 946, 44, 9, NULL); -- "Lethal Weapon" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (830, 767, 44, 10, NULL); -- "Housekeeping" in list "Top Ten Movies of 1987" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (831, 1088, 45, 1, NULL); -- "Mississippi Burning" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (832, 32, 45, 2, NULL); -- "The Accidental Tourist" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (833, 1693, 45, 3, NULL); -- "The Unbearable Lightness of Being" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (834, 1475, 45, 4, NULL); -- "Shy People" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (835, 1406, 45, 5, NULL); -- "Salaam Bombay!" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (836, 573, 45, 6, NULL); -- "A Fish Called Wanda" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (837, 1783, 45, 7, NULL); -- "Wings of Desire" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (838, 1771, 45, 8, NULL); -- "Who Framed Roger Rabbit" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (839, 421, 45, 9, NULL); -- "Dear America: Letters Home From Vietnam" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (840, 1399, 45, 10, NULL); -- "Running on Empty" in list "Top Ten Movies of 1988" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (841, 458, 46, 1, NULL); -- "Do the Right Thing" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (842, 489, 46, 2, NULL); -- "Drugstore Cowboy" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (843, 1142, 46, 3, NULL); -- "My Left Foot" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (844, 237, 46, 4, NULL); -- "Born on the Fourth of July" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (845, 1381, 46, 5, NULL); -- "Roger & Me" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (846, 1074, 46, 6, NULL); -- "The Mighty Quinn" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (847, 564, 46, 7, NULL); -- "Field of Dreams" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (848, 386, 46, 8, NULL); -- "Crimes and Misdemeanors" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (849, 488, 46, 9, NULL); -- "Driving Miss Daisy" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (850, 1411, 46, 10, NULL); -- "Say Anything" in list "Top Ten Movies of 1989" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (851, 1329, 47, 1, NULL); -- "Raging Bull" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (852, 1368, 47, 2, NULL); -- "The Right Stuff" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (853, 495, 47, 3, NULL); -- "E.T. the Extra-Terrestrial" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (854, 458, 47, 4, NULL); -- "Do the Right Thing" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (855, 1137, 47, 5, NULL); -- "My Dinner With Andre" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (856, 1330, 47, 6, NULL); -- "Raiders of the Lost Ark" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (857, 1334, 47, 7, NULL); -- "Ran" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (858, 1088, 47, 8, NULL); -- "Missippi Burning" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (859, 1279, 47, 9, NULL); -- "Platoon" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (860, 763, 47, 10, NULL); -- "House of Games" in list "Top Ten Movies of the 1980s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (861, 666, 48, 1, NULL); -- "Goodfellas" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (862, 1097, 48, 2, NULL); -- "Monsieur Hire" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (863, 400, 48, 3, NULL); -- "Dances With Wolves" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (864, 691, 48, 4, NULL); -- "The Grifters" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (865, 1366, 48, 5, NULL); -- "Reversal of Fortune" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (866, 1409, 48, 6, NULL); -- "Santa Sangre" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (867, 3976, 48, 7, NULL); -- "Last Exit to Brooklyn" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (868, 135, 48, 8, NULL); -- "Awakenings" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (869, 372, 48, 9, NULL); -- "The Cook, the Thief, His Wife and Her Lover" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (870, 3977, 48, 10, NULL); -- "Mountains of the Moon" in list "Top Ten Movies of 1990" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (871, 862, 49, 1, NULL); -- "JFK" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (872, 247, 49, 2, NULL); -- "Boyz N the Hood" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (873, 171, 49, 3, NULL); -- "Beauty and the Beast" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (874, 674, 49, 4, NULL); -- "Grand Canyon" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (875, 1140, 49, 5, NULL); -- "My Father's Glory" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (876, 1146, 49, 5, NULL); -- "My Mother's Castle" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (877, 1793, 49, 6, NULL); -- "A Woman's Tale" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (878, 953, 49, 7, NULL); -- "Life Is Sweet" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (879, 1006, 49, 8, NULL); -- "The Man in the Moon" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (880, 1618, 49, 9, NULL); -- "Thelma & Louise" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (881, 3978, 49, 10, NULL); -- "The Rapture" in list "Top Ten Movies of 1991" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (882, 1003, 50, 1, NULL); -- "Malcolm X" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (883, 1209, 50, 2, NULL); -- "One False Move" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (884, 769, 50, 3, NULL); -- "Howards End" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (885, 582, 50, 4, NULL); -- "Flirting" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (886, 395, 50, 5, NULL); -- "The Crying Game" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (887, 398, 50, 6, NULL); -- "Damage" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (888, 3827, 50, 7, NULL); -- "The Hairdresser's Husband" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (889, 1281, 50, 8, NULL); -- "The Player" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (890, 1697, 50, 9, NULL); -- "Unforgiven" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (891, 148, 50, 10, NULL); -- "Bad Lieutenant" in list "Top Ten Movies of 1992" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (892, 1419, 51, 1, NULL); -- "Schindler's List" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (893, 45, 51, 2, NULL); -- "The Age of Innocence" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (894, 1264, 51, 3, NULL); -- "The Piano" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (895, 607, 51, 4, NULL); -- "The Fugitive" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (896, 866, 51, 5, NULL); -- "The Joy Luck Club" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (897, 877, 51, 6, NULL); -- "Kalifornia" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (898, 3979, 51, 7, NULL); -- "Like Water for Chocolate" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (899, 1057, 51, 8, NULL); -- "Menace II Society" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (900, 1758, 51, 9, NULL); -- "What's Love Got to Do With It" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (901, 1396, 51, 10, NULL); -- "Ruby in Paradise" in list "Top Ten Movies of 1993" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (902, 756, 52, 1, NULL); -- "Hoop Dreams" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (903, 3772, 52, 2, NULL); -- "Kieslowski's Three Colors Trilogy" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (904, 1315, 52, 3, NULL); -- "Pulp Fiction" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (905, 587, 52, 4, NULL); -- "Forrest Gump" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (906, 3980, 52, 5, NULL); -- "The Last Seduction" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (907, 600, 52, 6, NULL); -- "Fresh" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (908, 227, 52, 7, NULL); -- "The Blue Kite" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (909, 1162, 52, 8, NULL); -- "Natural Born Killers" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (910, 3981, 52, 9, NULL); -- "The New Age" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (911, 1323, 52, 10, NULL); -- "Quiz Show" in list "Top Ten Movies of 1994" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (912, 941, 53, 1, NULL); -- "Leaving Las Vegas" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (913, 393, 53, 2, NULL); -- "Crumb" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (914, 418, 53, 3, NULL); -- "Dead Man Walking" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (915, 1184, 53, 4, NULL); -- "Nixon" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (916, 293, 53, 5, NULL); -- "Casino" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (917, 112, 53, 6, NULL); -- "Apollo 13" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (918, 535, 53, 7, NULL); -- "Exotica" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (919, 1139, 53, 8, NULL); -- "My Family" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (920, 3982, 53, 9, NULL); -- "Carrington" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (921, 3983, 53, 10, NULL); -- "A Walk in the Clouds" in list "Top Ten Movies of 1995" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (922, 553, 54, 1, NULL); -- "Fargo" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (923, 254, 54, 2, NULL); -- "Breaking the Waves" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (924, 1437, 54, 3, NULL); -- "Secrets & Lies" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (925, 973, 54, 4, NULL); -- "Lone Star" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (926, 1748, 54, 5, NULL); -- "Welcome to the Dollhouse" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (927, 240, 54, 6, NULL); -- "Bound" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (928, 2871, 54, 7, NULL); -- "Hamlet" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (929, 526, 54, 8, NULL); -- "Everyone Says I Love You" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (930, 3984, 54, 9, NULL); -- "Heidi Fleiss: Hollywood Madam" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (931, 201, 54, 10, NULL); -- "Big Night" in list "Top Ten Movies of 1996" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (932, 530, 55, 1, NULL); -- "Eve's Bayou" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (933, 1586, 55, 2, NULL); -- "The Sweet Hereafter" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (934, 235, 55, 3, NULL); -- "Boogie Nights" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (935, 3985, 55, 4, NULL); -- "Maborosi" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (936, 848, 55, 5, NULL); -- "Jackie Brown" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (937, 555, 55, 6, NULL); -- "Fast, Cheap & Out of Control" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (938, 906, 55, 7, NULL); -- "L.A. Confidential" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (939, 805, 55, 8, NULL); -- "In the Company of Men" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (940, 1639, 55, 9, NULL); -- "Titanic" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (941, 1725, 55, 10, NULL); -- "Wag the Dog" in list "Top Ten Movies of 1997" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (942, 402, 56, 1, NULL); -- "Dark City" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (943, 1283, 56, 2, NULL); -- "Pleasantville" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (944, 1413, 56, 3, NULL); -- "Saving Private Ryan" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (945, 1486, 56, 4, NULL); -- "A Simple Plan" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (946, 708, 56, 5, NULL); -- "Happiness" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (947, 508, 56, 6, NULL); -- "Elizabeth" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (948, 139, 56, 7, NULL); -- "Babe: Pig in the City" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (949, 1455, 56, 8, NULL); -- "Shakespeare in Love" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (950, 952, 56, 9, NULL); -- "Life Is Beautiful" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (951, 1299, 56, 10, NULL); -- "Primary Colors" in list "Top Ten Movies of 1998" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (952, 178, 57, 1, NULL); -- "Being John Malkovich" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (953, 999, 57, 2, NULL); -- "Magnolia" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (954, 1629, 57, 3, NULL); -- "Three Kings" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (955, 246, 57, 4, NULL); -- "Boy's Don't Cry" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (956, 262, 57, 5, NULL); -- "Bringing Out the Dead" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (957, 1307, 57, 6, NULL); -- "Princess Mononoke" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (958, 1741, 57, 7, NULL); -- "The War Zone" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (959, 78, 57, 8, NULL); -- "American Beauty" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (960, 1645, 57, 9, NULL); -- "Topsy-Turvy" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (961, 823, 57, 10, NULL); -- "The Insider" in list "Top Ten Movies of 1999" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (962, 756, 58, 1, NULL); -- "Hoop Dreams" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (963, 1315, 58, 2, NULL); -- "Pulp Fiction" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (964, 666, 58, 3, NULL); -- "GoodFellas" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (965, 553, 58, 4, NULL); -- "Fargo" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (966, 3772, 58, 5, NULL); -- "Kieslowski's Three Colors Trilogy" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (967, 1419, 58, 6, NULL); -- "Schindler's List" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (968, 254, 58, 7, NULL); -- "Breaking the Waves" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (969, 941, 58, 8, NULL); -- "Leaving Las Vegas" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (970, 1003, 58, 9, NULL); -- "Malcolm X" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (971, 862, 58, 10, NULL); -- "JFK" in list "Top Ten Movies of the 1990s" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (972, 73, 59, 1, NULL); -- "Almost Famous" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (973, 1795, 59, 2, NULL); -- "Wonder Boys" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (974, 1815, 59, 3, NULL); -- "You Can Count on Me" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (975, 1659, 59, 4, NULL); -- "Traffic" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (976, 624, 59, 5, NULL); -- "George Washington" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (977, 306, 59, 6, NULL); -- "The Cell" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (978, 742, 59, 7, NULL); -- "High Fidelity" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (979, 1286, 59, 8, NULL); -- "Pollock" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (980, 389, 59, 9, NULL); -- "Crouching Tiger, Hidden Dragon" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (981, 1360, 59, 10, NULL); -- "Requiem for a Dream" in list "Top Ten Movies of 2000" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (982, 1100, 60, 1, NULL); -- "Monster's Ball" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (983, 211, 60, 2, NULL); -- "Black Hawk Down" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (984, 804, 60, 3, NULL); -- "In The Bedroom" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (985, 631, 60, 4, NULL); -- "Ghost World" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (986, 1123, 60, 5, NULL); -- "Mulholland Dr." in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (987, 1728, 60, 6, NULL); -- "Waking Life" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (988, 820, 60, 7, NULL); -- "Innocence" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (989, 1786, 60, 8, NULL); -- "Wit" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (990, 169, 60, 9, NULL); -- "A Beautiful Mind" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (991, 668, 60, 10, NULL); -- "Gosford Park" in list "Top Ten Movies of 2001" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (992, 1079, 61, 1, NULL); -- "Minority Report" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (993, 340, 61, 2, NULL); -- "City of God" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (994, 36, 61, 3, NULL); -- "Adaptation" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (995, 551, 61, 4, NULL); -- "Far From Heaven" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (996, 8, 61, 5, NULL); -- "13 Conversations About One Thing" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (997, 1809, 61, 6, NULL); -- "Y tu mamá también" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (998, 833, 61, 7, NULL); -- "Invincible" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (999, 1537, 61, 8, NULL); -- "Spirited Away" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1000, 68, 61, 9, NULL); -- "All or Nothing" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1001, 1320, 61, 10, NULL); -- "The Quiet American" in list "Top Ten Movies of 2002" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1002, 1099, 62, 1, NULL); -- "Monster" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1003, 982, 62, 2, NULL); -- "Lost in Translation" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1004, 88, 62, 3, NULL); -- "American Splendor" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1005, 570, 62, 4, NULL); -- "Finding Nemo" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1006, 1034, 62, 5, NULL); -- "Master and Commander: The Far Side of the World" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1007, 1154, 62, 6, NULL); -- "Mystic River" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1008, 1226, 62, 7, NULL); -- "Owning Mahowny" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1009, 1515, 62, 8, NULL); -- "The Son" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1010, 1751, 62, 9, NULL); -- "Whale Rider" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1011, 800, 62, 10, NULL); -- "In America" in list "Top Ten Movies of 2003" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1012, 1077, 63, 1, NULL); -- "Million Dollar Baby" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1013, 887, 63, 2, NULL); -- "Kill Bill, Vol. 2" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1014, 1713, 63, 3, NULL); -- "Vera Drake" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1015, 1535, 63, 4, NULL); -- "Spider-Man 2" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1016, 3803, 63, 5, NULL); -- "Moolaadé" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1017, 134, 63, 6, NULL); -- "The Aviator" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1018, 137, 63, 7, NULL); -- "Baadasssss!" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1019, 1477, 63, 8, NULL); -- "Sideways" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1020, 760, 63, 9, NULL); -- "Hotel Rwanda" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1021, 1696, 63, 10, NULL); -- "Undertow" in list "Top Ten Movies of 2004" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1022, 383, 64, 1, NULL); -- "Crash" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1023, 1593, 64, 2, NULL); -- "Syriana" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1024, 1126, 64, 3, NULL); -- "Munich" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1025, 2500, 64, 4, NULL); -- "Junebug" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1026, 2038, 64, 5, NULL); -- "Brokeback Mountain" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1027, 3986, 64, 6, NULL); -- "Me and You and Everyone We Know" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1028, 2882, 64, 7, NULL); -- "Nine Lives" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1029, 894, 64, 8, NULL); -- "King Kong" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1030, 3987, 64, 9, NULL); -- "Yes" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1031, 1078, 64, 10, NULL); -- "Millions" in list "Top Ten Movies of 2005" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1032, 3988, 65, , NULL); -- "Akeelah and the Bee" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1033, 271, 65, , NULL); -- "Bubble" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1034, 3989, 65, , NULL); -- "The Death of Mr. Lazarescu" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1035, 3480, 65, , NULL); -- "49 Up" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1036, 3317, 65, , NULL); -- "An Inconvenient Truth" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1037, 3990, 65, , NULL); -- "L'Enfant" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1038, 1009, 65, , NULL); -- "Man Push Cart" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1039, 1025, 65, , NULL); -- "Marie Antoinette" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1040, 3991, 65, , NULL); -- "Perfume: The Story of a Murderer" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1041, 3757, 65, , NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1042, 1319, 65, , NULL); -- "The Queen" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1043, 3992, 65, , NULL); -- "Three Times" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1044, 3993, 65, , NULL); -- "Tristam Shandy: A Cock & Bull Story" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1045, 3075, 65, , NULL); -- "Tsotsi" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1046, 1698, 65, , NULL); -- "United 93" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1047, 2503, 65, , NULL); -- "Volver" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1048, 873, 66, 1, NULL); -- "Juno" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1049, 1185, 66, 2, NULL); -- "No Country For Old Men" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1050, 176, 66, 3, NULL); -- "Before the Devil Knows Your Dead" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1051, 125, 66, 4, NULL); -- "Atonement" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1052, 901, 66, 5, NULL); -- "The Kite Runner" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1053, 136, 66, 6, NULL); -- "Away From her" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1054, 3994, 66, 7, NULL); -- "Across the Universe" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1055, 911, 66, 8, NULL); -- "La Vie En Rose" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1056, 679, 66, 9, NULL); -- "The Great Debaters" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1057, 829, 66, 10, NULL); -- "Into the Wild" in list "Top Ten Movies of 2007" by Roger Ebert

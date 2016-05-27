@@ -12,7 +12,7 @@ MPAA_SQL_FILE = FILTH_PATH + '/sql/mpaa.sql'
 COUNTRY_SQL_FILE = FILTH_PATH + '/sql/country.sql'
                                                        #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid
 MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11});";
-COUNRY_INSERT_FORMAT = "INSERT INTO filth.country VALUES ({0}, '{1}');"
+COUNTRY_INSERT_FORMAT = "INSERT INTO filth.country VALUES ({0}, '{1}');"
 
 
 class Movies(object):
@@ -346,7 +346,7 @@ class Movies(object):
             response = raw_input('What is the MPAA rating for this new movie? (\'q\' to quit) ')
             self._checkForQuit(response, 'promptUserForMpaa')
             if response not in self._validMpaaRatings:
-                print '**"' + response + '" is not a valid MPAA rating. Should be one of: ' + self._validMpaaRatings
+                print '**"' + response + '" is not a valid MPAA rating. Should be one of: ' + str(self._validMpaaRatings)
                 continue
             return response
 
