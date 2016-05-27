@@ -775,3 +775,32 @@ INSERT INTO filth.list_contains VALUES (774, 3964, 39, 4, NULL); -- "Burden of D
 INSERT INTO filth.list_contains VALUES (775, 3965, 39, 5, NULL); -- "Personal Best" in list "Top Ten Movies of 1982" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (776, 2524, 39, 6, NULL); -- "Das Boot" in list "Top Ten Movies of 1982" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (777, 2978, 39, 7, NULL); -- "Mephisto" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (778, 3966, 39, 8, NULL); -- "Moonlighting" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (779, 1714, 39, 9, NULL); -- "The Verdict" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (780, 3967, 39, 10, NULL); -- "The Weavers: Wasn't That a Time" in list "Top Ten Movies of 1982" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (781, 1368, 40, 1, NULL); -- "The Right Stuff" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (782, 1613, 40, 2, NULL); -- "Terms of Endearment" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (783, 2442, 40, 3, NULL); -- "The Year of Living Dangerously" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (784, 547, 40, 4, NULL); -- "Fanny & Alexander" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (785, 615, 40, 5, NULL); -- "Gandhi" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (786, 2862, 40, 6, NULL); -- "El Norte" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (787, 2441, 40, 7, NULL); -- "Testament" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (788, 1482, 40, 8, NULL); -- "Silkwood" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (789, 3968, 40, 9, NULL); -- "Say Amen, Somebody" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (790, 3969, 40, 10, NULL); -- "Risky Business" in list "Top Ten Movies of 1983" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (791, 75, 41, 1, NULL); -- "Amadeus" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (792, 1239, 41, 2, NULL); -- "Paris, Texas" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (793, 3970, 41, 3, NULL); -- "Love Streams" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (794, 1628, 41, 4, NULL); -- "This Is Spinal Tap!" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (795, 377, 41, 5, NULL); -- "The Cotton Club" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (796, 1431, 41, 6, NULL); -- "Secret Honor" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (797, 890, 41, 7, NULL); -- "The Killing Fields" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (798, 1563, 41, 8, NULL); -- "Stranger Than Paradise" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (799, 3971, 41, 9, NULL); -- "Choose Me" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (800, 3972, 41, 10, NULL); -- "Purple Rain" in list "Top Ten Movies of 1984" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (801, 357, 42, 1, NULL); -- "The Color Purple" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (802, 43, 42, 2, NULL); -- "After Hours" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (803, 545, 42, 3, NULL); -- "The Falcon and the Snowman" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (804, 1308, 42, 4, NULL); -- "Prizzi's Honor" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (805, 1334, 42, 5, NULL); -- "Ran" in list "Top Ten Movies of 1985" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (806, 1788, 42, 6, NULL); -- "Witness" in list "Top Ten Movies of 1985" by Roger Ebert

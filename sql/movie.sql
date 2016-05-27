@@ -3961,3 +3961,10 @@ INSERT INTO filth.movie VALUES (3962, 'Heartland', 1979, 'not seen', 'PG', 'USA'
 INSERT INTO filth.movie VALUES (3963, 'Thief', 1981, 'not seen', 'R', 'USA', NULL, 'tt0083190', NULL, 11524, NULL, NULL);
 INSERT INTO filth.movie VALUES (3964, 'Burden of Dreams', 1982, 'not seen', 'NR', 'USA', NULL, 'tt0083702', NULL, 42124, NULL, NULL);
 INSERT INTO filth.movie VALUES (3965, 'Personal Best', 1982, 'not seen', 'R', 'USA', NULL, 'tt0084489', NULL, 27609, NULL, NULL);
+INSERT INTO filth.movie VALUES (3966, 'Moonlighting', 1982, 'not seen', 'PG', 'England', NULL, 'tt0084354', NULL, 42134, NULL, NULL);
+INSERT INTO filth.movie VALUES (3967, 'The Weavers: Wasn''t That a Time', 1982, 'not seen', 'PG', 'USA', NULL, 'tt0084894', NULL, 267669, NULL, NULL);
+INSERT INTO filth.movie VALUES (3968, 'Say Amen, Somebody', 1982, 'not seen', 'G', 'USA', NULL, 'tt0086245', NULL, 123020, NULL, NULL);
+INSERT INTO filth.movie VALUES (3969, 'Risky Business', 1983, 'not seen', 'R', 'USA', NULL, 'tt0086200', NULL, 9346, NULL, NULL);
+INSERT INTO filth.movie VALUES (3970, 'Love Streams', 1984, 'not seen', 'PG-13', 'USA', NULL, 'tt0087644', NULL, 52109, NULL, NULL);
+INSERT INTO filth.movie VALUES (3971, 'Choose Me', 1984, 'not seen', 'R', 'USA', NULL, 'tt0087054', NULL, 42086, NULL, NULL);
+INSERT INTO filth.movie VALUES (3972, 'Purple Rain', 1984, 'not seen', 'R', 'USA', NULL, 'tt0087957', NULL, 13763, NULL, NULL);

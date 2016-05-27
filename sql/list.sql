@@ -37,3 +37,6 @@ INSERT INTO filth.list VALUES (36, 'Top Ten Movies of 1979', 'Roger Ebert');
 INSERT INTO filth.list VALUES (37, 'Top Ten Movies of 1980', 'Roger Ebert');
 INSERT INTO filth.list VALUES (38, 'Top Ten Movies of 1981', 'Roger Ebert');
 INSERT INTO filth.list VALUES (39, 'Top Ten Movies of 1982', 'Roger Ebert');
+INSERT INTO filth.list VALUES (40, 'Top Ten Movies of 1983', 'Roger Ebert');
+INSERT INTO filth.list VALUES (41, 'Top Ten Movies of 1984', 'Roger Ebert');
+INSERT INTO filth.list VALUES (42, 'Top Ten Movies of 1985', 'Roger Ebert');
