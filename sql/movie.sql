@@ -3990,3 +3990,5 @@ INSERT INTO filth.movie VALUES (3991, 'Perfume: The Story of a Murderer', 2006, 
 INSERT INTO filth.movie VALUES (3992, 'Three Times', 2005, 'not seen', 'NR', 'Taiwan', NULL, 'tt0459666', NULL, 11554, NULL, NULL);
 INSERT INTO filth.movie VALUES (3993, 'Tristam Shandy: A Cock & Bull Story', 2005, 'not seen', 'R', 'England', NULL, 'tt0423409', NULL, 8435, NULL, NULL);
 INSERT INTO filth.movie VALUES (3994, 'Across the Universe', 2007, 'not seen', 'PG-13', 'USA', NULL, 'tt0445922', NULL, 4688, NULL, NULL);
+INSERT INTO filth.movie VALUES (3995, 'Captain America: Civil War', 2016, '***', 'PG-13', 'USA', NULL, 'tt3498820', 1, 271110, NULL, NULL);
+INSERT INTO filth.movie VALUES (3996, 'X-Men: Apocalypse', 2016, '***', 'PG-13', 'USA', NULL, 'tt3385516', 1, 246655, NULL, NULL);

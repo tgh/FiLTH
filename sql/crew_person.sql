@@ -3284,3 +3284,11 @@ INSERT INTO filth.crew_person VALUES (3286, 'Clements', 'Ron', NULL, 'Ron Clemen
 INSERT INTO filth.crew_person VALUES (3287, 'Musker', 'John', NULL, 'John Musker', 'Director');  -- Director: John Musker
 INSERT INTO filth.crew_person VALUES (3288, 'Edwards', 'Rob', NULL, 'Rob Edwards', 'Screenwriter');  -- Screenwriter: Rob Edwards
 INSERT INTO filth.crew_person VALUES (3289, 'Rose', 'Anika', 'Noni', 'Anika Noni Rose', 'Actress');  -- Actress: Anika Noni Rose
+INSERT INTO filth.crew_person VALUES (3290, 'Boseman', 'Chadwick', NULL, 'Chadwick Boseman', 'Actor');  -- Actor: Chadwick Boseman
+INSERT INTO filth.crew_person VALUES (3291, 'VanCamp', 'Emily', NULL, 'Emily VanCamp', 'Actress');  -- Actress: Emily VanCamp
+INSERT INTO filth.crew_person VALUES (3292, 'Holland', 'Tom', NULL, 'Tom Holland', 'Actor');  -- Actor: Tom Holland
+INSERT INTO filth.crew_person VALUES (3293, 'Grillo', 'Frank', NULL, 'Frank Grillo', 'Actor');  -- Actor: Frank Grillo
+INSERT INTO filth.crew_person VALUES (3294, 'Kinberg', 'Simon', NULL, 'Simon Kinberg', 'Producer');  -- Producer: Simon Kinberg
+INSERT INTO filth.crew_person VALUES (3295, 'Turner', 'Sophie', NULL, 'Sophie Turner', 'Actress');  -- Actress: Sophie Turner
+INSERT INTO filth.crew_person VALUES (3296, 'Shipp', 'Alexandra', NULL, 'Alexandra Shipp', 'Actress');  -- Actress: Alexandra Shipp
+INSERT INTO filth.crew_person VALUES (3297, 'Munn', 'Olivia', NULL, 'Olivia Munn', 'Actress');  -- Actress: Olivia Munn
