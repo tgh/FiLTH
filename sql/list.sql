@@ -65,3 +65,7 @@ INSERT INTO filth.list VALUES (64, 'Top Ten Movies of 2005', 'Roger Ebert');
 INSERT INTO filth.list VALUES (65, 'Best Movies of 2006', 'Roger Ebert');
 INSERT INTO filth.list VALUES (66, 'Top Ten Movies of 2007', 'Roger Ebert');
 INSERT INTO filth.list VALUES (67, 'Best Movies of 2008', 'Roger Ebert');
+INSERT INTO filth.list VALUES (68, 'Best Documentaries of 2008', 'Roger Ebert');
+INSERT INTO filth.list VALUES (69, 'Best Mainstream Movies of 2009', 'Roger Ebert');
+INSERT INTO filth.list VALUES (70, 'Best Independent Films of 2009', 'Roger Ebert');
+INSERT INTO filth.list VALUES (71, 'Best Foreign Films of 2009', 'Roger Ebert');

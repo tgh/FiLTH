@@ -60,3 +60,4 @@ INSERT INTO filth.country VALUES (59, 'Peru');
 INSERT INTO filth.country VALUES (60, 'Colombia');
 INSERT INTO filth.country VALUES (61, 'Jordan');
 INSERT INTO filth.country VALUES (62, 'Romania');
+INSERT INTO filth.country VALUES (63, 'Rwanda');

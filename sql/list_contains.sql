@@ -1055,3 +1055,60 @@ INSERT INTO filth.list_contains VALUES (1054, 3994, 66, 7, NULL); -- "Across the
 INSERT INTO filth.list_contains VALUES (1055, 911, 66, 8, NULL); -- "La Vie En Rose" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1056, 679, 66, 9, NULL); -- "The Great Debaters" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1057, 829, 66, 10, NULL); -- "Into the Wild" in list "Top Ten Movies of 2007" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1058, 3575, 65, , NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1059, 3997, 67, , NULL); -- "Ballast" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1060, 3998, 67, , NULL); -- "The Band's Visit" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1061, 3999, 67, , NULL); -- "Che: Part One" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1062, 4000, 67, , NULL); -- "Che: Part Two" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1063, 325, 67, , NULL); -- "Chop Shop" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1064, 404, 67, , NULL); -- "The Dark Knight" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1065, 475, 67, , NULL); -- "Doubt" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1066, 4001, 67, , NULL); -- "The Fall" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1067, 605, 67, , NULL); -- "Frost/Nixon" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1068, 606, 67, , NULL); -- "Frozen River" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1069, 2876, 67, , NULL); -- "Happy-Go-Lucky" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1070, 837, 67, , NULL); -- "Iron Man" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1071, 2039, 67, , NULL); -- "Milk" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1072, 1325, 67, , NULL); -- "Rachel Getting Married" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1073, 2040, 67, , NULL); -- "The Reader" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1074, 2256, 67, , NULL); -- "Revolutionary Road" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1075, 4002, 67, , NULL); -- "Shotgun Stories" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1076, 1501, 67, , NULL); -- "Slumdog Millionaire" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1077, 4003, 67, , NULL); -- "Synecdoche, New York" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1078, 1724, 67, , NULL); -- "W." in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1079, 1733, 67, , NULL); -- "Wall-E" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1080, 513, 68, , NULL); -- "Encounters at the End of the World" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1081, 3426, 68, , NULL); -- "I.O.U.S.A." in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1082, 1008, 68, , NULL); -- "Man on Wire" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1083, 3572, 68, , NULL); -- "Standard Operating Procedure" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1084, 3326, 68, , NULL); -- "Trouble the Water" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1085, 4004, 69, , NULL); -- "Bad Lieutenant: Port of Call New Orleans" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1086, 384, 69, , NULL); -- "Crazy Heart" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1087, 500, 69, , NULL); -- "An Education" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1088, 776, 69, , NULL); -- "The Hurt Locker" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1089, 818, 69, , NULL); -- "Inglourious Basterds" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1090, 4005, 69, , NULL); -- "Knowing" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1091, 1293, 69, , NULL); -- "Precious" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1092, 1441, 69, , NULL); -- "A Serious Man" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1093, 1702, 69, , NULL); -- "Up in the Air" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1094, 1769, 69, , NULL); -- "The White Ribbon" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1095, 3086, 70, , NULL); -- "Departures" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1096, 4006, 70, , NULL); -- "Disgrace" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1097, 4007, 70, , NULL); -- "Everlasting Moments" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1098, 665, 70, , NULL); -- "Goodbye Solo" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1099, 4013, 70, , NULL); -- "Julia" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1100, 4008, 70, , NULL); -- "Silent Light" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1101, 4009, 70, , NULL); -- "Sin Nombre" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1102, 4010, 70, , NULL); -- "Skin" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1103, 4011, 70, , NULL); -- "Trucker" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1104, 4012, 70, , NULL); -- "You, The Living" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1105, 4014, 71, , NULL); -- "Broken Embraces" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1106, 3085, 71, , NULL); -- "The Class" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1107, 352, 71, , NULL); -- "Coco Before Chanel" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1108, 4015, 71, , NULL); -- "Gomorrah" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1109, 4016, 71, , NULL); -- "Lorna's Silence" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1110, 4017, 71, , NULL); -- "Munyurangabo" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1111, 4018, 71, , NULL); -- "O'Horton" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1112, 4019, 71, , NULL); -- "Paris" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1113, 4020, 71, , NULL); -- "Police, Adjective" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1114, 3087, 71, , NULL); -- "Revanche" in list "Best Foreign Films of 2009" by Roger Ebert
