@@ -4016,3 +4016,7 @@ INSERT INTO filth.movie VALUES (4017, 'Munyurangabo', 2007, 'not seen', 'NR', 'R
 INSERT INTO filth.movie VALUES (4018, 'O''Horton', 2007, 'not seen', 'PG-13', 'Norway', NULL, 'tt0962774', NULL, 8933, NULL, NULL);
 INSERT INTO filth.movie VALUES (4019, 'Paris', 2008, 'not seen', 'R', 'France', NULL, 'tt0869994', NULL, 8279, NULL, NULL);
 INSERT INTO filth.movie VALUES (4020, 'Police, Adjective', 2009, 'not seen', 'NR', 'Romania', NULL, 'tt1337051', NULL, 32511, NULL, NULL);
+INSERT INTO filth.movie VALUES (4021, 'Tangled', 2010, '***', 'PG', 'USA', NULL, 'tt0398286', 0, 38757, NULL, NULL);
+INSERT INTO filth.movie VALUES (4022, 'Thor', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0800369', 0, 10195, NULL, NULL);
+INSERT INTO filth.movie VALUES (4023, 'Iron Man 3', 2013, '**', 'PG-13', 'USA', NULL, 'tt1300854', 0, 68721, NULL, NULL);
+INSERT INTO filth.movie VALUES (4024, 'Thor: The Dark World', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1981115', 0, 76338, NULL, NULL);
