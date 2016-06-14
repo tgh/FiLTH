@@ -1995,7 +1995,7 @@ INSERT INTO filth.movie VALUES (1993, 'Friendly Persuasion', 1956, 'not seen', '
 INSERT INTO filth.movie VALUES (1994, 'Witness for the Prosecution', 1957, '****', 'NR', 'USA', NULL, 'tt0051201', 0, 37257, NULL, NULL);
 INSERT INTO filth.movie VALUES (1995, 'Peyton Place', 1957, 'not seen', 'NR', 'USA', NULL, 'tt0050839', NULL, 43236, NULL, NULL);
 INSERT INTO filth.movie VALUES (1996, 'The Defiant Ones', 1958, 'not seen', 'NR', 'USA', NULL, 'tt0051525', NULL, 11414, NULL, NULL);
-INSERT INTO filth.movie VALUES (1997, 'Gigi', 1958, 'not seen', 'NR', 'USA', NULL, 'tt0051658', NULL, 17281, NULL, NULL);
+INSERT INTO filth.movie VALUES (1997, 'Gigi', 1958, '**½', 'NR', 'USA', NULL, 'tt0051658', NULL, 17281, NULL, NULL);
 INSERT INTO filth.movie VALUES (1998, 'Auntie Mame', 1958, 'not seen', 'NR', 'USA', NULL, 'tt0051383', NULL, 16347, NULL, NULL);
 INSERT INTO filth.movie VALUES (1999, 'Separate Tables', 1958, 'not seen', 'NR', 'USA', NULL, 'tt0052182', NULL, 43136, NULL, NULL);
 INSERT INTO filth.movie VALUES (2000, 'Room at the Top', 1959, 'not seen', 'NR', 'England', NULL, 'tt0053226', NULL, 43103, NULL, NULL);
@@ -4020,3 +4020,6 @@ INSERT INTO filth.movie VALUES (4021, 'Tangled', 2010, '***', 'PG', 'USA', NULL,
 INSERT INTO filth.movie VALUES (4022, 'Thor', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0800369', 0, 10195, NULL, NULL);
 INSERT INTO filth.movie VALUES (4023, 'Iron Man 3', 2013, '**', 'PG-13', 'USA', NULL, 'tt1300854', 0, 68721, NULL, NULL);
 INSERT INTO filth.movie VALUES (4024, 'Thor: The Dark World', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1981115', 0, 76338, NULL, NULL);
+INSERT INTO filth.movie VALUES (4025, 'Zootopia', 2016, '***', 'PG', 'USA', NULL, 'tt2948356', 0, 269149, NULL, NULL);
+INSERT INTO filth.movie VALUES (4026, 'Hail, Caesar!', 2016, '**½', 'PG-13', 'USA', NULL, 'tt0475290', 0, 270487, NULL, NULL);
+INSERT INTO filth.movie VALUES (4027, 'Wreck-It Ralph', 2012, '**½', 'PG', 'USA', NULL, 'tt1772341', 0, 82690, NULL, NULL);

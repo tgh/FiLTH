@@ -3299,3 +3299,10 @@ INSERT INTO filth.crew_person VALUES (3301, 'Black', 'Shane', NULL, 'Shane Black
 INSERT INTO filth.crew_person VALUES (3302, 'Pearce', 'Drew', NULL, 'Drew Pearce', 'Screenwriter');  -- Screenwriter: Drew Pearce
 INSERT INTO filth.crew_person VALUES (3303, 'Hall', 'Rebecca', NULL, 'Rebecca Hall', 'Actress');  -- Actress: Rebecca Hall
 INSERT INTO filth.crew_person VALUES (3304, 'O''Dowd', 'Chris', NULL, 'Chris O''Dowd', 'Actor');  -- Actor: Chris O'Dowd
+INSERT INTO filth.crew_person VALUES (3305, 'Goodwin', 'Ginnifer', NULL, 'Ginnifer Goodwin', 'Actress');  -- Actress: Ginnifer Goodwin
+INSERT INTO filth.crew_person VALUES (3306, 'Bateman', 'Jason', NULL, 'Jason Bateman', 'Actor');  -- Actor: Jason Bateman
+INSERT INTO filth.crew_person VALUES (3307, 'Slate', 'Jenny', NULL, 'Jenny Slate', 'Actress');  -- Actress: Jenny Slate
+INSERT INTO filth.crew_person VALUES (3308, 'Tudyk', 'Alan', NULL, 'Alan Tudyk', 'Actor');  -- Actor: Alan Tudyk
+INSERT INTO filth.crew_person VALUES (3309, 'Ehrenreich', 'Alden', NULL, 'Alden Ehrenreich', 'Actor');  -- Actor: Alden Ehrenreich
+INSERT INTO filth.crew_person VALUES (3310, 'Silverman', 'Sarah', NULL, 'Sarah Silverman', 'Actress');  -- Actress: Sarah Silverman
+INSERT INTO filth.crew_person VALUES (3311, 'McBrayer', 'Jack', NULL, 'Jack McBrayer', 'Actor');  -- Actor: Jack McBrayer
