@@ -390,3 +390,4 @@ INSERT INTO filth.tag VALUES (389, 'obsession', NULL);
 INSERT INTO filth.tag VALUES (390, 'eccentric-character(s)', NULL);
 INSERT INTO filth.tag VALUES (391, 'masculine', NULL);
 INSERT INTO filth.tag VALUES (392, 'feminine', NULL);
+INSERT INTO filth.tag VALUES (393, 'whistleblower', NULL);

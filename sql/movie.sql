@@ -3736,7 +3736,7 @@ INSERT INTO filth.movie VALUES (3736, 'Her', 2013, 'not seen', 'R', 'USA', NULL,
 INSERT INTO filth.movie VALUES (3737, 'Before Midnight', 2013, 'not seen', 'R', 'USA', NULL, 'tt2209418', NULL, 132344, NULL, NULL);
 INSERT INTO filth.movie VALUES (3738, 'Wild', 2014, 'not seen', 'R', 'USA', NULL, 'tt2305051', NULL, 228970, NULL, NULL);
 INSERT INTO filth.movie VALUES (3739, 'Unbroken', 2014, 'not seen', 'PG-13', 'USA', NULL, 'tt1809398', NULL, 227306, NULL, NULL);
-INSERT INTO filth.movie VALUES (3740, 'CitizenFour', 2014, 'not seen', 'R', 'USA', NULL, 'tt4044364', NULL, 293310, NULL, NULL);
+INSERT INTO filth.movie VALUES (3740, 'CitizenFour', 2014, '****', 'R', 'USA', NULL, 'tt4044364', NULL, 293310, NULL, NULL);
 INSERT INTO filth.movie VALUES (3741, 'Finding Vivian Maier', 2014, 'not seen', 'NR', 'USA', NULL, 'tt2714900', NULL, 169607, NULL, NULL);
 INSERT INTO filth.movie VALUES (3742, 'Last Days in Vietnam', 2014, 'not seen', 'NR', 'USA', NULL, 'tt3279124', NULL, 250761, NULL, NULL);
 INSERT INTO filth.movie VALUES (3743, 'Leviathan', 2014, '**½', 'R', 'Russia', NULL, 'tt2802154', 0, 265180, NULL, NULL);

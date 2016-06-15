@@ -7376,3 +7376,4 @@ INSERT INTO filth.worked_on VALUES(7376, 4027, 3311, 'Character Voice');  -- Jac
 INSERT INTO filth.worked_on VALUES(7377, 4027, 2664, 'Character Voice');  -- Jane Lynch for Wreck-It Ralph (2012)
 INSERT INTO filth.worked_on VALUES(7378, 4027, 3308, 'Character Voice');  -- Alan Tudyk for Wreck-It Ralph (2012)
 INSERT INTO filth.worked_on VALUES(7379, 4027, 2865, 'Character Voice');  -- Mindy Kaling for Wreck-It Ralph (2012)
+INSERT INTO filth.worked_on VALUES(7380, 3740, 3312, 'Director');  -- Laura Poitras for CitizenFour (2014)
