@@ -377,8 +377,8 @@ class Movies(object):
                     if response2 == 'y':
                         self._createInsertStatementForCountry(response)
                         return response
-                    break
-                print '>> Try again. Country should be one of: ' + str(self._countries)
+                    else:
+                        print '>> Try again. Country should be one of: ' + str(self._countries)
             return response
 
 

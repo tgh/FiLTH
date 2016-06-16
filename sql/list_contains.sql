@@ -597,15 +597,15 @@ INSERT INTO filth.list_contains VALUES (596, 3498, 21, 8, NULL); -- "Captain Phi
 INSERT INTO filth.list_contains VALUES (597, 3502, 21, 9, NULL); -- "Nebraska" in list "Top Ten Movies of 2013" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (598, 3512, 21, 10, NULL); -- "Philomena" in list "Top Ten Movies of 2013" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (599, 3613, 22, 1, NULL); -- "Selma" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (600, 3620, 22, 2, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (601, 3602, 22, 3, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (602, 3544, 22, 4, NULL); -- "The Grand Budapest Hotel" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (603, 3583, 22, 5, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (604, 3622, 22, 6, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (605, 3627, 22, 7, NULL); -- "Gone Girl" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (606, 3671, 22, 8, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (607, 3601, 22, 9, NULL); -- "American Sniper" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (608, 3636, 22, 10, NULL); -- "Nightcrawler" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (599, 3740, 22, 2, NULL); -- "CitizenFour" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (600, 3620, 22, 3, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (601, 3602, 22, 4, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (602, 3544, 22, 5, NULL); -- "The Grand Budapest Hotel" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (603, 3583, 22, 6, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (604, 3622, 22, 7, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (605, 3627, 22, 8, NULL); -- "Gone Girl" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (606, 3671, 22, 9, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (607, 3601, 22, 10, NULL); -- "American Sniper" in list "Top Ten Movies of 2014" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (609, 3661, 23, 1, NULL); -- "Inside Out" in list "Top Ten Movies of 2015" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (610, 3873, 23, 2, NULL); -- "The Revenant" in list "Top Ten Movies of 2015" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (611, 3861, 23, 3, NULL); -- "Spotlight" in list "Top Ten Movies of 2015" by Tyler Hayes
@@ -1112,3 +1112,113 @@ INSERT INTO filth.list_contains VALUES (1111, 4018, 71, , NULL); -- "O'Horton" i
 INSERT INTO filth.list_contains VALUES (1112, 4019, 71, , NULL); -- "Paris" in list "Best Foreign Films of 2009" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1113, 4020, 71, , NULL); -- "Police, Adjective" in list "Best Foreign Films of 2009" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1114, 3087, 71, , NULL); -- "Revanche" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1115, 4028, 71, , NULL); -- "Seraphine" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1116, 4029, 71, , NULL); -- "Still Walking" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1117, 4030, 71, , NULL); -- "Summer Hours" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1118, 4031, 71, , NULL); -- "Tokyo Sonata" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1119, 4032, 71, , NULL); -- "Tulpan" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1120, 4033, 72, , NULL); -- "Anvil! The Story of Anvil" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1121, 4034, 72, , NULL); -- "Beaches of Agnes" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1122, 4035, 72, , NULL); -- "Collapse" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1123, 3538, 72, , NULL); -- "Food, Inc." in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1124, 4036, 72, , NULL); -- "Must Read After My Death" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1125, 4037, 72, , NULL); -- "Of Time and the City" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1126, 3918, 72, , NULL); -- "The September Issue" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1127, 1688, 72, , NULL); -- "Tyson" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1128, 4038, 72, , NULL); -- "We Live In Public" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1129, 4039, 72, , NULL); -- "What's the Matter With Kansas?" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1130, 327, 73, , NULL); -- "A Christmas Carol" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1131, 3350, 73, , NULL); -- "Coraline" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1132, 550, 73, , NULL); -- "Fantastic Mr. Fox" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1133, 4040, 73, , NULL); -- "Sita Sings the Blues" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1134, 5, 73, , NULL); -- "9" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1135, 4041, 73, , NULL); -- "Ice Age: Dawn of the Dinosaurs" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1136, 1288, 73, , NULL); -- "Ponyo" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1137, 3920, 73, , NULL); -- "The Princess and the Frog" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1138, 1701, 73, , NULL); -- "Up" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1139, 1736, 73, , NULL); -- "Waltz with Bashir" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1140, 4003, 74, 1, NULL); -- "Synecdoche, New York" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1141, 776, 74, 2, NULL); -- "The Hurt Locker" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1142, 1099, 74, 3, NULL); -- "Moster" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1143, 873, 74, 4, NULL); -- "Juno" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1144, 3986, 74, 5, NULL); -- "Me and You and Everyone We Know" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1145, 325, 74, 6, NULL); -- "Chop Shop" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1146, 1515, 74, 7, NULL); -- "The Son" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1147, 14, 74, 8, NULL); -- "25th Hour" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1148, 73, 74, 9, NULL); -- "Almost Famous" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1149, 4042, 74, 10, NULL); -- "My Winnipeg" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1150, 1511, 75, 1, NULL); -- "The Social Network" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1151, 899, 75, 2, NULL); -- "The King's Speech" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1152, 212, 75, 3, NULL); -- "Black Swan" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1153, 4043, 75, 4, NULL); -- "I Am Love" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1154, 1785, 75, 5, NULL); -- "Winter's Bone" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1155, 809, 75, 6, NULL); -- "Inception" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1156, 3707, 75, 7, NULL); -- "The Secret in Their Eyes" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1157, 4045, 75, 8, NULL); -- "The American" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1158, 884, 75, 9, NULL); -- "The Kids Are All Right" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1159, 632, 75, 10, NULL); -- "The Ghost Writer" in list "Top Ten Movies of 2010" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1160, 3400, 76, 1, NULL); -- "A Separation" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1161, 4046, 76, 2, NULL); -- "Shame" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1162, 1666, 76, 3, NULL); -- "The Tree of Life" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1163, 3338, 76, 4, NULL); -- "Hugo" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1164, 3332, 76, 5, NULL); -- "Take Shelter" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1165, 4047, 76, 6, NULL); -- "Kinyarwanda" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1166, 487, 76, 7, NULL); -- "Drive" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1167, 1068, 76, 8, NULL); -- "Midnight in Paris" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1168, 3527, 76, 9, NULL); -- "Le Havre" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1169, 3340, 76, 10, NULL); -- "The Artist" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1170, 3377, 76, 11, NULL); -- "Melancholia" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1171, 4048, 76, 12, NULL); -- "Terri" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1172, 3345, 76, 13, NULL); -- "The Descendents" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1173, 4049, 76, 14, NULL); -- "Margaret" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1174, 4050, 76, 15, NULL); -- "Martha Marcy May Marlene" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1175, 724, 76, 16, NULL); -- "Harry Potter and the Deathly Hollows Part 2" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1176, 3336, 76, 17, NULL); -- "Trust" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1177, 4051, 76, 18, NULL); -- "Life, Above All" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1178, 3386, 76, 19, NULL); -- "The Mill and the Cross" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1179, 4052, 76, 20, NULL); -- "Another Earth" in list "Top 20 Movies of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1180, 3372, 77, 1, NULL); -- "The Interrupters" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1181, 207, 77, 2, NULL); -- "Bill Cunningham New York" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1182, 3406, 77, 3, NULL); -- "Into the Abyss: A Tale of Death, A Tale of Life" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1183, 3541, 77, 4, NULL); -- "Tabloid" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1184, 4053, 77, 5, NULL); -- "Resurrect Dead: The Mystery of the Toynbee Tiles" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1185, 3359, 77, 6, NULL); -- "Cave of Forgotten Dreams" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1186, 3495, 77, 7, NULL); -- "Pina" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1187, 4054, 77, 8, NULL); -- "Garbo: The Spy" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1188, 4055, 77, 9, NULL); -- "The Last Mountain" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1189, 4056, 77, 10, NULL); -- "Louder than a Bomb" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1190, 4057, 77, 11, NULL); -- "Page One: Inside the New York Times" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1191, 3654, 77, 12, NULL); -- "One Lucky Elephant" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1192, 3542, 77, 13, NULL); -- "Buck" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1193, 4058, 77, 14, NULL); -- "Conan O'Brien Can't Stop" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1194, 4059, 77, 15, NULL); -- "Strongman" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1195, 4060, 77, 16, NULL); -- "Project Nim" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1196, 3576, 77, 17, NULL); -- "Waste Land" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1197, 4061, 77, 18, NULL); -- "Phunny Business: A Black Comedy" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1198, 3616, 77, 19, NULL); -- "Make Believe" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1199, 3470, 77, 20, NULL); -- "Being Elmo: A Puppeteer’s Journey" in list "Top 20 Documentaries of 2011" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1200, 3436, 78, 1, NULL); -- "Argo" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1201, 3437, 78, 2, NULL); -- "Life of Pi" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1202, 3420, 78, 3, NULL); -- "Lincoln" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1203, 3439, 78, 4, NULL); -- "End of Watch" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1204, 3433, 78, 5, NULL); -- "Arbitrage" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1205, 3410, 78, 6, NULL); -- "Flight" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1206, 3721, 78, 7, NULL); -- "The Sessions" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1207, 3431, 78, 8, NULL); -- "Beasts of the Southern Wild" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1208, 3532, 78, 9, NULL); -- "Oslo, August 31" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1209, 4062, 78, 10, NULL); -- "A Simple Life" in list "Top Ten Movies of 2012" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1210, 2028, 79, 1, NULL); -- "Z" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1211, 1066, 79, 2, NULL); -- "Midnight Cowboy" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1212, 2522, 79, 3, NULL); -- "Alice's Restaurant" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1213, 4063, 79, 4, NULL); -- "Simon of the Desert" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1214, 2168, 79, 5, NULL); -- "The Heart Is a Lonely Hunter" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1215, 4064, 79, 6, NULL); -- "Oh! What a Lovely War" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1216, 1773, 79, 7, NULL); -- "The Wild Bunch" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1217, 790, 79, 8, NULL); -- "if...." in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1218, 4065, 79, 9, NULL); -- "Pretty Poison" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1219, 2174, 79, 10, NULL); -- "Bob & Carol & Ted & Alice" in list "Top Ten Movies of 1969" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1220, 2836, 80, 1, NULL); -- "My Night at Maud's" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1221, 1031, 80, 2, NULL); -- "M*A*S*H" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1222, 2402, 80, 3, NULL); -- "Women in Love" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1223, 576, 80, 4, NULL); -- "Five Easy Pieces" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1224, 1242, 80, 5, NULL); -- "The Passion of Anna" in list "Top Ten Movies of 1970" by Gene Siskel
