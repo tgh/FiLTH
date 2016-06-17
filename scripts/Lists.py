@@ -111,7 +111,7 @@ class Lists(object):
     #----------------------------------------------------------------------------
 
     def _createInsertStatementForListContains(self, mid, lid, order, comment, movieTitle, listTitle, author):
-        if order is None:
+        if order is None or order == '':
             order = 'NULL'
 
         if comment is None:
@@ -158,7 +158,7 @@ class Lists(object):
     def addList(self, title, author):
         mlist = {}
         mlist['lid'] = self._nextLid
-        mlist['title'] = title
+        mlist['title'] = title.replace("'","''")
         mlist['author'] = author
         self._lists.append(mlist)
         self._createInsertStatementForList(title, author)

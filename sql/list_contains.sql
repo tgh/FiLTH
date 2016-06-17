@@ -597,15 +597,15 @@ INSERT INTO filth.list_contains VALUES (596, 3498, 21, 8, NULL); -- "Captain Phi
 INSERT INTO filth.list_contains VALUES (597, 3502, 21, 9, NULL); -- "Nebraska" in list "Top Ten Movies of 2013" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (598, 3512, 21, 10, NULL); -- "Philomena" in list "Top Ten Movies of 2013" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (599, 3613, 22, 1, NULL); -- "Selma" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (599, 3740, 22, 2, NULL); -- "CitizenFour" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (600, 3620, 22, 3, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (601, 3602, 22, 4, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (602, 3544, 22, 5, NULL); -- "The Grand Budapest Hotel" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (603, 3583, 22, 6, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (604, 3622, 22, 7, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (605, 3627, 22, 8, NULL); -- "Gone Girl" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (606, 3671, 22, 9, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (607, 3601, 22, 10, NULL); -- "American Sniper" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (600, 3740, 22, 2, NULL); -- "CitizenFour" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (601, 3620, 22, 3, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (602, 3602, 22, 4, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (603, 3544, 22, 5, NULL); -- "The Grand Budapest Hotel" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (604, 3583, 22, 6, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (605, 3622, 22, 7, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (606, 3627, 22, 8, NULL); -- "Gone Girl" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (607, 3671, 22, 9, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (608, 3601, 22, 10, NULL); -- "American Sniper" in list "Top Ten Movies of 2014" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (609, 3661, 23, 1, NULL); -- "Inside Out" in list "Top Ten Movies of 2015" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (610, 3873, 23, 2, NULL); -- "The Revenant" in list "Top Ten Movies of 2015" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (611, 3861, 23, 3, NULL); -- "Spotlight" in list "Top Ten Movies of 2015" by Tyler Hayes
@@ -626,7 +626,7 @@ INSERT INTO filth.list_contains VALUES (625, 3921, 24, 7, NULL); -- "Reflections
 INSERT INTO filth.list_contains VALUES (626, 371, 24, 8, NULL); -- "Cool Hand Luke" in list "Top Ten Movies of 1967" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (627, 3922, 24, 9, NULL); -- "Elvira Madigan" in list "Top Ten Movies of 1967" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (628, 806, 24, 10, NULL); -- "In the Heat of the Night" in list "Top Ten Movies of 1967" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (639, 165, 25, 1, NULL); -- "The Battle of Algiers" in list "Top Ten Movies of 1968" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (629, 165, 25, 1, NULL); -- "The Battle of Algiers" in list "Top Ten Movies of 1968" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (630, 25, 25, 2, NULL); -- "2001: A Space Odyssey" in list "Top Ten Movies of 1968" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (631, 3789, 25, 3, NULL); -- "Falstaff" in list "Top Ten Movies of 1968" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (632, 542, 25, 4, NULL); -- "Faces" in list "Top Ten Movies of 1968" by Roger Ebert
@@ -1029,22 +1029,22 @@ INSERT INTO filth.list_contains VALUES (1028, 2882, 64, 7, NULL); -- "Nine Lives
 INSERT INTO filth.list_contains VALUES (1029, 894, 64, 8, NULL); -- "King Kong" in list "Top Ten Movies of 2005" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1030, 3987, 64, 9, NULL); -- "Yes" in list "Top Ten Movies of 2005" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1031, 1078, 64, 10, NULL); -- "Millions" in list "Top Ten Movies of 2005" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1032, 3988, 65, , NULL); -- "Akeelah and the Bee" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1033, 271, 65, , NULL); -- "Bubble" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1034, 3989, 65, , NULL); -- "The Death of Mr. Lazarescu" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1035, 3480, 65, , NULL); -- "49 Up" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1036, 3317, 65, , NULL); -- "An Inconvenient Truth" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1037, 3990, 65, , NULL); -- "L'Enfant" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1038, 1009, 65, , NULL); -- "Man Push Cart" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1039, 1025, 65, , NULL); -- "Marie Antoinette" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1040, 3991, 65, , NULL); -- "Perfume: The Story of a Murderer" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1041, 3757, 65, , NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1042, 1319, 65, , NULL); -- "The Queen" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1043, 3992, 65, , NULL); -- "Three Times" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1044, 3993, 65, , NULL); -- "Tristam Shandy: A Cock & Bull Story" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1045, 3075, 65, , NULL); -- "Tsotsi" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1046, 1698, 65, , NULL); -- "United 93" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1047, 2503, 65, , NULL); -- "Volver" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1032, 3988, 65, NULL, NULL); -- "Akeelah and the Bee" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1033, 271, 65, NULL, NULL); -- "Bubble" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1034, 3989, 65, NULL, NULL); -- "The Death of Mr. Lazarescu" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1035, 3480, 65, NULL, NULL); -- "49 Up" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1036, 3317, 65, NULL, NULL); -- "An Inconvenient Truth" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1037, 3990, 65, NULL, NULL); -- "L'Enfant" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1038, 1009, 65, NULL, NULL); -- "Man Push Cart" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1039, 1025, 65, NULL, NULL); -- "Marie Antoinette" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1040, 3991, 65, NULL, NULL); -- "Perfume: The Story of a Murderer" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1041, 3757, 65, NULL, NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1042, 1319, 65, NULL, NULL); -- "The Queen" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1043, 3992, 65, NULL, NULL); -- "Three Times" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1044, 3993, 65, NULL, NULL); -- "Tristam Shandy: A Cock & Bull Story" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1045, 3075, 65, NULL, NULL); -- "Tsotsi" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1046, 1698, 65, NULL, NULL); -- "United 93" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1047, 2503, 65, NULL, NULL); -- "Volver" in list "Best Movies of 2006" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1048, 873, 66, 1, NULL); -- "Juno" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1049, 1185, 66, 2, NULL); -- "No Country For Old Men" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1050, 176, 66, 3, NULL); -- "Before the Devil Knows Your Dead" in list "Top Ten Movies of 2007" by Roger Ebert
@@ -1055,88 +1055,88 @@ INSERT INTO filth.list_contains VALUES (1054, 3994, 66, 7, NULL); -- "Across the
 INSERT INTO filth.list_contains VALUES (1055, 911, 66, 8, NULL); -- "La Vie En Rose" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1056, 679, 66, 9, NULL); -- "The Great Debaters" in list "Top Ten Movies of 2007" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1057, 829, 66, 10, NULL); -- "Into the Wild" in list "Top Ten Movies of 2007" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1058, 3575, 65, , NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1059, 3997, 67, , NULL); -- "Ballast" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1060, 3998, 67, , NULL); -- "The Band's Visit" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1061, 3999, 67, , NULL); -- "Che: Part One" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1062, 4000, 67, , NULL); -- "Che: Part Two" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1063, 325, 67, , NULL); -- "Chop Shop" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1064, 404, 67, , NULL); -- "The Dark Knight" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1065, 475, 67, , NULL); -- "Doubt" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1066, 4001, 67, , NULL); -- "The Fall" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1067, 605, 67, , NULL); -- "Frost/Nixon" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1068, 606, 67, , NULL); -- "Frozen River" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1069, 2876, 67, , NULL); -- "Happy-Go-Lucky" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1070, 837, 67, , NULL); -- "Iron Man" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1071, 2039, 67, , NULL); -- "Milk" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1072, 1325, 67, , NULL); -- "Rachel Getting Married" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1073, 2040, 67, , NULL); -- "The Reader" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1074, 2256, 67, , NULL); -- "Revolutionary Road" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1075, 4002, 67, , NULL); -- "Shotgun Stories" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1076, 1501, 67, , NULL); -- "Slumdog Millionaire" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1077, 4003, 67, , NULL); -- "Synecdoche, New York" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1078, 1724, 67, , NULL); -- "W." in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1079, 1733, 67, , NULL); -- "Wall-E" in list "Best Movies of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1080, 513, 68, , NULL); -- "Encounters at the End of the World" in list "Best Documentaries of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1081, 3426, 68, , NULL); -- "I.O.U.S.A." in list "Best Documentaries of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1082, 1008, 68, , NULL); -- "Man on Wire" in list "Best Documentaries of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1083, 3572, 68, , NULL); -- "Standard Operating Procedure" in list "Best Documentaries of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1084, 3326, 68, , NULL); -- "Trouble the Water" in list "Best Documentaries of 2008" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1085, 4004, 69, , NULL); -- "Bad Lieutenant: Port of Call New Orleans" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1086, 384, 69, , NULL); -- "Crazy Heart" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1087, 500, 69, , NULL); -- "An Education" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1088, 776, 69, , NULL); -- "The Hurt Locker" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1089, 818, 69, , NULL); -- "Inglourious Basterds" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1090, 4005, 69, , NULL); -- "Knowing" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1091, 1293, 69, , NULL); -- "Precious" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1092, 1441, 69, , NULL); -- "A Serious Man" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1093, 1702, 69, , NULL); -- "Up in the Air" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1094, 1769, 69, , NULL); -- "The White Ribbon" in list "Best Mainstream Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1095, 3086, 70, , NULL); -- "Departures" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1096, 4006, 70, , NULL); -- "Disgrace" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1097, 4007, 70, , NULL); -- "Everlasting Moments" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1098, 665, 70, , NULL); -- "Goodbye Solo" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1099, 4013, 70, , NULL); -- "Julia" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1100, 4008, 70, , NULL); -- "Silent Light" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1101, 4009, 70, , NULL); -- "Sin Nombre" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1102, 4010, 70, , NULL); -- "Skin" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1103, 4011, 70, , NULL); -- "Trucker" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1104, 4012, 70, , NULL); -- "You, The Living" in list "Best Independent Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1105, 4014, 71, , NULL); -- "Broken Embraces" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1106, 3085, 71, , NULL); -- "The Class" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1107, 352, 71, , NULL); -- "Coco Before Chanel" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1108, 4015, 71, , NULL); -- "Gomorrah" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1109, 4016, 71, , NULL); -- "Lorna's Silence" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1110, 4017, 71, , NULL); -- "Munyurangabo" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1111, 4018, 71, , NULL); -- "O'Horton" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1112, 4019, 71, , NULL); -- "Paris" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1113, 4020, 71, , NULL); -- "Police, Adjective" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1114, 3087, 71, , NULL); -- "Revanche" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1115, 4028, 71, , NULL); -- "Seraphine" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1116, 4029, 71, , NULL); -- "Still Walking" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1117, 4030, 71, , NULL); -- "Summer Hours" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1118, 4031, 71, , NULL); -- "Tokyo Sonata" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1119, 4032, 71, , NULL); -- "Tulpan" in list "Best Foreign Films of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1120, 4033, 72, , NULL); -- "Anvil! The Story of Anvil" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1121, 4034, 72, , NULL); -- "Beaches of Agnes" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1122, 4035, 72, , NULL); -- "Collapse" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1123, 3538, 72, , NULL); -- "Food, Inc." in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1124, 4036, 72, , NULL); -- "Must Read After My Death" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1125, 4037, 72, , NULL); -- "Of Time and the City" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1126, 3918, 72, , NULL); -- "The September Issue" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1127, 1688, 72, , NULL); -- "Tyson" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1128, 4038, 72, , NULL); -- "We Live In Public" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1129, 4039, 72, , NULL); -- "What's the Matter With Kansas?" in list "Best Documentaries of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1130, 327, 73, , NULL); -- "A Christmas Carol" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1131, 3350, 73, , NULL); -- "Coraline" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1132, 550, 73, , NULL); -- "Fantastic Mr. Fox" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1133, 4040, 73, , NULL); -- "Sita Sings the Blues" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1134, 5, 73, , NULL); -- "9" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1135, 4041, 73, , NULL); -- "Ice Age: Dawn of the Dinosaurs" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1136, 1288, 73, , NULL); -- "Ponyo" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1137, 3920, 73, , NULL); -- "The Princess and the Frog" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1138, 1701, 73, , NULL); -- "Up" in list "Best Animated Movies of 2009" by Roger Ebert
-INSERT INTO filth.list_contains VALUES (1139, 1736, 73, , NULL); -- "Waltz with Bashir" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1058, 3575, 65, NULL, NULL); -- "A Prairie Home Companion" in list "Best Movies of 2006" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1059, 3997, 67, NULL, NULL); -- "Ballast" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1060, 3998, 67, NULL, NULL); -- "The Band's Visit" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1061, 3999, 67, NULL, NULL); -- "Che: Part One" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1062, 4000, 67, NULL, NULL); -- "Che: Part Two" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1063, 325, 67, NULL, NULL); -- "Chop Shop" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1064, 404, 67, NULL, NULL); -- "The Dark Knight" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1065, 475, 67, NULL, NULL); -- "Doubt" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1066, 4001, 67, NULL, NULL); -- "The Fall" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1067, 605, 67, NULL, NULL); -- "Frost/Nixon" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1068, 606, 67, NULL, NULL); -- "Frozen River" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1069, 2876, 67, NULL, NULL); -- "Happy-Go-Lucky" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1070, 837, 67, NULL, NULL); -- "Iron Man" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1071, 2039, 67, NULL, NULL); -- "Milk" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1072, 1325, 67, NULL, NULL); -- "Rachel Getting Married" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1073, 2040, 67, NULL, NULL); -- "The Reader" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1074, 2256, 67, NULL, NULL); -- "Revolutionary Road" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1075, 4002, 67, NULL, NULL); -- "Shotgun Stories" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1076, 1501, 67, NULL, NULL); -- "Slumdog Millionaire" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1077, 4003, 67, NULL, NULL); -- "Synecdoche, New York" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1078, 1724, 67, NULL, NULL); -- "W." in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1079, 1733, 67, NULL, NULL); -- "Wall-E" in list "Best Movies of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1080, 513, 68, NULL, NULL); -- "Encounters at the End of the World" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1081, 3426, 68, NULL, NULL); -- "I.O.U.S.A." in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1082, 1008, 68, NULL, NULL); -- "Man on Wire" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1083, 3572, 68, NULL, NULL); -- "Standard Operating Procedure" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1084, 3326, 68, NULL, NULL); -- "Trouble the Water" in list "Best Documentaries of 2008" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1085, 4004, 69, NULL, NULL); -- "Bad Lieutenant: Port of Call New Orleans" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1086, 384, 69, NULL, NULL); -- "Crazy Heart" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1087, 500, 69, NULL, NULL); -- "An Education" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1088, 776, 69, NULL, NULL); -- "The Hurt Locker" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1089, 818, 69, NULL, NULL); -- "Inglourious Basterds" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1090, 4005, 69, NULL, NULL); -- "Knowing" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1091, 1293, 69, NULL, NULL); -- "Precious" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1092, 1441, 69, NULL, NULL); -- "A Serious Man" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1093, 1702, 69, NULL, NULL); -- "Up in the Air" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1094, 1769, 69, NULL, NULL); -- "The White Ribbon" in list "Best Mainstream Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1095, 3086, 70, NULL, NULL); -- "Departures" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1096, 4006, 70, NULL, NULL); -- "Disgrace" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1097, 4007, 70, NULL, NULL); -- "Everlasting Moments" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1098, 665, 70, NULL, NULL); -- "Goodbye Solo" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1099, 4013, 70, NULL, NULL); -- "Julia" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1100, 4008, 70, NULL, NULL); -- "Silent Light" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1101, 4009, 70, NULL, NULL); -- "Sin Nombre" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1102, 4010, 70, NULL, NULL); -- "Skin" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1103, 4011, 70, NULL, NULL); -- "Trucker" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1104, 4012, 70, NULL, NULL); -- "You, The Living" in list "Best Independent Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1105, 4014, 71, NULL, NULL); -- "Broken Embraces" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1106, 3085, 71, NULL, NULL); -- "The Class" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1107, 352, 71, NULL, NULL); -- "Coco Before Chanel" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1108, 4015, 71, NULL, NULL); -- "Gomorrah" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1109, 4016, 71, NULL, NULL); -- "Lorna's Silence" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1110, 4017, 71, NULL, NULL); -- "Munyurangabo" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1111, 4018, 71, NULL, NULL); -- "O'Horton" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1112, 4019, 71, NULL, NULL); -- "Paris" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1113, 4020, 71, NULL, NULL); -- "Police, Adjective" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1114, 3087, 71, NULL, NULL); -- "Revanche" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1115, 4028, 71, NULL, NULL); -- "Seraphine" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1116, 4029, 71, NULL, NULL); -- "Still Walking" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1117, 4030, 71, NULL, NULL); -- "Summer Hours" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1118, 4031, 71, NULL, NULL); -- "Tokyo Sonata" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1119, 4032, 71, NULL, NULL); -- "Tulpan" in list "Best Foreign Films of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1120, 4033, 72, NULL, NULL); -- "Anvil! The Story of Anvil" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1121, 4034, 72, NULL, NULL); -- "Beaches of Agnes" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1122, 4035, 72, NULL, NULL); -- "Collapse" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1123, 3538, 72, NULL, NULL); -- "Food, Inc." in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1124, 4036, 72, NULL, NULL); -- "Must Read After My Death" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1125, 4037, 72, NULL, NULL); -- "Of Time and the City" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1126, 3918, 72, NULL, NULL); -- "The September Issue" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1127, 1688, 72, NULL, NULL); -- "Tyson" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1128, 4038, 72, NULL, NULL); -- "We Live In Public" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1129, 4039, 72, NULL, NULL); -- "What's the Matter With Kansas?" in list "Best Documentaries of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1130, 327, 73, NULL, NULL); -- "A Christmas Carol" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1131, 3350, 73, NULL, NULL); -- "Coraline" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1132, 550, 73, NULL, NULL); -- "Fantastic Mr. Fox" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1133, 4040, 73, NULL, NULL); -- "Sita Sings the Blues" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1134, 5, 73, NULL, NULL); -- "9" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1135, 4041, 73, NULL, NULL); -- "Ice Age: Dawn of the Dinosaurs" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1136, 1288, 73, NULL, NULL); -- "Ponyo" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1137, 3920, 73, NULL, NULL); -- "The Princess and the Frog" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1138, 1701, 73, NULL, NULL); -- "Up" in list "Best Animated Movies of 2009" by Roger Ebert
+INSERT INTO filth.list_contains VALUES (1139, 1736, 73, NULL, NULL); -- "Waltz with Bashir" in list "Best Animated Movies of 2009" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1140, 4003, 74, 1, NULL); -- "Synecdoche, New York" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1141, 776, 74, 2, NULL); -- "The Hurt Locker" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
 INSERT INTO filth.list_contains VALUES (1142, 1099, 74, 3, NULL); -- "Moster" in list "Top Ten Movies of the Decade: 2000-2009" by Roger Ebert
@@ -1667,19 +1667,19 @@ INSERT INTO filth.list_contains VALUES (1666, 3410, 122, 7, NULL); -- "Flight" i
 INSERT INTO filth.list_contains VALUES (1667, 3721, 122, 8, NULL); -- "The Sessions" in list "Top Ten Movies of 2012" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (1668, 3380, 122, 9, NULL); -- "Prometheus" in list "Top Ten Movies of 2012" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (1669, 3420, 122, 10, NULL); -- "Lincoln" in list "Top Ten Movies of 2012" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1670, 3494, 123, , NULL); -- "American Hustle" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1671, 3549, 123, , NULL); -- "Out of the Furnace" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1672, 3558, 123, , NULL); -- "Mud" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1673, 3482, 123, , NULL); -- "Gravity" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1674, 4133, 123, , NULL); -- "The Spectacular Now" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1675, 3498, 123, , NULL); -- "Captain Phillips" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1676, 3502, 123, , NULL); -- "Nebraska" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1677, 3510, 123, , NULL); -- "All is Lost" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1678, 3497, 123, , NULL); -- "12 Years a Slave" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1679, 4134, 123, , NULL); -- "The Counselor" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1680, 3730, 123, , NULL); -- "Dallas Buyers Club" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1681, 4135, 123, , NULL); -- "This is the End" in list "Best Movies of 2013" by Richard Roeper
-INSERT INTO filth.list_contains VALUES (1682, 4136, 123, , NULL); -- "Spring Breakers" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1670, 3494, 123, NULL, NULL); -- "American Hustle" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1671, 3549, 123, NULL, NULL); -- "Out of the Furnace" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1672, 3558, 123, NULL, NULL); -- "Mud" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1673, 3482, 123, NULL, NULL); -- "Gravity" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1674, 4133, 123, NULL, NULL); -- "The Spectacular Now" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1675, 3498, 123, NULL, NULL); -- "Captain Phillips" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1676, 3502, 123, NULL, NULL); -- "Nebraska" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1677, 3510, 123, NULL, NULL); -- "All is Lost" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1678, 3497, 123, NULL, NULL); -- "12 Years a Slave" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1679, 4134, 123, NULL, NULL); -- "The Counselor" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1680, 3730, 123, NULL, NULL); -- "Dallas Buyers Club" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1681, 4135, 123, NULL, NULL); -- "This is the End" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1682, 4136, 123, NULL, NULL); -- "Spring Breakers" in list "Best Movies of 2013" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (1683, 3602, 124, 1, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (1684, 3583, 124, 2, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (1685, 3646, 124, 3, NULL); -- "Locke" in list "Top Ten Movies of 2014" by Richard Roeper

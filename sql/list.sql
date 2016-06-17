@@ -123,5 +123,5 @@ INSERT INTO filth.list VALUES (122, 'Top Ten Movies of 2012', 'Richard Roeper');
 INSERT INTO filth.list VALUES (123, 'Best Movies of 2013', 'Richard Roeper');
 INSERT INTO filth.list VALUES (124, 'Top Ten Movies of 2014', 'Richard Roeper');
 INSERT INTO filth.list VALUES (125, 'Top Ten Movies of 2015', 'Richard Roeper');
-INSERT INTO filth.list VALUES (126, 'AFI's 100 Years...100 Movies', 'American Film Institute');
-INSERT INTO filth.list VALUES (127, 'AFI's 100 Years...100 Movies -- 10th Anniversary Edition', 'American Film Institute');
+INSERT INTO filth.list VALUES (126, 'AFI''s 100 Years...100 Movies', 'American Film Institute');
+INSERT INTO filth.list VALUES (127, 'AFI''s 100 Years...100 Movies -- 10th Anniversary Edition', 'American Film Institute');
