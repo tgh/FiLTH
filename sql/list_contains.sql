@@ -1222,3 +1222,268 @@ INSERT INTO filth.list_contains VALUES (1221, 1031, 80, 2, NULL); -- "M*A*S*H" i
 INSERT INTO filth.list_contains VALUES (1222, 2402, 80, 3, NULL); -- "Women in Love" in list "Top Ten Movies of 1970" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1223, 576, 80, 4, NULL); -- "Five Easy Pieces" in list "Top Ten Movies of 1970" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1224, 1242, 80, 5, NULL); -- "The Passion of Anna" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1225, 2930, 80, 6, NULL); -- "Adalen '31" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1226, 4066, 80, 7, NULL); -- "Salesman" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1227, 3157, 80, 8, NULL); -- "Woodstock" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1228, 4067, 80, 9, NULL); -- "Trilogy" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1229, 3929, 80, 10, NULL); -- "The Wild Child" in list "Top Ten Movies of 1970" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1230, 3930, 81, 1, NULL); -- "Claire's Knee" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1231, 4068, 81, 2, NULL); -- "A New Leaf" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1232, 1044, 81, 3, NULL); -- "McCabe and Mrs. Miller" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1233, 962, 81, 4, NULL); -- "Little Big Man" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1234, 922, 81, 5, NULL); -- "The Last Picture Show" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1235, 1572, 81, 6, NULL); -- "Sunday, Bloody Sunday" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1236, 3933, 81, 7, NULL); -- "Bed and Board" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1237, 4069, 81, 8, NULL); -- "Dirty Harry" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1238, 4070, 81, 9, NULL); -- "Husbands" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1239, 3931, 81, 10, NULL); -- "Taking Off" in list "Top Ten Movies of 1971" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1240, 647, 82, 1, NULL); -- "The Godfather" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1241, 3160, 82, 2, NULL); -- "The Sorrow and the Pity" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1242, 936, 82, 3, NULL); -- "Le Boucher" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1243, 1828, 82, 4, NULL); -- "Cabaret" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1244, 1687, 82, 5, NULL); -- "Two English Girls" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1245, 347, 82, 6, NULL); -- "A Clockwork Orange" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1246, 3934, 82, 7, NULL); -- "Chloe in the Afternoon" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1247, 599, 82, 8, NULL); -- "Frenzy" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1248, 2032, 82, 9, NULL); -- "Sounder" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1249, 4071, 82, 10, NULL); -- "Ulzana's Raid" in list "Top Ten Movies of 1972" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1250, 2033, 83, 1, NULL); -- "The Emigrants and The New Land" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1251, 926, 83, 2, NULL); -- "Last Tango in Paris" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1252, 2034, 83, 3, NULL); -- "The Exorcist" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1253, 385, 83, 4, NULL); -- "Cries and Whispers" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1254, 3940, 83, 5, NULL); -- "The Day of the Jackal" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1255, 4072, 83, 6, NULL); -- "The Last of Sheila" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1256, 4073, 83, 7, NULL); -- "The Day of the Dolphin" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1257, 82, 83, 8, NULL); -- "American Graffiti" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1258, 4074, 83, 9, NULL); -- "Sisters" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1259, 974, 83, 10, NULL); -- "The Long Goodbye" in list "Top Ten Movies of 1973" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1260, 412, 84, 1, NULL); -- "Day for Night" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1261, 918, 84, 2, NULL); -- "The Last Detail" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1262, 76, 84, 3, NULL); -- "Amarcord" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1263, 370, 84, 4, NULL); -- "The Conversation" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1264, 1049, 84, 5, NULL); -- "Mean Streets" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1265, 1417, 84, 6, NULL); -- "Scenes from a Marriage" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1266, 2946, 84, 7, NULL); -- "Lacombe, Lucien" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1267, 2188, 84, 8, NULL); -- "Harry and Tonto" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1268, 3942, 84, 9, NULL); -- "The Mother and the Whore" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1269, 4075, 84, 10, NULL); -- "Wedding in Blood" in list "Top Ten Movies of 1974" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1270, 1159, 85, 1, NULL); -- "Nashville" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1271, 1241, 85, 2, NULL); -- "The Passenger" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1272, 984, 85, 3, NULL); -- "Love and Death" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1273, 461, 85, 4, NULL); -- "Dog Day Afternoon" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1274, 161, 85, 5, NULL); -- "Barry Lyndon" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1275, 2877, 85, 6, NULL); -- "And Now My Love" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1276, 2935, 85, 7, NULL); -- "Dodes'ka-den" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1277, 4076, 85, 8, NULL); -- "The Homecoming" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1278, 4077, 85, 9, NULL); -- "Antonia: Portrait of a Women" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1279, 4078, 85, 10, NULL); -- "Hustle" in list "Top Ten Movies of 1975" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1280, 71, 86, 1, NULL); -- "All the President's Men" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1281, 1166, 86, 2, NULL); -- "Network" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1282, 2953, 86, 3, NULL); -- "Sandakan 8" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1283, 1502, 86, 4, NULL); -- "Small Change" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1284, 4080, 86, 5, NULL); -- "Stay Hungry" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1285, 2427, 86, 6, NULL); -- "Cousin, Cousine" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1286, 1602, 86, 7, NULL); -- "Taxi Driver" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1287, 273, 86, 8, NULL); -- "Buffalo Bill and the Indians, or Sitting Bull's History Lesson" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1288, 2847, 86, 9, NULL); -- "The Seven-Per-Cent Solution" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1289, 2844, 86, 10, NULL); -- "The Man Who Would Be King" in list "Top Ten Movies of 1976" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1290, 102, 87, 1, NULL); -- "Annie Hall" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1291, 2848, 87, 2, NULL); -- "The Late Show" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1292, 4081, 87, 3, NULL); -- "In the Realm of the Senses" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1293, 348, 87, 4, NULL); -- "Close Encounters of the Third Kind" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1294, 1410, 87, 5, NULL); -- "Saturday Night Fever" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1295, 714, 87, 6, NULL); -- "Harlan County, U.S.A." in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1296, 1548, 87, 7, NULL); -- "Star Wars" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1297, 2850, 87, 8, NULL); -- "Oh, God!" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1298, 4082, 87, 9, NULL); -- "Pumping Iron" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1299, 4083, 87, 10, NULL); -- "Rolling Thunder" in list "Top Ten Movies of 1977" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1300, 4084, 88, 1, NULL); -- "Straight Time" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1301, 4085, 88, 2, NULL); -- "Pretty Baby" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1302, 413, 88, 3, NULL); -- "Days of Heaven" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1303, 4086, 88, 4, NULL); -- "Blue Collar" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1304, 131, 88, 5, NULL); -- "Autumn Sonata" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1305, 2198, 88, 6, NULL); -- "The Buddy Holly Story" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1306, 359, 88, 7, NULL); -- "Coming Home" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1307, 3955, 88, 8, NULL); -- "Halloween" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1308, 4087, 88, 9, NULL); -- "Magic" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1309, 1568, 88, 10, NULL); -- "Stroszek" in list "Top Ten Movies of 1978" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1310, 3958, 89, 1, NULL); -- "Hair" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1311, 904, 89, 2, NULL); -- "Kramer vs. Kramer" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1312, 438, 89, 3, NULL); -- "The Deer Hunter" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1313, 253, 89, 4, NULL); -- "Breaking Away" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1314, 1016, 89, 5, NULL); -- "Manhattan" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1315, 3800, 89, 6, NULL); -- "The Marriage of Maria Braun" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1316, 3840, 89, 7, NULL); -- "Nosferatu, the Vampyre" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1317, 4088, 89, 8, NULL); -- "The Onion Field" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1318, 4089, 89, 9, NULL); -- "Time After Time" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1319, 322, 89, 10, NULL); -- "The China Syndrome" in list "Top Ten Movies of 1979" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1320, 1329, 90, 1, NULL); -- "Raging Bull" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1321, 1215, 90, 2, NULL); -- "Ordinary People" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1322, 351, 90, 3, NULL); -- "Coal Miner's Daughter" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1323, 4090, 90, 4, NULL); -- "The Tree of Wooden Clogs" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1324, 2970, 90, 5, NULL); -- "Kagemusha" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1325, 179, 90, 6, NULL); -- "Being There" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1326, 2203, 90, 7, NULL); -- "The Black Stallion" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1327, 4091, 90, 8, NULL); -- "The Blues Brothers" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1328, 2205, 90, 9, NULL); -- "The Great Santini" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1329, 2204, 90, 10, NULL); -- "The Stunt Man" in list "Top Ten Movies of 1980" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1330, 2211, 91, 1, NULL); -- "Ragtime" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1331, 1137, 91, 2, NULL); -- "My Dinner With Andre" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1332, 1330, 91, 3, NULL); -- "Raiders of the Lost Ark" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1333, 2855, 91, 4, NULL); -- "Mon Oncle d'Amerique" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1334, 620, 91, 5, NULL); -- "Gates of Heaven" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1335, 4092, 91, 6, NULL); -- "Bye Bye Brazil" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1336, 2858, 91, 7, NULL); -- "Prince of the City" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1337, 2207, 91, 8, NULL); -- "Melvin and Howard" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1338, 231, 91, 9, NULL); -- "Body Heat" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1339, 2439, 91, 10, NULL); -- "The French Lieutenant's Woman" in list "Top Ten Movies of 1981" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1340, 3966, 92, 1, NULL); -- "Moonlighting" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1341, 1644, 92, 2, NULL); -- "Tootsie" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1342, 495, 92, 3, NULL); -- "E.T." in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1343, 3791, 92, 4, NULL); -- "Diva" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1344, 2978, 92, 5, NULL); -- "Mephisto" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1345, 4093, 92, 6, NULL); -- "Lola" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1346, 3965, 92, 7, NULL); -- "Personal Best" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1347, 2524, 92, 8, NULL); -- "Das Boot" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1348, 2975, 92, 9, NULL); -- "Three Brothers" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1349, 2215, 92, 10, NULL); -- "An Officer and a Gentleman" in list "Top Ten Movies of 1982" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1350, 1368, 93, 1, NULL); -- "The Right Stuff" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1351, 1613, 93, 2, NULL); -- "Terms of Endearment" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1352, 2860, 93, 3, NULL); -- "Betrayal" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1353, 547, 93, 4, NULL); -- "Fanny and Alexander" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1354, 4094, 93, 5, NULL); -- "Star 80" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1355, 2442, 93, 6, NULL); -- "The Year of Living Dangerously" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1356, 1482, 93, 7, NULL); -- "Silkwood" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1357, 4095, 93, 8, NULL); -- "Pauline at the Beach" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1358, 3969, 93, 9, NULL); -- "Risky Business" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1359, 195, 93, 10, NULL); -- "The Big Chill" in list "Top Ten Movies of 1983" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1360, 4096, 94, 1, NULL); -- "Once Upon a Time in America" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1361, 75, 94, 2, NULL); -- "Amadeus" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1362, 377, 94, 3, NULL); -- "The Cotton Club" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1363, 2986, 94, 4, NULL); -- "Entre Nous" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1364, 3972, 94, 5, NULL); -- "Purple Rain" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1365, 890, 94, 6, NULL); -- "The Killing Fields" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1366, 1431, 94, 7, NULL); -- "Secret Honor" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1367, 2037, 94, 8, NULL); -- "A Passge to India" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1368, 4097, 94, 9, NULL); -- "Micki & Maude" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1369, 2448, 94, 10, NULL); -- "The Natural" in list "Top Ten Movies of 1984" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1370, 1334, 95, 1, NULL); -- "Ran" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1371, 357, 95, 2, NULL); -- "The Color Purple" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1372, 1567, 95, 3, NULL); -- "Streetwise" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1373, 1308, 95, 4, NULL); -- "Prizzi's Honor" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1374, 2863, 95, 5, NULL); -- "The Official Story" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1375, 3801, 95, 6, NULL); -- "Mishima: A Life in Four Chapters" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1376, 545, 95, 7, NULL); -- "The Falcon and the Snowman" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1377, 142, 95, 8, NULL); -- "Back to the Future" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1378, 1317, 95, 9, NULL); -- "The Purple Rose of Cairo" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1379, 4099, 95, 10, NULL); -- "Wetherby" in list "Top Ten Movies of 1985" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1380, 3848, 96, 1, NULL); -- "Shoah" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1381, 705, 96, 2, NULL); -- "Hannah and Her Sisters" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1382, 1711, 96, 3, NULL); -- "Vagabond" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1383, 1389, 96, 4, NULL); -- "A Room With a View" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1384, 1094, 96, 5, NULL); -- "Mona Lisa" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1385, 1253, 96, 6, NULL); -- "Peggy Sue Got Married" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1386, 228, 96, 7, NULL); -- "Blue Velvet" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1387, 319, 96, 8, NULL); -- "Children of a Lesser God" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1388, 1392, 96, 9, NULL); -- "'Round Midnight" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1389, 4100, 96, 10, NULL); -- "The Fly" in list "Top Ten Movies of 1986" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1390, 919, 97, 1, NULL); -- "The Last Emperor" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1391, 608, 97, 2, NULL); -- "Full Metal Jacket" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1392, 763, 97, 3, NULL); -- "House of Games" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1393, 854, 97, 4, NULL); -- "Jean de Florette" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1394, 1020, 97, 4, NULL); -- "Manon of the Spring" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1395, 264, 97, 5, NULL); -- "Broadcast News" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1396, 1328, 97, 6, NULL); -- "Radio Days" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1397, 4101, 97, 7, NULL); -- "River's Edge" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1398, 1296, 97, 8, NULL); -- "Prick Up Your Ears" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1399, 4102, 97, 9, NULL); -- "Roxanne" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1400, 197, 97, 10, NULL); -- "The Big Easy" in list "Top Ten Movies of 1987" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1401, 927, 98, 1, NULL); -- "The Last Temptation of Christ" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1402, 1771, 98, 2, NULL); -- "Who Framed Roger Rabbit" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1403, 276, 98, 3, NULL); -- "Bull Durham" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1404, 4103, 98, 4, NULL); -- "Little Dorritt" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1405, 1069, 98, 5, NULL); -- "Midnight Run" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1406, 1621, 98, 6, NULL); -- "The Thin Blue Line" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1407, 3239, 98, 7, NULL); -- "Hotel Terminus: The Life and Times of Klaus Barbie" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1408, 1693, 98, 8, NULL); -- "The Unbearable Lightness of Being" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1409, 1797, 98, 9, NULL); -- "Working Girl" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1410, 4104, 98, 10, NULL); -- "Funny Farm" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1411, 458, 99, 1, NULL); -- "Do the Right Thing" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1412, 1381, 99, 2, NULL); -- "Roger & Me" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1413, 489, 99, 3, NULL); -- "Drugstore Cowboy" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1414, 516, 99, 4, NULL); -- "Enemies: A Love Story" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1415, 237, 99, 5, NULL); -- "Born on the Fourth of July" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1416, 963, 99, 6, NULL); -- "The Little Mermaid" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1417, 386, 99, 7, NULL); -- "Crimes and Misdemeanors" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1418, 2463, 99, 8, NULL); -- "The Fabulous Baker Boys" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1419, 1411, 99, 9, NULL); -- "Say Anything..." in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1420, 1739, 99, 10, NULL); -- "The War of the Roses" in list "Top Ten Movies of 1989" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1421, 1329, 100, 1, NULL); -- "Raging Bull" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1422, 3848, 100, 2, NULL); -- "Shoah" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1423, 1368, 100, 3, NULL); -- "The Right Stuff" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1424, 1137, 100, 4, NULL); -- "My Dinner With Andre" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1425, 1771, 100, 5, NULL); -- "Who Framed Roger Rabbit" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1426, 458, 100, 6, NULL); -- "Do the Right Thing" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1427, 4096, 100, 7, NULL); -- "Once Upon a Time in America" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1428, 3966, 100, 8, NULL); -- "Moonlighting" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1429, 1476, 100, 9, NULL); -- "Sid and Nancy" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1430, 2970, 100, 10, NULL); -- "Kagemusha" in list "Top Ten Movies of the 1980s" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1431, 666, 101, 1, NULL); -- "Goodfellas" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1432, 3783, 101, 2, NULL); -- "After Dark, My Sweet" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1433, 132, 101, 3, NULL); -- "Avalon" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1434, 4105, 101, 4, NULL); -- "The Plot Against Harry" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1435, 4106, 101, 5, NULL); -- "Too Beautiful for You" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1436, 450, 101, 6, NULL); -- "Die Hard 2" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1437, 400, 101, 7, NULL); -- "Dances With Wolves" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1438, 1366, 101, 8, NULL); -- "Reversal of Fortune" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1439, 601, 101, 9, NULL); -- "The Freshman" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1440, 649, 101, 10, NULL); -- "The Godfather Part III" in list "Top Ten Movies of 1990" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1441, 728, 102, 1, NULL); -- "Hearts of Darkness: A Filmmaker's Apocalypse" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1442, 97, 102, 2, NULL); -- "An Angel at My Table" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1443, 247, 102, 3, NULL); -- "Boyz N the Hood" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1444, 907, 102, 4, NULL); -- "La Belle Noiseuse" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1445, 171, 102, 5, NULL); -- "Beauty and the Beast" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1446, 674, 102, 6, NULL); -- "Grand Canyon" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1447, 862, 102, 7, NULL); -- "JFK" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1448, 3016, 102, 8, NULL); -- "Ju Dou" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1449, 4107, 102, 9, NULL); -- "Daddy Nostalgia" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1450, 4108, 102, 10, NULL); -- "Once Around" in list "Top Ten Movies of 1991" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1451, 1209, 103, 1, NULL); -- "One False Move" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1452, 1281, 103, 2, NULL); -- "The Player" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1453, 769, 103, 3, NULL); -- "Howards End" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1454, 395, 103, 4, NULL); -- "The Crying Game" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1455, 1003, 103, 5, NULL); -- "Malcolm X" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1456, 3827, 103, 6, NULL); -- "The Hairdresser's Husband" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1457, 398, 103, 7, NULL); -- "Damage" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1458, 1746, 103, 8, NULL); -- "Wayne's World" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1459, 4109, 103, 9, NULL); -- "Mississippi Masala" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1460, 4110, 103, 10, NULL); -- "Under Seige" in list "Top Ten Movies of 1992" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1461, 1419, 104, 1, NULL); -- "Schindler's List" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1462, 1469, 104, 2, NULL); -- "Short Cuts" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1463, 1264, 104, 3, NULL); -- "The Piano" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1464, 552, 104, 4, NULL); -- "Farewell My Concubine" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1465, 1057, 104, 5, NULL); -- "Menace II Society" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1466, 607, 104, 6, NULL); -- "The Fugitive" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1467, 45, 104, 7, NULL); -- "The Age of Innocence" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1468, 866, 104, 8, NULL); -- "The Joy Luck Club" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1469, 897, 104, 9, NULL); -- "King of the Hill" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1470, 4111, 104, 10, NULL); -- "Map of the Human Heart" in list "Top Ten Movies of 1993" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1471, 756, 105, 1, NULL); -- "Hoop Dreams" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1472, 1315, 105, 2, NULL); -- "Pulp Fiction" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1473, 502, 105, 3, NULL); -- "Ed Wood" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1474, 1626, 105, 4, NULL); -- "32 Short Films About Glenn Gould" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1475, 1323, 105, 5, NULL); -- "Quiz Show" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1476, 587, 105, 6, NULL); -- "Forrest Gump" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1477, 1710, 105, 7, NULL); -- "Vanya on 42nd Street" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1478, 1460, 105, 8, NULL); -- "The Shawshank Redemption" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1479, 1349, 105, 9, NULL); -- "Red Rock West" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1480, 970, 105, 10, NULL); -- "Little Women" in list "Top Ten Movies of 1994" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1481, 393, 106, 1, NULL); -- "Crumb" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1482, 1655, 106, 2, NULL); -- "Toy Story" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1483, 1184, 106, 3, NULL); -- "Nixon" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1484, 138, 106, 4, NULL); -- "Babe" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1485, 418, 106, 5, NULL); -- "Dead Man Walking" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1486, 941, 106, 6, NULL); -- "Leaving Las Vegas" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1487, 86, 106, 7, NULL); -- "The American President" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1488, 535, 106, 8, NULL); -- "Exotica" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1489, 112, 106, 9, NULL); -- "Apollo 13" in list "Top Ten Movies of 1995" by Gene Siskel
