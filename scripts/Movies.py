@@ -236,10 +236,12 @@ class Movies(object):
             print '\t' + str(movie['mid']) + ': "' + movie['title'] + '" (' + str(movie['year']) + ')'
             midToMovieMap[str(movie['mid'])] = movie
         while True:
-            response = raw_input('Enter the id of the correct movie: ')
-            if response not in midToMovieMap.keys():
+            response = raw_input('Enter the id of the correct movie (or \'n\' if none apply): ').lower()
+            if response not in midToMovieMap.keys() and response != 'n':
                 print 'That is not one of the ids listed. Try again.'
                 continue
+            if response == 'n':
+                return None
             break
         return midToMovieMap[response]
 
@@ -274,10 +276,12 @@ class Movies(object):
             print '\t' + str(movie['mid']) + ': "' + movie['title'] + '" (' + str(movie['year']) + ')'
             midToMovieMap[str(movie['mid'])] = movie
         while True:
-            response = raw_input('Enter the id of the correct movie: ')
-            if response not in midToMovieMap.keys():
+            response = raw_input('Enter the id of the correct movie (or \'n\' if none apply): ').lower()
+            if response not in midToMovieMap.keys() and response != 'n':
                 print 'That is not one of the ids listed. Try again.'
                 continue
+            if response == 'n':
+                return None
             break
         return midToMovieMap[response]
 

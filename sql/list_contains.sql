@@ -1487,3 +1487,416 @@ INSERT INTO filth.list_contains VALUES (1486, 941, 106, 6, NULL); -- "Leaving La
 INSERT INTO filth.list_contains VALUES (1487, 86, 106, 7, NULL); -- "The American President" in list "Top Ten Movies of 1995" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1488, 535, 106, 8, NULL); -- "Exotica" in list "Top Ten Movies of 1995" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1489, 112, 106, 9, NULL); -- "Apollo 13" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1490, 4112, 106, 10, NULL); -- "y" in list "Top Ten Movies of 1995" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1491, 553, 107, 1, NULL); -- "Fargo" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1492, 1437, 107, 2, NULL); -- "Secrets & Lies" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1493, 254, 107, 3, NULL); -- "Breaking the Waves" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1494, 520, 107, 4, NULL); -- "The English Patient" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1495, 973, 107, 5, NULL); -- "Lone Star" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1496, 976, 107, 6, NULL); -- "Looking for Richard" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1497, 1235, 107, 7, NULL); -- "Paradise Lost" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1498, 1748, 107, 8, NULL); -- "Welcome to the Dollhouse" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1499, 898, 107, 9, NULL); -- "Kingpin" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1500, 240, 107, 10, NULL); -- "Bound" in list "Top Ten Movies of 1996" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1501, 787, 108, 1, NULL); -- "The Ice Storm" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1502, 906, 108, 2, NULL); -- "L.A. Confidential" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1503, 1725, 108, 3, NULL); -- "Wag the Dog" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1504, 805, 108, 4, NULL); -- "In the Company of Men" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1505, 514, 108, 5, NULL); -- "The End of Violence" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1506, 609, 108, 6, NULL); -- "The Full Monty" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1507, 1586, 108, 7, NULL); -- "The Sweet Hereafter" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1508, 662, 108, 8, NULL); -- "Good Will Hunting" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1509, 1120, 108, 9, NULL); -- "Mrs Brown" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1510, 119, 108, 10, NULL); -- "As Good As It Gets" in list "Top Ten Movies of 1997" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1511, 139, 109, 1, NULL); -- "Babe: Pig in the City" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1512, 1622, 109, 2, NULL); -- "The Thin Red Line" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1513, 1283, 109, 3, NULL); -- "Pleasantville" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1514, 1413, 109, 4, NULL); -- "Saving Private Ryan" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1515, 1678, 109, 5, NULL); -- "The Truman Show" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1516, 104, 109, 6, NULL); -- "Antz" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1517, 1485, 109, 7, NULL); -- "Simon Birch" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1518, 1620, 109, 8, NULL); -- "There's Something About Mary" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1519, 1729, 109, 9, NULL); -- "Waking Ned Devine" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1520, 4113, 109, 10, NULL); -- "Madadayo" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1521, 4114, 109, 11, NULL); -- "Beloved" in list "Top Ten Movies of 1998" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1522, 389, 110, 1, NULL); -- "Crouching Tiger, Hidden Dragon" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1523, 1659, 110, 2, NULL); -- "Traffic" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1524, 343, 110, 3, NULL); -- "The Claim" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1525, 369, 110, 4, NULL); -- "The Contender" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1526, 1795, 110, 5, NULL); -- "Wonder Boys" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1527, 569, 110, 6, NULL); -- "Finding Forrester" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1528, 1815, 110, 7, NULL); -- "You Can Count on Me" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1529, 1576, 110, 8, NULL); -- "Sunshine" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1530, 295, 110, 9, NULL); -- "Cast Away" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1531, 73, 110, 10, NULL); -- "Almost Famous" in list "Top Ten Movies of 2000" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1532, 1054, 111, 1, NULL); -- "Memento" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1533, 1708, 111, 2, NULL); -- "Vanilla Sky" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1534, 1123, 111, 3, NULL); -- "Mulholland Drive" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1535, 169, 111, 4, NULL); -- "A Beautiful Mind" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1536, 804, 111, 5, NULL); -- "In the Bedroom" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1537, 91, 111, 6, NULL); -- "Amores Perros" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1538, 453, 111, 7, NULL); -- "Dinner Rush" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1539, 709, 111, 8, NULL); -- "Happy Accidents" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1540, 436, 111, 9, NULL); -- "The Deep End" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1541, 1456, 111, 10, NULL); -- "Shallow Hal" in list "Top Ten Movies of 2001" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1542, 616, 112, 1, NULL); -- "Gangs of New York" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1543, 14, 112, 2, NULL); -- "25th Hour" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1544, 1079, 112, 3, NULL); -- "Minority Report" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1545, 1809, 112, 4, NULL); -- "Y Tu Mama Tambien" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1546, 36, 112, 5, NULL); -- "Adaptation" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1547, 1478, 112, 6, NULL); -- "Signs" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1548, 1324, 112, 7, NULL); -- "Rabbit-Proof Fence" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1549, 29, 112, 8, NULL); -- "About Schmidt" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1550, 1211, 112, 9, NULL); -- "One Hour Photo" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1551, 28, 112, 10, NULL); -- "About a Boy" in list "Top Ten Movies of 2002" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1552, 800, 113, 1, NULL); -- "In America" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1553, 1154, 113, 2, NULL); -- "Mystic River" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1554, 982, 113, 3, NULL); -- "Lost in Translation" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1555, 11, 113, 4, NULL); -- "21 Grams" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1556, 505, 113, 5, NULL); -- "Elephant" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1557, 157, 113, 6, NULL); -- "The Barbarian Invasions" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1558, 1555, 113, 7, NULL); -- "The Station Agent" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1559, 1751, 113, 8, NULL); -- "Whale Rider" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1560, 1099, 113, 9, NULL); -- "Monster" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1561, 1425, 113, 10, NULL); -- "Seabiscuit" in list "Top Ten Movies of 2003" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1562, 760, 114, 1, NULL); -- "Hotel Rwanda" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1563, 524, 114, 2, NULL); -- "Eternal Sunshine of the Spotless Mind" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1564, 134, 114, 3, NULL); -- "The Aviator" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1565, 1477, 114, 4, NULL); -- "Sideways" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1566, 762, 114, 5, NULL); -- "House of Flying Daggers" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1567, 1077, 114, 6, NULL); -- "Million Dollar Baby" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1568, 1608, 114, 7, NULL); -- "The Terminal" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1569, 887, 114, 8, NULL); -- "Kill Bill Vol. 2" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1570, 1526, 114, 9, NULL); -- "Spanglish" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1571, 354, 114, 10, NULL); -- "Collateral" in list "Top Ten Movies of 2004" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1572, 1593, 115, 1, NULL); -- "Syriana" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1573, 1169, 115, 2, NULL); -- "The New World" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1574, 383, 115, 3, NULL); -- "Crash" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1575, 1126, 115, 4, NULL); -- "Munich" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1576, 2882, 115, 5, NULL); -- "Nine Lives" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1577, 287, 115, 6, NULL); -- "Capote" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1578, 2038, 115, 7, NULL); -- "Brokeback Mountain" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1579, 748, 115, 8, NULL); -- "A History of Violence" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1580, 1731, 115, 9, NULL); -- "Walk the Line" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1581, 4115, 115, 10, NULL); -- "The 40-Year-Old Virgin" in list "Top Ten Movies of 2005" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1582, 441, 116, 1, NULL); -- "The Departed" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1583, 1319, 116, 2, NULL); -- "The Queen" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1584, 947, 116, 3, NULL); -- "Letters from Iwo Jima" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1585, 578, 116, 3, NULL); -- "Flags of Our Fathers" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1586, 1698, 116, 4, NULL); -- "United 93" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1587, 3078, 116, 5, NULL); -- "The Lives of Others" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1588, 140, 116, 6, NULL); -- "Babel" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1589, 2502, 116, 7, NULL); -- "Notes on a Scandal" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1590, 4116, 116, 8, NULL); -- "The Good Shepherd" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1591, 964, 116, 9, NULL); -- "Little Miss Sunshine" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1592, 218, 116, 10, NULL); -- "Blood Diamond" in list "Top Ten Movies of 2006" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1593, 1063, 117, 1, NULL); -- "Michael Clayton" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1594, 1185, 117, 2, NULL); -- "No Country For Old Men" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1595, 4117, 117, 3, NULL); -- "The Lookout" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1596, 873, 117, 4, NULL); -- "Juno" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1597, 2506, 117, 5, NULL); -- "American Gangster" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1598, 656, 117, 6, NULL); -- "Gone Baby Gone" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1599, 1824, 117, 7, NULL); -- "Zodiac" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1600, 4118, 117, 8, NULL); -- "Superbad" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1601, 1208, 117, 9, NULL); -- "Once" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1602, 1238, 117, 10, NULL); -- "Paris, Je T'aime" in list "Top Ten Movies of 2007" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1603, 1501, 118, 1, NULL); -- "Slumdog Millionaire" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1604, 404, 118, 2, NULL); -- "The Dark Knight" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1605, 2255, 118, 3, NULL); -- "The Wrestler" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1606, 801, 118, 4, NULL); -- "In Bruges" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1607, 4119, 118, 5, NULL); -- "I've Loved You So Long" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1608, 673, 118, 6, NULL); -- "Gran Torino" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1609, 2039, 118, 7, NULL); -- "Milk" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1610, 2254, 118, 8, NULL); -- "The Visitor" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1611, 4120, 118, 9, NULL); -- "Forgetting Sarah Marshall" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1612, 606, 118, 10, NULL); -- "Frozen River" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1613, 475, 118, 11, NULL); -- "Doubt" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1614, 4121, 118, 12, NULL); -- "Snow Angels" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1615, 605, 118, 13, NULL); -- "Frost/Nixon" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1616, 2040, 118, 14, NULL); -- "The Reader" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1617, 4122, 118, 15, NULL); -- "Seven Pounds" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1618, 837, 118, 16, NULL); -- "Iron Man" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1619, 2507, 118, 17, NULL); -- "Vicky Cristina Barcelona" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1620, 1724, 118, 18, NULL); -- "W." in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1621, 4123, 118, 19, NULL); -- "Henry Poole Is Here" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1622, 279, 118, 20, NULL); -- "Burn After Reading" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1623, 396, 118, 21, NULL); -- "The Curious Case of Benjamin Button" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1624, 1733, 118, 22, NULL); -- "WALL-E" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1625, 4124, 118, 23, NULL); -- "The Bank Job" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1626, 1672, 118, 24, NULL); -- "Tropic Thunder" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1627, 3999, 118, 25, NULL); -- "Che: Part One" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1628, 4000, 118, 25, NULL); -- "Che: Part Two" in list "Top 25 Movies of 2008" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1629, 4125, 119, 1, NULL); -- "Brothers" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1630, 1702, 119, 2, NULL); -- "Up in the Air" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1631, 776, 119, 3, NULL); -- "The Hurt Locker" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1632, 4126, 119, 4, NULL); -- "(500) Days of Summer" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1633, 818, 119, 5, NULL); -- "Inglorious Basterds" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1634, 1701, 119, 6, NULL); -- "Up" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1635, 133, 119, 7, NULL); -- "Avatar" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1636, 4127, 119, 8, NULL); -- "Adventureland" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1637, 500, 119, 9, NULL); -- "An Education" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1638, 817, 119, 10, NULL); -- "The Informant!" in list "Top Ten Movies of 2009" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1639, 809, 120, 1, NULL); -- "Inception" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1640, 566, 120, 2, NULL); -- "The Fighter" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1641, 1511, 120, 3, NULL); -- "The Social Network" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1642, 884, 120, 4, NULL); -- "The Kids Are All Right" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1643, 1653, 120, 5, NULL); -- "The Town" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1644, 1657, 120, 6, NULL); -- "Toy Story 3" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1645, 21, 120, 7, NULL); -- "127 Hours" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1646, 1676, 120, 8, NULL); -- "True Grit" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1647, 899, 120, 9, NULL); -- "The King's Speech" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1648, 4128, 120, 10, NULL); -- "Somewhere" in list "Top Ten Movies of 2010" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1649, 487, 121, 1, NULL); -- "Drive" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1650, 3340, 121, 2, NULL); -- "The Artist" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1651, 367, 121, 3, NULL); -- "Contagion" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1652, 1666, 121, 4, NULL); -- "The Tree of Life" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1653, 3345, 121, 5, NULL); -- "The Descendants" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1654, 4129, 121, 6, NULL); -- "Young Adult" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1655, 4130, 121, 7, NULL); -- "Source Code" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1656, 1096, 121, 8, NULL); -- "Moneyball" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1657, 4131, 121, 9, NULL); -- "The Beaver" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1658, 3338, 121, 10, NULL); -- "Hugo" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1659, 4132, 121, 11, NULL); -- "50/50" in list "Top Ten Movies of 2011" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1660, 3432, 122, 1, NULL); -- "Zero Dark Thirty" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1661, 3436, 122, 2, NULL); -- "Argo" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1662, 3448, 122, 3, NULL); -- "The Grey" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1663, 3437, 122, 4, NULL); -- "Life of Pi" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1664, 3394, 122, 5, NULL); -- "The Dark Knight Rises" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1665, 3425, 122, 6, NULL); -- "Django Unchained" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1666, 3410, 122, 7, NULL); -- "Flight" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1667, 3721, 122, 8, NULL); -- "The Sessions" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1668, 3380, 122, 9, NULL); -- "Prometheus" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1669, 3420, 122, 10, NULL); -- "Lincoln" in list "Top Ten Movies of 2012" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1670, 3494, 123, , NULL); -- "American Hustle" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1671, 3549, 123, , NULL); -- "Out of the Furnace" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1672, 3558, 123, , NULL); -- "Mud" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1673, 3482, 123, , NULL); -- "Gravity" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1674, 4133, 123, , NULL); -- "The Spectacular Now" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1675, 3498, 123, , NULL); -- "Captain Phillips" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1676, 3502, 123, , NULL); -- "Nebraska" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1677, 3510, 123, , NULL); -- "All is Lost" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1678, 3497, 123, , NULL); -- "12 Years a Slave" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1679, 4134, 123, , NULL); -- "The Counselor" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1680, 3730, 123, , NULL); -- "Dallas Buyers Club" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1681, 4135, 123, , NULL); -- "This is the End" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1682, 4136, 123, , NULL); -- "Spring Breakers" in list "Best Movies of 2013" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1683, 3602, 124, 1, NULL); -- "Boyhood" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1684, 3583, 124, 2, NULL); -- "Interstellar" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1685, 3646, 124, 3, NULL); -- "Locke" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1686, 3628, 124, 4, NULL); -- "Birdman" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1687, 3880, 124, 5, NULL); -- "The Drop" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1688, 3620, 124, 6, NULL); -- "Whiplash" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1689, 3675, 124, 7, NULL); -- "A Most Wanted Man" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1690, 3622, 124, 8, NULL); -- "Foxcatcher" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1691, 3671, 124, 9, NULL); -- "A Most Violent Year" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1692, 3595, 124, 10, NULL); -- "Guardians of the Galaxy" in list "Top Ten Movies of 2014" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1693, 3892, 125, 1, NULL); -- "Room" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1694, 3661, 125, 2, NULL); -- "Inside Out" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1695, 3873, 125, 3, NULL); -- "The Revenant" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1696, 3895, 125, 4, NULL); -- "The Big Short" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1697, 3865, 125, 5, NULL); -- "Mad Max: Fury Road" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1698, 3897, 125, 6, NULL); -- "The Hateful Eight" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1699, 3689, 125, 7, NULL); -- "Sicario" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1700, 3861, 125, 8, NULL); -- "Spotlight" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1701, 3869, 125, 9, NULL); -- "Star Wars: The Force Awakens" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1702, 3905, 125, 10, NULL); -- "Straight Outta Compton" in list "Top Ten Movies of 2015" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (1703, 338, 126, 1, NULL); -- "CITIZEN KANE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1704, 292, 126, 2, NULL); -- "CASABLANCA" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1705, 647, 126, 3, NULL); -- "THE GODFATHER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1706, 657, 126, 4, NULL); -- "GONE WITH THE WIND" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1707, 935, 126, 5, NULL); -- "LAWRENCE OF ARABIA" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1708, 1789, 126, 6, NULL); -- "THE WIZARD OF OZ" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1709, 672, 126, 7, NULL); -- "THE GRADUATE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1710, 1207, 126, 8, NULL); -- "ON THE WATERFRONT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1711, 1419, 126, 9, NULL); -- "SCHINDLER'S LIST" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1712, 1489, 126, 10, NULL); -- "SINGIN' IN THE RAIN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1713, 844, 126, 11, NULL); -- "IT'S A WONDERFUL LIFE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1714, 1575, 126, 12, NULL); -- "SUNSET BLVD." in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1715, 257, 126, 13, NULL); -- "THE BRIDGE ON THE RIVER KWAI" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1716, 1517, 126, 14, NULL); -- "SOME LIKE IT HOT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1717, 1548, 126, 15, NULL); -- "STAR WARS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1718, 66, 126, 16, NULL); -- "ALL ABOUT EVE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1719, 42, 126, 17, NULL); -- "THE AFRICAN QUEEN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1720, 1312, 126, 18, NULL); -- "PSYCHO" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1721, 323, 126, 19, NULL); -- "CHINATOWN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1722, 1210, 126, 20, NULL); -- "ONE FLEW OVER THE CUCKOO'S NEST" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1723, 676, 126, 21, NULL); -- "THE GRAPES OF WRATH" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1724, 25, 126, 22, NULL); -- "2001: A SPACE ODYSSEY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1725, 1004, 126, 23, NULL); -- "THE MALTESE FALCON" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1726, 1329, 126, 24, NULL); -- "RAGING BULL" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1727, 495, 126, 25, NULL); -- "E.T. the Extra-Terrestrial" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1728, 481, 126, 26, NULL); -- "DR. STRANGELOVE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1729, 234, 126, 27, NULL); -- "BONNIE AND CLYDE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1730, 109, 126, 28, NULL); -- "APOCALYPSE NOW" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1731, 1119, 126, 29, NULL); -- "MR. SMITH GOES TO WASHINGTON" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1732, 1665, 126, 30, NULL); -- "THE TREASURE OF THE SIERRA MADRE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1733, 102, 126, 31, NULL); -- "ANNIE HALL" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1734, 648, 126, 32, NULL); -- "THE GODFATHER PART II" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1735, 744, 126, 33, NULL); -- "HIGH NOON" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1736, 1642, 126, 34, NULL); -- "TO KILL A MOCKINGBIRD" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1737, 841, 126, 35, NULL); -- "IT HAPPENED ONE NIGHT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1738, 1066, 126, 36, NULL); -- "MIDNIGHT COWBOY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1739, 188, 126, 37, NULL); -- "THE BEST YEARS OF OUR LIVES" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1740, 473, 126, 38, NULL); -- "DOUBLE INDEMNITY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1741, 459, 126, 39, NULL); -- "DOCTOR ZHIVAGO" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1742, 1190, 126, 40, NULL); -- "NORTH BY NORTHWEST" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1743, 1750, 126, 41, NULL); -- "WEST SIDE STORY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1744, 1342, 126, 42, NULL); -- "REAR WINDOW" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1745, 893, 126, 43, NULL); -- "KING KONG" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1746, 210, 126, 44, NULL); -- "THE BIRTH OF A NATION" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1747, 1566, 126, 45, NULL); -- "A STREETCAR NAMED DESIRE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1748, 347, 126, 46, NULL); -- "A CLOCKWORK ORANGE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1749, 1602, 126, 47, NULL); -- "TAXI DRIVER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1750, 851, 126, 48, NULL); -- "JAWS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1751, 1510, 126, 49, NULL); -- "SNOW WHITE AND THE SEVEN DWARFS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1752, 280, 126, 50, NULL); -- "BUTCH CASSIDY AND THE SUNDANCE KID" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1753, 1260, 126, 51, NULL); -- "THE PHILADELPHIA STORY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1754, 604, 126, 52, NULL); -- "FROM HERE TO ETERNITY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1755, 75, 126, 53, NULL); -- "AMADEUS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1756, 69, 126, 54, NULL); -- "ALL QUIET ON THE WESTERN FRONT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1757, 1522, 126, 55, NULL); -- "THE SOUND OF MUSIC" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1758, 1031, 126, 56, NULL); -- "M*A*S*H" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1759, 1623, 126, 57, NULL); -- "THE THIRD MAN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1760, 548, 126, 58, NULL); -- "FANTASIA" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1761, 1344, 126, 59, NULL); -- "REBEL WITHOUT A CAUSE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1762, 1330, 126, 60, NULL); -- "RAIDERS OF THE LOST ARK" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1763, 3763, 126, 61, NULL); -- "VERTIGO" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1764, 1644, 126, 62, NULL); -- "TOOTSIE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1765, 1539, 126, 63, NULL); -- "STAGECOACH" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1766, 348, 126, 64, NULL); -- "CLOSE ENCOUNTERS OF THE THIRD KIND" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1767, 1480, 126, 65, NULL); -- "THE SILENCE OF THE LAMBS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1768, 1166, 126, 66, NULL); -- "NETWORK" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1769, 1014, 126, 67, NULL); -- "THE MANCHURIAN CANDIDATE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1770, 84, 126, 68, NULL); -- "AN AMERICAN IN PARIS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1771, 1457, 126, 69, NULL); -- "SHANE" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1772, 598, 126, 70, NULL); -- "THE FRENCH CONNECTION" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1773, 587, 126, 71, NULL); -- "FORREST GUMP" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1774, 182, 126, 72, NULL); -- "BEN-HUR" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1775, 1802, 126, 73, NULL); -- "WUTHERING HEIGHTS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1776, 652, 126, 74, NULL); -- "THE GOLD RUSH" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1777, 400, 126, 75, NULL); -- "DANCES WITH WOLVES" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1778, 339, 126, 76, NULL); -- "CITY LIGHTS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1779, 82, 126, 77, NULL); -- "AMERICAN GRAFFITI" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1780, 1380, 126, 78, NULL); -- "ROCKY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1781, 438, 126, 79, NULL); -- "THE DEER HUNTER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1782, 1773, 126, 80, NULL); -- "THE WILD BUNCH" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1783, 1091, 126, 81, NULL); -- "MODERN TIMES" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1784, 633, 126, 82, NULL); -- "GIANT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1785, 1279, 126, 83, NULL); -- "PLATOON" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1786, 553, 126, 84, NULL); -- "FARGO" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1787, 492, 126, 85, NULL); -- "DUCK SOUP" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1788, 1131, 126, 86, NULL); -- "MUTINY ON THE BOUNTY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1789, 595, 126, 87, NULL); -- "FRANKENSTEIN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1790, 498, 126, 88, NULL); -- "EASY RIDER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1791, 1247, 126, 89, NULL); -- "PATTON" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1792, 852, 126, 90, NULL); -- "THE JAZZ SINGER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1793, 1138, 126, 91, NULL); -- "MY FAIR LADY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1794, 1274, 126, 92, NULL); -- "A PLACE IN THE SUN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1795, 107, 126, 93, NULL); -- "THE APARTMENT" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1796, 666, 126, 94, NULL); -- "GOODFELLAS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1797, 1315, 126, 95, NULL); -- "PULP FICTION" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1798, 1426, 126, 96, NULL); -- "THE SEARCHERS" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1799, 263, 126, 97, NULL); -- "BRINGING UP BABY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1800, 1697, 126, 98, NULL); -- "UNFORGIVEN" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1801, 696, 126, 99, NULL); -- "GUESS WHO'S COMING TO DINNER" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1802, 1810, 126, 100, NULL); -- "YANKEE DOODLE DANDY" in list "AFI's 100 Years...100 Movies" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1803, 338, 127, 1, NULL); -- "CITIZEN KANE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1804, 647, 127, 2, NULL); -- "THE GODFATHER" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1805, 292, 127, 3, NULL); -- "CASABLANCA" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1806, 1329, 127, 4, NULL); -- "RAGING BULL" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1807, 1489, 127, 5, NULL); -- "SINGIN' IN THE RAIN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1808, 657, 127, 6, NULL); -- "GONE WITH THE WIND" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1809, 935, 127, 7, NULL); -- "LAWRENCE OF ARABIA" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1810, 1419, 127, 8, NULL); -- "SCHINDLER'S LIST" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1811, 3763, 127, 9, NULL); -- "VERTIGO" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1812, 1789, 127, 10, NULL); -- "THE WIZARD OF OZ" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1813, 339, 127, 11, NULL); -- "CITY LIGHTS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1814, 1426, 127, 12, NULL); -- "THE SEARCHERS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1815, 1548, 127, 13, NULL); -- "STAR WARS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1816, 1312, 127, 14, NULL); -- "PSYCHO" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1817, 25, 127, 15, NULL); -- "2001: A SPACE ODYSSEY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1818, 1575, 127, 16, NULL); -- "SUNSET BLVD." in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1819, 672, 127, 17, NULL); -- "THE GRADUATE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1820, 622, 127, 18, NULL); -- "THE GENERAL" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1821, 1207, 127, 19, NULL); -- "ON THE WATERFRONT" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1822, 844, 127, 20, NULL); -- "IT'S A WONDERFUL LIFE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1823, 323, 127, 21, NULL); -- "CHINATOWN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1824, 1517, 127, 22, NULL); -- "SOME LIKE IT HOT" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1825, 676, 127, 23, NULL); -- "THE GRAPES OF WRATH" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1826, 495, 127, 24, NULL); -- "E.T. the Extra-Terrestrial" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1827, 1642, 127, 25, NULL); -- "TO KILL A MOCKINGBIRD" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1828, 1119, 127, 26, NULL); -- "MR. SMITH GOES TO WASHINGTON" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1829, 744, 127, 27, NULL); -- "HIGH NOON" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1830, 66, 127, 28, NULL); -- "ALL ABOUT EVE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1831, 473, 127, 29, NULL); -- "DOUBLE INDEMNITY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1832, 109, 127, 30, NULL); -- "APOCALYPSE NOW" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1833, 1004, 127, 31, NULL); -- "THE MALTESE FALCON" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1834, 648, 127, 32, NULL); -- "THE GODFATHER PART II" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1835, 1210, 127, 33, NULL); -- "ONE FLEW OVER THE CUCKOO'S NEST" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1836, 1510, 127, 34, NULL); -- "SNOW WHITE AND THE SEVEN DWARFS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1837, 102, 127, 35, NULL); -- "ANNIE HALL" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1838, 257, 127, 36, NULL); -- "THE BRIDGE ON THE RIVER KWAI" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1839, 188, 127, 37, NULL); -- "THE BEST YEARS OF OUR LIVES" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1840, 1665, 127, 38, NULL); -- "THE TREASURE OF THE SIERRA MADRE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1841, 481, 127, 39, NULL); -- "DR. STRANGELOVE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1842, 1522, 127, 40, NULL); -- "THE SOUND OF MUSIC" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1843, 893, 127, 41, NULL); -- "KING KONG" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1844, 234, 127, 42, NULL); -- "BONNIE AND CLYDE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1845, 1066, 127, 43, NULL); -- "MIDNIGHT COWBOY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1846, 1260, 127, 44, NULL); -- "THE PHILADELPHIA STORY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1847, 1457, 127, 45, NULL); -- "SHANE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1848, 841, 127, 46, NULL); -- "IT HAPPENED ONE NIGHT" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1849, 1566, 127, 47, NULL); -- "A STREETCAR NAMED DESIRE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1850, 1342, 127, 48, NULL); -- "REAR WINDOW" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1851, 4137, 127, 49, NULL); -- "Intolerance" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1852, 977, 127, 50, NULL); -- "THE LORD OF THE RINGS: THE FELLOWSHIP OF THE RING" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1853, 1750, 127, 51, NULL); -- "WEST SIDE STORY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1854, 1602, 127, 52, NULL); -- "TAXI DRIVER" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1855, 438, 127, 53, NULL); -- "THE DEER HUNTER" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1856, 1031, 127, 54, NULL); -- "M*A*S*H" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1857, 1190, 127, 55, NULL); -- "NORTH BY NORTHWEST" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1858, 851, 127, 56, NULL); -- "JAWS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1859, 1380, 127, 57, NULL); -- "ROCKY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1860, 652, 127, 58, NULL); -- "THE GOLD RUSH" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1861, 1159, 127, 59, NULL); -- "NASHVILLE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1862, 492, 127, 60, NULL); -- "DUCK SOUP" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1863, 4138, 127, 61, NULL); -- "Sullivan's Travels" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1864, 82, 127, 62, NULL); -- "AMERICAN GRAFFITI" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1865, 1828, 127, 63, NULL); -- "CABARET" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1866, 1166, 127, 64, NULL); -- "NETWORK" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1867, 42, 127, 65, NULL); -- "THE AFRICAN QUEEN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1868, 1330, 127, 66, NULL); -- "RAIDERS OF THE LOST ARK" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1869, 1772, 127, 67, NULL); -- "WHO'S AFRAID OF VIRGINIA WOOLF?" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1870, 1697, 127, 68, NULL); -- "UNFORGIVEN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1871, 1644, 127, 69, NULL); -- "TOOTSIE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1872, 347, 127, 70, NULL); -- "A CLOCKWORK ORANGE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1873, 1413, 127, 71, NULL); -- "SAVING PRIVATE RYAN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1874, 1460, 127, 72, NULL); -- "THE SHAWSHANK REDEMPTION" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1875, 280, 127, 73, NULL); -- "BUTCH CASSIDY AND THE SUNDANCE KID" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1876, 1480, 127, 74, NULL); -- "THE SILENCE OF THE LAMBS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1877, 806, 127, 75, NULL); -- "IN THE HEAT OF THE NIGHT" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1878, 587, 127, 76, NULL); -- "FORREST GUMP" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1879, 71, 127, 77, NULL); -- "ALL THE PRESIDENT'S MEN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1880, 1091, 127, 78, NULL); -- "MODERN TIMES" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1881, 1773, 127, 79, NULL); -- "THE WILD BUNCH" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1882, 107, 127, 80, NULL); -- "THE APARTMENT" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1883, 1528, 127, 81, NULL); -- "SPARTACUS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1884, 1574, 127, 82, NULL); -- "SUNRISE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1885, 1639, 127, 83, NULL); -- "TITANIC" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1886, 498, 127, 84, NULL); -- "EASY RIDER" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1887, 1177, 127, 85, NULL); -- "A NIGHT AT THE OPERA" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1888, 1279, 127, 86, NULL); -- "PLATOON" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1889, 6, 127, 87, NULL); -- "12 ANGRY MEN" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1890, 263, 127, 88, NULL); -- "BRINGING UP BABY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1891, 1490, 127, 89, NULL); -- "THE SIXTH SENSE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1892, 3760, 127, 90, NULL); -- "SWING TIME" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1893, 1520, 127, 91, NULL); -- "SOPHIE'S CHOICE" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1894, 666, 127, 92, NULL); -- "GOODFELLAS" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1895, 598, 127, 93, NULL); -- "THE FRENCH CONNECTION" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1896, 1315, 127, 94, NULL); -- "PULP FICTION" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1897, 922, 127, 95, NULL); -- "THE LAST PICTURE SHOW" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1898, 458, 127, 96, NULL); -- "DO THE RIGHT THING" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1899, 213, 127, 97, NULL); -- "BLADE RUNNER" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1900, 1810, 127, 98, NULL); -- "YANKEE DOODLE DANDY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1901, 1655, 127, 99, NULL); -- "TOY STORY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1902, 182, 127, 100, NULL); -- "BEN-HUR" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
