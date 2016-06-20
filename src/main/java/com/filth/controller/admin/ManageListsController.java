@@ -34,6 +34,7 @@ public class ManageListsController extends ManageEntityController implements Man
     
     private static final class URL {
         public static final String LISTS = ADMIN_URL_PREFIX + "/lists";
+        public static final String LIST = ADMIN_URL_PREFIX + "/list";
         public static final String DELETE = LISTS + "/delete";
         public static final String SAVE = LISTS + "/save";
     }
@@ -67,6 +68,11 @@ public class ManageListsController extends ManageEntityController implements Man
     @Override
     public Link getLinkToSaveList() {
         return new Link(URL.SAVE);
+    }
+    
+    @Override
+    public Link getLinkToList(int id) {
+        return new Link(URL.LIST).setParam(URLParam.ID, String.valueOf(id));
     }
     
     @RequestMapping(value=URL.LISTS, method=RequestMethod.GET)
@@ -137,6 +143,15 @@ public class ManageListsController extends ManageEntityController implements Man
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(DELETE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, list.getTitle()), mm);
+    }
+    
+    @RequestMapping(value=URL.LIST, method=RequestMethod.GET)
+    public ModelAndView viewList(
+            @RequestParam(value=URLParam.ID) Integer id) {
+        ModelMap mm = new ModelMap();
+        com.filth.model.List list = _listService.getListById(id);
+        mm.put(ModelKey.LIST, list);
+        return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);
     }
 
 }

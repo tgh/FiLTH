@@ -10,3 +10,13 @@ INSERT INTO filth.list_contains VALUES (9, 3772, 2, NULL, NULL); -- "Kieslowski'
 INSERT INTO filth.list_contains VALUES (10, 1409, 3, NULL, NULL); -- "Santa Sangre" in list "Greatest Movies #3" by Roger Ebert"
 INSERT INTO filth.list_contains VALUES (11, 14, 4, NULL, NULL); -- "25th Hour" in list "Greatest Movies #4" by Roger Ebert"
 INSERT INTO filth.list_contains VALUES (12, 283, 4, NULL, NULL); -- "Cache" in list "Greatest Movies #4" by Roger Ebert"
+INSERT INTO filth.list_contains VALUES (13, 3671, 5, 1, NULL);
+INSERT INTO filth.list_contains VALUES (14, 2, 5, 2, 'Comment #1');
+INSERT INTO filth.list_contains VALUES (15, 3633, 5, 3, NULL);
+INSERT INTO filth.list_contains VALUES (16, 991, 5, 4, NULL);
+INSERT INTO filth.list_contains VALUES (17, 283, 5, 5, NULL);
+INSERT INTO filth.list_contains VALUES (18, 338, 5, 6, NULL);
+INSERT INTO filth.list_contains VALUES (19, 4, 5, 7, NULL);
+INSERT INTO filth.list_contains VALUES (20, 339, 5, 8, NULL);
+INSERT INTO filth.list_contains VALUES (21, 3769, 5, 9, NULL);
+INSERT INTO filth.list_contains VALUES (22, 3880, 5, 10, 'Comment #2');
