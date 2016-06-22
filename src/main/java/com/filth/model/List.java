@@ -1,5 +1,6 @@
 package com.filth.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -61,6 +62,13 @@ public class List {
     
     public void setListMovies(Set<ListMovie> listMovies) {
         _listMovies = listMovies;
+    }
+    
+    public void addListMovie(ListMovie listMovie) {
+        if (null == _listMovies) {
+            _listMovies = new HashSet<>();
+        }
+        _listMovies.add(listMovie);
     }
     
     @Override

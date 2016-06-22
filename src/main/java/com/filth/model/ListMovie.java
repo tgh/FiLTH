@@ -71,7 +71,7 @@ public class ListMovie {
         return _comments;
     }
     
-    public void setPosition(String comments) {
+    public void setComments(String comments) {
         _comments = comments;
     }
     
