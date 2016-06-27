@@ -34,7 +34,7 @@
                 
                 <tr class="${rowCssClass}" data-list-id="${list.id}">
                     <td class="listId">${list.id}</td>
-                    <td class="listTitle">
+                    <td class="listTitle listLink">
                         <a href="${links.getLinkToList(list.id)}">${list.title}</a>
                     </td>
                     <td class="listAuthor">${author}</td>

@@ -47,4 +47,22 @@ function removeMovieFromList(event) {
 
 $(document).ready(function() {
     addListeners();
+    start = Math.floor(Date.now() / 1000);
+    console.log('Initializing data table');
+    $('#moviesTable').DataTable({
+        //allow selection of table rows
+        select: true,
+        //do not load all content at once--only when displaying on the page
+        deferRender: true,
+        //sort by rank first, then title
+        order: [[2, 'asc'], [1, 'asc']],
+        initComplete: function() {
+            hide($('#loadingText'));
+            //hack: without this width resize, the movies table renders with a width of 0 for some reason :-/
+            $('#moviesTable').css('width', '100%');
+            show($('#moviesTable'));
+        }
+    });
+    end = Math.floor(Date.now() / 1000);
+    console.log('DONE initializing data table in ' + (end - start) + ' seconds');
 });

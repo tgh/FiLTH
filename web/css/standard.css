@@ -101,11 +101,13 @@ table.dataTable tbody tr.even {
     font-weight: bold;
 }
 
+.listLink,
 .movieLink {
     cursor: pointer;
     font-weight: bold;
 }
 
+.listTitle,
 a.movieTitle {
     color: #78e;
 }
