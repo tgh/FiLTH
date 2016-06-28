@@ -28,6 +28,16 @@ MovieList.prototype.setAuthor = function(author) {
     this.data['author'] = author;
 }
 
+MovieList.prototype.setRankForMovie = function(movieId, rank) {
+    rank = parseInt(rank);
+    for (i=0; i < this.data['movies'].length; ++i) {
+        if (this.data['movies'][i]['id'] == movieId) {
+            this.data['movies'][i]['rank'] = rank;
+            break;
+        }
+    }
+}
+
 MovieList.prototype.toJsonString = function() {
     return JSON.stringify(this.data);
 }

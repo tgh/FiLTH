@@ -31,6 +31,8 @@ function listRankKeydownHandler(event) {
             return;
         }
         
+        movieId = rankEditElement.parents('tr')[0].dataset.movieId;
+        movieList.setRankForMovie(movieId, newRank);
         rankDisplayElement.html(newRank);
         hide(rankEditElement);
         show(rankDisplayElement);
