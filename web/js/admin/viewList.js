@@ -1,6 +1,5 @@
 function addListeners() {
     $('.listRankDisplay').click(listRankClickHandler);
-    $('.removeButton').click(removeMovieFromList);
 }
 
 function listRankClickHandler(event) {
@@ -40,13 +39,14 @@ function listRankKeydownHandler(event) {
     }   
 }
 
-function removeMovieFromList(event) {
-    movieRow = $(event.target).parents('.listMovieRow');
-    hide(movieRow);
+function removeFromList(movieId) {
+    movieRow = $('tr[data-movie-id=' + movieId + ']');
+    table = $('#moviesTable').DataTable();
+    table.row($('tr[data-movie-id="' + movieId + '"]')).remove().draw('full-hold');
+    movieList.removeMovie(movieId);
 }
 
-$(document).ready(function() {
-    addListeners();
+function initTable() {
     start = Math.floor(Date.now() / 1000);
     console.log('Initializing data table');
     $('#moviesTable').DataTable({
@@ -56,6 +56,7 @@ $(document).ready(function() {
         deferRender: true,
         //sort by rank first, then title
         order: [[2, 'asc'], [1, 'asc']],
+        //to do once init is complete:
         initComplete: function() {
             hide($('#loadingText'));
             //hack: without this width resize, the movies table renders with a width of 0 for some reason :-/
@@ -65,4 +66,9 @@ $(document).ready(function() {
     });
     end = Math.floor(Date.now() / 1000);
     console.log('DONE initializing data table in ' + (end - start) + ' seconds');
+}
+
+$(document).ready(function() {
+    initTable();
+    addListeners();
 });

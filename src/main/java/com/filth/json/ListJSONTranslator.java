@@ -4,6 +4,8 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
+import org.springframework.stereotype.Component;
+
 import com.filth.model.ListMovie;
 import com.filth.model.Movie;
 import com.filth.service.MovieService;
@@ -11,6 +13,7 @@ import com.filth.service.MovieService;
 /**
  * JSON translator for {@link com.filth.model.List}.
  */
+@Component
 public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> {
     
     public static final class ListJSONKey extends JSONKey {

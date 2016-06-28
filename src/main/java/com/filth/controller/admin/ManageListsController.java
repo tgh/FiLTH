@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import net.sf.json.JSONObject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -15,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.filth.annotation.SkipInterceptor;
 import com.filth.interceptor.BackgroundImageInterceptor;
+import com.filth.json.ListJSONTranslator;
 import com.filth.link.Link;
 import com.filth.link.ManageListsLinkGenerator;
 import com.filth.service.ListService;
@@ -31,6 +34,8 @@ public class ManageListsController extends ManageEntityController implements Man
     private ListService _listService;
     @Resource
     private ModelAndViewUtil _modelAndViewUtil;
+    @Resource
+    private ListJSONTranslator _listJSONTranslator;
     
     private static final class URL {
         public static final String LISTS = ADMIN_URL_PREFIX + "/lists";
@@ -48,6 +53,7 @@ public class ManageListsController extends ManageEntityController implements Man
     private static final class ModelKey {
         public static final String LISTS = "lists";
         public static final String LIST = "list";
+        public static final String LIST_JSON = "listJSON";
     }
 
     @Override
@@ -151,6 +157,10 @@ public class ManageListsController extends ManageEntityController implements Man
         ModelMap mm = new ModelMap();
         com.filth.model.List list = _listService.getListById(id);
         mm.put(ModelKey.LIST, list);
+        
+        JSONObject jsonObject = _listJSONTranslator.toJSON(list);
+        mm.put(ModelKey.LIST_JSON, jsonObject.toString());
+        
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);
     }
 

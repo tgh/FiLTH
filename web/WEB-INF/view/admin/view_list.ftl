@@ -47,7 +47,7 @@
                             ${listMovie.comments}
                         </#if>
                     </td>
-                    <td><a class="button redButton removeButton">Remove</a></td>
+                    <td><a class="button redButton removeButton" href="javascript: removeFromList(${movie.id})">Remove</a></td>
                 </tr>
             </#list>
         </tbody>
@@ -56,4 +56,10 @@
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
     <@util.js "admin/viewList" />
+    <@util.js "admin/MovieList" />
+    
+    <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
+    <script type="text/javascript">
+        movieList = new MovieList('${listJSON}');
+    </script>
 </@layout.standard>

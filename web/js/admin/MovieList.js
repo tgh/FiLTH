@@ -1,11 +1,9 @@
 /**
  * MovieList constructor
  */
-function MovieList(json) {
+MovieList = function MovieList(json) {
     this.data = JSON.parse(json);
 }
-MovieList.prototype = Object.create();
-MovieList.prototype.constructor = MovieList;
 
 /** MovieList functions */
 
