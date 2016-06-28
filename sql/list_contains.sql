@@ -415,7 +415,7 @@ INSERT INTO filth.list_contains VALUES (414, 369, 8, 12, NULL); -- "The Contende
 INSERT INTO filth.list_contains VALUES (415, 549, 8, 13, NULL); -- "Fantasia 2000" in list "Top Ten Movies of 2000" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (416, 389, 8, 14, NULL); -- "Crouching Tiger, Hidden Dragon" in list "Top Ten Movies of 2000" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (417, 1625, 8, 15, NULL); -- "Thirteen Days" in list "Top Ten Movies of 2000" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (418, 1054, 8, 1, NULL); -- "Memento" in list "Top Ten Movies of 2000" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (418, 1054, 9, 1, NULL); -- "Memento" in list "Top Ten Movies of 2001" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (419, 1728, 9, 2, NULL); -- "Waking Life" in list "Top Ten Movies of 2001" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (420, 1284, 9, 3, NULL); -- "The Pledge" in list "Top Ten Movies of 2001" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (421, 1708, 9, 4, NULL); -- "Vanilla Sky" in list "Top Ten Movies of 2001" by Tyler Hayes
