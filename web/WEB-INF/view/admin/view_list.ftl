@@ -2,6 +2,9 @@
     <#-- css for datatables AND its Select extension-->
     <@util.external_css "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.css" />
     <@util.css "admin" />
+    <@util.css "list/list" />
+    <@util.css "third-party/alertify/alertify.core" />
+    <@util.css "third-party/alertify/alertify.default" />
     
     <h1>${list.title}</h1>
     
@@ -38,9 +41,9 @@
                     </td>
                     <td>
                         <#if listMovie.rank??>
-                            ${listMovie.rank}
+                            <span class="listRankDisplay">${listMovie.rank}</span>
                         </#if>
-                        <input class="hidden" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
+                        <input class="hidden listRankEdit" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
                     </td>
                     <td>
                         <#if listMovie.comments??>
@@ -55,6 +58,7 @@
     
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
+    <@util.js "third-party/alertify/alertify.min" />
     <@util.js "admin/viewList" />
     <@util.js "admin/MovieList" />
     

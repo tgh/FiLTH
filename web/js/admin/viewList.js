@@ -15,18 +15,21 @@ function listRankClickHandler(event) {
     show(rankEditElement);
     rankEditElement.keydown(listRankKeydownHandler);
     //activate the rank text field
-    rankEditElement.find('input')[0].focus();
+    rankEditElement.focus();
 }
 
 function listRankKeydownHandler(event) {
     //'enter' key, keep change in rank
     if(event.keyCode == 13) {
-        rankEditElement = $(event.target).parent();
+        rankEditElement = $(event.target);
         rankDisplayElement = rankEditElement.siblings('.listRankDisplay');
         newRank = event.target.value;
         
         //verify new rank is valid (numeric)
-        //TODO
+        if (isNaN(newRank) || newRank < 1) {
+            alertify.error("Rank must be a positive, non-zero number.")
+            return;
+        }
         
         rankDisplayElement.html(newRank);
         hide(rankEditElement);

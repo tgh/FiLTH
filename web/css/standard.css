@@ -243,3 +243,9 @@ section#alertify-logs {
     overflow: auto;
 /*     white-space: nowrap; */ /* for horizontal scrolling div */
 }
+
+input[type=text] {
+    padding: 5px;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}

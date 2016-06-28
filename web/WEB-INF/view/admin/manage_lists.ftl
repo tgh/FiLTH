@@ -34,9 +34,7 @@
                 
                 <tr class="${rowCssClass}" data-list-id="${list.id}">
                     <td class="listId">${list.id}</td>
-                    <td class="listTitle listLink">
-                        <a href="${links.getLinkToList(list.id)}">${list.title}</a>
-                    </td>
+                    <td class="listTitle listLink"><a href="${links.getLinkToList(list.id)}">${list.title}</a></td>
                     <td class="listAuthor">${author}</td>
                     <td>
                         <a data-remodal-target="editListModal" data-list-id="${list.id}" class="button editButton">Edit</a>
