@@ -46,6 +46,13 @@ body {
     background-color: #deefff;
 }
 
+.button.linkBlueButton {
+    background-color: #78e;
+}
+.button.linkBlueButton:hover {
+    background-color: #89f;
+}
+
 .button.redButton,
 .button.deleteButton {
     background-color: #f57f70;

@@ -6,9 +6,13 @@
     <@util.css "third-party/alertify/alertify.core" />
     <@util.css "third-party/alertify/alertify.default" />
     
-    <h1>${list.title}</h1>
+    <h1 id="listTitle">${list.title}</h1>
     
     <div id="loadingText"><h1>Loading...</h1></div>
+    
+    <div id="backToListsLink" class="button linkBlueButton">
+        <a href="${links.getLinkToManageLists()}">Back to Lists</a>
+    </div>
     
     <table id="moviesTable" class="hidden">
         <thead>

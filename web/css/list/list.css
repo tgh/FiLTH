@@ -1,3 +1,14 @@
 .listRankEdit {
     width: 25px;
 }
+
+#listTitle {
+    float: left;
+}
+
+#backToListsLink {
+    float: right;
+    margin: 20px 0;
+    color: whitesmoke;
+    font-weight: bold;
+}
