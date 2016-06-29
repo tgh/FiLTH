@@ -61,6 +61,8 @@ function initTable() {
         deferRender: true,
         //sort by rank first, then title
         order: [[2, 'asc'], [1, 'asc']],
+        //set number of rows to show per page
+        pageLength: 100,
         //to do once init is complete:
         initComplete: function() {
             hide($('#loadingText'));
