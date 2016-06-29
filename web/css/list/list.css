@@ -4,11 +4,23 @@
 
 #listTitle {
     float: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#addMovieLink,
+#backToListsLink {
+    float: right;
+    margin: 7px 10px;
 }
 
 #backToListsLink {
-    float: right;
-    margin: 20px 0;
     color: whitesmoke;
     font-weight: bold;
+}
+
+/* Override standard.css */
+body #rootContentContainer {
+    margin-top: 5px;
+    height: 68vh;
 }

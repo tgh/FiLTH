@@ -3,6 +3,16 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.header {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 40px 40px 5px 40px;
+    padding: 20px;
+    background-color: #eee;
+    opacity: 0.9;
+    overflow: auto;
+}
+
 #rootContentContainer {
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -50,7 +60,7 @@ body {
     background-color: #78e;
 }
 .button.linkBlueButton:hover {
-    background-color: #89f;
+    background-color: #9af;
 }
 
 .button.redButton,

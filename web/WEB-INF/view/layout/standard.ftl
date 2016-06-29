@@ -1,4 +1,4 @@
-<#macro standard pageTitle="FiLTH">
+<#macro standard pageTitle="FiLTH" header="">
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
         <head>
@@ -28,6 +28,9 @@
         
         <body style="background: url(${rc.contextPath}/${bgImagesPath}/${bgImageFilename}) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
             <div class="remodal-bg">
+                <#-- optional header (default is blank) -->
+                ${header}
+                
                 <div id="rootContentContainer" class="mCustomScrollbar" data-mcs-theme="minimal-dark">
                     <#nested>
                 </div>

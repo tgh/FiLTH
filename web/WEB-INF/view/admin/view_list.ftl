@@ -1,18 +1,29 @@
-<@layout.standard "FiLTH Admin: View List">
+<#-- define the header to be passed into the layout -->
+<#assign headerContent>
+    <div id="listHeader" class="header">
+        <div id="listTitle">${list.title}</div>
+        
+        <div id="loadingText"><h1>Loading...</h1></div>
+        
+        <div id="backToListsLink" class="button linkBlueButton">
+            <a href="${links.getLinkToManageLists()}">Back to Lists</a>
+        </div>
+        
+        <#-- Add movie button -- NOT YET FUNCTIONAL -->
+        <div id="addMovieLink">
+            <a data-remodal-target="addMovieModal" class="addButton button">Add Movie</a>
+        </div>
+    </div>
+</#assign>
+
+
+<@layout.standard "FiLTH Admin: View List" headerContent>
     <#-- css for datatables AND its Select extension-->
     <@util.external_css "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.css" />
     <@util.css "admin" />
     <@util.css "list/list" />
     <@util.css "third-party/alertify/alertify.core" />
     <@util.css "third-party/alertify/alertify.default" />
-    
-    <h1 id="listTitle">${list.title}</h1>
-    
-    <div id="loadingText"><h1>Loading...</h1></div>
-    
-    <div id="backToListsLink" class="button linkBlueButton">
-        <a href="${links.getLinkToManageLists()}">Back to Lists</a>
-    </div>
     
     <table id="moviesTable" class="hidden">
         <thead>
