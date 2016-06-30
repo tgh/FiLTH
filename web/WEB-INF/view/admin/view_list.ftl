@@ -2,12 +2,11 @@
 <#assign headerContent>
     <div id="listHeader" class="header">
         <div id="listTitle">
-            <span class="label">Title: </span><span id="listTitleDisplay" class="contentDisplay">${list.title}</span>
+            <span id="listTitleDisplay" class="contentDisplay">${list.title}</span>
             <input id="listTitleEdit" class="hidden contentInput" type="text" value="${list.title}">
         </div>
         
         <div id="listAuthor">
-            <span class="label">Author: </span>
             <#if list.author??>
                 <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
             <#else>
