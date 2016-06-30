@@ -13,7 +13,7 @@ MovieList.prototype.addMovie = function(id, rank, comments) {
 
 MovieList.prototype.removeMovie = function(id) {
     for (i=0; i < this.data['movies'].length; ++i) {
-        if (this.data['movies'][i]['id'] == id) {
+        if (this.data['movies'][i]['mid'] == id) {
             this.data['movies'].splice(i, 1);
             break;
         }
@@ -31,7 +31,7 @@ MovieList.prototype.setAuthor = function(author) {
 MovieList.prototype.setRankForMovie = function(movieId, rank) {
     rank = parseInt(rank);
     for (i=0; i < this.data['movies'].length; ++i) {
-        if (this.data['movies'][i]['id'] == movieId) {
+        if (this.data['movies'][i]['mid'] == movieId) {
             this.data['movies'][i]['rank'] = rank;
             break;
         }

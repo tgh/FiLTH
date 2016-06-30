@@ -1,5 +1,7 @@
 package com.filth.json;
 
+import javax.annotation.Resource;
+
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
@@ -22,24 +24,29 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
         public static final String RANK = "rank";
         public static final String COMMENTS = "comments";
         public static final String MOVIES = "movies";
+        public static final String MOVIE_ID = "mid";
+        public static final String LIST_MOVIE_ID = "lmid";
     }
     
+    @Resource
     private MovieService _movieService;
 
     @Override
     public com.filth.model.List fromJSON(String jsonString) {
         com.filth.model.List list = new com.filth.model.List();
         JSONObject jsonObject = (JSONObject) JSONSerializer.toJSON(jsonString);
-        
+
+        Integer id = (Integer) jsonObject.opt(ListJSONKey.ID);
         String title = jsonObject.getString(ListJSONKey.TITLE);
         String author = jsonObject.optString(ListJSONKey.AUTHOR, null);
+        list.setId(id);
         list.setTitle(title);
         list.setAuthor(author);
         
         JSONArray moviesJsonArray = jsonObject.getJSONArray(ListJSONKey.MOVIES);
         for (int i=0; i < moviesJsonArray.size(); ++i) {
             JSONObject movieJsonObject = moviesJsonArray.getJSONObject(i);
-            ListMovie listMovie = createListMovieFromJSON(movieJsonObject);
+            ListMovie listMovie = createListMovieFromJSON(movieJsonObject, list);
             list.addListMovie(listMovie);
         }
         
@@ -72,7 +79,8 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
     private JSONObject createListMovieJSONObject(ListMovie listMovie, int listId) {
         JSONObject jsonObject = new JSONObject();
         
-        jsonObject.put(ListJSONKey.ID, listMovie.getMovie().getId());
+        jsonObject.put(ListJSONKey.LIST_MOVIE_ID, listMovie.getId());
+        jsonObject.put(ListJSONKey.MOVIE_ID, listMovie.getMovie().getId());
         if (listMovie.getRank() != null) {
             jsonObject.put(ListJSONKey.RANK, listMovie.getRank());
         }
@@ -83,10 +91,11 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
         return jsonObject;
     }
     
-    private ListMovie createListMovieFromJSON(JSONObject jsonObject) {
+    private ListMovie createListMovieFromJSON(JSONObject jsonObject, com.filth.model.List list) {
         ListMovie listMovie = new ListMovie();
         
-        int movieId = jsonObject.getInt(ListJSONKey.ID);
+        Integer listMovieId = (Integer) jsonObject.opt(ListJSONKey.LIST_MOVIE_ID);
+        int movieId = jsonObject.getInt(ListJSONKey.MOVIE_ID);
         Movie movie = _movieService.getMovieByIdUninitialized(movieId);
         Integer rank = null;
         if (jsonObject.containsKey(ListJSONKey.RANK)) {
@@ -94,9 +103,11 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
         }
         String comments = jsonObject.optString(ListJSONKey.COMMENTS, null);
         
+        listMovie.setId(listMovieId);
         listMovie.setMovie(movie);
         listMovie.setRank(Integer.valueOf(rank));
         listMovie.setComments(comments);
+        listMovie.setList(list);
         
         return listMovie;
     }

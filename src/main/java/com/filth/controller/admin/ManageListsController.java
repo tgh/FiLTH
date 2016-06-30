@@ -48,6 +48,7 @@ public class ManageListsController extends ManageEntityController implements Man
         public static final String ID = "id";
         public static final String TITLE = "title";
         public static final String AUTHOR = "author";
+        public static final String LIST_JSON = "listJSON";
     }
     
     private static final class ModelKey {
@@ -92,7 +93,7 @@ public class ManageListsController extends ManageEntityController implements Man
     }
     
     @SkipInterceptor({BackgroundImageInterceptor.class})
-    @RequestMapping(value=URL.SAVE, method=RequestMethod.POST)
+    @RequestMapping(value=URL.SAVE, method=RequestMethod.POST, params=URLParam.TITLE)
     public ModelAndView saveList(
             @RequestParam(value=URLParam.TITLE) String title,
             @RequestParam(value=URLParam.AUTHOR, required=false) String author,
@@ -121,6 +122,32 @@ public class ManageListsController extends ManageEntityController implements Man
         
         ModelMap mm = new ModelMap();
         mm.put(ModelKey.LIST, list);
+        
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
+    }
+    
+    @SkipInterceptor({BackgroundImageInterceptor.class})
+    @RequestMapping(value=URL.SAVE, method=RequestMethod.POST, params=URLParam.LIST_JSON)
+    public ModelAndView saveListJSON(
+            @RequestParam(value=URLParam.LIST_JSON) String listJSON) throws Exception {
+        String title = "[unknown title]";
+        com.filth.model.List originalList = null;
+        
+        try {
+            com.filth.model.List newList = _listJSONTranslator.fromJSON(listJSON);
+            title = newList.getTitle();
+            originalList = _listService.getListById(newList.getId());
+            originalList.copyContent(newList);
+            _listService.saveList(originalList);
+        } catch (Exception e) {
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, title), e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, title), new ModelMap());
+        }
+        
+        ModelMap mm = new ModelMap();
+        mm.put(ModelKey.LIST, originalList);
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);

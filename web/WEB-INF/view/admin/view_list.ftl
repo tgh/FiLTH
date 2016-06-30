@@ -71,6 +71,14 @@
         </tbody>
     </table>
     
+    <#-- hidden form for async saving -->
+    <form id="saveListForm" action="${links.getLinkToSaveList()}" method="POST">
+        <input id="listJSONInput" type="hidden" name="listJSON">
+    </form>
+    
+    <#-- Stacktrace container -->
+    <div id="stackTraceContainer" class="hidden error"></div>
+    
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
     <@util.js "third-party/alertify/alertify.min" />
@@ -79,6 +87,6 @@
     
     <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
     <script type="text/javascript">
-        movieList = new MovieList('${listJSON}');
+        var movieList = new MovieList('${listJSON}');
     </script>
 </@layout.standard>

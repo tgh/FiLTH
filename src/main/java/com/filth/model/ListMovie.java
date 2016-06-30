@@ -19,7 +19,7 @@ public class ListMovie {
     @Column(name="id")
     @SequenceGenerator(name="list_cotnains_seq", sequenceName="list_contains_id_seq", allocationSize=1)
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="list_cotnains_seq")
-    private int _id;
+    private Integer _id;
     
     @ManyToOne(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="mid")
@@ -35,11 +35,11 @@ public class ListMovie {
     @Column(name="comments")
     private String _comments;
     
-    public int getId() {
+    public Integer getId() {
         return _id;
     }
     
-    public void setId(int id) {
+    public void setId(Integer id) {
         _id = id;
     }
     

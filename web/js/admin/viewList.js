@@ -36,6 +36,22 @@ function listRankKeydownHandler(event) {
         rankDisplayElement.html(newRank);
         hide(rankEditElement);
         show(rankDisplayElement);
+        
+        $('#listJSONInput').val(movieList.toJsonString());
+        
+        clearStackTraceContainer();
+        $('#saveListForm').ajaxSubmit({
+            success: function(json) {
+                if (TRUE === json[JSON_KEY_SUCCESS]) {
+                    alertify.success(json[JSON_KEY_MESSAGE]);
+                } else {
+                    alertify.error(json[JSON_KEY_MESSAGE]);
+                }
+            },
+            error: function(data) {
+                ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
+            }
+        });
     }
     //'esc' key, cancel: revert back to original rank
     else if (event.keyCode == 27) {
@@ -50,6 +66,26 @@ function removeFromList(movieId) {
     table.row($('tr[data-movie-id="' + movieId + '"]')).remove().draw('full-hold');
     movieList.removeMovie(movieId);
 }
+
+function clearStackTraceContainer() {
+    stackTraceContainer = $('#stackTraceContainer');
+    stackTraceContainer.html('');
+    hide(stackTraceContainer);
+}
+
+function showStackTrace(message) {
+    stackTraceContainer = $('#stackTraceContainer');
+    stackTraceContainer.html(message);
+    show(stackTraceContainer);
+}
+
+function ajaxErrorHandler(data, defaultMessage) {
+    if (data && typeof data !== 'undefined') {
+        showStackTrace(data.responseText);
+    } else {
+        alertify.error(defaultMessage);
+    }
+};
 
 function initTable() {
     start = Math.floor(Date.now() / 1000);

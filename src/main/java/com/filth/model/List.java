@@ -21,7 +21,7 @@ public class List {
     @Column(name="lid")
     @SequenceGenerator(name="list_seq", sequenceName="list_lid_seq", allocationSize=1)
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="list_seq")
-    private int _id;
+    private Integer _id;
     
     @Column(name="list_title")
     private String _title;
@@ -32,11 +32,11 @@ public class List {
     @OneToMany(cascade=CascadeType.ALL, mappedBy="_list")
     private Set<ListMovie> _listMovies;
 
-    public int getId() {
+    public Integer getId() {
         return _id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         _id = id;
     }
 
@@ -69,6 +69,17 @@ public class List {
             _listMovies = new HashSet<>();
         }
         _listMovies.add(listMovie);
+    }
+    
+    /**
+     * Copies the contents of the given list into this list.
+     * This will write over any existing content of this list.
+     */
+    public void copyContent(com.filth.model.List otherList) {
+        setId(otherList.getId());
+        setTitle(otherList.getTitle());
+        setAuthor(otherList.getAuthor());
+        setListMovies(otherList.getListMovies());
     }
     
     @Override
