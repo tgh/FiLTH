@@ -1,11 +1,47 @@
+#listTitleDisplay,
+#listAuthorDisplay,
+.listRankDisplay {
+    cursor: pointer;
+}
+
+.listRankDisplay {
+    width: 25px;
+    text-align: center;
+}
+#listTitleDisplay:hover,
+#listAuthorDisplay:hover,
+.listRankDisplay:hover {
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
 .listRankEdit {
     width: 25px;
 }
 
-#listTitle {
+#listTitle,
+#listAuthor {
     float: left;
     font-size: 2em;
+}
+
+#listTitleDisplay,
+#listAuthorDisplay {
     font-weight: bold;
+}
+
+#listAuthorDisplay.noAuthor {
+    font-weight: normal;
+    font-style: italic;
+    color: #aaa;
+}
+
+#listTitle {
+    margin-right: 25px;
+}
+
+#listAuthor {
+    margin-left: 25px;
 }
 
 #addMovieLink,

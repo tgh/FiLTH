@@ -1,28 +1,49 @@
 function addListeners() {
-    $('.listRankDisplay').click(listRankClickHandler);
+    $('.listRankDisplay').click(rankClickHandler);
+    $('#listTitleDisplay').click(titleClickHandler);
+    $('#listAuthorDisplay').click(authorClickHandler);
 }
 
-function listRankClickHandler(event) {
-    //close any open rank text fields first
-    openRankEdit = $('.listRankEdit').not('.hidden');
-    openRankDisplay = openRankEdit.siblings('.listRankDisplay');
-    hide(openRankEdit);
-    show(openRankDisplay);
+function rankClickHandler(event) {
+    editableContentClickHandler(event, listRankKeydownHandler);
+}
+
+function titleClickHandler(event) {
+    editableContentClickHandler(event, listTitleKeydownHandler);
+}
+
+function authorClickHandler(event) {
+    editableContentClickHandler(event, listAuthorKeydownHandler);
+}
+
+function editableContentClickHandler(event, keydownHandler) {
+    hideEditInputs();
     
-    rankDisplayElement = $(event.target);
-    rankEditElement = rankDisplayElement.siblings('.listRankEdit');
-    hide(rankDisplayElement);
-    show(rankEditElement);
-    rankEditElement.keydown(listRankKeydownHandler);
-    //activate the rank text field
-    rankEditElement.focus();
+    displayElement = $(event.target);
+    editElement = displayElement.siblings('input');
+    hide(displayElement);
+    show(editElement);
+    editElement.keydown(keydownHandler);
+    //activate the text field
+    editElement.focus();
+}
+
+/**
+ * Hide any displayed text fields for editing
+ */
+function hideEditInputs() {
+    contentInput = $('.contentInput').not('.hidden');
+    contentDisplay = contentInput.siblings('.contentDisplay');
+    hide(contentInput);
+    show(contentDisplay);
 }
 
 function listRankKeydownHandler(event) {
+    rankEditElement = $(event.target);
+    rankDisplayElement = rankEditElement.siblings('.contentDisplay');
+    
     //'enter' key, keep change in rank
     if(event.keyCode == 13) {
-        rankEditElement = $(event.target);
-        rankDisplayElement = rankEditElement.siblings('.listRankDisplay');
         newRank = event.target.value;
         
         //verify new rank is valid (numeric)
@@ -33,31 +54,100 @@ function listRankKeydownHandler(event) {
         
         movieId = rankEditElement.parents('tr')[0].dataset.movieId;
         movieList.setRankForMovie(movieId, newRank);
+        
         rankDisplayElement.html(newRank);
         hide(rankEditElement);
         show(rankDisplayElement);
         
-        $('#listJSONInput').val(movieList.toJsonString());
-        
-        clearStackTraceContainer();
-        $('#saveListForm').ajaxSubmit({
-            success: function(json) {
-                if (TRUE === json[JSON_KEY_SUCCESS]) {
-                    alertify.success(json[JSON_KEY_MESSAGE]);
-                } else {
-                    alertify.error(json[JSON_KEY_MESSAGE]);
-                }
-            },
-            error: function(data) {
-                ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
-            }
-        });
+        saveList();
     }
     //'esc' key, cancel: revert back to original rank
     else if (event.keyCode == 27) {
         hide(rankEditElement);
         show(rankDisplayElement);
+        //reset the input val to the original rank as well
+        rankEditElement.val(rankDisplayElement.html());
     }   
+}
+
+function listTitleKeydownHandler(event) {
+    titleEditElement = $(event.target);
+    titleDisplayElement = titleEditElement.siblings('.contentDisplay');
+    
+    //'enter' key, keep change in rank
+    if(event.keyCode == 13) {
+        newTitle = event.target.value;
+        
+        //verify title is not empty
+        if (newTitle == '') {
+            alertify.error("Title must not be empty.")
+            return;
+        }
+        
+        movieList.setTitle(newTitle);
+        
+        titleDisplayElement.html(newTitle);
+        hide(titleEditElement);
+        show(titleDisplayElement);
+        
+        saveList();
+    }
+    //'esc' key, cancel: revert back to original title
+    else if (event.keyCode == 27) {
+        hide(titleEditElement);
+        show(titleDisplayElement);
+        //reset the input val to the original title as well
+        titleEditElement.val(titleDisplayElement.html());
+    }
+}
+
+function listAuthorKeydownHandler(event) {
+    authorEditElement = $(event.target);
+    authorDisplayElement = authorEditElement.siblings('.contentDisplay');
+    
+    //'enter' key, keep change in rank
+    if(event.keyCode == 13) {
+        newAuthor = event.target.value;
+        
+        movieList.setAuthor(newAuthor);
+        
+        if (newAuthor == '') {
+            authorDisplayElement.html('[no author]');
+            authorDisplayElement.addClass('noAuthor');
+        } else {
+            authorDisplayElement.html(newAuthor);
+            authorDisplayElement.removeClass('noAuthor');
+        }
+        
+        hide(authorEditElement);
+        show(authorDisplayElement);
+        
+        saveList();
+    }
+    //'esc' key, cancel: revert back to original author
+    else if (event.keyCode == 27) {
+        hide(authorEditElement);
+        show(authorDisplayElement);
+        //reset the input val to the original author as well
+        authorEditElement.val(authorDisplayElement.html());
+    }
+}
+
+function saveList() {
+    clearStackTraceContainer();
+    
+    $('#saveListForm').ajaxSubmit({
+        success: function(json) {
+            if (TRUE === json[JSON_KEY_SUCCESS]) {
+                alertify.success(json[JSON_KEY_MESSAGE]);
+            } else {
+                alertify.error(json[JSON_KEY_MESSAGE]);
+            }
+        },
+        error: function(data) {
+            ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
+        }
+    });
 }
 
 function removeFromList(movieId) {

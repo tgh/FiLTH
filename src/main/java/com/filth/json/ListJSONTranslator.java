@@ -6,6 +6,7 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 
 import com.filth.model.ListMovie;
@@ -39,6 +40,12 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
         Integer id = (Integer) jsonObject.opt(ListJSONKey.ID);
         String title = jsonObject.getString(ListJSONKey.TITLE);
         String author = jsonObject.optString(ListJSONKey.AUTHOR, null);
+        
+        //force author to be null if author is the empty string
+        if (StringUtils.isEmpty(author)) {
+            author = null;
+        }
+        
         list.setId(id);
         list.setTitle(title);
         list.setAuthor(author);

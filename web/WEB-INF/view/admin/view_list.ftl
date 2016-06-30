@@ -1,7 +1,20 @@
 <#-- define the header to be passed into the layout -->
 <#assign headerContent>
     <div id="listHeader" class="header">
-        <div id="listTitle">${list.title}</div>
+        <div id="listTitle">
+            <span class="label">Title: </span><span id="listTitleDisplay" class="contentDisplay">${list.title}</span>
+            <input id="listTitleEdit" class="hidden contentInput" type="text" value="${list.title}">
+        </div>
+        
+        <div id="listAuthor">
+            <span class="label">Author: </span>
+            <#if list.author??>
+                <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
+            <#else>
+                <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
+            </#if>
+            <input id="listAuthorEdit" class="hidden contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
+        </div>
         
         <div id="loadingText"><h1>Loading...</h1></div>
         
@@ -56,9 +69,9 @@
                     </td>
                     <td>
                         <#if listMovie.rank??>
-                            <span class="listRankDisplay">${listMovie.rank}</span>
+                            <div class="listRankDisplay contentDisplay">${listMovie.rank}</div>
                         </#if>
-                        <input class="hidden listRankEdit" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
+                        <input class="hidden listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
                     </td>
                     <td>
                         <#if listMovie.comments??>
