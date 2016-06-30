@@ -1,19 +1,25 @@
 function addListeners() {
-    $('.listRankDisplay').click(rankClickHandler);
-    $('#listTitleDisplay').click(titleClickHandler);
-    $('#listAuthorDisplay').click(authorClickHandler);
+    $(document).click(allClickHandler);
 }
 
-function rankClickHandler(event) {
-    editableContentClickHandler(event, listRankKeydownHandler);
-}
-
-function titleClickHandler(event) {
-    editableContentClickHandler(event, listTitleKeydownHandler);
-}
-
-function authorClickHandler(event) {
-    editableContentClickHandler(event, listAuthorKeydownHandler);
+function allClickHandler(event) {
+    //rank click
+    if ($(event.target).closest('.listRankDisplay').length) {
+        editableContentClickHandler(event, listRankKeydownHandler);
+    }
+    //title click
+    else if ($(event.target).closest('#listTitleDisplay').length) {
+        editableContentClickHandler(event, listTitleKeydownHandler);
+    }
+    //author click
+    else if ($(event.target).closest('#listAuthorDisplay').length) {
+        editableContentClickHandler(event, listAuthorKeydownHandler);
+    }
+    //anything else click
+    else {
+        //hide any editable inputs
+        hideEditInputs();
+    }
 }
 
 function editableContentClickHandler(event, keydownHandler) {
