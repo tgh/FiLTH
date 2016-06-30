@@ -15,6 +15,10 @@ function allClickHandler(event) {
     else if ($(event.target).closest('#listAuthorDisplay').length) {
         editableContentClickHandler(event, listAuthorKeydownHandler);
     }
+    //input click
+    else if ($(event.target).closest('input').length) {
+        //do nothing
+    }
     //anything else click
     else {
         //hide any editable inputs
@@ -61,9 +65,12 @@ function listRankKeydownHandler(event) {
         movieId = rankEditElement.parents('tr')[0].dataset.movieId;
         movieList.setRankForMovie(movieId, newRank);
         
-        rankDisplayElement.html(newRank);
-        hide(rankEditElement);
-        show(rankDisplayElement);
+        //update and re-sort the table
+        table = $('#moviesTable').DataTable();
+        table.cell('tr[data-movie-id="' + movieId + '"] td.rankColumn').data(
+            '<div class="listRankDisplay contentDisplay">' + newRank + '</div>' +
+            '<input class="hidden listRankEdit contentInput" type="text" value="' + newRank + '">'
+        ).order([[2, 'asc']]).draw('full-hold');
         
         saveList();
     }

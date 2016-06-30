@@ -67,7 +67,7 @@
                     <td>
                         <a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title} <#if movie.year??>(${movie.year})</#if></a>
                     </td>
-                    <td>
+                    <td class="rankColumn">
                         <#if listMovie.rank??>
                             <div class="listRankDisplay contentDisplay">${listMovie.rank}</div>
                         </#if>
