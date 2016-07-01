@@ -29,18 +29,15 @@
     font-weight: bold;
 }
 
-#listAuthorDisplay.noAuthor {
-    font-weight: normal;
-    font-style: italic;
-    color: #aaa;
-}
-
-#listTitle {
+#listTitle,
+#by {
     margin-right: 25px;
 }
 
 #listAuthor {
     margin-left: 25px;
+    color: #aaa;
+    font-style: italic;
 }
 
 #addMovieLink,

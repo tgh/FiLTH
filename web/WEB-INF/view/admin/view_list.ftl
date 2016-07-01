@@ -8,9 +8,9 @@
         
         <div id="listAuthor">
             <#if list.author??>
-                <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
+                <span id="by">by</span> <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
             <#else>
-                <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
+                <span id="by" class="hidden">by</span> <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
             </#if>
             <input id="listAuthorEdit" class="hidden contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
         </div>

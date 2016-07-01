@@ -129,9 +129,11 @@ function listAuthorKeydownHandler(event) {
         if (newAuthor == '') {
             authorDisplayElement.html('[no author]');
             authorDisplayElement.addClass('noAuthor');
+            hide($('#by'));
         } else {
             authorDisplayElement.html(newAuthor);
             authorDisplayElement.removeClass('noAuthor');
+            show($('#by'));
         }
         
         hide(authorEditElement);
