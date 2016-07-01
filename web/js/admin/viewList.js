@@ -1,19 +1,22 @@
 function addListeners() {
     $(document).click(allClickHandler);
+    $('.listRankEdit').keydown(listRankKeydownHandler);
+    $('#listTitleEdit').keydown(listTitleKeydownHandler);
+    $('#listAuthorEdit').keydown(listAuthorKeydownHandler);
 }
 
 function allClickHandler(event) {
     //rank click
     if ($(event.target).closest('.listRankDisplay').length) {
-        editableContentClickHandler(event, listRankKeydownHandler);
+        editableContentClickHandler(event);
     }
     //title click
     else if ($(event.target).closest('#listTitleDisplay').length) {
-        editableContentClickHandler(event, listTitleKeydownHandler);
+        editableContentClickHandler(event);
     }
     //author click
     else if ($(event.target).closest('#listAuthorDisplay').length) {
-        editableContentClickHandler(event, listAuthorKeydownHandler);
+        editableContentClickHandler(event);
     }
     //input click
     else if ($(event.target).closest('input').length) {
@@ -26,14 +29,13 @@ function allClickHandler(event) {
     }
 }
 
-function editableContentClickHandler(event, keydownHandler) {
+function editableContentClickHandler(event) {
     hideEditInputs();
     
     displayElement = $(event.target);
     editElement = displayElement.siblings('input');
     hide(displayElement);
     show(editElement);
-    editElement.keydown(keydownHandler);
     //activate the text field
     editElement.focus();
 }
