@@ -1,3 +1,18 @@
+#listHeader {
+    min-height: 60px;
+}
+
+#listTitleDisplay,
+#listAuthorDisplay,
+#by span {
+    vertical-align: middle;
+}
+
+#listTitleDisplay,
+#listAuthorDisplay {
+    padding: 5px;
+}
+
 #listTitleDisplay,
 #listAuthorDisplay,
 .listRankDisplay {
@@ -7,6 +22,7 @@
 .listRankDisplay {
     width: 25px;
     text-align: center;
+    padding: 3px;
 }
 #listTitleDisplay:hover,
 #listAuthorDisplay:hover,
@@ -20,30 +36,45 @@
 }
 
 #listTitle,
-#listAuthor {
+#listAuthor,
+#by {
     float: left;
     font-size: 2em;
 }
 
-#listTitleDisplay {
+#listTitleDisplay,
+#listTitleEdit {
     font-weight: bold;
 }
 
 #listTitle,
 #by {
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
-#listAuthor {
-    margin-left: 25px;
+#listAuthor,
+#by {
+    margin-left: 20px;
     color: #aaa;
     font-style: italic;
+}
+
+#listAuthorEdit {
+    border-radius: 7px;
+    font-size: 1em;
+    color: #aaa;
+    font-style: italic;
+}
+
+#listTitleEdit {
+    border-radius: 7px;
+    font-size: 1em;
 }
 
 #addMovieLink,
 #backToListsLink {
     float: right;
-    margin: 7px 10px;
+    margin: 12px 10px 7px 10px;
 }
 
 #backToListsLink {
