@@ -4131,3 +4131,7 @@ INSERT INTO filth.movie VALUES (4135, 'This is the End', 2013, 'not seen', 'R', 
 INSERT INTO filth.movie VALUES (4136, 'Spring Breakers', 2013, 'not seen', 'R', 'USA', NULL, 'tt2101441', NULL, 122081, NULL, NULL);
 INSERT INTO filth.movie VALUES (4137, 'Intolerance', 1916, 'not seen', 'NR', 'USA', NULL, 'tt0006864', NULL, 3059, NULL, NULL);
 INSERT INTO filth.movie VALUES (4138, 'Sullivan''s Travels', 1941, 'not seen', 'NR', 'USA', NULL, 'tt0034240', NULL, 16305, NULL, NULL);
+INSERT INTO filth.movie VALUES (4139, 'Ant-Man', 2015, '***', 'PG-13', 'USA', NULL, 'tt0478970', 0, 102899, NULL, NULL);
+INSERT INTO filth.movie VALUES (4140, 'Knight of Cups', 2015, '**½', 'R', 'USA', NULL, 'tt2101383', 0, 86835, NULL, NULL);
+INSERT INTO filth.movie VALUES (4141, 'Finding Dory', 2016, '****', 'PG', 'USA', NULL, 'tt2277860', 1, 127380, NULL, NULL);
+INSERT INTO filth.movie VALUES (4142, 'Hotel Transylvania', 2012, '***', 'PG', 'USA', NULL, 'tt0837562', 0, 76492, NULL, NULL);

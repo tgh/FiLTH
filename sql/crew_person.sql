@@ -3307,3 +3307,16 @@ INSERT INTO filth.crew_person VALUES (3309, 'Ehrenreich', 'Alden', NULL, 'Alden 
 INSERT INTO filth.crew_person VALUES (3310, 'Silverman', 'Sarah', NULL, 'Sarah Silverman', 'Actress');  -- Actress: Sarah Silverman
 INSERT INTO filth.crew_person VALUES (3311, 'McBrayer', 'Jack', NULL, 'Jack McBrayer', 'Actor');  -- Actor: Jack McBrayer
 INSERT INTO filth.crew_person VALUES (3312, 'Poitras', 'Laura', NULL, 'Laura Poitras', 'Director');  -- Director: Laura Poitras
+INSERT INTO filth.crew_person VALUES (3313, 'Reed', 'Peyton', NULL, 'Peyton Reed', 'Director');  -- Director: Peyton Reed
+INSERT INTO filth.crew_person VALUES (3314, 'Lilly', 'Evangeline', NULL, 'Evangeline Lilly', 'Actress');  -- Actress: Evangeline Lilly
+INSERT INTO filth.crew_person VALUES (3315, 'Stoll', 'Corey', NULL, 'Corey Stoll', 'Actor');  -- Actor: Corey Stoll
+INSERT INTO filth.crew_person VALUES (3316, 'Dennehy', 'Brian', NULL, 'Brian Dennehy', 'Actor');  -- Actor: Brian Dennehy
+INSERT INTO filth.crew_person VALUES (3317, 'Banderas', 'Antonio', NULL, 'Antonio Banderas', 'Actor');  -- Actor: Antonio Banderas
+INSERT INTO filth.crew_person VALUES (3318, 'Pinto', 'Freida', NULL, 'Freida Pinto', 'Actress');  -- Actress: Freida Pinto
+INSERT INTO filth.crew_person VALUES (3319, 'MacLane', 'Angus', NULL, 'Angus MacLane', 'Director');  -- Director: Angus MacLane
+INSERT INTO filth.crew_person VALUES (3320, 'Strouse', 'Victoria', NULL, 'Victoria Strouse', 'Screenwriter');  -- Screenwriter: Victoria Strouse
+INSERT INTO filth.crew_person VALUES (3321, 'DeGeneres', 'Ellen', NULL, 'Ellen DeGeneres', 'Actress');  -- Actress: Ellen DeGeneres
+INSERT INTO filth.crew_person VALUES (3322, 'O''Neill', 'Ed', NULL, 'Ed O''Neill', 'Actor');  -- Actor: Ed O'Neill
+INSERT INTO filth.crew_person VALUES (3323, 'McKinnon', 'Kate', NULL, 'Kate McKinnon', 'Actress');  -- Actress: Kate McKinnon
+INSERT INTO filth.crew_person VALUES (3324, 'Gomez', 'Selena', NULL, 'Selena Gomez', 'Actress');  -- Actress: Selena Gomez
+INSERT INTO filth.crew_person VALUES (3325, 'Shannon', 'Molly', NULL, 'Molly Shannon', 'Actress');  -- Actress: Molly Shannon
