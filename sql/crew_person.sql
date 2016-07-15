@@ -3320,3 +3320,11 @@ INSERT INTO filth.crew_person VALUES (3322, 'O''Neill', 'Ed', NULL, 'Ed O''Neill
 INSERT INTO filth.crew_person VALUES (3323, 'McKinnon', 'Kate', NULL, 'Kate McKinnon', 'Actress');  -- Actress: Kate McKinnon
 INSERT INTO filth.crew_person VALUES (3324, 'Gomez', 'Selena', NULL, 'Selena Gomez', 'Actress');  -- Actress: Selena Gomez
 INSERT INTO filth.crew_person VALUES (3325, 'Shannon', 'Molly', NULL, 'Molly Shannon', 'Actress');  -- Actress: Molly Shannon
+INSERT INTO filth.crew_person VALUES (3326, 'Offerman', 'Nick', NULL, 'Nick Offerman', 'Actor');  -- Actor: Nick Offerman
+INSERT INTO filth.crew_person VALUES (3327, 'Mullally', 'Megan', NULL, 'Megan Mullally', 'Actress');  -- Actress: Megan Mullally
+INSERT INTO filth.crew_person VALUES (3328, 'Carvey', 'Dana', NULL, 'Dana Carvey', 'Actor');  -- Actor: Dana Carvey
+INSERT INTO filth.crew_person VALUES (3329, 'Kattan', 'Chris', NULL, 'Chris Kattan', 'Actor');  -- Actor: Chris Kattan
+INSERT INTO filth.crew_person VALUES (3330, 'Smigel', 'Robert', NULL, 'Robert Smigel', 'Screenwriter');  -- Screenwriter: Robert Smigel
+INSERT INTO filth.crew_person VALUES (3331, 'McGuigan', 'Paul', NULL, 'Paul McGuigan', 'Director');  -- Director: Paul McGuigan
+INSERT INTO filth.crew_person VALUES (3332, 'Radcliffe', 'Daniel', NULL, 'Daniel Radcliffe', 'Actor');  -- Actor: Daniel Radcliffe
+INSERT INTO filth.crew_person VALUES (3333, 'Findlay', 'Jessica', 'Brown', 'Jessica Brown Findlay', 'Actress');  -- Actress: Jessica Brown Findlay
