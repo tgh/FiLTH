@@ -4137,3 +4137,5 @@ INSERT INTO filth.movie VALUES (4141, 'Finding Dory', 2016, '****', 'PG', 'USA',
 INSERT INTO filth.movie VALUES (4142, 'Hotel Transylvania', 2012, '***', 'PG', 'USA', NULL, 'tt0837562', 0, 76492, NULL, NULL);
 INSERT INTO filth.movie VALUES (4143, 'Hotel Transylvania 2', 2015, '**½', 'PG', 'USA', NULL, 'tt2510894', 0, 159824, NULL, NULL);
 INSERT INTO filth.movie VALUES (4144, 'Victor Frankenstein', 2015, '***', 'PG-13', 'England', NULL, 'tt1976009', 0, 228066, NULL, NULL);
+INSERT INTO filth.movie VALUES (4145, 'Minions', 2015, '**½', 'PG', 'USA', NULL, 'tt2293640', 0, 211672, NULL, NULL);
+INSERT INTO filth.movie VALUES (4146, 'The Wolverine', 2013, '**', 'PG-13', 'USA', NULL, 'tt1430132', 0, 76170, NULL, NULL);

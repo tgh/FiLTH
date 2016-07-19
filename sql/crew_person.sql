@@ -3328,3 +3328,5 @@ INSERT INTO filth.crew_person VALUES (3330, 'Smigel', 'Robert', NULL, 'Robert Sm
 INSERT INTO filth.crew_person VALUES (3331, 'McGuigan', 'Paul', NULL, 'Paul McGuigan', 'Director');  -- Director: Paul McGuigan
 INSERT INTO filth.crew_person VALUES (3332, 'Radcliffe', 'Daniel', NULL, 'Daniel Radcliffe', 'Actor');  -- Actor: Daniel Radcliffe
 INSERT INTO filth.crew_person VALUES (3333, 'Findlay', 'Jessica', 'Brown', 'Jessica Brown Findlay', 'Actress');  -- Actress: Jessica Brown Findlay
+INSERT INTO filth.crew_person VALUES (3334, 'Hamm', 'Jon', NULL, 'Jon Hamm', 'Actor');  -- Actor: Jon Hamm
+INSERT INTO filth.crew_person VALUES (3335, 'Bomback', 'Mark', NULL, 'Mark Bomback', 'Screenwriter');  -- Screenwriter: Mark Bomback
