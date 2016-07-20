@@ -3330,3 +3330,9 @@ INSERT INTO filth.crew_person VALUES (3332, 'Radcliffe', 'Daniel', NULL, 'Daniel
 INSERT INTO filth.crew_person VALUES (3333, 'Findlay', 'Jessica', 'Brown', 'Jessica Brown Findlay', 'Actress');  -- Actress: Jessica Brown Findlay
 INSERT INTO filth.crew_person VALUES (3334, 'Hamm', 'Jon', NULL, 'Jon Hamm', 'Actor');  -- Actor: Jon Hamm
 INSERT INTO filth.crew_person VALUES (3335, 'Bomback', 'Mark', NULL, 'Mark Bomback', 'Screenwriter');  -- Screenwriter: Mark Bomback
+INSERT INTO filth.crew_person VALUES (3336, 'Anders', 'Sean', NULL, 'Sean Anders', 'Screenwriter');  -- Screenwriter: Sean Anders
+INSERT INTO filth.crew_person VALUES (3337, 'Morris', 'John', NULL, 'John Morris', 'Screenwriter');  -- Screenwriter: John Morris
+INSERT INTO filth.crew_person VALUES (3338, 'Yellin', 'Bennett', NULL, 'Bennett Yellin', 'Screenwriter');  -- Screenwriter: Bennett Yellin
+INSERT INTO filth.crew_person VALUES (3339, 'Cerrone', 'Mike', NULL, 'Mike Cerrone', 'Screenwriter');  -- Screenwriter: Mike Cerrone
+INSERT INTO filth.crew_person VALUES (3340, 'Riggle', 'Rob', NULL, 'Rob Riggle', 'Actor');  -- Actor: Rob Riggle
+INSERT INTO filth.crew_person VALUES (3341, 'Holden', 'Laurie', NULL, 'Laurie Holden', 'Actress');  -- Actress: Laurie Holden

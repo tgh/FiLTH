@@ -4139,3 +4139,5 @@ INSERT INTO filth.movie VALUES (4143, 'Hotel Transylvania 2', 2015, '**½', 'PG'
 INSERT INTO filth.movie VALUES (4144, 'Victor Frankenstein', 2015, '***', 'PG-13', 'England', NULL, 'tt1976009', 0, 228066, NULL, NULL);
 INSERT INTO filth.movie VALUES (4145, 'Minions', 2015, '**½', 'PG', 'USA', NULL, 'tt2293640', 0, 211672, NULL, NULL);
 INSERT INTO filth.movie VALUES (4146, 'The Wolverine', 2013, '**', 'PG-13', 'USA', NULL, 'tt1430132', 0, 76170, NULL, NULL);
+INSERT INTO filth.movie VALUES (4147, 'Dumb and Dumber To', 2014, '**½', 'PG-13', 'USA', NULL, 'tt2096672', 0, 100042, NULL, NULL);
+INSERT INTO filth.movie VALUES (4148, 'East Side Sushi', 2014, '***', 'PG', 'USA', NULL, 'tt2340650', 0, 257245, NULL, NULL);
