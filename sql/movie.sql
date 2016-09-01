@@ -4141,3 +4141,5 @@ INSERT INTO filth.movie VALUES (4145, 'Minions', 2015, '**½', 'PG', 'USA', NULL
 INSERT INTO filth.movie VALUES (4146, 'The Wolverine', 2013, '**', 'PG-13', 'USA', NULL, 'tt1430132', 0, 76170, NULL, NULL);
 INSERT INTO filth.movie VALUES (4147, 'Dumb and Dumber To', 2014, '**½', 'PG-13', 'USA', NULL, 'tt2096672', 0, 100042, NULL, NULL);
 INSERT INTO filth.movie VALUES (4148, 'East Side Sushi', 2014, '***', 'PG', 'USA', NULL, 'tt2340650', 0, 257245, NULL, NULL);
+INSERT INTO filth.movie VALUES (4149, 'Batman v Superman: Dawn of Justice', 2016, '*', 'PG-13', 'USA', NULL, 'tt2975590', 0, 209112, NULL, NULL);
+INSERT INTO filth.movie VALUES (4150, 'Cafe Society', 2016, '**', 'PG-13', 'USA', NULL, 'tt4513674', 1, 339397, NULL, NULL);
