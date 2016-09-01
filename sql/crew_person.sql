@@ -3339,3 +3339,8 @@ INSERT INTO filth.crew_person VALUES (3341, 'Holden', 'Laurie', NULL, 'Laurie Ho
 INSERT INTO filth.crew_person VALUES (3342, 'Snyder', 'Zack', NULL, 'Zack Snyder', 'Director');  -- Director: Zack Snyder
 INSERT INTO filth.crew_person VALUES (3343, 'Cavill', 'Henry', NULL, 'Henry Cavill', 'Actor');  -- Actor: Henry Cavill
 INSERT INTO filth.crew_person VALUES (3344, 'Fong', 'Larry', NULL, 'Larry Fong', 'Cinematographer');  -- Cinematographer: Larry Fong
+INSERT INTO filth.crew_person VALUES (3345, 'Mallory', 'Steve', NULL, 'Steve Mallory', 'Screenwriter');  -- Screenwriter: Steve Mallory
+INSERT INTO filth.crew_person VALUES (3346, 'Bell', 'Kristen', NULL, 'Kristen Bell', 'Actress');  -- Actress: Kristen Bell
+INSERT INTO filth.crew_person VALUES (3347, 'Labine', 'Tyler', NULL, 'Tyler Labine', 'Actor');  -- Actor: Tyler Labine
+INSERT INTO filth.crew_person VALUES (3348, 'Strong', 'Cecily', NULL, 'Cecily Strong', 'Actress');  -- Actress: Cecily Strong
+INSERT INTO filth.crew_person VALUES (3349, 'Lieberher', 'Jaeden', NULL, 'Jaeden Lieberher', 'Actor');  -- Actor: Jaeden Lieberher
