@@ -4145,3 +4145,5 @@ INSERT INTO filth.movie VALUES (4149, 'Batman v Superman: Dawn of Justice', 2016
 INSERT INTO filth.movie VALUES (4150, 'Cafe Society', 2016, '**', 'PG-13', 'USA', NULL, 'tt4513674', 1, 339397, NULL, NULL);
 INSERT INTO filth.movie VALUES (4151, 'The Boss', 2016, '**', 'R', 'USA', NULL, 'tt2702724', 0, 323676, NULL, NULL);
 INSERT INTO filth.movie VALUES (4152, 'Midnight Special', 2016, '***', 'PG-13', 'USA', NULL, 'tt2649554', 0, 245703, NULL, NULL);
+INSERT INTO filth.movie VALUES (4153, 'Calvary', 2014, '***', 'R', 'Ireland', NULL, 'tt2234003', 0, 157832, NULL, NULL);
+INSERT INTO filth.movie VALUES (4154, 'Enchanted', 2007, '**', 'PG', 'USA', NULL, 'tt0461770', 0, 4523, NULL, NULL);
