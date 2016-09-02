@@ -961,7 +961,7 @@ INSERT INTO filth.movie VALUES (959, 'Limelight', 1952, '**½', 'NR', 'USA', NUL
 INSERT INTO filth.movie VALUES (960, 'The Limey', 1999, '***', 'R', 'USA', NULL, 'tt0165854', 0, 10388, NULL, NULL);
 INSERT INTO filth.movie VALUES (961, 'Lions for Lambs', 2007, '***½', 'R', 'USA', NULL, 'tt0891527', 0, 4515, NULL, NULL);
 INSERT INTO filth.movie VALUES (962, 'Little Big Man', 1970, '***½', 'PG', 'USA', NULL, 'tt0065988', 0, 11040, NULL, NULL);
-INSERT INTO filth.movie VALUES (963, 'The Little Mermaid', 1989, '***', 'G', 'USA', NULL, 'tt0097757', 0, 10144, NULL, NULL);
+INSERT INTO filth.movie VALUES (963, 'The Little Mermaid', 1989, '**½', 'G', 'USA', NULL, 'tt0097757', 0, 10144, NULL, NULL);
 INSERT INTO filth.movie VALUES (964, 'Little Miss Sunshine', 2006, '***½', 'R', 'USA', NULL, 'tt0449059', 0, 773, NULL, NULL);
 INSERT INTO filth.movie VALUES (965, 'Little Nicky', 2000, '**', 'PG-13', 'USA', NULL, 'tt0185431', 0, 9678, NULL, NULL);
 INSERT INTO filth.movie VALUES (966, 'A Little Princess', 1995, '***', 'G', 'USA', NULL, 'tt0113670', 0, 19101, NULL, NULL);
@@ -1535,7 +1535,7 @@ INSERT INTO filth.movie VALUES (1533, 'Spider', 2003, '***', 'R', NULL, NULL, 't
 INSERT INTO filth.movie VALUES (1534, 'Spider-Man', 2002, '**½', 'PG-13', 'USA', NULL, 'tt0145487', 1, 557, NULL, NULL);
 INSERT INTO filth.movie VALUES (1535, 'Spider-Man 2', 2004, '**½', 'PG-13', 'USA', NULL, 'tt0316654', 1, 558, NULL, NULL);
 INSERT INTO filth.movie VALUES (1536, 'Spiral', 2007, '***', 'PG-13', 'USA', NULL, 'tt0491162', 0, 18467, NULL, NULL);
-INSERT INTO filth.movie VALUES (1537, 'Spirited Away', 2002, '****', 'PG', 'Japan', NULL, 'tt0245429', 1, 129, NULL, NULL);
+INSERT INTO filth.movie VALUES (1537, 'Spirited Away', 2002, '***½', 'PG', 'Japan', NULL, 'tt0245429', 1, 129, NULL, NULL);
 INSERT INTO filth.movie VALUES (1538, 'Spy Game', 2001, '***', 'R', 'USA', NULL, 'tt0266987', 2, 1535, NULL, NULL);
 INSERT INTO filth.movie VALUES (1539, 'Stagecoach', 1939, '***½', 'NR', 'USA', NULL, 'tt0031971', 0, 995, NULL, NULL);
 INSERT INTO filth.movie VALUES (1540, 'Stalker', 1979, '***', 'NR', 'USSR', NULL, 'tt0079944', 0, 1398, NULL, NULL);
@@ -2859,7 +2859,7 @@ INSERT INTO filth.movie VALUES (2857, 'Brubaker', 1980, 'not seen', 'R', 'USA', 
 INSERT INTO filth.movie VALUES (2858, 'Prince of the City', 1981, 'not seen', 'R', 'USA', NULL, 'tt0082945', NULL, 32047, NULL, NULL);
 INSERT INTO filth.movie VALUES (2859, 'Pennies from Heaven', 1981, 'not seen', 'R', 'USA', NULL, 'tt0082894', NULL, 17450, NULL, NULL);
 INSERT INTO filth.movie VALUES (2860, 'Betrayal', 1983, 'not seen', 'R', 'England', NULL, 'tt0085234', NULL, 139383, NULL, NULL);
-INSERT INTO filth.movie VALUES (2861, 'Splash', 1984, 'not seen', 'PG', 'USA', NULL, 'tt0088161', NULL, 2619, NULL, NULL);
+INSERT INTO filth.movie VALUES (2861, 'Splash', 1984, '**½', 'PG', 'USA', NULL, 'tt0088161', NULL, 2619, NULL, NULL);
 INSERT INTO filth.movie VALUES (2862, 'El Norte', 1983, '***½', 'R', 'USA', NULL, 'tt0085482', 0, 17435, NULL, NULL);
 INSERT INTO filth.movie VALUES (2863, 'The Official Story', 1985, 'not seen', 'R', 'Argentina', NULL, 'tt0089276', NULL, 29263, NULL, NULL);
 INSERT INTO filth.movie VALUES (2864, 'My Beautiful Laundrette', 1986, 'not seen', 'R', 'England', NULL, 'tt0091578', NULL, 11240, NULL, NULL);
@@ -4147,3 +4147,4 @@ INSERT INTO filth.movie VALUES (4151, 'The Boss', 2016, '**', 'R', 'USA', NULL, 
 INSERT INTO filth.movie VALUES (4152, 'Midnight Special', 2016, '***', 'PG-13', 'USA', NULL, 'tt2649554', 0, 245703, NULL, NULL);
 INSERT INTO filth.movie VALUES (4153, 'Calvary', 2014, '***', 'R', 'Ireland', NULL, 'tt2234003', 0, 157832, NULL, NULL);
 INSERT INTO filth.movie VALUES (4154, 'Enchanted', 2007, '**', 'PG', 'USA', NULL, 'tt0461770', 0, 4523, NULL, NULL);
+INSERT INTO filth.movie VALUES (4155, 'Jason Bourne', 2016, '**½', 'PG-13', 'England', NULL, 'tt4196776', 1, 324668, NULL, NULL);

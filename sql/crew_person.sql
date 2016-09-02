@@ -3346,3 +3346,8 @@ INSERT INTO filth.crew_person VALUES (3348, 'Strong', 'Cecily', NULL, 'Cecily St
 INSERT INTO filth.crew_person VALUES (3349, 'Lieberher', 'Jaeden', NULL, 'Jaeden Lieberher', 'Actor');  -- Actor: Jaeden Lieberher
 INSERT INTO filth.crew_person VALUES (3350, 'McDonagh', 'John', 'Michael', 'John Michael McDonagh', 'Director');  -- Director: John Michael McDonagh
 INSERT INTO filth.crew_person VALUES (3351, 'Dempsey', 'Patrick', NULL, 'Patrick Dempsey', 'Actor');  -- Actor: Patrick Dempsey
+INSERT INTO filth.crew_person VALUES (3352, 'Rouse', 'Christopher', NULL, 'Christopher Rouse', 'Screenwriter');  -- Screenwriter: Christopher Rouse
+INSERT INTO filth.crew_person VALUES (3353, 'Sinbad', NULL, NULL, 'Sinbad', 'Actor');  -- Actor: Sinbad
+INSERT INTO filth.crew_person VALUES (3354, 'Hartman', 'Phil', NULL, 'Phil Hartman', 'Actor');  -- Actor: Phil Hartman
+INSERT INTO filth.crew_person VALUES (3355, 'Greist', 'Kim', NULL, 'Kim Greist', 'Actress');  -- Actress: Kim Greist
+INSERT INTO filth.crew_person VALUES (3356, 'Leopardi', 'Chauncey', NULL, 'Chauncey Leopardi', 'Actor');  -- Actor: Chauncey Leopardi
