@@ -81,7 +81,9 @@
                             ${listMovie.comments}
                         </#if>
                     </td>
-                    <td><a class="button redButton removeButton" href="javascript: removeFromList(${movie.id})">Remove</a></td>
+                    <td><a class="button redButton removeButton"
+                           href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">Remove</a>
+                    </td>
                 </tr>
             </#list>
         </tbody>

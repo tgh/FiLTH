@@ -1,5 +1,6 @@
 package com.filth.controller.admin;
 
+import java.util.Iterator;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -20,6 +21,8 @@ import com.filth.interceptor.BackgroundImageInterceptor;
 import com.filth.json.ListJSONTranslator;
 import com.filth.link.Link;
 import com.filth.link.ManageListsLinkGenerator;
+import com.filth.model.ListMovie;
+import com.filth.service.ListMovieService;
 import com.filth.service.ListService;
 import com.filth.util.ModelAndViewUtil;
 
@@ -33,22 +36,29 @@ public class ManageListsController extends ManageEntityController implements Man
     @Resource
     private ListService _listService;
     @Resource
+    private ListMovieService _listMovieService;
+    @Resource
     private ModelAndViewUtil _modelAndViewUtil;
     @Resource
     private ListJSONTranslator _listJSONTranslator;
     
     private static final class URL {
+        //TECH-DEBT: when to use LISTS and when to use LIST? why have both?
         public static final String LISTS = ADMIN_URL_PREFIX + "/lists";
         public static final String LIST = ADMIN_URL_PREFIX + "/list";
         public static final String DELETE = LISTS + "/delete";
         public static final String SAVE = LISTS + "/save";
+        public static final String REMOVE_MOVIE = LISTS + "/removeMovie";
     }
     
     private static final class URLParam {
+        //TECH-DEBT: make all ids explicit (e.g. LIST_ID, not ID),
+        //and perhaps move to a common location for all Controllers to use
         public static final String ID = "id";
         public static final String TITLE = "title";
         public static final String AUTHOR = "author";
         public static final String LIST_JSON = "listJSON";
+        public static final String MOVIE_ID = "movieId";
     }
     
     private static final class ModelKey {
@@ -80,6 +90,12 @@ public class ManageListsController extends ManageEntityController implements Man
     @Override
     public Link getLinkToList(int id) {
         return new Link(URL.LIST).setParam(URLParam.ID, String.valueOf(id));
+    }
+    
+    @Override
+    public Link getLinkToRemoveMovieFromList(int listId, int movieId) {
+        return new Link(URL.REMOVE_MOVIE).setParam(URLParam.ID, String.valueOf(listId))
+                                         .setParam(URLParam.MOVIE_ID, movieId);
     }
     
     @RequestMapping(value=URL.LISTS, method=RequestMethod.GET)
@@ -189,6 +205,41 @@ public class ManageListsController extends ManageEntityController implements Man
         mm.put(ModelKey.LIST_JSON, jsonObject.toString());
         
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);
+    }
+    
+    @RequestMapping(value=URL.REMOVE_MOVIE, method=RequestMethod.POST)
+    public ModelAndView removeMovieFromList(
+            @RequestParam(value=URLParam.ID) Integer listId,
+            @RequestParam(value=URLParam.MOVIE_ID) Integer movieId) {
+        String title = "[unknown title]";
+        com.filth.model.List list = null;
+        
+        try {
+            list = _listService.getListById(listId);
+            title = list.getTitle();
+            
+            //remove the movie from the list
+            Iterator<ListMovie> listMovieIterator = list.getListMovies().iterator();
+            while (listMovieIterator.hasNext()) {
+                ListMovie listMovie = listMovieIterator.next();
+                if (listMovie.getMovie().getId() == movieId) {
+                    listMovieIterator.remove();
+                    _listMovieService.deleteListMovie(listMovie);
+                    break;
+                }
+            }
+            
+            _listService.saveList(list);
+        } catch (Exception e) {
+            LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, title), e);
+            return _modelAndViewUtil.createErrorJsonModelAndView(
+                    String.format(SAVE_ERROR_MESSAGE_FORMAT, ENTITY_NAME, title), new ModelMap());
+        }
+        
+        ModelMap mm = new ModelMap();
+        mm.put(ModelKey.LIST, list);
+        return _modelAndViewUtil.createSuccessJsonModelAndView(
+                String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
     }
 
 }

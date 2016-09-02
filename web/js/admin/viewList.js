@@ -167,11 +167,29 @@ function saveList() {
     });
 }
 
-function removeFromList(movieId) {
+function removeFromList(removeUrl, movieId) {
     movieRow = $('tr[data-movie-id=' + movieId + ']');
-    table = $('#moviesTable').DataTable();
-    table.row($('tr[data-movie-id="' + movieId + '"]')).remove().draw('full-hold');
-    movieList.removeMovie(movieId);
+    
+    $.ajax({
+        url: removeUrl,
+        type: 'POST',
+        success: function(json) {
+            if (TRUE === json[JSON_KEY_SUCCESS]) {
+                alertify.success(json[JSON_KEY_MESSAGE]);
+                
+                //remove row from the table
+                table = $('#moviesTable').DataTable();
+                table.row($('tr[data-movie-id="' + movieId + '"]')).remove().draw('full-hold');
+                //remove movie from list json
+                movieList.removeMovie(movieId);
+            } else {
+                alertify.error(json[JSON_KEY_MESSAGE]);
+            }
+        },
+        error: function(data) {
+            ajaxErrorHandler(data, 'Sorry, a problem occurred during movie removal and no info was given.');
+        }
+    });
 }
 
 function clearStackTraceContainer() {

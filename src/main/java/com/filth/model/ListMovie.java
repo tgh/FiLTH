@@ -89,4 +89,15 @@ public class ListMovie {
         return sb.toString();
     }
     
+    @Override
+    public boolean equals(Object listMovie) {
+        boolean equals = false;
+        
+        if (listMovie instanceof ListMovie) {
+            equals = getId().equals(((ListMovie)listMovie).getId());
+        }
+        
+        return equals;
+    }
+    
 }
