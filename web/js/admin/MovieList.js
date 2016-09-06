@@ -44,6 +44,16 @@ MovieList.prototype.setRankForMovie = function(movieId, rank) {
     this.updateInput();
 }
 
+MovieList.prototype.setCommentsForMovie = function(movieId, comments) {
+    for (i=0; i < this.data['movies'].length; ++i) {
+        if (this.data['movies'][i]['mid'] == movieId) {
+            this.data['movies'][i]['comments'] = comments;
+            break;
+        }
+    }
+    this.updateInput();
+}
+
 MovieList.prototype.toJsonString = function() {
     return JSON.stringify(this.data);
 }

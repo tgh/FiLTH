@@ -15,7 +15,8 @@
 
 #listTitleDisplay,
 #listAuthorDisplay,
-.listRankDisplay {
+.listRankDisplay,
+.listCommentsDisplay {
     cursor: pointer;
 }
 
@@ -24,9 +25,15 @@
     text-align: center;
     padding: 3px;
 }
+
+.listCommentsDisplay {
+    padding: 3px;
+}
+
 #listTitleDisplay:hover,
 #listAuthorDisplay:hover,
-.listRankDisplay:hover {
+.listRankDisplay:hover,
+.listCommentsDisplay:hover {
     border: solid 1px #bbb;
     border-radius: 5px;
 }

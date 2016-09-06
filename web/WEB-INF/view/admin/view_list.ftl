@@ -76,10 +76,9 @@
                         </#if>
                         <input class="hidden listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
                     </td>
-                    <td>
-                        <#if listMovie.comments??>
-                            ${listMovie.comments}
-                        </#if>
+                    <td class="commentsColumn">
+                        <div class="listCommentsDisplay contentDisplay"><#if listMovie.comments??>${listMovie.comments}</#if></div>
+                        <input class="hidden listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
                     </td>
                     <td><a class="button redButton removeButton"
                            href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">Remove</a>

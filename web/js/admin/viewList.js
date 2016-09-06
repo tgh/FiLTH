@@ -3,6 +3,7 @@ function addListeners() {
     $('.listRankEdit').keydown(listRankKeydownHandler);
     $('#listTitleEdit').keydown(listTitleKeydownHandler);
     $('#listAuthorEdit').keydown(listAuthorKeydownHandler);
+    $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
 }
 
 function allClickHandler(event) {
@@ -16,6 +17,10 @@ function allClickHandler(event) {
     }
     //author click
     else if ($(event.target).closest('#listAuthorDisplay').length) {
+        editableContentClickHandler(event);
+    }
+    //comments click
+    else if ($(event.target).closest('.listCommentsDisplay').length) {
         editableContentClickHandler(event);
     }
     //input click
@@ -82,7 +87,7 @@ function listRankKeydownHandler(event) {
         show(rankDisplayElement);
         //reset the input val to the original rank as well
         rankEditElement.val(rankDisplayElement.html());
-    }   
+    }
 }
 
 function listTitleKeydownHandler(event) {
@@ -147,6 +152,35 @@ function listAuthorKeydownHandler(event) {
         show(authorDisplayElement);
         //reset the input val to the original author as well
         authorEditElement.val(authorDisplayElement.html());
+    }
+}
+
+function listCommentsKeydownHandler(event) {
+    commentsEditElement = $(event.target);
+    commentsDisplayElement = commentsEditElement.siblings('.contentDisplay');
+    
+    //'enter' key, keep change in comments
+    if(event.keyCode == 13) {
+        newComments = event.target.value;
+        
+        movieId = commentsEditElement.parents('tr')[0].dataset.movieId;
+        movieList.setCommentsForMovie(movieId, newComments);
+        
+        //update the table
+        table = $('#moviesTable').DataTable();
+        table.cell('tr[data-movie-id="' + movieId + '"] td.commentsColumn').data(
+            '<div class="listCommentsDisplay contentDisplay">' + newComments + '</div>' +
+            '<input class="hidden listCommentsEdit contentInput" type="text" value="' + newComments + '">'
+        ).draw('full-hold');
+        
+        saveList();
+    }
+    //'esc' key, cancel: revert back to original comments
+    else if (event.keyCode == 27) {
+        hide(commentsEditElement);
+        show(commentsDisplayElement);
+        //reset the input val to the original comments as well
+        commentsEditElement.val(commentsDisplayElement.html());
     }
 }
 
