@@ -3351,3 +3351,5 @@ INSERT INTO filth.crew_person VALUES (3353, 'Sinbad', NULL, NULL, 'Sinbad', 'Act
 INSERT INTO filth.crew_person VALUES (3354, 'Hartman', 'Phil', NULL, 'Phil Hartman', 'Actor');  -- Actor: Phil Hartman
 INSERT INTO filth.crew_person VALUES (3355, 'Greist', 'Kim', NULL, 'Kim Greist', 'Actress');  -- Actress: Kim Greist
 INSERT INTO filth.crew_person VALUES (3356, 'Leopardi', 'Chauncey', NULL, 'Chauncey Leopardi', 'Actor');  -- Actor: Chauncey Leopardi
+INSERT INTO filth.crew_person VALUES (3357, 'Webb', 'Marc', NULL, 'Marc Webb', 'Director');  -- Director: Marc Webb
+INSERT INTO filth.crew_person VALUES (3358, 'Ifans', 'Rhys', NULL, 'Rhys Ifans', 'Actor');  -- Actor: Rhys Ifans

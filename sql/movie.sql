@@ -4075,7 +4075,7 @@ INSERT INTO filth.movie VALUES (4077, 'Antonia: Portrait of a Woman', 1974, 'not
 INSERT INTO filth.movie VALUES (4078, 'Hustle', 1975, 'not seen', 'R', 'USA', NULL, 'tt0073133', NULL, 4990, NULL, NULL);
 INSERT INTO filth.movie VALUES (4080, 'Stay Hungry', 1976, 'not seen', 'R', 'USA', NULL, 'tt0075268', NULL, 5228, NULL, NULL);
 INSERT INTO filth.movie VALUES (4081, 'In the Realm of the Senses', 1976, 'not seen', 'X', 'Japan', NULL, 'tt0074102', NULL, 5879, NULL, NULL);
-INSERT INTO filth.movie VALUES (4082, 'Pumping Iron', 1977, 'not seen', 'PG', 'USA', NULL, 'tt0076578', NULL, 5205, NULL, NULL);
+INSERT INTO filth.movie VALUES (4082, 'Pumping Iron', 1977, '***', 'PG', 'USA', NULL, 'tt0076578', NULL, 5205, NULL, NULL);
 INSERT INTO filth.movie VALUES (4083, 'Rolling Thunder', 1977, 'not seen', 'R', 'USA', NULL, 'tt0076637', NULL, 21948, NULL, NULL);
 INSERT INTO filth.movie VALUES (4084, 'Straight Time', 1978, 'not seen', 'R', 'USA', NULL, 'tt0078326', NULL, 23397, NULL, NULL);
 INSERT INTO filth.movie VALUES (4085, 'Pretty Baby', 1978, 'not seen', 'R', 'USA', NULL, 'tt0078111', NULL, 26973, NULL, NULL);
@@ -4148,3 +4148,4 @@ INSERT INTO filth.movie VALUES (4152, 'Midnight Special', 2016, '***', 'PG-13', 
 INSERT INTO filth.movie VALUES (4153, 'Calvary', 2014, '***', 'R', 'Ireland', NULL, 'tt2234003', 0, 157832, NULL, NULL);
 INSERT INTO filth.movie VALUES (4154, 'Enchanted', 2007, '**', 'PG', 'USA', NULL, 'tt0461770', 0, 4523, NULL, NULL);
 INSERT INTO filth.movie VALUES (4155, 'Jason Bourne', 2016, '**½', 'PG-13', 'England', NULL, 'tt4196776', 1, 324668, NULL, NULL);
+INSERT INTO filth.movie VALUES (4156, 'The Amazing Spider-Man', 2012, '***', 'PG-13', 'USA', NULL, 'tt0948470', 0, 1930, NULL, NULL);
