@@ -88,6 +88,11 @@ public class ManageListsController extends ManageEntityController implements Man
     }
     
     @Override
+    public Link getLinkToNewList() {
+        return new Link(URL.LIST);
+    }
+    
+    @Override
     public Link getLinkToList(int id) {
         return new Link(URL.LIST).setParam(URLParam.ID, String.valueOf(id));
     }
@@ -148,14 +153,23 @@ public class ManageListsController extends ManageEntityController implements Man
     public ModelAndView saveListJSON(
             @RequestParam(value=URLParam.LIST_JSON) String listJSON) throws Exception {
         String title = "[unknown title]";
-        com.filth.model.List originalList = null;
+        com.filth.model.List listToSave = null;
         
         try {
-            com.filth.model.List newList = _listJSONTranslator.fromJSON(listJSON);
-            title = newList.getTitle();
-            originalList = _listService.getListById(newList.getId());
-            originalList.copyContent(newList);
-            _listService.saveList(originalList);
+            com.filth.model.List listFromJSON = _listJSONTranslator.fromJSON(listJSON);
+            title = listFromJSON.getTitle();
+            
+            //existing list
+            if (null != listFromJSON.getId()) {
+                listToSave = _listService.getListById(listFromJSON.getId());
+                listToSave.copyContent(listFromJSON);
+            }
+            //new list
+            else {
+                listToSave = listFromJSON;
+            }
+            
+            _listService.saveList(listToSave);
         } catch (Exception e) {
             LOGGER.error(String.format(SAVE_ERROR_LOG_MESSAGE_FORMAT, ENTITY_NAME, title), e);
             return _modelAndViewUtil.createErrorJsonModelAndView(
@@ -163,7 +177,7 @@ public class ManageListsController extends ManageEntityController implements Man
         }
         
         ModelMap mm = new ModelMap();
-        mm.put(ModelKey.LIST, originalList);
+        mm.put(ModelKey.LIST, listToSave);
         
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
@@ -196,12 +210,23 @@ public class ManageListsController extends ManageEntityController implements Man
     
     @RequestMapping(value=URL.LIST, method=RequestMethod.GET)
     public ModelAndView viewList(
-            @RequestParam(value=URLParam.ID) Integer id) {
+            @RequestParam(value=URLParam.ID, required=false) Integer id) {
         ModelMap mm = new ModelMap();
-        com.filth.model.List list = _listService.getListById(id);
-        mm.put(ModelKey.LIST, list);
+        com.filth.model.List list = null;
+        JSONObject jsonObject = null;
         
-        JSONObject jsonObject = _listJSONTranslator.toJSON(list);
+        //existing list
+        if (null != id) {
+            list =  _listService.getListById(id);
+            jsonObject = _listJSONTranslator.toJSON(list);
+        }
+        //new list
+        else {
+            list = new com.filth.model.List();
+            jsonObject = new JSONObject();
+        }
+        
+        mm.put(ModelKey.LIST, list);
         mm.put(ModelKey.LIST_JSON, jsonObject.toString());
         
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);

@@ -2,8 +2,13 @@
 <#assign headerContent>
     <div id="listHeader" class="header">
         <div id="listTitle">
-            <span id="listTitleDisplay" class="contentDisplay">${list.title}</span>
-            <input id="listTitleEdit" class="hidden contentInput" type="text" value="${list.title}">
+            <#assign title="[title]"/>
+            <#if list.title??>
+                <#assign title="${list.title}"/>
+            </#if>
+            
+            <span id="listTitleDisplay" class="contentDisplay">${title}</span>
+            <input id="listTitleEdit" class="hidden contentInput" type="text" value="${title}">
         </div>
         
         <div id="by">
@@ -52,39 +57,41 @@
             </tr>
         </thead>
         <tbody>
-            <#list list.listMovies as listMovie>
-                <#assign movie = listMovie.movie />
-                
-                <#assign rowCssClass = "odd" />
-                <#if listMovie?index % 2 == 0>
-                    <#assign rowCssClass = "even" />
-                </#if>
-                
-                <tr data-movie-id="${movie.id}" class="${rowCssClass}">
-                    <td>
-                        <#-- check mark for movies seen -->
-                        <#if movie.starRating?? && movie.starRating != "not seen">
-                            &#x2714;
-                        </#if>
-                    </td>
-                    <td>
-                        <a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title} <#if movie.year??>(${movie.year})</#if></a>
-                    </td>
-                    <td class="rankColumn">
-                        <#if listMovie.rank??>
-                            <div class="listRankDisplay contentDisplay">${listMovie.rank}</div>
-                        </#if>
-                        <input class="hidden listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
-                    </td>
-                    <td class="commentsColumn">
-                        <div class="listCommentsDisplay contentDisplay"><#if listMovie.comments??>${listMovie.comments}</#if></div>
-                        <input class="hidden listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
-                    </td>
-                    <td><a class="button redButton removeButton"
-                           href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">Remove</a>
-                    </td>
-                </tr>
-            </#list>
+            <#if list.listMovies??>
+                <#list list.listMovies as listMovie>
+                    <#assign movie = listMovie.movie />
+                    
+                    <#assign rowCssClass = "odd" />
+                    <#if listMovie?index % 2 == 0>
+                        <#assign rowCssClass = "even" />
+                    </#if>
+                    
+                    <tr data-movie-id="${movie.id}" class="${rowCssClass}">
+                        <td>
+                            <#-- check mark for movies seen -->
+                            <#if movie.starRating?? && movie.starRating != "not seen">
+                                &#x2714;
+                            </#if>
+                        </td>
+                        <td>
+                            <a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title} <#if movie.year??>(${movie.year})</#if></a>
+                        </td>
+                        <td class="rankColumn">
+                            <#if listMovie.rank??>
+                                <div class="listRankDisplay contentDisplay">${listMovie.rank}</div>
+                            </#if>
+                            <input class="hidden listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
+                        </td>
+                        <td class="commentsColumn">
+                            <div class="listCommentsDisplay contentDisplay"><#if listMovie.comments??>${listMovie.comments}</#if></div>
+                            <input class="hidden listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
+                        </td>
+                        <td><a class="button redButton removeButton"
+                               href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">Remove</a>
+                        </td>
+                    </tr>
+                </#list>
+            </#if>
         </tbody>
     </table>
     

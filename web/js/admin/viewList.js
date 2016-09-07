@@ -185,20 +185,23 @@ function listCommentsKeydownHandler(event) {
 }
 
 function saveList() {
-    clearStackTraceContainer();
-    
-    $('#saveListForm').ajaxSubmit({
-        success: function(json) {
-            if (TRUE === json[JSON_KEY_SUCCESS]) {
-                alertify.success(json[JSON_KEY_MESSAGE]);
-            } else {
-                alertify.error(json[JSON_KEY_MESSAGE]);
+    //do not attempt to save if the list is invalid
+    if (VALID == validateList()) {
+        clearStackTraceContainer();
+        
+        $('#saveListForm').ajaxSubmit({
+            success: function(json) {
+                if (TRUE === json[JSON_KEY_SUCCESS]) {
+                    alertify.success(json[JSON_KEY_MESSAGE]);
+                } else {
+                    alertify.error(json[JSON_KEY_MESSAGE]);
+                }
+            },
+            error: function(data) {
+                ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
             }
-        },
-        error: function(data) {
-            ajaxErrorHandler(data, 'Sorry, a problem occurred during save and no info was given.');
-        }
-    });
+        });
+    }
 }
 
 function removeFromList(removeUrl, movieId) {
@@ -224,6 +227,23 @@ function removeFromList(removeUrl, movieId) {
             ajaxErrorHandler(data, 'Sorry, a problem occurred during movie removal and no info was given.');
         }
     });
+}
+
+function validateList() {
+    //a title must be present
+    title = $('#listTitleDisplay').text();
+    if (title === '[title]' || title === '') {
+        alertify.error('You must give the list a title.')
+        return INVALID;
+    }
+    
+    //there must be at least 1 movie in the list
+    if ($('#moviesTable tr[data-movie-id]').length < 1) {
+        alertify.error('There must be at least 1 movie in the list.')
+        return INVALID;
+    }
+    
+    return VALID;
 }
 
 function clearStackTraceContainer() {

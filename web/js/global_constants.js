@@ -9,3 +9,6 @@ HIDDEN_CLASS = 'hidden';
 
 TRUE = 'true';
 FALSE = 'false';
+
+VALID = true;
+INVALID = false;

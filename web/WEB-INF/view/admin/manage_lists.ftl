@@ -42,7 +42,7 @@
     </table>
     
     <#-- Add list button-->
-    <a class="addButton button">Create List</a>
+    <a href="${links.getLinkToNewList()}" class="addButton button">Create List</a>
     
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
