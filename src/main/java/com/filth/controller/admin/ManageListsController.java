@@ -22,8 +22,10 @@ import com.filth.json.ListJSONTranslator;
 import com.filth.link.Link;
 import com.filth.link.ManageListsLinkGenerator;
 import com.filth.model.ListMovie;
+import com.filth.model.Movie;
 import com.filth.service.ListMovieService;
 import com.filth.service.ListService;
+import com.filth.service.MovieService;
 import com.filth.util.ModelAndViewUtil;
 
 @Controller
@@ -41,14 +43,16 @@ public class ManageListsController extends ManageEntityController implements Man
     private ModelAndViewUtil _modelAndViewUtil;
     @Resource
     private ListJSONTranslator _listJSONTranslator;
+    @Resource
+    private MovieService _movieService;
     
     private static final class URL {
-        //TECH-DEBT: when to use LISTS and when to use LIST? why have both?
         public static final String LISTS = ADMIN_URL_PREFIX + "/lists";
         public static final String LIST = ADMIN_URL_PREFIX + "/list";
-        public static final String DELETE = LISTS + "/delete";
-        public static final String SAVE = LISTS + "/save";
-        public static final String REMOVE_MOVIE = LISTS + "/removeMovie";
+        public static final String DELETE = LIST + "/delete";
+        public static final String SAVE = LIST + "/save";
+        public static final String REMOVE_MOVIE = LIST + "/removeMovie";
+        public static final String ADD_MOVIES = LIST + "/addMovies";
     }
     
     private static final class URLParam {
@@ -65,6 +69,7 @@ public class ManageListsController extends ManageEntityController implements Man
         public static final String LISTS = "lists";
         public static final String LIST = "list";
         public static final String LIST_JSON = "listJSON";
+        public static final String MOVIES = "movies";
     }
 
     @Override
@@ -101,6 +106,11 @@ public class ManageListsController extends ManageEntityController implements Man
     public Link getLinkToRemoveMovieFromList(int listId, int movieId) {
         return new Link(URL.REMOVE_MOVIE).setParam(URLParam.ID, String.valueOf(listId))
                                          .setParam(URLParam.MOVIE_ID, movieId);
+    }
+    
+    @Override
+    public Link getLinkToAddMoviesToListModal() {
+        return new Link(URL.ADD_MOVIES);
     }
     
     @RequestMapping(value=URL.LISTS, method=RequestMethod.GET)
@@ -231,7 +241,8 @@ public class ManageListsController extends ManageEntityController implements Man
         
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);
     }
-    
+
+    @SkipInterceptor({BackgroundImageInterceptor.class})
     @RequestMapping(value=URL.REMOVE_MOVIE, method=RequestMethod.POST)
     public ModelAndView removeMovieFromList(
             @RequestParam(value=URLParam.ID) Integer listId,
@@ -265,6 +276,17 @@ public class ManageListsController extends ManageEntityController implements Man
         mm.put(ModelKey.LIST, list);
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
+    }
+    
+    @SkipInterceptor({BackgroundImageInterceptor.class})
+    @RequestMapping(value=URL.ADD_MOVIES, method=RequestMethod.GET)
+    public ModelAndView addMoviesModal() {
+        List<Movie> movies = _movieService.getAllMovies();
+        
+        ModelMap mm = new ModelMap();
+        mm.put(ModelKey.MOVIES, movies);
+        
+        return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list_add_movies_modal", mm);
     }
 
 }

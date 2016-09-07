@@ -30,9 +30,9 @@
             <a href="${links.getLinkToManageLists()}">Back to Lists</a>
         </div>
         
-        <#-- Add movie button -- NOT YET FUNCTIONAL -->
-        <div id="addMovieLink">
-            <a data-remodal-target="addMovieModal" class="addButton button">Add Movie</a>
+        <#-- Add movies button -- NOT YET FUNCTIONAL -->
+        <div id="addMoviesLink">
+            <a data-remodal-target="addMoviesModal" class="addButton button">Add Movies</a>
         </div>
     </div>
 </#assign>
@@ -103,6 +103,11 @@
     <#-- Stacktrace container -->
     <div id="stackTraceContainer" class="hidden error"></div>
     
+    <#-- Add movies modal -->
+    <div id="addMoviesModal" class="remodal modal" data-remodal-id="addMoviesModal" data-remodal-options="hashTracking: false">
+        <div id="addMoviesModalLoadingText"><h1>Loading...</h1></div>
+    </div>
+    
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
     <@util.js "third-party/alertify/alertify.min" />
@@ -112,5 +117,6 @@
     <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
     <script type="text/javascript">
         var movieList = new MovieList('${listJSON}');
+        var addMoviesUrl = '${links.getLinkToAddMoviesToListModal()}';
     </script>
 </@layout.standard>

@@ -9,5 +9,6 @@ public interface ManageListsLinkGenerator {
     public Link getLinkToNewList();
     public Link getLinkToList(int id);
     public Link getLinkToRemoveMovieFromList(int listId, int movieId);
+    public Link getLinkToAddMoviesToListModal();
     
 }

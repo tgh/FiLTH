@@ -4,6 +4,7 @@ function addListeners() {
     $('#listTitleEdit').keydown(listTitleKeydownHandler);
     $('#listAuthorEdit').keydown(listAuthorKeydownHandler);
     $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
+    $('#addMoviesLink a').click(addMoviesClickHandler);
 }
 
 function allClickHandler(event) {
@@ -244,6 +245,22 @@ function validateList() {
     }
     
     return VALID;
+}
+
+function addMoviesClickHandler() {
+    //clear the current modal content
+    $('#addMoviesModalBody').remove();
+    //show the 'Loading...' text
+    show($('#addMoviesModalLoadingText'));
+    
+    $.ajax(addMoviesUrl, {  // <-- url defined in view_list.ftl
+        success: function(data) {
+            //hide the 'Loading...' text
+            hide($('#addMoviesModalLoadingText'));
+            //the '.mCSB_container *must* be present here (see http://manos.malihu.gr/jquery-custom-content-scroller/4/#faq-4)
+            $('#addMoviesModal').html(data);
+        }
+    });
 }
 
 function clearStackTraceContainer() {
