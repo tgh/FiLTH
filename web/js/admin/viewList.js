@@ -263,6 +263,15 @@ function addMoviesClickHandler() {
     });
 }
 
+function addMoviesModalMovieRowClickHandler(event) {
+    checkbox = $(event.target).parents('tr').find('.movieCheckbox');
+    if (checkbox.prop('checked')) {
+        checkbox.prop('checked', false);
+    } else {
+        checkbox.prop('checked', true);
+    }
+}
+
 function clearStackTraceContainer() {
     stackTraceContainer = $('#stackTraceContainer');
     stackTraceContainer.html('');

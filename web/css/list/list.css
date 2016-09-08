@@ -94,3 +94,7 @@ body #rootContentContainer {
     margin-top: 5px;
     height: 68vh;
 }
+
+#addMoviesModalTable .movieTitle {
+    text-align: left;
+}

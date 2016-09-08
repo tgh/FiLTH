@@ -4,13 +4,19 @@
     <table id="addMoviesModalTable" class="hidden">
         <thead>
             <tr>
+                <th></th>
                 <th>Title</th>
                 <th>Year</th>
                 <th>Star Rating</th>
+                
+                <#--
+                  -- In case you ever want to enable these in the future...
+                  --
                 <th>MPAA Rating</th>
                 <th>Country</th>
                 <th>Times seen in theater</th>
                 <th>Comments</th>
+                -->
             </tr>
         </thead>
         <tbody>
@@ -21,17 +27,24 @@
                 </#if>
                 
                 <tr data-movie-id="${movie.id}" class="${rowCssClass}">
-                    <td><a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title}</a></td>
-                    <td>
+                    <td class="movieCheckboxContainer">
+                        <input type="checkbox" class="movieCheckbox">
+                    </td>
+                    <td class="movieTitle">${movie.title}</td>
+                    <td class="movieYear">
                         <#if movie.year??>
                             ${movie.year}
                         </#if>
                     </td>
-                    <td>
+                    <td class="movieStarRating">
                         <#if movie.starRating??>
                             ${movie.starRatingForDisplay}
                         </#if>
                     </td>
+                    
+                    <#--
+                      -- In case you ever want to enable these in the future (see above)...
+                      --
                     <td>
                         <#if movie.mpaaRating??>
                             ${movie.mpaaRating}
@@ -52,6 +65,8 @@
                             ${movie.comments}
                         </#if>
                     </td>
+                    -->
+                    
                 </tr>
             </#foreach>
         </tbody>
@@ -60,13 +75,13 @@
 
 <#-- js for datatables AND its Select extension-->
 <@util.js "movie/movies" />
+
+<#-- TECH-DEBT: move this js into a file -->
 <script type="text/javascript">
     $(document).ready(function() {
         start = Math.floor(Date.now() / 1000);
         console.log('Initializing movies data table');
         $('#addMoviesModalTable').DataTable({
-            //allow selection of table rows
-            select: true,
             //do not load all content at once--only when displaying on the page
             deferRender: true,
             initComplete: function() {
@@ -78,5 +93,8 @@
         });
         end = Math.floor(Date.now() / 1000);
         console.log('DONE initializing movies data table in ' + (end - start) + ' seconds');
+        
+        //add click listener for rows in the modal's movie table
+        $('#addMoviesModalTable td').not('.movieCheckboxContainer').click(addMoviesModalMovieRowClickHandler);
     });
 </script>
