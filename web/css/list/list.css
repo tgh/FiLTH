@@ -95,6 +95,6 @@ body #rootContentContainer {
     height: 68vh;
 }
 
-#addMoviesModalTable .movieTitle {
+#editListMoviesTable .movieTitle {
     text-align: left;
 }

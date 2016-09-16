@@ -3,13 +3,18 @@
  */
 MovieList = function MovieList(json) {
     this.data = JSON.parse(json);
+    //add movies property if not present (if it's a brand new list, for example)
+    if (!this.data.movies) {
+        this.data['movies'] = [];
+    }
     this.INPUT_DOM_KEY = '#listJSONInput';
+    this.updateInput();
 }
 
 /** MovieList functions */
 
 MovieList.prototype.addMovie = function(id, rank, comments) {
-    this.data['movies'].push({id: id, rank: rank, comments: comments});
+    this.data['movies'].push({mid: id});
     this.updateInput();
 }
 
@@ -60,4 +65,12 @@ MovieList.prototype.toJsonString = function() {
 
 MovieList.prototype.updateInput = function() {
     $(this.INPUT_DOM_KEY).val(this.toJsonString());
+}
+
+MovieList.prototype.hasMovies = function() {
+    if (!this.data.movies || this.data.movies.length == 0) {
+        return false;
+    }
+    
+    return true;
 }
