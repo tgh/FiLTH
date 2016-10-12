@@ -3353,3 +3353,7 @@ INSERT INTO filth.crew_person VALUES (3355, 'Greist', 'Kim', NULL, 'Kim Greist',
 INSERT INTO filth.crew_person VALUES (3356, 'Leopardi', 'Chauncey', NULL, 'Chauncey Leopardi', 'Actor');  -- Actor: Chauncey Leopardi
 INSERT INTO filth.crew_person VALUES (3357, 'Webb', 'Marc', NULL, 'Marc Webb', 'Director');  -- Director: Marc Webb
 INSERT INTO filth.crew_person VALUES (3358, 'Ifans', 'Rhys', NULL, 'Rhys Ifans', 'Actor');  -- Actor: Rhys Ifans
+INSERT INTO filth.crew_person VALUES (3359, 'O''Malley', 'Mike', NULL, 'Mike O''Malley', 'Actor');  -- Actor: Mike O'Malley
+INSERT INTO filth.crew_person VALUES (3360, 'Johnson', 'Dwayne', NULL, 'Dwayne Johnson', 'Actor');  -- Actor: Dwayne Johnson
+INSERT INTO filth.crew_person VALUES (3361, 'Hart', 'Kevin', NULL, 'Kevin Hart', 'Actor');  -- Actor: Kevin Hart
+INSERT INTO filth.crew_person VALUES (3362, 'Paul', 'Aaron', NULL, 'Aaron Paul', 'Actor');  -- Actor: Aaron Paul

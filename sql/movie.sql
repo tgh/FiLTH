@@ -4149,3 +4149,5 @@ INSERT INTO filth.movie VALUES (4153, 'Calvary', 2014, '***', 'R', 'Ireland', NU
 INSERT INTO filth.movie VALUES (4154, 'Enchanted', 2007, '**', 'PG', 'USA', NULL, 'tt0461770', 0, 4523, NULL, NULL);
 INSERT INTO filth.movie VALUES (4155, 'Jason Bourne', 2016, '**½', 'PG-13', 'England', NULL, 'tt4196776', 1, 324668, NULL, NULL);
 INSERT INTO filth.movie VALUES (4156, 'The Amazing Spider-Man', 2012, '***', 'PG-13', 'USA', NULL, 'tt0948470', 0, 1930, NULL, NULL);
+INSERT INTO filth.movie VALUES (4157, 'Sully', 2016, '***', 'PG-13', 'USA', NULL, 'tt3263904', 1, 363676, NULL, NULL);
+INSERT INTO filth.movie VALUES (4158, 'Central Intelligence', 2016, '**½', 'PG-13', 'USA', NULL, 'tt1489889', 0, 302699, NULL, NULL);
