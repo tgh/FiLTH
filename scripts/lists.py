@@ -10,7 +10,7 @@ import pyperclip
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
-LIST_CSV_FILE = FILTH_PATH + '/data/lists.csv'
+#LIST_CSV_FILE = FILTH_PATH + '/data/lists.csv' #changed to using command-line arg
 LOG_FILENAME = FILTH_PATH + '/logs/lists.log'
 
 LIST   = 0
@@ -91,12 +91,13 @@ def processLine(line):
 
 
 if __name__ == '__main__':
+    listFileName = sys.argv[1]
     logger = open(LOG_FILENAME, 'w')
     movies = Movies(logger)
     lists  = Lists(logger)
 
     try:
-        f = open(LIST_CSV_FILE, 'r')
+        f = open(listFileName, 'r')
         lines = f.readlines()
         f.close()
 

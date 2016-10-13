@@ -1900,3 +1900,110 @@ INSERT INTO filth.list_contains VALUES (1899, 213, 127, 97, NULL); -- "BLADE RUN
 INSERT INTO filth.list_contains VALUES (1900, 1810, 127, 98, NULL); -- "YANKEE DOODLE DANDY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
 INSERT INTO filth.list_contains VALUES (1901, 1655, 127, 99, NULL); -- "TOY STORY" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
 INSERT INTO filth.list_contains VALUES (1902, 182, 127, 100, NULL); -- "BEN-HUR" in list "AFI's 100 Years...100 Movies -- 10th Anniversary Edition" by American Film Institute
+INSERT INTO filth.list_contains VALUES (1903, 1460, 128, 1, NULL); -- "The Shawshank Redemption" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1904, 338, 128, 2, NULL); -- "Citizen Kane" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1905, 647, 128, 3, NULL); -- "The Godfather" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1906, 648, 128, 3, NULL); -- "The Godfather Part II" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1907, 4159, 128, 4, NULL); -- "The Star Wars Trilogy" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1908, 1413, 128, 5, NULL); -- "Saving Private Ryan" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1909, 347, 128, 6, NULL); -- "A CLockwork Orange" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1910, 1602, 128, 7, NULL); -- "Taxi Driver" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1911, 1312, 128, 8, NULL); -- "Psycho" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1912, 1419, 128, 9, NULL); -- "Schindler's List" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1913, 25, 128, 10, NULL); -- "2001: A Space Odyssey" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1914, 348, 128, 11, NULL); -- "Close Encounters of the Third Kind" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1915, 1315, 128, 12, NULL); -- "Pulp Fiction" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1916, 1210, 128, 13, NULL); -- "One Flew Over the Cuckoo's Nest" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1917, 481, 128, 14, NULL); -- "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1918, 102, 128, 15, NULL); -- "Annie Hall" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1919, 109, 128, 16, NULL); -- "Apocalypse Now" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1920, 339, 128, 17, NULL); -- "City Lights" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1921, 337, 128, 17, NULL); -- "The Circus" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1922, 680, 128, 17, NULL); -- "The Great Dictator" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1923, 1091, 128, 17, NULL); -- "Modern Times" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1924, 1207, 128, 18, NULL); -- "On the Waterfront" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1925, 548, 128, 19, NULL); -- "Fantasia" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1926, 3762, 128, 20, NULL); -- "The Up Documentaries" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1927, 495, 128, 21, NULL); -- "E.T. the Extra-Terrestrial" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1928, 323, 128, 22, NULL); -- "Chinatown" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1929, 22, 128, 23, NULL); -- "The 400 Blows" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1930, 82, 128, 24, NULL); -- "American Graffiti" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1931, 622, 128, 25, NULL); -- "The General" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1932, 1462, 128, 25, NULL); -- "Sherlock Jr." in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1933, 1163, 128, 25, NULL); -- "The Navigator" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1934, 1444, 128, 25, NULL); -- "Seven Chances" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1935, 999, 128, 26, NULL); -- "Magnolia" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1936, 712, 128, 27, NULL); -- "A Hard Day's Night" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1937, 257, 128, 28, NULL); -- "The Bridge on the River Kwai" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1938, 75, 128, 29, NULL); -- "Amadeus" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1939, 851, 128, 30, NULL); -- "Jaws" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1940, 66, 128, 31, NULL); -- "All About Eve" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1941, 935, 128, 32, NULL); -- "Lawrence of Arabia" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1942, 1566, 128, 33, NULL); -- "A Streetcar Named Desire" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1943, 4, 128, 34, NULL); -- "8½" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1944, 1622, 128, 35, NULL); -- "The Thin Red Line" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1945, 1181, 128, 36, NULL); -- "Nights of Cabiria" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1946, 844, 128, 37, NULL); -- "It's a Wonderful Life" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1947, 1330, 128, 38, NULL); -- "Raiders of the Lost Ark" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1948, 662, 128, 39, NULL); -- "Good Will Hunting" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1949, 1655, 128, 40, NULL); -- "Toy Story" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1950, 1279, 128, 41, NULL); -- "Platoon" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1951, 192, 128, 42, NULL); -- "The Bicycle Thief" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1952, 1628, 128, 43, NULL); -- "This is Spinal Tap!" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1953, 598, 128, 44, NULL); -- "The French Connection" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1954, 506, 128, 45, NULL); -- "The Elephant Man" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1955, 1500, 128, 46, NULL); -- "Sling Blade" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1956, 1575, 128, 47, NULL); -- "Sunset Boulevard" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1957, 59, 128, 48, NULL); -- "Alien" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1958, 71, 128, 49, NULL); -- "All the President's Men" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1959, 1159, 128, 50, NULL); -- "Nashville" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1960, 1610, 128, 51, NULL); -- "Terminator 2: Judgment Day" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1961, 46, 128, 52, NULL); -- "Aguirre, Wrath of God" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1962, 458, 128, 53, NULL); -- "Do the Right Thing" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1963, 756, 128, 54, NULL); -- "Hoop Dreams" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1964, 1331, 128, 55, NULL); -- "Rain Man" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1965, 553, 128, 56, NULL); -- "Fargo" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1966, 328, 128, 57, NULL); -- "A Christmas Story" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1967, 991, 128, 58, NULL); -- "M" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1968, 69, 128, 59, NULL); -- "All Quiet on the Western Front" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1969, 413, 128, 60, NULL); -- "Days of Heaven" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1970, 162, 128, 61, NULL); -- "Barton Fink" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1971, 1642, 128, 62, NULL); -- "To Kill a Mockingbird" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1972, 1574, 128, 63, NULL); -- "Sunrise" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1973, 161, 128, 64, NULL); -- "Barry Lyndon" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1974, 1245, 128, 65, NULL); -- "Paths of Glory" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1975, 1257, 128, 66, NULL); -- "Persona" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1976, 42, 128, 67, NULL); -- "The African Queen" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1977, 1119, 128, 68, NULL); -- "Mr. Smith Goes to Washington" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1978, 7, 128, 69, NULL); -- "12 Monkeys" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1979, 562, 128, 70, NULL); -- "Ferris Bueller's Day Off" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1980, 1489, 128, 71, NULL); -- "Singin' in the Rain" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1981, 587, 128, 72, NULL); -- "Forrest Gump" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1982, 1014, 128, 73, NULL); -- "The Manchurian Candidate" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1983, 677, 128, 74, NULL); -- "Grave of the Fireflies" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1984, 1400, 128, 75, NULL); -- "Rushmore" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1985, 1215, 128, 76, NULL); -- "Ordinary People" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1986, 113, 128, 77, NULL); -- "The Apostle" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1987, 498, 128, 78, NULL); -- "Easy Rider" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1988, 1719, 128, 79, NULL); -- "The Virgin Spring" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1989, 1307, 128, 80, NULL); -- "Princess Mononoke" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1990, 547, 128, 81, NULL); -- "Fanny & Alexander" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1991, 493, 128, 82, NULL); -- "Dumb and Dumber" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1992, 874, 128, 83, NULL); -- "Jurassic Park" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1993, 806, 128, 84, NULL); -- "In the Heat of the Night" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1994, 841, 128, 85, NULL); -- "It Happened One Night" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1995, 1772, 128, 86, NULL); -- "Who's Afraid of Virginia Woolf?" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1996, 624, 128, 87, NULL); -- "George Washington" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1997, 6, 128, 88, NULL); -- "12 Angry Men" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1998, 280, 128, 89, NULL); -- "Butch Cassidy and the Sundance Kid" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (1999, 1703, 128, 90, NULL); -- "The Usual Suspects" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2000, 575, 128, 91, NULL); -- "Fitzcarraldo" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2001, 1446, 128, 92, NULL); -- "Seven Samurai" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2002, 225, 128, 93, NULL); -- "Blow-Up" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2003, 415, 128, 94, NULL); -- "Days of Wine and Roses" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2004, 1360, 128, 95, NULL); -- "Requiem for a Dream" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2005, 1317, 128, 96, NULL); -- "The Purple Rose of Cairo" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2006, 1437, 128, 97, NULL); -- "Secrets & Lies" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2007, 320, 128, 98, NULL); -- "Children of Heaven" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2008, 802, 128, 99, NULL); -- "In Cold Blood" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2009, 497, 128, 100, NULL); -- "East of Eden" in list "100 Greatest Movies (2005)" by Tyler Hayes
