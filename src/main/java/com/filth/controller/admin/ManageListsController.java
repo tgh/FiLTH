@@ -58,6 +58,7 @@ public class ManageListsController extends ManageEntityController implements Man
     private static final class URLParam {
         //TECH-DEBT: make all ids explicit (e.g. LIST_ID, not ID),
         //and perhaps move to a common location for all Controllers to use
+        //Also: if ID here is changed, viewList.js will need updating
         public static final String ID = "id";
         public static final String TITLE = "title";
         public static final String AUTHOR = "author";
@@ -100,6 +101,11 @@ public class ManageListsController extends ManageEntityController implements Man
     @Override
     public Link getLinkToList(int id) {
         return new Link(URL.LIST).setParam(URLParam.ID, String.valueOf(id));
+    }
+    
+    @Override
+    public Link getLinkToRemoveMovieFromList() {
+        return new Link(URL.REMOVE_MOVIE);
     }
     
     @Override

@@ -98,3 +98,18 @@ body #rootContentContainer {
 #editListMoviesTable .movieTitle {
     text-align: left;
 }
+
+#editPanel {
+    z-index: 10;  
+    position: fixed;  
+    right: 0;  
+    top: 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ccddee;
+    height: 95%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}

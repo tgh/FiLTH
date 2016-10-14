@@ -47,8 +47,6 @@
     <@util.css "list/list" />
     <@util.css "third-party/alertify/alertify.core" />
     <@util.css "third-party/alertify/alertify.default" />
-    <#-- NOTE: "slide-in-panel" plug-in has scss in it's package--use this in the future -->
-    <@util.css "third-party/slide-in-panel/style" />
     
     <main class="cd-main-content">
         <table id="listMoviesTable" class="hidden">
@@ -109,14 +107,13 @@
         <div id="stackTraceContainer" class="hidden error"></div>
     </main>
     
-    <div id="editPanel" class="cd-panel from-right">
-        <header class="cd-panel-header">
+    <div id="editPanel" class="mCustomScrollbar hidden" data-mcs-theme="minimal-dark">
+        <header>
             <h1>Movies</h1>
-            <a href="#0" class="cd-panel-close">Close</a>
         </header>
         
-        <div class="cd-panel-container">
-            <div class="cd-panel-content">
+        <div id="editPanelContainer">
+            <div id="editPanelContent">
                 <table id="editListMoviesTable">
                     <thead>
                         <tr>
@@ -159,14 +156,13 @@
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
     <@util.js "third-party/alertify/alertify.min" />
-    <#-- NOTE: "slide-in-panel" plug-in has scss in it's package--use this in the future -->
-    <@util.js "third-party/slide-in-panel/main" />
-    <@util.js "third-party/slide-in-panel/modernizr" />
     <@util.js "admin/viewList" />
     <@util.js "admin/MovieList" />
     
-    <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
     <script type="text/javascript">
+        <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
         var movieList = new MovieList('${listJSON}');
+        <#-- pass along the url to remove a movie from the list so javascript can use it -->
+        var removeMovieFromListUrl = '${links.getLinkToRemoveMovieFromList()}';
     </script>
 </@layout.standard>

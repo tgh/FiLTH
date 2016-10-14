@@ -8,6 +8,7 @@ public interface ManageListsLinkGenerator {
     public Link getLinkToSaveList();
     public Link getLinkToNewList();
     public Link getLinkToList(int id);
+    public Link getLinkToRemoveMovieFromList();
     public Link getLinkToRemoveMovieFromList(int listId, int movieId);
     
 }

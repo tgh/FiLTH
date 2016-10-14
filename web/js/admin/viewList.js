@@ -10,7 +10,7 @@ function addListeners() {
 
 function allClickHandler(event) {
     //if edit panel is open, close the panel if click is outside of panel
-    if ($('#editPanel').hasClass('is-visible')) {
+    if ($('#editPanel').is(':visible')) {
         //FIXME: we shouldn't need to have this, but jquery doesn't seem to see these
         //paginate buttons as descendants of the the edit panel for some reason :(
         if ($(event.target).closest('.paginate_button').length) {
@@ -272,7 +272,7 @@ function validateList() {
 }
 
 function editClickHandler() {
-    $('.cd-panel').addClass('is-visible');
+    show($('#editPanel'));
 }
 
 /**
@@ -333,7 +333,7 @@ function addSelectedMovies() {
             '<a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="' + movieId +'">' + movieTitle + '</a>',
             '<div class="listRankDisplay contentDisplay"></div><input class="hidden listRankEdit contentInput" type="text">',
             '<div class="listCommentsDisplay contentDisplay"></div><input class="hidden listCommentsEdit contentInput" type="text">',
-            '<a class="button redButton removeButton" href="javascript: removeFromList(\'${links.getLinkToRemoveMovieFromList(' + listId + ', ' + movieId + ')}\', ' + movieId + ')">Remove</a>'
+            '<a class="button redButton removeButton" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">Remove</a>'
         ]).draw('full-hold').nodes().to$();
        
         //add data-movie-id
@@ -346,7 +346,7 @@ function addSelectedMovies() {
 
 function closeEditPanel() {
     addSelectedMovies();
-    $('#editPanel').removeClass('is-visible');
+    hide($('#editPanel'));
 }
 
 /**
