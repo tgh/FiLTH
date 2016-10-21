@@ -7596,3 +7596,8 @@ INSERT INTO filth.worked_on VALUES(7596, 4158, 1051, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(7597, 4158, 3306, 'Supporting Actor');  -- Jason Bateman for Central Intelligence (2016)
 INSERT INTO filth.worked_on VALUES(7598, 4158, 3362, 'Supporting Actor');  -- Aaron Paul for Central Intelligence (2016)
 INSERT INTO filth.worked_on VALUES(7599, 4158, 2140, 'Cameo');  -- Melissa McCarthy for Central Intelligence (2016)
+INSERT INTO filth.worked_on VALUES(7600, 4160, 8, 'Lead Actor');  -- Ewan McGregor for Salmon Fishing in the Yemen (2011)
+INSERT INTO filth.worked_on VALUES(7601, 4160, 2127, 'Lead Actress');  -- Emily Blunt for Salmon Fishing in the Yemen (2011)
+INSERT INTO filth.worked_on VALUES(7602, 4160, 1005, 'Supporting Actress');  -- Kristin Scott Thomas for Salmon Fishing in the Yemen (2011)
+INSERT INTO filth.worked_on VALUES(7603, 4160, 1157, 'Director');  -- Lasse Hallstrom for Salmon Fishing in the Yemen (2011)
+INSERT INTO filth.worked_on VALUES(7604, 4160, 1970, 'Screenwriter');  -- Simon Beaufoy for Salmon Fishing in the Yemen (2011)
