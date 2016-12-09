@@ -4153,3 +4153,9 @@ INSERT INTO filth.movie VALUES (4157, 'Sully', 2016, '***', 'PG-13', 'USA', NULL
 INSERT INTO filth.movie VALUES (4158, 'Central Intelligence', 2016, '**½', 'PG-13', 'USA', NULL, 'tt1489889', 0, 302699, NULL, NULL);
 INSERT INTO filth.movie VALUES (4159, 'The Star Wars Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (4160, 'Salmon Fishing in the Yemen', 2011, '**½', 'PG-13', 'England', NULL, 'tt1441952', 0, 81025, NULL, NULL);
+INSERT INTO filth.movie VALUES (4161, 'Boy and the World', 2014, '***½', 'PG', 'Brazil', NULL, 'tt3183630', 0, 223706, NULL, NULL);
+INSERT INTO filth.movie VALUES (4162, 'Dawn of the Planet of the Apes', 2014, '***', 'PG-13', 'USA', NULL, 'tt2103281', 0, 119450, NULL, NULL);
+INSERT INTO filth.movie VALUES (4163, 'Now You See Me', 2013, '***', 'PG-13', 'USA', NULL, 'tt1670345', 0, 75656, NULL, NULL);
+INSERT INTO filth.movie VALUES (4164, 'Now You See Me 2', 2016, '**½', 'PG-13', 'USA', NULL, 'tt3110958', 0, 291805, NULL, NULL);
+INSERT INTO filth.movie VALUES (4165, 'The Secret Life of Pets', 2016, '**½', 'PG', 'USA', NULL, 'tt2709768', 0, 328111, NULL, NULL);
+INSERT INTO filth.movie VALUES (4166, 'Star Trek Beyond', 2016, '**', 'PG-13', 'USA', NULL, 'tt2660888', 0, 188927, NULL, NULL);

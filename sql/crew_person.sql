@@ -3357,3 +3357,17 @@ INSERT INTO filth.crew_person VALUES (3359, 'O''Malley', 'Mike', NULL, 'Mike O''
 INSERT INTO filth.crew_person VALUES (3360, 'Johnson', 'Dwayne', NULL, 'Dwayne Johnson', 'Actor');  -- Actor: Dwayne Johnson
 INSERT INTO filth.crew_person VALUES (3361, 'Hart', 'Kevin', NULL, 'Kevin Hart', 'Actor');  -- Actor: Kevin Hart
 INSERT INTO filth.crew_person VALUES (3362, 'Paul', 'Aaron', NULL, 'Aaron Paul', 'Actor');  -- Actor: Aaron Paul
+INSERT INTO filth.crew_person VALUES (3363, 'Russell', 'Keri', NULL, 'Keri Russell', 'Actress');  -- Actress: Keri Russell
+INSERT INTO filth.crew_person VALUES (3364, 'Franco', 'Dave', NULL, 'Dave Franco', 'Actor');  -- Actor: Dave Franco
+INSERT INTO filth.crew_person VALUES (3365, 'Leterrier', 'Louis', NULL, 'Louis Leterrier', 'Director');  -- Director: Louis Leterrier
+INSERT INTO filth.crew_person VALUES (3366, 'Yakin', 'Boaz', NULL, 'Boaz Yakin', 'Screenwriter');  -- Screenwriter: Boaz Yakin
+INSERT INTO filth.crew_person VALUES (3367, 'Ricourt', 'Edward', NULL, 'Edward Ricourt', 'Screenwriter');  -- Screenwriter: Edward Ricourt
+INSERT INTO filth.crew_person VALUES (3368, 'Laurent', 'Melanie', NULL, 'Melanie Laurent', 'Actress');  -- Actress: Melanie Laurent
+INSERT INTO filth.crew_person VALUES (3369, 'Chu', 'John', 'M.', 'John M. Chu', 'Director');  -- Director: John M. Chu
+INSERT INTO filth.crew_person VALUES (3370, 'C.K.', 'Louis', NULL, 'Louis C.K.', 'Actor');  -- Actor: Louis C.K.
+INSERT INTO filth.crew_person VALUES (3371, 'Stonestreet', 'Eric', NULL, 'Eric Stonestreet', 'Actor');  -- Actor: Eric Stonestreet
+INSERT INTO filth.crew_person VALUES (3372, 'Kemper', 'Ellie', NULL, 'Ellie Kemper', 'Actress');  -- Actress: Ellie Kemper
+INSERT INTO filth.crew_person VALUES (3373, 'Bell', 'Lake', NULL, 'Lake Bell', 'Actress');  -- Actress: Lake Bell
+INSERT INTO filth.crew_person VALUES (3374, 'Lin', 'Justin', NULL, 'Justin Lin', 'Director');  -- Director: Justin Lin
+INSERT INTO filth.crew_person VALUES (3375, 'Jung', 'Doug', NULL, 'Doug Jung', 'Screenwriter');  -- Screenwriter: Doug Jung
+INSERT INTO filth.crew_person VALUES (3376, 'Yelchin', 'Anton', NULL, 'Anton Yelchin', 'Actor');  -- Actor: Anton Yelchin
