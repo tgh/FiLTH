@@ -342,6 +342,11 @@ function addSelectedMovies() {
         $(newRow.find('td')[2]).addClass('rankColumn');
         $(newRow.find('td')[3]).addClass('commentsColumn');
     });
+    
+    //disable the checkboxes for each added movie in the Edit panel
+    $('.movieCheckbox:checked:enabled').each(function() {
+        $(this).attr('disabled', true);
+    });
 }
 
 function closeEditPanel() {
