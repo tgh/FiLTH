@@ -94,7 +94,14 @@ public class ListMovie {
         boolean equals = false;
         
         if (listMovie instanceof ListMovie) {
-            equals = getId().equals(((ListMovie)listMovie).getId());
+            //if one of the ListMovie objects hasn't been persisted yet (no id),
+            //then use the movie and list ids
+            if (getId() == null || ((ListMovie)listMovie).getId() == null) {
+                equals =  getMovie().getId() == ((ListMovie)listMovie).getMovie().getId()
+                       && getList().getId() == ((ListMovie)listMovie).getList().getId();
+            } else {
+                equals = getId().equals(((ListMovie)listMovie).getId());
+            }
         }
         
         return equals;
