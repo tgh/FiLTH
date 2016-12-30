@@ -333,7 +333,7 @@ function addSelectedMovies() {
             '<a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="' + movieId +'">' + movieTitle + '</a>',
             '<div class="listRankDisplay contentDisplay"></div><input class="hidden listRankEdit contentInput" type="text">',
             '<div class="listCommentsDisplay contentDisplay"></div><input class="hidden listCommentsEdit contentInput" type="text">',
-            '<a class="button redButton removeButton" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">Remove</a>'
+            '<a class="button redButton circleButton arialBlack white" title="Remove from list" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">X</a>'
         ]).draw('full-hold').nodes().to$();
        
         //add data-movie-id

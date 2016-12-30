@@ -89,8 +89,9 @@
                                 <div class="listCommentsDisplay contentDisplay"><#if listMovie.comments??>${listMovie.comments}</#if></div>
                                 <input class="hidden listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
                             </td>
-                            <td><a class="button redButton removeButton"
-                                   href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">Remove</a>
+                            <td>
+                                <a class="button redButton circleButton arialBlack white" title="Remove from list"
+                                   href="javascript: removeFromList('${links.getLinkToRemoveMovieFromList(list.id, movie.id)}', ${movie.id})">X</a>
                             </td>
                         </tr>
                     </#list>
