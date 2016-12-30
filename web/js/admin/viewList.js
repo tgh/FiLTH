@@ -350,7 +350,11 @@ function addSelectedMovies() {
 }
 
 function closeEditPanel() {
-    addSelectedMovies();
+    //first check if there are no checked movies (list is empty), and if so, do not save before closing
+    if ($('.movieCheckbox:checked').length > 0) {
+        addSelectedMovies();
+    }
+    
     $('#editPanel').slideUp();
 }
 
