@@ -272,7 +272,7 @@ function validateList() {
 }
 
 function editClickHandler() {
-    show($('#editPanel'));
+    $('#editPanel').slideDown(500);
 }
 
 /**
@@ -351,7 +351,7 @@ function addSelectedMovies() {
 
 function closeEditPanel() {
     addSelectedMovies();
-    hide($('#editPanel'));
+    $('#editPanel').slideUp();
 }
 
 /**

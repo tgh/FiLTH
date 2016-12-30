@@ -107,9 +107,10 @@ body #rootContentContainer {
     padding: 20px;
     border-radius: 15px;
     background-color: #ccddee;
-    height: 95%;
+    height: 90%;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
     animation: slide 0.5s forwards;
     animation-delay: 2s;
+    margin: 10px;
 }
