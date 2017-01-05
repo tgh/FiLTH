@@ -1,16 +1,26 @@
 #!/usr/bin/env python
 
+"""
+Usage:
+    lists.py FILE
+
+Options:
+    -h --help       Show this screen.
+
+"""
+
 from os import getenv
+from os import path
 from Movies import Movies
 from Lists import Lists
 from QuitException import QuitException
+from docopt import docopt
 import traceback
 import sys
 import pyperclip
 
 FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
-#LIST_CSV_FILE = FILTH_PATH + '/data/lists.csv' #changed to using command-line arg
 LOG_FILENAME = FILTH_PATH + '/logs/lists.log'
 
 LIST   = 0
@@ -91,13 +101,19 @@ def processLine(line):
 
 
 if __name__ == '__main__':
-    listFileName = sys.argv[1]
     logger = open(LOG_FILENAME, 'w')
     movies = Movies(logger)
     lists  = Lists(logger)
 
+    args = docopt(__doc__, version='lists.py 1.0')
+    csvFile = args['FILE']
+
+    if not path.isfile(csvFile):
+        print '***ERROR: ' + csvFile + ' does not exist or is not a file'
+        sys.exit(1)
+
     try:
-        f = open(listFileName, 'r')
+        f = open(csvFile, 'r')
         lines = f.readlines()
         f.close()
 

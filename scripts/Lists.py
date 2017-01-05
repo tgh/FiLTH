@@ -48,7 +48,7 @@ class Lists(object):
         lid = 0
         for line in lines:
             line = line.replace("''", "'")
-            matcher = re.search('VALUES \\(([0-9]+), ([^,]+?), ([^\\)]+)\\);', line)
+            matcher = re.search("VALUES \\(([0-9]+), '([^,]+?)', ([^\\)]+)\\);", line)
             mlist = {}
             mlist['lid'] = int(matcher.group(1))
             mlist['title'] = matcher.group(2).strip("'")
