@@ -44,7 +44,7 @@ function allClickHandler(event) {
         //do nothing
     }
     //'Edit' button
-    else if ($(event.target).closest('#editLink').length) {
+    else if ($(event.target).closest('#editLink a').length) {
         hideEditInputs();
         editClickHandler();
     }
