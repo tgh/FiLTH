@@ -126,3 +126,6 @@ INSERT INTO filth.list VALUES (125, 'Top Ten Movies of 2015', 'Richard Roeper');
 INSERT INTO filth.list VALUES (126, 'AFI''s 100 Years...100 Movies', 'American Film Institute');
 INSERT INTO filth.list VALUES (127, 'AFI''s 100 Years...100 Movies -- 10th Anniversary Edition', 'American Film Institute');
 INSERT INTO filth.list VALUES (128, '100 Greatest Movies (2005)', 'Tyler Hayes');
+INSERT INTO filth.list VALUES (129, 'Top Best Movies of 2016', 'Chris Stuckmann');
+INSERT INTO filth.list VALUES (130, 'Top Best Movies of 2015', 'Chris Stuckmann');
+INSERT INTO filth.list VALUES (131, 'Top Best Movies of 2014', 'Chris Stuckmann');

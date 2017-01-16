@@ -4163,3 +4163,17 @@ INSERT INTO filth.movie VALUES (4167, 'Australia', 2008, '**½', 'PG-13', 'Austr
 INSERT INTO filth.movie VALUES (4168, 'Rogue One: A Star Wars Story', 2016, '***', 'PG-13', 'USA', NULL, 'tt3748528', 1, 330459, NULL, NULL);
 INSERT INTO filth.movie VALUES (4169, 'After Earth', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1815862', 0, 82700, NULL, NULL);
 INSERT INTO filth.movie VALUES (4170, 'Hell or High Water', 2016, '***½', 'R', 'USA', NULL, 'tt2582782', 0, 338766, NULL, NULL);
+INSERT INTO filth.movie VALUES (4171, 'The Nice Guys', 2016, 'not seen', 'R', 'USA', NULL, 'tt3799694', NULL, 290250, NULL, NULL);
+INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt3783958', NULL, 313369, NULL, NULL);
+INSERT INTO filth.movie VALUES (4173, 'Silence', 2016, 'not seen', 'R', 'USA', NULL, 'tt0490215', NULL, 68730, NULL, NULL);
+INSERT INTO filth.movie VALUES (4174, 'Your Name', 2016, 'not seen', 'NR', 'Japan', NULL, 'tt5311514', NULL, 372058, NULL, NULL);
+INSERT INTO filth.movie VALUES (4175, 'Deadpool', 2016, 'not seen', 'R', 'USA', NULL, 'tt1431045', NULL, 293660, NULL, NULL);
+INSERT INTO filth.movie VALUES (4176, 'Moonlight', 2016, 'not seen', 'R', 'USA', NULL, 'tt4975722', NULL, 376867, NULL, NULL);
+INSERT INTO filth.movie VALUES (4177, 'Hacksaw Ridge', 2016, 'not seen', 'R', 'USA', NULL, 'tt2119532', NULL, 324786, NULL, NULL);
+INSERT INTO filth.movie VALUES (4178, 'The Boy and the Beast', 2015, 'not seen', 'PG-13', 'Japan', NULL, 'tt4272866', NULL, 315465, NULL, NULL);
+INSERT INTO filth.movie VALUES (4179, 'Manchester by the Sea', 2016, 'not seen', 'R', 'USA', NULL, 'tt4034228', NULL, 334541, NULL, NULL);
+INSERT INTO filth.movie VALUES (4180, 'Paterson', 2016, 'not seen', 'R', 'USA', NULL, 'tt5247022', NULL, 370755, NULL, NULL);
+INSERT INTO filth.movie VALUES (4181, 'Arrival', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt2543164', NULL, 329865, NULL, NULL);
+INSERT INTO filth.movie VALUES (4182, 'Swiss Army Man', 2016, 'not seen', 'R', 'USA', NULL, 'tt4034354', NULL, 347031, NULL, NULL);
+INSERT INTO filth.movie VALUES (4183, 'The Witch', 2016, 'not seen', 'R', 'USA', NULL, 'tt4263482', NULL, 347031, NULL, NULL);
+INSERT INTO filth.movie VALUES (4184, 'The Babadook', 2014, 'not seen', 'NR', 'Australia', NULL, 'tt2321549', NULL, 242224, NULL, NULL);

@@ -2007,3 +2007,31 @@ INSERT INTO filth.list_contains VALUES (2006, 1437, 128, 97, NULL); -- "Secrets 
 INSERT INTO filth.list_contains VALUES (2007, 320, 128, 98, NULL); -- "Children of Heaven" in list "100 Greatest Movies (2005)" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (2008, 802, 128, 99, NULL); -- "In Cold Blood" in list "100 Greatest Movies (2005)" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (2009, 497, 128, 100, NULL); -- "East of Eden" in list "100 Greatest Movies (2005)" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2010, 4171, 129, 1, NULL); -- "The Nice Guys" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2011, 4172, 129, 2, NULL); -- "La La Land" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2012, 4173, 129, 3, NULL); -- "Silence" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2013, 4174, 129, 4, NULL); -- "Your Name" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2014, 4175, 129, 5, NULL); -- "Deadpool" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2015, 4176, 129, 6, NULL); -- "Moonlight" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2016, 4177, 129, 7, NULL); -- "Hacksaw Ridge" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2017, 3995, 129, 8, NULL); -- "Captain America: Civil War" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2018, 4178, 129, 9, NULL); -- "The Boy and the Beast" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2019, 4179, 129, 10, NULL); -- "Manchester by the Sea" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2020, 4025, 129, 11, NULL); -- "Zootopia" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2021, 4180, 129, 12, NULL); -- "Paterson" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2022, 4181, 129, 13, NULL); -- "Arrival" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2023, 4182, 129, 14, NULL); -- "Swiss Army Man" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2024, 4183, 129, 15, NULL); -- "The Witch" in list "Top Best Movies of 2016" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2025, 3869, 130, 1, NULL); -- "Star Wars: Episode VII – the Force Awakens" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2026, 3865, 130, 2, NULL); -- "Mad Max: Fury Road" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2027, 3896, 130, 3, NULL); -- "Creed" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2028, 3897, 130, 4, NULL); -- "The Hateful Eight" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2029, 3748, 130, 5, NULL); -- "Bridge of Spies" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2030, 3879, 130, 6, NULL); -- "When Marnie was There" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2031, 3750, 130, 7, NULL); -- "The Martian" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2032, 3873, 130, 8, NULL); -- "The Revenant" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2033, 3861, 130, 9, NULL); -- "Spotlight" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2034, 3689, 130, 10, NULL); -- "Sicario" in list "Top Best Movies of 2015" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2035, 3628, 131, 1, NULL); -- "Birdman or (The Unexpected Virtue of Ignorance)" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2036, 3620, 131, 2, NULL); -- "Whiplash" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2037, 4184, 131, 3, NULL); -- "The Babadook" in list "Top Best Movies of 2014" by Chris Stuckmann
