@@ -5,6 +5,7 @@ function addListeners() {
     $('#listAuthorEdit').keydown(listAuthorKeydownHandler);
     $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
     $('#editListMoviesTable td').not('.movieCheckboxContainer').click(editListMoviesTableRowClickHandler);
+    $('.movieCheckbox').click(movieCheckboxClickHandler);
     $('.movieTitle').click(movieLinkClickHandler);  //global_functions.js
 }
 
@@ -279,11 +280,36 @@ function editClickHandler() {
  * Check/uncheck the checkbox for the movie row clicked in the edit panel.
  */
 function editListMoviesTableRowClickHandler(event) {
-    checkbox = $(event.target).parents('tr').find('.movieCheckbox');
+    var checkbox = $(event.target).parents('tr').find('.movieCheckbox');
+    var movieId = $(event.target).parents('tr').data('movie-id');
+    
+    //movie is being de-selected
     if (checkbox.prop('checked')) {
         checkbox.prop('checked', false);
-    } else {
+        //remove movie from the list of changes
+        movieListChanges.deselectMovie(movieId);
+    }
+    //movie is being selected
+    else {
         checkbox.prop('checked', true);
+        //add the movie to the list of changes
+        movieListChanges.selectMovie(movieId);
+    }
+}
+
+function movieCheckboxClickHandler(event) {
+    var checkbox = $(event.target);
+    var movieId = $(event.target).parents('tr').data('movie-id');
+    
+    //movie is being selected
+    if (checkbox.prop('checked')) {
+        //remove movie from the list of changes
+        movieListChanges.selectMovie(movieId);
+    }
+    //movie is being deselected
+    else {
+        //add the movie to the list of changes
+        movieListChanges.deselectMovie(movieId);
     }
 }
 
@@ -350,9 +376,12 @@ function addSelectedMovies() {
 }
 
 function closeEditPanel() {
-    //first check if there are no checked movies (list is empty), and if so, do not save before closing
-    if ($('.movieCheckbox:checked').length > 0) {
+    //only save the list if changes have been made to the list
+    if (movieListChanges.hasChanges()) {
+        //persist the changes
         addSelectedMovies();
+        //clear the list of changes
+        movieListChanges.clear();
     }
     
     $('#editPanel').slideUp();
@@ -437,4 +466,6 @@ $(document).ready(function() {
     initMoviesTable();
     checkMoviesInList();
     addListeners();
+    //create object to keep track of movie changes while editing the list
+    movieListChanges = new MovieListChanges();
 });

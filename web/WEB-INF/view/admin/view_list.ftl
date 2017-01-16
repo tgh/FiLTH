@@ -159,6 +159,7 @@
     <@util.js "third-party/alertify/alertify.min" />
     <@util.js "admin/viewList" />
     <@util.js "admin/MovieList" />
+    <@util.js "admin/MovieListChanges" />
     
     <script type="text/javascript">
         <#-- pass along the JSON representation of the list to javascript for manipulation during editing -->
