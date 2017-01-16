@@ -2035,3 +2035,40 @@ INSERT INTO filth.list_contains VALUES (2034, 3689, 130, 10, NULL); -- "Sicario"
 INSERT INTO filth.list_contains VALUES (2035, 3628, 131, 1, NULL); -- "Birdman or (The Unexpected Virtue of Ignorance)" in list "Top Best Movies of 2014" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2036, 3620, 131, 2, NULL); -- "Whiplash" in list "Top Best Movies of 2014" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2037, 4184, 131, 3, NULL); -- "The Babadook" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2038, 3529, 131, 4, NULL); -- "Edge of Tomorrow" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2039, 3636, 131, 5, NULL); -- "Nightcrawler" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2040, 3583, 131, 6, NULL); -- "Interstellar" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2041, 3599, 131, 7, NULL); -- "Snowpiercer" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2042, 3627, 131, 8, NULL); -- "Gone Girl" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2043, 3587, 131, 9, NULL); -- "The Imitation Game" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2044, 3906, 131, 10, NULL); -- "Captain America: Winter Soldier" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2045, 3595, 131, 11, NULL); -- "Guardians of the Galaxy" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2046, 4185, 131, 12, NULL); -- "Enemy" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2047, 4186, 131, 13, NULL); -- "Under the Skin" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2048, 3660, 131, 14, NULL); -- "X-Men: Days of Future Past" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2049, 3602, 131, 15, NULL); -- "Boyhood" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2050, 4187, 131, 16, NULL); -- "John Wick" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2051, 4188, 131, 17, NULL); -- "The Guest" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2052, 4162, 131, 18, NULL); -- "The Dawn of the Planet of the Apes" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2053, 3544, 131, 19, NULL); -- "The Grand Budapest Hotel" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2054, 3634, 131, 20, NULL); -- "The Tale of Princess Kaguya" in list "Top Best Movies of 2014" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2055, 3506, 132, 1, NULL); -- "Prisoners" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2056, 3443, 132, 2, NULL); -- "The Place Beyond the Pines" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2057, 3494, 132, 3, NULL); -- "American Hustle" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2058, 3686, 132, 4, NULL); -- "The World's End" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2059, 3729, 132, 5, NULL); -- "The Wolf of Wall Street" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2060, 4189, 132, 6, NULL); -- "Don Jon" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2061, 3558, 132, 7, NULL); -- "Mud" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2062, 3733, 132, 8, NULL); -- "The Hunt" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2063, 3497, 132, 9, NULL); -- "12 Years a Slave" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2064, 3482, 132, 10, NULL); -- "Gravity" in list "Top Best Movies of 2013" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2065, 3394, 133, 1, NULL); -- "The Dark Knight Rises" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2066, 3438, 133, 2, NULL); -- "Skyfall" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2067, 3444, 133, 3, NULL); -- "Silver Linings Playbook" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2068, 3425, 133, 4, NULL); -- "Django Unchained" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2069, 3543, 133, 5, NULL); -- "The Avengers" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2070, 4190, 133, 6, NULL); -- "Seven Psychopaths" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2071, 3445, 133, 7, NULL); -- "Looper" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2072, 3436, 133, 8, NULL); -- "Argo" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2073, 3420, 133, 9, NULL); -- "Lincoln" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2074, 4191, 133, 10, NULL); -- "The Perks of Being a Wallflower" in list "Top Best Movies of 2012" by Chris Stuckmann
