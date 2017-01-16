@@ -4159,3 +4159,7 @@ INSERT INTO filth.movie VALUES (4163, 'Now You See Me', 2013, '***', 'PG-13', 'U
 INSERT INTO filth.movie VALUES (4164, 'Now You See Me 2', 2016, '**½', 'PG-13', 'USA', NULL, 'tt3110958', 0, 291805, NULL, NULL);
 INSERT INTO filth.movie VALUES (4165, 'The Secret Life of Pets', 2016, '**½', 'PG', 'USA', NULL, 'tt2709768', 0, 328111, NULL, NULL);
 INSERT INTO filth.movie VALUES (4166, 'Star Trek Beyond', 2016, '**', 'PG-13', 'USA', NULL, 'tt2660888', 0, 188927, NULL, NULL);
+INSERT INTO filth.movie VALUES (4167, 'Australia', 2008, '**½', 'PG-13', 'Australia', NULL, 'tt0455824', 0, 6972, NULL, NULL);
+INSERT INTO filth.movie VALUES (4168, 'Rogue One: A Star Wars Story', 2016, '***', 'PG-13', 'USA', NULL, 'tt3748528', 1, 330459, NULL, NULL);
+INSERT INTO filth.movie VALUES (4169, 'After Earth', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1815862', 0, 82700, NULL, NULL);
+INSERT INTO filth.movie VALUES (4170, 'Hell or High Water', 2016, '***½', 'R', 'USA', NULL, 'tt2582782', 0, 338766, NULL, NULL);
