@@ -2072,3 +2072,73 @@ INSERT INTO filth.list_contains VALUES (2071, 3445, 133, 7, NULL); -- "Looper" i
 INSERT INTO filth.list_contains VALUES (2072, 3436, 133, 8, NULL); -- "Argo" in list "Top Best Movies of 2012" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2073, 3420, 133, 9, NULL); -- "Lincoln" in list "Top Best Movies of 2012" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2074, 4191, 133, 10, NULL); -- "The Perks of Being a Wallflower" in list "Top Best Movies of 2012" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2075, 4181, 134, 1, NULL); -- "Arrival" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2076, 3995, 134, 2, NULL); -- "Captain America: Civil War" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2077, 4177, 134, 3, NULL); -- "Hacksaw Ridge" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2078, 4192, 134, 4, NULL); -- "Deepwater Horizon" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2079, 4175, 134, 5, NULL); -- "Deadpool" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2080, 4168, 134, 6, NULL); -- "Rogue One: A Star Wars Story" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2081, 4193, 134, 7, NULL); -- "Patriots Day" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2082, 4194, 134, 8, NULL); -- "Kubo and the Two Strings" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2083, 4195, 134, 9, NULL); -- "The Edge of Seventeen" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2084, 4196, 134, 10, NULL); -- "Moana" in list "Top 10 BEST Movies 2016" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2085, 3869, 135, 1, NULL); -- "Star Wars: Episode VII – the Force Awakens" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2086, 3750, 135, 2, NULL); -- "The Martian" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2087, 3661, 135, 3, NULL); -- "Inside Out" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2088, 3865, 135, 4, NULL); -- "Mad Max: Fury Road" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2089, 3897, 135, 5, NULL); -- "The Hateful Eight" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2090, 3896, 135, 6, NULL); -- "Creed" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2091, 4197, 135, 7, NULL); -- "Kingsman: The Secret Service" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2092, 3905, 135, 8, NULL); -- "Straight Outta Compton" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2093, 3904, 135, 9, NULL); -- "Ex Machina" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2094, 3748, 135, 10, NULL); -- "Bridge of Spies" in list "Top 10 BEST Movies 2015" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2095, 3620, 136, 1, NULL); -- "Whiplash" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2096, 3660, 136, 2, NULL); -- "X-Men: Days of Future Past" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2097, 3906, 136, 3, NULL); -- "Captain America: Winter Soldier" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2098, 4162, 136, 4, NULL); -- "Dawn of the Planet of the Apes" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2099, 3636, 136, 5, NULL); -- "Nightcrawler" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2100, 3674, 136, 6, NULL); -- "How to Train Your Dragon 2" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2101, 3529, 136, 7, NULL); -- "Edge of Tomorrow" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2102, 3627, 136, 8, NULL); -- "Gone Girl" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2103, 4187, 136, 9, NULL); -- "John Wick" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2104, 3595, 136, 10, NULL); -- "Guardians of the Galaxy" in list "Top 10 BEST Movies 2014" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2105, 3482, 137, 1, NULL); -- "Gravity" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2106, 3497, 137, 2, NULL); -- "12 Years a Slave" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2107, 3488, 137, 3, NULL); -- "The Hobbit: The Desolation of Smaug" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2108, 3582, 137, 4, NULL); -- "Saving Mr. Banks" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2109, 3729, 137, 5, NULL); -- "The Wolf of Wall Street" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2110, 4198, 137, 6, NULL); -- "Rush" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2111, 3461, 137, 7, NULL); -- "Elysium" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2112, 4199, 137, 8, NULL); -- "Pacific Rim" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2113, 3530, 137, 9, NULL); -- "Star Trek: Into Darkness" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2114, 4200, 137, 10, NULL); -- "Bad Grandpa" in list "Top 10 BEST Movies 2013" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2115, 3394, 138, 1, NULL); -- "The Dark Knight Rises" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2116, 3445, 138, 2, NULL); -- "Looper" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2117, 3543, 138, 3, NULL); -- "The Avengers" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2118, 3425, 138, 4, NULL); -- "Django Unchained" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2119, 3438, 138, 5, NULL); -- "Skyfall" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2120, 3436, 138, 6, NULL); -- "Argo" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2121, 3418, 138, 7, NULL); -- "The Hobbit: An Unexpected Journey" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2122, 3420, 138, 8, NULL); -- "Lincoln" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2123, 4201, 138, 9, NULL); -- "The Cabin in the Woods" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2124, 4027, 138, 10, NULL); -- "Wreck-It Ralph" in list "Top 10 BEST Movies 2012" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2125, 724, 139, 1, NULL); -- "Harry Potter and the Deathly Hollows Part 2" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2126, 4132, 139, 2, NULL); -- "50/50" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2127, 3651, 139, 3, NULL); -- "X-Men: First Class" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2128, 3334, 139, 4, NULL); -- "Rise of the Planet of the Apes" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2129, 3354, 139, 5, NULL); -- "Warrior" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2130, 4130, 139, 6, NULL); -- "Source Code" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2131, 3335, 139, 7, NULL); -- "Arthur Christmas" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2132, 3341, 139, 8, NULL); -- "Mission Impossible: Ghost Protocol" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2133, 4022, 139, 9, NULL); -- "Thor" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2134, 3362, 139, 10, NULL); -- "Kung-Fu Panda 2" in list "Top 10 BEST Movies 2011" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2135, 809, 140, 1, NULL); -- "Inception" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2136, 1657, 140, 2, NULL); -- "Toy Story 3" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2137, 566, 140, 3, NULL); -- "The Fighter" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2138, 21, 140, 4, NULL); -- "127 Hours" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2139, 4202, 140, 5, NULL); -- "Scott Pilgrim vs. the World" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2140, 1511, 140, 6, NULL); -- "The Social Network" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2141, 4021, 140, 7, NULL); -- "Tangled" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2142, 4203, 140, 8, NULL); -- "Legend of the Guardians: The Owls of Ga'Hoole" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2143, 1676, 140, 9, NULL); -- "True Grit" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2144, 4204, 140, 10, NULL); -- "Kick-Ass" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
