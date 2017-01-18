@@ -10,7 +10,9 @@ import net.sf.json.JSONObject;
 
 import org.junit.Test;
 
+import com.filth.model.ListMovie;
 import com.filth.test.factory.ListFactory;
+import com.filth.test.factory.ListMovieFactory;
 
 /**
  * Unit test for {@link ListJSONTranslator}.
@@ -58,6 +60,7 @@ public class ListJSONTranslatorTest {
         JSONArray moviesJSONArray = jsonObject.getJSONArray(ListJSONTranslator.ListJSONKey.MOVIES);
         assertFalse(moviesJSONArray.isEmpty());
         assertEquals(10, moviesJSONArray.size());
+        assertMoviesArray(moviesJSONArray);
         
         //1 movies
         list = ListFactory.createWithRandomMoviesNoRankings(1);
@@ -76,6 +79,7 @@ public class ListJSONTranslatorTest {
         moviesJSONArray = jsonObject.getJSONArray(ListJSONTranslator.ListJSONKey.MOVIES);
         assertFalse(moviesJSONArray.isEmpty());
         assertEquals(100, moviesJSONArray.size());
+        assertMoviesArray(moviesJSONArray);
     }
     
     @Test
@@ -96,6 +100,16 @@ public class ListJSONTranslatorTest {
         assertEquals(ListFactory.SIMPLE_TITLE, list.getTitle());
         assertNull(list.getAuthor());
         assertNull(list.getListMovies());
+    }
+    
+    private void assertMoviesArray(JSONArray moviesJSONArray) {
+        for (int i=0; i < moviesJSONArray.size(); ++i) {
+            JSONObject movieJsonObject = moviesJSONArray.getJSONObject(i);
+            assertTrue(movieJsonObject.containsKey(ListJSONTranslator.ListJSONKey.LIST_MOVIE_ID));
+            assertEquals(ListMovieFactory.SIMPLE_ID,
+                    movieJsonObject.getInt(ListJSONTranslator.ListJSONKey.LIST_MOVIE_ID));
+            assertTrue(movieJsonObject.containsKey(ListJSONTranslator.ListJSONKey.MOVIE_ID));
+        }
     }
 
 }

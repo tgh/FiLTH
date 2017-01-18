@@ -8,9 +8,10 @@ import com.filth.model.ListMovie;
  */
 public class ListMovieFactory {
     
-    private static final int SIMPLE_ID = 1;
-    private static final int SIMPLE_RANK = 1;
-    private static final String SIMPLE_COMMENTS = "Comments.";
+    //public for tests to reference
+    public static final int SIMPLE_ID = 1;
+    public static final int SIMPLE_RANK = 1;
+    public static final String SIMPLE_COMMENTS = "Comments.";
     
     /**
      * Creates a ListMovie object with simple values with no List
