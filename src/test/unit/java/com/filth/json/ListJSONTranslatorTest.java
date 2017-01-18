@@ -2,15 +2,14 @@ package com.filth.json;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import org.junit.Test;
 
-import com.filth.model.ListMovie;
 import com.filth.test.factory.ListFactory;
 import com.filth.test.factory.ListMovieFactory;
 
