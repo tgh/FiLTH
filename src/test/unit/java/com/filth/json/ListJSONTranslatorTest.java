@@ -2,6 +2,7 @@ package com.filth.json;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import net.sf.json.JSONArray;
@@ -17,6 +18,15 @@ import com.filth.test.factory.ListFactory;
 public class ListJSONTranslatorTest {
     
     private final ListJSONTranslator _jsonTranslator = new ListJSONTranslator();
+    
+    private static final class JsonTestSamples {
+        public static final String SIMPLE_EMPTY_LIST = "{\"id\":" + ListFactory.SIMPLE_ID + ","
+                + "\"title\":\"" + ListFactory.SIMPLE_TITLE + "\","
+                + "\"author\":\"" + ListFactory.SIMPLE_AUTHOR + "\","
+                + "\"movies\":[]}";
+        public static final String SIMPLE_EMPTY_LIST_NO_AUTHOR = "{\"id\":" + ListFactory.SIMPLE_ID + ","
+                + "\"title\":\"" + ListFactory.SIMPLE_TITLE + "\",\"movies\":[]}";
+    }
     
     @Test
     public void toJSON_listOnly() {
@@ -66,6 +76,26 @@ public class ListJSONTranslatorTest {
         moviesJSONArray = jsonObject.getJSONArray(ListJSONTranslator.ListJSONKey.MOVIES);
         assertFalse(moviesJSONArray.isEmpty());
         assertEquals(100, moviesJSONArray.size());
+    }
+    
+    @Test
+    public void fromJSON_listOnly() {
+        com.filth.model.List list = _jsonTranslator.fromJSON(JsonTestSamples.SIMPLE_EMPTY_LIST);
+        assertNotNull(list);
+        assertEquals(ListFactory.SIMPLE_ID, list.getId().intValue());
+        assertEquals(ListFactory.SIMPLE_TITLE, list.getTitle());
+        assertEquals(ListFactory.SIMPLE_AUTHOR, list.getAuthor());
+        assertNull(list.getListMovies());
+    }
+    
+    @Test
+    public void fromJSON_listOnly_noAuthor() {
+        com.filth.model.List list = _jsonTranslator.fromJSON(JsonTestSamples.SIMPLE_EMPTY_LIST_NO_AUTHOR);
+        assertNotNull(list);
+        assertEquals(ListFactory.SIMPLE_ID, list.getId().intValue());
+        assertEquals(ListFactory.SIMPLE_TITLE, list.getTitle());
+        assertNull(list.getAuthor());
+        assertNull(list.getListMovies());
     }
 
 }
