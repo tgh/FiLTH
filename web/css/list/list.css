@@ -2,51 +2,58 @@
     min-height: 60px;
 }
 
-#listTitleDisplay,
-#listAuthorDisplay,
-#by span {
-    vertical-align: middle;
+#listMoviesTable td.rankColumn {
+    padding-left: 40px;
 }
 
 #listTitleDisplay,
 #listAuthorDisplay {
+    vertical-align: middle;
+    float: left;
+    margin-right: -9999px;
     padding: 5px;
+    width: 100%;
 }
 
-#listTitleDisplay,
-#listAuthorDisplay,
 .listRankDisplay,
 .listCommentsDisplay {
-    cursor: pointer;
+    float: left;
+    margin-right: -9999px;
 }
 
 .listRankDisplay {
     width: 25px;
     text-align: center;
+    vertical-align: middle;
     padding: 3px;
-}
-
-.listCommentsDisplay {
-    padding: 3px;
-}
-
-#listTitleDisplay:hover,
-#listAuthorDisplay:hover,
-.listRankDisplay:hover,
-.listCommentsDisplay:hover {
-    border: solid 1px #bbb;
-    border-radius: 5px;
 }
 
 .listRankEdit {
     width: 25px;
+    opacity: 0.0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.listCommentsEdit {
+    width: 100%;
+}
+
+.contentInput:hover + .contentDisplay,
+.contentInput {
+    opacity: 0.0;
+}
+
+.contentInput:focus,
+.contentInput:hover {
+    opacity: 1.0
 }
 
 #listTitle,
-#listAuthor,
-#by {
+#listAuthor {
     float: left;
-    font-size: 2em;
+    font-size: 1.75em;
+    margin-top: 3px;
 }
 
 #listTitleDisplay,
@@ -54,28 +61,27 @@
     font-weight: bold;
 }
 
-#listTitle,
-#by {
-    margin-right: 20px;
+#listTitle {
+    width: 50%;
 }
 
-#listAuthor,
-#by {
+#listAuthor {
     margin-left: 20px;
     color: #aaa;
     font-style: italic;
+    width: 33%;
 }
 
 #listAuthorEdit {
-    border-radius: 7px;
-    font-size: 1em;
     color: #aaa;
     font-style: italic;
 }
 
+#listAuthorEdit,
 #listTitleEdit {
     border-radius: 7px;
     font-size: 1em;
+    width: 100%;
 }
 
 #editLink,
@@ -113,4 +119,9 @@ body #rootContentContainer {
     animation: slide 0.5s forwards;
     animation-delay: 2s;
     margin: 10px;
+}
+
+/* Override standard.css for input padding */
+#listMoviesTable input {
+    padding: 4px;
 }

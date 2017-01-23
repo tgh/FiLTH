@@ -11,11 +11,7 @@
             </#if>
             
             <span id="listTitleDisplay" class="contentDisplay">${title}</span>
-            <input id="listTitleEdit" class="hidden contentInput" type="text" value="${title}">
-        </div>
-        
-        <div id="by">
-            <span <#if ! list.author??>class="hidden"</#if>>by</span>
+            <input id="listTitleEdit" class="contentInput" type="text" value="${title}">
         </div>
         
         <div id="listAuthor">
@@ -24,7 +20,7 @@
             <#else>
                 <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
             </#if>
-            <input id="listAuthorEdit" class="hidden contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
+            <input id="listAuthorEdit" class="contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
         </div>
         
         <div id="loadingText"><h1>Loading...</h1></div>
@@ -80,14 +76,14 @@
                                 <a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title} <#if movie.year??>(${movie.year})</#if></a>
                             </td>
                             <td class="rankColumn">
-                                <#if listMovie.rank??>
-                                    <div class="listRankDisplay contentDisplay">${listMovie.rank}</div>
-                                </#if>
-                                <input class="hidden listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
+                                <div class="listRankDisplay contentDisplay"><#if listMovie.rank??>${listMovie.rank}</#if></div>
+                                <input class="listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
                             </td>
                             <td class="commentsColumn">
-                                <div class="listCommentsDisplay contentDisplay"><#if listMovie.comments??>${listMovie.comments}</#if></div>
-                                <input class="hidden listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
+                                <div class="listCommentsDisplay contentDisplay" <#if listMovie.comments??>title="${listMovie.comments}"</#if>>
+                                    <#if listMovie.comments??>${listMovie.comments}</#if>
+                                </div>
+                                <input class="listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
                             </td>
                             <td>
                                 <a class="button redButton circleButton arialBlack white" title="Remove from list"

@@ -22,58 +22,10 @@ function allClickHandler(event) {
             closeEditPanel();
         }
     }
-    
-    //rank click
-    if ($(event.target).closest('.listRankDisplay').length) {
-        editableContentClickHandler(event);
-    }
-    //title click
-    else if ($(event.target).closest('#listTitleDisplay').length) {
-        editableContentClickHandler(event);
-    }
-    //author click
-    else if ($(event.target).closest('#listAuthorDisplay').length) {
-        editableContentClickHandler(event);
-    }
-    //comments click
-    else if ($(event.target).closest('.listCommentsDisplay').length) {
-        editableContentClickHandler(event);
-    }
-    //input click
-    else if ($(event.target).closest('input').length) {
-        //do nothing
-    }
     //'Edit' button
     else if ($(event.target).closest('#editLink a').length) {
-        hideEditInputs();
         editClickHandler();
     }
-    //anything else click
-    else {
-        //hide any editable inputs
-        hideEditInputs();
-    }
-}
-
-function editableContentClickHandler(event) {
-    hideEditInputs();
-    
-    displayElement = $(event.target);
-    editElement = displayElement.siblings('input');
-    hide(displayElement);
-    show(editElement);
-    //activate the text field
-    editElement.focus();
-}
-
-/**
- * Hide any displayed text fields for editing
- */
-function hideEditInputs() {
-    contentInput = $('.contentInput').not('.hidden');
-    contentDisplay = contentInput.siblings('.contentDisplay');
-    hide(contentInput);
-    show(contentDisplay);
 }
 
 function listRankKeydownHandler(event) {
@@ -97,15 +49,17 @@ function listRankKeydownHandler(event) {
         table = $('#listMoviesTable').DataTable();
         table.cell('tr[data-movie-id="' + movieId + '"] td.rankColumn').data(
             '<div class="listRankDisplay contentDisplay">' + newRank + '</div>' +
-            '<input class="hidden listRankEdit contentInput" type="text" value="' + newRank + '">'
+            '<input class="listRankEdit contentInput" type="text" value="' + newRank + '">'
         ).order([[2, 'asc']]).draw('full-hold');
+        
+        //remove and add this handler throughout the DOM so that the newly added rank element has this handler
+        $('.listRankEdit').unbind();
+        $('.listRankEdit').keydown(listRankKeydownHandler);
         
         saveList();
     }
     //'esc' key, cancel: revert back to original rank
     else if (event.keyCode == 27) {
-        hide(rankEditElement);
-        show(rankDisplayElement);
         //reset the input val to the original rank as well
         rankEditElement.val(rankDisplayElement.html());
     }
@@ -126,17 +80,14 @@ function listTitleKeydownHandler(event) {
         }
         
         movieList.setTitle(newTitle);
-        
         titleDisplayElement.html(newTitle);
-        hide(titleEditElement);
-        show(titleDisplayElement);
-        
         saveList();
+
+        //force exit out of input
+        $(':focus').blur();
     }
     //'esc' key, cancel: revert back to original title
     else if (event.keyCode == 27) {
-        hide(titleEditElement);
-        show(titleDisplayElement);
         //reset the input val to the original title as well
         titleEditElement.val(titleDisplayElement.html());
     }
@@ -162,15 +113,12 @@ function listAuthorKeydownHandler(event) {
             show($('#by'));
         }
         
-        hide(authorEditElement);
-        show(authorDisplayElement);
-        
         saveList();
+        //force exit out of input
+        $(':focus').blur();
     }
     //'esc' key, cancel: revert back to original author
     else if (event.keyCode == 27) {
-        hide(authorEditElement);
-        show(authorDisplayElement);
         //reset the input val to the original author as well
         authorEditElement.val(authorDisplayElement.html());
     }
@@ -191,15 +139,17 @@ function listCommentsKeydownHandler(event) {
         table = $('#listMoviesTable').DataTable();
         table.cell('tr[data-movie-id="' + movieId + '"] td.commentsColumn').data(
             '<div class="listCommentsDisplay contentDisplay">' + newComments + '</div>' +
-            '<input class="hidden listCommentsEdit contentInput" type="text" value="' + newComments + '">'
+            '<input class="listCommentsEdit contentInput" type="text" value="' + newComments + '">'
         ).draw('full-hold');
+        
+        //remove and add this handler throughout the DOM so that the newly added comment element has this handler
+        $('.listCommentsEdit').unbind();
+        $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
         
         saveList();
     }
     //'esc' key, cancel: revert back to original comments
     else if (event.keyCode == 27) {
-        hide(commentsEditElement);
-        show(commentsDisplayElement);
         //reset the input val to the original comments as well
         commentsEditElement.val(commentsDisplayElement.html());
     }
@@ -357,8 +307,8 @@ function addSelectedMovies() {
         newRow = table.row.add([
             firstColumn,
             '<a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="' + movieId +'">' + movieTitle + '</a>',
-            '<div class="listRankDisplay contentDisplay"></div><input class="hidden listRankEdit contentInput" type="text">',
-            '<div class="listCommentsDisplay contentDisplay"></div><input class="hidden listCommentsEdit contentInput" type="text">',
+            '<div class="listRankDisplay contentDisplay"></div><input class="listRankEdit contentInput" type="text">',
+            '<div class="listCommentsDisplay contentDisplay"></div><input class="listCommentsEdit contentInput" type="text">',
             '<a class="button redButton circleButton arialBlack white" title="Remove from list" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">X</a>'
         ]).draw('full-hold').nodes().to$();
        
