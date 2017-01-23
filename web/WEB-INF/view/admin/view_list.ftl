@@ -4,33 +4,36 @@
     <div id="listId" class="hidden" data-list-id="${list.id}"></div>
     
     <div id="listHeader" class="header">
-        <div id="listTitle">
-            <#assign title="[title]"/>
-            <#if list.title??>
-                <#assign title="${list.title}"/>
-            </#if>
-            
-            <span id="listTitleDisplay" class="contentDisplay">${title}</span>
-            <input id="listTitleEdit" class="contentInput" type="text" value="${title}">
-        </div>
-        
-        <div id="listAuthor">
-            <#if list.author??>
-                <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
-            <#else>
-                <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
-            </#if>
-            <input id="listAuthorEdit" class="contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
-        </div>
-        
         <div id="loadingText"><h1>Loading...</h1></div>
         
-        <div id="backToListsLink" class="button linkBlueButton">
-            <a href="${links.getLinkToManageLists()}">Back to Lists</a>
+        <div id="listHeaderLeft" class="left">
+            <div id="listTitle">
+                <#assign title="[title]"/>
+                <#if list.title??>
+                    <#assign title="${list.title}"/>
+                </#if>
+                
+                <span id="listTitleDisplay" class="contentDisplay">${title}</span>
+                <input id="listTitleEdit" class="contentInput" type="text" value="${title}">
+            </div>
+            
+            <div id="listAuthor">
+                <#if list.author??>
+                    <span id="listAuthorDisplay" class="contentDisplay">${list.author}</span>
+                <#else>
+                    <span id="listAuthorDisplay" class="noAuthor contentDisplay">[no author]</span>
+                </#if>
+                <input id="listAuthorEdit" class="contentInput" type="text" <#if list.author??>value="${list.author}"</#if>>
+            </div>
         </div>
         
-        <div id="editLink">
-            <a class="editButton button">Edit</a>
+        <div id="listHeaderRight" class="right">
+            <div id="editButtonContainer" class="button editButton">
+                <a id="editButtonLink">Edit</a>
+            </div>
+            <div id="backToListsButtonContainer" class="button linkBlueButton">
+                <a href="${links.getLinkToManageLists()}">Back to Lists</a>
+            </div>
         </div>
     </div>
 </#assign>

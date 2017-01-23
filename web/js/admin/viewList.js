@@ -23,7 +23,7 @@ function allClickHandler(event) {
         }
     }
     //'Edit' button
-    else if ($(event.target).closest('#editLink a').length) {
+    else if ($(event.target).closest('#editButtonContainer a').length) {
         editClickHandler();
     }
 }

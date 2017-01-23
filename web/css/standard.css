@@ -279,3 +279,11 @@ input[type=text] {
 .white {
     color: white;
 }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

@@ -1,5 +1,13 @@
 #listHeader {
     min-height: 60px;
+    
+    /* override standard.css */
+    border: none;
+    background-color: transparent;
+}
+
+#listHeaderLeft {
+    width: 80%;
 }
 
 #listMoviesTable td.rankColumn {
@@ -9,10 +17,10 @@
 #listTitleDisplay,
 #listAuthorDisplay {
     vertical-align: middle;
-    float: left;
     margin-right: -9999px;
     padding: 5px;
     width: 100%;
+    float: left;
 }
 
 .listRankDisplay,
@@ -51,7 +59,6 @@
 
 #listTitle,
 #listAuthor {
-    float: left;
     font-size: 1.75em;
     margin-top: 3px;
 }
@@ -62,14 +69,13 @@
 }
 
 #listTitle {
-    width: 50%;
+    text-shadow: 1px 1px 5px #fff;
 }
 
 #listAuthor {
-    margin-left: 20px;
-    color: #aaa;
+    color: #ddd;
     font-style: italic;
-    width: 33%;
+    text-shadow: 1px 1px 5px #222;
 }
 
 #listAuthorEdit {
@@ -84,13 +90,12 @@
     width: 100%;
 }
 
-#editLink,
-#backToListsLink {
-    float: right;
+#listHeaderRight .button {
     margin: 12px 10px 7px 10px;
+    display: inline-block;
 }
 
-#backToListsLink {
+#backToListsButtonContainer {
     color: whitesmoke;
     font-weight: bold;
 }
