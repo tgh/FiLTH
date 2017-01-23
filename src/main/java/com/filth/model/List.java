@@ -76,6 +76,7 @@ public class List {
      * This will write over any existing content of this List object
      * (except for the List of ListMovie objects--the same List
      * object remains but it's contents can change).
+     * ListMovie objects are also updated if changed (rank/comments).
      */
     public void copyContent(com.filth.model.List otherList) {
         setId(otherList.getId());
@@ -91,6 +92,8 @@ public class List {
             for (ListMovie thisListMovie : _listMovies) {
                 if (thisListMovie.equals(otherListMovie)) {
                     inThisList = true;
+                    //update the ListMovie if there are changes (to rank and/or comments)
+                    thisListMovie.copyContent(otherListMovie);
                     break;
                 }
             }
