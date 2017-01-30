@@ -482,10 +482,10 @@ if __name__ == '__main__':
         if isNew:
           #ask user for imdb id
           imdbId = promptUserForImdbId()
-          #ask user if seen in theater
-          seenInTheater = promptUserIfSeenInTheater()
           #ask user for tmdb id
           tmdbId = promptUserForTmdbId()
+          #ask user if seen in theater
+          seenInTheater = promptUserIfSeenInTheater()
           #add an INSERT statement for the new movie
           _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, imdbId, seenInTheater, tmdbId))
           mid = _nextMid
