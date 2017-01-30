@@ -79,14 +79,14 @@
                                 <a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title} <#if movie.year??>(${movie.year})</#if></a>
                             </td>
                             <td class="rankColumn">
-                                <div class="listRankDisplay contentDisplay"><#if listMovie.rank??>${listMovie.rank}</#if></div>
-                                <input class="listRankEdit contentInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
+                                <#-- hidden field in order to sort the table by rank -->
+                                <div class="rankValue hidden"><#if listMovie.rank??>${listMovie.rank}</#if></div>
+                                <input class="rankInput" type="text" <#if listMovie.rank??>value="${listMovie.rank}"</#if>>
                             </td>
                             <td class="commentsColumn">
-                                <div class="listCommentsDisplay contentDisplay" <#if listMovie.comments??>title="${listMovie.comments}"</#if>>
-                                    <#if listMovie.comments??>${listMovie.comments}</#if>
-                                </div>
-                                <input class="listCommentsEdit contentInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
+                                <#-- hidden field in order to revert comment back to original value if aborting edit -->
+                                <div class="commentsValue hidden"><#if listMovie.comments??>${listMovie.comments}</#if></div>
+                                <input class="commentsInput" type="text" <#if listMovie.comments??>value="${listMovie.comments}"</#if>>
                             </td>
                             <td>
                                 <a class="button redButton circleButton arialBlack white" title="Remove from list"

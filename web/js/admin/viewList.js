@@ -1,9 +1,11 @@
 function addListeners() {
     $(document).click(allClickHandler);
-    $('.listRankEdit').keydown(listRankKeydownHandler);
     $('#listTitleEdit').keydown(listTitleKeydownHandler);
     $('#listAuthorEdit').keydown(listAuthorKeydownHandler);
-    $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
+    $('.rankInput').keydown(listRankKeydownHandler);
+    $('.rankInput').focusout(listRankFocusoutHandler);
+    $('.commentsInput').keydown(listCommentsKeydownHandler);
+    $('.commentsInput').focusout(listCommentsFocusoutHandler);
     $('#editListMoviesTable td').not('.movieCheckboxContainer').click(editListMoviesTableRowClickHandler);
     $('.movieCheckbox').click(movieCheckboxClickHandler);
     $('.movieTitle').click(movieLinkClickHandler);  //global_functions.js
@@ -25,43 +27,6 @@ function allClickHandler(event) {
     //'Edit' button
     else if ($(event.target).closest('#editButtonContainer a').length) {
         editClickHandler();
-    }
-}
-
-function listRankKeydownHandler(event) {
-    rankEditElement = $(event.target);
-    rankDisplayElement = rankEditElement.siblings('.contentDisplay');
-    
-    //'enter' key, keep change in rank
-    if(event.keyCode == 13) {
-        newRank = event.target.value;
-        
-        //verify new rank is valid (numeric)
-        if (isNaN(newRank) || newRank < 1) {
-            alertify.error("Rank must be a positive, non-zero number.")
-            return;
-        }
-        
-        movieId = rankEditElement.parents('tr')[0].dataset.movieId;
-        movieList.setRankForMovie(movieId, newRank);
-        
-        //update and re-sort the table
-        table = $('#listMoviesTable').DataTable();
-        table.cell('tr[data-movie-id="' + movieId + '"] td.rankColumn').data(
-            '<div class="listRankDisplay contentDisplay">' + newRank + '</div>' +
-            '<input class="listRankEdit contentInput" type="text" value="' + newRank + '">'
-        ).order([[2, 'asc']]).draw('full-hold');
-        
-        //remove and add this handler throughout the DOM so that the newly added rank element has this handler
-        $('.listRankEdit').unbind();
-        $('.listRankEdit').keydown(listRankKeydownHandler);
-        
-        saveList();
-    }
-    //'esc' key, cancel: revert back to original rank
-    else if (event.keyCode == 27) {
-        //reset the input val to the original rank as well
-        rankEditElement.val(rankDisplayElement.html());
     }
 }
 
@@ -97,7 +62,7 @@ function listAuthorKeydownHandler(event) {
     authorEditElement = $(event.target);
     authorDisplayElement = authorEditElement.siblings('.contentDisplay');
     
-    //'enter' key, keep change in rank
+    //'enter' key, keep change in author
     if(event.keyCode == 13) {
         newAuthor = event.target.value;
         
@@ -124,35 +89,84 @@ function listAuthorKeydownHandler(event) {
     }
 }
 
+function listRankKeydownHandler(event) {
+    rankInput = $(event.target);
+    rankInputCurrentValue = rankInput.siblings('.rankValue').text();
+    
+    //'enter' key, keep change in rank
+    if(event.keyCode == 13) {
+        newRank = event.target.value;
+        
+        //verify new rank is valid (numeric)
+        if (isNaN(newRank) || newRank < 1) {
+            alertify.error("Rank must be a positive, non-zero number.")
+            return;
+        }
+        
+        movieId = rankInput.parents('tr')[0].dataset.movieId;
+        movieList.setRankForMovie(movieId, newRank);
+        
+        //update and re-sort the table
+        table = $('#listMoviesTable').DataTable();
+        table.cell('tr[data-movie-id="' + movieId + '"] td.rankColumn').data(
+            '<div class="rankValue hidden">' + newRank + '</div>' +
+            '<input class="rankInput" type="text" value="' + newRank + '">'
+        ).order([[2, 'asc']]).draw('full-hold');
+        
+        //remove and add this handler throughout the DOM so that the newly added rank element has this handler
+        $('.rankInput').unbind();
+        $('.rankInput').keydown(listRankKeydownHandler);
+        
+        saveList();
+    }
+    //'esc' key, cancel: revert back to original rank
+    else if (event.keyCode == 27) {
+        //reset the input val to the original rank as well
+        rankInput.val(rankInputCurrentValue);
+        rankInput.blur();
+    }
+}
+
+function listRankFocusoutHandler(event) {
+    var rankInput = $(event.target);
+    var originalValue = $(rankInput).siblings('.rankValue').text();
+    $(rankInput).val(originalValue);
+}
+
 function listCommentsKeydownHandler(event) {
-    commentsEditElement = $(event.target);
-    commentsDisplayElement = commentsEditElement.siblings('.contentDisplay');
+    commentsInput = $(event.target);
+    commentsInputCurrentValue = commentsInput.siblings('.commentsValue').text();
     
     //'enter' key, keep change in comments
     if(event.keyCode == 13) {
         newComments = event.target.value;
         
-        movieId = commentsEditElement.parents('tr')[0].dataset.movieId;
+        movieId = commentsInput.parents('tr')[0].dataset.movieId;
         movieList.setCommentsForMovie(movieId, newComments);
         
         //update the table
         table = $('#listMoviesTable').DataTable();
         table.cell('tr[data-movie-id="' + movieId + '"] td.commentsColumn').data(
-            '<div class="listCommentsDisplay contentDisplay">' + newComments + '</div>' +
-            '<input class="listCommentsEdit contentInput" type="text" value="' + newComments + '">'
+            '<input class="commentsInput" type="text" value="' + newComments + '">'
         ).draw('full-hold');
         
         //remove and add this handler throughout the DOM so that the newly added comment element has this handler
-        $('.listCommentsEdit').unbind();
-        $('.listCommentsEdit').keydown(listCommentsKeydownHandler);
+        $('.commentsInput').unbind();
+        $('.commentsInput').keydown(listCommentsKeydownHandler);
         
         saveList();
     }
     //'esc' key, cancel: revert back to original comments
     else if (event.keyCode == 27) {
         //reset the input val to the original comments as well
-        commentsEditElement.val(commentsDisplayElement.html());
+        commentsInput.val(commentsInputCurrentValue);
     }
+}
+
+function listCommentsFocusoutHandler(event) {
+    var commentsInput = $(event.target);
+    var originalValue = $(commentsInput).siblings('.commentsValue').text();
+    $(commentsInput).val(originalValue);
 }
 
 function saveList() {
@@ -307,8 +321,8 @@ function addSelectedMovies() {
         newRow = table.row.add([
             firstColumn,
             '<a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="' + movieId +'">' + movieTitle + '</a>',
-            '<div class="listRankDisplay contentDisplay"></div><input class="listRankEdit contentInput" type="text">',
-            '<div class="listCommentsDisplay contentDisplay"></div><input class="listCommentsEdit contentInput" type="text">',
+            '<div class="rankValue hidden"></div><input class="rankInput" type="text">',
+            '<input class="commentsInput" type="text">',
             '<a class="button redButton circleButton arialBlack white" title="Remove from list" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">X</a>'
         ]).draw('full-hold').nodes().to$();
        
