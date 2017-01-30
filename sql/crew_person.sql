@@ -3381,3 +3381,11 @@ INSERT INTO filth.crew_person VALUES (3383, 'Whitta', 'Gary', NULL, 'Gary Whitta
 INSERT INTO filth.crew_person VALUES (3384, 'Smith', 'Jaden', NULL, 'Jaden Smith', 'Actor');  -- Actor: Jaden Smith
 INSERT INTO filth.crew_person VALUES (3385, 'Mackenzie', 'David', NULL, 'David Mackenzie', 'Director');  -- Director: David Mackenzie
 INSERT INTO filth.crew_person VALUES (3386, 'Sheridan', 'Taylor', NULL, 'Taylor Sheridan', 'Actor');  -- Actor: Taylor Sheridan
+INSERT INTO filth.crew_person VALUES (3387, 'Shaw', 'Fiona', NULL, 'Fiona Shaw', 'Actress');  -- Actress: Fiona Shaw
+INSERT INTO filth.crew_person VALUES (3388, 'Griffiths', 'Richard', NULL, 'Richard Griffiths', 'Actor');  -- Actor: Richard Griffiths
+INSERT INTO filth.crew_person VALUES (3389, 'Grint', 'Rupert', NULL, 'Rupert Grint', 'Actor');  -- Actor: Rupert Grint
+INSERT INTO filth.crew_person VALUES (3390, 'Hardy', 'Robert', NULL, 'Robert Hardy', 'Actor');  -- Actor: Robert Hardy
+INSERT INTO filth.crew_person VALUES (3391, 'Coltrane', 'Robbie', NULL, 'Robbie Coltrane', 'Actor');  -- Actor: Robbie Coltrane
+INSERT INTO filth.crew_person VALUES (3392, 'Felton', 'Tom', NULL, 'Tom Felton', 'Actor');  -- Actor: Tom Felton
+INSERT INTO filth.crew_person VALUES (3393, 'Poesy', 'Clemence', NULL, 'Clemence Poesy', 'Actress');  -- Actress: Clemence Poesy
+INSERT INTO filth.crew_person VALUES (3394, 'Yates', 'David', NULL, 'David Yates', 'Director');  -- Director: David Yates

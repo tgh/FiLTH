@@ -464,14 +464,14 @@ INSERT INTO filth.list_contains VALUES (463, 1243, 12, 1, NULL); -- "The Passion
 INSERT INTO filth.list_contains VALUES (464, 134, 12, 2, NULL); -- "The Aviator" in list "Top Ten Movies of 2004" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (465, 1158, 12, 3, NULL); -- "Napoleon Dynamite" in list "Top Ten Movies of 2004" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (466, 760, 12, 4, NULL); -- "Hotel Rwanda" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (467, 1650, 12, 5, NULL); -- "Touching the Void" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (468, 524, 12, 6, NULL); -- "Eternal Sunshine of the Spotless Mind" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (469, 1718, 12, 7, NULL); -- "The Village" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (470, 780, 12, 8, NULL); -- "I Heart Huckabees" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (471, 1713, 12, 9, NULL); -- "Vera Drake" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (472, 121, 12, 10, NULL); -- "The Assassination of Richard Nixon" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (473, 812, 12, 11, NULL); -- "The Incredibles" in list "Top Ten Movies of 2004" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (474, 719, 12, 12, NULL); -- "Harry Potter and the Prisoner of Azkaban" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (474, 719, 12, 5, NULL); -- "Harry Potter and the Prisoner of Azkaban" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (467, 1650, 12, 6, NULL); -- "Touching the Void" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (468, 524, 12, 7, NULL); -- "Eternal Sunshine of the Spotless Mind" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (469, 1718, 12, 8, NULL); -- "The Village" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (470, 780, 12, 9, NULL); -- "I Heart Huckabees" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (471, 1713, 12, 10, NULL); -- "Vera Drake" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (472, 121, 12, 11, NULL); -- "The Assassination of Richard Nixon" in list "Top Ten Movies of 2004" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (473, 812, 12, 12, NULL); -- "The Incredibles" in list "Top Ten Movies of 2004" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (475, 887, 12, 13, NULL); -- "Kill Bill Vol. 2" in list "Top Ten Movies of 2004" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (476, 1529, 12, 14, NULL); -- "Spartan" in list "Top Ten Movies of 2004" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (477, 795, 12, 15, NULL); -- "I'm Not Scared" in list "Top Ten Movies of 2004" by Tyler Hayes

@@ -717,11 +717,11 @@ INSERT INTO filth.movie VALUES (715, 'Harold and Maude', 1971, '***', 'PG', 'USA
 INSERT INTO filth.movie VALUES (716, 'Harrison''s Flowers', 2002, '***', 'R', 'USA', NULL, 'tt0216799', 1, 25014, NULL, NULL);
 INSERT INTO filth.movie VALUES (717, 'Harry Potter and the Sorcerer''s Stone', 2001, '***', 'PG', 'England', NULL, 'tt0241527', 1, 671, NULL, NULL);
 INSERT INTO filth.movie VALUES (718, 'Harry Potter and the Chamber of Secrets', 2002, '***', 'PG', 'England', NULL, 'tt0295297', 1, 672, NULL, NULL);
-INSERT INTO filth.movie VALUES (719, 'Harry Potter and the Prisoner of Azkaban', 2004, '***½', 'PG', 'England', NULL, 'tt0304141', 1, 673, NULL, NULL);
+INSERT INTO filth.movie VALUES (719, 'Harry Potter and the Prisoner of Azkaban', 2004, '****', 'PG', 'England', NULL, 'tt0304141', 1, 673, NULL, NULL);
 INSERT INTO filth.movie VALUES (720, 'Harry Potter and the Goblet of Fire', 2005, '***', 'PG-13', 'England', NULL, 'tt0330373', 0, 674, NULL, NULL);
 INSERT INTO filth.movie VALUES (721, 'Harry Potter and the Order of the Phoenix', 2007, '***½', 'PG-13', 'England', NULL, 'tt0373889', 2, 675, NULL, NULL);
 INSERT INTO filth.movie VALUES (722, 'Harry Potter and the Half-Blood Prince', 2009, '***', 'PG', 'England', NULL, 'tt0417741', 1, 767, NULL, NULL);
-INSERT INTO filth.movie VALUES (723, 'Harry Potter and the Deathly Hollows Part 1', 2010, '***', 'PG-13', 'England', NULL, 'tt0926084', 1, 12444, NULL, NULL);
+INSERT INTO filth.movie VALUES (723, 'Harry Potter and the Deathly Hollows Part 1', 2010, '***½', 'PG-13', 'England', NULL, 'tt0926084', 1, 12444, NULL, NULL);
 INSERT INTO filth.movie VALUES (724, 'Harry Potter and the Deathly Hollows Part 2', 2011, '***½', 'PG-13', 'England', NULL, 'tt1201607', 1, 12445, NULL, NULL);
 INSERT INTO filth.movie VALUES (725, 'Harvey', 1950, '***½', 'NR', 'USA', NULL, 'tt0042546', 0, 11787, NULL, NULL);
 INSERT INTO filth.movie VALUES (726, 'Hearts and Minds', 1974, '***', 'R', 'USA', NULL, 'tt0071604', 0, 42449, NULL, NULL);
