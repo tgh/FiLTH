@@ -3389,3 +3389,4 @@ INSERT INTO filth.crew_person VALUES (3391, 'Coltrane', 'Robbie', NULL, 'Robbie 
 INSERT INTO filth.crew_person VALUES (3392, 'Felton', 'Tom', NULL, 'Tom Felton', 'Actor');  -- Actor: Tom Felton
 INSERT INTO filth.crew_person VALUES (3393, 'Poesy', 'Clemence', NULL, 'Clemence Poesy', 'Actress');  -- Actress: Clemence Poesy
 INSERT INTO filth.crew_person VALUES (3394, 'Yates', 'David', NULL, 'David Yates', 'Director');  -- Director: David Yates
+INSERT INTO filth.crew_person VALUES (3395, 'Leguizamo', 'John', NULL, 'John Leguizamo', 'Actor');  -- Actor: John Leguizamo

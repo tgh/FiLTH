@@ -705,7 +705,7 @@ INSERT INTO filth.movie VALUES (703, 'Hannibal', 2001, '**', 'R', 'USA', NULL, '
 INSERT INTO filth.movie VALUES (704, 'Hanna', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0993842', 1, 50456, NULL, NULL);
 INSERT INTO filth.movie VALUES (705, 'Hannah and Her Sisters', 1986, '****', 'PG-13', 'USA', NULL, 'tt0091167', 0, 5143, NULL, NULL);
 INSERT INTO filth.movie VALUES (706, 'Hannah Montana: The Movie', 2009, '**½', 'G', 'USA', NULL, 'tt1114677', 0, 18126, NULL, NULL);
-INSERT INTO filth.movie VALUES (707, 'The Happening', 2008, '***', 'R', 'USA', NULL, 'tt0949731', 1, 8645, NULL, NULL);
+INSERT INTO filth.movie VALUES (707, 'The Happening', 2008, '**½', 'R', 'USA', NULL, 'tt0949731', 1, 8645, NULL, NULL);
 INSERT INTO filth.movie VALUES (708, 'Happiness', 1998, '*', 'NR', 'USA', NULL, 'tt0147612', 0, 10683, NULL, NULL);
 INSERT INTO filth.movie VALUES (709, 'Happy Accidents', 2001, '***', 'R', 'USA', NULL, 'tt0208196', 0, 22230, NULL, NULL);
 INSERT INTO filth.movie VALUES (710, 'Happy Gilmore', 1996, '**½', 'PG-13', 'USA', NULL, 'tt0116483', 0, 9614, NULL, NULL);
