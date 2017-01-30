@@ -34,6 +34,7 @@ public class ManageListsController extends ManageEntityController implements Man
     private static final Logger LOGGER = LoggerFactory.getLogger(ManageListsController.class);
     
     private static final String ENTITY_NAME = "List";
+    private static final String NEW_LIST_DEFAULT_TITLE = "Untitled List";
     
     @Resource
     private ListService _listService;
@@ -52,12 +53,12 @@ public class ManageListsController extends ManageEntityController implements Man
         public static final String DELETE = LIST + "/delete";
         public static final String SAVE = LIST + "/save";
         public static final String REMOVE_MOVIE = LIST + "/removeMovie";
-        public static final String ADD_MOVIES = LIST + "/addMovies";
     }
     
     private static final class URLParam {
         //TECH-DEBT: make all ids explicit (e.g. LIST_ID, not ID),
         //and perhaps move to a common location for all Controllers to use
+        //Also: if ID here is changed, viewList.js will need updating
         public static final String ID = "id";
         public static final String TITLE = "title";
         public static final String AUTHOR = "author";
@@ -103,14 +104,14 @@ public class ManageListsController extends ManageEntityController implements Man
     }
     
     @Override
-    public Link getLinkToRemoveMovieFromList(int listId, int movieId) {
-        return new Link(URL.REMOVE_MOVIE).setParam(URLParam.ID, String.valueOf(listId))
-                                         .setParam(URLParam.MOVIE_ID, movieId);
+    public Link getLinkToRemoveMovieFromList() {
+        return new Link(URL.REMOVE_MOVIE);
     }
     
     @Override
-    public Link getLinkToAddMoviesToListModal() {
-        return new Link(URL.ADD_MOVIES);
+    public Link getLinkToRemoveMovieFromList(int listId, int movieId) {
+        return new Link(URL.REMOVE_MOVIE).setParam(URLParam.ID, String.valueOf(listId))
+                                         .setParam(URLParam.MOVIE_ID, movieId);
     }
     
     @RequestMapping(value=URL.LISTS, method=RequestMethod.GET)
@@ -223,21 +224,26 @@ public class ManageListsController extends ManageEntityController implements Man
             @RequestParam(value=URLParam.ID, required=false) Integer id) {
         ModelMap mm = new ModelMap();
         com.filth.model.List list = null;
-        JSONObject jsonObject = null;
         
         //existing list
         if (null != id) {
             list =  _listService.getListById(id);
-            jsonObject = _listJSONTranslator.toJSON(list);
         }
         //new list
         else {
             list = new com.filth.model.List();
-            jsonObject = new JSONObject();
+            list.setTitle(NEW_LIST_DEFAULT_TITLE);
+            _listService.saveList(list);
         }
         
+        JSONObject listJSON = _listJSONTranslator.toJSON(list);
+        
+        //get all movies to show in the editing panel
+        List<Movie> movies = _movieService.getAllMovies();
+        
         mm.put(ModelKey.LIST, list);
-        mm.put(ModelKey.LIST_JSON, jsonObject.toString());
+        mm.put(ModelKey.LIST_JSON, listJSON.toString());
+        mm.put(ModelKey.MOVIES, movies);
         
         return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list", mm);
     }
@@ -276,17 +282,6 @@ public class ManageListsController extends ManageEntityController implements Man
         mm.put(ModelKey.LIST, list);
         return _modelAndViewUtil.createSuccessJsonModelAndView(
                 String.format(SAVE_SUCCESS_MESSAGE_FORMAT, ENTITY_NAME, title), mm);
-    }
-    
-    @SkipInterceptor({BackgroundImageInterceptor.class})
-    @RequestMapping(value=URL.ADD_MOVIES, method=RequestMethod.GET)
-    public ModelAndView addMoviesModal() {
-        List<Movie> movies = _movieService.getAllMovies();
-        
-        ModelMap mm = new ModelMap();
-        mm.put(ModelKey.MOVIES, movies);
-        
-        return new ModelAndView(ADMIN_VIEW_PREFIX + "/view_list_add_movies_modal", mm);
     }
 
 }

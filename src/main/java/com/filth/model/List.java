@@ -73,13 +73,37 @@ public class List {
     
     /**
      * Copies the contents of the given list into this list.
-     * This will write over any existing content of this list.
+     * This will write over any existing content of this List object
+     * (except for the List of ListMovie objects--the same List
+     * object remains but it's contents can change).
+     * ListMovie objects are also updated if changed (rank/comments).
      */
     public void copyContent(com.filth.model.List otherList) {
         setId(otherList.getId());
         setTitle(otherList.getTitle());
         setAuthor(otherList.getAuthor());
-        setListMovies(otherList.getListMovies());
+        
+        //only new and existing movies are handled here--movies
+        //in the other list but not in this list (i.e. movie removals)
+        //are not handled (it is assumed this method is only used when
+        //adding movies to a list)
+        for (ListMovie otherListMovie : otherList.getListMovies()) {
+            boolean inThisList = false;
+            for (ListMovie thisListMovie : _listMovies) {
+                if (thisListMovie.equals(otherListMovie)) {
+                    inThisList = true;
+                    //update the ListMovie if there are changes (to rank and/or comments)
+                    thisListMovie.copyContent(otherListMovie);
+                    break;
+                }
+            }
+            
+            if (false == inThisList) {
+                addListMovie(otherListMovie);
+            }
+        }
+        
+        //TODO? Handle movie removals here?
     }
     
     @Override

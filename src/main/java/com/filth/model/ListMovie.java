@@ -1,5 +1,7 @@
 package com.filth.model;
 
+import java.util.Objects;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -75,6 +77,20 @@ public class ListMovie {
         _comments = comments;
     }
     
+    /**
+     * Copies the contents (rank and comments only) of the given ListMovie to this ListMovie
+     * (only if they differ).
+     */
+    public void copyContent(ListMovie otherListMovie) {
+        if (! Objects.equals(this.getComments(), otherListMovie.getComments())) {
+            setComments(otherListMovie.getComments());
+        }
+        
+        if (! Objects.equals(this.getRank(), otherListMovie.getRank())) {
+            setRank(otherListMovie.getRank());
+        }
+    }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("ListMovie (");
@@ -94,7 +110,14 @@ public class ListMovie {
         boolean equals = false;
         
         if (listMovie instanceof ListMovie) {
-            equals = getId().equals(((ListMovie)listMovie).getId());
+            //if one of the ListMovie objects hasn't been persisted yet (no id),
+            //then use the movie and list ids
+            if (getId() == null || ((ListMovie)listMovie).getId() == null) {
+                equals =  getMovie().getId() == ((ListMovie)listMovie).getMovie().getId()
+                       && getList().getId() == ((ListMovie)listMovie).getList().getId();
+            } else {
+                equals = getId().equals(((ListMovie)listMovie).getId());
+            }
         }
         
         return equals;

@@ -101,18 +101,18 @@ public class ListJSONTranslator implements JSONTranslator<com.filth.model.List> 
     private ListMovie createListMovieFromJSON(JSONObject jsonObject, com.filth.model.List list) {
         ListMovie listMovie = new ListMovie();
         
+        //movies just added to the list (not yet persisted) wont have an lmid
         Integer listMovieId = (Integer) jsonObject.opt(ListJSONKey.LIST_MOVIE_ID);
         int movieId = jsonObject.getInt(ListJSONKey.MOVIE_ID);
         Movie movie = _movieService.getMovieByIdUninitialized(movieId);
-        Integer rank = null;
-        if (jsonObject.containsKey(ListJSONKey.RANK)) {
-            rank = jsonObject.getInt(ListJSONKey.RANK);
-        }
+        Integer rank = (Integer) jsonObject.opt(ListJSONKey.RANK);
         String comments = jsonObject.optString(ListJSONKey.COMMENTS, null);
         
         listMovie.setId(listMovieId);
         listMovie.setMovie(movie);
-        listMovie.setRank(Integer.valueOf(rank));
+        if (null != rank) {
+            listMovie.setRank(Integer.valueOf(rank));
+        }
         listMovie.setComments(comments);
         listMovie.setList(list);
         

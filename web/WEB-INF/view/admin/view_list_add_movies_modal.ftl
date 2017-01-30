@@ -1,5 +1,9 @@
 <h1>Add Movies</h1>
 
+<div id="addMoviesModalAddLink" class="button addButton">
+    <a href="javascript:addSelectedMovies()">Add</a>
+</div>
+
 <div id="addMoviesModalBody">
     <table id="addMoviesModalTable" class="hidden">
         <thead>

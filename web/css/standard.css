@@ -83,6 +83,10 @@ body {
     background-color: #beb;
 }
 
+.button.circleButton {
+    border-radius: 50%;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -266,4 +270,20 @@ input[type=text] {
     border: solid 1px #bbb;
     border-radius: 5px;
     font-family: 'Playfair Display', serif;
+}
+
+.arialBlack {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.white {
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }

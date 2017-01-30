@@ -1,52 +1,51 @@
 #listHeader {
     min-height: 60px;
+    
+    /* override standard.css */
+    border: none;
+    background-color: transparent;
 }
 
-#listTitleDisplay,
-#listAuthorDisplay,
-#by span {
-    vertical-align: middle;
+#listHeaderLeft {
+    width: 80%;
+}
+
+.rankColumn {
+    text-align: center;
+}
+
+.rankInput {
+    width: 25px;
+    text-align: center;
+}
+
+.commentsInput {
+    width: 100%;
 }
 
 #listTitleDisplay,
 #listAuthorDisplay {
+    vertical-align: middle;
+    margin-right: -9999px;
     padding: 5px;
+    width: 100%;
+    float: left;
 }
 
-#listTitleDisplay,
-#listAuthorDisplay,
-.listRankDisplay,
-.listCommentsDisplay {
-    cursor: pointer;
+.contentInput:hover + .contentDisplay,
+.contentInput {
+    opacity: 0.0;
 }
 
-.listRankDisplay {
-    width: 25px;
-    text-align: center;
-    padding: 3px;
-}
-
-.listCommentsDisplay {
-    padding: 3px;
-}
-
-#listTitleDisplay:hover,
-#listAuthorDisplay:hover,
-.listRankDisplay:hover,
-.listCommentsDisplay:hover {
-    border: solid 1px #bbb;
-    border-radius: 5px;
-}
-
-.listRankEdit {
-    width: 25px;
+.contentInput:focus,
+.contentInput:hover {
+    opacity: 1.0
 }
 
 #listTitle,
-#listAuthor,
-#by {
-    float: left;
-    font-size: 2em;
+#listAuthor {
+    font-size: 1.75em;
+    margin-top: 3px;
 }
 
 #listTitleDisplay,
@@ -54,37 +53,34 @@
     font-weight: bold;
 }
 
-#listTitle,
-#by {
-    margin-right: 20px;
+#listTitle {
+    text-shadow: 1px 1px 5px #fff;
 }
 
-#listAuthor,
-#by {
-    margin-left: 20px;
-    color: #aaa;
+#listAuthor {
+    color: #ddd;
     font-style: italic;
+    text-shadow: 1px 1px 5px #222;
 }
 
 #listAuthorEdit {
-    border-radius: 7px;
-    font-size: 1em;
     color: #aaa;
     font-style: italic;
 }
 
+#listAuthorEdit,
 #listTitleEdit {
     border-radius: 7px;
     font-size: 1em;
+    width: 100%;
 }
 
-#addMoviesLink,
-#backToListsLink {
-    float: right;
+#listHeaderRight .button {
     margin: 12px 10px 7px 10px;
+    display: inline-block;
 }
 
-#backToListsLink {
+#backToListsButtonContainer {
     color: whitesmoke;
     font-weight: bold;
 }
@@ -95,6 +91,27 @@ body #rootContentContainer {
     height: 68vh;
 }
 
-#addMoviesModalTable .movieTitle {
+#editListMoviesTable .movieTitle {
     text-align: left;
+}
+
+#editPanel {
+    z-index: 10;  
+    position: fixed;  
+    right: 0;  
+    top: 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ccddee;
+    height: 90%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    margin: 10px;
+}
+
+/* Override standard.css for input padding */
+#listMoviesTable input {
+    padding: 4px;
 }
