@@ -6,8 +6,6 @@ function addListeners() {
     $('.rankInput').focusout(listRankFocusoutHandler);
     $('.commentsInput').keydown(listCommentsKeydownHandler);
     $('.commentsInput').focusout(listCommentsFocusoutHandler);
-    $('#editListMoviesTable td').not('.movieCheckboxContainer').click(editListMoviesTableRowClickHandler);
-    $('.movieCheckbox').click(movieCheckboxClickHandler);
     $('.movieTitle').click(movieLinkClickHandler);  //global_functions.js
 }
 
@@ -22,6 +20,10 @@ function allClickHandler(event) {
         }
         if ($(event.target).closest('#editPanel').length == 0) {
             closeEditPanel();
+        }
+        //clicking a checkbox for a movie in the edit panel
+        else if ($(event.target).closest('.movieCheckbox').length) {
+            movieCheckboxClickHandler(event);
         }
     }
     //'Edit' button
@@ -238,27 +240,6 @@ function validateList() {
 
 function editClickHandler() {
     $('#editPanel').slideDown(500);
-}
-
-/**
- * Check/uncheck the checkbox for the movie row clicked in the edit panel.
- */
-function editListMoviesTableRowClickHandler(event) {
-    var checkbox = $(event.target).parents('tr').find('.movieCheckbox');
-    var movieId = $(event.target).parents('tr').data('movie-id');
-    
-    //movie is being de-selected
-    if (checkbox.prop('checked')) {
-        checkbox.prop('checked', false);
-        //remove movie from the list of changes
-        movieListChanges.deselectMovie(movieId);
-    }
-    //movie is being selected
-    else {
-        checkbox.prop('checked', true);
-        //add the movie to the list of changes
-        movieListChanges.selectMovie(movieId);
-    }
 }
 
 function movieCheckboxClickHandler(event) {
