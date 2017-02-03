@@ -244,16 +244,18 @@ function editClickHandler() {
 
 function movieCheckboxClickHandler(event) {
     var checkbox = $(event.target);
-    var movieId = $(event.target).parents('tr').data('movie-id');
+    var row = $(event.target).parents('tr');
+    var movieId = $(row).data('movie-id');
     
-    //movie is being selected
+    //movie is being selected; add movie from the list of changes
     if (checkbox.prop('checked')) {
-        //remove movie from the list of changes
-        movieListChanges.selectMovie(movieId);
+        var movieTitle = $(row).find('.movieTitle').text().trim();
+        var movieYear = $(row).find('.movieYear').text().trim();
+        var isSeen = $(row).find('.movieStarRating').text() !== 'not seen';
+        movieListChanges.selectMovie(movieId, movieTitle, movieYear, isSeen);
     }
-    //movie is being deselected
+    //movie is being deselected; remove the movie to the list of changes
     else {
-        //add the movie to the list of changes
         movieListChanges.deselectMovie(movieId);
     }
 }
@@ -263,38 +265,24 @@ function movieCheckboxClickHandler(event) {
  * add movies to json, and add movies to the list DataTable.
  */
 function addSelectedMovies() {
-    table = $('#listMoviesTable').DataTable();
+    var table = $('#listMoviesTable').DataTable();
     
-    //add movies to json
-    $('.movieCheckbox:checked:enabled').each(function() {
-        row = $(this).parents('tr');
+    for (var i=0; i < movieListChanges.additions.length; ++i) {
+        var movieId = movieListChanges.additions[i].mid;
+        var movieTitle = movieListChanges.additions[i].title;
+        var movieYear = movieListChanges.additions[i].year;
+        var isSeen = movieListChanges.additions[i].isSeen;
         
-        //get movie id
-        movieId = $(row).data('movie-id');
-        //add movie to json
-        movieList.addMovie(movieId);
-    });
-    
-    saveList();
-    
-    rows = [];
-    //add a new row in the table for each movie
-    $('.movieCheckbox:checked:enabled').each(function() {
-        row = $(this).parents('tr');
-        
-        //get movie id
-        movieId = $(row).data('movie-id');
-        //get movie title
-        movieTitle = $(row).find('.movieTitle').text();
-        movieYear = $(row).find('.movieYear').text();
-        if (movieYear !== '') {
+        //add movie to json to be sent to back-end for save
+        movieList.addMovie(movieListChanges.additions[i].mid);
+
+        //append year to movie title if applicable
+        if (movieYear != null && movieYear !== '') {
             movieTitle = movieTitle + ' (' + movieYear + ')';
         }
         
         //get list id
         listId = $('#listId').data('list-id');
-        //has the movie been seen?
-        isSeen = $(row).find('.movieStarRating').text() !== 'not seen';
         //first column will be check mark if seen, blank otherwise
         firstColumn = isSeen ? '&#x2714;' : '';
         
@@ -312,8 +300,11 @@ function addSelectedMovies() {
         //add classes to row
         $(newRow.find('td')[2]).addClass('rankColumn');
         $(newRow.find('td')[3]).addClass('commentsColumn');
-    });
+    }
     
+    saveList();
+    
+    //FIXME: what about movies that were newly checked on other pages in the edit panel?
     //disable the checkboxes for each added movie in the Edit panel
     $('.movieCheckbox:checked:enabled').each(function() {
         $(this).attr('disabled', true);
