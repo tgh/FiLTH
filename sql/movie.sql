@@ -1,4 +1,7 @@
 INSERT INTO filth.movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (4205, 'The Harry Potter Series', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (4206, 'The Lord of the Rings Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (4207, 'The "West Memphis Three" Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (1, '3 Women', 1977, '***', 'PG', 'USA', NULL, 'tt0075612', 0, 41662, NULL, NULL);
 INSERT INTO filth.movie VALUES (2, '3:10 to Yuma', 2007, '****', 'R', 'USA', NULL, 'tt0381849', 1, 5176, NULL, NULL);
 INSERT INTO filth.movie VALUES (3, '4 Little Girls', 1997, '***', 'NR', 'USA', NULL, 'tt0118540', 0, 26580, NULL, NULL);
@@ -4197,6 +4200,3 @@ INSERT INTO filth.movie VALUES (4201, 'The Cabin in the Woods', 2012, 'not seen'
 INSERT INTO filth.movie VALUES (4202, 'Scott Pilgrim vs. the World', 2010, 'not seen', 'PG-13', 'USA', NULL, 'tt0446029', NULL, 22538, NULL, NULL);
 INSERT INTO filth.movie VALUES (4203, 'Legend of the Guardians: The Owls of Ga''Hoole', 2010, 'not seen', 'PG', 'USA', NULL, 'tt1219342', NULL, 41216, NULL, NULL);
 INSERT INTO filth.movie VALUES (4204, 'Kick-Ass', 2010, 'not seen', 'R', 'England', NULL, 'tt1250777', NULL, 23483, NULL, NULL);
-INSERT INTO filth.movie VALUES (4205, 'The Harry Potter Series', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (4206, 'The Lord of the Rings Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (4207, 'The "West Memphis Three" Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
