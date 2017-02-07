@@ -340,6 +340,8 @@ THIRD-PARTY
 ------------
 - DataTables:
     - There is a Download Builder: http://www.datatables.net/download/, which is great for getting all you want in one minified js--the base DataTables and whatever extensions you want and whatever css you want, for example.
+    - As of 2/6/17 extenstions used:
+        - Select
     - Looks like there's custom ordering: http://www.datatables.net/plug-ins/sorting/ (for star rating and mpaa rating ordering)
 
 
