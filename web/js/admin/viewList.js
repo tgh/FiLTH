@@ -379,6 +379,8 @@ function initListTable() {
         order: [[2, 'asc'], [1, 'asc']],
         //turn off paging
         paging: false,
+        //turn off search
+        bFilter: false,
         //to do once init is complete:
         initComplete: function() {
             hide($('#loadingText'));
