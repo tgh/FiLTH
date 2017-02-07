@@ -358,7 +358,7 @@ function ajaxErrorHandler(data, defaultMessage) {
 
 function initListTable() {
     start = Math.floor(Date.now() / 1000);
-    console.log('Initializing data table');
+    console.log('Initializing List data table');
     $('#listMoviesTable').DataTable({
         //allow selection of table rows
         select: true,
@@ -382,10 +382,13 @@ function initListTable() {
 
 function initMoviesTable() {
     start = Math.floor(Date.now() / 1000);
-    console.log('Initializing movies data table');
+    console.log('Initializing Edit data table');
     $('#editListMoviesTable').DataTable({
         //do not load all content at once--only when displaying on the page
         deferRender: true,
+        //FIXME: paging is turned off until we can figure out a good way to check and disable
+        //movies in the list that are on hidden pages
+        paging: false,
         initComplete: function() {
             hide($('#loadingText'));
             //hack: without this width resize, the movies table renders with a width of 0 for some reason :-/

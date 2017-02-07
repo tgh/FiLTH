@@ -109,6 +109,7 @@ body #rootContentContainer {
     animation: slide 0.5s forwards;
     animation-delay: 2s;
     margin: 10px;
+    width: 45%;
 }
 
 /* Override standard.css for input padding */
