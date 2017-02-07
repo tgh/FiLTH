@@ -110,6 +110,7 @@
     <div id="editPanel" class="mCustomScrollbar hidden" data-mcs-theme="minimal-dark">
         <header>
             <h1>Movies</h1>
+            <div id="selectAllButton" class="button greenButton">Select All</div>
         </header>
         
         <div id="editPanelContainer">

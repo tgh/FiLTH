@@ -6,6 +6,7 @@ function addListeners() {
     $('.rankInput').focusout(listRankFocusoutHandler);
     $('.commentsInput').keydown(listCommentsKeydownHandler);
     $('.commentsInput').focusout(listCommentsFocusoutHandler);
+    $('#selectAllButton').click(selectAllClickHandler);
     $('.movieTitle').click(movieLinkClickHandler);  //global_functions.js
 }
 
@@ -243,8 +244,11 @@ function editClickHandler() {
 }
 
 function movieCheckboxClickHandler(event) {
-    var checkbox = $(event.target);
-    var row = $(event.target).parents('tr');
+    movieCheckboxSelection($(event.target));
+}
+
+function movieCheckboxSelection(checkbox) {
+    var row = $(checkbox).parents('tr');
     var movieId = $(row).data('movie-id');
     
     //movie is being selected; add movie from the list of changes
@@ -323,6 +327,13 @@ function closeEditPanel() {
     $('#editPanel').slideUp();
 }
 
+function selectAllClickHandler() {
+    $('.movieCheckbox:not(:checked):enabled').each(function() {
+        $(this).prop('checked', true);
+        movieCheckboxSelection($(this));
+    });
+}
+
 /**
  * For all movies in the list, make sure the corresponding movie in the edit
  * panel is checked.
@@ -366,8 +377,8 @@ function initListTable() {
         deferRender: true,
         //sort by rank first, then title
         order: [[2, 'asc'], [1, 'asc']],
-        //set number of rows to show per page
-        pageLength: 100,
+        //turn off paging
+        paging: false,
         //to do once init is complete:
         initComplete: function() {
             hide($('#loadingText'));
