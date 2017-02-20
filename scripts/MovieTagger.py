@@ -37,7 +37,8 @@ class MovieTagger(object):
     for tagline in taglines:
       tid = re.search('VALUES \\((\d+),', tagline).group(1)
       tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
-      self._log('_initTagMap', 'Found tag: ' + tid + ' - ' + tag)
+      #uncomment for logging all tags found
+      #self._log('_initTagMap', 'Found tag: ' + tid + ' - ' + tag)
 
       if (', NULL)' not in tagline):
         parentId = re.search(', (\d+)\\);', tagline).group(1)

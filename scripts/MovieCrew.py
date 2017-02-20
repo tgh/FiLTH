@@ -71,7 +71,8 @@ class MovieCrew(object):
       else:
         self._crewMap[fullName] = [cid]
 
-      self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
+      #uncomment to log all crew persons found
+      #self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
       lastCid = cid
     return lastCid
 
