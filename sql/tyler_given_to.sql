@@ -821,7 +821,7 @@ INSERT INTO filth.tyler_given_to VALUES (820, 396, 6, 284, 0, ''); -- David Finc
 INSERT INTO filth.tyler_given_to VALUES (821, 404, 6, 335, 1, ''); -- Christopher Nolan for Best Director for The Dark Knight (2008)
 INSERT INTO filth.tyler_given_to VALUES (822, 475, 6, 1900, 0, ''); -- John Patrick Shanley for Best Director for Doubt (2008)
 INSERT INTO filth.tyler_given_to VALUES (823, 309, 8, 1386, 0, ''); -- Tom Stern for Best Cinematography for Changeling (2008)
-INSERT INTO filth.tyler_given_to VALUES (824, 396, 8, 1387, 1, ''); -- Claudio Miranda for Best Cinematography for The Curious Case of Benjamin Button (2008)
+INSERT INTO filth.tyler_given_to VALUES (824, 396, 8, 1387, 0, ''); -- Claudio Miranda for Best Cinematography for The Curious Case of Benjamin Button (2008)
 INSERT INTO filth.tyler_given_to VALUES (825, 404, 8, 1382, 0, ''); -- Wally Pfister for Best Cinematography for The Dark Knight (2008)
 INSERT INTO filth.tyler_given_to VALUES (826, 801, 8, 3000, 0, ''); -- Eigil Bryld for Best Cinematography for In Bruges (2008)
 INSERT INTO filth.tyler_given_to VALUES (827, 853, 8, 3001, 0, ''); -- Pierre-Yves Bastard for Best Cinematography for JCVD (2008)
@@ -1151,3 +1151,5 @@ INSERT INTO filth.tyler_given_to VALUES (1150, 3419, 12, 0, 0, 'I Dreamed a Drea
 INSERT INTO filth.tyler_given_to VALUES (1151, 3425, 12, 0, 0, 'Dinner in Candyland'); -- Django Unchained (2012) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1152, 3425, 12, 0, 0, 'Dr. Shultz Finds Django'); -- Django Unchained (2012) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1153, 3445, 12, 0, 0, 'At the Diner with Myself'); -- Looper (2012) for Best Scene
+INSERT INTO filth.tyler_given_to VALUES (1154, 4001, 8, 3412, 1, ''); -- Colin Watkinson for Best Cinematography for The Fall (2008)
+INSERT INTO filth.tyler_given_to VALUES (1155, 4001, 8, 3410, 0, ''); -- Catinca Untaru for Best Actress for The Fall (2008)

@@ -3999,7 +3999,7 @@ INSERT INTO filth.movie VALUES (3997, 'Ballast', 2008, 'not seen', 'NR', 'USA', 
 INSERT INTO filth.movie VALUES (3998, 'The Band''s Visit', 2007, 'not seen', 'PG-13', 'Israel', NULL, 'tt1032856', NULL, 5259, NULL, NULL);
 INSERT INTO filth.movie VALUES (3999, 'Che: Part One', 2008, 'not seen', 'NR', 'USA', NULL, 'tt0892255', NULL, 8881, NULL, NULL);
 INSERT INTO filth.movie VALUES (4000, 'Che: Part Two', 2008, 'not seen', 'NR', 'USA', NULL, 'tt0374569', NULL, 8880, NULL, NULL);
-INSERT INTO filth.movie VALUES (4001, 'The Fall', 2008, 'not seen', 'R', 'USA', NULL, 'tt0460791', NULL, 14784, NULL, NULL);
+INSERT INTO filth.movie VALUES (4001, 'The Fall', 2008, '***½', 'PG-13', 'USA', NULL, 'tt0460791', NULL, 14784, NULL, NULL);
 INSERT INTO filth.movie VALUES (4002, 'Shotgun Stories', 2008, 'not seen', 'PG-13', 'USA', NULL, 'tt0952682', NULL, 12247, NULL, NULL);
 INSERT INTO filth.movie VALUES (4003, 'Synecdoche, New York', 2008, 'not seen', 'R', 'USA', NULL, 'tt0383028', NULL, 4960, NULL, NULL);
 INSERT INTO filth.movie VALUES (4004, 'Bad Lieutenant: Port of Call New Orleans', 2009, 'not seen', 'R', 'USA', NULL, 'tt1095217', NULL, 11699, NULL, 148);

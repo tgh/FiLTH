@@ -3402,3 +3402,8 @@ INSERT INTO filth.crew_person VALUES (3404, 'Legend', 'John', NULL, 'John Legend
 INSERT INTO filth.crew_person VALUES (3405, 'Sandgren', 'Linus', NULL, 'Linus Sandgren', 'Cinematographer');  -- Cinematographer: Linus Sandgren
 INSERT INTO filth.crew_person VALUES (3406, 'Helberg', 'Simon', NULL, 'Simon Helberg', 'Actor');  -- Actor: Simon Helberg
 INSERT INTO filth.crew_person VALUES (3407, 'Takei', 'George', NULL, 'George Takei', 'Actor');  -- Actor: George Takei
+INSERT INTO filth.crew_person VALUES (3408, 'Singh', 'Tarsem', NULL, 'Tarsem Singh', 'Director');  -- Director: Tarsem Singh
+INSERT INTO filth.crew_person VALUES (3409, 'Soultanakis', 'Nico', NULL, 'Nico Soultanakis', 'Screenwriter');  -- Screenwriter: Nico Soultanakis
+INSERT INTO filth.crew_person VALUES (3410, 'Untaru', 'Catinca', NULL, 'Catinca Untaru', 'Actress');  -- Actress: Catinca Untaru
+INSERT INTO filth.crew_person VALUES (3411, 'Bill', 'Leo', NULL, 'Leo Bill', 'Actor');  -- Actor: Leo Bill
+INSERT INTO filth.crew_person VALUES (3412, 'Watkinson', 'Colin', NULL, 'Colin Watkinson', 'Cinematographer');  -- Cinematographer: Colin Watkinson
