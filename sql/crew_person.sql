@@ -3390,3 +3390,13 @@ INSERT INTO filth.crew_person VALUES (3392, 'Felton', 'Tom', NULL, 'Tom Felton',
 INSERT INTO filth.crew_person VALUES (3393, 'Poesy', 'Clemence', NULL, 'Clemence Poesy', 'Actress');  -- Actress: Clemence Poesy
 INSERT INTO filth.crew_person VALUES (3394, 'Yates', 'David', NULL, 'David Yates', 'Director');  -- Director: David Yates
 INSERT INTO filth.crew_person VALUES (3395, 'Leguizamo', 'John', NULL, 'John Leguizamo', 'Actor');  -- Actor: John Leguizamo
+INSERT INTO filth.crew_person VALUES (3396, 'Coogler', 'Ryan', NULL, 'Ryan Coogler', 'Director');  -- Director: Ryan Coogler
+INSERT INTO filth.crew_person VALUES (3397, 'Covington', 'Aaron', NULL, 'Aaron Covington', 'Screenwriter');  -- Screenwriter: Aaron Covington
+INSERT INTO filth.crew_person VALUES (3398, 'Jordan', 'Michael', 'B.', 'Michael B. Jordan', 'Actor');  -- Actor: Michael B. Jordan
+INSERT INTO filth.crew_person VALUES (3399, 'Thompson', 'Tessa', NULL, 'Tessa Thompson', 'Actress');  -- Actress: Tessa Thompson
+INSERT INTO filth.crew_person VALUES (3400, 'Rashad', 'Phylicia', NULL, 'Phylicia Rashad', 'Actress');  -- Actress: Phylicia Rashad
+INSERT INTO filth.crew_person VALUES (3401, 'Coster', 'Ritchie', NULL, 'Ritchie Coster', 'Actor');  -- Actor: Ritchie Coster
+INSERT INTO filth.crew_person VALUES (3402, 'Alberti', 'Maryse', NULL, 'Maryse Alberti', 'Cinematographer');  -- Cinematographer: Maryse Alberti
+INSERT INTO filth.crew_person VALUES (3403, 'DeWitt', 'Rosemarie', NULL, 'Rosemarie DeWitt', 'Actress');  -- Actress: Rosemarie DeWitt
+INSERT INTO filth.crew_person VALUES (3404, 'Legend', 'John', NULL, 'John Legend', 'Actor');  -- Actor: John Legend
+INSERT INTO filth.crew_person VALUES (3405, 'Sandgren', 'Linus', NULL, 'Linus Sandgren', 'Cinematographer');  -- Cinematographer: Linus Sandgren
