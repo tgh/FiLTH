@@ -342,6 +342,9 @@ SETTING UP ENVIRONMENT
 
 - LaTeX/dvpdf install: http://www.tug.org/mactex/index.html (Mac)
 
+- on a Mac, `sed -i` requires an additional argument for a backup file extension (e.g. `sed -i '.bak'`)--in Linux this is optional.
+  Hence, movie2sql.py script, for example, failed at the line using `sed -i` on Mac
+
 
 THIRD-PARTY
 ------------
