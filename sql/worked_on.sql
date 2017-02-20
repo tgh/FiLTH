@@ -7760,3 +7760,8 @@ INSERT INTO filth.worked_on VALUES(7760, 4205, 3406, 'Supporting Actor');  -- Si
 INSERT INTO filth.worked_on VALUES(7761, 4205, 286, 'Director');  -- Stephen Frears for Florence Foster Jenkins (2016)
 INSERT INTO filth.worked_on VALUES(7762, 4205, 2895, 'Supporting Actress');  -- Rebecca Ferguson for Florence Foster Jenkins (2016)
 INSERT INTO filth.worked_on VALUES(7763, 4205, 3026, 'Cinematographer');  -- Danny Cohen for Florence Foster Jenkins (2016)
+INSERT INTO filth.worked_on VALUES(7764, 4194, 1032, 'Character Voice');  -- Charlize Theron for Kubo and the Two Strings (2016)
+INSERT INTO filth.worked_on VALUES(7765, 4194, 213, 'Character Voice');  -- Ralph Fiennes for Kubo and the Two Strings (2016)
+INSERT INTO filth.worked_on VALUES(7766, 4194, 2176, 'Character Voice');  -- Matthew McConaughey for Kubo and the Two Strings (2016)
+INSERT INTO filth.worked_on VALUES(7767, 4194, 3038, 'Character Voice');  -- Rooney Mara for Kubo and the Two Strings (2016)
+INSERT INTO filth.worked_on VALUES(7768, 4194, 3407, 'Character Voice');  -- George Takei for Kubo and the Two Strings (2016)

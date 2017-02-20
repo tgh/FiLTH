@@ -3401,3 +3401,4 @@ INSERT INTO filth.crew_person VALUES (3403, 'DeWitt', 'Rosemarie', NULL, 'Rosema
 INSERT INTO filth.crew_person VALUES (3404, 'Legend', 'John', NULL, 'John Legend', 'Actor');  -- Actor: John Legend
 INSERT INTO filth.crew_person VALUES (3405, 'Sandgren', 'Linus', NULL, 'Linus Sandgren', 'Cinematographer');  -- Cinematographer: Linus Sandgren
 INSERT INTO filth.crew_person VALUES (3406, 'Helberg', 'Simon', NULL, 'Simon Helberg', 'Actor');  -- Actor: Simon Helberg
+INSERT INTO filth.crew_person VALUES (3407, 'Takei', 'George', NULL, 'George Takei', 'Actor');  -- Actor: George Takei
