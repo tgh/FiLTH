@@ -360,7 +360,7 @@ def isNewMovie(title, year, stars, mpaa, country):
   search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
   replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
-  system("sed -i \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
+  system("sed -i '' \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
 
   #output message
   print "\nUPDATE:\n    updated: \"{0}\" ({1}) {2} [{3}] {4}"\
