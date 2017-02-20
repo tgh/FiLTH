@@ -3,7 +3,7 @@ A personal webapp to manage my movies--movies I have seen, movies I want to see,
 filmographies, oscar winners/nominees, best-of lists, etc. Yes, I know IMDB
 exists.
 
-# Environment Setup
+# Environment Setup (Ubuntu)
 These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you already have [git](https://git-scm.com/) setup.
 
 1. Clone this repository under $HOME/workspace (assuming you already have that directory, otherwise create it: `mkdir $HOME/workspace`)
@@ -81,3 +81,6 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 1. Setup database
 
 1. Install LaTeX
+
+# Environment Setup (Mac)
+

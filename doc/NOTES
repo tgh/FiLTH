@@ -335,6 +335,13 @@ SETTING UP ENVIRONMENT
       host/username/password entries for specific environment hosts  
     - http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html
 
+- When using Mac from work I would get a popup saying "git-credential-osxkeychain wants to use your confidential information stored in 'github.com (thayes-amplify)' in your keychain. Do you want to allow access to this item?".  Click "Deny" and then enter tgh github credentials in order to pull/push from/to the repo
+
+- installing antiword: sudo apt-get install antiword (Ubuntu)
+                       brew install antiword (Mac)
+
+- LaTeX/dvpdf install: http://www.tug.org/mactex/index.html (Mac)
+
 
 THIRD-PARTY
 ------------
