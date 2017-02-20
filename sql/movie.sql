@@ -3894,7 +3894,7 @@ INSERT INTO filth.movie VALUES (3892, 'Room', 2015, '****', 'R', 'Ireland', NULL
 INSERT INTO filth.movie VALUES (3893, '45 Years', 2015, 'not seen', 'R', 'England', NULL, 'tt3544082', NULL, 311291, NULL, NULL);
 INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, '**½', 'PG-13', 'England', NULL, 'tt2381111', NULL, 167073, NULL, NULL);
 INSERT INTO filth.movie VALUES (3895, 'The Big Short', 2015, '****', 'R', 'USA', NULL, 'tt1596363', NULL, 318846, NULL, NULL);
-INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, 'not seen', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221, NULL, NULL);
+INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, '***', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221, NULL, NULL);
 INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, '**', 'R', 'USA', NULL, 'tt3460252', NULL, 273248, NULL, NULL); -- 4/30/2016
 INSERT INTO filth.movie VALUES (3898, 'The Look of Silence', 2015, '****', 'PG-13', DEFAULT, NULL, 'tt3521134', NULL, 267480, NULL, NULL);
 INSERT INTO filth.movie VALUES (3899, 'Embrace of the Serpent', 2015, 'not seen', 'NR', 'Colombia', NULL, 'tt4285496', NULL, 336808, NULL, NULL);
@@ -4167,7 +4167,7 @@ INSERT INTO filth.movie VALUES (4168, 'Rogue One: A Star Wars Story', 2016, '***
 INSERT INTO filth.movie VALUES (4169, 'After Earth', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1815862', 0, 82700, NULL, NULL);
 INSERT INTO filth.movie VALUES (4170, 'Hell or High Water', 2016, '***½', 'R', 'USA', NULL, 'tt2582782', 0, 338766, NULL, NULL);
 INSERT INTO filth.movie VALUES (4171, 'The Nice Guys', 2016, 'not seen', 'R', 'USA', NULL, 'tt3799694', NULL, 290250, NULL, NULL);
-INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt3783958', NULL, 313369, NULL, NULL);
+INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, '****', 'PG-13', 'USA', 'I couldn''t really find anything wrong with this movie. The only thing I could say is that the sister to Ryan Gosling''s character was too much of a movie cliche than a real, but that''s a nit-pick. However, the movie didn''t grab me like I wanted it to; despite it being an absolutely excellent movie I didn''t have as great of a movie experience as I''d hoped or expected.', 'tt3783958', NULL, 313369, NULL, NULL);
 INSERT INTO filth.movie VALUES (4173, 'Silence', 2016, 'not seen', 'R', 'USA', NULL, 'tt0490215', NULL, 68730, NULL, NULL);
 INSERT INTO filth.movie VALUES (4174, 'Your Name', 2016, 'not seen', 'NR', 'Japan', NULL, 'tt5311514', NULL, 372058, NULL, NULL);
 INSERT INTO filth.movie VALUES (4175, 'Deadpool', 2016, 'not seen', 'R', 'USA', NULL, 'tt1431045', NULL, 293660, NULL, NULL);
