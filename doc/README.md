@@ -84,3 +84,49 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
 # Environment Setup (Mac)
 
+These instructions assume you have `brew` installed. If you do not, go to [brew.sh](http://brew.sh) and download it.
+
+1. Clone this repository under $HOME/workspace (assuming you already have that directory, otherwise create it: `mkdir $HOME/workspace`)
+1. Set some required environment variables:
+
+    - **WORKSPACE** ($HOME/workspace)
+
+    - **FILTH_PATH** ($WORKSPACE/FiLTH)
+
+1. Install **Java 8**
+
+1. Install **ant**: `brew install ant` (at the time of this writing it was `ant` 1.10.0)
+
+1. Install [Ivy](http://ant.apache.org/ivy/) (for dependency management)
+ 
+    - `brew install ivy` (at the time of this writing it was Ivy 2.4.0--_NOTE: version 2.4 or higher is required because the `<bintray/>` ivy resolver used in ivysettings.xml doesn't work with versions prior to 2.4_)
+
+    - Copy the ivy jar file into the ant lib directory: `cp /usr/local/Cellar/ivy/{version}/libexec/ivy-{version}.jar /usr/local/Cellar/ant/{version}/libexec/lib/` (or wherever your brew installations reside)
+
+1. **CHECKPOINT**
+
+    run:
+
+    `ant ivy-resolve`
+
+    it should coomplete successfully
+
+1. Install **Tomcat**
+
+    - `brew install tomcat` (at the tome of this writing it was tomcat 8.5.11)
+
+    - Add an environment variable for the tomcat8 directory: **CATALINA_HOME** (if `brew` was used with it's default installation directory, then it would be `/usr/local/Cellar/tomcat/{version}/libexec`)
+
+1. Install **PostgreSQL** (at the time of this writing we are using PostgreSQL 9.5)
+
+    - Download and run the PostgreSQL installer [here](https://www.bigsql.org/postgresql/installers.jsp). This installs BigSQL Manager, pgAdminIII (if you choose), and a `psql` interactive shell.
+
+    - For convenience to `psql` in your terminal (rather than using the interactive shell) you may want to add this to your `.bashrc` or `.bash_profile`: `source \[path-to-postgres\]/pg95/pg95.env`
+
+    - Create `filth_admin` user: 
+
+1. Setup database
+
+1. Install LaTeX
+
+    - Download and run the installer for `MacTeX` [here](http://www.tug.org/mactex/index.html)

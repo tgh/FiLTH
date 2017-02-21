@@ -43,6 +43,9 @@ SETTING UP ENVIRONMENT
 	- in ~/apache: $ make
 	- in ~/apache: $ sudo make install
 	- add ~/Installed_Programs/apache_2.4/bin to $PATH
+
+- for Mac, ant was installed with brew: `brew install ant` (installed ant 1.10.0)
+  same for ivy: `brew install ivy` (installed 2.4.0)
 		
 - for setting up Apache, Tomcat, see /doc/setup/Native_Environment_Setup.html
 
