@@ -3407,3 +3407,9 @@ INSERT INTO filth.crew_person VALUES (3409, 'Soultanakis', 'Nico', NULL, 'Nico S
 INSERT INTO filth.crew_person VALUES (3410, 'Untaru', 'Catinca', NULL, 'Catinca Untaru', 'Actress');  -- Actress: Catinca Untaru
 INSERT INTO filth.crew_person VALUES (3411, 'Bill', 'Leo', NULL, 'Leo Bill', 'Actor');  -- Actor: Leo Bill
 INSERT INTO filth.crew_person VALUES (3412, 'Watkinson', 'Colin', NULL, 'Colin Watkinson', 'Cinematographer');  -- Cinematographer: Colin Watkinson
+INSERT INTO filth.crew_person VALUES (3413, 'Bagarozzi', 'Anthony', NULL, 'Anthony Bagarozzi', 'Screenwriter');  -- Screenwriter: Anthony Bagarozzi
+INSERT INTO filth.crew_person VALUES (3414, 'Rice', 'Angourie', NULL, 'Angourie Rice', 'Actress');  -- Actress: Angourie Rice
+INSERT INTO filth.crew_person VALUES (3415, 'Bomer', 'Matt', NULL, 'Matt Bomer', 'Actor');  -- Actor: Matt Bomer
+INSERT INTO filth.crew_person VALUES (3416, 'DaCosta', 'Yaya', NULL, 'Yaya DaCosta', 'Actress');  -- Actress: Yaya DaCosta
+INSERT INTO filth.crew_person VALUES (3417, 'Simpkins', 'Ty', NULL, 'Ty Simpkins', 'Actor');  -- Actor: Ty Simpkins
+INSERT INTO filth.crew_person VALUES (3418, 'Qualley', 'Margaret', NULL, 'Margaret Qualley', 'Actress');  -- Actress: Margaret Qualley

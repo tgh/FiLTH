@@ -4166,7 +4166,7 @@ INSERT INTO filth.movie VALUES (4167, 'Australia', 2008, '**½', 'PG-13', 'Austr
 INSERT INTO filth.movie VALUES (4168, 'Rogue One: A Star Wars Story', 2016, '***', 'PG-13', 'USA', NULL, 'tt3748528', 1, 330459, NULL, NULL);
 INSERT INTO filth.movie VALUES (4169, 'After Earth', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1815862', 0, 82700, NULL, NULL);
 INSERT INTO filth.movie VALUES (4170, 'Hell or High Water', 2016, '***½', 'R', 'USA', NULL, 'tt2582782', 0, 338766, NULL, NULL);
-INSERT INTO filth.movie VALUES (4171, 'The Nice Guys', 2016, 'not seen', 'R', 'USA', NULL, 'tt3799694', NULL, 290250, NULL, NULL);
+INSERT INTO filth.movie VALUES (4171, 'The Nice Guys', 2016, '***', 'R', 'USA', NULL, 'tt3799694', NULL, 290250, NULL, NULL);
 INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, '****', 'PG-13', 'USA', 'I couldn''t really find anything wrong with this movie. The only thing I could say is that the sister to Ryan Gosling''s character was too much of a movie cliche than a real, but that''s a nit-pick. However, the movie didn''t grab me like I wanted it to; despite it being an absolutely excellent movie I didn''t have as great of a movie experience as I''d hoped or expected.', 'tt3783958', NULL, 313369, NULL, NULL);
 INSERT INTO filth.movie VALUES (4173, 'Silence', 2016, 'not seen', 'R', 'USA', NULL, 'tt0490215', NULL, 68730, NULL, NULL);
 INSERT INTO filth.movie VALUES (4174, 'Your Name', 2016, 'not seen', 'NR', 'Japan', NULL, 'tt5311514', NULL, 372058, NULL, NULL);
