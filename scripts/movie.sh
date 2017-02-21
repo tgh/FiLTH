@@ -53,21 +53,21 @@ function restore_movie_sql_file() {
 
 function clean_movie_ratings() {
   # replace special characters with ASCII
-  sed -i "s/'/''/g" $1
-  sed -i "s/’/''/g" $1        # (double apostrophes for SQL)
-  sed -i "s/Chaplin short/short/g" $1
-  sed -i "s/Keaton short/short/g" $1
-  sed -i "s/‘/''/g" $1
-  sed -i "s/…/.../g" $1
-  sed -i "s/♥/Heart/g" $1
+  sed -i "" "s/'/''/g" $1
+  sed -i "" "s/’/''/g" $1        # (double apostrophes for SQL)
+  sed -i "" "s/Chaplin short/short/g" $1
+  sed -i "" "s/Keaton short/short/g" $1
+  sed -i "" "s/‘/''/g" $1
+  sed -i "" "s/…/.../g" $1
+  sed -i "" "s/♥/Heart/g" $1
   # remove the alphabetical headers
-  sed -i "/^[A-Z]$/d" $1
+  sed -i "" "/^[A-Z]$/d" $1
   # remove the blank lines
-  sed -i "/^$/d" $1
-  sed -i "/X, Y, Z/d" $1
+  sed -i "" "/^$/d" $1
+  sed -i "" "/X, Y, Z/d" $1
   # remove the totals at the bottom
-  sed -i "/Total:/d" $1
-  sed -i "/shorts$/d" $1
+  sed -i "" "/Total:/d" $1
+  sed -i "" "/shorts$/d" $1
 }
 
 

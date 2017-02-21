@@ -63,9 +63,9 @@ def getInitialId(lines):
 
 
 def replaceLine(expectedId, currentId):
-    retval = system("sed -i \"s/{0}/{1}/g\" {2}".format('(' + str(currentId) + ',', '(' + str(expectedId) + ',', _argFile))
+    retval = system("sed -i '' \"s/{0}/{1}/g\" {2}".format('(' + str(currentId) + ',', '(' + str(expectedId) + ',', _argFile))
     if retval != 0:
-        print '***Error in sed command: ' + "sed -i \"s/{0}/{1}/g\" {2}".format(line, newline, _argFile)
+        print '***Error in sed command: ' + "sed -i '' \"s/{0}/{1}/g\" {2}".format(line, newline, _argFile)
         sys.exit(3)
 
 

@@ -82,11 +82,11 @@ if __name__ == '__main__':
 
             vals[7] = ' ' + str(tmdbId)
             newline = match.group(1) + (',').join(vals)
-            retval = system("sed -i \"s/{0}/{1}/g\" {2}".format(line.strip().replace(';','\\;'), newline.replace('&', '\\&'), MOVIE_SQL_FILE))
+            retval = system("sed -i '' \"s/{0}/{1}/g\" {2}".format(line.strip().replace(';','\\;'), newline.replace('&', '\\&'), MOVIE_SQL_FILE))
 
             if retval != 0:
                 print '*** Error in sed on line: ' + line
-                log('main', '*** Error in sed command: ' + "sed -i \"s/{0}/{1}/g\" {2}".format(line.strip().replace(';','\\;'), newline.replace('&', '\\&'), MOVIE_SQL_FILE))
+                log('main', '*** Error in sed command: ' + "sed -i '' \"s/{0}/{1}/g\" {2}".format(line.strip().replace(';','\\;'), newline.replace('&', '\\&'), MOVIE_SQL_FILE))
                 continue
             else:
                 log('main', 'successfully processed line: ' + line)
