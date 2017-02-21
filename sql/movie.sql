@@ -4201,3 +4201,5 @@ INSERT INTO filth.movie VALUES (4202, 'Scott Pilgrim vs. the World', 2010, 'not 
 INSERT INTO filth.movie VALUES (4203, 'Legend of the Guardians: The Owls of Ga''Hoole', 2010, 'not seen', 'PG', 'USA', NULL, 'tt1219342', NULL, 41216, NULL, NULL);
 INSERT INTO filth.movie VALUES (4204, 'Kick-Ass', 2010, 'not seen', 'R', 'England', NULL, 'tt1250777', NULL, 23483, NULL, NULL);
 INSERT INTO filth.movie VALUES (4205, 'Florence Foster Jenkins', 2016, '**', 'PG-13', 'England', NULL, 'tt4136084', 0, 315664, NULL, NULL);
+INSERT INTO filth.movie VALUES (4206, '13th', 2016, '***', 'NR', 'USA', NULL, 'tt5895028', 0, 2614430, NULL, NULL);
+INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'USA', 'Shows the American suburban lifestyle of kids and entertainment/video games and lack of education incredibly well.', 'tt3553976', 0, 48480, NULL, NULL);

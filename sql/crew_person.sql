@@ -3413,3 +3413,7 @@ INSERT INTO filth.crew_person VALUES (3415, 'Bomer', 'Matt', NULL, 'Matt Bomer',
 INSERT INTO filth.crew_person VALUES (3416, 'DaCosta', 'Yaya', NULL, 'Yaya DaCosta', 'Actress');  -- Actress: Yaya DaCosta
 INSERT INTO filth.crew_person VALUES (3417, 'Simpkins', 'Ty', NULL, 'Ty Simpkins', 'Actor');  -- Actor: Ty Simpkins
 INSERT INTO filth.crew_person VALUES (3418, 'Qualley', 'Margaret', NULL, 'Margaret Qualley', 'Actress');  -- Actress: Margaret Qualley
+INSERT INTO filth.crew_person VALUES (3419, 'Averick', 'Spencer', NULL, 'Spencer Averick', 'Producer');  -- Producer: Spencer Averick
+INSERT INTO filth.crew_person VALUES (3420, 'Ross', 'Matt', NULL, 'Matt Ross', 'Actor');  -- Actor: Matt Ross
+INSERT INTO filth.crew_person VALUES (3421, 'MacKay', 'George', NULL, 'George MacKay', 'Actor');  -- Actor: George MacKay
+INSERT INTO filth.crew_person VALUES (3422, 'Fontaine', 'Stephane', NULL, 'Stephane Fontaine', 'Cinematographer');  -- Cinematographer: Stephane Fontaine
