@@ -3417,3 +3417,9 @@ INSERT INTO filth.crew_person VALUES (3419, 'Averick', 'Spencer', NULL, 'Spencer
 INSERT INTO filth.crew_person VALUES (3420, 'Ross', 'Matt', NULL, 'Matt Ross', 'Actor');  -- Actor: Matt Ross
 INSERT INTO filth.crew_person VALUES (3421, 'MacKay', 'George', NULL, 'George MacKay', 'Actor');  -- Actor: George MacKay
 INSERT INTO filth.crew_person VALUES (3422, 'Fontaine', 'Stephane', NULL, 'Stephane Fontaine', 'Cinematographer');  -- Cinematographer: Stephane Fontaine
+INSERT INTO filth.crew_person VALUES (3423, 'O''Conner', 'Gavin', NULL, 'Gavin O''Conner', 'Director');  -- Director: Gavin O'Conner
+INSERT INTO filth.crew_person VALUES (3424, 'Dubuque', 'Bill', NULL, 'Bill Dubuque', 'Screenwriter');  -- Screenwriter: Bill Dubuque
+INSERT INTO filth.crew_person VALUES (3425, 'Bernthal', 'Jon', NULL, 'Jon Bernthal', 'Actor');  -- Actor: Jon Bernthal
+INSERT INTO filth.crew_person VALUES (3426, 'Tambor', 'Jeffrey', NULL, 'Jeffrey Tambor', 'Actor');  -- Actor: Jeffrey Tambor
+INSERT INTO filth.crew_person VALUES (3427, 'Addai-Robinson', 'Cynthia', NULL, 'Cynthia Addai-Robinson', 'Actress');  -- Actress: Cynthia Addai-Robinson
+INSERT INTO filth.crew_person VALUES (3428, 'Heisserer', 'Eric', NULL, 'Eric Heisserer', 'Screenwriter');  -- Screenwriter: Eric Heisserer

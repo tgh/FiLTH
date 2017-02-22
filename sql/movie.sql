@@ -4176,7 +4176,7 @@ INSERT INTO filth.movie VALUES (4177, 'Hacksaw Ridge', 2016, 'not seen', 'R', 'U
 INSERT INTO filth.movie VALUES (4178, 'The Boy and the Beast', 2015, 'not seen', 'PG-13', 'Japan', NULL, 'tt4272866', NULL, 315465, NULL, NULL);
 INSERT INTO filth.movie VALUES (4179, 'Manchester by the Sea', 2016, 'not seen', 'R', 'USA', NULL, 'tt4034228', NULL, 334541, NULL, NULL);
 INSERT INTO filth.movie VALUES (4180, 'Paterson', 2016, 'not seen', 'R', 'USA', NULL, 'tt5247022', NULL, 370755, NULL, NULL);
-INSERT INTO filth.movie VALUES (4181, 'Arrival', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt2543164', NULL, 329865, NULL, NULL);
+INSERT INTO filth.movie VALUES (4181, 'Arrival', 2016, '***', 'PG-13', 'USA', 'Despite this being very well made (solid acting, beautifully shot, well paced, great mood) the path the story went down didn''t quite work for me (what Amy Adams character learns how to do); although how it was revealed and tied in to the beginning was good and makes a second viewing a different experience.', 'tt2543164', NULL, 329865, NULL, NULL);
 INSERT INTO filth.movie VALUES (4182, 'Swiss Army Man', 2016, 'not seen', 'R', 'USA', NULL, 'tt4034354', NULL, 347031, NULL, NULL);
 INSERT INTO filth.movie VALUES (4183, 'The Witch', 2016, 'not seen', 'R', 'USA', NULL, 'tt4263482', NULL, 347031, NULL, NULL);
 INSERT INTO filth.movie VALUES (4184, 'The Babadook', 2014, 'not seen', 'NR', 'Australia', NULL, 'tt2321549', NULL, 242224, NULL, NULL);
@@ -4203,3 +4203,4 @@ INSERT INTO filth.movie VALUES (4204, 'Kick-Ass', 2010, 'not seen', 'R', 'Englan
 INSERT INTO filth.movie VALUES (4205, 'Florence Foster Jenkins', 2016, '**', 'PG-13', 'England', NULL, 'tt4136084', 0, 315664, NULL, NULL);
 INSERT INTO filth.movie VALUES (4206, '13th', 2016, '***', 'NR', 'USA', NULL, 'tt5895028', 0, 2614430, NULL, NULL);
 INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'USA', 'Shows the American suburban lifestyle of kids and entertainment/video games and lack of education incredibly well.', 'tt3553976', 0, 48480, NULL, NULL);
+INSERT INTO filth.movie VALUES (4208, 'The Accountant', 2016, '***', 'R', 'USA', 'I almost gave this ***½; the major flaw being that the climactic scene I thought was written and executed poorly.', 'tt2140479', 0, 22251, NULL, NULL);
