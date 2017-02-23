@@ -3425,3 +3425,9 @@ INSERT INTO filth.crew_person VALUES (3427, 'Addai-Robinson', 'Cynthia', NULL, '
 INSERT INTO filth.crew_person VALUES (3428, 'Heisserer', 'Eric', NULL, 'Eric Heisserer', 'Screenwriter');  -- Screenwriter: Eric Heisserer
 INSERT INTO filth.crew_person VALUES (3429, 'Reisz', 'Karel', NULL, 'Karel Reisz', 'Director');  -- Director: Karel Reisz
 INSERT INTO filth.crew_person VALUES (3430, 'Warner', 'David', NULL, 'David Warner', 'Actor');  -- Actor: David Warner
+INSERT INTO filth.crew_person VALUES (3431, 'Walsh-Peelo', 'Ferdia', NULL, 'Ferdia Walsh-Peelo', 'Actor');  -- Actor: Ferdia Walsh-Peelo
+INSERT INTO filth.crew_person VALUES (3432, 'Thornton', 'Kelly', NULL, 'Kelly Thornton', 'Actress');  -- Actress: Kelly Thornton
+INSERT INTO filth.crew_person VALUES (3433, 'Reynor', 'Jack', NULL, 'Jack Reynor', 'Actor');  -- Actor: Jack Reynor
+INSERT INTO filth.crew_person VALUES (3434, 'Gillen', 'Aidan', NULL, 'Aidan Gillen', 'Actor');  -- Actor: Aidan Gillen
+INSERT INTO filth.crew_person VALUES (3435, 'McKenna', 'Mark', NULL, 'Mark McKenna', 'Actor');  -- Actor: Mark McKenna
+INSERT INTO filth.crew_person VALUES (3436, 'Kennedy', 'Maria', 'Doyle', 'Maria Doyle Kennedy', 'Actress');  -- Actress: Maria Doyle Kennedy
