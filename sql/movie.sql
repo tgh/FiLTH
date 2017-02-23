@@ -2440,7 +2440,7 @@ INSERT INTO filth.movie VALUES (2435, 'Gloria', 1980, 'not seen', 'PG', 'USA', N
 INSERT INTO filth.movie VALUES (2436, 'Resurrection', 1980, 'not seen', 'PG', 'USA', NULL, 'tt0081414', NULL, 98864, NULL, NULL);
 INSERT INTO filth.movie VALUES (2437, 'Private Benjamin', 1980, 'not seen', 'R', 'USA', NULL, 'tt0081375', NULL, 10765, NULL, NULL);
 INSERT INTO filth.movie VALUES (2438, 'Inside Moves', 1980, 'not seen', 'PG', 'USA', NULL, 'tt0080928', NULL, 39503, NULL, NULL);
-INSERT INTO filth.movie VALUES (2439, 'The French Lieutenant''s Woman', 1981, 'not seen', 'R', 'England', NULL, 'tt0082416', NULL, 12537, NULL, NULL);
+INSERT INTO filth.movie VALUES (2439, 'The French Lieutenant''s Woman', 1981, '***', 'R', 'England', NULL, 'tt0082416', NULL, 12537, NULL, NULL);
 INSERT INTO filth.movie VALUES (2440, 'Frances', 1982, 'not seen', 'R', 'USA', NULL, 'tt0083967', NULL, 3526, NULL, NULL);
 INSERT INTO filth.movie VALUES (2441, 'Testament', 1983, 'not seen', 'PG', 'USA', NULL, 'tt0086429', NULL, 21259, NULL, NULL);
 INSERT INTO filth.movie VALUES (2442, 'The Year of Living Dangerously', 1983, 'not seen', 'PG', 'Australia', NULL, 'tt0086617', NULL, 11541, NULL, NULL);

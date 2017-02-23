@@ -7814,3 +7814,8 @@ INSERT INTO filth.worked_on VALUES(7814, 4181, 2062, 'Supporting Actor');  -- Je
 INSERT INTO filth.worked_on VALUES(7815, 4181, 220, 'Supporting Actor');  -- Forest Whitaker for Arrival (2016)
 INSERT INTO filth.worked_on VALUES(7816, 4181, 3064, 'Supporting Actor');  -- Michael Stuhlbarg for Arrival (2016)
 INSERT INTO filth.worked_on VALUES(7817, 4181, 2889, 'Cinematographer');  -- Bradford Young for Arrival (2016)
+INSERT INTO filth.worked_on VALUES(7818, 2439, 3429, 'Director');  -- Karel Reisz for The French Lieutenant''s Woman (1981)
+INSERT INTO filth.worked_on VALUES(7819, 2439, 206, 'Lead Actor');  -- Jeremy Irons for The French Lieutenant''s Woman (1981)
+INSERT INTO filth.worked_on VALUES(7820, 2439, 3388, 'Small Part');  -- Richard Griffiths for The French Lieutenant''s Woman (1981)
+INSERT INTO filth.worked_on VALUES(7821, 2439, 3430, 'Small Part');  -- David Warner for The French Lieutenant''s Woman (1981)
+INSERT INTO filth.worked_on VALUES(7822, 2439, 1282, 'Cinematographer');  -- Freddie Francis for The French Lieutenant''s Woman (1981)

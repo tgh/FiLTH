@@ -3423,3 +3423,5 @@ INSERT INTO filth.crew_person VALUES (3425, 'Bernthal', 'Jon', NULL, 'Jon Bernth
 INSERT INTO filth.crew_person VALUES (3426, 'Tambor', 'Jeffrey', NULL, 'Jeffrey Tambor', 'Actor');  -- Actor: Jeffrey Tambor
 INSERT INTO filth.crew_person VALUES (3427, 'Addai-Robinson', 'Cynthia', NULL, 'Cynthia Addai-Robinson', 'Actress');  -- Actress: Cynthia Addai-Robinson
 INSERT INTO filth.crew_person VALUES (3428, 'Heisserer', 'Eric', NULL, 'Eric Heisserer', 'Screenwriter');  -- Screenwriter: Eric Heisserer
+INSERT INTO filth.crew_person VALUES (3429, 'Reisz', 'Karel', NULL, 'Karel Reisz', 'Director');  -- Director: Karel Reisz
+INSERT INTO filth.crew_person VALUES (3430, 'Warner', 'David', NULL, 'David Warner', 'Actor');  -- Actor: David Warner
