@@ -492,14 +492,14 @@ INSERT INTO filth.list_contains VALUES (491, 444, 14, 4, NULL); -- "The Devil an
 INSERT INTO filth.list_contains VALUES (492, 1319, 14, 5, NULL); -- "The Queen" in list "Top Ten Movies of 2006" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (493, 964, 14, 6, NULL); -- "Little Miss Sunshine" in list "Top Ten Movies of 2006" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (494, 1295, 14, 7, NULL); -- "The Prestige" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (495, 290, 14, 8, NULL); -- "Cars" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (496, 271, 14, 9, NULL); -- "Bubble" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (497, 445, 14, 10, NULL); -- "The Devil Wears Prada" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (498, 218, 14, 11, NULL); -- "Blood Diamond" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (499, 1101, 14, 12, NULL); -- "Monster House" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (500, 1231, 14, 13, NULL); -- "Pan's Labyrinth" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (501, 589, 14, 14, NULL); -- "The Fountain" in list "Top Ten Movies of 2006" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (502, 1491, 14, 15, NULL); -- "Sketches of Frank Gehry" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (494, 3588, 14, 8, NULL); -- "Tell No One" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (494, 3318, 14, 9, NULL); -- "Deliver Us from Evil" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (494, 3317, 14, 10, NULL); -- "An Inconvenient Truth" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (495, 290, 14, 11, NULL); -- "Cars" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (496, 271, 14, 12, NULL); -- "Bubble" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (497, 445, 14, 13, NULL); -- "The Devil Wears Prada" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (498, 218, 14, 14, NULL); -- "Blood Diamond" in list "Top Ten Movies of 2006" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (499, 1101, 14, 15, NULL); -- "Monster House" in list "Top Ten Movies of 2006" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (503, 1185, 15, 1, NULL); -- "No Country For Old Men" in list "Top Ten Movies of 2007" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (504, 1619, 15, 2, NULL); -- "There Will Be Blood" in list "Top Ten Movies of 2007" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (505, 2, 15, 3, NULL); -- "3:10 to Yuma" in list "Top Ten Movies of 2007" by Tyler Hayes

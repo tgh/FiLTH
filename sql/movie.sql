@@ -3319,7 +3319,7 @@ INSERT INTO filth.movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA'
 INSERT INTO filth.movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', NULL, 'tt0492466', NULL, 34389, NULL, NULL);
 INSERT INTO filth.movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', NULL, 'tt0486358', 0, 1776, NULL, NULL);
 INSERT INTO filth.movie VALUES (3317, 'An Inconvenient Truth', 2006, '***½', 'PG', 'USA', NULL, 'tt0497116', 0, 1781, NULL, NULL); -- 7/5/2015
-INSERT INTO filth.movie VALUES (3318, 'Deliver Us from Evil', 2006, 'not seen', 'NR', 'USA', NULL, 'tt0814075', NULL, 13364, NULL);
+INSERT INTO filth.movie VALUES (3318, 'Deliver Us from Evil', 2006, '***½', 'NR', 'USA', NULL, 'tt0814075', NULL, 13364, NULL);
 INSERT INTO filth.movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', NULL, 'tt0912593', 0, 12901, NULL, NULL);
 INSERT INTO filth.movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', NULL, 'tt0970184', NULL, 34981, NULL, NULL);
 INSERT INTO filth.movie VALUES (3321, 'Sicko', 2007, '****', 'R', 'USA', NULL, 'tt0386032', 0, 2359, NULL, NULL);

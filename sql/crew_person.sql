@@ -3431,3 +3431,4 @@ INSERT INTO filth.crew_person VALUES (3433, 'Reynor', 'Jack', NULL, 'Jack Reynor
 INSERT INTO filth.crew_person VALUES (3434, 'Gillen', 'Aidan', NULL, 'Aidan Gillen', 'Actor');  -- Actor: Aidan Gillen
 INSERT INTO filth.crew_person VALUES (3435, 'McKenna', 'Mark', NULL, 'Mark McKenna', 'Actor');  -- Actor: Mark McKenna
 INSERT INTO filth.crew_person VALUES (3436, 'Kennedy', 'Maria', 'Doyle', 'Maria Doyle Kennedy', 'Actress');  -- Actress: Maria Doyle Kennedy
+INSERT INTO filth.crew_person VALUES (3437, 'Berg', 'Amy', NULL, 'Amy Berg', 'Director');  -- Director: Amy Berg

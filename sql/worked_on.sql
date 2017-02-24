@@ -7827,3 +7827,5 @@ INSERT INTO filth.worked_on VALUES(7827, 4209, 3433, 'Supporting Actor');  -- Ja
 INSERT INTO filth.worked_on VALUES(7828, 4209, 3434, 'Supporting Actor');  -- Aidan Gillen for Sing Street (2016)
 INSERT INTO filth.worked_on VALUES(7829, 4209, 3435, 'Supporting Actor');  -- Mark McKenna for Sing Street (2016)
 INSERT INTO filth.worked_on VALUES(7830, 4209, 3436, 'Supporting Actress');  -- Maria Doyle Kennedy for Sing Street (2016)
+INSERT INTO filth.worked_on VALUES(7831, 3318, 3437, 'Director');  -- Amy Berg for Deliver Us from Evil (2006)
+INSERT INTO filth.worked_on VALUES(7832, 3318, 3437, 'Screenwriter');  -- Amy Berg for Deliver Us from Evil (2006)
