@@ -74,7 +74,7 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
     - Add an environment variable for the tomcat8 directory: **CATALINA_HOME** ($WORKSPACE/tomcat8)
 
-    - (you may also need to make all *.sh files under \[tomcat8\]/bin/ executable (see http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat)
+    - (you may also need to make all \*.sh files under \[tomcat8\]/bin/ executable (see http://www.coderanch.com/t/85334/Tomcat/define-BASEDIR-env-variable-Tomcat)
 
 1. Install **PostgreSQL**
 
@@ -121,9 +121,23 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
 
     - Download and run the PostgreSQL installer [here](https://www.bigsql.org/postgresql/installers.jsp). This installs BigSQL Manager, pgAdminIII (if you choose), and a `psql` interactive shell.
 
-    - For convenience to `psql` in your terminal (rather than using the interactive shell) you may want to add this to your `.bashrc` or `.bash_profile`: `source \[path-to-postgres\]/pg95/pg95.env`
+    - For convenience to `psql` in your terminal (rather than using the interactive shell) you may want to add this to your `.bashrc` or `.bash_profile`: `source [path-to-postgres]/pg95/pg95.env` (for me, postgresql was installed at `$HOME/postgresql`)
 
-    - Create `filth_admin` user: 
+    - Create `filth_admin` and `filth` db users:
+        - `createuser -sr filth_admin`
+        - `createuser filth`
+        - verify new users exist: `psql -c "\du"`
+
+    - Add the following lines for connection configuration for the new db users in `[path-to-postgres]/data/pg95/pg_hba.con` (except the header line--that's already in the file and shown here for reference):
+        ```
+        # TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+        local   filth           filth_admin                             trust
+        local   filth           filth                                   trust
+        local   filth-test      filth_admin                             trust
+        local   filth-test      filth                                   trust
+        ```
+        - _Note: since the method is "trust", passwords wont be used._
 
 1. Setup database
 
