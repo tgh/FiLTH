@@ -3435,3 +3435,12 @@ INSERT INTO filth.crew_person VALUES (3437, 'Berg', 'Amy', NULL, 'Amy Berg', 'Di
 INSERT INTO filth.crew_person VALUES (3438, 'Stahelski', 'Chad', NULL, 'Chad Stahelski', 'Director');  -- Director: Chad Stahelski
 INSERT INTO filth.crew_person VALUES (3439, 'Nyqvist', 'Michael', NULL, 'Michael Nyqvist', 'Actor');  -- Actor: Michael Nyqvist
 INSERT INTO filth.crew_person VALUES (3440, 'Allen', 'Alfie', NULL, 'Alfie Allen', 'Actor');  -- Actor: Alfie Allen
+INSERT INTO filth.crew_person VALUES (3441, 'Bacall', 'Michael', NULL, 'Michael Bacall', 'Actor');  -- Actor: Michael Bacall
+INSERT INTO filth.crew_person VALUES (3442, 'Cera', 'Michael', NULL, 'Michael Cera', 'Actor');  -- Actor: Michael Cera
+INSERT INTO filth.crew_person VALUES (3443, 'Simmons', 'Johnny', NULL, 'Johnny Simmons', 'Actor');  -- Actor: Johnny Simmons
+INSERT INTO filth.crew_person VALUES (3444, 'Webber', 'Mark', NULL, 'Mark Webber', 'Actor');  -- Actor: Mark Webber
+INSERT INTO filth.crew_person VALUES (3445, 'Wong', 'Ellen', NULL, 'Ellen Wong', 'Actress');  -- Actress: Ellen Wong
+INSERT INTO filth.crew_person VALUES (3446, 'Culkin', 'Kieran', NULL, 'Kieran Culkin', 'Actor');  -- Actor: Kieran Culkin
+INSERT INTO filth.crew_person VALUES (3447, 'Plaza', 'Aubrey', NULL, 'Aubrey Plaza', 'Actress');  -- Actress: Aubrey Plaza
+INSERT INTO filth.crew_person VALUES (3448, 'Winstead', 'Mary', 'Elizabeth', 'Mary Elizabeth Winstead', 'Actress');  -- Actress: Mary Elizabeth Winstead
+INSERT INTO filth.crew_person VALUES (3449, 'Pope', 'Bill', NULL, 'Bill Pope', 'Cinematographer');  -- Cinematographer: Bill Pope
