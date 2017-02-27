@@ -3444,3 +3444,6 @@ INSERT INTO filth.crew_person VALUES (3446, 'Culkin', 'Kieran', NULL, 'Kieran Cu
 INSERT INTO filth.crew_person VALUES (3447, 'Plaza', 'Aubrey', NULL, 'Aubrey Plaza', 'Actress');  -- Actress: Aubrey Plaza
 INSERT INTO filth.crew_person VALUES (3448, 'Winstead', 'Mary', 'Elizabeth', 'Mary Elizabeth Winstead', 'Actress');  -- Actress: Mary Elizabeth Winstead
 INSERT INTO filth.crew_person VALUES (3449, 'Pope', 'Bill', NULL, 'Bill Pope', 'Cinematographer');  -- Cinematographer: Bill Pope
+INSERT INTO filth.crew_person VALUES (3450, 'Chandler', 'Kyle', NULL, 'Kyle Chandler', 'Actor');  -- Actor: Kyle Chandler
+INSERT INTO filth.crew_person VALUES (3451, 'Mol', 'Gretchen', NULL, 'Gretchen Mol', 'Actress');  -- Actress: Gretchen Mol
+INSERT INTO filth.crew_person VALUES (3452, 'Hedges', 'Lucas', NULL, 'Lucas Hedges', 'Actor');  -- Actor: Lucas Hedges
