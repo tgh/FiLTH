@@ -138,9 +138,18 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
         local   filth-test      filth                                   trust
         ```
         - _Note: since the method is "trust", passwords wont be used._
+        - _Note: place these lines **above** the line with `local all all     md5`_
+
+    - In **pgAdmin3** create a connection for `localhost` port 5432 with username `postgres` (no password)
 
 1. Setup database
 
 1. Install LaTeX
 
     - Download and run the installer for `MacTeX` [here](http://www.tug.org/mactex/index.html)
+
+1. Misc
+
+    - Install `tac` if running certain scripts under `scripts/` that use it:
+        - `brew install coreutils`
+        - `ln -s /usr/local/bin/gtac /usr/local/bin/tac`
