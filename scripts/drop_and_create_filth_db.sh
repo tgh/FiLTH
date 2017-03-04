@@ -63,11 +63,21 @@ if [ $# -gt 0 ]
   else
     echo "Dropping existing filth db..."
     sleep 0.5
-    sudo -u postgres dropdb --if-exists filth
+    #Hack: check OS and alter command accordingly
+    #(in Ubuntu installing PostgreSQL also creates system user 'postgres' used for admin commands; macOS does not do this)
+    if [[ "$(uname)" != "Darwin" ]]; then
+      sudo -u postgres dropdb --if-exists filth
+    else
+      dropdb --if-exists filth
+    fi
 
     echo "Creating database filth..."
     sleep 0.5
-    sudo -u postgres createdb --owner=filth_admin filth
+    if [[ "$(uname)" != "Darwin" ]]; then
+      sudo -u postgres createdb --owner=filth_admin filth
+    else
+      createdb --owner=filth_admin filth
+    fi
 
     echo "Creating schema..."
     sleep 0.5
