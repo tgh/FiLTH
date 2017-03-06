@@ -48,7 +48,7 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
     - `sudo apt-get install ant`
 
-    - *This may not be required:* Download **ant-contrib-1.0b3.jar** [here](http://sourceforge.net/projects/ant-contrib/files/ant-contrib/1.0b3/ant-contrib-1.0b3-bin.tar.gz/download), extract the contents, and place the jar file (found in ant-contrib, the root directory of the extracted content) in /usr/share/ant/lib (create the dir if it doesn't exist)--there is a danger this could be oerriden if you ever upgrade ant; as an alternative you can place the jar in $HOME/.ant/lib. [Ant-Contrib](http://ant-contrib.sourceforge.net/tasks/tasks/index.html) provides a number of useful tasks such as `foreach` and `if`.
+    - Download **ant-contrib-1.0b3.jar** [here](http://sourceforge.net/projects/ant-contrib/files/ant-contrib/1.0b3/ant-contrib-1.0b3-bin.tar.gz/download), extract the contents, and place the jar file (found in ant-contrib, the root directory of the extracted content) in /usr/share/ant/lib (create the dir if it doesn't exist)--there is a danger this could be oerriden if you ever upgrade ant; as an alternative you can place the jar in $HOME/.ant/lib. [Ant-Contrib](http://ant-contrib.sourceforge.net/tasks/tasks/index.html) provides a number of useful tasks such as `foreach` and `if`.
 
     - Add an environment variable for ant's home directory (probably /usr/share/ant): **ANT_HOME**
 
@@ -95,7 +95,11 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
 
 1. Install **Java 8**
 
-1. Install **ant**: `brew install ant` (at the time of this writing it was `ant` 1.10.0)
+1. Install **ant**
+    - `brew install ant` (at the time of this writing it was `ant` 1.10.0)
+    - Also download and install `ant-contrib`:
+        - `brew install ant-contrib`
+        - Copy the jar file from ant-contrib to ant's lib/ directory; for me it was: `cp /usr/local/Cellar/ant-contrib/1.0b3/share/ant/ant-contrib-1.0b3.jar /usr/local/Cellar/ant/1.10.1/libexec/lib/`
 
 1. Install [Ivy](http://ant.apache.org/ivy/) (for dependency management)
  
