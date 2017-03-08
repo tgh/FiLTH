@@ -25,7 +25,7 @@ class Movies(object):
         self._logFile = logFile
         self._movies = []
         #initialize movies and get next mid
-        self._nextMid = self._initMovies() + 1
+        self._nextMid = self._initMovies()
         self._movieInserts = []
         self._validMpaaRatings = []
         self._initValidMpaaRatings()
@@ -61,7 +61,7 @@ class Movies(object):
         movieFile = open(MOVIE_SQL_FILE, 'r')
         movielines = movieFile.readlines()
         movieFile.close()
-        lastMid = 0
+        highestMid = 0
         for movieline in movielines:
             movieline = movieline.replace("''", "'")
             try:
@@ -71,9 +71,12 @@ class Movies(object):
                 raise e
             movie = self._createMovie(vals)
             self._movies.append(movie)
-            lastMid = movie['mid']
+
+            # find the highest mid
+            if movie['mid'] > highestMid:
+                highestMid = movie['mid']
         self._log('_initMovies', '>> movie list initialized <<')
-        return lastMid
+        return highestMid + 1
 
 
     #----------------------------------------------------------------------------

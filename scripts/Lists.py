@@ -18,7 +18,7 @@ class Lists(object):
         self._logFile = logFile
         self._lists = []
         #initialize lists and get next lid
-        self._nextLid = self._initLists() + 1
+        self._nextLid = self._initLists()
         self._listInserts = []
         self._listContainsInserts = []
         self._nextListContainsId = self._getNextListContainsId()
@@ -45,7 +45,7 @@ class Lists(object):
         f = open(LIST_SQL_FILE, 'r')
         lines = f.readlines()
         f.close()
-        lid = 0
+        highestLid = 0
         for line in lines:
             line = line.replace("''", "'")
             matcher = re.search("VALUES \\(([0-9]+), '([^,]+?)', ([^\\)]+)\\);", line)
@@ -54,10 +54,16 @@ class Lists(object):
             mlist['title'] = matcher.group(2).strip("'")
             mlist['author'] = matcher.group(3).strip("'")
             self._lists.append(mlist)
-            lid = mlist['lid']
+
+            #find the highest lid
+            if mlist['lid'] > highestLid:
+                highestLid = mlist['lid']
+
             self._log('_initLists', 'List: "' + mlist['title'] + '" by ' + mlist['author'])
         self._log('_initLists', '>> Lists initialized <<')
-        return lid
+        self._log('_initLists', 'Highest lid found: ' + str(highestLid))
+
+        return highestLid
 
 
     #----------------------------------------------------------------------------
@@ -89,9 +95,13 @@ class Lists(object):
         lines = f.readlines()
         f.close()
 
-        lastline = lines[-1]
-        lcid = int(re.search('VALUES *\\(([0-9]+),', lastline).group(1))
-        return lcid + 1
+        highestLcid = 0
+        for line in lines:
+            lcid = int(re.search('VALUES *\\(([0-9]+),', lastline).group(1))
+            if lcid > highestLcid:
+                highestLcid = lcid
+                
+        return highestLcid + 1
 
 
     #----------------------------------------------------------------------------

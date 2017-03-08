@@ -28,7 +28,7 @@ class MovieCrew(object):
     self._initPositions()
     self._crewMap = {}            # full name (string) -> [cid (int)]
     #initialize crew map and get next cid
-    self._nextCid = self._initCrewMap() + 1
+    self._nextCid = self._initCrewMap()
     self._nextWid = 0
     self._initNextWid()
     self._log('__init__', 'Next cid: ' + str(self._nextCid))
@@ -53,7 +53,7 @@ class MovieCrew(object):
     crewSqlFile = open(self._crewSqlFilePath, 'r')
     lines = crewSqlFile.readlines()
     crewSqlFile.close()
-    lastCid = 0
+    highestCid = 0
     for line in lines:
       #ignore commented out lines
       if line.startswith('--'):
@@ -73,8 +73,11 @@ class MovieCrew(object):
 
       #uncomment to log all crew persons found
       #self._log('_initCrewMap', 'crew person: ' + fullName + ' (' + str(cid) + ')')
-      lastCid = cid
-    return lastCid
+
+      #find the highest cid
+      if cid > highestCid:
+        highestCid = cid
+    return highestCid + 1
 
 
   #----------------------------------------------------------------------------
@@ -84,10 +87,14 @@ class MovieCrew(object):
     lines = f.readlines()
     f.close()
 
-    lastLine = lines[len(lines)-1]
-    vals = re.search('VALUES\\((.*)\\);', lastLine).group(1).split(',')
-    wid = vals[0]
-    self._nextWid = int(wid) + 1
+    highestWid = 0
+    for line in lines:
+      vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
+      wid = int(vals[0])
+      if wid > highestWid:
+        highestWid = wid
+
+    self._nextWid = highestWid + 1
 
 
   #----------------------------------------------------------------------------

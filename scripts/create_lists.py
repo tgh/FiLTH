@@ -2,7 +2,7 @@
 
 """
 Usage:
-    lists.py FILE
+    create_lists.py FILE
 
 Options:
     -h --help       Show this screen.
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     movies = Movies(logger)
     lists  = Lists(logger)
 
-    args = docopt(__doc__, version='lists.py 1.0')
+    args = docopt(__doc__, version='create_lists.py 1.0')
     csvFile = args['FILE']
 
     if not path.isfile(csvFile):

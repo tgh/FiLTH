@@ -20,8 +20,7 @@ class MovieTagger(object):
     self._tagGivenToSqlFilePath = tagGivenToSqlFilePath
     self._logFile = logFile
     self._tagMap = {}             #tid -> (tag, parent id, [child tids])
-    self._initTagMap(tagSqlFilePath)
-    self._nextTid = len(self._tagMap) + 1
+    self._nextTid = self._initTagMap(tagSqlFilePath)
     self._existingTagIds = []     #tids for movies already tagged
 
 
@@ -34,6 +33,8 @@ class MovieTagger(object):
     tagSqlFile = open(tagSqlFilePath, 'r')
     taglines = tagSqlFile.readlines()
     tagSqlFile.close()
+
+    highestTid = 0
     for tagline in taglines:
       tid = re.search('VALUES \\((\d+),', tagline).group(1)
       tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
@@ -46,6 +47,11 @@ class MovieTagger(object):
         self._tagMap[int(tid)] = (tag, int(parentId), [])
       else:
         self._tagMap[int(tid)] = (tag, None, [])
+
+      if tid > highestTid:
+        highestTid = tid
+
+    return highestTid + 1
 
 
   #----------------------------------------------------------------------------
