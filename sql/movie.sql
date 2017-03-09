@@ -4167,7 +4167,7 @@ INSERT INTO filth.movie VALUES (4168, 'Rogue One: A Star Wars Story', 2016, '***
 INSERT INTO filth.movie VALUES (4169, 'After Earth', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1815862', 0, 82700, NULL, NULL);
 INSERT INTO filth.movie VALUES (4170, 'Hell or High Water', 2016, '***½', 'R', 'USA', NULL, 'tt2582782', 0, 338766, NULL, NULL);
 INSERT INTO filth.movie VALUES (4171, 'The Nice Guys', 2016, '***', 'R', 'USA', NULL, 'tt3799694', NULL, 290250, NULL, NULL);
-INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, '****', 'PG-13', 'USA', 'I couldn''t really find anything wrong with this movie. The only thing I could say is that the sister to Ryan Gosling''s character was too much of a movie cliche than a real, but that''s a nit-pick. However, the movie didn''t grab me like I wanted it to; despite it being an absolutely excellent movie I didn''t have as great of a movie experience as I''d hoped or expected.', 'tt3783958', NULL, 313369, NULL, NULL);
+INSERT INTO filth.movie VALUES (4172, 'La La Land', 2016, '****', 'PG-13', 'USA', 'I couldn''t really find anything wrong with this movie. The only thing I could say is that the sister to Ryan Gosling''s character was too much of a movie cliche than a real person, but that''s a nit-pick. However, the movie didn''t grab me like I wanted it to; despite it being an absolutely excellent movie I didn''t have as great of a movie experience as I''d hoped or expected.', 'tt3783958', NULL, 313369, NULL, NULL);
 INSERT INTO filth.movie VALUES (4173, 'Silence', 2016, 'not seen', 'R', 'USA', NULL, 'tt0490215', NULL, 68730, NULL, NULL);
 INSERT INTO filth.movie VALUES (4174, 'Your Name', 2016, 'not seen', 'NR', 'Japan', NULL, 'tt5311514', NULL, 372058, NULL, NULL);
 INSERT INTO filth.movie VALUES (4175, 'Deadpool', 2016, 'not seen', 'R', 'USA', NULL, 'tt1431045', NULL, 293660, NULL, NULL);
@@ -4201,7 +4201,7 @@ INSERT INTO filth.movie VALUES (4202, 'Scott Pilgrim vs. the World', 2010, '***�
 INSERT INTO filth.movie VALUES (4203, 'Legend of the Guardians: The Owls of Ga''Hoole', 2010, 'not seen', 'PG', 'USA', NULL, 'tt1219342', NULL, 41216, NULL, NULL);
 INSERT INTO filth.movie VALUES (4204, 'Kick-Ass', 2010, 'not seen', 'R', 'England', NULL, 'tt1250777', NULL, 23483, NULL, NULL);
 INSERT INTO filth.movie VALUES (4205, 'Florence Foster Jenkins', 2016, '**', 'PG-13', 'England', NULL, 'tt4136084', 0, 315664, NULL, NULL);
-INSERT INTO filth.movie VALUES (4206, '13th', 2016, '***', 'NR', 'USA', NULL, 'tt5895028', 0, 2614430, NULL, NULL);
-INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'USA', 'Shows the American suburban lifestyle of kids and entertainment/video games and lack of education incredibly well.', 'tt3553976', 0, 48480, NULL, NULL);
-INSERT INTO filth.movie VALUES (4208, 'The Accountant', 2016, '***', 'R', 'USA', 'I almost gave this ***½; the major flaw being that the climactic scene I thought was written and executed poorly.', 'tt2140479', 0, 22251, NULL, NULL);
-INSERT INTO filth.movie VALUES (4209, 'Sing Street', 2016, '***', 'PG-13', 'Ireland', NULL, 'tt3544112', 0, 375923, NULL, NULL);
+INSERT INTO filth.movie VALUES (4206, '13th', 2016, '***', 'NR', 'USA', NULL, 'tt5895028', 0, 407806, NULL, NULL);
+INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'USA', 'Shows the American suburban lifestyle of kids and entertainment/video games and lack of education incredibly well.', 'tt3553976', 0, 334533, NULL, NULL);
+INSERT INTO filth.movie VALUES (4208, 'The Accountant', 2016, '***', 'R', 'USA', 'I almost gave this ***½; the major flaw being that the climactic scene I thought was written and executed poorly.', 'tt2140479', 0, 302946, NULL, NULL);
+INSERT INTO filth.movie VALUES (4209, 'Sing Street', 2016, '***', 'PG-13', 'Ireland', NULL, 'tt3544112', 0, 369557, NULL, NULL);
