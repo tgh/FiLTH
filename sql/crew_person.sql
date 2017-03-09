@@ -3452,3 +3452,6 @@ INSERT INTO filth.crew_person VALUES (3454, 'Knight', 'Andrew', NULL, 'Andrew Kn
 INSERT INTO filth.crew_person VALUES (3455, 'Palmer', 'Teresa', NULL, 'Teresa Palmer', 'Actress');  -- Actress: Teresa Palmer
 INSERT INTO filth.crew_person VALUES (3456, 'Bracey', 'Luke', NULL, 'Luke Bracey', 'Actor');  -- Actor: Luke Bracey
 INSERT INTO filth.crew_person VALUES (3457, 'Duggan', 'Simon', NULL, 'Simon Duggan', 'Cinematographer');  -- Cinematographer: Simon Duggan
+INSERT INTO filth.crew_person VALUES (3458, 'Negga', 'Ruth', NULL, 'Ruth Negga', 'Actress');  -- Actress: Ruth Negga
+INSERT INTO filth.crew_person VALUES (3459, 'Kroll', 'Nick', NULL, 'Nick Kroll', 'Actor');  -- Actor: Nick Kroll
+INSERT INTO filth.crew_person VALUES (3460, 'Stone', 'Adam', NULL, 'Adam Stone', 'Cinematographer');  -- Cinematographer: Adam Stone
