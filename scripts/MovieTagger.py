@@ -36,17 +36,18 @@ class MovieTagger(object):
 
     highestTid = 0
     for tagline in taglines:
-      tid = re.search('VALUES \\((\d+),', tagline).group(1)
+      tid = int(re.search('VALUES \\((\d+),', tagline).group(1))
       tag = re.search(", '([0-9a-zA-Z/\(\)\.\- ']+)', ", tagline).group(1)
+
       #uncomment for logging all tags found
-      #self._log('_initTagMap', 'Found tag: ' + tid + ' - ' + tag)
+      #self._log('_initTagMap', 'Found tag: ' + str(tid) + ' - ' + tag)
 
       if (', NULL)' not in tagline):
         parentId = re.search(', (\d+)\\);', tagline).group(1)
-        self._tagMap[int(parentId)][2].append(int(tid))
-        self._tagMap[int(tid)] = (tag, int(parentId), [])
+        self._tagMap[int(parentId)][2].append(tid)
+        self._tagMap[tid] = (tag, int(parentId), [])
       else:
-        self._tagMap[int(tid)] = (tag, None, [])
+        self._tagMap[tid] = (tag, None, [])
 
       if tid > highestTid:
         highestTid = tid
