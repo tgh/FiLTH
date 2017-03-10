@@ -82,6 +82,14 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
 1. Install LaTeX
 
+1. TMDB
+
+    - The API for TMDB (The Movie Database) is currently being used to get movie images.  The API requires an api key.  If you haven't already, sign-up for TMDB and request an api key.  Once you have it, proceed with the following directions:
+    - Under `conf/`, create a file named `tmdb.properties`
+    - In this properties file, add a `tmdb.api.key` property and give it your TMDB api key as its value--for example, `tmdb.api.key=1234abcd` (*Note:* this file is not managed by git as it is listed under `.gitignore`)
+
+1. Misc
+
 # Environment Setup (Mac)
 
 These instructions assume you have `brew` installed. If you do not, go to [brew.sh](http://brew.sh) and download it.
@@ -151,6 +159,12 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
 1. Install LaTeX
 
     - Download and run the installer for `MacTeX` [here](http://www.tug.org/mactex/index.html)
+
+1. TMDB
+
+    - The API for TMDB (The Movie Database) is currently being used to get movie images.  The API requires an api key.  If you haven't already, sign-up for TMDB and request an api key.  Once you have it, proceed with the following directions:
+    - Under `conf/`, create a file named `tmdb.properties`
+    - In this properties file, add a `tmdb.api.key` property and give it your TMDB api key as its value--for example, `tmdb.api.key=1234abcd` (*Note:* this file is not managed by git as it is listed under `.gitignore`)
 
 1. Misc
 
