@@ -337,6 +337,7 @@ def getCid(name, mid, title, year, category):
             else:
                 break
         if response == 'n':
+            print '\nOK. Update the csv file and try again.\n'
             raise KeyError
         
         names = name.split(' ')
