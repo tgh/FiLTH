@@ -109,11 +109,12 @@ def initMoviesMap():
     movielines = _movieFile.readlines()
     _movieFile.close()
 
+    highestMid = 0
     for movieline in movielines:
         movieline = movieline.replace("''", "'")
         vals = re.search('VALUES \\((.*)\\);', movieline).group(1)
 
-        mid = re.search('(\d+)', vals).group(1)
+        mid = int(re.search('(\d+)', vals).group(1))
 
         titleStartIndex = vals.find("'") + 1
         titleEndIndex = vals.find("', ")
@@ -133,9 +134,12 @@ def initMoviesMap():
 
         year = vals[0]
 
-        _movies[title + ' (' + year + ')'] = mid
+        _movies[title + ' (' + year + ')'] = str(mid)
 
-    _nextMid = str(int(mid) + 1)
+        if mid > highestMid:
+            highestMid = mid
+
+    _nextMid = str(highestMid + 1)
 
 
 #-----------------------------------------------------------------------------
@@ -148,6 +152,7 @@ def initCrewMap():
     crewlines = _crewFile.readlines()
     _crewFile.close()
 
+    highestCid = 0
     for crewline in crewlines:
         crewline = crewline.replace("''", "'")
         vals = re.search('VALUES \\((.*)\\);', crewline).group(1).split(',')
@@ -157,7 +162,10 @@ def initCrewMap():
 
         _crew[name] = cid
 
-    _nextCid = str(int(cid) + 1)
+        if int(cid) > highestCid:
+            highestCid = int(cid)
+
+    _nextCid = str(highestCid + 1)
 
 
 #-----------------------------------------------------------------------------
@@ -178,7 +186,9 @@ def initOscarMap():
         name = vals[1].strip().strip("'")
 
         _oscar[name] = oid
-        _logFile.write('Award category: ' + name + ' -> ' + oid + '\n')
+
+        #uncomment to log each oscar category found
+        #_logFile.write('Award category: ' + name + ' -> ' + oid + '\n')
 
 
 #-----------------------------------------------------------------------------
@@ -191,19 +201,25 @@ def initWorkedOnCache():
     lines = _workedOnFile.readlines()
     _workedOnFile.close()
 
-    wid = 0
+    highestWid = 0
     for line in lines:
         vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
 
-        wid = vals[0]
-        mid = vals[1]
+        wid = int(vals[0])
+        mid = vals[1].strip()
         cid = vals[2].strip()
         pos = vals[3].strip().strip("'")
 
         _woCache.append((mid,cid,pos))
-        _logFile.write('    (' + mid + ', ' + cid + ', ' + pos + ')\n')
 
-    _nextWid = str(int(wid) + 1)
+        if wid > highestWid:
+            highestWid = wid
+
+    _nextWid = str(highestWid + 1)
+
+    #uncomment to log each existing worked-on entry
+    for wo in _woCache:
+        _logFile.write(str(wo) + '\n')
 
 
 #-----------------------------------------------------------------------------
@@ -217,7 +233,7 @@ def initCountries():
     f.close()
 
     for line in lines:
-        country = re.search('VALUES \\(\'(.*)\'\\);', line).group(1)
+        country = re.search("VALUES \\([0-9]+, '(.*)'\\);", line).group(1)
         _countries.append(country)
         _logFile.write('    Adding country: ' + country + '\n')
 
@@ -231,10 +247,13 @@ def initNextOgtId():
     lines = f.readlines()
     f.close()
 
-    lastLine = lines[len(lines)-1]
-    vals = re.search('VALUES\s*\\((\d+)\\);', line).group(1).split(',')
-    ogtid = vals[0]
-    _nextOgtId = str(int(ogtid) + 1)
+    highestOgtid = 0
+    for line in lines:
+        ogtid = int(re.search('VALUES\\((\d+), .*\\);', line).group(1))
+        if ogtid > highestOgtid:
+            highestOgtid = ogtid
+
+    _nextOgtId = str(highestOgtid + 1)
 
 
 #-----------------------------------------------------------------------------
@@ -291,18 +310,24 @@ def getMid(title, year, country):
 #-----------------------------------------------------------------------------
 
 def getCid(name, mid, title, year, category):
-    global _crewInserts, _workedOnInserts, _nextCid
+    global _crewInserts, _workedOnInserts, _nextCid, _nextWid
 
     try:
         cid = _crew[name]
 
         position = CATEGORY_POSITIONS[category]
 
-        if (mid, cid, position) not in _woCache:
+        #check if this worked-on entry already exists
+        try:
+            _woCache.index((mid,cid,position))
+        except ValueError:
             _logFile.write('### No worked_on entry found for ' + name + ' for "' + title + '" (' + year + ')--adding INSERT to worked_on.sql\n')
             
+            wid = _nextWid
+            _nextWid = str(int(_nextWid) + 1)
+
             position = "'" + position + "'"        
-            woInsert = 'INSERT INTO filth.worked_on VALUES(' + str(mid) + ', ' + str(cid) + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
+            woInsert = 'INSERT INTO filth.worked_on VALUES(' + str(wid) + ', ' + str(mid) + ', ' + str(cid) + ', ' + position + ');  -- ' + name + ' for ' + title + ' (' + year + ')\n'
             _workedOnInserts.append(woInsert)
     except KeyError:
         while True:
