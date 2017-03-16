@@ -46,15 +46,15 @@ public class Movie {
     
     private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w396/%s";
     
-    private static final List<String> ACTING_POSITION_ORDER = Arrays.asList(new String[]{
-            "Lead Actor",
-            "Lead Actress",
-            "Supporting Actor",
-            "Supporting Actress",
-            "Character Voice",
-            "Small Part",
-            "Narrator",
-            "Cameo"
+    private static final List<String> ACTING_POSITION_ORDER = Arrays.asList(new String[] {
+        "Lead Actor",
+        "Lead Actress",
+        "Supporting Actor",
+        "Supporting Actress",
+        "Character Voice",
+        "Small Part",
+        "Narrator",
+        "Cameo"
     });
 
     @Id
@@ -89,6 +89,9 @@ public class Movie {
   
     @Column(name="tmdb_id")
     private Long _tmdbId;
+    
+    @Column(name="runtime")
+    private Integer _runtime;
     
     //do not cascade on REMOVE (don't want to delete all of the tags if the movie is deleted)
     @ManyToMany(cascade={CascadeType.DETACH, CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
@@ -212,6 +215,14 @@ public class Movie {
   
     public void setTmdbId(Long tmdbId) {
         _tmdbId = tmdbId;
+    }
+    
+    public Integer getRuntime() {
+    	return _runtime;
+    }
+    
+    public void setRuntime(Integer runtime) {
+    	_runtime = runtime;
     }
     
     public Set<Tag> getTags() {
