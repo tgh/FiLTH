@@ -10,8 +10,8 @@ FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_SQL_FILE = FILTH_PATH + '/sql/movie.sql'
 MPAA_SQL_FILE = FILTH_PATH + '/sql/mpaa.sql'
 COUNTRY_SQL_FILE = FILTH_PATH + '/sql/country.sql'
-                                                       #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid
-MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11});";
+                                                       #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid, runtime
+MOVIE_INSERT_FORMAT = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12});";
 COUNTRY_INSERT_FORMAT = "INSERT INTO filth.country VALUES ({0}, '{1}');"
 
 
@@ -124,7 +124,7 @@ class Movies(object):
 
     #--------------------------------------------------------------------------
 
-    def _createInsertStatementForMovie(self, title, year, starRating, mpaa, country, imdbId, tmdbId, parentId, remakeOfId):
+    def _createInsertStatementForMovie(self, title, year, starRating, mpaa, country, imdbId, tmdbId, parentId, remakeOfId, runtime):
         ''' Creates a SQL INSERT statement for the movie db table with the
             given movie data and appends to the list of movie INSERT
             statements. This assumes that the movie has not been seen.
@@ -139,6 +139,7 @@ class Movies(object):
             tmdbId (string or int)     : TMDB if of movie
             parentId (string or int)   : mid of parent movie (or 'NULL' or None)
             remakeOfId (string or int) : mid of movie this movie is a remake of (or 'NULL' or None)
+            runtime (string or int)    : runtime of the movie (or 'NULL' or None)
         '''
         title = title.replace("'", "''")
 
@@ -175,7 +176,10 @@ class Movies(object):
         if remakeOfId is None:
             remakeOfId = 'NULL'
 
-        insertStatement = MOVIE_INSERT_FORMAT.format(str(self._nextMid), title, str(year), "'not seen'", mpaa, country, 'NULL', imdbId, 'NULL', str(tmdbId), str(parentId), str(remakeOfId))
+        if runtime is None:
+            runtime = 'NULL'
+
+        insertStatement = MOVIE_INSERT_FORMAT.format(str(self._nextMid), title, str(year), "'not seen'", mpaa, country, 'NULL', imdbId, 'NULL', str(tmdbId), str(parentId), str(remakeOfId), str(runtime))
         self._log('_createInsertStatementForMovie', 'created SQL: ' + insertStatement)
         self._movieInserts.append(insertStatement)
         self._nextMid += 1
@@ -292,14 +296,14 @@ class Movies(object):
     #--------------------------------------------------------------------------
     #PUBLIC
     #
-    def addMovie(self, title, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId):
+    def addMovie(self, title, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId, runtime):
         movie = {}
         movie['mid'] = self._nextMid
         movie['title'] = title
         movie['star_rating'] = 'not seen'
         movie['year'] = int(year)
         self._movies.append(movie)
-        self._createInsertStatementForMovie(title, year, None, mpaa, country, imdbId, tmdbId, parentId, remakeOfId)
+        self._createInsertStatementForMovie(title, year, None, mpaa, country, imdbId, tmdbId, parentId, remakeOfId, runtime)
         return movie
 
 
@@ -461,7 +465,7 @@ class Movies(object):
         ''' Prompts user for the remakeOf mid of a new movie.
 
             Returns: The user's input for the remakeOf id or None if skipped
-            Raises : QuitException when user quits
+            Raises : QuitException if user quits, or ValueError if not a valid id
         '''
         while True:
             response = raw_input('What is the REMAKE MID of this new movie? (\'q\' to quit, or \'s\' to skip) ')
@@ -475,6 +479,33 @@ class Movies(object):
                     raise ValueError
             except ValueError:
                 print '**Invalid mid. mids ids are positive integers.'
+                continue
+            return response
+
+
+    #----------------------------------------------------------------------------
+    #PUBLIC
+    #
+    def promptUserForRuntime(self):
+        '''Prompts user for the runtime of the movie.
+
+            Returns: The user's input for the runtime of the movie (as a string) or None if skipped
+            Raises : QuitException if user quites, or ValueError if not a valid id
+        '''
+        while True:
+            response = raw_input("What is the runtime of the movie? ('q' to quit, or 's' to skip) ")
+            self._checkForQuit(response, 'promptUserForRuntime')
+            if response.lower() == 's':
+                return None
+
+            try:
+                runtime = int(response)
+                if runtime < 1:
+                    raise ValueError
+                if runtime < 30:
+                    print "--- WARNING: runtime seems a little low. Is this a short film? Might want to double-check your input."
+            except ValueError:
+                print '**Invalid runtime. Runtime is a positive integer.'
                 continue
             return response
 

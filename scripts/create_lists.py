@@ -94,7 +94,8 @@ def processLine(line):
                 tmdbId = movies.promptUserForTmdbId()
                 parentId = movies.promptUserForParentId()
                 remakeOfId = movies.promptUserForRemakeOfId()
-                movie = movies.addMovie(movieTitle, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId)
+                runtime = movies.promptUserForRuntime()
+                movie = movies.addMovie(movieTitle, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId, runtime)
             break
     #add movie to list
     lists.addMovieToList(movie['mid'], mlist['lid'], order, None, movieTitle, listTitle, author)
