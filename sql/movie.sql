@@ -3318,7 +3318,7 @@ INSERT INTO filth.movie VALUES (3313, 'Street Fight', 2005, 'not seen', 'NR', 'U
 INSERT INTO filth.movie VALUES (3314, 'Murderball', 2005, 'not seen', 'R', 'USA', NULL, 'tt0436613', NULL, 14278, NULL, NULL, 88);
 INSERT INTO filth.movie VALUES (3315, 'Iraq in Fragments', 2006, 'not seen', 'NR', 'USA', NULL, 'tt0492466', NULL, 34389, NULL, NULL, 94);
 INSERT INTO filth.movie VALUES (3316, 'Jesus Camp', 2006, '**', 'PG-13', 'USA', NULL, 'tt0486358', 0, 1776, NULL, NULL, 87);
-INSERT INTO filth.movie VALUES (3317, 'An Inconvenient Truth', 2006, '***½', 'PG', 'USA', NULL, 'tt0497116', 0, 1781, NULL, NULL, 100); -- 7/5/2015
+INSERT INTO filth.movie VALUES (3317, 'An Inconvenient Truth', 2006, '***½', 'PG', 'USA', NULL, 'tt0497116', 0, 1781, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (3318, 'Deliver Us from Evil', 2006, '***½', 'NR', 'USA', NULL, 'tt0814075', NULL, 13364, NULL, 101, 101);
 INSERT INTO filth.movie VALUES (3319, 'No End in Sight', 2007, '***', 'NR', 'USA', NULL, 'tt0912593', 0, 12901, NULL, NULL, 102);
 INSERT INTO filth.movie VALUES (3320, 'Operation Homecoming: Writing the Wartime Experience', 2007, 'not seen', 'NR', 'USA', NULL, 'tt0970184', NULL, 34981, NULL, NULL, 81);
@@ -3663,9 +3663,9 @@ INSERT INTO filth.movie VALUES (3660, 'X-Men: Days of Future Past', 2014, '***',
 INSERT INTO filth.movie VALUES (3661, 'Inside Out', 2015, '****', 'PG', 'USA', NULL, 'tt2096673', 1, 150540, NULL, NULL, 94);
 INSERT INTO filth.movie VALUES (3662, 'Lee Daniels'' the Butler', 2013, '**½', 'PG-13', 'USA', NULL, 'tt1327773', 0, 132363, NULL, NULL, 132);
 INSERT INTO filth.movie VALUES (3663, 'New York, New York', 1977, '***', 'PG', 'USA', 'Great shot of DeNiro being dragged out of nightclub through a hallway covered in lightbulbs. Also good shot of DeNiro next to a payphone in a club--purple suit/yellow background.', 'tt0076451', 0, 12637, NULL, NULL, 155);
-INSERT INTO filth.movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', 'Was a member of a test audience for this movie, so the rating is based on viewing an unfinished version.', 'tt2503944', 1, 295964, NULL, NULL, 100); -- 6/30/15
-INSERT INTO filth.movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610', 1, 135397, NULL, NULL, 124); -- 7/2/2015
-INSERT INTO filth.movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037', 0, 13508, NULL, NULL, 92); -- 7/5/2015
+INSERT INTO filth.movie VALUES (3664, 'Adam Jones', 2015, '**½', 'R', 'USA', 'Was a member of a test audience for this movie, so the rating is based on viewing an unfinished version.', 'tt2503944', 1, 295964, NULL, NULL, 100);
+INSERT INTO filth.movie VALUES (3665, 'Jurassic World', 2015, '**', 'PG-13', 'USA', NULL, 'tt0369610', 1, 135397, NULL, NULL, 124);
+INSERT INTO filth.movie VALUES (3666, 'Who Killed the Electric Car?', 2006, '***', 'PG', 'USA', NULL, 'tt0489037', 0, 13508, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (3667, 'Away We Go', 2009, '**', 'R', 'USA', NULL, 'tt1176740', 0, 19255, NULL, NULL, 98);
 INSERT INTO filth.movie VALUES (3668, 'The Cabinet of Dr. Caligari', 1920, '***½', 'NR', 'Germany', NULL, 'tt0010323', 0, 234, NULL, NULL, 78);
 INSERT INTO filth.movie VALUES (3669, 'Stonehearst Asylum', 2014, '**½', 'PG-13', 'USA', NULL, 'tt1772264', 0, 207933, NULL, NULL, 112);
@@ -3676,27 +3676,27 @@ INSERT INTO filth.movie VALUES (3673, 'How to Train Your Dragon', 2010, '***', '
 INSERT INTO filth.movie VALUES (3674, 'How to Train Your Dragon 2', 2014, '***', 'PG', 'USA', NULL, 'tt1646971', 0, 82702, NULL, NULL, 102);
 INSERT INTO filth.movie VALUES (3675, 'A Most Wanted Man', 2014, '***½', 'R', 'England', NULL, 'tt1972571', 0, 157849, NULL, NULL, 121);
 INSERT INTO filth.movie VALUES (3676, 'Conspiracy Theory', 1997, '***', 'R', 'USA', NULL, 'tt0118883', 0, 8834, NULL, NULL, 135);
-INSERT INTO filth.movie VALUES (3677, 'Mission: Impossible – Rogue Nation', 2015, '***½', 'PG-13', 'USA', NULL, 'tt2381249', 1, 177677, NULL, NULL, 131); -- 8/8/15
+INSERT INTO filth.movie VALUES (3677, 'Mission: Impossible – Rogue Nation', 2015, '***½', 'PG-13', 'USA', NULL, 'tt2381249', 1, 177677, NULL, NULL, 131);
 INSERT INTO filth.movie VALUES (3678, 'The Disappearance of Eleanor Rigby: Her', 2013, '**½', 'R', 'USA', NULL, 'tt3720788', 0, 275060, NULL, NULL, 100);
-INSERT INTO filth.movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230', 1, 280996, NULL, NULL, 103); -- 8/15/15
-INSERT INTO filth.movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726', 1, 275601, NULL, NULL, 100); -- 8/14/15
+INSERT INTO filth.movie VALUES (3679, 'Mr. Holmes', 2015, '***', 'PG', 'England', NULL, 'tt3168230', 1, 280996, NULL, NULL, 103);
+INSERT INTO filth.movie VALUES (3680, 'Ricki and the Flash', 2015, '**½', 'PG-13', 'USA', NULL, 'tt3623726', 1, 275601, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (3681, 'The Skeleton Twins', 2014, '***', 'R', 'USA', NULL, 'tt1571249', 0, 244772, NULL, NULL, 90);
 INSERT INTO filth.movie VALUES (3682, 'Two Days, One Night', 2014, '**½', 'PG-13', 'France', NULL, 'tt2737050', 0, 221902, NULL, NULL, 95);
-INSERT INTO filth.movie VALUES (3683, 'Ace Ventura: When Nature Calls', 1995, '**', 'PG-13', 'USA', NULL, 'tt0112281', 0, 9273, NULL, NULL, 90); -- 8/22/15
-INSERT INTO filth.movie VALUES (3684, 'Captain America: The First Avenger', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0458339', 0, 1771, NULL, NULL, 124); -- 8/26/15
-INSERT INTO filth.movie VALUES (3685, 'Limitless', 2011, '***', 'PG-13', 'USA', NULL, 'tt1219289', 0, 51876, NULL, NULL, 105); -- 9/1/15
+INSERT INTO filth.movie VALUES (3683, 'Ace Ventura: When Nature Calls', 1995, '**', 'PG-13', 'USA', NULL, 'tt0112281', 0, 9273, NULL, NULL, 90);
+INSERT INTO filth.movie VALUES (3684, 'Captain America: The First Avenger', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0458339', 0, 1771, NULL, NULL, 124);
+INSERT INTO filth.movie VALUES (3685, 'Limitless', 2011, '***', 'PG-13', 'USA', NULL, 'tt1219289', 0, 51876, NULL, NULL, 105);
 INSERT INTO filth.movie VALUES (3686, 'The World''s End', 2013, '***', 'R', 'England', NULL, 'tt1213663', 0, 107985, NULL, NULL, 109);
-INSERT INTO filth.movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0, 245700, NULL, NULL, 150); -- 9/13/15
-INSERT INTO filth.movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0, 11621, NULL, NULL, 94); -- 9/17/15
-INSERT INTO filth.movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1, 273481, NULL, NULL, 121);-- 9/19/15
-INSERT INTO filth.movie VALUES (3690, 'Aloha', 2015, '**', 'PG-13', 'USA', NULL, 'tt1243974', 0, 222936, NULL, NULL, 105); -- 9/25/15
-INSERT INTO filth.movie VALUES (3691, 'The Disappearance of Eleanor Rigby: Him', 2013, '***', 'R', 'USA', NULL, 'tt1531924', 0, 276401, NULL, NULL, 89); -- 9/26/15
-INSERT INTO filth.movie VALUES (3692, 'Leap Year', 2010, '**', 'PG', 'USA', NULL, 'tt1216492', 0, 25195, NULL, NULL, 100); -- 9/27/15
-INSERT INTO filth.movie VALUES (3693, 'Reservation Road', 2007, '***', 'R', 'USA', NULL, 'tt0831884', 0, 8954, NULL, NULL, 102); -- 9/26/15
+INSERT INTO filth.movie VALUES (3687, 'Mr. Turner', 2014, '**½', 'R', 'England', NULL, 'tt2473794', 0, 245700, NULL, NULL, 150);
+INSERT INTO filth.movie VALUES (3688, 'Porco Rosso', 1992, '***', 'PG', 'Japan', NULL, 'tt0104652', 0, 11621, NULL, NULL, 94);
+INSERT INTO filth.movie VALUES (3689, 'Sicario', 2015, '***½', 'R', 'USA', NULL, 'tt3397884', 1, 273481, NULL, NULL, 121);
+INSERT INTO filth.movie VALUES (3690, 'Aloha', 2015, '**', 'PG-13', 'USA', NULL, 'tt1243974', 0, 222936, NULL, NULL, 105);
+INSERT INTO filth.movie VALUES (3691, 'The Disappearance of Eleanor Rigby: Him', 2013, '***', 'R', 'USA', NULL, 'tt1531924', 0, 276401, NULL, NULL, 89);
+INSERT INTO filth.movie VALUES (3692, 'Leap Year', 2010, '**', 'PG', 'USA', NULL, 'tt1216492', 0, 25195, NULL, NULL, 100);
+INSERT INTO filth.movie VALUES (3693, 'Reservation Road', 2007, '***', 'R', 'USA', NULL, 'tt0831884', 0, 8954, NULL, NULL, 102);
 INSERT INTO filth.movie VALUES (3694, 'Food Chains', 2014, '***', 'NR', 'USA', NULL, 'tt2141739', 0, 292539, NULL, NULL, 83);
 INSERT INTO filth.movie VALUES (3695, 'The Salt of the Earth', 2014, '***', 'PG-13', NULL, NULL, 'tt3674140', 0, 265297, NULL, NULL, 109);
 INSERT INTO filth.movie VALUES (3696, 'The Walk', 2015, '***', 'PG', 'USA', NULL, 'tt3488710', 1, 285783, NULL, NULL, 123);
-INSERT INTO filth.movie VALUES (3697, 'Steve Jobs', 2015, '***½', 'R', 'USA', NULL, 'tt2080374', 1, 321697, NULL, NULL, 122); -- 10/24/2015
+INSERT INTO filth.movie VALUES (3697, 'Steve Jobs', 2015, '***½', 'R', 'USA', NULL, 'tt2080374', 1, 321697, NULL, NULL, 122);
 INSERT INTO filth.movie VALUES (3698, 'A Single Man', 2009, 'not seen', 'R', 'USA', NULL, 'tt1315981', NULL, 34653, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (3699, 'The Messenger', 2009, 'not seen', 'R', 'USA', NULL, 'tt0790712', NULL, 28089, NULL, NULL, 113);
 INSERT INTO filth.movie VALUES (3700, 'The Last Station', 2009, 'not seen', 'R', NULL, NULL, 'tt0824758', NULL, 36811, NULL, NULL, 112);
@@ -3858,29 +3858,29 @@ INSERT INTO filth.movie VALUES (3856, 'Ivan the Terrible, Part II', 1958, 'not s
 INSERT INTO filth.movie VALUES (3857, 'The Great Mouse Detective', 1986, '***', 'G', 'USA', NULL, 'tt0091149', 0, 9994, NULL, NULL, 74);
 INSERT INTO filth.movie VALUES (3858, 'The Interview', 2014, '**', 'R', 'USA', NULL, 'tt2788710', 0, 228967, NULL, NULL, 112);
 INSERT INTO filth.movie VALUES (3859, 'The Day the Earth Stood Still', 1951, '***', 'NR', 'USA', NULL, 'tt0043456', 0, 828, NULL, NULL, 92);
-INSERT INTO filth.movie VALUES (3860, 'Spectre', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2379713', 1, 206647, NULL, NULL, 148); -- 11/28/2015
-INSERT INTO filth.movie VALUES (3861, 'Spotlight', 2015, '****', 'R', 'USA', NULL, 'tt1895587', 1, 314365, NULL, NULL, 128); -- 11/27/2015
+INSERT INTO filth.movie VALUES (3860, 'Spectre', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2379713', 1, 206647, NULL, NULL, 148);
+INSERT INTO filth.movie VALUES (3861, 'Spotlight', 2015, '****', 'R', 'USA', NULL, 'tt1895587', 1, 314365, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (3862, 'A Christmas Carol', 1938, '**½', 'NR', 'USA', NULL, 'tt0029992', 0, 25842, NULL, NULL, 69);
-INSERT INTO filth.movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1, 105864, NULL, NULL, 93); -- 12/5/2015
+INSERT INTO filth.movie VALUES (3863, 'The Good Dinosaur', 2015, '***', 'PG', 'USA', NULL, 'tt1979388', 1, 105864, NULL, NULL, 93);
 INSERT INTO filth.movie VALUES (3864, 'Slow West', 2015, '***', 'R', 'England', NULL, 'tt3205376', 0, 223485, NULL, NULL, 84);
-INSERT INTO filth.movie VALUES (3865, 'Mad Max: Fury Road', 2015, '***', 'R', 'Australia', NULL, 'tt1392190', 0, 76341, NULL, NULL, 120); -- 12/15/15
-INSERT INTO filth.movie VALUES (3866, 'Frank', 2014, '**½', 'R', 'England', NULL, 'tt1605717', 0, 171372, NULL, NULL, 95); -- 1/2/16
-INSERT INTO filth.movie VALUES (3867, 'Johnny English Reborn', 2011, '**', 'PG', 'USA', NULL, 'tt1634122', 0, 58233, NULL, NULL, 101); -- 1/3/16
-INSERT INTO filth.movie VALUES (3868, 'Love & Mercy', 2015, '***', 'PG-13', 'USA', NULL, 'tt0903657', 0, 271714, NULL, NULL, 120); -- 1/1/16
-INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1, 140607, NULL, NULL, 136); -- 12/26/15
-INSERT INTO filth.movie VALUES (3870, 'True Story', 2015, '**½', 'R', 'USA', NULL, 'tt2273657', 0, 245706, NULL, NULL, 100); -- 12/22/15
-INSERT INTO filth.movie VALUES (3871, 'Casino Royale', 2006, '***', 'PG-13', 'USA', NULL, 'tt0381061', 0, 36557, NULL, NULL, 144); -- 1/9/16
-INSERT INTO filth.movie VALUES (3872, 'Fed Up', 2014, '***½', 'PG', 'USA', NULL, 'tt2381335', 0, 250657, NULL, NULL, 92); -- 1/9/16
-INSERT INTO filth.movie VALUES (3873, 'The Revenant', 2015, '****', 'R', 'USA', '"The Man in the Wilderness" (1971) is also based on the true story of Hugh Glass', 'tt1663202', 1, 281957, NULL, NULL, 156); -- 1/8/16
-INSERT INTO filth.movie VALUES (3874, 'Best of Enemies', 2015, '***½', 'R', 'USA', NULL, 'tt3518012', 0, 319067, NULL, NULL, 87); -- 1/17/16
-INSERT INTO filth.movie VALUES (3875, 'Joy', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2446980', 1, 274479, NULL, NULL, 124); -- 1/15/16
-INSERT INTO filth.movie VALUES (3876, 'Quantum of Solace', 2008, '***', 'PG-13', 'England', NULL, 'tt0830515', 0, 10764, NULL, NULL, 106); -- 1/22/16
-INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Freedom', 2015, '***', 'NR', DEFAULT, NULL, 'tt4908644', 0, 355020, NULL, NULL, 98); -- 1/24/16
-INSERT INTO filth.movie VALUES (3878, '56 Up', 2012, '***½', 'NR', 'England', NULL, 'tt2147134', 0, 116167, 3762, NULL, 144); -- 1/31/2016
-INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG', 'Japan', NULL, 'tt3398268', 0, 242828, NULL, NULL, 103); -- 1/30/2016
-INSERT INTO filth.movie VALUES (3880, 'The Drop', 2014, '***', 'R', 'USA', NULL, 'tt1600196', 0, 154400, NULL, NULL, 106); -- 2/6/2016
-INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'PG', 'England', NULL, 'tt2872750', 0, 263109, NULL, NULL, 85); -- 2/12/2016
-INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044, NULL, NULL, 101); -- 2/13/2016
+INSERT INTO filth.movie VALUES (3865, 'Mad Max: Fury Road', 2015, '***', 'R', 'Australia', NULL, 'tt1392190', 0, 76341, NULL, NULL, 120);
+INSERT INTO filth.movie VALUES (3866, 'Frank', 2014, '**½', 'R', 'England', NULL, 'tt1605717', 0, 171372, NULL, NULL, 95);
+INSERT INTO filth.movie VALUES (3867, 'Johnny English Reborn', 2011, '**', 'PG', 'USA', NULL, 'tt1634122', 0, 58233, NULL, NULL, 101);
+INSERT INTO filth.movie VALUES (3868, 'Love & Mercy', 2015, '***', 'PG-13', 'USA', NULL, 'tt0903657', 0, 271714, NULL, NULL, 120);
+INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1, 140607, NULL, NULL, 136);
+INSERT INTO filth.movie VALUES (3870, 'True Story', 2015, '**½', 'R', 'USA', NULL, 'tt2273657', 0, 245706, NULL, NULL, 100);
+INSERT INTO filth.movie VALUES (3871, 'Casino Royale', 2006, '***', 'PG-13', 'USA', NULL, 'tt0381061', 0, 36557, NULL, NULL, 144);
+INSERT INTO filth.movie VALUES (3872, 'Fed Up', 2014, '***½', 'PG', 'USA', NULL, 'tt2381335', 0, 250657, NULL, NULL, 92);
+INSERT INTO filth.movie VALUES (3873, 'The Revenant', 2015, '****', 'R', 'USA', '"The Man in the Wilderness" (1971) is also based on the true story of Hugh Glass', 'tt1663202', 1, 281957, NULL, NULL, 156);
+INSERT INTO filth.movie VALUES (3874, 'Best of Enemies', 2015, '***½', 'R', 'USA', NULL, 'tt3518012', 0, 319067, NULL, NULL, 87);
+INSERT INTO filth.movie VALUES (3875, 'Joy', 2015, '**½', 'PG-13', 'USA', NULL, 'tt2446980', 1, 274479, NULL, NULL, 124);
+INSERT INTO filth.movie VALUES (3876, 'Quantum of Solace', 2008, '***', 'PG-13', 'England', NULL, 'tt0830515', 0, 10764, NULL, NULL, 106);
+INSERT INTO filth.movie VALUES (3877, 'Winter on Fire: Ukraine''s Fight for Freedom', 2015, '***', 'NR', DEFAULT, NULL, 'tt4908644', 0, 355020, NULL, NULL, 98);
+INSERT INTO filth.movie VALUES (3878, '56 Up', 2012, '***½', 'NR', 'England', NULL, 'tt2147134', 0, 116167, 3762, NULL, 144);
+INSERT INTO filth.movie VALUES (3879, 'When Marnie Was There', 2014, '**½', 'PG', 'Japan', NULL, 'tt3398268', 0, 242828, NULL, NULL, 103);
+INSERT INTO filth.movie VALUES (3880, 'The Drop', 2014, '***', 'R', 'USA', NULL, 'tt1600196', 0, 154400, NULL, NULL, 106);
+INSERT INTO filth.movie VALUES (3881, 'Shaun the Sheep Movie', 2015, '***½', 'PG', 'England', NULL, 'tt2872750', 0, 263109, NULL, NULL, 85);
+INSERT INTO filth.movie VALUES (3882, 'What Happened, Miss Simone?', 2015, '***', 'NR', 'USA', NULL, 'tt4284010', 0, 318044, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (3883, 'Amy', 2015, '***', 'R', 'England', NULL, 'tt2870648', 0, 331781, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (3884, 'Meet the Fockers', 2004, '*½', 'PG-13', 'USA', NULL, 'tt0290002', 0, 693, NULL, NULL, 115);
 INSERT INTO filth.movie VALUES (3885, 'The Lion King', 1994, '**½', 'G', 'USA', NULL, 'tt0110357', 0, 8587, NULL, NULL, 89);
@@ -3895,7 +3895,7 @@ INSERT INTO filth.movie VALUES (3893, '45 Years', 2015, 'not seen', 'R', 'Englan
 INSERT INTO filth.movie VALUES (3894, 'Brooklyn', 2015, '**½', 'PG-13', 'England', NULL, 'tt2381111', NULL, 167073, NULL, NULL, 111);
 INSERT INTO filth.movie VALUES (3895, 'The Big Short', 2015, '****', 'R', 'USA', NULL, 'tt1596363', NULL, 318846, NULL, NULL, 130);
 INSERT INTO filth.movie VALUES (3896, 'Creed', 2015, '***', 'PG-13', 'USA', NULL, 'tt3076658', NULL, 312221, NULL, NULL, 133);
-INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, '**', 'R', 'USA', NULL, 'tt3460252', NULL, 273248, NULL, NULL, 167); -- 4/30/2016
+INSERT INTO filth.movie VALUES (3897, 'The Hateful Eight', 2015, '**', 'R', 'USA', NULL, 'tt3460252', NULL, 273248, NULL, NULL, 167);
 INSERT INTO filth.movie VALUES (3898, 'The Look of Silence', 2015, '****', 'PG-13', DEFAULT, NULL, 'tt3521134', NULL, 267480, NULL, NULL, 103);
 INSERT INTO filth.movie VALUES (3899, 'Embrace of the Serpent', 2015, 'not seen', 'NR', 'Colombia', NULL, 'tt4285496', NULL, 336808, NULL, NULL, 125);
 INSERT INTO filth.movie VALUES (3900, 'Mustang', 2015, 'not seen', 'PG-13', 'France', NULL, 'tt3966404', NULL, 336804, NULL, NULL, 97);
@@ -3913,7 +3913,7 @@ INSERT INTO filth.movie VALUES (3911, 'Secret in Their Eyes', 2015, '**½', 'R',
 INSERT INTO filth.movie VALUES (3912, 'Bowfinger', 1999, '**½', 'PG-13', 'USA', NULL, 'tt0131325', 0, 11353, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (3913, 'Suffragette', 2015, '***', 'PG-13', 'England', NULL, 'tt3077214', 0, 245168, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (3914, 'Pawn Sacrifice', 2015, '***', 'PG-13', 'USA', NULL, 'tt1596345', 0, 245698, NULL, NULL, 114);
-INSERT INTO filth.movie VALUES (3915, 'The Jungle Book', 2016, '****', 'PG', 'USA', NULL, 'tt3040964', 1, 278927, NULL, NULL, 106); -- 4/29/2016
+INSERT INTO filth.movie VALUES (3915, 'The Jungle Book', 2016, '****', 'PG', 'USA', NULL, 'tt3040964', 1, 278927, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (3916, 'The Man in the Wilderness', 1971, 'not seen', 'PG', 'USA', NULL, 'tt0067388', NULL, 46845, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (3917, 'The Jungle Book', 1967, '**', 'G', 'USA', NULL, 'tt0061852', 0, 9325, NULL, NULL, 78);
 INSERT INTO filth.movie VALUES (3918, 'The September Issue', 2009, '***½', 'PG-13', 'USA', NULL, 'tt1331025', 1, 23044, NULL, NULL, 90);
