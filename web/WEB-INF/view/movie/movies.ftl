@@ -16,6 +16,7 @@
                 <th>Star Rating</th>
                 <th>MPAA Rating</th>
                 <th>Country</th>
+                <th>Runtime</th>
                 <th>Times seen in theater</th>
                 <th>Comments</th>
             </tr>
@@ -47,6 +48,11 @@
                     <td>
                         <#if movie.country??>
                             ${movie.country}
+                        </#if>
+                    </td>
+                    <td>
+                        <#if movie.runtime??>
+                            ${movie.runtime}
                         </#if>
                     </td>
                     <td>
