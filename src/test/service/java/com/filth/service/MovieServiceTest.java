@@ -39,6 +39,22 @@ public class MovieServiceTest extends ServiceTestAbstract {
     @Test
     public void getMovieById() {
         Movie movie = _movieService.getMovieById(1548); //Star Wars
+        
+        //assert basic data
+        assertEquals(1548, movie.getId());
+        assertEquals("Star Wars", movie.getTitle());
+        assertEquals(1977, movie.getYear().intValue());
+        assertEquals("****", movie.getStarRating());
+        assertEquals("PG", movie.getMpaaRating());
+        assertEquals("USA", movie.getCountry());
+        assertNull(movie.getComments());
+        assertEquals("tt0076759", movie.getImdbId());
+        assertEquals(1, movie.getTheaterViewings().intValue());
+        assertNull(movie.getParent());
+        assertNull(movie.getRemakeOfMovie());
+        assertEquals(121, movie.getRuntime().intValue());
+        
+        //assert joint data
         Set<Tag> tags = movie.getTags();
         assertNotNull("Tag set is unexpectedly null", tags);
         assertEquals("Number of tags", 5, tags.size());
