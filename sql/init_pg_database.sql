@@ -43,7 +43,9 @@ tmdb_id integer DEFAULT NULL,
 -- than actual movies (e.g. "The Up Documentaries", "The Matrix Trilogy", etc)
 parent_mid smallint DEFAULT NULL,
 -- movie id of original movie if this movie is a remake
-remake_of_mid smallint DEFAULT NULL);
+remake_of_mid smallint DEFAULT NULL,
+-- running time (in min)
+runtime smallint DEFAULT NULL);
 
 
 -- movie <--> movie (many-to-one) relationship --------------------------------
