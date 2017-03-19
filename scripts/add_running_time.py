@@ -39,6 +39,10 @@ if __name__ == '__main__':
 
     try:
         for line in lines:
+            # ignore commented lines
+            if line.startswith('--'):
+                continue
+
             try:
                 # match for everything up to year and then everything else
                 match  = re.search('(.*?\', )(.*)', line)
@@ -93,9 +97,7 @@ if __name__ == '__main__':
                                .replace('*','\\*') \
                                .replace(':','\\:') \
                                .replace('"','\\"') \
-                               .replace('!','\\!') \
-                               .replace('(','\\(') \
-                               .replace(')','\\)')
+                               .replace('!','\\!')
             newline = match.group(1) + (',').join(vals).replace('&', '\\&').replace('"','\\"')
             retval = system("sed -i '' \"s|{0}|{1}|g\" {2}".format(originalLine, newline, MOVIE_SQL_FILE))
 
@@ -104,6 +106,7 @@ if __name__ == '__main__':
                 log('main', '*** Error in sed command: ' + "sed -i '' \"s|{0}|{1}|g\" {2}".format(originalLine, newline, MOVIE_SQL_FILE))
                 continue
             else:
+                print 'Successfully processed "' + title + '" (' + str(year) + ')'
                 log('main', 'successfully processed "' + title + '" (' + str(year) + ')')
 
             time.sleep(0.5)  #be nice to TMDB and don't hammer it

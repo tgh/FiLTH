@@ -17,6 +17,6 @@ INSERT INTO filth.list_contains VALUES (16, 991, 5, 4, NULL);
 INSERT INTO filth.list_contains VALUES (17, 283, 5, 5, NULL);
 INSERT INTO filth.list_contains VALUES (18, 338, 5, 6, NULL);
 INSERT INTO filth.list_contains VALUES (19, 4, 5, 7, NULL);
-INSERT INTO filth.list_contains VALUES (20, 339, 5, 8, NULL);
+INSERT INTO filth.list_contains VALUES (20, 339, 5, 8, NULL); -- "City Lights" in list "Fake List" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (21, 3769, 5, 9, NULL);
 INSERT INTO filth.list_contains VALUES (22, 3880, 5, 10, 'Comment #2');
