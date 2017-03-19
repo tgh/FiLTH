@@ -62,6 +62,11 @@
             <p id="modalMovieCountry"><span class="modalLabel">Country:</span> ${movie.country}</p>
         </#if>
         
+        <#-- Running Time -->
+        <#if movie.runtime??>
+            <p id="modalMovieRuntime"><span class="modalLabel">Runtime:</span> ${movie.runtime}</p>
+        </#if>
+        
         <#-- Theater viewings -->
         <#if movie.theaterViewings??>
             <p id="modalMovieTheaterViewings"><span class="modalLabel">How many times seen in the theater:</span> ${movie.theaterViewings}</p>
