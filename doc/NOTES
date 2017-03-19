@@ -329,6 +329,13 @@ SETTING UP ENVIRONMENT
   $ psql -U filth -d filth
 - to query db as filth_admin:
   $ psql -U filth_admin -d filth
+  
+- when setting up the mac adding the above lines in pg_hba.conf didn't completely
+  work--JDBC connections failed due to the server requesting authentication.
+  Changing the TYPE from "local" to "host" and adding "127.0.0.1/32" for the ADDRESS
+  fixed the problem. According to the inline comment in the file and online documentation
+  "local" is only for Unix domain connections, which JDBC is not, and when "host" is
+  used, ADDRESS is required.
 
 - BEACON DB USERNAME/PASSWORD
     - wgspring.db.username and wgspring.db.password properties in [app].properties

@@ -2,7 +2,7 @@
 
 # This script assumes:
 #  - a postgresql user "filth_admin" has been created (see the "SETTING UP ENVIRONMENT"
-#    section in /doc/NOTES about setting up the user
+#    section in /doc/NOTES about setting up the user)
 
 source common.sh
 

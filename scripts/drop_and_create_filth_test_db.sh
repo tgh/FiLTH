@@ -7,7 +7,7 @@
 #    section in /doc/NOTES about setting up the user)
 #
 
-source $HOME/workspace/FiLTH/scripts/common.sh
+source common.sh
 
 LOG_FILE=$FILTH_PATH/logs/drop_and_create_filth_test_db.log
 
@@ -66,11 +66,21 @@ if [ $# -gt 0 ]
   else
     echo "Dropping existing filth-test db..."
     sleep 0.5
-    sudo -u postgres dropdb --if-exists filth-test
+    #Hack: check OS and alter command accordingly
+    #(in Ubuntu installing PostgreSQL also creates system user 'postgres' used for admin commands; macOS does not do this)
+    if [[ "$(uname)" != "Darwin" ]]; then
+      sudo -u postgres dropdb --if-exists filth-test
+    else
+      dropdb --if-exists filth-test
+    fi
 
     echo "Creating database filth-test..."
     sleep 0.5
-    sudo -u postgres createdb --owner=filth_admin filth-test
+    if [[ "$(uname)" != "Darwin" ]]; then
+      sudo -u postgres createdb --owner=filth_admin filth-test
+    else
+      createdb --owner=filth_admin filth-test
+    fi
 
     echo "Creating schema..."
     sleep 0.5

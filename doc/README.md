@@ -144,10 +144,10 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
         ```
         # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
-        local   filth           filth_admin                             trust
-        local   filth           filth                                   trust
-        local   filth-test      filth_admin                             trust
-        local   filth-test      filth                                   trust
+        host    filth           filth_admin     127.0.0.1/32            trust
+        host    filth           filth           127.0.0.1/32            trust
+        host    filth-test      filth_admin     127.0.0.1/32            trust
+        host    filth-test      filth           127.0.0.1/32            trust
         ```
         - _Note: since the method is "trust", passwords wont be used._
         - _Note: place these lines **above** the line with `local all all     md5`_
