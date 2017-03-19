@@ -33,7 +33,7 @@ public class MovieServiceTest extends ServiceTestAbstract {
     public void getAllMovies() {
         List<Movie> movies = _movieService.getAllMovies();
         assertTrue(CollectionUtils.isNotEmpty(movies));
-        assertEquals(61, movies.size());
+        assertEquals(63, movies.size());
     }
     
     @Test
@@ -128,7 +128,7 @@ public class MovieServiceTest extends ServiceTestAbstract {
         assertNotNull(movie);
         Set<ListMovie> listMovies = movie.getListMovies();
         assertTrue(CollectionUtils.isNotEmpty(listMovies));
-        assertEquals(1, listMovies.size());
+        assertEquals(2, listMovies.size());
     }
     
     @Test
