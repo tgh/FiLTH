@@ -16,3 +16,4 @@ ivy-report
 test-results/*
 conf/tmdb.properties
 **/*.DS_Store
+.pydevproject
