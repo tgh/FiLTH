@@ -110,7 +110,7 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
         - Copy the jar file from ant-contrib to ant's lib/ directory; for me it was: `cp /usr/local/Cellar/ant-contrib/1.0b3/share/ant/ant-contrib-1.0b3.jar /usr/local/Cellar/ant/1.10.1/libexec/lib/`
 
 1. Install [Ivy](http://ant.apache.org/ivy/) (for dependency management)
- 
+
     - `brew install ivy` (at the time of this writing it was Ivy 2.4.0--_NOTE: version 2.4 or higher is required because the `<bintray/>` ivy resolver used in ivysettings.xml doesn't work with versions prior to 2.4_)
 
     - Copy the ivy jar file into the ant lib directory: `cp /usr/local/Cellar/ivy/{version}/libexec/ivy-{version}.jar /usr/local/Cellar/ant/{version}/libexec/lib/` (or wherever your brew installations reside)
@@ -155,6 +155,10 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
     - In **pgAdmin3** create a connection for `localhost` port 5432 with username `postgres` (no password)
 
 1. Setup database
+
+    - run `/scripts/drop_and_create_filth_db.sh`
+    - Check `/logs/drop_and_create_filth_db.log` for any errors
+    - For test data, run `/scripts/drop_and_create_filth_test_db.sh` and check for errors in `/logs/drop_and_create_filth_test_db.log`
 
 1. Install LaTeX
 
