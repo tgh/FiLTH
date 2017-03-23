@@ -2,12 +2,12 @@
     <#-- css for datatables AND its Select extension-->
     <@util.external_css "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.css" />
     <@util.css "movie/movies" />
-    
+
     <h1>Movies</h1>
-    
+
     <#--<img id="spinner" src="${rc.contextPath}/images/spinner.svg"/>-->
     <div id="loadingText"><h1>Loading...</h1></div>
-    
+
     <table id="moviesTable" class="hidden">
         <thead>
             <tr>
@@ -27,7 +27,7 @@
                 <#if movie_index % 2 == 0>
                     <#assign rowCssClass = "even" />
                 </#if>
-                
+
                 <tr data-movie-id="${movie.id}" class="${rowCssClass}">
                     <td><a class="movieTitle movieLink" data-remodal-target="movieModal" data-movie-id="${movie.id}">${movie.title}</a></td>
                     <td>
@@ -37,7 +37,7 @@
                     </td>
                     <td>
                         <#if movie.starRating??>
-                            ${movie.starRatingForDisplay}
+                            <span class="${movie.colorStringForStarRating}">${movie.starRatingForDisplay}</span>
                         </#if>
                     </td>
                     <td>
@@ -69,7 +69,7 @@
             </#foreach>
         </tbody>
     </table>
-    
+
     <#-- js for datatables AND its Select extension-->
     <@util.external_js "https://cdn.datatables.net/t/dt/dt-1.10.11,se-1.1.2/datatables.min.js" />
     <@util.js "movie/movies" />

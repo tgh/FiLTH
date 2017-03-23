@@ -26,13 +26,13 @@ body {
 .button {
     /* default color */
     background-color: #ccc;
-    
+
     padding: 5px 10px;
     border-radius: 3px;
     vertical-align: middle;
     display: inline-block;
     cursor: pointer;
-    
+
     /* fade in/out effect */
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -286,4 +286,29 @@ input[type=text] {
 
 .right {
     float: right;
+}
+
+/* text colors */
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.purple {
+    color: purple;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+.defaultColor {
+    color: black;
 }
