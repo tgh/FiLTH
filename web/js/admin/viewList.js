@@ -36,17 +36,17 @@ function allClickHandler(event) {
 function listTitleKeydownHandler(event) {
     titleEditElement = $(event.target);
     titleDisplayElement = titleEditElement.siblings('.contentDisplay');
-    
+
     //'enter' key, keep change in rank
     if(event.keyCode == 13) {
         newTitle = event.target.value;
-        
+
         //verify title is not empty
         if (newTitle == '') {
             alertify.error("Title must not be empty.")
             return;
         }
-        
+
         movieList.setTitle(newTitle);
         titleDisplayElement.html(newTitle);
         saveList();
@@ -64,13 +64,13 @@ function listTitleKeydownHandler(event) {
 function listAuthorKeydownHandler(event) {
     authorEditElement = $(event.target);
     authorDisplayElement = authorEditElement.siblings('.contentDisplay');
-    
+
     //'enter' key, keep change in author
     if(event.keyCode == 13) {
         newAuthor = event.target.value;
-        
+
         movieList.setAuthor(newAuthor);
-        
+
         if (newAuthor == '') {
             authorDisplayElement.html('[no author]');
             authorDisplayElement.addClass('noAuthor');
@@ -80,7 +80,7 @@ function listAuthorKeydownHandler(event) {
             authorDisplayElement.removeClass('noAuthor');
             show($('#by'));
         }
-        
+
         saveList();
         //force exit out of input
         $(':focus').blur();
@@ -95,31 +95,31 @@ function listAuthorKeydownHandler(event) {
 function listRankKeydownHandler(event) {
     rankInput = $(event.target);
     rankInputCurrentValue = rankInput.siblings('.rankValue').text();
-    
+
     //'enter' key, keep change in rank
     if(event.keyCode == 13) {
         newRank = event.target.value;
-        
+
         //verify new rank is valid (numeric)
         if (isNaN(newRank) || newRank < 1) {
             alertify.error("Rank must be a positive, non-zero number.")
             return;
         }
-        
+
         movieId = rankInput.parents('tr')[0].dataset.movieId;
         movieList.setRankForMovie(movieId, newRank);
-        
+
         //update and re-sort the table
         table = $('#listMoviesTable').DataTable();
         table.cell('tr[data-movie-id="' + movieId + '"] td.rankColumn').data(
             '<div class="rankValue hidden">' + newRank + '</div>' +
             '<input class="rankInput" type="text" value="' + newRank + '">'
         ).order([[2, 'asc']]).draw('full-hold');
-        
+
         //remove and add this handler throughout the DOM so that the newly added rank element has this handler
         $('.rankInput').unbind();
         $('.rankInput').keydown(listRankKeydownHandler);
-        
+
         saveList();
     }
     //'esc' key, cancel: revert back to original rank
@@ -139,24 +139,24 @@ function listRankFocusoutHandler(event) {
 function listCommentsKeydownHandler(event) {
     commentsInput = $(event.target);
     commentsInputCurrentValue = commentsInput.siblings('.commentsValue').text();
-    
+
     //'enter' key, keep change in comments
     if(event.keyCode == 13) {
         newComments = event.target.value;
-        
+
         movieId = commentsInput.parents('tr')[0].dataset.movieId;
         movieList.setCommentsForMovie(movieId, newComments);
-        
+
         //update the table
         table = $('#listMoviesTable').DataTable();
         table.cell('tr[data-movie-id="' + movieId + '"] td.commentsColumn').data(
             '<input class="commentsInput" type="text" value="' + newComments + '">'
         ).draw('full-hold');
-        
+
         //remove and add this handler throughout the DOM so that the newly added comment element has this handler
         $('.commentsInput').unbind();
         $('.commentsInput').keydown(listCommentsKeydownHandler);
-        
+
         saveList();
     }
     //'esc' key, cancel: revert back to original comments
@@ -176,7 +176,7 @@ function saveList() {
     //do not attempt to save if the list is invalid
     if (VALID == validateList()) {
         clearStackTraceContainer();
-        
+
         $('#saveListForm').ajaxSubmit({
             success: function(json) {
                 if (TRUE === json[JSON_KEY_SUCCESS]) {
@@ -195,14 +195,14 @@ function saveList() {
 
 function removeFromList(removeUrl, movieId) {
     movieRow = $('tr[data-movie-id=' + movieId + ']');
-    
+
     $.ajax({
         url: removeUrl,
         type: 'POST',
         success: function(json) {
             if (TRUE === json[JSON_KEY_SUCCESS]) {
                 alertify.success(json[JSON_KEY_MESSAGE]);
-                
+
                 //remove row from the table
                 table = $('#listMoviesTable').DataTable();
                 table.row($('tr[data-movie-id="' + movieId + '"]')).remove().draw('full-hold');
@@ -229,18 +229,18 @@ function validateList() {
         alertify.error('You must give the list a title.')
         return INVALID;
     }
-    
+
     //there must be at least 1 movie in the list
     if (false == movieList.hasMovies()) {
         alertify.error('There must be at least 1 movie in the list.')
         return INVALID;
     }
-    
+
     return VALID;
 }
 
 function editClickHandler() {
-    $('#editPanel').slideDown(500);
+    $('#editPanel').removeClass('hidden');
 }
 
 function movieCheckboxClickHandler(event) {
@@ -250,7 +250,7 @@ function movieCheckboxClickHandler(event) {
 function movieCheckboxSelection(checkbox) {
     var row = $(checkbox).parents('tr');
     var movieId = $(row).data('movie-id');
-    
+
     //movie is being selected; add movie from the list of changes
     if (checkbox.prop('checked')) {
         var movieTitle = $(row).find('.movieTitle').text().trim();
@@ -270,13 +270,13 @@ function movieCheckboxSelection(checkbox) {
  */
 function addSelectedMovies() {
     var table = $('#listMoviesTable').DataTable();
-    
+
     for (var i=0; i < movieListChanges.additions.length; ++i) {
         var movieId = movieListChanges.additions[i].mid;
         var movieTitle = movieListChanges.additions[i].title;
         var movieYear = movieListChanges.additions[i].year;
         var isSeen = movieListChanges.additions[i].isSeen;
-        
+
         //add movie to json to be sent to back-end for save
         movieList.addMovie(movieListChanges.additions[i].mid);
 
@@ -284,12 +284,12 @@ function addSelectedMovies() {
         if (movieYear != null && movieYear !== '') {
             movieTitle = movieTitle + ' (' + movieYear + ')';
         }
-        
+
         //get list id
         listId = $('#listId').data('list-id');
         //first column will be check mark if seen, blank otherwise
         firstColumn = isSeen ? '&#x2714;' : '';
-        
+
         //add row into table
         newRow = table.row.add([
             firstColumn,
@@ -298,16 +298,16 @@ function addSelectedMovies() {
             '<input class="commentsInput" type="text">',
             '<a class="button redButton circleButton arialBlack white" title="Remove from list" href="javascript: removeFromList(\'' + removeMovieFromListUrl + '?id=' + listId + '&movieId=' + movieId + '\', ' + movieId + ')">X</a>'
         ]).draw('full-hold').nodes().to$();
-       
+
         //add data-movie-id
         newRow.attr('data-movie-id', movieId);
         //add classes to row
         $(newRow.find('td')[2]).addClass('rankColumn');
         $(newRow.find('td')[3]).addClass('commentsColumn');
     }
-    
+
     saveList();
-    
+
     //FIXME: what about movies that were newly checked on other pages in the edit panel?
     //disable the checkboxes for each added movie in the Edit panel
     $('.movieCheckbox:checked:enabled').each(function() {
@@ -323,8 +323,8 @@ function closeEditPanel() {
         //clear the list of changes
         movieListChanges.clear();
     }
-    
-    $('#editPanel').slideUp();
+
+    $('#editPanel').addClass('hidden');
 }
 
 function selectAllClickHandler() {
