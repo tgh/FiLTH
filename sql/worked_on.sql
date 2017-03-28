@@ -7905,3 +7905,8 @@ INSERT INTO filth.worked_on VALUES(7905, 4218, 3468, 'Screenwriter');  -- Alliso
 INSERT INTO filth.worked_on VALUES(7906, 4216, 3469, 'Screenwriter');  -- Luke Davies for Lion (2016)
 INSERT INTO filth.worked_on VALUES(7907, 4228, 3470, 'Screenwriter');  -- Yargos Lanthimos for The Lobster (2016)
 INSERT INTO filth.worked_on VALUES(7908, 4229, 3471, 'Screenwriter');  -- Mike Mills for 20th Century Women (2016)
+INSERT INTO filth.worked_on VALUES(7909, 4184, 3472, 'Director');  -- Jennifer Kent for The Babadook (2014)
+INSERT INTO filth.worked_on VALUES(7910, 4184, 3472, 'Screenwriter');  -- Jennifer Kent for The Babadook (2014)
+INSERT INTO filth.worked_on VALUES(7911, 4184, 3473, 'Lead Actress');  -- Essie Davis for The Babadook (2014)
+INSERT INTO filth.worked_on VALUES(7912, 4184, 3474, 'Supporting Actor');  -- Noah Wiseman for The Babadook (2014)
+INSERT INTO filth.worked_on VALUES(7913, 4184, 3475, 'Cinematographer');  -- Radek Ladczuk for The Babadook (2014)

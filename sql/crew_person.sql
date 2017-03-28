@@ -3466,3 +3466,7 @@ INSERT INTO filth.crew_person VALUES (3468, 'Schroeder', 'Allison', NULL, 'Allis
 INSERT INTO filth.crew_person VALUES (3469, 'Davies', 'Luke', NULL, 'Luke Davies', 'Screenwriter');  -- Screenwriter: Luke Davies
 INSERT INTO filth.crew_person VALUES (3470, 'Lanthimos', 'Yargos', NULL, 'Yargos Lanthimos', 'Director');  -- Director: Yargos Lanthimos
 INSERT INTO filth.crew_person VALUES (3471, 'Mills', 'Mike', NULL, 'Mike Mills', 'Director');  -- Director: Mike Mills
+INSERT INTO filth.crew_person VALUES (3472, 'Kent', 'Jennifer', NULL, 'Jennifer Kent', 'Actress');  -- Actress: Jennifer Kent
+INSERT INTO filth.crew_person VALUES (3473, 'Davis', 'Essie', NULL, 'Essie Davis', 'Actress');  -- Actress: Essie Davis
+INSERT INTO filth.crew_person VALUES (3474, 'Wiseman', 'Noah', NULL, 'Noah Wiseman', 'Actor');  -- Actor: Noah Wiseman
+INSERT INTO filth.crew_person VALUES (3475, 'Ladczuk', 'Radek', NULL, 'Radek Ladczuk', 'Cinematographer');  -- Cinematographer: Radek Ladczuk
