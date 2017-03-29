@@ -3470,3 +3470,9 @@ INSERT INTO filth.crew_person VALUES (3472, 'Kent', 'Jennifer', NULL, 'Jennifer 
 INSERT INTO filth.crew_person VALUES (3473, 'Davis', 'Essie', NULL, 'Essie Davis', 'Actress');  -- Actress: Essie Davis
 INSERT INTO filth.crew_person VALUES (3474, 'Wiseman', 'Noah', NULL, 'Noah Wiseman', 'Actor');  -- Actor: Noah Wiseman
 INSERT INTO filth.crew_person VALUES (3475, 'Ladczuk', 'Radek', NULL, 'Radek Ladczuk', 'Cinematographer');  -- Cinematographer: Radek Ladczuk
+INSERT INTO filth.crew_person VALUES (3476, 'Waititi', 'Taika', NULL, 'Taika Waititi', 'Actor');  -- Actor: Taika Waititi
+INSERT INTO filth.crew_person VALUES (3477, 'Neill', 'Sam', NULL, 'Sam Neill', 'Actor');  -- Actor: Sam Neill
+INSERT INTO filth.crew_person VALUES (3478, 'Dennison', 'Julian', NULL, 'Julian Dennison', 'Actor');  -- Actor: Julian Dennison
+INSERT INTO filth.crew_person VALUES (3479, 'House', 'Rachel', NULL, 'Rachel House', 'Actress');  -- Actress: Rachel House
+INSERT INTO filth.crew_person VALUES (3480, 'Wiata', 'Rima', 'Te', 'Rima Te Wiata', 'Actress');  -- Actress: Rima Te Wiata
+INSERT INTO filth.crew_person VALUES (3481, 'Darby', 'Rhys', NULL, 'Rhys Darby', 'Actor');  -- Actor: Rhys Darby
