@@ -7919,3 +7919,5 @@ INSERT INTO filth.worked_on VALUES(7919, 4230, 3479, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(7920, 4230, 3480, 'Supporting Actress');  -- Rima Te Wiata for Hunt for the Wilderpeople (2016)
 INSERT INTO filth.worked_on VALUES(7921, 4230, 3481, 'Supporting Actor');  -- Rhys Darby for Hunt for the Wilderpeople (2016)
 INSERT INTO filth.worked_on VALUES(7922, 4220, 3482, 'Director');  -- Roger Ross Williams for Life, Animated (2016)
+INSERT INTO filth.worked_on VALUES(7923, 4231, 3483, 'Director');  -- Makoto Shinkai for The Garden of Words (2013)
+INSERT INTO filth.worked_on VALUES(7924, 4231, 3483, 'Screenwriter');  -- Makoto Shinkai for The Garden of Words (2013)

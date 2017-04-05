@@ -4224,3 +4224,4 @@ INSERT INTO filth.movie VALUES (4227, 'Toni Erdmann', 2016, 'not seen', 'R', 'Ge
 INSERT INTO filth.movie VALUES (4228, 'The Lobster', 2016, 'not seen', 'R', 'Greece', NULL, 'tt3464902', NULL, 254320, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4229, '20th Century Women', 2016, 'not seen', 'R', 'USA', NULL, 'tt4385888', NULL, 342737, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4230, 'Hunt for the Wilderpeople', 2016, '****', 'PG-13', 'New Zealand', NULL, 'tt4698684', 0, 371645, NULL, NULL, 101);
+INSERT INTO filth.movie VALUES (4231, 'The Garden of Words', 2013, '**½', 'NR', 'Japan', 'The animation of this film is one of the best I''ve ever seen, if not *the* best--visually stunning.  However, the story, characters, and dialogue did not resonate with me at all and found them quite dull.', 'tt2591814', 0, 198375, NULL, NULL, 46);
