@@ -7921,3 +7921,8 @@ INSERT INTO filth.worked_on VALUES(7921, 4230, 3481, 'Supporting Actor');  -- Rh
 INSERT INTO filth.worked_on VALUES(7922, 4220, 3482, 'Director');  -- Roger Ross Williams for Life, Animated (2016)
 INSERT INTO filth.worked_on VALUES(7923, 4231, 3483, 'Director');  -- Makoto Shinkai for The Garden of Words (2013)
 INSERT INTO filth.worked_on VALUES(7924, 4231, 3483, 'Screenwriter');  -- Makoto Shinkai for The Garden of Words (2013)
+INSERT INTO filth.worked_on VALUES(7925, 4232, 2167, 'Supporting Actress');  -- Emma Watson for Regression (2015)
+INSERT INTO filth.worked_on VALUES(7926, 4232, 654, 'Lead Actor');  -- Ethan Hawke for Regression (2015)
+INSERT INTO filth.worked_on VALUES(7927, 4232, 2624, 'Supporting Actor');  -- David Thewlis for Regression (2015)
+INSERT INTO filth.worked_on VALUES(7928, 4232, 2247, 'Director');  -- Alejandro Amenabar for Regression (2015)
+INSERT INTO filth.worked_on VALUES(7929, 4232, 2247, 'Screenwriter');  -- Alejandro Amenabar for Regression (2015)
