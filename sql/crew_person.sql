@@ -3478,3 +3478,6 @@ INSERT INTO filth.crew_person VALUES (3480, 'Wiata', 'Rima', 'Te', 'Rima Te Wiat
 INSERT INTO filth.crew_person VALUES (3481, 'Darby', 'Rhys', NULL, 'Rhys Darby', 'Actor');  -- Actor: Rhys Darby
 INSERT INTO filth.crew_person VALUES (3482, 'Williams', 'Roger', 'Ross', 'Roger Ross Williams', 'Director');  -- Director: Roger Ross Williams
 INSERT INTO filth.crew_person VALUES (3483, 'Shinkai', 'Makoto', NULL, 'Makoto Shinkai', 'Director');  -- Director: Makoto Shinkai
+INSERT INTO filth.crew_person VALUES (3484, 'Monae', 'Janelle', NULL, 'Janelle Monae', 'Actress');  -- Actress: Janelle Monae
+INSERT INTO filth.crew_person VALUES (3485, 'Rhodes', 'Trevante', NULL, 'Trevante Rhodes', 'Actor');  -- Actor: Trevante Rhodes
+INSERT INTO filth.crew_person VALUES (3486, 'Holland', 'Andre', NULL, 'Andre Holland', 'Actor');  -- Actor: Andre Holland

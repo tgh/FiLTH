@@ -7926,3 +7926,6 @@ INSERT INTO filth.worked_on VALUES(7926, 4232, 654, 'Lead Actor');  -- Ethan Haw
 INSERT INTO filth.worked_on VALUES(7927, 4232, 2624, 'Supporting Actor');  -- David Thewlis for Regression (2015)
 INSERT INTO filth.worked_on VALUES(7928, 4232, 2247, 'Director');  -- Alejandro Amenabar for Regression (2015)
 INSERT INTO filth.worked_on VALUES(7929, 4232, 2247, 'Screenwriter');  -- Alejandro Amenabar for Regression (2015)
+INSERT INTO filth.worked_on VALUES(7930, 4176, 3484, 'Supporting Actress');  -- Janelle Monae for Moonlight (2016)
+INSERT INTO filth.worked_on VALUES(7931, 4176, 3485, 'Supporting Actor');  -- Trevante Rhodes for Moonlight (2016)
+INSERT INTO filth.worked_on VALUES(7932, 4176, 3486, 'Supporting Actor');  -- Andre Holland for Moonlight (2016)
