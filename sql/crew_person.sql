@@ -3484,3 +3484,4 @@ INSERT INTO filth.crew_person VALUES (3486, 'Holland', 'Andre', NULL, 'Andre Hol
 INSERT INTO filth.crew_person VALUES (3487, 'Wong', 'Benedict', NULL, 'Benedict Wong', 'Actor');  -- Actor: Benedict Wong
 INSERT INTO filth.crew_person VALUES (3488, 'Bratt', 'Benjamin', NULL, 'Benjamin Bratt', 'Actor');  -- Actor: Benjamin Bratt
 INSERT INTO filth.crew_person VALUES (3489, 'Davis', 'Ben', NULL, 'Ben Davis', 'Cinematographer');  -- Cinematographer: Ben Davis
+INSERT INTO filth.crew_person VALUES (3490, 'Clement', 'Jemaine', NULL, 'Jemaine Clement', 'Actor');  -- Actor: Jemaine Clement

@@ -7938,3 +7938,7 @@ INSERT INTO filth.worked_on VALUES(7938, 4233, 3186, 'Supporting Actor');  -- Ma
 INSERT INTO filth.worked_on VALUES(7939, 4233, 3064, 'Supporting Actor');  -- Michael Stuhlbarg for Doctor Strange (2016)
 INSERT INTO filth.worked_on VALUES(7940, 4233, 3488, 'Supporting Actor');  -- Benjamin Bratt for Doctor Strange (2016)
 INSERT INTO filth.worked_on VALUES(7941, 4233, 3489, 'Cinematographer');  -- Ben Davis for Doctor Strange (2016)
+INSERT INTO filth.worked_on VALUES(7942, 4196, 3360, 'Character Voice');  -- Dwayne Johnson for Moana (2016)
+INSERT INTO filth.worked_on VALUES(7943, 4196, 3479, 'Character Voice');  -- Rachel House for Moana (2016)
+INSERT INTO filth.worked_on VALUES(7944, 4196, 3490, 'Character Voice');  -- Jemaine Clement for Moana (2016)
+INSERT INTO filth.worked_on VALUES(7945, 4196, 3308, 'Character Voice');  -- Alan Tudyk for Moana (2016)
