@@ -3490,3 +3490,5 @@ INSERT INTO filth.crew_person VALUES (3492, 'Gerwig', 'Greta', NULL, 'Greta Gerw
 INSERT INTO filth.crew_person VALUES (3493, 'Lynch', 'John', 'Carroll', 'John Carroll Lynch', 'Actor');  -- Actor: John Carroll Lynch
 INSERT INTO filth.crew_person VALUES (3494, 'Grant', 'Beth', NULL, 'Beth Grant', 'Actress');  -- Actress: Beth Grant
 INSERT INTO filth.crew_person VALUES (3495, 'Grant', 'Richard', 'E.', 'Richard E. Grant', 'Actor');  -- Actor: Richard E. Grant
+INSERT INTO filth.crew_person VALUES (3496, 'Barnhill', 'Ruby', NULL, 'Ruby Barnhill', 'Actress');  -- Actress: Ruby Barnhill
+INSERT INTO filth.crew_person VALUES (3497, 'Wilton', 'Penelope', NULL, 'Penelope Wilton', 'Actress');  -- Actress: Penelope Wilton

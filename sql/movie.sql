@@ -4227,3 +4227,4 @@ INSERT INTO filth.movie VALUES (4230, 'Hunt for the Wilderpeople', 2016, '****',
 INSERT INTO filth.movie VALUES (4231, 'The Garden of Words', 2013, '**½', 'NR', 'Japan', 'The animation of this film is one of the best I''ve ever seen, if not *the* best--visually stunning.  However, the story, characters, and dialogue did not resonate with me at all and found them quite dull.', 'tt2591814', 0, 198375, NULL, NULL, 46);
 INSERT INTO filth.movie VALUES (4232, 'Regression', 2015, '***', 'R', 'Spain', NULL, 'tt3319920', 0, 241257, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (4233, 'Doctor Strange', 2016, '**½', 'PG-13', 'USA', NULL, 'tt1211837', 0, 284052, NULL, NULL, 115);
+INSERT INTO filth.movie VALUES (4234, 'The BFG', 2016, '***', 'PG', 'USA', NULL, 'tt3691740', 0, 267935, NULL, NULL, 117);
