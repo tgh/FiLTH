@@ -3485,3 +3485,8 @@ INSERT INTO filth.crew_person VALUES (3487, 'Wong', 'Benedict', NULL, 'Benedict 
 INSERT INTO filth.crew_person VALUES (3488, 'Bratt', 'Benjamin', NULL, 'Benjamin Bratt', 'Actor');  -- Actor: Benjamin Bratt
 INSERT INTO filth.crew_person VALUES (3489, 'Davis', 'Ben', NULL, 'Ben Davis', 'Cinematographer');  -- Cinematographer: Ben Davis
 INSERT INTO filth.crew_person VALUES (3490, 'Clement', 'Jemaine', NULL, 'Jemaine Clement', 'Actor');  -- Actor: Jemaine Clement
+INSERT INTO filth.crew_person VALUES (3491, 'Lorrain', 'Pablo', NULL, 'Pablo Lorrain', 'Director');  -- Director: Pablo Lorrain
+INSERT INTO filth.crew_person VALUES (3492, 'Gerwig', 'Greta', NULL, 'Greta Gerwig', 'Actress');  -- Actress: Greta Gerwig
+INSERT INTO filth.crew_person VALUES (3493, 'Lynch', 'John', 'Carroll', 'John Carroll Lynch', 'Actor');  -- Actor: John Carroll Lynch
+INSERT INTO filth.crew_person VALUES (3494, 'Grant', 'Beth', NULL, 'Beth Grant', 'Actress');  -- Actress: Beth Grant
+INSERT INTO filth.crew_person VALUES (3495, 'Grant', 'Richard', 'E.', 'Richard E. Grant', 'Actor');  -- Actor: Richard E. Grant
