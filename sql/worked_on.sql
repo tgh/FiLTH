@@ -7960,3 +7960,7 @@ INSERT INTO filth.worked_on VALUES(7960, 4234, 3497, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(7961, 4234, 3490, 'Supporting Actor');  -- Jemaine Clement for The BFG (2016)
 INSERT INTO filth.worked_on VALUES(7962, 4234, 3303, 'Supporting Actress');  -- Rebecca Hall for The BFG (2016)
 INSERT INTO filth.worked_on VALUES(7963, 4234, 2116, 'Supporting Actor');  -- Bill Hader for The BFG (2016)
+INSERT INTO filth.worked_on VALUES(7964, 4216, 3498, 'Director');  -- Garth Davis for Lion (2016)
+INSERT INTO filth.worked_on VALUES(7965, 4216, 3499, 'Supporting Actor');  -- Sunny Pawar for Lion (2016)
+INSERT INTO filth.worked_on VALUES(7966, 4216, 3380, 'Supporting Actor');  -- David Wenham for Lion (2016)
+INSERT INTO filth.worked_on VALUES(7967, 4216, 3038, 'Supporting Actress');  -- Rooney Mara for Lion (2016)
