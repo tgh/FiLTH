@@ -1607,7 +1607,7 @@ INSERT INTO filth.movie VALUES (1602, 'Taxi Driver', 1976, '****', 'R', 'USA', N
 INSERT INTO filth.movie VALUES (1603, 'The Teahouse of the August Moon', 1956, '***', 'NR', 'USA', NULL, 'tt0049830', 0, 43313, NULL, NULL, 123);
 INSERT INTO filth.movie VALUES (1604, 'Team America: World Police', 2004, '***', 'R', 'USA', NULL, 'tt0372588', 0, 3989, NULL, NULL, 98);
 INSERT INTO filth.movie VALUES (1605, 'Tears of the Sun', 2003, '***', 'R', 'USA', NULL, 'tt0314353', 1, 9567, NULL, NULL, 121);
-INSERT INTO filth.movie VALUES (1606, 'The Ten Commandments', 1956, '**½', 'NR', 'USA', NULL, 'tt0049833', 0, 6844, NULL, NULL, 220);
+INSERT INTO filth.movie VALUES (1606, 'The Ten Commandments', 1956, '**', 'NR', 'USA', NULL, 'tt0049833', 0, 6844, NULL, NULL, 220);
 INSERT INTO filth.movie VALUES (1607, 'Tender Mercies', 1983, '***', 'PG', 'USA', NULL, 'tt0086423', 0, 42121, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (1608, 'The Terminal', 2004, '***', 'PG-13', 'USA', NULL, 'tt0362227', 1, 594, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (1609, 'The Terminator', 1984, '**', 'R', 'USA', NULL, 'tt0088247', 0, 218, NULL, NULL, 108);
