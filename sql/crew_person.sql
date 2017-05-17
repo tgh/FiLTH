@@ -3498,3 +3498,7 @@ INSERT INTO filth.crew_person VALUES (3500, 'Taylor-Joy', 'Anya', NULL, 'Anya Ta
 INSERT INTO filth.crew_person VALUES (3501, 'Buckley', 'Betty', NULL, 'Betty Buckley', 'Actress');  -- Actress: Betty Buckley
 INSERT INTO filth.crew_person VALUES (3502, 'Robinson', 'Edward', 'G.', 'Edward G. Robinson', 'Actor');  -- Actor: Edward G. Robinson
 INSERT INTO filth.crew_person VALUES (3503, 'Carradine', 'John', NULL, 'John Carradine', 'Actor');  -- Actor: John Carradine
+INSERT INTO filth.crew_person VALUES (3504, 'Farahani', 'Golshifteh', NULL, 'Golshifteh Farahani', 'Actress');  -- Actress: Golshifteh Farahani
+INSERT INTO filth.crew_person VALUES (3505, 'Hayward', 'Kara', NULL, 'Kara Hayward', 'Actress');  -- Actress: Kara Hayward
+INSERT INTO filth.crew_person VALUES (3506, 'Gilman', 'Jared', NULL, 'Jared Gilman', 'Actor');  -- Actor: Jared Gilman
+INSERT INTO filth.crew_person VALUES (3507, 'Elmes', 'Frederick', NULL, 'Frederick Elmes', 'Cinematographer');  -- Cinematographer: Frederick Elmes
