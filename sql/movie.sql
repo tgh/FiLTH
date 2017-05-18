@@ -4229,3 +4229,4 @@ INSERT INTO filth.movie VALUES (4232, 'Regression', 2015, '***', 'R', 'Spain', N
 INSERT INTO filth.movie VALUES (4233, 'Doctor Strange', 2016, '**½', 'PG-13', 'USA', NULL, 'tt1211837', 0, 284052, NULL, NULL, 115);
 INSERT INTO filth.movie VALUES (4234, 'The BFG', 2016, '***', 'PG', 'USA', NULL, 'tt3691740', 0, 267935, NULL, NULL, 117);
 INSERT INTO filth.movie VALUES (4235, 'Split', 2017, '***', 'PG-13', 'USA', NULL, 'tt4972582', 0, 381288, NULL, NULL, 117);
+INSERT INTO filth.movie VALUES (4236, 'Beauty and the Beast', 2017, '***', 'PG', 'USA', NULL, 'tt2771200', 1, 321612, NULL, NULL, 129);
