@@ -18728,3 +18728,8 @@ INSERT INTO filth.tag_given_to VALUES(4173, 50);  -- Silence (2016) tagged with 
 INSERT INTO filth.tag_given_to VALUES(4173, 21);  -- Silence (2016) tagged with 'period'
 INSERT INTO filth.tag_given_to VALUES(4173, 59);  -- Silence (2016) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4173, 58);  -- Silence (2016) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(4237, 1);  -- The Red Turtle (2016) tagged with 'drama'
+INSERT INTO filth.tag_given_to VALUES(4237, 224);  -- The Red Turtle (2016) tagged with 'lost-at-sea'
+INSERT INTO filth.tag_given_to VALUES(4237, 285);  -- The Red Turtle (2016) tagged with 'no-dialog'
+INSERT INTO filth.tag_given_to VALUES(4237, 7);  -- The Red Turtle (2016) tagged with 'animation'
+INSERT INTO filth.tag_given_to VALUES(4237, 223);  -- The Red Turtle (2016) tagged with 'survival'

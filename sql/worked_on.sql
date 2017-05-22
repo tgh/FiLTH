@@ -8006,3 +8006,6 @@ INSERT INTO filth.worked_on VALUES(8006, 4173, 3020, 'Lead Actor');  -- Andrew G
 INSERT INTO filth.worked_on VALUES(8007, 4173, 142, 'Supporting Actor');  -- Liam Neeson for Silence (2016)
 INSERT INTO filth.worked_on VALUES(8008, 4173, 3178, 'Supporting Actor');  -- Adam Driver for Silence (2016)
 INSERT INTO filth.worked_on VALUES(8009, 4173, 2847, 'Small Part');  -- Ciaran Hinds for Silence (2016)
+INSERT INTO filth.worked_on VALUES(8010, 4237, 3512, 'Director');  -- Michael Dudok de Wit for The Red Turtle (2016)
+INSERT INTO filth.worked_on VALUES(8011, 4237, 3512, 'Screenwriter');  -- Michael Dudok de Wit for The Red Turtle (2016)
+INSERT INTO filth.worked_on VALUES(8012, 4237, 3513, 'Screenwriter');  -- Pascale Ferran for The Red Turtle (2016)

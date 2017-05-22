@@ -3506,3 +3506,5 @@ INSERT INTO filth.crew_person VALUES (3508, 'Stevens', 'Dan', NULL, 'Dan Stevens
 INSERT INTO filth.crew_person VALUES (3509, 'Evans', 'Luke', NULL, 'Luke Evans', 'Actor');  -- Actor: Luke Evans
 INSERT INTO filth.crew_person VALUES (3510, 'Gad', 'Josh', NULL, 'Josh Gad', 'Actor');  -- Actor: Josh Gad
 INSERT INTO filth.crew_person VALUES (3511, 'Schliessler', 'Tobias', 'A.', 'Tobias A. Schliessler', 'Cinematographer');  -- Cinematographer: Tobias A. Schliessler
+INSERT INTO filth.crew_person VALUES (3512, 'Dudok de Wit', 'Michael', NULL, 'Michael Dudok de Wit', 'Director');  -- Director: Michael Dudok de Wit
+INSERT INTO filth.crew_person VALUES (3513, 'Ferran', 'Pascale', NULL, 'Pascale Ferran', 'Screenwriter');  -- Screenwriter: Pascale Ferran
