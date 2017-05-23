@@ -3508,3 +3508,6 @@ INSERT INTO filth.crew_person VALUES (3510, 'Gad', 'Josh', NULL, 'Josh Gad', 'Ac
 INSERT INTO filth.crew_person VALUES (3511, 'Schliessler', 'Tobias', 'A.', 'Tobias A. Schliessler', 'Cinematographer');  -- Cinematographer: Tobias A. Schliessler
 INSERT INTO filth.crew_person VALUES (3512, 'Dudok de Wit', 'Michael', NULL, 'Michael Dudok de Wit', 'Director');  -- Director: Michael Dudok de Wit
 INSERT INTO filth.crew_person VALUES (3513, 'Ferran', 'Pascale', NULL, 'Pascale Ferran', 'Screenwriter');  -- Screenwriter: Pascale Ferran
+INSERT INTO filth.crew_person VALUES (3514, 'Melfi', 'Theodore', NULL, 'Theodore Melfi', 'Producer');  -- Producer: Theodore Melfi
+INSERT INTO filth.crew_person VALUES (3515, 'Parsons', 'Jim', NULL, 'Jim Parsons', 'Actor');  -- Actor: Jim Parsons
+INSERT INTO filth.crew_person VALUES (3516, 'Walker', 'Mandy', NULL, 'Mandy Walker', 'Cinematographer');  -- Cinematographer: Mandy Walker

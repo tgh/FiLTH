@@ -4211,7 +4211,7 @@ INSERT INTO filth.movie VALUES (4214, 'Elle', 2016, 'not seen', 'R', 'France', N
 INSERT INTO filth.movie VALUES (4215, 'Jackie', 2016, '***', 'R', 'USA', NULL, 'tt1619029', NULL, 376866, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (4216, 'Lion', 2016, '***½', 'PG-13', 'Australia', NULL, 'tt3741834', NULL, 334543, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4217, 'Nocturnal Animals', 2016, 'not seen', 'R', 'USA', NULL, 'tt4550098', NULL, 340666, NULL, NULL, 116);
-INSERT INTO filth.movie VALUES (4218, 'Hidden Figures', 2016, 'not seen', 'PG', 'USA', NULL, 'tt4846340', NULL, 381284, NULL, NULL, 126);
+INSERT INTO filth.movie VALUES (4218, 'Hidden Figures', 2016, '***', 'PG', 'USA', NULL, 'tt4846340', NULL, 381284, NULL, NULL, 126);
 INSERT INTO filth.movie VALUES (4219, 'O.J.: Made in America', 2016, 'not seen', 'NR', 'USA', NULL, 'tt5275892', NULL, 66738, NULL, NULL, 90);
 INSERT INTO filth.movie VALUES (4220, 'Life, Animated', 2016, '***', 'PG', 'USA', NULL, 'tt3917210', NULL, 376233, NULL, NULL, 91);
 INSERT INTO filth.movie VALUES (4221, 'I am not Your Negro', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt5804038', NULL, 411019, NULL, NULL, 95);
