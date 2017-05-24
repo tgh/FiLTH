@@ -3511,3 +3511,8 @@ INSERT INTO filth.crew_person VALUES (3513, 'Ferran', 'Pascale', NULL, 'Pascale 
 INSERT INTO filth.crew_person VALUES (3514, 'Melfi', 'Theodore', NULL, 'Theodore Melfi', 'Producer');  -- Producer: Theodore Melfi
 INSERT INTO filth.crew_person VALUES (3515, 'Parsons', 'Jim', NULL, 'Jim Parsons', 'Actor');  -- Actor: Jim Parsons
 INSERT INTO filth.crew_person VALUES (3516, 'Walker', 'Mandy', NULL, 'Mandy Walker', 'Cinematographer');  -- Cinematographer: Mandy Walker
+INSERT INTO filth.crew_person VALUES (3517, 'Henderson', 'Stephen', NULL, 'Stephen Henderson', 'Actor');  -- Actor: Stephen Henderson
+INSERT INTO filth.crew_person VALUES (3518, 'Adepo', 'Jovan', NULL, 'Jovan Adepo', 'Actor');  -- Actor: Jovan Adepo
+INSERT INTO filth.crew_person VALUES (3519, 'Williamson', 'Mykelti', NULL, 'Mykelti Williamson', 'Actor');  -- Actor: Mykelti Williamson
+INSERT INTO filth.crew_person VALUES (3520, 'Hornsby', 'Russell', NULL, 'Russell Hornsby', 'Actor');  -- Actor: Russell Hornsby
+INSERT INTO filth.crew_person VALUES (3521, 'Christensen', 'Charlotte', 'Bruus', 'Charlotte Bruus Christensen', 'Cinematographer');  -- Cinematographer: Charlotte Bruus Christensen

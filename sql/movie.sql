@@ -4206,7 +4206,7 @@ INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'US
 INSERT INTO filth.movie VALUES (4208, 'The Accountant', 2016, '***', 'R', 'USA', 'I almost gave this ***½; the major flaw being that the climactic scene I thought was written and executed poorly.', 'tt2140479', 0, 302946, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (4209, 'Sing Street', 2016, '***', 'PG-13', 'Ireland', NULL, 'tt3544112', 0, 369557, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (4230, 'Loving', 2016, '**½', 'PG-13', 'USA', NULL, 'tt4669986', 0, 339419, NULL, NULL, 123);
-INSERT INTO filth.movie VALUES (4213, 'Fences', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt2671706', NULL, 393457, NULL, NULL, 139);
+INSERT INTO filth.movie VALUES (4213, 'Fences', 2016, '***½', 'PG-13', 'USA', NULL, 'tt2671706', NULL, 393457, NULL, NULL, 139);
 INSERT INTO filth.movie VALUES (4214, 'Elle', 2016, 'not seen', 'R', 'France', NULL, 'tt3716530', NULL, 337674, NULL, NULL, 130);
 INSERT INTO filth.movie VALUES (4215, 'Jackie', 2016, '***', 'R', 'USA', NULL, 'tt1619029', NULL, 376866, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (4216, 'Lion', 2016, '***½', 'PG-13', 'Australia', NULL, 'tt3741834', NULL, 334543, NULL, NULL, 118);
