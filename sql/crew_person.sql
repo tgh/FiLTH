@@ -3516,3 +3516,11 @@ INSERT INTO filth.crew_person VALUES (3518, 'Adepo', 'Jovan', NULL, 'Jovan Adepo
 INSERT INTO filth.crew_person VALUES (3519, 'Williamson', 'Mykelti', NULL, 'Mykelti Williamson', 'Actor');  -- Actor: Mykelti Williamson
 INSERT INTO filth.crew_person VALUES (3520, 'Hornsby', 'Russell', NULL, 'Russell Hornsby', 'Actor');  -- Actor: Russell Hornsby
 INSERT INTO filth.crew_person VALUES (3521, 'Christensen', 'Charlotte', 'Bruus', 'Charlotte Bruus Christensen', 'Cinematographer');  -- Cinematographer: Charlotte Bruus Christensen
+INSERT INTO filth.crew_person VALUES (3522, 'James', 'Lily', NULL, 'Lily James', 'Actress');  -- Actress: Lily James
+INSERT INTO filth.crew_person VALUES (3523, 'Madden', 'Richard', NULL, 'Richard Madden', 'Actor');  -- Actor: Richard Madden
+INSERT INTO filth.crew_person VALUES (3524, 'Jacobi', 'Derek', NULL, 'Derek Jacobi', 'Actor');  -- Actor: Derek Jacobi
+INSERT INTO filth.crew_person VALUES (3525, 'Anozie', 'Nonso', NULL, 'Nonso Anozie', 'Actor');  -- Actor: Nonso Anozie
+INSERT INTO filth.crew_person VALUES (3526, 'McShera', 'Sophie', NULL, 'Sophie McShera', 'Actress');  -- Actress: Sophie McShera
+INSERT INTO filth.crew_person VALUES (3527, 'Grainger', 'Holliday', NULL, 'Holliday Grainger', 'Actress');  -- Actress: Holliday Grainger
+INSERT INTO filth.crew_person VALUES (3528, 'Chaplin', 'Ben', NULL, 'Ben Chaplin', 'Actor');  -- Actor: Ben Chaplin
+INSERT INTO filth.crew_person VALUES (3529, 'Zambarloukos', 'Haris', NULL, 'Haris Zambarloukos', 'Cinematographer');  -- Cinematographer: Haris Zambarloukos
