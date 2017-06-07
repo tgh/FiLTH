@@ -8039,3 +8039,8 @@ INSERT INTO filth.worked_on VALUES(8039, 4238, 3527, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(8040, 4238, 3528, 'Supporting Actor');  -- Ben Chaplin for Cinderella (2015)
 INSERT INTO filth.worked_on VALUES(8041, 4238, 2191, 'Small Part');  -- Rob Brydon for Cinderella (2015)
 INSERT INTO filth.worked_on VALUES(8042, 4238, 3529, 'Cinematographer');  -- Haris Zambarloukos for Cinderella (2015)
+INSERT INTO filth.worked_on VALUES(8043, 4239, 3530, 'Director');  -- Mike Flanagan for Hush (2016)
+INSERT INTO filth.worked_on VALUES(8044, 4239, 3530, 'Screenwriter');  -- Mike Flanagan for Hush (2016)
+INSERT INTO filth.worked_on VALUES(8045, 4239, 3531, 'Lead Actress');  -- Kate Siegel for Hush (2016)
+INSERT INTO filth.worked_on VALUES(8046, 4239, 3531, 'Screenwriter');  -- Kate Siegel for Hush (2016)
+INSERT INTO filth.worked_on VALUES(8047, 4239, 3532, 'Supporting Actor');  -- John Gallagher Jr. for Hush (2016)
