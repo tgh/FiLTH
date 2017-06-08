@@ -3527,3 +3527,7 @@ INSERT INTO filth.crew_person VALUES (3529, 'Zambarloukos', 'Haris', NULL, 'Hari
 INSERT INTO filth.crew_person VALUES (3530, 'Flanagan', 'Mike', NULL, 'Mike Flanagan', 'Director');  -- Director: Mike Flanagan
 INSERT INTO filth.crew_person VALUES (3531, 'Siegel', 'Kate', NULL, 'Kate Siegel', 'Actress');  -- Actress: Kate Siegel
 INSERT INTO filth.crew_person VALUES (3532, 'Gallagher Jr.', 'John', NULL, 'John Gallagher Jr.', 'Actor');  -- Actor: John Gallagher Jr.
+INSERT INTO filth.crew_person VALUES (3533, 'Green', 'Michael', NULL, 'Michael Green', 'Screenwriter');  -- Screenwriter: Michael Green
+INSERT INTO filth.crew_person VALUES (3534, 'Keen', 'Dafne', NULL, 'Dafne Keen', 'Actress');  -- Actress: Dafne Keen
+INSERT INTO filth.crew_person VALUES (3535, 'Holbrook', 'Boyd', NULL, 'Boyd Holbrook', 'Actor');  -- Actor: Boyd Holbrook
+INSERT INTO filth.crew_person VALUES (3536, 'Merchant', 'Stephen', NULL, 'Stephen Merchant', 'Actor');  -- Actor: Stephen Merchant

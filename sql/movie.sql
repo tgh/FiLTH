@@ -4233,3 +4233,4 @@ INSERT INTO filth.movie VALUES (4236, 'Beauty and the Beast', 2017, '***', 'PG',
 INSERT INTO filth.movie VALUES (4237, 'The Red Turtle', 2016, '**½', 'PG', 'France', NULL, 'tt3666024', 0, 337703, NULL, NULL, 80);
 INSERT INTO filth.movie VALUES (4238, 'Cinderella', 2015, '**½', 'PG', 'USA', NULL, 'tt1661199', 0, 150689, NULL, NULL, 105);
 INSERT INTO filth.movie VALUES (4239, 'Hush', 2016, '**½', 'R', 'USA', NULL, 'tt5022702', 0, 376570, NULL, NULL, 81);
+INSERT INTO filth.movie VALUES (4240, 'Logan', 2017, '***', 'R', 'USA', NULL, 'tt3315342', 0, 263115, NULL, NULL, 137);
