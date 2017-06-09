@@ -3531,3 +3531,7 @@ INSERT INTO filth.crew_person VALUES (3533, 'Green', 'Michael', NULL, 'Michael G
 INSERT INTO filth.crew_person VALUES (3534, 'Keen', 'Dafne', NULL, 'Dafne Keen', 'Actress');  -- Actress: Dafne Keen
 INSERT INTO filth.crew_person VALUES (3535, 'Holbrook', 'Boyd', NULL, 'Boyd Holbrook', 'Actor');  -- Actor: Boyd Holbrook
 INSERT INTO filth.crew_person VALUES (3536, 'Merchant', 'Stephen', NULL, 'Stephen Merchant', 'Actor');  -- Actor: Stephen Merchant
+INSERT INTO filth.crew_person VALUES (3537, 'Rowling', 'J.K.', NULL, 'J.K. Rowling', 'Screenwriter');  -- Screenwriter: J.K. Rowling
+INSERT INTO filth.crew_person VALUES (3538, 'Waterston', 'Katherine', NULL, 'Katherine Waterston', 'Actress');  -- Actress: Katherine Waterston
+INSERT INTO filth.crew_person VALUES (3539, 'Fogler', 'Dan', NULL, 'Dan Fogler', 'Actor');  -- Actor: Dan Fogler
+INSERT INTO filth.crew_person VALUES (3540, 'Miller', 'Ezra', NULL, 'Ezra Miller', 'Actor');  -- Actor: Ezra Miller
