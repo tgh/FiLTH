@@ -3537,3 +3537,5 @@ INSERT INTO filth.crew_person VALUES (3539, 'Fogler', 'Dan', NULL, 'Dan Fogler',
 INSERT INTO filth.crew_person VALUES (3540, 'Miller', 'Ezra', NULL, 'Ezra Miller', 'Actor');  -- Actor: Ezra Miller
 INSERT INTO filth.crew_person VALUES (3541, 'Jones', 'Cherry', NULL, 'Cherry Jones', 'Actress');  -- Actress: Cherry Jones
 INSERT INTO filth.crew_person VALUES (3542, 'Bogdanski', 'Hagen', NULL, 'Hagen Bogdanski', 'Cinematographer');  -- Cinematographer: Hagen Bogdanski
+INSERT INTO filth.crew_person VALUES (3543, 'Novak', 'B.J.', NULL, 'B.J. Novak', 'Actor');  -- Actor: B.J. Novak
+INSERT INTO filth.crew_person VALUES (3544, 'Mindel', 'Dan', NULL, 'Dan Mindel', 'Cinematographer');  -- Cinematographer: Dan Mindel
