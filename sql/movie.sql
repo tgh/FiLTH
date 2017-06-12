@@ -4126,7 +4126,7 @@ INSERT INTO filth.movie VALUES (4127, 'Adventureland', 2009, 'not seen', 'R', 'U
 INSERT INTO filth.movie VALUES (4128, 'Somewhere', 2010, 'not seen', 'R', 'USA', NULL, 'tt1421051', NULL, 39210, NULL, NULL, 98);
 INSERT INTO filth.movie VALUES (4129, 'Young Adult', 2011, 'not seen', 'R', 'USA', NULL, 'tt1625346', NULL, 57157, NULL, NULL, 94);
 INSERT INTO filth.movie VALUES (4130, 'Source Code', 2011, 'not seen', 'PG-13', 'USA', NULL, 'tt0945513', NULL, 45612, NULL, NULL, 93);
-INSERT INTO filth.movie VALUES (4131, 'The Beaver', 2011, 'not seen', 'PG-13', 'USA', NULL, 'tt1321860', NULL, 50780, NULL, NULL, 91);
+INSERT INTO filth.movie VALUES (4131, 'The Beaver', 2011, '***', 'PG-13', 'USA', NULL, 'tt1321860', NULL, 50780, NULL, NULL, 91);
 INSERT INTO filth.movie VALUES (4132, '50/50', 2011, 'not seen', 'R', 'USA', NULL, 'tt1306980', NULL, 40807, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (4133, 'The Spectacular Now', 2013, 'not seen', 'R', 'USA', NULL, 'tt1714206', NULL, 157386, NULL, NULL, 95);
 INSERT INTO filth.movie VALUES (4134, 'The Counselor', 2013, 'not seen', 'R', 'USA', NULL, 'tt2193215', NULL, 109091, NULL, NULL, 117);

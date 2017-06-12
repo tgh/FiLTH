@@ -534,7 +534,7 @@ Richard Roeper
   06. Young Adult
   07. Source Code
 * 08. Moneyball
-  09. The Beaver
+* 09. The Beaver
 * 10. Hugo
   11. 50/50
 
@@ -588,3 +588,15 @@ Richard Roeper
 * 08. Spotlight
 * 09. Star Wars: The Force Awakens
   10. Straight Outta Compton
+
+2016
+* 01. Manchester by the Sea
+* 02. Hell or High Water
+* 03. Moonlight
+* 04. La La Land
+* 05. Sully
+  06. Lights Out
+* 07. Zootopia
+  08. The Infiltrator
+* 09. Silence
+* 10. Arrival

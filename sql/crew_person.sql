@@ -3535,3 +3535,5 @@ INSERT INTO filth.crew_person VALUES (3537, 'Rowling', 'J.K.', NULL, 'J.K. Rowli
 INSERT INTO filth.crew_person VALUES (3538, 'Waterston', 'Katherine', NULL, 'Katherine Waterston', 'Actress');  -- Actress: Katherine Waterston
 INSERT INTO filth.crew_person VALUES (3539, 'Fogler', 'Dan', NULL, 'Dan Fogler', 'Actor');  -- Actor: Dan Fogler
 INSERT INTO filth.crew_person VALUES (3540, 'Miller', 'Ezra', NULL, 'Ezra Miller', 'Actor');  -- Actor: Ezra Miller
+INSERT INTO filth.crew_person VALUES (3541, 'Jones', 'Cherry', NULL, 'Cherry Jones', 'Actress');  -- Actress: Cherry Jones
+INSERT INTO filth.crew_person VALUES (3542, 'Bogdanski', 'Hagen', NULL, 'Hagen Bogdanski', 'Cinematographer');  -- Cinematographer: Hagen Bogdanski
