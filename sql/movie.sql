@@ -4236,3 +4236,4 @@ INSERT INTO filth.movie VALUES (4239, 'Hush', 2016, '**½', 'R', 'USA', NULL, 't
 INSERT INTO filth.movie VALUES (4240, 'Logan', 2017, '***', 'R', 'USA', NULL, 'tt3315342', 0, 263115, NULL, NULL, 137);
 INSERT INTO filth.movie VALUES (4241, 'Fantastic Beasts and Where to Find Them', 2016, '**½', 'PG-13', 'England', NULL, 'tt3183660', 0, 259316, NULL, NULL, 133);
 INSERT INTO filth.movie VALUES (4242, 'The Amazing Spider-Man 2', 2014, '*', 'PG-13', 'USA', NULL, 'tt1872181', 0, 102382, NULL, NULL, 142);
+INSERT INTO filth.movie VALUES (4243, 'Jack Reacher: Never Go Back', 2016, '**½', 'PG-13', 'USA', NULL, 'tt3393786', 0, 343611, NULL, NULL, 118);

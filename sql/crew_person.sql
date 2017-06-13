@@ -3542,3 +3542,9 @@ INSERT INTO filth.crew_person VALUES (3544, 'Mindel', 'Dan', NULL, 'Dan Mindel',
 INSERT INTO filth.crew_person VALUES (3545, 'Cook', 'Matt', NULL, 'Matt Cook', 'Screenwriter');  -- Screenwriter: Matt Cook
 INSERT INTO filth.crew_person VALUES (3546, 'Zetumer', 'Joshua', NULL, 'Joshua Zetumer', 'Screenwriter');  -- Screenwriter: Joshua Zetumer
 INSERT INTO filth.crew_person VALUES (3547, 'Wolff', 'Alex', NULL, 'Alex Wolff', 'Actor');  -- Actor: Alex Wolff
+INSERT INTO filth.crew_person VALUES (3548, 'Wenk', 'Richard', NULL, 'Richard Wenk', 'Screenwriter');  -- Screenwriter: Richard Wenk
+INSERT INTO filth.crew_person VALUES (3549, 'Herskovitz', 'Marshall', NULL, 'Marshall Herskovitz', 'Screenwriter');  -- Screenwriter: Marshall Herskovitz
+INSERT INTO filth.crew_person VALUES (3550, 'Smulders', 'Cobie', NULL, 'Cobie Smulders', 'Actress');  -- Actress: Cobie Smulders
+INSERT INTO filth.crew_person VALUES (3551, 'Yarosh', 'Danika', NULL, 'Danika Yarosh', 'Actress');  -- Actress: Danika Yarosh
+INSERT INTO filth.crew_person VALUES (3552, 'McCallany', 'Holt', NULL, 'Holt McCallany', 'Actor');  -- Actor: Holt McCallany
+INSERT INTO filth.crew_person VALUES (3553, 'Wood', 'Oliver', NULL, 'Oliver Wood', 'Cinematographer');  -- Cinematographer: Oliver Wood
