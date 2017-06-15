@@ -564,7 +564,7 @@ Five documentaries:
 *   An Education
 *   The Hurt Locker
 *   Inglorious Basterds
-    Knowing
+*   Knowing
 *   Precious
 *   A Serious Man
 *   Up in the Air

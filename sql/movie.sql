@@ -4003,7 +4003,7 @@ INSERT INTO filth.movie VALUES (4001, 'The Fall', 2008, '***½', 'PG-13', 'USA',
 INSERT INTO filth.movie VALUES (4002, 'Shotgun Stories', 2008, 'not seen', 'PG-13', 'USA', NULL, 'tt0952682', NULL, 12247, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (4003, 'Synecdoche, New York', 2008, 'not seen', 'R', 'USA', NULL, 'tt0383028', NULL, 4960, NULL, NULL, 124);
 INSERT INTO filth.movie VALUES (4004, 'Bad Lieutenant: Port of Call New Orleans', 2009, 'not seen', 'R', 'USA', NULL, 'tt1095217', NULL, 11699, NULL, 148, 122);
-INSERT INTO filth.movie VALUES (4005, 'Knowing', 2009, 'not seen', 'PG-13', 'USA', NULL, 'tt0448011', NULL, 13811, NULL, NULL, 121);
+INSERT INTO filth.movie VALUES (4005, 'Knowing', 2009, '***', 'PG-13', 'USA', NULL, 'tt0448011', NULL, 13811, NULL, NULL, 121);
 INSERT INTO filth.movie VALUES (4006, 'Disgrace', 2009, 'not seen', 'R', 'Australia', NULL, 'tt0445953', NULL, 12411, NULL, NULL, 120);
 INSERT INTO filth.movie VALUES (4007, 'Everlasting Moments', 2008, 'not seen', 'NR', 'Sweden', NULL, 'tt0961066', NULL, 17077, NULL, NULL, 131);
 INSERT INTO filth.movie VALUES (4008, 'Silent Light', 2007, 'not seen', 'NR', 'Mexico', NULL, 'tt0841925', NULL, 2012, NULL, NULL, 142);

@@ -18859,3 +18859,8 @@ INSERT INTO filth.tag_given_to VALUES(4244, 137);  -- The Double (2011) tagged w
 INSERT INTO filth.tag_given_to VALUES(4244, 135);  -- The Double (2011) tagged with 'fbi'
 INSERT INTO filth.tag_given_to VALUES(4244, 136);  -- The Double (2011) tagged with 'government-agency'
 INSERT INTO filth.tag_given_to VALUES(4244, 133);  -- The Double (2011) tagged with 'law-enforcement'
+INSERT INTO filth.tag_given_to VALUES(4005, 1);  -- Knowing (2009) tagged with 'drama'
+INSERT INTO filth.tag_given_to VALUES(4005, 8);  -- Knowing (2009) tagged with 'mystery'
+INSERT INTO filth.tag_given_to VALUES(4005, 6);  -- Knowing (2009) tagged with 'science-fiction'
+INSERT INTO filth.tag_given_to VALUES(4005, 379);  -- Knowing (2009) tagged with 'father-son'
+INSERT INTO filth.tag_given_to VALUES(4005, 56);  -- Knowing (2009) tagged with 'disaster'

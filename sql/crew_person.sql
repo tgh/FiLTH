@@ -3550,3 +3550,4 @@ INSERT INTO filth.crew_person VALUES (3552, 'McCallany', 'Holt', NULL, 'Holt McC
 INSERT INTO filth.crew_person VALUES (3553, 'Wood', 'Oliver', NULL, 'Oliver Wood', 'Cinematographer');  -- Cinematographer: Oliver Wood
 INSERT INTO filth.crew_person VALUES (3554, 'Brandt', 'Michael', NULL, 'Michael Brandt', 'Screenwriter');  -- Screenwriter: Michael Brandt
 INSERT INTO filth.crew_person VALUES (3555, 'Haas', 'Derek', NULL, 'Derek Haas', 'Screenwriter');  -- Screenwriter: Derek Haas
+INSERT INTO filth.crew_person VALUES (3556, 'Proyas', 'Alex', NULL, 'Alex Proyas', 'Director');  -- Director: Alex Proyas
