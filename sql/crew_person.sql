@@ -3548,3 +3548,5 @@ INSERT INTO filth.crew_person VALUES (3550, 'Smulders', 'Cobie', NULL, 'Cobie Sm
 INSERT INTO filth.crew_person VALUES (3551, 'Yarosh', 'Danika', NULL, 'Danika Yarosh', 'Actress');  -- Actress: Danika Yarosh
 INSERT INTO filth.crew_person VALUES (3552, 'McCallany', 'Holt', NULL, 'Holt McCallany', 'Actor');  -- Actor: Holt McCallany
 INSERT INTO filth.crew_person VALUES (3553, 'Wood', 'Oliver', NULL, 'Oliver Wood', 'Cinematographer');  -- Cinematographer: Oliver Wood
+INSERT INTO filth.crew_person VALUES (3554, 'Brandt', 'Michael', NULL, 'Michael Brandt', 'Screenwriter');  -- Screenwriter: Michael Brandt
+INSERT INTO filth.crew_person VALUES (3555, 'Haas', 'Derek', NULL, 'Derek Haas', 'Screenwriter');  -- Screenwriter: Derek Haas
