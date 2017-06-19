@@ -64,7 +64,7 @@ INSERT INTO filth.movie VALUES (59, 'Alien', 1979, '****', 'R', 'USA', NULL, 'tt
 INSERT INTO filth.movie VALUES (60, 'Alien: The Director''s Cut', 2003, '***½', 'R', 'USA', NULL, 'tt0078748', 1, 348, NULL, NULL, 117);
 INSERT INTO filth.movie VALUES (61, 'Alien Resurrection', 1998, '*½', 'R', 'USA', NULL, 'tt0118583', 1, 8078, NULL, NULL, 109);
 INSERT INTO filth.movie VALUES (62, 'Alien vs. Predator', 2004, '*½', 'R', 'USA', NULL, 'tt0370263', 1, 395, NULL, NULL, 101);
-INSERT INTO filth.movie VALUES (63, 'Aliens', 1986, '**½', 'R', 'USA', NULL, 'tt0090605', 0, 679, NULL, NULL, 137);
+INSERT INTO filth.movie VALUES (63, 'Aliens', 1986, '***', 'R', 'USA', 'Originally rated **½', 'tt0090605', 0, 679, NULL, NULL, 137);
 INSERT INTO filth.movie VALUES (64, 'Aliens of the Deep', 2005, '**½', 'G', 'USA', NULL, 'tt0417415', 0, 22559, NULL, NULL, 47);
 INSERT INTO filth.movie VALUES (65, 'Alive', 1993, '***', 'R', 'USA', NULL, 'tt0106246', 0, 7305, NULL, NULL, 120);
 INSERT INTO filth.movie VALUES (66, 'All About Eve', 1950, '****', 'NR', 'USA', NULL, 'tt0042192', 0, 705, NULL, NULL, 138);
@@ -708,7 +708,7 @@ INSERT INTO filth.movie VALUES (703, 'Hannibal', 2001, '**', 'R', 'USA', NULL, '
 INSERT INTO filth.movie VALUES (704, 'Hanna', 2011, '**½', 'PG-13', 'USA', NULL, 'tt0993842', 1, 50456, NULL, NULL, 111);
 INSERT INTO filth.movie VALUES (705, 'Hannah and Her Sisters', 1986, '****', 'PG-13', 'USA', NULL, 'tt0091167', 0, 5143, NULL, NULL, 107);
 INSERT INTO filth.movie VALUES (706, 'Hannah Montana: The Movie', 2009, '**½', 'G', 'USA', NULL, 'tt1114677', 0, 18126, NULL, NULL, 102);
-INSERT INTO filth.movie VALUES (707, 'The Happening', 2008, '**½', 'R', 'USA', NULL, 'tt0949731', 1, 8645, NULL, NULL, 91);
+INSERT INTO filth.movie VALUES (707, 'The Happening', 2008, '**½', 'R', 'USA', 'Originally rated ***', 'tt0949731', 1, 8645, NULL, NULL, 91);
 INSERT INTO filth.movie VALUES (708, 'Happiness', 1998, '*', 'NR', 'USA', NULL, 'tt0147612', 0, 10683, NULL, NULL, 139);
 INSERT INTO filth.movie VALUES (709, 'Happy Accidents', 2001, '***', 'R', 'USA', NULL, 'tt0208196', 0, 22230, NULL, NULL, 110);
 INSERT INTO filth.movie VALUES (710, 'Happy Gilmore', 1996, '**½', 'PG-13', 'USA', NULL, 'tt0116483', 0, 9614, NULL, NULL, 92);
@@ -1538,7 +1538,7 @@ INSERT INTO filth.movie VALUES (1533, 'Spider', 2003, '***', 'R', NULL, NULL, 't
 INSERT INTO filth.movie VALUES (1534, 'Spider-Man', 2002, '**½', 'PG-13', 'USA', NULL, 'tt0145487', 1, 557, NULL, NULL, 121);
 INSERT INTO filth.movie VALUES (1535, 'Spider-Man 2', 2004, '**½', 'PG-13', 'USA', NULL, 'tt0316654', 1, 558, NULL, NULL, 127);
 INSERT INTO filth.movie VALUES (1536, 'Spiral', 2007, '***', 'PG-13', 'USA', NULL, 'tt0491162', 0, 18467, NULL, NULL, 90);
-INSERT INTO filth.movie VALUES (1537, 'Spirited Away', 2002, '***½', 'PG', 'Japan', NULL, 'tt0245429', 1, 129, NULL, NULL, 125);
+INSERT INTO filth.movie VALUES (1537, 'Spirited Away', 2002, '***½', 'PG', 'Japan', 'Originally rated ****', 'tt0245429', 1, 129, NULL, NULL, 125);
 INSERT INTO filth.movie VALUES (1538, 'Spy Game', 2001, '***', 'R', 'USA', NULL, 'tt0266987', 2, 1535, NULL, NULL, 126);
 INSERT INTO filth.movie VALUES (1539, 'Stagecoach', 1939, '***½', 'NR', 'USA', NULL, 'tt0031971', 0, 995, NULL, NULL, 96);
 INSERT INTO filth.movie VALUES (1540, 'Stalker', 1979, '***', 'NR', 'USSR', NULL, 'tt0079944', 0, 1398, NULL, NULL, 163);
@@ -4238,3 +4238,5 @@ INSERT INTO filth.movie VALUES (4241, 'Fantastic Beasts and Where to Find Them',
 INSERT INTO filth.movie VALUES (4242, 'The Amazing Spider-Man 2', 2014, '*', 'PG-13', 'USA', NULL, 'tt1872181', 0, 102382, NULL, NULL, 142);
 INSERT INTO filth.movie VALUES (4243, 'Jack Reacher: Never Go Back', 2016, '**½', 'PG-13', 'USA', NULL, 'tt3393786', 0, 343611, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4244, 'The Double', 2011, '**½', 'PG-13', 'USA', NULL, 'tt1646980', 0, 73499, NULL, NULL, 98);
+INSERT INTO filth.movie VALUES (4245, 'Alien: Covenant', 2017, '**½', 'R', 'USA', NULL, 'tt2316204', 1, 126889, NULL, NULL, 122);
+INSERT INTO filth.movie VALUES (4246, 'Wonder Woman', 2017, '**½', 'PG-13', 'USA', NULL, 'tt0451279', 1, 297762, NULL, NULL, 141);
