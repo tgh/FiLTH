@@ -3555,3 +3555,5 @@ INSERT INTO filth.crew_person VALUES (3557, 'Harper', 'Dante', NULL, 'Dante Harp
 INSERT INTO filth.crew_person VALUES (3558, 'Biehn', 'Michael', NULL, 'Michael Biehn', 'Actor');  -- Actor: Michael Biehn
 INSERT INTO filth.crew_person VALUES (3559, 'Gadot', 'Gal', NULL, 'Gal Gadot', 'Actress');  -- Actress: Gal Gadot
 INSERT INTO filth.crew_person VALUES (3560, 'Nielsen', 'Connie', NULL, 'Connie Nielsen', 'Actress');  -- Actress: Connie Nielsen
+INSERT INTO filth.crew_person VALUES (3561, 'Kurtzman', 'Alex', NULL, 'Alex Kurtzman', 'Producer');  -- Producer: Alex Kurtzman
+INSERT INTO filth.crew_person VALUES (3562, 'Orci', 'Roberto', NULL, 'Roberto Orci', 'Producer');  -- Producer: Roberto Orci
