@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 
 import re
+from os import getenv
+
+FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 
 if __name__ == '__main__':
-    f = open('/home/thayes/workspace/FiLTH/data/siskel_and_roeper_top_tens.txt', 'r')
+    f = open(FILTH_PATH + '/data/siskel_and_roeper_top_tens.txt', 'r')
     lines = map(str.strip, f.readlines())
     f.close()
 

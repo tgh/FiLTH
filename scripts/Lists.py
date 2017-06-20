@@ -97,7 +97,7 @@ class Lists(object):
 
         highestLcid = 0
         for line in lines:
-            lcid = int(re.search('VALUES *\\(([0-9]+),', lastline).group(1))
+            lcid = int(re.search('VALUES *\\(([0-9]+),', line).group(1))
             if lcid > highestLcid:
                 highestLcid = lcid
                 

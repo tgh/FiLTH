@@ -2142,3 +2142,13 @@ INSERT INTO filth.list_contains VALUES (2141, 4021, 140, 7, NULL); -- "Tangled" 
 INSERT INTO filth.list_contains VALUES (2142, 4203, 140, 8, NULL); -- "Legend of the Guardians: The Owls of Ga'Hoole" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
 INSERT INTO filth.list_contains VALUES (2143, 1676, 140, 9, NULL); -- "True Grit" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
 INSERT INTO filth.list_contains VALUES (2144, 4204, 140, 10, NULL); -- "Kick-Ass" in list "Top 10 BEST Movies 2010" by Jeremy Jahns
+INSERT INTO filth.list_contains VALUES (2148, 4179, 140, 1, NULL); -- "Manchester by the Sea" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2149, 4170, 140, 2, NULL); -- "Hell or High Water" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2150, 4176, 140, 3, NULL); -- "Moonlight" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2151, 4172, 140, 4, NULL); -- "La La Land" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2152, 4157, 140, 5, NULL); -- "Sully" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2153, 4248, 140, 6, NULL); -- "Lights Out" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2154, 4025, 140, 7, NULL); -- "Zootopia" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2155, 4249, 140, 8, NULL); -- "The Infiltrator" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2156, 4173, 140, 9, NULL); -- "Silence" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2157, 4181, 140, 10, NULL); -- "Arrival" in list "Top Ten Movies of 2016" by Richard Roeper
