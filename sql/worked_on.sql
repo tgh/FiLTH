@@ -2434,7 +2434,7 @@ INSERT INTO filth.worked_on VALUES(2433, 2445, 1317, 'Cinematographer');  -- Vil
 INSERT INTO filth.worked_on VALUES(2434, 1222, 1333, 'Cinematographer');  -- David Watkin worked on Out of Africa as Cinematographer
 INSERT INTO filth.worked_on VALUES(2435, 1788, 1334, 'Cinematographer');  -- John Seale worked on Witness as Cinematographer
 INSERT INTO filth.worked_on VALUES(2436, 1334, 1335, 'Cinematographer');  -- Takao Saito worked on Ran as Cinematographer
-INSERT INTO filth.worked_on VALUES(2437, 1334, 1336, 'Cinematographer');  -- Masaharu Ueda worked on Ran as Cinematographer
+INSERT INTO filth.worked_on VALUES(2437, 1334, 1336, 'Cinematographer');  -- Shoji Ueda worked on Ran as Cinematographer
 INSERT INTO filth.worked_on VALUES(2438, 1334, 1337, 'Cinematographer');  -- Asakazu Nakai worked on Ran as Cinematographer
 INSERT INTO filth.worked_on VALUES(2439, 2223, 1316, 'Cinematographer');  -- William Fraker worked on Murphy's Romance as Cinematographer
 INSERT INTO filth.worked_on VALUES(2440, 357, 1327, 'Cinematographer');  -- Allen Daviau worked on The Color Purple as Cinematographer
@@ -8158,3 +8158,9 @@ INSERT INTO filth.worked_on VALUES(8158, 4247, 2214, 'Small Part');  -- Eddie Ma
 INSERT INTO filth.worked_on VALUES(8159, 4247, 126, 'Supporting Actor');  -- Laurence Fishburne for Mission: Impossible III (2006)
 INSERT INTO filth.worked_on VALUES(8160, 4247, 3362, 'Small Part');  -- Aaron Paul for Mission: Impossible III (2006)
 INSERT INTO filth.worked_on VALUES(8161, 4247, 3544, 'Cinematographer');  -- Dan Mindel for Mission: Impossible III (2006)
+INSERT INTO filth.worked_on VALUES(8162, 2970, 310, 'Director');  -- Akira Kurosawa for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8163, 2970, 310, 'Screenwriter');  -- Akira Kurosawa for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8164, 2970, 3563, 'Screenwriter');  -- Masato Ide for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8165, 2970, 3564, 'Lead Actor');  -- Tatsuya Nakadai for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8166, 2970, 1335, 'Cinematographer');  -- Takao Saito for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8167, 2970, 1336, 'Cinematographer');  -- Shoji Ueda for Kagemusha (1980)

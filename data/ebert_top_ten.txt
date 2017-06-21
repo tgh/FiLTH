@@ -157,7 +157,7 @@
 1980
   01. The Black Stallion (Carroll Ballard)
 * 02. Raging Bull (Martin Scorsese)
-  03. Kagemusha (Akira Kurosawa)
+* 03. Kagemusha (Akira Kurosawa)
 * 04. Being There (Hal Ashby)
 * 05. Ordinary People (Robert Redford)
   06. The Great Santini (Lewis John Carlino)
@@ -197,7 +197,7 @@
   03. The Year of Living Dangerously (Peter Weir)
 * 04. Fanny and Alexander (Ingmar Bergman)
 * 05. Gandhi (Richard Attenborough)
-  06. El Norte (Gregory Nava)
+* 06. El Norte (Gregory Nava)
   07. Testament (Lynne Littman)
 * 08. Silkwood (Mike Nicols)
   09. Say Amen, Somebody (George T. Nierenberg)

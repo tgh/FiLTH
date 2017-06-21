@@ -1333,7 +1333,7 @@ INSERT INTO filth.crew_person VALUES (1332, 'Day', 'Ernest', NULL, 'Ernest Day',
 INSERT INTO filth.crew_person VALUES (1333, 'Watkin', 'David', NULL, 'David Watkin', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1334, 'Seale', 'John', NULL, 'John Seale', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1335, 'Saito', 'Takao', NULL, 'Takao Saito', 'Cinematographer');  -- Cinematographer
-INSERT INTO filth.crew_person VALUES (1336, 'Ueda', 'Masaharu', NULL, 'Masaharu Ueda', 'Cinematographer');  -- Cinematographer
+INSERT INTO filth.crew_person VALUES (1336, 'Ueda', 'Shoji', NULL, 'Shoji Ueda', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1337, 'Nakai', 'Asakazu', NULL, 'Asakazu Nakai', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1338, 'Pierce-Roberts', 'Tony', NULL, 'Tony Pierce-Roberts', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1339, 'Cronenweth', 'Jordan', NULL, 'Jordan Cronenweth', 'Cinematographer');  -- Cinematographer
@@ -3557,3 +3557,5 @@ INSERT INTO filth.crew_person VALUES (3559, 'Gadot', 'Gal', NULL, 'Gal Gadot', '
 INSERT INTO filth.crew_person VALUES (3560, 'Nielsen', 'Connie', NULL, 'Connie Nielsen', 'Actress');  -- Actress: Connie Nielsen
 INSERT INTO filth.crew_person VALUES (3561, 'Kurtzman', 'Alex', NULL, 'Alex Kurtzman', 'Producer');  -- Producer: Alex Kurtzman
 INSERT INTO filth.crew_person VALUES (3562, 'Orci', 'Roberto', NULL, 'Roberto Orci', 'Producer');  -- Producer: Roberto Orci
+INSERT INTO filth.crew_person VALUES (3563, 'Ide', 'Masato', NULL, 'Masato Ide', 'Screenwriter');  -- Screenwriter: Masato Ide
+INSERT INTO filth.crew_person VALUES (3564, 'Nakadai', 'Tatsuya', NULL, 'Tatsuya Nakadai', 'Actor');  -- Actor: Tatsuya Nakadai

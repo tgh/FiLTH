@@ -2971,7 +2971,7 @@ INSERT INTO filth.movie VALUES (2966, 'Mama Turns 100', 1979, 'not seen', 'NR', 
 INSERT INTO filth.movie VALUES (2967, 'The Maids of Wilko', 1979, 'not seen', 'NR', 'Poland', NULL, 'tt0079696', NULL, 117483, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (2968, 'To Forget Venice', 1979, 'not seen', 'NR', 'Italy', NULL, 'tt0079054', NULL, 75748, NULL, NULL, 0);
 INSERT INTO filth.movie VALUES (2969, 'The Tin Drum', 1979, 'not seen', 'R', 'Germany', NULL, 'tt0078875', NULL, 659, NULL, NULL, 142);
-INSERT INTO filth.movie VALUES (2970, 'Kagemusha', 1980, 'not seen', 'PG', 'Japan', NULL, 'tt0080979', NULL, 11953, NULL, NULL, 180);
+INSERT INTO filth.movie VALUES (2970, 'Kagemusha', 1980, '***', 'PG', 'Japan', NULL, 'tt0080979', NULL, 11953, NULL, NULL, 180);
 INSERT INTO filth.movie VALUES (2971, 'The Nest', 1980, 'not seen', 'PG', 'Spain', NULL, 'tt0079625', NULL, 136676, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (2972, 'Confidence', 1980, 'not seen', 'NR', 'Hungary', NULL, 'tt0078868', NULL, 49139, NULL, NULL, 105);
 INSERT INTO filth.movie VALUES (2973, 'Moscow Does Not Believe in Tears', 1980, 'not seen', 'NR', 'USSR', NULL, 'tt0079579', NULL, 21028, NULL, NULL, 142);
