@@ -8164,3 +8164,7 @@ INSERT INTO filth.worked_on VALUES(8164, 2970, 3563, 'Screenwriter');  -- Masato
 INSERT INTO filth.worked_on VALUES(8165, 2970, 3564, 'Lead Actor');  -- Tatsuya Nakadai for Kagemusha (1980)
 INSERT INTO filth.worked_on VALUES(8166, 2970, 1335, 'Cinematographer');  -- Takao Saito for Kagemusha (1980)
 INSERT INTO filth.worked_on VALUES(8167, 2970, 1336, 'Cinematographer');  -- Shoji Ueda for Kagemusha (1980)
+INSERT INTO filth.worked_on VALUES(8168, 4221, 3565, 'Director');  -- Raoul Peck for I Am Not Your Negro (2016)
+INSERT INTO filth.worked_on VALUES(8169, 4221, 3565, 'Screenwriter');  -- Raoul Peck for I Am Not Your Negro (2016)
+INSERT INTO filth.worked_on VALUES(8170, 4221, 3566, 'Screenwriter');  -- James Baldwim for I Am Not Your Negro (2016)
+INSERT INTO filth.worked_on VALUES(8171, 4221, 54, 'Narrator');  -- Samuel L. Jackson for I Am Not Your Negro (2016)

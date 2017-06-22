@@ -3559,3 +3559,5 @@ INSERT INTO filth.crew_person VALUES (3561, 'Kurtzman', 'Alex', NULL, 'Alex Kurt
 INSERT INTO filth.crew_person VALUES (3562, 'Orci', 'Roberto', NULL, 'Roberto Orci', 'Producer');  -- Producer: Roberto Orci
 INSERT INTO filth.crew_person VALUES (3563, 'Ide', 'Masato', NULL, 'Masato Ide', 'Screenwriter');  -- Screenwriter: Masato Ide
 INSERT INTO filth.crew_person VALUES (3564, 'Nakadai', 'Tatsuya', NULL, 'Tatsuya Nakadai', 'Actor');  -- Actor: Tatsuya Nakadai
+INSERT INTO filth.crew_person VALUES (3565, 'Peck', 'Raoul', NULL, 'Raoul Peck', 'Director');  -- Director: Raoul Peck
+INSERT INTO filth.crew_person VALUES (3566, 'Baldwim', 'James', NULL, 'James Baldwim', 'Screenwriter');  -- Screenwriter: James Baldwim
