@@ -4244,3 +4244,4 @@ INSERT INTO filth.movie VALUES (4247, 'Mission: Impossible III', 2006, '***', 'P
 INSERT INTO filth.movie VALUES (4248, 'Lights Out', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt4786282', NULL, 345911, NULL, NULL, 81);
 INSERT INTO filth.movie VALUES (4249, 'The Infiltrator', 2016, 'not seen', 'R', 'England', NULL, 'tt1355631', NULL, 325789, NULL, NULL, 127);
 INSERT INTO filth.movie VALUES (4250, 'My Life as a Zucchini', 2016, '***', 'PG-13', 'Switzerland', NULL, 'tt2321405', 0, 393559, NULL, NULL, 70);
+INSERT INTO filth.movie VALUES (4251, 'X-Men Origins: Wolverine', 2009, '*½', 'PG-13', 'USA', NULL, 'tt0458525', 0, 2080, NULL, NULL, 107);

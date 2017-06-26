@@ -1368,7 +1368,7 @@ INSERT INTO filth.crew_person VALUES (1367, 'Koltai', 'Lajos', NULL, 'Lajos Kolt
 INSERT INTO filth.crew_person VALUES (1368, 'Pau', 'Peter', NULL, 'Peter Pau', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1369, 'Mathieson', 'John', NULL, 'John Mathieson', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1370, 'Lesnie', 'Andrew', NULL, 'Andrew Lesnie', 'Cinematographer');  -- Cinematographer
-INSERT INTO filth.crew_person VALUES (1371, 'McAlpine', 'Donald', 'M.', 'Donald M. McAlpine', 'Cinematographer');  -- Cinematographer
+INSERT INTO filth.crew_person VALUES (1371, 'McAlpine', 'Donald', NULL, 'Donald McAlpine', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1372, 'Delbonnel', 'Bruno', NULL, 'Bruno Delbonnel', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1373, 'Idziak', 'Slawomir', NULL, 'Slawomir Idziak', 'Cinematographer');  -- Cinematographer
 INSERT INTO filth.crew_person VALUES (1374, 'Beebe', 'Dion', NULL, 'Dion Beebe', 'Cinematographer');  -- Cinematographer
@@ -3564,3 +3564,7 @@ INSERT INTO filth.crew_person VALUES (3566, 'Baldwim', 'James', NULL, 'James Bal
 INSERT INTO filth.crew_person VALUES (3567, 'Barras', 'Claude', NULL, 'Claude Barras', 'Director');  -- Director: Claude Barras
 INSERT INTO filth.crew_person VALUES (3568, 'Perabo', 'Piper', NULL, 'Piper Perabo', 'Actress');  -- Actress: Piper Perabo
 INSERT INTO filth.crew_person VALUES (3569, 'Bowie', 'David', NULL, 'David Bowie', 'Actor');  -- Actor: David Bowie
+INSERT INTO filth.crew_person VALUES (3570, 'Hood', 'Gavin', NULL, 'Gavin Hood', 'Director');  -- Director: Gavin Hood
+INSERT INTO filth.crew_person VALUES (3571, 'Woods', 'Skip', NULL, 'Skip Woods', 'Screenwriter');  -- Screenwriter: Skip Woods
+INSERT INTO filth.crew_person VALUES (3572, 'Durand', 'Kevin', NULL, 'Kevin Durand', 'Actor');  -- Actor: Kevin Durand
+INSERT INTO filth.crew_person VALUES (3573, 'Monaghan', 'Dominic', NULL, 'Dominic Monaghan', 'Actor');  -- Actor: Dominic Monaghan
