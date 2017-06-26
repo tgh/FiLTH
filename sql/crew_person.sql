@@ -3561,3 +3561,6 @@ INSERT INTO filth.crew_person VALUES (3563, 'Ide', 'Masato', NULL, 'Masato Ide',
 INSERT INTO filth.crew_person VALUES (3564, 'Nakadai', 'Tatsuya', NULL, 'Tatsuya Nakadai', 'Actor');  -- Actor: Tatsuya Nakadai
 INSERT INTO filth.crew_person VALUES (3565, 'Peck', 'Raoul', NULL, 'Raoul Peck', 'Director');  -- Director: Raoul Peck
 INSERT INTO filth.crew_person VALUES (3566, 'Baldwim', 'James', NULL, 'James Baldwim', 'Screenwriter');  -- Screenwriter: James Baldwim
+INSERT INTO filth.crew_person VALUES (3567, 'Barras', 'Claude', NULL, 'Claude Barras', 'Director');  -- Director: Claude Barras
+INSERT INTO filth.crew_person VALUES (3568, 'Perabo', 'Piper', NULL, 'Piper Perabo', 'Actress');  -- Actress: Piper Perabo
+INSERT INTO filth.crew_person VALUES (3569, 'Bowie', 'David', NULL, 'David Bowie', 'Actor');  -- Actor: David Bowie
