@@ -3568,3 +3568,6 @@ INSERT INTO filth.crew_person VALUES (3570, 'Hood', 'Gavin', NULL, 'Gavin Hood',
 INSERT INTO filth.crew_person VALUES (3571, 'Woods', 'Skip', NULL, 'Skip Woods', 'Screenwriter');  -- Screenwriter: Skip Woods
 INSERT INTO filth.crew_person VALUES (3572, 'Durand', 'Kevin', NULL, 'Kevin Durand', 'Actor');  -- Actor: Kevin Durand
 INSERT INTO filth.crew_person VALUES (3573, 'Monaghan', 'Dominic', NULL, 'Dominic Monaghan', 'Actor');  -- Actor: Dominic Monaghan
+INSERT INTO filth.crew_person VALUES (3574, 'Beacham', 'Travis', NULL, 'Travis Beacham', 'Screenwriter');  -- Screenwriter: Travis Beacham
+INSERT INTO filth.crew_person VALUES (3575, 'Hunnam', 'Charlie', NULL, 'Charlie Hunnam', 'Actor');  -- Actor: Charlie Hunnam
+INSERT INTO filth.crew_person VALUES (3576, 'Day', 'Charlie', NULL, 'Charlie Day', 'Actor');  -- Actor: Charlie Day

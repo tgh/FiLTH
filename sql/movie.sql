@@ -4194,7 +4194,7 @@ INSERT INTO filth.movie VALUES (4195, 'The Edge of Seventeen', 2016, 'not seen',
 INSERT INTO filth.movie VALUES (4196, 'Moana', 2016, '***', 'PG', 'USA', NULL, 'tt3521164', NULL, 277834, NULL, NULL, 107);
 INSERT INTO filth.movie VALUES (4197, 'Kingsman: The Secret Service', 2015, 'not seen', 'R', 'England', NULL, 'tt2802144', NULL, 207703, NULL, NULL, 130);
 INSERT INTO filth.movie VALUES (4198, 'Rush', 2013, 'not seen', 'R', 'USA', NULL, 'tt1979320', NULL, 96721, NULL, NULL, 123);
-INSERT INTO filth.movie VALUES (4199, 'Pacific Rim', 2013, 'not seen', 'PG-13', 'USA', NULL, 'tt1663662', NULL, 68726, NULL, NULL, 131);
+INSERT INTO filth.movie VALUES (4199, 'Pacific Rim', 2013, '*', 'PG-13', 'USA', 'The special effects were top-notch, but everything else...', 'tt1663662', NULL, 68726, NULL, NULL, 131);
 INSERT INTO filth.movie VALUES (4200, 'Bad Grandpa', 2013, 'not seen', 'R', 'USA', NULL, 'tt3063516', NULL, 208134, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (4201, 'The Cabin in the Woods', 2012, 'not seen', 'R', 'USA', NULL, 'tt1259521', NULL, 22970, NULL, NULL, 95);
 INSERT INTO filth.movie VALUES (4202, 'Scott Pilgrim vs. the World', 2010, '***½', 'PG-13', 'USA', NULL, 'tt0446029', NULL, 22538, NULL, NULL, 112);
