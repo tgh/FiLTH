@@ -4187,7 +4187,7 @@ INSERT INTO filth.movie VALUES (4188, 'The Guest', 2014, 'not seen', 'R', 'USA',
 INSERT INTO filth.movie VALUES (4189, 'Don Jon', 2013, 'not seen', 'R', 'USA', NULL, 'tt2229499', NULL, 138697, NULL, NULL, 90);
 INSERT INTO filth.movie VALUES (4190, 'Seven Psychopaths', 2012, 'not seen', 'R', 'England', NULL, 'tt1931533', NULL, 86838, NULL, NULL, 110);
 INSERT INTO filth.movie VALUES (4191, 'The Perks of Being a Wallflower', 2012, 'not seen', 'PG-13', 'USA', NULL, 'tt1659337', NULL, 84892, NULL, NULL, 102);
-INSERT INTO filth.movie VALUES (4192, 'Deepwater Horizon', 2016, 'not seen', 'PG-13', 'USA', NULL, 'tt1860357', NULL, 296524, NULL, NULL, 107);
+INSERT INTO filth.movie VALUES (4192, 'Deepwater Horizon', 2016, '***½', 'PG-13', 'USA', NULL, 'tt1860357', NULL, 296524, NULL, NULL, 107);
 INSERT INTO filth.movie VALUES (4193, 'Patriots Day', 2016, '***½', 'R', 'USA', NULL, 'tt4572514', NULL, 388399, NULL, NULL, 130);
 INSERT INTO filth.movie VALUES (4194, 'Kubo and the Two Strings', 2016, '***', 'PG', 'USA', NULL, 'tt4302938', NULL, 313297, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (4195, 'The Edge of Seventeen', 2016, 'not seen', 'R', 'USA', NULL, 'tt1878870', NULL, 376660, NULL, NULL, 104);
@@ -4245,3 +4245,4 @@ INSERT INTO filth.movie VALUES (4248, 'Lights Out', 2016, 'not seen', 'PG-13', '
 INSERT INTO filth.movie VALUES (4249, 'The Infiltrator', 2016, 'not seen', 'R', 'England', NULL, 'tt1355631', NULL, 325789, NULL, NULL, 127);
 INSERT INTO filth.movie VALUES (4250, 'My Life as a Zucchini', 2016, '***', 'PG-13', 'Switzerland', NULL, 'tt2321405', 0, 393559, NULL, NULL, 70);
 INSERT INTO filth.movie VALUES (4251, 'X-Men Origins: Wolverine', 2009, '*½', 'PG-13', 'USA', NULL, 'tt0458525', 0, 2080, NULL, NULL, 107);
+INSERT INTO filth.movie VALUES (4252, 'Newsies', 1992, '***', 'PG', 'USA', NULL, 'tt0104990', 0, 15300, NULL, NULL, 121);

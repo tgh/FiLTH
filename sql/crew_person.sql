@@ -3571,3 +3571,10 @@ INSERT INTO filth.crew_person VALUES (3573, 'Monaghan', 'Dominic', NULL, 'Domini
 INSERT INTO filth.crew_person VALUES (3574, 'Beacham', 'Travis', NULL, 'Travis Beacham', 'Screenwriter');  -- Screenwriter: Travis Beacham
 INSERT INTO filth.crew_person VALUES (3575, 'Hunnam', 'Charlie', NULL, 'Charlie Hunnam', 'Actor');  -- Actor: Charlie Hunnam
 INSERT INTO filth.crew_person VALUES (3576, 'Day', 'Charlie', NULL, 'Charlie Day', 'Actor');  -- Actor: Charlie Day
+INSERT INTO filth.crew_person VALUES (3577, 'Carnahan', 'Matthew', 'Michael', 'Matthew Michael Carnahan', 'Screenwriter');  -- Screenwriter: Matthew Michael Carnahan
+INSERT INTO filth.crew_person VALUES (3578, 'Sand', 'Matthew', NULL, 'Matthew Sand', 'Screenwriter');  -- Screenwriter: Matthew Sand
+INSERT INTO filth.crew_person VALUES (3579, 'Rodriguez', 'Gina', NULL, 'Gina Rodriguez', 'Actress');  -- Actress: Gina Rodriguez
+INSERT INTO filth.crew_person VALUES (3580, 'Chediak', 'Enrique', NULL, 'Enrique Chediak', 'Cinematographer');  -- Cinematographer: Enrique Chediak
+INSERT INTO filth.crew_person VALUES (3581, 'Ortega', 'Kenny', NULL, 'Kenny Ortega', 'Director');  -- Director: Kenny Ortega
+INSERT INTO filth.crew_person VALUES (3582, 'Moscow', 'David', NULL, 'David Moscow', 'Actor');  -- Actor: David Moscow
+INSERT INTO filth.crew_person VALUES (3583, 'Casella', 'Max', NULL, 'Max Casella', 'Actor');  -- Actor: Max Casella
