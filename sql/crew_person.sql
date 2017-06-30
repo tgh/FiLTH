@@ -3578,3 +3578,4 @@ INSERT INTO filth.crew_person VALUES (3580, 'Chediak', 'Enrique', NULL, 'Enrique
 INSERT INTO filth.crew_person VALUES (3581, 'Ortega', 'Kenny', NULL, 'Kenny Ortega', 'Director');  -- Director: Kenny Ortega
 INSERT INTO filth.crew_person VALUES (3582, 'Moscow', 'David', NULL, 'David Moscow', 'Actor');  -- Actor: David Moscow
 INSERT INTO filth.crew_person VALUES (3583, 'Casella', 'Max', NULL, 'Max Casella', 'Actor');  -- Actor: Max Casella
+INSERT INTO filth.crew_person VALUES (3584, 'Phillips', 'Lou', 'Diamond', 'Lou Diamond Phillips', 'Actor');  -- Actor: Lou Diamond Phillips

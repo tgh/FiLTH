@@ -532,11 +532,11 @@ stars to during the year.
 2008 (no top 10, just the 20 best in alphabetical order)
   Ballast
   The Band's Visit
-  Che
+* Che
 * Chop Shop
 * The Dark Knight
 * Doubt
-  The Fall
+* The Fall
 * Frost/Nixon
 * Frozen River
 * Happy-Go-Lucky

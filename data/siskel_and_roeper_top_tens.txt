@@ -499,7 +499,7 @@ Richard Roeper
 * 22. WALL-E
   23. The Bank Job
 * 24. Tropic Thunder
-  25. Che
+* 25. Che
 
 2009
   01. Brothers

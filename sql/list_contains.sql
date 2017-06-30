@@ -526,11 +526,11 @@ INSERT INTO filth.list_contains VALUES (525, 837, 16, 8, NULL); -- "Iron Man" in
 INSERT INTO filth.list_contains VALUES (526, 1008, 16, 9, NULL); -- "Man on Wire" in list "Top Ten Movies of 2008" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (527, 513, 16, 9, NULL); -- "Encounters at the End of the World" in list "Top Ten Movies of 2008" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (528, 1501, 16, 10, NULL); -- "Slumdog Millionaire" in list "Top Ten Movies of 2008" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (529, 317, 16, 11, NULL); -- "Chicago 10" in list "Top Ten Movies of 2008" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (530, 232, 16, 12, NULL); -- "Body of Lies" in list "Top Ten Movies of 2008" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (531, 3426, 16, 13, NULL); -- "I.O.U.S.A." in list "Top Ten Movies of 2008" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (532, 3326, 16, 14, NULL); -- "Trouble the Water" in list "Top Ten Movies of 2008" by Tyler Hayes
-INSERT INTO filth.list_contains VALUES (533, 606, 16, 15, NULL); -- "Frozen River" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (529, 3999, 16, 11, NULL); -- "Che: Part One" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (530, 317, 16, 12, NULL); -- "Chicago 10" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (531, 232, 16, 13, NULL); -- "Body of Lies" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (532, 3538, 16, 14, NULL); -- "Food, Inc" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (533, 3426, 16, 15, NULL); -- "I.O.U.S.A." in list "Top Ten Movies of 2008" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (534, 1104, 17, 1, NULL); -- "Moon" in list "Top Ten Movies of 2009" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (535, 776, 17, 2, NULL); -- "The Hurt Locker" in list "Top Ten Movies of 2009" by Tyler Hayes
 INSERT INTO filth.list_contains VALUES (536, 550, 17, 3, NULL); -- "Fantastic Mr. Fox" in list "Top Ten Movies of 2009" by Tyler Hayes
@@ -2152,3 +2152,4 @@ INSERT INTO filth.list_contains VALUES (2154, 4025, 140, 7, NULL); -- "Zootopia"
 INSERT INTO filth.list_contains VALUES (2155, 4249, 140, 8, NULL); -- "The Infiltrator" in list "Top Ten Movies of 2016" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2156, 4173, 140, 9, NULL); -- "Silence" in list "Top Ten Movies of 2016" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2157, 4181, 140, 10, NULL); -- "Arrival" in list "Top Ten Movies of 2016" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2158, 4000, 16, 11, NULL); -- "Che: Part Two" in list "Top Ten Movies of 2008" by Tyler Hayes
