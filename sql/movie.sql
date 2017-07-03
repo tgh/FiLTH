@@ -4246,3 +4246,6 @@ INSERT INTO filth.movie VALUES (4249, 'The Infiltrator', 2016, 'not seen', 'R', 
 INSERT INTO filth.movie VALUES (4250, 'My Life as a Zucchini', 2016, '***', 'PG-13', 'Switzerland', NULL, 'tt2321405', 0, 393559, NULL, NULL, 70);
 INSERT INTO filth.movie VALUES (4251, 'X-Men Origins: Wolverine', 2009, '*½', 'PG-13', 'USA', NULL, 'tt0458525', 0, 2080, NULL, NULL, 107);
 INSERT INTO filth.movie VALUES (4252, 'Newsies', 1992, '***', 'PG', 'USA', NULL, 'tt0104990', 0, 15300, NULL, NULL, 121);
+INSERT INTO filth.movie VALUES (4253, 'Into the Inferno', 2016, '***', 'NR', DEFAULT, NULL, 'tt4846318', 0, 360029, NULL, NULL, 104);
+INSERT INTO filth.movie VALUES (4254, 'Life', 2017, '***', 'R', 'USA', NULL, 'tt5442430', 0, 395992, NULL, NULL, 104);
+INSERT INTO filth.movie VALUES (4255, 'Tom Petty and the Heartbreakers: Runnin'' Down a Dream', 2007, '***', 'NR', 'USA', NULL, 'tt0965382', 0, 31147, NULL, NULL, 239);

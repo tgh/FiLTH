@@ -3579,3 +3579,8 @@ INSERT INTO filth.crew_person VALUES (3581, 'Ortega', 'Kenny', NULL, 'Kenny Orte
 INSERT INTO filth.crew_person VALUES (3582, 'Moscow', 'David', NULL, 'David Moscow', 'Actor');  -- Actor: David Moscow
 INSERT INTO filth.crew_person VALUES (3583, 'Casella', 'Max', NULL, 'Max Casella', 'Actor');  -- Actor: Max Casella
 INSERT INTO filth.crew_person VALUES (3584, 'Phillips', 'Lou', 'Diamond', 'Lou Diamond Phillips', 'Actor');  -- Actor: Lou Diamond Phillips
+INSERT INTO filth.crew_person VALUES (3585, 'Zeitlinger', 'Peter', NULL, 'Peter Zeitlinger', 'Cinematographer');  -- Cinematographer: Peter Zeitlinger
+INSERT INTO filth.crew_person VALUES (3586, 'Espinosa', 'Daniel', NULL, 'Daniel Espinosa', 'Director');  -- Director: Daniel Espinosa
+INSERT INTO filth.crew_person VALUES (3587, 'Reese', 'Rhett', NULL, 'Rhett Reese', 'Screenwriter');  -- Screenwriter: Rhett Reese
+INSERT INTO filth.crew_person VALUES (3588, 'Wernick', 'Paul', NULL, 'Paul Wernick', 'Screenwriter');  -- Screenwriter: Paul Wernick
+INSERT INTO filth.crew_person VALUES (3589, 'Sanada', 'Hiroyuki', NULL, 'Hiroyuki Sanada', 'Actor');  -- Actor: Hiroyuki Sanada
