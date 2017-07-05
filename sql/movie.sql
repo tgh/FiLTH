@@ -825,7 +825,7 @@ INSERT INTO filth.movie VALUES (820, 'Innocence', 2001, '**½', 'R', 'Australia'
 INSERT INTO filth.movie VALUES (821, 'Inside Job', 2010, '***½', 'PG-13', 'USA', NULL, 'tt1645089', 0, 44639, NULL, NULL, 109);
 INSERT INTO filth.movie VALUES (822, 'Inside Man', 2006, '***', 'R', 'USA', NULL, 'tt0454848', 0, 388, NULL, NULL, 129);
 INSERT INTO filth.movie VALUES (823, 'The Insider', 1999, '***½', 'R', 'USA', NULL, 'tt0140352', 1, 9008, NULL, NULL, 157);
-INSERT INTO filth.movie VALUES (824, 'Insomnia', 2002, '***', 'R', 'USA', NULL, 'tt0278504', 1, 320, NULL, NULL, 118);
+INSERT INTO filth.movie VALUES (824, 'Insomnia', 2002, '***½', 'R', 'USA', 'Originally rated ***', 'tt0278504', 1, 320, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (825, 'Interiors', 1978, '****', 'PG', 'USA', NULL, 'tt0077742', 0, 15867, NULL, NULL, 93);
 INSERT INTO filth.movie VALUES (826, 'Interview with the Vampire', 1994, '*', 'R', 'USA', NULL, 'tt0110148', 0, 628, NULL, NULL, 123);
 INSERT INTO filth.movie VALUES (827, 'Intervista', 1987, '**½', 'NR', 'Italy', NULL, 'tt0093267', 0, 47715, NULL, NULL, 102);

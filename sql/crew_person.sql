@@ -3584,3 +3584,8 @@ INSERT INTO filth.crew_person VALUES (3586, 'Espinosa', 'Daniel', NULL, 'Daniel 
 INSERT INTO filth.crew_person VALUES (3587, 'Reese', 'Rhett', NULL, 'Rhett Reese', 'Screenwriter');  -- Screenwriter: Rhett Reese
 INSERT INTO filth.crew_person VALUES (3588, 'Wernick', 'Paul', NULL, 'Paul Wernick', 'Screenwriter');  -- Screenwriter: Paul Wernick
 INSERT INTO filth.crew_person VALUES (3589, 'Sanada', 'Hiroyuki', NULL, 'Hiroyuki Sanada', 'Actor');  -- Actor: Hiroyuki Sanada
+INSERT INTO filth.crew_person VALUES (3590, 'Griffin', 'Nicholas', NULL, 'Nicholas Griffin', 'Screenwriter');  -- Screenwriter: Nicholas Griffin
+INSERT INTO filth.crew_person VALUES (3591, 'Griffin', 'Ted', NULL, 'Ted Griffin', 'Screenwriter');  -- Screenwriter: Ted Griffin
+INSERT INTO filth.crew_person VALUES (3592, 'Seitz', 'Hillary', NULL, 'Hillary Seitz', 'Screenwriter');  -- Screenwriter: Hillary Seitz
+INSERT INTO filth.crew_person VALUES (3593, 'Donovan', 'Martin', NULL, 'Martin Donovan', 'Actor');  -- Actor: Martin Donovan
+INSERT INTO filth.crew_person VALUES (3594, 'Tierney', 'Maura', NULL, 'Maura Tierney', 'Actress');  -- Actress: Maura Tierney
