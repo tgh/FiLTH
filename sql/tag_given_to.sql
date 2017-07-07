@@ -19066,3 +19066,7 @@ INSERT INTO filth.tag_given_to VALUES(1036, 59);  -- Matchstick Men (2003) tagge
 INSERT INTO filth.tag_given_to VALUES(1036, 58);  -- Matchstick Men (2003) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(1036, 66);  -- Matchstick Men (2003) tagged with 'underrated'
 INSERT INTO filth.tag_given_to VALUES(824, 66);  -- Insomnia (2002) tagged with 'underrated'
+INSERT INTO filth.tag_given_to VALUES(4178, 7);  -- The Boy and the Beast (2015) tagged with 'animation'
+INSERT INTO filth.tag_given_to VALUES(4178, 5);  -- The Boy and the Beast (2015) tagged with 'fantasy'
+INSERT INTO filth.tag_given_to VALUES(4178, 339);  -- The Boy and the Beast (2015) tagged with 'orphan(s)/orphanage'
+INSERT INTO filth.tag_given_to VALUES(4178, 249);  -- The Boy and the Beast (2015) tagged with 'coming-of-age/childhood'

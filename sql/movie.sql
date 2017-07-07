@@ -4173,7 +4173,7 @@ INSERT INTO filth.movie VALUES (4174, 'Your Name', 2016, 'not seen', 'NR', 'Japa
 INSERT INTO filth.movie VALUES (4175, 'Deadpool', 2016, 'not seen', 'R', 'USA', NULL, 'tt1431045', NULL, 293660, NULL, NULL, 108);
 INSERT INTO filth.movie VALUES (4176, 'Moonlight', 2016, '**½', 'R', 'USA', NULL, 'tt4975722', NULL, 376867, NULL, NULL, 111);
 INSERT INTO filth.movie VALUES (4177, 'Hacksaw Ridge', 2016, '***½', 'R', 'USA', NULL, 'tt2119532', NULL, 324786, NULL, NULL, 140);
-INSERT INTO filth.movie VALUES (4178, 'The Boy and the Beast', 2015, 'not seen', 'PG-13', 'Japan', NULL, 'tt4272866', NULL, 315465, NULL, NULL, 119);
+INSERT INTO filth.movie VALUES (4178, 'The Boy and the Beast', 2015, '**½', 'PG-13', 'Japan', NULL, 'tt4272866', NULL, 315465, NULL, NULL, 119);
 INSERT INTO filth.movie VALUES (4179, 'Manchester by the Sea', 2016, '***½', 'R', 'USA', NULL, 'tt4034228', NULL, 334541, NULL, NULL, 135);
 INSERT INTO filth.movie VALUES (4180, 'Paterson', 2016, '***', 'R', 'USA', NULL, 'tt5247022', NULL, 370755, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4181, 'Arrival', 2016, '***', 'PG-13', 'USA', 'Despite this being very well made (solid acting, beautifully shot, well paced, great mood) the path the story went down didn''t quite work for me (what Amy Adams character learns how to do); although how it was revealed and tied in to the beginning was good and makes a second viewing a different experience.', 'tt2543164', NULL, 329865, NULL, NULL, 113);

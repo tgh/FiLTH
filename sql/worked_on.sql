@@ -8269,3 +8269,5 @@ INSERT INTO filth.worked_on VALUES(8269, 824, 3593, 'Supporting Actor');  -- Mar
 INSERT INTO filth.worked_on VALUES(8270, 824, 2748, 'Supporting Actor');  -- Nicky Katt for Insomnia (2002)
 INSERT INTO filth.worked_on VALUES(8271, 824, 3594, 'Supporting Actress');  -- Maura Tierney for Insomnia (2002)
 INSERT INTO filth.worked_on VALUES(8272, 824, 1382, 'Cinematographer');  -- Wally Pfister for Insomnia (2002)
+INSERT INTO filth.worked_on VALUES(8273, 4178, 3595, 'Director');  -- Mamoru Hosoda for The Boy and the Beast (2015)
+INSERT INTO filth.worked_on VALUES(8274, 4178, 3595, 'Screenwriter');  -- Mamoru Hosoda for The Boy and the Beast (2015)

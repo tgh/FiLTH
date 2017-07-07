@@ -3589,3 +3589,4 @@ INSERT INTO filth.crew_person VALUES (3591, 'Griffin', 'Ted', NULL, 'Ted Griffin
 INSERT INTO filth.crew_person VALUES (3592, 'Seitz', 'Hillary', NULL, 'Hillary Seitz', 'Screenwriter');  -- Screenwriter: Hillary Seitz
 INSERT INTO filth.crew_person VALUES (3593, 'Donovan', 'Martin', NULL, 'Martin Donovan', 'Actor');  -- Actor: Martin Donovan
 INSERT INTO filth.crew_person VALUES (3594, 'Tierney', 'Maura', NULL, 'Maura Tierney', 'Actress');  -- Actress: Maura Tierney
+INSERT INTO filth.crew_person VALUES (3595, 'Hosoda', 'Mamoru', NULL, 'Mamoru Hosoda', 'Director');  -- Director: Mamoru Hosoda
