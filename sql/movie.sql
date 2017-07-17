@@ -4249,3 +4249,4 @@ INSERT INTO filth.movie VALUES (4252, 'Newsies', 1992, '***', 'PG', 'USA', NULL,
 INSERT INTO filth.movie VALUES (4253, 'Into the Inferno', 2016, '***', 'NR', DEFAULT, NULL, 'tt4846318', 0, 360029, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4254, 'Life', 2017, '***', 'R', 'USA', NULL, 'tt5442430', 0, 395992, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4255, 'Tom Petty and the Heartbreakers: Runnin'' Down a Dream', 2007, '***', 'NR', 'USA', NULL, 'tt0965382', 0, 31147, NULL, NULL, 239);
+INSERT INTO filth.movie VALUES (4256, 'The Break-Up', 2006, '***', 'PG-13', 'USA', NULL, 'tt0452594', 0, 9767, NULL, NULL, 106);

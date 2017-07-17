@@ -3590,3 +3590,11 @@ INSERT INTO filth.crew_person VALUES (3592, 'Seitz', 'Hillary', NULL, 'Hillary S
 INSERT INTO filth.crew_person VALUES (3593, 'Donovan', 'Martin', NULL, 'Martin Donovan', 'Actor');  -- Actor: Martin Donovan
 INSERT INTO filth.crew_person VALUES (3594, 'Tierney', 'Maura', NULL, 'Maura Tierney', 'Actress');  -- Actress: Maura Tierney
 INSERT INTO filth.crew_person VALUES (3595, 'Hosoda', 'Mamoru', NULL, 'Mamoru Hosoda', 'Director');  -- Director: Mamoru Hosoda
+INSERT INTO filth.crew_person VALUES (3596, 'Gunton', 'Bob', NULL, 'Bob Gunton', 'Actor');  -- Actor: Bob Gunton
+INSERT INTO filth.crew_person VALUES (3597, 'Brown', 'Clancy', NULL, 'Clancy Brown', 'Actor');  -- Actor: Clancy Brown
+INSERT INTO filth.crew_person VALUES (3598, 'Rolston', 'Mark', NULL, 'Mark Rolston', 'Actor');  -- Actor: Mark Rolston
+INSERT INTO filth.crew_person VALUES (3599, 'Farina', 'Dennis', NULL, 'Dennis Farina', 'Actor');  -- Actor: Dennis Farina
+INSERT INTO filth.crew_person VALUES (3600, 'Boyle', 'Peter', NULL, 'Peter Boyle', 'Actor');  -- Actor: Peter Boyle
+INSERT INTO filth.crew_person VALUES (3601, 'Adams', 'Joey', 'Lauren', 'Joey Lauren Adams', 'Actress');  -- Actress: Joey Lauren Adams
+INSERT INTO filth.crew_person VALUES (3602, 'Higgins', 'John', 'Michael', 'John Michael Higgins', 'Actor');  -- Actor: John Michael Higgins
+INSERT INTO filth.crew_person VALUES (3603, 'Billingsley', 'Peter', NULL, 'Peter Billingsley', 'Actor');  -- Actor: Peter Billingsley
