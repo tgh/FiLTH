@@ -2153,3 +2153,51 @@ INSERT INTO filth.list_contains VALUES (2155, 4249, 140, 8, NULL); -- "The Infil
 INSERT INTO filth.list_contains VALUES (2156, 4173, 140, 9, NULL); -- "Silence" in list "Top Ten Movies of 2016" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2157, 4181, 140, 10, NULL); -- "Arrival" in list "Top Ten Movies of 2016" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2158, 4000, 16, 11, NULL); -- "Che: Part Two" in list "Top Ten Movies of 2008" by Tyler Hayes
+INSERT INTO filth.list_contains VALUES (2159, 87, 140, NULL, NULL); -- "American Psycho" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2160, 1054, 140, NULL, NULL); -- "Memento" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2161, 1694, 140, NULL, NULL); -- "Unbreakable" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2162, 389, 140, NULL, NULL); -- "Crouching Tiger, Hidden Dragon" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2163, 1537, 140, NULL, NULL); -- "Spirited Away" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2164, 4257, 140, NULL, NULL); -- "Donnie Darko" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2165, 1200, 140, NULL, NULL); -- "Ocean's Eleven" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2166, 1079, 140, NULL, NULL); -- "Minority Report" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2167, 1478, 140, NULL, NULL); -- "Signs" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2168, 1807, 140, NULL, NULL); -- "X2: X-Men United" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2169, 1271, 140, NULL, NULL); -- "Pirates of the Caribbean: The Curse of the Black Pearl" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2170, 923, 140, NULL, NULL); -- "The Last Samurai" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2171, 4258, 140, NULL, NULL); -- "Old Boy" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2172, 979, 140, NULL, NULL); -- "The Lord of the Rings: The Return of the King" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2173, 1535, 140, NULL, NULL); -- "Spider-Man 2" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2174, 354, 140, NULL, NULL); -- "Collateral" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2175, 812, 140, NULL, NULL); -- "The Incredibles" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2176, 1459, 140, NULL, NULL); -- "Shaun of the Dead" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2177, 748, 140, NULL, NULL); -- "A History of Violence" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2178, 4259, 140, NULL, NULL); -- "Kiss Kiss Bang Bang" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2179, 283, 140, NULL, NULL); -- "Cache" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2180, 3871, 140, NULL, NULL); -- "Casino Royale" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2181, 441, 140, NULL, NULL); -- "The Departed" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2182, 243, 140, NULL, NULL); -- "The Bourne Ultimatum" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2183, 1824, 140, NULL, NULL); -- "Zodiac" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2184, 1619, 140, NULL, NULL); -- "There Will Be Blood" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2185, 1185, 140, NULL, NULL); -- "No Country for Old Men" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2186, 4260, 140, NULL, NULL); -- "Trick 'r Treat" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2187, 404, 140, NULL, NULL); -- "The Dark Knight" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2188, 3350, 140, NULL, NULL); -- "Coraline" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2189, 4126, 140, NULL, NULL); -- "(500) Days of Summer" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2190, 818, 140, NULL, NULL); -- "Inglourious Basterds" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2191, 487, 140, NULL, NULL); -- "Drive" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2192, 3341, 140, NULL, NULL); -- "Mission: Impossible - Ghost Protocol" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2193, 3543, 140, NULL, NULL); -- "The Avengers" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2194, 3599, 140, NULL, NULL); -- "Snowpiercer" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2195, 3506, 140, NULL, NULL); -- "Prisoners" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2196, 3906, 140, NULL, NULL); -- "Captain America: Winter Soldier" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2197, 4185, 140, NULL, NULL); -- "Enemy" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2198, 4186, 140, NULL, NULL); -- "Under the Skin" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2199, 3529, 140, NULL, NULL); -- "Edge of Tomorrow" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2200, 4184, 140, NULL, NULL); -- "The Babadook" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2201, 3628, 140, NULL, NULL); -- "Birdman" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2202, 3620, 140, NULL, NULL); -- "Whiplash" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2203, 3879, 140, NULL, NULL); -- "When Marnie Was There" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2204, 3865, 140, NULL, NULL); -- "Mad Max: Fury Road" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2205, 3896, 140, NULL, NULL); -- "Creed" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2206, 3869, 140, NULL, NULL); -- "Star Wars: Episode VII – the Force Awakens" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann

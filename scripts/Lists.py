@@ -63,7 +63,7 @@ class Lists(object):
         self._log('_initLists', '>> Lists initialized <<')
         self._log('_initLists', 'Highest lid found: ' + str(highestLid))
 
-        return highestLid
+        return highestLid + 1
 
 
     #----------------------------------------------------------------------------

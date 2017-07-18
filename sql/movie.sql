@@ -4251,3 +4251,6 @@ INSERT INTO filth.movie VALUES (4254, 'Life', 2017, '***', 'R', 'USA', NULL, 'tt
 INSERT INTO filth.movie VALUES (4255, 'Tom Petty and the Heartbreakers: Runnin'' Down a Dream', 2007, '***', 'NR', 'USA', NULL, 'tt0965382', 0, 31147, NULL, NULL, 239);
 INSERT INTO filth.movie VALUES (4256, 'The Break-Up', 2006, '***', 'PG-13', 'USA', NULL, 'tt0452594', 0, 9767, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (4257, 'Donnie Darko', 2001, '***½', 'R', 'USA', NULL, 'tt0246578', 0, 141, NULL, NULL, 113);
+INSERT INTO filth.movie VALUES (4258, 'Old Boy', 2003, 'not seen', 'R', 'South Korea', NULL, 'tt0364569', NULL, 670, NULL, NULL, 120);
+INSERT INTO filth.movie VALUES (4259, 'Kiss Kiss Bang Bang', 2005, 'not seen', 'R', 'USA', NULL, 'tt0373469', NULL, 5236, NULL, NULL, 103);
+INSERT INTO filth.movie VALUES (4260, 'Trick ''r Treat', 2007, 'not seen', 'R', 'USA', NULL, 'tt0862856', NULL, 23202, NULL, NULL, 82);
