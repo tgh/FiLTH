@@ -4250,3 +4250,4 @@ INSERT INTO filth.movie VALUES (4253, 'Into the Inferno', 2016, '***', 'NR', DEF
 INSERT INTO filth.movie VALUES (4254, 'Life', 2017, '***', 'R', 'USA', NULL, 'tt5442430', 0, 395992, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4255, 'Tom Petty and the Heartbreakers: Runnin'' Down a Dream', 2007, '***', 'NR', 'USA', NULL, 'tt0965382', 0, 31147, NULL, NULL, 239);
 INSERT INTO filth.movie VALUES (4256, 'The Break-Up', 2006, '***', 'PG-13', 'USA', NULL, 'tt0452594', 0, 9767, NULL, NULL, 106);
+INSERT INTO filth.movie VALUES (4257, 'Donnie Darko', 2001, '***½', 'R', 'USA', NULL, 'tt0246578', 0, 141, NULL, NULL, 113);

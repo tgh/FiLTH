@@ -3598,3 +3598,7 @@ INSERT INTO filth.crew_person VALUES (3600, 'Boyle', 'Peter', NULL, 'Peter Boyle
 INSERT INTO filth.crew_person VALUES (3601, 'Adams', 'Joey', 'Lauren', 'Joey Lauren Adams', 'Actress');  -- Actress: Joey Lauren Adams
 INSERT INTO filth.crew_person VALUES (3602, 'Higgins', 'John', 'Michael', 'John Michael Higgins', 'Actor');  -- Actor: John Michael Higgins
 INSERT INTO filth.crew_person VALUES (3603, 'Billingsley', 'Peter', NULL, 'Peter Billingsley', 'Actor');  -- Actor: Peter Billingsley
+INSERT INTO filth.crew_person VALUES (3604, 'Kelly', 'Richard', NULL, 'Richard Kelly', 'Director');  -- Director: Richard Kelly
+INSERT INTO filth.crew_person VALUES (3605, 'Barrymore', 'Drew', NULL, 'Drew Barrymore', 'Actress');  -- Actress: Drew Barrymore
+INSERT INTO filth.crew_person VALUES (3606, 'Swayze', 'Patrick', NULL, 'Patrick Swayze', 'Actor');  -- Actor: Patrick Swayze
+INSERT INTO filth.crew_person VALUES (3607, 'Wyle', 'Noah', NULL, 'Noah Wyle', 'Actor');  -- Actor: Noah Wyle
