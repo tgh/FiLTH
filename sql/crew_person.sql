@@ -3602,3 +3602,8 @@ INSERT INTO filth.crew_person VALUES (3604, 'Kelly', 'Richard', NULL, 'Richard K
 INSERT INTO filth.crew_person VALUES (3605, 'Barrymore', 'Drew', NULL, 'Drew Barrymore', 'Actress');  -- Actress: Drew Barrymore
 INSERT INTO filth.crew_person VALUES (3606, 'Swayze', 'Patrick', NULL, 'Patrick Swayze', 'Actor');  -- Actor: Patrick Swayze
 INSERT INTO filth.crew_person VALUES (3607, 'Wyle', 'Noah', NULL, 'Noah Wyle', 'Actor');  -- Actor: Noah Wyle
+INSERT INTO filth.crew_person VALUES (3608, 'Whitehead', 'Fionn', NULL, 'Fionn Whitehead', 'Actor');  -- Actor: Fionn Whitehead
+INSERT INTO filth.crew_person VALUES (3609, 'Lowden', 'Jack', NULL, 'Jack Lowden', 'Actor');  -- Actor: Jack Lowden
+INSERT INTO filth.crew_person VALUES (3610, 'Keoghan', 'Barry', NULL, 'Barry Keoghan', 'Actor');  -- Actor: Barry Keoghan
+INSERT INTO filth.crew_person VALUES (3611, 'D''Arcy', 'James', NULL, 'James D''Arcy', 'Actor');  -- Actor: James D'Arcy
+INSERT INTO filth.crew_person VALUES (3612, 'Hoytema', 'Hoyte', 'Van', 'Hoyte Van Hoytema', 'Cinematographer');  -- Cinematographer: Hoyte Van Hoytema
