@@ -3607,3 +3607,6 @@ INSERT INTO filth.crew_person VALUES (3609, 'Lowden', 'Jack', NULL, 'Jack Lowden
 INSERT INTO filth.crew_person VALUES (3610, 'Keoghan', 'Barry', NULL, 'Barry Keoghan', 'Actor');  -- Actor: Barry Keoghan
 INSERT INTO filth.crew_person VALUES (3611, 'D''Arcy', 'James', NULL, 'James D''Arcy', 'Actor');  -- Actor: James D'Arcy
 INSERT INTO filth.crew_person VALUES (3612, 'Hoytema', 'Hoyte', 'Van', 'Hoyte Van Hoytema', 'Cinematographer');  -- Cinematographer: Hoyte Van Hoytema
+INSERT INTO filth.crew_person VALUES (3613, 'Peele', 'Jordan', NULL, 'Jordan Peele', 'Actor');  -- Actor: Jordan Peele
+INSERT INTO filth.crew_person VALUES (3614, 'Williams', 'Allison', NULL, 'Allison Williams', 'Actress');  -- Actress: Allison Williams
+INSERT INTO filth.crew_person VALUES (3615, 'Whitford', 'Bradley', NULL, 'Bradley Whitford', 'Actor');  -- Actor: Bradley Whitford
