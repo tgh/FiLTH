@@ -19131,3 +19131,6 @@ INSERT INTO filth.tag_given_to VALUES(4263, 58);  -- Detroit (2017) tagged with 
 INSERT INTO filth.tag_given_to VALUES(4263, 133);  -- Detroit (2017) tagged with 'law-enforcement'
 INSERT INTO filth.tag_given_to VALUES(4263, 118);  -- Detroit (2017) tagged with '20th-century'
 INSERT INTO filth.tag_given_to VALUES(4263, 21);  -- Detroit (2017) tagged with 'period'
+INSERT INTO filth.tag_given_to VALUES(1665, 60);  -- The Treasure of the Sierra Madre (1948) tagged with 'based-on-book(s)'
+INSERT INTO filth.tag_given_to VALUES(1665, 59);  -- The Treasure of the Sierra Madre (1948) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(1665, 58);  -- The Treasure of the Sierra Madre (1948) tagged with 'based-on-something'

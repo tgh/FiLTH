@@ -8363,3 +8363,8 @@ INSERT INTO filth.worked_on VALUES(8363, 4263, 3617, 'Supporting Actor');  -- Be
 INSERT INTO filth.worked_on VALUES(8364, 4263, 3433, 'Supporting Actor');  -- Jack Reynor for Detroit (2017)
 INSERT INTO filth.worked_on VALUES(8365, 4263, 2615, 'Small Part');  -- Jeremy Strong for Detroit (2017)
 INSERT INTO filth.worked_on VALUES(8366, 4263, 3065, 'Cinematographer');  -- Barry Ackroyd for Detroit (2017)
+INSERT INTO filth.worked_on VALUES(8367, 1665, 297, 'Cameo');  -- John Huston for The Treasure of the Sierra Madre (1948)
+INSERT INTO filth.worked_on VALUES(8368, 1665, 22, 'Lead Actor');  -- Humphrey Bogart for The Treasure of the Sierra Madre (1948)
+INSERT INTO filth.worked_on VALUES(8369, 1665, 3618, 'Supporting Actor');  -- Tim Holt for The Treasure of the Sierra Madre (1948)
+INSERT INTO filth.worked_on VALUES(8370, 1665, 3619, 'Small Part');  -- Robert Blake for The Treasure of the Sierra Madre (1948)
+INSERT INTO filth.worked_on VALUES(8371, 1665, 1253, 'Cinematographer');  -- Ted McCord for The Treasure of the Sierra Madre (1948)
