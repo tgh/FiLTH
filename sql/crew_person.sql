@@ -3617,3 +3617,4 @@ INSERT INTO filth.crew_person VALUES (3619, 'Blake', 'Robert', NULL, 'Robert Bla
 INSERT INTO filth.crew_person VALUES (3620, 'Gunn', 'James', NULL, 'James Gunn', 'Screenwriter');  -- Screenwriter: James Gunn
 INSERT INTO filth.crew_person VALUES (3621, 'Rooker', 'Michael', NULL, 'Michael Rooker', 'Actor');  -- Actor: Michael Rooker
 INSERT INTO filth.crew_person VALUES (3622, 'Gillan', 'Karen', NULL, 'Karen Gillan', 'Actress');  -- Actress: Karen Gillan
+INSERT INTO filth.crew_person VALUES (3623, 'Oswalt', 'Patton', NULL, 'Patton Oswalt', 'Actor');  -- Actor: Patton Oswalt

@@ -19148,3 +19148,8 @@ INSERT INTO filth.tag_given_to VALUES(4264, 10);  -- Guardians of the Galaxy Vol
 INSERT INTO filth.tag_given_to VALUES(4264, 196);  -- Guardians of the Galaxy Vol. 2 (2017) tagged with 'based-on-comic-book(s)'
 INSERT INTO filth.tag_given_to VALUES(4264, 59);  -- Guardians of the Galaxy Vol. 2 (2017) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4264, 58);  -- Guardians of the Galaxy Vol. 2 (2017) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(4265, 1);  -- The Circle (2017) tagged with 'drama'
+INSERT INTO filth.tag_given_to VALUES(4265, 392);  -- The Circle (2017) tagged with 'feminine'
+INSERT INTO filth.tag_given_to VALUES(4265, 60);  -- The Circle (2017) tagged with 'based-on-book(s)'
+INSERT INTO filth.tag_given_to VALUES(4265, 59);  -- The Circle (2017) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(4265, 58);  -- The Circle (2017) tagged with 'based-on-something'
