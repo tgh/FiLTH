@@ -3618,3 +3618,7 @@ INSERT INTO filth.crew_person VALUES (3620, 'Gunn', 'James', NULL, 'James Gunn',
 INSERT INTO filth.crew_person VALUES (3621, 'Rooker', 'Michael', NULL, 'Michael Rooker', 'Actor');  -- Actor: Michael Rooker
 INSERT INTO filth.crew_person VALUES (3622, 'Gillan', 'Karen', NULL, 'Karen Gillan', 'Actress');  -- Actress: Karen Gillan
 INSERT INTO filth.crew_person VALUES (3623, 'Oswalt', 'Patton', NULL, 'Patton Oswalt', 'Actor');  -- Actor: Patton Oswalt
+INSERT INTO filth.crew_person VALUES (3624, 'Fat', 'Chow', 'Yun', 'Chow Yun Fat', 'Actor');  -- Actor: Chow Yun Fat
+INSERT INTO filth.crew_person VALUES (3625, 'Zhang', 'Ziyi', NULL, 'Ziyi Zhang', 'Actress');  -- Actress: Ziyi Zhang
+INSERT INTO filth.crew_person VALUES (3626, 'Grace', 'Mckenna', NULL, 'Mckenna Grace', 'Actress');  -- Actress: Mckenna Grace
+INSERT INTO filth.crew_person VALUES (3627, 'Duncan', 'Lindsay', NULL, 'Lindsay Duncan', 'Actress');  -- Actress: Lindsay Duncan
