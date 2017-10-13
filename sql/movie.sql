@@ -4260,3 +4260,4 @@ INSERT INTO filth.movie VALUES (4263, 'Detroit', 2017, '***½', 'R', 'USA', 'I c
 INSERT INTO filth.movie VALUES (4264, 'Guardians of the Galaxy Vol. 2', 2017, '**½', 'PG-13', 'USA', NULL, 'tt3896198', 0, 283995, NULL, NULL, 136);
 INSERT INTO filth.movie VALUES (4265, 'The Circle', 2017, '**', 'PG-13', 'USA', NULL, 'tt4287320', 0, 339988, NULL, NULL, 110);
 INSERT INTO filth.movie VALUES (4266, 'Gifted', 2017, '***', 'PG-13', 'USA', 'Excellent child performance by Mckenna Grace, good performances all around.', 'tt4481414', 0, 400928, NULL, NULL, 101);
+INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell No Tales', 2017, '**½', 'PG-13', 'USA', NULL, 'tt1790809', 0, 166426, NULL, NULL, 129);
