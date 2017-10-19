@@ -8417,3 +8417,4 @@ INSERT INTO filth.worked_on VALUES(8417, 4267, 2456, 'Small Part');  -- Orlando 
 INSERT INTO filth.worked_on VALUES(8418, 4267, 1040, 'Cameo');  -- Keira Knightley for Pirates of the Caribbean: Dead Men Tell No Tales (2017)
 INSERT INTO filth.worked_on VALUES(8419, 4267, 3634, 'Cameo');  -- Paul McCartney for Pirates of the Caribbean: Dead Men Tell No Tales (2017)
 INSERT INTO filth.worked_on VALUES(8420, 4267, 3635, 'Cinematographer');  -- Paul Cameron for Pirates of the Caribbean: Dead Men Tell No Tales (2017)
+INSERT INTO filth.worked_on VALUES(8421, 4268, 3636, 'Director');  -- Thomas Balmes for Babies (2010)

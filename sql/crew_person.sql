@@ -3630,3 +3630,4 @@ INSERT INTO filth.crew_person VALUES (3632, 'Scodelario', 'Kaya', NULL, 'Kaya Sc
 INSERT INTO filth.crew_person VALUES (3633, 'McNally', 'Kevin', NULL, 'Kevin McNally', 'Actor');  -- Actor: Kevin McNally
 INSERT INTO filth.crew_person VALUES (3634, 'McCartney', 'Paul', NULL, 'Paul McCartney', 'Actor');  -- Actor: Paul McCartney
 INSERT INTO filth.crew_person VALUES (3635, 'Cameron', 'Paul', NULL, 'Paul Cameron', 'Cinematographer');  -- Cinematographer: Paul Cameron
+INSERT INTO filth.crew_person VALUES (3636, 'Balmes', 'Thomas', NULL, 'Thomas Balmes', 'Director');  -- Director: Thomas Balmes
