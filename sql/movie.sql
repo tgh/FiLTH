@@ -4262,3 +4262,4 @@ INSERT INTO filth.movie VALUES (4265, 'The Circle', 2017, '**', 'PG-13', 'USA', 
 INSERT INTO filth.movie VALUES (4266, 'Gifted', 2017, '***', 'PG-13', 'USA', 'Excellent child performance by Mckenna Grace, good performances all around.', 'tt4481414', 0, 400928, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell No Tales', 2017, '**½', 'PG-13', 'USA', NULL, 'tt1790809', 0, 166426, NULL, NULL, 129);
 INSERT INTO filth.movie VALUES (4268, 'Babies', 2010, '***', 'PG', 'France', NULL, 'tt1020938', 0, 44737, NULL, NULL, 79);
+INSERT INTO filth.movie VALUES (4269, 'War for the Planet of the Apes', 2017, '***', 'PG-13', 'USA', 'The best motion-capture/digital characters I have ever seen. So real.', 'tt3450958', 0, 281338, NULL, NULL, 140);
