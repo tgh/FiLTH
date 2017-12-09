@@ -19202,3 +19202,4 @@ INSERT INTO filth.tag_given_to VALUES(4162, 36);  -- Dawn of the Planet of the A
 INSERT INTO filth.tag_given_to VALUES(4162, 65);  -- Dawn of the Planet of the Apes (2014) tagged with 'prequel'
 INSERT INTO filth.tag_given_to VALUES(4269, 265);  -- War for the Planet of the Apes (2017) tagged with 'post-apocalypse'
 INSERT INTO filth.tag_given_to VALUES(4269, 6);  -- War for the Planet of the Apes (2017) tagged with 'science-fiction'
+INSERT INTO filth.tag_given_to VALUES(213, 254);  -- Blade Runner (1982) tagged with 'detective'

@@ -3632,3 +3632,4 @@ INSERT INTO filth.crew_person VALUES (3634, 'McCartney', 'Paul', NULL, 'Paul McC
 INSERT INTO filth.crew_person VALUES (3635, 'Cameron', 'Paul', NULL, 'Paul Cameron', 'Cinematographer');  -- Cinematographer: Paul Cameron
 INSERT INTO filth.crew_person VALUES (3636, 'Balmes', 'Thomas', NULL, 'Thomas Balmes', 'Director');  -- Director: Thomas Balmes
 INSERT INTO filth.crew_person VALUES (3637, 'Reeves', 'Matt', NULL, 'Matt Reeves', 'Director');  -- Director: Matt Reeves
+INSERT INTO filth.crew_person VALUES (3638, 'Hauer', 'Rutger', NULL, 'Rutger Hauer', 'Actor');  -- Actor: Rutger Hauer

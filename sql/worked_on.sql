@@ -8440,3 +8440,4 @@ INSERT INTO filth.worked_on VALUES(8440, 4269, 107, 'Supporting Actor');  -- Woo
 INSERT INTO filth.worked_on VALUES(8441, 4269, 2983, 'Supporting Actor');  -- Steve Zahn for War for the Planet of the Apes (2017)
 INSERT INTO filth.worked_on VALUES(8442, 4269, 2878, 'Supporting Actress');  -- Judy Greer for War for the Planet of the Apes (2017)
 INSERT INTO filth.worked_on VALUES(8443, 4269, 2952, 'Cinematographer');  -- Michael Seresin for War for the Planet of the Apes (2017)
+INSERT INTO filth.worked_on VALUES(8444, 213, 3638, 'Supporting Actor');  -- Rutger Hauer for Blade Runner (1982)
