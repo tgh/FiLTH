@@ -3633,3 +3633,9 @@ INSERT INTO filth.crew_person VALUES (3635, 'Cameron', 'Paul', NULL, 'Paul Camer
 INSERT INTO filth.crew_person VALUES (3636, 'Balmes', 'Thomas', NULL, 'Thomas Balmes', 'Director');  -- Director: Thomas Balmes
 INSERT INTO filth.crew_person VALUES (3637, 'Reeves', 'Matt', NULL, 'Matt Reeves', 'Director');  -- Director: Matt Reeves
 INSERT INTO filth.crew_person VALUES (3638, 'Hauer', 'Rutger', NULL, 'Rutger Hauer', 'Actor');  -- Actor: Rutger Hauer
+INSERT INTO filth.crew_person VALUES (3639, 'Newell', 'Mike', NULL, 'Mike Newell', 'Director');  -- Director: Mike Newell
+INSERT INTO filth.crew_person VALUES (3640, 'Tennant', 'David', NULL, 'David Tennant', 'Actor');  -- Actor: David Tennant
+INSERT INTO filth.crew_person VALUES (3641, 'Pattinson', 'Robert', NULL, 'Robert Pattinson', 'Actor');  -- Actor: Robert Pattinson
+INSERT INTO filth.crew_person VALUES (3642, 'Goldenberg', 'Michael', NULL, 'Michael Goldenberg', 'Screenwriter');  -- Screenwriter: Michael Goldenberg
+INSERT INTO filth.crew_person VALUES (3643, 'Tena', 'Natalia', NULL, 'Natalia Tena', 'Actress');  -- Actress: Natalia Tena
+INSERT INTO filth.crew_person VALUES (3644, 'Macdonald', 'Kelly', NULL, 'Kelly Macdonald', 'Actress');  -- Actress: Kelly Macdonald
