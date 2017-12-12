@@ -3640,3 +3640,6 @@ INSERT INTO filth.crew_person VALUES (3642, 'Goldenberg', 'Michael', NULL, 'Mich
 INSERT INTO filth.crew_person VALUES (3643, 'Tena', 'Natalia', NULL, 'Natalia Tena', 'Actress');  -- Actress: Natalia Tena
 INSERT INTO filth.crew_person VALUES (3644, 'Macdonald', 'Kelly', NULL, 'Kelly Macdonald', 'Actress');  -- Actress: Kelly Macdonald
 INSERT INTO filth.crew_person VALUES (3645, 'Birmingham', 'Gil', NULL, 'Gil Birmingham', 'Actor');  -- Actor: Gil Birmingham
+INSERT INTO filth.crew_person VALUES (3646, 'Donen', 'Stanley', NULL, 'Stanley Donen', 'Director');  -- Director: Stanley Donen
+INSERT INTO filth.crew_person VALUES (3647, 'O''Connor', 'Donald', NULL, 'Donald O''Connor', 'Actor');  -- Actor: Donald O'Connor
+INSERT INTO filth.crew_person VALUES (3648, 'Culkin', 'Macaulay', NULL, 'Macaulay Culkin', 'Actor');  -- Actor: Macaulay Culkin
