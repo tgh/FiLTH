@@ -4263,3 +4263,4 @@ INSERT INTO filth.movie VALUES (4266, 'Gifted', 2017, '***', 'PG-13', 'USA', 'Ex
 INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell No Tales', 2017, '**½', 'PG-13', 'USA', NULL, 'tt1790809', 0, 166426, NULL, NULL, 129);
 INSERT INTO filth.movie VALUES (4268, 'Babies', 2010, '***', 'PG', 'France', NULL, 'tt1020938', 0, 44737, NULL, NULL, 79);
 INSERT INTO filth.movie VALUES (4269, 'War for the Planet of the Apes', 2017, '***', 'PG-13', 'USA', 'The best motion-capture/digital characters I have ever seen. So real.', 'tt3450958', 0, 281338, NULL, NULL, 140);
+INSERT INTO filth.movie VALUES (4270, 'Wind River', 2017, '***', 'R', 'USA', NULL, 'tt5362988', 0, 395834, NULL, NULL, 111);

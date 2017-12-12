@@ -3639,3 +3639,4 @@ INSERT INTO filth.crew_person VALUES (3641, 'Pattinson', 'Robert', NULL, 'Robert
 INSERT INTO filth.crew_person VALUES (3642, 'Goldenberg', 'Michael', NULL, 'Michael Goldenberg', 'Screenwriter');  -- Screenwriter: Michael Goldenberg
 INSERT INTO filth.crew_person VALUES (3643, 'Tena', 'Natalia', NULL, 'Natalia Tena', 'Actress');  -- Actress: Natalia Tena
 INSERT INTO filth.crew_person VALUES (3644, 'Macdonald', 'Kelly', NULL, 'Kelly Macdonald', 'Actress');  -- Actress: Kelly Macdonald
+INSERT INTO filth.crew_person VALUES (3645, 'Birmingham', 'Gil', NULL, 'Gil Birmingham', 'Actor');  -- Actor: Gil Birmingham
