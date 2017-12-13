@@ -19213,3 +19213,8 @@ INSERT INTO filth.tag_given_to VALUES(4270, 8);  -- Wind River (2017) tagged wit
 INSERT INTO filth.tag_given_to VALUES(4270, 30);  -- Wind River (2017) tagged with 'depressing'
 INSERT INTO filth.tag_given_to VALUES(4270, 133);  -- Wind River (2017) tagged with 'law-enforcement'
 INSERT INTO filth.tag_given_to VALUES(4270, 25);  -- Wind River (2017) tagged with 'crime'
+INSERT INTO filth.tag_given_to VALUES(1285, 90);  -- The Polar Express (2004) tagged with 'motion-capture'
+INSERT INTO filth.tag_given_to VALUES(1285, 365);  -- The Polar Express (2004) tagged with 'actor(s)-playing-multiple-roles'
+INSERT INTO filth.tag_given_to VALUES(597, 384);  -- Fred Clause (2007) tagged with 'brother-brother'
+INSERT INTO filth.tag_given_to VALUES(597, 296);  -- Fred Clause (2007) tagged with 'family-disfunction'
+INSERT INTO filth.tag_given_to VALUES(507, 87);  -- Elf (2003) tagged with 'silly'

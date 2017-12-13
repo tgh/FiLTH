@@ -3643,3 +3643,5 @@ INSERT INTO filth.crew_person VALUES (3645, 'Birmingham', 'Gil', NULL, 'Gil Birm
 INSERT INTO filth.crew_person VALUES (3646, 'Donen', 'Stanley', NULL, 'Stanley Donen', 'Director');  -- Director: Stanley Donen
 INSERT INTO filth.crew_person VALUES (3647, 'O''Connor', 'Donald', NULL, 'Donald O''Connor', 'Actor');  -- Actor: Donald O'Connor
 INSERT INTO filth.crew_person VALUES (3648, 'Culkin', 'Macaulay', NULL, 'Macaulay Culkin', 'Actor');  -- Actor: Macaulay Culkin
+INSERT INTO filth.crew_person VALUES (3649, 'Asner', 'Edward', NULL, 'Edward Asner', 'Actor');  -- Actor: Edward Asner
+INSERT INTO filth.crew_person VALUES (3650, 'Newhart', 'Bob', NULL, 'Bob Newhart', 'Actor');  -- Actor: Bob Newhart
