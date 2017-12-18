@@ -3647,3 +3647,4 @@ INSERT INTO filth.crew_person VALUES (3649, 'Asner', 'Edward', NULL, 'Edward Asn
 INSERT INTO filth.crew_person VALUES (3650, 'Newhart', 'Bob', NULL, 'Bob Newhart', 'Actor');  -- Actor: Bob Newhart
 INSERT INTO filth.crew_person VALUES (3651, 'Johnson', 'Rian', NULL, 'Rian Johnson', 'Director');  -- Director: Rian Johnson
 INSERT INTO filth.crew_person VALUES (3652, 'Yedlin', 'Steve', NULL, 'Steve Yedlin', 'Cinematographer');  -- Cinematographer: Steve Yedlin
+INSERT INTO filth.crew_person VALUES (3653, 'Hammer', 'Armie', NULL, 'Armie Hammer', 'Actor');  -- Actor: Armie Hammer

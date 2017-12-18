@@ -4265,3 +4265,4 @@ INSERT INTO filth.movie VALUES (4268, 'Babies', 2010, '***', 'PG', 'France', NUL
 INSERT INTO filth.movie VALUES (4269, 'War for the Planet of the Apes', 2017, '***', 'PG-13', 'USA', 'The best motion-capture/digital characters I have ever seen. So real.', 'tt3450958', 0, 281338, NULL, NULL, 140);
 INSERT INTO filth.movie VALUES (4270, 'Wind River', 2017, '***', 'R', 'USA', NULL, 'tt5362988', 0, 395834, NULL, NULL, 111);
 INSERT INTO filth.movie VALUES (4271, 'Star Wars: Episode VIII – the Last Jedi', 2017, '****', 'PG-13', 'USA', NULL, 'tt2527336', 1, 181808, NULL, NULL, 152);
+INSERT INTO filth.movie VALUES (4272, 'Cars 3', 2017, '***', 'G', 'USA', NULL, 'tt3606752', 0, 260514, NULL, NULL, 102);
