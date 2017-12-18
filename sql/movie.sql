@@ -1547,7 +1547,7 @@ INSERT INTO filth.movie VALUES (1542, 'Stand by Me', 1986, '***½', 'R', 'USA', 
 INSERT INTO filth.movie VALUES (1543, 'Stanley Kubrick: A Life in Pictures', 2001, '***½', 'R', 'USA', NULL, 'tt0278736', 0, 30416, NULL, NULL, 141);
 INSERT INTO filth.movie VALUES (1544, 'Star Trek', 2009, '**½', 'PG-13', 'USA', NULL, 'tt0796366', 0, 13475, NULL, NULL, 127);
 INSERT INTO filth.movie VALUES (1545, 'Star Wars: Episode I - The Phantom Menace', 1999, '***', 'PG', 'USA', NULL, 'tt0120915', 4, 1893, NULL, NULL, 136);
-INSERT INTO filth.movie VALUES (1546, 'Star Wars: Episode II - Attack of the Clones', 2002, '**½', 'PG', 'USA', NULL, 'tt0121765', 2, 1894, NULL, NULL, 142);
+INSERT INTO filth.movie VALUES (1546, 'Star Wars: Episode II - Attack of the Clones', 2002, '**', 'PG', 'USA', NULL, 'tt0121765', 2, 1894, NULL, NULL, 142);
 INSERT INTO filth.movie VALUES (1547, 'Star Wars: Episode III - Revenge of the Sith', 2005, '***', 'PG-13', 'USA', NULL, 'tt0121766', 1, 1895, NULL, NULL, 140);
 INSERT INTO filth.movie VALUES (1548, 'Star Wars', 1977, '****', 'PG', 'USA', NULL, 'tt0076759', 1, 11, NULL, NULL, 121);
 INSERT INTO filth.movie VALUES (1549, 'Star Wars: Episode V - The Empire Strikes Back', 1980, '****', 'PG', 'USA', NULL, 'tt0080684', 1, 1891, NULL, NULL, 124);
@@ -3867,7 +3867,7 @@ INSERT INTO filth.movie VALUES (3865, 'Mad Max: Fury Road', 2015, '***', 'R', 'A
 INSERT INTO filth.movie VALUES (3866, 'Frank', 2014, '**½', 'R', 'England', NULL, 'tt1605717', 0, 171372, NULL, NULL, 95);
 INSERT INTO filth.movie VALUES (3867, 'Johnny English Reborn', 2011, '**', 'PG', 'USA', NULL, 'tt1634122', 0, 58233, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (3868, 'Love & Mercy', 2015, '***', 'PG-13', 'USA', NULL, 'tt0903657', 0, 271714, NULL, NULL, 120);
-INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII – the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1, 140607, NULL, NULL, 136);
+INSERT INTO filth.movie VALUES (3869, 'Star Wars: Episode VII - the Force Awakens', 2015, '***', 'PG-13', 'USA', NULL, 'tt2488496', 1, 140607, NULL, NULL, 136);
 INSERT INTO filth.movie VALUES (3870, 'True Story', 2015, '**½', 'R', 'USA', NULL, 'tt2273657', 0, 245706, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (3871, 'Casino Royale', 2006, '***', 'PG-13', 'USA', NULL, 'tt0381061', 0, 36557, NULL, NULL, 144);
 INSERT INTO filth.movie VALUES (3872, 'Fed Up', 2014, '***½', 'PG', 'USA', NULL, 'tt2381335', 0, 250657, NULL, NULL, 92);
@@ -4264,3 +4264,4 @@ INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell N
 INSERT INTO filth.movie VALUES (4268, 'Babies', 2010, '***', 'PG', 'France', NULL, 'tt1020938', 0, 44737, NULL, NULL, 79);
 INSERT INTO filth.movie VALUES (4269, 'War for the Planet of the Apes', 2017, '***', 'PG-13', 'USA', 'The best motion-capture/digital characters I have ever seen. So real.', 'tt3450958', 0, 281338, NULL, NULL, 140);
 INSERT INTO filth.movie VALUES (4270, 'Wind River', 2017, '***', 'R', 'USA', NULL, 'tt5362988', 0, 395834, NULL, NULL, 111);
+INSERT INTO filth.movie VALUES (4271, 'Star Wars: Episode VIII – the Last Jedi', 2017, '****', 'PG-13', 'USA', NULL, 'tt2527336', 1, 181808, NULL, NULL, 152);
