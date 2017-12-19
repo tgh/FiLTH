@@ -19253,3 +19253,5 @@ INSERT INTO filth.tag_given_to VALUES(4274, 35);  -- The Trip to Spain (2017) ta
 INSERT INTO filth.tag_given_to VALUES(4274, 328);  -- The Trip to Spain (2017) tagged with 'friend(s)/friendship'
 INSERT INTO filth.tag_given_to VALUES(4274, 391);  -- The Trip to Spain (2017) tagged with 'masculine'
 INSERT INTO filth.tag_given_to VALUES(4274, 293);  -- The Trip to Spain (2017) tagged with 'improvised'
+INSERT INTO filth.tag_given_to VALUES(3342, 59);  -- Sherlock Holmes: A Game of Shadows (2011) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(3342, 58);  -- Sherlock Holmes: A Game of Shadows (2011) tagged with 'based-on-something'
