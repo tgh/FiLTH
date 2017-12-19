@@ -3648,3 +3648,11 @@ INSERT INTO filth.crew_person VALUES (3650, 'Newhart', 'Bob', NULL, 'Bob Newhart
 INSERT INTO filth.crew_person VALUES (3651, 'Johnson', 'Rian', NULL, 'Rian Johnson', 'Director');  -- Director: Rian Johnson
 INSERT INTO filth.crew_person VALUES (3652, 'Yedlin', 'Steve', NULL, 'Steve Yedlin', 'Cinematographer');  -- Cinematographer: Steve Yedlin
 INSERT INTO filth.crew_person VALUES (3653, 'Hammer', 'Armie', NULL, 'Armie Hammer', 'Actor');  -- Actor: Armie Hammer
+INSERT INTO filth.crew_person VALUES (3654, 'Watts', 'Jon', NULL, 'Jon Watts', 'Director');  -- Director: Jon Watts
+INSERT INTO filth.crew_person VALUES (3655, 'Goldstein', 'Jonathan', NULL, 'Jonathan Goldstein', 'Screenwriter');  -- Screenwriter: Jonathan Goldstein
+INSERT INTO filth.crew_person VALUES (3656, 'Daley', 'John', 'Francis', 'John Francis Daley', 'Screenwriter');  -- Screenwriter: John Francis Daley
+INSERT INTO filth.crew_person VALUES (3657, 'Ford', 'Christopher', NULL, 'Christopher Ford', 'Screenwriter');  -- Screenwriter: Christopher Ford
+INSERT INTO filth.crew_person VALUES (3658, 'McKenna', 'Chris', NULL, 'Chris McKenna', 'Screenwriter');  -- Screenwriter: Chris McKenna
+INSERT INTO filth.crew_person VALUES (3659, 'Sommers', 'Erik', NULL, 'Erik Sommers', 'Screenwriter');  -- Screenwriter: Erik Sommers
+INSERT INTO filth.crew_person VALUES (3660, 'Glover', 'Donald', NULL, 'Donald Glover', 'Actor');  -- Actor: Donald Glover
+INSERT INTO filth.crew_person VALUES (3661, 'Totino', 'Salvatore', NULL, 'Salvatore Totino', 'Cinematographer');  -- Cinematographer: Salvatore Totino
