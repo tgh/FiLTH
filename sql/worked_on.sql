@@ -8668,3 +8668,6 @@ INSERT INTO filth.worked_on VALUES(8668, 4273, 2150, 'Cameo');  -- Chris Evans f
 INSERT INTO filth.worked_on VALUES(8669, 4273, 3660, 'Small Part');  -- Donald Glover for Spider-Man: Homecoming (2017)
 INSERT INTO filth.worked_on VALUES(8670, 4273, 1028, 'Character Voice');  -- Jennifer Connelly for Spider-Man: Homecoming (2017)
 INSERT INTO filth.worked_on VALUES(8671, 4273, 3661, 'Cinematographer');  -- Salvatore Totino for Spider-Man: Homecoming (2017)
+INSERT INTO filth.worked_on VALUES(8672, 4274, 370, 'Director');  -- Michael Winterbottom for The Trip to Spain (2017)
+INSERT INTO filth.worked_on VALUES(8673, 4274, 2101, 'Lead Actor');  -- Steve Coogan for The Trip to Spain (2017)
+INSERT INTO filth.worked_on VALUES(8674, 4274, 2191, 'Lead Actor');  -- Rob Brydon for The Trip to Spain (2017)
