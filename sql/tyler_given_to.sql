@@ -385,7 +385,6 @@ INSERT INTO filth.tyler_given_to VALUES (384, 978, 9, 2003, 0, ''); -- Philippa 
 INSERT INTO filth.tyler_given_to VALUES (385, 978, 9, 298, 0, ''); -- Peter Jackson for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
 INSERT INTO filth.tyler_given_to VALUES (386, 978, 9, 3149, 0, ''); -- Stephen Sinclair for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
 INSERT INTO filth.tyler_given_to VALUES (387, 978, 9, 1953, 0, ''); -- Fran Walsh for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
-INSERT INTO filth.tyler_given_to VALUES (388, 978, 9, 0, 0, ''); --  for Best Adapted Screenplay for The Lord of the Rings: The Two Towers (2002)
 INSERT INTO filth.tyler_given_to VALUES (389, 1079, 9, 1972, 0, ''); -- Scott Frank for Best Adapted Screenplay for Minority Report (2002)
 INSERT INTO filth.tyler_given_to VALUES (390, 1079, 9, 3150, 0, ''); -- Jon Cohen for Best Adapted Screenplay for Minority Report (2002)
 INSERT INTO filth.tyler_given_to VALUES (391, 786, 11, 0, 0, ''); -- Ice Age (2002) for Best Animated Feature
@@ -620,15 +619,15 @@ INSERT INTO filth.tyler_given_to VALUES (619, 1169, 8, 0, 0, ''); -- The New Wor
 INSERT INTO filth.tyler_given_to VALUES (620, 1297, 8, 0, 0, ''); -- Pride & Prejudice (2005) for Best Cinematography
 INSERT INTO filth.tyler_given_to VALUES (621, 1488, 8, 0, 1, ''); -- Sin City (2005) for Best Cinematography
 INSERT INTO filth.tyler_given_to VALUES (622, 1556, 8, 0, 0, ''); -- Stay (2005) for Best Cinematography
-INSERT INTO filth.tyler_given_to VALUES (623, 283, 10, 0, 0, ''); -- Cache (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (624, 383, 10, 0, 0, ''); -- Crash (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (625, 659, 10, 0, 1, ''); -- Good Night and Good Luck. (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (626, 993, 10, 0, 0, ''); -- Madagascar (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (627, 1035, 10, 0, 0, ''); -- Match Point (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (628, 1556, 10, 0, 0, ''); -- Stay (2005) for Best Original Screenplay
-INSERT INTO filth.tyler_given_to VALUES (629, 1191, 9, 0, 0, ''); -- North Country (2005) for Best Adapted Screenplay
-INSERT INTO filth.tyler_given_to VALUES (630, 1297, 9, 0, 1, ''); -- Pride & Prejudice (2005) for Best Adapted Screenplay
-INSERT INTO filth.tyler_given_to VALUES (631, 1731, 9, 0, 0, ''); -- Walk the Line (2005) for Best Adapted Screenplay
+INSERT INTO filth.tyler_given_to VALUES (623, 283, 10, 2966, 0, ''); -- Michael Haneke for Best Original Screenplay for Cache (2005)
+INSERT INTO filth.tyler_given_to VALUES (624, 383, 10, 375, 0, ''); -- Paul Haggis for Best Original Screenplay for Crash (2005)
+INSERT INTO filth.tyler_given_to VALUES (625, 659, 10, 16, 1, ''); -- George Clooney for Best Original Screenplay for Good Night and Good Luck. (2005)
+INSERT INTO filth.tyler_given_to VALUES (626, 993, 10, 3670, 0, ''); -- Eric Darnell for Best Original Screenplay for Madagascar (2005)
+INSERT INTO filth.tyler_given_to VALUES (627, 1035, 10, 245, 0, ''); -- Woody Allen for Best Original Screenplay for Match Point (2005)
+INSERT INTO filth.tyler_given_to VALUES (628, 1556, 10, 2993, 0, ''); -- David Benioff for Best Original Screenplay for Stay (2005)
+INSERT INTO filth.tyler_given_to VALUES (629, 1191, 9, 3674, 0, ''); -- Michael Seitzman for Best Adapted Screenplay for North Country (2005)
+INSERT INTO filth.tyler_given_to VALUES (630, 1297, 9, 3675, 1, ''); -- Deborah Moggach for Best Adapted Screenplay for Pride & Prejudice (2005)
+INSERT INTO filth.tyler_given_to VALUES (631, 1731, 9, 326, 0, ''); -- James Mangold for Best Adapted Screenplay for Walk the Line (2005)
 INSERT INTO filth.tyler_given_to VALUES (632, 283, 12, 0, 0, 'First Visit with Majid'); -- Cache (2005) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (633, 383, 12, 0, 0, 'Rescued from the Crash'); -- Crash (2005) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (634, 1731, 12, 0, 1, 'The Audition'); -- Walk the Line (2005) for Best Scene
@@ -1153,3 +1152,9 @@ INSERT INTO filth.tyler_given_to VALUES (1152, 3425, 12, 0, 0, 'Dr. Shultz Finds
 INSERT INTO filth.tyler_given_to VALUES (1153, 3445, 12, 0, 0, 'At the Diner with Myself'); -- Looper (2012) for Best Scene
 INSERT INTO filth.tyler_given_to VALUES (1154, 4001, 8, 3412, 1, ''); -- Colin Watkinson for Best Cinematography for The Fall (2008)
 INSERT INTO filth.tyler_given_to VALUES (1155, 4001, 8, 3410, 0, ''); -- Catinca Untaru for Best Actress for The Fall (2008)
+INSERT INTO filth.tyler_given_to VALUES (1156, 383, 10, 2035, 0, ''); -- Bobby Moresco for Best Original Screenplay for Crash (2005)
+INSERT INTO filth.tyler_given_to VALUES (1157, 659, 10, 2034, 1, ''); -- Grant Heslov for Best Original Screenplay for Good Night and Good Luck. (2005)
+INSERT INTO filth.tyler_given_to VALUES (1158, 993, 10, 3671, 0, ''); -- Tom McGrath for Best Original Screenplay for Madagascar (2005)
+INSERT INTO filth.tyler_given_to VALUES (1159, 993, 10, 3672, 0, ''); -- Billy Frolick for Best Original Screenplay for Madagascar (2005)
+INSERT INTO filth.tyler_given_to VALUES (1160, 993, 10, 3217, 0, ''); -- Mark Burton for Best Original Screenplay for Madagascar (2005)
+INSERT INTO filth.tyler_given_to VALUES (1161, 1731, 9, 3678, 0, ''); -- Gill Dennis for Best Adapted Screenplay for Walk the Line (2005)

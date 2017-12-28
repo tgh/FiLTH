@@ -3664,3 +3664,13 @@ INSERT INTO filth.crew_person VALUES (3666, 'Curtis', 'Jamie', 'Lee', 'Jamie Lee
 INSERT INTO filth.crew_person VALUES (3667, 'Laurie', 'Hugh', NULL, 'Hugh Laurie', 'Actor');  -- Actor: Hugh Laurie
 INSERT INTO filth.crew_person VALUES (3668, 'Kaye', 'Danny', NULL, 'Danny Kaye', 'Actor');  -- Actor: Danny Kaye
 INSERT INTO filth.crew_person VALUES (3669, 'Clooney', 'Rosemary', NULL, 'Rosemary Clooney', 'Actress');  -- Actress: Rosemary Clooney
+INSERT INTO filth.crew_person VALUES (3670, 'Darnell', 'Eric', NULL, 'Eric Darnell', 'Director');  -- Director: Eric Darnell
+INSERT INTO filth.crew_person VALUES (3671, 'McGrath', 'Tom', NULL, 'Tom McGrath', 'Screenwriter');  -- Screenwriter: Tom McGrath
+INSERT INTO filth.crew_person VALUES (3672, 'Frolick', 'Billy', NULL, 'Billy Frolick', 'Screenwriter');  -- Screenwriter: Billy Frolick
+INSERT INTO filth.crew_person VALUES (3673, 'Schaefer', 'Roberto', NULL, 'Roberto Schaefer', 'Cinematographer');  -- Cinematographer: Roberto Schaefer
+INSERT INTO filth.crew_person VALUES (3674, 'Seitzman', 'Michael', NULL, 'Michael Seitzman', 'Screenwriter');  -- Screenwriter: Michael Seitzman
+INSERT INTO filth.crew_person VALUES (3675, 'Moggach', 'Deborah', NULL, 'Deborah Moggach', 'Screenwriter');  -- Screenwriter: Deborah Moggach
+INSERT INTO filth.crew_person VALUES (3676, 'Macfadyen', 'Matthew', NULL, 'Matthew Macfadyen', 'Actor');  -- Actor: Matthew Macfadyen
+INSERT INTO filth.crew_person VALUES (3677, 'Osin', 'Roman', NULL, 'Roman Osin', 'Cinematographer');  -- Cinematographer: Roman Osin
+INSERT INTO filth.crew_person VALUES (3678, 'Dennis', 'Gill', NULL, 'Gill Dennis', 'Screenwriter');  -- Screenwriter: Gill Dennis
+INSERT INTO filth.crew_person VALUES (3679, 'Patrick', 'Robert', NULL, 'Robert Patrick', 'Actor');  -- Actor: Robert Patrick
