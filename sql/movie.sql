@@ -2866,7 +2866,7 @@ INSERT INTO filth.movie VALUES (2861, 'Splash', 1984, '**½', 'PG', 'USA', NULL,
 INSERT INTO filth.movie VALUES (2862, 'El Norte', 1983, '***½', 'R', 'USA', NULL, 'tt0085482', 0, 17435, NULL, NULL, 141);
 INSERT INTO filth.movie VALUES (2863, 'The Official Story', 1985, 'not seen', 'R', 'Argentina', NULL, 'tt0089276', NULL, 29263, NULL, NULL, 112);
 INSERT INTO filth.movie VALUES (2864, 'My Beautiful Laundrette', 1986, 'not seen', 'R', 'England', NULL, 'tt0091578', NULL, 11240, NULL, NULL, 97);
-INSERT INTO filth.movie VALUES (2865, 'Crocodile Dundee', 1986, 'not seen', 'PG-13', 'Australia', NULL, 'tt0090555', NULL, 9671, NULL, NULL, 97);
+INSERT INTO filth.movie VALUES (2865, 'Crocodile Dundee', 1986, '***', 'PG-13', 'Australia', NULL, 'tt0090555', NULL, 9671, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (2866, 'The Dead', 1987, 'not seen', 'PG', NULL, NULL, 'tt0092843', NULL, 39507, NULL, NULL, 83);
 INSERT INTO filth.movie VALUES (2867, 'sex, lies, and videotape', 1989, 'not seen', 'R', 'USA', NULL, 'tt0098724', NULL, 1412, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (2868, 'Metropolitan', 1990, 'not seen', 'PG-13', 'USA', NULL, 'tt0100142', NULL, 15389, NULL, NULL, 98);

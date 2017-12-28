@@ -8779,3 +8779,5 @@ INSERT INTO filth.worked_on VALUES(8779, 1731, 3305, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(8780, 1731, 3679, 'Supporting Actor');  -- Robert Patrick for Walk the Line (2005)
 INSERT INTO filth.worked_on VALUES(8781, 1731, 2104, 'Supporting Actor');  -- Dallas Roberts for Walk the Line (2005)
 INSERT INTO filth.worked_on VALUES(8782, 1731, 3093, 'Cinematographer');  -- Phedon Papamichael for Walk the Line (2005)
+INSERT INTO filth.worked_on VALUES(8783, 2865, 1889, 'Lead Actor');  -- Paul Hogan for Crocodile Dundee (1986)
+INSERT INTO filth.worked_on VALUES(8784, 2865, 1379, 'Cinematographer');  -- Russell Boyd for Crocodile Dundee (1986)

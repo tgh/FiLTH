@@ -19277,3 +19277,7 @@ INSERT INTO filth.tag_given_to VALUES(4277, 5);  -- The Santa Clause 2 (2002) ta
 INSERT INTO filth.tag_given_to VALUES(4277, 19);  -- The Santa Clause 2 (2002) tagged with 'family-film'
 INSERT INTO filth.tag_given_to VALUES(4277, 35);  -- The Santa Clause 2 (2002) tagged with 'sequel'
 INSERT INTO filth.tag_given_to VALUES(4277, 13);  -- The Santa Clause 2 (2002) tagged with 'christmas'
+INSERT INTO filth.tag_given_to VALUES(2865, 27);  -- Crocodile Dundee (1986) tagged with 'romantic-comedy'
+INSERT INTO filth.tag_given_to VALUES(2865, 11);  -- Crocodile Dundee (1986) tagged with 'adventure'
+INSERT INTO filth.tag_given_to VALUES(2865, 38);  -- Crocodile Dundee (1986) tagged with 'new-york-city'
+INSERT INTO filth.tag_given_to VALUES(2865, 2);  -- Crocodile Dundee (1986) tagged with 'comedy'
