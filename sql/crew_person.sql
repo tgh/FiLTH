@@ -3660,3 +3660,7 @@ INSERT INTO filth.crew_person VALUES (3662, 'Allen', 'Tim', NULL, 'Tim Allen', '
 INSERT INTO filth.crew_person VALUES (3663, 'Krumholtz', 'David', NULL, 'David Krumholtz', 'Actor');  -- Actor: David Krumholtz
 INSERT INTO filth.crew_person VALUES (3664, 'Mitchell', 'Elizabeth', NULL, 'Elizabeth Mitchell', 'Actress');  -- Actress: Elizabeth Mitchell
 INSERT INTO filth.crew_person VALUES (3665, 'Breslin', 'Spencer', NULL, 'Spencer Breslin', 'Actor');  -- Actor: Spencer Breslin
+INSERT INTO filth.crew_person VALUES (3666, 'Curtis', 'Jamie', 'Lee', 'Jamie Lee Curtis', 'Actress');  -- Actress: Jamie Lee Curtis
+INSERT INTO filth.crew_person VALUES (3667, 'Laurie', 'Hugh', NULL, 'Hugh Laurie', 'Actor');  -- Actor: Hugh Laurie
+INSERT INTO filth.crew_person VALUES (3668, 'Kaye', 'Danny', NULL, 'Danny Kaye', 'Actor');  -- Actor: Danny Kaye
+INSERT INTO filth.crew_person VALUES (3669, 'Clooney', 'Rosemary', NULL, 'Rosemary Clooney', 'Actress');  -- Actress: Rosemary Clooney
