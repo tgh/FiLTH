@@ -4098,7 +4098,6 @@ INSERT INTO filth.movie VALUES (4099, 'Wetherby', 1985, 'not seen', 'R', 'Englan
 INSERT INTO filth.movie VALUES (4100, 'The Fly', 1986, 'not seen', 'R', 'USA', NULL, 'tt0091064', NULL, 9426, NULL, NULL, 96);
 INSERT INTO filth.movie VALUES (4101, 'River''s Edge', 1987, 'not seen', 'R', 'USA', NULL, 'tt0091860', NULL, 21309, NULL, NULL, 99);
 INSERT INTO filth.movie VALUES (4102, 'Roxanne', 1987, 'not seen', 'PG', 'USA', NULL, 'tt0093886', NULL, 11584, NULL, NULL, 107);
-INSERT INTO filth.movie VALUES (4103, 'Little Dorritt', 1987, 'not seen', 'G', 'England', NULL, 'tt0095530', NULL, 47282, NULL, NULL, 357);
 INSERT INTO filth.movie VALUES (4104, 'Funny Farm', 1988, 'not seen', 'PG', 'USA', NULL, 'tt0095188', NULL, 14170, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (4105, 'The Plot Against Harry', 1990, 'not seen', 'NR', 'USA', NULL, 'tt0064820', NULL, 41943, NULL, NULL, 81);
 INSERT INTO filth.movie VALUES (4106, 'Too Beautiful for You', 1989, 'not seen', 'R', 'France', NULL, 'tt0098520', NULL, 48524, NULL, NULL, 91);
