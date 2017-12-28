@@ -3656,3 +3656,7 @@ INSERT INTO filth.crew_person VALUES (3658, 'McKenna', 'Chris', NULL, 'Chris McK
 INSERT INTO filth.crew_person VALUES (3659, 'Sommers', 'Erik', NULL, 'Erik Sommers', 'Screenwriter');  -- Screenwriter: Erik Sommers
 INSERT INTO filth.crew_person VALUES (3660, 'Glover', 'Donald', NULL, 'Donald Glover', 'Actor');  -- Actor: Donald Glover
 INSERT INTO filth.crew_person VALUES (3661, 'Totino', 'Salvatore', NULL, 'Salvatore Totino', 'Cinematographer');  -- Cinematographer: Salvatore Totino
+INSERT INTO filth.crew_person VALUES (3662, 'Allen', 'Tim', NULL, 'Tim Allen', 'Actor');  -- Actor: Tim Allen
+INSERT INTO filth.crew_person VALUES (3663, 'Krumholtz', 'David', NULL, 'David Krumholtz', 'Actor');  -- Actor: David Krumholtz
+INSERT INTO filth.crew_person VALUES (3664, 'Mitchell', 'Elizabeth', NULL, 'Elizabeth Mitchell', 'Actress');  -- Actress: Elizabeth Mitchell
+INSERT INTO filth.crew_person VALUES (3665, 'Breslin', 'Spencer', NULL, 'Spencer Breslin', 'Actor');  -- Actor: Spencer Breslin
