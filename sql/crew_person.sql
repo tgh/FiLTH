@@ -3674,3 +3674,9 @@ INSERT INTO filth.crew_person VALUES (3676, 'Macfadyen', 'Matthew', NULL, 'Matth
 INSERT INTO filth.crew_person VALUES (3677, 'Osin', 'Roman', NULL, 'Roman Osin', 'Cinematographer');  -- Cinematographer: Roman Osin
 INSERT INTO filth.crew_person VALUES (3678, 'Dennis', 'Gill', NULL, 'Gill Dennis', 'Screenwriter');  -- Screenwriter: Gill Dennis
 INSERT INTO filth.crew_person VALUES (3679, 'Patrick', 'Robert', NULL, 'Robert Patrick', 'Actor');  -- Actor: Robert Patrick
+INSERT INTO filth.crew_person VALUES (3680, 'Wilson', 'Rita', NULL, 'Rita Wilson', 'Actress');  -- Actress: Rita Wilson
+INSERT INTO filth.crew_person VALUES (3681, 'Belushi', 'Jim', NULL, 'Jim Belushi', 'Actor');  -- Actor: Jim Belushi
+INSERT INTO filth.crew_person VALUES (3682, 'Short', 'Martin', NULL, 'Martin Short', 'Actor');  -- Actor: Martin Short
+INSERT INTO filth.crew_person VALUES (3683, 'Keough', 'Riley', NULL, 'Riley Keough', 'Actress');  -- Actress: Riley Keough
+INSERT INTO filth.crew_person VALUES (3684, 'MacFarlane', 'Seth', NULL, 'Seth MacFarlane', 'Actor');  -- Actor: Seth MacFarlane
+INSERT INTO filth.crew_person VALUES (3685, 'Yoakam', 'Dwight', NULL, 'Dwight Yoakam', 'Actor');  -- Actor: Dwight Yoakam

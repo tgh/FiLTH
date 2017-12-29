@@ -4270,3 +4270,7 @@ INSERT INTO filth.movie VALUES (4274, 'The Trip to Spain', 2017, '***', 'NR', 'E
 INSERT INTO filth.movie VALUES (4275, 'Murder on the Orient Express', 2017, '**½', 'PG-13', 'USA', NULL, 'tt3402236', 1, 392044, NULL, NULL, 116);
 INSERT INTO filth.movie VALUES (4276, 'The Santa Clause', 1994, '**½', 'PG', 'USA', NULL, 'tt0111070', 0, 11395, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (4277, 'The Santa Clause 2', 2002, '**', 'G', 'USA', NULL, 'tt0304669', 0, 9021, NULL, NULL, 104);
+INSERT INTO filth.movie VALUES (4278, 'Jingle All the Way', 1996, '*', 'PG', 'USA', NULL, 'tt0116705', 0, 9279, NULL, NULL, 89);
+INSERT INTO filth.movie VALUES (4279, 'The Santa Clause 3: The Escape Clause', 2006, '**', 'G', 'USA', NULL, 'tt0452681', 0, 13767, NULL, NULL, 97);
+INSERT INTO filth.movie VALUES (4280, 'A Christmas Carol', 1984, '***', 'PG', 'England', NULL, 'tt0087056', 0, 13189, NULL, NULL, 100);
+INSERT INTO filth.movie VALUES (4281, 'Logan Lucky', 2017, '***', 'PG-13', 'USA', NULL, 'tt5439796', 0, 399170, NULL, NULL, 118);
