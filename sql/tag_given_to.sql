@@ -19310,3 +19310,4 @@ INSERT INTO filth.tag_given_to VALUES(4281, 79);  -- Logan Lucky (2017) tagged w
 INSERT INTO filth.tag_given_to VALUES(4281, 169);  -- Logan Lucky (2017) tagged with 'stealing'
 INSERT INTO filth.tag_given_to VALUES(4281, 25);  -- Logan Lucky (2017) tagged with 'crime'
 INSERT INTO filth.tag_given_to VALUES(4281, 333);  -- Logan Lucky (2017) tagged with 'siblings'
+INSERT INTO filth.tag_given_to VALUES(999, 261);  -- Magnolia (1999) tagged with 'excessive-swearing'
