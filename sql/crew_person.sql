@@ -3681,3 +3681,5 @@ INSERT INTO filth.crew_person VALUES (3683, 'Keough', 'Riley', NULL, 'Riley Keou
 INSERT INTO filth.crew_person VALUES (3684, 'MacFarlane', 'Seth', NULL, 'Seth MacFarlane', 'Actor');  -- Actor: Seth MacFarlane
 INSERT INTO filth.crew_person VALUES (3685, 'Yoakam', 'Dwight', NULL, 'Dwight Yoakam', 'Actor');  -- Actor: Dwight Yoakam
 INSERT INTO filth.crew_person VALUES (3686, 'Elgort', 'Ansel', NULL, 'Ansel Elgort', 'Actor');  -- Actor: Ansel Elgort
+INSERT INTO filth.crew_person VALUES (3687, 'Dobbs', 'Lem', NULL, 'Lem Dobbs', 'Screenwriter');  -- Screenwriter: Lem Dobbs
+INSERT INTO filth.crew_person VALUES (3688, 'Carano', 'Gina', NULL, 'Gina Carano', 'Actress');  -- Actress: Gina Carano

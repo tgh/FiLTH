@@ -4275,3 +4275,4 @@ INSERT INTO filth.movie VALUES (4279, 'The Santa Clause 3: The Escape Clause', 2
 INSERT INTO filth.movie VALUES (4280, 'A Christmas Carol', 1984, '***', 'PG', 'England', NULL, 'tt0087056', 0, 13189, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (4281, 'Logan Lucky', 2017, '***', 'PG-13', 'USA', NULL, 'tt5439796', 0, 399170, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4282, 'Baby Driver', 2017, '**½', 'R', 'England', 'There were some flat characters, screenplay contrivances, and the ending was over-the-top and too Hollywood. The opening sequence is excellent though and the music incorporated into the film is fun (gun shots firing along with the music, for example).', 'tt3890160', 0, 339403, NULL, NULL, 112);
+INSERT INTO filth.movie VALUES (4283, 'Haywire', 2011, '***', 'R', 'USA', 'Really realistic fight scenes--well done.', 'tt1506999', 0, 70435, NULL, NULL, 93);
