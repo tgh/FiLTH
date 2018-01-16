@@ -1721,7 +1721,7 @@ INSERT INTO filth.movie VALUES (1716, 'A Very Long Engagement', 2004, '***', 'R'
 INSERT INTO filth.movie VALUES (1717, 'Vice Versa', 1988, '***½', 'PG', 'USA', NULL, 'tt0096380', 1, 26603, NULL, NULL, 98);
 INSERT INTO filth.movie VALUES (1718, 'The Village', 2004, '***½', 'PG-13', 'USA', NULL, 'tt0368447', 1, 6947, NULL, NULL, 108);
 INSERT INTO filth.movie VALUES (1719, 'The Virgin Spring', 1960, '****', 'NR', 'Sweden', NULL, 'tt0053976', 0, 11656, NULL, NULL, 89);
-INSERT INTO filth.movie VALUES (1720, 'The Virgin Suicides', 2000, '***½', 'R', 'USA', NULL, 'tt0159097', 0, 1443, NULL, NULL, 97);
+INSERT INTO filth.movie VALUES (1720, 'The Virgin Suicides', 2000, '***', 'R', 'USA', NULL, 'tt0159097', 0, 1443, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (1721, 'The Visual Bible: Matthew', 1997, '***½', 'NR', 'South Africa', NULL, 'tt0301359', 0, 38298, NULL, NULL, 265);
 INSERT INTO filth.movie VALUES (1722, 'Vitus', 2007, '***', 'PG', 'Switzerland', NULL, 'tt0478829', 0, 14804, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (1723, 'Viva Zapata!', 1952, '***', 'NR', 'USA', NULL, 'tt0045296', 0, 1810, NULL, NULL, 113);
@@ -4277,3 +4277,4 @@ INSERT INTO filth.movie VALUES (4281, 'Logan Lucky', 2017, '***', 'PG-13', 'USA'
 INSERT INTO filth.movie VALUES (4282, 'Baby Driver', 2017, '**½', 'R', 'England', 'There were some flat characters, screenplay contrivances, and the ending was over-the-top and too Hollywood. The opening sequence is excellent though and the music incorporated into the film is fun (gun shots firing along with the music, for example).', 'tt3890160', 0, 339403, NULL, NULL, 112);
 INSERT INTO filth.movie VALUES (4283, 'Haywire', 2011, '***', 'R', 'USA', 'Really realistic fight scenes--well done.', 'tt1506999', 0, 70435, NULL, NULL, 93);
 INSERT INTO filth.movie VALUES (4284, 'The Bourne Legacy', 2012, '***', 'PG-13', 'USA', NULL, 'tt1194173', 0, 49040, NULL, NULL, 135);
+INSERT INTO filth.movie VALUES (4285, 'Three Billboards Outside Ebbing, Missouri', 2017, '***½', 'R', 'England', 'The story is excellent--great sceenplay in that regard. However, the needless vulgarity is hard to get passed, and arguably poor writing (yes, some people talk that way, but not *all* people in one area--sounds like one type of voice. Also, there''s British words that Americans--especially Missourians--don''t really use). Left feeling depressed and gross a little, although the allegory is good--anger begetting anger, violence begetting violence, sins causing ripple affects, etc.', 'tt5027774', 1, 359940, NULL, NULL, 115);
