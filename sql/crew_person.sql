@@ -3690,3 +3690,4 @@ INSERT INTO filth.crew_person VALUES (3692, 'Paulson', 'Sarah', NULL, 'Sarah Pau
 INSERT INTO filth.crew_person VALUES (3693, 'Odenkirk', 'Bob', NULL, 'Bob Odenkirk', 'Actor');  -- Actor: Bob Odenkirk
 INSERT INTO filth.crew_person VALUES (3694, 'Greenwood', 'Bruce', NULL, 'Bruce Greenwood', 'Actor');  -- Actor: Bruce Greenwood
 INSERT INTO filth.crew_person VALUES (3695, 'Cross', 'David', NULL, 'David Cross', 'Actor');  -- Actor: David Cross
+INSERT INTO filth.crew_person VALUES (3696, 'Hemsworth', 'Luke', NULL, 'Luke Hemsworth', 'Actor');  -- Actor: Luke Hemsworth
