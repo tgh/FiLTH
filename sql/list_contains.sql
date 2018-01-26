@@ -2211,3 +2211,18 @@ INSERT INTO filth.list_contains VALUES (2213, 4290, 143, 7, NULL); -- "The Big S
 INSERT INTO filth.list_contains VALUES (2214, 4291, 143, 8, NULL); -- "Molly's Game" in list "Top Ten Movies of 2017" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2215, 840, 143, 9, NULL); -- "It" in list "Top Ten Movies of 2017" by Richard Roeper
 INSERT INTO filth.list_contains VALUES (2216, 4263, 143, 10, NULL); -- "Detroit" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2217, 4289, 144, 1, NULL); -- "Blade Runner 2049" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2218, 4292, 144, 2, NULL); -- "Lady Bird" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2219, 4269, 144, 3, NULL); -- "War for the Planet of the Apes" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2220, 4287, 144, 4, NULL); -- "Thor: Ragnarok" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2221, 4235, 144, 5, NULL); -- "Split" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2222, 4240, 144, 6, NULL); -- "Logan" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2223, 4270, 144, 7, NULL); -- "Wind River" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2224, 4261, 144, 8, NULL); -- "Dunkirk" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2225, 4291, 144, 9, NULL); -- "Molly's Game" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2226, 4293, 144, 10, NULL); -- "A Ghost Story" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2227, 4285, 144, 11, NULL); -- "Three Billboards Outside Ebbing, Missouri" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2228, 4282, 144, 12, NULL); -- "Baby Driver" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2229, 4294, 144, 13, NULL); -- "Gerald's Game" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2230, 4295, 144, 14, NULL); -- "The Disaster Artist" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2231, 4296, 144, 15, NULL); -- "Good Time" in list "Best Movies of 2017" by Chris Stuckmann
