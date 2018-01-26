@@ -2201,3 +2201,13 @@ INSERT INTO filth.list_contains VALUES (2203, 3879, 140, NULL, NULL); -- "When M
 INSERT INTO filth.list_contains VALUES (2204, 3865, 140, NULL, NULL); -- "Mad Max: Fury Road" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2205, 3896, 140, NULL, NULL); -- "Creed" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2206, 3869, 140, NULL, NULL); -- "Star Wars: Episode VII – the Force Awakens" in list "50 movies of the 2000s to see before you die" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2207, 4285, 143, 1, NULL); -- "Three Billboards Outside Ebbing, Missouri" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2208, 4286, 143, 2, NULL); -- "The Post" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2209, 4270, 143, 3, NULL); -- "Wind River" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2210, 4261, 143, 4, NULL); -- "Dunkirk" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2211, 4282, 143, 5, NULL); -- "Baby Driver" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2212, 4289, 143, 6, NULL); -- "Blade Runner 2049" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2213, 4290, 143, 7, NULL); -- "The Big Sick" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2214, 4291, 143, 8, NULL); -- "Molly's Game" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2215, 840, 143, 9, NULL); -- "It" in list "Top Ten Movies of 2017" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2216, 4263, 143, 10, NULL); -- "Detroit" in list "Top Ten Movies of 2017" by Richard Roeper

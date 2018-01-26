@@ -55,7 +55,7 @@ def processLine(line):
     year = vals[YEAR]
     movieTitle = vals[MOVIE]
     order = vals[ORDER]
-    
+
     #check for list
     mlist = lists.getListByTitleAndAuthor(listTitle, author)
     if mlist is None:
@@ -72,6 +72,7 @@ def processLine(line):
         while True:
             #copy title to clipboard
             pyperclip.copy(movieTitle)
+            print ' -- title copied to clipboard --'
             response = raw_input('Is this a new movie (\'y\', \'n\', \'q\')? ').lower()
             if response not in ['y','n','q']:
                 print 'Only \'y\', \'n\', or \'q\' responses.'

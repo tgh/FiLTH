@@ -333,7 +333,7 @@ class Movies(object):
         '''
         while True:
             response = raw_input('What is the YEAR for this new movie? (\'q\' to quit) ')
-            self._checkForQuit(response, 'promptUserForTitle')
+            self._checkForQuit(response, 'promptUserForYear')
             try:
                 year = int(response)
                 if year < 1900 or year > 2020:  #arbitrary
@@ -383,7 +383,7 @@ class Movies(object):
                     response2 = raw_input('>> Unkown country: "' + response + '". Add this country? (\'y\', \'n\', \'q\'): ').lower()
                     self._checkForQuit(response2, 'promptUserForMpaa')
                     if response2 not in ['y','n','q']:
-                        print "**Only 'y', 'n', or 'q' please." 
+                        print "**Only 'y', 'n', or 'q' please."
                         continue
                     if response2 == 'y':
                         self._createInsertStatementForCountry(response)
