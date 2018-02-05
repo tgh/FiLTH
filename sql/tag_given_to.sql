@@ -19372,3 +19372,6 @@ INSERT INTO filth.tag_given_to VALUES(4288, 46);  -- Phantom Thread (2017) tagge
 INSERT INTO filth.tag_given_to VALUES(4288, 275);  -- Phantom Thread (2017) tagged with 'fashion'
 INSERT INTO filth.tag_given_to VALUES(4288, 118);  -- Phantom Thread (2017) tagged with '20th-century'
 INSERT INTO filth.tag_given_to VALUES(4288, 21);  -- Phantom Thread (2017) tagged with 'period'
+INSERT INTO filth.tag_given_to VALUES(4297, 10);  -- Unstoppable (2010) tagged with 'action'
+INSERT INTO filth.tag_given_to VALUES(4297, 3);  -- Unstoppable (2010) tagged with 'thriller'
+INSERT INTO filth.tag_given_to VALUES(4297, 391);  -- Unstoppable (2010) tagged with 'masculine'
