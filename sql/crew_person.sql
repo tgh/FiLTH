@@ -3693,3 +3693,5 @@ INSERT INTO filth.crew_person VALUES (3695, 'Cross', 'David', NULL, 'David Cross
 INSERT INTO filth.crew_person VALUES (3696, 'Hemsworth', 'Luke', NULL, 'Luke Hemsworth', 'Actor');  -- Actor: Luke Hemsworth
 INSERT INTO filth.crew_person VALUES (3697, 'Krieps', 'Vicky', NULL, 'Vicky Krieps', 'Actress');  -- Actress: Vicky Krieps
 INSERT INTO filth.crew_person VALUES (3698, 'Dunn', 'Kevin', NULL, 'Kevin Dunn', 'Actor');  -- Actor: Kevin Dunn
+INSERT INTO filth.crew_person VALUES (3699, 'Cumming', 'Alan', NULL, 'Alan Cumming', 'Actor');  -- Actor: Alan Cumming
+INSERT INTO filth.crew_person VALUES (3700, 'Northam', 'Jeremy', NULL, 'Jeremy Northam', 'Actor');  -- Actor: Jeremy Northam
