@@ -4290,3 +4290,4 @@ INSERT INTO filth.movie VALUES (4294, 'Gerald''s Game', 2017, 'not seen', 'R', '
 INSERT INTO filth.movie VALUES (4295, 'The Disaster Artist', 2017, 'not seen', 'R', 'USA', NULL, 'tt3521126', NULL, 371638, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4296, 'Good Time', 2017, 'not seen', 'R', 'USA', NULL, 'tt4846232', NULL, 429200, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (4297, 'Unstoppable', 2010, '**½', 'PG-13', 'USA', NULL, 'tt0477080', 0, 44048, NULL, NULL, 98);
+INSERT INTO filth.movie VALUES (4298, 'I, Tonya', 2017, '***', 'R', 'USA', NULL, 'tt5580036', 1, 389015, NULL, NULL, 120);

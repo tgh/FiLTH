@@ -3695,3 +3695,7 @@ INSERT INTO filth.crew_person VALUES (3697, 'Krieps', 'Vicky', NULL, 'Vicky Krie
 INSERT INTO filth.crew_person VALUES (3698, 'Dunn', 'Kevin', NULL, 'Kevin Dunn', 'Actor');  -- Actor: Kevin Dunn
 INSERT INTO filth.crew_person VALUES (3699, 'Cumming', 'Alan', NULL, 'Alan Cumming', 'Actor');  -- Actor: Alan Cumming
 INSERT INTO filth.crew_person VALUES (3700, 'Northam', 'Jeremy', NULL, 'Jeremy Northam', 'Actor');  -- Actor: Jeremy Northam
+INSERT INTO filth.crew_person VALUES (3701, 'Gillespie', 'Craig', NULL, 'Craig Gillespie', 'Director');  -- Director: Craig Gillespie
+INSERT INTO filth.crew_person VALUES (3702, 'Rogers', 'Steven', NULL, 'Steven Rogers', 'Screenwriter');  -- Screenwriter: Steven Rogers
+INSERT INTO filth.crew_person VALUES (3703, 'Robbie', 'Margot', NULL, 'Margot Robbie', 'Actress');  -- Actress: Margot Robbie
+INSERT INTO filth.crew_person VALUES (3704, 'Karakatsanis', 'Nicolas', NULL, 'Nicolas Karakatsanis', 'Cinematographer');  -- Cinematographer: Nicolas Karakatsanis
