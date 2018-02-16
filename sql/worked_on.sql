@@ -8941,3 +8941,7 @@ INSERT INTO filth.worked_on VALUES(8941, 4298, 3247, 'Supporting Actor');  -- Se
 INSERT INTO filth.worked_on VALUES(8942, 4298, 3252, 'Small Part');  -- Bobby Cannavale for I, Tonya (2017)
 INSERT INTO filth.worked_on VALUES(8943, 4298, 3626, 'Small Part');  -- Mckenna Grace for I, Tonya (2017)
 INSERT INTO filth.worked_on VALUES(8944, 4298, 3704, 'Cinematographer');  -- Nicolas Karakatsanis for I, Tonya (2017)
+INSERT INTO filth.worked_on VALUES(8945, 4299, 360, 'Director');  -- Andrei Tarkovsky for The Mirror (1975)
+INSERT INTO filth.worked_on VALUES(8946, 4299, 360, 'Screenwriter');  -- Andrei Tarkovsky for The Mirror (1975)
+INSERT INTO filth.worked_on VALUES(8947, 4299, 3705, 'Screenwriter');  -- Aleksandr Misharin for The Mirror (1975)
+INSERT INTO filth.worked_on VALUES(8948, 4299, 3706, 'Cinematographer');  -- Georgi Rerberg for The Mirror (1975)

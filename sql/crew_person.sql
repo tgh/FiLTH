@@ -3699,3 +3699,5 @@ INSERT INTO filth.crew_person VALUES (3701, 'Gillespie', 'Craig', NULL, 'Craig G
 INSERT INTO filth.crew_person VALUES (3702, 'Rogers', 'Steven', NULL, 'Steven Rogers', 'Screenwriter');  -- Screenwriter: Steven Rogers
 INSERT INTO filth.crew_person VALUES (3703, 'Robbie', 'Margot', NULL, 'Margot Robbie', 'Actress');  -- Actress: Margot Robbie
 INSERT INTO filth.crew_person VALUES (3704, 'Karakatsanis', 'Nicolas', NULL, 'Nicolas Karakatsanis', 'Cinematographer');  -- Cinematographer: Nicolas Karakatsanis
+INSERT INTO filth.crew_person VALUES (3705, 'Misharin', 'Aleksandr', NULL, 'Aleksandr Misharin', 'Screenwriter');  -- Screenwriter: Aleksandr Misharin
+INSERT INTO filth.crew_person VALUES (3706, 'Rerberg', 'Georgi', NULL, 'Georgi Rerberg', 'Cinematographer');  -- Cinematographer: Georgi Rerberg
