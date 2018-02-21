@@ -8945,3 +8945,7 @@ INSERT INTO filth.worked_on VALUES(8945, 4299, 360, 'Director');  -- Andrei Tark
 INSERT INTO filth.worked_on VALUES(8946, 4299, 360, 'Screenwriter');  -- Andrei Tarkovsky for The Mirror (1975)
 INSERT INTO filth.worked_on VALUES(8947, 4299, 3705, 'Screenwriter');  -- Aleksandr Misharin for The Mirror (1975)
 INSERT INTO filth.worked_on VALUES(8948, 4299, 3706, 'Cinematographer');  -- Georgi Rerberg for The Mirror (1975)
+INSERT INTO filth.worked_on VALUES(8949, 4224, 3707, 'Director');  -- Martin Zandvliet for Land of Mine (2016)
+INSERT INTO filth.worked_on VALUES(8950, 4224, 3707, 'Screenwriter');  -- Martin Zandvliet for Land of Mine (2016)
+INSERT INTO filth.worked_on VALUES(8951, 4224, 3708, 'Lead Actor');  -- Roland Moller for Land of Mine (2016)
+INSERT INTO filth.worked_on VALUES(8952, 4224, 3709, 'Cinematographer');  -- Camilla Hjelm for Land of Mine (2016)

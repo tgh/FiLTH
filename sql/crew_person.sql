@@ -3701,3 +3701,6 @@ INSERT INTO filth.crew_person VALUES (3703, 'Robbie', 'Margot', NULL, 'Margot Ro
 INSERT INTO filth.crew_person VALUES (3704, 'Karakatsanis', 'Nicolas', NULL, 'Nicolas Karakatsanis', 'Cinematographer');  -- Cinematographer: Nicolas Karakatsanis
 INSERT INTO filth.crew_person VALUES (3705, 'Misharin', 'Aleksandr', NULL, 'Aleksandr Misharin', 'Screenwriter');  -- Screenwriter: Aleksandr Misharin
 INSERT INTO filth.crew_person VALUES (3706, 'Rerberg', 'Georgi', NULL, 'Georgi Rerberg', 'Cinematographer');  -- Cinematographer: Georgi Rerberg
+INSERT INTO filth.crew_person VALUES (3707, 'Zandvliet', 'Martin', NULL, 'Martin Zandvliet', 'Director');  -- Director: Martin Zandvliet
+INSERT INTO filth.crew_person VALUES (3708, 'Moller', 'Roland', NULL, 'Roland Moller', 'Actor');  -- Actor: Roland Moller
+INSERT INTO filth.crew_person VALUES (3709, 'Hjelm', 'Camilla', NULL, 'Camilla Hjelm', 'Cinematographer');  -- Cinematographer: Camilla Hjelm
