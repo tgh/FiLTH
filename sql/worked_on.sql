@@ -8949,3 +8949,5 @@ INSERT INTO filth.worked_on VALUES(8949, 4224, 3707, 'Director');  -- Martin Zan
 INSERT INTO filth.worked_on VALUES(8950, 4224, 3707, 'Screenwriter');  -- Martin Zandvliet for Land of Mine (2016)
 INSERT INTO filth.worked_on VALUES(8951, 4224, 3708, 'Lead Actor');  -- Roland Moller for Land of Mine (2016)
 INSERT INTO filth.worked_on VALUES(8952, 4224, 3709, 'Cinematographer');  -- Camilla Hjelm for Land of Mine (2016)
+INSERT INTO filth.worked_on VALUES(8953, 4300, 3304, 'Character Voice');  -- Chris O'Dowd for Loving Vincent (2017)
+INSERT INTO filth.worked_on VALUES(8954, 4300, 1050, 'Character Voice');  -- Saoirse Ronan for Loving Vincent (2017)
