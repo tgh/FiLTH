@@ -3704,3 +3704,4 @@ INSERT INTO filth.crew_person VALUES (3706, 'Rerberg', 'Georgi', NULL, 'Georgi R
 INSERT INTO filth.crew_person VALUES (3707, 'Zandvliet', 'Martin', NULL, 'Martin Zandvliet', 'Director');  -- Director: Martin Zandvliet
 INSERT INTO filth.crew_person VALUES (3708, 'Moller', 'Roland', NULL, 'Roland Moller', 'Actor');  -- Actor: Roland Moller
 INSERT INTO filth.crew_person VALUES (3709, 'Hjelm', 'Camilla', NULL, 'Camilla Hjelm', 'Cinematographer');  -- Cinematographer: Camilla Hjelm
+INSERT INTO filth.crew_person VALUES (3710, 'Lindo', 'Delroy', NULL, 'Delroy Lindo', 'Actor');  -- Actor: Delroy Lindo

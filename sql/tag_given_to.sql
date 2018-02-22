@@ -19437,3 +19437,5 @@ INSERT INTO filth.tag_given_to VALUES(4300, 31);  -- Loving Vincent (2017) tagge
 INSERT INTO filth.tag_given_to VALUES(4300, 21);  -- Loving Vincent (2017) tagged with 'period'
 INSERT INTO filth.tag_given_to VALUES(4300, 164);  -- Loving Vincent (2017) tagged with 'cinematography'
 INSERT INTO filth.tag_given_to VALUES(4300, 61);  -- Loving Vincent (2017) tagged with 'arts/entertainment'
+INSERT INTO filth.tag_given_to VALUES(1701, 262);  -- Up (2009) tagged with 'marriage'
+INSERT INTO filth.tag_given_to VALUES(1701, 362);  -- Up (2009) tagged with 'loss'
