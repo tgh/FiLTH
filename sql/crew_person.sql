@@ -3705,3 +3705,14 @@ INSERT INTO filth.crew_person VALUES (3707, 'Zandvliet', 'Martin', NULL, 'Martin
 INSERT INTO filth.crew_person VALUES (3708, 'Moller', 'Roland', NULL, 'Roland Moller', 'Actor');  -- Actor: Roland Moller
 INSERT INTO filth.crew_person VALUES (3709, 'Hjelm', 'Camilla', NULL, 'Camilla Hjelm', 'Cinematographer');  -- Cinematographer: Camilla Hjelm
 INSERT INTO filth.crew_person VALUES (3710, 'Lindo', 'Delroy', NULL, 'Delroy Lindo', 'Actor');  -- Actor: Delroy Lindo
+INSERT INTO filth.crew_person VALUES (3711, 'Chalamet', 'Timothee', NULL, 'Timothee Chalamet', 'Actor');  -- Actor: Timothee Chalamet
+INSERT INTO filth.crew_person VALUES (3712, 'Blige', 'Mary', 'J.', 'Mary J. Blige', 'Actress');  -- Actress: Mary J. Blige
+INSERT INTO filth.crew_person VALUES (3713, 'Metcalf', 'Laurie', NULL, 'Laurie Metcalf', 'Actress');  -- Actress: Laurie Metcalf
+INSERT INTO filth.crew_person VALUES (3714, 'Morrison', 'Rachel', NULL, 'Rachel Morrison', 'Cinematographer');  -- Cinematographer: Rachel Morrison
+INSERT INTO filth.crew_person VALUES (3715, 'Laustsen', 'Dan', NULL, 'Dan Laustsen', 'Cinematographer');  -- Cinematographer: Dan Laustsen
+INSERT INTO filth.crew_person VALUES (3716, 'Neustadter', 'Scott', NULL, 'Scott Neustadter', 'Screenwriter');  -- Screenwriter: Scott Neustadter
+INSERT INTO filth.crew_person VALUES (3717, 'Weber', 'Michael', 'H.', 'Michael H. Weber', 'Screenwriter');  -- Screenwriter: Michael H. Weber
+INSERT INTO filth.crew_person VALUES (3718, 'Williams', 'Virgil', NULL, 'Virgil Williams', 'Screenwriter');  -- Screenwriter: Virgil Williams
+INSERT INTO filth.crew_person VALUES (3719, 'Rees', 'Dee', NULL, 'Dee Rees', 'Director');  -- Director: Dee Rees
+INSERT INTO filth.crew_person VALUES (3720, 'Gordon', 'Emily', 'V.', 'Emily V. Gordon', 'Screenwriter');  -- Screenwriter: Emily V. Gordon
+INSERT INTO filth.crew_person VALUES (3721, 'Nanjiani', 'Kumail', NULL, 'Kumail Nanjiani', 'Actor');  -- Actor: Kumail Nanjiani

@@ -35,7 +35,7 @@ FILTH_PATH = getenv('FILTH_PATH', '/home/tgh/workspace/FiLTH')
 MOVIE_FILE = FILTH_PATH + '/sql/movie.sql'
 CREW_FILE = FILTH_PATH + '/sql/crew_person.sql'
 WORKED_ON_FILE = FILTH_PATH + '/sql/worked_on.sql'
-LOG_FILE = FILTH_PATH + '/logs/oscars_2009_and_up.log'
+LOG_FILE = FILTH_PATH + '/logs/oscars.log'
 OSCAR_FILE = FILTH_PATH + '/sql/oscar.sql'
 OSCAR_GIVEN_TO_FILE = FILTH_PATH + '/sql/oscar_given_to.sql'
 COUNTRY_FILE = FILTH_PATH + '/sql/country.sql'
@@ -69,7 +69,7 @@ _oscarsCsv = None
 #-----------------------------------------------------------------------------
 
 def usage():
-    print '\n\toscars_2009_and_up.py <csv file>\n'
+    print '\n\toscars.py <csv file>\n'
 
 
 #-----------------------------------------------------------------------------
