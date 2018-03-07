@@ -3716,3 +3716,8 @@ INSERT INTO filth.crew_person VALUES (3718, 'Williams', 'Virgil', NULL, 'Virgil 
 INSERT INTO filth.crew_person VALUES (3719, 'Rees', 'Dee', NULL, 'Dee Rees', 'Director');  -- Director: Dee Rees
 INSERT INTO filth.crew_person VALUES (3720, 'Gordon', 'Emily', 'V.', 'Emily V. Gordon', 'Screenwriter');  -- Screenwriter: Emily V. Gordon
 INSERT INTO filth.crew_person VALUES (3721, 'Nanjiani', 'Kumail', NULL, 'Kumail Nanjiani', 'Actor');  -- Actor: Kumail Nanjiani
+INSERT INTO filth.crew_person VALUES (3722, 'Hedlund', 'Garrett', NULL, 'Garrett Hedlund', 'Actor');  -- Actor: Garrett Hedlund
+INSERT INTO filth.crew_person VALUES (3723, 'Morgan', 'Rob', NULL, 'Rob Morgan', 'Actor');  -- Actor: Rob Morgan
+INSERT INTO filth.crew_person VALUES (3724, 'Banks', 'Jonathan', NULL, 'Jonathan Banks', 'Actor');  -- Actor: Jonathan Banks
+INSERT INTO filth.crew_person VALUES (3725, 'Mitchell', 'Jason', NULL, 'Jason Mitchell', 'Actor');  -- Actor: Jason Mitchell
+INSERT INTO filth.crew_person VALUES (3726, 'Kimmel', 'Jimmy', NULL, 'Jimmy Kimmel', 'Actor');  -- Actor: Jimmy Kimmel
