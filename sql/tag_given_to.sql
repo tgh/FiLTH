@@ -19481,3 +19481,6 @@ INSERT INTO filth.tag_given_to VALUES(4318, 250);  -- The Boss Baby (2017) tagge
 INSERT INTO filth.tag_given_to VALUES(4318, 249);  -- The Boss Baby (2017) tagged with 'coming-of-age/childhood'
 INSERT INTO filth.tag_given_to VALUES(4318, 7);  -- The Boss Baby (2017) tagged with 'animation'
 INSERT INTO filth.tag_given_to VALUES(4318, 333);  -- The Boss Baby (2017) tagged with 'siblings'
+INSERT INTO filth.tag_given_to VALUES(4318, 60);  -- The Boss Baby (2017) tagged with 'based-on-book(s)'
+INSERT INTO filth.tag_given_to VALUES(4318, 59);  -- The Boss Baby (2017) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(4318, 58);  -- The Boss Baby (2017) tagged with 'based-on-something'
