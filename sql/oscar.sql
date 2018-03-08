@@ -12,3 +12,4 @@ INSERT INTO filth.oscar VALUES (11, 'Best Original Screenplay');
 INSERT INTO filth.oscar VALUES (12, 'Best Foreign Language Film');
 INSERT INTO filth.oscar VALUES (13, 'Best Documentary');
 INSERT INTO filth.oscar VALUES (14, 'Best Screenplay');
+INSERT INTO filth.oscar VALUES (15, 'Best Animated Feature');

@@ -4311,3 +4311,15 @@ INSERT INTO filth.movie VALUES (4315, 'Loveless', 2017, 'not seen', 'R', 'Russia
 INSERT INTO filth.movie VALUES (4316, 'On Body and Soul', 2017, 'not seen', 'NR', 'Hungary', NULL, 'tt5607714', NULL, 436343);
 INSERT INTO filth.movie VALUES (4317, 'The Square', 2017, 'not seen', 'R', 'Sweden', NULL, 'tt4995790', NULL, 401246);
 INSERT INTO filth.movie VALUES (4318, 'The Boss Baby', 2017, '***', 'PG', 'USA', NULL, 'tt3874544', 0, 295693, NULL, NULL, 97);
+INSERT INTO filth.movie VALUES (4319, 'The Breadwinner', 2017, 'not seen', 'PG-13', 'Ireland', NULL, 'tt3901826', NULL, 435129);
+INSERT INTO filth.movie VALUES (4320, 'Coco', 2017, 'not seen', 'PG', 'USA', NULL, 'tt2380307', NULL, 354912);
+INSERT INTO filth.movie VALUES (4321, 'Ferdinand', 2017, 'not seen', 'PG', 'USA', NULL, 'tt3411444', NULL, 364689);
+INSERT INTO filth.movie VALUES (4322, 'Anomalisa', 2015, 'not seen', 'R', 'USA', NULL, 'tt2401878', NULL, 291270);
+INSERT INTO filth.movie VALUES (4323, 'Frankenweenie', 2012, 'not seen', 'PG', 'USA', NULL, 'tt1142977', NULL, 62214);
+INSERT INTO filth.movie VALUES (4324, 'The Pirates! Band of Misfits', 2012, 'not seen', 'PG', 'England', NULL, 'tt1430626', NULL, 72197);
+INSERT INTO filth.movie VALUES (4325, 'Bolt', 2008, 'not seen', 'PG', 'USA', NULL, 'tt0397892', NULL, 13053);
+INSERT INTO filth.movie VALUES (4326, 'Persepolis', 2007, 'not seen', 'PG-13', DEFAULT, NULL, 'tt0808417', NULL, 2011);
+INSERT INTO filth.movie VALUES (4327, 'Happy Feet', 2006, 'not seen', 'PG', 'USA', NULL, 'tt0366548', NULL, 9836);
+INSERT INTO filth.movie VALUES (4328, 'Brother Bear', 2003, 'not seen', 'G', 'USA', NULL, 'tt0328880', NULL, 10009);
+INSERT INTO filth.movie VALUES (4329, 'Spirit: Stallion of the Cimarron', 2002, 'not seen', 'G', 'USA', NULL, 'tt0166813', NULL, 9023);
+INSERT INTO filth.movie VALUES (4330, 'Jimmy Neutron: Boy Genius', 2001, 'not seen', 'G', 'USA', NULL, 'tt0268397', NULL, 12589);
