@@ -3721,3 +3721,4 @@ INSERT INTO filth.crew_person VALUES (3723, 'Morgan', 'Rob', NULL, 'Rob Morgan',
 INSERT INTO filth.crew_person VALUES (3724, 'Banks', 'Jonathan', NULL, 'Jonathan Banks', 'Actor');  -- Actor: Jonathan Banks
 INSERT INTO filth.crew_person VALUES (3725, 'Mitchell', 'Jason', NULL, 'Jason Mitchell', 'Actor');  -- Actor: Jason Mitchell
 INSERT INTO filth.crew_person VALUES (3726, 'Kimmel', 'Jimmy', NULL, 'Jimmy Kimmel', 'Actor');  -- Actor: Jimmy Kimmel
+INSERT INTO filth.crew_person VALUES (3727, 'Turteltaub', 'Jon', NULL, 'Jon Turteltaub', 'Director');  -- Director: Jon Turteltaub
