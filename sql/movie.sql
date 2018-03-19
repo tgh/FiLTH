@@ -4324,3 +4324,4 @@ INSERT INTO filth.movie VALUES (4328, 'Brother Bear', 2003, 'not seen', 'G', 'US
 INSERT INTO filth.movie VALUES (4329, 'Spirit: Stallion of the Cimarron', 2002, 'not seen', 'G', 'USA', NULL, 'tt0166813', NULL, 9023);
 INSERT INTO filth.movie VALUES (4330, 'Jimmy Neutron: Boy Genius', 2001, 'not seen', 'G', 'USA', NULL, 'tt0268397', NULL, 12589);
 INSERT INTO filth.movie VALUES (4331, 'The Kid', 2000, '***', 'PG', 'USA', NULL, 'tt0219854', 0, 4244, NULL, NULL, 104);
+INSERT INTO filth.movie VALUES (4332, 'Daddy''s Home 2', 2017, '***', 'PG-13', 'USA', NULL, 'tt5657846', 0, 419680, NULL, NULL, 100);

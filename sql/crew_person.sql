@@ -3724,3 +3724,4 @@ INSERT INTO filth.crew_person VALUES (3726, 'Kimmel', 'Jimmy', NULL, 'Jimmy Kimm
 INSERT INTO filth.crew_person VALUES (3727, 'Turteltaub', 'Jon', NULL, 'Jon Turteltaub', 'Director');  -- Director: Jon Turteltaub
 INSERT INTO filth.crew_person VALUES (3728, 'Baker', 'Sean', NULL, 'Sean Baker', 'Director');  -- Director: Sean Baker
 INSERT INTO filth.crew_person VALUES (3729, 'Bergoch', 'Chris', NULL, 'Chris Bergoch', 'Screenwriter');  -- Screenwriter: Chris Bergoch
+INSERT INTO filth.crew_person VALUES (3730, 'Cena', 'John', NULL, 'John Cena', 'Actor');  -- Actor: John Cena
