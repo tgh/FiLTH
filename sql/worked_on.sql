@@ -9021,3 +9021,6 @@ INSERT INTO filth.worked_on VALUES(9021, 4331, 2984, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(9022, 4331, 915, 'Supporting Actress');  -- Lily Tomlin for The Kid (2000)
 INSERT INTO filth.worked_on VALUES(9023, 4331, 2140, 'Small Part');  -- Melissa McCarthy for The Kid (2000)
 INSERT INTO filth.worked_on VALUES(9024, 4331, 3727, 'Director');  -- Jon Turteltaub for The Kid (2000)
+INSERT INTO filth.worked_on VALUES(9025, 4305, 3728, 'Director');  -- Sean Baker for The Florida Project (2017)
+INSERT INTO filth.worked_on VALUES(9026, 4305, 3728, 'Screenwriter');  -- Sean Baker for The Florida Project (2017)
+INSERT INTO filth.worked_on VALUES(9027, 4305, 3729, 'Screenwriter');  -- Chris Bergoch for The Florida Project (2017)
