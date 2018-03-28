@@ -3728,3 +3728,6 @@ INSERT INTO filth.crew_person VALUES (3730, 'Cena', 'John', NULL, 'John Cena', '
 INSERT INTO filth.crew_person VALUES (3731, 'Momoa', 'Jason', NULL, 'Jason Momoa', 'Actor');  -- Actor: Jason Momoa
 INSERT INTO filth.crew_person VALUES (3732, 'Fisher', 'Ray', NULL, 'Ray Fisher', 'Actor');  -- Actor: Ray Fisher
 INSERT INTO filth.crew_person VALUES (3733, 'Morton', 'Joe', NULL, 'Joe Morton', 'Actor');  -- Actor: Joe Morton
+INSERT INTO filth.crew_person VALUES (3734, 'Klein', 'Robert', NULL, 'Robert Klein', 'Actor');  -- Actor: Robert Klein
+INSERT INTO filth.crew_person VALUES (3735, 'Petrie', 'Donald', NULL, 'Donald Petrie', 'Director');  -- Director: Donald Petrie
+INSERT INTO filth.crew_person VALUES (3736, 'Neuwirth', 'Bebe', NULL, 'Bebe Neuwirth', 'Actress');  -- Actress: Bebe Neuwirth
