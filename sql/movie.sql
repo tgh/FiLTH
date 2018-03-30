@@ -4302,7 +4302,7 @@ INSERT INTO filth.movie VALUES (4306, 'All the Money in the World', 2017, 'not s
 INSERT INTO filth.movie VALUES (4307, 'Mudbound', 2017, '***½', 'R', 'USA', NULL, 'tt2396589', NULL, 414425);
 INSERT INTO filth.movie VALUES (4308, 'Abacus: Small Enough to Jail', 2017, 'not seen', 'NR', 'USA', NULL, 'tt5952382', NULL, 411007);
 INSERT INTO filth.movie VALUES (4309, 'Faces Places', 2017, 'not seen', 'PG', 'France', NULL, 'tt5598102', NULL, 451995);
-INSERT INTO filth.movie VALUES (4310, 'Icarus', 2017, 'not seen', 'NR', 'USA', NULL, 'tt6333060', NULL, 432976);
+INSERT INTO filth.movie VALUES (4310, 'Icarus', 2017, '***½', 'NR', 'USA', NULL, 'tt6333060', NULL, 432976);
 INSERT INTO filth.movie VALUES (4311, 'Last Men in Aleppo', 2017, 'not seen', 'NR', DEFAULT, NULL, 'tt6333074', NULL, 433085);
 INSERT INTO filth.movie VALUES (4312, 'Strong Island', 2017, 'not seen', 'NR', 'USA', NULL, 'tt5873150', NULL, 428612);
 INSERT INTO filth.movie VALUES (4313, 'A Fantastic Woman', 2017, 'not seen', 'R', 'Chile', NULL, 'tt5639354', NULL, 429191);
