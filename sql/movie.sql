@@ -4296,7 +4296,7 @@ INSERT INTO filth.movie VALUES (4300, 'Loving Vincent', 2017, '****', 'PG-13', '
 INSERT INTO filth.movie VALUES (4301, 'Call Me by Your Name', 2017, 'not seen', 'R', 'Italy', NULL, 'tt5726616', NULL, 398818);
 INSERT INTO filth.movie VALUES (4302, 'Roman J. Israel, Esq.', 2017, '***', 'PG-13', 'USA', NULL, 'tt6000478', NULL, 413362);
 INSERT INTO filth.movie VALUES (4303, 'Darkest Hour', 2017, 'not seen', 'PG-13', 'England', NULL, 'tt4555426', NULL, 399404);
-INSERT INTO filth.movie VALUES (4304, 'The Shape of Water', 2017, 'not seen', 'R', 'USA', NULL, 'tt5580390', NULL, 399055);
+INSERT INTO filth.movie VALUES (4304, 'The Shape of Water', 2017, '**½', 'R', 'USA', NULL, 'tt5580390', NULL, 399055);
 INSERT INTO filth.movie VALUES (4305, 'The Florida Project', 2017, '**½', 'R', 'USA', NULL, 'tt5649144', NULL, 394117);
 INSERT INTO filth.movie VALUES (4306, 'All the Money in the World', 2017, 'not seen', 'R', 'USA', NULL, 'tt5294550', NULL, 446791);
 INSERT INTO filth.movie VALUES (4307, 'Mudbound', 2017, '***½', 'R', 'USA', NULL, 'tt2396589', NULL, 414425);

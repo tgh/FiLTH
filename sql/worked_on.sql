@@ -9079,3 +9079,5 @@ INSERT INTO filth.worked_on VALUES(9079, 4335, 663, 'Lead Actor');  -- Jake Gyll
 INSERT INTO filth.worked_on VALUES(9080, 4335, 986, 'Supporting Actress');  -- Miranda Richardson for Stronger (2017)
 INSERT INTO filth.worked_on VALUES(9081, 4335, 3737, 'Supporting Actress');  -- Tatiana Maslany for Stronger (2017)
 INSERT INTO filth.worked_on VALUES(9082, 4335, 3738, 'Cinematographer');  -- Sean Bobbitt for Stronger (2017)
+INSERT INTO filth.worked_on VALUES(9083, 4304, 669, 'Supporting Actor');  -- Michael Shannon for The Shape of Water (2017)
+INSERT INTO filth.worked_on VALUES(9084, 4304, 3064, 'Supporting Actor');  -- Michael Stuhlbarg for The Shape of Water (2017)
