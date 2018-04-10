@@ -9074,3 +9074,8 @@ INSERT INTO filth.worked_on VALUES(9074, 1025, 2481, 'Supporting Actor');  -- Da
 INSERT INTO filth.worked_on VALUES(9075, 1025, 2428, 'Small Part');  -- Tom Hardy for Marie Antoinette (2006)
 INSERT INTO filth.worked_on VALUES(9076, 1025, 3194, 'Small Part');  -- Mathieu Amalric for Marie Antoinette (2006)
 INSERT INTO filth.worked_on VALUES(9077, 1025, 2650, 'Cinematographer');  -- Lance Acord for Marie Antoinette (2006)
+INSERT INTO filth.worked_on VALUES(9078, 4335, 292, 'Director');  -- David Gordon Green for Stronger (2017)
+INSERT INTO filth.worked_on VALUES(9079, 4335, 663, 'Lead Actor');  -- Jake Gyllenhaal for Stronger (2017)
+INSERT INTO filth.worked_on VALUES(9080, 4335, 986, 'Supporting Actress');  -- Miranda Richardson for Stronger (2017)
+INSERT INTO filth.worked_on VALUES(9081, 4335, 3737, 'Supporting Actress');  -- Tatiana Maslany for Stronger (2017)
+INSERT INTO filth.worked_on VALUES(9082, 4335, 3738, 'Cinematographer');  -- Sean Bobbitt for Stronger (2017)
