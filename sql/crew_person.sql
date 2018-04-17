@@ -3733,3 +3733,6 @@ INSERT INTO filth.crew_person VALUES (3735, 'Petrie', 'Donald', NULL, 'Donald Pe
 INSERT INTO filth.crew_person VALUES (3736, 'Neuwirth', 'Bebe', NULL, 'Bebe Neuwirth', 'Actress');  -- Actress: Bebe Neuwirth
 INSERT INTO filth.crew_person VALUES (3737, 'Maslany', 'Tatiana', NULL, 'Tatiana Maslany', 'Actress');  -- Actress: Tatiana Maslany
 INSERT INTO filth.crew_person VALUES (3738, 'Bobbitt', 'Sean', NULL, 'Sean Bobbitt', 'Cinematographer');  -- Cinematographer: Sean Bobbitt
+INSERT INTO filth.crew_person VALUES (3739, 'Molina', 'Adrian', NULL, 'Adrian Molina', 'Screenwriter');  -- Screenwriter: Adrian Molina
+INSERT INTO filth.crew_person VALUES (3740, 'Aldrich', 'Matthew', NULL, 'Matthew Aldrich', 'Screenwriter');  -- Screenwriter: Matthew Aldrich
+INSERT INTO filth.crew_person VALUES (3741, 'Dillane', 'Stephen', NULL, 'Stephen Dillane', 'Actor');  -- Actor: Stephen Dillane

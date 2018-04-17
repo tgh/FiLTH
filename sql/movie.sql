@@ -4295,7 +4295,7 @@ INSERT INTO filth.movie VALUES (4299, 'The Mirror', 1975, '**½', 'G', 'Russia',
 INSERT INTO filth.movie VALUES (4300, 'Loving Vincent', 2017, '****', 'PG-13', 'Poland', 'Brilliant animation--something new and innovative! I was expecting all style and no substance--mostly gimmicky, but I was surprised at how much I was invested in the story and how much feeling came out of it.', 'tt3262342', 0, 339877, NULL, NULL, 94);
 INSERT INTO filth.movie VALUES (4301, 'Call Me by Your Name', 2017, 'not seen', 'R', 'Italy', NULL, 'tt5726616', NULL, 398818);
 INSERT INTO filth.movie VALUES (4302, 'Roman J. Israel, Esq.', 2017, '***', 'PG-13', 'USA', NULL, 'tt6000478', NULL, 413362);
-INSERT INTO filth.movie VALUES (4303, 'Darkest Hour', 2017, 'not seen', 'PG-13', 'England', NULL, 'tt4555426', NULL, 399404);
+INSERT INTO filth.movie VALUES (4303, 'Darkest Hour', 2017, '***', 'PG-13', 'England', 'It''s kind of a toss-up between *** and ***½; I didn''t feel like I was fully invested in watching it at the time, which isn''t the film''s fault. Oldman''s performance (and the others), of course, was excellent, cinematography was great, and there were some great scenes such as Churchill taking the tube and the war cabinet scenes. However, it lacked some substance I felt--it was a little dull.', 'tt4555426', NULL, 399404);
 INSERT INTO filth.movie VALUES (4304, 'The Shape of Water', 2017, '**½', 'R', 'USA', NULL, 'tt5580390', NULL, 399055);
 INSERT INTO filth.movie VALUES (4305, 'The Florida Project', 2017, '**½', 'R', 'USA', NULL, 'tt5649144', NULL, 394117);
 INSERT INTO filth.movie VALUES (4306, 'All the Money in the World', 2017, 'not seen', 'R', 'USA', NULL, 'tt5294550', NULL, 446791);
@@ -4312,7 +4312,7 @@ INSERT INTO filth.movie VALUES (4316, 'On Body and Soul', 2017, 'not seen', 'NR'
 INSERT INTO filth.movie VALUES (4317, 'The Square', 2017, 'not seen', 'R', 'Sweden', NULL, 'tt4995790', NULL, 401246);
 INSERT INTO filth.movie VALUES (4318, 'The Boss Baby', 2017, '***', 'PG', 'USA', NULL, 'tt3874544', 0, 295693, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (4319, 'The Breadwinner', 2017, 'not seen', 'PG-13', 'Ireland', NULL, 'tt3901826', NULL, 435129);
-INSERT INTO filth.movie VALUES (4320, 'Coco', 2017, 'not seen', 'PG', 'USA', NULL, 'tt2380307', NULL, 354912);
+INSERT INTO filth.movie VALUES (4320, 'Coco', 2017, '***½', 'PG', 'USA', 'I loved the visuals, there were so colorful and amazing to look at. It was a fun adventure that took you somewhere you''ve never been before. However, I did find it a bit predictable, the bad guy was very cookie-cutter, and I would have liked more of the hilarious Pixar humor.', 'tt2380307', NULL, 354912);
 INSERT INTO filth.movie VALUES (4321, 'Ferdinand', 2017, 'not seen', 'PG', 'USA', NULL, 'tt3411444', NULL, 364689);
 INSERT INTO filth.movie VALUES (4322, 'Anomalisa', 2015, 'not seen', 'R', 'USA', NULL, 'tt2401878', NULL, 291270);
 INSERT INTO filth.movie VALUES (4323, 'Frankenweenie', 2012, 'not seen', 'PG', 'USA', NULL, 'tt1142977', NULL, 62214);
