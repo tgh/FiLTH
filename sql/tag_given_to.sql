@@ -19589,3 +19589,8 @@ INSERT INTO filth.tag_given_to VALUES(4303, 21);  -- Darkest Hour (2017) tagged 
 INSERT INTO filth.tag_given_to VALUES(4303, 17);  -- Darkest Hour (2017) tagged with 'war'
 INSERT INTO filth.tag_given_to VALUES(4303, 58);  -- Darkest Hour (2017) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(4303, 164);  -- Darkest Hour (2017) tagged with 'cinematography'
+INSERT INTO filth.tag_given_to VALUES(4292, 33);  -- Lady Bird (2017) tagged with 'comedy-drama'
+INSERT INTO filth.tag_given_to VALUES(4292, 249);  -- Lady Bird (2017) tagged with 'coming-of-age/childhood'
+INSERT INTO filth.tag_given_to VALUES(4292, 326);  -- Lady Bird (2017) tagged with 'teenager(s)'
+INSERT INTO filth.tag_given_to VALUES(4292, 327);  -- Lady Bird (2017) tagged with 'high-school'
+INSERT INTO filth.tag_given_to VALUES(4292, 380);  -- Lady Bird (2017) tagged with 'mother-daughter'

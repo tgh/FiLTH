@@ -9096,3 +9096,7 @@ INSERT INTO filth.worked_on VALUES(9096, 4303, 3522, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(9097, 4303, 2361, 'Supporting Actor');  -- Ben Mendelsohn for Darkest Hour (2017)
 INSERT INTO filth.worked_on VALUES(9098, 4303, 3741, 'Supporting Actor');  -- Stephen Dillane for Darkest Hour (2017)
 INSERT INTO filth.worked_on VALUES(9099, 4303, 219, 'Character Voice');  -- David Strathairn for Darkest Hour (2017)
+INSERT INTO filth.worked_on VALUES(9100, 4292, 3452, 'Supporting Actor');  -- Lucas Hedges for Lady Bird (2017)
+INSERT INTO filth.worked_on VALUES(9101, 4292, 3711, 'Supporting Actor');  -- Timothee Chalamet for Lady Bird (2017)
+INSERT INTO filth.worked_on VALUES(9102, 4292, 3742, 'Supporting Actress');  -- Lois Smith for Lady Bird (2017)
+INSERT INTO filth.worked_on VALUES(9103, 4292, 3743, 'Supporting Actor');  -- Tracy Letts for Lady Bird (2017)

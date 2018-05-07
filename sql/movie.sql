@@ -4284,7 +4284,7 @@ INSERT INTO filth.movie VALUES (4288, 'Phantom Thread', 2017, '***½', 'R', 'USA
 INSERT INTO filth.movie VALUES (4289, 'Blade Runner 2049', 2017, '***', 'R', 'USA', NULL, 'tt1856101', NULL, 335984, NULL, NULL, 164);
 INSERT INTO filth.movie VALUES (4290, 'The Big Sick', 2017, 'not seen', 'R', 'USA', NULL, 'tt5462602', NULL, 416477, NULL, NULL, 120);
 INSERT INTO filth.movie VALUES (4291, 'Molly''s Game', 2017, 'not seen', 'R', 'USA', NULL, 'tt4209788', NULL, 396371, NULL, NULL, 140);
-INSERT INTO filth.movie VALUES (4292, 'Lady Bird', 2017, 'not seen', 'R', 'USA', NULL, 'tt4925292', NULL, 391713, NULL, NULL, 94);
+INSERT INTO filth.movie VALUES (4292, 'Lady Bird', 2017, '***', 'R', 'USA', NULL, 'tt4925292', NULL, 391713, NULL, NULL, 94);
 INSERT INTO filth.movie VALUES (4293, 'A Ghost Story', 2017, 'not seen', 'R', 'USA', NULL, 'tt6265828', NULL, 428449, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (4294, 'Gerald''s Game', 2017, 'not seen', 'R', 'USA', NULL, 'tt3748172', NULL, 343674, NULL, NULL, 103);
 INSERT INTO filth.movie VALUES (4295, 'The Disaster Artist', 2017, 'not seen', 'R', 'USA', NULL, 'tt3521126', NULL, 371638, NULL, NULL, 104);
