@@ -9100,3 +9100,6 @@ INSERT INTO filth.worked_on VALUES(9100, 4292, 3452, 'Supporting Actor');  -- Lu
 INSERT INTO filth.worked_on VALUES(9101, 4292, 3711, 'Supporting Actor');  -- Timothee Chalamet for Lady Bird (2017)
 INSERT INTO filth.worked_on VALUES(9102, 4292, 3742, 'Supporting Actress');  -- Lois Smith for Lady Bird (2017)
 INSERT INTO filth.worked_on VALUES(9103, 4292, 3743, 'Supporting Actor');  -- Tracy Letts for Lady Bird (2017)
+INSERT INTO filth.worked_on VALUES(9104, 84, 789, 'Supporting Actress');  -- Leslie Caron for An American in Paris (1951)
+INSERT INTO filth.worked_on VALUES(9105, 84, 3744, 'Supporting Actor');  -- Oscar Levant for An American in Paris (1951)
+INSERT INTO filth.worked_on VALUES(9106, 84, 795, 'Supporting Actress');  -- Nina Foch for An American in Paris (1951)

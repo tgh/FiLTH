@@ -19594,3 +19594,7 @@ INSERT INTO filth.tag_given_to VALUES(4292, 249);  -- Lady Bird (2017) tagged wi
 INSERT INTO filth.tag_given_to VALUES(4292, 326);  -- Lady Bird (2017) tagged with 'teenager(s)'
 INSERT INTO filth.tag_given_to VALUES(4292, 327);  -- Lady Bird (2017) tagged with 'high-school'
 INSERT INTO filth.tag_given_to VALUES(4292, 380);  -- Lady Bird (2017) tagged with 'mother-daughter'
+INSERT INTO filth.tag_given_to VALUES(84, 34);  -- An American in Paris (1951) tagged with 'drama-comedy'
+INSERT INTO filth.tag_given_to VALUES(84, 212);  -- An American in Paris (1951) tagged with 'painting'
+INSERT INTO filth.tag_given_to VALUES(84, 61);  -- An American in Paris (1951) tagged with 'arts/entertainment'
+INSERT INTO filth.tag_given_to VALUES(4292, 392);  -- Lady Bird (2017) tagged with 'feminine'

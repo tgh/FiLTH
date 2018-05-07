@@ -3738,3 +3738,4 @@ INSERT INTO filth.crew_person VALUES (3740, 'Aldrich', 'Matthew', NULL, 'Matthew
 INSERT INTO filth.crew_person VALUES (3741, 'Dillane', 'Stephen', NULL, 'Stephen Dillane', 'Actor');  -- Actor: Stephen Dillane
 INSERT INTO filth.crew_person VALUES (3742, 'Smith', 'Lois', NULL, 'Lois Smith', 'Actress');  -- Actress: Lois Smith
 INSERT INTO filth.crew_person VALUES (3743, 'Letts', 'Tracy', NULL, 'Tracy Letts', 'Actor');  -- Actor: Tracy Letts
+INSERT INTO filth.crew_person VALUES (3744, 'Levant', 'Oscar', NULL, 'Oscar Levant', 'Actor');  -- Actor: Oscar Levant

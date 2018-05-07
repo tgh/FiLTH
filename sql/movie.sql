@@ -85,7 +85,7 @@ INSERT INTO filth.movie VALUES (80, 'An American Crime', 2007, '**½', 'R', 'USA
 INSERT INTO filth.movie VALUES (81, 'American Dream', 1990, '***', 'PG-13', 'USA', NULL, 'tt0099028', 0, 41326, NULL, NULL, 98);
 INSERT INTO filth.movie VALUES (82, 'American Graffiti', 1973, '****', 'PG', 'USA', NULL, 'tt0069704', 0, 838, NULL, NULL, 110);
 INSERT INTO filth.movie VALUES (83, 'American History X', 1998, '****', 'R', 'USA', NULL, 'tt0120586', 1, 73, NULL, NULL, 119);
-INSERT INTO filth.movie VALUES (84, 'An American in Paris', 1951, '***', 'NR', 'USA', NULL, 'tt0043278', 0, 2769, NULL, NULL, 113);
+INSERT INTO filth.movie VALUES (84, 'An American in Paris', 1951, '***', 'NR', 'USA', 'The first half or so is truly excellent. However, the story takes a turn into a relationship that is not that interesting. The Lise character is rather flat and uninteresting and you want the main character to pursue the Milo character which is far more interesting and likeable.', 'tt0043278', 0, 2769, NULL, NULL, 113);
 INSERT INTO filth.movie VALUES (85, 'American Movie', 1999, '****', 'R', 'USA', NULL, 'tt0181288', 0, 14242, NULL, NULL, 107);
 INSERT INTO filth.movie VALUES (86, 'The American President', 1995, '**½', 'PG-13', 'USA', NULL, 'tt0112346', 0, 9087, NULL, NULL, 106);
 INSERT INTO filth.movie VALUES (87, 'American Psycho', 2000, '****', 'R', 'USA', NULL, 'tt0144084', 0, 1359, NULL, NULL, 102);
