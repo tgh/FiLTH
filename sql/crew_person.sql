@@ -3739,3 +3739,8 @@ INSERT INTO filth.crew_person VALUES (3741, 'Dillane', 'Stephen', NULL, 'Stephen
 INSERT INTO filth.crew_person VALUES (3742, 'Smith', 'Lois', NULL, 'Lois Smith', 'Actress');  -- Actress: Lois Smith
 INSERT INTO filth.crew_person VALUES (3743, 'Letts', 'Tracy', NULL, 'Tracy Letts', 'Actor');  -- Actor: Tracy Letts
 INSERT INTO filth.crew_person VALUES (3744, 'Levant', 'Oscar', NULL, 'Oscar Levant', 'Actor');  -- Actor: Oscar Levant
+INSERT INTO filth.crew_person VALUES (3745, 'Landis', 'John', NULL, 'John Landis', 'Director');  -- Director: John Landis
+INSERT INTO filth.crew_person VALUES (3746, 'Michaels', 'Lorne', NULL, 'Lorne Michaels', 'Screenwriter');  -- Screenwriter: Lorne Michaels
+INSERT INTO filth.crew_person VALUES (3747, 'Chase', 'Chevy', NULL, 'Chevy Chase', 'Actor');  -- Actor: Chevy Chase
+INSERT INTO filth.crew_person VALUES (3748, 'Arau', 'Alfonso', NULL, 'Alfonso Arau', 'Actor');  -- Actor: Alfonso Arau
+INSERT INTO filth.crew_person VALUES (3749, 'Plana', 'Tony', NULL, 'Tony Plana', 'Actor');  -- Actor: Tony Plana
