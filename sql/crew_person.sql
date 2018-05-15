@@ -3744,3 +3744,4 @@ INSERT INTO filth.crew_person VALUES (3746, 'Michaels', 'Lorne', NULL, 'Lorne Mi
 INSERT INTO filth.crew_person VALUES (3747, 'Chase', 'Chevy', NULL, 'Chevy Chase', 'Actor');  -- Actor: Chevy Chase
 INSERT INTO filth.crew_person VALUES (3748, 'Arau', 'Alfonso', NULL, 'Alfonso Arau', 'Actor');  -- Actor: Alfonso Arau
 INSERT INTO filth.crew_person VALUES (3749, 'Plana', 'Tony', NULL, 'Tony Plana', 'Actor');  -- Actor: Tony Plana
+INSERT INTO filth.crew_person VALUES (3750, 'Ono', 'Yoko', NULL, 'Yoko Ono', 'Actress');  -- Actress: Yoko Ono
