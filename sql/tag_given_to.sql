@@ -19613,3 +19613,4 @@ INSERT INTO filth.tag_given_to VALUES(4337, 271);  -- Isle of Dogs (2018) tagged
 INSERT INTO filth.tag_given_to VALUES(4337, 165);  -- Isle of Dogs (2018) tagged with 'color-cinematography'
 INSERT INTO filth.tag_given_to VALUES(4337, 7);  -- Isle of Dogs (2018) tagged with 'animation'
 INSERT INTO filth.tag_given_to VALUES(4337, 164);  -- Isle of Dogs (2018) tagged with 'cinematography'
+INSERT INTO filth.tag_given_to VALUES(3750, 391);  -- The Martian (2015) tagged with 'masculine'

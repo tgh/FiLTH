@@ -9133,3 +9133,8 @@ INSERT INTO filth.worked_on VALUES(9133, 4337, 139, 'Character Voice');  -- Anje
 INSERT INTO filth.worked_on VALUES(9134, 4337, 3009, 'Cinematographer');  -- Tristan Oliver for Isle of Dogs (2018)
 INSERT INTO filth.worked_on VALUES(9135, 4337, 3091, 'Character Voice');  -- Roman Coppola for Isle of Dogs (2018)
 INSERT INTO filth.worked_on VALUES(9136, 4337, 2369, 'Character Voice');  -- Fisher Stevens for Isle of Dogs (2018)
+INSERT INTO filth.worked_on VALUES(9137, 3750, 3247, 'Supporting Actor');  -- Sebastian Stan for The Martian (2015)
+INSERT INTO filth.worked_on VALUES(9138, 3750, 3487, 'Supporting Actor');  -- Benedict Wong for The Martian (2015)
+INSERT INTO filth.worked_on VALUES(9139, 3750, 3751, 'Supporting Actress');  -- Mackenzie Davis for The Martian (2015)
+INSERT INTO filth.worked_on VALUES(9140, 3750, 3660, 'Supporting Actor');  -- Donald Glover for The Martian (2015)
+INSERT INTO filth.worked_on VALUES(9141, 3750, 2986, 'Cinematographer');  -- Dariusz Wolski for The Martian (2015)
