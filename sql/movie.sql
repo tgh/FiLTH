@@ -4298,7 +4298,7 @@ INSERT INTO filth.movie VALUES (4302, 'Roman J. Israel, Esq.', 2017, '***', 'PG-
 INSERT INTO filth.movie VALUES (4303, 'Darkest Hour', 2017, '***', 'PG-13', 'England', 'It''s kind of a toss-up between *** and ***½; I didn''t feel like I was fully invested in watching it at the time, which isn''t the film''s fault. Oldman''s performance (and the others), of course, was excellent, cinematography was great, and there were some great scenes such as Churchill taking the tube and the war cabinet scenes. However, it lacked some substance I felt--it was a little dull.', 'tt4555426', NULL, 399404);
 INSERT INTO filth.movie VALUES (4304, 'The Shape of Water', 2017, '**½', 'R', 'USA', NULL, 'tt5580390', NULL, 399055);
 INSERT INTO filth.movie VALUES (4305, 'The Florida Project', 2017, '**½', 'R', 'USA', NULL, 'tt5649144', NULL, 394117);
-INSERT INTO filth.movie VALUES (4306, 'All the Money in the World', 2017, 'not seen', 'R', 'USA', NULL, 'tt5294550', NULL, 446791);
+INSERT INTO filth.movie VALUES (4306, 'All the Money in the World', 2017, '***½', 'R', 'USA', NULL, 'tt5294550', NULL, 446791);
 INSERT INTO filth.movie VALUES (4307, 'Mudbound', 2017, '***½', 'R', 'USA', NULL, 'tt2396589', NULL, 414425);
 INSERT INTO filth.movie VALUES (4308, 'Abacus: Small Enough to Jail', 2017, 'not seen', 'NR', 'USA', NULL, 'tt5952382', NULL, 411007);
 INSERT INTO filth.movie VALUES (4309, 'Faces Places', 2017, 'not seen', 'PG', 'France', NULL, 'tt5598102', NULL, 451995);
