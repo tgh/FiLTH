@@ -3747,3 +3747,9 @@ INSERT INTO filth.crew_person VALUES (3749, 'Plana', 'Tony', NULL, 'Tony Plana',
 INSERT INTO filth.crew_person VALUES (3750, 'Ono', 'Yoko', NULL, 'Yoko Ono', 'Actress');  -- Actress: Yoko Ono
 INSERT INTO filth.crew_person VALUES (3751, 'Davis', 'Mackenzie', NULL, 'Mackenzie Davis', 'Actress');  -- Actress: Mackenzie Davis
 INSERT INTO filth.crew_person VALUES (3752, 'Plummer', 'Charlie', NULL, 'Charlie Plummer', 'Actor');  -- Actor: Charlie Plummer
+INSERT INTO filth.crew_person VALUES (3753, 'Cole', 'Joe', 'Robert', 'Joe Robert Cole', 'Screenwriter');  -- Screenwriter: Joe Robert Cole
+INSERT INTO filth.crew_person VALUES (3754, 'Gurira', 'Danai', NULL, 'Danai Gurira', 'Actress');  -- Actress: Danai Gurira
+INSERT INTO filth.crew_person VALUES (3755, 'Whitaker', 'Denzel', NULL, 'Denzel Whitaker', 'Actor');  -- Actor: Denzel Whitaker
+INSERT INTO filth.crew_person VALUES (3756, 'Wright', 'Letitia', NULL, 'Letitia Wright', 'Actress');  -- Actress: Letitia Wright
+INSERT INTO filth.crew_person VALUES (3757, 'Duke', 'Winston', NULL, 'Winston Duke', 'Actor');  -- Actor: Winston Duke
+INSERT INTO filth.crew_person VALUES (3758, 'Brown', 'Sterling', 'K.', 'Sterling K. Brown', 'Actor');  -- Actor: Sterling K. Brown
