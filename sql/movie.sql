@@ -2257,7 +2257,7 @@ INSERT INTO filth.movie VALUES (2252, 'Eastern Promises', 2007, 'not seen', 'R',
 INSERT INTO filth.movie VALUES (2253, 'Charlie Wilson''s War', 2007, 'not seen', 'R', 'USA', NULL, 'tt0472062', NULL, 6538, NULL, NULL, 102);
 INSERT INTO filth.movie VALUES (2254, 'The Visitor', 2008, '***½', 'PG-13', 'USA', NULL, 'tt0857191', 0, 12473, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (2255, 'The Wrestler', 2008, 'not seen', 'R', 'USA', NULL, 'tt1125849', NULL, 12163, NULL, NULL, 109);
-INSERT INTO filth.movie VALUES (2256, 'Revolutionary Road', 2008, 'not seen', 'R', 'USA', NULL, 'tt0959337', NULL, 4148, NULL, NULL, 119);
+INSERT INTO filth.movie VALUES (2256, 'Revolutionary Road', 2008, '***', 'R', 'USA', NULL, 'tt0959337', NULL, 4148, NULL, NULL, 119);
 INSERT INTO filth.movie VALUES (2257, 'A Ship Comes In', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0018389', NULL, 104212, NULL, NULL, 70);
 INSERT INTO filth.movie VALUES (2258, 'Street Angel', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0019429', NULL, 28391, NULL, NULL, 102);
 INSERT INTO filth.movie VALUES (2259, 'Sadie Thompson', 1928, 'not seen', 'NR', 'USA', NULL, 'tt0019344', NULL, 42538, NULL, NULL, 91);
@@ -4331,3 +4331,4 @@ INSERT INTO filth.movie VALUES (4335, 'Stronger', 2017, '***', 'R', 'USA', NULL,
 INSERT INTO filth.movie VALUES (4336, 'Three Amigos!', 1986, '***', 'PG', 'USA', NULL, 'tt0092086', 0, 8388, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4337, 'Isle of Dogs', 2018, '****', 'PG-13', 'USA', 'I loved watching this movie. I loved the animation, the story, the setting, the dogs, and the style. However, the resolution was SO quick and easy--like it was written by a kid; that''s a pretty big flaw, but other than that I loved it. I may agree with Stuckmann as well, that I''m not sure the English interpreter was neceessary (why not just subtitle it?), and the American foregin exchange student character/storyline may not have been necessary.', 'tt5104604', 1, 399174, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (4338, 'Black Panther', 2018, '***', 'PG-13', 'USA', 'I think Michael B. Jordan is a good actor, but I think he just didn''t work as the bad guy here--he kind of annoyed me (and what''s with that hair style? why?). I think Daniel Kaluuya and Michael B. Jordan should have swapped roles. I think that would have been better. Fairly fun overall, though--not great, not bad.', 'tt1825683', 0, 284054, NULL, NULL, 134);
+INSERT INTO filth.movie VALUES (4339, 'Jim and Andy: The Great Beyond', 2017, '***', 'NR', 'USA', NULL, 'tt7214762', 0, 469019, NULL, NULL, 94);

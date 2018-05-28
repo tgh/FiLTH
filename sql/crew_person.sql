@@ -3753,3 +3753,6 @@ INSERT INTO filth.crew_person VALUES (3755, 'Whitaker', 'Denzel', NULL, 'Denzel 
 INSERT INTO filth.crew_person VALUES (3756, 'Wright', 'Letitia', NULL, 'Letitia Wright', 'Actress');  -- Actress: Letitia Wright
 INSERT INTO filth.crew_person VALUES (3757, 'Duke', 'Winston', NULL, 'Winston Duke', 'Actor');  -- Actor: Winston Duke
 INSERT INTO filth.crew_person VALUES (3758, 'Brown', 'Sterling', 'K.', 'Sterling K. Brown', 'Actor');  -- Actor: Sterling K. Brown
+INSERT INTO filth.crew_person VALUES (3759, 'Haythe', 'Justin', NULL, 'Justin Haythe', 'Screenwriter');  -- Screenwriter: Justin Haythe
+INSERT INTO filth.crew_person VALUES (3760, 'Harbour', 'David', NULL, 'David Harbour', 'Actor');  -- Actor: David Harbour
+INSERT INTO filth.crew_person VALUES (3761, 'Kazan', 'Zoe', NULL, 'Zoe Kazan', 'Actress');  -- Actress: Zoe Kazan
