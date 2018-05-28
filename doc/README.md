@@ -90,6 +90,11 @@ These setup instructions were created based on Ubuntu 14.04 LTS, and assumes you
 
 1. Misc
 
+1. Start the app:
+
+    - run `ant build deploy tomcat-start`
+    - open `localhost:8080/filth/movies` in your browser
+
 # Environment Setup (Mac)
 
 These instructions assume you have `brew` installed. If you do not, go to [brew.sh](http://brew.sh) and download it.
@@ -175,3 +180,8 @@ These instructions assume you have `brew` installed. If you do not, go to [brew.
     - Install `tac` if running certain scripts under `scripts/` that use it:
         - `brew install coreutils`
         - `ln -s /usr/local/bin/gtac /usr/local/bin/tac`
+
+1. Start the app:
+
+    - run `ant build deploy tomcat-start`
+    - open `localhost:8080/filth/movies` in your browser
