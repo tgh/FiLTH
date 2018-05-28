@@ -44,7 +44,7 @@ public class Movie {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Movie.class);
 
-    private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w396/%s";
+    private static final String TMDB_IMAGE_URL_FORMAT = "https://image.tmdb.org/t/p/w342/%s";
 
     private static final List<String> ACTING_POSITION_ORDER = Arrays.asList(new String[] {
         "Lead Actor",
@@ -503,7 +503,7 @@ public class Movie {
     	if (null == getStarRating()) {
     		return "defaultColor";
     	}
-    	
+
         switch(getStarRating()) {
             case "****":
                 return "green";
