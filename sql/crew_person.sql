@@ -3759,3 +3759,5 @@ INSERT INTO filth.crew_person VALUES (3761, 'Kazan', 'Zoe', NULL, 'Zoe Kazan', '
 INSERT INTO filth.crew_person VALUES (3762, 'Klugman', 'Jack', NULL, 'Jack Klugman', 'Actor');  -- Actor: Jack Klugman
 INSERT INTO filth.crew_person VALUES (3763, 'Milch', 'Olivia', NULL, 'Olivia Milch', 'Screenwriter');  -- Screenwriter: Olivia Milch
 INSERT INTO filth.crew_person VALUES (3764, 'Fanning', 'Dakota', NULL, 'Dakota Fanning', 'Actress');  -- Actress: Dakota Fanning
+INSERT INTO filth.crew_person VALUES (3765, 'Novotny', 'Tuva', NULL, 'Tuva Novotny', 'Actress');  -- Actress: Tuva Novotny
+INSERT INTO filth.crew_person VALUES (3766, 'Hardy', 'Rob', NULL, 'Rob Hardy', 'Cinematographer');  -- Cinematographer: Rob Hardy
