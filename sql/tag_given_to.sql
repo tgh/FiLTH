@@ -19695,3 +19695,5 @@ INSERT INTO filth.tag_given_to VALUES(4342, 28);  -- Incredibles 2 (2018) tagged
 INSERT INTO filth.tag_given_to VALUES(4342, 392);  -- Incredibles 2 (2018) tagged with 'feminine'
 INSERT INTO filth.tag_given_to VALUES(4342, 276);  -- Incredibles 2 (2018) tagged with 'super-hero'
 INSERT INTO filth.tag_given_to VALUES(4342, 7);  -- Incredibles 2 (2018) tagged with 'animation'
+INSERT INTO filth.tag_given_to VALUES(1478, 277);  -- Signs (2002) tagged with 'scary'
+INSERT INTO filth.tag_given_to VALUES(1478, 391);  -- Signs (2002) tagged with 'masculine'
