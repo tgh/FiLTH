@@ -4217,7 +4217,7 @@ INSERT INTO filth.movie VALUES (4221, 'I Am Not Your Negro', 2016, '***½', 'PG-
 INSERT INTO filth.movie VALUES (4222, 'Fire at Sea', 2016, 'not seen', 'NR', 'Italy', NULL, 'tt3652526', NULL, 377151, NULL, NULL, 108);
 INSERT INTO filth.movie VALUES (4223, 'A Man Called Ove', 2016, 'not seen', 'PG-13', 'Sweden', NULL, 'tt4080728', NULL, 348678, NULL, NULL, 116);
 INSERT INTO filth.movie VALUES (4224, 'Land of Mine', 2016, '***½', 'R', 'Denmark', 'This has a scene that is *very* tough to watch--very graphic and upsetting, but very well done and effective. It''s an excellent film--great acting, cinematography, heart-felt, a new aspect on the war not seen before--but I thought the change in the main character happened perhaps a little too quick?', 'tt3841424', NULL, 335578, NULL, NULL, 100);
-INSERT INTO filth.movie VALUES (4225, 'The Salesman', 2016, 'not seen', 'PG-13', 'Iran', NULL, 'tt5186714', NULL, 375315, NULL, NULL, 125);
+INSERT INTO filth.movie VALUES (4225, 'The Salesman', 2016, '***½', 'PG-13', 'Iran', NULL, 'tt5186714', NULL, 375315, NULL, NULL, 125);
 INSERT INTO filth.movie VALUES (4226, 'Tanna', 2016, 'not seen', 'NR', 'Australia', NULL, 'tt4239726', NULL, 359151, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (4227, 'Toni Erdmann', 2016, 'not seen', 'R', 'Germany', NULL, 'tt4048272', NULL, 374475, NULL, NULL, 162);
 INSERT INTO filth.movie VALUES (4228, 'The Lobster', 2016, 'not seen', 'R', 'Greece', NULL, 'tt3464902', NULL, 254320, NULL, NULL, 118);

@@ -9235,3 +9235,5 @@ INSERT INTO filth.worked_on VALUES(9235, 1478, 1047, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(9236, 1478, 61, 'Supporting Actor');  -- Joaquin Phoenix for Signs (2002)
 INSERT INTO filth.worked_on VALUES(9237, 1478, 3541, 'Supporting Actress');  -- Cherry Jones for Signs (2002)
 INSERT INTO filth.worked_on VALUES(9238, 1478, 2562, 'Cinematographer');  -- Tak Fujimoto for Signs (2002)
+INSERT INTO filth.worked_on VALUES(9239, 4225, 3040, 'Director');  -- Asghar Farhadi for The Salesman (2016)
+INSERT INTO filth.worked_on VALUES(9240, 4225, 3040, 'Screenwriter');  -- Asghar Farhadi for The Salesman (2016)
