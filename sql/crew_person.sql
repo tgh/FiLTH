@@ -3765,3 +3765,7 @@ INSERT INTO filth.crew_person VALUES (3767, 'Culkin', 'Rory', NULL, 'Rory Culkin
 INSERT INTO filth.crew_person VALUES (3768, 'Markus', 'Christopher', NULL, 'Christopher Markus', 'Screenwriter');  -- Screenwriter: Christopher Markus
 INSERT INTO filth.crew_person VALUES (3769, 'McFeely', 'Stephen', NULL, 'Stephen McFeely', 'Screenwriter');  -- Screenwriter: Stephen McFeely
 INSERT INTO filth.crew_person VALUES (3770, 'Opaloch', 'Trent', NULL, 'Trent Opaloch', 'Cinematographer');  -- Cinematographer: Trent Opaloch
+INSERT INTO filth.crew_person VALUES (3771, 'Bayona', 'J.A.', NULL, 'J.A. Bayona', 'Director');  -- Director: J.A. Bayona
+INSERT INTO filth.crew_person VALUES (3772, 'Spall', 'Rafe', NULL, 'Rafe Spall', 'Actor');  -- Actor: Rafe Spall
+INSERT INTO filth.crew_person VALUES (3773, 'Levine', 'Ted', NULL, 'Ted Levine', 'Actor');  -- Actor: Ted Levine
+INSERT INTO filth.crew_person VALUES (3774, 'Chaplin', 'Geraldine', NULL, 'Geraldine Chaplin', 'Actress');  -- Actress: Geraldine Chaplin
