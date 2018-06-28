@@ -3769,3 +3769,5 @@ INSERT INTO filth.crew_person VALUES (3771, 'Bayona', 'J.A.', NULL, 'J.A. Bayona
 INSERT INTO filth.crew_person VALUES (3772, 'Spall', 'Rafe', NULL, 'Rafe Spall', 'Actor');  -- Actor: Rafe Spall
 INSERT INTO filth.crew_person VALUES (3773, 'Levine', 'Ted', NULL, 'Ted Levine', 'Actor');  -- Actor: Ted Levine
 INSERT INTO filth.crew_person VALUES (3774, 'Chaplin', 'Geraldine', NULL, 'Geraldine Chaplin', 'Actress');  -- Actress: Geraldine Chaplin
+INSERT INTO filth.crew_person VALUES (3775, 'Christensen', 'Erika', NULL, 'Erika Christensen', 'Actress');  -- Actress: Erika Christensen
+INSERT INTO filth.crew_person VALUES (3776, 'Vogel', 'Mike', NULL, 'Mike Vogel', 'Actor');  -- Actor: Mike Vogel

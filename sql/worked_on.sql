@@ -9278,3 +9278,7 @@ INSERT INTO filth.worked_on VALUES(9278, 4344, 3773, 'Supporting Actor');  -- Te
 INSERT INTO filth.worked_on VALUES(9279, 4344, 2879, 'Small Part');  -- B.D. Wong for Jurassic World: Fallen Kingdom (2018)
 INSERT INTO filth.worked_on VALUES(9280, 4344, 3774, 'Supporting Actress');  -- Geraldine Chaplin for Jurassic World: Fallen Kingdom (2018)
 INSERT INTO filth.worked_on VALUES(9281, 4344, 87, 'Small Part');  -- Jeff Goldblum for Jurassic World: Fallen Kingdom (2018)
+INSERT INTO filth.worked_on VALUES(9282, 4345, 3775, 'Lead Actress');  -- Erika Christensen for The Case for Christ (2017)
+INSERT INTO filth.worked_on VALUES(9283, 4345, 100, 'Small Part');  -- Faye Dunaway for The Case for Christ (2017)
+INSERT INTO filth.worked_on VALUES(9284, 4345, 648, 'Small Part');  -- Robert Forster for The Case for Christ (2017)
+INSERT INTO filth.worked_on VALUES(9285, 4345, 3776, 'Lead Actor');  -- Mike Vogel for The Case for Christ (2017)
