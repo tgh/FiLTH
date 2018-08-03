@@ -3773,3 +3773,5 @@ INSERT INTO filth.crew_person VALUES (3775, 'Christensen', 'Erika', NULL, 'Erika
 INSERT INTO filth.crew_person VALUES (3776, 'Vogel', 'Mike', NULL, 'Mike Vogel', 'Actor');  -- Actor: Mike Vogel
 INSERT INTO filth.crew_person VALUES (3777, 'Wilde', 'Hagar', NULL, 'Hagar Wilde', 'Screenwriter');  -- Screenwriter: Hagar Wilde
 INSERT INTO filth.crew_person VALUES (3778, 'Taylor', 'Dwight', NULL, 'Dwight Taylor', 'Screenwriter');  -- Screenwriter: Dwight Taylor
+INSERT INTO filth.crew_person VALUES (3779, 'Woods', 'Bryan', NULL, 'Bryan Woods', 'Screenwriter');  -- Screenwriter: Bryan Woods
+INSERT INTO filth.crew_person VALUES (3780, 'Beck', 'Scott', NULL, 'Scott Beck', 'Screenwriter');  -- Screenwriter: Scott Beck
