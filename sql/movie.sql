@@ -4339,3 +4339,4 @@ INSERT INTO filth.movie VALUES (4343, 'Avengers: Infinity War', 2018, '***½', '
 INSERT INTO filth.movie VALUES (4344, 'Jurassic World: Fallen Kingdom', 2018, '**', 'PG-13', 'USA', NULL, 'tt4881806', 1, 351286, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (4345, 'The Case for Christ', 2017, '***½', 'PG', 'USA', NULL, 'tt6113488', 0, 424998, NULL, NULL, 112);
 INSERT INTO filth.movie VALUES (4346, 'Won''t You Be My Neighbor?', 2018, '***½', 'PG-13', 'USA', NULL, 'tt7681902', 1, 490003, NULL, NULL, 94);
+INSERT INTO filth.movie VALUES (4347, 'The Beguiled', 2018, '**', 'R', 'USA', NULL, 'tt5592248', 0, 399019, NULL, NULL, 93);
