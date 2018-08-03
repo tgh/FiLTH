@@ -9291,3 +9291,5 @@ INSERT INTO filth.worked_on VALUES(9291, 354, 2338, 'Small Part');  -- Peter Ber
 INSERT INTO filth.worked_on VALUES(9292, 354, 30, 'Small Part');  -- Javier Bardem for Collateral (2004)
 INSERT INTO filth.worked_on VALUES(9293, 354, 1374, 'Cinematographer');  -- Dion Beebe for Collateral (2004)
 INSERT INTO filth.worked_on VALUES(9294, 354, 3635, 'Cinematographer');  -- Paul Cameron for Collateral (2004)
+INSERT INTO filth.worked_on VALUES(9295, 263, 1447, 'Screenwriter');  -- Dudley Nichols for Bringing Up Baby (1938)
+INSERT INTO filth.worked_on VALUES(9296, 263, 3777, 'Screenwriter');  -- Hagar Wilde for Bringing Up Baby (1938)
