@@ -9293,3 +9293,7 @@ INSERT INTO filth.worked_on VALUES(9293, 354, 1374, 'Cinematographer');  -- Dion
 INSERT INTO filth.worked_on VALUES(9294, 354, 3635, 'Cinematographer');  -- Paul Cameron for Collateral (2004)
 INSERT INTO filth.worked_on VALUES(9295, 263, 1447, 'Screenwriter');  -- Dudley Nichols for Bringing Up Baby (1938)
 INSERT INTO filth.worked_on VALUES(9296, 263, 3777, 'Screenwriter');  -- Hagar Wilde for Bringing Up Baby (1938)
+INSERT INTO filth.worked_on VALUES(9297, 1880, 576, 'Lead Actor');  -- Fred Astaire for Top Hat (1935)
+INSERT INTO filth.worked_on VALUES(9298, 1880, 1507, 'Screenwriter');  -- Allan Scott for Top Hat (1935)
+INSERT INTO filth.worked_on VALUES(9299, 1880, 3778, 'Screenwriter');  -- Dwight Taylor for Top Hat (1935)
+INSERT INTO filth.worked_on VALUES(9300, 1880, 721, 'Lead Actress');  -- Ginger Rogers for Top Hat (1935)

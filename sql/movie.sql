@@ -1881,7 +1881,7 @@ INSERT INTO filth.movie VALUES (1876, 'David Copperfield', 1935, 'not seen', 'NR
 INSERT INTO filth.movie VALUES (1877, 'Alice Adams', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026056', NULL, 43886, NULL, NULL, 99);
 INSERT INTO filth.movie VALUES (1878, 'A Midsummer Night''s Dream', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026714', NULL, 19075, NULL, NULL, 143);
 INSERT INTO filth.movie VALUES (1879, 'The Lives of a Bengal Lancer', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026643', NULL, 43898, NULL, NULL, 109);
-INSERT INTO filth.movie VALUES (1880, 'Top Hat', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0027125', NULL, 3080, NULL, NULL, 101);
+INSERT INTO filth.movie VALUES (1880, 'Top Hat', 1935, '**½', 'NR', 'USA', NULL, 'tt0027125', NULL, 3080, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (1881, 'Captain Blood', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026174', NULL, 16905, NULL, NULL, 119);
 INSERT INTO filth.movie VALUES (1882, 'Les Miserables', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026725', NULL, 43893, NULL, NULL, 108);
 INSERT INTO filth.movie VALUES (1883, 'Ruggles of Red Gap', 1935, 'not seen', 'NR', 'USA', NULL, 'tt0026955', NULL, 36006, NULL, NULL, 90);
