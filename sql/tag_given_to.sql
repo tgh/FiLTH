@@ -19735,3 +19735,7 @@ INSERT INTO filth.tag_given_to VALUES(4345, 21);  -- The Case for Christ (2017) 
 INSERT INTO filth.tag_given_to VALUES(4345, 50);  -- The Case for Christ (2017) tagged with 'spiritual/religion'
 INSERT INTO filth.tag_given_to VALUES(4345, 59);  -- The Case for Christ (2017) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4345, 58);  -- The Case for Christ (2017) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(4346, 12);  -- Won''t You Be My Neighbor? (2018) tagged with 'documentary'
+INSERT INTO filth.tag_given_to VALUES(4346, 22);  -- Won''t You Be My Neighbor? (2018) tagged with 'biography'
+INSERT INTO filth.tag_given_to VALUES(4346, 211);  -- Won''t You Be My Neighbor? (2018) tagged with 'television'
+INSERT INTO filth.tag_given_to VALUES(4346, 61);  -- Won''t You Be My Neighbor? (2018) tagged with 'arts/entertainment'
