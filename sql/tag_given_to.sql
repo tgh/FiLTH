@@ -19774,3 +19774,4 @@ INSERT INTO filth.tag_given_to VALUES(4349, 205);  -- Mission: Impossible – Fa
 INSERT INTO filth.tag_given_to VALUES(4349, 391);  -- Mission: Impossible – Fallout (2018) tagged with 'masculine'
 INSERT INTO filth.tag_given_to VALUES(4349, 59);  -- Mission: Impossible – Fallout (2018) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4349, 58);  -- Mission: Impossible – Fallout (2018) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(3438, 347);  -- Skyfall (2012) tagged with 'revenge'
