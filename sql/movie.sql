@@ -4342,3 +4342,4 @@ INSERT INTO filth.movie VALUES (4346, 'Won''t You Be My Neighbor?', 2018, '***½
 INSERT INTO filth.movie VALUES (4347, 'The Beguiled', 2018, '**', 'R', 'USA', NULL, 'tt5592248', 0, 399019, NULL, NULL, 93);
 INSERT INTO filth.movie VALUES (4348, 'A Quiet Place', 2018, '***', 'PG-13', 'USA', NULL, 'tt6644200', 0, 447332, NULL, NULL, 90);
 INSERT INTO filth.movie VALUES (4349, 'Mission: Impossible – Fallout', 2018, '***½', 'PG-13', 'USA', NULL, 'tt4912910', 1, 353081, NULL, NULL, 147);
+INSERT INTO filth.movie VALUES (4350, 'Christopher Robin', 2018, '**½', 'PG', 'USA', 'Very cute, and the stuffed animals are animated excellently. However, the writing was pretty contrived and overly silly/cheesy at the end. The biggest thing for me though is that other people besides Christopher Robin could see and hear the stuffed animals move and talk; that didn''t work for me--didn''t make sense.', 'tt4575576', 1, 420814, NULL, NULL, 104);

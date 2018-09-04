@@ -3780,3 +3780,6 @@ INSERT INTO filth.crew_person VALUES (3782, 'Mendes', 'Eva', NULL, 'Eva Mendes',
 INSERT INTO filth.crew_person VALUES (3783, 'Jr.', 'Damon', 'Wayans', 'Damon Wayans Jr.', 'Actor');  -- Actor: Damon Wayans Jr.
 INSERT INTO filth.crew_person VALUES (3784, 'Heche', 'Anne', NULL, 'Anne Heche', 'Actress');  -- Actress: Anne Heche
 INSERT INTO filth.crew_person VALUES (3785, 'Kinnear', 'Rory', NULL, 'Rory Kinnear', 'Actor');  -- Actor: Rory Kinnear
+INSERT INTO filth.crew_person VALUES (3786, 'Perry', 'Alex', 'Ross', 'Alex Ross Perry', 'Screenwriter');  -- Screenwriter: Alex Ross Perry
+INSERT INTO filth.crew_person VALUES (3787, 'Atwell', 'Hayley', NULL, 'Hayley Atwell', 'Actress');  -- Actress: Hayley Atwell
+INSERT INTO filth.crew_person VALUES (3788, 'Gatiss', 'Mark', NULL, 'Mark Gatiss', 'Actor');  -- Actor: Mark Gatiss
