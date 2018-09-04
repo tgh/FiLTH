@@ -19792,3 +19792,8 @@ INSERT INTO filth.tag_given_to VALUES(4351, 177);  -- The Man Who Knew Too Much 
 INSERT INTO filth.tag_given_to VALUES(4351, 291);  -- The Man Who Knew Too Much (1956) tagged with 'conspiracy'
 INSERT INTO filth.tag_given_to VALUES(4351, 373);  -- The Man Who Knew Too Much (1956) tagged with 'assassination'
 INSERT INTO filth.tag_given_to VALUES(4351, 25);  -- The Man Who Knew Too Much (1956) tagged with 'crime'
+INSERT INTO filth.tag_given_to VALUES(3760, 27);  -- Swing Time (1936) tagged with 'romantic-comedy'
+INSERT INTO filth.tag_given_to VALUES(3760, 23);  -- Swing Time (1936) tagged with 'musical'
+INSERT INTO filth.tag_given_to VALUES(3760, 78);  -- Swing Time (1936) tagged with 'gambling'
+INSERT INTO filth.tag_given_to VALUES(3760, 61);  -- Swing Time (1936) tagged with 'arts/entertainment'
+INSERT INTO filth.tag_given_to VALUES(3760, 2);  -- Swing Time (1936) tagged with 'comedy'

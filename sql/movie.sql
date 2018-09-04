@@ -3759,7 +3759,7 @@ INSERT INTO filth.movie VALUES (3756, 'My Darling Clementine', 1946, 'not seen',
 INSERT INTO filth.movie VALUES (3757, 'My Life to Live', 1962, 'not seen', 'NR', 'France', NULL, 'tt0056663', NULL, 1626, NULL, NULL, 85);
 INSERT INTO filth.movie VALUES (3758, 'The Passion of Joan of Arc', 1928, 'not seen', 'NR', 'France', NULL, 'tt0019254', NULL, 780, NULL, NULL, 82);
 INSERT INTO filth.movie VALUES (3759, 'Peeping Tom', 1960, 'not seen', 'NR', 'England', NULL, 'tt0054167', NULL, 11167, NULL, NULL, 101);
-INSERT INTO filth.movie VALUES (3760, 'Swing Time', 1936, 'not seen', 'NR', 'USA', NULL, 'tt0028333', NULL, 20325, NULL, NULL, 103);
+INSERT INTO filth.movie VALUES (3760, 'Swing Time', 1936, '***', 'NR', 'USA', NULL, 'tt0028333', NULL, 20325, NULL, NULL, 103);
 INSERT INTO filth.movie VALUES (3761, 'Trouble in Paradise', 1932, 'not seen', 'NR', 'USA', NULL, 'tt0023622', NULL, 195, NULL, NULL, 83);
 INSERT INTO filth.movie VALUES (3763, 'Vertigo', 1958, '***½', 'NR', 'USA', NULL, 'tt0052357', 0, 426, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (3764, 'The Bank Dick', 1940, 'not seen', 'NR', 'USA', NULL, 'tt0032234', NULL, 911, NULL, NULL, 72);

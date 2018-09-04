@@ -9370,3 +9370,8 @@ INSERT INTO filth.worked_on VALUES(9370, 4351, 23, 'Lead Actor');  -- Jimmy Stew
 INSERT INTO filth.worked_on VALUES(9371, 4351, 823, 'Lead Actress');  -- Doris Day for The Man Who Knew Too Much (1956)
 INSERT INTO filth.worked_on VALUES(9372, 4351, 1259, 'Cinematographer');  -- Robert Burks for The Man Who Knew Too Much (1956)
 INSERT INTO filth.worked_on VALUES(9373, 4351, 295, 'Cameo');  -- Alfred Hitchcock for The Man Who Knew Too Much (1956)
+INSERT INTO filth.worked_on VALUES(9374, 3760, 1089, 'Director');  -- George Stevens for Swing Time (1936)
+INSERT INTO filth.worked_on VALUES(9375, 3760, 1507, 'Screenwriter');  -- Allan Scott for Swing Time (1936)
+INSERT INTO filth.worked_on VALUES(9376, 3760, 3789, 'Screenwriter');  -- Howard Lindsay for Swing Time (1936)
+INSERT INTO filth.worked_on VALUES(9377, 3760, 576, 'Lead Actor');  -- Fred Astaire for Swing Time (1936)
+INSERT INTO filth.worked_on VALUES(9378, 3760, 721, 'Lead Actress');  -- Ginger Rogers for Swing Time (1936)

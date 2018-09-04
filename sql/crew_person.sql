@@ -3783,3 +3783,4 @@ INSERT INTO filth.crew_person VALUES (3785, 'Kinnear', 'Rory', NULL, 'Rory Kinne
 INSERT INTO filth.crew_person VALUES (3786, 'Perry', 'Alex', 'Ross', 'Alex Ross Perry', 'Screenwriter');  -- Screenwriter: Alex Ross Perry
 INSERT INTO filth.crew_person VALUES (3787, 'Atwell', 'Hayley', NULL, 'Hayley Atwell', 'Actress');  -- Actress: Hayley Atwell
 INSERT INTO filth.crew_person VALUES (3788, 'Gatiss', 'Mark', NULL, 'Mark Gatiss', 'Actor');  -- Actor: Mark Gatiss
+INSERT INTO filth.crew_person VALUES (3789, 'Lindsay', 'Howard', NULL, 'Howard Lindsay', 'Screenwriter');  -- Screenwriter: Howard Lindsay
