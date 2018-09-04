@@ -19797,3 +19797,5 @@ INSERT INTO filth.tag_given_to VALUES(3760, 23);  -- Swing Time (1936) tagged wi
 INSERT INTO filth.tag_given_to VALUES(3760, 78);  -- Swing Time (1936) tagged with 'gambling'
 INSERT INTO filth.tag_given_to VALUES(3760, 61);  -- Swing Time (1936) tagged with 'arts/entertainment'
 INSERT INTO filth.tag_given_to VALUES(3760, 2);  -- Swing Time (1936) tagged with 'comedy'
+INSERT INTO filth.tag_given_to VALUES(739, 347);  -- Hero (2002) tagged with 'revenge'
+INSERT INTO filth.tag_given_to VALUES(739, 373);  -- Hero (2002) tagged with 'assassination'
