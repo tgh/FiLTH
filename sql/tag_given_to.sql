@@ -19811,3 +19811,5 @@ INSERT INTO filth.tag_given_to VALUES(4352, 11);  -- The Little Prince (2015) ta
 INSERT INTO filth.tag_given_to VALUES(4352, 59);  -- The Little Prince (2015) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4352, 58);  -- The Little Prince (2015) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(4352, 7);  -- The Little Prince (2015) tagged with 'animation'
+INSERT INTO filth.tag_given_to VALUES(739, 165);  -- Hero (2002) tagged with 'color-cinematography'
+INSERT INTO filth.tag_given_to VALUES(739, 164);  -- Hero (2002) tagged with 'cinematography'
