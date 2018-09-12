@@ -19813,3 +19813,6 @@ INSERT INTO filth.tag_given_to VALUES(4352, 58);  -- The Little Prince (2015) ta
 INSERT INTO filth.tag_given_to VALUES(4352, 7);  -- The Little Prince (2015) tagged with 'animation'
 INSERT INTO filth.tag_given_to VALUES(739, 165);  -- Hero (2002) tagged with 'color-cinematography'
 INSERT INTO filth.tag_given_to VALUES(739, 164);  -- Hero (2002) tagged with 'cinematography'
+INSERT INTO filth.tag_given_to VALUES(1029, 263);  -- Mary Poppins (1964) tagged with 'family'
+INSERT INTO filth.tag_given_to VALUES(1029, 249);  -- Mary Poppins (1964) tagged with 'coming-of-age/childhood'
+INSERT INTO filth.tag_given_to VALUES(1029, 365);  -- Mary Poppins (1964) tagged with 'actor(s)-playing-multiple-roles'

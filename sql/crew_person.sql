@@ -3793,3 +3793,4 @@ INSERT INTO filth.crew_person VALUES (3795, 'Leung', 'Tony', 'Chiu-Wai', 'Tony C
 INSERT INTO filth.crew_person VALUES (3796, 'Cheung', 'Maggie', NULL, 'Maggie Cheung', 'Actress');  -- Actress: Maggie Cheung
 INSERT INTO filth.crew_person VALUES (3797, 'Osborne', 'Mark', NULL, 'Mark Osborne', 'Director');  -- Director: Mark Osborne
 INSERT INTO filth.crew_person VALUES (3798, 'Cort', 'Bud', NULL, 'Bud Cort', 'Actor');  -- Actor: Bud Cort
+INSERT INTO filth.crew_person VALUES (3799, 'Tomlinson', 'David', NULL, 'David Tomlinson', 'Actor');  -- Actor: David Tomlinson
