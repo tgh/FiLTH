@@ -4344,3 +4344,4 @@ INSERT INTO filth.movie VALUES (4348, 'A Quiet Place', 2018, '***', 'PG-13', 'US
 INSERT INTO filth.movie VALUES (4349, 'Mission: Impossible – Fallout', 2018, '***½', 'PG-13', 'USA', NULL, 'tt4912910', 1, 353081, NULL, NULL, 147);
 INSERT INTO filth.movie VALUES (4350, 'Christopher Robin', 2018, '**½', 'PG', 'USA', 'Very cute, and the stuffed animals are animated excellently. However, the writing was pretty contrived and overly silly/cheesy at the end. The biggest thing for me though is that other people besides Christopher Robin could see and hear the stuffed animals move and talk; that didn''t work for me--didn''t make sense.', 'tt4575576', 1, 420814, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (4351, 'The Man Who Knew Too Much', 1956, '***', 'NR', 'USA', NULL, 'tt0049470', 0, 574, NULL, NULL, 120);
+INSERT INTO filth.movie VALUES (4352, 'The Little Prince', 2015, '**½', 'PG', 'France', NULL, 'tt1754656', 0, 309809, NULL, NULL, 108);
