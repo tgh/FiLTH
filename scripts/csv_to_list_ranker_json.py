@@ -61,7 +61,7 @@ if __name__ == '__main__':
     f = open(csvFile)
     csv_lines = f.readlines()
     f.close()
-    movies = csv.DictReader(csv_lines, dialect='pipes')
+    movies = csv.DictReader(csv_lines, dialect='pipes') # '|' as the field separator
 
     print '{'
     print '  "id": TO_BE_FILLED_IN,'
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     for movie in movies:
         imageUrl = getImageUrl(movie)
         print '    {'
-        print '      "text": "' + movie['title'] + ' (' + movie['year'] + ', ' + movie['country'] + ')",'
+        print '      "text": "' + movie['title'] + ' (' + movie['year'] + ')",'
         print '      "imageUrl": "' + imageUrl + '"'
         print '    },'
 
