@@ -4346,3 +4346,4 @@ INSERT INTO filth.movie VALUES (4350, 'Christopher Robin', 2018, '**½', 'PG', '
 INSERT INTO filth.movie VALUES (4351, 'The Man Who Knew Too Much', 1956, '***', 'NR', 'USA', NULL, 'tt0049470', 0, 574, NULL, NULL, 120);
 INSERT INTO filth.movie VALUES (4352, 'The Little Prince', 2015, '**½', 'PG', 'France', NULL, 'tt1754656', 0, 309809, NULL, NULL, 108);
 INSERT INTO filth.movie VALUES (4353, 'Ant-Man and the Wasp', 2018, '***', 'PG-13', 'USA', NULL, 'tt5095030', 1, 363088, NULL, NULL, 118);
+INSERT INTO filth.movie VALUES (4354, 'Aladdin', 1992, '***', 'G', 'USA', NULL, 'tt0103639', 1, 812, NULL, NULL, 90);
