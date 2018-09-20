@@ -35,7 +35,8 @@ logger = None
 tempFile = None
 movieFile = None
 movies = []
-  
+requested_movies = False    # true if mids param is used
+
 
 
 def log(func, message):
@@ -50,6 +51,8 @@ def usage():
 
 
 def processArgs():
+    global requested_movies
+    
     #no args--default to processing every movie after "last processed"
     if len(sys.argv[1:]) == 0:
         return []
@@ -72,6 +75,7 @@ def processArgs():
             print '\nThe list of mids contains a non-integer\n'
             sys.exit(1)
 
+    requested_movies = True
     return mids
 
 
@@ -151,8 +155,9 @@ def quit(mid):
   global tempFile
 
   log('quit', 'quitting')
-  tempFile = open(TEMP_FILENAME, 'w')
-  tempFile.write(str(mid))
+  if not requested_movies:
+    tempFile = open(TEMP_FILENAME, 'w')
+    tempFile.write(str(mid))
   tempFile.close()
 
 
