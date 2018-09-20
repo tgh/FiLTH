@@ -3797,3 +3797,5 @@ INSERT INTO filth.crew_person VALUES (3799, 'Tomlinson', 'David', NULL, 'David T
 INSERT INTO filth.crew_person VALUES (3800, 'Barrer', 'Andrew', NULL, 'Andrew Barrer', 'Screenwriter');  -- Screenwriter: Andrew Barrer
 INSERT INTO filth.crew_person VALUES (3801, 'Ferrari', 'Gabriel', NULL, 'Gabriel Ferrari', 'Screenwriter');  -- Screenwriter: Gabriel Ferrari
 INSERT INTO filth.crew_person VALUES (3802, 'John-Kamen', 'Hannah', NULL, 'Hannah John-Kamen', 'Actress');  -- Actress: Hannah John-Kamen
+INSERT INTO filth.crew_person VALUES (3803, 'Corbin', 'Barry', NULL, 'Barry Corbin', 'Actor');  -- Actor: Barry Corbin
+INSERT INTO filth.crew_person VALUES (3804, 'Dillahunt', 'Garret', NULL, 'Garret Dillahunt', 'Actor');  -- Actor: Garret Dillahunt
