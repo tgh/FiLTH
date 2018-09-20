@@ -9428,3 +9428,7 @@ INSERT INTO filth.worked_on VALUES(9428, 4354, 3287, 'Screenwriter');  -- John M
 INSERT INTO filth.worked_on VALUES(9429, 4354, 1999, 'Screenwriter');  -- Ted Elliott for Aladdin (1992)
 INSERT INTO filth.worked_on VALUES(9430, 4354, 2000, 'Screenwriter');  -- Terry Rossio for Aladdin (1992)
 INSERT INTO filth.worked_on VALUES(9431, 4354, 205, 'Character Voice');  -- Robin Williams for Aladdin (1992)
+INSERT INTO filth.worked_on VALUES(9432, 2029, 452, 'Director');  -- Gene Kelly for Hello, Dolly! (1969)
+INSERT INTO filth.worked_on VALUES(9433, 2029, 1608, 'Screenwriter');  -- Ernest Lehman for Hello, Dolly! (1969)
+INSERT INTO filth.worked_on VALUES(9434, 2029, 871, 'Lead Actress');  -- Barbra Streisand for Hello, Dolly! (1969)
+INSERT INTO filth.worked_on VALUES(9435, 2029, 543, 'Lead Actor');  -- Walter Matthau for Hello, Dolly! (1969)

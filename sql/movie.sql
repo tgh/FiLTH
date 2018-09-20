@@ -169,7 +169,7 @@ INSERT INTO filth.movie VALUES (164, 'Batman Begins', 2005, '***', 'PG-13', 'USA
 INSERT INTO filth.movie VALUES (165, 'The Battle of Algiers', 1966, '***', 'NR', NULL, NULL, 'tt0058946', 0, 17295, NULL, NULL, 121);
 INSERT INTO filth.movie VALUES (166, 'Battleship Potemkin', 1925, '***½', 'NR', 'USSR', NULL, 'tt0015648', 0, 643, NULL, NULL, 75);
 INSERT INTO filth.movie VALUES (167, 'Be Kind Rewind', 2008, '**½', 'PG-13', 'USA', NULL, 'tt0799934', 0, 4953, NULL, NULL, 102);
-INSERT INTO filth.movie VALUES (168, 'The Beatles Anthology', 1994, '****', 'NR', 'England', NULL, 'tt0111893', 0, 63935, NULL, NULL, 600);
+INSERT INTO filth.movie VALUES (168, 'The Beatles Anthology', 1994, '****', 'NR', 'England', NULL, 'tt0111893', 0, 16906, NULL, NULL, 600);
 INSERT INTO filth.movie VALUES (169, 'A Beautiful Mind', 2001, '***', 'PG-13', 'USA', NULL, 'tt0268978', 1, 453, NULL, NULL, 135);
 INSERT INTO filth.movie VALUES (170, 'Beauty and the Beast', 1946, '***', 'NR', 'France', NULL, 'tt0038348', 0, 648, NULL, NULL, 96);
 INSERT INTO filth.movie VALUES (171, 'Beauty and the Beast', 1991, '***', 'G', 'USA', NULL, 'tt0101414', 0, 10020, NULL, NULL, 84);
@@ -2030,7 +2030,7 @@ INSERT INTO filth.movie VALUES (2025, 'The Lion in Winter', 1968, 'not seen', 'P
 INSERT INTO filth.movie VALUES (2026, 'Rachel, Rachel', 1968, 'not seen', 'R', 'USA', NULL, 'tt0063483', NULL, 42635, NULL, NULL, 101);
 INSERT INTO filth.movie VALUES (2027, 'Anne of the Thousand Days', 1969, 'not seen', 'PG', 'England', NULL, 'tt0064030', NULL, 22522, NULL, NULL, 145);
 INSERT INTO filth.movie VALUES (2028, 'Z', 1969, '***½', 'PG', 'France', NULL, 'tt0065234', 0, 2721, NULL, NULL, 127);
-INSERT INTO filth.movie VALUES (2029, 'Hello, Dolly!', 1969, 'not seen', 'G', 'USA', NULL, 'tt0064418', NULL, 14030, NULL, NULL, 146);
+INSERT INTO filth.movie VALUES (2029, 'Hello, Dolly!', 1969, '***', 'G', 'USA', NULL, 'tt0064418', NULL, 14030, NULL, NULL, 146);
 INSERT INTO filth.movie VALUES (2030, 'Nicholas and Alexandra', 1971, '***', 'PG', 'England', NULL, 'tt0067483', 0, 38646, NULL, NULL, 189);
 INSERT INTO filth.movie VALUES (2031, 'Fiddler on the Roof', 1971, '**½', 'G', 'USA', NULL, 'tt0067093', 0, 14811, NULL, NULL, 181);
 INSERT INTO filth.movie VALUES (2032, 'Sounder', 1972, 'not seen', 'G', 'USA', NULL, 'tt0069303', NULL, 42489, NULL, NULL, 105);
