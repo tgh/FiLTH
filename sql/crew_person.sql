@@ -3799,3 +3799,6 @@ INSERT INTO filth.crew_person VALUES (3801, 'Ferrari', 'Gabriel', NULL, 'Gabriel
 INSERT INTO filth.crew_person VALUES (3802, 'John-Kamen', 'Hannah', NULL, 'Hannah John-Kamen', 'Actress');  -- Actress: Hannah John-Kamen
 INSERT INTO filth.crew_person VALUES (3803, 'Corbin', 'Barry', NULL, 'Barry Corbin', 'Actor');  -- Actor: Barry Corbin
 INSERT INTO filth.crew_person VALUES (3804, 'Dillahunt', 'Garret', NULL, 'Garret Dillahunt', 'Actor');  -- Actor: Garret Dillahunt
+INSERT INTO filth.crew_person VALUES (3805, 'Baker', 'Simon', NULL, 'Simon Baker', 'Actor');  -- Actor: Simon Baker
+INSERT INTO filth.crew_person VALUES (3806, 'Grenier', 'Adrian', NULL, 'Adrian Grenier', 'Actor');  -- Actor: Adrian Grenier
+INSERT INTO filth.crew_person VALUES (3807, 'Frankel', 'David', NULL, 'David Frankel', 'Director');  -- Director: David Frankel
