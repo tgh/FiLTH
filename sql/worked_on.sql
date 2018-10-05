@@ -9466,3 +9466,8 @@ INSERT INTO filth.worked_on VALUES(9466, 4355, 2409, 'Small Part');  -- Bruce Ca
 INSERT INTO filth.worked_on VALUES(9467, 4355, 2162, 'Small Part');  -- Elizabeth Banks for Spider-Man 3 (2007)
 INSERT INTO filth.worked_on VALUES(9468, 4355, 620, 'Cameo');  -- Willem Dafoe for Spider-Man 3 (2007)
 INSERT INTO filth.worked_on VALUES(9469, 4355, 3449, 'Cinematographer');  -- Bill Pope for Spider-Man 3 (2007)
+INSERT INTO filth.worked_on VALUES(9470, 4356, 2161, 'Lead Actor');  -- Will Ferrell for Kicking & Screaming (2005)
+INSERT INTO filth.worked_on VALUES(9471, 4356, 96, 'Supporting Actor');  -- Robert Duvall for Kicking & Screaming (2005)
+INSERT INTO filth.worked_on VALUES(9472, 4356, 2094, 'Small Part');  -- Josh Hutcherson for Kicking & Screaming (2005)
+INSERT INTO filth.worked_on VALUES(9473, 4356, 3808, 'Small Part');  -- David Herman for Kicking & Screaming (2005)
+INSERT INTO filth.worked_on VALUES(9474, 4356, 3809, 'Supporting Actress');  -- Kate Walsh for Kicking & Screaming (2005)

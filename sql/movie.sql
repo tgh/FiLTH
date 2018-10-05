@@ -4348,3 +4348,4 @@ INSERT INTO filth.movie VALUES (4352, 'The Little Prince', 2015, '**½', 'PG', '
 INSERT INTO filth.movie VALUES (4353, 'Ant-Man and the Wasp', 2018, '***', 'PG-13', 'USA', NULL, 'tt5095030', 1, 363088, NULL, NULL, 118);
 INSERT INTO filth.movie VALUES (4354, 'Aladdin', 1992, '***', 'G', 'USA', NULL, 'tt0103639', 1, 812, NULL, NULL, 90);
 INSERT INTO filth.movie VALUES (4355, 'Spider-Man 3', 2007, '**', 'PG-13', 'USA', NULL, 'tt0413300', 0, 559, NULL, NULL, 139);
+INSERT INTO filth.movie VALUES (4356, 'Kicking & Screaming', 2005, '***', 'PG', 'USA', NULL, 'tt0384642', 0, 9981, NULL, NULL, 95);
