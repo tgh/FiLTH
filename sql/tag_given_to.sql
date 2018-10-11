@@ -19868,3 +19868,4 @@ INSERT INTO filth.tag_given_to VALUES(4356, 329);  -- Kicking & Screaming (2005)
 INSERT INTO filth.tag_given_to VALUES(4356, 250);  -- Kicking & Screaming (2005) tagged with 'light'
 INSERT INTO filth.tag_given_to VALUES(4356, 20);  -- Kicking & Screaming (2005) tagged with 'sports'
 INSERT INTO filth.tag_given_to VALUES(4356, 263);  -- Kicking & Screaming (2005) tagged with 'family'
+INSERT INTO filth.tag_given_to VALUES(1474, 391);  -- Shutter Island (2010) tagged with 'masculine'
