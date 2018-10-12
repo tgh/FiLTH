@@ -9484,3 +9484,5 @@ INSERT INTO filth.worked_on VALUES(9484, 1474, 3773, 'Small Part');  -- Ted Levi
 INSERT INTO filth.worked_on VALUES(9485, 1474, 2375, 'Small Part');  -- Elias Koteas for Shutter Island (2010)
 INSERT INTO filth.worked_on VALUES(9486, 1474, 3493, 'Supporting Actor');  -- John Carroll Lynch for Shutter Island (2010)
 INSERT INTO filth.worked_on VALUES(9487, 1474, 1340, 'Cinematographer');  -- Robert Richardson for Shutter Island (2010)
+INSERT INTO filth.worked_on VALUES(9488, 4357, 331, 'Director');  -- Michael Moore for Fahrenheit 11/9 (2018)
+INSERT INTO filth.worked_on VALUES(9489, 4357, 331, 'Screenwriter');  -- Michael Moore for Fahrenheit 11/9 (2018)

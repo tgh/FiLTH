@@ -19869,3 +19869,7 @@ INSERT INTO filth.tag_given_to VALUES(4356, 250);  -- Kicking & Screaming (2005)
 INSERT INTO filth.tag_given_to VALUES(4356, 20);  -- Kicking & Screaming (2005) tagged with 'sports'
 INSERT INTO filth.tag_given_to VALUES(4356, 263);  -- Kicking & Screaming (2005) tagged with 'family'
 INSERT INTO filth.tag_given_to VALUES(1474, 391);  -- Shutter Island (2010) tagged with 'masculine'
+INSERT INTO filth.tag_given_to VALUES(4357, 12);  -- Fahrenheit 11/9 (2018) tagged with 'documentary'
+INSERT INTO filth.tag_given_to VALUES(4357, 24);  -- Fahrenheit 11/9 (2018) tagged with 'political'
+INSERT INTO filth.tag_given_to VALUES(4357, 287);  -- Fahrenheit 11/9 (2018) tagged with 'social-injustice'
+INSERT INTO filth.tag_given_to VALUES(4357, 288);  -- Fahrenheit 11/9 (2018) tagged with 'upsetting'
