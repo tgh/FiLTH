@@ -3808,3 +3808,5 @@ INSERT INTO filth.crew_person VALUES (3810, 'Moorhouse', 'Jocelyn', NULL, 'Jocel
 INSERT INTO filth.crew_person VALUES (3811, 'Hogan', 'P.J.', NULL, 'P.J. Hogan', 'Screenwriter');  -- Screenwriter: P.J. Hogan
 INSERT INTO filth.crew_person VALUES (3812, 'Johnston', 'Joe', NULL, 'Joe Johnston', 'Director');  -- Director: Joe Johnston
 INSERT INTO filth.crew_person VALUES (3813, 'Foy', 'Mackenzie', NULL, 'Mackenzie Foy', 'Actress');  -- Actress: Mackenzie Foy
+INSERT INTO filth.crew_person VALUES (3814, 'Pearce', 'Craig', NULL, 'Craig Pearce', 'Screenwriter');  -- Screenwriter: Craig Pearce
+INSERT INTO filth.crew_person VALUES (3815, 'Debicki', 'Elizabeth', 'DebickiElizabeth', 'Elizabeth DebickiElizabeth Debicki', 'Actress');  -- Actress: Elizabeth DebickiElizabeth Debicki
