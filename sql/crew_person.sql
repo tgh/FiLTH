@@ -3804,3 +3804,7 @@ INSERT INTO filth.crew_person VALUES (3806, 'Grenier', 'Adrian', NULL, 'Adrian G
 INSERT INTO filth.crew_person VALUES (3807, 'Frankel', 'David', NULL, 'David Frankel', 'Director');  -- Director: David Frankel
 INSERT INTO filth.crew_person VALUES (3808, 'Herman', 'David', NULL, 'David Herman', 'Actor');  -- Actor: David Herman
 INSERT INTO filth.crew_person VALUES (3809, 'Walsh', 'Kate', NULL, 'Kate Walsh', 'Actress');  -- Actress: Kate Walsh
+INSERT INTO filth.crew_person VALUES (3810, 'Moorhouse', 'Jocelyn', NULL, 'Jocelyn Moorhouse', 'Director');  -- Director: Jocelyn Moorhouse
+INSERT INTO filth.crew_person VALUES (3811, 'Hogan', 'P.J.', NULL, 'P.J. Hogan', 'Screenwriter');  -- Screenwriter: P.J. Hogan
+INSERT INTO filth.crew_person VALUES (3812, 'Johnston', 'Joe', NULL, 'Joe Johnston', 'Director');  -- Director: Joe Johnston
+INSERT INTO filth.crew_person VALUES (3813, 'Foy', 'Mackenzie', NULL, 'Mackenzie Foy', 'Actress');  -- Actress: Mackenzie Foy
