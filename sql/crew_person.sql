@@ -2761,7 +2761,7 @@ INSERT INTO filth.crew_person VALUES (2761, 'Baldwin', 'Stephen', NULL, 'Stephen
 INSERT INTO filth.crew_person VALUES (2762, 'Sedgwick', 'Kyra', NULL, 'Kyra Sedgwick', 'Actress');  -- Actress: Kyra Sedgwick
 INSERT INTO filth.crew_person VALUES (2763, 'Fleischer', 'Richard', NULL, 'Richard Fleischer', 'Director');  -- Director: Richard Fleischer
 INSERT INTO filth.crew_person VALUES (2764, 'Yeoman', 'Robert', 'D.', 'Robert D. Yeoman', 'Cinematographer');  -- Cinematographer: Robert D. Yeoman
-INSERT INTO filth.crew_person VALUES (2765, 'Wachowski', 'Andy and Lana', NULL, 'Andy and Lana Wachowski', 'Director');  -- Director: Andy and Lana Wachowski
+INSERT INTO filth.crew_person VALUES (2765, 'The Wachowskis', NULL, NULL, 'The Wachowskis', 'Director');  -- Director: The Wachowskis
 INSERT INTO filth.crew_person VALUES (2766, 'Gershon', 'Gina', NULL, 'Gina Gershon', 'Actress');  -- Actress: Gina Gershon
 INSERT INTO filth.crew_person VALUES (2767, 'Meloni', 'Christopher', NULL, 'Christopher Meloni', 'Actor');  -- Actor: Christopher Meloni
 INSERT INTO filth.crew_person VALUES (2768, 'Liman', 'Doug', NULL, 'Doug Liman', 'Director');  -- Director: Doug Liman
@@ -3810,3 +3810,7 @@ INSERT INTO filth.crew_person VALUES (3812, 'Johnston', 'Joe', NULL, 'Joe Johnst
 INSERT INTO filth.crew_person VALUES (3813, 'Foy', 'Mackenzie', NULL, 'Mackenzie Foy', 'Actress');  -- Actress: Mackenzie Foy
 INSERT INTO filth.crew_person VALUES (3814, 'Pearce', 'Craig', NULL, 'Craig Pearce', 'Screenwriter');  -- Screenwriter: Craig Pearce
 INSERT INTO filth.crew_person VALUES (3815, 'Debicki', 'Elizabeth', 'DebickiElizabeth', 'Elizabeth DebickiElizabeth Debicki', 'Actress');  -- Actress: Elizabeth DebickiElizabeth Debicki
+INSERT INTO filth.crew_person VALUES (3816, 'McTeigue', 'James', NULL, 'James McTeigue', 'Director');  -- Director: James McTeigue
+INSERT INTO filth.crew_person VALUES (3817, 'Fry', 'Stephen', NULL, 'Stephen Fry', 'Actor');  -- Actor: Stephen Fry
+INSERT INTO filth.crew_person VALUES (3818, 'Pigott-Smith', 'Tim', NULL, 'Tim Pigott-Smith', 'Actor');  -- Actor: Tim Pigott-Smith
+INSERT INTO filth.crew_person VALUES (3819, 'Graves', 'Rupert', NULL, 'Rupert Graves', 'Actor');  -- Actor: Rupert Graves

@@ -19898,3 +19898,7 @@ INSERT INTO filth.tag_given_to VALUES(4359, 64);  -- The Nutcracker and the Four
 INSERT INTO filth.tag_given_to VALUES(4359, 21);  -- The Nutcracker and the Four Realms (2018) tagged with 'period'
 INSERT INTO filth.tag_given_to VALUES(4359, 59);  -- The Nutcracker and the Four Realms (2018) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4359, 58);  -- The Nutcracker and the Four Realms (2018) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(1704, 347);  -- V for Vendetta (2006) tagged with 'revenge'
+INSERT INTO filth.tag_given_to VALUES(1704, 312);  -- V for Vendetta (2006) tagged with 'based-on-graphic-novel(s)'
+INSERT INTO filth.tag_given_to VALUES(1704, 59);  -- V for Vendetta (2006) tagged with 'based-on-previously-written-material'
+INSERT INTO filth.tag_given_to VALUES(1704, 58);  -- V for Vendetta (2006) tagged with 'based-on-something'
