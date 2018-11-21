@@ -3820,3 +3820,8 @@ INSERT INTO filth.crew_person VALUES (3822, 'Rogers', 'Charles', NULL, 'Charles 
 INSERT INTO filth.crew_person VALUES (3823, 'Arlen', 'Richard', NULL, 'Richard Arlen', 'Actor');  -- Actor: Richard Arlen
 INSERT INTO filth.crew_person VALUES (3824, 'Foy', 'Claire', NULL, 'Claire Foy', 'Actress');  -- Actress: Claire Foy
 INSERT INTO filth.crew_person VALUES (3825, 'Haas', 'Lukas', NULL, 'Lukas Haas', 'Actor');  -- Actor: Lukas Haas
+INSERT INTO filth.crew_person VALUES (3826, 'Studi', 'Wes', NULL, 'Wes Studi', 'Actor');  -- Actor: Wes Studi
+INSERT INTO filth.crew_person VALUES (3827, 'Beach', 'Adam', NULL, 'Adam Beach', 'Actor');  -- Actor: Adam Beach
+INSERT INTO filth.crew_person VALUES (3828, 'Kilcher', 'Q''orianka', NULL, 'Q''orianka Kilcher', 'Actress');  -- Actress: Q'orianka Kilcher
+INSERT INTO filth.crew_person VALUES (3829, 'Wilson', 'Scott', NULL, 'Scott Wilson', 'Actor');  -- Actor: Scott Wilson
+INSERT INTO filth.crew_person VALUES (3830, 'Takayanagi', 'Masanobu', NULL, 'Masanobu Takayanagi', 'Cinematographer');  -- Cinematographer: Masanobu Takayanagi
