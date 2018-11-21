@@ -3818,3 +3818,5 @@ INSERT INTO filth.crew_person VALUES (3820, 'Mazzello', 'Joseph', NULL, 'Joseph 
 INSERT INTO filth.crew_person VALUES (3821, 'Bow', 'Clara', NULL, 'Clara Bow', 'Actress');  -- Actress: Clara Bow
 INSERT INTO filth.crew_person VALUES (3822, 'Rogers', 'Charles', NULL, 'Charles Rogers', 'Actor');  -- Actor: Charles Rogers
 INSERT INTO filth.crew_person VALUES (3823, 'Arlen', 'Richard', NULL, 'Richard Arlen', 'Actor');  -- Actor: Richard Arlen
+INSERT INTO filth.crew_person VALUES (3824, 'Foy', 'Claire', NULL, 'Claire Foy', 'Actress');  -- Actress: Claire Foy
+INSERT INTO filth.crew_person VALUES (3825, 'Haas', 'Lukas', NULL, 'Lukas Haas', 'Actor');  -- Actor: Lukas Haas
