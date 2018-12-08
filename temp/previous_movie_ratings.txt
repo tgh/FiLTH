@@ -235,6 +235,7 @@ Beaver, The (2011) *** [PG-13] USA
 Becoming Jane (2007) *** [PG] England
 Becket (1964) *** [NR] England
 Bee Movie (2007) *** [PG] USA
+Beetlejuice (1988) **½ [PG] USA
 Before I Go To Sleep (2014) **½ [R] England
 Before Night Falls (2000) **½ [R] USA
 Before Sunrise (1995) *** [R] USA
@@ -748,6 +749,7 @@ Fanny & Alexander (1983) **** [R] Sweden
 Fantasia (1940) **** [NR] USA
 Fantasia 2000 (2000) **** [G] USA
 Fantastic Beasts and Where to Find Them (2016) **½ [PG-13] England
+Fantastic Beasts: The Crimes of Grindelwald (2018) *** [PG-13] England
 Fantastic Mr. Fox (2009) **** [PG] USA
 Far From Heaven (2002) **½ [PG-13] USA
 Farewell My Concubine (1993) ** [R] China
@@ -1496,6 +1498,7 @@ Minions (2015) **½ [PG] USA
 Minority Report (2002) ***½ [PG-13] USA
 Minus Man, The (1999) **½ [R] USA
 Miracle (2004) *** [PG] USA
+Miracle on 34th Street (1947) *** [NR] USA
 Miracle Worker, The (1962) **** [NR] USA
 Mirror, The (1975) **½ [G] Russia
 Mirror Mirror (2012) **½ [PG] USA
@@ -1771,6 +1774,7 @@ Platoon (1986) **** [R] USA
 Play it Again, Sam (1972) ***½ [PG] USA
 Player, The (1992) *** [R] USA
 Playing God (1997) * [R] USA
+Playtime (1967) *** [NR] France
 Pleasantville (1998) *** [PG-13] USA
 Pledge, The (2001) **** [R] USA
 Polar Express, The (2004) ***½ [G] USA

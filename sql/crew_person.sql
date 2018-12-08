@@ -3825,3 +3825,6 @@ INSERT INTO filth.crew_person VALUES (3827, 'Beach', 'Adam', NULL, 'Adam Beach',
 INSERT INTO filth.crew_person VALUES (3828, 'Kilcher', 'Q''orianka', NULL, 'Q''orianka Kilcher', 'Actress');  -- Actress: Q'orianka Kilcher
 INSERT INTO filth.crew_person VALUES (3829, 'Wilson', 'Scott', NULL, 'Scott Wilson', 'Actor');  -- Actor: Scott Wilson
 INSERT INTO filth.crew_person VALUES (3830, 'Takayanagi', 'Masanobu', NULL, 'Masanobu Takayanagi', 'Cinematographer');  -- Cinematographer: Masanobu Takayanagi
+INSERT INTO filth.crew_person VALUES (3831, 'Kravitz', 'Zoe', NULL, 'Zoe Kravitz', 'Actress');  -- Actress: Zoe Kravitz
+INSERT INTO filth.crew_person VALUES (3832, 'O''Hara', 'Maureen', NULL, 'Maureen O''Hara', 'Actress');  -- Actress: Maureen O'Hara
+INSERT INTO filth.crew_person VALUES (3833, 'Sr.', 'Lloyd', 'Ahern', 'Lloyd Ahern Sr.', 'Cinematographer');  -- Cinematographer: Lloyd Ahern Sr.

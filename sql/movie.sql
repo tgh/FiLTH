@@ -1960,7 +1960,7 @@ INSERT INTO filth.movie VALUES (1955, 'The Bells of St. Mary''s', 1945, 'not see
 INSERT INTO filth.movie VALUES (1956, 'The Yearling', 1946, 'not seen', 'NR', 'USA', NULL, 'tt0039111', NULL, 19049, NULL, NULL, 128);
 INSERT INTO filth.movie VALUES (1957, 'Henry V', 1946, 'not seen', 'NR', 'England', NULL, 'tt0036910', NULL, 22638, NULL, NULL, 137);
 INSERT INTO filth.movie VALUES (1958, 'The Razor''s Edge', 1946, 'not seen', 'NR', 'USA', NULL, 'tt0038873', NULL, 56135, NULL, NULL, 145);
-INSERT INTO filth.movie VALUES (1959, 'Miracle on 34th Street', 1947, 'not seen', 'NR', 'USA', NULL, 'tt0039628', NULL, 11881, NULL, NULL, 96);
+INSERT INTO filth.movie VALUES (1959, 'Miracle on 34th Street', 1947, '***', 'NR', 'USA', NULL, 'tt0039628', NULL, 11881, NULL, NULL, 96);
 INSERT INTO filth.movie VALUES (1960, 'Crossfire', 1947, 'not seen', 'NR', 'USA', NULL, 'tt0039286', NULL, 28120, NULL, NULL, 86);
 INSERT INTO filth.movie VALUES (1961, 'The Bishop''s Wife', 1947, 'not seen', 'NR', 'USA', NULL, 'tt0039190', NULL, 19490, NULL, NULL, 109);
 INSERT INTO filth.movie VALUES (1962, 'Gentleman''s Agreement', 1947, '**½', 'NR', 'USA', NULL, 'tt0039416', 0, 33667, NULL, NULL, 118);
@@ -3805,7 +3805,7 @@ INSERT INTO filth.movie VALUES (3803, 'Moolaade', 2004, 'not seen', 'NR', NULL, 
 INSERT INTO filth.movie VALUES (3804, 'Ordet', 1955, 'not seen', 'NR', 'Denmark', NULL, 'tt0048452', NULL, 48035, NULL, NULL, 126);
 INSERT INTO filth.movie VALUES (3805, 'Out of the Past', 1947, 'not seen', 'NR', 'USA', NULL, 'tt0039689', NULL, 678, NULL, NULL, 97);
 INSERT INTO filth.movie VALUES (3806, 'Pixote', 1981, 'not seen', 'R', 'Brazil', NULL, 'tt0082912', NULL, 42148, NULL, NULL, 128);
-INSERT INTO filth.movie VALUES (3807, 'Playtime', 1967, 'not seen', 'NR', 'France', NULL, 'tt0062136', NULL, 10227, NULL, NULL, 124);
+INSERT INTO filth.movie VALUES (3807, 'Playtime', 1967, '***', 'NR', 'France', NULL, 'tt0062136', NULL, 10227, NULL, NULL, 124);
 INSERT INTO filth.movie VALUES (3808, 'Ripley''s Game', 2002, 'not seen', 'R', 'Italy', NULL, 'tt0265651', NULL, 10955, NULL, NULL, 110);
 INSERT INTO filth.movie VALUES (3809, 'The River', 1951, 'not seen', 'NR', 'France', NULL, 'tt0043972', NULL, 45218, NULL, NULL, 99);
 INSERT INTO filth.movie VALUES (3810, 'Rocco and His Brothers', 1960, 'not seen', 'NR', 'Italy', NULL, 'tt0054248', NULL, 8422, NULL, NULL, 178);
@@ -4354,3 +4354,5 @@ INSERT INTO filth.movie VALUES (4358, 'The Dressmaker', 2015, '**', 'R', 'Austra
 INSERT INTO filth.movie VALUES (4359, 'The Nutcracker and the Four Realms', 2018, '*½', 'PG', 'USA', NULL, 'tt5523010', 1, 426543, NULL, NULL, 99);
 INSERT INTO filth.movie VALUES (4360, 'First Man', 2018, '**½', 'PG-13', 'USA', 'A bit disappointing. Kind of flat, not much conflict. Felt like a low-budget independent movie trying to be big. Didn''t help that I saw it in a tiny theater with not the best quality digital projection, though. Not as much space flights, training, etc as I thought there would be; when I think about the movie I mostly see Ryan Gosling on Earth being quiet and sad, not doing much.', 'tt1213641', 1, 369972, NULL, NULL, 141);
 INSERT INTO filth.movie VALUES (4361, 'Hostiles', 2017, '***', 'R', 'USA', 'Good, but not great; it wasn''t quite clear what made Bale''s character change so much--didn''t feel like there was enough--would have liked to have seen more interaction between him and the chief. The contemplation of suicide at the beginning was over-the-top and unnecessary; we don''t know enough about the character at that point to know how/why that would impact him so much. Good performances, good costume, good cinematography.', 'tt5478478', 0, 384680, NULL, NULL, 134);
+INSERT INTO filth.movie VALUES (4362, 'Beetlejuice', 1988, '**½', 'PG', 'USA', NULL, 'tt0094721', 0, 4011, NULL, NULL, 92);
+INSERT INTO filth.movie VALUES (4363, 'Fantastic Beasts: The Crimes of Grindelwald', 2018, '***', 'PG-13', 'England', 'They should have just titled it "The Crimes of Grindelwald" without the "Fantastic Beasts", but oh well. I like Jude Law, but I don''t know how I feel about him as Dumbledore...', 'tt4123430', 1, 338952, NULL, NULL, 134);
