@@ -19945,3 +19945,5 @@ INSERT INTO filth.tag_given_to VALUES(3807, 2);  -- Playtime (1967) tagged with 
 INSERT INTO filth.tag_given_to VALUES(3807, 250);  -- Playtime (1967) tagged with 'light'
 INSERT INTO filth.tag_given_to VALUES(3807, 165);  -- Playtime (1967) tagged with 'color-cinematography'
 INSERT INTO filth.tag_given_to VALUES(3807, 164);  -- Playtime (1967) tagged with 'cinematography'
+INSERT INTO filth.tag_given_to VALUES(751, 83);  -- Home Alone (1990) tagged with 'slapstick'
+INSERT INTO filth.tag_given_to VALUES(752, 83);  -- Home Alone 2: Lost in New York (1992) tagged with 'slapstick'
