@@ -19947,3 +19947,4 @@ INSERT INTO filth.tag_given_to VALUES(3807, 165);  -- Playtime (1967) tagged wit
 INSERT INTO filth.tag_given_to VALUES(3807, 164);  -- Playtime (1967) tagged with 'cinematography'
 INSERT INTO filth.tag_given_to VALUES(751, 83);  -- Home Alone (1990) tagged with 'slapstick'
 INSERT INTO filth.tag_given_to VALUES(752, 83);  -- Home Alone 2: Lost in New York (1992) tagged with 'slapstick'
+INSERT INTO filth.tag_given_to VALUES(327, 365);  -- A Christmas Carol (2009) tagged with 'actor(s)-playing-multiple-roles'

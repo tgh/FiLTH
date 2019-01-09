@@ -598,7 +598,7 @@ INSERT INTO filth.movie VALUES (593, 'Fracture', 2007, '***', 'R', 'USA', NULL, 
 INSERT INTO filth.movie VALUES (594, 'Frailty', 2002, '****', 'R', 'USA', NULL, 'tt0264616', 1, 12149, NULL, NULL, 100);
 INSERT INTO filth.movie VALUES (595, 'Frankenstein', 1931, '***', 'NR', 'USA', NULL, 'tt0021884', 0, 3035, NULL, NULL, 71);
 INSERT INTO filth.movie VALUES (596, 'Freaks', 1932, '***', 'NR', 'USA', NULL, 'tt0022913', 0, 136, NULL, NULL, 64);
-INSERT INTO filth.movie VALUES (597, 'Fred Clause', 2007, '***', 'PG', 'USA', NULL, 'tt0486583', 0, 5375, NULL, NULL, 116);
+INSERT INTO filth.movie VALUES (597, 'Fred Claus', 2007, '***', 'PG', 'USA', NULL, 'tt0486583', 0, 5375, NULL, NULL, 116);
 INSERT INTO filth.movie VALUES (598, 'The French Connection', 1971, '****', 'R', 'USA', NULL, 'tt0067116', 0, 1051, NULL, NULL, 104);
 INSERT INTO filth.movie VALUES (599, 'Frenzy', 1972, '***', 'R', 'USA', NULL, 'tt0068611', 0, 573, NULL, NULL, 116);
 INSERT INTO filth.movie VALUES (600, 'Fresh', 1994, '***½', 'R', 'USA', NULL, 'tt0109842', 0, 13815, NULL, NULL, 114);
