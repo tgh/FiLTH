@@ -3828,3 +3828,8 @@ INSERT INTO filth.crew_person VALUES (3830, 'Takayanagi', 'Masanobu', NULL, 'Mas
 INSERT INTO filth.crew_person VALUES (3831, 'Kravitz', 'Zoe', NULL, 'Zoe Kravitz', 'Actress');  -- Actress: Zoe Kravitz
 INSERT INTO filth.crew_person VALUES (3832, 'O''Hara', 'Maureen', NULL, 'Maureen O''Hara', 'Actress');  -- Actress: Maureen O'Hara
 INSERT INTO filth.crew_person VALUES (3833, 'Sr.', 'Lloyd', 'Ahern', 'Lloyd Ahern Sr.', 'Cinematographer');  -- Cinematographer: Lloyd Ahern Sr.
+INSERT INTO filth.crew_person VALUES (3834, 'Chbosky', 'Stephen', NULL, 'Stephen Chbosky', 'Screenwriter');  -- Screenwriter: Stephen Chbosky
+INSERT INTO filth.crew_person VALUES (3835, 'Conrad', 'Steve', NULL, 'Steve Conrad', 'Screenwriter');  -- Screenwriter: Steve Conrad
+INSERT INTO filth.crew_person VALUES (3836, 'Thorne', 'Jack', NULL, 'Jack Thorne', 'Screenwriter');  -- Screenwriter: Jack Thorne
+INSERT INTO filth.crew_person VALUES (3837, 'Vidovic', 'Izabela', NULL, 'Izabela Vidovic', 'Actress');  -- Actress: Izabela Vidovic
+INSERT INTO filth.crew_person VALUES (3838, 'Jupe', 'Noah', NULL, 'Noah Jupe', 'Actor');  -- Actor: Noah Jupe
