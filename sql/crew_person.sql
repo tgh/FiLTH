@@ -3833,3 +3833,11 @@ INSERT INTO filth.crew_person VALUES (3835, 'Conrad', 'Steve', NULL, 'Steve Conr
 INSERT INTO filth.crew_person VALUES (3836, 'Thorne', 'Jack', NULL, 'Jack Thorne', 'Screenwriter');  -- Screenwriter: Jack Thorne
 INSERT INTO filth.crew_person VALUES (3837, 'Vidovic', 'Izabela', NULL, 'Izabela Vidovic', 'Actress');  -- Actress: Izabela Vidovic
 INSERT INTO filth.crew_person VALUES (3838, 'Jupe', 'Noah', NULL, 'Noah Jupe', 'Actor');  -- Actor: Noah Jupe
+INSERT INTO filth.crew_person VALUES (3839, 'Patton', 'Paula', NULL, 'Paula Patton', 'Actress');  -- Actress: Paula Patton
+INSERT INTO filth.crew_person VALUES (3840, 'Boothe', 'Powers', NULL, 'Powers Boothe', 'Actor');  -- Actor: Powers Boothe
+INSERT INTO filth.crew_person VALUES (3841, 'Taylor', 'Alan', NULL, 'Alan Taylor', 'Director');  -- Director: Alan Taylor
+INSERT INTO filth.crew_person VALUES (3842, 'Yost', 'Christopher', 'L.', 'Christopher L. Yost', 'Screenwriter');  -- Screenwriter: Christopher L. Yost
+INSERT INTO filth.crew_person VALUES (3843, 'Eccleston', 'Christopher', NULL, 'Christopher Eccleston', 'Actor');  -- Actor: Christopher Eccleston
+INSERT INTO filth.crew_person VALUES (3844, 'Marcum', 'Art', NULL, 'Art Marcum', 'Screenwriter');  -- Screenwriter: Art Marcum
+INSERT INTO filth.crew_person VALUES (3845, 'Holloway', 'Matt', NULL, 'Matt Holloway', 'Screenwriter');  -- Screenwriter: Matt Holloway
+INSERT INTO filth.crew_person VALUES (3846, 'Perlman', 'Nicole', NULL, 'Nicole Perlman', 'Screenwriter');  -- Screenwriter: Nicole Perlman
