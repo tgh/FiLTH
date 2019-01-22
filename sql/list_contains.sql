@@ -2226,3 +2226,13 @@ INSERT INTO filth.list_contains VALUES (2228, 4282, 144, 12, NULL); -- "Baby Dri
 INSERT INTO filth.list_contains VALUES (2229, 4294, 144, 13, NULL); -- "Gerald's Game" in list "Best Movies of 2017" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2230, 4295, 144, 14, NULL); -- "The Disaster Artist" in list "Best Movies of 2017" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2231, 4296, 144, 15, NULL); -- "Good Time" in list "Best Movies of 2017" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2232, 4365, 145, 1, NULL); -- "Hereditary" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2233, 4349, 145, 2, NULL); -- "Mission: Impossible - Fallout" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2234, 4341, 145, 3, NULL); -- "Annihilation" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2235, 4366, 145, 4, NULL); -- "Blindspotting" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2236, 4367, 145, 5, NULL); -- "Spider-Man: Into the Spider-Verse" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2237, 4368, 145, 6, NULL); -- "Green Book" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2238, 4343, 145, 7, NULL); -- "Avengers: Infinity War" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2239, 4369, 145, 8, NULL); -- "A Star is Born" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2240, 4370, 145, 9, NULL); -- "Paddington 2" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2241, 4371, 145, 10, NULL); -- "Burning" in list "Best Movies of 2018" by Chris Stuckmann

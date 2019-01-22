@@ -4357,3 +4357,10 @@ INSERT INTO filth.movie VALUES (4361, 'Hostiles', 2017, '***', 'R', 'USA', 'Good
 INSERT INTO filth.movie VALUES (4362, 'Beetlejuice', 1988, '**½', 'PG', 'USA', NULL, 'tt0094721', 0, 4011, NULL, NULL, 92);
 INSERT INTO filth.movie VALUES (4363, 'Fantastic Beasts: The Crimes of Grindelwald', 2018, '***', 'PG-13', 'England', 'They should have just titled it "The Crimes of Grindelwald" without the "Fantastic Beasts", but oh well. I like Jude Law, but I don''t know how I feel about him as Dumbledore...', 'tt4123430', 1, 338952, NULL, NULL, 134);
 INSERT INTO filth.movie VALUES (4364, 'Wonder', 2017, '***½', 'PG', 'USA', NULL, 'tt2543472', 0, 406997, NULL, NULL, 113);
+INSERT INTO filth.movie VALUES (4365, 'Hereditary', 2018, 'not seen', 'R', 'USA', NULL, 'tt7784604', NULL, 493922, NULL, NULL, 127);
+INSERT INTO filth.movie VALUES (4366, 'Blindspotting', 2018, 'not seen', 'R', 'USA', NULL, 'tt7242142', NULL, 489930, NULL, NULL, 95);
+INSERT INTO filth.movie VALUES (4367, 'Spider-Man: Into the Spider-Verse', 2018, 'not seen', 'PG', 'USA', NULL, 'tt4633694', NULL, 324857, NULL, NULL, 117);
+INSERT INTO filth.movie VALUES (4368, 'Green Book', 2018, 'not seen', 'PG-13', 'USA', NULL, 'tt6966692', NULL, 490132, NULL, NULL, 130);
+INSERT INTO filth.movie VALUES (4369, 'A Star is Born', 2018, 'not seen', 'R', 'USA', NULL, 'tt1517451', NULL, 332562, NULL, 1896, 136);
+INSERT INTO filth.movie VALUES (4370, 'Paddington 2', 2018, 'not seen', 'PG', 'England', NULL, 'tt4468740', NULL, 346648, NULL, NULL, 103);
+INSERT INTO filth.movie VALUES (4371, 'Burning', 2018, 'not seen', 'NR', 'South Korea', NULL, 'tt7282468', NULL, 491584, NULL, NULL, 148);
