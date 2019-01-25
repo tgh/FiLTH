@@ -45,7 +45,10 @@ parent_mid smallint DEFAULT NULL,
 -- movie id of original movie if this movie is a remake
 remake_of_mid smallint DEFAULT NULL,
 -- running time (in min)
-runtime smallint DEFAULT NULL);
+runtime smallint DEFAULT NULL,
+-- number of times seen (approximately, hence using text, because I might want "~3" or "3?")
+viewings text DEFAULT NULL,
+);
 
 
 -- movie <--> movie (many-to-one) relationship --------------------------------

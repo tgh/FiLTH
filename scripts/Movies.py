@@ -296,6 +296,20 @@ class Movies(object):
     #--------------------------------------------------------------------------
     #PUBLIC
     #
+    def getAllMovies():
+        return self._movies
+
+
+    #--------------------------------------------------------------------------
+    #PUBLIC
+    #
+    def getAllMoviesSeen():
+        return filter(lambda movie : movie['star_rating'] != 'not seen', self._movies)
+
+
+    #--------------------------------------------------------------------------
+    #PUBLIC
+    #
     def addMovie(self, title, year, mpaa, country, imdbId, tmdbId, parentId, remakeOfId, runtime):
         movie = {}
         movie['mid'] = self._nextMid

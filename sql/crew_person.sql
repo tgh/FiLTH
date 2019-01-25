@@ -3841,3 +3841,6 @@ INSERT INTO filth.crew_person VALUES (3843, 'Eccleston', 'Christopher', NULL, 'C
 INSERT INTO filth.crew_person VALUES (3844, 'Marcum', 'Art', NULL, 'Art Marcum', 'Screenwriter');  -- Screenwriter: Art Marcum
 INSERT INTO filth.crew_person VALUES (3845, 'Holloway', 'Matt', NULL, 'Matt Holloway', 'Screenwriter');  -- Screenwriter: Matt Holloway
 INSERT INTO filth.crew_person VALUES (3846, 'Perlman', 'Nicole', NULL, 'Nicole Perlman', 'Screenwriter');  -- Screenwriter: Nicole Perlman
+INSERT INTO filth.crew_person VALUES (3847, 'Miranda', 'Lin-Manuel', NULL, 'Lin-Manuel Miranda', 'Actor');  -- Actor: Lin-Manuel Miranda
+INSERT INTO filth.crew_person VALUES (3848, 'Holdbrook-Smith', 'Kobna', NULL, 'Kobna Holdbrook-Smith', 'Actor');  -- Actor: Kobna Holdbrook-Smith
+INSERT INTO filth.crew_person VALUES (3849, 'Swift', 'Jeremy', NULL, 'Jeremy Swift', 'Actor');  -- Actor: Jeremy Swift
