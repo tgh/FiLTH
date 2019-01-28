@@ -395,3 +395,4 @@ INSERT INTO filth.tag VALUES (394, 'dissociative-identity-disorder', 143);
 INSERT INTO filth.tag VALUES (395, 'based-on-dc-comic(s)', 196);
 INSERT INTO filth.tag VALUES (396, 'based-on-marvel-comic(s)', 196);
 INSERT INTO filth.tag VALUES (397, 'marvel-cinematic-universe', 396);
+INSERT INTO filth.tag VALUES (398, 'partially-animated', NULL);

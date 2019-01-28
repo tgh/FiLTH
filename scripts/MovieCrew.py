@@ -89,6 +89,9 @@ class MovieCrew(object):
 
     highestWid = 0
     for line in lines:
+      #ignore commented lines
+      if line.startswith('--'):
+        continue
       vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
       wid = int(vals[0])
       if wid > highestWid:
@@ -219,14 +222,14 @@ class MovieCrew(object):
         print '**Input error: the name you entered contains at least one character not expected in a name.\n'
       else:
         break
-    
+
     name = response
     self._log('_promptUserForCrewPersonHelper', 'user entered crew person: ' + name)
 
     try:
       #get the (possible) id(s) of the crew person
       cids = self._crewMap[name]
-      
+
       if len(cids) > 1:
         #there is more than one crew member with this name
         print '**There is more than one crew member named ' + name
@@ -245,7 +248,7 @@ class MovieCrew(object):
             break
           except ValueError:
             print '**Only values in ' + cids
-            continue 
+            continue
       else:
         cid = cids[0]
       self._log('_promptUserForCrewPersonHelper', 'crew person found with id of ' + str(cid))
@@ -267,7 +270,7 @@ class MovieCrew(object):
       #end while
 
       self._log('_promptUserForCrewPersonHelper', 'this is a new crew person')
-        
+
       #prompt user for what the person is known as
       num = self._promptUserForPosition('\nWhat is this person known as (1-' + str(len(self._positions)) + ') or \'q\')? ')
       self._log('_promptUserForCrewPersonHelper', 'user entered ' + str(num) + '--new crew person is known as ' + self._positions[num-1])
@@ -362,7 +365,7 @@ class MovieCrew(object):
   #
   def promptUserForCrewPerson(self, mid, title, year):
     ''' Wrapper for prompting user for crew persons for a new movie
-        
+
         mid (int) : the database primary key value of the movie
         title (string) : title of the movie
         year (int) : year of the movie
@@ -412,6 +415,9 @@ class MovieCrew(object):
     cidsAndPositions = {}
 
     for line in lines:
+      #ignore commented lines
+      if line.startswith('--'):
+        continue
       currentMid = int(re.search('VALUES\\(\d+, (\d+),', line).group(1))
       if mid == currentMid:
         matcher = re.search('VALUES\\(\d+, \d+, (\d+), \'([a-zA-Z ]+)\'', line)

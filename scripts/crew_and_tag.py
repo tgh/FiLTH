@@ -10,6 +10,7 @@
 
 import sys
 import re
+import traceback
 from os import getenv
 from MovieTagger import MovieTagger
 from MovieCrew import MovieCrew
@@ -52,7 +53,7 @@ def usage():
 
 def processArgs():
     global requested_movies
-    
+
     #no args--default to processing every movie after "last processed"
     if len(sys.argv[1:]) == 0:
         return []
@@ -189,15 +190,20 @@ if __name__ == '__main__':
     initMovies(lastProcessed)
   #process only the requested movies with the given ids
   else:
+    log('main', 'mids: ' + str(mids))
     initRequestedMovies(mids)
 
   try:
     for movie in movies:
+      log('main', 'Processing: ' + str(movie))
+      lastProcessed = movie['mid']
       movieTagger.promptUserForTag(movie['mid'], movie['title'], movie['year'])
       crewHandler.promptUserForCrewPerson(movie['mid'], movie['title'], movie['year'])
-      lastProcessed = movie['mid']
   except QuitException, KeyboardInterrupt:
     pass
+  except Exception:
+    traceback.print_exc(file=logger)
+    traceback.print_exc(file=sys.stdout)
   finally:
     if movieTagger.hasInserts():
       while True:
