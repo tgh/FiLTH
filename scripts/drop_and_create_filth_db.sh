@@ -133,3 +133,9 @@ if [ $# -gt 0 ]
     sleep 0.5
     antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $FILTH_TEMP_PATH/previous_movie_ratings.txt
 fi
+
+grep -q "ERROR" $LOG_FILE
+if [ $? -eq 0 ]
+  then
+    echo "Errors occurred. Please consult $LOG_FILE."
+fi

@@ -1,5 +1,5 @@
 INSERT INTO filth.movie VALUES (3762, 'The Up Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO filth.movie VALUES (4210, 'The Harry Potter Series', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO filth.movie VALUES (4103, 'The Harry Potter Series', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (4211, 'The Lord of the Rings Trilogy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (4212, 'The "West Memphis Three" Documentaries', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 INSERT INTO filth.movie VALUES (1, '3 Women', 1977, '***', 'PG', 'USA', NULL, 'tt0075612', 0, 41662, NULL, NULL, 124, '1');
@@ -718,14 +718,14 @@ INSERT INTO filth.movie VALUES (713, 'Hard Eight', 1997, '***', 'R', 'USA', NULL
 INSERT INTO filth.movie VALUES (714, 'Harlan County, U.S.A.', 1976, '***½', 'PG', 'USA', NULL, 'tt0074605', 0, 33324, NULL, NULL, 103, '1');
 INSERT INTO filth.movie VALUES (715, 'Harold and Maude', 1971, '***', 'PG', 'USA', NULL, 'tt0067185', 0, 343, NULL, NULL, 91, '1');
 INSERT INTO filth.movie VALUES (716, 'Harrison''s Flowers', 2002, '***', 'R', 'USA', NULL, 'tt0216799', 1, 25014, NULL, NULL, 130, '1');
-INSERT INTO filth.movie VALUES (717, 'Harry Potter and the Sorcerer''s Stone', 2001, '***', 'PG', 'England', NULL, 'tt0241527', 1, 671, 4210, NULL, 152, '~4');
-INSERT INTO filth.movie VALUES (718, 'Harry Potter and the Chamber of Secrets', 2002, '***', 'PG', 'England', NULL, 'tt0295297', 1, 672, 4210, NULL, 161, '~4');
-INSERT INTO filth.movie VALUES (719, 'Harry Potter and the Prisoner of Azkaban', 2004, '****', 'PG', 'England', NULL, 'tt0304141', 1, 673, 4210, NULL, 141, '~6');
-INSERT INTO filth.movie VALUES (720, 'Harry Potter and the Goblet of Fire', 2005, '***', 'PG-13', 'England', NULL, 'tt0330373', 0, 674, 4210, NULL, 157, '~4');
-INSERT INTO filth.movie VALUES (721, 'Harry Potter and the Order of the Phoenix', 2007, '***½', 'PG-13', 'England', NULL, 'tt0373889', 2, 675, 4210, NULL, 138, '~5');
-INSERT INTO filth.movie VALUES (722, 'Harry Potter and the Half-Blood Prince', 2009, '***', 'PG', 'England', NULL, 'tt0417741', 1, 767, 4210, NULL, 153, '~4');
-INSERT INTO filth.movie VALUES (723, 'Harry Potter and the Deathly Hollows Part 1', 2010, '***½', 'PG-13', 'England', NULL, 'tt0926084', 1, 12444, 4210, NULL, 146, '~4');
-INSERT INTO filth.movie VALUES (724, 'Harry Potter and the Deathly Hollows Part 2', 2011, '***½', 'PG-13', 'England', NULL, 'tt1201607', 1, 12445, 4210, NULL, 130, '~4');
+INSERT INTO filth.movie VALUES (717, 'Harry Potter and the Sorcerer''s Stone', 2001, '***', 'PG', 'England', NULL, 'tt0241527', 1, 671, 4103, NULL, 152, '~4');
+INSERT INTO filth.movie VALUES (718, 'Harry Potter and the Chamber of Secrets', 2002, '***', 'PG', 'England', NULL, 'tt0295297', 1, 672, 4103, NULL, 161, '~4');
+INSERT INTO filth.movie VALUES (719, 'Harry Potter and the Prisoner of Azkaban', 2004, '****', 'PG', 'England', NULL, 'tt0304141', 1, 673, 4103, NULL, 141, '~6');
+INSERT INTO filth.movie VALUES (720, 'Harry Potter and the Goblet of Fire', 2005, '***', 'PG-13', 'England', NULL, 'tt0330373', 0, 674, 4103, NULL, 157, '~4');
+INSERT INTO filth.movie VALUES (721, 'Harry Potter and the Order of the Phoenix', 2007, '***½', 'PG-13', 'England', NULL, 'tt0373889', 2, 675, 4103, NULL, 138, '~5');
+INSERT INTO filth.movie VALUES (722, 'Harry Potter and the Half-Blood Prince', 2009, '***', 'PG', 'England', NULL, 'tt0417741', 1, 767, 4103, NULL, 153, '~4');
+INSERT INTO filth.movie VALUES (723, 'Harry Potter and the Deathly Hollows Part 1', 2010, '***½', 'PG-13', 'England', NULL, 'tt0926084', 1, 12444, 4103, NULL, 146, '~4');
+INSERT INTO filth.movie VALUES (724, 'Harry Potter and the Deathly Hollows Part 2', 2011, '***½', 'PG-13', 'England', NULL, 'tt1201607', 1, 12445, 4103, NULL, 130, '~4');
 INSERT INTO filth.movie VALUES (725, 'Harvey', 1950, '***½', 'NR', 'USA', NULL, 'tt0042546', 0, 11787, NULL, NULL, 104, '1');
 INSERT INTO filth.movie VALUES (726, 'Hearts and Minds', 1974, '***', 'R', 'USA', NULL, 'tt0071604', 0, 42449, NULL, NULL, 112, '1');
 INSERT INTO filth.movie VALUES (727, 'Hearts in Atlantis', 2001, '***', 'PG-13', 'USA', NULL, 'tt0252501', 1, 11313, NULL, NULL, 101, '1');
@@ -4204,7 +4204,7 @@ INSERT INTO filth.movie VALUES (4206, '13th', 2016, '***', 'NR', 'USA', NULL, 't
 INSERT INTO filth.movie VALUES (4207, 'Captain Fantastic', 2016, '***', 'R', 'USA', 'Shows the American suburban lifestyle of kids and entertainment/video games and lack of education incredibly well.', 'tt3553976', 0, 334533, NULL, NULL, 119, '1');
 INSERT INTO filth.movie VALUES (4208, 'The Accountant', 2016, '***', 'R', 'USA', 'I almost gave this ***½; the major flaw being that the climactic scene I thought was written and executed poorly.', 'tt2140479', 0, 302946, NULL, NULL, 128, '1');
 INSERT INTO filth.movie VALUES (4209, 'Sing Street', 2016, '***', 'PG-13', 'Ireland', NULL, 'tt3544112', 0, 369557, NULL, NULL, 106, '1');
-INSERT INTO filth.movie VALUES (4230, 'Loving', 2016, '**½', 'PG-13', 'USA', NULL, 'tt4669986', 0, 339419, NULL, NULL, 123, '1');
+INSERT INTO filth.movie VALUES (4210, 'Loving', 2016, '**½', 'PG-13', 'USA', NULL, 'tt4669986', 0, 339419, NULL, NULL, 123, '1');
 INSERT INTO filth.movie VALUES (4213, 'Fences', 2016, '***½', 'PG-13', 'USA', NULL, 'tt2671706', NULL, 393457, NULL, NULL, 139, '1');
 INSERT INTO filth.movie VALUES (4214, 'Elle', 2016, 'not seen', 'R', 'France', NULL, 'tt3716530', NULL, 337674, NULL, NULL, 130, NULL);
 INSERT INTO filth.movie VALUES (4215, 'Jackie', 2016, '***', 'R', 'USA', NULL, 'tt1619029', NULL, 376866, NULL, NULL, 100, '1');
@@ -4348,7 +4348,7 @@ INSERT INTO filth.movie VALUES (4352, 'The Little Prince', 2015, '**½', 'PG', '
 INSERT INTO filth.movie VALUES (4353, 'Ant-Man and the Wasp', 2018, '***', 'PG-13', 'USA', NULL, 'tt5095030', 1, 363088, NULL, NULL, 118, '1');
 INSERT INTO filth.movie VALUES (4354, 'Aladdin', 1992, '***', 'G', 'USA', NULL, 'tt0103639', 1, 812, NULL, NULL, 90, '~3');
 INSERT INTO filth.movie VALUES (4355, 'Spider-Man 3', 2007, '**', 'PG-13', 'USA', NULL, 'tt0413300', 0, 559, NULL, NULL, 139, '1');
-INSERT INTO filth.movie VALUES (4356, 'Kicking INSERT INTO filth.movie VALUES (4356, 'Kicking & Screaming', 2005, '***', 'PG', 'USA', NULL, 'tt0384642', 0, 9981, NULL, NULL, 95); Screaming', 2005, '***', 'PG', 'USA', NULL, 'tt0384642', 0, 9981, NULL, NULL, 95, '2');
+INSERT INTO filth.movie VALUES (4356, 'Kicking & Screaming', 2005, '***', 'PG', 'USA', NULL, 'tt0384642', 0, 9981, NULL, NULL, 95, '2');
 INSERT INTO filth.movie VALUES (4357, 'Fahrenheit 11/9', 2018, '**½', 'R', 'USA', 'Although for the most part I am on the same page as Moore with his political views I thought this could have been better.  Of course, it is a blatently biased doc (propaganda) as all Moore docs are, which is fine, but suggesting a weird father-daughter relationship between Trump and Ivanka is going too far.  Also, it was a lot less about Trump that I was expecting based on the marketing for it; there were long segements on very specific parts of the country--namely Flint and a West Virginian district--which were very interesting, but difficult to tie to the country and Trump as a whole.  I was on-the-fence between **½ and ***; I did enjoy it (was unsurprisingly upsetting, of course) but thought it could have been better.', 'tt8632862', 1, 532908, NULL, NULL, 128, '1');
 INSERT INTO filth.movie VALUES (4358, 'The Dressmaker', 2015, '**', 'R', 'Australia', NULL, 'tt2910904', 0, 298382, NULL, NULL, 119, '1');
 INSERT INTO filth.movie VALUES (4359, 'The Nutcracker and the Four Realms', 2018, '*½', 'PG', 'USA', NULL, 'tt5523010', 1, 426543, NULL, NULL, 99, '1');

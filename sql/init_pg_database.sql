@@ -47,8 +47,7 @@ remake_of_mid smallint DEFAULT NULL,
 -- running time (in min)
 runtime smallint DEFAULT NULL,
 -- number of times seen (approximately, hence using text, because I might want "~3" or "3?")
-viewings text DEFAULT NULL,
-);
+viewings text DEFAULT NULL);
 
 
 -- movie <--> movie (many-to-one) relationship --------------------------------

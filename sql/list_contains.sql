@@ -1401,7 +1401,7 @@ INSERT INTO filth.list_contains VALUES (1400, 197, 97, 10, NULL); -- "The Big Ea
 INSERT INTO filth.list_contains VALUES (1401, 927, 98, 1, NULL); -- "The Last Temptation of Christ" in list "Top Ten Movies of 1988" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1402, 1771, 98, 2, NULL); -- "Who Framed Roger Rabbit" in list "Top Ten Movies of 1988" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1403, 276, 98, 3, NULL); -- "Bull Durham" in list "Top Ten Movies of 1988" by Gene Siskel
-INSERT INTO filth.list_contains VALUES (1404, 4103, 98, 4, NULL); -- "Little Dorritt" in list "Top Ten Movies of 1988" by Gene Siskel
+INSERT INTO filth.list_contains VALUES (1404, 2235, 98, 4, NULL); -- "Little Dorritt" in list "Top Ten Movies of 1988" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1405, 1069, 98, 5, NULL); -- "Midnight Run" in list "Top Ten Movies of 1988" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1406, 1621, 98, 6, NULL); -- "The Thin Blue Line" in list "Top Ten Movies of 1988" by Gene Siskel
 INSERT INTO filth.list_contains VALUES (1407, 3239, 98, 7, NULL); -- "Hotel Terminus: The Life and Times of Klaus Barbie" in list "Top Ten Movies of 1988" by Gene Siskel

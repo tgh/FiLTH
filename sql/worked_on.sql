@@ -8011,7 +8011,7 @@ INSERT INTO filth.worked_on VALUES(8011, 4237, 3512, 'Screenwriter');  -- Michae
 INSERT INTO filth.worked_on VALUES(8012, 4237, 3513, 'Screenwriter');  -- Pascale Ferran for The Red Turtle (2016)
 INSERT INTO filth.worked_on VALUES(8013, 4218, 3514, 'Director');  -- Theodore Melfi for Hidden Figures (2016)
 INSERT INTO filth.worked_on VALUES(8014, 4218, 3514, 'Screenwriter');  -- Theodore Melfi for Hidden Figures (2016)
-INSERT INTO filth.worked_on VALUES(8015, 4218, 3468, 'Screenwriter');  -- Allison Schroeder for Hidden Figures (2016)
+-- duplicate row deleted
 INSERT INTO filth.worked_on VALUES(8016, 4218, 1055, 'Lead Actress');  -- Taraji P. Henson for Hidden Figures (2016)
 INSERT INTO filth.worked_on VALUES(8017, 4218, 3484, 'Supporting Actress');  -- Janelle Monae for Hidden Figures (2016)
 INSERT INTO filth.worked_on VALUES(8018, 4218, 207, 'Supporting Actor');  -- Kevin Costner for Hidden Figures (2016)
@@ -8184,7 +8184,7 @@ INSERT INTO filth.worked_on VALUES(8184, 1295, 3568, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(8185, 1295, 3569, 'Supporting Actor');  -- David Bowie for The Prestige (2006)
 INSERT INTO filth.worked_on VALUES(8186, 1295, 2209, 'Supporting Actor');  -- Andy Serkis for The Prestige (2006)
 INSERT INTO filth.worked_on VALUES(8187, 1295, 2754, 'Cameo');  -- Ricky Jay for The Prestige (2006)
-INSERT INTO filth.worked_on VALUES(8188, 1295, 1382, 'Cinematographer');  -- Wally Pfister for The Prestige (2006)
+-- duplicate row deleted
 INSERT INTO filth.worked_on VALUES(8189, 4251, 3570, 'Director');  -- Gavin Hood for X-Men Origins: Wolverine (2009)
 INSERT INTO filth.worked_on VALUES(8190, 4251, 2993, 'Screenwriter');  -- David Benioff for X-Men Origins: Wolverine (2009)
 INSERT INTO filth.worked_on VALUES(8191, 4251, 3571, 'Screenwriter');  -- Skip Woods for X-Men Origins: Wolverine (2009)
@@ -9447,7 +9447,7 @@ INSERT INTO filth.worked_on VALUES(9447, 445, 2127, 'Supporting Actress');  -- E
 INSERT INTO filth.worked_on VALUES(9448, 445, 3805, 'Supporting Actor');  -- Simon Baker for The Devil Wears Prada (2006)
 INSERT INTO filth.worked_on VALUES(9449, 445, 3806, 'Supporting Actor');  -- Adrian Grenier for The Devil Wears Prada (2006)
 INSERT INTO filth.worked_on VALUES(9450, 445, 3807, 'Director');  -- David Frankel for The Devil Wears Prada (2006)
-INSERT INTO filth.worked_on VALUES(9451, 445, 2980, 'Screenwriter');  -- Aline Brosh McKenna for The Devil Wears Prada (2006)
+-- duplicate row deleted
 INSERT INTO filth.worked_on VALUES(9452, 4355, 2407, 'Director');  -- Sam Raimi for Spider-Man 3 (2007)
 INSERT INTO filth.worked_on VALUES(9453, 4355, 2407, 'Screenwriter');  -- Sam Raimi for Spider-Man 3 (2007)
 INSERT INTO filth.worked_on VALUES(9454, 4355, 2408, 'Screenwriter');  -- Ivan Raimi for Spider-Man 3 (2007)
@@ -9678,8 +9678,8 @@ INSERT INTO filth.worked_on VALUES(9678, 3906, 640, 'Character Voice');  -- Gary
 INSERT INTO filth.worked_on VALUES(9679, 3906, 3770, 'Cinematographer');  -- Trent Opaloch for Captain America: Winter Soldier (2014)
 INSERT INTO filth.worked_on VALUES(9680, 3906, 3768, 'Screenwriter');  -- Christopher Markus for Captain America: Winter Soldier (2014)
 INSERT INTO filth.worked_on VALUES(9681, 3906, 3769, 'Screenwriter');  -- Stephen McFeely for Captain America: Winter Soldier (2014)
-INSERT INTO filth.worked_on VALUES(9682, 3906, 3249, 'Director');  -- Anthony Russo for Captain America: Winter Soldier (2014)
-INSERT INTO filth.worked_on VALUES(9683, 3906, 3250, 'Director');  -- Joe Russo for Captain America: Winter Soldier (2014)
+-- duplicate row deleted
+-- duplicate row deleted
 INSERT INTO filth.worked_on VALUES(9684, 3995, 3770, 'Cinematographer');  -- Trent Opaloch for Captain America: Civil War (2016)
 INSERT INTO filth.worked_on VALUES(9685, 4022, 2062, 'Small Part');  -- Jeremy Renner for Thor (2011)
 INSERT INTO filth.worked_on VALUES(9686, 4022, 3529, 'Cinematographer');  -- Haris Zambarloukos for Thor (2011)
