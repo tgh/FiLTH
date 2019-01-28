@@ -3844,3 +3844,6 @@ INSERT INTO filth.crew_person VALUES (3846, 'Perlman', 'Nicole', NULL, 'Nicole P
 INSERT INTO filth.crew_person VALUES (3847, 'Miranda', 'Lin-Manuel', NULL, 'Lin-Manuel Miranda', 'Actor');  -- Actor: Lin-Manuel Miranda
 INSERT INTO filth.crew_person VALUES (3848, 'Holdbrook-Smith', 'Kobna', NULL, 'Kobna Holdbrook-Smith', 'Actor');  -- Actor: Kobna Holdbrook-Smith
 INSERT INTO filth.crew_person VALUES (3849, 'Swift', 'Jeremy', NULL, 'Jeremy Swift', 'Actor');  -- Actor: Jeremy Swift
+INSERT INTO filth.crew_person VALUES (3850, 'King', 'Paul', NULL, 'Paul King', 'Director');  -- Director: Paul King
+INSERT INTO filth.crew_person VALUES (3851, 'McColl', 'Hamish', NULL, 'Hamish McColl', 'Screenwriter');  -- Screenwriter: Hamish McColl
+INSERT INTO filth.crew_person VALUES (3852, 'Wilson', 'Erik', NULL, 'Erik Wilson', 'Cinematographer');  -- Cinematographer: Erik Wilson

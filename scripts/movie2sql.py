@@ -378,7 +378,6 @@ def isNewMovie(title, year, stars, mpaa, country):
     origViewings = "'" + origViewings + "'"
 
   #rewrite the INSERT statement in movie.sql
-  # TODO: include updating viewings here
   search  = "'{0}', {1}, '{2}', '{3}', {4}, \\(.*\\), {5});".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry, origViewings)
   replace = "'{0}', {1}, '{2}', '{3}', {4}, \\1, {5});".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country, viewings)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
@@ -533,7 +532,7 @@ if __name__ == '__main__':
           #ask user for comments
           comments = promptUserForComments()
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, comments, imdbId, seenInTheater, tmdbId, runtime, '1'))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, comments, imdbId, seenInTheater, tmdbId, runtime, "'1'"))
           mid = _nextMid
 
         #ask user for tags for the movie
