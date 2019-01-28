@@ -17,8 +17,8 @@ TAG_GIVEN_TO_SQL_FILE = FILTH_PATH + '/sql/tag_given_to.sql'
 TAG_SQL_FILE = FILTH_PATH + '/sql/tag.sql'
 WORKED_ON_SQL_FILE = FILTH_PATH + '/sql/worked_on.sql'
 CREW_PERSON_SQL_FILE = FILTH_PATH + '/sql/crew_person.sql'
-                                                      #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid, runtime
-INSERT_FORMAT_STRING = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, {6}, {7}, {8}, {9}, NULL, NULL, {10});\n";
+                                                      #mid, title, year, star, mpaa, country, comments, imdb, theatre, tmdb, parent mid, remake mid, runtime, viewings
+INSERT_FORMAT_STRING = "INSERT INTO filth.movie VALUES ({0}, '{1}', {2}, '{3}', '{4}', {5}, {6}, {7}, {8}, {9}, NULL, NULL, {10}, {11});\n";
 
 _inserts = []   #list of INSERT statements for movies
 _updates = []   #list of UPDATE statements for movies
@@ -85,7 +85,7 @@ def processArgs():
   map(checkForMissingFileArg, [inputFile, _movieSqlFile])
 
   return inputFile, isUpdate
-  
+
 
 #------------------------------------------------------------------------------
 
@@ -204,6 +204,34 @@ def checkForQuit(response, functionName):
 
 #------------------------------------------------------------------------------
 
+def createMovieFromLine(line):
+    '''
+    Creates a movie dictionary from the given line of movie.sql
+    '''
+    movie = {}
+    matcher = re.search("VALUES \\((\d+), '(.*?)', (\d+), '(.*?)', '(.*?)', '?(.*?)'?, '?(.*?)'?, 'tt(\d+)', (.*?), (\d+), (.*?), (.*?), (\d+), '?([NULL~0-9]+)'?\);", line)
+    if not matcher:
+      lg('createMovieFromLine', 'Regex failed for line: ' + line)
+      raise Exception('unexpected regex fail')
+    movie['mid'] = int(matcher.group(1))
+    movie['title'] = matcher.group(2)
+    movie['year'] = int(matcher.group(3))
+    movie['star_rating'] = matcher.group(4)
+    movie['mpaa'] = matcher.group(5)
+    movie['country'] = matcher.group(6)
+    movie['comments'] = matcher.group(7)
+    movie['imdb'] = matcher.group(8)
+    movie['theater'] = matcher.group(9)
+    movie['tmdb'] = matcher.group(10)
+    movie['parent'] = matcher.group(11)
+    movie['remake'] = matcher.group(12)
+    movie['runtime'] = matcher.group(13)
+    movie['viewings'] = matcher.group(14)
+    return movie
+
+
+#------------------------------------------------------------------------------
+
 def searchForMovieByTitleAndYear(title, year):
   lg('searchForMovieByTitleAndYear', 'looking for "' + title + '" (' + str(year) + ')...')
   f = open(_movieSqlFile, 'r')
@@ -214,15 +242,7 @@ def searchForMovieByTitleAndYear(title, year):
   for line in lines:
     if title in line and str(year) in line:
       lg('searchForMovieByTitleAndYear', 'movie found')
-      movie = {}
-      matcher = re.search("VALUES \\((\d+), '(.*?)', (\d+), \'(.*?)\', \'(.*?)\', \'?(.*?)\'?, ", line)
-      movie['mid'] = int(matcher.group(1))
-      movie['title'] = matcher.group(2)
-      movie['year'] = int(matcher.group(3))
-      movie['star_rating'] = matcher.group(4)
-      movie['mpaa'] = matcher.group(5)
-      movie['country'] = matcher.group(6)
-      return movie
+      return createMovieFromLine(line)
   raise MovieNotFoundException(title + ' (' + year.rstrip(',') + ') not found')
 
 
@@ -236,15 +256,7 @@ def searchForMovieById(mid):
   for line in lines:
     currentMid = int(re.search('VALUES \\((\d+),', line).group(1))
     if mid == currentMid:
-      movie = {}
-      matcher = re.search("VALUES \\(\d+, '(.*?)', (\d+), \'(.*?)\', \'(.*?)\', \'?(.*?)\'?, ", line)
-      movie['mid'] = mid
-      movie['title'] = matcher.group(1)
-      movie['year'] = int(matcher.group(2))
-      movie['star_rating'] = matcher.group(3)
-      movie['mpaa'] = matcher.group(4)
-      movie['country'] = matcher.group(5)
-      return movie
+      return createMovieFromLine(line)
   raise MovieNotFoundException('Movie with id ' + str(mid) + ' not found')
 
 
@@ -256,8 +268,6 @@ def isNewMovie(title, year, stars, mpaa, country):
   Returns a (boolean, Integer) pair: (isUpdate?, mid of movie if found)
   """
   global _inserts
-
-  lg('isNewMovie', 'in isNewMovie')
 
   #convert the strings of integers to integers
   year = int(year)
@@ -347,20 +357,34 @@ def isNewMovie(title, year, stars, mpaa, country):
     origCountry = movie['country']
     updateValueList.append("country = '" + country + "'")
 
+  #prompt for viewings update
+  viewings = raw_input('\nCurrent viewings for "' + title + '" (' + str(year) + ') is "' + movie['viewings'] + '". New viewings (just ENTER to keep the same): ')
+  if viewings != '':
+    lg('isNewMovie', 'updating viewings from ' + movie['viewings'] + ' to ' + viewings)
+    if viewings != 'NULL':
+      viewings = "'" + viewings + "'"
+    origViewings = movie['viewings']
+    updateValueList.append("viewings = " + viewings)
+
   #add UPDATE statement
   updateStatement = 'UPDATE filth.movie SET ' + ', '.join(updateValueList) + ' WHERE mid = ' + str(movie['mid']) + ';\n'
   _updates.append(updateStatement)
 
-  if (origCountry != 'DEFAULT'):
+  if origCountry != 'DEFAULT':
     origCountry = "'" + origCountry + "'"
-  if (country != 'DEFAULT'):
+  if country != 'DEFAULT':
     country = "'" + country + "'"
-  
+  if origViewings != 'NULL':
+    origViewings = "'" + origViewings + "'"
+
   #rewrite the INSERT statement in movie.sql
-  search  = "'{0}', {1}, '{2}', '{3}', {4}".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry)
-  replace = "'{0}', {1}, '{2}', '{3}', {4}".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country)
+  # TODO: include updating viewings here
+  search  = "'{0}', {1}, '{2}', '{3}', {4}, \\(.*\\), {5});".format(origTitle.encode('utf-8').replace("/","\/"), origYear, origStars.replace("*","\*"), origMpaa, origCountry, origViewings)
+  replace = "'{0}', {1}, '{2}', '{3}', {4}, \\1, {5});".format(title.replace("/","\/").replace("&","\&"), year, stars, mpaa, country, viewings)
   lg('isNewMovie', 'rewriting INSERT statement in movie.sql file.  search string: ' + search + ', replace string: ' + replace)
-  system("sed -i '' \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
+  retval = system("sed -i '' \"s/{0}/{1}/g\" {2}".format(search, replace, _movieSqlFile))
+  if retval != 0:
+    raise Exception('`sed` failed with ' + retval)
 
   #output message
   print "\nUPDATE:\n    updated: \"{0}\" ({1}) {2} [{3}] {4}"\
@@ -493,7 +517,7 @@ if __name__ == '__main__':
 
       if not isUpdate:
         #we are not updating existing sql file (i.e. we are starting from scratch), so just add an INSERT statement from the movie data
-        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'))
+        _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'))
       else:
         #are we updating an existing movie rather than adding a new one?
         isNew, mid = isNewMovie(title, year, stars, mpaa, country.replace("'",""))
@@ -509,7 +533,7 @@ if __name__ == '__main__':
           #ask user for comments
           comments = promptUserForComments()
           #add an INSERT statement for the new movie
-          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, comments, imdbId, seenInTheater, tmdbId, runtime))
+          _inserts.append(INSERT_FORMAT_STRING.format(_nextMid, title, year, stars, mpaa, country, comments, imdbId, seenInTheater, tmdbId, runtime, '1'))
           mid = _nextMid
 
         #ask user for tags for the movie
