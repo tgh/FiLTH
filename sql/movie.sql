@@ -96,7 +96,7 @@ INSERT INTO filth.movie VALUES (91, 'Amores Perros', 2000, '***', 'R', 'Mexico',
 INSERT INTO filth.movie VALUES (92, 'Anaconda', 1997, '*', 'PG-13', 'USA', NULL, 'tt0118615', 0, 9360, NULL, NULL, 89, '1');
 INSERT INTO filth.movie VALUES (93, 'Analyze This', 1999, '***', 'R', 'USA', NULL, 'tt0122933', 0, 9535, NULL, NULL, 103, '1');
 INSERT INTO filth.movie VALUES (94, 'Anastasia', 1997, '***', 'G', 'USA', NULL, 'tt0118617', 0, 9444, NULL, NULL, 94, '1');
-INSERT INTO filth.movie VALUES (95, 'Anchorman: The Legend of Ron Burgendy', 2004, '**½', 'PG-13', 'USA', NULL, 'tt0357413', 0, 8699, NULL, NULL, 94, '1');
+INSERT INTO filth.movie VALUES (95, 'Anchorman: The Legend of Ron Burgundy', 2004, '**½', 'PG-13', 'USA', NULL, 'tt0357413', 0, 8699, NULL, NULL, 94, '2');
 INSERT INTO filth.movie VALUES (96, 'The Anderson Platoon', 1967, '***½', 'NR', 'France', NULL, 'tt0062244', 0, 66569, NULL, NULL, 65, '1');
 INSERT INTO filth.movie VALUES (97, 'An Angel at My Table', 1991, '***½', 'R', 'Australia', NULL, 'tt0099040', 0, 2891, NULL, NULL, 158, '1');
 INSERT INTO filth.movie VALUES (98, 'Angel Eyes', 2001, '**½', 'R', 'USA', NULL, 'tt0225071', 1, 5852, NULL, NULL, 102, '1');
@@ -1177,7 +1177,7 @@ INSERT INTO filth.movie VALUES (1172, 'New York Stories: Life Without Zoe', 1989
 INSERT INTO filth.movie VALUES (1173, 'New York Stories: Oedipus Wrecks', 1989, '***', 'PG', 'USA', NULL, 'tt0097965', 0, 9686, NULL, NULL, 124, '1');
 INSERT INTO filth.movie VALUES (1174, 'Night and Fog', 1955, '**½', 'NR', 'France', NULL, 'tt0048434', 0, 803, NULL, NULL, 32, '1');
 INSERT INTO filth.movie VALUES (1175, 'Night at the Museum', 2007, '***', 'PG', 'USA', NULL, 'tt0477347', 0, 1593, NULL, NULL, 108, '1');
-INSERT INTO filth.movie VALUES (1176, 'A Night at the Museum: Battle of the Smithsonian', 2009, '**½', 'PG', 'USA', NULL, 'tt1078912', 0, 18360, NULL, NULL, 105, '1');
+INSERT INTO filth.movie VALUES (1176, 'Night at the Museum: Battle of the Smithsonian', 2009, '**½', 'PG', 'USA', NULL, 'tt1078912', 0, 18360, NULL, NULL, 105, '1');
 INSERT INTO filth.movie VALUES (1177, 'A Night at the Opera', 1935, '***½', 'NR', 'USA', NULL, 'tt0026778', 0, 37719, NULL, NULL, 96, '1');
 INSERT INTO filth.movie VALUES (1178, 'The Night of the Hunter', 1955, '***', 'NR', 'USA', NULL, 'tt0048424', 0, 3112, NULL, NULL, 93, '2');
 INSERT INTO filth.movie VALUES (1179, 'Night on Earth', 1992, '**', 'R', 'USA', NULL, 'tt0102536', 0, 339, NULL, NULL, 129, '1');
