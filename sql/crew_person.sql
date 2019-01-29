@@ -3850,3 +3850,12 @@ INSERT INTO filth.crew_person VALUES (3852, 'Wilson', 'Erik', NULL, 'Erik Wilson
 INSERT INTO filth.crew_person VALUES (3853, 'Mullan', 'Peter', NULL, 'Peter Mullan', 'Actor');  -- Actor: Peter Mullan
 INSERT INTO filth.crew_person VALUES (3854, 'Rhys', 'Matthew', NULL, 'Matthew Rhys', 'Actor');  -- Actor: Matthew Rhys
 INSERT INTO filth.crew_person VALUES (3855, 'Chand', 'Rohan', NULL, 'Rohan Chand', 'Actor');  -- Actor: Rohan Chand
+INSERT INTO filth.crew_person VALUES (3856, 'Wachtel', 'Charlie', NULL, 'Charlie Wachtel', 'Screenwriter');  -- Screenwriter: Charlie Wachtel
+INSERT INTO filth.crew_person VALUES (3857, 'Rabinowitz', 'David', NULL, 'David Rabinowitz', 'Screenwriter');  -- Screenwriter: David Rabinowitz
+INSERT INTO filth.crew_person VALUES (3858, 'Willmott', 'Kevin', NULL, 'Kevin Willmott', 'Screenwriter');  -- Screenwriter: Kevin Willmott
+INSERT INTO filth.crew_person VALUES (3859, 'Washington', 'John', 'David', 'John David Washington', 'Actor');  -- Actor: John David Washington
+INSERT INTO filth.crew_person VALUES (3860, 'Burke', 'Robert', 'John', 'Robert John Burke', 'Actor');  -- Actor: Robert John Burke
+INSERT INTO filth.crew_person VALUES (3861, 'Eggold', 'Ryan', NULL, 'Ryan Eggold', 'Actor');  -- Actor: Ryan Eggold
+INSERT INTO filth.crew_person VALUES (3862, 'Paakkonen', 'Jasper', NULL, 'Jasper Paakkonen', 'Actor');  -- Actor: Jasper Paakkonen
+INSERT INTO filth.crew_person VALUES (3863, 'Hauser', 'Paul', 'Walter', 'Paul Walter Hauser', 'Actor');  -- Actor: Paul Walter Hauser
+INSERT INTO filth.crew_person VALUES (3864, 'Belafonte', 'Harry', NULL, 'Harry Belafonte', 'Actor');  -- Actor: Harry Belafonte
