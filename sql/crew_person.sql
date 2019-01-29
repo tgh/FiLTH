@@ -3847,3 +3847,6 @@ INSERT INTO filth.crew_person VALUES (3849, 'Swift', 'Jeremy', NULL, 'Jeremy Swi
 INSERT INTO filth.crew_person VALUES (3850, 'King', 'Paul', NULL, 'Paul King', 'Director');  -- Director: Paul King
 INSERT INTO filth.crew_person VALUES (3851, 'McColl', 'Hamish', NULL, 'Hamish McColl', 'Screenwriter');  -- Screenwriter: Hamish McColl
 INSERT INTO filth.crew_person VALUES (3852, 'Wilson', 'Erik', NULL, 'Erik Wilson', 'Cinematographer');  -- Cinematographer: Erik Wilson
+INSERT INTO filth.crew_person VALUES (3853, 'Mullan', 'Peter', NULL, 'Peter Mullan', 'Actor');  -- Actor: Peter Mullan
+INSERT INTO filth.crew_person VALUES (3854, 'Rhys', 'Matthew', NULL, 'Matthew Rhys', 'Actor');  -- Actor: Matthew Rhys
+INSERT INTO filth.crew_person VALUES (3855, 'Chand', 'Rohan', NULL, 'Rohan Chand', 'Actor');  -- Actor: Rohan Chand
