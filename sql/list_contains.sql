@@ -2236,3 +2236,13 @@ INSERT INTO filth.list_contains VALUES (2238, 4343, 145, 7, NULL); -- "Avengers:
 INSERT INTO filth.list_contains VALUES (2239, 4369, 145, 8, NULL); -- "A Star is Born" in list "Best Movies of 2018" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2240, 4370, 145, 9, NULL); -- "Paddington 2" in list "Best Movies of 2018" by Chris Stuckmann
 INSERT INTO filth.list_contains VALUES (2241, 4371, 145, 10, NULL); -- "Burning" in list "Best Movies of 2018" by Chris Stuckmann
+INSERT INTO filth.list_contains VALUES (2242, 4376, 146, 1, NULL); -- "Widows" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2243, 1383, 146, 2, NULL); -- "Roma" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2244, 4375, 146, 3, NULL); -- "BlacKkKlansman" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2245, 4377, 146, 4, NULL); -- "Leave No Trace" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2246, 4378, 146, 5, NULL); -- "Lean on Pete" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2247, 4369, 146, 6, NULL); -- "A Star is Born" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2248, 4338, 146, 7, NULL); -- "Black Panther" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2249, 4366, 146, 8, NULL); -- "Blindspotting" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2250, 4367, 146, 9, NULL); -- "Spider-Man: Into the Spider-Verse" in list "Best Movies of 2018" by Richard Roeper
+INSERT INTO filth.list_contains VALUES (2251, 4349, 146, 10, NULL); -- "Mission: Impossible - Fallout" in list "Best Movies of 2018" by Richard Roeper

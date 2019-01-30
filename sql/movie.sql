@@ -4368,3 +4368,6 @@ INSERT INTO filth.movie VALUES (4372, 'Mary Poppins Returns', 2018, '***½', 'PG
 INSERT INTO filth.movie VALUES (4373, 'Paddington', 2014, '***', 'PG', 'England', NULL, 'tt1109624', 0, 116149, NULL, NULL, 95, '1');
 INSERT INTO filth.movie VALUES (4374, 'Mowgli: Legend of the Jungle', 2018, '**½', 'PG-13', 'England', NULL, 'tt2388771', 0, 407436, NULL, NULL, 104, '1');
 INSERT INTO filth.movie VALUES (4375, 'BlacKkKlansman', 2018, '***½', 'R', 'USA', NULL, 'tt7349662', 0, 487558, NULL, NULL, 135, '1');
+INSERT INTO filth.movie VALUES (4376, 'Widows', 2018, 'not seen', 'R', 'England', NULL, 'tt4218572', NULL, 401469, NULL, NULL, 129, NULL);
+INSERT INTO filth.movie VALUES (4377, 'Leave No Trace', 2018, 'not seen', 'PG', 'USA', NULL, 'tt3892172', NULL, 443463, NULL, NULL, 109, NULL);
+INSERT INTO filth.movie VALUES (4378, 'Lean on Pete', 2018, 'not seen', 'R', 'England', NULL, 'tt5340300', NULL, 407890, NULL, NULL, 121, NULL);

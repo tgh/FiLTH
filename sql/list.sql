@@ -143,3 +143,4 @@ INSERT INTO filth.list VALUES (142, '50 movies of the 2000s to see before you di
 INSERT INTO filth.list VALUES (143, 'Top Ten Movies of 2017', 'Richard Roeper');
 INSERT INTO filth.list VALUES (144, 'Best Movies of 2017', 'Chris Stuckmann');
 INSERT INTO filth.list VALUES (145, 'Best Movies of 2018', 'Chris Stuckmann');
+INSERT INTO filth.list VALUES (146, 'Best Movies of 2018', 'Richard Roeper');
