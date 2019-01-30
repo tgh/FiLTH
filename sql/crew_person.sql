@@ -3859,3 +3859,4 @@ INSERT INTO filth.crew_person VALUES (3861, 'Eggold', 'Ryan', NULL, 'Ryan Eggold
 INSERT INTO filth.crew_person VALUES (3862, 'Paakkonen', 'Jasper', NULL, 'Jasper Paakkonen', 'Actor');  -- Actor: Jasper Paakkonen
 INSERT INTO filth.crew_person VALUES (3863, 'Hauser', 'Paul', 'Walter', 'Paul Walter Hauser', 'Actor');  -- Actor: Paul Walter Hauser
 INSERT INTO filth.crew_person VALUES (3864, 'Belafonte', 'Harry', NULL, 'Harry Belafonte', 'Actor');  -- Actor: Harry Belafonte
+INSERT INTO filth.crew_person VALUES (3865, 'Farnaby', 'Simon', NULL, 'Simon Farnaby', 'Actor');  -- Actor: Simon Farnaby
