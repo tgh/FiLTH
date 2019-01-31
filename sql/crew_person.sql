@@ -3865,3 +3865,5 @@ INSERT INTO filth.crew_person VALUES (3867, 'Nixon', 'Cynthia', NULL, 'Cynthia N
 INSERT INTO filth.crew_person VALUES (3868, 'Davis', 'Kristin', NULL, 'Kristin Davis', 'Actress');  -- Actress: Kristin Davis
 INSERT INTO filth.crew_person VALUES (3869, 'Cattrall', 'Kim', NULL, 'Kim Cattrall', 'Actress');  -- Actress: Kim Cattrall
 INSERT INTO filth.crew_person VALUES (3870, 'Noth', 'Chris', NULL, 'Chris Noth', 'Actor');  -- Actor: Chris Noth
+INSERT INTO filth.crew_person VALUES (3871, 'Aparicio', 'Yalitza', NULL, 'Yalitza Aparicio', 'Actress');  -- Actress: Yalitza Aparicio
+INSERT INTO filth.crew_person VALUES (3872, 'Tavira', 'Marina', 'de', 'Marina de Tavira', 'Actress');  -- Actress: Marina de Tavira

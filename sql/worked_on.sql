@@ -9793,3 +9793,8 @@ INSERT INTO filth.worked_on VALUES(9793, 4380, 1045, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(9794, 4380, 3868, 'Supporting Actress');  -- Kristin Davis for Sex and the City (2008)
 INSERT INTO filth.worked_on VALUES(9795, 4380, 3869, 'Supporting Actress');  -- Kim Cattrall for Sex and the City (2008)
 INSERT INTO filth.worked_on VALUES(9796, 4380, 3870, 'Supporting Actor');  -- Chris Noth for Sex and the City (2008)
+INSERT INTO filth.worked_on VALUES(9797, 4381, 2014, 'Cinematographer');  -- Alfonso Cuaron for Roma (2018)
+INSERT INTO filth.worked_on VALUES(9798, 4381, 2014, 'Director');  -- Alfonso Cuaron for Roma (2018)
+INSERT INTO filth.worked_on VALUES(9799, 4381, 2014, 'Screenwriter');  -- Alfonso Cuaron for Roma (2018)
+INSERT INTO filth.worked_on VALUES(9800, 4381, 3871, 'Lead Actress');  -- Yalitza Aparicio for Roma (2018)
+INSERT INTO filth.worked_on VALUES(9801, 4381, 3872, 'Supporting Actress');  -- Marina de Tavira for Roma (2018)
