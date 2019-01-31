@@ -13,3 +13,5 @@ INSERT INTO filth.position VALUES(12, 'Supporting Actress');
 INSERT INTO filth.position VALUES(13, 'Small Part');
 INSERT INTO filth.position VALUES(14, 'Cameo');
 INSERT INTO filth.position VALUES(15, 'Editor');
+INSERT INTO filth.position VALUES(16, 'Himself');
+INSERT INTO filth.position VALUES(17, 'Herself');

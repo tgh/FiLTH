@@ -9798,3 +9798,8 @@ INSERT INTO filth.worked_on VALUES(9798, 4381, 2014, 'Director');  -- Alfonso Cu
 INSERT INTO filth.worked_on VALUES(9799, 4381, 2014, 'Screenwriter');  -- Alfonso Cuaron for Roma (2018)
 INSERT INTO filth.worked_on VALUES(9800, 4381, 3871, 'Lead Actress');  -- Yalitza Aparicio for Roma (2018)
 INSERT INTO filth.worked_on VALUES(9801, 4381, 3872, 'Supporting Actress');  -- Marina de Tavira for Roma (2018)
+INSERT INTO filth.worked_on VALUES(9802, 4382, 856, 'Herself');  -- Maggie Smith for Tea with the Dames (2018)
+INSERT INTO filth.worked_on VALUES(9803, 4382, 988, 'Herself');  -- Joan Plowright for Tea with the Dames (2018)
+INSERT INTO filth.worked_on VALUES(9804, 4382, 2175, 'Herself');  -- Eileen Atkins for Tea with the Dames (2018)
+INSERT INTO filth.worked_on VALUES(9805, 4382, 1011, 'Herself');  -- Judi Dench for Tea with the Dames (2018)
+INSERT INTO filth.worked_on VALUES(9806, 4382, 3873, 'Director');  -- Roger Michell for Tea with the Dames (2018)

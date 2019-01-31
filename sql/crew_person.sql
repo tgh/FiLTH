@@ -3867,3 +3867,4 @@ INSERT INTO filth.crew_person VALUES (3869, 'Cattrall', 'Kim', NULL, 'Kim Cattra
 INSERT INTO filth.crew_person VALUES (3870, 'Noth', 'Chris', NULL, 'Chris Noth', 'Actor');  -- Actor: Chris Noth
 INSERT INTO filth.crew_person VALUES (3871, 'Aparicio', 'Yalitza', NULL, 'Yalitza Aparicio', 'Actress');  -- Actress: Yalitza Aparicio
 INSERT INTO filth.crew_person VALUES (3872, 'Tavira', 'Marina', 'de', 'Marina de Tavira', 'Actress');  -- Actress: Marina de Tavira
+INSERT INTO filth.crew_person VALUES (3873, 'Michell', 'Roger', NULL, 'Roger Michell', 'Director');  -- Director: Roger Michell
