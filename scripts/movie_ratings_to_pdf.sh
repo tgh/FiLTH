@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if [ -z ${FILTH_PATH} ]
-then
-    FILTH_PATH=~/workspace/FiLTH
-fi
-FILTH_TEMP_PATH=$FILTH_PATH/temp
+source "$(dirname $0)/common.sh"
 
 antiword -w 120 $FILTH_PATH/data/Movie_Ratings.doc > $FILTH_TEMP_PATH/movie_ratings.txt
 

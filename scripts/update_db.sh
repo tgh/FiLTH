@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source common.sh
+source "$(dirname $0)/common.sh"
 
 LOG_FILE=$FILTH_PATH/logs/update_db.log
 TEMP_SQL_FILE=$FILTH_TEMP_PATH/update_db_temp.sql

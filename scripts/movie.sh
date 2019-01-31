@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source common.sh
+source "$(dirname $0)/common.sh"
 
 movie_sql_backup=$FILTH_BACKUP_PATH/movie.sql.backup
 previous_ratings_file=$FILTH_TEMP_PATH/previous_movie_ratings.txt

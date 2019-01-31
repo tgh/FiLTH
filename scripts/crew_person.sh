@@ -1,7 +1,9 @@
 #!/bin/bash
 
-filth_path=~/workspace/FiLTH
-filth_temp_path=~/workspace/FiLTH/temp
+source "$(dirname $0)/common.sh"
 
-$filth_path/bin/nameFormatter $filth_path/data/crew_person.txt > $filth_temp_path/temp
-$filth_path/scripts/crew2sql.py $filth_temp_path/temp > $filth_path/sql/crew_person.sql
+FILTH_PATH=~/workspace/FiLTH
+FILTH_TEMP_PATH=~/workspace/FiLTH/temp
+
+$FILTH_PATH/bin/nameFormatter $FILTH_PATH/data/crew_person.txt > $FILTH_TEMP_PATH/temp
+$FILTH_PATH/scripts/crew2sql.py $FILTH_TEMP_PATH/temp > $FILTH_PATH/sql/crew_person.sql
