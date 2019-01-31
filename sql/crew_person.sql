@@ -3861,3 +3861,7 @@ INSERT INTO filth.crew_person VALUES (3863, 'Hauser', 'Paul', 'Walter', 'Paul Wa
 INSERT INTO filth.crew_person VALUES (3864, 'Belafonte', 'Harry', NULL, 'Harry Belafonte', 'Actor');  -- Actor: Harry Belafonte
 INSERT INTO filth.crew_person VALUES (3865, 'Farnaby', 'Simon', NULL, 'Simon Farnaby', 'Actor');  -- Actor: Simon Farnaby
 INSERT INTO filth.crew_person VALUES (3866, 'Gioulakis', 'Mike', NULL, 'Mike Gioulakis', 'Cinematographer');  -- Cinematographer: Mike Gioulakis
+INSERT INTO filth.crew_person VALUES (3867, 'Nixon', 'Cynthia', NULL, 'Cynthia Nixon', 'Actress');  -- Actress: Cynthia Nixon
+INSERT INTO filth.crew_person VALUES (3868, 'Davis', 'Kristin', NULL, 'Kristin Davis', 'Actress');  -- Actress: Kristin Davis
+INSERT INTO filth.crew_person VALUES (3869, 'Cattrall', 'Kim', NULL, 'Kim Cattrall', 'Actress');  -- Actress: Kim Cattrall
+INSERT INTO filth.crew_person VALUES (3870, 'Noth', 'Chris', NULL, 'Chris Noth', 'Actor');  -- Actor: Chris Noth
