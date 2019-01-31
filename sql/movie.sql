@@ -4375,3 +4375,4 @@ INSERT INTO filth.movie VALUES (4379, 'Glass', 2019, '**½', 'PG-13', 'USA', 'I'
 INSERT INTO filth.movie VALUES (4380, 'Sex and the City', 2008, '**½', 'R', 'USA', NULL, 'tt1000774', 0, 4564, NULL, NULL, 145, '1');
 INSERT INTO filth.movie VALUES (4381, 'Roma', 2018, '***½', 'R', 'Mexico', NULL, 'tt6155172', 0, 426426, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (4382, 'Tea with the Dames', 2018, '**½', 'NR', 'England', NULL, 'tt7363336', 0, 513648, NULL, NULL, 84, '1');
+INSERT INTO filth.movie VALUES (4383, '20,000 Leagues Under the Sea', 1954, '**½', 'NR', 'USA', NULL, 'tt0046672', 0, 173, NULL, NULL, 127, '1');
