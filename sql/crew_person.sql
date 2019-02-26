@@ -3464,7 +3464,7 @@ INSERT INTO filth.crew_person VALUES (3466, 'McCraney', 'Tarell', 'Alvin', 'Tare
 INSERT INTO filth.crew_person VALUES (3467, 'Wilson', 'August', NULL, 'August Wilson', 'Screenwriter');  -- Screenwriter: August Wilson
 INSERT INTO filth.crew_person VALUES (3468, 'Schroeder', 'Allison', NULL, 'Allison Schroeder', 'Screenwriter');  -- Screenwriter: Allison Schroeder
 INSERT INTO filth.crew_person VALUES (3469, 'Davies', 'Luke', NULL, 'Luke Davies', 'Screenwriter');  -- Screenwriter: Luke Davies
-INSERT INTO filth.crew_person VALUES (3470, 'Lanthimos', 'Yargos', NULL, 'Yargos Lanthimos', 'Director');  -- Director: Yargos Lanthimos
+INSERT INTO filth.crew_person VALUES (3470, 'Lanthimos', 'Yorgos', NULL, 'Yorgos Lanthimos', 'Director');  -- Director: Yorgos Lanthimos
 INSERT INTO filth.crew_person VALUES (3471, 'Mills', 'Mike', NULL, 'Mike Mills', 'Director');  -- Director: Mike Mills
 INSERT INTO filth.crew_person VALUES (3472, 'Kent', 'Jennifer', NULL, 'Jennifer Kent', 'Actress');  -- Actress: Jennifer Kent
 INSERT INTO filth.crew_person VALUES (3473, 'Davis', 'Essie', NULL, 'Essie Davis', 'Actress');  -- Actress: Essie Davis
@@ -3868,3 +3868,15 @@ INSERT INTO filth.crew_person VALUES (3870, 'Noth', 'Chris', NULL, 'Chris Noth',
 INSERT INTO filth.crew_person VALUES (3871, 'Aparicio', 'Yalitza', NULL, 'Yalitza Aparicio', 'Actress');  -- Actress: Yalitza Aparicio
 INSERT INTO filth.crew_person VALUES (3872, 'Tavira', 'Marina', 'de', 'Marina de Tavira', 'Actress');  -- Actress: Marina de Tavira
 INSERT INTO filth.crew_person VALUES (3873, 'Michell', 'Roger', NULL, 'Roger Michell', 'Director');  -- Director: Roger Michell
+INSERT INTO filth.crew_person VALUES (3874, 'Malek', 'Rami', NULL, 'Rami Malek', 'Actor');  -- Actor: Rami Malek
+INSERT INTO filth.crew_person VALUES (3875, 'Colman', 'Olivia', NULL, 'Olivia Colman', 'Actress');  -- Actress: Olivia Colman
+INSERT INTO filth.crew_person VALUES (3876, 'Gaga', 'Lady', NULL, 'Lady Gaga', 'Actress');  -- Actress: Lady Gaga
+INSERT INTO filth.crew_person VALUES (3877, 'King', 'Regina', NULL, 'Regina King', 'Actress');  -- Actress: Regina King
+INSERT INTO filth.crew_person VALUES (3878, 'Holofcener', 'Nicole', NULL, 'Nicole Holofcener', 'Screenwriter');  -- Screenwriter: Nicole Holofcener
+INSERT INTO filth.crew_person VALUES (3879, 'Whitty', 'Jeff', NULL, 'Jeff Whitty', 'Screenwriter');  -- Screenwriter: Jeff Whitty
+INSERT INTO filth.crew_person VALUES (3880, 'Fetters', 'Will', NULL, 'Will Fetters', 'Screenwriter');  -- Screenwriter: Will Fetters
+INSERT INTO filth.crew_person VALUES (3881, 'Davis', 'Deborah', NULL, 'Deborah Davis', 'Screenwriter');  -- Screenwriter: Deborah Davis
+INSERT INTO filth.crew_person VALUES (3882, 'McNamara', 'Tony', NULL, 'Tony McNamara', 'Screenwriter');  -- Screenwriter: Tony McNamara
+INSERT INTO filth.crew_person VALUES (3883, 'Vallelonga', 'Nick', NULL, 'Nick Vallelonga', 'Screenwriter');  -- Screenwriter: Nick Vallelonga
+INSERT INTO filth.crew_person VALUES (3884, 'Currie', 'Brian', NULL, 'Brian Currie', 'Screenwriter');  -- Screenwriter: Brian Currie
+INSERT INTO filth.crew_person VALUES (3885, 'Farrelly', 'Peter', NULL, 'Peter Farrelly', 'Director');  -- Director: Peter Farrelly

@@ -203,6 +203,9 @@ def initWorkedOnCache():
 
     highestWid = 0
     for line in lines:
+        # ignore comment lines
+        if line.startswith('--'):
+            continue
         vals = re.search('VALUES\\((.*)\\);', line).group(1).split(',')
 
         wid = int(vals[0])
@@ -249,6 +252,9 @@ def initNextOgtId():
 
     highestOgtid = 0
     for line in lines:
+        # ignore comment lines
+        if line.startswith('--'):
+            continue
         ogtid = int(re.search('VALUES\\((\d+), .*\\);', line).group(1))
         if ogtid > highestOgtid:
             highestOgtid = ogtid
