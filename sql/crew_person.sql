@@ -3880,3 +3880,5 @@ INSERT INTO filth.crew_person VALUES (3882, 'McNamara', 'Tony', NULL, 'Tony McNa
 INSERT INTO filth.crew_person VALUES (3883, 'Vallelonga', 'Nick', NULL, 'Nick Vallelonga', 'Screenwriter');  -- Screenwriter: Nick Vallelonga
 INSERT INTO filth.crew_person VALUES (3884, 'Currie', 'Brian', NULL, 'Brian Currie', 'Screenwriter');  -- Screenwriter: Brian Currie
 INSERT INTO filth.crew_person VALUES (3885, 'Farrelly', 'Peter', NULL, 'Peter Farrelly', 'Director');  -- Director: Peter Farrelly
+INSERT INTO filth.crew_person VALUES (3886, 'McKern', 'Leo', NULL, 'Leo McKern', 'Actor');  -- Actor: Leo McKern
+INSERT INTO filth.crew_person VALUES (3887, 'Davenport', 'Nigel', NULL, 'Nigel Davenport', 'Actor');  -- Actor: Nigel Davenport

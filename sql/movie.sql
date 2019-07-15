@@ -2022,7 +2022,7 @@ INSERT INTO filth.movie VALUES (2017, 'A Thousand Clowns', 1965, 'not seen', 'NR
 INSERT INTO filth.movie VALUES (2018, 'Ship of Fools', 1965, 'not seen', 'NR', 'USA', NULL, 'tt0059712', NULL, 30080, NULL, NULL, 149, NULL);
 INSERT INTO filth.movie VALUES (2019, 'The Russians Are Coming The Russians Are Coming', 1966, 'not seen', 'NR', 'USA', NULL, 'tt0060921', NULL, 31918, NULL, NULL, 126, NULL);
 INSERT INTO filth.movie VALUES (2020, 'The Sand Pebbles', 1966, 'not seen', 'NR', 'USA', NULL, 'tt0060934', NULL, 5923, NULL, NULL, 182, NULL);
-INSERT INTO filth.movie VALUES (2021, 'A Man for All Seasons', 1966, 'not seen', 'NR', 'England', NULL, 'tt0060665', NULL, 874, NULL, NULL, 120, NULL);
+INSERT INTO filth.movie VALUES (2021, 'A Man for All Seasons', 1966, '***½', 'G', 'England', NULL, 'tt0060665', NULL, 874, NULL, NULL, 120, '1');
 INSERT INTO filth.movie VALUES (2022, 'Doctor Dolittle', 1967, 'not seen', 'NR', 'USA', NULL, 'tt0061584', NULL, 16081, NULL, NULL, 152, NULL);
 INSERT INTO filth.movie VALUES (2023, 'Oliver!', 1968, '***', 'G', 'England', NULL, 'tt0063385', 0, 17917, NULL, NULL, 153, '1');
 INSERT INTO filth.movie VALUES (2024, 'Funny Girl', 1968, 'not seen', 'G', 'USA', NULL, 'tt0062994', NULL, 16085, NULL, NULL, 149, NULL);
