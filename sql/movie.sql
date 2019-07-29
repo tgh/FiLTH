@@ -4381,7 +4381,7 @@ INSERT INTO filth.movie VALUES (4385, 'At Eternity''s Gate', 2018, 'not seen', '
 INSERT INTO filth.movie VALUES (4386, 'Bohemian Rhapsody', 2018, 'not seen', 'PG-13', 'England', NULL, 'tt1727824', NULL, 424694);
 INSERT INTO filth.movie VALUES (4387, 'The Wife', 2018, 'not seen', 'R', DEFAULT, NULL, 'tt3750872', NULL, 340613);
 INSERT INTO filth.movie VALUES (4388, 'The Favourite', 2018, 'not seen', 'R', DEFAULT, NULL, 'tt5083738', NULL, 375262);
-INSERT INTO filth.movie VALUES (4389, 'Can You Ever Forgive Me?', 2018, 'not seen', 'R', 'USA', NULL, 'tt4595882', NULL, 401847);
+INSERT INTO filth.movie VALUES (4389, 'Can You Ever Forgive Me?', 2018, '***', 'R', 'USA', NULL, 'tt4595882', NULL, 401847, NULL, NULL, 106, '1');
 INSERT INTO filth.movie VALUES (4390, 'If Beale Street Could Talk', 2018, 'not seen', 'R', 'USA', NULL, 'tt7125860', NULL, 465914);
 INSERT INTO filth.movie VALUES (4391, 'Cold War', 2018, 'not seen', 'R', 'Poland', NULL, 'tt6543652', NULL, 440298);
 INSERT INTO filth.movie VALUES (4392, 'Never Look Away', 2018, 'not seen', 'R', 'Germany', NULL, 'tt5311542', NULL, 423612);

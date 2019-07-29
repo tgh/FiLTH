@@ -9854,3 +9854,6 @@ INSERT INTO filth.worked_on VALUES(9854, 2021, 19, 'Small Part');  -- Orson Well
 INSERT INTO filth.worked_on VALUES(9855, 2021, 881, 'Supporting Actress');  -- Susannah York for A Man for All Seasons (1966)
 INSERT INTO filth.worked_on VALUES(9856, 2021, 3887, 'Supporting Actor');  -- Nigel Davenport for A Man for All Seasons (1966)
 INSERT INTO filth.worked_on VALUES(9857, 2021, 861, 'Small Part');  -- Vanessa Redgrave for A Man for All Seasons (1966)
+INSERT INTO filth.worked_on VALUES(9858, 4389, 3888, 'Director');  -- Marielle Heller for Can You Ever Forgive Me? (2018)
+INSERT INTO filth.worked_on VALUES(9859, 4389, 2141, 'Small Part');  -- Ben Falcone for Can You Ever Forgive Me? (2018)
+INSERT INTO filth.worked_on VALUES(9860, 4389, 3889, 'Supporting Actress');  -- Jane Curtin for Can You Ever Forgive Me? (2018)
