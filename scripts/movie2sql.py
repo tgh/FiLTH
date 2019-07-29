@@ -358,12 +358,12 @@ def isNewMovie(title, year, stars, mpaa, country):
     updateValueList.append("country = '" + country + "'")
 
   #prompt for viewings update
+  origViewings = movie['viewings']
   viewings = raw_input('\nCurrent viewings for "' + title + '" (' + str(year) + ') is "' + movie['viewings'] + '". New viewings (just ENTER to keep the same): ')
   if viewings != '':
     lg('isNewMovie', 'updating viewings from ' + movie['viewings'] + ' to ' + viewings)
     if viewings != 'NULL':
       viewings = "'" + viewings + "'"
-    origViewings = movie['viewings']
     updateValueList.append("viewings = " + viewings)
 
   #add UPDATE statement

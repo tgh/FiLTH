@@ -4360,7 +4360,7 @@ INSERT INTO filth.movie VALUES (4364, 'Wonder', 2017, '***½', 'PG', 'USA', NULL
 INSERT INTO filth.movie VALUES (4365, 'Hereditary', 2018, 'not seen', 'R', 'USA', NULL, 'tt7784604', NULL, 493922, NULL, NULL, 127, NULL);
 INSERT INTO filth.movie VALUES (4366, 'Blindspotting', 2018, 'not seen', 'R', 'USA', NULL, 'tt7242142', NULL, 489930, NULL, NULL, 95, NULL);
 INSERT INTO filth.movie VALUES (4367, 'Spider-Man: Into the Spider-Verse', 2018, 'not seen', 'PG', 'USA', NULL, 'tt4633694', NULL, 324857, NULL, NULL, 117, NULL);
-INSERT INTO filth.movie VALUES (4368, 'Green Book', 2018, 'not seen', 'PG-13', 'USA', NULL, 'tt6966692', NULL, 490132, NULL, NULL, 130, NULL);
+INSERT INTO filth.movie VALUES (4368, 'Green Book', 2018, '****', 'PG-13', 'USA', NULL, 'tt6966692', NULL, 490132, NULL, NULL, 130, '1');
 INSERT INTO filth.movie VALUES (4369, 'A Star is Born', 2018, 'not seen', 'R', 'USA', NULL, 'tt1517451', NULL, 332562, NULL, 1896, 136, NULL);
 INSERT INTO filth.movie VALUES (4370, 'Paddington 2', 2018, '***½', 'PG', 'England', NULL, 'tt4468740', NULL, 346648, NULL, NULL, 103, '1');
 INSERT INTO filth.movie VALUES (4371, 'Burning', 2018, 'not seen', 'NR', 'South Korea', NULL, 'tt7282468', NULL, 491584, NULL, NULL, 148, NULL);
@@ -4373,10 +4373,10 @@ INSERT INTO filth.movie VALUES (4377, 'Leave No Trace', 2018, 'not seen', 'PG', 
 INSERT INTO filth.movie VALUES (4378, 'Lean on Pete', 2018, 'not seen', 'R', 'England', NULL, 'tt5340300', NULL, 407890, NULL, NULL, 121, NULL);
 INSERT INTO filth.movie VALUES (4379, 'Glass', 2019, '**½', 'PG-13', 'USA', 'I''m torn between *** and **½, but ultimately going with **½. The dialogue was a bit more contrived than Shyamalyan''s usual, the ending was a bit anti-climactic and very disjointed (for lack of a better word); every interaction between characters in The Big Scene was isolated, and everyone else was frozen in time at that moment--that scene was kind of a mess directing/writing/editing-wise. Willis'' character didn''t get enough to do or say--there wasn''t much to him here, which is a shame; that character deserved more honor than that. Loved McAvoy and his character, though, of course--that was awesome.', 'tt6823368', 1, 450465, NULL, NULL, 129, '2');
 INSERT INTO filth.movie VALUES (4380, 'Sex and the City', 2008, '**½', 'R', 'USA', NULL, 'tt1000774', 0, 4564, NULL, NULL, 145, '1');
-INSERT INTO filth.movie VALUES (4381, 'Roma', 2018, '***½', 'R', 'Mexico', NULL, 'tt6155172', 0, 426426, NULL, NULL, 135, '1');
+INSERT INTO filth.movie VALUES (4381, 'Roma', 2018, '****', 'R', 'Mexico', NULL, 'tt6155172', 0, 426426, NULL, NULL, 135, );
 INSERT INTO filth.movie VALUES (4382, 'Tea with the Dames', 2018, '**½', 'NR', 'England', NULL, 'tt7363336', 0, 513648, NULL, NULL, 84, '1');
 INSERT INTO filth.movie VALUES (4383, '20,000 Leagues Under the Sea', 1954, '**½', 'NR', 'USA', NULL, 'tt0046672', 0, 173, NULL, NULL, 127, '1');
-INSERT INTO filth.movie VALUES (4384, 'Vice', 2018, 'not seen', 'R', 'USA', NULL, 'tt6266538', NULL, 429197);
+INSERT INTO filth.movie VALUES (4384, 'Vice', 2018, '****', 'R', 'USA', NULL, 'tt6266538', NULL, 429197, NULL, NULL, 132, '1');
 INSERT INTO filth.movie VALUES (4385, 'At Eternity''s Gate', 2018, 'not seen', 'PG-13', DEFAULT, NULL, 'tt6938828', NULL, 491472);
 INSERT INTO filth.movie VALUES (4386, 'Bohemian Rhapsody', 2018, 'not seen', 'PG-13', 'England', NULL, 'tt1727824', NULL, 424694);
 INSERT INTO filth.movie VALUES (4387, 'The Wife', 2018, 'not seen', 'R', DEFAULT, NULL, 'tt3750872', NULL, 340613);
