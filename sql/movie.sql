@@ -1130,7 +1130,7 @@ INSERT INTO filth.movie VALUES (1125, 'Mumford', 1999, '***', 'R', 'USA', NULL, 
 INSERT INTO filth.movie VALUES (1126, 'Munich', 2005, '***', 'R', 'USA', NULL, 'tt0408306', 0, 612, NULL, NULL, 164, '1');
 INSERT INTO filth.movie VALUES (1127, 'Muriel''s Wedding', 1995, '***', 'R', 'Australia', NULL, 'tt0110598', 0, 236, NULL, NULL, 106, '1');
 INSERT INTO filth.movie VALUES (1128, 'Music of the Heart', 1999, '***', 'PG', 'USA', NULL, 'tt0166943', 0, 26149, NULL, NULL, 124, '1');
-INSERT INTO filth.movie VALUES (1129, 'The Music Man', 1962, '***', 'NR', 'USA', NULL, 'tt0056262', 0, 13671, NULL, NULL, 151, '2');
+INSERT INTO filth.movie VALUES (1129, 'The Music Man', 1962, '***½', 'NR', 'USA', NULL, 'tt0056262', 0, 13671, NULL, NULL, 151, '3');
 INSERT INTO filth.movie VALUES (1130, 'The Muse', 1999, '***', 'PG-13', 'USA', NULL, 'tt0164108', 0, 37718, NULL, NULL, 97, '1');
 INSERT INTO filth.movie VALUES (1131, 'Mutiny on the Bounty', 1935, '***', 'NR', 'USA', NULL, 'tt0026752', 0, 12311, NULL, NULL, 132, '1');
 INSERT INTO filth.movie VALUES (1132, 'Mutiny on the Bounty', 1962, '***', 'NR', 'USA', NULL, 'tt0056264', 0, 11085, NULL, NULL, 178, '1');
@@ -1331,7 +1331,7 @@ INSERT INTO filth.movie VALUES (1326, 'Racing with the Moon', 1984, '**', 'PG', 
 INSERT INTO filth.movie VALUES (1327, 'Radio', 2003, '***', 'PG', 'USA', NULL, 'tt0316465', 1, 13920, NULL, NULL, 109, '1');
 INSERT INTO filth.movie VALUES (1328, 'Radio Days', 1987, '****', 'PG', 'USA', NULL, 'tt0093818', 0, 30890, NULL, NULL, 90, '1');
 INSERT INTO filth.movie VALUES (1329, 'Raging Bull', 1980, '***½', 'R', 'USA', NULL, 'tt0081398', 0, 1578, NULL, NULL, 129, '2');
-INSERT INTO filth.movie VALUES (1330, 'Raiders of the Lost Ark', 1981, '****', 'PG', 'USA', NULL, 'tt0082971', 0, 85, NULL, NULL, 115, '~4');
+INSERT INTO filth.movie VALUES (1330, 'Raiders of the Lost Ark', 1981, '****', 'PG', 'USA', NULL, 'tt0082971', 1, 85, NULL, NULL, 115, '~5');
 INSERT INTO filth.movie VALUES (1331, 'Rain Man', 1988, '****', 'R', 'USA', NULL, 'tt0095953', 0, 380, NULL, NULL, 133, '~3');
 INSERT INTO filth.movie VALUES (1332, 'The Rainmaker', 1997, '***', 'PG-13', 'USA', NULL, 'tt0119978', 0, 11975, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (1333, 'Raising Arizona', 1987, '****', 'PG-13', 'USA', NULL, 'tt0093822', 0, 378, NULL, NULL, 94, '~5');
@@ -1751,7 +1751,7 @@ INSERT INTO filth.movie VALUES (1746, 'Wayne''s World', 1992, '***', 'PG-13', 'U
 INSERT INTO filth.movie VALUES (1747, 'We Were Soldiers', 2002, '***', 'R', 'USA', NULL, 'tt0277434', 1, 10590, NULL, NULL, 138, '~2');
 INSERT INTO filth.movie VALUES (1748, 'Welcome to the Dollhouse', 1995, '***½', 'R', 'USA', NULL, 'tt0114906', 0, 11446, NULL, NULL, 88, '1');
 INSERT INTO filth.movie VALUES (1749, 'Wendy and Lucy', 2008, '***', 'R', 'USA', NULL, 'tt1152850', 0, 8942, NULL, NULL, 80, '1');
-INSERT INTO filth.movie VALUES (1750, 'West Side Story', 1961, '**', 'NR', 'USA', NULL, 'tt0055614', 0, 1725, NULL, NULL, 152, '1');
+INSERT INTO filth.movie VALUES (1750, 'West Side Story', 1961, '**', 'NR', 'USA', NULL, 'tt0055614', 0, 1725, NULL, NULL, 152, '2');
 INSERT INTO filth.movie VALUES (1751, 'Whale Rider', 2003, '***½', 'PG-13', 'New Zealand', NULL, 'tt0298228', 1, 1088, NULL, NULL, 101, '1');
 INSERT INTO filth.movie VALUES (1752, 'What About Bob?', 1991, '***½', 'PG', 'USA', NULL, 'tt0103241', 0, 10276, NULL, NULL, 100, '~5');
 INSERT INTO filth.movie VALUES (1753, 'What Dreams May Come', 1998, '**', 'PG-13', 'USA', NULL, 'tt0120889', 1, 12159, NULL, NULL, 113, '1');
@@ -4373,7 +4373,7 @@ INSERT INTO filth.movie VALUES (4377, 'Leave No Trace', 2018, 'not seen', 'PG', 
 INSERT INTO filth.movie VALUES (4378, 'Lean on Pete', 2018, 'not seen', 'R', 'England', NULL, 'tt5340300', NULL, 407890, NULL, NULL, 121, NULL);
 INSERT INTO filth.movie VALUES (4379, 'Glass', 2019, '**½', 'PG-13', 'USA', 'I''m torn between *** and **½, but ultimately going with **½. The dialogue was a bit more contrived than Shyamalyan''s usual, the ending was a bit anti-climactic and very disjointed (for lack of a better word); every interaction between characters in The Big Scene was isolated, and everyone else was frozen in time at that moment--that scene was kind of a mess directing/writing/editing-wise. Willis'' character didn''t get enough to do or say--there wasn''t much to him here, which is a shame; that character deserved more honor than that. Loved McAvoy and his character, though, of course--that was awesome.', 'tt6823368', 1, 450465, NULL, NULL, 129, '2');
 INSERT INTO filth.movie VALUES (4380, 'Sex and the City', 2008, '**½', 'R', 'USA', NULL, 'tt1000774', 0, 4564, NULL, NULL, 145, '1');
-INSERT INTO filth.movie VALUES (4381, 'Roma', 2018, '****', 'R', 'Mexico', NULL, 'tt6155172', 0, 426426, NULL, NULL, 135, );
+INSERT INTO filth.movie VALUES (4381, 'Roma', 2018, '****', 'R', 'Mexico', NULL, 'tt6155172', 0, 426426, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (4382, 'Tea with the Dames', 2018, '**½', 'NR', 'England', NULL, 'tt7363336', 0, 513648, NULL, NULL, 84, '1');
 INSERT INTO filth.movie VALUES (4383, '20,000 Leagues Under the Sea', 1954, '**½', 'NR', 'USA', NULL, 'tt0046672', 0, 173, NULL, NULL, 127, '1');
 INSERT INTO filth.movie VALUES (4384, 'Vice', 2018, '****', 'R', 'USA', NULL, 'tt6266538', NULL, 429197, NULL, NULL, 132, '1');

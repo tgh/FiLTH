@@ -9867,3 +9867,7 @@ INSERT INTO filth.worked_on VALUES(9867, 4384, 2604, 'Supporting Actor');  -- Ty
 INSERT INTO filth.worked_on VALUES(9868, 4368, 3885, 'Director');  -- Peter Farrelly for Green Book (2018)
 INSERT INTO filth.worked_on VALUES(9869, 4368, 3251, 'Supporting Actress');  -- Linda Cardellini for Green Book (2018)
 INSERT INTO filth.worked_on VALUES(9870, 4384, 2531, 'Cinematographer');  -- Greig Fraser for Vice (2018)
+INSERT INTO filth.worked_on VALUES(9871, 1129, 602, 'Lead Actor');  -- Robert Preston for The Music Man (1962)
+INSERT INTO filth.worked_on VALUES(9872, 1129, 832, 'Lead Actress');  -- Shirley Jones for The Music Man (1962)
+INSERT INTO filth.worked_on VALUES(9873, 1129, 3891, 'Director');  -- Morton DaCosta for The Music Man (1962)
+INSERT INTO filth.worked_on VALUES(9874, 1129, 296, 'Supporting Actor');  -- Ron Howard for The Music Man (1962)

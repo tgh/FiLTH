@@ -227,6 +227,7 @@ def createMovieFromLine(line):
     movie['remake'] = matcher.group(12)
     movie['runtime'] = matcher.group(13)
     movie['viewings'] = matcher.group(14)
+    lg('createMovieFromLine', 'DEBUG--viewings: ' + viewings)
     return movie
 
 

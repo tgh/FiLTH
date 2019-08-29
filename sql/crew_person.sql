@@ -3885,3 +3885,4 @@ INSERT INTO filth.crew_person VALUES (3887, 'Davenport', 'Nigel', NULL, 'Nigel D
 INSERT INTO filth.crew_person VALUES (3888, 'Heller', 'Marielle', NULL, 'Marielle Heller', 'Director');  -- Director: Marielle Heller
 INSERT INTO filth.crew_person VALUES (3889, 'Curtin', 'Jane', NULL, 'Jane Curtin', 'Actress');  -- Actress: Jane Curtin
 INSERT INTO filth.crew_person VALUES (3890, 'Plemons', 'Jesse', NULL, 'Jesse Plemons', 'Actor');  -- Actor: Jesse Plemons
+INSERT INTO filth.crew_person VALUES (3891, 'DaCosta', 'Morton', NULL, 'Morton DaCosta', 'Director');  -- Director: Morton DaCosta
