@@ -2015,7 +2015,7 @@ INSERT INTO filth.movie VALUES (2010, 'How the West Was Won', 1963, 'not seen', 
 INSERT INTO filth.movie VALUES (2011, 'America America', 1963, 'not seen', 'NR', 'USA', NULL, 'tt0056825', NULL, 47249, NULL, NULL, 174, NULL);
 INSERT INTO filth.movie VALUES (2012, 'Lilies of the Field', 1963, 'not seen', 'NR', 'USA', NULL, 'tt0057251', NULL, 38805, NULL, NULL, 94, NULL);
 INSERT INTO filth.movie VALUES (2013, 'Cleopatra', 1963, 'not seen', 'NR', 'USA', NULL, 'tt0056937', NULL, 8095, NULL, NULL, 248, NULL);
-INSERT INTO filth.movie VALUES (2014, 'Tom Jones', 1963, 'not seen', 'NR', 'England', NULL, 'tt0057590', NULL, 5769, NULL, NULL, 128, NULL);
+INSERT INTO filth.movie VALUES (2014, 'Tom Jones', 1963, '***', 'NR', 'England', 'I didn''t care for the story much, and the most of the characters were deplorable (which I think is the point), but I love the creativity in how it breaks the fourth wall and starts with a silent film portion.', 'tt0057590', NULL, 5769, NULL, NULL, 128, '1');
 INSERT INTO filth.movie VALUES (2015, 'Becket', 1964, '***', 'NR', 'England', NULL, 'tt0057877', 0, 15421, NULL, NULL, 148, '1');
 INSERT INTO filth.movie VALUES (2016, 'Zorba the Greek', 1964, 'not seen', 'NR', NULL, NULL, 'tt0057831', NULL, 10604, NULL, NULL, 142, NULL);
 INSERT INTO filth.movie VALUES (2017, 'A Thousand Clowns', 1965, 'not seen', 'NR', 'USA', NULL, 'tt0059798', NULL, 42731, NULL, NULL, 118, NULL);
@@ -4341,7 +4341,7 @@ INSERT INTO filth.movie VALUES (4345, 'The Case for Christ', 2017, '***½', 'PG'
 INSERT INTO filth.movie VALUES (4346, 'Won''t You Be My Neighbor?', 2018, '***½', 'PG-13', 'USA', NULL, 'tt7681902', 1, 490003, NULL, NULL, 94, '1');
 INSERT INTO filth.movie VALUES (4347, 'The Beguiled', 2018, '**', 'R', 'USA', NULL, 'tt5592248', 0, 399019, NULL, NULL, 93, '1');
 INSERT INTO filth.movie VALUES (4348, 'A Quiet Place', 2018, '***', 'PG-13', 'USA', NULL, 'tt6644200', 0, 447332, NULL, NULL, 90, '1');
-INSERT INTO filth.movie VALUES (4349, 'Mission: Impossible – Fallout', 2018, '***½', 'PG-13', 'USA', NULL, 'tt4912910', 1, 353081, NULL, NULL, 147, '1');
+INSERT INTO filth.movie VALUES (4349, 'Mission: Impossible – Fallout', 2018, '***½', 'PG-13', 'USA', NULL, 'tt4912910', 1, 353081, NULL, NULL, 147, '2');
 INSERT INTO filth.movie VALUES (4350, 'Christopher Robin', 2018, '**½', 'PG', 'USA', 'Very cute, and the stuffed animals are animated excellently. However, the writing was pretty contrived and overly silly/cheesy at the end. The biggest thing for me though is that other people besides Christopher Robin could see and hear the stuffed animals move and talk; that didn''t work for me--didn''t make sense.', 'tt4575576', 1, 420814, NULL, NULL, 104, '1');
 INSERT INTO filth.movie VALUES (4351, 'The Man Who Knew Too Much', 1956, '***', 'NR', 'USA', NULL, 'tt0049470', 0, 574, NULL, NULL, 120, '1');
 INSERT INTO filth.movie VALUES (4352, 'The Little Prince', 2015, '**½', 'PG', 'France', NULL, 'tt1754656', 0, 309809, NULL, NULL, 108, '1');
