@@ -183,7 +183,7 @@ INSERT INTO filth.movie VALUES (178, 'Being John Malkovich', 1999, '****', 'R', 
 INSERT INTO filth.movie VALUES (179, 'Being There', 1979, '***½', 'PG', 'USA', NULL, 'tt0078841', 0, 10322, NULL, NULL, 130, '1');
 INSERT INTO filth.movie VALUES (180, 'The Believer', 2002, '***', 'R', 'USA', NULL, 'tt0247199', 0, 4012, NULL, NULL, 98, '1');
 INSERT INTO filth.movie VALUES (181, 'Belle de Jour', 1967, '**½', 'NR', 'France', NULL, 'tt0061395', 0, 649, NULL, NULL, 101, '1');
-INSERT INTO filth.movie VALUES (182, 'Ben-Hur', 1959, '****', 'NR', 'USA', NULL, 'tt0052618', 0, 665, NULL, NULL, 212, '1');
+INSERT INTO filth.movie VALUES (182, 'Ben-Hur', 1959, '****', 'NR', 'USA', NULL, 'tt0052618', 0, 665, NULL, NULL, 212, '2');
 INSERT INTO filth.movie VALUES (183, 'The Benchwarmers', 2006, '**', 'PG-13', 'USA', NULL, 'tt0437863', 0, 9957, NULL, NULL, 80, '1');
 INSERT INTO filth.movie VALUES (184, 'Bend it Like Beckham', 2003, '***', 'PG-13', 'England', NULL, 'tt0286499', 1, 455, NULL, NULL, 112, '1');
 INSERT INTO filth.movie VALUES (185, 'Beowulf', 2007, '***½', 'PG-13', 'USA', NULL, 'tt0442933', 0, 2310, NULL, NULL, 115, '1');

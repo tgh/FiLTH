@@ -20141,3 +20141,7 @@ INSERT INTO filth.tag_given_to VALUES(2014, 339);  -- Tom Jones (1963) tagged wi
 INSERT INTO filth.tag_given_to VALUES(2014, 21);  -- Tom Jones (1963) tagged with 'period'
 INSERT INTO filth.tag_given_to VALUES(2014, 59);  -- Tom Jones (1963) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(2014, 58);  -- Tom Jones (1963) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(182, 186);  -- Ben-Hur (1959) tagged with 'christian/christianity'
+INSERT INTO filth.tag_given_to VALUES(182, 347);  -- Ben-Hur (1959) tagged with 'revenge'
+INSERT INTO filth.tag_given_to VALUES(182, 328);  -- Ben-Hur (1959) tagged with 'friend(s)/friendship'
+INSERT INTO filth.tag_given_to VALUES(182, 50);  -- Ben-Hur (1959) tagged with 'spiritual/religion'
