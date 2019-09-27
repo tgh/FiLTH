@@ -4396,3 +4396,4 @@ INSERT INTO filth.movie VALUES (4400, 'The Ballad of Buster Scruggs', 2018, 'not
 INSERT INTO filth.movie VALUES (4401, 'First Reformed', 2018, 'not seen', 'R', 'USA', NULL, 'tt6053438', NULL, 458737);
 INSERT INTO filth.movie VALUES (4402, 'Mirai', 2018, 'not seen', 'PG', 'Japan', NULL, 'tt6900448', NULL, 475215);
 INSERT INTO filth.movie VALUES (4403, 'Ralph Breaks the Internet', 2018, 'not seen', 'PG', 'USA', NULL, 'tt5848272', NULL, 404368);
+INSERT INTO filth.movie VALUES (4404, 'Captain Marvel', 2019, '***', 'PG-13', 'USA', NULL, 'tt4154664', 1, 299537, NULL, NULL, 123, '1');
