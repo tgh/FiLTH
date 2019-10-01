@@ -3889,3 +3889,5 @@ INSERT INTO filth.crew_person VALUES (3891, 'DaCosta', 'Morton', NULL, 'Morton D
 INSERT INTO filth.crew_person VALUES (3892, 'Bull', 'Peter', NULL, 'Peter Bull', 'Actor');  -- Actor: Peter Bull
 INSERT INTO filth.crew_person VALUES (3893, 'Glover', 'Julian', NULL, 'Julian Glover', 'Actor');  -- Actor: Julian Glover
 INSERT INTO filth.crew_person VALUES (3894, 'Robertson-Dworet', 'Geneva', NULL, 'Geneva Robertson-Dworet', 'Screenwriter');  -- Screenwriter: Geneva Robertson-Dworet
+INSERT INTO filth.crew_person VALUES (3895, 'Collins', 'Lily', NULL, 'Lily Collins', 'Actress');  -- Actress: Lily Collins
+INSERT INTO filth.crew_person VALUES (3896, 'Trost', 'Brandon', NULL, 'Brandon Trost', 'Cinematographer');  -- Cinematographer: Brandon Trost

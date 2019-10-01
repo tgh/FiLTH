@@ -4398,3 +4398,4 @@ INSERT INTO filth.movie VALUES (4402, 'Mirai', 2018, 'not seen', 'PG', 'Japan', 
 INSERT INTO filth.movie VALUES (4403, 'Ralph Breaks the Internet', 2018, 'not seen', 'PG', 'USA', NULL, 'tt5848272', NULL, 404368);
 INSERT INTO filth.movie VALUES (4404, 'Captain Marvel', 2019, '***', 'PG-13', 'USA', NULL, 'tt4154664', 1, 299537, NULL, NULL, 123, '1');
 INSERT INTO filth.movie VALUES (4405, 'Avengers: Endgame', 2019, '****', 'PG-13', 'USA', NULL, 'tt4154796', 2, 299534, NULL, NULL, 181, '2');
+INSERT INTO filth.movie VALUES (4406, 'Extremely Wicked, Shockingly Evil and Vile', 2019, '**½', 'R', 'USA', NULL, 'tt2481498', 0, 457799, NULL, NULL, 110, '1');
