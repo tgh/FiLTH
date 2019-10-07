@@ -27,7 +27,7 @@ def getImageUrl(movie):
     tmdbId = movie['tmdb_id']
     title = movie['title']
     response = requests.get(
-        'https://api.themoviedb.org/3/movie/' + tmdbId + '/images',
+        'https://api.themoviedb.org/4/movie/' + tmdbId + '/images',
         params={'api_key': '02c05c166237c1a2e3e5cc2744077613'}
     )
     if response.status_code != 200:
@@ -39,7 +39,7 @@ def getImageUrl(movie):
             posters = response_json['posters']
             if not posters:
                 message = '\nERROR no posters for "' + title + '": ' + response.text + '\n'
-                print message
+                print(message)
                 raise Exception(message)
             else:
                 filePath = posters[0]['file_path']
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     title = args['TITLE']
 
     if not path.isfile(csvFile):
-        print '***ERROR: ' + csvFile + ' does not exist or is not a file'
+        print(f'***ERROR: {csvFile} does not exist or is not a file')
         sys.exit(1)
 
     f = open(csvFile)
@@ -63,18 +63,18 @@ if __name__ == '__main__':
     f.close()
     movies = csv.DictReader(csv_lines, dialect='pipes') # '|' as the field separator
 
-    print '{'
-    print '  "id": TO_BE_FILLED_IN,'
-    print '  "title": "' + title + '",'
-    print '  "items": ['
+    print('{')
+    print('  "id": TO_BE_FILLED_IN,')
+    print(f'  "title": "{title}",')
+    print('  "items": [')
 
     for movie in movies:
         imageUrl = getImageUrl(movie)
-        print '    {'
-        print '      "text": "' + movie['title'] + ' (' + movie['year'] + ')",'
-        print '      "imageUrl": "' + imageUrl + '"'
-        print '    },'
+        print('    {')
+        print(f'      "text": "{movie["title"]} ({movie["year"]})",')
+        print(f'      "imageUrl": "{imageUrl}"')
+        print('    },')
 
     # close out the json
-    print '  ]'
-    print '}'
+    print('  ]')
+    print('}')
