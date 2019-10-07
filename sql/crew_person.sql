@@ -3893,3 +3893,6 @@ INSERT INTO filth.crew_person VALUES (3895, 'Collins', 'Lily', NULL, 'Lily Colli
 INSERT INTO filth.crew_person VALUES (3896, 'Trost', 'Brandon', NULL, 'Brandon Trost', 'Cinematographer');  -- Cinematographer: Brandon Trost
 INSERT INTO filth.crew_person VALUES (3897, 'Cline', 'Ernest', NULL, 'Ernest Cline', 'Screenwriter');  -- Screenwriter: Ernest Cline
 INSERT INTO filth.crew_person VALUES (3898, 'Cooke', 'Olivia', NULL, 'Olivia Cooke', 'Actress');  -- Actress: Olivia Cooke
+INSERT INTO filth.crew_person VALUES (3899, 'Brock', 'Jeremy', NULL, 'Jeremy Brock', 'Screenwriter');  -- Screenwriter: Jeremy Brock
+INSERT INTO filth.crew_person VALUES (3900, 'Deegan', 'Alison', NULL, 'Alison Deegan', 'Screenwriter');  -- Screenwriter: Alison Deegan
+INSERT INTO filth.crew_person VALUES (3901, 'McCrory', 'Helen', NULL, 'Helen McCrory', 'Actress');  -- Actress: Helen McCrory
