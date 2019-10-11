@@ -3896,3 +3896,9 @@ INSERT INTO filth.crew_person VALUES (3898, 'Cooke', 'Olivia', NULL, 'Olivia Coo
 INSERT INTO filth.crew_person VALUES (3899, 'Brock', 'Jeremy', NULL, 'Jeremy Brock', 'Screenwriter');  -- Screenwriter: Jeremy Brock
 INSERT INTO filth.crew_person VALUES (3900, 'Deegan', 'Alison', NULL, 'Alison Deegan', 'Screenwriter');  -- Screenwriter: Alison Deegan
 INSERT INTO filth.crew_person VALUES (3901, 'McCrory', 'Helen', NULL, 'Helen McCrory', 'Actress');  -- Actress: Helen McCrory
+INSERT INTO filth.crew_person VALUES (3902, 'August', 'John', NULL, 'John August', 'Screenwriter');  -- Screenwriter: John August
+INSERT INTO filth.crew_person VALUES (3903, 'Massoud', 'Mena', NULL, 'Mena Massoud', 'Actor');  -- Actor: Mena Massoud
+INSERT INTO filth.crew_person VALUES (3904, 'Scott', 'Naomi', NULL, 'Naomi Scott', 'Actress');  -- Actress: Naomi Scott
+INSERT INTO filth.crew_person VALUES (3905, 'Kenzari', 'Marwan', NULL, 'Marwan Kenzari', 'Actor');  -- Actor: Marwan Kenzari
+INSERT INTO filth.crew_person VALUES (3906, 'Negahban', 'Navid', NULL, 'Navid Negahban', 'Actor');  -- Actor: Navid Negahban
+INSERT INTO filth.crew_person VALUES (3907, 'Pedrad', 'Nasim', NULL, 'Nasim Pedrad', 'Actress');  -- Actress: Nasim Pedrad
