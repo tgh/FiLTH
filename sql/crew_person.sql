@@ -3902,3 +3902,5 @@ INSERT INTO filth.crew_person VALUES (3904, 'Scott', 'Naomi', NULL, 'Naomi Scott
 INSERT INTO filth.crew_person VALUES (3905, 'Kenzari', 'Marwan', NULL, 'Marwan Kenzari', 'Actor');  -- Actor: Marwan Kenzari
 INSERT INTO filth.crew_person VALUES (3906, 'Negahban', 'Navid', NULL, 'Navid Negahban', 'Actor');  -- Actor: Navid Negahban
 INSERT INTO filth.crew_person VALUES (3907, 'Pedrad', 'Nasim', NULL, 'Nasim Pedrad', 'Actress');  -- Actress: Nasim Pedrad
+INSERT INTO filth.crew_person VALUES (3908, 'Kasdan', 'Jonathan', NULL, 'Jonathan Kasdan', 'Screenwriter');  -- Screenwriter: Jonathan Kasdan
+INSERT INTO filth.crew_person VALUES (3909, 'Clarke', 'Emilia', NULL, 'Emilia Clarke', 'Actress');  -- Actress: Emilia Clarke

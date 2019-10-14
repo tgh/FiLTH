@@ -4402,3 +4402,4 @@ INSERT INTO filth.movie VALUES (4406, 'Extremely Wicked, Shockingly Evil and Vil
 INSERT INTO filth.movie VALUES (4407, 'Ready Player One', 2019, '**½', 'PG-13', 'USA', NULL, 'tt1677720', 0, 333339, NULL, NULL, 140, '1');
 INSERT INTO filth.movie VALUES (4408, 'A Little Chaos', 2014, '**½', 'PG-13', 'England', NULL, 'tt2639254', 0, 283227, NULL, NULL, 112, '1');
 INSERT INTO filth.movie VALUES (4409, 'Aladdin', 2019, '**', 'PG', 'USA', 'If it wasn''t for Will Smith this would totally be a made-for-tv movie on the Disney channel. Also, you would never know this was a Guy Ritchie movie--there was no directorial creative stamp at all.', 'tt6139732', 1, 420817, NULL, NULL, 128, '1');
+INSERT INTO filth.movie VALUES (4410, 'Solo: A Star Wars Story', 2018, '***', 'PG-13', 'USA', NULL, 'tt3778644', 0, 348350, NULL, NULL, 135, '1');
