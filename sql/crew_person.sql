@@ -3904,3 +3904,10 @@ INSERT INTO filth.crew_person VALUES (3906, 'Negahban', 'Navid', NULL, 'Navid Ne
 INSERT INTO filth.crew_person VALUES (3907, 'Pedrad', 'Nasim', NULL, 'Nasim Pedrad', 'Actress');  -- Actress: Nasim Pedrad
 INSERT INTO filth.crew_person VALUES (3908, 'Kasdan', 'Jonathan', NULL, 'Jonathan Kasdan', 'Screenwriter');  -- Screenwriter: Jonathan Kasdan
 INSERT INTO filth.crew_person VALUES (3909, 'Clarke', 'Emilia', NULL, 'Emilia Clarke', 'Actress');  -- Actress: Emilia Clarke
+INSERT INTO filth.crew_person VALUES (3910, 'Folsom', 'Stephany', NULL, 'Stephany Folsom', 'Screenwriter');  -- Screenwriter: Stephany Folsom
+INSERT INTO filth.crew_person VALUES (3911, 'Potts', 'Annie', NULL, 'Annie Potts', 'Actress');  -- Actress: Annie Potts
+INSERT INTO filth.crew_person VALUES (3912, 'Hale', 'Tony', NULL, 'Tony Hale', 'Actor');  -- Actor: Tony Hale
+INSERT INTO filth.crew_person VALUES (3913, 'Key', 'Keegan-Michael', NULL, 'Keegan-Michael Key', 'Actor');  -- Actor: Keegan-Michael Key
+INSERT INTO filth.crew_person VALUES (3914, 'Hendricks', 'Christina', NULL, 'Christina Hendricks', 'Actress');  -- Actress: Christina Hendricks
+INSERT INTO filth.crew_person VALUES (3915, 'Rickles', 'Don', NULL, 'Don Rickles', 'Actor');  -- Actor: Don Rickles
+INSERT INTO filth.crew_person VALUES (3916, 'Garlin', 'Jeff', NULL, 'Jeff Garlin', 'Actor');  -- Actor: Jeff Garlin
