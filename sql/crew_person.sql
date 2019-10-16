@@ -3911,3 +3911,11 @@ INSERT INTO filth.crew_person VALUES (3913, 'Key', 'Keegan-Michael', NULL, 'Keeg
 INSERT INTO filth.crew_person VALUES (3914, 'Hendricks', 'Christina', NULL, 'Christina Hendricks', 'Actress');  -- Actress: Christina Hendricks
 INSERT INTO filth.crew_person VALUES (3915, 'Rickles', 'Don', NULL, 'Don Rickles', 'Actor');  -- Actor: Don Rickles
 INSERT INTO filth.crew_person VALUES (3916, 'Garlin', 'Jeff', NULL, 'Jeff Garlin', 'Actor');  -- Actor: Jeff Garlin
+INSERT INTO filth.crew_person VALUES (3917, 'Kasdan', 'Jake', NULL, 'Jake Kasdan', 'Director');  -- Director: Jake Kasdan
+INSERT INTO filth.crew_person VALUES (3918, 'Rosenberg', 'Scott', NULL, 'Scott Rosenberg', 'Screenwriter');  -- Screenwriter: Scott Rosenberg
+INSERT INTO filth.crew_person VALUES (3919, 'Pinkner', 'Jeff', NULL, 'Jeff Pinkner', 'Screenwriter');  -- Screenwriter: Jeff Pinkner
+INSERT INTO filth.crew_person VALUES (3920, 'Jonas', 'Nick', NULL, 'Nick Jonas', 'Actor');  -- Actor: Nick Jonas
+INSERT INTO filth.crew_person VALUES (3921, 'Blain', 'Ser''Darius', NULL, 'Ser''Darius Blain', 'Actor');  -- Actor: Ser'Darius Blain
+INSERT INTO filth.crew_person VALUES (3922, 'Iseman', 'Madison', NULL, 'Madison Iseman', 'Actress');  -- Actress: Madison Iseman
+INSERT INTO filth.crew_person VALUES (3923, 'Turner', 'Morgan', NULL, 'Morgan Turner', 'Actress');  -- Actress: Morgan Turner
+INSERT INTO filth.crew_person VALUES (3924, 'Hanks', 'Colin', NULL, 'Colin Hanks', 'Actor');  -- Actor: Colin Hanks

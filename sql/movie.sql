@@ -4404,3 +4404,4 @@ INSERT INTO filth.movie VALUES (4408, 'A Little Chaos', 2014, '**½', 'PG-13', '
 INSERT INTO filth.movie VALUES (4409, 'Aladdin', 2019, '**', 'PG', 'USA', 'If it wasn''t for Will Smith this would totally be a made-for-tv movie on the Disney channel. Also, you would never know this was a Guy Ritchie movie--there was no directorial creative stamp at all.', 'tt6139732', 1, 420817, NULL, NULL, 128, '1');
 INSERT INTO filth.movie VALUES (4410, 'Solo: A Star Wars Story', 2018, '***', 'PG-13', 'USA', NULL, 'tt3778644', 0, 348350, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (4411, 'Toy Story 4', 2019, '***½', 'G', 'USA', NULL, 'tt1979376', 1, 301528, NULL, NULL, 100, '1');
+INSERT INTO filth.movie VALUES (4412, 'Jumanji: Welcome to the Jungle', 2017, '**½', 'PG-13', 'USA', NULL, 'tt2283362', 0, 353486, NULL, NULL, 119, '1');
