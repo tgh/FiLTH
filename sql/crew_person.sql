@@ -3919,3 +3919,6 @@ INSERT INTO filth.crew_person VALUES (3921, 'Blain', 'Ser''Darius', NULL, 'Ser''
 INSERT INTO filth.crew_person VALUES (3922, 'Iseman', 'Madison', NULL, 'Madison Iseman', 'Actress');  -- Actress: Madison Iseman
 INSERT INTO filth.crew_person VALUES (3923, 'Turner', 'Morgan', NULL, 'Morgan Turner', 'Actress');  -- Actress: Morgan Turner
 INSERT INTO filth.crew_person VALUES (3924, 'Hanks', 'Colin', NULL, 'Colin Hanks', 'Actor');  -- Actor: Colin Hanks
+INSERT INTO filth.crew_person VALUES (3925, 'Eichner', 'Billy', NULL, 'Billy Eichner', 'Actor');  -- Actor: Billy Eichner
+INSERT INTO filth.crew_person VALUES (3926, 'Sedaris', 'Amy', NULL, 'Amy Sedaris', 'Actress');  -- Actress: Amy Sedaris
+INSERT INTO filth.crew_person VALUES (3927, 'Beyonce', NULL, NULL, 'Beyonce', 'Actress');  -- Actress: Beyonce

@@ -4405,3 +4405,4 @@ INSERT INTO filth.movie VALUES (4409, 'Aladdin', 2019, '**', 'PG', 'USA', 'If it
 INSERT INTO filth.movie VALUES (4410, 'Solo: A Star Wars Story', 2018, '***', 'PG-13', 'USA', NULL, 'tt3778644', 0, 348350, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (4411, 'Toy Story 4', 2019, '***½', 'G', 'USA', NULL, 'tt1979376', 1, 301528, NULL, NULL, 100, '1');
 INSERT INTO filth.movie VALUES (4412, 'Jumanji: Welcome to the Jungle', 2017, '**½', 'PG-13', 'USA', NULL, 'tt2283362', 0, 353486, NULL, NULL, 119, '1');
+INSERT INTO filth.movie VALUES (4413, 'The Lion King', 2019, '***', 'PG', 'USA', 'I really dislike when professional, broadway-sounding kids are used for the singing parts of child characters--it sounds so fake; just let it be normal kids singing it sounds way better and real with more character.', 'tt6105098', 1, , NULL, NULL, 118, '1');
