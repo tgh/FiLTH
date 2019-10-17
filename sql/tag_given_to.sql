@@ -20249,3 +20249,4 @@ INSERT INTO filth.tag_given_to VALUES(4413, 69);  -- The Lion King (2019) tagged
 INSERT INTO filth.tag_given_to VALUES(4413, 311);  -- The Lion King (2019) tagged with 'animal(s)'
 INSERT INTO filth.tag_given_to VALUES(4413, 28);  -- The Lion King (2019) tagged with 'computer-animated'
 INSERT INTO filth.tag_given_to VALUES(4413, 7);  -- The Lion King (2019) tagged with 'animation'
+INSERT INTO filth.tag_given_to VALUES(4407, 338);  -- Ready Player One (2019) tagged with 'video-game(s)'
