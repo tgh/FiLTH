@@ -20261,3 +20261,7 @@ INSERT INTO filth.tag_given_to VALUES(4414, 2);  -- Nacho Libre (2006) tagged wi
 INSERT INTO filth.tag_given_to VALUES(4414, 20);  -- Nacho Libre (2006) tagged with 'sports'
 INSERT INTO filth.tag_given_to VALUES(4414, 50);  -- Nacho Libre (2006) tagged with 'spiritual/religion'
 INSERT INTO filth.tag_given_to VALUES(4414, 58);  -- Nacho Libre (2006) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(4393, 12);  -- Free Solo (2018) tagged with 'documentary'
+INSERT INTO filth.tag_given_to VALUES(4393, 11);  -- Free Solo (2018) tagged with 'adventure'
+INSERT INTO filth.tag_given_to VALUES(4393, 20);  -- Free Solo (2018) tagged with 'sports'
+INSERT INTO filth.tag_given_to VALUES(4393, 391);  -- Free Solo (2018) tagged with 'masculine'
