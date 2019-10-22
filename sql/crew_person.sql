@@ -3926,3 +3926,7 @@ INSERT INTO filth.crew_person VALUES (3928, 'Hess', 'Jared', NULL, 'Jared Hess',
 INSERT INTO filth.crew_person VALUES (3929, 'Hess', 'Jerusha', NULL, 'Jerusha Hess', 'Screenwriter');  -- Screenwriter: Jerusha Hess
 INSERT INTO filth.crew_person VALUES (3930, 'Ana', NULL, NULL, 'Ana de la Reguera', 'Actress');  -- Actress: Ana de la Reguera
 INSERT INTO filth.crew_person VALUES (3931, 'Jimenez', 'Hector', NULL, 'Hector Jimenez', 'Actor');  -- Actor: Hector Jimenez
+INSERT INTO filth.crew_person VALUES (3932, 'Walker', 'Paul', NULL, 'Paul Walker', 'Actor');  -- Actor: Paul Walker
+INSERT INTO filth.crew_person VALUES (3933, 'Brewster', 'Jordana', NULL, 'Jordana Brewster', 'Actress');  -- Actress: Jordana Brewster
+INSERT INTO filth.crew_person VALUES (3934, 'Ludacris', NULL, NULL, 'Ludacris', 'Actor');  -- Actor: Ludacris
+INSERT INTO filth.crew_person VALUES (3935, 'Almeida', 'Joaquim', 'de', 'Joaquim de Almeida', 'Actor');  -- Actor: Joaquim de Almeida
