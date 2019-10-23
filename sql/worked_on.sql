@@ -10047,3 +10047,4 @@ INSERT INTO filth.worked_on VALUES(10047, 4415, 3934, 'Supporting Actor');  -- L
 INSERT INTO filth.worked_on VALUES(10048, 4415, 3559, 'Supporting Actress');  -- Gal Gadot for Fast Five (2011)
 INSERT INTO filth.worked_on VALUES(10049, 4415, 3935, 'Supporting Actor');  -- Joaquim de Almeida for Fast Five (2011)
 INSERT INTO filth.worked_on VALUES(10050, 4415, 3360, 'Supporting Actor');  -- Dwayne Johnson for Fast Five (2011)
+INSERT INTO filth.worked_on VALUES(10051, 4416, 298, 'Director');  -- Peter Jackson for They Shall Not Grow Old (2018)
