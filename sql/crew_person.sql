@@ -3930,3 +3930,13 @@ INSERT INTO filth.crew_person VALUES (3932, 'Walker', 'Paul', NULL, 'Paul Walker
 INSERT INTO filth.crew_person VALUES (3933, 'Brewster', 'Jordana', NULL, 'Jordana Brewster', 'Actress');  -- Actress: Jordana Brewster
 INSERT INTO filth.crew_person VALUES (3934, 'Ludacris', NULL, NULL, 'Ludacris', 'Actor');  -- Actor: Ludacris
 INSERT INTO filth.crew_person VALUES (3935, 'Almeida', 'Joaquim', 'de', 'Joaquim de Almeida', 'Actor');  -- Actor: Joaquim de Almeida
+INSERT INTO filth.crew_person VALUES (3936, 'Middleton', 'Tuppence', NULL, 'Tuppence Middleton', 'Actress');  -- Actress: Tuppence Middleton
+INSERT INTO filth.crew_person VALUES (3937, 'Dockery', 'Michelle', NULL, 'Michelle Dockery', 'Actress');  -- Actress: Michelle Dockery
+INSERT INTO filth.crew_person VALUES (3938, 'Carmichael', 'Laura', NULL, 'Laura Carmichael', 'Actress');  -- Actress: Laura Carmichael
+INSERT INTO filth.crew_person VALUES (3939, 'Froggatt', 'Joanne', NULL, 'Joanne Froggatt', 'Actress');  -- Actress: Joanne Froggatt
+INSERT INTO filth.crew_person VALUES (3940, 'James-Collier', 'Robert', NULL, 'Robert James-Collier', 'Actor');  -- Actor: Robert James-Collier
+INSERT INTO filth.crew_person VALUES (3941, 'McShera', 'Shopie', NULL, 'Shopie McShera', 'Actress');  -- Actress: Shopie McShera
+INSERT INTO filth.crew_person VALUES (3942, 'Logan', 'Phyllis', NULL, 'Phyllis Logan', 'Actress');  -- Actress: Phyllis Logan
+INSERT INTO filth.crew_person VALUES (3943, 'Carter', 'Jim', NULL, 'Jim Carter', 'Actor');  -- Actor: Jim Carter
+INSERT INTO filth.crew_person VALUES (3944, 'Coyle', 'Brendan', NULL, 'Brendan Coyle', 'Actor');  -- Actor: Brendan Coyle
+INSERT INTO filth.crew_person VALUES (3945, 'Lynch', 'Susan', NULL, 'Susan Lynch', 'Actress');  -- Actress: Susan Lynch
