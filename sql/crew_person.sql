@@ -3940,3 +3940,4 @@ INSERT INTO filth.crew_person VALUES (3942, 'Logan', 'Phyllis', NULL, 'Phyllis L
 INSERT INTO filth.crew_person VALUES (3943, 'Carter', 'Jim', NULL, 'Jim Carter', 'Actor');  -- Actor: Jim Carter
 INSERT INTO filth.crew_person VALUES (3944, 'Coyle', 'Brendan', NULL, 'Brendan Coyle', 'Actor');  -- Actor: Brendan Coyle
 INSERT INTO filth.crew_person VALUES (3945, 'Lynch', 'Susan', NULL, 'Susan Lynch', 'Actress');  -- Actress: Susan Lynch
+INSERT INTO filth.crew_person VALUES (3946, 'Haynes', 'Stanley', NULL, 'Stanley Haynes', 'Screenwriter');  -- Screenwriter: Stanley Haynes
