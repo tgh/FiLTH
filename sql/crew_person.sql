@@ -3944,3 +3944,7 @@ INSERT INTO filth.crew_person VALUES (3946, 'Haynes', 'Stanley', NULL, 'Stanley 
 INSERT INTO filth.crew_person VALUES (3947, 'Zendaya', NULL, NULL, 'Zendaya', 'Actress');  -- Actress: Zendaya
 INSERT INTO filth.crew_person VALUES (3948, 'Revolori', 'Tony', NULL, 'Tony Revolori', 'Actor');  -- Actor: Tony Revolori
 INSERT INTO filth.crew_person VALUES (3949, 'Batalon', 'Jacob', NULL, 'Jacob Batalon', 'Actor');  -- Actor: Jacob Batalon
+INSERT INTO filth.crew_person VALUES (3950, 'Rhys-Davies', 'John', NULL, 'John Rhys-Davies', 'Actor');  -- Actor: John Rhys-Davies
+INSERT INTO filth.crew_person VALUES (3951, 'Allen', 'Karen', NULL, 'Karen Allen', 'Actress');  -- Actress: Karen Allen
+INSERT INTO filth.crew_person VALUES (3952, 'Freeman', 'Paul', NULL, 'Paul Freeman', 'Actor');  -- Actor: Paul Freeman
+INSERT INTO filth.crew_person VALUES (3953, 'Records', 'Max', NULL, 'Max Records', 'Actor');  -- Actor: Max Records
