@@ -3948,3 +3948,6 @@ INSERT INTO filth.crew_person VALUES (3950, 'Rhys-Davies', 'John', NULL, 'John R
 INSERT INTO filth.crew_person VALUES (3951, 'Allen', 'Karen', NULL, 'Karen Allen', 'Actress');  -- Actress: Karen Allen
 INSERT INTO filth.crew_person VALUES (3952, 'Freeman', 'Paul', NULL, 'Paul Freeman', 'Actor');  -- Actor: Paul Freeman
 INSERT INTO filth.crew_person VALUES (3953, 'Records', 'Max', NULL, 'Max Records', 'Actor');  -- Actor: Max Records
+INSERT INTO filth.crew_person VALUES (3954, 'Bier', 'Susanne', NULL, 'Susanne Bier', 'Director');  -- Director: Susanne Bier
+INSERT INTO filth.crew_person VALUES (3955, 'Pidgeon', 'Rebecca', NULL, 'Rebecca Pidgeon', 'Actress');  -- Actress: Rebecca Pidgeon
+INSERT INTO filth.crew_person VALUES (3956, 'Dastmalchian', 'David', NULL, 'David Dastmalchian', 'Actor');  -- Actor: David Dastmalchian
