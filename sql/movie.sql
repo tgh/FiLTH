@@ -4359,7 +4359,7 @@ INSERT INTO filth.movie VALUES (4363, 'Fantastic Beasts: The Crimes of Grindelwa
 INSERT INTO filth.movie VALUES (4364, 'Wonder', 2017, '***½', 'PG', 'USA', NULL, 'tt2543472', 0, 406997, NULL, NULL, 113, '1');
 INSERT INTO filth.movie VALUES (4365, 'Hereditary', 2018, 'not seen', 'R', 'USA', NULL, 'tt7784604', NULL, 493922, NULL, NULL, 127, NULL);
 INSERT INTO filth.movie VALUES (4366, 'Blindspotting', 2018, 'not seen', 'R', 'USA', NULL, 'tt7242142', NULL, 489930, NULL, NULL, 95, NULL);
-INSERT INTO filth.movie VALUES (4367, 'Spider-Man: Into the Spider-Verse', 2018, 'not seen', 'PG', 'USA', NULL, 'tt4633694', NULL, 324857, NULL, NULL, 117, NULL);
+INSERT INTO filth.movie VALUES (4367, 'Spider-Man: Into the Spider-Verse', 2018, '***½', 'PG', 'USA', NULL, 'tt4633694', NULL, 324857, NULL, NULL, 117, '1');
 INSERT INTO filth.movie VALUES (4368, 'Green Book', 2018, '****', 'PG-13', 'USA', NULL, 'tt6966692', NULL, 490132, NULL, NULL, 130, '1');
 INSERT INTO filth.movie VALUES (4369, 'A Star is Born', 2018, 'not seen', 'R', 'USA', NULL, 'tt1517451', NULL, 332562, NULL, 1896, 136, NULL);
 INSERT INTO filth.movie VALUES (4370, 'Paddington 2', 2018, '***½', 'PG', 'England', NULL, 'tt4468740', NULL, 346648, NULL, NULL, 103, '1');

@@ -3951,3 +3951,8 @@ INSERT INTO filth.crew_person VALUES (3953, 'Records', 'Max', NULL, 'Max Records
 INSERT INTO filth.crew_person VALUES (3954, 'Bier', 'Susanne', NULL, 'Susanne Bier', 'Director');  -- Director: Susanne Bier
 INSERT INTO filth.crew_person VALUES (3955, 'Pidgeon', 'Rebecca', NULL, 'Rebecca Pidgeon', 'Actress');  -- Actress: Rebecca Pidgeon
 INSERT INTO filth.crew_person VALUES (3956, 'Dastmalchian', 'David', NULL, 'David Dastmalchian', 'Actor');  -- Actor: David Dastmalchian
+INSERT INTO filth.crew_person VALUES (3957, 'Lord', 'Phil', NULL, 'Phil Lord', 'Producer');  -- Producer: Phil Lord
+INSERT INTO filth.crew_person VALUES (3958, 'Rothman', 'Rodney', NULL, 'Rodney Rothman', 'Screenwriter');  -- Screenwriter: Rodney Rothman
+INSERT INTO filth.crew_person VALUES (3959, 'Persichetti', 'Bob', NULL, 'Bob Persichetti', 'Director');  -- Director: Bob Persichetti
+INSERT INTO filth.crew_person VALUES (3960, 'Ramsey', 'Peter', NULL, 'Peter Ramsey', 'Director');  -- Director: Peter Ramsey
+INSERT INTO filth.crew_person VALUES (3961, 'Johnson', 'Jake', NULL, 'Jake Johnson', 'Actor');  -- Actor: Jake Johnson
