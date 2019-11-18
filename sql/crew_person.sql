@@ -3956,3 +3956,4 @@ INSERT INTO filth.crew_person VALUES (3958, 'Rothman', 'Rodney', NULL, 'Rodney R
 INSERT INTO filth.crew_person VALUES (3959, 'Persichetti', 'Bob', NULL, 'Bob Persichetti', 'Director');  -- Director: Bob Persichetti
 INSERT INTO filth.crew_person VALUES (3960, 'Ramsey', 'Peter', NULL, 'Peter Ramsey', 'Director');  -- Director: Peter Ramsey
 INSERT INTO filth.crew_person VALUES (3961, 'Johnson', 'Jake', NULL, 'Jake Johnson', 'Actor');  -- Actor: Jake Johnson
+INSERT INTO filth.crew_person VALUES (3962, 'Guiry', 'Tom', NULL, 'Tom Guiry', 'Actor');  -- Actor: Tom Guiry
