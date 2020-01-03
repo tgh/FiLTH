@@ -20347,3 +20347,4 @@ INSERT INTO filth.tag_given_to VALUES(4367, 7);  -- Spider-Man: Into the Spider-
 INSERT INTO filth.tag_given_to VALUES(4367, 196);  -- Spider-Man: Into the Spider-Verse (2018) tagged with 'based-on-comic-book(s)'
 INSERT INTO filth.tag_given_to VALUES(4367, 59);  -- Spider-Man: Into the Spider-Verse (2018) tagged with 'based-on-previously-written-material'
 INSERT INTO filth.tag_given_to VALUES(4367, 58);  -- Spider-Man: Into the Spider-Verse (2018) tagged with 'based-on-something'
+INSERT INTO filth.tag_given_to VALUES(713, 391);  -- Hard Eight (1997) tagged with 'masculine'

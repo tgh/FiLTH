@@ -714,7 +714,7 @@ INSERT INTO filth.movie VALUES (709, 'Happy Accidents', 2001, '***', 'R', 'USA',
 INSERT INTO filth.movie VALUES (710, 'Happy Gilmore', 1996, '**½', 'PG-13', 'USA', NULL, 'tt0116483', 0, 9614, NULL, NULL, 92, '1');
 INSERT INTO filth.movie VALUES (711, 'Happy, Texas', 1999, '**½', 'PG-13', 'USA', NULL, 'tt0162360', 0, 24066, NULL, NULL, 98, '1');
 INSERT INTO filth.movie VALUES (712, 'A Hard Day''s Night', 1964, '****', 'NR', 'England', NULL, 'tt0058182', 0, 704, NULL, NULL, 88, '~4');
-INSERT INTO filth.movie VALUES (713, 'Hard Eight', 1997, '***', 'R', 'USA', NULL, 'tt0119256', 0, 8052, NULL, NULL, 96, '1');
+INSERT INTO filth.movie VALUES (713, 'Hard Eight', 1997, '***', 'R', 'USA', NULL, 'tt0119256', 0, 8052, NULL, NULL, 96, '2');
 INSERT INTO filth.movie VALUES (714, 'Harlan County, U.S.A.', 1976, '***½', 'PG', 'USA', NULL, 'tt0074605', 0, 33324, NULL, NULL, 103, '1');
 INSERT INTO filth.movie VALUES (715, 'Harold and Maude', 1971, '***', 'PG', 'USA', NULL, 'tt0067185', 0, 343, NULL, NULL, 91, '1');
 INSERT INTO filth.movie VALUES (716, 'Harrison''s Flowers', 2002, '***', 'R', 'USA', NULL, 'tt0216799', 1, 25014, NULL, NULL, 130, '1');
