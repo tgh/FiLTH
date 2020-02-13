@@ -31,6 +31,5 @@ def getImageUrl(tmdbId):
             message = '\nERROR missing "posters" key in json for "' + tmdbId + '": ' + response.text + '\n'
             raise Exception(message)
 
-def getImdbUrl(movie):
-    imdbId = movie['imdb_id']
+def getImdbUrl(imdbId):
     return f'http://www.imdb.com/title/{imdbId}'

@@ -13,7 +13,7 @@ import sys
 import csv
 from os import path
 from docopt import docopt
-from util import getImageUrl
+from util import getImageUrl, getImdbUrl
 
 csv.register_dialect('pipes', delimiter='|')
 
@@ -43,9 +43,11 @@ if __name__ == '__main__':
         except Exception as e:
             print(f'Exception: {e}')
             continue
+        imdbUrl = getImdbUrl(movie['tmdb_id'])
         print('    {')
         print(f'      "text": "{movie["title"]} ({movie["year"]})",')
-        print(f'      "imageUrl": "{imageUrl}"')
+        print(f'      "imageUrl": "{imageUrl}",')
+        print(f'      "textLinkUrl": "{imdbUrl}",')
         print('    },')
 
     # close out the json
