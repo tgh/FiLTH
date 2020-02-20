@@ -4416,3 +4416,4 @@ INSERT INTO filth.movie VALUES (4420, 'Spider-Man: Far From Home', 2019, '***', 
 INSERT INTO filth.movie VALUES (4421, 'Bird Box', 2018, '***', 'R', 'USA', NULL, 'tt2737304', 0, 405774, NULL, NULL, 124, '1');
 INSERT INTO filth.movie VALUES (4422, '1917', 2019, '****', 'R', 'USA', 'It''s like a mini-Odyssey, or The Revenant in WWI. It''s very well-made and powerful--you really feel for the main character. The single-shot style works really well here, and very cool that it was used for a war film--it really shows the time and space of war from a soldier''s perspective; a lot can change in one day.', 'tt8579674', 1, 530915, NULL, NULL, 119, '1');
 INSERT INTO filth.movie VALUES (4423, 'Little Women', 2019, '***½', 'PG', 'USA', NULL, 'tt3281548', 1, 331482, NULL, NULL, 135, '1');
+INSERT INTO filth.movie VALUES (4424, 'Marriage Story', 2019, '***½', 'R', 'USA', NULL, 'tt7653254', 0, 492188, NULL, NULL, 137, '1');

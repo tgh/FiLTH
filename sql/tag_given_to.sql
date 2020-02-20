@@ -20367,3 +20367,7 @@ INSERT INTO filth.tag_given_to VALUES(4423, 59);  -- Little Women (2019) tagged 
 INSERT INTO filth.tag_given_to VALUES(4423, 58);  -- Little Women (2019) tagged with 'based-on-something'
 INSERT INTO filth.tag_given_to VALUES(4423, 333);  -- Little Women (2019) tagged with 'siblings'
 INSERT INTO filth.tag_given_to VALUES(4423, 21);  -- Little Women (2019) tagged with 'period'
+INSERT INTO filth.tag_given_to VALUES(4424, 1);  -- Marriage Story (2019) tagged with 'drama'
+INSERT INTO filth.tag_given_to VALUES(4424, 306);  -- Marriage Story (2019) tagged with 'divorce'
+INSERT INTO filth.tag_given_to VALUES(4424, 38);  -- Marriage Story (2019) tagged with 'new-york-city'
+INSERT INTO filth.tag_given_to VALUES(4424, 262);  -- Marriage Story (2019) tagged with 'marriage'
