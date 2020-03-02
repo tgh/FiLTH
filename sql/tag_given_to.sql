@@ -20371,3 +20371,8 @@ INSERT INTO filth.tag_given_to VALUES(4424, 1);  -- Marriage Story (2019) tagged
 INSERT INTO filth.tag_given_to VALUES(4424, 306);  -- Marriage Story (2019) tagged with 'divorce'
 INSERT INTO filth.tag_given_to VALUES(4424, 38);  -- Marriage Story (2019) tagged with 'new-york-city'
 INSERT INTO filth.tag_given_to VALUES(4424, 262);  -- Marriage Story (2019) tagged with 'marriage'
+INSERT INTO filth.tag_given_to VALUES(4425, 28);  -- Klaus (2019) tagged with 'computer-animated'
+INSERT INTO filth.tag_given_to VALUES(4425, 13);  -- Klaus (2019) tagged with 'christmas'
+INSERT INTO filth.tag_given_to VALUES(4425, 33);  -- Klaus (2019) tagged with 'comedy-drama'
+INSERT INTO filth.tag_given_to VALUES(4425, 19);  -- Klaus (2019) tagged with 'family-film'
+INSERT INTO filth.tag_given_to VALUES(4425, 7);  -- Klaus (2019) tagged with 'animation'

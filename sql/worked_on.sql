@@ -10207,3 +10207,7 @@ INSERT INTO filth.worked_on VALUES(10207, 4424, 981, 'Supporting Actress');  -- 
 INSERT INTO filth.worked_on VALUES(10208, 4424, 104, 'Supporting Actor');  -- Ray Liotta for Marriage Story (2019)
 INSERT INTO filth.worked_on VALUES(10209, 4424, 661, 'Supporting Actor');  -- Alan Alda for Marriage Story (2019)
 INSERT INTO filth.worked_on VALUES(10210, 4424, 3163, 'Cinematographer');  -- Robbie Ryan for Marriage Story (2019)
+INSERT INTO filth.worked_on VALUES(10211, 4425, 2156, 'Character Voice');  -- Jason Schwartzman for Klaus (2019)
+INSERT INTO filth.worked_on VALUES(10212, 4425, 2520, 'Character Voice');  -- J.K. Simmons for Klaus (2019)
+INSERT INTO filth.worked_on VALUES(10213, 4425, 3967, 'Character Voice');  -- Rashida Jones for Klaus (2019)
+INSERT INTO filth.worked_on VALUES(10214, 4425, 148, 'Character Voice');  -- Joan Cusack for Klaus (2019)
