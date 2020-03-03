@@ -3962,3 +3962,6 @@ INSERT INTO filth.crew_person VALUES (3964, 'Chapman', 'Dean-Charles', NULL, 'De
 INSERT INTO filth.crew_person VALUES (3965, 'Pugh', 'Florence', NULL, 'Florence Pugh', 'Actress');  -- Actress: Florence Pugh
 INSERT INTO filth.crew_person VALUES (3966, 'Scanlen', 'Eliza', NULL, 'Eliza Scanlen', 'Actress');  -- Actress: Eliza Scanlen
 INSERT INTO filth.crew_person VALUES (3967, 'Jones', 'Rashida', NULL, 'Rashida Jones', 'Actress');  -- Actress: Rashida Jones
+INSERT INTO filth.crew_person VALUES (3968, 'Davis', 'Roman', 'Griffin', 'Roman Griffin Davis', 'Actor');  -- Actor: Roman Griffin Davis
+INSERT INTO filth.crew_person VALUES (3969, 'McKenzie', 'Thomasin', NULL, 'Thomasin McKenzie', 'Actress');  -- Actress: Thomasin McKenzie
+INSERT INTO filth.crew_person VALUES (3970, 'Wilson', 'Rebel', NULL, 'Rebel Wilson', 'Actress');  -- Actress: Rebel Wilson

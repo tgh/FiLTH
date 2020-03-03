@@ -4418,3 +4418,4 @@ INSERT INTO filth.movie VALUES (4422, '1917', 2019, '****', 'R', 'USA', 'It''s l
 INSERT INTO filth.movie VALUES (4423, 'Little Women', 2019, '***½', 'PG', 'USA', NULL, 'tt3281548', 1, 331482, NULL, NULL, 135, '1');
 INSERT INTO filth.movie VALUES (4424, 'Marriage Story', 2019, '***½', 'R', 'USA', NULL, 'tt7653254', 0, 492188, NULL, NULL, 137, '1');
 INSERT INTO filth.movie VALUES (4425, 'Klaus', 2019, '***', 'PG', DEFAULT, NULL, 'tt4729430', 0, 508965, NULL, NULL, 96, '1');
+INSERT INTO filth.movie VALUES (4426, 'Jojo Rabbit', 2019, '**½', 'PG-13', 'New Zealand', 'It felt a little pretentious or contrived; like it was trying too hard to be an oscar contender. It also seemed too much like Wes Anderson.', 'tt2584384', 0, 515001, NULL, NULL, 108, '1');
