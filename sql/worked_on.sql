@@ -10221,3 +10221,8 @@ INSERT INTO filth.worked_on VALUES(10221, 4426, 173, 'Supporting Actor');  -- Sa
 INSERT INTO filth.worked_on VALUES(10222, 4426, 3970, 'Supporting Actress');  -- Rebel Wilson for Jojo Rabbit (2019)
 INSERT INTO filth.worked_on VALUES(10223, 4426, 3536, 'Supporting Actor');  -- Stephen Merchant for Jojo Rabbit (2019)
 INSERT INTO filth.worked_on VALUES(10224, 4426, 3154, 'Cinematographer');  -- Mihai Malaimare Jr. for Jojo Rabbit (2019)
+INSERT INTO filth.worked_on VALUES(10225, 4427, 1174, 'Director');  -- Fernando Meirelles for The Two Popes (2019)
+INSERT INTO filth.worked_on VALUES(10226, 4427, 2621, 'Screenwriter');  -- Anthony McCarten for The Two Popes (2019)
+INSERT INTO filth.worked_on VALUES(10227, 4427, 98, 'Supporting Actor');  -- Anthony Hopkins for The Two Popes (2019)
+INSERT INTO filth.worked_on VALUES(10228, 4427, 2256, 'Lead Actor');  -- Jonathan Pryce for The Two Popes (2019)
+INSERT INTO filth.worked_on VALUES(10229, 4427, 1378, 'Cinematographer');  -- Cesar Charlone for The Two Popes (2019)
