@@ -3965,3 +3965,4 @@ INSERT INTO filth.crew_person VALUES (3967, 'Jones', 'Rashida', NULL, 'Rashida J
 INSERT INTO filth.crew_person VALUES (3968, 'Davis', 'Roman', 'Griffin', 'Roman Griffin Davis', 'Actor');  -- Actor: Roman Griffin Davis
 INSERT INTO filth.crew_person VALUES (3969, 'McKenzie', 'Thomasin', NULL, 'Thomasin McKenzie', 'Actress');  -- Actress: Thomasin McKenzie
 INSERT INTO filth.crew_person VALUES (3970, 'Wilson', 'Rebel', NULL, 'Rebel Wilson', 'Actress');  -- Actress: Rebel Wilson
+INSERT INTO filth.crew_person VALUES (3971, 'Davi', 'Robert', NULL, 'Robert Davi', 'Actor');  -- Actor: Robert Davi

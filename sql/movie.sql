@@ -4420,3 +4420,4 @@ INSERT INTO filth.movie VALUES (4424, 'Marriage Story', 2019, '***½', 'R', 'USA
 INSERT INTO filth.movie VALUES (4425, 'Klaus', 2019, '***', 'PG', DEFAULT, NULL, 'tt4729430', 0, 508965, NULL, NULL, 96, '1');
 INSERT INTO filth.movie VALUES (4426, 'Jojo Rabbit', 2019, '**½', 'PG-13', 'New Zealand', 'It felt a little pretentious or contrived; like it was trying too hard to be an oscar contender. It also seemed too much like Wes Anderson.', 'tt2584384', 0, 515001, NULL, NULL, 108, '1');
 INSERT INTO filth.movie VALUES (4427, 'The Two Popes', 2019, '***½', 'PG-13', DEFAULT, 'Great acting. Great dialogue. Very interesting.', 'tt8404614', 0, 551332, NULL, NULL, 125, '1');
+INSERT INTO filth.movie VALUES (4428, 'License to Kill', 1989, '**½', 'PG-13', 'England', NULL, 'tt0097742', 0, 709, NULL, NULL, 133, '1');

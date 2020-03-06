@@ -10226,3 +10226,6 @@ INSERT INTO filth.worked_on VALUES(10226, 4427, 2621, 'Screenwriter');  -- Antho
 INSERT INTO filth.worked_on VALUES(10227, 4427, 98, 'Supporting Actor');  -- Anthony Hopkins for The Two Popes (2019)
 INSERT INTO filth.worked_on VALUES(10228, 4427, 2256, 'Lead Actor');  -- Jonathan Pryce for The Two Popes (2019)
 INSERT INTO filth.worked_on VALUES(10229, 4427, 1378, 'Cinematographer');  -- Cesar Charlone for The Two Popes (2019)
+INSERT INTO filth.worked_on VALUES(10230, 4428, 2853, 'Lead Actor');  -- Timothy Dalton for License to Kill (1989)
+INSERT INTO filth.worked_on VALUES(10231, 4428, 3971, 'Supporting Actor');  -- Robert Davi for License to Kill (1989)
+INSERT INTO filth.worked_on VALUES(10232, 4428, 27, 'Supporting Actor');  -- Benicio Del Toro for License to Kill (1989)
