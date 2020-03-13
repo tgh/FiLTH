@@ -3967,3 +3967,6 @@ INSERT INTO filth.crew_person VALUES (3969, 'McKenzie', 'Thomasin', NULL, 'Thoma
 INSERT INTO filth.crew_person VALUES (3970, 'Wilson', 'Rebel', NULL, 'Rebel Wilson', 'Actress');  -- Actress: Rebel Wilson
 INSERT INTO filth.crew_person VALUES (3971, 'Davi', 'Robert', NULL, 'Robert Davi', 'Actor');  -- Actor: Robert Davi
 INSERT INTO filth.crew_person VALUES (3972, 'Keller', 'Jason', NULL, 'Jason Keller', 'Screenwriter');  -- Screenwriter: Jason Keller
+INSERT INTO filth.crew_person VALUES (3973, 'Gray', 'F.', 'Gary', 'F. Gary Gray', 'Director');  -- Director: F. Gary Gray
+INSERT INTO filth.crew_person VALUES (3974, 'Fiorentino', 'Linda', NULL, 'Linda Fiorentino', 'Actress');  -- Actress: Linda Fiorentino
+INSERT INTO filth.crew_person VALUES (3975, 'Gries', 'Jon', NULL, 'Jon Gries', 'Actor');  -- Actor: Jon Gries

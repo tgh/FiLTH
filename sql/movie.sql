@@ -4422,3 +4422,6 @@ INSERT INTO filth.movie VALUES (4426, 'Jojo Rabbit', 2019, '**½', 'PG-13', 'New
 INSERT INTO filth.movie VALUES (4427, 'The Two Popes', 2019, '***½', 'PG-13', DEFAULT, 'Great acting. Great dialogue. Very interesting.', 'tt8404614', 0, 551332, NULL, NULL, 125, '1');
 INSERT INTO filth.movie VALUES (4428, 'License to Kill', 1989, '**½', 'PG-13', 'England', NULL, 'tt0097742', 0, 709, NULL, NULL, 133, '1');
 INSERT INTO filth.movie VALUES (4429, 'Ford v Ferrari', 2019, '***½', 'PG-13', 'USA', NULL, 'tt1950186', 0, 359724, NULL, NULL, 152, '1');
+INSERT INTO filth.movie VALUES (4430, 'The Laundromat', 2019, '***', 'R', 'USA', NULL, 'tt5865326', 0, 517909, NULL, NULL, 95, '1');
+INSERT INTO filth.movie VALUES (4431, 'Men in Black: International', 2019, '**½', 'PG-13', 'USA', NULL, 'tt2283336', 0, 479455, NULL, NULL, 114, '1');
+INSERT INTO filth.movie VALUES (4432, 'X-Men: Dark Phoenix', 2019, '**½', 'PG-13', 'USA', NULL, 'tt6565702', 0, 320288, NULL, NULL, 113, '1');
