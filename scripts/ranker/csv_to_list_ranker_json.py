@@ -27,6 +27,7 @@ if __name__ == '__main__':
         print(f'***ERROR: {csvFile} does not exist or is not a file')
         sys.exit(1)
 
+    # it is expected that the csv contain the following rows: 'title','year','tmdb_id','imdb_id'
     f = open(csvFile)
     csv_lines = f.readlines()
     f.close()
@@ -43,11 +44,11 @@ if __name__ == '__main__':
         except Exception as e:
             print(f'Exception: {e}')
             continue
-        imdbUrl = getImdbUrl(movie['tmdb_id'])
+        imdbUrl = getImdbUrl(movie['imdb_id'])
         print('    {')
         print(f'      "text": "{movie["title"]} ({movie["year"]})",')
         print(f'      "imageUrl": "{imageUrl}",')
-        print(f'      "textLinkUrl": "{imdbUrl}",')
+        print(f'      "textLinkUrl": "{imdbUrl}"')
         print('    },')
 
     # close out the json

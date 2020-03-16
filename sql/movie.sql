@@ -4425,3 +4425,4 @@ INSERT INTO filth.movie VALUES (4429, 'Ford v Ferrari', 2019, '***½', 'PG-13', 
 INSERT INTO filth.movie VALUES (4430, 'The Laundromat', 2019, '***', 'R', 'USA', NULL, 'tt5865326', 0, 517909, NULL, NULL, 95, '1');
 INSERT INTO filth.movie VALUES (4431, 'Men in Black: International', 2019, '**½', 'PG-13', 'USA', NULL, 'tt2283336', 0, 479455, NULL, NULL, 114, '1');
 INSERT INTO filth.movie VALUES (4432, 'X-Men: Dark Phoenix', 2019, '**½', 'PG-13', 'USA', NULL, 'tt6565702', 0, 320288, NULL, NULL, 113, '1');
+INSERT INTO filth.movie VALUES (4433, 'Rise of the Guardians', 2012, '**½', 'PG', 'USA', NULL, 'tt1446192', 0, 81188, NULL, NULL, 97, '1');
