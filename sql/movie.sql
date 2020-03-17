@@ -4426,3 +4426,4 @@ INSERT INTO filth.movie VALUES (4430, 'The Laundromat', 2019, '***', 'R', 'USA',
 INSERT INTO filth.movie VALUES (4431, 'Men in Black: International', 2019, '**½', 'PG-13', 'USA', NULL, 'tt2283336', 0, 479455, NULL, NULL, 114, '1');
 INSERT INTO filth.movie VALUES (4432, 'X-Men: Dark Phoenix', 2019, '**½', 'PG-13', 'USA', NULL, 'tt6565702', 0, 320288, NULL, NULL, 113, '1');
 INSERT INTO filth.movie VALUES (4433, 'Rise of the Guardians', 2012, '**½', 'PG', 'USA', NULL, 'tt1446192', 0, 81188, NULL, NULL, 97, '1');
+INSERT INTO filth.movie VALUES (4434, 'Star Wars: Episode IX – the Rise of Skywalker', 2019, '*½', 'PG-13', 'USA', 'One of the biggest movie dissapointments of all time. I can''t really think of anything I liked about this movie.', 'tt2527338', 1, 181812, NULL, NULL, 142, '1');
