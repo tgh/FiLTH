@@ -3971,3 +3971,6 @@ INSERT INTO filth.crew_person VALUES (3973, 'Gray', 'F.', 'Gary', 'F. Gary Gray'
 INSERT INTO filth.crew_person VALUES (3974, 'Fiorentino', 'Linda', NULL, 'Linda Fiorentino', 'Actress');  -- Actress: Linda Fiorentino
 INSERT INTO filth.crew_person VALUES (3975, 'Gries', 'Jon', NULL, 'Jon Gries', 'Actor');  -- Actor: Jon Gries
 INSERT INTO filth.crew_person VALUES (3976, 'Lindsay-Abaire', 'David', NULL, 'David Lindsay-Abaire', 'Screenwriter');  -- Screenwriter: David Lindsay-Abaire
+INSERT INTO filth.crew_person VALUES (3977, 'Armas', 'Ana', 'de', 'Ana de Armas', 'Actress');  -- Actress: Ana de Armas
+INSERT INTO filth.crew_person VALUES (3978, 'Johnson', 'Don', NULL, 'Don Johnson', 'Actor');  -- Actor: Don Johnson
+INSERT INTO filth.crew_person VALUES (3979, 'Stanfield', 'LaKeith', NULL, 'LaKeith Stanfield', 'Actor');  -- Actor: LaKeith Stanfield
