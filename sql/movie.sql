@@ -4428,3 +4428,4 @@ INSERT INTO filth.movie VALUES (4432, 'X-Men: Dark Phoenix', 2019, '**½', 'PG-1
 INSERT INTO filth.movie VALUES (4433, 'Rise of the Guardians', 2012, '**½', 'PG', 'USA', NULL, 'tt1446192', 0, 81188, NULL, NULL, 97, '1');
 INSERT INTO filth.movie VALUES (4434, 'Star Wars: Episode IX – the Rise of Skywalker', 2019, '*½', 'PG-13', 'USA', 'One of the biggest movie dissapointments of all time. I can''t really think of anything I liked about this movie.', 'tt2527338', 1, 181812, NULL, NULL, 142, '1');
 INSERT INTO filth.movie VALUES (4435, 'Knives Out', 2019, '***', 'PG-13', 'USA', NULL, 'tt8946378', 0, 546554, NULL, NULL, 131, '1');
+INSERT INTO filth.movie VALUES (4436, 'From Russia with Love', 1964, '**½', 'PG', 'England', NULL, 'tt0057076', 0, 657, NULL, NULL, 115, '1');
