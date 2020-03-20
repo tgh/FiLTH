@@ -10330,3 +10330,6 @@ INSERT INTO filth.worked_on VALUES(10330, 4435, 3652, 'Cinematographer');  -- St
 INSERT INTO filth.worked_on VALUES(10331, 4436, 622, 'Lead Actor');  -- Sean Connery for From Russia with Love (1964)
 INSERT INTO filth.worked_on VALUES(10332, 4436, 545, 'Supporting Actor');  -- Robert Shaw for From Russia with Love (1964)
 INSERT INTO filth.worked_on VALUES(10333, 4436, 1299, 'Cinematographer');  -- Ted Moore for From Russia with Love (1964)
+INSERT INTO filth.worked_on VALUES(10334, 4437, 2071, 'Character Voice');  -- Benedict Cumberbatch for The Grinch (2018)
+INSERT INTO filth.worked_on VALUES(10335, 4437, 3967, 'Character Voice');  -- Rashida Jones for The Grinch (2018)
+INSERT INTO filth.worked_on VALUES(10336, 4437, 744, 'Character Voice');  -- Angela Lansbury for The Grinch (2018)
