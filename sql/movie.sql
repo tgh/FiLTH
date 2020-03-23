@@ -4430,3 +4430,4 @@ INSERT INTO filth.movie VALUES (4434, 'Star Wars: Episode IX – the Rise of Sky
 INSERT INTO filth.movie VALUES (4435, 'Knives Out', 2019, '***', 'PG-13', 'USA', NULL, 'tt8946378', 0, 546554, NULL, NULL, 131, '1');
 INSERT INTO filth.movie VALUES (4436, 'From Russia with Love', 1964, '**½', 'PG', 'England', NULL, 'tt0057076', 0, 657, NULL, NULL, 115, '1');
 INSERT INTO filth.movie VALUES (4437, 'The Grinch', 2018, '***', 'PG', 'USA', NULL, 'tt2709692', 0, 360920, NULL, NULL, 85, '1');
+INSERT INTO filth.movie VALUES (4438, 'The Christmas Chronicles', 2018, '**', 'NR', 'USA', NULL, 'tt2990140', 0, 527435, NULL, NULL, 104, '1');

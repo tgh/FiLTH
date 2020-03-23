@@ -10333,3 +10333,5 @@ INSERT INTO filth.worked_on VALUES(10333, 4436, 1299, 'Cinematographer');  -- Te
 INSERT INTO filth.worked_on VALUES(10334, 4437, 2071, 'Character Voice');  -- Benedict Cumberbatch for The Grinch (2018)
 INSERT INTO filth.worked_on VALUES(10335, 4437, 3967, 'Character Voice');  -- Rashida Jones for The Grinch (2018)
 INSERT INTO filth.worked_on VALUES(10336, 4437, 744, 'Character Voice');  -- Angela Lansbury for The Grinch (2018)
+INSERT INTO filth.worked_on VALUES(10337, 4438, 2120, 'Supporting Actor');  -- Kurt Russell for The Christmas Chronicles (2018)
+INSERT INTO filth.worked_on VALUES(10338, 4438, 1355, 'Cinematographer');  -- Don Burgess for The Christmas Chronicles (2018)
