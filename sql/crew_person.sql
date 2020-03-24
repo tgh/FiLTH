@@ -3974,3 +3974,4 @@ INSERT INTO filth.crew_person VALUES (3976, 'Lindsay-Abaire', 'David', NULL, 'Da
 INSERT INTO filth.crew_person VALUES (3977, 'Armas', 'Ana', 'de', 'Ana de Armas', 'Actress');  -- Actress: Ana de Armas
 INSERT INTO filth.crew_person VALUES (3978, 'Johnson', 'Don', NULL, 'Don Johnson', 'Actor');  -- Actor: Don Johnson
 INSERT INTO filth.crew_person VALUES (3979, 'Stanfield', 'LaKeith', NULL, 'LaKeith Stanfield', 'Actor');  -- Actor: LaKeith Stanfield
+INSERT INTO filth.crew_person VALUES (3980, 'Patel', 'Himesh', NULL, 'Himesh Patel', 'Actor');  -- Actor: Himesh Patel
