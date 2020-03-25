@@ -35,7 +35,7 @@ INSERT INTO filth.movie VALUES (30, 'Abre Los Ojos', 1997, '**½', 'R', 'Spain',
 INSERT INTO filth.movie VALUES (31, 'The Abyss', 1989, '***', 'PG-13', 'USA', NULL, 'tt0096754', 0, 2756, NULL, NULL, 139, '~4');
 INSERT INTO filth.movie VALUES (32, 'The Accidental Tourist', 1988, '**', 'PG', 'USA', NULL, 'tt0094606', 0, 31052, NULL, NULL, 121, '1');
 INSERT INTO filth.movie VALUES (33, 'The Accused', 1988, '***', 'R', 'USA', NULL, 'tt0094608', 0, 10868, NULL, NULL, 111, '1');
-INSERT INTO filth.movie VALUES (34, 'Ace Ventura: Pet Detective', 1994, '**½', 'PG-13', 'USA', NULL, 'tt0109040', 0, 3049, NULL, NULL, 86, '1');
+INSERT INTO filth.movie VALUES (34, 'Ace Ventura: Pet Detective', 1994, '**½', 'PG-13', 'USA', NULL, 'tt0109040', 0, 3049, NULL, NULL, 86, '~3');
 INSERT INTO filth.movie VALUES (35, 'Adam''s Rib', 1949, '**½', 'NR', 'USA', NULL, 'tt0041090', 0, 25431, NULL, NULL, 101, '1');
 INSERT INTO filth.movie VALUES (36, 'Adaptation', 2002, '***½', 'R', 'USA', NULL, 'tt0268126', 1, 2757, NULL, NULL, 114, '~2');
 INSERT INTO filth.movie VALUES (37, 'The Adjustment Bureau', 2011, '***', 'PG-13', 'USA', NULL, 'tt1385826', 1, 38050, NULL, NULL, 106, '1');
