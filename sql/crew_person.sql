@@ -3978,3 +3978,7 @@ INSERT INTO filth.crew_person VALUES (3980, 'Patel', 'Himesh', NULL, 'Himesh Pat
 INSERT INTO filth.crew_person VALUES (3981, 'Bernstein', 'Jack', NULL, 'Jack Bernstein', 'Screenwriter');  -- Screenwriter: Jack Bernstein
 INSERT INTO filth.crew_person VALUES (3982, 'Margolis', 'Mark', NULL, 'Mark Margolis', 'Actor');  -- Actor: Mark Margolis
 INSERT INTO filth.crew_person VALUES (3983, 'Cobb', 'Randall', 'Tex', 'Randall Tex Cobb', 'Actor');  -- Actor: Randall Tex Cobb
+INSERT INTO filth.crew_person VALUES (3984, 'Boyd', 'Billy', NULL, 'Billy Boyd', 'Actor');  -- Actor: Billy Boyd
+INSERT INTO filth.crew_person VALUES (3985, 'Hill', 'Bernard', NULL, 'Bernard Hill', 'Actor');  -- Actor: Bernard Hill
+INSERT INTO filth.crew_person VALUES (3986, 'Otto', 'Miranda', NULL, 'Miranda Otto', 'Actress');  -- Actress: Miranda Otto
+INSERT INTO filth.crew_person VALUES (3987, 'Noble', 'John', NULL, 'John Noble', 'Actor');  -- Actor: John Noble

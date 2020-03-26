@@ -978,9 +978,9 @@ INSERT INTO filth.movie VALUES (973, 'Lone Star', 1996, '**½', 'R', 'USA', NULL
 INSERT INTO filth.movie VALUES (974, 'The Long Goodbye', 1973, '***½', 'R', 'USA', NULL, 'tt0070334', 0, 1847, NULL, NULL, 113, '1');
 INSERT INTO filth.movie VALUES (975, 'The Longest Day', 1962, '***½', 'NR', 'USA', NULL, 'tt0056197', 0, 9289, NULL, NULL, 178, '1');
 INSERT INTO filth.movie VALUES (976, 'Looking for Richard', 1996, '***½', 'PG-13', 'USA', NULL, 'tt0116913', 0, 42314, NULL, NULL, 112, '1');
-INSERT INTO filth.movie VALUES (977, 'The Lord of the Rings: The Fellowship of the Ring', 2001, '***½', 'PG-13', 'New Zealand', NULL, 'tt0120737', 1, 120, 4211, NULL, 178, '~4');
-INSERT INTO filth.movie VALUES (978, 'The Lord of the Rings: The Two Towers', 2002, '****', 'PG-13', 'New Zealand', NULL, 'tt0167261', 1, 121, 4211, NULL, 179, '~4');
-INSERT INTO filth.movie VALUES (979, 'The Lord of the Rings: The Return of the King', 2003, '****', 'PG-13', 'New Zealand', NULL, 'tt0167260', 1, 122, 4211, NULL, 201, '~4');
+INSERT INTO filth.movie VALUES (977, 'The Lord of the Rings: The Fellowship of the Ring', 2001, '***½', 'PG-13', 'New Zealand', NULL, 'tt0120737', 1, 120, 4211, NULL, 178, '~5');
+INSERT INTO filth.movie VALUES (978, 'The Lord of the Rings: The Two Towers', 2002, '****', 'PG-13', 'New Zealand', NULL, 'tt0167261', 1, 121, 4211, NULL, 179, '~5');
+INSERT INTO filth.movie VALUES (979, 'The Lord of the Rings: The Return of the King', 2003, '****', 'PG-13', 'New Zealand', NULL, 'tt0167260', 1, 122, 4211, NULL, 201, '~5');
 INSERT INTO filth.movie VALUES (980, 'Lost Highway', 1997, 'NO STARS', 'R', 'USA', NULL, 'tt0116922', 0, 638, NULL, NULL, 134, '1');
 INSERT INTO filth.movie VALUES (981, 'Lost in La Mancha', 2002, '***', 'R', 'USA', NULL, 'tt0308514', 0, 21189, NULL, NULL, 93, '1');
 INSERT INTO filth.movie VALUES (982, 'Lost in Translation', 2003, '***', 'R', 'USA', NULL, 'tt0335266', 1, 153, NULL, NULL, 102, '1');
