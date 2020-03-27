@@ -653,7 +653,7 @@ INSERT INTO filth.movie VALUES (648, 'The Godfather Part II', 1974, '****', 'R',
 INSERT INTO filth.movie VALUES (649, 'The Godfather Part III', 1990, '***', 'R', 'USA', NULL, 'tt0099674', 0, 242, NULL, NULL, 162, '1');
 INSERT INTO filth.movie VALUES (650, 'Gods and Monsters', 1998, '**½', 'R', NULL, NULL, 'tt0120684', 0, 3033, NULL, NULL, 105, '1');
 INSERT INTO filth.movie VALUES (651, 'Godzilla', 1998, 'NO STARS', 'PG-13', 'USA', NULL, 'tt0120685', 1, 929, NULL, NULL, 139, '1');
-INSERT INTO filth.movie VALUES (652, 'The Gold Rush', 1925, '***½', 'NR', 'USA', NULL, 'tt0015864', 0, 962, NULL, NULL, 95, '2');
+INSERT INTO filth.movie VALUES (652, 'The Gold Rush', 1925, '***½', 'NR', 'USA', NULL, 'tt0015864', 0, 962, NULL, NULL, 95, '3');
 INSERT INTO filth.movie VALUES (653, 'The Golden Bowl', 2000, '**½', 'R', 'USA', NULL, 'tt0200669', 0, 29946, NULL, NULL, 130, '1');
 INSERT INTO filth.movie VALUES (654, 'Goldeneye', 1995, '**', 'PG-13', 'USA', NULL, 'tt0113189', 0, 710, NULL, NULL, 130, '1');
 INSERT INTO filth.movie VALUES (655, 'Goldfinger', 1964, '***', 'NR', 'USA', NULL, 'tt0058150', 0, 658, NULL, NULL, 110, '1');

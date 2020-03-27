@@ -10415,3 +10415,6 @@ INSERT INTO filth.worked_on VALUES(10415, 979, 581, 'Small Part');  -- Brad Dour
 INSERT INTO filth.worked_on VALUES(10416, 979, 2228, 'Small Part');  -- Christopher Lee for The Lord of the Rings: The Return of the King (2003)
 INSERT INTO filth.worked_on VALUES(10417, 979, 1370, 'Cinematographer');  -- Andrew Lesnie for The Lord of the Rings: The Return of the King (2003)
 INSERT INTO filth.worked_on VALUES(10418, 977, 2228, 'Supporting Actor');  -- Christopher Lee for The Lord of the Rings: The Fellowship of the Ring (2001)
+INSERT INTO filth.worked_on VALUES(10419, 652, 266, 'Director');  -- Charlie Chaplin for The Gold Rush (1925)
+INSERT INTO filth.worked_on VALUES(10420, 652, 266, 'Screenwriter');  -- Charlie Chaplin for The Gold Rush (1925)
+INSERT INTO filth.worked_on VALUES(10421, 652, 266, 'Lead Actor');  -- Charlie Chaplin for The Gold Rush (1925)

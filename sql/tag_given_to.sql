@@ -20514,3 +20514,4 @@ INSERT INTO filth.tag_given_to VALUES(978, 328);  -- The Lord of the Rings: The 
 INSERT INTO filth.tag_given_to VALUES(979, 391);  -- The Lord of the Rings: The Return of the King (2003) tagged with 'masculine'
 INSERT INTO filth.tag_given_to VALUES(979, 328);  -- The Lord of the Rings: The Return of the King (2003) tagged with 'friend(s)/friendship'
 INSERT INTO filth.tag_given_to VALUES(979, 17);  -- The Lord of the Rings: The Return of the King (2003) tagged with 'war'
+INSERT INTO filth.tag_given_to VALUES(652, 83);  -- The Gold Rush (1925) tagged with 'slapstick'
