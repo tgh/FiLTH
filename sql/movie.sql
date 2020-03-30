@@ -967,7 +967,7 @@ INSERT INTO filth.movie VALUES (962, 'Little Big Man', 1970, '***½', 'PG', 'USA
 INSERT INTO filth.movie VALUES (963, 'The Little Mermaid', 1989, '**½', 'G', 'USA', NULL, 'tt0097757', 0, 10144, NULL, NULL, 83, '~2');
 INSERT INTO filth.movie VALUES (964, 'Little Miss Sunshine', 2006, '***½', 'R', 'USA', NULL, 'tt0449059', 0, 773, NULL, NULL, 102, '1');
 INSERT INTO filth.movie VALUES (965, 'Little Nicky', 2000, '**', 'PG-13', 'USA', NULL, 'tt0185431', 0, 9678, NULL, NULL, 90, '1');
-INSERT INTO filth.movie VALUES (966, 'A Little Princess', 1995, '***', 'G', 'USA', NULL, 'tt0113670', 0, 19101, NULL, NULL, 97, '1');
+INSERT INTO filth.movie VALUES (966, 'A Little Princess', 1995, '***', 'G', 'USA', NULL, 'tt0113670', 0, 19101, NULL, NULL, 97, '2');
 INSERT INTO filth.movie VALUES (967, 'The Little Rascals', 1994, '**½', 'PG', 'USA', NULL, 'tt0110366', 0, 10897, NULL, NULL, 82, '~2');
 INSERT INTO filth.movie VALUES (968, 'Little Secrets', 2002, '***', 'PG', 'USA', NULL, 'tt0296845', 1, 50573, NULL, NULL, 96, '1');
 INSERT INTO filth.movie VALUES (969, 'Little Voice', 1998, '***½', 'R', 'England', NULL, 'tt0147004', 0, 8545, NULL, NULL, 97, '1');
