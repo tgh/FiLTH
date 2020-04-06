@@ -3986,3 +3986,5 @@ INSERT INTO filth.crew_person VALUES (3988, 'Chandler', 'Elizabeth', NULL, 'Eliz
 INSERT INTO filth.crew_person VALUES (3989, 'Bron', 'Eleanor', NULL, 'Eleanor Bron', 'Actress');  -- Actress: Eleanor Bron
 INSERT INTO filth.crew_person VALUES (3990, 'Cunningham', 'Liam', NULL, 'Liam Cunningham', 'Actor');  -- Actor: Liam Cunningham
 INSERT INTO filth.crew_person VALUES (3991, 'Matthews', 'Liesel', NULL, 'Liesel Matthews', 'Actress');  -- Actress: Liesel Matthews
+INSERT INTO filth.crew_person VALUES (3992, 'Kugelberg', 'Louise', NULL, 'Louise Kugelberg', 'Screenwriter');  -- Screenwriter: Louise Kugelberg
+INSERT INTO filth.crew_person VALUES (3993, 'Friend', 'Rupert', NULL, 'Rupert Friend', 'Actor');  -- Actor: Rupert Friend
