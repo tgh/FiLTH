@@ -875,7 +875,7 @@ INSERT INTO filth.movie VALUES (870, 'Julien Donkey-Boy', 1999, '***', 'R', 'USA
 INSERT INTO filth.movie VALUES (871, 'Juliet of the Spirits', 1965, '**', 'NR', 'Italy', NULL, 'tt0059229', 0, 19120, NULL, NULL, 137, '1');
 INSERT INTO filth.movie VALUES (872, 'Jumanji', 1995, '**½', 'PG', 'USA', NULL, 'tt0113497', 1, 8844, NULL, NULL, 104, '~2');
 INSERT INTO filth.movie VALUES (873, 'Juno', 2007, '***', 'PG-13', 'USA', NULL, 'tt0467406', 0, 7326, NULL, NULL, 96, '1');
-INSERT INTO filth.movie VALUES (874, 'Jurassic Park', 1994, '****', 'PG-13', 'USA', NULL, 'tt0107290', 5, 329, NULL, NULL, 127, '~8');
+INSERT INTO filth.movie VALUES (874, 'Jurassic Park', 1994, '****', 'PG-13', 'USA', NULL, 'tt0107290', 5, 329, NULL, NULL, 127, '~9');
 INSERT INTO filth.movie VALUES (875, 'Jurassic Park III', 2001, '**', 'PG-13', 'USA', NULL, 'tt0163025', 1, 331, NULL, NULL, 92, '1');
 INSERT INTO filth.movie VALUES (876, 'K-Pax', 2001, '***', 'PG-13', 'USA', NULL, 'tt0272152', 1, 167, NULL, NULL, 120, '2');
 INSERT INTO filth.movie VALUES (877, 'Kalifornia', 1993, '**½', 'R', 'USA', NULL, 'tt0107302', 0, 10909, NULL, NULL, 117, '1');
@@ -971,7 +971,7 @@ INSERT INTO filth.movie VALUES (966, 'A Little Princess', 1995, '***', 'G', 'USA
 INSERT INTO filth.movie VALUES (967, 'The Little Rascals', 1994, '**½', 'PG', 'USA', NULL, 'tt0110366', 0, 10897, NULL, NULL, 82, '~2');
 INSERT INTO filth.movie VALUES (968, 'Little Secrets', 2002, '***', 'PG', 'USA', NULL, 'tt0296845', 1, 50573, NULL, NULL, 96, '1');
 INSERT INTO filth.movie VALUES (969, 'Little Voice', 1998, '***½', 'R', 'England', NULL, 'tt0147004', 0, 8545, NULL, NULL, 97, '1');
-INSERT INTO filth.movie VALUES (970, 'Little Women', 1994, '**½', 'PG', 'USA', NULL, 'tt0110367', 0, 9587, NULL, NULL, 115, '~2');
+INSERT INTO filth.movie VALUES (970, 'Little Women', 1994, '**½', 'PG', 'USA', NULL, 'tt0110367', 0, 9587, NULL, NULL, 115, '~3');
 INSERT INTO filth.movie VALUES (971, 'Lock, Stock, & Two Smoking Barrels', 1999, '***', 'R', 'England', NULL, 'tt0120735', 0, 100, NULL, NULL, 105, '1');
 INSERT INTO filth.movie VALUES (972, 'Lolita', 1962, '***', 'NR', 'England', NULL, 'tt0056193', 0, 802, NULL, NULL, 153, '~2');
 INSERT INTO filth.movie VALUES (973, 'Lone Star', 1996, '**½', 'R', 'USA', NULL, 'tt0116905', 0, 26748, NULL, NULL, 135, '1');
@@ -1272,9 +1272,9 @@ INSERT INTO filth.movie VALUES (1267, 'Pieces of April', 2003, '***', 'PG-13', '
 INSERT INTO filth.movie VALUES (1268, 'The Pilgrim', 1923, '**½', 'NR', 'USA', NULL, 'tt0014358', 0, 53430, NULL, NULL, 40, '1');
 INSERT INTO filth.movie VALUES (1269, 'The Pink Panther', 1963, '**', 'NR', 'England', NULL, 'tt0057413', 0, 936, NULL, NULL, 115, '1');
 INSERT INTO filth.movie VALUES (1270, 'Pinocchio', 1940, '****', 'NR', 'USA', NULL, 'tt0032910', 0, 10895, NULL, NULL, 88, '~4');
-INSERT INTO filth.movie VALUES (1271, 'Pirates of the Caribbean: The Curse of the Black Pearl', 2003, '***', 'PG-13', 'USA', NULL, 'tt0325980', 1, 22, NULL, NULL, 143, '~2');
-INSERT INTO filth.movie VALUES (1272, 'Pirates of the Caribbean: Dead Man''s Chest', 2006, '***', 'PG-13', 'USA', NULL, 'tt0383574', 2, 58, NULL, NULL, 151, '2');
-INSERT INTO filth.movie VALUES (1273, 'Pirates of the Caribbean: At World''s End', 2007, '***', 'PG-13', 'USA', NULL, 'tt0449088', 1, 285, NULL, NULL, 169, '~2');
+INSERT INTO filth.movie VALUES (1271, 'Pirates of the Caribbean: The Curse of the Black Pearl', 2003, '***', 'PG-13', 'USA', NULL, 'tt0325980', 1, 22, NULL, NULL, 143, '~3');
+INSERT INTO filth.movie VALUES (1272, 'Pirates of the Caribbean: Dead Man''s Chest', 2006, '***', 'PG-13', 'USA', NULL, 'tt0383574', 2, 58, NULL, NULL, 151, '3');
+INSERT INTO filth.movie VALUES (1273, 'Pirates of the Caribbean: At World''s End', 2007, '***', 'PG-13', 'USA', NULL, 'tt0449088', 1, 285, NULL, NULL, 169, '~3');
 INSERT INTO filth.movie VALUES (1274, 'A Place in the Sun', 1951, '**½', 'NR', 'USA', NULL, 'tt0043924', 0, 25673, NULL, NULL, 122, '1');
 INSERT INTO filth.movie VALUES (1275, 'Places in the Heart', 1984, '***½', 'PG', 'USA', NULL, 'tt0087921', 0, 13681, NULL, NULL, 111, '~2');
 INSERT INTO filth.movie VALUES (1276, 'Planes, Trains and Automobiles', 1987, '***', 'R', 'USA', NULL, 'tt0093748', 0, 2609, NULL, NULL, 93, '~2');
@@ -1550,7 +1550,7 @@ INSERT INTO filth.movie VALUES (1545, 'Star Wars: Episode I - The Phantom Menace
 INSERT INTO filth.movie VALUES (1546, 'Star Wars: Episode II - Attack of the Clones', 2002, '**', 'PG', 'USA', NULL, 'tt0121765', 2, 1894, NULL, NULL, 142, '~5');
 INSERT INTO filth.movie VALUES (1547, 'Star Wars: Episode III - Revenge of the Sith', 2005, '***', 'PG-13', 'USA', NULL, 'tt0121766', 1, 1895, NULL, NULL, 140, '~3');
 INSERT INTO filth.movie VALUES (1548, 'Star Wars', 1977, '****', 'PG', 'USA', NULL, 'tt0076759', 1, 11, NULL, NULL, 121, '~6');
-INSERT INTO filth.movie VALUES (1549, 'Star Wars: Episode V - The Empire Strikes Back', 1980, '****', 'PG', 'USA', NULL, 'tt0080684', 1, 1891, NULL, NULL, 124, '~8');
+INSERT INTO filth.movie VALUES (1549, 'Star Wars: Episode V - The Empire Strikes Back', 1980, '****', 'PG', 'USA', NULL, 'tt0080684', 1, 1891, NULL, NULL, 124, '~9');
 INSERT INTO filth.movie VALUES (1550, 'Star Wars: Episode VI - Return of the Jedi', 1983, '****', 'PG', 'USA', NULL, 'tt0086190', 1, 1892, NULL, NULL, 135, '~9');
 INSERT INTO filth.movie VALUES (1551, 'Stardust Memories', 1980, '***½', 'PG', 'USA', NULL, 'tt0081554', 0, 11337, NULL, NULL, 89, '~2');
 INSERT INTO filth.movie VALUES (1552, 'Startup.com', 2001, '****', 'R', 'USA', NULL, 'tt0256408', 1, 14268, NULL, NULL, 107, '1');
@@ -3492,7 +3492,7 @@ INSERT INTO filth.movie VALUES (3487, 'For Your Consideration', 2006, '**', 'PG-
 INSERT INTO filth.movie VALUES (3488, 'The Hobbit: The Desolation of Smaug', 2013, '**½', 'PG-13', 'New Zealand', NULL, 'tt1170358', 1, 57158, NULL, NULL, 161, '1');
 INSERT INTO filth.movie VALUES (3489, 'Knight and Day', 2010, '***', 'PG-13', 'USA', NULL, 'tt1013743', 0, 37834, NULL, NULL, 109, '1');
 INSERT INTO filth.movie VALUES (3490, 'Paranoid Park', 2007, '**½', 'R', 'USA', NULL, 'tt0842929', 0, 1990, NULL, NULL, 85, '1');
-INSERT INTO filth.movie VALUES (3491, 'Pirates of the Caribbean: On Stranger Tides', 2011, '**½', 'PG-13', 'USA', NULL, 'tt1298650', 0, 1865, NULL, NULL, 136, '1');
+INSERT INTO filth.movie VALUES (3491, 'Pirates of the Caribbean: On Stranger Tides', 2011, '**½', 'PG-13', 'USA', NULL, 'tt1298650', 0, 1865, NULL, NULL, 136, '2');
 INSERT INTO filth.movie VALUES (3492, 'Taken', 2008, '***', 'PG-13', 'USA', NULL, 'tt0936501', 0, 8681, NULL, NULL, 93, '1');
 INSERT INTO filth.movie VALUES (3493, 'White Christmas', 1954, '***', 'NR', 'USA', NULL, 'tt0047673', 0, 13368, NULL, NULL, 120, '2');
 INSERT INTO filth.movie VALUES (3494, 'American Hustle', 2013, '****', 'R', 'USA', NULL, 'tt1800241', 1, 168672, NULL, NULL, 138, '1');
@@ -4259,7 +4259,7 @@ INSERT INTO filth.movie VALUES (4263, 'Detroit', 2017, '***', 'R', 'USA', 'I cou
 INSERT INTO filth.movie VALUES (4264, 'Guardians of the Galaxy Vol. 2', 2017, '**½', 'PG-13', 'USA', NULL, 'tt3896198', 0, 283995, NULL, NULL, 136, '2');
 INSERT INTO filth.movie VALUES (4265, 'The Circle', 2017, '**', 'PG-13', 'USA', NULL, 'tt4287320', 0, 339988, NULL, NULL, 110, '1');
 INSERT INTO filth.movie VALUES (4266, 'Gifted', 2017, '***', 'PG-13', 'USA', 'Excellent child performance by Mckenna Grace, good performances all around.', 'tt4481414', 0, 400928, NULL, NULL, 101, '1');
-INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell No Tales', 2017, '**½', 'PG-13', 'USA', NULL, 'tt1790809', 0, 166426, NULL, NULL, 129, '1');
+INSERT INTO filth.movie VALUES (4267, 'Pirates of the Caribbean: Dead Men Tell No Tales', 2017, '**½', 'PG-13', 'USA', NULL, 'tt1790809', 0, 166426, NULL, NULL, 129, '2');
 INSERT INTO filth.movie VALUES (4268, 'Babies', 2010, '***', 'PG', 'France', NULL, 'tt1020938', 0, 44737, NULL, NULL, 79, '1');
 INSERT INTO filth.movie VALUES (4269, 'War for the Planet of the Apes', 2017, '***', 'PG-13', 'USA', 'The best motion-capture/digital characters I have ever seen. So real.', 'tt3450958', 0, 281338, NULL, NULL, 140, '1');
 INSERT INTO filth.movie VALUES (4270, 'Wind River', 2017, '***½', 'R', 'USA', NULL, 'tt5362988', 0, 395834, NULL, NULL, 111, '1');
@@ -4415,7 +4415,7 @@ INSERT INTO filth.movie VALUES (4419, 'Oliver Twist', 1948, '***½', 'NR', 'Engl
 INSERT INTO filth.movie VALUES (4420, 'Spider-Man: Far From Home', 2019, '***', 'PG-13', 'USA', NULL, 'tt6320628', 0, 429617, NULL, NULL, 129, '2');
 INSERT INTO filth.movie VALUES (4421, 'Bird Box', 2018, '***', 'R', 'USA', NULL, 'tt2737304', 0, 405774, NULL, NULL, 124, '1');
 INSERT INTO filth.movie VALUES (4422, '1917', 2019, '****', 'R', 'USA', 'It''s like a mini-Odyssey, or The Revenant in WWI. It''s very well-made and powerful--you really feel for the main character. The single-shot style works really well here, and very cool that it was used for a war film--it really shows the time and space of war from a soldier''s perspective; a lot can change in one day.', 'tt8579674', 1, 530915, NULL, NULL, 119, '1');
-INSERT INTO filth.movie VALUES (4423, 'Little Women', 2019, '***½', 'PG', 'USA', NULL, 'tt3281548', 1, 331482, NULL, NULL, 135, '1');
+INSERT INTO filth.movie VALUES (4423, 'Little Women', 2019, '***½', 'PG', 'USA', NULL, 'tt3281548', 1, 331482, NULL, NULL, 135, '2');
 INSERT INTO filth.movie VALUES (4424, 'Marriage Story', 2019, '***½', 'R', 'USA', NULL, 'tt7653254', 0, 492188, NULL, NULL, 137, '1');
 INSERT INTO filth.movie VALUES (4425, 'Klaus', 2019, '***', 'PG', DEFAULT, NULL, 'tt4729430', 0, 508965, NULL, NULL, 96, '1');
 INSERT INTO filth.movie VALUES (4426, 'Jojo Rabbit', 2019, '**½', 'PG-13', 'New Zealand', 'It felt a little pretentious or contrived; like it was trying too hard to be an oscar contender. It also seemed too much like Wes Anderson.', 'tt2584384', 0, 515001, NULL, NULL, 108, '1');
